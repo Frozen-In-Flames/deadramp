@@ -480,6 +480,29 @@ This group's own verticals: digital-evidence management depth (playback, redacti
 
 Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / authenticator management (IA-2(1)/(2), IA-5; one sibling advertises MFA and PIV/CAC/TOTP as product features of the identity layer this build deliberately does not ship); FIPS-validated cryptography (SC-13; one sibling claims FIPS 140-3 validated modules, and this build does not inherit that claim); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Platform notes: TLS only when configured; single-tenant reference deployment; demo identities are hooks, not an IdP.
 
+## Group 29 — Development Tools L2 (2 forks)
+
+Extended functions carried from the Group 17 union, specified in groups/development-tools-l2/UNION-SPEC.md, not implemented:
+- [ ] open — CI/CD execution engines (pipeline execution: build / test / deploy runners; claimed 1 of 2 here)
+- [ ] open — Code hosting internals (git storage, branching & merging engines; 0 claims here)
+- [ ] open — Compilers & build toolchains
+- [ ] open — Configuration-as-code execution & orchestration (0 claims here; "strict configuration control" is a recorded near-miss)
+- [ ] open — Compliance assessment & KSI status automation engines (0 claims here)
+- [ ] open — Business modeling & automation engines (modeling plus execution)
+- [ ] open — Course & content authoring tools
+- [ ] open — Landing-zone / tenant provisioning & hosted platform operations (0 claims here; "environment management" near-miss)
+- [ ] open — Artifact binary storage backends (the registry holds records + checksums only)
+
+New in this group:
+- [ ] open — Feature-flag & feature-management runtime (flag evaluation, targeting, percentage rollouts, kill-switch)
+- [ ] open — Experimentation engine (hypothesis-driven development)
+- [ ] open — Static code analysis engine (rule sets, quality profiles & gates)
+- [ ] open — Security posture monitoring & automated remediation engine
+- [ ] open — Release automation, environment management & data migration engine
+- [ ] open — External-system integration engines (claimed 1 of 2 here)
+
+Platform-layer: encryption at rest is deployment-layer (TLS when configured); single-tenant reference deployment; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: the two forks share no claimed family, and the release family drops to 0 of 2 on phrasing alone despite both descriptions being saturated with release vocabulary — recorded as near-misses, not rounded up.
+
 ## Later groups
 
 Each group appends its section here when it ships.

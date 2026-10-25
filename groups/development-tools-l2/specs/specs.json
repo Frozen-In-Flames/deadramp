@@ -1,0 +1,60 @@
+[
+ {
+  "fork_id": "FR2427142353",
+  "vendor": "AutoRABIT Holding, Inc.",
+  "product": "AutoRABIT for Public Sector - CodeScan, Guard, & ARMOR",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Development Tools",
+  "description": "CodeScan is a static code analysis tool that seamlessly integrates with the development and deployment processes of Salesforce and scans for code vulnerability and quality checks along the process. Besides that, to improve and enforce code standardization, it also allows you to define the quality profiles and the quality gates, which gives you the ability to enforce standards and use this tool to educate your developers.\n\nCodeScan is a company-built application and developed using Amazon RDS for PostgreSQL and has capabilities to integrate with external systems.\nCodeScan offers more than 700 built-in rules for security and quality along with the provision to define your own rules.\n\nGuard provides enterprises with an automated, proactive approach to Salesforce security. Instead of relying on manual reviews and reactive fixes, Guard continuously monitors for security gaps, enforces policies at scale, and automatically remediates issues before they become critical threats. With AutoRABIT Guard, enterprises can transform their Salesforce environments from a security liability into a well-governed, compliant, and resilient system without slowing down innovation or burdening teams with manual processes. By making security seamless, AutoRABIT Guard ensures that organizations can confidently scale their Salesforce investment while meeting the highest security and compliance.\n\nARMOR is a centralized DevSecOps and Release Management platform for Salesforce that unifies CI/CD, environment management, and data migration into a secure pipeline. It enforces governance through policy-driven automation, pre-deployment security analysis, and immutable audit trails, ensuring strict configuration control and metadata integrity across the software development lifecycle.",
+  "functions_claimed": [
+   {
+    "function_id": "api_integrations",
+    "function": "API & integrations",
+    "evidence": "CodeScan is a static code analysis tool that seamlessly integrates with the development and deployment processes of Salesforce and scans for code vulnerability and quality checks along the process."
+   },
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging",
+    "evidence": "It enforces governance through policy-driven automation, pre-deployment security analysis, and immutable audit trails, ensuring strict configuration control and metadata integrity across the software development lifecycle."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2427142353/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2427142353"
+ },
+ {
+  "fork_id": "FR2120962552",
+  "vendor": "LaunchDarkly",
+  "product": "LaunchDarkly",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Development Tools",
+  "description": "LaunchDarkly is the feature management platform that teams use to safely deliver and control software through feature flags. By separating code deployments from feature releases, feature management enables organizations to deploy faster, reduce risk, and iterate continuously. Government agencies use feature management to control new feature rollouts, quickly resolve incidents, and increase productivity of development teams while using fewer resources. They are improving their DevSecOps processes, facilitating Continuous Integration/Continuous Delivery (CI/CD), and shipping more code safer than ever. LaunchDarkly enables: \n\n- Resolution of incidents in less than 200 milliseconds, without costly rollbacks that threaten other features.\n- Powerful targeting capabilities that provide complete control over which users or microservices can see new features.\n- Safe testing in production\u2014empowering teams with real-world QA testing in place of costly pre-production environments.\n- CI/CD development processes that improve developer productivity and new feature release times.\n- Hypothesis driven development, including experimentation and percentage rollouts. \n\nLaunchDarkly provides developers and business stakeholders with a central location to manage the rollout of new features. At the same time, it can enforce change management policies through scheduling, approval workflows, and custom role-based access control down to the feature level. Agencies can implement their own policies around the use of personally identifiable information (PII) and can take full advantage of targeting without needing to store user PII within the LaunchDarkly Federal SaaS environment. Additional hosting options and an offline mode are available for organizations with more restrictive policies.",
+  "functions_claimed": [
+   {
+    "function_id": "ci_pipeline",
+    "function": "CI build/test pipeline automation",
+    "evidence": "They are improving their DevSecOps processes, facilitating Continuous Integration/Continuous Delivery (CI/CD), and shipping more code safer than ever."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Access control",
+    "evidence": "At the same time, it can enforce change management policies through scheduling, approval workflows, and custom role-based access control down to the feature level."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2120962552/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2120962552"
+ }
+]
