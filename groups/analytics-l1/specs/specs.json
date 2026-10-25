@@ -1,0 +1,601 @@
+[
+ {
+  "fork_id": "FR2106555313",
+  "vendor": "AchieveIt Online, LLC",
+  "product": "AchieveIt",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Low",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Analytics",
+  "description": "AchieveIt helps federal government agencies manage mission critical plans and initiatives. Our cloud-based software platform empowers teams to focus on executing strategic initiatives instead of working on manual tasks. With AchieveIt, leaders can monitor progress on key plans and initiatives in real-time using a single, automated platform that establishes uniformity and visibility across plans and initiatives, promotes accountability throughout the agency, and enables informed decision-making. Trusted by organizations such as the Department of Veterans Affairs, The Joint Pathology Center, and the United States Air Force, AchieveIt accelerates IT modernization efforts by helping federal agencies plan, manage, and report their mission-critical plans and initiatives.",
+  "functions_claimed": [
+   {
+    "function_id": "reporting",
+    "function": "Reporting",
+    "evidence": "Trusted by organizations such as the Department of Veterans Affairs, The Joint Pathology Center, and the United States Air Force, AchieveIt accelerates IT modernization efforts by helping federal agencies plan, manage, and report their mission-critical plans and initiatives."
+   },
+   {
+    "function_id": "realtime",
+    "function": "Real-time & streaming analytics",
+    "evidence": "With AchieveIt, leaders can monitor progress on key plans and initiatives in real-time using a single, automated platform that establishes uniformity and visibility across plans and initiatives, promotes accountability throughout the agency, and enables informed decision-making."
+   },
+   {
+    "function_id": "alerts_monitoring",
+    "function": "Alerts, monitoring & detection",
+    "evidence": "With AchieveIt, leaders can monitor progress on key plans and initiatives in real-time using a single, automated platform that establishes uniformity and visibility across plans and initiatives, promotes accountability throughout the agency, and enables informed decision-making."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2106555313/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2106555313"
+ },
+ {
+  "fork_id": "FR1832869359",
+  "vendor": "Adobe",
+  "product": "Adobe Analytics",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Analytics",
+  "description": "Adobe Analytics provides real-time analytics and actionable insight modeling across customer journeys. Collect data to track, analyze, and optimize engagements across online and offline channels, including in-person, call centers, mail, online, and mobile. Start with award-winning web analytics that ingests targeted website traffic and executes robust reporting and analytics  based on customizable configurations. Then bring in all data across channels for a unified view of engagements and the ability to analyze the effectiveness of every touchpoint. Mobile app analytics analyzes the performance of mobile engagements and helps understand how mobile app users engage. An array of functionality is available, including custom dashboards, ad-hoc analytics, Microsoft Excel integration, bulk data import, data enrichment, artificial intelligence (AI)-powered predictive models, advanced data visualizations, tag management, and data integrations between Adobe and select partners. Data can be exported for external purposes or integrated with other Adobe products to enrich existing datasets. Learn more here. https://business.adobe.com/products/analytics/adobe-analytics.html",
+  "functions_claimed": [
+   {
+    "function_id": "ingest",
+    "function": "Data ingest & collection",
+    "evidence": "Collect data to track, analyze, and optimize engagements across online and offline channels, including in-person, call centers, mail, online, and mobile."
+   },
+   {
+    "function_id": "connectors",
+    "function": "Connectors & source integration",
+    "evidence": "Data can be exported for external purposes or integrated with other Adobe products to enrich existing datasets."
+   },
+   {
+    "function_id": "query_search",
+    "function": "Query & search",
+    "evidence": "An array of functionality is available, including custom dashboards, ad-hoc analytics, Microsoft Excel integration, bulk data import, data enrichment, artificial intelligence (AI)-powered predictive models, advanced data visualizations, tag management, and data integrations between Adobe and select partners."
+   },
+   {
+    "function_id": "transform",
+    "function": "Data transformation & preparation",
+    "evidence": "Adobe Analytics provides real-time analytics and actionable insight modeling across customer journeys."
+   },
+   {
+    "function_id": "visualization",
+    "function": "Visualization & dashboards",
+    "evidence": "An array of functionality is available, including custom dashboards, ad-hoc analytics, Microsoft Excel integration, bulk data import, data enrichment, artificial intelligence (AI)-powered predictive models, advanced data visualizations, tag management, and data integrations between Adobe and select partners."
+   },
+   {
+    "function_id": "reporting",
+    "function": "Reporting",
+    "evidence": "Start with award-winning web analytics that ingests targeted website traffic and executes robust reporting and analytics  based on customizable configurations."
+   },
+   {
+    "function_id": "statistics_ml",
+    "function": "Statistical / predictive / ML & AI analysis",
+    "evidence": "An array of functionality is available, including custom dashboards, ad-hoc analytics, Microsoft Excel integration, bulk data import, data enrichment, artificial intelligence (AI)-powered predictive models, advanced data visualizations, tag management, and data integrations between Adobe and select partners."
+   },
+   {
+    "function_id": "realtime",
+    "function": "Real-time & streaming analytics",
+    "evidence": "Adobe Analytics provides real-time analytics and actionable insight modeling across customer journeys."
+   },
+   {
+    "function_id": "export",
+    "function": "Data export",
+    "evidence": "Data can be exported for external purposes or integrated with other Adobe products to enrich existing datasets."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1832869359/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1832869359"
+ },
+ {
+  "fork_id": "FR2322741394",
+  "vendor": "AgileRank",
+  "product": "Agile RTLS Suite (A-RTLS)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Analytics",
+  "description": "Agile Real Time Location System (A-RTLS) Suite is delivered as a Li-SaaS offering using a multi-tenant Government-only cloud computing environment. It is available to federal, state, local, and tribal governments. The Agile RTLS Suite (A-RTLS) solution utilizes the RTLS technicians\u2019 phones/scanner, the asset\u2019s barcode and the asset tag are scanned to capture the association RTLS needs to support asset tracking and inventory. The tagging application sends the association to the customer\u2019s Real Time Location System. The mobile application also supports removing a tag to stop tracking an asset, battery status, and testing.",
+  "functions_claimed": [
+   {
+    "function_id": "realtime",
+    "function": "Real-time & streaming analytics",
+    "evidence": "Agile Real Time Location System (A-RTLS) Suite is delivered as a Li-SaaS offering using a multi-tenant Government-only cloud computing environment."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2322741394/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2322741394"
+ },
+ {
+  "fork_id": "FR1726637760",
+  "vendor": "American Heart Association, Inc.",
+  "product": "American Heart Association Precision Medicine Platform(AHA-PMP)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Low",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Analytics",
+  "description": "The AHA's Precision Medicine Platform is a cloud-based data resource that revolutionizes how the research community accelerates solutions for cardiovascular diseases. It provides unprecedented, open access to cardiovascular data sets, cutting-edge tools and cloud-based workspaces for collaboration. Researchers can search, filter, and unlock the data that matters most to their work - allowing them to find new solutions for big health improvements faster than ever before. The Precision Medicine Platform is powered by Amazon Web Services and is a strategic initiative of the American Heart Association.",
+  "functions_claimed": [
+   {
+    "function_id": "query_search",
+    "function": "Query & search",
+    "evidence": "Researchers can search, filter, and unlock the data that matters most to their work - allowing them to find new solutions for big health improvements faster than ever before."
+   },
+   {
+    "function_id": "collaboration",
+    "function": "Sharing & collaboration",
+    "evidence": "It provides unprecedented, open access to cardiovascular data sets, cutting-edge tools and cloud-based workspaces for collaboration."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1726637760/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1726637760"
+ },
+ {
+  "fork_id": "FR2425374322",
+  "vendor": "BP Pulse",
+  "product": "Omega Charge Management System",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Analytics",
+  "description": "Omega Charge Management software (CMS) automatically schedules EV charging during times when energy costs are lower while accounting for operational requirements. It comes with 99.9% platform uptime to help keep fleet operations running smoothly. This means fleet operators can spend less time managing charging while reducing energy costs. \n \nOmega provides complete visibility of EV fleet charging operations and sends real-time critical alerts all from one dashboard, maximizing vehicle uptime. Omega can also integrate with any vehicle, EVSE, telematics, or fleet management tool, so operators can use what works best for their fleet now and in future. This includes chargers from all major OEMs using Open Charge Point Protocol (OCPP) v1.6x. \n \nOur experts can also guide fleets through the electrification journey, from site design and charger installation to ongoing operations and maintenance. This includes a range of EV charging stations to suit specific fleet needs. Fleets can also pair this with our Charging-as-a-Service (CaaS) model to bundle CapEx costs into one monthly Opex, reducing upfront investment and making it easier to manage costs long-term.\u200b",
+  "functions_claimed": [
+   {
+    "function_id": "connectors",
+    "function": "Connectors & source integration",
+    "evidence": "Omega can also integrate with any vehicle, EVSE, telematics, or fleet management tool, so operators can use what works best for their fleet now and in future."
+   },
+   {
+    "function_id": "visualization",
+    "function": "Visualization & dashboards",
+    "evidence": "Omega provides complete visibility of EV fleet charging operations and sends real-time critical alerts all from one dashboard, maximizing vehicle uptime."
+   },
+   {
+    "function_id": "realtime",
+    "function": "Real-time & streaming analytics",
+    "evidence": "Omega provides complete visibility of EV fleet charging operations and sends real-time critical alerts all from one dashboard, maximizing vehicle uptime."
+   },
+   {
+    "function_id": "alerts_monitoring",
+    "function": "Alerts, monitoring & detection",
+    "evidence": "Omega provides complete visibility of EV fleet charging operations and sends real-time critical alerts all from one dashboard, maximizing vehicle uptime."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2425374322/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2425374322"
+ },
+ {
+  "fork_id": "FR2328145448",
+  "vendor": "Chargie, LLC",
+  "product": "Electric Vehicle Infrastructure Platform for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Analytics",
+  "description": "Chargie designs, installs and operates an Electronic Vehicle (EV) charging infrastructure system and management platform providing seamless management of charging stations and sessions.  Chargie platforms require no integration with agency networks, systems or data.  The Chargie platform ensures agency EV fleet and facilities managers the ability to maintain management and visibility of EV charging stations, sessions and reporting via a web-based portal in addition to a seamless charging experience for drivers with the Chargie mobile device app or RFID tag.",
+  "functions_claimed": [
+   {
+    "function_id": "connectors",
+    "function": "Connectors & source integration",
+    "evidence": "Chargie platforms require no integration with agency networks, systems or data."
+   },
+   {
+    "function_id": "reporting",
+    "function": "Reporting",
+    "evidence": "The Chargie platform ensures agency EV fleet and facilities managers the ability to maintain management and visibility of EV charging stations, sessions and reporting via a web-based portal in addition to a seamless charging experience for drivers with the Chargie mobile device app or RFID tag."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2328145448/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2328145448"
+ },
+ {
+  "fork_id": "FR1930046270",
+  "vendor": "EnergyCAP LLC.",
+  "product": "EnergyCAP",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Analytics",
+  "description": "Our award-winning EnergyCAP software is the foundation of a comprehensive utility bill accounting and energy management program. Serving as the hub for your vendor, utility, and facility data, EnergyCAP\u2019s powerful analysis and reporting functions deliver value across energy management, sustainability, accounting, and building operations. EnergyCAP is proven to streamline operations, enable in-depth analysis, and deliver long-term energy and cost savings.\n\nEnergyCAP\u2019s software and services are available on the GSA Advantage pricing schedule.",
+  "functions_claimed": [
+   {
+    "function_id": "reporting",
+    "function": "Reporting",
+    "evidence": "Serving as the hub for your vendor, utility, and facility data, EnergyCAP\u2019s powerful analysis and reporting functions deliver value across energy management, sustainability, accounting, and building operations."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1930046270/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1930046270"
+ },
+ {
+  "fork_id": "FR2604952026",
+  "vendor": "Google",
+  "product": "Gemini for Government",
+  "service_model": [
+   "SaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Low",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Analytics",
+  "description": "Gemini for Government is delivered as a Public Cloud offering utilizing a multi-tenant Artificial Intelligence (AI) and Machine Learning (ML) cloud computing environment, spanning both Platform as a Service (PaaS) and Software as a Service (SaaS) models.\nIt is available to the federal, state, local, and tribal governments, as well as research institutions, federal contractors, and government contractors, to enable secure and responsible application of generative AI for public sector missions.",
+  "functions_claimed": [
+   {
+    "function_id": "statistics_ml",
+    "function": "Statistical / predictive / ML & AI analysis",
+    "evidence": "Gemini for Government is delivered as a Public Cloud offering utilizing a multi-tenant Artificial Intelligence (AI) and Machine Learning (ML) cloud computing environment, spanning both Platform as a Service (PaaS) and Software as a Service (SaaS) models."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2604952026/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2604952026"
+ },
+ {
+  "fork_id": "FR1728349078",
+  "vendor": "Hootsuite",
+  "product": "Hootsuite Enterprise",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Analytics",
+   "Customer Relations Management (CRM)",
+   "Marketing & Sales",
+   "Media"
+  ],
+  "deadramp_category": "Analytics",
+  "description": "Hootsuite is an enterprise social media management platform used by governments and agencies to engage with citizens, manage crisis communications, and deliver services and information via social media. By managing all social media activity through a single, secure platform, agencies with large and distributed teams can engage directly with citizens across public and private social channels without compromising control over messaging and access. Hootsuite's real-time social listening capabilities, integrations with compliance partners, and ecosystem of more than 200 connected applications help agencies monitor and measure public sentiment, stay compliant with FOIA and other public records laws, and integrate social media across their organization.",
+  "functions_claimed": [
+   {
+    "function_id": "connectors",
+    "function": "Connectors & source integration",
+    "evidence": "Hootsuite's real-time social listening capabilities, integrations with compliance partners, and ecosystem of more than 200 connected applications help agencies monitor and measure public sentiment, stay compliant with FOIA and other public records laws, and integrate social media across their organization."
+   },
+   {
+    "function_id": "realtime",
+    "function": "Real-time & streaming analytics",
+    "evidence": "Hootsuite's real-time social listening capabilities, integrations with compliance partners, and ecosystem of more than 200 connected applications help agencies monitor and measure public sentiment, stay compliant with FOIA and other public records laws, and integrate social media across their organization."
+   },
+   {
+    "function_id": "alerts_monitoring",
+    "function": "Alerts, monitoring & detection",
+    "evidence": "Hootsuite's real-time social listening capabilities, integrations with compliance partners, and ecosystem of more than 200 connected applications help agencies monitor and measure public sentiment, stay compliant with FOIA and other public records laws, and integrate social media across their organization."
+   },
+   {
+    "function_id": "text_nlp",
+    "function": "Text & natural-language analytics",
+    "evidence": "Hootsuite's real-time social listening capabilities, integrations with compliance partners, and ecosystem of more than 200 connected applications help agencies monitor and measure public sentiment, stay compliant with FOIA and other public records laws, and integrate social media across their organization."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1728349078/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1728349078"
+ },
+ {
+  "fork_id": "FR2417469779",
+  "vendor": "IBM",
+  "product": "IBM Envizi ESG Reporting",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Analytics",
+  "description": "IBM Envizi ESG Suite is an ESG reporting software from  IBM\u00ae Envizi\u2122 integrates a suite of products that help you capture and manage all your ESG data in a single system of record and report with confidence knowing that your data is auditable and finance-grade.\nIBM Envizi ESG Suite is a cloud based, SaaS solution that consolidates enterprise ESG data for analysis and reporting. It simplifies data collection by capturing and tracking ESG and sustainability program data such as forecasts, timelines, cash flow, objectives and deliverables in a central system. It provides a data management foundation designed to create a single, trusted data source for all ESG reporting and opportunity identification. Key features include automatic data capture, data normalizations, data structuring and hierarchy management, data audits and health checks.",
+  "functions_claimed": [
+   {
+    "function_id": "ingest",
+    "function": "Data ingest & collection",
+    "evidence": "It simplifies data collection by capturing and tracking ESG and sustainability program data such as forecasts, timelines, cash flow, objectives and deliverables in a central system."
+   },
+   {
+    "function_id": "connectors",
+    "function": "Connectors & source integration",
+    "evidence": "It provides a data management foundation designed to create a single, trusted data source for all ESG reporting and opportunity identification."
+   },
+   {
+    "function_id": "reporting",
+    "function": "Reporting",
+    "evidence": "IBM Envizi ESG Suite is an ESG reporting software from  IBM\u00ae Envizi\u2122 integrates a suite of products that help you capture and manage all your ESG data in a single system of record and report with confidence knowing that your data is auditable and finance-grade."
+   },
+   {
+    "function_id": "statistics_ml",
+    "function": "Statistical / predictive / ML & AI analysis",
+    "evidence": "It simplifies data collection by capturing and tracking ESG and sustainability program data such as forecasts, timelines, cash flow, objectives and deliverables in a central system."
+   },
+   {
+    "function_id": "audit",
+    "function": "Audit logging & trails",
+    "evidence": "IBM Envizi ESG Suite is an ESG reporting software from  IBM\u00ae Envizi\u2122 integrates a suite of products that help you capture and manage all your ESG data in a single system of record and report with confidence knowing that your data is auditable and finance-grade."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2417469779/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2417469779"
+ },
+ {
+  "fork_id": "FR2020767053",
+  "vendor": "Level Access",
+  "product": "Accessibility Management Platform (AMP)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Analytics",
+  "description": "AMP is an accessibility management platform that provides organizations everything they need to effectively manage Section 508 compliance and address digital accessibility across the organization and development lifecycle. With AMP, organizations have everything they need to efficiently build, test, and maintain accessible software and user experiences. This includes the most advanced accessibility test engine available via a smooth workflow, intelligent reporting, convenient and contextual best practices, as well as an extensive training course library.",
+  "functions_claimed": [
+   {
+    "function_id": "reporting",
+    "function": "Reporting",
+    "evidence": "This includes the most advanced accessibility test engine available via a smooth workflow, intelligent reporting, convenient and contextual best practices, as well as an extensive training course library."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2020767053/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2020767053"
+ },
+ {
+  "fork_id": "FR2210666939",
+  "vendor": "Melissa",
+  "product": "Melissa GovCloud Address Suite",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Analytics",
+  "description": "Web Service leveraging postal authorities (USPS, Canada Post, Royal Mail, EIRCODE) to Verify, Standardize, and Correct mailing addresses. Additional functions for move update for US residents and businesses are available within the service leveraging USPS\u00ae NCOALink.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2210666939/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2210666939"
+ },
+ {
+  "fork_id": "FR2604643715",
+  "vendor": "Perplexity AI",
+  "product": "Perplexity Enterprise and API Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Low",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Analytics",
+  "description": "Perplexity's Enterprise platform provides agency users with access to leading frontier AI models (including OpenAI GPT, Anthropic Claude, Google Gemini, Perplexity Sonar, and more). The platform supports research and analysis across internal agency data and public sources through an intuitive conversational interface. Built on Perplexity's exabyte-scale proprietary knowledge index, responses are grounded in verifiable sources, providing trustworthy, transparent, and reliable information to users.\r\nThrough Perplexity's Search API, developers may also access Perplexity's exabyte-scale knowledge index to provide web-grounded answers in real time. The index tracks over 300bn unique URLs and processes hundreds of millions of pages per day, providing agencies a durable foundation for real time web retrieval.\r\nPerplexity's features include robust security and compliance measures such as SAML SSO, customizable access controls and data retention, comprehensive administrative management, audit logs, and dedicated priority support. Perplexity Enterprise minimizes the risks inherent in single-model solutions, with Perplexity\u2019s model-agnostic architecture providing greater uptime and empowering IT administrators to enable and disable specific models to enforce policy compliance.",
+  "functions_claimed": [
+   {
+    "function_id": "query_search",
+    "function": "Query & search",
+    "evidence": "Through Perplexity's Search API, developers may also access Perplexity's exabyte-scale knowledge index to provide web-grounded answers in real time."
+   },
+   {
+    "function_id": "statistics_ml",
+    "function": "Statistical / predictive / ML & AI analysis",
+    "evidence": "Perplexity's Enterprise platform provides agency users with access to leading frontier AI models (including OpenAI GPT, Anthropic Claude, Google Gemini, Perplexity Sonar, and more)."
+   },
+   {
+    "function_id": "realtime",
+    "function": "Real-time & streaming analytics",
+    "evidence": "Through Perplexity's Search API, developers may also access Perplexity's exabyte-scale knowledge index to provide web-grounded answers in real time."
+   },
+   {
+    "function_id": "api",
+    "function": "API access",
+    "evidence": "Through Perplexity's Search API, developers may also access Perplexity's exabyte-scale knowledge index to provide web-grounded answers in real time."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Access control & authentication",
+    "evidence": "Perplexity's features include robust security and compliance measures such as SAML SSO, customizable access controls and data retention, comprehensive administrative management, audit logs, and dedicated priority support."
+   },
+   {
+    "function_id": "audit",
+    "function": "Audit logging & trails",
+    "evidence": "Perplexity's features include robust security and compliance measures such as SAML SSO, customizable access controls and data retention, comprehensive administrative management, audit logs, and dedicated priority support."
+   },
+   {
+    "function_id": "archiving",
+    "function": "Archiving & retention",
+    "evidence": "Perplexity's features include robust security and compliance measures such as SAML SSO, customizable access controls and data retention, comprehensive administrative management, audit logs, and dedicated priority support."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2604643715/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2604643715"
+ },
+ {
+  "fork_id": "FR2533435144",
+  "vendor": "Syneren Technologies Corporation",
+  "product": "Configurable Case Management Application Platform (CMAP)",
+  "service_model": [
+   "PaaS",
+   "SaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "Low",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Analytics",
+   "Collaboration",
+   "Contact Center",
+   "Content Management System (CMS)",
+   "Customer Relations Management (CRM)",
+   "Data Management",
+   "Development Tools",
+   "Human Resources",
+   "Law Enforcement"
+  ],
+  "deadramp_category": "Analytics",
+  "description": "Syneren has developed the Configurable Case Management Application Platform (CMAP) which is a powerful, no-code/low-code platform with AI/ML, that streamlines systems from request submission to approval with real-time insights, custom reports, and smart navigation tools for effortless control. \n\nIt is a completely configurable Microservices architecture-based solution with a robust, secure and scalable software framework.\n\nCMAP provides to the agencies an AI/ML, RPA chatbot integrated business process automation and low-code, no-code platform to deploy modernized applications at the speed of the mission. CMAP offers Platform-as-a-Service (PaaS) and Software-as-a-Service (SaaS) functionality which empowers client organizations to seamlessly design, automate, track, analyze and report on their mission critical operations, while meeting with stringent FedRAMP security standards. CMAP significantly increases efficiency, productivity and fosters collaboration and transparency while reducing manual tasks. CMAP can be used to efficiently build, enhance and maintain applications in various use cases including law enforcement, finance, logistics, contracts, acquisitions, case management, human resources, IT Service Management, etc.",
+  "functions_claimed": [
+   {
+    "function_id": "reporting",
+    "function": "Reporting",
+    "evidence": "Syneren has developed the Configurable Case Management Application Platform (CMAP) which is a powerful, no-code/low-code platform with AI/ML, that streamlines systems from request submission to approval with real-time insights, custom reports, and smart navigation tools for effortless control."
+   },
+   {
+    "function_id": "statistics_ml",
+    "function": "Statistical / predictive / ML & AI analysis",
+    "evidence": "Syneren has developed the Configurable Case Management Application Platform (CMAP) which is a powerful, no-code/low-code platform with AI/ML, that streamlines systems from request submission to approval with real-time insights, custom reports, and smart navigation tools for effortless control."
+   },
+   {
+    "function_id": "realtime",
+    "function": "Real-time & streaming analytics",
+    "evidence": "Syneren has developed the Configurable Case Management Application Platform (CMAP) which is a powerful, no-code/low-code platform with AI/ML, that streamlines systems from request submission to approval with real-time insights, custom reports, and smart navigation tools for effortless control."
+   },
+   {
+    "function_id": "collaboration",
+    "function": "Sharing & collaboration",
+    "evidence": "CMAP significantly increases efficiency, productivity and fosters collaboration and transparency while reducing manual tasks."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2533435144/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2533435144"
+ },
+ {
+  "fork_id": "FR2312052740",
+  "vendor": "VLogic Systems, Inc.",
+  "product": "VLogicFM",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Analytics",
+  "description": "The VLogicFM\u00ae system is designed to provide users with real-time information about facilities that are managed within the system. \r\n\r\nSystem Function or Purpose\r\nThe VLogicFM system provides users with an overview of facilities usage as well as output data from sensors installed within the various facilities (e.g., motion, temperature, and humidity sensors). The VLogicFM system achieves this goal through the use of multiple modules that end-users can access via the VLogicFM Graphic User Interface (GUI). VLogicFM is composed of the following modules.\r\n\r\nAdministration Module\r\nThe Administration module provides a set of tools and utilities that allow administrators to manage user accounts and credentials, set up locations properties such as Sites, Buildings and Floors, and manage overall Access Control. Reports of background data and a Logbook of the activities in all modules by all users are also included in the Administration module. This module is accessible only by Administrators.\r\n\r\nAs-Builts Module\r\nThe VLogicFM As Built module provides a secure cloud-based repository of master as-builts CAD drawings, organized by site, building, floor and discipline. It facilitates sharing of drawings with professionals like engineers, construction managers, project managers etc. Stakeholders with access privileges can collaborate my notating ideas and comments right on the drawings for later discussion and decision-making. The As-Builts module also provides for drawings version control management, to keep track of all drawing iterations, and maintain an archive of all past versions.\r\n\r\nAssets Module\r\nThe VLogicFM Assets module provides a repository to store an inventory of facility assets. In addition, this module maps these assets to their location on facility floor plan drawings. This allows the user to not only list specific assets but also mark asset locations right on the CAD floor plan drawings\u2014rapid identification of an asset AND its floor plan location simultaneously. The Assets module lets you add asset attributes, documentation, and attach asset pictures. Finally, you can also conduct asset audits using the companion VL Audit Android/iOS app for scanning asset and room bar/QR codes.\r\n\r\nCapital Asset Inventory (CAI) Module\r\nEach VA Medical Center is obligated to periodically submit a Capital Asset Inventory (CAI) report to its VISN office and ultimately to VA Central Office. Part of this VA report includes over 90 specific facility-related CAI space drivers that must be assigned to every space in the facility. The VLogicFM CAI module was custom-made specifically for the VA and includes all of these mandatory CAI space drivers. Users can assign these CAI space drivers to every space in the facility. This allows users to leverage VLogicFM to rapidly generate facility-related CAI reports for use in their periodic CAI submissions. What used to take weeks of manual effort can now be done in minutes.\r\n\r\nEmployee Module\r\nThe Employee Module manages assignments of employee lists to specific spaces on the CAD floor plan drawings by role/title or name. This module allows a facility to show how different organizations are stacked in the facility and also provides tools for moving employee room assignments across the facility.\r\n\r\nFire and Life Safety Module\r\nThe Fire and Life Safety Module facilitate organized documentation of the Fire Protection system linking riser diagrams, floor plan drawings and any other available documents. Connectivity information and other details required for maintenance of the system can be attached to the components and fixtures, which can be viewed in the context of the floor plan drawing. Datasheets, photographs, notes, etc. can be attached to any component of the system. Locating components like Fire Alarm Control Panel, Smoke Detector, Pressure Gauge, etc. can be done through simple search and report options.\r\n\r\nPlan Room Module\r\nThe Plan Room is a virtual library for storing digital facility drawings and related files. The module supports up to 70+ file formats. Customer administrators can set access permissions at the user level. Users can search the documents/drawings using keyword and advanced search options and download the documents for which they have access permissions.\r\n\r\nReal Property Module\r\nThe Real Property Module is intended for Tenants, Landlords and Brokers. It enables Facility Managers to keep track of their leased spaces and manage their leases effectively. This module lets users manage lease details such as Lease Type, Lease Property Type, Lease Category, Execution Date, Commencement Date, Expiry Date, Landlord/Tenant name, Lease Area and any other information that needs to be associated with the lease.\r\n\r\nScheduling Module\r\nThe Scheduling module is a robust room and desk booking/reservation system that enables everything from conference room reservations to hot desking bookings for hybrid work environments. Users can search for rooms they want to schedule by capacity, location, and even what amenities are provided in the room (AV equipment, white board, etc.). A check-in system is also deployed to mitigate against users overbooking spaces.\r\n\r\nSpace Module\r\nThe Space module is at the core of VLogicFM\u2019s space management capabilities. The module pairs a powerful cloud-based MS SQL database with accurate CAD drawings, also stored on the same cloud repository. The combination of these two resources gives users the power to not only locate lists of rooms and room attributes, but also run distribution reports that colorize different rooms by Service Line / Department or other attributes. The Space module also provides the user with a range of reporting options to gauge trends, usable and chargeable areas and cost per square foot.\r\n\r\nTracking Module\r\nThe Tracking module uses IoT-based sensors installed in the facility to render objective occupancy data in real time. This module is currently used by VA users to assess occupancy trends for use cases such as space planning and load balancing / utilization of patient exam rooms between different service lines, clinics and sub-clinics.\r\n\r\nUtilities Module\r\nThe Utilities Module facilitates organized documentation of the Utilities Systems linking riser diagrams, floor plan drawings and any other available documents. Connectivity information and other details required for maintenance of the utility system can be linked to the components and fixtures. This allows users to display how parts of these systems are connected to one another in the context of the floor plan drawing. Data sheets, photographs, notes, etc. can be attached to any component of the system to facilitate easy maintenance. Locating components like Flow Control Valve, Smoke Detector, Pressure Gauge, etc. can be done through simple search. Users see lists of components next to these same components blinking on the CAD floor plan drawings.\r\n\r\nWork Order Module\r\nThe Work Order module can manage scheduled preventive maintenance activities as well as ad-hoc work request-based service activities. Work orders are generated based on previously defined PM schedules, or other service requests from users. Work orders contain information about a maintenance activity, such as where and how it is to be done, who is supposed to do it, and the supplies needed to complete the task. They keep track of the maintenance activities performed, time taken and cost information that is used to generate reports for planning and analysis.",
+  "functions_claimed": [
+   {
+    "function_id": "storage",
+    "function": "Data storage / warehouse / lake",
+    "evidence": "As-Builts Module \nThe VLogicFM As Built module provides a secure cloud-based repository of master as-builts CAD drawings, organized by site, building, floor and discipline."
+   },
+   {
+    "function_id": "query_search",
+    "function": "Query & search",
+    "evidence": "can be done through simple search and report options."
+   },
+   {
+    "function_id": "visualization",
+    "function": "Visualization & dashboards",
+    "evidence": "The VLogicFM system achieves this goal through the use of multiple modules that end-users can access via the VLogicFM Graphic User Interface (GUI)."
+   },
+   {
+    "function_id": "reporting",
+    "function": "Reporting",
+    "evidence": "Reports of background data and a Logbook of the activities in all modules by all users are also included in the Administration module."
+   },
+   {
+    "function_id": "realtime",
+    "function": "Real-time & streaming analytics",
+    "evidence": "The VLogicFM\u00ae system is designed to provide users with real-time information about facilities that are managed within the system."
+   },
+   {
+    "function_id": "export",
+    "function": "Data export",
+    "evidence": "Users can search the documents/drawings using keyword and advanced search options and download the documents for which they have access permissions."
+   },
+   {
+    "function_id": "collaboration",
+    "function": "Sharing & collaboration",
+    "evidence": "Stakeholders with access privileges can collaborate my notating ideas and comments right on the drawings for later discussion and decision-making."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Access control & authentication",
+    "evidence": "Administration Module \nThe Administration module provides a set of tools and utilities that allow administrators to manage user accounts and credentials, set up locations properties such as Sites, Buildings and Floors, and manage overall Access Control."
+   },
+   {
+    "function_id": "audit",
+    "function": "Audit logging & trails",
+    "evidence": "Finally, you can also conduct asset audits using the companion VL Audit Android/iOS app for scanning asset and room bar/QR codes."
+   },
+   {
+    "function_id": "archiving",
+    "function": "Archiving & retention",
+    "evidence": "The As-Builts module also provides for drawings version control management, to keep track of all drawing iterations, and maintain an archive of all past versions."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2312052740/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2312052740"
+ },
+ {
+  "fork_id": "FR2502224058",
+  "vendor": "zLink, Inc.",
+  "product": "zLinkFM",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Low",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Analytics",
+   "Collaboration",
+   "Communication",
+   "Data Management",
+   "Finance",
+   "Fleet Management",
+   "Health & Wellness",
+   "Operations Management",
+   "Storage"
+  ],
+  "deadramp_category": "Analytics",
+  "description": "zLinkFM is a cloud-based Software as a Service (SaaS) platform that provides comprehensive, scalable, and configurable solutions for facility management, asset management, space management, and maintenance operations. The system is delivered in a multi-tenant Public Cloud environment, leveraging secure, resilient infrastructure to serve a wide range of government and contractor clients.\nzLinkFM is designed to support the operational and regulatory needs of federal, state, and local government agencies, research institutions, federal contractors, and government-affiliated organizations.\nzLinkFM is a secure, enterprise-grade IWMS/CAFM/CMMS solution that helps organizations efficiently manage facilities, assets, and operations at scale.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2502224058/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2502224058"
+ }
+]

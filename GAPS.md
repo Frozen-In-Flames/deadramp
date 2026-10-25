@@ -94,6 +94,20 @@ Extended families, specified in groups/accounting-l2/UNION-SPEC.md, not implemen
 
 Platform note: encryption is TLS when configured; at rest is deployment-layer. Documented wording gap (not papered over): no sibling description says "general ledger," "double-entry," "payable," or "receivable"; the double-entry journal is in the core as the defining mechanism of the accounting_core family (8 siblings), and standalone AP/AR modules were not invented.
 
+## Group 7 — Analytics L1 (16 forks)
+
+Extended functions, specified in groups/analytics-l1/UNION-SPEC.md, not implemented (8):
+- [ ] open — Real-time / streaming (8 of 16 — joint-largest family in this group, its biggest gap)
+- [ ] open — Proprietary-source connectors (5) — core covers open CSV/JSON only
+- [ ] open — Predictive ML, remainder of the statistics/ML family (5)
+- [ ] open — Alerts / monitoring (3)
+- [ ] open — Collaboration (3)
+- [ ] open — Archiving (2)
+- [ ] open — Transformation (1)
+- [ ] open — Text / NLP (1)
+
+Platform-layer, gap-listed not claimed: encryption at rest (deployment layer); production identity/authenticator strength (demo identities are hooks; IA-2 stays with the embedding organization); TLS only when configured. Tier precision recorded in the spec: the union of Low and LI-SaaS baselines is NIST SP 800-53 Low (LI-SaaS is a tailored subset, adds nothing); audit traces to the AU family on the FedRAMP Low side only, because FAR 52.204-21 carries no audit practice; Moderate/High apparatus was deliberately not inherited downward. Seven taxonomy functions (geospatial, governance, encryption, KPI, self-service BI, scheduling, media) are claimed by zero siblings in this group and are absent from its union entirely.
+
 ## Later groups
 
 Each group appends its section here when it ships.
