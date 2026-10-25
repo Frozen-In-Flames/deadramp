@@ -550,6 +550,20 @@ Extended functions, specified in groups/finance-l2/UNION-SPEC.md, not implemente
 
 Platform-layer: encryption at rest is deployment-layer (TLS when configured); multi-tenancy (one sibling describes its own multi-tenant delivery; single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: the two siblings share zero claimed families — the union is two half-domains (earned-wage finance; group-travel finance) over one shared records substrate, money in integer cents only, disbursements recorded and never executed.
 
+## Group 34 — Law Enforcement L2 (2 forks)
+
+Extended functions, specified in groups/law-enforcement-l2/UNION-SPEC.md, not implemented:
+- [ ] open — The legal corpora themselves (primary / secondary law content databases and practical-guidance content: content, editorial maintenance, licensing)
+- [ ] open — Citation-validation engines (editorial systems that determine treatment; the core records a caller-supplied treatment and determines none)
+- [ ] open — Editorial enhancement systems (headnotes, taxonomy assignment, enrichment pipelines)
+- [ ] open — Corpus search & relevance engines (full-text indexing / ranking over the legal corpus; the core searches registry metadata only)
+- [ ] open — AI/ML research assistance (0 claims in these descriptions; named for union completeness)
+- [ ] open — Document content storage, rendering & redaction (the registry holds metadata + checksums only, by the privacy rule)
+
+Category-discipline exclusions (0 claims, not built): surveillance, facial recognition, predictive policing, real-time intelligence feeds. Named absences (unclaimed, not built, not gaps): incident / case management, evidence management & chain of custody, criminal records / RMS, investigative case files — neither sibling is an operational law-enforcement platform; both are legal research platforms for government attorneys, and the core follows the claims.
+
+Platform-layer: encryption at rest is deployment-layer (TLS when configured); single-tenant reference deployment; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Privacy rule is structural: entity key sets are pinned by tests, smuggled fields are rejected by the store signatures, and search queries and annotation notes are stored as digests only.
+
 ## Later groups
 
 Each group appends its section here when it ships.

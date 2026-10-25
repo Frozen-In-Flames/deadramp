@@ -1,0 +1,105 @@
+[
+ {
+  "fork_id": "FR2510634052",
+  "vendor": "LexisNexis Legal and Professional",
+  "product": "Lexis+\u00ae for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Law Enforcement",
+  "description": "Lexis+\u00ae for Government is a legal research solution built specifically for attorneys and legal professionals at government agencies.   The platform delivers a comprehensive research experience, including primary law, secondary sources, Shepard\u2019s\u00ae citation validation, and document upload and review capabilities.   Attorneys can save, annotate, share and collaborate on research documents and searches with colleagues and stakeholders, while maintaining the highest levels of security and compliance required for sensitive legal matters.    Lexis+ for Government allows federal government attorneys to work more productively and effectively, freeing up more time for high-value work.",
+  "functions_claimed": [
+   {
+    "function_id": "legal_research",
+    "function": "Legal research corpus (primary & secondary law)",
+    "evidence": "The platform delivers a comprehensive research experience, including primary law, secondary sources, Shepard\u2019s\u00ae citation validation, and document upload and review capabilities."
+   },
+   {
+    "function_id": "legal_search",
+    "function": "Legal search tools",
+    "evidence": "Attorneys can save, annotate, share and collaborate on research documents and searches with colleagues and stakeholders, while maintaining the highest levels of security and compliance required for sensitive legal matters."
+   },
+   {
+    "function_id": "citation_validation",
+    "function": "Citation validation",
+    "evidence": "The platform delivers a comprehensive research experience, including primary law, secondary sources, Shepard\u2019s\u00ae citation validation, and document upload and review capabilities."
+   },
+   {
+    "function_id": "document_management",
+    "function": "Document management (upload, review, document features)",
+    "evidence": "The platform delivers a comprehensive research experience, including primary law, secondary sources, Shepard\u2019s\u00ae citation validation, and document upload and review capabilities."
+   },
+   {
+    "function_id": "collaboration",
+    "function": "Save, annotate, share & collaborate on research",
+    "evidence": "Attorneys can save, annotate, share and collaborate on research documents and searches with colleagues and stakeholders, while maintaining the highest levels of security and compliance required for sensitive legal matters."
+   }
+  ],
+  "source": "GSA FedRAMP Marketplace dataset (cached at ../../raw/data_dump.json), product record joined by FedRAMP ID",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2510634052/"
+ },
+ {
+  "fork_id": "FR2502148523",
+  "vendor": "Thomson Reuters",
+  "product": "Thomson Reuters Legal Research (TR LR)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Law Enforcement",
+  "description": "The Thomson Reuters Legal Research (TR LR) is a legal research solution, for legal professionals in the United States Federal, State, Local and Tribal Agency\u2019s.  TR LR offers customers enhanced security, availability, compliance, and support to help deliver a mission-critical edge in a secure cloud environment.  \n The TR LR suite is designed to facilitate efficient legal research by providing users with powerful search tools, document management features, and secure access controls. The TR LR suite consists of:\nWestlaw US:\n\u2022        Westlaw is an online legal research platform that provides legal professionals in the federal government access to a searchable collection of primary and secondary legal resources, such as statutes, case law, regulations, and legal commentary. The platform includes editorial features, such as the West Key Number System and KeyCite, to help users find, validate, and understand legal information.\n \nPractical Law US:\n\u2022        Overview: Practical Law US is an online legal resource platform integrated with Westlaw, providing practical guidance and resources developed by expert lawyers to assist legal professionals in their work.\n\u2022        Features: Offers expert-written summaries and explanations of legal topics, standard documents, clauses, and precedent documents with integrated drafting notes. These resources are designed to be adaptable, saving time and reducing errors in legal documentation.",
+  "functions_claimed": [
+   {
+    "function_id": "legal_research",
+    "function": "Legal research corpus (primary & secondary law)",
+    "evidence": "\u2022        Westlaw is an online legal research platform that provides legal professionals in the federal government access to a searchable collection of primary and secondary legal resources, such as statutes, case law, regulations, and legal commentary."
+   },
+   {
+    "function_id": "legal_search",
+    "function": "Legal search tools",
+    "evidence": "The TR LR suite is designed to facilitate efficient legal research by providing users with powerful search tools, document management features, and secure access controls."
+   },
+   {
+    "function_id": "citation_validation",
+    "function": "Citation validation",
+    "evidence": "The platform includes editorial features, such as the West Key Number System and KeyCite, to help users find, validate, and understand legal information."
+   },
+   {
+    "function_id": "document_management",
+    "function": "Document management (upload, review, document features)",
+    "evidence": "The TR LR suite is designed to facilitate efficient legal research by providing users with powerful search tools, document management features, and secure access controls."
+   },
+   {
+    "function_id": "editorial_enhancement",
+    "function": "Editorial enhancement (taxonomies & editorial features)",
+    "evidence": "The platform includes editorial features, such as the West Key Number System and KeyCite, to help users find, validate, and understand legal information."
+   },
+   {
+    "function_id": "practice_guidance",
+    "function": "Practice guidance & standard documents",
+    "evidence": "\u2022        Overview: Practical Law US is an online legal resource platform integrated with Westlaw, providing practical guidance and resources developed by expert lawyers to assist legal professionals in their work."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Secure access controls",
+    "evidence": "The TR LR suite is designed to facilitate efficient legal research by providing users with powerful search tools, document management features, and secure access controls."
+   },
+   {
+    "function_id": "hosting_platform",
+    "function": "SaaS / cloud delivery (platform note)",
+    "evidence": "TR LR offers customers enhanced security, availability, compliance, and support to help deliver a mission-critical edge in a secure cloud environment."
+   }
+  ],
+  "source": "GSA FedRAMP Marketplace dataset (cached at ../../raw/data_dump.json), product record joined by FedRAMP ID",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2502148523/"
+ }
+]
