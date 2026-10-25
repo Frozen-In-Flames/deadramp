@@ -33,7 +33,9 @@ Compliance only ratchets one direction. Up.
 
 ## Status
 
-Phase 1 in progress: the complete fork map (registry, CMMC crosswalk, sibling and stack relations) built from public FedRAMP Marketplace data, with an honest coverage note. See CONCEPT.md for the full design.
+Phase 1 complete: the full fork map (781 offerings, 674 vendors) is in forks.json, MAP.md, and crosswalk.md.
+
+Phase 2 in progress, coverage 128 of 781 forks: Group 1, Analytics L2 (128 forks), is spec'd (one sheet per fork, every claim evidenced), merged under the Merge Rule, and its common core is built and tested in groups/analytics-l2/ (136 tests, negative control included). Fourteen extended functions from the group's union spec are specified but not yet implemented; they are listed in the group's UNION-SPEC.md. See CONCEPT.md for the design and PIPELINE.md for the build order.
 
 ## License
 
