@@ -261,6 +261,21 @@ Extended functions, specified in groups/communication-l3/UNION-SPEC.md, not impl
 
 Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP. Spec honesty note: 11 claims across 5 of 6 sheets; one sheet (a cloud delivery platform) is accreditation prose with no taxonomy vocabulary — full text preserved, nothing invented.
 
+## Group 16 — Cybersecurity & Risk Management L1 (5 forks)
+
+Extended functions, specified in groups/cybersecurity-l1/UNION-SPEC.md, not implemented. Claimed in this group:
+- [ ] open — AI/ML-powered analytics & anomaly detection models (2 of 5)
+- [ ] open — Full GRC automation suites beyond the substrate (3 of 5 claim the family; control mapping & assessment records are Core)
+- [ ] open — Automation & orchestration engines (SOAR / workflow) (1)
+- [ ] open — Identity products / IdP (1; the core ships access-control hooks only)
+- [ ] open — Phishing-defense enforcement & simulation / training content (1; DMARC enforcement)
+
+Remainders of Core-substrate families: detection engines & staffed SOC services; vulnerability scanners (ingest / consolidation / tracking is Core).
+
+Carried at 0 claims in this group, named for the final batch and cross-group comparability: network security / segmentation / zero-trust enforcement planes; threat intelligence; backup, recovery & data protection; EDR / XDR agents; insider risk / DLP engines; AppSec testing engines; CSPM / CNAPP / SSPM posture engines; log & telemetry pipelines; secure enclave / VDI for CUI; identity proofing & fraud prevention; endpoint management / patching agents.
+
+Platform-layer: encryption & key management (TLS when a certificate is configured; encryption at rest is deployment-layer, not claimed); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Tier precision: five Core taxonomy families tag 0 claims in this group and are carried as Core by design, recorded in the spec as carried, not claimed; Group 8's High apparatus is explicitly not inherited downward and not claimed.
+
 ## Later groups
 
 Each group appends its section here when it ships.
