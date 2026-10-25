@@ -35,7 +35,7 @@ Compliance only ratchets one direction. Up.
 
 Phase 1 complete: the full fork map (781 offerings, 674 vendors) is in forks.json, MAP.md, and crosswalk.md.
 
-Phase 2 in progress, coverage 185 of 781 forks: Group 1, Analytics L2 (128 forks), and Group 2, Collaboration L2 (57 forks), are spec'd (one sheet per fork, every claim evidenced), merged under the Merge Rule, and their common cores are built and tested in groups/analytics-l2/ (136 tests) and groups/collaboration-l2/ (192 tests), each with a mutation-verified negative control. Fourteen extended functions from the group's union spec are specified but not yet implemented; they are listed in the group's UNION-SPEC.md. See CONCEPT.md for the design and PIPELINE.md for the build order.
+Phase 2 in progress, coverage 239 of 781 forks: Group 1, Analytics L2 (128 forks), Group 2, Collaboration L2 (57 forks), and Group 3, Analytics L3-adjacent (54 forks, the L2 analytics core uplifted to the High baseline), are spec'd (one sheet per fork, every claim evidenced), merged under the Merge Rule, and their common cores are built and tested in groups/analytics-l2/ (136 tests), groups/collaboration-l2/ (192 tests), and groups/analytics-l3/ (183 tests), each with mutation-verified negative controls. Fourteen extended functions from the group's union spec are specified but not yet implemented; they are listed in the group's UNION-SPEC.md. See CONCEPT.md for the design and PIPELINE.md for the build order.
 
 ## License
 
