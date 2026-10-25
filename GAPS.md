@@ -361,6 +361,17 @@ Extended functions, specified in groups/human-resources-l2/UNION-SPEC.md, not im
 
 Platform-layer: single-tenant reference deployment; encryption at rest is deployment-layer (TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Privacy discipline (structural, tested on the record shapes): persons are keyed by opaque caller-supplied references only; no field in any entity can hold a real name, SSN, DOB, salary figure, address, phone, or email. Named absences (0 of 4 claims, verified; not gaps because unclaimed): leave & time-off, policy acknowledgements, payroll execution, background checks, salary / compensation administration, time & attendance.
 
+## Group 22 — Artificial Intelligence (AI) L3-adjacent (3 forks)
+
+- [ ] open — Learned AI/ML inference: real LLMs / ML / NLU / predictive models (3 of 3 claim it; with Group 9's, the final batch's largest single item). The reference responder is a labeled stub, not a substitute.
+- [ ] open — Agentic & automated workflow engines (1)
+- [ ] open — Document processing & generation workloads (0 tagged under the verbatim taxonomy; one sibling's entire domain in prose, recorded as a near-miss, not invented)
+- [ ] open — Analytics, dashboards & reporting (0 in this group; carried from the Group 9 union)
+- [ ] open — Contact center & customer experience (0 in this group; carried from the Group 9 union)
+- [ ] open — Vertical domain applications: AI software-development platform, ML lifecycle development & governance platform, digitization-as-a-service (one sibling each)
+
+Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Platform note: multi-tenancy (1 tagged claim) — single-tenant reference deployment, tenant isolation is deployment-layer; demo identities are hooks, not an IdP. Spec note: 13 of 16 taxonomy functions tag zero claims in this group (short marketing descriptions); the platform functions stay Core under the recorded core-boundary decision, because the Merge Rule carries the L2 union upward whole.
+
 ## Later groups
 
 Each group appends its section here when it ships.
