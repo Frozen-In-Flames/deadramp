@@ -175,6 +175,24 @@ Extended functions, specified in groups/collaboration-l1/UNION-SPEC.md, not impl
 
 Platform-layer: encryption at rest (deployment layer); production identity / authenticator strength (demo identities are hooks; IA-2 stays with the embedding organization); TLS only when configured. Spec honesty note: this group's descriptions are marketing prose, only 15 claims tag across 6 of 10 sheets (four tag nothing), and six Core functions tag zero claims — they stay Core under the recorded core-boundary decision (they define the category and the products presuppose them; the taxonomy was deliberately not re-tuned, preserving cross-group comparability), so all counts are a stated floor. Tier precision: audit traces to AU-2/AU-3 on the FedRAMP Low side only; Group 2's Moderate citations were not imported.
 
+## Group 11 — Communication L2 (10 forks)
+
+Extended functions, specified in groups/communication-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Email security & threat-detection engines (behavioral baselining, detonation, quarantine)
+- [ ] open — AI/ML models and virtual-assistant intelligence (incl. conversational IVR)
+- [ ] open — Voice / telephony media, IVR conversation engines, carrier integration
+- [ ] open — Video / media transport (claimed by 0 of 10 descriptions; named for completeness)
+- [ ] open — Archiving & eDiscovery engines (multi-channel capture, retention/disposition, legal holds, FOIA production)
+- [ ] open — Correspondence / casework depth (incl. inter-organization exchange)
+- [ ] open — Key & certificate lifecycle automation (CA connectors, issuance, deployment)
+- [ ] open — End-to-end encrypted message transport and identity proofing
+- [ ] open — Personnel / asset tracking platform (devices, live location, geofencing)
+- [ ] open — Permits / passes / surveys and payment processing
+- [ ] open — E-signature execution
+- [ ] open — Workflow / BPM engines and reporting / analytics engines beyond the records substrate
+
+Platform-layer: encryption at rest (deployment layer); TLS only when a certificate is configured; multi-tenancy (the build is a single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). The shipped core's dispatch runs through a deterministic reference transport labeled `reference_transport: true` on every receipt; it moves no real messages.
+
 ## Later groups
 
 Each group appends its section here when it ships.

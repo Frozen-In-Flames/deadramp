@@ -1,0 +1,462 @@
+[
+ {
+  "fork_id": "FR2425960757",
+  "vendor": "Abnormal AI",
+  "product": "Abnormal AI for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Communication",
+  "description": "Abnormal AI for Government (Abnormal Gov) is a cloud-native, API-based offering that provides holistic email security for cloud email platforms \u2013 Microsoft365 and Google Workspace, against the full spectrum of email attacks including advanced phishing, fraud, account compromise, supply chain compromise, user-reporting phishing, and more.\r\nThe platform connects via API to analyze thousands of signals from multiple data sets and precisely baseline known behavior of every employee within an organization and every vendor within the supply chain. Autonomous AI models enable Abnormal Gov to detect anomalous activity and stop never-before-seen attacks quickly and accurately. The platform also serves as an AI Security Co-worker by fully automating the triage and remediation of user-reported emails. AI models judge user-reported emails as safe, spam, or malicious and automatically remediate malicious emails across all affected users using AI, eliminating any manual intervention by security analysts. Additionally, AI models automatically learn the behavioral preferences of every employee through their folder movements of graymail and autonomously declutter inboxes from unwanted mail thereby boosting employee productivity.\r\n\r\nAbnormal Gov\u2019s cloud email security product suite includes Inbound Email Security, Email Account Takeover Protection, AI Security Mailbox, Email Security Posture Management, and Email Productivity. The platform leverages a multi-tenant government cloud computing environment and is available for public, federal, state, local, and tribal governments.",
+  "functions_claimed": [
+   {
+    "function_id": "email_security",
+    "function": "Email security, anti-phishing & threat protection",
+    "evidence": "Abnormal AI for Government (Abnormal Gov) is a cloud-native, API-based offering that provides holistic email security for cloud email platforms \u2013 Microsoft365 and Google Workspace, against the full spectrum of email attacks including advanced phishing, fraud, account compromise, supply chain compromise, user-reporting phishing, and more."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML analysis & virtual assistance",
+    "evidence": "Abnormal AI for Government (Abnormal Gov) is a cloud-native, API-based offering that provides holistic email security for cloud email platforms \u2013 Microsoft365 and Google Workspace, against the full spectrum of email attacks including advanced phishing, fraud, account compromise, supply chain compromise, user-reporting phishing, and more."
+   },
+   {
+    "function_id": "messaging",
+    "function": "Email & messaging channels",
+    "evidence": "Abnormal AI for Government (Abnormal Gov) is a cloud-native, API-based offering that provides holistic email security for cloud email platforms \u2013 Microsoft365 and Google Workspace, against the full spectrum of email attacks including advanced phishing, fraud, account compromise, supply chain compromise, user-reporting phishing, and more."
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow & business process automation",
+    "evidence": "The platform also serves as an AI Security Co-worker by fully automating the triage and remediation of user-reported emails."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2425960757/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2425960757"
+ },
+ {
+  "fork_id": "FR2529113288",
+  "vendor": "Archive360 platform",
+  "product": "Archive360 Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Communication",
+  "description": "Archive360 provides a modern archive and governance platform to address the challenge of a growing number of digital communications channels, legal and regulatory record retention, data privacy and security requirements. Compliantly collecting, retaining, and managing growing volumes of data from multiple channels in a timely manner is increasingly important to department and agency missions, and difficult without the proper tools. Archive360\u2019s platform helps manage data consistent with digital record keeping requirements, such as the Federal Records Act, NARA Records Management Rules, and OMB directives on transition to electronic records.  \nArchive360\u2019s solutions enable adoption of the federal government\u2019s Cloud First mandates, Executive Orders as to cloud optimization, and OMB\u2019s directives including M-23-07.  Archive360\u2019s solutions have been successfully deployed and trusted by public sector agencies globally in the U.S., U.K., Canada, and Australia, including numerous components of U.S. security, civilian intelligence, educational, veterans\u2019 agencies as well as individual US States.\nArchive360\u2019s digital communications governance and archiving solution brings together data from common channels and legacy archives into a petabyte-scale platform that: \n\u2022        Ensures that digital communications are captured, governed, and readily accessible to authorized stakeholders\n\u2022        Provides extensive retention and disposition capabilities supporting government and agency records management requirements\n\u2022        Enables data classification across communication and data channels for granular governance controls\n\u2022        Supports file and data archiving use cases\n\u2022        Provides secure, scalable eDiscovery and FOIA-search capabilities through an intuitive user interface\n\u2022        Provides case management, tagging and annotation capabilities for investigations and review and production of data \n\u2022        Delivers cross-system visibility and control over data processing, retention, disposition and legal holds \n\u2022        Ensures data authenticity and chain of custody with a complete audit trail for actions (system and user) within the platform \n\u2022        Cloud-native platform that provides high-levels of data durability, resiliency, and immutability where required\n\u2022        Zero trust security model, which requires specific entitlement grants to access any data. The platform incorporates an entitlement engine, which allows for granular access controls, including restrictions based on role, class of data, functionality\n\u2022        Encryption of all data in motion and at rest, with the option for agency managed encryption keys\n\nSecurity and scalability are paramount for government departments and agencies to achieve their data governance mission.  Archive360 deploys each agency in a dedicated SaaS environment, deployed to their own tenant. As a result, each department, agency or organizational unit has completely segregated data, administrative access, entitlements, and the ability to integrate into their security protocols. \n\nArchive360 is deployed as a cloud-native, microservices architecture. Archive360 can tailor the deployment to specific mission workloads and requirements. This deployment model mitigates data migration or exit risk at the end of a term, since the tenant can be turned over to the department or agency with the resident data.\n\nThroughout the platform, Archive360 maintains an extensive event audit history, supporting a complete chain of custody. This includes data processing, access, changes to configurations and controls, search, disposition, or export, all at an object level. This provides rapid traceability for audit and response purposes, and defensibility of authorized activities. \nSupported digital communication channels include:\n\u2022        SMTP and Journal Based Email\n\u2022        Microsoft M365 and Exchange\n\u2022        Microsoft Teams\n\u2022        Google Workspace\n\u2022        SMS and Mobile Data\n\u2022        FileShare Data\n\u2022        Legacy Email Archives",
+  "functions_claimed": [
+   {
+    "function_id": "messaging",
+    "function": "Email & messaging channels",
+    "evidence": "Supported digital communication channels include:\n\u2022        SMTP and Journal Based Email\n\u2022        Microsoft M365 and Exchange\n\u2022        Microsoft Teams\n\u2022        Google Workspace\n\u2022        SMS and Mobile Data\n\u2022        FileShare Data\n\u2022        Legacy Email Archives"
+   },
+   {
+    "function_id": "archiving_records",
+    "function": "Communications archiving, retention & records management",
+    "evidence": "Archive360 provides a modern archive and governance platform to address the challenge of a growing number of digital communications channels, legal and regulatory record retention, data privacy and security requirements."
+   },
+   {
+    "function_id": "search_ediscovery",
+    "function": "Search, eDiscovery & FOIA",
+    "evidence": "Archive360\u2019s digital communications governance and archiving solution brings together data from common channels and legacy archives into a petabyte-scale platform that: \n\u2022        Ensures that digital communications are captured, governed, and readily accessible to authorized stakeholders\n\u2022        Provides extensive retention and disposition capabilities supporting government and agency records ..."
+   },
+   {
+    "function_id": "correspondence_casework",
+    "function": "Correspondence & casework management",
+    "evidence": "Archive360\u2019s digital communications governance and archiving solution brings together data from common channels and legacy archives into a petabyte-scale platform that: \n\u2022        Ensures that digital communications are captured, governed, and readily accessible to authorized stakeholders\n\u2022        Provides extensive retention and disposition capabilities supporting government and agency records ..."
+   },
+   {
+    "function_id": "secure_transmission",
+    "function": "Secure & encrypted transmission",
+    "evidence": "The platform incorporates an entitlement engine, which allows for granular access controls, including restrictions based on role, class of data, functionality\n\u2022        Encryption of all data in motion and at rest, with the option for agency managed encryption keys\n\nSecurity and scalability are paramount for government departments and agencies to achieve their data governance mission."
+   },
+   {
+    "function_id": "key_certificate",
+    "function": "Key & certificate lifecycle management",
+    "evidence": "The platform incorporates an entitlement engine, which allows for granular access controls, including restrictions based on role, class of data, functionality\n\u2022        Encryption of all data in motion and at rest, with the option for agency managed encryption keys\n\nSecurity and scalability are paramount for government departments and agencies to achieve their data governance mission."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity proofing, login & access control",
+    "evidence": "Archive360\u2019s digital communications governance and archiving solution brings together data from common channels and legacy archives into a petabyte-scale platform that: \n\u2022        Ensures that digital communications are captured, governed, and readily accessible to authorized stakeholders\n\u2022        Provides extensive retention and disposition capabilities supporting government and agency records ..."
+   },
+   {
+    "function_id": "audit",
+    "function": "Audit logging & trails",
+    "evidence": "Archive360\u2019s digital communications governance and archiving solution brings together data from common channels and legacy archives into a petabyte-scale platform that: \n\u2022        Ensures that digital communications are captured, governed, and readily accessible to authorized stakeholders\n\u2022        Provides extensive retention and disposition capabilities supporting government and agency records ..."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2529113288/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2529113288"
+ },
+ {
+  "fork_id": "FR2410560133",
+  "vendor": "BlackOhm",
+  "product": "Omega Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [
+   "Communication",
+   "Fleet Management",
+   "Mobile Device Management (MDM)",
+   "Network Management",
+   "Operations Management"
+  ],
+  "deadramp_category": "Communication",
+  "description": "The BlackOhm Omega Platform is a real-time personnel and asset tracking service consisting of tracking devices and a single pane of glass management interface. Government agencies and entities seeking a FedRAMP certified service can use the Omega Platform to organize, monitor, and manage training exercises and field work in any environment. The Omega Platform provides advanced functionality for situational awareness, including:\r\n\r\n- Real-time and historical location data\r\n\r\n- Personnel-initiated emergency messages and acknowledgements\r\n\r\n- Event driven alerting\r\n\r\n- Configurable boundaries, restricted areas, map overlays, and points of interest\r\n\r\n- After-action reports and analytics",
+  "functions_claimed": [
+   {
+    "function_id": "notifications_alerts",
+    "function": "Notifications, alerting & critical-event communications",
+    "evidence": "The Omega Platform provides advanced functionality for situational awareness, including: \n \n- Real-time and historical location data \n \n- Personnel-initiated emergency messages and acknowledgements \n \n- Event driven alerting \n \n- Configurable boundaries, restricted areas, map overlays, and points of interest \n \n- After-action reports and analytics"
+   },
+   {
+    "function_id": "delivery_verification",
+    "function": "Delivery verification, receipts & acknowledgements",
+    "evidence": "The Omega Platform provides advanced functionality for situational awareness, including: \n \n- Real-time and historical location data \n \n- Personnel-initiated emergency messages and acknowledgements \n \n- Event driven alerting \n \n- Configurable boundaries, restricted areas, map overlays, and points of interest \n \n- After-action reports and analytics"
+   },
+   {
+    "function_id": "messaging",
+    "function": "Email & messaging channels",
+    "evidence": "The Omega Platform provides advanced functionality for situational awareness, including: \n \n- Real-time and historical location data \n \n- Personnel-initiated emergency messages and acknowledgements \n \n- Event driven alerting \n \n- Configurable boundaries, restricted areas, map overlays, and points of interest \n \n- After-action reports and analytics"
+   },
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting, dashboards & analytics",
+    "evidence": "The Omega Platform provides advanced functionality for situational awareness, including: \n \n- Real-time and historical location data \n \n- Personnel-initiated emergency messages and acknowledgements \n \n- Event driven alerting \n \n- Configurable boundaries, restricted areas, map overlays, and points of interest \n \n- After-action reports and analytics"
+   },
+   {
+    "function_id": "tracking_awareness",
+    "function": "Personnel/asset tracking & situational awareness",
+    "evidence": "The BlackOhm Omega Platform is a real-time personnel and asset tracking service consisting of tracking devices and a single pane of glass management interface."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2410560133/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2410560133"
+ },
+ {
+  "fork_id": "F1412165928",
+  "vendor": "Everbridge",
+  "product": "Critical Event Management Suite",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Communication",
+  "description": "Everbridge is a global provider of SaaS-based unified critical communications solutions. During mission-critical business events or man-made or natural disasters, the Everbridge platform enables customers to quickly and reliably deliver the right message and reach the right people, on the right device, in the right location, at the right time. Utilizing sophisticated communications technologies, Everbridge has the ability to deliver and verify messages in near real-time to more than 100 different communication devices, in over 200 countries and territories, in multiple languages - all simultaneously.",
+  "functions_claimed": [
+   {
+    "function_id": "notifications_alerts",
+    "function": "Notifications, alerting & critical-event communications",
+    "evidence": "Everbridge is a global provider of SaaS-based unified critical communications solutions."
+   },
+   {
+    "function_id": "delivery_verification",
+    "function": "Delivery verification, receipts & acknowledgements",
+    "evidence": "Utilizing sophisticated communications technologies, Everbridge has the ability to deliver and verify messages in near real-time to more than 100 different communication devices, in over 200 countries and territories, in multiple languages - all simultaneously."
+   },
+   {
+    "function_id": "messaging",
+    "function": "Email & messaging channels",
+    "evidence": "During mission-critical business events or man-made or natural disasters, the Everbridge platform enables customers to quickly and reliably deliver the right message and reach the right people, on the right device, in the right location, at the right time."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1412165928/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1412165928"
+ },
+ {
+  "fork_id": "FR2335051964",
+  "vendor": "Keyfactor",
+  "product": "Keyfactor for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Communication",
+  "description": "Keyfactor for Government is delivered as a SaaS offering using a multi-tenant Government Community cloud computing environment. The Keyfactor for Government cloud service offering provides a Certificate Lifecycle Automation and Management (CLAaaS) solution for US Federal Departments and Agencies to manage digital certificate lifecycle across their enterprise. \n\nKeyfactor for Government enables Certificate Lifecycle Automation and Management through our Keyfactor Command web-based console, which simplifies and organizes certificate inventory, alerting and reporting, issuance, and automation. Our solution provides visibility and management of all public and private certificates in use across the customer\u2019s on-premise and cloud environments and enables workflow automations to prevent outages due to expired certificates. \n\nKeyfactor for Government allows you to: \n - Securely connect to your on-premise Microsoft or EJBCA Certificate Authority and/or to public CAs from Entrust, DigiCert, or Sectigo. \n - Inventory certificates across your enterprise and/or cloud environments. \n - Automate the issuance and deployment of certificates",
+  "functions_claimed": [
+   {
+    "function_id": "notifications_alerts",
+    "function": "Notifications, alerting & critical-event communications",
+    "evidence": "Keyfactor for Government enables Certificate Lifecycle Automation and Management through our Keyfactor Command web-based console, which simplifies and organizes certificate inventory, alerting and reporting, issuance, and automation."
+   },
+   {
+    "function_id": "key_certificate",
+    "function": "Key & certificate lifecycle management",
+    "evidence": "The Keyfactor for Government cloud service offering provides a Certificate Lifecycle Automation and Management (CLAaaS) solution for US Federal Departments and Agencies to manage digital certificate lifecycle across their enterprise."
+   },
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting, dashboards & analytics",
+    "evidence": "Keyfactor for Government enables Certificate Lifecycle Automation and Management through our Keyfactor Command web-based console, which simplifies and organizes certificate inventory, alerting and reporting, issuance, and automation."
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow & business process automation",
+    "evidence": "Our solution provides visibility and management of all public and private certificates in use across the customer\u2019s on-premise and cloud environments and enables workflow automations to prevent outages due to expired certificates."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2335051964/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2335051964"
+ },
+ {
+  "fork_id": "FR1830842316",
+  "vendor": "Leidos Digital Solutions, Inc.",
+  "product": "IQ FedCloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Communication",
+  "description": "IQ FedCloud is delivered as a SaaS offering using a multi-tenant Government-Only Cloud computing environment. It is available to federal, state, local, and tribal governments.\r\n\r\nIntranet Quorum (IQ) and the FedRAMP authorized implementation, IQ FedCloud, is a SaaS application offering Customer Relationship Management (CRM), correspondence management, Casework, business process management (BPM) and workflow. IQ is commonly used to support both constituent and agency needs ranging from simple task management to complex Freedom of Information (FOIA) requests. IQ\u2019s core modules include Contacts, Messages, Outreach, Services, Library, and Events which combine to help agencies and elected officials to keep a complete history of their communications and manage their suspense tracking needs. IQ streamlines document management processes including approval for electronic signature and resolution. Robust reporting capabilities enhance data analytics for executive awareness and review. IQ lets users securely exchange record data with other agencies with the unique IQ2IQ capability. IQ addresses a wide range of executive management needs including grants, investigations, Boards and Commissions, communications, and records management and retention.  A no code solution, IQ is fully configurable without custom development.",
+  "functions_claimed": [
+   {
+    "function_id": "messaging",
+    "function": "Email & messaging channels",
+    "evidence": "IQ\u2019s core modules include Contacts, Messages, Outreach, Services, Library, and Events which combine to help agencies and elected officials to keep a complete history of their communications and manage their suspense tracking needs."
+   },
+   {
+    "function_id": "contacts_directory",
+    "function": "Contacts, directory & constituent management",
+    "evidence": "Intranet Quorum (IQ) and the FedRAMP authorized implementation, IQ FedCloud, is a SaaS application offering Customer Relationship Management (CRM), correspondence management, Casework, business process management (BPM) and workflow."
+   },
+   {
+    "function_id": "archiving_records",
+    "function": "Communications archiving, retention & records management",
+    "evidence": "IQ addresses a wide range of executive management needs including grants, investigations, Boards and Commissions, communications, and records management and retention."
+   },
+   {
+    "function_id": "search_ediscovery",
+    "function": "Search, eDiscovery & FOIA",
+    "evidence": "IQ is commonly used to support both constituent and agency needs ranging from simple task management to complex Freedom of Information (FOIA) requests."
+   },
+   {
+    "function_id": "correspondence_casework",
+    "function": "Correspondence & casework management",
+    "evidence": "Intranet Quorum (IQ) and the FedRAMP authorized implementation, IQ FedCloud, is a SaaS application offering Customer Relationship Management (CRM), correspondence management, Casework, business process management (BPM) and workflow."
+   },
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting, dashboards & analytics",
+    "evidence": "Robust reporting capabilities enhance data analytics for executive awareness and review."
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow & business process automation",
+    "evidence": "Intranet Quorum (IQ) and the FedRAMP authorized implementation, IQ FedCloud, is a SaaS application offering Customer Relationship Management (CRM), correspondence management, Casework, business process management (BPM) and workflow."
+   },
+   {
+    "function_id": "scheduling_events",
+    "function": "Scheduling, events & check-in",
+    "evidence": "IQ\u2019s core modules include Contacts, Messages, Outreach, Services, Library, and Events which combine to help agencies and elected officials to keep a complete history of their communications and manage their suspense tracking needs."
+   },
+   {
+    "function_id": "esignature",
+    "function": "Electronic signature",
+    "evidence": "IQ streamlines document management processes including approval for electronic signature and resolution."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1830842316/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1830842316"
+ },
+ {
+  "fork_id": "FR1728351539",
+  "vendor": "MAXIMUS Inc.",
+  "product": "Maximus Intelligent Virtual Assistant (MIVA) (formerly MIA)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Communication",
+  "description": "The Maximus Intelligent Virtual Assistant (MIVA) is a turn-key FedRAMP-authorized SaaS solution that replaces traditional touchtone and directed dialog speech IVRs at the front-end of contact centers. MIVA uses a combination of artificial intelligence (AI) and human understanding to interact conversationally with callers.\r\n\r\n \r\n\r\nMIVA applications are built to support government-specific requirements, including status updates for applications and accounts, call routing, and FAQs.  Callers can receive self-service information via voice, email, and text messages. MIVA integrates will all major call routing and telephony systems, and major carrier networks.",
+  "functions_claimed": [
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML analysis & virtual assistance",
+    "evidence": "The Maximus Intelligent Virtual Assistant (MIVA) is a turn-key FedRAMP-authorized SaaS solution that replaces traditional touchtone and directed dialog speech IVRs at the front-end of contact centers."
+   },
+   {
+    "function_id": "messaging",
+    "function": "Email & messaging channels",
+    "evidence": "Callers can receive self-service information via voice, email, and text messages."
+   },
+   {
+    "function_id": "voice_telephony",
+    "function": "Voice, telephony, IVR & contact center",
+    "evidence": "The Maximus Intelligent Virtual Assistant (MIVA) is a turn-key FedRAMP-authorized SaaS solution that replaces traditional touchtone and directed dialog speech IVRs at the front-end of contact centers."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1728351539/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1728351539"
+ },
+ {
+  "fork_id": "FR2309954376",
+  "vendor": "RecAccess",
+  "product": "RecAccess",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Communication",
+  "description": "RecAccess is a web-based Software-as-a-Service solution that is used to manage outdoor programs, public & private area access, law enforcement, events, and recreational activities such as hunting, fishing, camping, hiking, biking, boating, four wheeling, trail riding, skiing and public entrance or entry. RecAccess features include online lotteries, permits, passes, tickets, quota hunts, activity and area check-in / checkout, checkout questions, harvest reporting, surveys, safety briefs, quizzes, announcements, acknowledgements, waivers, ID checks and user vetting. RecAccess allows government customers to have portals for their location/needs and provides recreationists/end-users a familiar interface optimized for both mobile and desktop experience. Once trained in RecAccess services, approved government administrators have real-time access to an administration suite to manage their program's recreational processes and data. RecAccess integrates payment processing through Pay.gov and login processing through Login.gov for qualified government customers. Each government program is unique with requirements or processes and the RecAccess Team is continuously expanding our software to meet the needs of our customer's recreational programs.",
+  "functions_claimed": [
+   {
+    "function_id": "notifications_alerts",
+    "function": "Notifications, alerting & critical-event communications",
+    "evidence": "RecAccess features include online lotteries, permits, passes, tickets, quota hunts, activity and area check-in / checkout, checkout questions, harvest reporting, surveys, safety briefs, quizzes, announcements, acknowledgements, waivers, ID checks and user vetting."
+   },
+   {
+    "function_id": "delivery_verification",
+    "function": "Delivery verification, receipts & acknowledgements",
+    "evidence": "RecAccess features include online lotteries, permits, passes, tickets, quota hunts, activity and area check-in / checkout, checkout questions, harvest reporting, surveys, safety briefs, quizzes, announcements, acknowledgements, waivers, ID checks and user vetting."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity proofing, login & access control",
+    "evidence": "RecAccess integrates payment processing through Pay.gov and login processing through Login.gov for qualified government customers."
+   },
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting, dashboards & analytics",
+    "evidence": "RecAccess features include online lotteries, permits, passes, tickets, quota hunts, activity and area check-in / checkout, checkout questions, harvest reporting, surveys, safety briefs, quizzes, announcements, acknowledgements, waivers, ID checks and user vetting."
+   },
+   {
+    "function_id": "scheduling_events",
+    "function": "Scheduling, events & check-in",
+    "evidence": "RecAccess is a web-based Software-as-a-Service solution that is used to manage outdoor programs, public & private area access, law enforcement, events, and recreational activities such as hunting, fishing, camping, hiking, biking, boating, four wheeling, trail riding, skiing and public entrance or entry."
+   },
+   {
+    "function_id": "permits_surveys",
+    "function": "Permits, passes, surveys & forms",
+    "evidence": "RecAccess features include online lotteries, permits, passes, tickets, quota hunts, activity and area check-in / checkout, checkout questions, harvest reporting, surveys, safety briefs, quizzes, announcements, acknowledgements, waivers, ID checks and user vetting."
+   },
+   {
+    "function_id": "payments",
+    "function": "Payment processing",
+    "evidence": "RecAccess integrates payment processing through Pay.gov and login processing through Login.gov for qualified government customers."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2309954376/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2309954376"
+ },
+ {
+  "fork_id": "FR2621751490",
+  "vendor": "Red Rock Group Holdings",
+  "product": "GetEKKO",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [
+   "Communication",
+   "Data Management",
+   "Health & Wellness"
+  ],
+  "deadramp_category": "Communication",
+  "description": "GetEkko is delivered as a Software-as-a-Service (SaaS) offering using a multi-tenant public cloud computing provider that allows GetEkko to create dedicated customer environments for data isolation and segmentation. It is available to customers that require identity-proofing in conjunction with secure transmission of messages without the ability to read the payload in transit to users within groups, based upon schedules, or availability within the central platform.",
+  "functions_claimed": [
+   {
+    "function_id": "messaging",
+    "function": "Email & messaging channels",
+    "evidence": "It is available to customers that require identity-proofing in conjunction with secure transmission of messages without the ability to read the payload in transit to users within groups, based upon schedules, or availability within the central platform."
+   },
+   {
+    "function_id": "secure_transmission",
+    "function": "Secure & encrypted transmission",
+    "evidence": "It is available to customers that require identity-proofing in conjunction with secure transmission of messages without the ability to read the payload in transit to users within groups, based upon schedules, or availability within the central platform."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity proofing, login & access control",
+    "evidence": "It is available to customers that require identity-proofing in conjunction with secure transmission of messages without the ability to read the payload in transit to users within groups, based upon schedules, or availability within the central platform."
+   },
+   {
+    "function_id": "scheduling_events",
+    "function": "Scheduling, events & check-in",
+    "evidence": "It is available to customers that require identity-proofing in conjunction with secure transmission of messages without the ability to read the payload in transit to users within groups, based upon schedules, or availability within the central platform."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2621751490/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2621751490"
+ },
+ {
+  "fork_id": "F1512017637",
+  "vendor": "Trellix",
+  "product": "Trellix Email Security GovCloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Communication",
+  "description": "The Trellix ESC GovCloud is a SaaS offering that provides advanced protections against modern sophisticated email attacks. ESC GovCloud consolidates advanced threat prevention with traditional Email Anti-Spam and Anti-Virus security to optimize spending, reduce false positives, and enable operational efficiencies through consolidation. ESC GovCloud can be deployed in line to analyze emails and quarantine threats for active protection, or as a passive monitor for 'bcc' type review of each email.\n\nWith no hardware or software to install, the ESC GovCloud is a particularly good fit for organizations seeking to move their infrastructure into the cloud. This eliminates the complexity of procuring, installing, and managing a physical infrastructure. ESC GovCloud provides organizations several unique capabilities, such as:\n\n- Identifying previous targets of spear-phishing, impersonation, virus and spam emails\n- Locating copies of the malicious email in target inboxes\n- Finding out if the message is being forwarded to new targets\n- Detection of advanced malicious URL threats\n- The ESC Portal shows region- and industry-based malware trends, has customizable security policies, RBAC, and audit logging.\n\nOrganizations face an ever-increasing number of threats from email-based spam, viruses, and advanced threats. ESC GovCloud uses the signature-less Trellix Multi-vector Virtual Execution\u2122 (MVX) engine to analyze every attachment and URL within emails to detect threats and stop advanced attacks in real-time. Today's advanced attacks use email as a primary delivery mechanism for malicious content. While some attacks use an attachment with embedded malicious code, it is common for cybercriminals to use a malicious link thereby blending attack tactics in the hopes of bypassing today's traditional defense silos. ESC GovCloud uses the cloud-based MVX engine to detonate email attachments against a cross-matrix of operating systems and applications, including multiple Web browsers and plug-ins like Adobe Reader and Flash. To block spear-phishing emails, ESC GovCloud analyzes every attachment using the MVX engine to accurately identify today's advanced attacks.\n\nESC GovCloud includes anti-virus and anti-spam engines and may also be paired with an organization's existing anti-virus and anti-spam email gateways.",
+  "functions_claimed": [
+   {
+    "function_id": "email_security",
+    "function": "Email security, anti-phishing & threat protection",
+    "evidence": "The Trellix ESC GovCloud is a SaaS offering that provides advanced protections against modern sophisticated email attacks."
+   },
+   {
+    "function_id": "messaging",
+    "function": "Email & messaging channels",
+    "evidence": "The Trellix ESC GovCloud is a SaaS offering that provides advanced protections against modern sophisticated email attacks."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity proofing, login & access control",
+    "evidence": "ESC GovCloud provides organizations several unique capabilities, such as:\n\n- Identifying previous targets of spear-phishing, impersonation, virus and spam emails\n- Locating copies of the malicious email in target inboxes\n- Finding out if the message is being forwarded to new targets\n- Detection of advanced malicious URL threats\n- The ESC Portal shows region- and industry-based malware trends, h..."
+   },
+   {
+    "function_id": "audit",
+    "function": "Audit logging & trails",
+    "evidence": "ESC GovCloud provides organizations several unique capabilities, such as:\n\n- Identifying previous targets of spear-phishing, impersonation, virus and spam emails\n- Locating copies of the malicious email in target inboxes\n- Finding out if the message is being forwarded to new targets\n- Detection of advanced malicious URL threats\n- The ESC Portal shows region- and industry-based malware trends, h..."
+   },
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting, dashboards & analytics",
+    "evidence": "ESC GovCloud provides organizations several unique capabilities, such as:\n\n- Identifying previous targets of spear-phishing, impersonation, virus and spam emails\n- Locating copies of the malicious email in target inboxes\n- Finding out if the message is being forwarded to new targets\n- Detection of advanced malicious URL threats\n- The ESC Portal shows region- and industry-based malware trends, h..."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1512017637/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1512017637"
+ }
+]
