@@ -409,6 +409,22 @@ Members' own domains, not built here (they belong to their own categories' group
 
 Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Spec note: the 13 Core functions tag zero claims in this group and stay Core under the recorded core-boundary decision (the Merge Rule carries the L2 union upward whole; a wording artifact is not a downgrade).
 
+## Group 26 — Customer Service L1 (2 forks)
+
+Extended functions, specified in groups/customer-service-l1/UNION-SPEC.md, not implemented:
+- [ ] open — Event detection, diagnosis & orchestration engines (alert records / triage are Core)
+- [ ] open — Automation execution engines (the rule registry is Core; nothing executes, pinned by test)
+- [ ] open — GRC platform (one sibling's sole claim family, incl. compliance-framework support depth)
+- [ ] open — Real-time channels: live chat, voice / telephony (0 claims; named)
+- [ ] open — AI assistance / deflection (0 tagged claims; near-miss recorded)
+- [ ] open — Knowledge base articles (0 of 2; named absence)
+- [ ] open — Satisfaction / CSAT surveys (0 of 2; named absence)
+- [ ] open — SLA policy engine (due / breach derivation only in Core; no sibling claims SLA terms)
+- [ ] open — Notification delivery & status-page hosting (status records / view are Core; delivery is not)
+- [ ] open — Reporting / analytics engines beyond registry reporting (0 claims)
+
+Platform-layer: encryption at rest is deployment-layer (TLS when configured); single-tenant reference deployment; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec finding: this group is largely a source-category artifact — one sibling is a GRC platform claiming zero customer-service functions; the build is the records substrate the other sibling's claims presuppose, and nothing was invented to make the two look alike.
+
 ## Later groups
 
 Each group appends its section here when it ships.

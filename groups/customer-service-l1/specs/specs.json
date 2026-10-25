@@ -1,0 +1,81 @@
+[
+ {
+  "fork_id": "FR2310974411",
+  "vendor": "PagerDuty",
+  "product": "PagerDuty Operations Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Low",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Customer Service",
+   "Development Tools",
+   "Operations Management",
+   "System Administration"
+  ],
+  "deadramp_category": "Customer Service",
+  "description": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allowing organizations to prioritize critical alerts while minimizing distractions from less significant events.\n\nWith automated actions, the platform can trigger predefined workflows before human intervention is needed, accelerating resolution times and ensuring seamless incident management. On-call scheduling capabilities ensure continuous 24/7 coverage of critical activities, empowering teams to swiftly triage events, including customer support tickets, system alerts, and operational disruptions, and effectively mobilize the appropriate responders to manage incident resolution and recovery. Real-time status updates and external-facing status pages keep stakeholders informed throughout the resolution process.",
+  "functions_claimed": [
+   {
+    "function_id": "case_ticket_management",
+    "function": "Case / ticket registry, triage & lifecycle",
+    "evidence": "On-call scheduling capabilities ensure continuous 24/7 coverage of critical activities, empowering teams to swiftly triage events, including customer support tickets, system alerts, and operational disruptions, and effectively mobilize the appropriate responders to manage incident resolution and recovery."
+   },
+   {
+    "function_id": "event_detection_response",
+    "function": "Automated event detection, diagnosis & response",
+    "evidence": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents."
+   },
+   {
+    "function_id": "alert_prioritization",
+    "function": "Event orchestration, aggregation & alert prioritization",
+    "evidence": "By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allowing organizations to prioritize critical alerts while minimizing distractions from less significant events."
+   },
+   {
+    "function_id": "automation_workflows",
+    "function": "Automated actions & predefined workflows",
+    "evidence": "With automated actions, the platform can trigger predefined workflows before human intervention is needed, accelerating resolution times and ensuring seamless incident management."
+   },
+   {
+    "function_id": "oncall_scheduling",
+    "function": "On-call scheduling & coverage",
+    "evidence": "On-call scheduling capabilities ensure continuous 24/7 coverage of critical activities, empowering teams to swiftly triage events, including customer support tickets, system alerts, and operational disruptions, and effectively mobilize the appropriate responders to manage incident resolution and recovery."
+   },
+   {
+    "function_id": "responder_assignment",
+    "function": "Responder assignment & mobilization",
+    "evidence": "On-call scheduling capabilities ensure continuous 24/7 coverage of critical activities, empowering teams to swiftly triage events, including customer support tickets, system alerts, and operational disruptions, and effectively mobilize the appropriate responders to manage incident resolution and recovery."
+   },
+   {
+    "function_id": "status_communication",
+    "function": "Status updates & status pages",
+    "evidence": "Real-time status updates and external-facing status pages keep stakeholders informed throughout the resolution process."
+   }
+  ]
+ },
+ {
+  "fork_id": "FR2604835605",
+  "vendor": "Longevity Consulting",
+  "product": "Riskuity",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Low",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Customer Service",
+  "description": "Longevity Consulting LLC, a trusted partner to federal agencies for over two decades, introduces Riskuity, a modern, intuitive platform designed to redefine how agencies approach Governance, Risk, and Compliance. \n\nDrawing on decades of experience and innovation in IT security risk management supporting NIST 800-53, Risk Management Framework (RMF), Authority to Operate (ATO) maintenance, and grants and safety compliance for numerous federal agencies, Longevity developed Riskuity as a transformative tool to help organizations meet their regulatory responsibilities more effectively and efficiently. \n\nHosted in the AWS FedRAMP-certified GovCloud environment, Riskuity is engineered with security and compliance at its core, leveraging best-in-class cloud-native services for performance, availability, and protection of sensitive data.",
+  "functions_claimed": [
+   {
+    "function_id": "governance_risk_compliance",
+    "function": "Governance, risk & compliance platform",
+    "evidence": "Longevity Consulting LLC, a trusted partner to federal agencies for over two decades, introduces Riskuity, a modern, intuitive platform designed to redefine how agencies approach Governance, Risk, and Compliance."
+   }
+  ]
+ }
+]
