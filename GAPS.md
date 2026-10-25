@@ -308,6 +308,22 @@ Extended functions, specified in groups/health-wellness-l2/UNION-SPEC.md, not im
 
 Platform-layer: single-tenant reference deployment; encryption at rest is deployment-layer (TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Privacy discipline (hard rule, enforced by tests): the build stores records and opaque caller-supplied references only — no diagnosis fields, no free-text clinical notes, no real identifiers in any entity shape; RBAC and audit are carried in the Core as baseline substrate at 0 of 5 claims, recorded as carried, not claimed.
 
+## Group 20 — Content Management System (CMS) L2 (4 forks)
+
+Extended functions, specified in groups/cms-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Rendering & templating engines and visual / WYSIWYG editors
+- [ ] open — CDN / delivery network and runtime site serving
+- [ ] open — Enterprise search indexing engines (Boolean / concept / fuzzy / multilingual / hierarchical / geospatial; the core searches registry metadata)
+- [ ] open — Bulk ingestion & index-in-place engines
+- [ ] open — Library ILS vertical (circulation, MARC21 cataloging depth, EDI acquisitions, discovery layer)
+- [ ] open — BPM / case-management engine (EEO, labor relations, accommodations, background investigations, IG casework)
+- [ ] open — Participant engagement & research platform vertical
+- [ ] open — Platform hosting itself (PaaS runtime)
+- [ ] open — Personalization / experience optimization
+- [ ] open — Editorial workflow engines beyond lifecycle mechanics (parallel review, routing, notifications; claimed by no sibling)
+
+Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Named absences recorded in the spec: no sibling claims editorial review workflow, versioning, publish scheduling, WYSIWYG editing, templating / rendering, or personalization; the build's lifecycle states, revisions, and publish windows are documented as registry mechanics of the claimed content-registry / publishing families (the Group 10 core-boundary precedent), never as claimed families.
+
 ## Later groups
 
 Each group appends its section here when it ships.

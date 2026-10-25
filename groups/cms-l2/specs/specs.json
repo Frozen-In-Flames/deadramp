@@ -1,0 +1,180 @@
+[
+ {
+  "fork_id": "F1302201919",
+  "vendor": "Acquia Inc.",
+  "product": "Acquia Cloud",
+  "service_model": [
+   "PaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Content Management System (CMS)"
+  ],
+  "deadramp_category": "Content Management System (CMS)",
+  "description": "Acquia provides the leading cloud platform for building, delivering, and optimizing digital experiences.\n\nAcquia is the enterprise platform behind Drupal, the leading open-source content management system, recognized as a Magic Quadrant Leader by Gartner two years in a row. Our platform enables agencies to foster greater digital engagement with citizens and securely deliver mission essential information and services with greater speed, agility, and resiliency.\n\nThe City of LA, State of New York, FEMA, Department of Homeland Security and many other government agencies rely on the Acquia platform to build websites and digital experiences that meet the needs of their citizens, internal users and IT teams while moving their missions forward. These agencies know that a citizen-centric government requires more than simply taking the existing physical structure and making it digital. Today the term \"digital\" has taken on a new meaning. In the private sector, consumers can shop, pay bills, and even conduct banking online, and now they're expecting to conduct government business online in the same way. The most forward-thinking government IT managers are finding ways to meet expectations set by the private sector, and then going above and beyond to serve citizens.\nWith the Acquia Platform governments and agencies can use limited taxpayer dollars efficiently to build sites and experience that meet the needs of IT, deliver on the mission and give citizens crucial information they need.",
+  "functions_claimed": [
+   {
+    "function_id": "content_registry",
+    "function": "Content management & content registry",
+    "evidence": "Acquia is the enterprise platform behind Drupal, the leading open-source content management system, recognized as a Magic Quadrant Leader by Gartner two years in a row."
+   },
+   {
+    "function_id": "site_structure",
+    "function": "Site & section structure",
+    "evidence": "The City of LA, State of New York, FEMA, Department of Homeland Security and many other government agencies rely on the Acquia platform to build websites and digital experiences that meet the needs of their citizens, internal users and IT teams while moving their missions forward."
+   },
+   {
+    "function_id": "delivery_publishing",
+    "function": "Content delivery & publishing",
+    "evidence": "Acquia provides the leading cloud platform for building, delivering, and optimizing digital experiences."
+   },
+   {
+    "function_id": "platform_hosting",
+    "function": "Cloud platform hosting (PaaS/IaaS)",
+    "evidence": "Acquia provides the leading cloud platform for building, delivering, and optimizing digital experiences."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1302201919/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1302201919"
+ },
+ {
+  "fork_id": "FR2330638488",
+  "vendor": "PTFS/Liblime",
+  "product": "Bibliovation/Knowvation",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [
+   "Content Management System (CMS)",
+   "Data Management",
+   "Law Enforcement",
+   "Research"
+  ],
+  "deadramp_category": "Content Management System (CMS)",
+  "description": "Bibliovation is a Integrated Library System (ILS) offered as a SaaS solution. The platform is web-based and all modules are accessible via proper permissions and web browsers. Bibliovation can combine individual system components (i.e., traditional ILS service core, MARC21 cataloging editor, EDI-compliant acquisitions, Discovery Layer, digital content management, etc.) to meet specific organizational needs.\n\nKnowvation\u2122 is a enterprise level digital content management, discovery and delivery system solution that can be integrated with Bibliovation  ILS.  Key features include:\n\n\u25cf            Supports over 225 types of digital documents (PDF, Word, Excel, etc.), including geographical datasets like maps and imagery, JPEG and TIFF images, videos, and maps.\n\n\u25cf            Powerful search and discovery, including Boolean (Keyword), concept (Intent-based), pattern (fuzzy-text), metadata, multi-lingual, hierarchical, and geospatial (visual) across all data types.\n\n\u25cf            Tools for index-in-place or ingesting data into a single repository, able to read/write/tag metadata during or after ingestion.\n\n\u25cf            Extensive administrative tools with security and protected access and reporting on both usage and data with pre-configured and ad-hoc reporting in the system.",
+  "functions_claimed": [
+   {
+    "function_id": "content_registry",
+    "function": "Content management & content registry",
+    "evidence": "Bibliovation can combine individual system components (i.e., traditional ILS service core, MARC21 cataloging editor, EDI-compliant acquisitions, Discovery Layer, digital content management, etc.) to meet specific organizational needs."
+   },
+   {
+    "function_id": "authoring_editing",
+    "function": "Content authoring & editing",
+    "evidence": "Bibliovation can combine individual system components (i.e., traditional ILS service core, MARC21 cataloging editor, EDI-compliant acquisitions, Discovery Layer, digital content management, etc.) to meet specific organizational needs."
+   },
+   {
+    "function_id": "search_discovery",
+    "function": "Search & discovery",
+    "evidence": "\u25cf            Powerful search and discovery, including Boolean (Keyword), concept (Intent-based), pattern (fuzzy-text), metadata, multi-lingual, hierarchical, and geospatial (visual) across all data types."
+   },
+   {
+    "function_id": "metadata_taxonomy",
+    "function": "Metadata & taxonomy/tagging",
+    "evidence": "\u25cf            Powerful search and discovery, including Boolean (Keyword), concept (Intent-based), pattern (fuzzy-text), metadata, multi-lingual, hierarchical, and geospatial (visual) across all data types."
+   },
+   {
+    "function_id": "ingestion_repository",
+    "function": "Ingestion & repository consolidation",
+    "evidence": "\u25cf            Tools for index-in-place or ingesting data into a single repository, able to read/write/tag metadata during or after ingestion."
+   },
+   {
+    "function_id": "media_assets",
+    "function": "Media & document assets",
+    "evidence": "Key features include:\n\n\u25cf            Supports over 225 types of digital documents (PDF, Word, Excel, etc.), including geographical datasets like maps and imagery, JPEG and TIFF images, videos, and maps."
+   },
+   {
+    "function_id": "reporting",
+    "function": "Reporting & analytics",
+    "evidence": "\u25cf            Extensive administrative tools with security and protected access and reporting on both usage and data with pre-configured and ad-hoc reporting in the system."
+   },
+   {
+    "function_id": "access_administration",
+    "function": "Administration, security & protected access",
+    "evidence": "The platform is web-based and all modules are accessible via proper permissions and web browsers."
+   },
+   {
+    "function_id": "delivery_publishing",
+    "function": "Content delivery & publishing",
+    "evidence": "Knowvation\u2122 is a enterprise level digital content management, discovery and delivery system solution that can be integrated with Bibliovation  ILS."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2330638488/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2330638488"
+ },
+ {
+  "fork_id": "FR2220654178",
+  "vendor": "Tyler Federal, LLC",
+  "product": "Tyler Federal Cloud Platform (TFCP)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Content Management System (CMS)",
+  "description": "Tyler Federal Cloud Platform is delivered as an PaaS/SaaS offering using a multi-tenant Government-Only cloud computing environment. It is available to federal, state, local, and tribal governments.\n\nTyler Federal Cloud Platform consists of the Tyler App Platform, referred to as \u201cthe Platform\u201d (Powered by Entellitrak) software. The Platform is an enterprise level COTS (Commercial Off-The-Shelf) that provides unified BPM software by using an open architecture approach that focuses on the core technologies that streamline work for rapid application development on business processes. The Platform provides all the functionality required to collect, track, manage, process, and report on information regarding a business process. Business processes such as but not limited to \u201cTurnkey\u201d products, EEO complaints (EEO), Labor Relations (LR/ER), Reasonable Accommodations (RA), Veteran Benefits (VB/VBA), Background investigations (BI), Inspector General (IG), Anti-harassment (AH), Justice and Law Enforcement, and general case/record management. The Platform utilizes AWS GovCloud as its FedRAMP Authorized IaaS provider.",
+  "functions_claimed": [
+   {
+    "function_id": "records_management",
+    "function": "Records & case information management",
+    "evidence": "Business processes such as but not limited to \u201cTurnkey\u201d products, EEO complaints (EEO), Labor Relations (LR/ER), Reasonable Accommodations (RA), Veteran Benefits (VB/VBA), Background investigations (BI), Inspector General (IG), Anti-harassment (AH), Justice and Law Enforcement, and general case/record management."
+   },
+   {
+    "function_id": "reporting",
+    "function": "Reporting & analytics",
+    "evidence": "The Platform provides all the functionality required to collect, track, manage, process, and report on information regarding a business process."
+   },
+   {
+    "function_id": "workflow_bpm",
+    "function": "Workflow / BPM automation",
+    "evidence": "The Platform is an enterprise level COTS (Commercial Off-The-Shelf) that provides unified BPM software by using an open architecture approach that focuses on the core technologies that streamline work for rapid application development on business processes."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2220654178/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2220654178"
+ },
+ {
+  "fork_id": "FR2501644859",
+  "vendor": "Vibrent Health",
+  "product": "Digital Health Research Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Content Management System (CMS)",
+  "description": "Vibrent Health provides a SaaS Platform that is used by federal and commercial B2B customers to educate, recruit, and engage consumers in a longitudinal, long-term effort to transform the understanding of factors contributing to individual health and disease. The educational component is provided through the Content Management System website for interested prospects to join the program.  Prospects are routed to the Participant Portal when the program is publicly marketed. The content management system (CMS) was chosen to enable content creators and managers throughout the program to easily create and update content for sites designated for each customer. Use cases for DHRP include prevention, control, study, and management of lifestyle and diseases.\nDHRP can also be used to develop applications and websites for volunteers to enroll in the program, provide data, and receive updates related to the well-being program. The platform also supports ongoing testing and upgrades to improve the user experience, implements innovative participant tools, and ensures the security of all participant-facing systems.",
+  "functions_claimed": [
+   {
+    "function_id": "content_registry",
+    "function": "Content management & content registry",
+    "evidence": "The educational component is provided through the Content Management System website for interested prospects to join the program."
+   },
+   {
+    "function_id": "authoring_editing",
+    "function": "Content authoring & editing",
+    "evidence": "The content management system (CMS) was chosen to enable content creators and managers throughout the program to easily create and update content for sites designated for each customer."
+   },
+   {
+    "function_id": "site_structure",
+    "function": "Site & section structure",
+    "evidence": "The content management system (CMS) was chosen to enable content creators and managers throughout the program to easily create and update content for sites designated for each customer."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2501644859/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2501644859"
+ }
+]
