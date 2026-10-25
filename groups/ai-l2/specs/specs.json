@@ -1,0 +1,473 @@
+[
+ {
+  "fork_id": "FR2615451803",
+  "vendor": "Aeroplicity Inc.",
+  "product": "Aeroplicity",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "Aeroplicity is a cloud-based software platform that supports CMMC-related compliance workflows and provides an enclave-oriented environment for handling controlled data, together with enterprise resource planning (ERP), maintenance and repair operations (MRO), governance, risk, and compliance (GRC) workflows, secure collaboration, secure file storage and sharing, document traceability, and operational recordkeeping.\r\nThe service supports organizations operating under CMMC, NIST 800-171, DFARS, ITAR, EAR, and related regulatory or contractual requirements by providing compliance workflow management, control evidence collection, audit support, record retention, and traceability for operational and compliance-related activities. Aeroplicity Compliance provides governance, risk, and compliance functions including compliance task management, supporting documentation, control evidence management, and audit-ready records.\r\nAeroplicity also provides ERP and operational workflow capabilities for procurement, inventory management, logistics, sales order processing, planning, maintenance execution, labor time tracking, training records, and related business processes. The platform supports traceability of documents, parts, materials, and operational activities, including QR code-based workflows connecting physical processes to digital records.\r\nThe service includes secure email and messaging, browser-based application access, shared workflow interfaces, file storage and sharing, audit logging, and workflow-based access to operational data across users and teams. Aeroplicity Browser provides browser-based, single-application virtual desktop access to platform functions and data, supporting controlled access workflows in which user interaction occurs within the service environment rather than through local endpoint processing or storage.\r\nApplications and functional components of the service include:\r\n- Aeroplicity Intelligence \u2014 AI-assisted analysis and decision-support tools\r\n- Browser \u2014 browser-based, single-application virtual desktop access\r\n- Compliance \u2014 governance, risk, and compliance workflows, control evidence management, and audit support\r\n- Email \u2014 secure email and messaging\r\n- File Share \u2014 secure file storage and file sharing\r\n- Interface \u2014 shared data access and workflow execution across users and teams\r\n- Inventory \u2014 inventory, stock, locations, lot control, and picking workflows\r\n- Logistics \u2014 shipping, receiving, and material movement workflows\r\n- Logs \u2014 audit logs, record retention, and activity history\r\n- Maintenance \u2014 work orders, task cards, and MRO execution\r\n- Marketplace \u2014 marketplace workflows\r\n- Planning \u2014 demand planning, scheduling, and resource preparation\r\n- Procurement \u2014 suppliers, RFQs, and purchase orders\r\n- Sales \u2014 quotes, sales orders, and related workflows\r\n- Times \u2014 labor time tracking and time recording\r\n- Traceability \u2014 digital traceability, document linkage, QR code workflows, and part-level records\r\n- Training \u2014 training records, qualifications, tracking, and related workflows",
+  "functions_claimed": [
+   {
+    "function_id": "learned_inference",
+    "function": "Learned AI/ML inference (LLMs, ML, NLU, predictive models)",
+    "evidence": "Applications and functional components of the service include: \n- Aeroplicity Intelligence \u2014 AI-assisted analysis and decision-support tools \n- Browser \u2014 browser-based, single-application virtual desktop access \n- Compliance \u2014 governance, risk, and compliance workflows, control evidence management, and audit support \n- Email \u2014 secure email and messaging \n- File Share \u2014 secure file storage and f..."
+   },
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging & trails",
+    "evidence": "The service supports organizations operating under CMMC, NIST 800-171, DFARS, ITAR, EAR, and related regulatory or contractual requirements by providing compliance workflow management, control evidence collection, audit support, record retention, and traceability for operational and compliance-related activities."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Identity & access control",
+    "evidence": "Aeroplicity Browser provides browser-based, single-application virtual desktop access to platform functions and data, supporting controlled access workflows in which user interaction occurs within the service environment rather than through local endpoint processing or storage."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2615451803/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2615451803"
+ },
+ {
+  "fork_id": "AGENCYAMAZONEW",
+  "vendor": "Amazon Web Services, Inc.",
+  "product": "AWS US East/West",
+  "service_model": [
+   "IaaS",
+   "PaaS",
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Analytics",
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Development Tools",
+   "Storage",
+   "Network Management",
+   "System Administration",
+   "Finance",
+   "Operations Management"
+  ],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "The AWS US East/West Regions are delivered as a multiple service layer cloud architecture model offering using a multi-tenant Public cloud computing environment. It is available to both government and non-government customers. Federal agencies interested in collaborative continuous monitoring with AWS should reach out to: aws-collaborative-conmon@amazon.com.",
+  "functions_claimed": [
+   {
+    "function_id": "multi_tenancy",
+    "function": "Multi-tenant architecture & tenant isolation",
+    "evidence": "The AWS US East/West Regions are delivered as a multiple service layer cloud architecture model offering using a multi-tenant Public cloud computing environment."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/AGENCYAMAZONEW/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id AGENCYAMAZONEW"
+ },
+ {
+  "fork_id": "FR2620071868",
+  "vendor": "Asato Corporation",
+  "product": "asato.ai",
+  "service_model": [],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Collaboration",
+   "Communication",
+   "Customer Relations Management (CRM)",
+   "Data Management",
+   "Finance",
+   "Governance, Risk, and Compliance (GRC)",
+   "Operations Management",
+   "System Administration"
+  ],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "Asato provides an AI-native, SaaS platform for enterprise IT asset management, cost intelligence, operational data products, document/contract extraction, and governed agentic workflows. The platform normalizes heterogeneous enterprise data, supports evidence-backed analytics and automation, and is designed to operate with strong governance, auditability, and tenant isolation. For federal customers, the system would store, process, and transmit enterprise operational and business data such as software asset, contract, procurement, usage, and related metadata; the exact federal data types should be finalized based on the target use case.",
+  "functions_claimed": [
+   {
+    "function_id": "learned_inference",
+    "function": "Learned AI/ML inference (LLMs, ML, NLU, predictive models)",
+    "evidence": "Asato provides an AI-native, SaaS platform for enterprise IT asset management, cost intelligence, operational data products, document/contract extraction, and governed agentic workflows."
+   },
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging & trails",
+    "evidence": "The platform normalizes heterogeneous enterprise data, supports evidence-backed analytics and automation, and is designed to operate with strong governance, auditability, and tenant isolation."
+   },
+   {
+    "function_id": "multi_tenancy",
+    "function": "Multi-tenant architecture & tenant isolation",
+    "evidence": "The platform normalizes heterogeneous enterprise data, supports evidence-backed analytics and automation, and is designed to operate with strong governance, auditability, and tenant isolation."
+   },
+   {
+    "function_id": "agentic_workflows",
+    "function": "Agentic & automated workflow automation",
+    "evidence": "Asato provides an AI-native, SaaS platform for enterprise IT asset management, cost intelligence, operational data products, document/contract extraction, and governed agentic workflows."
+   },
+   {
+    "function_id": "document_automation",
+    "function": "Document processing & generation workflows",
+    "evidence": "Asato provides an AI-native, SaaS platform for enterprise IT asset management, cost intelligence, operational data products, document/contract extraction, and governed agentic workflows."
+   },
+   {
+    "function_id": "analytics_reporting",
+    "function": "Analytics, dashboards & reporting",
+    "evidence": "The platform normalizes heterogeneous enterprise data, supports evidence-backed analytics and automation, and is designed to operate with strong governance, auditability, and tenant isolation."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2620071868/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2620071868"
+ },
+ {
+  "fork_id": "FR2620331565",
+  "vendor": "Cableteque Corp.",
+  "product": "CabletequeGov",
+  "service_model": [],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Data Management",
+   "Governance, Risk, and Compliance (GRC)",
+   "Operations Management"
+  ],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "Cableteque is a SaaS platform enabling secure technical data exchange across the design-to-manufacturing lifecycle for electronics systems and assemblies. The platform supports cost estimating, design validation, manufacturability analysis, procurement automation, and manufacturing engineering workflows for defense stakeholders.\n\nThe system stores, processes, and transmitted within the system includes Controlled Unclassified Information (CUI) and Covered Defense Information (CDI) such as technical drawings, design specifications, bill of materials data, component and material specifications, cost and pricing data, and procurement records associated with defense electronics programs. The system also processes ITAR-regulated engineering design data.",
+  "functions_claimed": [
+   {
+    "function_id": "agentic_workflows",
+    "function": "Agentic & automated workflow automation",
+    "evidence": "The platform supports cost estimating, design validation, manufacturability analysis, procurement automation, and manufacturing engineering workflows for defense stakeholders."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2620331565/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2620331565"
+ },
+ {
+  "fork_id": "FR2621650811",
+  "vendor": "Consus Industries, Inc.",
+  "product": "Consus Gateway",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "Consus Gateway is delivered as a Software as a Service (SaaS) offering using a multi-tenant Government-Only Community Cloud computing environment. It is available to federal contractors and other organizations eligible to consume services hosted in AWS GovCloud (US), GCP Assured Workloads, and Azure Government. The CSO is an OpenAI-compatible AI model routing service: customer applications submit requests to a single API endpoint, and the gateway routes each request to the appropriate large-language-model (LLM) provider hosted within a FedRAMP-authorized cloud environment (AWS Bedrock, GCP Vertex AI, or Azure OpenAI Service). The system is designed with a zero-persistence architecture: prompt and response content are processed entirely in ephemeral AWS Lambda memory and are never written to disk, logged, or stored in any persistent data store. The only persistent records are operational metadata (request identifier, API key identifier, timestamp, model name, token counts, latency, source IP) used for billing, accountability, and continuous monitoring. The intended user base is United States federal agencies and US-person contractor organizations supporting federal missions.",
+  "functions_claimed": [
+   {
+    "function_id": "learned_inference",
+    "function": "Learned AI/ML inference (LLMs, ML, NLU, predictive models)",
+    "evidence": "The CSO is an OpenAI-compatible AI model routing service: customer applications submit requests to a single API endpoint, and the gateway routes each request to the appropriate large-language-model (LLM) provider hosted within a FedRAMP-authorized cloud environment (AWS Bedrock, GCP Vertex AI, or Azure OpenAI Service)."
+   },
+   {
+    "function_id": "model_gateway",
+    "function": "Model gateway & request routing",
+    "evidence": "The CSO is an OpenAI-compatible AI model routing service: customer applications submit requests to a single API endpoint, and the gateway routes each request to the appropriate large-language-model (LLM) provider hosted within a FedRAMP-authorized cloud environment (AWS Bedrock, GCP Vertex AI, or Azure OpenAI Service)."
+   },
+   {
+    "function_id": "usage_metering",
+    "function": "Usage monitoring, metering & cost/budget controls",
+    "evidence": "The only persistent records are operational metadata (request identifier, API key identifier, timestamp, model name, token counts, latency, source IP) used for billing, accountability, and continuous monitoring."
+   },
+   {
+    "function_id": "multi_tenancy",
+    "function": "Multi-tenant architecture & tenant isolation",
+    "evidence": "Consus Gateway is delivered as a Software as a Service (SaaS) offering using a multi-tenant Government-Only Community Cloud computing environment."
+   },
+   {
+    "function_id": "interaction_records",
+    "function": "Request/response & interaction records, operational metadata",
+    "evidence": "The only persistent records are operational metadata (request identifier, API key identifier, timestamp, model name, token counts, latency, source IP) used for billing, accountability, and continuous monitoring."
+   },
+   {
+    "function_id": "zero_persistence",
+    "function": "Zero-persistence / ephemeral processing option",
+    "evidence": "The system is designed with a zero-persistence architecture: prompt and response content are processed entirely in ephemeral AWS Lambda memory and are never written to disk, logged, or stored in any persistent data store."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "Open APIs & integrations",
+    "evidence": "The CSO is an OpenAI-compatible AI model routing service: customer applications submit requests to a single API endpoint, and the gateway routes each request to the appropriate large-language-model (LLM) provider hosted within a FedRAMP-authorized cloud environment (AWS Bedrock, GCP Vertex AI, or Azure OpenAI Service)."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2621650811/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2621650811"
+ },
+ {
+  "fork_id": "FR2131766015",
+  "vendor": "Genesys",
+  "product": "Genesys Cloud CX",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "Genesys Cloud\u2122 is an AI-powered experience orchestration platform with a full suite of omnichannel contact center capabilities, built-in workforce engagement management (WEM) and artificial intelligence (AI). It is available to the public, federal, state, local, and tribal governments, as well as research institutions, federal contractors and government contractors. \n\nFeatures and capabilities include: \n\nAll-in-One open platform - Genesys Cloud is a multi-tenant SaaS offering with a comprehensive set of native Contact Center-as-a-Service (CCaaS) product capabilities built on a single platform \u2014 running on Amazon Web Services (AWS). \n\nNative AI - Genesys Cloud has built-in conversational and predictive AI capabilities. It utilizes technologies such as predictive analytics, machine learning, and natural language understanding to automate, route and personalize interactions.\n\n Omnichannel routing - Genesys Cloud supports calls, email, web, text and social messages. A single routing engine leverages a variety of routing algorithms, evaluation and scoring methods to determine the next best action while maintaining context, intent, and desired outcome.\n\n Speech-enabled IVR & self-service \u2013 Genesys Cloud offers multilingual speech-enabled IVR with natural language understanding (NLU) technology.  Automated bot assistants provide continuous support for routine queries.\n\n Workforce Engagement Management - A native suite of AI-powered WEM capabilities supports employee onboarding and includes workforce schedule management (WFM), coaching, speech & text analytics, quality management, performance management and gamification.\n\n Outbound campaigns \u2013 Genesys Cloud supports outbound dialing and digital campaigns for sending proactive notifications or contacting contact lists of people in accordance with programmable rules.\n\n Analytics and reporting \u2013 Genesys Cloud provides real-time dashboards and analytics for contact center management, with customizable reporting and drill-down capabilities for performance analysis.\n\nIntegrations - The platform includes a rich set of open APIs, integration methods and an ecosystem of 600+ pre-built solutions and applications available via the AppFoundry\u00ae Marketplace.",
+  "functions_claimed": [
+   {
+    "function_id": "learned_inference",
+    "function": "Learned AI/ML inference (LLMs, ML, NLU, predictive models)",
+    "evidence": "Genesys Cloud\u2122 is an AI-powered experience orchestration platform with a full suite of omnichannel contact center capabilities, built-in workforce engagement management (WEM) and artificial intelligence (AI)."
+   },
+   {
+    "function_id": "multi_tenancy",
+    "function": "Multi-tenant architecture & tenant isolation",
+    "evidence": "Features and capabilities include: \n\nAll-in-One open platform - Genesys Cloud is a multi-tenant SaaS offering with a comprehensive set of native Contact Center-as-a-Service (CCaaS) product capabilities built on a single platform \u2014 running on Amazon Web Services (AWS)."
+   },
+   {
+    "function_id": "interaction_records",
+    "function": "Request/response & interaction records, operational metadata",
+    "evidence": "A single routing engine leverages a variety of routing algorithms, evaluation and scoring methods to determine the next best action while maintaining context, intent, and desired outcome."
+   },
+   {
+    "function_id": "evaluation_records",
+    "function": "Evaluation records, scoring & quality review",
+    "evidence": "A single routing engine leverages a variety of routing algorithms, evaluation and scoring methods to determine the next best action while maintaining context, intent, and desired outcome."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "Open APIs & integrations",
+    "evidence": "Integrations - The platform includes a rich set of open APIs, integration methods and an ecosystem of 600+ pre-built solutions and applications available via the AppFoundry\u00ae Marketplace."
+   },
+   {
+    "function_id": "agentic_workflows",
+    "function": "Agentic & automated workflow automation",
+    "evidence": "It utilizes technologies such as predictive analytics, machine learning, and natural language understanding to automate, route and personalize interactions."
+   },
+   {
+    "function_id": "analytics_reporting",
+    "function": "Analytics, dashboards & reporting",
+    "evidence": "It utilizes technologies such as predictive analytics, machine learning, and natural language understanding to automate, route and personalize interactions."
+   },
+   {
+    "function_id": "contact_center",
+    "function": "Contact center & customer experience",
+    "evidence": "Genesys Cloud\u2122 is an AI-powered experience orchestration platform with a full suite of omnichannel contact center capabilities, built-in workforce engagement management (WEM) and artificial intelligence (AI)."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2131766015/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2131766015"
+ },
+ {
+  "fork_id": "FR2620251735",
+  "vendor": "Ground Control Software Inc.",
+  "product": "GroundControl",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "Ground Control Software Inc. is a San Jose-based technology\ncompany that provides a cloud-based SaaS platform called\nGroundControl, designed specifically for the manufacturing sector.\nThe platform focuses on quality control documentation workflows,\noffering secure storage, transmission, and interactive processing\ncapabilities while integrating large language models and neural\nnetwork technologies to accelerate AI adoption in an industry that has\nbeen slow to embrace such tools. The company maintains strict\nsecurity and compliance standards, including ITAR (International\nTraffic in Arms Regulations) registration with the U.S. Department of\nDefense and self-attestation to NIST 800-171. Its infrastructure is\nhosted on FedRAMP-authorized services, including AWS\nGovernment, at a High security impact level.",
+  "functions_claimed": [
+   {
+    "function_id": "learned_inference",
+    "function": "Learned AI/ML inference (LLMs, ML, NLU, predictive models)",
+    "evidence": "The platform focuses on quality control documentation workflows,\noffering secure storage, transmission, and interactive processing\ncapabilities while integrating large language models and neural\nnetwork technologies to accelerate AI adoption in an industry that has\nbeen slow to embrace such tools."
+   },
+   {
+    "function_id": "document_automation",
+    "function": "Document processing & generation workflows",
+    "evidence": "The platform focuses on quality control documentation workflows,\noffering secure storage, transmission, and interactive processing\ncapabilities while integrating large language models and neural\nnetwork technologies to accelerate AI adoption in an industry that has\nbeen slow to embrace such tools."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2620251735/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2620251735"
+ },
+ {
+  "fork_id": "FR2624779619",
+  "vendor": "Magenta",
+  "product": "Magenta",
+  "service_model": [],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)"
+  ],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "Magenta is an artificial-intelligence platform developed by Magenta, headquartered in El Segundo, California, that automates document-intensive manufacturing and quality workflows for regulated manufacturing. The platform deploys specialized AI agents to perform tasks such as supplier data package review, certificate of conformance (CoC) generation, accounts payable invoice processing and purchase-order matching, non-conformance report (NCR) dispositioning, work-instruction generation, and FMEA risk-analysis documentation.",
+  "functions_claimed": [
+   {
+    "function_id": "learned_inference",
+    "function": "Learned AI/ML inference (LLMs, ML, NLU, predictive models)",
+    "evidence": "The platform deploys specialized AI agents to perform tasks such as supplier data package review, certificate of conformance (CoC) generation, accounts payable invoice processing and purchase-order matching, non-conformance report (NCR) dispositioning, work-instruction generation, and FMEA risk-analysis documentation."
+   },
+   {
+    "function_id": "agentic_workflows",
+    "function": "Agentic & automated workflow automation",
+    "evidence": "Magenta is an artificial-intelligence platform developed by Magenta, headquartered in El Segundo, California, that automates document-intensive manufacturing and quality workflows for regulated manufacturing."
+   },
+   {
+    "function_id": "document_automation",
+    "function": "Document processing & generation workflows",
+    "evidence": "Magenta is an artificial-intelligence platform developed by Magenta, headquartered in El Segundo, California, that automates document-intensive manufacturing and quality workflows for regulated manufacturing."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2624779619/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2624779619"
+ },
+ {
+  "fork_id": "FR2627740935",
+  "vendor": "Praxon Labs Inc.",
+  "product": "Praxon Arc",
+  "service_model": [],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)"
+  ],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "Praxon Arc is a secure, multi-tenant AI gateway that enables federal agencies and government contractors to access, govern, and operationalize approved generative AI models through a unified platform. Praxon provides OpenAI-compatible APIs and a centralized user interface while routing requests to authorized model providers within government cloud environments. The platform delivers centralized identity and access controls, model governance, usage monitoring, cost and budget controls, audit logging, and configurable security guardrails - allowing organizations to adopt AI without creating separate integrations or governance processes for each model provider. Praxon is designed to support secure, scalable AI deployment across federal mission, compliance, and operational use cases.",
+  "functions_claimed": [
+   {
+    "function_id": "learned_inference",
+    "function": "Learned AI/ML inference (LLMs, ML, NLU, predictive models)",
+    "evidence": "Praxon Arc is a secure, multi-tenant AI gateway that enables federal agencies and government contractors to access, govern, and operationalize approved generative AI models through a unified platform."
+   },
+   {
+    "function_id": "model_gateway",
+    "function": "Model gateway & request routing",
+    "evidence": "Praxon Arc is a secure, multi-tenant AI gateway that enables federal agencies and government contractors to access, govern, and operationalize approved generative AI models through a unified platform."
+   },
+   {
+    "function_id": "model_governance",
+    "function": "Model governance & approved-model registry",
+    "evidence": "Praxon Arc is a secure, multi-tenant AI gateway that enables federal agencies and government contractors to access, govern, and operationalize approved generative AI models through a unified platform."
+   },
+   {
+    "function_id": "usage_metering",
+    "function": "Usage monitoring, metering & cost/budget controls",
+    "evidence": "The platform delivers centralized identity and access controls, model governance, usage monitoring, cost and budget controls, audit logging, and configurable security guardrails - allowing organizations to adopt AI without creating separate integrations or governance processes for each model provider."
+   },
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging & trails",
+    "evidence": "The platform delivers centralized identity and access controls, model governance, usage monitoring, cost and budget controls, audit logging, and configurable security guardrails - allowing organizations to adopt AI without creating separate integrations or governance processes for each model provider."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Identity & access control",
+    "evidence": "The platform delivers centralized identity and access controls, model governance, usage monitoring, cost and budget controls, audit logging, and configurable security guardrails - allowing organizations to adopt AI without creating separate integrations or governance processes for each model provider."
+   },
+   {
+    "function_id": "multi_tenancy",
+    "function": "Multi-tenant architecture & tenant isolation",
+    "evidence": "Praxon Arc is a secure, multi-tenant AI gateway that enables federal agencies and government contractors to access, govern, and operationalize approved generative AI models through a unified platform."
+   },
+   {
+    "function_id": "guardrails",
+    "function": "Configurable security guardrails / content policy",
+    "evidence": "The platform delivers centralized identity and access controls, model governance, usage monitoring, cost and budget controls, audit logging, and configurable security guardrails - allowing organizations to adopt AI without creating separate integrations or governance processes for each model provider."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "Open APIs & integrations",
+    "evidence": "Praxon provides OpenAI-compatible APIs and a centralized user interface while routing requests to authorized model providers within government cloud environments."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2627740935/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2627740935"
+ },
+ {
+  "fork_id": "FR2628345439",
+  "vendor": "Stell Engineering",
+  "product": "Stell Requirements Management System",
+  "service_model": [],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Collaboration",
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Governance, Risk, and Compliance (GRC)"
+  ],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "The Stell Requirements Management Software (SRMS) is delivered as a fully managed FedRAMP Moderate Equivalent software-as-a-service (\u201cSaaS\u201d) offering to help federal contractors meet the requirements for protecting Controlled Unclassified Information (CUI). The SRMS is a\u00a0 multi-tenant Public cloud available and purpose built for commercial aerospace and defense industrial base (government and DoW contractors) partners who handle data subject to government regulations and requirements for the protection of CUI.",
+  "functions_claimed": [
+   {
+    "function_id": "multi_tenancy",
+    "function": "Multi-tenant architecture & tenant isolation",
+    "evidence": "The SRMS is a\u00a0 multi-tenant Public cloud available and purpose built for commercial aerospace and defense industrial base (government and DoW contractors) partners who handle data subject to government regulations and requirements for the protection of CUI."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2628345439/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2628345439"
+ },
+ {
+  "fork_id": "FR2619944785",
+  "vendor": "Unison",
+  "product": "Bidscale",
+  "service_model": [],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Collaboration",
+   "Communication",
+   "Content Management System (CMS)",
+   "Data Management",
+   "Finance",
+   "Grant Management",
+   "Legal & Policy",
+   "Operations Management",
+   "Research"
+  ],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "Bidscale helps federal acquisition professionals move faster across three  \nhigh-burden workflows: Requirements Development, Acquisition Package, and \nOffer Evaluation. AI modules guide inputs, support contract data, generate stronger \ndrafts, and organize evaluation records so teams can produce clear, consistent,  \nand defensible outputs.\n\nAI-Supported Acquisition Workflows\n1. Requirements Development:  Guide program teams through requirements inputs, predict key contract data, and generate stronger first drafts. \n2. Acquisition Package: Support strategy decisions, assemble required materials, and create acquisition documents with configurable workflows. \n3. Offer Evaluation: Review proposals digitally, develop findings, and generate evaluation reports with a clear audit trail.",
+  "functions_claimed": [
+   {
+    "function_id": "learned_inference",
+    "function": "Learned AI/ML inference (LLMs, ML, NLU, predictive models)",
+    "evidence": "AI modules guide inputs, support contract data, generate stronger \ndrafts, and organize evaluation records so teams can produce clear, consistent,  \nand defensible outputs."
+   },
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging & trails",
+    "evidence": "Offer Evaluation: Review proposals digitally, develop findings, and generate evaluation reports with a clear audit trail."
+   },
+   {
+    "function_id": "evaluation_records",
+    "function": "Evaluation records, scoring & quality review",
+    "evidence": "AI modules guide inputs, support contract data, generate stronger \ndrafts, and organize evaluation records so teams can produce clear, consistent,  \nand defensible outputs."
+   },
+   {
+    "function_id": "document_automation",
+    "function": "Document processing & generation workflows",
+    "evidence": "AI modules guide inputs, support contract data, generate stronger \ndrafts, and organize evaluation records so teams can produce clear, consistent,  \nand defensible outputs."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2619944785/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2619944785"
+ }
+]

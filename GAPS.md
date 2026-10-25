@@ -123,6 +123,20 @@ Extended functions, specified in groups/collaboration-l3/UNION-SPEC.md, not impl
 
 Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Group character recorded in the spec: at High this is an enclave group — listings are boundary prose, claim mass sits in platform families (APIs 10 of 17), and the L2 core was carried upward whole because a wording artifact is not a downgrade.
 
+## Group 9 — Artificial Intelligence (AI) L2 (11 forks)
+
+The final batch's largest single item lives here:
+- [ ] open — Learned AI/ML inference: real LLMs, ML, NLU, and predictive models (8 of 11 forks claim it; the group's #1 family). Each vendor's models are their own; the shipped core's responder is a deterministic reference stub (echo/template/rules) labeled `reference_stub: true` on every response, and is not a substitute for inference.
+
+Other extended families, specified in groups/ai-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Agentic & automated workflow engines (4)
+- [ ] open — Document processing & generation workloads (4)
+- [ ] open — Analytics, dashboards & reporting (2)
+- [ ] open — Contact center & customer experience (1)
+- [ ] open — Vertical domain applications: compliance/ERP enclave, IT asset management, electronics data exchange, manufacturing QC, requirements management, acquisition support, cloud infrastructure (one sibling each)
+
+Platform notes: multi-tenancy (6 claim it) — the build is a single-tenant reference deployment, tenant isolation is deployment-layer; encryption at rest is deployment-layer (TLS when configured); demo identities are hooks, not an IdP.
+
 ## Later groups
 
 Each group appends its section here when it ships.
