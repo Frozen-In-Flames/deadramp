@@ -618,6 +618,20 @@ Extended functions, specified in groups/operations-management-l2/UNION-SPEC.md, 
 
 Platform-layer: multi-tenancy (claimed by neither sibling; single-tenant reference deployment); encryption at rest is deployment-layer (TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: the two siblings share exactly 1 of 19 taxonomy families — two half-domains over one shared records substrate — and one sibling's boundary disclaimer (it does not produce, store, or transmit federal information) is recorded as tagging nothing.
 
+## Singleton 37 — Communication L1 (1 fork)
+
+Extended functions, specified in groups/communication-l1/UNION-SPEC.md, not implemented:
+- [ ] open — Campaign orchestration engine (visual campaign orchestration, cross-channel campaign execution, campaign / journey lifecycle; the fork's signature function)
+- [ ] open — Audience segmentation engine (targeted segmentation over audience data)
+- [ ] open — Customer profile store & identity resolution (beyond the directory's contact records)
+- [ ] open — Real-time interaction management (real-time decisioning / interaction handling)
+- [ ] open — Workflow / BPM engine (campaign-creation workflow as an engine incl. approval chains; claim remainder — the approval-less dispatch substrate is Core)
+- [ ] open — Reporting / analytics engines beyond the records substrate (campaign-effectiveness analytics and dashboards)
+- [ ] open — Real channel execution (email / SMS / push delivery networks and direct-mail fulfillment; core dispatch is the labelled reference transport and transmits nothing)
+- [ ] open — Managed-service operations (hosting / operating the platform itself)
+
+Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: the fork's signature functions match no family in the category taxonomy (defined from the L2 group, where no sibling is a campaign platform); they are specified as gaps, not forced into families, and the taxonomy was not re-tuned.
+
 ## Later groups
 
 Each group appends its section here when it ships.
