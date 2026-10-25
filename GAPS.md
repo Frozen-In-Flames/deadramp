@@ -439,6 +439,25 @@ Extended functions, specified in groups/crm-l2/UNION-SPEC.md, not implemented:
 
 Platform-layer: multi-tenancy (single-tenant reference deployment); encryption at rest is deployment-layer (TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization); the hosting / delivery platform both siblings assert in prose is the deployment layer itself. Named absences (not gaps, unclaimed): opportunity / pipeline and campaign / lists — neither description contains sales vocabulary at all. Privacy discipline is test-enforced on the record shapes (opaque references only), and gap-finding records carry detail verbatim with no score field anywhere.
 
+## Group 27 — Customer Service L2 (2 forks)
+
+Extended functions, specified in groups/customer-service-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Commerce platform hosting & point-of-sale systems (one sibling's entire domain: POS hosting for grocery / gas / loyalty / food-ordering, commerce applications, commerce API platform)
+- [ ] open — PCS relocation platform (the other sibling's domain: relocation financial workflows from obligation to financial-system interfaces, travel-voucher processing, supplier integration)
+- [ ] open — Automation execution engines (the rule registry is Core; one sibling's automation prose is a recorded near-miss, 0 tagged claims)
+- [ ] open — E-signature execution & PIV-based signer identity assurance (prose present in one sibling; 0 tagged claims)
+- [ ] open — Event detection, diagnosis & orchestration engines (0 claims here; carried from the Group 26 union)
+- [ ] open — GRC platform (0 claims here; carried from the Group 26 union)
+- [ ] open — Real-time channels: live chat, voice / telephony (0 claims; named)
+- [ ] open — AI assistance / deflection (0 claims; named)
+- [ ] open — Knowledge base articles (0 of 2; named absence at both tiers)
+- [ ] open — Satisfaction / CSAT surveys (0 of 2; named absence; near-miss recorded)
+- [ ] open — SLA policy engine (due / breach derivation only in Core; no sibling at either tier claims SLA terms)
+- [ ] open — Notification delivery & status-page hosting (status records / view are Core; delivery is not)
+- [ ] open — Reporting / analytics engines beyond registry reporting (reporting is this group's sole claim, 1 of 2)
+
+Platform-layer: encryption at rest is deployment-layer (TLS when configured); single-tenant reference deployment; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec finding: this group is a source-category artifact at both forks — one claims zero functions of any family (and is not self-categorized in the source), the other's sole claim is generic platform reporting; neither claims any core customer-service function, and the substrate stands on a recorded core-boundary decision rather than on claims.
+
 ## Later groups
 
 Each group appends its section here when it ships.
