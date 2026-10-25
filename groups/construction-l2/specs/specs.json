@@ -1,0 +1,205 @@
+[
+ {
+  "fork_id": "FR2214062312",
+  "vendor": "Actsoft, Inc",
+  "product": "Actsoft Workforce Manager for Gov.",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Construction",
+  "description": "Workforce Manager for Gov is a fully-integrated platform, which facilitates the business needs of a agency with mobile employees. On top of robust features such as Wireless Forms, Timekeeping, Job Dispatching, and GPS Tracking, customers with vehicles can leverage the solution\u2019s fleet components to monitor vehicle activities like stop times, idling, driver behavior, score cards, and telematics. \n\nThis intuitive, yet flexible solution addresses key market challenges such as ease of use, data collection, mobile resource management, implementation costs, and worker compliance and overall accountability. The synergy of tools in Workforce Manager for Gov brings agencies greater efficiency and productivity gains by automating and streamlining processes that help them save time, reduce labor costs, and lower vehicle-related expenses such as fuel and maintenance. Agencies benefit from an easily deployable solution that provides a significant return on investment.\n\nWorkforce Manager for Gov is equipped with enterprise-grade workforce management tools that are typically only found in high-priced business applications, making it affordable and accessible to all Government Agencies. This approach provides customers with a solution that delivers relevant information about daily field operations, helping agencies craft new business strategies to save both time and money.",
+  "functions_claimed": [
+   {
+    "function_id": "documents_forms",
+    "function": "Documents, forms, templates & clauses",
+    "evidence": "On top of robust features such as Wireless Forms, Timekeeping, Job Dispatching, and GPS Tracking, customers with vehicles can leverage the solution\u2019s fleet components to monitor vehicle activities like stop times, idling, driver behavior, score cards, and telematics."
+   },
+   {
+    "function_id": "workforce_timekeeping",
+    "function": "Workforce records & timekeeping",
+    "evidence": "On top of robust features such as Wireless Forms, Timekeeping, Job Dispatching, and GPS Tracking, customers with vehicles can leverage the solution\u2019s fleet components to monitor vehicle activities like stop times, idling, driver behavior, score cards, and telematics."
+   },
+   {
+    "function_id": "compliance_payroll",
+    "function": "Prevailing-wage & workforce compliance records",
+    "evidence": "This intuitive, yet flexible solution addresses key market challenges such as ease of use, data collection, mobile resource management, implementation costs, and worker compliance and overall accountability."
+   },
+   {
+    "function_id": "job_dispatch",
+    "function": "Job dispatch & assignment",
+    "evidence": "On top of robust features such as Wireless Forms, Timekeeping, Job Dispatching, and GPS Tracking, customers with vehicles can leverage the solution\u2019s fleet components to monitor vehicle activities like stop times, idling, driver behavior, score cards, and telematics."
+   },
+   {
+    "function_id": "location_tracking",
+    "function": "GPS & location tracking",
+    "evidence": "On top of robust features such as Wireless Forms, Timekeeping, Job Dispatching, and GPS Tracking, customers with vehicles can leverage the solution\u2019s fleet components to monitor vehicle activities like stop times, idling, driver behavior, score cards, and telematics."
+   },
+   {
+    "function_id": "fleet_telematics",
+    "function": "Fleet & vehicle telematics",
+    "evidence": "On top of robust features such as Wireless Forms, Timekeeping, Job Dispatching, and GPS Tracking, customers with vehicles can leverage the solution\u2019s fleet components to monitor vehicle activities like stop times, idling, driver behavior, score cards, and telematics."
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow & process automation",
+    "evidence": "The synergy of tools in Workforce Manager for Gov brings agencies greater efficiency and productivity gains by automating and streamlining processes that help them save time, reduce labor costs, and lower vehicle-related expenses such as fuel and maintenance."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2214062312/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2214062312"
+ },
+ {
+  "fork_id": "FR2533236012",
+  "vendor": "CobbleStone Software",
+  "product": "Contract Insight",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [],
+  "deadramp_category": "Construction",
+  "description": "CobbleStone Contract Insight contract management software is delivered as SaaS offering using a multi-tenant public cloud computing environment. It is available to federal, state, local, and tribal governments, as well as research institutions, federal contractors, government contractors, education systems, and more. CobbleStone contract lifecycle management software (CLM) increases efficiency and security with a web-enabled solution that helps users:\r\n\r\n* Simplify and enhance the entire contract lifecycle\r\n* Conduct advanced searching and reporting\r\n* Complete tasks and achieve goals with email and calendar alerts for key dates\r\n* Track financials to control spend\r\n* Increase agreement collaboration and visibility\r\n* Improve contract cycle times with automated workflow and electronic signatures\r\n* Contract writing with pre-approved templates and clauses\r\n* Artificial intelligence (AI) data extraction and negotiation with playbooks redlining\r\n* Run advanced reports\r\n* And much more",
+  "functions_claimed": [
+   {
+    "function_id": "contract_lifecycle",
+    "function": "Contract lifecycle management",
+    "evidence": "CobbleStone Contract Insight contract management software is delivered as SaaS offering using a multi-tenant public cloud computing environment."
+   },
+   {
+    "function_id": "documents_forms",
+    "function": "Documents, forms, templates & clauses",
+    "evidence": "Contract writing with pre-approved templates and clauses"
+   },
+   {
+    "function_id": "financial_tracking",
+    "function": "Financial & spend tracking",
+    "evidence": "Track financials to control spend"
+   },
+   {
+    "function_id": "alerts_key_dates",
+    "function": "Key-date alerts & notifications",
+    "evidence": "Complete tasks and achieve goals with email and calendar alerts for key dates"
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow & process automation",
+    "evidence": "Improve contract cycle times with automated workflow and electronic signatures"
+   },
+   {
+    "function_id": "esignature",
+    "function": "Electronic signatures",
+    "evidence": "Improve contract cycle times with automated workflow and electronic signatures"
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML capability",
+    "evidence": "Artificial intelligence (AI) data extraction and negotiation with playbooks redlining"
+   },
+   {
+    "function_id": "search_reporting",
+    "function": "Search, reporting & analytics",
+    "evidence": "Conduct advanced searching and reporting"
+   },
+   {
+    "function_id": "multi_tenancy",
+    "function": "Multi-tenant deployment (platform property)",
+    "evidence": "CobbleStone Contract Insight contract management software is delivered as SaaS offering using a multi-tenant public cloud computing environment."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2533236012/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2533236012"
+ },
+ {
+  "fork_id": "FR1815734543",
+  "vendor": "Gordian",
+  "product": "Gordian Federal Cloud powered by RSMeans Data",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Construction",
+  "description": "Gordian Federal Cloud is an enterprise Software as a Service (SaaS) solution powered by RSMeans data. The cloud-based solution is a comprehensive suite of modules designed to securely provide federal users with the tools and cost data to better manage construction and facilities estimates, contracts and pricing proposals. Decision-makers are empowered with up-to-date information that will deliver accurate and competitive bids, minimize the risk of cost overruns, reduce variability and gain control over costs.\n\nGordian is the leader in facility and construction cost data, software and services for all phases of the building lifecycle. A pioneer of Job Order Contracting, Gordian\u2019s solutions also include our proprietary RSMeans data and a comprehensive suite of Facilities Planning solutions. From planning to design, procurement, construction and operations, Gordian\u2019s solutions help clients maximize efficiency, optimize cost savings and increase building quality.",
+  "functions_claimed": [
+   {
+    "function_id": "project_records",
+    "function": "Project & job-order records",
+    "evidence": "A pioneer of Job Order Contracting, Gordian\u2019s solutions also include our proprietary RSMeans data and a comprehensive suite of Facilities Planning solutions."
+   },
+   {
+    "function_id": "contract_lifecycle",
+    "function": "Contract lifecycle management",
+    "evidence": "The cloud-based solution is a comprehensive suite of modules designed to securely provide federal users with the tools and cost data to better manage construction and facilities estimates, contracts and pricing proposals."
+   },
+   {
+    "function_id": "cost_data_estimating",
+    "function": "Cost data & estimating",
+    "evidence": "Gordian Federal Cloud is an enterprise Software as a Service (SaaS) solution powered by RSMeans data."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1815734543/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1815734543"
+ },
+ {
+  "fork_id": "FR2420341612",
+  "vendor": "LCptracker Inc",
+  "product": "LCPtracker Pro",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Construction"
+  ],
+  "deadramp_category": "Construction",
+  "description": "LCPtracker Pro is delivered as a SaaS offering using a multi-tenant Public Cloud cloud computing environment. It is available to public commercial enterprises, federal, state, local, and tribal governments, as well as research institutions, federal contractors, and government contractors. LCPtracker Pro is a cloud-based prevailing wage and workforce compliance management solution. The application is ideal for public agencies and prime contractors that are responsible for keeping all contractors on their project, even down to the lower-tier subcontractors, compliant. Additionally, clients can track detailed worker information and leverage dynamic reporting to monitor workforce initiatives.",
+  "functions_claimed": [
+   {
+    "function_id": "project_records",
+    "function": "Project & job-order records",
+    "evidence": "The application is ideal for public agencies and prime contractors that are responsible for keeping all contractors on their project, even down to the lower-tier subcontractors, compliant."
+   },
+   {
+    "function_id": "workforce_timekeeping",
+    "function": "Workforce records & timekeeping",
+    "evidence": "Additionally, clients can track detailed worker information and leverage dynamic reporting to monitor workforce initiatives."
+   },
+   {
+    "function_id": "compliance_payroll",
+    "function": "Prevailing-wage & workforce compliance records",
+    "evidence": "LCPtracker Pro is a cloud-based prevailing wage and workforce compliance management solution."
+   },
+   {
+    "function_id": "contractor_hierarchy",
+    "function": "Contractor & subcontractor participation",
+    "evidence": "The application is ideal for public agencies and prime contractors that are responsible for keeping all contractors on their project, even down to the lower-tier subcontractors, compliant."
+   },
+   {
+    "function_id": "search_reporting",
+    "function": "Search, reporting & analytics",
+    "evidence": "Additionally, clients can track detailed worker information and leverage dynamic reporting to monitor workforce initiatives."
+   },
+   {
+    "function_id": "multi_tenancy",
+    "function": "Multi-tenant deployment (platform property)",
+    "evidence": "LCPtracker Pro is delivered as a SaaS offering using a multi-tenant Public Cloud cloud computing environment."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2420341612/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2420341612"
+ }
+]

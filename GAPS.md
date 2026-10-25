@@ -324,6 +324,21 @@ Extended functions, specified in groups/cms-l2/UNION-SPEC.md, not implemented:
 
 Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Named absences recorded in the spec: no sibling claims editorial review workflow, versioning, publish scheduling, WYSIWYG editing, templating / rendering, or personalization; the build's lifecycle states, revisions, and publish windows are documented as registry mechanics of the claimed content-registry / publishing families (the Group 10 core-boundary precedent), never as claimed families.
 
+## Group 19 — Construction L2 (4 forks)
+
+Extended functions, specified in groups/construction-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Cost estimating engines & the proprietary cost data behind them (estimate records are Core)
+- [ ] open — GPS / location tracking platform & mobile field data collection
+- [ ] open — Fleet & vehicle telematics (vehicle monitoring, driver-behavior score cards)
+- [ ] open — Contract-lifecycle workflow engines, template & clause libraries, negotiation playbooks with redlining
+- [ ] open — E-signature execution
+- [ ] open — AI/ML models (AI data extraction & negotiation assistance) (1)
+- [ ] open — Workflow / process automation engines (2; lifecycle state machines are the in-core seed)
+- [ ] open — Prevailing-wage determination depth (rate tables, fringe calculation, certified-payroll generation / e-filing)
+- [ ] open — Dispatch routing & optimization
+
+Platform-layer: multi-tenancy (2 of 4 claim it in prose; single-tenant reference deployment); encryption at rest is deployment-layer (TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Privacy discipline: worker records hold opaque caller-supplied references only; payroll records hold aggregate wage totals, never per-worker pay. Spec note: six taxonomy families tag 0 of 4 descriptions; four (submittal / RFI, schedule / milestones, inspection / punch-list, safety incidents) are carried into the Core explicitly flagged carried, not claimed, as the record types the category is defined by.
+
 ## Later groups
 
 Each group appends its section here when it ships.
