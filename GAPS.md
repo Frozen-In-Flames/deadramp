@@ -210,6 +210,28 @@ Extended functions, specified in groups/education-training-l2/UNION-SPEC.md, not
 
 Platform-layer: single-tenant reference deployment; encryption at rest is deployment-layer (TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Certificates are records only (issuance claimed by 0 of 8).
 
+## Group 12 — Data Management L2 (8 forks)
+
+Extended functions, specified in groups/data-management-l2/UNION-SPEC.md, not implemented (16):
+- [ ] open — Distributed storage engines (data lake / warehouse internals, database engines, replication)
+- [ ] open — Integration runtime & connector engine (iPaaS execution)
+- [ ] open — PPRL record-linkage engine & de-identification engines
+- [ ] open — Enterprise search indexing engine (the core searches registry metadata)
+- [ ] open — Content processing engines (OCR, transcription, categorization)
+- [ ] open — Workflow / BPM execution & guided-interview engines
+- [ ] open — Query & visualization engines
+- [ ] open — IaaS / PaaS hosting (compute, private cloud, DaaS, AaaS)
+- [ ] open — Kubernetes provisioning & cluster lifecycle engine
+- [ ] open — Asset inspection & capital-planning applications
+- [ ] open — Managed file transfer transport
+- [ ] open — Case management depth (vetting / adjudication)
+- [ ] open — AI/ML analytics & orchestration in bundled applications
+- [ ] open — Field-level / transformation lineage beyond ingestion records (the build's provenance is bounded to ingestion granularity, stated in the spec)
+- [ ] open — Retention disposition execution (deletion / archival engines, NARA / FOIA production; the core schedules and reports due state only)
+- [ ] open — Plus the families named in the spec's long tail
+
+Platform-layer: encryption at rest (deployment layer; TLS when configured); multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Recorded findings: no sibling claims a storage engine as a customer-facing function, and none claims field-level lineage.
+
 ## Later groups
 
 Each group appends its section here when it ships.

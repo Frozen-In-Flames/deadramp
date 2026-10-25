@@ -1,0 +1,307 @@
+[
+ {
+  "fork_id": "FR2128235497",
+  "vendor": "Bamboo Health, Inc.",
+  "product": "PMP Government-Gateway",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Data Management",
+  "description": "The PMP Government-Gateway, offered by Bamboo Health, is a Software as a Service (SaaS) solution designed for healthcare agencies and providers. This service allows for the query and report visualization of prescription dispensation information directly within the Electronic Health Records (EHR) system, ensuring that healthcare professionals can access a patient's comprehensive controlled substance prescription history without leaving their workflow.",
+  "functions_claimed": [
+   {
+    "function_id": "query_reporting",
+    "function": "Query, reporting & analytics",
+    "evidence": "This service allows for the query and report visualization of prescription dispensation information directly within the Electronic Health Records (EHR) system, ensuring that healthcare professionals can access a patient's comprehensive controlled substance prescription history without leaving their workflow."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2128235497/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2128235497"
+ },
+ {
+  "fork_id": "FR1916254386",
+  "vendor": "Boomi, Inc.",
+  "product": "Boomi Enterprise Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Data Management",
+   "Artificial Intelligence (AI)",
+   "Governance, Risk, and Compliance (GRC)"
+  ],
+  "deadramp_category": "Data Management",
+  "description": "A unified, enterprise-grade cloud integration and automation platform designed to break down data silos, streamline IT complexity, and accelerate digital transformation across hybrid environments.",
+  "functions_claimed": [
+   {
+    "function_id": "integration_exchange",
+    "function": "Integration, connectivity & data exchange",
+    "evidence": "A unified, enterprise-grade cloud integration and automation platform designed to break down data silos, streamline IT complexity, and accelerate digital transformation across hybrid environments."
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow, automation, review & approvals",
+    "evidence": "A unified, enterprise-grade cloud integration and automation platform designed to break down data silos, streamline IT complexity, and accelerate digital transformation across hybrid environments."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1916254386/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1916254386"
+ },
+ {
+  "fork_id": "FR2522249893",
+  "vendor": "Bridge Intelligence LLC. dba AssetIntel",
+  "product": "Asset Management Suite (AMS)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Data Management"
+  ],
+  "deadramp_category": "Data Management",
+  "description": "Asset Management Suite (AMS) is a Software-as-a-Service offering hosted in Microsoft Azure Government for transportation asset inspection, lifecycle management, emergency response, and capital planning. The FedRAMP authorization boundary includes inspectX, emergencyX, and manageX; SNBIX is provided within inspectX. AMS uses Azure Government services for compute, networking, database, storage, messaging, identity, secrets and key management, and supporting platform operations. Audit and performance logs are forwarded to Datadog for Government for continuous monitoring.",
+  "functions_claimed": [
+   {
+    "function_id": "asset_lifecycle",
+    "function": "Asset, cluster & infrastructure lifecycle management",
+    "evidence": "Asset Management Suite (AMS) is a Software-as-a-Service offering hosted in Microsoft Azure Government for transportation asset inspection, lifecycle management, emergency response, and capital planning."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2522249893/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2522249893"
+ },
+ {
+  "fork_id": "FR2128562231",
+  "vendor": "Collabware",
+  "product": "Collabspace",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Data Management",
+  "description": "Collabspace is a highly scalable, cloud-based records and information management solution. Collabspace enables organizations to stream content from multiple repositories into a data lake for the purposes of managing content lifecycle for NARA compliance, and to facilitate faster execution of FOIA requests processes. Collabspace employs advanced enterprise search and records management capabilities such as OCR and audio/video transcription to help categorize and analyze records for proper retention and disposition.",
+  "functions_claimed": [
+   {
+    "function_id": "dataset_registry",
+    "function": "Dataset, records & repository registry",
+    "evidence": "Collabspace is a highly scalable, cloud-based records and information management solution."
+   },
+   {
+    "function_id": "catalog_search",
+    "function": "Catalog search & discovery",
+    "evidence": "Collabspace employs advanced enterprise search and records management capabilities such as OCR and audio/video transcription to help categorize and analyze records for proper retention and disposition."
+   },
+   {
+    "function_id": "ingestion_collection",
+    "function": "Ingestion & data collection",
+    "evidence": "Collabspace enables organizations to stream content from multiple repositories into a data lake for the purposes of managing content lifecycle for NARA compliance, and to facilitate faster execution of FOIA requests processes."
+   },
+   {
+    "function_id": "retention_disposition",
+    "function": "Retention, disposition & records lifecycle",
+    "evidence": "Collabspace enables organizations to stream content from multiple repositories into a data lake for the purposes of managing content lifecycle for NARA compliance, and to facilitate faster execution of FOIA requests processes."
+   },
+   {
+    "function_id": "content_processing",
+    "function": "Content processing (OCR, transcription, categorization)",
+    "evidence": "Collabspace employs advanced enterprise search and records management capabilities such as OCR and audio/video transcription to help categorize and analyze records for proper retention and disposition."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2128562231/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2128562231"
+ },
+ {
+  "fork_id": "FR2112152882",
+  "vendor": "Datavant",
+  "product": "Datavant Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Data Management",
+  "description": "Datavant Cloud enables privacy-preserving health data connectivity for federal government customers, stakeholders, and collaborators. Our privacy-preserving record linkage (PPRL) solution links person-level data across data silos using universal patient keys without exposing personally identifiable information (PII) or protected health information (PHI). Data governance controls are built-in to Datavant\u2019s unique PPRL deployment model, providing assurance to data originators and data stewards that their data can only be processed by the right entity, for the right purpose, under the right conditions. \n\nDatavant features include:\n- Governance controls that enable an array of data-sharing models including data collaboratives, registries, repositories, project-specific data-sharing, and single vs. bi-directional data linkages. \n- Trust frameworks that provide linkage honest broker, zero trust, and peer-to-peer models, providing data originators and data recipients with flexibility to connect data using their desired trust models.\n- De-identified cohort discovery with Datavant\u2019s extensive ecosystem of interoperable real world datapartners to discover shared cohorts and populations without needing to share underlying data.\n\nDatavant services include:\n- Datavant DeID+Link\n- Datavant Match\n- Datavant Desktop\n- Datavant Web Portal features:\n- Overlaps, Overlaps API\n- Explore\n\nDatavant solutions can be deployed on-premise, in virtualized environments, in cloud, and integrated locally within your native systems via our API.",
+  "functions_claimed": [
+   {
+    "function_id": "dataset_registry",
+    "function": "Dataset, records & repository registry",
+    "evidence": "Datavant features include:\n- Governance controls that enable an array of data-sharing models including data collaboratives, registries, repositories, project-specific data-sharing, and single vs."
+   },
+   {
+    "function_id": "catalog_search",
+    "function": "Catalog search & discovery",
+    "evidence": "- De-identified cohort discovery with Datavant\u2019s extensive ecosystem of interoperable real world datapartners to discover shared cohorts and populations without needing to share underlying data."
+   },
+   {
+    "function_id": "integration_exchange",
+    "function": "Integration, connectivity & data exchange",
+    "evidence": "Datavant Cloud enables privacy-preserving health data connectivity for federal government customers, stakeholders, and collaborators."
+   },
+   {
+    "function_id": "record_linkage",
+    "function": "Record linkage & matching",
+    "evidence": "Our privacy-preserving record linkage (PPRL) solution links person-level data across data silos using universal patient keys without exposing personally identifiable information (PII) or protected health information (PHI)."
+   },
+   {
+    "function_id": "data_governance",
+    "function": "Data governance & access controls",
+    "evidence": "Data governance controls are built-in to Datavant\u2019s unique PPRL deployment model, providing assurance to data originators and data stewards that their data can only be processed by the right entity, for the right purpose, under the right conditions."
+   },
+   {
+    "function_id": "privacy_deidentification",
+    "function": "Privacy preservation & de-identification",
+    "evidence": "Datavant Cloud enables privacy-preserving health data connectivity for federal government customers, stakeholders, and collaborators."
+   },
+   {
+    "function_id": "api_access",
+    "function": "API / programmatic access",
+    "evidence": "Datavant services include:\n- Datavant DeID+Link\n- Datavant Match\n- Datavant Desktop\n- Datavant Web Portal features:\n- Overlaps, Overlaps API\n- Explore\n\nDatavant solutions can be deployed on-premise, in virtualized environments, in cloud, and integrated locally within your native systems via our API."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2112152882/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2112152882"
+ },
+ {
+  "fork_id": "FR1724526654",
+  "vendor": "Intelliworx",
+  "product": "Intelliworx Cloud Workflow Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Data Management",
+  "description": "Intelliworx offers a Platform to automate complex business, workflow, application management, and forms/document solutions. This Platform provides the ability to simplify complex data collection processes into intelligent interviews that can be combined to create complete end to end business solutions. This is done by collecting information from the public or employees through adaptive interviews to ensure accuracy, completeness, and simplicity. Once information is collected and submitted, appropriate stakeholders are notified for review, approval, and correction as needed. The information can be used in future sessions or integrated into other business solutions and systems of records.",
+  "functions_claimed": [
+   {
+    "function_id": "ingestion_collection",
+    "function": "Ingestion & data collection",
+    "evidence": "This Platform provides the ability to simplify complex data collection processes into intelligent interviews that can be combined to create complete end to end business solutions."
+   },
+   {
+    "function_id": "integration_exchange",
+    "function": "Integration, connectivity & data exchange",
+    "evidence": "The information can be used in future sessions or integrated into other business solutions and systems of records."
+   },
+   {
+    "function_id": "quality_validation",
+    "function": "Data quality, accuracy & completeness validation",
+    "evidence": "This is done by collecting information from the public or employees through adaptive interviews to ensure accuracy, completeness, and simplicity."
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow, automation, review & approvals",
+    "evidence": "Intelliworx offers a Platform to automate complex business, workflow, application management, and forms/document solutions."
+   },
+   {
+    "function_id": "guided_collection",
+    "function": "Guided data collection (forms & intelligent interviews)",
+    "evidence": "This Platform provides the ability to simplify complex data collection processes into intelligent interviews that can be combined to create complete end to end business solutions."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1724526654/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1724526654"
+ },
+ {
+  "fork_id": "F1311222650",
+  "vendor": "MIS Sciences Corporation",
+  "product": "GovPoint Cloud Services",
+  "service_model": [
+   "IaaS",
+   "PaaS",
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Data Management",
+   "Development Tools",
+   "Storage",
+   "Virtual Private Network (VPN)"
+  ],
+  "deadramp_category": "Data Management",
+  "description": "GCS is a FedRAMP Moderate (previously JAB P-ATO authorized) IaaS/PaaS/SaaS platform offering scalable compute, private cloud, and SaaS solutions to federal agencies. Customers may deploy on shared infrastructure, provision a dedicated private cloud, or co-locate their own hardware within the GCS authorization boundary.\n\nOverview of Authorized Services\n\nCompute (IaaS)\nConfigurable virtual machines balancing CPU, RAM, and high-I/O flash storage; available as pre-hardened images or custom builds.\n\nPrivate FedRAMP Cloud (IaaS)\nDedicated, tenant-isolated compute, networking, and storage fully within the GCS boundary for agencies requiring resource segregation.\n\nBring Your Own Hardware\nCustomer-owned hardware co-located within the GCS boundary, leveraging inherited GCS controls for specialized appliances and equipment.\n\nVirtual Desktop Services (DaaS)\nBrowser-accessible virtual desktops hosted within the GCS boundary, providing agency users with secure, managed access to applications and data from any endpoint without local installation requirements.\n\nAuthorization as a Service (AaaS)\nEnables SaaS providers to inherit GCS controls and deliver FedRAMP-authorized products under the GCS P-ATO.\n\nCalabrio Workforce Engagement Management (SaaS)\nContact center workforce optimization suite covering scheduling, agent performance analytics, and business intelligence.\n\nSharetru Federal (SaaS)\nManaged File Transfer as a Service (MFTaaS) supporting CMMC, ITAR, HIPAA, and PCI-DSS regulated data exchange.\n\nSayari Risk Intelligence (SaaS)\nSupply chain and counterparty risk platform aggregating corporate ownership and trade data from 250+ jurisdictions.\n\nGRID20/20 ATI (SaaS/IoT)\nCloud-based distribution grid and environmental monitoring platform covering wildfire detection, auto-alerting, and AI-enhanced analytics. Field sensor devices operate outside the authorization boundary and feed data into the GCS-hosted ATI application, which is fully within scope.\n\nIGS Bridge (SaaS)\nSecure, platform-agnostic integration suite connecting enterprise and legacy systems (Bridge Connect), coordinating clinical decision support (Bridge Care), standardizing data relationships (Bridge Map), and delivering real-time operational analytics (Bridge Monitor).\n\nAutomated Background Investigation System (ABIS)\nABIS is a personnel security case management system that tracks background investigations for Federal Employees, Contractors, Volunteers, and Interns from initiation through final adjudication. The system allows cases to be checked for transfer of trust, eApp initiation, and to conduct all pre-hire checks, and to make pre-hire and final adjudication determinations. The system also processes security clearances, SEAD-3 self-reporting, Detailee cases, and other types of cases. Interfaces with DCSA's eDelivery, CVS, OF79a Adjudications, and other interfaces are included in the system. The system fully implements Continuous Vetting (CV) and RapBack enrollment/unenrollment and processing of alerts received from CV/Rapback\n\nNXXUS Unified Imaging Intelligence Platform\nNXXUS is a federated enterprise imaging, clinical data, workflow, and AI orchestration platform. With NXXUS, healthcare organizations no longer need to replace their existing infrastructure or undertake a massive data migration; NXXUS creates a unified access and intelligence layer across those systems.",
+  "functions_claimed": [
+   {
+    "function_id": "integration_exchange",
+    "function": "Integration, connectivity & data exchange",
+    "evidence": "IGS Bridge (SaaS)\nSecure, platform-agnostic integration suite connecting enterprise and legacy systems (Bridge Connect), coordinating clinical decision support (Bridge Care), standardizing data relationships (Bridge Map), and delivering real-time operational analytics (Bridge Monitor)."
+   },
+   {
+    "function_id": "query_reporting",
+    "function": "Query, reporting & analytics",
+    "evidence": "Calabrio Workforce Engagement Management (SaaS)\nContact center workforce optimization suite covering scheduling, agent performance analytics, and business intelligence."
+   },
+   {
+    "function_id": "platform_hosting",
+    "function": "Cloud platform hosting (compute, storage, private cloud)",
+    "evidence": "GCS is a FedRAMP Moderate (previously JAB P-ATO authorized) IaaS/PaaS/SaaS platform offering scalable compute, private cloud, and SaaS solutions to federal agencies."
+   },
+   {
+    "function_id": "case_management",
+    "function": "Case management & adjudication",
+    "evidence": "Automated Background Investigation System (ABIS)\nABIS is a personnel security case management system that tracks background investigations for Federal Employees, Contractors, Volunteers, and Interns from initiation through final adjudication."
+   },
+   {
+    "function_id": "file_transfer",
+    "function": "Managed file transfer",
+    "evidence": "Sharetru Federal (SaaS)\nManaged File Transfer as a Service (MFTaaS) supporting CMMC, ITAR, HIPAA, and PCI-DSS regulated data exchange."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML analysis & orchestration",
+    "evidence": "GRID20/20 ATI (SaaS/IoT)\nCloud-based distribution grid and environmental monitoring platform covering wildfire detection, auto-alerting, and AI-enhanced analytics."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1311222650/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1311222650"
+ },
+ {
+  "fork_id": "FR2531434700",
+  "vendor": "Spectro Cloud",
+  "product": "Palette VerteX",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Data Management",
+  "description": "Spectro Cloud Palette VerteX automates the provisioning of Kubernetes clusters across on-premise, Edge, and cloud systems allowing for easy development and deployment. Spectro Cloud has simplified the path to provisioning a functional Kubernetes cluster across multiple backend systems including but not limited to AWS, Google Cloud Platform (GCP), and Azure. \n\nThe system incorporates the provisioning of pre-hardened Amazon Machine Image (AMI) and container images as well as the ability to simplify deployments to pre-defined blueprints. Spectro Cloud delivers a simplified pipeline to customer management and deployment of Kubernetes at scale with the ability to support thousands of clusters. \n\nPalette VerteX allows users to construct flexible stacks from operating system (OS), Kubernetes, container network interfaces (CNI), and container storage interfaces (CSI) to additional add-on application services; therefore, the entire stack of Kubernetes is deployed, updated, and managed as one unit, without split responsibility from virtual machines, base OS, Kubernetes infrastructure, and add-ons.",
+  "functions_claimed": [
+   {
+    "function_id": "asset_lifecycle",
+    "function": "Asset, cluster & infrastructure lifecycle management",
+    "evidence": "Spectro Cloud Palette VerteX automates the provisioning of Kubernetes clusters across on-premise, Edge, and cloud systems allowing for easy development and deployment."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2531434700/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2531434700"
+ }
+]
