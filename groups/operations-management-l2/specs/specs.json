@@ -1,0 +1,136 @@
+[
+  {
+    "fork_id": "FR2225648574",
+    "vendor": "Mathematica Inc.",
+    "product": "Mathematica Cloud Support System",
+    "service_model": "['SaaS', 'PaaS']",
+    "deployment_model": "Public Cloud",
+    "fedramp_impact_level": "Moderate",
+    "cmmc_tier": "L2",
+    "authorization_status": "FedRAMP Certified",
+    "business_categories_in_source": "[]",
+    "deadramp_category": "Operations Management",
+    "description": "The Mathematica Cloud Support System (MCSS) is a general support system (GSS) that provides Mathematica with a centralized place to scale enterprise features and enforce policy across projects that require IT presence in the cloud. The MCSS is a management and compliance console and does not produce, store, or transmit federal information. The centralized and preconfigured services offered by the MCSS include authorization, network connectivity, common security services, usage information, and governance/compliance functions. These services are ingested by application teams instantiating their information system and related components outside of the MCSS authorization boundary, leveraging the management and compliance support services from the MCSS.",
+    "functions_claimed": [
+      {
+        "function_id": "program_operations",
+        "function": "Program & project operations",
+        "evidence": "The Mathematica Cloud Support System (MCSS) is a general support system (GSS) that provides Mathematica with a centralized place to scale enterprise features and enforce policy across projects that require IT presence in the cloud."
+      },
+      {
+        "function_id": "governance_compliance",
+        "function": "Governance & compliance functions",
+        "evidence": "The MCSS is a management and compliance console and does not produce, store, or transmit federal information."
+      },
+      {
+        "function_id": "authorization_services",
+        "function": "Authorization & access services",
+        "evidence": "The centralized and preconfigured services offered by the MCSS include authorization, network connectivity, common security services, usage information, and governance/compliance functions."
+      },
+      {
+        "function_id": "security_services",
+        "function": "Common security services",
+        "evidence": "The centralized and preconfigured services offered by the MCSS include authorization, network connectivity, common security services, usage information, and governance/compliance functions."
+      },
+      {
+        "function_id": "network_connectivity",
+        "function": "Network connectivity & platform services",
+        "evidence": "The centralized and preconfigured services offered by the MCSS include authorization, network connectivity, common security services, usage information, and governance/compliance functions."
+      },
+      {
+        "function_id": "usage_information",
+        "function": "Usage information & metering",
+        "evidence": "The centralized and preconfigured services offered by the MCSS include authorization, network connectivity, common security services, usage information, and governance/compliance functions."
+      },
+      {
+        "function_id": "policy_enforcement",
+        "function": "Policy enforcement",
+        "evidence": "The Mathematica Cloud Support System (MCSS) is a general support system (GSS) that provides Mathematica with a centralized place to scale enterprise features and enforce policy across projects that require IT presence in the cloud."
+      }
+    ],
+    "source_url": "https://www.fedramp.gov/marketplace/products/FR2225648574/",
+    "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2225648574"
+  },
+  {
+    "fork_id": "FR2619646960",
+    "vendor": "TrackVia, Inc.",
+    "product": "TrackVia Government",
+    "service_model": "['SaaS']",
+    "deployment_model": "Government Community Cloud",
+    "fedramp_impact_level": "Moderate",
+    "cmmc_tier": "L2",
+    "authorization_status": "FedRAMP Certified",
+    "business_categories_in_source": "['Operations Management', 'Construction']",
+    "deadramp_category": "Operations Management",
+    "description": "TrackVia is an AI ready Operational Intelligence Platform that helps government agencies and organizations turn complex, mission critical operations into structured data, automated workflows, real time intelligence, and measurable outcomes.\n\nRather than relying on spreadsheets, disconnected point solutions, or lengthy custom software development, organizations use TrackVia to rapidly configure and deploy operational applications around their unique mission and business requirements. TrackVia brings workflows, data, automation, mobile capabilities, integrations, and AI together in a secure, governed platform.\n\nTrackVia supports use cases including field operations, inspections, workforce and mission readiness, asset and equipment management, safety and compliance, program operations, contractor and vendor management, and other mission critical workflows.\n\nTrackVia Government provides federal agencies and government contractors a secure path to modernize operational processes while meeting stringent federal security and compliance requirements.",
+    "functions_claimed": [
+      {
+        "function_id": "program_operations",
+        "function": "Program & project operations",
+        "evidence": "TrackVia supports use cases including field operations, inspections, workforce and mission readiness, asset and equipment management, safety and compliance, program operations, contractor and vendor management, and other mission critical workflows."
+      },
+      {
+        "function_id": "operational_data",
+        "function": "Operational data & structured records",
+        "evidence": "TrackVia is an AI ready Operational Intelligence Platform that helps government agencies and organizations turn complex, mission critical operations into structured data, automated workflows, real time intelligence, and measurable outcomes."
+      },
+      {
+        "function_id": "workflow_automation",
+        "function": "Workflow automation",
+        "evidence": "TrackVia is an AI ready Operational Intelligence Platform that helps government agencies and organizations turn complex, mission critical operations into structured data, automated workflows, real time intelligence, and measurable outcomes."
+      },
+      {
+        "function_id": "reporting_intelligence",
+        "function": "Reporting & operational intelligence",
+        "evidence": "TrackVia is an AI ready Operational Intelligence Platform that helps government agencies and organizations turn complex, mission critical operations into structured data, automated workflows, real time intelligence, and measurable outcomes."
+      },
+      {
+        "function_id": "asset_management",
+        "function": "Asset & equipment management",
+        "evidence": "TrackVia supports use cases including field operations, inspections, workforce and mission readiness, asset and equipment management, safety and compliance, program operations, contractor and vendor management, and other mission critical workflows."
+      },
+      {
+        "function_id": "inspections_field_ops",
+        "function": "Inspections & field operations",
+        "evidence": "TrackVia supports use cases including field operations, inspections, workforce and mission readiness, asset and equipment management, safety and compliance, program operations, contractor and vendor management, and other mission critical workflows."
+      },
+      {
+        "function_id": "workforce_readiness",
+        "function": "Workforce & mission readiness",
+        "evidence": "TrackVia supports use cases including field operations, inspections, workforce and mission readiness, asset and equipment management, safety and compliance, program operations, contractor and vendor management, and other mission critical workflows."
+      },
+      {
+        "function_id": "safety_compliance",
+        "function": "Safety & compliance management",
+        "evidence": "TrackVia supports use cases including field operations, inspections, workforce and mission readiness, asset and equipment management, safety and compliance, program operations, contractor and vendor management, and other mission critical workflows."
+      },
+      {
+        "function_id": "app_configuration",
+        "function": "Application configuration & deployment",
+        "evidence": "Rather than relying on spreadsheets, disconnected point solutions, or lengthy custom software development, organizations use TrackVia to rapidly configure and deploy operational applications around their unique mission and business requirements."
+      },
+      {
+        "function_id": "mobile_capabilities",
+        "function": "Mobile capabilities",
+        "evidence": "TrackVia brings workflows, data, automation, mobile capabilities, integrations, and AI together in a secure, governed platform."
+      },
+      {
+        "function_id": "integrations",
+        "function": "Integrations & interoperability",
+        "evidence": "TrackVia brings workflows, data, automation, mobile capabilities, integrations, and AI together in a secure, governed platform."
+      },
+      {
+        "function_id": "ai_capability",
+        "function": "AI capability",
+        "evidence": "TrackVia brings workflows, data, automation, mobile capabilities, integrations, and AI together in a secure, governed platform."
+      },
+      {
+        "function_id": "vendor_management",
+        "function": "Contractor & vendor management",
+        "evidence": "TrackVia supports use cases including field operations, inspections, workforce and mission readiness, asset and equipment management, safety and compliance, program operations, contractor and vendor management, and other mission critical workflows."
+      }
+    ],
+    "source_url": "https://www.fedramp.gov/marketplace/products/FR2619646960/",
+    "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2619646960"
+  }
+]

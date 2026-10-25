@@ -599,6 +599,25 @@ High platform gaps (named, not implied closed): MFA / authenticator management (
 
 Category-discipline exclusions (0 claims, not built): surveillance, facial recognition, predictive policing, real-time intelligence feeds. Named absences carried from Group 34 remain accurate for the legal-research side only (incident / case management, criminal records / RMS, investigative case files); the forensic evidence functions are this group's Extended verticals above, not named absences. Privacy rule unchanged and structural: opaque references only, digests only for queries and notes, smuggled fields rejected by the store signatures.
 
+## Group 36 — Operations Management L2 (2 forks)
+
+Extended functions, specified in groups/operations-management-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Workflow automation execution engine (the registry is Core; execution is the engine)
+- [ ] open — Real-time intelligence & analytics engine (streaming intelligence, outcome analytics beyond registry reporting)
+- [ ] open — AI models (1 claim)
+- [ ] open — Low-code application builder & deployment engine
+- [ ] open — Integration connector engines & catalog
+- [ ] open — Mobile applications & offline sync
+- [ ] open — Network connectivity services & cloud platform operations (platform-layer; one sibling's own service)
+- [ ] open — Authorization service / identity provider (the build ships RBAC hooks, not an IdP)
+- [ ] open — Common security services enforcement plane
+- [ ] open — Policy enforcement plane (runtime enforcement across projects)
+- [ ] open — Governance / compliance console engine (continuous compliance monitoring depth)
+- [ ] open — Scheduling & rostering (0 of 2; named absence)
+- [ ] open — IoT / telematics data collection (0 of 2; named absence)
+
+Platform-layer: multi-tenancy (claimed by neither sibling; single-tenant reference deployment); encryption at rest is deployment-layer (TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: the two siblings share exactly 1 of 19 taxonomy families — two half-domains over one shared records substrate — and one sibling's boundary disclaimer (it does not produce, store, or transmit federal information) is recorded as tagging nothing.
+
 ## Later groups
 
 Each group appends its section here when it ships.
