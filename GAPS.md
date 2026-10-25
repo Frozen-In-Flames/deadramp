@@ -276,6 +276,21 @@ Carried at 0 claims in this group, named for the final batch and cross-group com
 
 Platform-layer: encryption & key management (TLS when a certificate is configured; encryption at rest is deployment-layer, not claimed); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Tier precision: five Core taxonomy families tag 0 claims in this group and are carried as Core by design, recorded in the spec as carried, not claimed; Group 8's High apparatus is explicitly not inherited downward and not claimed.
 
+## Group 17 — Development Tools L1 (5 forks)
+
+Extended functions, specified in groups/development-tools-l1/UNION-SPEC.md, not implemented (9):
+- [ ] open — CI/CD execution engines (pipeline execution: build / test / deploy runners)
+- [ ] open — Code hosting internals (git storage, branching & merging engines)
+- [ ] open — Compilers & build toolchains
+- [ ] open — Configuration-as-code execution & orchestration
+- [ ] open — Compliance assessment & KSI status automation engines
+- [ ] open — Business modeling & automation engines (modeling + execution)
+- [ ] open — Course & content authoring tools
+- [ ] open — Landing-zone / tenant provisioning & hosted platform operations
+- [ ] open — Artifact binary storage backends (the registry holds records + checksums only; verification is by content hash)
+
+Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Group character, recorded in the spec: only two of the five are genuine development tools; the union is a development-lifecycle records substrate. Five taxonomy families sit at 0 of 5 claims (artifact registry, API / integrations, access control, audit logging, search); four enter the Core only as flagged substrate / baseline items, and API / integrations is absent from the union entirely.
+
 ## Later groups
 
 Each group appends its section here when it ships.

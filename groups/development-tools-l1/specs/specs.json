@@ -1,0 +1,171 @@
+[
+ {
+  "fork_id": "FR2317139564",
+  "vendor": "Articulate Global LLC",
+  "product": "Articulate 360",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Development Tools",
+  "description": "Articulate 360 is an annual subscription with everything you need to simplify the entire course development process. It includes desktop and web apps. Desktop apps run locally on your desktop or laptop computer, and web apps are software applications that run in a web browser.",
+  "functions_claimed": [
+   {
+    "function_id": "content_authoring",
+    "function": "Content & course authoring",
+    "evidence": "Articulate 360 is an annual subscription with everything you need to simplify the entire course development process."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2317139564/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2317139564"
+ },
+ {
+  "fork_id": "FR1814240140",
+  "vendor": "CircleCI",
+  "product": "CircleCI Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Development Tools",
+  "description": "CircleCI is a highly configurable and powerful continuous integration and delivery platform that helps software teams confidently and securely release code by automating the build, test, and deploy process. Our cloud offering removes operational overhead as we oversee the setup, security, and maintenance of your continuous integration instances. With easy setup and configuration-as-code, CircleCI removes bottlenecks, allowing teams to focus on building great things, instead of waiting for great things to build. By enabling shorter iteration cycles and immediate feedback, innovation happens faster. The platform helps developers and QA find bugs and get fixes out quickly. Operations teams use CircleCI to simplify their tool chains without having to manage additional plugins and services. Scale is where https://circleci.com really shines. We're proud to support our customers, from small startups to the largest enterprises and government agencies on earth.",
+  "functions_claimed": [
+   {
+    "function_id": "ci_pipeline",
+    "function": "CI build/test pipeline automation",
+    "evidence": "CircleCI is a highly configurable and powerful continuous integration and delivery platform that helps software teams confidently and securely release code by automating the build, test, and deploy process."
+   },
+   {
+    "function_id": "deployment_release",
+    "function": "Deployment & release",
+    "evidence": "CircleCI is a highly configurable and powerful continuous integration and delivery platform that helps software teams confidently and securely release code by automating the build, test, and deploy process."
+   },
+   {
+    "function_id": "config_as_code",
+    "function": "Configuration as code",
+    "evidence": "With easy setup and configuration-as-code, CircleCI removes bottlenecks, allowing teams to focus on building great things, instead of waiting for great things to build."
+   },
+   {
+    "function_id": "hosted_platform",
+    "function": "Hosted platform & managed operations",
+    "evidence": "Our cloud offering removes operational overhead as we oversee the setup, security, and maintenance of your continuous integration instances."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1814240140/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1814240140"
+ },
+ {
+  "fork_id": "FR1812058188",
+  "vendor": "GitHub",
+  "product": "GitHub Enterprise Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Development Tools"
+  ],
+  "deadramp_category": "Development Tools",
+  "description": "GitHub is a collaborative development platform inspired by the way you work. From open source (https://github.com/open-source) to business (https://github.com/business), you can plan, build, review, and ship software at work - all while tracking bugs and discussing ideas. You can securely develop your organization's software on GitHub, whether you work for a small startup or a large agency.",
+  "functions_claimed": [
+   {
+    "function_id": "project_collaboration",
+    "function": "Project/repository registry & code collaboration",
+    "evidence": "GitHub is a collaborative development platform inspired by the way you work."
+   },
+   {
+    "function_id": "issue_tracking",
+    "function": "Issue & work-item tracking",
+    "evidence": "From open source (https://github.com/open-source) to business (https://github.com/business), you can plan, build, review, and ship software at work - all while tracking bugs and discussing ideas."
+   },
+   {
+    "function_id": "code_review",
+    "function": "Code review & discussion",
+    "evidence": "From open source (https://github.com/open-source) to business (https://github.com/business), you can plan, build, review, and ship software at work - all while tracking bugs and discussing ideas."
+   },
+   {
+    "function_id": "deployment_release",
+    "function": "Deployment & release",
+    "evidence": "From open source (https://github.com/open-source) to business (https://github.com/business), you can plan, build, review, and ship software at work - all while tracking bugs and discussing ideas."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1812058188/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1812058188"
+ },
+ {
+  "fork_id": "FR2502834044",
+  "vendor": "Trisotech",
+  "product": "Digital Enterprise Suite FedRAMP Edition",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Low",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Development Tools",
+  "description": "The Digital Enterprise Suite is a highly visual and interactive software suite that enables technical staff to encapsulate programmatic logic and lets non-technical business people assemble the business logic to innovate, transform and improve. The Digital Enterprise Suite combines intuitive business modeling with flexible, performant and scalable business automation. It accelerates digital transformation, innovation and improvement via visualization from business discovery through to automation. \nThe Digital Enterprise Suite is Composed of the Digital Modeling Suite and the Digital Automation Suite.",
+  "functions_claimed": [
+   {
+    "function_id": "visual_modeling",
+    "function": "Visual modeling & design",
+    "evidence": "The Digital Enterprise Suite is a highly visual and interactive software suite that enables technical staff to encapsulate programmatic logic and lets non-technical business people assemble the business logic to innovate, transform and improve."
+   },
+   {
+    "function_id": "business_automation",
+    "function": "Workflow & business automation",
+    "evidence": "The Digital Enterprise Suite combines intuitive business modeling with flexible, performant and scalable business automation."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2502834044/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2502834044"
+ },
+ {
+  "fork_id": "FR2535459082",
+  "vendor": "stackArmor",
+  "product": "The Armory20x",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Low",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Development Tools"
+  ],
+  "deadramp_category": "Development Tools",
+  "description": "Armory20x is a purpose-built solution hosted on Google Cloud Platform (GCP) that provides cloud service providers (CSPs) and independent software vendors (ISVs) a deployment landing zone within an Armory20x tenant to deploy workloads that store, process, and/or transmit federal data categorized at the FedRAMP 20x Low baseline.\n\nThe tenant leverages the security and General Support System (GSS) services of The Armory | FedRAMP Marketplace to provide a known-secure deployment location, leveraging a majority of GCP FedRAMP authorized native cloud and in-boundary security services, for CSPs seeking authorization under 20x.\n\nAs part of the FedRAMP 20x Pilot, CSPs must report their Key Security Indicator (KSI) status as defined by the FedRAMP 20x Key Security Indicators | FedRAMP.gov. Armory20x leverages stackArmor's automated assessment solution to provide status for all required KSIs for a CSP deployed within a 20x tenant.\nTenants are heavily customizable, allowing Armory20x customers to deploy workloads that are suited to their particular application and service needs.\nstackArmor personnel assist CSPs/ISVs with deploying services in a manner that meets FedRAMP 20x KSI requirements and helps ensure an authorizable status under the 20x program.",
+  "functions_claimed": [
+   {
+    "function_id": "landing_zones",
+    "function": "Deployment environments, landing zones & tenants",
+    "evidence": "Armory20x is a purpose-built solution hosted on Google Cloud Platform (GCP) that provides cloud service providers (CSPs) and independent software vendors (ISVs) a deployment landing zone within an Armory20x tenant to deploy workloads that store, process, and/or transmit federal data categorized at the FedRAMP 20x Low baseline."
+   },
+   {
+    "function_id": "compliance_ksi",
+    "function": "Compliance assessment & KSI status reporting",
+    "evidence": "As part of the FedRAMP 20x Pilot, CSPs must report their Key Security Indicator (KSI) status as defined by the FedRAMP 20x Key Security Indicators | FedRAMP.gov."
+   },
+   {
+    "function_id": "hosted_platform",
+    "function": "Hosted platform & managed operations",
+    "evidence": "Armory20x is a purpose-built solution hosted on Google Cloud Platform (GCP) that provides cloud service providers (CSPs) and independent software vendors (ISVs) a deployment landing zone within an Armory20x tenant to deploy workloads that store, process, and/or transmit federal data categorized at the FedRAMP 20x Low baseline."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2535459082/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2535459082"
+ }
+]
