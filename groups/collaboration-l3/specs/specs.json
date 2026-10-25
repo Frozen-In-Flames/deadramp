@@ -1,0 +1,625 @@
+[
+ {
+  "fork_id": "FR2025827270A",
+  "vendor": "AvePoint Inc.",
+  "product": "AvePoint Online Services for US Government (AOS-UG) - High",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Collaboration",
+  "description": "AvePoint Online Services for US Government provides centralized management, governance, backup, migration, reporting, information lifecycle management, and more for your multi-SaaS workloads all in one platform.  \n\nAs AvePoint\u2019s Confidence Platform for the Public Sector, AvePoint Online Services for US Government supplements these native capabilities to achieve comprehensive data management and governance, and ensure your organization is prepared for AI while driving usage, adoption, and maximizing return on investment.  \n\nWith AvePoint Online Services for US Government, public sector organizations can leverage the functionalities below to confidently navigate the complexities of modern digital collaboration, ensuring their data is secure, compliant, and efficiently managed. \n\nAvePoint Opus \u2013 Optimize cloud storage & manage information lifecycles for Microsoft 365 \nAvePoint tyGraph \u2013 Workforce analytics for Microsoft 365  \nAvePoint Virtual Assistant (AVA) - data recovery and AI chatbot \nCense \u2013 License Management for Microsoft 365 \nCloud Backup \u2013 Backup and protection for services in Microsoft 365, Microsoft Dynamics 365, Azure, Google Workspace, Google Classroom and Salesforce \nCloud Governance \u2013 Structured cloud workspace control for Microsoft 365 \nCloud Management \u2013 Automated Microsoft 365 administration \nConfide \u2013 Secure internal and external collaboration for complex projects \nCurricula \u2013 Corporate Learning Management System \nElements \u2013 Mult-tenant management for Microsoft 365, Dynamics, Azure, Salesforce, and Google Workspace \nEnPower \u2013 Access management for Microsoft 365 \nExamena \u2013 Digital Assessment management \nFly (SaaS) - SaaS based tenant-to-tenant migration solution to or within Microsoft 365 \nInsights \u2013 Security reporting for Microsoft 365 \nMyHub \u2013 Centralized collaboration Hub for Microsoft 365 \nPolicies - Microsoft 365 security management and enforcement. \nReCenter \u2013 End-user file restore for Microsoft 365 and Google Workspace",
+  "functions_claimed": [
+   {
+    "function_id": "workspaces",
+    "function": "Shared workspaces & team collaboration",
+    "evidence": "AvePoint Opus \u2013 Optimize cloud storage & manage information lifecycles for Microsoft 365 \nAvePoint tyGraph \u2013 Workforce analytics for Microsoft 365  \nAvePoint Virtual Assistant (AVA) - data recovery and AI chatbot \nCense \u2013 License Management for Microsoft 365 \nCloud Backup \u2013 Backup and protection for services in Microsoft 365, Microsoft Dynamics 365, Azure, Google Workspace, Google Classroom and..."
+   },
+   {
+    "function_id": "ai_assistance",
+    "function": "AI assistance, speech & analytics",
+    "evidence": "As AvePoint\u2019s Confidence Platform for the Public Sector, AvePoint Online Services for US Government supplements these native capabilities to achieve comprehensive data management and governance, and ensure your organization is prepared for AI while driving usage, adoption, and maximizing return on investment."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Access control & authentication",
+    "evidence": "AvePoint Opus \u2013 Optimize cloud storage & manage information lifecycles for Microsoft 365 \nAvePoint tyGraph \u2013 Workforce analytics for Microsoft 365  \nAvePoint Virtual Assistant (AVA) - data recovery and AI chatbot \nCense \u2013 License Management for Microsoft 365 \nCloud Backup \u2013 Backup and protection for services in Microsoft 365, Microsoft Dynamics 365, Azure, Google Workspace, Google Classroom and..."
+   },
+   {
+    "function_id": "records_governance",
+    "function": "Records, governance & compliance management",
+    "evidence": "AvePoint Online Services for US Government provides centralized management, governance, backup, migration, reporting, information lifecycle management, and more for your multi-SaaS workloads all in one platform."
+   },
+   {
+    "function_id": "learning",
+    "function": "Learning, training & mentoring",
+    "evidence": "AvePoint Opus \u2013 Optimize cloud storage & manage information lifecycles for Microsoft 365 \nAvePoint tyGraph \u2013 Workforce analytics for Microsoft 365  \nAvePoint Virtual Assistant (AVA) - data recovery and AI chatbot \nCense \u2013 License Management for Microsoft 365 \nCloud Backup \u2013 Backup and protection for services in Microsoft 365, Microsoft Dynamics 365, Azure, Google Workspace, Google Classroom and..."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2025827270A/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2025827270A"
+ },
+ {
+  "fork_id": "F1302271924A",
+  "vendor": "BlackBerry",
+  "product": "BlackBerry Cloud - AtHoc Services for Government (High)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Collaboration",
+  "description": "BlackBerry's AtHoc is a networked crisis communication platform enabling corporations and government agencies to communicate and collaborate securely with their personnel and with other organizations through multiple devices during times of crises. BlackBerry's AtHoc platform addresses critical communications needs including: Account: AtHoc Account enables real-time visibility into location and status for effective personnel accountability and crisis handling before, during, and after emergencies. This integrated approach to personnel accountability enables inputs from managers about their team, call center operators, data streams from HR and travel systems, as well as self-reporting by individuals. Alert: AtHoc Alert provides a comprehensive crisis communication solution that unifies all channels and devices, empowering organizations, people, and communities to collaborate during critical events. AtHoc's flexible deployment options safeguards important personal information and enables enterprise-level command and control. Connect: AtHoc Connect empowers organizations to create their own permission-based network to establish interoperable communication and information sharing with organizations in their community. Collect: AtHoc Collect empowers your personnel in the field to be the \"eyes and ears\" of the operations center. AtHoc Collect enables on-scene personnel to report events, work progress, along with rich geo-tagged media that are worth a thousand words.",
+  "functions_claimed": [
+   {
+    "function_id": "voice_contact",
+    "function": "Voice, telephony & contact center",
+    "evidence": "This integrated approach to personnel accountability enables inputs from managers about their team, call center operators, data streams from HR and travel systems, as well as self-reporting by individuals."
+   },
+   {
+    "function_id": "notifications",
+    "function": "Notifications, alerts & emergency communications",
+    "evidence": "Alert: AtHoc Alert provides a comprehensive crisis communication solution that unifies all channels and devices, empowering organizations, people, and communities to collaborate during critical events."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "This integrated approach to personnel accountability enables inputs from managers about their team, call center operators, data streams from HR and travel systems, as well as self-reporting by individuals."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1302271924A/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1302271924A"
+ },
+ {
+  "fork_id": "F1212191840A",
+  "vendor": "Box Inc.",
+  "product": "Box Enterprise Cloud Content Collaboration Platform",
+  "service_model": [
+   "SaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Collaboration",
+  "description": "Box is a FedRAMP High, FedRAMP Moderate and DoD IL4 Authorized secure cloud content management, collaboration, and intelligent automation platform that enables federal agencies and the Department of Defense to securely manage, share, and analyze mission-critical content in the cloud.\n\nBuilt to support the rigorous compliance, security, and operational demands of U.S. federal and defense environments, Box provides a unified content platform where agencies can collaborate in real time, manage the full lifecycle of Controlled Unclassified Information (CUI), automate workflows, and maintain full control over sensitive data\u2014whether in civilian, DoD, or Intelligence Community settings.\n\nBox delivers enterprise-grade security with end-to-end encryption, granular access controls, detailed audit trails, and native data governance capabilities\u2014all managed in U.S.-based data centers by U.S. Persons. The platform integrates seamlessly with existing identity providers, zero trust architectures, and endpoint security solutions, supporting CAC/PIV authentication and aligning with NIST 800-53 Rev5, FedRAMP High, and DoD SRG IL4 control baselines.\n\nBoxAI, a secure, built-in suite of enterprise-grade artificial intelligence tools, enhances the power of content by enabling federal teams to summarize documents, extract insights, automate repetitive tasks, and make faster, smarter decisions\u2014without compromising compliance. BoxAI operates entirely within the FedRAMP High boundary, ensuring that government data remains private, is never used to train AI models, and is governed according to strict federal standards.\n\nBox is committed to supporting agencies as they modernize IT operations, drive digital transformation, and accelerate mission outcomes\u2014securely, intelligently, and at scale. With Box for Government and BoxAI, agencies gain the trusted content layer they need to operate with speed, agility, and confidence in today\u2019s dynamic threat landscape.",
+  "functions_claimed": [
+   {
+    "function_id": "file_sharing",
+    "function": "File sharing, storage & content management",
+    "evidence": "Box is a FedRAMP High, FedRAMP Moderate and DoD IL4 Authorized secure cloud content management, collaboration, and intelligent automation platform that enables federal agencies and the Department of Defense to securely manage, share, and analyze mission-critical content in the cloud."
+   },
+   {
+    "function_id": "workflow",
+    "function": "Workflow & process automation",
+    "evidence": "federal and defense environments, Box provides a unified content platform where agencies can collaborate in real time, manage the full lifecycle of Controlled Unclassified Information (CUI), automate workflows, and maintain full control over sensitive data\u2014whether in civilian, DoD, or Intelligence Community settings."
+   },
+   {
+    "function_id": "ai_assistance",
+    "function": "AI assistance, speech & analytics",
+    "evidence": "BoxAI, a secure, built-in suite of enterprise-grade artificial intelligence tools, enhances the power of content by enabling federal teams to summarize documents, extract insights, automate repetitive tasks, and make faster, smarter decisions\u2014without compromising compliance."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "The platform integrates seamlessly with existing identity providers, zero trust architectures, and endpoint security solutions, supporting CAC/PIV authentication and aligning with NIST 800-53 Rev5, FedRAMP High, and DoD SRG IL4 control baselines."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Access control & authentication",
+    "evidence": "Box delivers enterprise-grade security with end-to-end encryption, granular access controls, detailed audit trails, and native data governance capabilities\u2014all managed in U.S.-based data centers by U.S."
+   },
+   {
+    "function_id": "audit",
+    "function": "Audit logging & trails",
+    "evidence": "Box delivers enterprise-grade security with end-to-end encryption, granular access controls, detailed audit trails, and native data governance capabilities\u2014all managed in U.S.-based data centers by U.S."
+   },
+   {
+    "function_id": "encryption",
+    "function": "Encryption",
+    "evidence": "Box delivers enterprise-grade security with end-to-end encryption, granular access controls, detailed audit trails, and native data governance capabilities\u2014all managed in U.S.-based data centers by U.S."
+   },
+   {
+    "function_id": "records_governance",
+    "function": "Records, governance & compliance management",
+    "evidence": "Box delivers enterprise-grade security with end-to-end encryption, granular access controls, detailed audit trails, and native data governance capabilities\u2014all managed in U.S.-based data centers by U.S."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1212191840A/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1212191840A"
+ },
+ {
+  "fork_id": "FR2600044765",
+  "vendor": "CoLab",
+  "product": "CoLab AI Inc",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Collaboration"
+  ],
+  "deadramp_category": "Collaboration",
+  "description": "CoLab is delivered as an SaaS offering using a multi-tenant government-community cloud computing environment. It is available to the public, federal, state, and tribal governments, as well as research institutions, federal contractors, government contractors.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2600044765/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2600044765"
+ },
+ {
+  "fork_id": "FR2325657620",
+  "vendor": "Content Guru",
+  "product": "Storm Cloud Contact Center",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Collaboration",
+   "Communication",
+   "Contact Center",
+   "Customer Relations Management (CRM)",
+   "Customer Service"
+  ],
+  "deadramp_category": "Collaboration",
+  "description": "Content Guru's cloud contact center solution, storm, delivers a single-stack, end-to-end customer experience solution, providing not just the essentials of CCaaS (Contact Center as a Service), but a seamless customer journey. Content Guru brings together different channels of communication in a single platform, allowing federal agencies to focus on delivering outstanding citizen experiences.\n \nAs well as its core CCaaS capabilities, storm includes cutting-edge CRM, powerful reporting and analytics tools, workforce engagement management, customized audio conferencing for command control applications, unified communications, and deep API integrations. With all the data stored securely in one customer data platform, government agencies can easily turn insight into actions.\n \nThese powerful capabilities are supported by AI-driven Intelligent Automation and delivered with a minimum of 99.999% reliability \u2013 allowing Federal government agency customers to benefit from a hyper-scale, agile solution.",
+  "functions_claimed": [
+   {
+    "function_id": "voice_contact",
+    "function": "Voice, telephony & contact center",
+    "evidence": "Content Guru's cloud contact center solution, storm, delivers a single-stack, end-to-end customer experience solution, providing not just the essentials of CCaaS (Contact Center as a Service), but a seamless customer journey."
+   },
+   {
+    "function_id": "ai_assistance",
+    "function": "AI assistance, speech & analytics",
+    "evidence": "As well as its core CCaaS capabilities, storm includes cutting-edge CRM, powerful reporting and analytics tools, workforce engagement management, customized audio conferencing for command control applications, unified communications, and deep API integrations."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "As well as its core CCaaS capabilities, storm includes cutting-edge CRM, powerful reporting and analytics tools, workforce engagement management, customized audio conferencing for command control applications, unified communications, and deep API integrations."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2325657620/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2325657620"
+ },
+ {
+  "fork_id": "FR2108731521",
+  "vendor": "CyLogic",
+  "product": "CyCloud for VMware Cloud Foundation",
+  "service_model": [
+   "IaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [
+   "Collaboration",
+   "Communication",
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Legal & Policy",
+   "Network Management",
+   "Operations Management",
+   "Storage",
+   "System Administration",
+   "Virtual Private Network (VPN)"
+  ],
+  "deadramp_category": "Collaboration",
+  "description": "CyCloud is a modern Infrastructure-as-a-Service (IaaS) platform engineered to deliver VMware Cloud Foundation (VCF). It provides enterprise-grade compute, software-defined storage, networking, lifecycle management, automation, and self-service cloud operations within a fully integrated architecture. The platform provides standardized infrastructure, predictable operations, rapid deployment, repeatable compliance, and reduced operational risk for U.S. Government, defense, and regulated industry workloads.\n\nDeployed within carrier-dense, cloud-adjacent facilities, CyCloud provides direct access to hundreds of carriers, major network exchanges, global backbone providers, satellite connectivity providers, defense network ecosystems, and direct private connectivity to major cloud service providers. This delivers low-latency connectivity, rapid interconnection options, regional resiliency, reduced transit complexity, and optimized reach for mission-critical applications and data.",
+  "functions_claimed": [
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "It provides enterprise-grade compute, software-defined storage, networking, lifecycle management, automation, and self-service cloud operations within a fully integrated architecture."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2108731521/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2108731521"
+ },
+ {
+  "fork_id": "F1206081364",
+  "vendor": "Google",
+  "product": "Google Workspace",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Collaboration",
+   "Communication"
+  ],
+  "deadramp_category": "Collaboration",
+  "description": "Google Workspace (formerly G Suite) is comprised of Google\u2019s multi-tenant public and hybrid cloud instances and leverages Google Services.\n\n** The entire authorized security boundary of Google Services is documented, assessed, and managed against the FedRAMP High baseline of security and privacy controls. Services that are denoted with an asterisk (*) do not meet the SA-9(5) requirement. Please review the JAB P-ATO letter for more information.",
+  "functions_claimed": [
+   {
+    "function_id": "workspaces",
+    "function": "Shared workspaces & team collaboration",
+    "evidence": "Google Workspace (formerly G Suite) is comprised of Google\u2019s multi-tenant public and hybrid cloud instances and leverages Google Services."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1206081364/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1206081364"
+ },
+ {
+  "fork_id": "FR2124663764",
+  "vendor": "Intrepid Networks LLC",
+  "product": "Intrepid Networks Government Platform (INGP)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Collaboration",
+  "description": "Intrepid Networks Government Platform (INGP) is a secure, cyber-hardened platform that brings public safety and government teams together in one unified system. At its core is Intrepid Response\u00a9, a real-time operations and intelligence platform that connects teams from mission planning to first alert through final reporting.  \r\nIntrepid Response\u00a9 enables coordination across agencies during day-to-day operations, planned events and incidents of any scale.   Agencies are able to plan, manage, execute, and document missions within a single, intuitive platform. It delivers a shared operational picture, secure encrypted communications, emergency alerts, multimedia sharing, and customizable digital forms\u2014helping agencies streamline daily operations and digitize standard operating procedures with clarity and accountability.",
+  "functions_claimed": [
+   {
+    "function_id": "notifications",
+    "function": "Notifications, alerts & emergency communications",
+    "evidence": "At its core is Intrepid Response\u00a9, a real-time operations and intelligence platform that connects teams from mission planning to first alert through final reporting."
+   },
+   {
+    "function_id": "encryption",
+    "function": "Encryption",
+    "evidence": "It delivers a shared operational picture, secure encrypted communications, emergency alerts, multimedia sharing, and customizable digital forms\u2014helping agencies streamline daily operations and digitize standard operating procedures with clarity and accountability."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2124663764/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2124663764"
+ },
+ {
+  "fork_id": "FR2526240411",
+  "vendor": "Koniag Government Services",
+  "product": "Koniag Government Services Electronic Health Record System (KGS EHRS)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Collaboration",
+  "description": "The Koniag Government Services Electronic Health Record System (KGS EHRS) is a Software as a Service (SaaS) solution that provides an electronic health record system for occupational health and medical records. This system centralizes and digitizes patient medical records, enabling healthcare professionals and agency stakeholders to efficiently access, retrieve, and share patient data.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2526240411/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2526240411"
+ },
+ {
+  "fork_id": "FR2131856836",
+  "vendor": "Okta",
+  "product": "Okta IDaaS Government High Cloud (GHC)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Collaboration",
+   "Cybersecurity & Risk Management",
+   "Human Resources",
+   "Operations Management",
+   "System Administration"
+  ],
+  "deadramp_category": "Collaboration",
+  "description": "Okta for Government High service offering provides centralized identity and access management capabilities to customers who want to manage access across any application or device, whether they are on-premises in the customer\u2019s office/data center or in the cloud. The Okta IDaaS platform is the primary application platform provided to customers. The IDaaS application provides several important features/capabilities, which are listed below.\n\n- Universal Directory: Okta Universal Directory provides a single view across all these groups with AD and LDAP directory integrations and out-of-the-box connections with HR systems, CSV files, and third-party IdPs.\nIntegration with Applications: Okta comes with pre-integrated applications that customers can select to allow their users to access them through the Okta Integration Network, either in their enterprise or in a cloud\n- Okta API Integration: Customers can also integrate their own applications with Okta API\n- Okta Sign-In Widget (SIW): SIW is the out of the box end user experience that our customers can deploy in an Okta hosted environment. SIW provides configurable user registration, sign in and recovery experience.\n- Okta Software Development Kit (SDKs): SDKs allow customers to build their own identity experience using Okta as a back end.\n- Okta Customer Organization Logging: Okta\u2019s prebuilt monitoring, logging, and reporting tools make it easy to analyze security posture, user access events, lifecycle management transitions, security risks and other identity-related data.\n- Okta Admin Dashboard: Okta\u2019s Admin Dashboard provides central administration and provisioning of users and the applications they can access.\n- Adaptive Multi-Factor Authentication (aMFA): Adaptive MFA provides an additional layer of security for access control, which gives Okta customers the ability to create contextual access policies that assess risk factors such as device, network, location, travel, IP, and other context at each step of the authentication process.\nSingle Sign-On (SSO): Okta SSO creates a seamless user experience by providing single sign-on to all the web and mobile applications users need to access.\n- Okta Verify: Okta Verify is Okta\u2019s native desktop and mobile application that can be used for mobile client-based MFA authentication. Okta Verify supports the following authentication mechanisms against a customers\u2019 organization: Time-based One-time Password (TOTP), Okta Push Challenge-Response, and Okta FastPass (signed once challenge)\n- Okta FastPass - NIST 800-63B AAL2/AAL3 authenticator",
+  "functions_claimed": [
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "- Universal Directory: Okta Universal Directory provides a single view across all these groups with AD and LDAP directory integrations and out-of-the-box connections with HR systems, CSV files, and third-party IdPs."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Access control & authentication",
+    "evidence": "Okta for Government High service offering provides centralized identity and access management capabilities to customers who want to manage access across any application or device, whether they are on-premises in the customer\u2019s office/data center or in the cloud."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2131856836/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2131856836"
+ },
+ {
+  "fork_id": "FR2428769635",
+  "vendor": "Paramify",
+  "product": "Paramify Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [],
+  "deadramp_category": "Collaboration",
+  "description": "The Paramify Cloud (Paramify) is a software platform that automates risk management processes\u2014including compliance planning, solution implementation, gap assessments, and documentation\u2014for cloud service providers, government agencies, and members of the Defense Industrial Base (DIB).\n\nParamify supports adherence to control catalog requirements including NIST 800-53 (FedRAMP, FISMA, GovRAMP, TX-RAMP), NIST 800-171 (CMMC), and standards such as SOC 2, HIPAA, and ISO 27001, with support for additional catalogs and profiles continually expanding.\n\nSSP and ATO Package Management\n\n  \u2219 Fast and Easy Setup: Upload previous SSPs or use the intake process to identify your system\u2019s elements and security capabilities. Paramify then generates a roadmap to support your risk management and compliance objectives.\n\n  \u2219 Streamlined Control Implementation & Optimization: Visualize progress and manage security program capabilities through a unified dashboard that tracks system elements and responsibilities.\n\n  \u2219 ATO Package Generation: Produce accurate SSP documentation in both digital (OSCAL) and human-readable formats, with flexible export options that support various file types, including but not limited to OSCAL, PDF, Word, and Excel.\n\n  \u2219 Incorporate Changes Efficiently: As your risk management approach evolves, maintaining stack profiles in Paramify reduces manual update errors across documentation. Paramify automatically synchronizes updates to your SSP, CRM, CIS, policies, procedures, and other records to support compliance with evolving data protection requirements.\n\nContinuous Monitoring and Issue Management\n\n  \u2219 Automated POA&M Documentation: Automatically manage and update POA&M documentation via a centralized task-priority view, eliminating the need to manage from multiple spreadsheets or scan files.\n\n  \u2219 Vulnerability Management with Duplicate Detection: Automatically close resolved vulnerabilities and employ duplicate detection to ensure accurate issue tracking.\n\n  \u2219 Automated Risk Adjustment: Apply risk adjustments across multiple issues automatically to support consistent prioritization of remediation efforts.\n\n  \u2219 Automated Inventory Reconciliation: Configure and maintain inventory reconciliation rules to generate accurate workbooks automatically, without manual review of scan files\u2014including those for ephemeral virtual hosts.\n\nIntegration with Your Organization\u2019s Processes\n\n  \u2219 Workflow Management: Integrate with issue management tools (e.g., Jira, ServiceNow, GitLab) to facilitate collaboration between DevOps and security teams for timely issue remediation.\n\n  \u2219 Evidence Management: Unified evidence approach that minimizes or eliminates duplicate collection efforts.\n\n  \u2219 API Integrations: Paramify\u2019s open API supports custom integrations with system components to facilitate connectivity and interoperability.\n\nAvailable in SaaS and self-hosted implementations.",
+  "functions_claimed": [
+   {
+    "function_id": "task_work",
+    "function": "Task, project & work management",
+    "evidence": "\u2219 Vulnerability Management with Duplicate Detection: Automatically close resolved vulnerabilities and employ duplicate detection to ensure accurate issue tracking."
+   },
+   {
+    "function_id": "workflow",
+    "function": "Workflow & process automation",
+    "evidence": "Integration with Your Organization\u2019s Processes\n\n  \u2219 Workflow Management: Integrate with issue management tools (e.g., Jira, ServiceNow, GitLab) to facilitate collaboration between DevOps and security teams for timely issue remediation."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "Integration with Your Organization\u2019s Processes\n\n  \u2219 Workflow Management: Integrate with issue management tools (e.g., Jira, ServiceNow, GitLab) to facilitate collaboration between DevOps and security teams for timely issue remediation."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2428769635/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2428769635"
+ },
+ {
+  "fork_id": "FR2300457485",
+  "vendor": "Project Hosts Inc.",
+  "product": "GSS One AWS",
+  "service_model": [
+   "SaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Collaboration",
+   "Communication",
+   "Content Management System (CMS)",
+   "Customer Service",
+   "Cybersecurity & Risk Management"
+  ],
+  "deadramp_category": "Collaboration",
+  "description": "The GSSOne AWS is a General Support System (GSS) operated by Project Hosts and deployed within AWS GovCloud. The platform is designed as a secure, multi-tenant PaaS/SaaS environment that enables federal, DoD, state, local, and tribal agencies, as well as government contractors, members of the DIB and the public to deploy and operate applications in compliance with federal security requirements.\n\nThe GSSOne AWS Core provides a standardized set of centrally managed services that support secure application deployment and operations, including: access control, authentication, auditing, monitoring, scanning, patching, configuration management, malware prevention, intrusion prevention, incident response, backup, and disaster recovery.\n\nThese capabilities are implemented and managed by Project Hosts and are leveraged by applications deployed on the platform to meet security and compliance requirements.\n\nGSSOne AWS supports two primary application deployment models:\n\n**1. Applications Included Within the GSS One Authorization Boundary**\n\nCertain SaaS applications are incorporated directly into the GSSOne AWS authorization boundary and are assessed and certified as part of the GSSOne AWS system.\n\n**2. Applications Supported on the Platform**\n\nGSSOne AWS also supports customer and Independent Software Vendor (ISV) applications that are deployed on the platform but maintain their own authorization boundary (e.g., agency ATO or ISV-owned system).\n\nIn this model, Project Hosts provides the underlying infrastructure, security services, and operational support, while the application owner maintains responsibility for their system authorization and application-specific controls.\n\nThis flexible deployment model allows agencies to either leverage existing SaaS capabilities or deploy their own applications within a secure, FedRAMP-authorized environment.\n\n**Applications Included Within the GSS One Authorization Boundary**\n\nThese applications are deployed, secured, and operated as part of the GSSOne AWS system and certification.\n\nThe following SaaS applications are currently included within the GSSOne AWS authorization boundary:\n\n- **GSSOne AWS Portal/Admin Page**\n\nProvided by Project Hosts this application provides user and administrative interfaces for account management, access provisioning, and operational support activities\n\n- **JAMIS Prime ERP**\n\nProvided and managed by JAMIS software, JAMIS Prime ERP is a platform that provides browser and mobile access to finance, project accounting, contract management, billing, and operational workflows for U.S. government contractors. The system supports core functions including job cost/project accounting, contract and subcontract management, budgeting and forecasting, general ledger, cash management, accounts receivable/payable, timecards, expense reporting, fixed assets, distribution management, and project manufacturing. JAMIS Prime streamlines contract management and billing by centralizing documents, automating workflows and approvals, tracking contract actions and funding, supporting government-compliant billing across common contract types, and managing revenue recognition, cost ceilings, retention, labor categories, markups, ACRN funding, and contract-specific billing rules. These capabilities help improve visibility, collaboration, invoice accuracy, and timely payment processing across the contract lifecycle.\n\n- **Siemens Federal Cloud (SFC)**\n\nProvided and Managed by Siemens Government Technology,The primary software application suite within SFC consists of the Teamcenter Product Lifecycle Management (PLM) software, which is a product and process digital thread management system.  Teamcenter PLM provides full product lifecycle data management services for a customer authored end item (to include requirements, product(s) and processes) and enables customer teams to better connect with each other on relevant data needed to make informed decisions throughout a product\u2019s lifecycle.  Teamcenter offers integration capabilities with various CAD products, serving as the central hub for managing design data throughout the product lifecycle. Teamcenter ensures that all CAD models, assemblies, and drawings are securely stored, version-controlled, and accessible within the environment. This integration allows engineers to work directly within their preferred CAD authoring tools while benefiting from Teamcenter's data management, workflow automation, and collaboration features.\n\n- **Perseus\u2122**\n\nProvided and managed by Chainbridge Solutions Inc., Perseus\u2122 is a cloud-native SaaS product purpose-built to transform personnel security (PERSEC) workflows across the federal government. Blending deep PERSEC expertise with the scalability and performance of commercial software, Perseus\u2122 streamlines clearance processes, enables Trusted Workforce readiness, and equips agencies with the clarity, efficiency, and confidence they need to deliver from day one.\n\n- **FutureFeed and Cyber Illumination Application Environment (FutureFeed)**\n\nProvided and managed by Continuous Compliance, There are two main components that make up the FutureFeed environment. FutureFeed is a robust, SaaS-based compliance management platform. Using FutureFeed\u2019s powerful automation and reporting capabilities, organizations create a security-oriented culture that permeates the organization. Organizations use FutureFeed to create and maintain information security programs that comply with legal and regulatory requirements, and to prove compliance at any time.\n\nCyber Illumination is a supply chain communication, risk identification, and risk management tool. Federal agencies, government contractors, and commercial entities can use Cyber Illumination to gain better insight into and control over the risks, including cybersecurity risks, associated with their vendors and business partners. Clients can leverage Cyber Illumination\u2019s built-in questionnaires, or create custom questionnaires, to gain the knowledge they need to better manage their supply chain risks. When a client\u2019s vendor also uses FutureFeed, the vendor and the client enjoy seamless integration and robust, automated information sharing that takes the hassles out of supply chain risk management.\n\n**Applications Supported on the Platform**\n\nGSSOne AWS also supports customer and Independent Software Vendor (ISV) applications that are deployed on the platform but maintain their own authorization boundary (e.g., agency ATO or ISV-owned system). Each of the systems below have been vetted and meets the FedRAMP requirements and are ready to pursue FedRAMP certification or have been certified under their own listing and are viewable under the dependent product list.\n\nExamples of supported applications include:\n\n- 1Factory (1Factory)\n- 202 Group/ BlueVoyant Government Services (Supply Chain Command)\n- Brightly (Brightly Software)\n- Caveonix (Caveonix Platform)\n- CloudApper (Cloudapper.ai)\n- H2O.ai (H2O.ai Cloud for Government)\n- Invicti (Invicti AppSec Platform)\n- Microsoft (Office, Dynamics, Power BI Server, Project Server, SharePoint, SSRS)\n- ProSymmetry\n- San Luis Aviation, Inc. (ESChat)\n- TELCLOUD (TELCLOUD)\n- TCP Software (TimeClock Plus)\n- WordPress (WordPress CMS)\n- WordPress As a Service (WPaaS)\n\nFor each of these applications, Project Hosts provides deployment, security, and operational support services for these applications, enabling customers to leverage the GSSOne AWS platform while maintaining flexibility in how their systems are authorized and managed. Performing these functions on the partner\u2019s behalf allows the software vendors to focus on their core business model in delivering a secure, highly functional application to the agency while Project Hosts handles the security/ compliance requirements.\n\nIn either scenario, GSSOne AWS customers also are provided with access to the following systems running on the GSS One Azure system.\n\n**GSS One Command Center (GSSOCC)**\n\nThe GSS One Command Center is a centralized compliance and operations platform that gives agencies and CSP partners real-time visibility into system security, risk, and authorization status. Designed to meet FedRAMP Rev. 5 BIRs and aligned with the direction of FedRAMP 20x, the GSSOCC supports a shift toward continuous, evidence-driven validation rather than static, point-in-time assessments.\n\nIt serves as a single pane of glass for managing the full lifecycle of authorization and operations, bringing together system documentation, vulnerability data, incident tracking, change control, and monitoring into one integrated experience. By linking controls directly to supporting evidence and operational data, the GSSOCC reduces the overhead of maintaining compliance and enables faster, more transparent ATO decisions for agencies.\n\n**GSS One Support Center:**\n\nProject Hosts has configured a customer-facing support portal for creating and managing support tickets powered by Atlassian Jira. This allows customers to view all of their relevant tickets, create tickets, submit change control requests, upload screenshots, review knowledgebases and communicate with PH staff through a secure channel.\n\n## FedRAMP Certification and Marketplace Metadata\n\n- **Cloud Service Offering:** GSS One AWS\n- **Cloud Service Provider:** Project Hosts Inc.\n- **FedRAMP Package ID:** FR2300457485\n- **FedRAMP Certification Status:** FedRAMP Certified\n- **Certification Type:** Rev5\n- **Certification Path:** Agency\n- **Certification Class:** Class D\n- **Security Impact Level:** High\n- **Certified Since:** April 6, 2026\n- **Lifecycle Phase:** Ongoing Certification\n- **Authorizing Agency:** U.S. Department of Health and Human Services (HHS) \u2013 National Heart, Lung, and Blood Institute (NHLBI)\n- **Agency Authorizations:** 1\n- **Recorded Dependent Product / Reuse Relationships:** 3\n- **Independent Assessor / 3PAO:** Lunarline, Inc.\n- **Assessor ID:** 137004\n\n###\n\n## Certified Services\n\nThe following services are included as Certified Services within the GSS One AWS certification. Unless otherwise noted, each service operates within the GSS One AWS authorization boundary at the **High** security impact level and under **Certification Class D**.\n\n### **GSSOne AWS Core**\n\n- **Date Available:** April 6, 2026\n- **Security Impact Level:** High\n- **Certification Class:** D\n\nThe GSSOne AWS Core provides a standardized set of centrally managed services that support secure application deployment and operations, including access control, authentication, auditing, monitoring, scanning, patching, configuration management, malware prevention, intrusion prevention, incident response, backup, and disaster recovery.\n\n### **GSSOne Admin/User Portal**\n\n- **Date Available:** April 6, 2026\n- **Security Impact Level:** High\n- **Certification Class:** D\n\nGSSOne Admin/User Portal provides a centralized interface for customer onboarding, account provisioning, access management, billing visibility, and authorized administrative activities. Administrative actions are governed through role-based access controls and documented approval workflows.\n\n### **GSSOne SMTP Service**\n\n- **Date Available:** April 6, 2026\n- **Security Impact Level:** High\n- **Certification Class:** D\n\nProvides centrally managed email relay and routing services for applications operating within the authorization boundary. The service supports controlled delivery, encryption, authentication, logging, and monitoring of system-generated email.\n\n### **GSSOne Certificate Authority**\n\n- **Date Available:** April 6, 2026\n- **Security Impact Level:** High\n- **Certification Class:** D\n\nProvides centralized certificate issuance, validation, renewal, revocation, and lifecycle management for system components. It supports trusted encrypted communications and consistent certificate governance across the environment.\n\n### **GSSOne CertForge**\n\n- **Date Available:** April 6, 2026\n- **Security Impact Level:** High\n- **Certification Class:** D\n\nAutomates the generation, deployment, renewal, and tracking of TLS certificates used by authorized applications and infrastructure. Automation reduces expired-certificate risk while supporting approved cryptographic and certificate-management requirements.\n\n### **GSSOne Illumination/Inventory**\n\n- **Date Available:** April 6, 2026\n- **Security Impact Level:** High\n- **Certification Class:** D\n\nProvides automated discovery and inventory of cloud resources, configurations, and security-relevant attributes within the environment. The service supports continuous compliance validation, evidence generation, configuration-drift identification, and centralized reporting.\n\n### **JAMIS Prime ERP**\n\n- **Date Available:** June 14, 2026\n- **Security Impact Level:** High\n- **Certification Class:** D\n\nProvided and managed by JAMIS Software, JAMIS Prime ERP is a platform that provides browser and mobile access to finance, project accounting, contract management, billing, and operational workflows for U.S. government contractors.\n\nThe system supports core functions including job cost/project accounting, contract and subcontract management, budgeting and forecasting, general ledger, cash management, accounts receivable/payable, timecards, expense reporting, fixed assets, distribution management, and project manufacturing.\n\nJAMIS Prime streamlines contract management and billing by centralizing documents, automating workflows and approvals, tracking contract actions and funding, supporting government-compliant billing across common contract types, and managing revenue recognition, cost ceilings, retention, labor categories, markups, ACRN funding, and contract-specific billing rules. These capabilities help improve visibility, collaboration, invoice accuracy, and timely payment processing across the contract lifecycle.\n\n### **Siemens Federal Cloud (SFC)**\n\n- **Date Available:** June 14, 2026\n- **Security Impact Level:** High\n- **Certification Class:** D\n\nProvided and managed by Siemens Government Technologies, the primary software application suite within SFC consists of the Teamcenter Product Lifecycle Management (PLM) software, which is a product and process digital-thread management system.\n\nTeamcenter PLM provides full product lifecycle data management services for a customer-authored end item, including requirements, products, and processes, and enables customer teams to better connect with each other using the relevant data needed to make informed decisions throughout a product's lifecycle.\n\nTeamcenter offers integration capabilities with various CAD products, serving as the central hub for managing design data throughout the product lifecycle. Teamcenter ensures that CAD models, assemblies, and drawings are securely stored, version-controlled, and accessible within the environment. This integration allows engineers to work directly within their preferred CAD authoring tools while benefiting from Teamcenter's data management, workflow automation, and collaboration features.\n\n### **Chainbridge Perseus\u2122**\n\n- **Date Available:** August 17, 2026\n- **Security Impact Level:** High\n- **Certification Class:** D\n\nProvided and managed by Chainbridge Solutions Inc., Perseus\u2122 is a cloud-native SaaS product purpose-built to transform personnel security (PERSEC) workflows across the federal government.\n\nBlending deep PERSEC expertise with the scalability and performance of commercial software, Perseus\u2122 streamlines clearance processes, enables Trusted Workforce readiness, and equips agencies with the clarity, efficiency, and confidence needed to support personnel security operations from day one.\n\n### **FutureFeed**\n\n- **Date Available:** August 17, 2026\n- **Security Impact Level:** High\n- **Certification Class:** D\n\nProvided and managed by Continuous Compliance, the FutureFeed environment consists of two primary components: FutureFeed and Cyber Illumination.\n\nFutureFeed is a SaaS-based compliance management platform. Using FutureFeed's automation and reporting capabilities, organizations can create and maintain information security programs that comply with applicable legal and regulatory requirements and provide evidence of compliance.\n\nCyber Illumination is a supply-chain communication, risk-identification, and risk-management tool. Federal agencies, government contractors, and commercial entities can use Cyber Illumination to gain greater insight into and control over risks, including cybersecurity risks, associated with vendors and business partners.\n\nClients can leverage Cyber Illumination's built-in questionnaires or create custom questionnaires to obtain information needed to manage supply-chain risks. When a client's vendor also uses FutureFeed, the vendor and client can use integrated and automated information sharing to improve the efficiency of supply-chain risk management.\n\n## Agency Authorization and Reuse Relationships\n\nGSS One AWS maintains an Agency certification path associated with the **U.S. Department of Health and Human Services (HHS), National Heart, Lung, and Blood Institute (NHLBI)**.\n\nThe FedRAMP Marketplace metadata associated with the certification:\n\n- **Agency Authorizations:** 1\n- **Dependent Product / Reuse Relationships:** 3\n- **Certification Path:** Agency\n- **Certification Class:** Class D (High)\n- **Certified Since:** April 6, 2026\n\nGSS One AWS also serves as an underlying authorized platform for applications and cloud service offerings that leverage GSS One AWS security, infrastructure, and operational capabilities. Depending on the application deployment and authorization model, these relationships may be represented as included Certified Services, dependent products, reuse relationships, or separately authorized customer systems.\n\nThe information in this section is included to preserve visibility into the certification and authorization relationships associated with GSS One AWS where corresponding structured Marketplace fields are not currently displayed.",
+  "functions_claimed": [
+   {
+    "function_id": "workflow",
+    "function": "Workflow & process automation",
+    "evidence": "The following SaaS applications are currently included within the GSSOne AWS authorization boundary:\n\n- **GSSOne AWS Portal/Admin Page**\n\nProvided by Project Hosts this application provides user and administrative interfaces for account management, access provisioning, and operational support activities\n\n- **JAMIS Prime ERP**\n\nProvided and managed by JAMIS software, JAMIS Prime ERP is a platfor..."
+   },
+   {
+    "function_id": "search",
+    "function": "Search & discovery",
+    "evidence": "### **GSSOne Illumination/Inventory**\n\n- **Date Available:** April 6, 2026\n- **Security Impact Level:** High\n- **Certification Class:** D\n\nProvides automated discovery and inventory of cloud resources, configurations, and security-relevant attributes within the environment."
+   },
+   {
+    "function_id": "ai_assistance",
+    "function": "AI assistance, speech & analytics",
+    "evidence": "Examples of supported applications include:\n\n- 1Factory (1Factory)\n- 202 Group/ BlueVoyant Government Services (Supply Chain Command)\n- Brightly (Brightly Software)\n- Caveonix (Caveonix Platform)\n- CloudApper (Cloudapper.ai)\n- H2O.ai (H2O.ai Cloud for Government)\n- Invicti (Invicti AppSec Platform)\n- Microsoft (Office, Dynamics, Power BI Server, Project Server, SharePoint, SSRS)\n- ProSymmetry\n-..."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "Teamcenter offers integration capabilities with various CAD products, serving as the central hub for managing design data throughout the product lifecycle."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Access control & authentication",
+    "evidence": "The GSSOne AWS Core provides a standardized set of centrally managed services that support secure application deployment and operations, including: access control, authentication, auditing, monitoring, scanning, patching, configuration management, malware prevention, intrusion prevention, incident response, backup, and disaster recovery."
+   },
+   {
+    "function_id": "audit",
+    "function": "Audit logging & trails",
+    "evidence": "The GSSOne AWS Core provides a standardized set of centrally managed services that support secure application deployment and operations, including: access control, authentication, auditing, monitoring, scanning, patching, configuration management, malware prevention, intrusion prevention, incident response, backup, and disaster recovery."
+   },
+   {
+    "function_id": "encryption",
+    "function": "Encryption",
+    "evidence": "The service supports controlled delivery, encryption, authentication, logging, and monitoring of system-generated email."
+   },
+   {
+    "function_id": "records_governance",
+    "function": "Records, governance & compliance management",
+    "evidence": "JAMIS Prime streamlines contract management and billing by centralizing documents, automating workflows and approvals, tracking contract actions and funding, supporting government-compliant billing across common contract types, and managing revenue recognition, cost ceilings, retention, labor categories, markups, ACRN funding, and contract-specific billing rules."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2300457485/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2300457485"
+ },
+ {
+  "fork_id": "F1403283529A",
+  "vendor": "Project Hosts Inc.",
+  "product": "GSS One Azure",
+  "service_model": [
+   "SaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Collaboration",
+   "Communication",
+   "Content Management System (CMS)",
+   "Customer Service",
+   "Cybersecurity & Risk Management",
+   "Data Management"
+  ],
+  "deadramp_category": "Collaboration",
+  "description": "**Service Description**\n\nThe GSSOne Azure is a General Support System (GSS) operated by Project Hosts and deployed within Azure Government. The platform is designed as a secure, multi-tenant PaaS/SaaS environment that enables federal, DoD, state, local, and tribal agencies, as well as government contractors, members of the DIB and the public to deploy and operate applications in compliance with federal security requirements.\n\nThe GSSOne Azure Core provides a standardized set of centrally managed services that support secure application deployment and operations, including access control, authentication, auditing, monitoring, scanning, patching, configuration management, malware prevention, intrusion prevention, incident response, backup, and disaster recovery.\n\nThese capabilities are implemented and managed by Project Hosts and are leveraged by applications deployed on the platform to meet security and compliance requirements.\n\nThe GSSOne Azure supports two primary application deployment models:\n\n**1. Applications Included Within the GSS One Authorization Boundary**\n\nCertain SaaS applications are incorporated directly into the GSSOne Azure authorization boundary and are assessed and certified as part of the GSSOne Azure system.\n\nThe following SaaS applications are currently included within the GSSOne Azure authorization boundary:\n\n1. **GSSOne User Portal/Admin Page**\n1. **GSSOne Command Center (GSSOCC)**\n1. **GSS One Azure Support Center**\n1. **Quest Security Management Platform (Quest-SMP)**\n1. **OnePlan**\n\nMore information on each of these along with other certified GSSOne Core/ consumable services can be found in the certified services section below.\n\n**2. Applications Supported on the Platform**\n\nGSSOne Azure also supports customer and Independent Software Vendor (ISV) applications that are deployed on the platform but maintain their own authorization boundary (e.g., agency ATO or ISV-owned system).\n\nIn this model, Project Hosts provides the underlying infrastructure, security services, and operational support, while the application owner maintains responsibility for their system authorization and application-specific controls.\n\nThis flexible deployment model allows agencies to either leverage existing SaaS capabilities or deploy their own applications within a secure, FedRAMP-authorized environment.\n\nEach of the systems below have been vetted and meets the FedRAMP requirements and are ready to pursue FedRAMP certification or have been certified under their own listing and are viewable under the dependent product list.\n\nExamples of supported applications include:\n\n    - Archive360 (Archive360 Platform)\n    - AudioCodes (AudioCodes Live Platform)\n    - AvePoint (AvePoint Online Services for US Government)\n    - Aztec (Aztec Learning System)\n    - Bingli (Bingli)\n    - Blue Prism (Blue Prism)\n    - BrightWork (BrightWork SharePoint-based Project Management)\n    - C3 AI (C3 AI Suite)\n    - CTERA Networks (CTERA Edge Filer, CTERA Drive, CTERA Portal)\n    - Conga (Contract Lifecycle Management, X-Author and Conga Approvals)\n    - Creative Veteran Productions (Fed ILMS)\n    - CyberSTAR Software (CyberSTAR\u2122)\n    - Distributed Solutions Inc. (AEON)\n    - Drupal (Drupal CMS)\n    - Feith Systems and Software Inc. (RMA iQ\u2122)\n    - FlowVU (FlowVU Collaboration)\n    - Idea Entity (RhyBus Platform)\n    - Image Trend (Elite, Report Writer (RW), Continuum (CT), Licensure, Slate)\n    - Invoke (UiPath Orchestrator and RPA)\n    - Ivanti (MDM, Access, Neurons)\n    - LMI (ATLAS by LMI)\n    - Librestream Technology (Onsight Now)\n    - Microsoft (Office, Dynamics, Power BI Server, Project Server, SharePoint, SSRS)\n    - NIBS/ OM Group Inc. (ProjNet\u2122)\n    - Nintex (K2 Five, Workflow Cloud, DocGen)\n    - Nintex (Nintex Automation GE Platform)\n    - Nuance (Dragon Suite, DAX CoPilot)\n    - OnePlan.ai (OnePlan)\n    - OneSpan (OneSpan Sign)\n    - Orbus Software (OrbusINFINITY)\n    - Permuta (Defense Ready)\n    - Power Settlements Consulting and Software, LLC (PowerCore\u2122)\n    - ProSymmetry\n    - Relocation Management Worldwide (Virtual Employee Network)\n    - Synergist Technology, LLC (AFFIRM Solution for AI Compliance, SAS\u00ae VIYA\u00ae)\n    - Teamviewer (TeamViewer Digital Employee Experience (TMV DEX) for Government)\n    - UMT360 (SharePoint-based Enterprise Portfolio Management)\n    - Unison Software (Program Management Suite (PMSuite)\n    - Wellspring (Accolade Enterprise Innovation Management, Sophia, Evolve)\n    - WordPress (WordPress CMS)\n    - WordPress As a Service (WPaaS)\n\nFor each of these applications, Project Hosts provides deployment, security, and operational support services for these applications, enabling customers to leverage the GSSOne Azure platform while maintaining flexibility in how their systems are authorized and managed. Performing these functions on the partner\u2019s behalf allows the software vendors to focus on their core business model in delivering a secure, highly functional application to the agency while Project Hosts handles the security/ compliance requirements.\n\n**Additional Services**\n\nFor customers not deployed on the GSS One Azure, Project Hosts offers dedicated continuous monitoring services leveraging the GSS One Azure Command Center and scanners operated by Project Hosts engineers to configure, scan and provide continuous monitoring services to those external customers and their respective agencies to meet FedRAMP requirements.\n\n**Certified Services**\n\nThe following services are included as Certified Services within the GSSOne Azure certification. Unless otherwise noted, each service operates within the GSSOne Azure authorization boundary at the **High** security impact level and under **Certification Class D**.\n\n**GSSOne Azure Core**\n\n    - **Date Available:** March 11, 2016\n    - **Security Impact Level:** High\n    - **Certification Class:** D\n\nThe GSSOne Azure Core provides a standardized set of centrally managed services that support secure application deployment and operations, including access control, authentication, auditing, monitoring, scanning, patching, configuration management, malware prevention, intrusion prevention, incident response, backup, and disaster recovery.\n\n**GSSOne Command Center**\n\n    - **Date Available:** May 5, 2025\n    - **Security Impact Level:** High\n    - **Certification Class:** D\n\nThe GSS One Command Center is a centralized compliance and operations platform that gives agencies and CSP partners real-time visibility into system security, risk, and authorization status. Designed to meet FedRAMP Rev. 5 BIRs and aligned with the direction of FedRAMP 20x, the GSSOCC supports a shift toward continuous, evidence-driven validation rather than static, point-in-time assessments.\n\nIt serves as a single pane of glass for managing the full lifecycle of authorization and operations, bringing together system documentation, vulnerability data, incident tracking, change control, and monitoring into one integrated experience. By linking controls directly to supporting evidence and operational data, the GSSOCC reduces the overhead of maintaining compliance and enables faster, more transparent ATO decisions for agencies.\n\n**GSSOne Support Center**\n\n    - **Date Available:** May 5, 2025\n    - **Security Impact Level:** High\n    - **Certification Class:** D\n\nProject Hosts has configured a customer-facing support portal for creating and managing support tickets powered by Atlassian Jira. This allows customers to view all of their relevant tickets, create tickets, submit change control requests, upload screenshots, review knowledgebases and communicate with PH staff through a secure channel.\n\n**GSSOne Admin/User Portal**\n\n    - **Date Available:** March 11, 2016\n    - **Security Impact Level:** High\n    - **Certification Class:** D\n\nGSSOne Admin/User Portal provides a centralized interface for customer onboarding, account provisioning, access management, billing visibility, and authorized administrative activities. Administrative actions are governed through role-based access controls and documented approval workflows.\n\n**GSSOne SMTP Service**\n\n    - **Date Available:** March 11, 2016\n    - **Security Impact Level:** High\n    - **Certification Class:** D\n\nProvides centrally managed email relay and routing services for applications operating within the authorization boundary. The service supports controlled delivery, encryption, authentication, logging, and monitoring of system-generated email.\n\n**GSSOne Certificate Authority**\n\n    - **Date Available:** March 11, 2016\n    - **Security Impact Level:** High\n    - **Certification Class:** D\n\nProvides centralized certificate issuance, validation, renewal, revocation, and lifecycle management for system components. It supports trusted encrypted communications and consistent certificate governance across the environment.\n\n**GSSOne CertForge**\n\n    - **Date Available:** March 11, 2016\n    - **Security Impact Level:** High\n    - **Certification Class:** D\n\nAutomates the generation, deployment, renewal, and tracking of TLS certificates used by authorized applications and infrastructure. Automation reduces expired-certificate risk while supporting approved cryptographic and certificate-management requirements.\n\n**GSSOne Illumination/Inventory**\n\n    - **Date Available:** May 5, 2025\n    - **Security Impact Level:** High\n    - **Certification Class:** D\n\nProvides automated discovery and inventory of cloud resources, configurations, and security-relevant attributes within the environment. The service supports continuous compliance validation, evidence generation, configuration-drift identification, and centralized reporting.\n\n**Quest Security Management Platform**\n\n    - **Date Available:** June 24, 2026\n    - **Security Impact Level:** High\n    - **Certification Class:** D\n\nThe Quest-SMP is a browser-based application with different agents that can be deployed on the agency devices/systems based on their individual use case.\n\nThe Quest-SMP contains two major components:\n\n    - **Quest Identity Recovery for Entra ID: **Quest Identity Recovery for Entra ID is a SaaS-based backup and recovery solution for Microsoft Entra ID and Microsoft 365 that extends protection beyond native Microsoft tools. It enables fast, secure restoration of users, groups, attributes, and memberships from a single cloud interface. Administrators can compare backups, view changes, and recover only what\u2019s needed\u2014reducing manual errors and downtime. All recovery actions are logged and auditable to support compliance requirements. Hybrid Active Directory and Entra ID recovery is also supported through built-in integration with on-premises Quest Recovery Manager for Active Directory. Delivered as a secure, high-availability cloud service, Quest Identity Recovery for Entra ID helps federal agencies simplify directory recovery, maintain continuity, and meet governance standards without the need for on-premises infrastructure.\n    - **Quest Identity Defense**: Quest Identity Defense is a hybrid Active Directory and Microsoft Entra ID security and audit platform that helps federal agencies strengthen identity threat detection, containment, and response while reducing risk of exposure and downtime. It identifies Tier Zero and other privileged objects across Active Directory and Entra ID to pinpoint where the greatest risks reside. The platform continually assesses identity environments for problematic configurations and drift from best-practice baselines, helping maintain compliance and operational integrity. Quest Identity Defense provides enhanced threat detection and observability for directory changes and protects Tier Zero assets from malicious in-memory modification\u2014supporting zero trust and mission continuity across hybrid identity systems.\n\n**OnePlan**\n\n    - **Date Available:** September 21, 2026\n    - **Security Impact Level:** High\n    - **Certification Class:** D\n\nOnePlan is a strategic portfolio and work management platform that helps federal agencies plan, prioritize, and execute mission-critical initiatives. It enables Program Management Offices (PMOs) to align projects, resources, and budgets to mission priorities, with centralized, audit-ready visibility across projects, programs, and portfolios.\n\nBuilt for Microsoft, OnePlan integrates with various Microsoft SaaS products enabling agencies to work within their existing Microsoft ecosystem while maintaining centralized governance across portfolio and work data. By consolidating portfolio, project, and resource management in a single platform, OnePlan gives agency leaders the visibility and control needed to align investments to mission outcomes.\n\n**Agency Authorization and Reuse Relationships**\n\nGSSOne Azure maintains an Agency certification path associated with the **Defense Information Systems Agency.**\n\nThe FedRAMP Marketplace metadata associated with the certification:\n\n    - **Agency Authorizations:** 6\n    - **Dependent Product / Reuse Relationships:** 13 Certified Dependent Products / 41 Reuses\n    - **Certification Path:** Agency\n    - **Original FedRAMP Moderate Authorization:** March 11, 2016\n    - **FedRAMP High Uplift Completed:** March 16, 2026\n    - **Certification Class:** Class D (High)\n\nGSSOne Azure also serves as an underlying authorized platform for applications and cloud service offerings that leverage GSSOne Azure security, infrastructure, and operational capabilities. Depending on the application deployment and authorization model, these relationships may be represented as included Certified Services, dependent products, reuse relationships, or separately authorized customer systems.\n\nThe information in this section is included to preserve visibility into the certification and authorization relationships associated with GSSOne Azure where corresponding structured Marketplace fields are not currently displayed.",
+  "functions_claimed": [
+   {
+    "function_id": "task_work",
+    "function": "Task, project & work management",
+    "evidence": "Examples of supported applications include:\n\n    - Archive360 (Archive360 Platform)\n    - AudioCodes (AudioCodes Live Platform)\n    - AvePoint (AvePoint Online Services for US Government)\n    - Aztec (Aztec Learning System)\n    - Bingli (Bingli)\n    - Blue Prism (Blue Prism)\n    - BrightWork (BrightWork SharePoint-based Project Management)\n    - C3 AI (C3 AI Suite)\n    - CTERA Networks (CTERA E..."
+   },
+   {
+    "function_id": "workflow",
+    "function": "Workflow & process automation",
+    "evidence": "(ProjNet\u2122)\n    - Nintex (K2 Five, Workflow Cloud, DocGen)\n    - Nintex (Nintex Automation GE Platform)\n    - Nuance (Dragon Suite, DAX CoPilot)\n    - OnePlan.ai (OnePlan)\n    - OneSpan (OneSpan Sign)\n    - Orbus Software (OrbusINFINITY)\n    - Permuta (Defense Ready)\n    - Power Settlements Consulting and Software, LLC (PowerCore\u2122)\n    - ProSymmetry\n    - Relocation Management Worldwide (Virtual..."
+   },
+   {
+    "function_id": "search",
+    "function": "Search & discovery",
+    "evidence": "**GSSOne Illumination/Inventory**\n\n    - **Date Available:** May 5, 2025\n    - **Security Impact Level:** High\n    - **Certification Class:** D\n\nProvides automated discovery and inventory of cloud resources, configurations, and security-relevant attributes within the environment."
+   },
+   {
+    "function_id": "ai_assistance",
+    "function": "AI assistance, speech & analytics",
+    "evidence": "Examples of supported applications include:\n\n    - Archive360 (Archive360 Platform)\n    - AudioCodes (AudioCodes Live Platform)\n    - AvePoint (AvePoint Online Services for US Government)\n    - Aztec (Aztec Learning System)\n    - Bingli (Bingli)\n    - Blue Prism (Blue Prism)\n    - BrightWork (BrightWork SharePoint-based Project Management)\n    - C3 AI (C3 AI Suite)\n    - CTERA Networks (CTERA E..."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "It serves as a single pane of glass for managing the full lifecycle of authorization and operations, bringing together system documentation, vulnerability data, incident tracking, change control, and monitoring into one integrated experience."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Access control & authentication",
+    "evidence": "The GSSOne Azure Core provides a standardized set of centrally managed services that support secure application deployment and operations, including access control, authentication, auditing, monitoring, scanning, patching, configuration management, malware prevention, intrusion prevention, incident response, backup, and disaster recovery."
+   },
+   {
+    "function_id": "audit",
+    "function": "Audit logging & trails",
+    "evidence": "The GSSOne Azure Core provides a standardized set of centrally managed services that support secure application deployment and operations, including access control, authentication, auditing, monitoring, scanning, patching, configuration management, malware prevention, intrusion prevention, incident response, backup, and disaster recovery."
+   },
+   {
+    "function_id": "encryption",
+    "function": "Encryption",
+    "evidence": "The service supports controlled delivery, encryption, authentication, logging, and monitoring of system-generated email."
+   },
+   {
+    "function_id": "records_governance",
+    "function": "Records, governance & compliance management",
+    "evidence": "It supports trusted encrypted communications and consistent certificate governance across the environment."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1403283529A/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1403283529A"
+ },
+ {
+  "fork_id": "FR2414158717",
+  "vendor": "RegScale",
+  "product": "RegScale CCM",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Collaboration",
+  "description": "The RegScale Continuous Controls Monitoring (CCM) Platform is delivered as a Software-as-a-Service (SaaS) offering, hosted in a multi-tenant public cloud computing environment. Built on Microsoft Azure, RegScale provides next-generation Governance, Risk, and Compliance (GRC) capabilities that allow organizations to automate and accelerate the management of cybersecurity programs such as FISMA, FedRAMP, CMMC, PCI, HIPAA, and others.\n\nRegScale helps organizations address their most difficult compliance challenges by enabling customers\u2014via robust API integrations\u2014to manage controls, upload evidence documentation, perform system assessments, and maintain certifications and authorizations. This is all centralized within a single platform, offering a \u201csingle pane of glass\u201d experience. Automation ensures that data and compliance posture are updated in near real-time.\n\nRegScale ensures that security and privacy-related controls are properly identified, implemented, and maintained throughout the System Development Lifecycle (SDLC) for systems, applications, services, processes, and related initiatives. The platform enables customers to establish and maintain an information assurance capability, including Control Validation Testing, to verify that appropriate controls are operational and risks are managed prior to production deployment.\n\nWhile RegScale may be designated a major application for many large organizations, it is not typically classified as mission-critical. RegScale is a modern, cloud-native application, designed to scale using Docker containers, which are micro-segmented and orchestrated using Microsoft Azure services. The system is designed to be hosted in any environment, with security-focused runtime configuration through environmental variable injection.",
+  "functions_claimed": [
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "RegScale helps organizations address their most difficult compliance challenges by enabling customers\u2014via robust API integrations\u2014to manage controls, upload evidence documentation, perform system assessments, and maintain certifications and authorizations."
+   },
+   {
+    "function_id": "records_governance",
+    "function": "Records, governance & compliance management",
+    "evidence": "Built on Microsoft Azure, RegScale provides next-generation Governance, Risk, and Compliance (GRC) capabilities that allow organizations to automate and accelerate the management of cybersecurity programs such as FISMA, FedRAMP, CMMC, PCI, HIPAA, and others."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2414158717/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2414158717"
+ },
+ {
+  "fork_id": "FR2003061248",
+  "vendor": "Salesforce",
+  "product": "Salesforce Government Cloud Plus",
+  "service_model": [
+   "SaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Collaboration",
+   "Contact Center",
+   "Customer Relations Management (CRM)",
+   "Customer Service",
+   "Finance",
+   "Fleet Management",
+   "Grant Management",
+   "Health & Wellness",
+   "Human Resources",
+   "Marketing & Sales"
+  ],
+  "deadramp_category": "Collaboration",
+  "description": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a dedicated instance of Salesforce\u2019s industry leading Platform as a Service (PaaS) and Software as a Service (SaaS) applications, enabling organizations to scale and secure apps on an authorized government cloud so they can accelerate mission success. Government Cloud Plus has been designed to provide high levels of performance, reliability, and security.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2003061248/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2003061248"
+ },
+ {
+  "fork_id": "FR2425742814A",
+  "vendor": "San Luis Aviation, Inc.",
+  "product": "ESChat - High",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Collaboration",
+  "description": "ESChat for Government is a hardened version of the ESChat broadband communication, collaboration, and interoperability platform. ESChat is a Secure Broadband Push-to-Talk (PTT) communication system that facilitates secure inter-agency PTT communication, multimedia messaging, and a Common Operating Picture (COP) within and between agencies for mutual-aid or tactical purposes. ESChat for Government also supports external interfaces including Land Mobile Radio (LMR), dispatch consoles, and logging recorders\n\nThere are three main components that make up this offering:\n\n- The ESChat portal is a browser-based application which allows customers to manage all aspects of their network including managing accounts, devices, groups, integrations,live and historical location display, etc.\n- The ESChat clients are mobile applications (Android, iOS, Linux), Land Mobile Radio (LMR) gateways, and PC Client applications that communicate using the ESChat protocol. The ESChat clients are the functional endpoints that the users of the system interact with to perform Push-to-Talk voice and multimedia messaging communications with one another.\n- The ESChat back-end services provide ESChat users with inter-carrier, inter-agency, inter-system, and inter-vendor interoperability all managed and controlled within the authorization boundary, ensuring ESChat is the only solution needed to provide reliable, secure, and interoperable communications.",
+  "functions_claimed": [
+   {
+    "function_id": "messaging_chat",
+    "function": "Messaging & chat",
+    "evidence": "ESChat is a Secure Broadband Push-to-Talk (PTT) communication system that facilitates secure inter-agency PTT communication, multimedia messaging, and a Common Operating Picture (COP) within and between agencies for mutual-aid or tactical purposes."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "ESChat for Government is a hardened version of the ESChat broadband communication, collaboration, and interoperability platform."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2425742814A/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2425742814A"
+ },
+ {
+  "fork_id": "F1305072116",
+  "vendor": "ServiceNow",
+  "product": "Government Community Cloud",
+  "service_model": [
+   "PaaS",
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Collaboration"
+  ],
+  "deadramp_category": "Collaboration",
+  "description": "Government Community Cloud (GCC) is a ServiceNow cloud service offering that delivers the Now Platform in an environment that complies with stringent cloud security and privacy compliance requirements defined by the United States Federal Government. Government Community Cloud (GCC) is a multitenant environment restricted to the United States public sector and regulated private sector organizations with a government affiliation. This cloud service offering and the ServiceNow personnel who support it are physically located in the United States. Government Community Cloud (GCC) is hosted in geographically diverse mirrored data centers on infrastructure dedicated to Government Community Cloud (GCC).",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1305072116/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1305072116"
+ }
+]

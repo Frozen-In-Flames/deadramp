@@ -108,6 +108,21 @@ Extended functions, specified in groups/analytics-l1/UNION-SPEC.md, not implemen
 
 Platform-layer, gap-listed not claimed: encryption at rest (deployment layer); production identity/authenticator strength (demo identities are hooks; IA-2 stays with the embedding organization); TLS only when configured. Tier precision recorded in the spec: the union of Low and LI-SaaS baselines is NIST SP 800-53 Low (LI-SaaS is a tailored subset, adds nothing); audit traces to the AU family on the FedRAMP Low side only, because FAR 52.204-21 carries no audit practice; Moderate/High apparatus was deliberately not inherited downward. Seven taxonomy functions (geospatial, governance, encryption, KPI, self-service BI, scheduling, media) are claimed by zero siblings in this group and are absent from its union entirely.
 
+## Group 6 — Collaboration L3-adjacent (17 forks)
+
+Extended functions, specified in groups/collaboration-l3/UNION-SPEC.md, not implemented (9):
+- [ ] open — Workflow / process-automation engines (4 siblings)
+- [ ] open — AI assistance & speech (5)
+- [ ] open — Records & governance beyond the versioning/audit seed (5)
+- [ ] open — Voice / telephony / contact center (2)
+- [ ] open — Task & project management beyond board cards (2)
+- [ ] open — Learning / training / mentoring (1)
+- [ ] open — Knowledge management (0 claims in this group; carried from the L2 union)
+- [ ] open — Meetings / video media transport (0 claims in this group)
+- [ ] open — E-signature (0 claims in this group)
+
+Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Group character recorded in the spec: at High this is an enclave group — listings are boundary prose, claim mass sits in platform families (APIs 10 of 17), and the L2 core was carried upward whole because a wording artifact is not a downgrade.
+
 ## Later groups
 
 Each group appends its section here when it ships.
