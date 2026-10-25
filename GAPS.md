@@ -534,6 +534,22 @@ Extended functions, specified in groups/fleet-management-l1/UNION-SPEC.md, not i
 
 Platform-layer: encryption at rest is deployment-layer (TLS when configured); single-tenant reference deployment; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: API & integrations is a named absence (0 of 2), absent from the union entirely. Three core functions are carried, not claimed, and flagged in the spec: maintenance & inspection records (0 of 2; the due status is derived at read time, never stored), search (0 of 2, substrate), and RBAC + audit (0 of 2, baseline-carried; audit traces to AU-2/AU-3 on the FedRAMP Low side only, because FAR 52.204-21 carries no audit practice). Privacy discipline: operator records are keyed by opaque caller-supplied references with the exact key set pinned by tests; no field can hold a real name or license number.
 
+## Group 31 — Finance L2 (2 forks)
+
+Extended functions, specified in groups/finance-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Instant disbursement execution / payment rails (ACH, wire, card networks): the execution remainder of the earned-wage-access claim; the core records disbursements and moves no money
+- [ ] open — Travel booking execution engines (live air / hotel inventory, ticketing, reservation systems): the execution remainder of the travel-booking claim; the core holds booking records only
+- [ ] open — Financial wellness delivery tools (the budgeting / coaching / savings products behind the offering registry): the execution remainder of the financial-wellness claim
+- [ ] open — Streaming / real-time reporting pipelines (core reporting is computed on read from records)
+- [ ] open — Banking integration & account verification (0 claims; entity shapes forbid real account identifiers by design)
+- [ ] open — Payroll system integration & wage calculation (0 claims; accruals record amounts computed elsewhere)
+- [ ] open — Lending & credit engines (0 claims; access is to already-earned wages only)
+- [ ] open — Trading & investment execution (0 claims)
+- [ ] open — Tax reporting & remittance (0 claims)
+- [ ] open — GRC platform functions (0 claims in text; source category label only)
+
+Platform-layer: encryption at rest is deployment-layer (TLS when configured); multi-tenancy (one sibling describes its own multi-tenant delivery; single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: the two siblings share zero claimed families — the union is two half-domains (earned-wage finance; group-travel finance) over one shared records substrate, money in integer cents only, disbursements recorded and never executed.
+
 ## Later groups
 
 Each group appends its section here when it ships.

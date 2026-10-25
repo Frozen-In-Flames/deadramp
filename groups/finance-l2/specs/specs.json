@@ -1,0 +1,84 @@
+[
+ {
+  "fork_id": "FR2623848170",
+  "vendor": "DailyPay",
+  "product": "DailyPay for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [],
+  "deadramp_category": "Finance",
+  "description": "DailyPay is the leader in On-Demand Pay, trusted by the most forward-thinking employers committed to enhancing their employees' financial health. Our open technology platform can deliver instant access to earned wages and a robust suite of financial wellness solutions, giving our partners a decisive edge in attracting, engaging, and retaining top talent. DailyPay is delivered as a SaaS offering using a multi-tenant Government-Only cloud computing environment. It is available to federal, state, local, and tribal governments, as well as research institutions, federal contractors, and government contractors.",
+  "functions_claimed": [
+   {
+    "function_id": "earned_wage_access",
+    "function": "Earned wage access (on-demand pay)",
+    "evidence": "Our open technology platform can deliver instant access to earned wages and a robust suite of financial wellness solutions, giving our partners a decisive edge in attracting, engaging, and retaining top talent."
+   },
+   {
+    "function_id": "financial_wellness",
+    "function": "Financial wellness solutions",
+    "evidence": "Our open technology platform can deliver instant access to earned wages and a robust suite of financial wellness solutions, giving our partners a decisive edge in attracting, engaging, and retaining top talent."
+   },
+   {
+    "function_id": "api_platform",
+    "function": "Open platform & APIs",
+    "evidence": "Our open technology platform can deliver instant access to earned wages and a robust suite of financial wellness solutions, giving our partners a decisive edge in attracting, engaging, and retaining top talent."
+   },
+   {
+    "function_id": "hosting_platform",
+    "function": "SaaS / cloud delivery (platform note)",
+    "evidence": "DailyPay is delivered as a SaaS offering using a multi-tenant Government-Only cloud computing environment."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2623848170/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2623848170"
+ },
+ {
+  "fork_id": "FR2626247309",
+  "vendor": "Groupize, Inc.",
+  "product": "Groupize",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [
+   "Finance",
+   "Governance, Risk, and Compliance (GRC)",
+   "Travel Management"
+  ],
+  "deadramp_category": "Finance",
+  "description": "Groupize Group Travel takes the complexity out of travel management: travel for meetings \u2013 from air and hotel to real-time reporting, Groupize handles booking, spend, and traveler experience in one place.",
+  "functions_claimed": [
+   {
+    "function_id": "travel_booking",
+    "function": "Travel booking (air & hotel)",
+    "evidence": "Groupize Group Travel takes the complexity out of travel management: travel for meetings \u2013 from air and hotel to real-time reporting, Groupize handles booking, spend, and traveler experience in one place."
+   },
+   {
+    "function_id": "travel_management",
+    "function": "Group & meeting travel management",
+    "evidence": "Groupize Group Travel takes the complexity out of travel management: travel for meetings \u2013 from air and hotel to real-time reporting, Groupize handles booking, spend, and traveler experience in one place."
+   },
+   {
+    "function_id": "spend_management",
+    "function": "Spend management",
+    "evidence": "Groupize Group Travel takes the complexity out of travel management: travel for meetings \u2013 from air and hotel to real-time reporting, Groupize handles booking, spend, and traveler experience in one place."
+   },
+   {
+    "function_id": "reporting",
+    "function": "Reporting & analytics",
+    "evidence": "Groupize Group Travel takes the complexity out of travel management: travel for meetings \u2013 from air and hotel to real-time reporting, Groupize handles booking, spend, and traveler experience in one place."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2626247309/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2626247309"
+ }
+]
