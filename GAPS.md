@@ -632,6 +632,17 @@ Extended functions, specified in groups/communication-l1/UNION-SPEC.md, not impl
 
 Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: the fork's signature functions match no family in the category taxonomy (defined from the L2 group, where no sibling is a campaign platform); they are specified as gaps, not forced into families, and the taxonomy was not re-tuned.
 
+## Singleton 38 — Data Management L1 (1 fork)
+
+Extended functions new with this fork, specified in groups/data-management-l1/UNION-SPEC.md, not implemented:
+- [ ] open — Web crawling & snapshot capture engine (the product's central function; the substrate records ingestions and captures nothing)
+- [ ] open — Web page rendering for capture (dynamic / JS pages)
+- [ ] open — Change detection & dynamic monitoring engine
+- [ ] open — Archive storage, integrity sealing & replay / playback of captured pages (the substrate holds registry metadata only)
+- [ ] open — Full-content search & indexing over the archive (core search is registry-metadata only)
+
+The Group 12 category union's extended families (distributed storage, integration runtime, record linkage, search indexing, content processing, workflow, query / visualization, hosting, case depth, AI/ML, field-level lineage, retention disposition execution) are already registered under Groups 12 and 28 and are not re-registered here. Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: zero claims tag for this fork (three sentences of boundary prose); all twelve core functions are carried, not claimed, under an explicit core-boundary decision, and at this tier the never-self-approve guard traces to AC-3, AC-5 being lineage only (not a Low selection).
+
 ## Later groups
 
 Each group appends its section here when it ships.

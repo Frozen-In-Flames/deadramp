@@ -1,0 +1,20 @@
+[
+ {
+  "fork_id": "FR2409367364",
+  "vendor": "Pagefreezer Software Inc.",
+  "product": "Pagefreezer Website Archiving",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Data Management",
+  "description": "Pagefreezer\u2019s website archiving service uses crawling technology, similar to that of Google, to take snapshots of an agency\u2019s website(s). Archiving is an automated and scalable process and requires no software installation. With dynamic monitoring, new webpages and changes to existing pages are always captured, so the website archive is up to date.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2409367364/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2409367364"
+ }
+]
