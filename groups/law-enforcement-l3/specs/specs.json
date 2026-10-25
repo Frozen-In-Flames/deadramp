@@ -1,0 +1,38 @@
+[
+ {
+  "fork_id": "FR2421035110",
+  "vendor": "Cellebrite",
+  "product": "Cellebrite Government Cloud (CGC)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Law Enforcement",
+  "description": "The Cellebrite Government Cloud (CGC) is a SaaS solution that is operational within Amazon Web Services (AWS) GovCloud. \n\nThe CGC enables customers to extract and analyze digital forensic evidence from mobile devices, such as phones and tablets. Using Cellebrite\u2019s Digital Forensics Suite and\nInvestigative Suite, customers can leverage features such as device unlocking, data extraction, data analysis, information sharing, and reporting without compromising the integrity or chain of custody of the mobile device.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at ../../raw/data_dump.json), product record joined by FedRAMP ID",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2421035110/"
+ },
+ {
+  "fork_id": "FR2616545789",
+  "vendor": "Magnet Forensics",
+  "product": "Magnet One",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Law Enforcement",
+  "description": "Magnet One delivers secure digital forensics and investigative analysis capabilities within a FedRAMP High authorized cloud environment, enabling U.S. federal agencies to ingest, process, analyze, and manage digital evidence in compliance with federal security requirements. The offering combines Magnet One\u2019s advanced evidence review and collaboration features with a rigorously controlled architecture, documented security controls, and continuous monitoring aligned to FedRAMP standards, supporting mission operations while maintaining the confidentiality, integrity, and availability of sensitive federal data.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at ../../raw/data_dump.json), product record joined by FedRAMP ID",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2616545789/"
+ }
+]

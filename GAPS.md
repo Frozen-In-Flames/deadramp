@@ -579,6 +579,26 @@ Named absences (not gaps): risk register / risk management functions and policy 
 
 Platform-layer: encryption at rest is deployment-layer (TLS when configured); single-tenant reference deployment; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization).
 
+## Group 35 — Law Enforcement L3-adjacent (2 forks)
+
+Cross-tier merge of Group 34 (cross-tier parent), uplifted to the High baseline. Both spec sheets are zero-claim sheets under Group 34's 9-family taxonomy applied verbatim (0 claims total, full descriptions preserved): both siblings (Cellebrite Government Cloud (CGC), Magnet One) are genuine digital-forensics platforms whose vocabulary the legal-research taxonomy does not reach. The L2 core (11 functions) is carried whole under the Merge Rule — 0 of 11 claimed by this group's forks — with the six High uplifts (hash-chained audit + verify_chain, GET /audit/verify, fail-closed audit writes with store rollback, audit query, AC-7 logon lockout, auditor role with audit_read only).
+
+Extended functions, specified in groups/law-enforcement-l3/UNION-SPEC.md, not implemented — this group's own verticals, each a processing engine over evidence content the records substrate never holds:
+- [ ] open — Device unlocking (Cellebrite)
+- [ ] open — Evidence extraction from mobile devices (Cellebrite)
+- [ ] open — Forensic analysis engines (both siblings)
+- [ ] open — Evidence ingest & processing pipelines (Magnet One)
+- [ ] open — Evidence review (Magnet One)
+- [ ] open — Chain-of-custody enforcement over evidence (Cellebrite; the substrate's checksums / verify-by-content / hash chain are records-side analogues, stated as analogues, not equivalents)
+- [ ] open — Information sharing / collaboration over evidence (both siblings)
+- [ ] open — Forensic reporting (Cellebrite; beyond the substrate's counts-only registry reporting)
+
+Extended carried from Group 34's section (still open at this tier): the legal corpora themselves; citation-validation engines; editorial enhancement systems; corpus search & relevance engines; AI/ML research assistance (0 claims at either tier); document content storage, rendering & redaction.
+
+High platform gaps (named, not implied closed): MFA / authenticator management (IA-2(1)/(2), IA-5 — demo identities are hooks, not an IdP); FIPS-validated cryptography (SC-13 — Python stdlib is not a FIPS-validated module, not claimed); encryption at rest (SC-28 — deployment layer); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12 — per-request header auth, no session state).
+
+Category-discipline exclusions (0 claims, not built): surveillance, facial recognition, predictive policing, real-time intelligence feeds. Named absences carried from Group 34 remain accurate for the legal-research side only (incident / case management, criminal records / RMS, investigative case files); the forensic evidence functions are this group's Extended verticals above, not named absences. Privacy rule unchanged and structural: opaque references only, digests only for queries and notes, smuggled fields rejected by the store signatures.
+
 ## Later groups
 
 Each group appends its section here when it ships.
