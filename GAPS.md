@@ -73,6 +73,27 @@ Extended functions, specified in groups/cybersecurity-l2/UNION-SPEC.md, not impl
 
 Platform note: encryption is TLS when configured; at rest is deployment-layer.
 
+## Group 5 — Accounting L2 (21 forks)
+
+Extended families, specified in groups/accounting-l2/UNION-SPEC.md, not implemented:
+- [ ] open — AI / analytics & BI
+- [ ] open — Project / program / portfolio management
+- [ ] open — Risk register / GRC suites (separation of duties, approvals, and the audit trail are the in-core seed)
+- [ ] open — Audit management workbenches (the core carries the audit trail, not audit management)
+- [ ] open — Fixed-asset registers
+- [ ] open — Records retention
+- [ ] open — Forecasting / EPM
+- [ ] open — Supply chain
+- [ ] open — GovCon / grants
+- [ ] open — Crypto investigation
+- [ ] open — Time tracking
+- [ ] open — E-signature
+- [ ] open — Payroll
+- [ ] open — Tax
+- [ ] open — Forensic investigation
+
+Platform note: encryption is TLS when configured; at rest is deployment-layer. Documented wording gap (not papered over): no sibling description says "general ledger," "double-entry," "payable," or "receivable"; the double-entry journal is in the core as the defining mechanism of the accounting_core family (8 siblings), and standalone AP/AR modules were not invented.
+
 ## Later groups
 
 Each group appends its section here when it ships.

@@ -1,0 +1,1046 @@
+[
+ {
+  "fork_id": "FR2031222637",
+  "vendor": "Aurigo Software Technologies, Inc.",
+  "product": "Masterworks Cloud Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "Aurigo Masterworks is a capital planning and construction management solution designed exclusively for public agencies. Aurigo Masterworks empowers federal, state, and local governments with a secure, AI-native platform to plan, fund, and deliver infrastructure projects efficiently. With end-to-end capital planning, federal aid reimbursement, and construction project management, agencies can optimize investments and ensure regulatory compliance. Aurigo Masterworks integrates seamlessly with leading industry solutions like Autodesk and Bentley, providing a connected ecosystem for infrastructure planning. Agencies benefit from real-time insights, automation, and predictive analytics to mitigate risks and improve decision-making. With robust capabilities in civil rights and labor management, consultant service contracting, and permitting, Masterworks ensures transparency and accountability at every stage. The platform\u2019s cloud-native architecture and stringent security controls meet the highest government standards, enabling agencies to streamline processes while safeguarding sensitive data. Public agencies can now confidently accelerate infrastructure projects while ensuring compliance with federal and state regulations. With Aurigo Masterworks, governments can modernize infrastructure management, maximize taxpayer value, and build resilient communities.\r\n\r\n \r\n\r\nMasterworks Cloud Platform includes:\r\n\r\n- Aurigo Masterworks\r\n\r\n- Aurigo Primus\r\n\r\n- Aurigo Essentials\r\n\r\n- Aurigo Engage\r\n\r\n- Lumina AI\r\n\r\n- Capital Planning\r\n\r\n- Federal Aid Reimbursement\r\n\r\n- Estimation and Bidding\r\n\r\n- Construction Project Management\r\n\r\n- Civil Rights and Labor Management\r\n\r\n- Consultant Service Contracting\r\n\r\n- Real Property Management\r\n\r\n- Permitting\r\n\r\n- Materials Testing and Management\r\n\r\n- Right of Way Management",
+  "functions_claimed": [
+   {
+    "function_id": "budgeting_planning",
+    "function": "Budgeting, planning & cost management",
+    "evidence": "Aurigo Masterworks is a capital planning and construction management solution designed exclusively for public agencies."
+   },
+   {
+    "function_id": "fixed_assets",
+    "function": "Fixed assets, property & fleet management",
+    "evidence": "Masterworks Cloud Platform includes: \n \n- Aurigo Masterworks \n \n- Aurigo Primus \n \n- Aurigo Essentials \n \n- Aurigo Engage \n \n- Lumina AI \n \n- Capital Planning \n \n- Federal Aid Reimbursement \n \n- Estimation and Bidding \n \n- Construction Project Management \n \n- Civil Rights and Labor Management \n \n- Consultant Service Contracting \n \n- Real Property Management \n \n- Permitting \n \n- Materials Testin..."
+   },
+   {
+    "function_id": "project_management",
+    "function": "Project, program & portfolio management",
+    "evidence": "Aurigo Masterworks is a capital planning and construction management solution designed exclusively for public agencies."
+   },
+   {
+    "function_id": "govcon_grants",
+    "function": "Grants, federal aid & GovCon accounting",
+    "evidence": "With end-to-end capital planning, federal aid reimbursement, and construction project management, agencies can optimize investments and ensure regulatory compliance."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "Aurigo Masterworks integrates seamlessly with leading industry solutions like Autodesk and Bentley, providing a connected ecosystem for infrastructure planning."
+   },
+   {
+    "function_id": "ai_analytics",
+    "function": "AI, analytics & business intelligence",
+    "evidence": "Aurigo Masterworks empowers federal, state, and local governments with a secure, AI-native platform to plan, fund, and deliver infrastructure projects efficiently."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2031222637/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2031222637"
+ },
+ {
+  "fork_id": "FR2507664687",
+  "vendor": "BlackLine Systems, Inc.",
+  "product": "BlackLine Government Solution",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "BlackLine Government Solution is a SaaS application designed to help customers with the financial close process.",
+  "functions_claimed": [
+   {
+    "function_id": "reconciliation_close",
+    "function": "Reconciliation, settlement & financial close",
+    "evidence": "BlackLine Government Solution is a SaaS application designed to help customers with the financial close process."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2507664687/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2507664687"
+ },
+ {
+  "fork_id": "FR2504148525",
+  "vendor": "Booz Allen Hamilton",
+  "product": "Footprint",
+  "service_model": [
+   "SaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "Footprint provides a secure and compliant foundation to accelerate launching solutions by leveraging existing baseline platform, business, and customer functions increasing speed to delivery while reducing cost. The modular structure and scalability of Footprint, which serves as the e-commerce platform powering solutions like Recreation.gov, allows for services and features to be quickly built on top of existing components and configured to meet specific customer use cases. Footprint enables real-time integrations with both Government and commercial systems.\n\nCloud Platform:  Footprint is cloud-native software as a service (SaaS) solution built on AWS cloud, is API-driven, and is mobile first. Footprint achieves high reliability and availability through its distributed architectures, integration of the latest technology, infrastructure monitoring rapid infrastructure scaling, and the implementation of agile, microservices, Continuous Integration and Continuous Development (CI/CD), and DevSecOps.  Combined these enable Footprint to achieve no system downtime for upgrades and maintenance.\n\nSecure: Compliant with NIST SP 800-53 Rev. 5 Control Baseline-Moderate, PCI DSS v4.0.1, FISMA-Moderate, fully implements FedRAMP Moderate, and uses strict security processes for access to protected data (e.g., Personally Identifiable Information (PII)).\n\nBusiness Driven: Footprint reduces time to market bringing core business functions such as account management, internal business management tools, multi-channel user communications and customer engagement, secure payment processing, financial transaction management, content management, cart and checkout, integratedanalytics, and real-time reporting and dashboards, and customer service management. These functions are configured to support specific client needs and are designed for self-service.\n\nCustomer Focused: The modern modular Web Content Accessibility Guidelines (WCAG) 2.2 Guideline and Section 508 compliant design driven by user-informed development and experience provides a consistent experience, reduces friction, supports complex workflows, and enables adaptation to client needs and look and feel.  The system is designed as self-service and offers direct integration with help documentation, feedback channels, and customer support.\n\nMobile Application: Customer and management services are also delivered through fully mobile responsive user experience and native mobile applications for iOS and Android. The mobile app includes mobile-specific functions like ApplePay, Google Pay, QR code scanning, and the use of geolocation.",
+  "functions_claimed": [
+   {
+    "function_id": "payment_processing",
+    "function": "Payment processing, purchase cards & disbursements",
+    "evidence": "Business Driven: Footprint reduces time to market bringing core business functions such as account management, internal business management tools, multi-channel user communications and customer engagement, secure payment processing, financial transaction management, content management, cart and checkout, integratedanalytics, and real-time reporting and dashboards, and customer service management."
+   },
+   {
+    "function_id": "financial_reporting",
+    "function": "Financial reporting & statements",
+    "evidence": "Business Driven: Footprint reduces time to market bringing core business functions such as account management, internal business management tools, multi-channel user communications and customer engagement, secure payment processing, financial transaction management, content management, cart and checkout, integratedanalytics, and real-time reporting and dashboards, and customer service management."
+   },
+   {
+    "function_id": "workflow_approvals",
+    "function": "Workflow & approvals",
+    "evidence": "Customer Focused: The modern modular Web Content Accessibility Guidelines (WCAG) 2.2 Guideline and Section 508 compliant design driven by user-informed development and experience provides a consistent experience, reduces friction, supports complex workflows, and enables adaptation to client needs and look and feel."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "Footprint enables real-time integrations with both Government and commercial systems."
+   },
+   {
+    "function_id": "ai_analytics",
+    "function": "AI, analytics & business intelligence",
+    "evidence": "Business Driven: Footprint reduces time to market bringing core business functions such as account management, internal business management tools, multi-channel user communications and customer engagement, secure payment processing, financial transaction management, content management, cart and checkout, integratedanalytics, and real-time reporting and dashboards, and customer service management."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2504148525/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2504148525"
+ },
+ {
+  "fork_id": "FR2018946952",
+  "vendor": "CGI Federal",
+  "product": "Sunflower Asset Management Cloud (SAMC)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "CGI Federal Sunflower Asset Management Cloud (SAMC) is a suite of applications that enable management of personal property, fleet and real property from acquisition through disposal. Capabilities include tracking physical location and accountability for assets, performing physical inventory audits, work order and maintenance management, and excess/disposal screening and processing. Sunflower also supports integration with financial and procurement systems to manage financial accountability and reporting. Real property software features enable rent reconciliation, occupancy agreements, lease management, and Federal Real Property Profile (FRPP) reporting. The Sunflower suite also includes applications for creating custom reports and dashboards for data analysis and financial statement reconciliation.",
+  "functions_claimed": [
+   {
+    "function_id": "reconciliation_close",
+    "function": "Reconciliation, settlement & financial close",
+    "evidence": "Real property software features enable rent reconciliation, occupancy agreements, lease management, and Federal Real Property Profile (FRPP) reporting."
+   },
+   {
+    "function_id": "financial_reporting",
+    "function": "Financial reporting & statements",
+    "evidence": "Sunflower also supports integration with financial and procurement systems to manage financial accountability and reporting."
+   },
+   {
+    "function_id": "audit",
+    "function": "Audit trail & audit management",
+    "evidence": "Capabilities include tracking physical location and accountability for assets, performing physical inventory audits, work order and maintenance management, and excess/disposal screening and processing."
+   },
+   {
+    "function_id": "fixed_assets",
+    "function": "Fixed assets, property & fleet management",
+    "evidence": "CGI Federal Sunflower Asset Management Cloud (SAMC) is a suite of applications that enable management of personal property, fleet and real property from acquisition through disposal."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "Sunflower also supports integration with financial and procurement systems to manage financial accountability and reporting."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2018946952/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2018946952"
+ },
+ {
+  "fork_id": "FR2334756650",
+  "vendor": "Chainalysis",
+  "product": "Reactor",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "Reactor is a cryptocurrency investigation tool for tracing the flow of funds, which helps investigators as they identify and track bad actors who use cryptocurrencies for illicit activity. Reactor combines an intuitive interface with flexible visualization capabilities to map blockchain transactions into real-world entities, enabling users to combat criminal activity on the blockchain. Reactor is used by law enforcement, compliance officers, financial institutions, and governments around the world for criminal investigations.",
+  "functions_claimed": [
+   {
+    "function_id": "crypto_investigation",
+    "function": "Cryptocurrency & blockchain investigation",
+    "evidence": "Reactor is a cryptocurrency investigation tool for tracing the flow of funds, which helps investigators as they identify and track bad actors who use cryptocurrencies for illicit activity."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2334756650/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2334756650"
+ },
+ {
+  "fork_id": "FR2234550858",
+  "vendor": "Concur Technologies, Inc.",
+  "product": "Concur Cloud for Public Sector",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "Concur Cloud for Public Sector (CCPS) is a Government-Only Community Cloud environment that hosts SAP Concur\u2019s extensive suite of travel and expense cloud solutions, hosted on AWS GovCloud Infrastructure. CCPS is designed for the U.S. Public Sector, managed by SAP Concur personnel on U.S. soil, and ensures data security, confidentiality, and availability without compromising usability standards of travel and spend management solutions. SAP Concur U.S. soil requirements do not necessarily extend to external services leveraged by CCPS. Customers can be federal, state, local, tribal, territorial, federally funded research centers (FFRDCs), contractors working on behalf of the government, or lab entities. Concur Cloud for Public Sector provides a comprehensive environment that accommodates the complex processes of government travel and expense. Users are able to access the Federal Travel Regulation (FTR)- and Joint Travel Regulation (JTR)-compliant Concur Cloud applications via standard web browsers or on a smartphone with our SAP Concur mobile app. CCPS brings commercial functionality and scalability to government agencies while still meeting government-mandated security and regulatory needs. \n\nConcur Travel and Expense (CTE): Includes a web application portal to communicate with system users and provide access to all services. The web application gives users the ability to facilitate travel booking services, change travel reservations, and authorize travel. From vouchering services to documenting trip approvals and expense reimbursements, the web application provides accurate accounting information to government systems in compliance with the Federal Travel Regulation (FTR) and the Joint Travel Regulation (JTR). Users access applications within CCPS by using standard web browsers via a URL or by using SAP Concur mobile applications for supported smart phone and tablet computer platforms. All data collected by Concur applications is made available to customers via reporting enabled by the Cognos reporting tool that provides reports and the ability to create and/or manage new reports.\n\nConcurGov: SAP Concur's travel and expense solution provided to U.S. Federal Civilian customers under the ETS2 contract. ConcurGov includes services that are not included with CTE, such as GovPay, within the CCPS CSO.\n\nGlobal Distribution Systems (GDSs): Travel content aggregators that sell content on behalf of airlines, hotels, rail, and rental car companies. Many organizations that provide travel services sell their content only through one or more GDS.\n\nDirect Connect Providers: Travel providers (airlines, hotels, rail, and rental car companies) that do not use GDSs but instead sell their travel content directly.\n\nTravel Management Companies (TMCs): Travel management companies that book travel on behalf of agency users, provide reservation fulfillment, reporting, and mid- and back-office systems as part of the entire end-to-end travel reservation process.\nE-Receipt Providers: Travel providers (airlines, hotels, rail, and rental car companies) that electronically transmit electronic receipts to SAP Concur for inclusion in travel voucher requests.\n\nThe following SAP Concur products and services are available in CCPS: \n\u2022        Advanced Care\n\u2022        Budget\n\u2022        Central Reconciliation\n\u2022        Client Web Services\n\u2022        Company Bill Statements\n\u2022        Consultative Intelligence\n\u2022        Custom Connector \u2013 Expense\n\u2022        Data Delivery Services (DDS)\n\u2022        Detect by Oversight\n\u2022        Concur Travel & Expense\n\u2022        Concur Travel only (Direct)\n\u2022        ConcurGov\n\u2022        Concur Expense only\n\u2022        Data Extract Service\n\u2022        Essential Care\n\u2022        ExpenseIt\n\u2022        Extract Services\n\u2022        Intelligent Audit\n\u2022        Intelligence\n\u2022        Production Sandbox Environment\n\u2022        Concur Request\n\u2022        SAP Integration\n\u2022        Select Care\n\u2022        TripLink\n\u2022        User Support Desk for Public Sector\n\u2022        Verify",
+  "functions_claimed": [
+   {
+    "function_id": "accounting_core",
+    "function": "Core accounting & financial management",
+    "evidence": "From vouchering services to documenting trip approvals and expense reimbursements, the web application provides accurate accounting information to government systems in compliance with the Federal Travel Regulation (FTR) and the Joint Travel Regulation (JTR)."
+   },
+   {
+    "function_id": "invoicing_billing",
+    "function": "Invoicing & billing",
+    "evidence": "The following SAP Concur products and services are available in CCPS: \n\u2022        Advanced Care\n\u2022        Budget\n\u2022        Central Reconciliation\n\u2022        Client Web Services\n\u2022        Company Bill Statements\n\u2022        Consultative Intelligence\n\u2022        Custom Connector \u2013 Expense\n\u2022        Data Delivery Services (DDS)\n\u2022        Detect by Oversight\n\u2022        Concur Travel & Expense\n\u2022        Concur Travel..."
+   },
+   {
+    "function_id": "expense_management",
+    "function": "Expense management & travel",
+    "evidence": "Concur Cloud for Public Sector (CCPS) is a Government-Only Community Cloud environment that hosts SAP Concur\u2019s extensive suite of travel and expense cloud solutions, hosted on AWS GovCloud Infrastructure."
+   },
+   {
+    "function_id": "payment_processing",
+    "function": "Payment processing, purchase cards & disbursements",
+    "evidence": "ConcurGov includes services that are not included with CTE, such as GovPay, within the CCPS CSO."
+   },
+   {
+    "function_id": "reconciliation_close",
+    "function": "Reconciliation, settlement & financial close",
+    "evidence": "The following SAP Concur products and services are available in CCPS: \n\u2022        Advanced Care\n\u2022        Budget\n\u2022        Central Reconciliation\n\u2022        Client Web Services\n\u2022        Company Bill Statements\n\u2022        Consultative Intelligence\n\u2022        Custom Connector \u2013 Expense\n\u2022        Data Delivery Services (DDS)\n\u2022        Detect by Oversight\n\u2022        Concur Travel & Expense\n\u2022        Concur Travel..."
+   },
+   {
+    "function_id": "financial_reporting",
+    "function": "Financial reporting & statements",
+    "evidence": "All data collected by Concur applications is made available to customers via reporting enabled by the Cognos reporting tool that provides reports and the ability to create and/or manage new reports."
+   },
+   {
+    "function_id": "audit",
+    "function": "Audit trail & audit management",
+    "evidence": "The following SAP Concur products and services are available in CCPS: \n\u2022        Advanced Care\n\u2022        Budget\n\u2022        Central Reconciliation\n\u2022        Client Web Services\n\u2022        Company Bill Statements\n\u2022        Consultative Intelligence\n\u2022        Custom Connector \u2013 Expense\n\u2022        Data Delivery Services (DDS)\n\u2022        Detect by Oversight\n\u2022        Concur Travel & Expense\n\u2022        Concur Travel..."
+   },
+   {
+    "function_id": "workflow_approvals",
+    "function": "Workflow & approvals",
+    "evidence": "From vouchering services to documenting trip approvals and expense reimbursements, the web application provides accurate accounting information to government systems in compliance with the Federal Travel Regulation (FTR) and the Joint Travel Regulation (JTR)."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "The following SAP Concur products and services are available in CCPS: \n\u2022        Advanced Care\n\u2022        Budget\n\u2022        Central Reconciliation\n\u2022        Client Web Services\n\u2022        Company Bill Statements\n\u2022        Consultative Intelligence\n\u2022        Custom Connector \u2013 Expense\n\u2022        Data Delivery Services (DDS)\n\u2022        Detect by Oversight\n\u2022        Concur Travel & Expense\n\u2022        Concur Travel..."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2234550858/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2234550858"
+ },
+ {
+  "fork_id": "F1606087903A",
+  "vendor": "Deltek - Replicon",
+  "product": "Replicon Cloud Platform (Enterprise Time Tracking Platform)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "The Replicon Cloud Platform (RCP) is a Software as a Service (SaaS) solution providing cloud-based time tracking, expense management, and resource scheduling capabilities. The platform enables organizations to capture and manage employee time, project costs, expense reports, and resource allocation. RCP delivers workforce management analytics, project cost controls, and operational reporting through a secure, multi-tenant cloud infrastructure.",
+  "functions_claimed": [
+   {
+    "function_id": "expense_management",
+    "function": "Expense management & travel",
+    "evidence": "The Replicon Cloud Platform (RCP) is a Software as a Service (SaaS) solution providing cloud-based time tracking, expense management, and resource scheduling capabilities."
+   },
+   {
+    "function_id": "financial_reporting",
+    "function": "Financial reporting & statements",
+    "evidence": "The platform enables organizations to capture and manage employee time, project costs, expense reports, and resource allocation."
+   },
+   {
+    "function_id": "budgeting_planning",
+    "function": "Budgeting, planning & cost management",
+    "evidence": "RCP delivers workforce management analytics, project cost controls, and operational reporting through a secure, multi-tenant cloud infrastructure."
+   },
+   {
+    "function_id": "time_tracking",
+    "function": "Time tracking & scheduling",
+    "evidence": "The Replicon Cloud Platform (RCP) is a Software as a Service (SaaS) solution providing cloud-based time tracking, expense management, and resource scheduling capabilities."
+   },
+   {
+    "function_id": "project_management",
+    "function": "Project, program & portfolio management",
+    "evidence": "The platform enables organizations to capture and manage employee time, project costs, expense reports, and resource allocation."
+   },
+   {
+    "function_id": "ai_analytics",
+    "function": "AI, analytics & business intelligence",
+    "evidence": "RCP delivers workforce management analytics, project cost controls, and operational reporting through a secure, multi-tenant cloud infrastructure."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1606087903A/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1606087903A"
+ },
+ {
+  "fork_id": "FR2405880485",
+  "vendor": "Deltek, Inc.",
+  "product": "Costpoint GovCon Cloud Moderate (CP GCCM)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "Deltek's Costpoint GovCon Cloud Moderate (CP GCCM) supports government contractors with project management, accounting, labor and material management and business intelligence functionalities. CP GCCM provides unstructured data classification and customizable rules to protect the privacy of customers, employees, and partners, as well as an organization\u2019s intellectual property. In addition, the CP GCCM supports capabilities for content protection including data classification and access controls, data retention, and regulation.\n\nCP GCCM offers additional security to support government contractors in meeting their DFARS contractual requirements and helps accelerate DCAA/DCMA and CMMC compliance initiatives. CP GCCM allows contractors a secure process to handle more highly sensitive information, Controlled Unclassified Information (CUI) and ITAR data, eliminating the complexity of additional IT infrastructure or staff.",
+  "functions_claimed": [
+   {
+    "function_id": "accounting_core",
+    "function": "Core accounting & financial management",
+    "evidence": "Deltek's Costpoint GovCon Cloud Moderate (CP GCCM) supports government contractors with project management, accounting, labor and material management and business intelligence functionalities."
+   },
+   {
+    "function_id": "project_management",
+    "function": "Project, program & portfolio management",
+    "evidence": "Deltek's Costpoint GovCon Cloud Moderate (CP GCCM) supports government contractors with project management, accounting, labor and material management and business intelligence functionalities."
+   },
+   {
+    "function_id": "govcon_grants",
+    "function": "Grants, federal aid & GovCon accounting",
+    "evidence": "Deltek's Costpoint GovCon Cloud Moderate (CP GCCM) supports government contractors with project management, accounting, labor and material management and business intelligence functionalities."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Access control & authentication",
+    "evidence": "In addition, the CP GCCM supports capabilities for content protection including data classification and access controls, data retention, and regulation."
+   },
+   {
+    "function_id": "ai_analytics",
+    "function": "AI, analytics & business intelligence",
+    "evidence": "Deltek's Costpoint GovCon Cloud Moderate (CP GCCM) supports government contractors with project management, accounting, labor and material management and business intelligence functionalities."
+   },
+   {
+    "function_id": "records_governance",
+    "function": "Records, document management & retention",
+    "evidence": "In addition, the CP GCCM supports capabilities for content protection including data classification and access controls, data retention, and regulation."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2405880485/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2405880485"
+ },
+ {
+  "fork_id": "FR2324445481",
+  "vendor": "MCG Energy Solutions, LLC",
+  "product": "MCG Applications and Hosting",
+  "service_model": [
+   "IaaS",
+   "SaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Accounting",
+   "Analytics",
+   "Communication",
+   "Data Management",
+   "Finance",
+   "Operations Management"
+  ],
+  "deadramp_category": "Accounting",
+  "description": "MCG Energy Solutions develops and provides wholesale and retail energy software on a SaaS basis that we host as a CSP in the MCG Private Cloud. Both our Private Cloud infrastructure (IaaS) and our product suite (SaaS) exceed a 99.99% SLA uptime for utilities and other businesses that need a true 24x7x365 system with real-time (active/active) redundancy.\n\n \n\nMCG\u2019s entire customer solution, including all product offerings and services, has no gaps between our software and the infrastructure it runs on.  Our solutions are hardened through and through to mitigate customer risk exposure and minimize required maintenance.\n\n \n\nThe following products are included in the MCG Application suite which can be used individually or together as a complete energy software solution:\n\n\u2022   Integrated Asset Manager (IAM) - A full-featured, easy-to-use wholesale energy marketing and trading solution integrated with all North American physical bilateral markets and ISOs. IAM\u2019s user-friendly scheduling interface streamlines workflow for managing front-office and back-office operations including trade capture, transmission reservation management, fully integrated native e-Tagging, scheduling, bidding, dispatch, settlement, and reporting for all resources and loads.\n\n\u2022   Energy Accounting System (EAS) - Tracks and manages time-series data types, visualizes calculations (load, imbalance, contract, etc.), and tracks a meter\u2019s data sources to generate an official profile based on the best available and validated data. EAS supports granular meter input (5-minute, 15-minute, hourly) and tracks multiple data sources for a single meter such as PI, MV90, market, and more. The system\u2019s flexible calculation engine accepts and saves the calculations you require in an Excel-like format.\n\n\u2022   TransBill - Extends EAS as a complete wholesale power billing and invoicing solution that bills a wide variety of wholesale contracts for both generation and transmission businesses. TransBill assists in performing all components of Open Access Transmission Tariffs (OATTs), Purchase Power Agreements (PPAs), Grandfathered Agreements (Power and Transmission legacy contracts), ISO Transmission Revenue Shadowing, and more.\n\n\u2022   MCG\u2019s Versify Outage Management System (OMS) - An industry leader for handling the outage process from the initial request, through approval processes, to execution and coordination of activities in the field and with ISO and RTO markets. Versify OMS features the advanced Versify workflow engine that greatly reduces time and expense of adjusting the system to meet changes in markets and your business.\n\n\u2022   MCG\u2019s Versify Operator Log (OpLog) \u2013 A web-based software system that easily logs events, activities, and compliance requirements in a single tool using the same workflow engine as Versify OMS. OpLog simplifies communication between the field and office, and automates manual processes to eliminate errors while improving efficiency and compliance.\n\n\u2022   MCG\u2019s Versify Workforce \u2013 Advances and streamlines safety management with tools for desktop and mobile devices, including Permit to Work (PTW), Job Hazard Analysis (JHA), Job Safety Analysis (JSA), Lockout Tagout (LOTO), and more.  Workforce reduces the administrative burden on staff while enhancing compliance and coordination between the field and office. Designed to provide complete visibility across your organization, Workforce ensures the correct safety and compliance measures are taken for the safety of your employees and work environments.\n\n\u2022   MCG\u2019s Paragon Energy Risk Manager (ERM) - A fully integrated trading, credit, and market risk management solution for complex, multi-commodity energy companies. ERM manages the entire risk management process throughout the transaction life cycle including counterparty onboarding and scoring, trade limits, margining agreements, trade capture, scheduling, Mark-to-Market (MtM), accounting, and credit analysis. Combining state of the art technology with dynamic features, ERM provides a consistent approach to market and credit risk to ensure compliance with credit and market exposure policies and limits.\n\n\u2022   MCG\u2019s Paragon Credit Risk Manager (CRM) - Combines state of the art technology with a rich feature set for managing credit risk, including counterparty, contract, collateral, exposure management, advanced credit analytics, and credit scoring. CRM is easily configured by users to meet the nuances of each client\u2019s credit risk requirements, and can create custom views and reports that can be saved and shared. Encompasses the entire scope of credit risk management to ensure credit policies are consistently and efficiently followed across your organization.\n\n\u2022   MCG\u2019s Paragon Gas Scheduling System (GSS) \u2013 This extension of Paragon ERM merges operational and commercial data in an easily navigated format that streamlines tasks from processing nominations to generating expected cash flows. GSS simplifies the gas scheduling process by generating invoices and closing statements using transport rates from the pipeline and actualized data.\n\n\u2022   Hosted Data Services (HDS) \u2013 Accessing your data should not interrupt business activities. HDS warehouses and archives data from all MCG products into a single platform with full search, filter, report, and display building capability. It includes a programmatic API for performing queries directly against the HDS database, eliminating production impacts from long running queries while integrating to downstream systems without impacting the operational system in use.\n\n\u2022   Control Area Scheduling (CAS) \u2013 A fully featured interchange and transmission scheduling system integrating MCG e-Tag and OASIS interfaces to automatically create, categorize, and track interchange and transmission schedules for reliability entities.\n\n\u2022   MCG\u2019s Innotap Data Suite (IDS) \u2013 When you need timely, clean, and accurate data from markets for your decision making, IDS (direct or through API feed) is the solution for your business.  IDS organizes and displays data for wholesale energy transactions from a wide array of sources, with modules for a variety of ISOs and RTOs to aid and report on the decision making process.",
+  "functions_claimed": [
+   {
+    "function_id": "accounting_core",
+    "function": "Core accounting & financial management",
+    "evidence": "\u2022   Energy Accounting System (EAS) - Tracks and manages time-series data types, visualizes calculations (load, imbalance, contract, etc.), and tracks a meter\u2019s data sources to generate an official profile based on the best available and validated data."
+   },
+   {
+    "function_id": "invoicing_billing",
+    "function": "Invoicing & billing",
+    "evidence": "\u2022   TransBill - Extends EAS as a complete wholesale power billing and invoicing solution that bills a wide variety of wholesale contracts for both generation and transmission businesses."
+   },
+   {
+    "function_id": "reconciliation_close",
+    "function": "Reconciliation, settlement & financial close",
+    "evidence": "IAM\u2019s user-friendly scheduling interface streamlines workflow for managing front-office and back-office operations including trade capture, transmission reservation management, fully integrated native e-Tagging, scheduling, bidding, dispatch, settlement, and reporting for all resources and loads."
+   },
+   {
+    "function_id": "financial_reporting",
+    "function": "Financial reporting & statements",
+    "evidence": "IAM\u2019s user-friendly scheduling interface streamlines workflow for managing front-office and back-office operations including trade capture, transmission reservation management, fully integrated native e-Tagging, scheduling, bidding, dispatch, settlement, and reporting for all resources and loads."
+   },
+   {
+    "function_id": "risk_controls",
+    "function": "Risk management & internal controls",
+    "evidence": "\u2022   MCG\u2019s Paragon Energy Risk Manager (ERM) - A fully integrated trading, credit, and market risk management solution for complex, multi-commodity energy companies."
+   },
+   {
+    "function_id": "workflow_approvals",
+    "function": "Workflow & approvals",
+    "evidence": "IAM\u2019s user-friendly scheduling interface streamlines workflow for managing front-office and back-office operations including trade capture, transmission reservation management, fully integrated native e-Tagging, scheduling, bidding, dispatch, settlement, and reporting for all resources and loads."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "The following products are included in the MCG Application suite which can be used individually or together as a complete energy software solution:\n\n\u2022   Integrated Asset Manager (IAM) - A full-featured, easy-to-use wholesale energy marketing and trading solution integrated with all North American physical bilateral markets and ISOs."
+   },
+   {
+    "function_id": "ai_analytics",
+    "function": "AI, analytics & business intelligence",
+    "evidence": "\u2022   MCG\u2019s Paragon Credit Risk Manager (CRM) - Combines state of the art technology with a rich feature set for managing credit risk, including counterparty, contract, collateral, exposure management, advanced credit analytics, and credit scoring."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2324445481/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2324445481"
+ },
+ {
+  "fork_id": "FR1828848692",
+  "vendor": "OneSpan Inc.",
+  "product": "OneSpan Sign, E-Signature and Digital Signature Service",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "OneSpan Sign has been helping government organizations move to paperless signing since 1997, making it the longest standing electronic signature solution in the U.S. Federal Government. As the first e-signature and digital transaction management solution granted ATO under FedRAMP, OneSpan Sign helps digitize and automate manual, paper-based processes in support of the government's digital transformation efforts. OneSpan Sign features include templates, workflow automation, mobile and offline signing, transaction management and comprehensive audit trails. OneSpan Sign also meets the government's stringent authentication requirements with out-of-the-box support for signing with government-issued Common Access Cards (CAC), PIV smart cards and derived credentials. Our proven FedRAMP authorized solution in used by the U.S. Census Bureau, U.S. Small Business Administration (SBA), USDA Natural Resources Conservation Service (NRCS), GSA and many others. The FedRAMP Program Management Office (PMO) itself also uses our platform to sign off on internal authorizations. OneSpan partners with Cloud Services Provider, Project Hosts, to deliver its e-signature solution in a FedRAMP compliant cloud hosted on Microsoft's world-class Azure cloud infrastructure. More information about OneSpan Sign can be found here: https://www.esignlive.com/fedramp/",
+  "functions_claimed": [
+   {
+    "function_id": "audit",
+    "function": "Audit trail & audit management",
+    "evidence": "OneSpan Sign features include templates, workflow automation, mobile and offline signing, transaction management and comprehensive audit trails."
+   },
+   {
+    "function_id": "workflow_approvals",
+    "function": "Workflow & approvals",
+    "evidence": "OneSpan Sign features include templates, workflow automation, mobile and offline signing, transaction management and comprehensive audit trails."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Access control & authentication",
+    "evidence": "OneSpan Sign also meets the government's stringent authentication requirements with out-of-the-box support for signing with government-issued Common Access Cards (CAC), PIV smart cards and derived credentials."
+   },
+   {
+    "function_id": "esignature",
+    "function": "Electronic & digital signatures",
+    "evidence": "OneSpan Sign has been helping government organizations move to paperless signing since 1997, making it the longest standing electronic signature solution in the U.S."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1828848692/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1828848692"
+ },
+ {
+  "fork_id": "F1603257882",
+  "vendor": "Oracle",
+  "product": "Fusion Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Accounting",
+   "Analytics",
+   "Customer Relations Management (CRM)",
+   "Customer Service",
+   "Cybersecurity & Risk Management",
+   "Finance",
+   "Health & Wellness",
+   "Human Resources",
+   "Marketing & Sales"
+  ],
+  "deadramp_category": "Accounting",
+  "description": "Oracle Fusion Cloud is Oracle's Software as a Service (SaaS) suite of enterprise business applications comprised of Enterprise Resource Planning (ERP), Human Capital Management (HCM), Supply Chain Management (SCM), and CX Sales and Service (CRM). Customers can subscribe to some or all of the Fusion Applications which include: federal financials, procurement, project management, and risk management & compliance; human resources (HR), talent management, learning, recruiting, workforce management, time & labor, and payroll; supply chain planning, inventory management, manufacturing, maintenance, order management and product lifecycle management; CX sales, and CX B2B service. Oracle Fusion Cloud is a true SaaS offering, operated and maintained by Oracle within its secure Government Cloud facilities in the United States. Oracle Government Cloud is a community-cloud limited to federal, state and local agencies as well as select universities and federal contractors with a demonstrated need for FedRAMP authorization.\n\nOther cloud services can be leveraged to complement Oracle Fusion Applications including Oracle Cloud EPM (Oracle Enterprise Performance Management (EPM) - Moderate), Oracle Intelligent Advisor (Oracle Service Cloud), Oracle Digital Assistant, Oracle Integration Cloud and other PaaS (platform) services (Oracle Cloud Infrastructure-Government Cloud).",
+  "functions_claimed": [
+   {
+    "function_id": "accounting_core",
+    "function": "Core accounting & financial management",
+    "evidence": "Customers can subscribe to some or all of the Fusion Applications which include: federal financials, procurement, project management, and risk management & compliance; human resources (HR), talent management, learning, recruiting, workforce management, time & labor, and payroll; supply chain planning, inventory management, manufacturing, maintenance, order management and product lifecycle manag..."
+   },
+   {
+    "function_id": "forecasting_epm",
+    "function": "Forecasting & enterprise performance management (EPM)",
+    "evidence": "Other cloud services can be leveraged to complement Oracle Fusion Applications including Oracle Cloud EPM (Oracle Enterprise Performance Management (EPM) - Moderate), Oracle Intelligent Advisor (Oracle Service Cloud), Oracle Digital Assistant, Oracle Integration Cloud and other PaaS (platform) services (Oracle Cloud Infrastructure-Government Cloud)."
+   },
+   {
+    "function_id": "payroll_adjacent",
+    "function": "Payroll & labor",
+    "evidence": "Customers can subscribe to some or all of the Fusion Applications which include: federal financials, procurement, project management, and risk management & compliance; human resources (HR), talent management, learning, recruiting, workforce management, time & labor, and payroll; supply chain planning, inventory management, manufacturing, maintenance, order management and product lifecycle manag..."
+   },
+   {
+    "function_id": "risk_controls",
+    "function": "Risk management & internal controls",
+    "evidence": "Customers can subscribe to some or all of the Fusion Applications which include: federal financials, procurement, project management, and risk management & compliance; human resources (HR), talent management, learning, recruiting, workforce management, time & labor, and payroll; supply chain planning, inventory management, manufacturing, maintenance, order management and product lifecycle manag..."
+   },
+   {
+    "function_id": "project_management",
+    "function": "Project, program & portfolio management",
+    "evidence": "Customers can subscribe to some or all of the Fusion Applications which include: federal financials, procurement, project management, and risk management & compliance; human resources (HR), talent management, learning, recruiting, workforce management, time & labor, and payroll; supply chain planning, inventory management, manufacturing, maintenance, order management and product lifecycle manag..."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "Other cloud services can be leveraged to complement Oracle Fusion Applications including Oracle Cloud EPM (Oracle Enterprise Performance Management (EPM) - Moderate), Oracle Intelligent Advisor (Oracle Service Cloud), Oracle Digital Assistant, Oracle Integration Cloud and other PaaS (platform) services (Oracle Cloud Infrastructure-Government Cloud)."
+   },
+   {
+    "function_id": "supply_chain",
+    "function": "Supply chain, warehouse & logistics",
+    "evidence": "Oracle Fusion Cloud is Oracle's Software as a Service (SaaS) suite of enterprise business applications comprised of Enterprise Resource Planning (ERP), Human Capital Management (HCM), Supply Chain Management (SCM), and CX Sales and Service (CRM)."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1603257882/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1603257882"
+ },
+ {
+  "fork_id": "F1607077914A",
+  "vendor": "Oracle",
+  "product": "Oracle Enterprise Performance Management (EPM)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Accounting",
+   "Analytics",
+   "Data Management",
+   "Finance"
+  ],
+  "deadramp_category": "Accounting",
+  "description": "Oracle Cloud Enterprise Performance Management (Oracle Cloud EPM) is a full suite of industry standard EPM business processes comprised of planning (strategy, financial, workforce, capital, projects), budget formulation and execution, consolidation and close, account reconciliation, profitability & cost management, tax reporting, narrative reporting, and enterprise data management. Customers can subscribe to some or all of the EPM Applications. Oracle Cloud EPM is a true SaaS offering, operated and maintained by Oracle within its secure Government Cloud facilities in the United States. Oracle Government Cloud is a community-cloud limited to federal, state and local agencies as well as select universities and federal contractors with a demonstrated need for FedRAMP authorization.\n\nOther cloud services can be leveraged to complement Oracle Fusion Applications including Oracle Fusion Cloud (Oracle - Fusion Cloud), Oracle Intelligent Advisor (Oracle Service Cloud), Oracle Digital Assistant, Oracle Integration Cloud and other PaaS (platform) services (Oracle Cloud Infrastructure-Government Cloud).",
+  "functions_claimed": [
+   {
+    "function_id": "reconciliation_close",
+    "function": "Reconciliation, settlement & financial close",
+    "evidence": "Oracle Cloud Enterprise Performance Management (Oracle Cloud EPM) is a full suite of industry standard EPM business processes comprised of planning (strategy, financial, workforce, capital, projects), budget formulation and execution, consolidation and close, account reconciliation, profitability & cost management, tax reporting, narrative reporting, and enterprise data management."
+   },
+   {
+    "function_id": "financial_reporting",
+    "function": "Financial reporting & statements",
+    "evidence": "Oracle Cloud Enterprise Performance Management (Oracle Cloud EPM) is a full suite of industry standard EPM business processes comprised of planning (strategy, financial, workforce, capital, projects), budget formulation and execution, consolidation and close, account reconciliation, profitability & cost management, tax reporting, narrative reporting, and enterprise data management."
+   },
+   {
+    "function_id": "budgeting_planning",
+    "function": "Budgeting, planning & cost management",
+    "evidence": "Oracle Cloud Enterprise Performance Management (Oracle Cloud EPM) is a full suite of industry standard EPM business processes comprised of planning (strategy, financial, workforce, capital, projects), budget formulation and execution, consolidation and close, account reconciliation, profitability & cost management, tax reporting, narrative reporting, and enterprise data management."
+   },
+   {
+    "function_id": "forecasting_epm",
+    "function": "Forecasting & enterprise performance management (EPM)",
+    "evidence": "Oracle Cloud Enterprise Performance Management (Oracle Cloud EPM) is a full suite of industry standard EPM business processes comprised of planning (strategy, financial, workforce, capital, projects), budget formulation and execution, consolidation and close, account reconciliation, profitability & cost management, tax reporting, narrative reporting, and enterprise data management."
+   },
+   {
+    "function_id": "tax_support",
+    "function": "Tax reporting & support",
+    "evidence": "Oracle Cloud Enterprise Performance Management (Oracle Cloud EPM) is a full suite of industry standard EPM business processes comprised of planning (strategy, financial, workforce, capital, projects), budget formulation and execution, consolidation and close, account reconciliation, profitability & cost management, tax reporting, narrative reporting, and enterprise data management."
+   },
+   {
+    "function_id": "workflow_approvals",
+    "function": "Workflow & approvals",
+    "evidence": "Oracle Cloud Enterprise Performance Management (Oracle Cloud EPM) is a full suite of industry standard EPM business processes comprised of planning (strategy, financial, workforce, capital, projects), budget formulation and execution, consolidation and close, account reconciliation, profitability & cost management, tax reporting, narrative reporting, and enterprise data management."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "Other cloud services can be leveraged to complement Oracle Fusion Applications including Oracle Fusion Cloud (Oracle - Fusion Cloud), Oracle Intelligent Advisor (Oracle Service Cloud), Oracle Digital Assistant, Oracle Integration Cloud and other PaaS (platform) services (Oracle Cloud Infrastructure-Government Cloud)."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1607077914A/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1607077914A"
+ },
+ {
+  "fork_id": "FR2534673267",
+  "vendor": "Oracle Corporation",
+  "product": "Oracle Primavera Cloud for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "Oracle Primavera Cloud is a cloud-based SaaS service that provides comprehensive project, program, and portfolio management solutions. OPC integrates project planning, scheduling, risk management, resource allocation, and cost control.  OPC is used for large and small projects across industries like construction, energy, and IT. OPC connects office and field teams, synchronizes project data, and offers powerful dashboards for real-time visibility to help users make informed decisions throughout the project lifecycle.\nCapabilities include:\n- Ideas & Capital Planning\n- Portfolio Management\n- Planning & Scheduling\n- Budgeting & Forecasting\n- Resource Management\n- Progress Capture\n- Workflow Management\n- Cost Control\n- Risks & Issues\n- Deliverables Management\n- Analysis & Reporting\n- Mobile, Email & APIs",
+  "functions_claimed": [
+   {
+    "function_id": "financial_reporting",
+    "function": "Financial reporting & statements",
+    "evidence": "OPC connects office and field teams, synchronizes project data, and offers powerful dashboards for real-time visibility to help users make informed decisions throughout the project lifecycle."
+   },
+   {
+    "function_id": "budgeting_planning",
+    "function": "Budgeting, planning & cost management",
+    "evidence": "OPC integrates project planning, scheduling, risk management, resource allocation, and cost control."
+   },
+   {
+    "function_id": "forecasting_epm",
+    "function": "Forecasting & enterprise performance management (EPM)",
+    "evidence": "Capabilities include:\n- Ideas & Capital Planning\n- Portfolio Management\n- Planning & Scheduling\n- Budgeting & Forecasting\n- Resource Management\n- Progress Capture\n- Workflow Management\n- Cost Control\n- Risks & Issues\n- Deliverables Management\n- Analysis & Reporting\n- Mobile, Email & APIs"
+   },
+   {
+    "function_id": "risk_controls",
+    "function": "Risk management & internal controls",
+    "evidence": "OPC integrates project planning, scheduling, risk management, resource allocation, and cost control."
+   },
+   {
+    "function_id": "project_management",
+    "function": "Project, program & portfolio management",
+    "evidence": "Oracle Primavera Cloud is a cloud-based SaaS service that provides comprehensive project, program, and portfolio management solutions."
+   },
+   {
+    "function_id": "workflow_approvals",
+    "function": "Workflow & approvals",
+    "evidence": "Capabilities include:\n- Ideas & Capital Planning\n- Portfolio Management\n- Planning & Scheduling\n- Budgeting & Forecasting\n- Resource Management\n- Progress Capture\n- Workflow Management\n- Cost Control\n- Risks & Issues\n- Deliverables Management\n- Analysis & Reporting\n- Mobile, Email & APIs"
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "OPC integrates project planning, scheduling, risk management, resource allocation, and cost control."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2534673267/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2534673267"
+ },
+ {
+  "fork_id": "FR2235229299",
+  "vendor": "Paperless Innovations, Inc.",
+  "product": "Actus",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "Paperless Innovations, with our Actus solution, has repositioned GPC utilization and funds management processes as a government-wide shared service under the auspices of Treasury Management available on the FM QSMO Marketplace. Actus is eligible for direct award under pre-competed terms on GSA MAS contract # 47QTCA24D002X utilizing SIN 518210FM (Financial Management) and 54151ECOM (Ecommerce). Our end-to-end (E2E) process optimizations are inclusive of requisitions, obligations, order and transaction processing, settlements, close-out of commitments, records management, and audit. \n\nAgencies benefit operationally by adopting FedRAMP secured Cloud-based Government Purchase Card (GPC) processes supporting accurate and timely close-outs of commitments in their preferred financial system. Paperless Innovations, Inc. is committed to enabling GPC spend under management to improve the efficiency and accuracy of government purchase card programs as a compliant financial instrument on par with all Treasury disbursements. \nActus eliminates improper payments in the GPC Program utilizing secure, best of breed practices including RPA workflow automations, intelligent digital document authentication with data validation on required forms and attachments, providing financial accuracy and reliability with real-time status of funds, automated reconciliation, and inherent internal controls enforcement.\n\nActus is currently in daily use by thousands of government cardholders and Approving Officials with implementations including end-to-end regulatory and compliance automation for Purchase Card Program Management, cardholders, and associated approvers, requestors, financial managers, and auditors.\n\nAs directed in OMB Memorandum A-123, Appendix B, Risk Management Guidelines for Government Purchase Card Programs, Agencies should seek cloud automation solutions enabling GPC financial management, internal controls, and prevention of improper payments in avoidance of fraud, waste, and abuse. The OMB guidance is based on 3 pillars of operational excellence: Accountability, Compliance, and Transparency.\n\n- Accountability - Actus helps agencies paint a complete and total picture of each expense, eliminating guesswork, human error, and manual data entry tracking. Workflow automations ensure all Agency policies supporting separation of duties, improper payments reduction, and avoidance of split purchases are inherently enforced.\n\n- Compliance - Simplified, structured data is at the heart of compliance automation ensuring adherence to Agency policies and acquisition regulations. The Actus solution streamlines and automates oversight processes while maintaining rich transactional records for instant audit reporting. Actus furthers the regulatory mission of each agency with intelligent digital document processing using AI for records authentication, validation, retention, and disposal of purchase records presented as supporting documentation by cardholders. Adoption of Actus itself satisfies and supplements Federal paperless mandate compliance as well as DATA Act, IPERA, IPERIA, Public Law 115 The Evidence Act, M-19-16 Shared Services, A-11 Preparation, Submission, and Execution of the Budget, and more.\n\n- Transparency - Actus enables real time visibility over the status of funds in Government Purchase Card Programs, enabling Agencies to maximize GPC purchasing efficiency throughout the entire federal fiscal year. Actus presents role-specific dashboards enabling full visualization of all workflow processes, transactional data, and documents on a need-to-know, right-to-know basis. Audit automation occurs with every upload of bank transactions without requiring manual packet creation by cardholders and enables inspection of every detail of each purchase made within a selected time frame in a unified, streamlined format.\nActus elevates GPC financial management to the level of any other public funds obligation, supports accounting with financial system integration, enables informed budgeting with detailed item level transaction data, configures and customizes instant reporting, and unlocks actionable data for analytics, records examination, and transactions investigation. Actus increases Agency confidence to maximize refunds with daily bill pay and enables the use of purchase cards up through $25,000 in coordination with blanket purchases and standing orders.\n\nP-Card Compliance Automation Features:\n- Custom Approval Workflows\n- Financial Data Capture\n- Full Lifecycle Spend Tracking\n- Cloud Storage of Reconciliation Packets\n- Dashboard Visualization of data & documents\n- Automated Reconciliation Statements\n- Structured Item Level (Level 3) Data\n- Merchant Class Code Tracking\n- Suspicious Pattern & Activity Detection\n- Alerts for Each Stage of Transaction\n- Transactional Keyword Search\n- Bank Statement Transaction Matching\n- Auto-Matched Transactions\n- Travel Expense Tracking and Management\n- Daily, Weekly, or Monthly Reconciliation\n- PIV/CAC authentication\n- Simplified documentation in support of G-Invoicing\n- Live Agent Contact Center and Customer Services\n- Actus web app runs on all modern browsers",
+  "functions_claimed": [
+   {
+    "function_id": "accounting_core",
+    "function": "Core accounting & financial management",
+    "evidence": "Actus is eligible for direct award under pre-competed terms on GSA MAS contract # 47QTCA24D002X utilizing SIN 518210FM (Financial Management) and 54151ECOM (Ecommerce)."
+   },
+   {
+    "function_id": "invoicing_billing",
+    "function": "Invoicing & billing",
+    "evidence": "P-Card Compliance Automation Features:\n- Custom Approval Workflows\n- Financial Data Capture\n- Full Lifecycle Spend Tracking\n- Cloud Storage of Reconciliation Packets\n- Dashboard Visualization of data & documents\n- Automated Reconciliation Statements\n- Structured Item Level (Level 3) Data\n- Merchant Class Code Tracking\n- Suspicious Pattern & Activity Detection\n- Alerts for Each Stage of Transact..."
+   },
+   {
+    "function_id": "expense_management",
+    "function": "Expense management & travel",
+    "evidence": "P-Card Compliance Automation Features:\n- Custom Approval Workflows\n- Financial Data Capture\n- Full Lifecycle Spend Tracking\n- Cloud Storage of Reconciliation Packets\n- Dashboard Visualization of data & documents\n- Automated Reconciliation Statements\n- Structured Item Level (Level 3) Data\n- Merchant Class Code Tracking\n- Suspicious Pattern & Activity Detection\n- Alerts for Each Stage of Transact..."
+   },
+   {
+    "function_id": "payment_processing",
+    "function": "Payment processing, purchase cards & disbursements",
+    "evidence": "Agencies benefit operationally by adopting FedRAMP secured Cloud-based Government Purchase Card (GPC) processes supporting accurate and timely close-outs of commitments in their preferred financial system."
+   },
+   {
+    "function_id": "reconciliation_close",
+    "function": "Reconciliation, settlement & financial close",
+    "evidence": "Our end-to-end (E2E) process optimizations are inclusive of requisitions, obligations, order and transaction processing, settlements, close-out of commitments, records management, and audit."
+   },
+   {
+    "function_id": "financial_reporting",
+    "function": "Financial reporting & statements",
+    "evidence": "The Actus solution streamlines and automates oversight processes while maintaining rich transactional records for instant audit reporting."
+   },
+   {
+    "function_id": "budgeting_planning",
+    "function": "Budgeting, planning & cost management",
+    "evidence": "Actus elevates GPC financial management to the level of any other public funds obligation, supports accounting with financial system integration, enables informed budgeting with detailed item level transaction data, configures and customizes instant reporting, and unlocks actionable data for analytics, records examination, and transactions investigation."
+   },
+   {
+    "function_id": "audit",
+    "function": "Audit trail & audit management",
+    "evidence": "Our end-to-end (E2E) process optimizations are inclusive of requisitions, obligations, order and transaction processing, settlements, close-out of commitments, records management, and audit."
+   },
+   {
+    "function_id": "risk_controls",
+    "function": "Risk management & internal controls",
+    "evidence": "Actus eliminates improper payments in the GPC Program utilizing secure, best of breed practices including RPA workflow automations, intelligent digital document authentication with data validation on required forms and attachments, providing financial accuracy and reliability with real-time status of funds, automated reconciliation, and inherent internal controls enforcement."
+   },
+   {
+    "function_id": "project_management",
+    "function": "Project, program & portfolio management",
+    "evidence": "Actus is currently in daily use by thousands of government cardholders and Approving Officials with implementations including end-to-end regulatory and compliance automation for Purchase Card Program Management, cardholders, and associated approvers, requestors, financial managers, and auditors."
+   },
+   {
+    "function_id": "workflow_approvals",
+    "function": "Workflow & approvals",
+    "evidence": "Actus eliminates improper payments in the GPC Program utilizing secure, best of breed practices including RPA workflow automations, intelligent digital document authentication with data validation on required forms and attachments, providing financial accuracy and reliability with real-time status of funds, automated reconciliation, and inherent internal controls enforcement."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "Actus elevates GPC financial management to the level of any other public funds obligation, supports accounting with financial system integration, enables informed budgeting with detailed item level transaction data, configures and customizes instant reporting, and unlocks actionable data for analytics, records examination, and transactions investigation."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Access control & authentication",
+    "evidence": "Actus eliminates improper payments in the GPC Program utilizing secure, best of breed practices including RPA workflow automations, intelligent digital document authentication with data validation on required forms and attachments, providing financial accuracy and reliability with real-time status of funds, automated reconciliation, and inherent internal controls enforcement."
+   },
+   {
+    "function_id": "ai_analytics",
+    "function": "AI, analytics & business intelligence",
+    "evidence": "Actus furthers the regulatory mission of each agency with intelligent digital document processing using AI for records authentication, validation, retention, and disposal of purchase records presented as supporting documentation by cardholders."
+   },
+   {
+    "function_id": "records_governance",
+    "function": "Records, document management & retention",
+    "evidence": "Our end-to-end (E2E) process optimizations are inclusive of requisitions, obligations, order and transaction processing, settlements, close-out of commitments, records management, and audit."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2235229299/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2235229299"
+ },
+ {
+  "fork_id": "FR2432218524",
+  "vendor": "Power Settlements Consulting and Software, LLC (PSCS), a subsidiary of Yes Energy, LLC",
+  "product": "PowerCore\u2122 (PC-GOV)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "PowerCore\u2122 is delivered as a SaaS offering using a multi-tenant Government Only Community cloud computing environment. It is available to federal, state, local, and tribal governments, as well as research institutions, federal contractors, and government contractors. The system is a browser-based application with no components that need to be installed on the customer site and no mobile app.\n\nThe PowerCore system is modular based, with four primary solutions that can be enabled:\n\n-        PowerCore ISO/RTO enables market participants to perform scheduling, automated data downloading, shadow settlements and statement validation, allocations, and reporting. \n\n-        PowerCore Visual Analytics provides a visual dashboard for Generators to analyze ISO/RTO and internal data including schedules, real-time dispatch, meter, pricing, position management, and estimated profits and losses in a single graphical interface. \n\n-        PowerCore Contract Billing is used to help automate the settlement of complex power purchase agreements, tolling agreements, or other power contracts. \n\n- PowerCore ETRM (Energy Trading and Risk Management) is an integrated solution for automating front-office, mid-office, and back-office business processes related to the deal capture of power and natural gas deals with counterparties.",
+  "functions_claimed": [
+   {
+    "function_id": "invoicing_billing",
+    "function": "Invoicing & billing",
+    "evidence": "-        PowerCore Contract Billing is used to help automate the settlement of complex power purchase agreements, tolling agreements, or other power contracts."
+   },
+   {
+    "function_id": "reconciliation_close",
+    "function": "Reconciliation, settlement & financial close",
+    "evidence": "The PowerCore system is modular based, with four primary solutions that can be enabled:\n\n-        PowerCore ISO/RTO enables market participants to perform scheduling, automated data downloading, shadow settlements and statement validation, allocations, and reporting."
+   },
+   {
+    "function_id": "financial_reporting",
+    "function": "Financial reporting & statements",
+    "evidence": "The PowerCore system is modular based, with four primary solutions that can be enabled:\n\n-        PowerCore ISO/RTO enables market participants to perform scheduling, automated data downloading, shadow settlements and statement validation, allocations, and reporting."
+   },
+   {
+    "function_id": "risk_controls",
+    "function": "Risk management & internal controls",
+    "evidence": "- PowerCore ETRM (Energy Trading and Risk Management) is an integrated solution for automating front-office, mid-office, and back-office business processes related to the deal capture of power and natural gas deals with counterparties."
+   },
+   {
+    "function_id": "workflow_approvals",
+    "function": "Workflow & approvals",
+    "evidence": "- PowerCore ETRM (Energy Trading and Risk Management) is an integrated solution for automating front-office, mid-office, and back-office business processes related to the deal capture of power and natural gas deals with counterparties."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "- PowerCore ETRM (Energy Trading and Risk Management) is an integrated solution for automating front-office, mid-office, and back-office business processes related to the deal capture of power and natural gas deals with counterparties."
+   },
+   {
+    "function_id": "ai_analytics",
+    "function": "AI, analytics & business intelligence",
+    "evidence": "-        PowerCore Visual Analytics provides a visual dashboard for Generators to analyze ISO/RTO and internal data including schedules, real-time dispatch, meter, pricing, position management, and estimated profits and losses in a single graphical interface."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2432218524/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2432218524"
+ },
+ {
+  "fork_id": "FR2516365096",
+  "vendor": "Procore Technologies, Inc",
+  "product": "Procore for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "Procore for Government is a purpose-built platform for managing construction. It supports public sector entities, program managers, and their contractors to coordinate more effectively, control costs, and manage risk across every phase of a capital asset\u2019s lifecycle. Designed for construction and capital programs, Procore connects internal teams, contractors, and stakeholders through real-time data in one secure, easy-to-use system. The platform provides configurable workflows and secure document management to support core construction functions, including bidding, project management, quality and safety, and cost management. Procore for Government is designed to support the operational needs of public infrastructure, government facilities, and capital asset programs while supporting compliance, accountability, and long-term asset performance.\n\nProcore for Government solution areas can include:\n\nPreconstruction\n\nProject Management\n\nQuality & Safety\n\nFinancials\n\nReporting & Analytics",
+  "functions_claimed": [
+   {
+    "function_id": "accounting_core",
+    "function": "Core accounting & financial management",
+    "evidence": "Procore for Government solution areas can include:\n\nPreconstruction\n\nProject Management\n\nQuality & Safety\n\nFinancials\n\nReporting & Analytics"
+   },
+   {
+    "function_id": "financial_reporting",
+    "function": "Financial reporting & statements",
+    "evidence": "Procore for Government solution areas can include:\n\nPreconstruction\n\nProject Management\n\nQuality & Safety\n\nFinancials\n\nReporting & Analytics"
+   },
+   {
+    "function_id": "budgeting_planning",
+    "function": "Budgeting, planning & cost management",
+    "evidence": "The platform provides configurable workflows and secure document management to support core construction functions, including bidding, project management, quality and safety, and cost management."
+   },
+   {
+    "function_id": "project_management",
+    "function": "Project, program & portfolio management",
+    "evidence": "The platform provides configurable workflows and secure document management to support core construction functions, including bidding, project management, quality and safety, and cost management."
+   },
+   {
+    "function_id": "workflow_approvals",
+    "function": "Workflow & approvals",
+    "evidence": "The platform provides configurable workflows and secure document management to support core construction functions, including bidding, project management, quality and safety, and cost management."
+   },
+   {
+    "function_id": "ai_analytics",
+    "function": "AI, analytics & business intelligence",
+    "evidence": "Procore for Government solution areas can include:\n\nPreconstruction\n\nProject Management\n\nQuality & Safety\n\nFinancials\n\nReporting & Analytics"
+   },
+   {
+    "function_id": "records_governance",
+    "function": "Records, document management & retention",
+    "evidence": "The platform provides configurable workflows and secure document management to support core construction functions, including bidding, project management, quality and safety, and cost management."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2516365096/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2516365096"
+ },
+ {
+  "fork_id": "FR2313477206",
+  "vendor": "Quadient inc.",
+  "product": "S.M.A.R.T. - Federal Editions",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "The S.M.A.R.T. Federal Edition family of products provides the ultimate Shipping, Mailing, Accounting, Reporting and Tracking experience - all from a single dashboard!  This solution combines leading edge technologies to improve customer interactions and business processes.  A consistent look and feel across each element provides familiarity to users, making navigation simple and intuitive.  Each S.M.A.R.T. version fuels stronger business communications with your internal and external customers by providing detailed shipping and tracking notifications, chargeback accounting with postage meter reconciliation and extensive reporting options to name a few.  Several S.M.A.R.T. versions, supporting from the most basic to complex workflows, are available.  Choose the one that best aligns with your agency's needs.\"",
+  "functions_claimed": [
+   {
+    "function_id": "accounting_core",
+    "function": "Core accounting & financial management",
+    "evidence": "Federal Edition family of products provides the ultimate Shipping, Mailing, Accounting, Reporting and Tracking experience - all from a single dashboard!"
+   },
+   {
+    "function_id": "reconciliation_close",
+    "function": "Reconciliation, settlement & financial close",
+    "evidence": "version fuels stronger business communications with your internal and external customers by providing detailed shipping and tracking notifications, chargeback accounting with postage meter reconciliation and extensive reporting options to name a few."
+   },
+   {
+    "function_id": "financial_reporting",
+    "function": "Financial reporting & statements",
+    "evidence": "Federal Edition family of products provides the ultimate Shipping, Mailing, Accounting, Reporting and Tracking experience - all from a single dashboard!"
+   },
+   {
+    "function_id": "workflow_approvals",
+    "function": "Workflow & approvals",
+    "evidence": "This solution combines leading edge technologies to improve customer interactions and business processes."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2313477206/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2313477206"
+ },
+ {
+  "fork_id": "FR2428653856",
+  "vendor": "Tactical Edge",
+  "product": "Total Visibility Anywhere",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "Total Visibility Anywhere (TVA) is a cloud-based Software as a Service (SaaS) that is hosted within the East/West Regions of Amazon Web Services (AWS). TVA provides an integrated view across all functions within the supply chain by improving performance and data quality, providing a unified workflow and real-time global asset tracking and productive insights with comprehensive, multi-function visibility. TVA provides in-depth Asset, Fleet, Shipment, Order, Warehouse, Request, and Device and Sensor management capabilities.",
+  "functions_claimed": [
+   {
+    "function_id": "fixed_assets",
+    "function": "Fixed assets, property & fleet management",
+    "evidence": "TVA provides an integrated view across all functions within the supply chain by improving performance and data quality, providing a unified workflow and real-time global asset tracking and productive insights with comprehensive, multi-function visibility."
+   },
+   {
+    "function_id": "workflow_approvals",
+    "function": "Workflow & approvals",
+    "evidence": "TVA provides an integrated view across all functions within the supply chain by improving performance and data quality, providing a unified workflow and real-time global asset tracking and productive insights with comprehensive, multi-function visibility."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "TVA provides an integrated view across all functions within the supply chain by improving performance and data quality, providing a unified workflow and real-time global asset tracking and productive insights with comprehensive, multi-function visibility."
+   },
+   {
+    "function_id": "supply_chain",
+    "function": "Supply chain, warehouse & logistics",
+    "evidence": "TVA provides an integrated view across all functions within the supply chain by improving performance and data quality, providing a unified workflow and real-time global asset tracking and productive insights with comprehensive, multi-function visibility."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2428653856/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2428653856"
+ },
+ {
+  "fork_id": "FR2624255314",
+  "vendor": "Tecsys, Inc.",
+  "product": "Elite Enterprise Solutions",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "The Elite Enterprise Solutions (Elite) SaaS offering is a supply \nchain management platform designed for distribution organizations \nacross various industries, including healthcare, service parts, \nheavy equipment, industrial goods, and third-party logistics (3PL). \nIt offers an integrated suite of enterprise solutions to optimize \nsupply chain operations, improve efficiency, and enhance \ncustomer service. The Elite offering includes the following core \nmodules: \n\u2022 Warehouse Management\n\u2022 Transportation Management\n\u2022 Delivery Management\n\u2022 Distribution ERP\n\u2022 Billing Management\nFor healthcare organizations, the Elite system includes these \nadditional modules:\n\u2022 Point of Use\n\u2022 Pharmacy Inventory Management\n\u2022 Healthcare Supply Chain Management\nBuilt on the Itopia\u00ae platform, which adapts to organizational growth \nand complexity, Elite is highly customizable and ideal for \norganizations seeking a comprehensive, scalable supply chain \nsolution that provides end-to-end supply chain visibility and \ncompliance.\nElite is available to federal, state, local, and tribal governments, as \nwell as research institutions, federal contractors, government \ncontractors etc.",
+  "functions_claimed": [
+   {
+    "function_id": "invoicing_billing",
+    "function": "Invoicing & billing",
+    "evidence": "The Elite offering includes the following core \nmodules: \n\u2022 Warehouse Management\n\u2022 Transportation Management\n\u2022 Delivery Management\n\u2022 Distribution ERP\n\u2022 Billing Management\nFor healthcare organizations, the Elite system includes these \nadditional modules:\n\u2022 Point of Use\n\u2022 Pharmacy Inventory Management\n\u2022 Healthcare Supply Chain Management\nBuilt on the Itopia\u00ae platform, which adapts to organization..."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "It offers an integrated suite of enterprise solutions to optimize \nsupply chain operations, improve efficiency, and enhance \ncustomer service."
+   },
+   {
+    "function_id": "supply_chain",
+    "function": "Supply chain, warehouse & logistics",
+    "evidence": "The Elite Enterprise Solutions (Elite) SaaS offering is a supply \nchain management platform designed for distribution organizations \nacross various industries, including healthcare, service parts, \nheavy equipment, industrial goods, and third-party logistics (3PL)."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2624255314/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2624255314"
+ },
+ {
+  "fork_id": "FR2624455459",
+  "vendor": "Valid8 Financial",
+  "product": "Valid8 Financial GovCloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [
+   "Accounting",
+   "Analytics",
+   "Artificial Intelligence (AI)",
+   "Law Enforcement",
+   "Legal & Policy"
+  ],
+  "deadramp_category": "Accounting",
+  "description": "Valid8 Financial GovCloud is a Software-as-a-Service asset tracing and forensic accounting platform hosted in AWS GovCloud (US) within a dedicated FedRAMP authorization boundary. It supports law enforcement, financial investigations, money laundering, elder financial exploitation, healthcare fraud, embezzlement, securities fraud, drug trafficking, human trafficking, gaming, asset tracing, e-discovery, and litigation-support workflows across dozens of states. Agency-controlled evidentiary datasets are ingested into the boundary, stored in encrypted relational and object storage, and processed through the application and analytics layer to organize, trace, and produce financial information for investigative and litigation use.\nThe authorization boundary consists of the ingestion and intake services, the application and analytics layer, the primary relational datastore, object storage, the Keycloak identity and access management service providing authentication, multi-factor authentication, and role-based access, and the audit, logging, and continuous-monitoring services. The platform runs on a CIS-hardened baseline with FIPS-validated cryptography enforcing encryption in transit and at rest. Access is restricted to authorized agency and supporting Valid8 personnel under role-based access control. The offering is being assessed against the FedRAMP Moderate baseline.",
+  "functions_claimed": [
+   {
+    "function_id": "accounting_core",
+    "function": "Core accounting & financial management",
+    "evidence": "Valid8 Financial GovCloud is a Software-as-a-Service asset tracing and forensic accounting platform hosted in AWS GovCloud (US) within a dedicated FedRAMP authorization boundary."
+   },
+   {
+    "function_id": "audit",
+    "function": "Audit trail & audit management",
+    "evidence": "The authorization boundary consists of the ingestion and intake services, the application and analytics layer, the primary relational datastore, object storage, the Keycloak identity and access management service providing authentication, multi-factor authentication, and role-based access, and the audit, logging, and continuous-monitoring services."
+   },
+   {
+    "function_id": "workflow_approvals",
+    "function": "Workflow & approvals",
+    "evidence": "It supports law enforcement, financial investigations, money laundering, elder financial exploitation, healthcare fraud, embezzlement, securities fraud, drug trafficking, human trafficking, gaming, asset tracing, e-discovery, and litigation-support workflows across dozens of states."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Access control & authentication",
+    "evidence": "The authorization boundary consists of the ingestion and intake services, the application and analytics layer, the primary relational datastore, object storage, the Keycloak identity and access management service providing authentication, multi-factor authentication, and role-based access, and the audit, logging, and continuous-monitoring services."
+   },
+   {
+    "function_id": "encryption",
+    "function": "Encryption",
+    "evidence": "Agency-controlled evidentiary datasets are ingested into the boundary, stored in encrypted relational and object storage, and processed through the application and analytics layer to organize, trace, and produce financial information for investigative and litigation use."
+   },
+   {
+    "function_id": "ai_analytics",
+    "function": "AI, analytics & business intelligence",
+    "evidence": "Agency-controlled evidentiary datasets are ingested into the boundary, stored in encrypted relational and object storage, and processed through the application and analytics layer to organize, trace, and produce financial information for investigative and litigation use."
+   },
+   {
+    "function_id": "financial_investigation",
+    "function": "Forensic accounting & financial investigation",
+    "evidence": "Valid8 Financial GovCloud is a Software-as-a-Service asset tracing and forensic accounting platform hosted in AWS GovCloud (US) within a dedicated FedRAMP authorization boundary."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2624455459/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2624455459"
+ },
+ {
+  "fork_id": "FR2207643307",
+  "vendor": "Wolters Kluwer",
+  "product": "TeamMate FedRAMP",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "TeamMate Audit and TeamMate Controls are two integrated solutions that support government agencies in managing audits and internal controls within a secure cloud environment. TeamMate Audit enables end-to-end audit planning, execution, issue tracking, and reporting, while TeamMate Controls supports the documentation, testing, and monitoring of internal controls and remediation activities. Together, they provide a centralized approach to audit and control management, helping agencies improve oversight, consistency, and risk management.",
+  "functions_claimed": [
+   {
+    "function_id": "financial_reporting",
+    "function": "Financial reporting & statements",
+    "evidence": "TeamMate Audit enables end-to-end audit planning, execution, issue tracking, and reporting, while TeamMate Controls supports the documentation, testing, and monitoring of internal controls and remediation activities."
+   },
+   {
+    "function_id": "audit",
+    "function": "Audit trail & audit management",
+    "evidence": "TeamMate Audit and TeamMate Controls are two integrated solutions that support government agencies in managing audits and internal controls within a secure cloud environment."
+   },
+   {
+    "function_id": "risk_controls",
+    "function": "Risk management & internal controls",
+    "evidence": "TeamMate Audit and TeamMate Controls are two integrated solutions that support government agencies in managing audits and internal controls within a secure cloud environment."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "TeamMate Audit and TeamMate Controls are two integrated solutions that support government agencies in managing audits and internal controls within a secure cloud environment."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2207643307/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2207643307"
+ }
+]
