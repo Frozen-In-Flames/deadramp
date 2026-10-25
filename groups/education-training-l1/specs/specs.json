@@ -1,0 +1,44 @@
+[
+ {
+  "fork_id": "FR2012366611",
+  "vendor": "Amplifire",
+  "product": "Amplifire",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Education & Training",
+  "description": "With nearly 3.5 billion learner interactions to date, the Amplifire training platform helps hospitals and health systems thrive by improving on-the-job performance of care team members and other employees. Patented algorithms detect and correct the knowledge gaps, doubts, and misconceptions that Amplifire has discovered in clinician's minds in every care setting. Healthcare systems have adopted Amplifire as a core operating asset that transforms training from a rote activity, where managers only hope for results, into a strategic tool that delivers a workforce aligned with evidence-based, best practices. Simply put, it saves lives while lowering costs.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2012366611/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2012366611"
+ },
+ {
+  "fork_id": "FR2211452029",
+  "vendor": "RQI Partners LLC",
+  "product": "RQI1Stop",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Low",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Education & Training",
+  "description": "RQI Partners, a partnership created by the American Heart Association\u00ae (AHA\u00ae) and Laerdal Medical, exists to deliver modernized CPR training based on the latest AHA guidelines.\nRQI1stop is delivered as a SaaS offering using a multi-tenant Public Cloud computing environment. It is available to the public, federal, state, local, and tribal governments, as well as research institutions, federal contractors, government contractors etc.,",
+  "functions_claimed": [
+   {
+    "function_id": "hosting_platform",
+    "function": "Hosting & platform services (PaaS, multi-tenant, hosted cloud)",
+    "evidence": "RQI1stop is delivered as a SaaS offering using a multi-tenant Public Cloud computing environment."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2211452029/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2211452029"
+ }
+]
