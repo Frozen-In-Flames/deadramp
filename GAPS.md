@@ -193,6 +193,23 @@ Extended functions, specified in groups/communication-l2/UNION-SPEC.md, not impl
 
 Platform-layer: encryption at rest (deployment layer); TLS only when a certificate is configured; multi-tenancy (the build is a single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). The shipped core's dispatch runs through a deterministic reference transport labeled `reference_transport: true` on every receipt; it moves no real messages.
 
+## Group 13 — Education & Training L2 (8 forks)
+
+Extended functions, specified in groups/education-training-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Talent, skills & marketplace matching (incl. career exploration / coaching and AI career assistants) (3 of 8)
+- [ ] open — Recruiting, HCM / HRIS & workforce management suites (incl. performance and policy management)
+- [ ] open — Course content authoring & delivery, media streaming
+- [ ] open — Simulation engines (capture, debriefing & playback); the simulation records are Core, the engine is not
+- [ ] open — Remote proctoring & identity proofing (0 of 8 claims; explicitly not inferred from "secure assessment delivery")
+- [ ] open — Deterministic scoring & AI grading (0 of 8; assessments are administration records only, no score field exists by design)
+- [ ] open — General cloud hosting / PaaS (4 of 8; multi-tenancy is a deployment property)
+- [ ] open — Collaboration & social learning (1 of 8)
+- [ ] open — Data storage & processing services beyond the substrate's own records
+- [ ] open — Notifications & reminders (0 of 8)
+- [ ] open — Integrations & APIs as a union function (0 of 8)
+
+Platform-layer: single-tenant reference deployment; encryption at rest is deployment-layer (TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Certificates are records only (issuance claimed by 0 of 8).
+
 ## Later groups
 
 Each group appends its section here when it ships.

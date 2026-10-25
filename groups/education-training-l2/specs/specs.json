@@ -1,0 +1,379 @@
+[
+ {
+  "fork_id": "F1506076709",
+  "vendor": "Blackboard",
+  "product": "Blackboard LMS",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Education & Training",
+  "description": "Blackboard's LMS solution offers government and military agencies next-generation online, social and mobile tools that create a continuous learning environment, built around peer-to-peer interaction, content and discussions.",
+  "functions_claimed": [
+   {
+    "function_id": "course_catalog",
+    "function": "Course, catalog & training program management",
+    "evidence": "Blackboard's LMS solution offers government and military agencies next-generation online, social and mobile tools that create a continuous learning environment, built around peer-to-peer interaction, content and discussions."
+   },
+   {
+    "function_id": "content_media",
+    "function": "Learning content, recording & media",
+    "evidence": "Blackboard's LMS solution offers government and military agencies next-generation online, social and mobile tools that create a continuous learning environment, built around peer-to-peer interaction, content and discussions."
+   },
+   {
+    "function_id": "collaboration_social",
+    "function": "Peer interaction, discussion & social learning",
+    "evidence": "Blackboard's LMS solution offers government and military agencies next-generation online, social and mobile tools that create a continuous learning environment, built around peer-to-peer interaction, content and discussions."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1506076709/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1506076709"
+ },
+ {
+  "fork_id": "FR1707156421",
+  "vendor": "Envisage Technologies LLC",
+  "product": "Acadis Readiness Suite",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Education & Training",
+  "description": "Acadis Readiness Suite is a Software-as-a-Service (SaaS) training and readiness management platform operated by Envisage Technologies LLC. The service is deployed in AWS GovCloud (US) and authorized at the FedRAMP Moderate baseline. Acadis supports federal, public safety, and government training organizations in managing compliance-driven and high-risk training operations. The platform provides capabilities for training program management, certification tracking, scheduling, and operational reporting across distributed organizations.",
+  "functions_claimed": [
+   {
+    "function_id": "course_catalog",
+    "function": "Course, catalog & training program management",
+    "evidence": "The platform provides capabilities for training program management, certification tracking, scheduling, and operational reporting across distributed organizations."
+   },
+   {
+    "function_id": "learner_progress",
+    "function": "Learner progress, readiness & experience tracking",
+    "evidence": "Acadis Readiness Suite is a Software-as-a-Service (SaaS) training and readiness management platform operated by Envisage Technologies LLC."
+   },
+   {
+    "function_id": "certificates_credentials",
+    "function": "Certification, licensure & credential records",
+    "evidence": "The platform provides capabilities for training program management, certification tracking, scheduling, and operational reporting across distributed organizations."
+   },
+   {
+    "function_id": "compliance_training",
+    "function": "Compliance training & compliance management",
+    "evidence": "Acadis supports federal, public safety, and government training organizations in managing compliance-driven and high-risk training operations."
+   },
+   {
+    "function_id": "scheduling",
+    "function": "Scheduling of training & assessment sessions",
+    "evidence": "The platform provides capabilities for training program management, certification tracking, scheduling, and operational reporting across distributed organizations."
+   },
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting, dashboards & analytics",
+    "evidence": "The platform provides capabilities for training program management, certification tracking, scheduling, and operational reporting across distributed organizations."
+   },
+   {
+    "function_id": "hosting_platform",
+    "function": "Hosting & platform services (PaaS, multi-tenant, hosted cloud)",
+    "evidence": "The service is deployed in AWS GovCloud (US) and authorized at the FedRAMP Moderate baseline."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1707156421/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1707156421"
+ },
+ {
+  "fork_id": "FR2422436886",
+  "vendor": "Laerdal Labs D.C.",
+  "product": "Laerdal -- SimCapture Cloud Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Education & Training"
+  ],
+  "deadramp_category": "Education & Training",
+  "description": "SimCapture Cloud Government is delivered as a SaaS offering using a multi-tenant Government Only cloud computing environment. It is available to hospitals and healthcare education programs for the purpose of recording, debriefing, and tracking of healthcare simulation experiences.",
+  "functions_claimed": [
+   {
+    "function_id": "learner_progress",
+    "function": "Learner progress, readiness & experience tracking",
+    "evidence": "It is available to hospitals and healthcare education programs for the purpose of recording, debriefing, and tracking of healthcare simulation experiences."
+   },
+   {
+    "function_id": "content_media",
+    "function": "Learning content, recording & media",
+    "evidence": "It is available to hospitals and healthcare education programs for the purpose of recording, debriefing, and tracking of healthcare simulation experiences."
+   },
+   {
+    "function_id": "simulations",
+    "function": "Simulations & simulation debriefing",
+    "evidence": "It is available to hospitals and healthcare education programs for the purpose of recording, debriefing, and tracking of healthcare simulation experiences."
+   },
+   {
+    "function_id": "hosting_platform",
+    "function": "Hosting & platform services (PaaS, multi-tenant, hosted cloud)",
+    "evidence": "SimCapture Cloud Government is delivered as a SaaS offering using a multi-tenant Government Only cloud computing environment."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2422436886/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2422436886"
+ },
+ {
+  "fork_id": "FR2119265538",
+  "vendor": "NEOGOV",
+  "product": "NEOGOV Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Education & Training",
+  "description": "NEOGOV is a Software as a Service (SaaS) provider of cloud-based workforce management solutions, uniquely designed for the public sector, higher education, and public safety.\n\nNEOGOV offers Human Capital Management (HCM), Human Resource Information System (HRIS), and Talent Management Software (TMS) solutions that empower government agencies to seamlessly source, recruit, hire, onboard, develop, and retain a high quality workforce. Additionally, NEOGOV\u2019s public safety workforce management platform provides a secure, all-in-one solution for public safety agencies to meet the compliance needs and complexities of their industry, allowing them to also recruit the best talent in the shortest time, train teams, and manage policies effortlessly.",
+  "functions_claimed": [
+   {
+    "function_id": "compliance_training",
+    "function": "Compliance training & compliance management",
+    "evidence": "Additionally, NEOGOV\u2019s public safety workforce management platform provides a secure, all-in-one solution for public safety agencies to meet the compliance needs and complexities of their industry, allowing them to also recruit the best talent in the shortest time, train teams, and manage policies effortlessly."
+   },
+   {
+    "function_id": "talent_skills",
+    "function": "Talent profiles, skills & best-fit matching",
+    "evidence": "NEOGOV offers Human Capital Management (HCM), Human Resource Information System (HRIS), and Talent Management Software (TMS) solutions that empower government agencies to seamlessly source, recruit, hire, onboard, develop, and retain a high quality workforce."
+   },
+   {
+    "function_id": "recruitment_workforce",
+    "function": "Recruiting, hiring, onboarding & workforce management",
+    "evidence": "NEOGOV is a Software as a Service (SaaS) provider of cloud-based workforce management solutions, uniquely designed for the public sector, higher education, and public safety."
+   },
+   {
+    "function_id": "training_development",
+    "function": "Training delivery & skills development",
+    "evidence": "Additionally, NEOGOV\u2019s public safety workforce management platform provides a secure, all-in-one solution for public safety agencies to meet the compliance needs and complexities of their industry, allowing them to also recruit the best talent in the shortest time, train teams, and manage policies effortlessly."
+   },
+   {
+    "function_id": "policy_management",
+    "function": "Policy management",
+    "evidence": "Additionally, NEOGOV\u2019s public safety workforce management platform provides a secure, all-in-one solution for public safety agencies to meet the compliance needs and complexities of their industry, allowing them to also recruit the best talent in the shortest time, train teams, and manage policies effortlessly."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2119265538/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2119265538"
+ },
+ {
+  "fork_id": "FR2326160742",
+  "vendor": "PDRI by Pearson",
+  "product": "Palladium",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Education & Training",
+  "description": "The Palladium Software as a Service (SaaS) system provides enables organizations to assess potential employees -- as well as current employees -- by administering assessments, online interviews, job previews, and other aspects of a modern job assessment process.  \n\nPalladium\u2019s advanced innovative solutions use the latest technologies to pinpoint best-fit individuals for different roles and contexts based on skills, abilities, characteristics, and interests. Using Palladium, organizations can reduce recruiting cost by mitigating costly mistakes during the hiring process.",
+  "functions_claimed": [
+   {
+    "function_id": "assessments",
+    "function": "Assessments & testing \u2014 delivery & administration",
+    "evidence": "The Palladium Software as a Service (SaaS) system provides enables organizations to assess potential employees -- as well as current employees -- by administering assessments, online interviews, job previews, and other aspects of a modern job assessment process."
+   },
+   {
+    "function_id": "talent_skills",
+    "function": "Talent profiles, skills & best-fit matching",
+    "evidence": "Palladium\u2019s advanced innovative solutions use the latest technologies to pinpoint best-fit individuals for different roles and contexts based on skills, abilities, characteristics, and interests."
+   },
+   {
+    "function_id": "recruitment_workforce",
+    "function": "Recruiting, hiring, onboarding & workforce management",
+    "evidence": "Using Palladium, organizations can reduce recruiting cost by mitigating costly mistakes during the hiring process."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2326160742/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2326160742"
+ },
+ {
+  "fork_id": "FR2607643783",
+  "vendor": "PSI Services LLC",
+  "product": "Gov Secure Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [],
+  "deadramp_category": "Education & Training",
+  "description": "Gov Cloud Secure is PSI\u2019s secure platform for the registration, scheduling, delivery, administration, and reporting of computer-based assessments for federal agencies and other government organizations. The system supports assessment programs used for licensure, certification, workforce selection, and credentialing.\n \nThe Gov Cloud Secure FedRAMP authorization boundary includes candidate registration and scheduling components; secure assessment delivery applications; test session administration components; data storage and processing services; and reporting capabilities accessible to authorized agency users. The system is hosted within a government-authorized cloud infrastructure environment.",
+  "functions_claimed": [
+   {
+    "function_id": "enrollment_registration",
+    "function": "Enrollments & candidate registration",
+    "evidence": "Gov Cloud Secure is PSI\u2019s secure platform for the registration, scheduling, delivery, administration, and reporting of computer-based assessments for federal agencies and other government organizations."
+   },
+   {
+    "function_id": "assessments",
+    "function": "Assessments & testing \u2014 delivery & administration",
+    "evidence": "Gov Cloud Secure is PSI\u2019s secure platform for the registration, scheduling, delivery, administration, and reporting of computer-based assessments for federal agencies and other government organizations."
+   },
+   {
+    "function_id": "certificates_credentials",
+    "function": "Certification, licensure & credential records",
+    "evidence": "The system supports assessment programs used for licensure, certification, workforce selection, and credentialing."
+   },
+   {
+    "function_id": "scheduling",
+    "function": "Scheduling of training & assessment sessions",
+    "evidence": "Gov Cloud Secure is PSI\u2019s secure platform for the registration, scheduling, delivery, administration, and reporting of computer-based assessments for federal agencies and other government organizations."
+   },
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting, dashboards & analytics",
+    "evidence": "Gov Cloud Secure is PSI\u2019s secure platform for the registration, scheduling, delivery, administration, and reporting of computer-based assessments for federal agencies and other government organizations."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Access control & authorized-user access",
+    "evidence": "The Gov Cloud Secure FedRAMP authorization boundary includes candidate registration and scheduling components; secure assessment delivery applications; test session administration components; data storage and processing services; and reporting capabilities accessible to authorized agency users."
+   },
+   {
+    "function_id": "hosting_platform",
+    "function": "Hosting & platform services (PaaS, multi-tenant, hosted cloud)",
+    "evidence": "The system is hosted within a government-authorized cloud infrastructure environment."
+   },
+   {
+    "function_id": "data_services",
+    "function": "Data storage, processing & profile data capture",
+    "evidence": "The Gov Cloud Secure FedRAMP authorization boundary includes candidate registration and scheduling components; secure assessment delivery applications; test session administration components; data storage and processing services; and reporting capabilities accessible to authorized agency users."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2607643783/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2607643783"
+ },
+ {
+  "fork_id": "FR2609449664",
+  "vendor": "Pepelwerk LLC",
+  "product": "Pepelwerk Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [
+   "Education & Training"
+  ],
+  "deadramp_category": "Education & Training",
+  "description": "Pepelwerk is a cloud-based workforce and talent management designed to automate the creation, maintenance, and updating of Talent Profiles. Pepelwerk supports the Cybersecurity Talent Management System (CTMS) by capturing CTMS-specific data not addressed by traditional Title 5 systems, such as career track/level, technical capabilities, qualifications, education/certifications, and assignment details. \nPepelwerk\u2019 s primary objective is to streamline and modernize the management of CTMS Talent Profiles, ensuring accurate, timely, and consistent data capture for employees. The system is intended to: \n\u2022        Reduce manual workload for HR specialists. \n\u2022        Improve data accuracy and consistency. \n\u2022        Enable supervisors to review and validate employee profile updates. \n\u2022        Support annual updates during the Mission Impact Review (CTMS performance process). \n\u2022        Pilot the solution with Entry and Developmental Career Track employees, with potential for future expansion. \nPepelwerk provides a wide range of workforce and talent management services, including: \nFor Individuals: \n\u2022        Career exploration and transition support for those starting work life, seeking a career change, or transitioning from military to civilian employment. \n\u2022        Access to internships and apprenticeships. \n\u2022        Data-driven career decision tools. \n\u2022        Career coaching (find or become a coach), and resources for parents of young adults. \n\u2022        Community conversations and engagement for career development. \nFor Organizations: \n\u2022        AI and automation tools for agile talent management and workforce planning. \n\u2022        Talent development marketplace for employee growth and recruitment. \n\u2022        Community-driven data and predictive analytics. \n\u2022        Impact dashboard modules for organizational measurement. \n\u2022        Customizable talent marketplace creation. \n\u2022        AI Career Assistant for employees, members, alumni, students, and citizens. \n\u2022        Sponsorship opportunities for AI career assistants or educational initiatives. \n\u2022        Workforce building tools to develop future hires and recruit based on skills and attributes. \nCourse matching for student enrollment and real-time training and skills development.",
+  "functions_claimed": [
+   {
+    "function_id": "course_catalog",
+    "function": "Course, catalog & training program management",
+    "evidence": "Course matching for student enrollment and real-time training and skills development."
+   },
+   {
+    "function_id": "enrollment_registration",
+    "function": "Enrollments & candidate registration",
+    "evidence": "Course matching for student enrollment and real-time training and skills development."
+   },
+   {
+    "function_id": "certificates_credentials",
+    "function": "Certification, licensure & credential records",
+    "evidence": "Pepelwerk supports the Cybersecurity Talent Management System (CTMS) by capturing CTMS-specific data not addressed by traditional Title 5 systems, such as career track/level, technical capabilities, qualifications, education/certifications, and assignment details."
+   },
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting, dashboards & analytics",
+    "evidence": "\u2022        Community-driven data and predictive analytics."
+   },
+   {
+    "function_id": "talent_skills",
+    "function": "Talent profiles, skills & best-fit matching",
+    "evidence": "Pepelwerk is a cloud-based workforce and talent management designed to automate the creation, maintenance, and updating of Talent Profiles."
+   },
+   {
+    "function_id": "recruitment_workforce",
+    "function": "Recruiting, hiring, onboarding & workforce management",
+    "evidence": "\u2022        Talent development marketplace for employee growth and recruitment."
+   },
+   {
+    "function_id": "training_development",
+    "function": "Training delivery & skills development",
+    "evidence": "Course matching for student enrollment and real-time training and skills development."
+   },
+   {
+    "function_id": "career_development",
+    "function": "Career exploration, coaching & transition support",
+    "evidence": "Pepelwerk provides a wide range of workforce and talent management services, including: \nFor Individuals: \n\u2022        Career exploration and transition support for those starting work life, seeking a career change, or transitioning from military to civilian employment."
+   },
+   {
+    "function_id": "ai_automation",
+    "function": "AI & automation tools",
+    "evidence": "Pepelwerk is a cloud-based workforce and talent management designed to automate the creation, maintenance, and updating of Talent Profiles."
+   },
+   {
+    "function_id": "performance_management",
+    "function": "Employee performance management",
+    "evidence": "\u2022        Support annual updates during the Mission Impact Review (CTMS performance process)."
+   },
+   {
+    "function_id": "data_services",
+    "function": "Data storage, processing & profile data capture",
+    "evidence": "Pepelwerk supports the Cybersecurity Talent Management System (CTMS) by capturing CTMS-specific data not addressed by traditional Title 5 systems, such as career track/level, technical capabilities, qualifications, education/certifications, and assignment details."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2609449664/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2609449664"
+ },
+ {
+  "fork_id": "FR1716961549",
+  "vendor": "Peraton Corporation",
+  "product": "Next Generation Cloud Platform",
+  "service_model": [
+   "PaaS",
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Education & Training",
+   "Network Management",
+   "Operations Management",
+   "System Administration"
+  ],
+  "deadramp_category": "Education & Training",
+  "description": "The Next Generation Cloud Platform (NGCP) is a FedRAMP compliant Platform-as-a-Service (PaaS) which deploys multiple Software-as-a-Service (SaaS) solutions to federal, state and commercial customers. The platform currently includes four Application Modules: Employee Performance Management (ePerformance), Environmental Program Information Management System (EPIMS), n.SITE for Connect:Direct transmissions of government data, and e.POWER for Business Process Management. Peraton is deploying multiple SaaS products on the same re-usable framework.",
+  "functions_claimed": [
+   {
+    "function_id": "performance_management",
+    "function": "Employee performance management",
+    "evidence": "The platform currently includes four Application Modules: Employee Performance Management (ePerformance), Environmental Program Information Management System (EPIMS), n.SITE for Connect:Direct transmissions of government data, and e.POWER for Business Process Management."
+   },
+   {
+    "function_id": "hosting_platform",
+    "function": "Hosting & platform services (PaaS, multi-tenant, hosted cloud)",
+    "evidence": "The Next Generation Cloud Platform (NGCP) is a FedRAMP compliant Platform-as-a-Service (PaaS) which deploys multiple Software-as-a-Service (SaaS) solutions to federal, state and commercial customers."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1716961549/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1716961549"
+ }
+]
