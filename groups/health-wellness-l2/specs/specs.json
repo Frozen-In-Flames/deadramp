@@ -1,0 +1,194 @@
+[
+ {
+  "fork_id": "FR2000174962",
+  "vendor": "Abbott, Inc.",
+  "product": "LibreView for US Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Health & Wellness"
+  ],
+  "deadramp_category": "Health & Wellness",
+  "description": "LibreView is intended for use by patients, caregivers and healthcare professionals to assist people with diabetes and their healthcare professionals in the review, analysis and evaluation of historical glucose meter data to support effective diabetes management. LibreView is developed, distributed, and supported by Abbott, a major manufacturer of glucose monitoring devices. Trademarks are the property of their respective owners.",
+  "functions_claimed": [
+   {
+    "function_id": "measurement_data",
+    "function": "Measurement & device data records (glucose / CGM / clinical metrics)",
+    "evidence": "LibreView is intended for use by patients, caregivers and healthcare professionals to assist people with diabetes and their healthcare professionals in the review, analysis and evaluation of historical glucose meter data to support effective diabetes management."
+   },
+   {
+    "function_id": "analysis_reporting",
+    "function": "Review, analysis, patterns/trends/statistics & scorecards",
+    "evidence": "LibreView is intended for use by patients, caregivers and healthcare professionals to assist people with diabetes and their healthcare professionals in the review, analysis and evaluation of historical glucose meter data to support effective diabetes management."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2000174962/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2000174962"
+ },
+ {
+  "fork_id": "FR2135180018",
+  "vendor": "CuraPatient",
+  "product": "Composite Apps/ CuraPatient",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Health & Wellness",
+  "description": "In accordance with FedRAMP requirements and policies the CSP CuraPatient has completed the FedRAMP review process and is ready to support agency requests. \r\n\r\nCuraPatient provides a secure, user-friendly experience Artificial Intelligence (AI) powered digital platform that drives sustainable efficiency across complex operations. The platform provides secure integration with client systems and multi-device accessibility, including native iOS, Android, and responsive web applications. CuraPatient\u2019s core functionalities streamline key processes such as medical claims processing, patient engagement, reduce administrative tasks and support scalable/ secure operations. Our commitment to FedRAMP requirements reflects our dedication to protecting sensitive data, ensuring we maintain and uphold the highest security standards.",
+  "functions_claimed": [
+   {
+    "function_id": "patient_engagement",
+    "function": "Patient engagement & surveys",
+    "evidence": "CuraPatient\u2019s core functionalities streamline key processes such as medical claims processing, patient engagement, reduce administrative tasks and support scalable/ secure operations."
+   },
+   {
+    "function_id": "claims_processing",
+    "function": "Medical claims processing & reimbursement",
+    "evidence": "CuraPatient\u2019s core functionalities streamline key processes such as medical claims processing, patient engagement, reduce administrative tasks and support scalable/ secure operations."
+   },
+   {
+    "function_id": "emr_integration",
+    "function": "EMR / client-system integration",
+    "evidence": "The platform provides secure integration with client systems and multi-device accessibility, including native iOS, Android, and responsive web applications."
+   },
+   {
+    "function_id": "ai_platform",
+    "function": "AI-powered platform claims",
+    "evidence": "CuraPatient provides a secure, user-friendly experience Artificial Intelligence (AI) powered digital platform that drives sustainable efficiency across complex operations."
+   },
+   {
+    "function_id": "multi_device_access",
+    "function": "Multi-device / web / mobile access",
+    "evidence": "The platform provides secure integration with client systems and multi-device accessibility, including native iOS, Android, and responsive web applications."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2135180018/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2135180018"
+ },
+ {
+  "fork_id": "FR2508262726",
+  "vendor": "Dexcom Inc.",
+  "product": "Dexcom Clarity for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Health & Wellness",
+  "description": "Dexcom Clarity for Government online software is an important part of the Dexcom Continuous Glucose Monitoring (CGM) system. It provides a holistic and retrospective view of CGM User diabetes management by highlighting glucose patterns, trends, and statistics to help providers make diabetes management decisions.\nCGM Users can connect their Dexcom Clarity data to the clinic account using a secure code. During visits, providers can upload CGM User receiver data to the clinic account directly. \nDexcom has deployed a separate Google Cloud organization for the federal system in Google Cloud Central US region with multiple zones for redundancy.\nDexcom Clarity for Government includes a subset of the services and features available in the commercial system and leverages cloud-native and cloud-managed services wherever possible.\nDexcom Clarity for Government includes Dexcom Clarity for Government, applications and their associated services and utilities and uses private Google Kubernetes Engine (GKE) clusters with the Autopilot feature for their compute.",
+  "functions_claimed": [
+   {
+    "function_id": "measurement_data",
+    "function": "Measurement & device data records (glucose / CGM / clinical metrics)",
+    "evidence": "It provides a holistic and retrospective view of CGM User diabetes management by highlighting glucose patterns, trends, and statistics to help providers make diabetes management decisions."
+   },
+   {
+    "function_id": "analysis_reporting",
+    "function": "Review, analysis, patterns/trends/statistics & scorecards",
+    "evidence": "It provides a holistic and retrospective view of CGM User diabetes management by highlighting glucose patterns, trends, and statistics to help providers make diabetes management decisions."
+   },
+   {
+    "function_id": "device_connectivity",
+    "function": "Device data connection & upload (receiver data, secure-code account linking)",
+    "evidence": "CGM Users can connect their Dexcom Clarity data to the clinic account using a secure code."
+   },
+   {
+    "function_id": "hosting_platform",
+    "function": "Cloud hosting / deployment claims",
+    "evidence": "Dexcom has deployed a separate Google Cloud organization for the federal system in Google Cloud Central US region with multiple zones for redundancy."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2508262726/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2508262726"
+ },
+ {
+  "fork_id": "FR2309381948",
+  "vendor": "Elekta Solutions",
+  "product": "Elekta ProKnow Federal",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Health & Wellness",
+  "description": "ProKnow provides tool to customize clinical metrics and their objectives into scorecards both for individual patients and across populations. Scorecards help you drive standardization, inspire quality, remove unwanted variation, and justify reimbursement.",
+  "functions_claimed": [
+   {
+    "function_id": "measurement_data",
+    "function": "Measurement & device data records (glucose / CGM / clinical metrics)",
+    "evidence": "ProKnow provides tool to customize clinical metrics and their objectives into scorecards both for individual patients and across populations."
+   },
+   {
+    "function_id": "analysis_reporting",
+    "function": "Review, analysis, patterns/trends/statistics & scorecards",
+    "evidence": "ProKnow provides tool to customize clinical metrics and their objectives into scorecards both for individual patients and across populations."
+   },
+   {
+    "function_id": "claims_processing",
+    "function": "Medical claims processing & reimbursement",
+    "evidence": "Scorecards help you drive standardization, inspire quality, remove unwanted variation, and justify reimbursement."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2309381948/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2309381948"
+ },
+ {
+  "fork_id": "FR2210851632",
+  "vendor": "GetWellNetwork",
+  "product": "GetWellNetwork  - Get Well Anywhere - Federal",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Health & Wellness",
+  "description": "GetWell Anywhere Federal (GWA-F) is a comprehensive digital patient engagement platform designed to guide, educate, entertain, navigate, and survey patients throughout their entire care journey. From pre-procedure preparation to the ED waiting room, inpatient settings, and post-discharge recovery, GWA-F ensures continuous support. Integrated with EMR systems, it provides automated, personalized, and proactive guidance for each patient, achieving scalable, individualized care through web and mobile applications. Additionally, GWA-F automates repetitive tasks for clinicians\u2014such as patient education, EMR documentation, and non-clinical requests\u2014allowing them to focus on providing top-of-license care.",
+  "functions_claimed": [
+   {
+    "function_id": "care_guidance",
+    "function": "Care-journey guidance, education & navigation",
+    "evidence": "GetWell Anywhere Federal (GWA-F) is a comprehensive digital patient engagement platform designed to guide, educate, entertain, navigate, and survey patients throughout their entire care journey."
+   },
+   {
+    "function_id": "patient_engagement",
+    "function": "Patient engagement & surveys",
+    "evidence": "GetWell Anywhere Federal (GWA-F) is a comprehensive digital patient engagement platform designed to guide, educate, entertain, navigate, and survey patients throughout their entire care journey."
+   },
+   {
+    "function_id": "emr_integration",
+    "function": "EMR / client-system integration",
+    "evidence": "Integrated with EMR systems, it provides automated, personalized, and proactive guidance for each patient, achieving scalable, individualized care through web and mobile applications."
+   },
+   {
+    "function_id": "automation",
+    "function": "Automated guidance / task automation",
+    "evidence": "Integrated with EMR systems, it provides automated, personalized, and proactive guidance for each patient, achieving scalable, individualized care through web and mobile applications."
+   },
+   {
+    "function_id": "multi_device_access",
+    "function": "Multi-device / web / mobile access",
+    "evidence": "Integrated with EMR systems, it provides automated, personalized, and proactive guidance for each patient, achieving scalable, individualized care through web and mobile applications."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2210851632/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2210851632"
+ }
+]

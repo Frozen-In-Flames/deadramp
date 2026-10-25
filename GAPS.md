@@ -291,6 +291,23 @@ Extended functions, specified in groups/development-tools-l1/UNION-SPEC.md, not 
 
 Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Group character, recorded in the spec: only two of the five are genuine development tools; the union is a development-lifecycle records substrate. Five taxonomy families sit at 0 of 5 claims (artifact registry, API / integrations, access control, audit logging, search); four enter the Core only as flagged substrate / baseline items, and API / integrations is absent from the union entirely.
 
+## Group 18 — Health & Wellness L2 (5 forks)
+
+Extended functions, specified in groups/health-wellness-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Clinical decision support (0 standalone claims)
+- [ ] open — EMR / EHR integration engines & documentation depth (2 of 5 claim the family)
+- [ ] open — Medical claims adjudication engine (2 of 5; the core keeps eligibility / coverage records only)
+- [ ] open — Device connectivity / sync pipelines (1 of 5)
+- [ ] open — AI/ML models & personalization engines (1 of 5)
+- [ ] open — Automation / workflow engines (1 of 5)
+- [ ] open — Survey instruments depth (within patient engagement, 2 of 5)
+- [ ] open — Patient engagement channels & content (2 of 5; care guidance 1 of 5)
+- [ ] open — Telehealth media (0 claims; named absence)
+- [ ] open — Multi-device native apps (platform property, 2 of 5)
+- [ ] open — Hosting platform (1 of 5)
+
+Platform-layer: single-tenant reference deployment; encryption at rest is deployment-layer (TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Privacy discipline (hard rule, enforced by tests): the build stores records and opaque caller-supplied references only — no diagnosis fields, no free-text clinical notes, no real identifiers in any entity shape; RBAC and audit are carried in the Core as baseline substrate at 0 of 5 claims, recorded as carried, not claimed.
+
 ## Later groups
 
 Each group appends its section here when it ships.
