@@ -458,6 +458,28 @@ Extended functions, specified in groups/customer-service-l2/UNION-SPEC.md, not i
 
 Platform-layer: encryption at rest is deployment-layer (TLS when configured); single-tenant reference deployment; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec finding: this group is a source-category artifact at both forks — one claims zero functions of any family (and is not self-categorized in the source), the other's sole claim is generic platform reporting; neither claims any core customer-service function, and the substrate stands on a recorded core-boundary decision rather than on claims.
 
+## Group 28 — Data Management L3-adjacent (2 forks)
+
+Extended families carried from the Group 12 union, specified in groups/data-management-l3/UNION-SPEC.md, not implemented:
+- [ ] open — Distributed storage engines
+- [ ] open — Integration runtime & connector engine
+- [ ] open — PPRL record-linkage & de-identification engines
+- [ ] open — Enterprise search indexing engine
+- [ ] open — Content processing engines (OCR / transcription / categorization)
+- [ ] open — Workflow / BPM & guided-interview engines
+- [ ] open — Query & visualization engines
+- [ ] open — IaaS / PaaS hosting; Kubernetes provisioning engine
+- [ ] open — Asset inspection & capital-planning apps
+- [ ] open — Managed file transfer transport (claimed outright by one sibling at this tier; transfers in the core are ingestion-shaped records)
+- [ ] open — Case management depth
+- [ ] open — AI/ML analytics in bundled apps
+- [ ] open — Field-level / transformation lineage (provenance stays bounded to ingestion granularity)
+- [ ] open — Retention disposition execution
+
+This group's own verticals: digital-evidence management depth (playback, redaction, disclosure), device fleet control (body-worn / in-car cameras, conducted-energy devices, interview rooms), real-time operations platform, records / report-writing automation; secure transfer & sharing platform depth (working web / email / SFTP / MFT / API transports), secure data forms, possessionless editing, DLP / CDR / antivirus engines, customer-managed keys, SIEM forwarding.
+
+Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / authenticator management (IA-2(1)/(2), IA-5; one sibling advertises MFA and PIV/CAC/TOTP as product features of the identity layer this build deliberately does not ship); FIPS-validated cryptography (SC-13; one sibling claims FIPS 140-3 validated modules, and this build does not inherit that claim); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Platform notes: TLS only when configured; single-tenant reference deployment; demo identities are hooks, not an IdP.
+
 ## Later groups
 
 Each group appends its section here when it ships.

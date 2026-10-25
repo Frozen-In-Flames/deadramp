@@ -1,0 +1,73 @@
+[
+ {
+  "fork_id": "FR1703752011",
+  "vendor": "Axon",
+  "product": "US Axon FedCloud - High",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Data Management",
+   "Law Enforcement"
+  ],
+  "deadramp_category": "Data Management",
+  "description": "US Axon FedCloud enables cloud-based workflows for digital evidence management, situational awareness, and records management to support the operational needs of agencies. The system operates as an isolated region of Axon Cloud Services that is dedicated to the US Federal community. US Axon FedCloud offerings include Axon Evidence, Axon Respond, and Axon Records while also acting as the core control center over Axon devices and client applications. These devices and client applications include in-car camera systems, body-worn cameras, TASER devices, Axon Interview Room, and Axon Upload XT.\n\nAxon Evidence acts as a central repository for customers' digital evidence and a central management console for Axon products and devices. With expansive ingest, smooth playback, and intuitive search, Axon Evidence makes it simple to connect and manage growing stores of data\u2014video, photos, documents and more\u2014in a single, secure system.\n\nAxon Respond is a real-time operations platform which integrates real-time situational awareness and unified communications within a modern incident management solution. Gathering data from sensors in the field, agencies are empowered to know when events occur before it's voiced through traditional contact methods and rapidly coordinate responses with a unified communications platform.\n\nAxon Records harnesses the power of automation to save countless hours in the report writing, submission, and review process, helping agencies get more efficiency by breaking down data silos. With direct access to body-worn camera, in-car and citizen-captured video footage, documents, images, and more, reports can be created faster. Critical evidence can be easily shared to remove the wall between digital evidence and reports.",
+  "functions_claimed": [
+   {
+    "function_id": "dataset_registry",
+    "function": "Dataset, records & repository registry",
+    "evidence": "US Axon FedCloud enables cloud-based workflows for digital evidence management, situational awareness, and records management to support the operational needs of agencies."
+   },
+   {
+    "function_id": "catalog_search",
+    "function": "Catalog search & discovery",
+    "evidence": "With expansive ingest, smooth playback, and intuitive search, Axon Evidence makes it simple to connect and manage growing stores of data\u2014video, photos, documents and more\u2014in a single, secure system."
+   },
+   {
+    "function_id": "ingestion_collection",
+    "function": "Ingestion & data collection",
+    "evidence": "With expansive ingest, smooth playback, and intuitive search, Axon Evidence makes it simple to connect and manage growing stores of data\u2014video, photos, documents and more\u2014in a single, secure system."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1703752011/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1703752011"
+ },
+ {
+  "fork_id": "FR2435353186",
+  "vendor": "Kiteworks USA, LLC",
+  "product": "Kiteworks Secure Gov Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Data Management",
+  "description": "The Kiteworks Private Data Network (PDN) secures sensitive information across all communication channels with centralized controls, automated enforcement, and comprehensive visibility\u2014without sacrificing operational efficiency. The service consists of the following core components and functions:\r\n\r\nSystem Components\r\n- Virtual private cloud (VPC) environment with dedicated servers for each customer\r\n- Encrypted file storage system - Data transfer protocols including SFTP, HTTPS, and SMTP\r\n- Authentication and authorization services\r\n- Audit logging and monitoring systems\r\n- Security scanning and threat detection services\r\n\r\nCore Functions\r\n- File transfer and sharing capabilities via web interface, email, SFTP, MFT, and APIs\r\n- Secure Data Forms\r\n- Role- and attribute-based access control and user authentication\r\n- File encryption at rest and in transit using FIPS 140-3 validated cryptographic modules\r\n- Audit logging of all system and user activities\r\n- Integration with customer directory services (LDAP/Active Directory, etc., see below)\r\n- Multi-factor authentication support\r\n- DLP integration\r\n- Embedded antivirus\r\n\r\nPossessionless Editing (SafeEDIT) System Components and Functions\r\n- File streaming service for secure remote data access and collaboration\r\n- Data rendering system for file type conversion\r\n- Audit logging system for data interactions\r\n- Versioning system for file changes\r\n- Authorization validation service\r\n- File integrity verification system\r\n- Session management service\r\n- Access revocation controls\r\n- Activity monitoring system\r\n\r\nSecurity Features\r\n- Customer-managed encryption keys\r\n- Single-tenant deployment providing data isolation between customers\r\n- Continuous security monitoring and scanning\r\n- File-level role- and attributed-based access controls\r\n- Remote device management capabilities\r\n- Security event logging and reporting\r\n- Integration with customer SIEM systems\r\n\r\nCompliance Capabilities\r\n- Audit log generation and retention\r\n- Policy enforcement mechanisms\r\n- Compliance reporting tools\r\n- Data locality controls\r\n- Access tracking and monitoring\r\n- Chain of custody documentation\r\n\r\nIntegration Interfaces\r\n- REST APIs for system integration and SCIM authentication support\r\n- SMTP interface for email services\r\n- SFTP/FTPS/CIFS/SMB interfaces for file transfer\r\n- LDAP/AD, SAML 2.0, Kerberos, PIV/CAC, time-based one-time password (TOTP) authenticators, SMS, and SFTP certificate connectors for authentication\r\n- SIEM integration for security monitoring\r\n- DLP and CDR system integrations\r\n- The system operates within a defined authorization boundary and undergoes continuous monitoring and regular security assessments in accordance with FedRAMP requirements.\r\n\r\nTo learn more about what Kiteworks can do for government agencies, please visit: https://www.kiteworks.com/solutions/government/",
+  "functions_claimed": [
+   {
+    "function_id": "integration_exchange",
+    "function": "Integration, connectivity & data exchange",
+    "evidence": "- Integration with customer directory services (LDAP/Active Directory, etc., see below)"
+   },
+   {
+    "function_id": "retention_disposition",
+    "function": "Retention, disposition & records lifecycle",
+    "evidence": "- Audit log generation and retention"
+   },
+   {
+    "function_id": "file_transfer",
+    "function": "Managed file transfer",
+    "evidence": "- File transfer and sharing capabilities via web interface, email, SFTP, MFT, and APIs"
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2435353186/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2435353186"
+ }
+]
