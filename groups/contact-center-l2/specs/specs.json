@@ -1,0 +1,233 @@
+[
+ {
+  "fork_id": "FR2231070252",
+  "vendor": "BeyondTrust",
+  "product": "BeyondTrust Identity Security For Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Contact Center",
+  "description": "BeyondTrust delivers identity security solutions designed for U.S. government agencies through a unified ecosystem that consolidates controls, shares intelligence, and enforces Zero Trust across human, machine, and AI identities. All solutions are FedRAMP-authorized and hosted in a secure government cloud, supporting federal, state, local, and tribal organizations.\r\n-Zero Trust Privileged Access Management for Government: The solution enforces zero trust principles by providing essential identity security and control over remote connections, eliminating the need for traditional VPNs, and protecting common Paths to Privilege that attackers exploit. Provides secure, just-in-time access across cloud, on-premises, and OT environments. Enforces identity verification and privilege control, replacing VPNs while reducing common attack paths.\r\n-Remote Support for Government: Enables secure, auditable access for IT teams. Eliminates the need for traditional VPNs and standing privileges, ensuring access is granted only when necessary and under strict monitoring. With session logging including full video, audit reports contain granular details and metadata to ensure compliance is met.\r\n-Identity Security Insights for Government: Continuously assess and maps human, machine, and AI identities, detects privilege risks, and provides prescriptive recommendations to reduce risk. Aligns findings to MITRE ATT&CK and integrates with incident response workflows.\r\nPathfinder Platform\r\nPathfinder integrates these solutions, delivering shared visibility, coordinated response, and continuous Zero Trust enforcement.\r\nMission Benefits\r\nAgencies can enforce least privilege and just-in-time access, eliminate unnecessary escalation paths, reduce exposure from over-privileged accounts, and meet Zero Trust and FedRAMP compliance requirements while securing mission-critical operations.",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, access control & Zero Trust",
+    "evidence": "BeyondTrust delivers identity security solutions designed for U.S."
+   },
+   {
+    "function_id": "privileged_access_sessions",
+    "function": "Privileged access management & remote support sessions",
+    "evidence": "-Zero Trust Privileged Access Management for Government: The solution enforces zero trust principles by providing essential identity security and control over remote connections, eliminating the need for traditional VPNs, and protecting common Paths to Privilege that attackers exploit."
+   },
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging, session recording & audit reports",
+    "evidence": "-Remote Support for Government: Enables secure, auditable access for IT teams."
+   },
+   {
+    "function_id": "risk_assessment_insights",
+    "function": "Risk assessment, detection & recommendations",
+    "evidence": "-Identity Security Insights for Government: Continuously assess and maps human, machine, and AI identities, detects privilege risks, and provides prescriptive recommendations to reduce risk."
+   },
+   {
+    "function_id": "integrations",
+    "function": "Integrations & interoperability",
+    "evidence": "Aligns findings to MITRE ATT&CK and integrates with incident response workflows."
+   },
+   {
+    "function_id": "dashboards_reporting",
+    "function": "Dashboards, reporting & forecasting",
+    "evidence": "With session logging including full video, audit reports contain granular details and metadata to ensure compliance is met."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2231070252/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2231070252"
+ },
+ {
+  "fork_id": "FR2428168490",
+  "vendor": "LogicMonitor",
+  "product": "LM for Gov",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Contact Center",
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Network Management",
+   "Operations Management",
+   "Storage",
+   "System Administration",
+   "Virtual Private Network (VPN)"
+  ],
+  "deadramp_category": "Contact Center",
+  "description": "Hybrid Observability powered by AI:\nLogicMonitor provides customers with a fully software-as-a-service (SaaS)-based solution for performance monitoring of servers, cloud (AWS, GCP, Azure), virtual machines (VMs), storage, network, applications, websites and more. Customers deploy one or several LogicMonitor virtual appliances known as collectors within their environment, and all collected data is transmitted to and stored within the LogicMonitor for Government cloud environment. LogicMonitor has over 3,000 integrations for the aforementioned technologies. The collectors integrate with a wide variety of operating systems and device types to collect performance data for use in dashboarding, forecasting, alerting, and reporting. Customers manage their collectors and view data through a cloud-based web portal or mobile application.",
+  "functions_claimed": [
+   {
+    "function_id": "integrations",
+    "function": "Integrations & interoperability",
+    "evidence": "LogicMonitor has over 3,000 integrations for the aforementioned technologies."
+   },
+   {
+    "function_id": "monitoring_observability",
+    "function": "Monitoring & observability data collection",
+    "evidence": "Hybrid Observability powered by AI:\nLogicMonitor provides customers with a fully software-as-a-service (SaaS)-based solution for performance monitoring of servers, cloud (AWS, GCP, Azure), virtual machines (VMs), storage, network, applications, websites and more."
+   },
+   {
+    "function_id": "alerting",
+    "function": "Alerting",
+    "evidence": "The collectors integrate with a wide variety of operating systems and device types to collect performance data for use in dashboarding, forecasting, alerting, and reporting."
+   },
+   {
+    "function_id": "dashboards_reporting",
+    "function": "Dashboards, reporting & forecasting",
+    "evidence": "The collectors integrate with a wide variety of operating systems and device types to collect performance data for use in dashboarding, forecasting, alerting, and reporting."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML capability",
+    "evidence": "Hybrid Observability powered by AI:\nLogicMonitor provides customers with a fully software-as-a-service (SaaS)-based solution for performance monitoring of servers, cloud (AWS, GCP, Azure), virtual machines (VMs), storage, network, applications, websites and more."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2428168490/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2428168490"
+ },
+ {
+  "fork_id": "FR2332852130",
+  "vendor": "Medallia Inc.",
+  "product": "Mindful by Medallia",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Contact Center"
+  ],
+  "deadramp_category": "Contact Center",
+  "description": "Mindful by Medallia allows a person to receive a callback at a later time and connect them with an available agency representative.\n\nAgency experience - Agencies will use Mindful Callback as part of their contact center experience when engaging externally with citizens or internally between organization groups.\n\nFederal Data - A phone number (at a minimum) is needed to complete a callback. Optionally, an agency can send us a contact center ID number with each callback. When we reconnect the citizen with the agency contact center, we can provide the ID back to them which allows the agency to look up data in their systems for the citizen interaction.",
+  "functions_claimed": [
+   {
+    "function_id": "callback_scheduling",
+    "function": "Callback requests & scheduling",
+    "evidence": "Mindful by Medallia allows a person to receive a callback at a later time and connect them with an available agency representative."
+   },
+   {
+    "function_id": "interaction_records",
+    "function": "Interaction records & external reference passthrough",
+    "evidence": "When we reconnect the citizen with the agency contact center, we can provide the ID back to them which allows the agency to look up data in their systems for the citizen interaction."
+   },
+   {
+    "function_id": "voice_telephony",
+    "function": "Voice & telephony channel",
+    "evidence": "Federal Data - A phone number (at a minimum) is needed to complete a callback."
+   },
+   {
+    "function_id": "customer_service_engagement",
+    "function": "Customer service & citizen engagement",
+    "evidence": "Agency experience - Agencies will use Mindful Callback as part of their contact center experience when engaging externally with citizens or internally between organization groups."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2332852130/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2332852130"
+ },
+ {
+  "fork_id": "FR2502182285",
+  "vendor": "Security Control LLC (an ISI Company)",
+  "product": "Security Control Cloud Software Platform (SCCP)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [
+   "Contact Center",
+   "Customer Service",
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Legal & Policy",
+   "Operations Management",
+   "System Administration"
+  ],
+  "deadramp_category": "Contact Center",
+  "description": "Security Control cloud software platform is delivered as Software as a Service (SaaS) offering using a multi-tenant SaaS cloud computing environment deployed in AWS GovCloud Community. The Security Control cloud software platform provides functionality for private and public sector clients supporting the defense industrial client base and federal agency clients to manage their facility clearances, personnel records, associated clearance information, and provide tracking for other activities (e.g. foreign travel debrief) for cleared professionals.",
+  "functions_claimed": [
+   {
+    "function_id": "records_management",
+    "function": "Personnel, facility & clearance records management",
+    "evidence": "The Security Control cloud software platform provides functionality for private and public sector clients supporting the defense industrial client base and federal agency clients to manage their facility clearances, personnel records, associated clearance information, and provide tracking for other activities (e.g."
+   },
+   {
+    "function_id": "activity_tracking",
+    "function": "Activity tracking",
+    "evidence": "The Security Control cloud software platform provides functionality for private and public sector clients supporting the defense industrial client base and federal agency clients to manage their facility clearances, personnel records, associated clearance information, and provide tracking for other activities (e.g."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2502182285/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2502182285"
+ },
+ {
+  "fork_id": "FR2028958787",
+  "vendor": "Signature Performance, Inc.",
+  "product": "ClaimsXM",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Contact Center",
+   "Customer Relations Management (CRM)",
+   "Data Management",
+   "Finance",
+   "Health & Wellness",
+   "Operations Management"
+  ],
+  "deadramp_category": "Contact Center",
+  "description": "ClaimsXM is a robust platform inclusive of claims processing software, program code, and business rules and logic to support the operation and management of Customer claims processing activities by authorized users with all data hosted in the Microsoft Azure Government Cloud with FedRAMP certification. This data-driven approach to streamlining administrative tasks is an innovative, rules-based solution that reduces excessive administrative healthcare costs, provider frustrations, and the manual challenges of claims administration. Signature Performance offers a managed service through our automated and integrated technology solution so that fraud, waste, and abuse within the healthcare system can be detected and reduced, saving the healthcare industry time and money. The platform improves the coordination and quality of care through claims administration and customer service to ensure healthcare members and their beneficiaries have access to high-quality healthcare.",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, access control & Zero Trust",
+    "evidence": "ClaimsXM is a robust platform inclusive of claims processing software, program code, and business rules and logic to support the operation and management of Customer claims processing activities by authorized users with all data hosted in the Microsoft Azure Government Cloud with FedRAMP certification."
+   },
+   {
+    "function_id": "customer_service_engagement",
+    "function": "Customer service & citizen engagement",
+    "evidence": "The platform improves the coordination and quality of care through claims administration and customer service to ensure healthcare members and their beneficiaries have access to high-quality healthcare."
+   },
+   {
+    "function_id": "case_claims_processing",
+    "function": "Claims & case processing",
+    "evidence": "ClaimsXM is a robust platform inclusive of claims processing software, program code, and business rules and logic to support the operation and management of Customer claims processing activities by authorized users with all data hosted in the Microsoft Azure Government Cloud with FedRAMP certification."
+   },
+   {
+    "function_id": "rules_automation",
+    "function": "Business rules & process automation",
+    "evidence": "ClaimsXM is a robust platform inclusive of claims processing software, program code, and business rules and logic to support the operation and management of Customer claims processing activities by authorized users with all data hosted in the Microsoft Azure Government Cloud with FedRAMP certification."
+   },
+   {
+    "function_id": "fraud_detection",
+    "function": "Fraud, waste & abuse detection",
+    "evidence": "Signature Performance offers a managed service through our automated and integrated technology solution so that fraud, waste, and abuse within the healthcare system can be detected and reduced, saving the healthcare industry time and money."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2028958787/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2028958787"
+ }
+]

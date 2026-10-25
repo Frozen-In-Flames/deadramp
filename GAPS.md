@@ -232,6 +232,23 @@ Extended functions, specified in groups/data-management-l2/UNION-SPEC.md, not im
 
 Platform-layer: encryption at rest (deployment layer; TLS when configured); multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Recorded findings: no sibling claims a storage engine as a customer-facing function, and none claims field-level lineage.
 
+## Group 15 — Contact Center L2 (5 forks)
+
+Extended functions, specified in groups/contact-center-l2/UNION-SPEC.md, not implemented:
+- [ ] open — PAM & Zero Trust enforcement engines (incl. just-in-time privileged access, session recording)
+- [ ] open — Identity risk analytics & prescriptive recommendations
+- [ ] open — Observability collection engines (collectors, metric collection, forecasting)
+- [ ] open — Voice / telephony media & the callback connection engine (incl. ACD routing)
+- [ ] open — Claims adjudication & fraud / waste / abuse detection engines (incl. rules execution; the core keeps a rule registry only)
+- [ ] open — Personnel-security / facility-clearance management depth
+- [ ] open — Integration connector engines
+- [ ] open — AI/ML models (1 claim)
+- [ ] open — Knowledge-base articles (0 of 5 claims; named absence)
+- [ ] open — Satisfaction / CSAT surveys (0 of 5 claims; named absence)
+- [ ] open — SLA policy engine (tiers, business-hour calendars, escalation; 0 of 5 claim SLA terms; the core derives breach from a per-case due time only)
+
+Platform-layer: multi-tenancy (single-tenant reference deployment); encryption at rest (deployment layer); TLS only when configured; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec finding: this sibling group is largely a source-category artifact — only one of the five is genuinely a contact-center product; the build is the records substrate their claimed functions collectively presuppose. Privacy note: caller references are stored as opaque caller-supplied references only, never real phone numbers.
+
 ## Later groups
 
 Each group appends its section here when it ships.
