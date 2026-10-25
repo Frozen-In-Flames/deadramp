@@ -137,6 +137,29 @@ Other extended families, specified in groups/ai-l2/UNION-SPEC.md, not implemente
 
 Platform notes: multi-tenancy (6 claim it) — the build is a single-tenant reference deployment, tenant isolation is deployment-layer; encryption at rest is deployment-layer (TLS when configured); demo identities are hooks, not an IdP.
 
+## Group 8 — Cybersecurity & Risk Management L3-adjacent (16 forks)
+
+Extended functions, specified in groups/cybersecurity-l3/UNION-SPEC.md, not implemented (18). Same engine families as Group 4, carried to the High tier; the shipped build is the defensive substrate only:
+- [ ] open — Identity products (IdP / PAM / IGA / MFA engines)
+- [ ] open — Endpoint management agents
+- [ ] open — DLP engines
+- [ ] open — AI/ML detection models
+- [ ] open — Network enforcement planes
+- [ ] open — Backup & recovery products
+- [ ] open — SOAR / workflow automation
+- [ ] open — Threat-intelligence feeds
+- [ ] open — EDR agents
+- [ ] open — Cloud / SaaS posture engines
+- [ ] open — Phishing simulation / training content
+- [ ] open — Fraud / identity-proofing products
+- [ ] open — AppSec engines
+- [ ] open — Log pipelines
+- [ ] open — CUI enclaves / VDI
+- [ ] open — Vulnerability scanners (ingestion and tracking is core)
+- [ ] open — Plus the substrate-adjacent families named in the spec's long tail (2)
+
+Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12).
+
 ## Later groups
 
 Each group appends its section here when it ships.

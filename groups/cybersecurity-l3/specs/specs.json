@@ -1,0 +1,630 @@
+[
+ {
+  "fork_id": "FR2530025267",
+  "vendor": "Caveonix, Inc.",
+  "product": "Caveonix",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Caveonix is delivered as a SaaS offering using a multi-tenant Government Community Cloud computing environment. It is available to, federal, state, local, and tribal governments, as well as research institutions, federal contractors, government contractors.\n\nCaveonix provides a continuous cyber compliance automation platform which simplifies complex and expensive audits across more than 50 frameworks, regulations, and mandates.",
+  "functions_claimed": [
+   {
+    "function_id": "compliance_grc",
+    "function": "GRC, compliance automation & continuous authorization",
+    "evidence": "Caveonix provides a continuous cyber compliance automation platform which simplifies complex and expensive audits across more than 50 frameworks, regulations, and mandates."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2530025267/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2530025267"
+ },
+ {
+  "fork_id": "FR2323961436",
+  "vendor": "Claroty",
+  "product": "xDome for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Claroty\u2019s xDome for Government is a SaaS-based Cyber Physical Security (CPS) FedRAMP High Cloud Service Offering (CSO) that enables security outcomes for visibility across diverse IOT/OT use cases, vulnerability management, exposure management, as well as threat detection, and asset purpose and efficiency.",
+  "functions_claimed": [
+   {
+    "function_id": "vuln_management",
+    "function": "Vulnerability scanning & management",
+    "evidence": "Claroty\u2019s xDome for Government is a SaaS-based Cyber Physical Security (CPS) FedRAMP High Cloud Service Offering (CSO) that enables security outcomes for visibility across diverse IOT/OT use cases, vulnerability management, exposure management, as well as threat detection, and asset purpose and efficiency."
+   },
+   {
+    "function_id": "detection_response",
+    "function": "Threat detection, SOC & managed response (SIEM/SOAR/MDR)",
+    "evidence": "Claroty\u2019s xDome for Government is a SaaS-based Cyber Physical Security (CPS) FedRAMP High Cloud Service Offering (CSO) that enables security outcomes for visibility across diverse IOT/OT use cases, vulnerability management, exposure management, as well as threat detection, and asset purpose and efficiency."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2323961436/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2323961436"
+ },
+ {
+  "fork_id": "FR2618046015",
+  "vendor": "Cyera",
+  "product": "Cyera for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Storage",
+   "System Administration"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Cyera for Government is an agentless, cloud-native SaaS data security platform.  Cyera for Government provides continuous visibility, AI-powered data classification, and protection for federal data across hybrid-cloud, SaaS, and on-premises environments. The system functions as a centralized data security control plane, enabling agencies to discover sensitive information, assess risk posture, and enforce security policies in real-time. By unifying Data Security Posture Management (DSPM) with advanced Data Loss Prevention (DLP) and Artificial Intelligence Security Posture Management (AI-SPM), the platform provides the foundation for securing the federal AI lifecycle.\nCyera for Government enables the automated discovery and contextual classification of structured and unstructured data. It utilizes an AI-native classification engine to identify Federal Information, including Personally Identifiable Information (PII), Protected Health Information (PHI), and Controlled Unclassified Information (CUI).\nBeyond discovery, the platform delivers automated risk remediation and continuous monitoring to close security gaps before they are exploited. By analyzing data access patterns and permissions, Cyera identifies over-privileged users and \"shadow data\" that bypasses traditional controls. This proactive approach allows agencies to implement Zero Trust Data Access (ZTDA) architectures, ensuring that sensitive federal assets remain resilient against insider threats and external breaches.\nCyera for Government is specifically engineered to streamline regulatory compliance with federal mandates such as NIST 800-53, CMMC, HIPAA, and FISMA. The platform provides out-of-the-box reporting and audit trails that simplify the assessment and authorization process.",
+  "functions_claimed": [
+   {
+    "function_id": "insider_dlp",
+    "function": "Insider risk, DLP & data security",
+    "evidence": "Cyera for Government is an agentless, cloud-native SaaS data security platform."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "Cyera for Government provides continuous visibility, AI-powered data classification, and protection for federal data across hybrid-cloud, SaaS, and on-premises environments."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "The platform provides out-of-the-box reporting and audit trails that simplify the assessment and authorization process."
+   },
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging & activity trails",
+    "evidence": "The platform provides out-of-the-box reporting and audit trails that simplify the assessment and authorization process."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2618046015/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2618046015"
+ },
+ {
+  "fork_id": "FR2626164349",
+  "vendor": "Ericsson",
+  "product": "NetCloud Federal",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Fleet Management",
+   "Law Enforcement",
+   "Network Management",
+   "System Administration"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "NetCloud Federal is a cloud-based SaaS platform that enables federal IT and operations teams to centrally onboard, configure, monitor, and manage Ericsson Cradlepoint FIPS 140-3 mTLS compliant routers across distributed vehicles, fixed and temporary sites, and IoT deployments. Purpose-built for federal environments, NetCloud Federal provides a single cloud-delivered control plane to help agencies maintain reliable, compliant connectivity for mission-critical operations.\n\nIntegrated analytics and continuous monitoring provide visibility into cellular, application, and network performance, and usage. These capabilities help agencies troubleshoot issues, support maintenance activities, enforce policies, and make faster, safer mission decisions.\n\nBy combining branch, IoT and hardened edge devices with cloud-based management, NetCloud Federal helps federal agencies maintain resilient connectivity, protect sensitive data in transit and at the edge, and support operational continuity across widely distributed mission environments.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2626164349/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2626164349"
+ },
+ {
+  "fork_id": "FR2116544598A",
+  "vendor": "Keeper Security",
+  "product": "Keeper ICAM & Identity Security Platform for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Keeper ICAM & Identity Security Platform for Government is a cloud-native platform built on zero-trust and zero-knowledge principles that secures access for human and non-person entities across servers, web applications and databases. It unifies password and credential management, secrets management, privileged access management, secure remote access, session monitoring and recording, and remote browser isolation in one platform, delivering the credential, privileged access, secrets, and non-person-entity pillars of ICAM. Authorized at the FedRAMP High baseline, Keeper ICAM & Identity Security Platform for Government continuously verifies every access request regardless of location or device, and simplifies compliance with delegated administration, enforcement policies, event tracking and customizable audit logs.",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "Keeper ICAM & Identity Security Platform for Government is a cloud-native platform built on zero-trust and zero-knowledge principles that secures access for human and non-person entities across servers, web applications and databases."
+   },
+   {
+    "function_id": "network_security",
+    "function": "Network security, segmentation & zero-trust access",
+    "evidence": "It unifies password and credential management, secrets management, privileged access management, secure remote access, session monitoring and recording, and remote browser isolation in one platform, delivering the credential, privileged access, secrets, and non-person-entity pillars of ICAM."
+   },
+   {
+    "function_id": "endpoint_management",
+    "function": "Endpoint management, patching & IT automation",
+    "evidence": "It unifies password and credential management, secrets management, privileged access management, secure remote access, session monitoring and recording, and remote browser isolation in one platform, delivering the credential, privileged access, secrets, and non-person-entity pillars of ICAM."
+   },
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging & activity trails",
+    "evidence": "Authorized at the FedRAMP High baseline, Keeper ICAM & Identity Security Platform for Government continuously verifies every access request regardless of location or device, and simplifies compliance with delegated administration, enforcement policies, event tracking and customizable audit logs."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2116544598A/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2116544598A"
+ },
+ {
+  "fork_id": "FR2620841940",
+  "vendor": "NinjaOne",
+  "product": "NinjaOne for Government \u2013 FedRAMP High",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Mobile Device Management (MDM)",
+   "System Administration"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "NinjaOne for Government delivers a cloud-native unified IT operations platform built for endpoint management, automation, and security at scale. IT teams can automate patching, enforce policies, and manage all endpoints from a single, unified interface. With industry-leading time to value, agencies can be fully implemented in under 30 days and achieve operator proficiency in under 10. NinjaOne requires no infrastructure overhead, allowing agencies to modernize IT operations and shift resources from reactive tasks to mission-critical objectives. \n\n \nKey Components of the NinjaOne for Government platform include: \n\n- Endpoint management \n\n- Windows patching \n\n- Patching catalog \n\n- SSO \n\n- Remote access \n\n- Reporting",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "Key Components of the NinjaOne for Government platform include: \n\n- Endpoint management \n\n- Windows patching \n\n- Patching catalog \n\n- SSO \n\n- Remote access \n\n- Reporting"
+   },
+   {
+    "function_id": "endpoint_management",
+    "function": "Endpoint management, patching & IT automation",
+    "evidence": "NinjaOne for Government delivers a cloud-native unified IT operations platform built for endpoint management, automation, and security at scale."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "Key Components of the NinjaOne for Government platform include: \n\n- Endpoint management \n\n- Windows patching \n\n- Patching catalog \n\n- SSO \n\n- Remote access \n\n- Reporting"
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2620841940/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2620841940"
+ },
+ {
+  "fork_id": "FR2626461720",
+  "vendor": "Optum Serve",
+  "product": "Optum Serve Federal Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "The Optum Serve Federal Platform (OSFP) Management Plane is a centralized, multi-cloud management and security services layer that provides governance, security, and operational control across Azure Government and AWS GovCloud environments. It delivers shared services\u2014including identity and access governance, logging and monitoring, security analytics, configuration and compliance management, and vulnerability management\u2014to support and standardize operations for all connected systems within the enclave.",
+  "functions_claimed": [
+   {
+    "function_id": "vuln_management",
+    "function": "Vulnerability scanning & management",
+    "evidence": "It delivers shared services\u2014including identity and access governance, logging and monitoring, security analytics, configuration and compliance management, and vulnerability management\u2014to support and standardize operations for all connected systems within the enclave."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "It delivers shared services\u2014including identity and access governance, logging and monitoring, security analytics, configuration and compliance management, and vulnerability management\u2014to support and standardize operations for all connected systems within the enclave."
+   },
+   {
+    "function_id": "compliance_grc",
+    "function": "GRC, compliance automation & continuous authorization",
+    "evidence": "It delivers shared services\u2014including identity and access governance, logging and monitoring, security analytics, configuration and compliance management, and vulnerability management\u2014to support and standardize operations for all connected systems within the enclave."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2626461720/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2626461720"
+ },
+ {
+  "fork_id": "FR2001619708",
+  "vendor": "Palo Alto Networks, Inc.",
+  "product": "Idira Endpoint Privilege Manager for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "With Idira\u2122 Endpoint Privilege Manager by Palo Alto Networks, government organizations can confidently defend against attacks by automatically removing local admin rights, enforcing least privilege, enabling policy-based comprehensive conditional application control, maintaining application catalog, and protecting the entire endpoint security stack from tampering \u2013 in line with a number of recent CISA alerts, advisories and recommendations, and starting day one.\r\n\r\nThe Idira Endpoint Privilege Manager secure and flexible SaaS management console allows for centralized policy-based and role-based management to ensure automated, robust and differentiated application of policies based on the user\u2019s role. Automatic elevation of known good programs requiring elevation, including those legacy and not-UAC-aware, significantly cuts down on the IT Service Desk requests, while optional automatic access restriction (for example, network connectivity restriction) for unknown applications significantly reduces the area of attack and helps break ransomware kill chain.\r\n\r\nOut-of-the-box anti-ransomware policy allows to add additional layer of security around sensitive data and prevent data corruption even in the event of successful asset compromise and ransomware execution.\r\n\r\nAdditional critical capabilities include blocking credentials, private keys, secrets, passwords, hashes, cookies and other sensitive information from memory, browsers, operating system and credential stores, effectively blocking most attacks based on credential compromise.\r\n\r\nIdira Endpoint Privilege Manager helps with audit and compliance by addressing specific regulation requirements and creating audit trail for identity and privilege events on the endpoints.\r\n\r\nThe following customer side components are authorized as part of the Idira Endpoint Privilege Manager for Government offering: Idira Endpoint Privilege Manager Windows Agent, Idira Endpoint Privilege Manager macOS Agent, Idira Endpoint Privilege Manager Linux Agent.",
+  "functions_claimed": [
+   {
+    "function_id": "endpoint_detection",
+    "function": "Endpoint security, EDR & XDR",
+    "evidence": "With Idira\u2122 Endpoint Privilege Manager by Palo Alto Networks, government organizations can confidently defend against attacks by automatically removing local admin rights, enforcing least privilege, enabling policy-based comprehensive conditional application control, maintaining application catalog, and protecting the entire endpoint security stack from tampering \u2013 in line with a number of rece..."
+   },
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging & activity trails",
+    "evidence": "Idira Endpoint Privilege Manager helps with audit and compliance by addressing specific regulation requirements and creating audit trail for identity and privilege events on the endpoints."
+   },
+   {
+    "function_id": "access_control_feature",
+    "function": "Access control & least privilege (platform feature)",
+    "evidence": "With Idira\u2122 Endpoint Privilege Manager by Palo Alto Networks, government organizations can confidently defend against attacks by automatically removing local admin rights, enforcing least privilege, enabling policy-based comprehensive conditional application control, maintaining application catalog, and protecting the entire endpoint security stack from tampering \u2013 in line with a number of rece..."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2001619708/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2001619708"
+ },
+ {
+  "fork_id": "FR2001619337",
+  "vendor": "Palo Alto Networks, Inc.",
+  "product": "Idira Identity Security Government Services Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "The Idira\u2122 Identity Security Government Services Platform by Palo Alto Networks is a comprehensive solution designed to secure identities across the entire IT ecosystem, ensuring government agencies can confidently protect their most critical assets. By integrating privileged access management (PAM), access management (AM), the platform delivers a unified approach to identity security that aligns with federal compliance requirements.\r\n\r\nThe Idira Identity Security Government Services Platform is a FedRAMP High Authorized solution that integrates Privileged Access Management (PAM), Access Management (AM) into a unified identity security platform for federal agencies. The platform enforces least privilege, secures privileged credentials, and manages access across on-premises, cloud, and hybrid federal environments in alignment with NIST SP 800-53 Rev 5, FISMA, and EO 14028 Zero Trust requirements.\r\n\r\nThe platform provides robust capabilities to secure human identities, enforce least privilege, and manage access across complex infrastructures. It includes advanced tools for securing privileged credentials, automating identity lifecycle management, and applying adaptive authentication policies based on risk. Key features include:\r\n\r\n\u25cf Privileged Access Management (PAM): Secure, monitor, and manage privileged accounts and sessions to prevent unauthorized access and mitigate insider threats. Includes capabilities such as credential vaulting, session isolation, and real-time session recording with keystroke logging.\r\n\r\n\u25cf Access Management (AM): Enable secure access to applications, devices, and infrastructure with single sign-on (SSO), multi-factor authentication (MFA), and lifecycle management. Supports protocols like SAML, OpenID Connect (OIDC), and SCIM for seamless integration with third-party applications.\r\n\r\n\u25cf Hybrid and Multi-Cloud Support: Provides secure access and identity management across on-premises, cloud, and hybrid environments, with support for AWS, Azure, Google Cloud, and private cloud infrastructures.\r\n\r\nThe Idira Identity Security Government Services Platform is designed to meet the unique needs of government organizations, providing a scalable, secure, and compliant solution to protect against evolving cyber threats.\r\n\r\nIdira Identity Security Government Services Platform: Unified Access & Identity Management\r\n\r\nIdira Identity Security Government Services Platform is a cloud-based platform that unifies essential services like Single Sign-On (SSO) and Multi-Factor Authentication (MFA) into a single interface. Designed for Government Organizations, it secures access to critical resources (applications, devices, IaaS, PaaS, and VPNs) across on-premises, cloud, and hybrid environments.\r\n\r\nSSO and Application Gateway: The platform features a catalog with thousands of pre-configured application connections. Administrators can easily add custom applications via templates using SAML, OpenID Connect (OIDC), OAuth2, WS-FED, or traditional credentials. For legacy environments, the App Gateway provides secure, VPN-less access to on-prem applications, allowing for granular, per-user, and per-application access control.\r\n\r\nPhishing-Resistant MFA and High-Assurance Authentication: Idira supports a broad range of authentication methods, including FIDO2/Passkeys, Security Keys, Smart Cards, and Magic Links. These protections extend across the entire infrastructure, covering Windows and Mac workstations, servers, virtual desktops, VPNs, RADIUS servers, and 3rd-party IDPs. Adaptive MFA enhances this by evaluating real-time risk signals such as device posture, location, and network context, to apply dynamic, situation-aware authentication policies.\r\n\r\nUnified Directory Services and Hybrid Integration: Idira provides a hybrid architecture that unifies Active Directory, LDAP, and cloud-native users into a single source of truth. By utilizing a secure, outbound-only connector, agencies can bridge on-premises repositories for real-time authentication without the need for VPNs or invasive firewall modifications. This creates a centralized, high-availability identity hub that ensures consistent enterprise-wide policy enforcement while keeping sensitive identity data protected.\r\n\r\nPrivileged Access Manager SaaS for Government\r\n\r\nIdira Privileged Access Manager SaaS by Palo Alto Networks is a FedRAMP High Authorized, cloud-native solution that enables federal agencies to secure, monitor, and manage privileged access across on-premises, cloud and hybrid environments. The Service is hosted on FedRAMP-compliant infrastructure and supports agency compliance with NIST SP 800-53 Rev 5, FISMA, FIPS 140-2/140-3, OMB M-22-09, EO 14028, and CISA Zero Trust guidance.\r\n\r\nWith Idira Privileged Access Manager SaaS, government organizations can secure, monitor, and manage privileged credentials and sessions across complex infrastructures. The solution enables rapid onboarding of privileged accounts, enforces least privilege policies, and provides real-time session monitoring and recording to detect and respond to suspicious activity. This supports Cloud-Native Architecture that further simplifies deployment and reduces infrastructure overhead while ensuring high availability and scalability. It is built on a microservices architecture with containerized components for rapid updates and resilience.\r\n\r\nKey capabilities include:\r\n\r\n\u25cf Discovery and Onboarding: Automatically discover and onboard privileged accounts across on-premises, cloud, and hybrid environments. Supports integrations with Active Directory (AD), LDAP, and cloud directories like Azure AD.\r\n\r\n\u25cf Session Monitoring and Recording: Monitor and record privileged sessions in real time to detect and respond to anomalous behavior. Includes features like live session termination, command filtering, and session playback for forensic analysis.\r\n\r\n\u25cf Audit and Compliance Reporting: Generate detailed audit logs and compliance reports to meet regulatory requirements, including OMB, FIPS, FISMA, and CISA guidelines.\r\n\r\n\u25cf Credential Management and Rotation: Securely vault and automatically rotate privileged credentials across on-premises, cloud, and hybrid environments to eliminate static passwords. Includes features like automated rotation based on flexible policies, SSH key management, and the ability to verify credential synchronization to prevent unauthorized access and lateral movement.\r\n\r\nIdira Privileged Access Manager SaaS empowers government organizations to strengthen their security posture, reduce operational complexity, and ensure compliance with federal regulations, all while protecting their ecosystem from advanced cyber threats.",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "The Idira\u2122 Identity Security Government Services Platform by Palo Alto Networks is a comprehensive solution designed to secure identities across the entire IT ecosystem, ensuring government agencies can confidently protect their most critical assets."
+   },
+   {
+    "function_id": "insider_dlp",
+    "function": "Insider risk, DLP & data security",
+    "evidence": "Key features include: \n \n\u25cf Privileged Access Management (PAM): Secure, monitor, and manage privileged accounts and sessions to prevent unauthorized access and mitigate insider threats."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "\u25cf Audit and Compliance Reporting: Generate detailed audit logs and compliance reports to meet regulatory requirements, including OMB, FIPS, FISMA, and CISA guidelines."
+   },
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging & activity trails",
+    "evidence": "\u25cf Audit and Compliance Reporting: Generate detailed audit logs and compliance reports to meet regulatory requirements, including OMB, FIPS, FISMA, and CISA guidelines."
+   },
+   {
+    "function_id": "access_control_feature",
+    "function": "Access control & least privilege (platform feature)",
+    "evidence": "The platform enforces least privilege, secures privileged credentials, and manages access across on-premises, cloud, and hybrid federal environments in alignment with NIST SP 800-53 Rev 5, FISMA, and EO 14028 Zero Trust requirements."
+   },
+   {
+    "function_id": "encryption_feature",
+    "function": "Encryption & key management",
+    "evidence": "Includes features like automated rotation based on flexible policies, SSH key management, and the ability to verify credential synchronization to prevent unauthorized access and lateral movement."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs & integrations",
+    "evidence": "Supports protocols like SAML, OpenID Connect (OIDC), and SCIM for seamless integration with third-party applications."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2001619337/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2001619337"
+ },
+ {
+  "fork_id": "FR2231052341",
+  "vendor": "Qualys, Inc.",
+  "product": "Qualys Government Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Qualys Government Platform (QGP) consists of a suite of Information Technology (IT) security and compliance solutions delivered via a SaaS deployment model that leverages a highly scalable multi-tenant cloud infrastructure. The below services are part of the QGP platform - Vulnerability Management, Detection, and Response (VMDR) service enables customers to discover, assess, prioritize, and patch critical vulnerabilities and misconfigurations in near real-time and across your global hybrid-IT landscape all-in-one subscription. Policy Compliance (PC) service provides the ability to run compliance scans and create compliance reports on hosts (IP addresses) that have been added to the Policy Compliance account. File Integrity Monitoring (FIM) service enables monitoring critical files, directories, and registry paths for changes in near real-time, and helps adhere to compliance mandates such as FedRAMP. Container Security (CS) service provides discovery, tracking, and continuously protecting container environments. Addresses vulnerability management for images and containers in their DevOps pipeline and deployments across cloud and on-premises environments. Certificate View (CertView) service provides a comprehensive view of all the SSL/TLS certificates across the enterprise and cloud-hosted assets. CyberSecurity Asset Management (CSAM) service continuously gathers information on all assets, listing systems and hardware details, running services, open ports, installed software and user accounts. Asset discovery and inventory collection is done through a combination of Qualys Sensors, which together can collect comprehensive data from across on-premises or cloud infrastructure as well as remote endpoints. Web Application Scanning (WAS) service enables organisation's to assess, track and remediate web application vulnerabilities to keep their web applications secure. Patch Management (PM) service is used to patch and apply post-patch configuration changes to operating systems, mobile devices, and 3rd-party applications from a large variety of vendors, all from a central dashboard.",
+  "functions_claimed": [
+   {
+    "function_id": "vuln_management",
+    "function": "Vulnerability scanning & management",
+    "evidence": "The below services are part of the QGP platform - Vulnerability Management, Detection, and Response (VMDR) service enables customers to discover, assess, prioritize, and patch critical vulnerabilities and misconfigurations in near real-time and across your global hybrid-IT landscape all-in-one subscription."
+   },
+   {
+    "function_id": "cloud_saas_security",
+    "function": "Cloud & SaaS security posture (CSPM/CNAPP/SSPM)",
+    "evidence": "The below services are part of the QGP platform - Vulnerability Management, Detection, and Response (VMDR) service enables customers to discover, assess, prioritize, and patch critical vulnerabilities and misconfigurations in near real-time and across your global hybrid-IT landscape all-in-one subscription."
+   },
+   {
+    "function_id": "asset_inventory",
+    "function": "Asset inventory, visibility & attack surface",
+    "evidence": "Asset discovery and inventory collection is done through a combination of Qualys Sensors, which together can collect comprehensive data from across on-premises or cloud infrastructure as well as remote endpoints."
+   },
+   {
+    "function_id": "endpoint_management",
+    "function": "Endpoint management, patching & IT automation",
+    "evidence": "Patch Management (PM) service is used to patch and apply post-patch configuration changes to operating systems, mobile devices, and 3rd-party applications from a large variety of vendors, all from a central dashboard."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "Patch Management (PM) service is used to patch and apply post-patch configuration changes to operating systems, mobile devices, and 3rd-party applications from a large variety of vendors, all from a central dashboard."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2231052341/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2231052341"
+ },
+ {
+  "fork_id": "FR2623840126",
+  "vendor": "Saviynt",
+  "product": "Saviynt High Security Identity Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Saviynt delivers cloud-based Identity Governance, privileged access management and a Cloud Security solution. Saviynt enables organizations to automate the access lifecycle of employees, contractors, and customers. Saviynt provides seamless visibility and compliance across applications, data and infrastructure for Hybrid IT. Saviynt also helps protect organization\u2019s cloud infrastructure and SaaS solutions from internal and external risks with Privileged Access Management (PAM).\nSaviynt provides a single pane of glass view to manage users\u2019 access across data, infrastructure and applications that reside on Cloud and Enterprise. Saviynt combines intelligent IGA (Identity Governance and Administration) and PAM processes with usage and risk analytics.",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "Saviynt delivers cloud-based Identity Governance, privileged access management and a Cloud Security solution."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2623840126/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2623840126"
+ },
+ {
+  "fork_id": "FR2513256853",
+  "vendor": "stackArmor",
+  "product": "The Armory",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Governance, Risk, and Compliance (GRC)",
+   "Development Tools",
+   "Operations Management",
+   "System Administration",
+   "Network Management"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "The Armory is a purpose-built General Support System (GSS) cloud service offering (CSO) that delivers security and compliance services aligned to the FedRAMP Class D (High) Rev. 5 risk categorization baseline. The Armory accelerates the ability for Independent Software Vendors (ISVs) and Enterprises to meet complex regulatory requirements on the Google Cloud Platform (GCP). The Armory delivers and continuously monitors FedRAMP compliant, risk-mitigated cloud solutions to government agencies and their partners through either a hosted or managed delivery model by:\n\n- providing full compliance architecture, engineering, documentation and audit support,\n\n- reducing the burden to both agencies and SaaS providers,\n\n- expanding the catalog of mission-critical cloud solutions available to agencies.\n\nThe Armory is built on the FedRAMP authorized Assured Workloads Google Cloud Platform and includes configuration managed Google resources such as VPCs (Virtual Private Clouds), networking components, security controls, identity and access management (IAM) policies, and logging and monitoring mechanisms. The system also provides access to in-boundary tools for automation, configuration management, and account management. Each of these mechanisms has been configured to meet specific regulatory requirements such as International Traffic in Arms Regulations (ITAR), FedRAMP Class D (High) Rev. 5, and Department of Defense (DoD) Impact Levels 4/5 (IL 4/5).\n\nThe Armory provides ISVs, Enterprises and Agencies with access to pre-production staging environments and Google \u201cLanding Zones\u201d. These are securely architected environments that enable quick and compliant deployments, and a scalable foundation for their regulated cloud workloads. This secure standardized approach to creating and managing deployments allows government agencies and customers to easily deploy and manage their workloads while maintaining security, governance, and compliance.\n\n**ISV Partners:**\n\n- **Qanapi** - As our inaugural ISV Partner, Qanapi\u2019s FIPS-validated API service delivers state-of-the-art encryption and protection at the data level. Designed to safeguard sensitive, industry-regulated, and mission-critical data, Qanapi\u2019s API seamlessly integrates into any software, device, or network. Built on a zero-trust architecture, it ensures robust security across organizations of all sizes, in both the public and commercial sectors. With Qanapi, organizations can achieve the highest level of data protection and compliance, regardless of their environment. Discover more at Quantum-Safe Data Security Platform | Qanapi - https://www.qanapi.com/\n- **MxDR for Government** \u2013 Accenture Federal Services' MxDR for Government is a managed security service designed specifically for federal agencies. Powered by Google SecOps, it offers 24/7 continuous threat detection, automated response, and threat-centric case management to help agencies rapidly neutralize cyber threats while maintaining strict regulatory compliance. Discover more at: MxDR for Government | Accenture - https://www.accenture.com/us-en/industries/accenture-federal-services/cybersecurity/mxdr-government\n- **Armory SecOps** - provides Google SecOps capabilities, security monitoring, detection engineering, triage, investigation support, dashboarding, and response workflow support for federal workloads that consume security operations services through The Armory.\n\n### Certified Services\n\n**Service(s) added in the last 90 days**\n\n-\n\n**Other Service(s)**\n\n- Qanapi\n- MxDR for Government\n- Armory SecOps\n\n### Dependent Products\n\n- Canopy - https://www.fedramp.gov/marketplace/products/FR2612446381/\n- Clarity - https://www.fedramp.gov/marketplace/products/FR1722532017/\n- Patlytics AI Platform - https://www.fedramp.gov/marketplace/products/FR2620043771/\n- Rally - https://www.fedramp.gov/marketplace/products/FR2130949241/",
+  "functions_claimed": [
+   {
+    "function_id": "detection_response",
+    "function": "Threat detection, SOC & managed response (SIEM/SOAR/MDR)",
+    "evidence": "Powered by Google SecOps, it offers 24/7 continuous threat detection, automated response, and threat-centric case management to help agencies rapidly neutralize cyber threats while maintaining strict regulatory compliance."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "The Armory is built on the FedRAMP authorized Assured Workloads Google Cloud Platform and includes configuration managed Google resources such as VPCs (Virtual Private Clouds), networking components, security controls, identity and access management (IAM) policies, and logging and monitoring mechanisms."
+   },
+   {
+    "function_id": "data_protection",
+    "function": "Backup, recovery & data protection",
+    "evidence": "With Qanapi, organizations can achieve the highest level of data protection and compliance, regardless of their environment."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "Discover more at: MxDR for Government | Accenture - https://www.accenture.com/us-en/industries/accenture-federal-services/cybersecurity/mxdr-government\n- **Armory SecOps** - provides Google SecOps capabilities, security monitoring, detection engineering, triage, investigation support, dashboarding, and response workflow support for federal workloads that consume security operations services thr..."
+   },
+   {
+    "function_id": "encryption_feature",
+    "function": "Encryption & key management",
+    "evidence": "**ISV Partners:**\n\n- **Qanapi** - As our inaugural ISV Partner, Qanapi\u2019s FIPS-validated API service delivers state-of-the-art encryption and protection at the data level."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs & integrations",
+    "evidence": "**ISV Partners:**\n\n- **Qanapi** - As our inaugural ISV Partner, Qanapi\u2019s FIPS-validated API service delivers state-of-the-art encryption and protection at the data level."
+   },
+   {
+    "function_id": "automation",
+    "function": "Automation & orchestration",
+    "evidence": "Powered by Google SecOps, it offers 24/7 continuous threat detection, automated response, and threat-centric case management to help agencies rapidly neutralize cyber threats while maintaining strict regulatory compliance."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2513256853/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2513256853"
+ },
+ {
+  "fork_id": "FR2403936773",
+  "vendor": "Telos Corporation",
+  "product": "Xacta SaaS",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Xacta\u00ae is a cyber GRC automation platform that supports assessment and authorization, remediation, and continuous monitoring. Xacta.ai builds on the platform with advanced AI capabilities that accelerate decision-making, reduce manual effort, and increase operational efficiency. Designed for IT risk and security compliance teams, Xacta operationalizes key security indicators (KSIs) across risk and compliance frameworks.\r\n\r\n \r\n\r\nThe FedRAMP Class D (High) Certificated SaaS platform of Xacta includes Xacta 360\u2122 with the Propagation Utility (PU) and, optionally, Xacta.io\u2122 and Xacta.ai\u2122. Together, Xacta 360, Xacta.io, and Xacta.ai form a complementary suite of solutions that supports compliance and authorization for a variety of frameworks including, but not limited to, FISMA, NIST RMF, CNSSI 1253, NIST 800-53, NIST CSF, FedRAMP, COBIT 5, PCI-DSS, and ISO. The platform draws on a knowledgebase of over 5,000 security requirements and associated test procedures, cross-referenced across more than 100 security policies and standards, and produces artifacts in both human-readable office documents and machine-readable digital formats such as the Open Security Controls Assessment Language (OSCAL).\r\n\r\nIn addition to FedRAMP Class D (High) Certification, the SaaS version of Xacta is authorized at GovRAMP High, CMMC Level 2, CUI, and ISO 27001.\r\n\r\n \r\n\r\nXacta 360 streamlines security, risk, and compliance programs using a project-based workflow. It features out-of-the-box cyber risk management templates, customizable in a no-code/low-code UI, and automated workflows with prerequisites, role-based approvals, and intelligent capabilities. Users can conduct asset inventory and risk assessments, generate required compliance documentation and audit artifacts in real time, and automate compliance for over 100 regulations and policies.\r\n\r\n \r\n\r\nAdditionally, the Xacta 360 Propagation Utility allows administrators to easily update multiple active projects with changes from an assessment project workflow template.\r\n\r\nXacta.io correlates results from multiple security products across your organization into a single view, and maps them to the relevant controls for security and risk management. IT risk and security compliance teams can then use these results to create reports for analysis and to understand trending security issues in their environment.\r\n\r\n \r\n\r\nIncluded with Xacta.io is Xacta MetriX\u2122, which offers additional powerful, modular reporting capabilities that allow compliance teams to easily build and edit custom widgets and dashboards.\r\n\r\n \r\n\r\nXacta.ai\u2122 is the artificial intelligence capability at the core of the Xacta platform, empowering IT risk and security compliance teams to work more efficiently and make informed decisions. Xacta.ai can be customized by integrating your organization\u2019s data to enable faster, more informed decisions and accelerate your GRC initiatives. Use Xacta.ai to draft control implementation statements and automatically check them for accuracy, generate targeted test procedures aligned to your environment, run queries on project artifacts, and more.\r\n\r\n \r\n\r\nDeployment options include Public SaaS up to FedRAMP Class D (High) and user provided infrastructure. In AWS environments, Xacta 360 can inherit common security controls from the underlying platform to reduce duplication of effort and accelerate authorization.",
+  "functions_claimed": [
+   {
+    "function_id": "compliance_grc",
+    "function": "GRC, compliance automation & continuous authorization",
+    "evidence": "Xacta\u00ae is a cyber GRC automation platform that supports assessment and authorization, remediation, and continuous monitoring."
+   },
+   {
+    "function_id": "risk_scoring",
+    "function": "Risk assessment, scoring & third-party risk",
+    "evidence": "It features out-of-the-box cyber risk management templates, customizable in a no-code/low-code UI, and automated workflows with prerequisites, role-based approvals, and intelligent capabilities."
+   },
+   {
+    "function_id": "asset_inventory",
+    "function": "Asset inventory, visibility & attack surface",
+    "evidence": "Users can conduct asset inventory and risk assessments, generate required compliance documentation and audit artifacts in real time, and automate compliance for over 100 regulations and policies."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "Xacta.ai builds on the platform with advanced AI capabilities that accelerate decision-making, reduce manual effort, and increase operational efficiency."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "Included with Xacta.io is Xacta MetriX\u2122, which offers additional powerful, modular reporting capabilities that allow compliance teams to easily build and edit custom widgets and dashboards."
+   },
+   {
+    "function_id": "automation",
+    "function": "Automation & orchestration",
+    "evidence": "It features out-of-the-box cyber risk management templates, customizable in a no-code/low-code UI, and automated workflows with prerequisites, role-based approvals, and intelligent capabilities."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2403936773/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2403936773"
+ },
+ {
+  "fork_id": "FR2612836790",
+  "vendor": "Wraithwatch Corporation",
+  "product": "Wraithwatch Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Data Management"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Wraithwatch is a Software-as-a-Service cybersecurity platform built on an intelligent security data fabric. The platform ingests data from across the customer's security and IT stack \u2014 endpoint detection and response, SIEM, identity providers, vulnerability scanners, cloud infrastructure, and more \u2014 through agentless, read-only API integrations. No agents are deployed on customer endpoints. Ingested data is normalized through deterministic entity resolution into a continuously updated entity graph that models every device, user, permission, vulnerability, configuration, and relationship in the environment. This unified data fabric eliminates tool-by-tool data silos and provides a persistent, queryable model of the customer's environment that powers all downstream platform capabilities.\n\nContinuous Governance, Risk, and Compliance: Wraithwatch replaces periodic, point-in-time compliance assessments with continuous GRC that recomputes every few minutes and immediately upon auto-detection of environmental changes. The platform mathematically computes every viable attack path based on current topology, configurations, permissions, and verified reachability. When the environment changes \u2014 a new CVE, a granted permission, a configuration drift \u2014 the platform recomputes risks including second-, third-, and fourth-order cascading effects. Compliance posture, risk exposure, and control effectiveness are maintained as living measurements against the entity graph rather than static snapshots. Agencies can execute neutralization plans directly from Wraithwatch or deploy compensating detections where paths cannot be eliminated.\n\nThreat Hunting: Autonomous reasoning workers explore SIEM indexes and security telemetry, identify anomalies and threat precursors, and surface findings with supporting evidence. Analysts issue natural language queries and the platform translates, hunts, pivots across data sources, and performs cross-index correlation at query runtime without requiring pre-mapped data schemas. Results convert into forward-looking detection rules.\n\nThreat Advisory Correlation: Wraithwatch continuously correlates incoming threat intelligence \u2014 including newly published CVEs, active exploitation advisories, novel attack techniques, supply chain compromise reporting, and other non-CVE threat disclosures \u2014 against the current state of the entity graph. When a new threat is published, the platform automatically evaluates the customer's environment and produces an \"am I affected\" assessment identifying specific impacted assets, exposure conditions, and recommended mitigations. This analysis incorporates the full environmental context \u2014 network reachability, compensating controls, privilege relationships, and configuration state \u2014 to determine actual exploitability, not just the presence of a vulnerable component.\n\nControl Plan Generation: Agency personnel describe a desired security outcome, and Wraithwatch evaluates every relevant setting across every integrated tool to generate a control plan. Plans are executable in full, one step at a time, or through phased rollouts with test groups. All actions are auditable with rollback support.\n\nAll adversarial analysis runs against the digital twin. No live exploits touch production infrastructure. The platform operates in read-only mode by default; write-mode actions require explicit customer authorization and human confirmation. Wraithwatch supports cloud-hosted deployment on FedRAMP-authorized infrastructure and fully on-premise deployment for air-gapped and CUI environments.",
+  "functions_claimed": [
+   {
+    "function_id": "threat_intel",
+    "function": "Threat intelligence",
+    "evidence": "Threat Advisory Correlation: Wraithwatch continuously correlates incoming threat intelligence \u2014 including newly published CVEs, active exploitation advisories, novel attack techniques, supply chain compromise reporting, and other non-CVE threat disclosures \u2014 against the current state of the entity graph."
+   },
+   {
+    "function_id": "compliance_grc",
+    "function": "GRC, compliance automation & continuous authorization",
+    "evidence": "Continuous Governance, Risk, and Compliance: Wraithwatch replaces periodic, point-in-time compliance assessments with continuous GRC that recomputes every few minutes and immediately upon auto-detection of environmental changes."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs & integrations",
+    "evidence": "The platform ingests data from across the customer's security and IT stack \u2014 endpoint detection and response, SIEM, identity providers, vulnerability scanners, cloud infrastructure, and more \u2014 through agentless, read-only API integrations."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2612836790/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2612836790"
+ },
+ {
+  "fork_id": "FR2227062482",
+  "vendor": "Zscaler, Inc.",
+  "product": "Zscaler Internet Access - Government (Secure Web Gateway - vTIC) - High",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Zscaler Internet Access Gov, part of the Zscaler Zero Trust Exchange, defines safe, fast internet and SaaS access with the industry's most comprehensive cloud native security service edge (SSE) platform.  Zscaler's Zero Trust Exchange helps agencies achieve the target goals of the Executive Order 14028 and resulting OMB mandates, CISA guidance and directives.\n\nZIA Gov security products are currently utilized by over 100 federal agencies and federal systems integrators today in Zscaler's US-based FedRAMP Moderate and FedRAMP JAB High approved boundaries in support of the Cybersecurity and Infrastructure Security Agency (CISA) Trusted Internet Connection (TIC) 3.0 use case model for FedRAMP approved Policy Enforcement Point (PEP) capabilities. \n\nDelivered as a scalable SaaS platform from the world's largest security cloud, ZIA eliminates legacy network security solutions to stop advanced attacks and prevent data loss with a comprehensive zero trust TIC 3.0 compliant approach, fully supporting the CISA approved Branch Office, Remote Users, and Cloud use cases with:\n\nBest-in-class, consistent security for today's hybrid workforce: When you move security to the cloud, all users, apps, devices, and locations get always-on threat protection based on identity and context. Your security policy goes everywhere your users go.\nSecure cloud-based telework solution: Migrate to a cloud-first, cloud-secure Trusted Internet Connections (TIC) 3.0 zero-trust architecture that can accelerate cloud migration, enhance user productivity, and improve support for cloud applications.\n\nLightning-fast access with zero infrastructure: Direct-to-cloud architecture ensures a fast, seamless user experience. This eliminates backhauling, improves performance and user experience, and simplifies network administration - with no physical infrastructure, ever.\n\nAI-powered protection from the world's largest security cloud: Inline inspection of all internet and SaaS traffic, including SSL decryption, with a suite of AI-powered cloud security services to stop ransomware, phishing, zero-day malware, and advanced attacks based on threat intelligence from 300 trillion daily signals.\n\nSimplified management: Using a cloud native security solution infused with AI, streamlined workflows, and business focused policy creation frees up valuable time for your team to focus on strategic goals.\n\nZscaler Internet Access includes a comprehensive suite of AI-powered security and data protection services to help you stop cyberattacks and data loss. As a fully cloud-delivered SaaS solution, you can add new capabilities without any additional hardware or lengthy deployment cycles. The modules available as part of Zscaler Internet Access are:\n- Cloud Secure Web Gateway (SWG)\n- Cloud Access Security Broker (CASB)\n- Cloud Data Loss Prevention (DLP)\n- Cloud Firewall & IPS\n- Cloud Sandbox\n- Digital Experience Monitoring (ZDX) \n\nZscaler will also provide our Zero Trust Exchange services at the FedRAMP Moderate level not only for federal agencies and service integrators, but state, local, education, and critical infrastructure as a fully authorized StateRAMP solution. \n\nAll Zscaler's FedRAMP platforms are fully managed and supported by US Citizens and meet the ITAR, CJIS, and DFARS requirements and attestations. \n\nZscaler, a Leader in the Gartner Magic Quadrant for Security Service Edge.",
+  "functions_claimed": [
+   {
+    "function_id": "threat_intel",
+    "function": "Threat intelligence",
+    "evidence": "AI-powered protection from the world's largest security cloud: Inline inspection of all internet and SaaS traffic, including SSL decryption, with a suite of AI-powered cloud security services to stop ransomware, phishing, zero-day malware, and advanced attacks based on threat intelligence from 300 trillion daily signals."
+   },
+   {
+    "function_id": "data_protection",
+    "function": "Backup, recovery & data protection",
+    "evidence": "Zscaler Internet Access includes a comprehensive suite of AI-powered security and data protection services to help you stop cyberattacks and data loss."
+   },
+   {
+    "function_id": "network_security",
+    "function": "Network security, segmentation & zero-trust access",
+    "evidence": "Zscaler Internet Access Gov, part of the Zscaler Zero Trust Exchange, defines safe, fast internet and SaaS access with the industry's most comprehensive cloud native security service edge (SSE) platform."
+   },
+   {
+    "function_id": "phishing_awareness",
+    "function": "Phishing defense & security awareness training",
+    "evidence": "AI-powered protection from the world's largest security cloud: Inline inspection of all internet and SaaS traffic, including SSL decryption, with a suite of AI-powered cloud security services to stop ransomware, phishing, zero-day malware, and advanced attacks based on threat intelligence from 300 trillion daily signals."
+   },
+   {
+    "function_id": "insider_dlp",
+    "function": "Insider risk, DLP & data security",
+    "evidence": "The modules available as part of Zscaler Internet Access are:\n- Cloud Secure Web Gateway (SWG)\n- Cloud Access Security Broker (CASB)\n- Cloud Data Loss Prevention (DLP)\n- Cloud Firewall & IPS\n- Cloud Sandbox\n- Digital Experience Monitoring (ZDX) \n\nZscaler will also provide our Zero Trust Exchange services at the FedRAMP Moderate level not only for federal agencies and service integrators, but st..."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "AI-powered protection from the world's largest security cloud: Inline inspection of all internet and SaaS traffic, including SSL decryption, with a suite of AI-powered cloud security services to stop ransomware, phishing, zero-day malware, and advanced attacks based on threat intelligence from 300 trillion daily signals."
+   },
+   {
+    "function_id": "access_control_feature",
+    "function": "Access control & least privilege (platform feature)",
+    "evidence": "ZIA Gov security products are currently utilized by over 100 federal agencies and federal systems integrators today in Zscaler's US-based FedRAMP Moderate and FedRAMP JAB High approved boundaries in support of the Cybersecurity and Infrastructure Security Agency (CISA) Trusted Internet Connection (TIC) 3.0 use case model for FedRAMP approved Policy Enforcement Point (PEP) capabilities."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2227062482/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2227062482"
+ },
+ {
+  "fork_id": "FR1719759604",
+  "vendor": "Zscaler, Inc.",
+  "product": "Zscaler Private Access - Government (Zero Trust Networking - VPN Replacement)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Zscaler Private Access Gov, part of the Zscaler Zero Trust Exchange, enables fast, secure connections and allows your employees to work from anywhere using the internet as the corporate network. Based on the zero-trust principle of least-privileged access, it provides comprehensive security using context-based identity and policy enforcement. Zero Trust Exchange helps agencies achieve the target goals of the Executive Order 14028 and resulting OMB mandates, CISA guidance and directives.\n\nZPA Gov security products are currently utilized by over 100 federal agencies and federal systems integrators today in Zscaler's US-based FedRAMP Moderate and FedRAMP JAB High approved boundaries in support of the Cybersecurity and Infrastructure Security Agency (CISA) Trusted Internet Connection (TIC) 3.0 use case model for FedRAMP approved Policy Enforcement Point (PEP) capabilities. \n\nTIC 3.0 Use Case Examples (Branch Office, Remote Users, and Cloud)\n\nZero-trust VPN alternative: Legacy VPNs fail to deliver the security, visibility, and user experience today's distributed workforce requires. ZPA delivers fast, direct access to private apps by eliminating VPN traffic backhauling which creates latency, resulting in lost productivity. \n\nSecure Hybrid Workforce:  Users require the ability to move fluidly between their homes, remote locations, branch offices, and headquarters. ZPA enables seamless and secure access to private apps from wherever they need to work, on any device. Local users benefit from an identical experience through an on-prem broker that replicate the policies and controls of the cloud. \n\nThird-party Agentless Access: Third-party agencies, contractors, and vendors require secure, direct access to business applications and OT systems from unmanaged devices. ZPA provides secure, direct connectivity from authorized users to named applications without putting third parties on the network. With integrated agentless access, users can access applications from any browser, on any device, without the need to install a client or log into a VPN.\n\nVDI alternative: Traditional VDIs are often slow, unresponsive, and introduce significant costs with racks of servers needed in the data center to support remote access needs. ZPA provides secure, direct connectivity to apps over RDP and SSH, enabling a faster, more secure experience for users. With built-in agentless access through the browser employees and third-party users get seamless secure connectivity from any device without complicated desktop provisioning processes.\n\nSecure workload-to-workload connectivity: Agencies require fast, secure workload-to-workload connectivity across hybrid and multi-cloud environments. ZPA for Workloads reduces operational complexity and cost by eliminating the need for virtual DMZs and VPN meshes with least-privileged access-based connectivity across clouds. In addition, because workloads are hidden behind ZPA, they are invisible to the internet and impossible to attack.\n\nZscaler will also provide our Zero Trust Exchange services at the FedRAMP Moderate level not only for federal agencies and service integrators, but state, local, education, and critical infrastructure as a fully authorized StateRAMP solution. \n\nAll Zscaler's FedRAMP platforms are fully managed and supported by US Citizens and meet the ITAR, CJIS, and DFARS requirements and attestations. \n\nZscaler, a Leader in the Gartner Magic Quadrant for Security Service Edge.",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "Based on the zero-trust principle of least-privileged access, it provides comprehensive security using context-based identity and policy enforcement."
+   },
+   {
+    "function_id": "network_security",
+    "function": "Network security, segmentation & zero-trust access",
+    "evidence": "Zscaler, a Leader in the Gartner Magic Quadrant for Security Service Edge."
+   },
+   {
+    "function_id": "endpoint_management",
+    "function": "Endpoint management, patching & IT automation",
+    "evidence": "VDI alternative: Traditional VDIs are often slow, unresponsive, and introduce significant costs with racks of servers needed in the data center to support remote access needs."
+   },
+   {
+    "function_id": "access_control_feature",
+    "function": "Access control & least privilege (platform feature)",
+    "evidence": "Based on the zero-trust principle of least-privileged access, it provides comprehensive security using context-based identity and policy enforcement."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1719759604/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1719759604"
+ }
+]
