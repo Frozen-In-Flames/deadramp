@@ -372,6 +372,20 @@ Platform-layer: single-tenant reference deployment; encryption at rest is deploy
 
 Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Platform note: multi-tenancy (1 tagged claim) — single-tenant reference deployment, tenant isolation is deployment-layer; demo identities are hooks, not an IdP. Spec note: 13 of 16 taxonomy functions tag zero claims in this group (short marketing descriptions); the platform functions stay Core under the recorded core-boundary decision, because the Merge Rule carries the L2 union upward whole.
 
+## Group 24 — Content Management System (CMS) L1 (2 forks)
+
+Extended functions, specified in groups/cms-l1/UNION-SPEC.md, not implemented:
+- [ ] open — Library ILS vertical (this group's dominant vertical): circulation, acquisitions, resource sharing / interlibrary loan, collection management, knowledgebase, access proxying, digital collection management, and the union-catalog data network beneath them
+- [ ] open — Mobile application delivery and the companion mobile app itself
+- [ ] open — Rendering & templating engines and visual / WYSIWYG editors (carried from the Group 20 union; 0 claims here)
+- [ ] open — CDN / delivery network and runtime site serving (carried; one sibling's "content delivery functionality" is a recorded near-miss)
+- [ ] open — Enterprise search indexing & discovery engines (carried; one sibling's discovery service is a recorded near-miss)
+- [ ] open — Analytics & reporting engines beyond registry reporting (carried; "custom reports / Report Designer" are recorded near-misses)
+- [ ] open — Bulk ingestion & index-in-place engines (carried)
+- [ ] open — BPM / case-management engine; participant engagement vertical; personalization (carried from the Group 20 union at 0 claims here)
+
+Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (one sibling claims it in prose; single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec honesty note: exactly one claim tags in this entire group under the verbatim Group 20 taxonomy; every near-miss is itemized in the spec's artifact log, the taxonomy was not re-tuned, and the 12-function core stands on an explicit core-boundary decision (both products presuppose the substrate in their own words). Tier precision: SI-7 is a Moderate selection and is explicitly not claimed at this tier; the asset checksums are an SI-family implementation property.
+
 ## Later groups
 
 Each group appends its section here when it ships.
