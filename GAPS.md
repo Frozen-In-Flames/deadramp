@@ -249,6 +249,18 @@ Extended functions, specified in groups/contact-center-l2/UNION-SPEC.md, not imp
 
 Platform-layer: multi-tenancy (single-tenant reference deployment); encryption at rest (deployment layer); TLS only when configured; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec finding: this sibling group is largely a source-category artifact — only one of the five is genuinely a contact-center product; the build is the records substrate their claimed functions collectively presuppose. Privacy note: caller references are stored as opaque caller-supplied references only, never real phone numbers.
 
+## Group 14 — Communication L3-adjacent (6 forks)
+
+Extended functions, specified in groups/communication-l3/UNION-SPEC.md, not implemented:
+- [ ] open — Workflow / BPM engines beyond the approval-less dispatch substrate
+- [ ] open — End-to-end encrypted message transport and secure data-exchange networks; fax transport networks and carrier integration
+- [ ] open — Key & certificate lifecycle automation (CA connectors, issuance, deployment)
+- [ ] open — Voice / telephony media, IVR and virtual-agent conversation engines; mission-critical voice ecosystems
+- [ ] open — Virtual-workspace streaming and remote-experience delivery; edge delivery / CDN platform functions
+- [ ] open — Carried from the Group 11 union at this tier (0 claims in this group's descriptions; named so the union is complete): email security engines, AI/ML models, archiving & eDiscovery engines, correspondence / casework depth, personnel / asset tracking, permits / passes / surveys, e-signature execution, payment processing, reporting / analytics engines beyond the records substrate
+
+Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP. Spec honesty note: 11 claims across 5 of 6 sheets; one sheet (a cloud delivery platform) is accreditation prose with no taxonomy vocabulary — full text preserved, nothing invented.
+
 ## Later groups
 
 Each group appends its section here when it ships.

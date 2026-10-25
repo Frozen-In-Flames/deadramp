@@ -1,0 +1,171 @@
+[
+ {
+  "fork_id": "FR2535161278",
+  "vendor": "Akamai",
+  "product": "Akamai Cloud",
+  "service_model": [
+   "PaaS",
+   "IaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [],
+  "deadramp_category": "Communication",
+  "description": "Akamai Cloud offers customer facing services enabled by the underlying Akamai Platform and Backbone.  All Akamai services are centrally managed offering one of the world\u2019s largest interconnected cloud platforms.\nAkamai Cloud allows users to leverage multiple cloud delivery models from IaaS to SaaS with individual services accredited at differing levels.  The Akamai Platform and Backbone provides a common delivery fabric for all of Akamai\u2019s customer facing services and common controls that can be leveraged for all these services.\nEach service is capable of running diverse workloads, the Defense Edge initiative focuses on the accreditation of these services at the FRH and DoD IL5 levels.  Delivery solutions can be accomplished across different security levels by offering secure workload guidance and configurations that are enforced at multiple infrastructure points within the underlying Platform and Backbone with the eventual goal of having each service capable of operating at the higher security attestation levels through these configuration options.\nServices offered to customer through the Akamai Cloud are grouped into three main categories:\n\nBuild, Secure, and Deliver\nThese categories cover cloud infrastructure and deployment tooling, workforce and API protection, as well as global delivery and performance enhancing utilities.\nSpecific services appropriate for High Availability are:\nAkamai Guardicore Segmentation\nApp & API Protector\nEnterprise Application Access\n\nEdge DNS\nGlobal Traffic Management\nIon\nmPulse\nProlexic",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2535161278/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2535161278"
+ },
+ {
+  "fork_id": "FR2503350987",
+  "vendor": "Artera",
+  "product": "Artera Harmony Federal Edition",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Communication",
+  "description": "Artera Harmony Federal Edition, powered by its advanced virtual agents, is a comprehensive suite of patient communication tools that transform patient experience through voice, text, and web. Integrating directly into the agency healthcare system's tech stack, including EHRs and third-party vendors, Artera Harmony Federal Edition supports the entire patient journey. The secure platform improves patient engagement by:\n* Automating inbound and outbound communications to streamline critical workflows like pre-visit preparations, post-appointment follow-ups, prescription refills, and ongoing care coordination.\n* Triaging patient inquiries 24/7 and automating administrative tasks, which reduces the burden on front-desk staff and boosts operational efficiency.\n* Providing federal agency personnel with anywhere access to manage conversation workflows, customize communication templates, and oversee all patient communications.\n* Integrating into patients' native phone, SMS/text, and email applications for a truly seamless experience.\n\nIn addition to pursuing FedRAMP High Authorization, Artera\u2019s best-in-class InfoSec approach keeps data safe, compliant and built for healthcare. Artera Harmony Federal Edition, including virtual agents, meets top industry standards \u2013 SOC 2 Type 2, HITRUST Certified and is HIPAA compliant. \n\nArtera Harmony Federal Edition is brought to you by Artera Government Solutions, an Artera business unit. Artera is trusted by 900+ provider organizations to engage 100 million patients annually. \n\nLearn more at https://artera.io/federal-healthcare-communication/.",
+  "functions_claimed": [
+   {
+    "function_id": "messaging",
+    "function": "Email & messaging channels",
+    "evidence": "* Integrating into patients' native phone, SMS/text, and email applications for a truly seamless experience."
+   },
+   {
+    "function_id": "voice_telephony",
+    "function": "Voice, telephony, IVR & contact center",
+    "evidence": "Artera Harmony Federal Edition, powered by its advanced virtual agents, is a comprehensive suite of patient communication tools that transform patient experience through voice, text, and web."
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow & business process automation",
+    "evidence": "The secure platform improves patient engagement by:\n* Automating inbound and outbound communications to streamline critical workflows like pre-visit preparations, post-appointment follow-ups, prescription refills, and ongoing care coordination."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2503350987/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2503350987"
+ },
+ {
+  "fork_id": "FR2207365631",
+  "vendor": "Consensus Cloud Solutions",
+  "product": "Enterprise Cloud Fax Government (ECFax)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Communication",
+  "description": "ECFax\u00ae is a unified, secure, cloud-based managed service solution that modernizes manual or semi-automated faxing processes and eliminates the need for multiple faxing solutions. \r\n\r\nBuilt with a human-centered design approach, ECFax\u00ae simplifies fax services, improves the user experience, provides secure data transfer for PHI/PII, and reduces administrative costs. The solution gives agencies more control over their fax data transfer processes, eliminates the need to manage multiple vendors, and offers 24/7 state-of-the-art faxing capability and help desk support.\r\nECFax\u00ae delivers faxes digitally across multiple endpoints, including multifunction devices, shared folders, distribution lists, and inboxes: yielding operational efficiencies and reducing the need for standalone hardware.\r\nThe solution is:\r\n\u25cf\tScalable: Hosted on Amazon Web Services GovCloud, ECFax\u00ae scales on- demand to hundreds of millions of pages per month through auto-scaling and elastic load balancing.\r\n\u25cf\tTransparent: Performance dashboards provide visibility into service usage and operational status, which allows for near real-time production metrics.\r\n\u25cf\tSecure: ECFax and add on components are FedRAMP High certified and meet the most important security and quality assurance protocols for data protection\u2014including FIPS 140-2.   \r\n\r\nECFax\u00ae Services was developed specifically for the cloud, government agencies benefit from rapid scaling, efficiency and speed.\r\nECFax\u00ae is:\r\n\u25cf\tAccessible via AWS GovCloud;\r\n\u25cf\tSection 508 Compliant\r\n\u25cf\tDesigned to meet the highest security standards required by government agencies \r\nIn addition, the solution:\r\n\u25cf\tIntegrates with other applications via Restful API\r\n\u25cf\tSupports IDP-initiated SSO for authentication \r\n\u25cf\tFacilitates standardization across multiple locations",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity proofing, login & access control",
+    "evidence": "ECFax\u00ae is: \n\u25cf\tAccessible via AWS GovCloud; \n\u25cf\tSection 508 Compliant \n\u25cf\tDesigned to meet the highest security standards required by government agencies  \nIn addition, the solution: \n\u25cf\tIntegrates with other applications via Restful API \n\u25cf\tSupports IDP-initiated SSO for authentication  \n\u25cf\tFacilitates standardization across multiple locations"
+   },
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting, dashboards & analytics",
+    "evidence": "\u25cf\tTransparent: Performance dashboards provide visibility into service usage and operational status, which allows for near real-time production metrics."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2207365631/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2207365631"
+ },
+ {
+  "fork_id": "FR2523143582",
+  "vendor": "ETHERFAX",
+  "product": "ETHERFAX GovCloud",
+  "service_model": [
+   "IaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Communication",
+  "description": "ETHERFAX GovCloud is a secure, scalable, and compliant cloud-based fax solution designed to modernize enterprise faxing while offering the flexibility to leverage existing investments. Built with a security-first posture, our US government community cloud-based fax solution has been engineered to meet the federal government\u2019s rigorous FedRAMP HIGH security standards. Hosted in AWS' FedRAMP HIGH GovCloud environment that utilizes FIPS-140-3 certified cryptographic algorithms, our data exchange solutions ensure the highest levels of data protection and encryption for government workflows. Leveraging the power of AWS GovCloud and supported by a dedicated US-based team, GovCloud delivers high availability, resiliency, and seamless integrations for government and regulated industries.\n\nKey Features:\n\nIntegrations\n\u2022        GovCloud Microsoft Teams: Seamlessly integrates with Microsoft Teams in GovCloud for streamlined communication workflows.\n\u2022        GovCloud Office 365: Supports Office 365 in GovCloud environments, enabling secure collaboration and faxing.\n\u2022        Google Workspace: Integrates with Google Workspace for enhanced productivity and interoperability.\n\u2022        GovCloud API: Provides a robust API for custom integrations, allowing organizations to tailor ETHERFAX to their specific needs.\n\nHigh Availability and Resiliency\n\u2022        AWS GovCloud East and West: Deployed across AWS GovCloud (US-East and US-West) regions, AWS GovCloud ensures high availability and resiliency through geographically distributed data centers, supporting mission-critical workloads.\n\u2022        Elastic Cloud Computing: Dynamically scale resources to meet demand, delivering consistent performance during peak usage.\n\nScalability and Data Security\n\u2022        Containerization: Utilizes containerized architecture to enable on-demand scaling, providing flexibility and efficiency for fluctuating workloads.\n\u2022        Segregated S3 Buckets: Employs isolated Amazon S3 buckets to segregate data, ensuring data separation and enhancing security and compliance.\n\nCompliance\n\u2022        FedRAMP High IL5: Meets stringent FedRAMP High and DoD Impact Level 5 (IL5) requirements, suitable for sensitive and regulated workloads.\n\u2022        Section 508: Ensures accessibility compliance for users with disabilities, adhering to federal standards.\n\u2022        HITRUST and PCI Level 4 Certified: Certified to meet rigorous healthcare and payment card industry security standards, ensuring robust data protection.\n\nSeamless Integration with Existing Systems \n\u2022        RightFax or Biscom: Transition to a more secure cloud platform with the option to integrate with RightFax or Biscom, enabling continued use of your current fax infrastructure without a costly rip-and-replace approach.\n\u2022        Leverage Existing Investments: Choose to maintain your existing workflows and configurations while upgrading to a modern, cloud-based solution.\n\nDedicated Support\n\u2022        US-Based Support Team: ETHERFAX offers a dedicated, US-based support team available to assist with implementation, troubleshooting, and ongoing maintenance, ensuring reliable service for all customers.\n\nETHERFAX GovCloud combines the flexibility of cloud technology with the security and compliance required for government and regulated industries. By leveraging AWS GovCloud\u2019s isolated infrastructure, containerized scalability, and segregated data storage, ETHERFAX provides a future-proof fax solution with the option to integrate seamlessly with existing systems and modern collaboration tools. With a commitment to compliance and a US-based support team, ETHERFAX GovCloud empowers organizations to modernize faxing while maintaining security, reliability, and operational efficiency.",
+  "functions_claimed": [
+   {
+    "function_id": "secure_transmission",
+    "function": "Secure & encrypted transmission",
+    "evidence": "Hosted in AWS' FedRAMP HIGH GovCloud environment that utilizes FIPS-140-3 certified cryptographic algorithms, our data exchange solutions ensure the highest levels of data protection and encryption for government workflows."
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow & business process automation",
+    "evidence": "Hosted in AWS' FedRAMP HIGH GovCloud environment that utilizes FIPS-140-3 certified cryptographic algorithms, our data exchange solutions ensure the highest levels of data protection and encryption for government workflows."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2523143582/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2523143582"
+ },
+ {
+  "fork_id": "FR2333538201",
+  "vendor": "Hypori, Inc.",
+  "product": "Hypori Government Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Communication",
+  "description": "Hypori Government Cloud provides Virtual Mobility Infrastructure (VMI), a solution that hosts a mobile operating system on a centralized server in a data center that is accessed by thin clients on the user\u2019s end point. Hypori Government Cloud creates a Zero Trust architecture to provide secure access to Controlled Unclassified Information (CUI) and customer data and resources. In the Hypori environment, the user\u2019s device effectively becomes a \u201cwindow\u201d into a virtualized mobile workspace that is operating in the Amazon GovCloud and delivered via a Software as a Service (SaaS) model. Hypori uses a thin client application to create a virtual image of the user\u2019s unique virtual mobile workspace. The client captures touch and sensor data from the end user physical device and routes it back to the Virtual Workspace through a secure and encrypted TLS tunnel.\r\n\r\nThe Hypori Client has been tested by multiple Red Teams to ensure it meets the most rigorous security posture. It is Common Criteria Certified by the National Information Assurance Partnership (NIAP) for Android, and iOS platforms. NIAP ensures that all certified products \u201cdemonstrate exact compliance to the applicable technology protection profile.\u201d This certification verifies that the \u201cHypori Client is a thin client that communicates only with a Hypori Virtual Workspace on a Hypori Server and not with other servers or applications.\u201d It validates the cryptographic elements of communication with the Hypori environment, that no data is at rest on the user device and no PII is transmitted or stored on the physical end user device. Additionally, the Hypori Client does not trust the mobile device host. It uses application shielding and cryptographic key protection capabilities to defend against compromised end points. It also has limited runtime OS attestation checks before it will launch. If it detects tampering of the client components, it will not connect to the environment. The data on the client is limited to the trust key chain. The mutual Transport Layer Security (TLS) tunnel certificate is stored with the operating system (OS) protected key store on the device, but no other data is on the end user mobile device.\r\n\r\nThe backend environment consists of a series of subnets which form a cluster. Each cluster is designed to support numerous virtual workspace instances. To the user, the experience is virtually identical to when the application and data was on the user\u2019s mobile device. Private keys within the Virtual Workspace are protected using the Android keystore in combination with the Cloud Service Provider key protection system. The Private keys are encrypted in accordance with Hypori\u2019s National Institute of Standards and Technology (NIST) Federal Information Processing Standard (FIPS) 140-2.",
+  "functions_claimed": [
+   {
+    "function_id": "secure_transmission",
+    "function": "Secure & encrypted transmission",
+    "evidence": "The client captures touch and sensor data from the end user physical device and routes it back to the Virtual Workspace through a secure and encrypted TLS tunnel."
+   },
+   {
+    "function_id": "key_certificate",
+    "function": "Key & certificate lifecycle management",
+    "evidence": "The mutual Transport Layer Security (TLS) tunnel certificate is stored with the operating system (OS) protected key store on the device, but no other data is on the end user mobile device."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity proofing, login & access control",
+    "evidence": "Hypori Government Cloud creates a Zero Trust architecture to provide secure access to Controlled Unclassified Information (CUI) and customer data and resources."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2333538201/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2333538201"
+ },
+ {
+  "fork_id": "FR2118055930",
+  "vendor": "Motorola Solutions",
+  "product": "Motorola Solutions Federal Cloud (MSFC)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Communication",
+  "description": "Motorola Solutions is expanding its \u201cMission Critical Ecosystem\u201d which consists of a suite of software and technology that supports mission critical communications in evolving ways and that provides fast access to actionable information. The purpose of the Motorola Solutions Federal Cloud (MSFC) is to serve as the platform upon which the applications and solutions that are part of this Mission Critical Ecosystem will securely operate to provide our U.S. Federal Government users with enhanced capabilities. Primary to our Federal Cloud offering as our initial secure cloud application is the APX NEXT smart radio, a next-generation P25 platform purpose-built for first responders to access and act on information while maintaining focus in critical situations. The Motorola Solutions Federal Cloud enables APX NEXT and additional SaaS services to provide new Common Operating Picture (COP) capabilities to federal Law Enforcement Officers (LEOs), first responders and public safety personnel in the field with a new ownership experience to operations and support personnel. The underlying Motorola Solutions Federal Cloud architecture is reinforced by a modern and comprehensive application of security technology. Once deployed, our cloud services production systems are monitored 24x7x365 by Motorola Solutions\u2019 Security Operations Center using state-of-the-art Security Information and Event Management (SIEM) technology.",
+  "functions_claimed": [
+   {
+    "function_id": "notifications_alerts",
+    "function": "Notifications, alerting & critical-event communications",
+    "evidence": "Motorola Solutions is expanding its \u201cMission Critical Ecosystem\u201d which consists of a suite of software and technology that supports mission critical communications in evolving ways and that provides fast access to actionable information."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2118055930/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2118055930"
+ }
+]
