@@ -25,3 +25,7 @@ Build order (by group size): Analytics L2 (128 forks) is group one. The full ord
 ## Standing rules
 
 Public sources only. Clean room always. Every claim in a release traces to a spec sheet, a test, or a control. Coverage is reported as forks covered out of 781, updated at every ship.
+
+## The gap batch (Aries, Oct 25, 2026)
+
+All gaps from all groups — extended functions specified but not implemented, and baseline requirements gap-listed at the platform layer — are registered in GAPS.md at the repo root when each group ships, and worked as ONE final batch at the very end of the repo, after the last sibling group and the remainder forks. Groups name their gaps precisely and keep moving; nothing closes a gap except the final batch, and the registry is the batch's worklist.
