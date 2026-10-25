@@ -49,6 +49,30 @@ Baseline gaps at High (platform layer; gap-listed, never implied closed):
 - [ ] open — Audit retention enforcement (AU-11)
 - [ ] open — Session lock / termination (AC-11/AC-12) — stateless per-request auth in the current build
 
+## Group 4 — Cybersecurity & Risk Management L2 (54 forks)
+
+Extended functions, specified in groups/cybersecurity-l2/UNION-SPEC.md, not implemented. By design the build is the shared defensive substrate only: no offensive tooling and no engine of any kind. The engines are the gaps:
+- [ ] open — AI/ML detection models (17 siblings)
+- [ ] open — SOAR / orchestration engines (14)
+- [ ] open — Detection engines and staffed SOC services (13) — ingestion and triage of their output is core
+- [ ] open — Network enforcement planes (11)
+- [ ] open — Threat-intelligence feeds (9)
+- [ ] open — Backup / recovery products (9)
+- [ ] open — Full GRC automation suites (8) — control mapping is core
+- [ ] open — Identity products (8) — hooks only, no IdP
+- [ ] open — EDR/XDR agents (7)
+- [ ] open — Phishing simulation / training (7)
+- [ ] open — DLP / insider monitoring engines (7)
+- [ ] open — AppSec testing engines (6)
+- [ ] open — CSPM/CNAPP/SSPM posture engines (5)
+- [ ] open — Log / telemetry pipelines (5)
+- [ ] open — Vulnerability scanners (4) — ingestion and tracking is core
+- [ ] open — CUI enclaves / VDI (3)
+- [ ] open — Identity proofing / fraud (2)
+- [ ] open — Endpoint management agents (2)
+
+Platform note: encryption is TLS when configured; at rest is deployment-layer.
+
 ## Later groups
 
 Each group appends its section here when it ships.
