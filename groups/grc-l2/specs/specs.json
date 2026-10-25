@@ -1,0 +1,113 @@
+[
+ {
+  "fork_id": "FR2525557617",
+  "vendor": "InfusionPoints",
+  "product": "XBU40",
+  "service_model": [
+   "SaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "XBU40 Enclave Platform\r\n\r\n\r\n\r\nXBU40 Enclave Platform-as-a-Service     is InfusionPoints’ secure cloud platform designed to support organizations pursuing and maintaining FedRAMP 20x authorization. Built on AWS GovCloud, it delivers a secure-by-design environment with automated compliance\r\n validation, continuous monitoring, and authorization readiness. The platform is operated through Command Center and powered by AuditShield for automated evidence validation and KSI monitoring.\r\n\r\n\r\nPlatform Management – Command Center\r\n\r\n\r\nCommand Center is the platform management interface used to operate and monitor XBU40 Enclave environments. It provides centralized visibility into infrastructure security, vulnerability posture, Key Security Indicators\r\n (KSIs), and compliance evidence. Through Command Center, organizations maintain a real-time view of operational and compliance status across their environment.\r\n\r\n\r\nCore Service Capabilities\r\n\r\n\r\nXBU40 Enclave Platform combines secure infrastructure with integrated compliance automation to support\r\nFedRAMP 20x authorization and continuous monitoring. The service includes secure hosting in AWS GovCloud, platform management through Command Center, vulnerability lifecycle management, and automated KSI validation\r\n through AuditShield. These capabilities allow organizations to maintain continuous authorization readiness.\r\n\r\n\r\nSecure Hosting Environment\r\n\r\n\r\nXBU40 provides a secure-by-design hosting architecture engineered to support FedRAMP 20x Moderate environments. The platform includes identity and access controls, network protection, encryption, and centralized logging\r\n aligned with government cloud security practices. Environments are supported by InfusionPoints Cloud Operations and Security Operations teams.\r\n\r\n\r\nVulnerability and Exposure Management\r\n\r\nXBU40 provides continuous vulnerability scanning, prioritization, and remediation tracking across hosted environments. Findings are managed through integrated workflows that support remediation and validation. This ensures systems maintain a\r\ncontinuously monitored vulnerability posture aligned with FedRAMP 20x KSIs.\r\n\r\n\r\nTrust Center\r\n\r\n\r\nThe Trust Center provides a centralized view of system compliance posture and Key Security Indicators. It allows stakeholders to access evidence artifacts, compliance documentation, and monitoring dashboards in real time. This transparency enables assessors\r\n and agencies to validate security posture through live operational evidence.\r\n\r\n\r\nAuditShield – Automated Evidence and KSI Validation\r\n\r\n\r\nAuditShield is the automation engine within the XBU40 Enclave Platform that continuously validates compliance posture. It collects and verifies evidence through APIs, serverless validation functions, and infrastructure\r\n telemetry. Each validation maps directly to a \r\nFedRAMP 20x KSI, preserving artifacts and timestamps for assessor review.\r\n\r\n\r\n\r\nContinuous Authorization Monitoring\r\n\r\n\r\nXBU40 supports continuous authorization readiness through automated monitoring and validation of system security posture. The platform evaluates infrastructure configuration, vulnerability lifecycle status, security telemetry, and KSI validation results. All\r\n evidence and compliance artifacts are maintained within Command Center to ensure environments remain\r\ncontinuously audit-ready.",
+  "functions_claimed": [
+   {
+    "function_id": "evidence_management",
+    "function": "Evidence management & validation",
+    "evidence": "The platform is operated through Command Center and powered by AuditShield for automated evidence validation and KSI monitoring."
+   },
+   {
+    "function_id": "continuous_monitoring",
+    "function": "Continuous monitoring",
+    "evidence": "Built on AWS GovCloud, it delivers a secure-by-design environment with automated compliance\r\n validation, continuous monitoring, and authorization readiness."
+   },
+   {
+    "function_id": "ksi_tracking",
+    "function": "Security indicators (KSI) tracking & validation",
+    "evidence": "The platform is operated through Command Center and powered by AuditShield for automated evidence validation and KSI monitoring."
+   },
+   {
+    "function_id": "vulnerability_remediation",
+    "function": "Vulnerability & remediation management",
+    "evidence": "It provides centralized visibility into infrastructure security, vulnerability posture, Key Security Indicators\r\n (KSIs), and compliance evidence."
+   },
+   {
+    "function_id": "control_framework_compliance",
+    "function": "Control & framework compliance management",
+    "evidence": "Built on AWS GovCloud, it delivers a secure-by-design environment with automated compliance\r\n validation, continuous monitoring, and authorization readiness."
+   },
+   {
+    "function_id": "posture_reporting",
+    "function": "Compliance posture reporting & dashboards",
+    "evidence": "Through Command Center, organizations maintain a real-time view of operational and compliance status across their environment."
+   },
+   {
+    "function_id": "assessment_authorization",
+    "function": "Assessment & authorization support",
+    "evidence": "XBU40 Enclave Platform\r\n\r\n\r\n\r\nXBU40 Enclave Platform-as-a-Service     is InfusionPoints’ secure cloud platform designed to support organizations pursuing and maintaining FedRAMP 20x authorization."
+   },
+   {
+    "function_id": "audit_support",
+    "function": "Audit support & assessor review",
+    "evidence": "Each validation maps directly to a \r\nFedRAMP 20x KSI, preserving artifacts and timestamps for assessor review."
+   },
+   {
+    "function_id": "platform_hosting",
+    "function": "Platform hosting / enclave operations",
+    "evidence": "The service includes secure hosting in AWS GovCloud, platform management through Command Center, vulnerability lifecycle management, and automated KSI validation\r\n through AuditShield."
+   },
+   {
+    "function_id": "identity_access_hooks",
+    "function": "Identity & access controls (hooks)",
+    "evidence": "The platform includes identity and access controls, network protection, encryption, and centralized logging\r\n aligned with government cloud security practices."
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow & automation",
+    "evidence": "Core Service Capabilities\r\n\r\n\r\nXBU40 Enclave Platform combines secure infrastructure with integrated compliance automation to support\r\nFedRAMP 20x authorization and continuous monitoring."
+   },
+   {
+    "function_id": "api_integrations",
+    "function": "APIs & integrations",
+    "evidence": "It collects and verifies evidence through APIs, serverless validation functions, and infrastructure\r\n telemetry."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2525557617/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2525557617"
+ },
+ {
+  "fork_id": "FR2206159758",
+  "vendor": "Merlin International",
+  "product": "Constellation GovCloud (CGC)",
+  "service_model": [
+   "PaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Governance, Risk, and Compliance (GRC)"
+  ],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "Constellation GovCloud (CGC) is an information system that provides the necessary Platform as a Service (PaaS) architecture layers to support Merlin-operated Software as a Service (SaaS) applications. These Merlin SaaS applications will be hosted and provided to U.S. federal agencies, including local and state governments and tribal organizations. The CGC is part of a managed service that is designed to accelerate FedRAMP authorizations allowing Merlin SaaS companies to achieve a FedRAMP Authority to Operate (ATO) more quickly and cost-effectively.\n\n**Services undergoing approval for use — not authorized.** The following services are hosted on CGC but are **not** authorized services and are **not** included in this certification. They are undergoing approval for use and are recorded here for transparency only; none is covered by this package, and each moves into the certified service list only on completion of that approval.\n\n- **Torq AI SOC Platform** — Torq combines agentic insights and automation so that federal agencies and public sector organizations can triage, investigate, and respond to actual risks, faster. Torq streamlines every step from alert through resolution, expanding capacity and throughput. First, Torq ingests and normalizes telemetry from across your security stack, preparing the data for agentic reasoning at scale. Auto Triage filters out noise and prioritizes actual threats. Next, cases are automatically opened and assigned to highly specialized AI agents designed for investigation and response. Using tools and actions you specify, they gather evidence, assemble timelines, and transparently record decisions and authorized actions. Your team is in complete control. With Torq, your SOC delivers more results, more efficiently, from triage through remediation.\n\n- **QIZ** — QIZ delivers a cloud-based cryptography posture management platform for government agencies and regulated organizations to manage cryptographic risk. The system provides centralized capabilities for cryptographic discovery and inventory, correlation of findings to affected systems and owners, policy definition, risk-based triage, root cause analysis, and remediation planning. QIZ collects cryptographic data from network traffic, system and application configurations, source code, binaries, and cloud infrastructure. Cryptographic standards are defined within the platform, and the system evaluates the environment against those standards to report current posture and identify policy violations. QIZ produces a contextualized cryptographic bill of materials (CBOM), exportable in standard formats, and a policy driven transition plan prioritized by risk and business context, giving agencies a sequenced and repeatable path toward post-quantum readiness.\n\n- **Veeam** — Veeam Data Cloud Gov for Microsoft 365 is a fully managed Software as a Service (SaaS) backup solution for federal, state, and local government agencies that need to protect and recover their Microsoft 365 data. The service runs on Microsoft Azure within Constellation GovCloud's boundary and backs up Exchange Online, SharePoint Online, and OneDrive. Backups stay immutable, so they cannot be altered or deleted, even from a compromised administrator account. Agencies sign in through their own identity provider and use role-based access control to decide who can manage and restore data. When ransomware, a compromised account, or a large-scale data loss strikes, agencies can quickly restore what they need and limit disruption to mission-critical services. Built on a native integration with Microsoft 365 Backup Storage, the service enables fast initial backup with no API throttling, delivering restore performance at speeds exceeding 1TB per hour. There is no infrastructure for agencies to manage, and storage is included with per-user licensing.",
+  "functions_claimed": [
+   {
+    "function_id": "assessment_authorization",
+    "function": "Assessment & authorization support",
+    "evidence": "The CGC is part of a managed service that is designed to accelerate FedRAMP authorizations allowing Merlin SaaS companies to achieve a FedRAMP Authority to Operate (ATO) more quickly and cost-effectively."
+   },
+   {
+    "function_id": "platform_hosting",
+    "function": "Platform hosting / enclave operations",
+    "evidence": "Constellation GovCloud (CGC) is an information system that provides the necessary Platform as a Service (PaaS) architecture layers to support Merlin-operated Software as a Service (SaaS) applications."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2206159758/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2206159758"
+ }
+]
