@@ -386,6 +386,29 @@ Extended functions, specified in groups/cms-l1/UNION-SPEC.md, not implemented:
 
 Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (one sibling claims it in prose; single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec honesty note: exactly one claim tags in this entire group under the verbatim Group 20 taxonomy; every near-miss is itemized in the spec's artifact log, the taxonomy was not re-tuned, and the 12-function core stands on an explicit core-boundary decision (both products presuppose the substrate in their own words). Tier precision: SI-7 is a Moderate selection and is explicitly not claimed at this tier; the asset checksums are an SI-family implementation property.
 
+## Group 23 — Accounting L3-adjacent (2 forks)
+
+Extended families carried from the Group 5 union, specified in groups/accounting-l3/UNION-SPEC.md, not implemented:
+- [ ] open — AI / analytics & BI (this group's only claimed Extended family, 1 of 2)
+- [ ] open — Project / program / portfolio management
+- [ ] open — Risk register & GRC suites beyond the separation-of-duties / audit seed
+- [ ] open — Audit-management workbenches
+- [ ] open — Fixed-asset registers
+- [ ] open — Records retention beyond the audit seed
+- [ ] open — Forecasting / EPM
+- [ ] open — Supply chain
+- [ ] open — GovCon / grants specifics
+- [ ] open — Crypto investigation
+- [ ] open — Time tracking
+- [ ] open — E-signature
+- [ ] open — Payroll
+- [ ] open — Tax support
+- [ ] open — Forensic investigation
+
+Members' own domains, not built here (they belong to their own categories' groups): one sibling's LLM / RPA acquisition platform; the other's sovereign cloud / DaaS enclave (a zero-claim sheet in this group: sovereign-cloud prose, full text preserved, nothing invented).
+
+Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Spec note: the 13 Core functions tag zero claims in this group and stay Core under the recorded core-boundary decision (the Merge Rule carries the L2 union upward whole; a wording artifact is not a downgrade).
+
 ## Later groups
 
 Each group appends its section here when it ships.

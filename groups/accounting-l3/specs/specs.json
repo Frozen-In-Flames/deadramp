@@ -1,0 +1,49 @@
+[
+ {
+  "fork_id": "FR1819254092A",
+  "vendor": "Citrix Systems, Inc.",
+  "product": "Citrix for Government - High",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "Citrix for Government (Citrix Cloud Government) is a sovereign cloud environment that is isolated from and operates independently of Citrix Cloud. These services enable U.S. government agencies and other customers in support of Public Sector to use Citrix Cloud Government in accordance with applicable regulatory and compliance requirements. Citrix Cloud Government operates within defined geographic boundaries and stores and replicates services and data to deliver Citrix cloud services. Citrix uses multiple public or private cloud environments located in one or more U.S. states to provide these services. \n\nCitrix for Government consists of the following components: \n\nThe Citrix Cloud platform provides centralized administration for Citrix services. It enables customers to create, manage, and deploy workspaces\u2014including applications and data\u2014to end users from a single console, while connecting to customer resources across any cloud or infrastructure of their choice. \n\nCitrix DaaS (Desktop as a Service) provides virtualization capabilities that support the management of virtual machines, desktops, applications, and security controls, while enabling users to access resources from any location and on a wide range of devices. This hybrid cloud solution provides secure access to virtual applications, desktops, and data across cloud and on-premises infrastructure.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1819254092A/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1819254092A"
+ },
+ {
+  "fork_id": "FR2514023311",
+  "vendor": "Trenchant Analytics",
+  "product": "AI for Federal Acquisitions (ACQBOT)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Accounting",
+  "description": "ACQBOT is delivered as a SaaS offering using a multi-tenant Government Only Community cloud computing environment. It is available to DoD, federal, state, local, and tribal governments, as well as research institutions, federal contractors, and other government contractors. The system is a browser-based application with no components that need to be installed on the customer site and no mobile app. ACQBOT uses the latest Large Language Model (LLM) generative capabilities paired with intuitive workflows and Robotic Process Automation (RPA) to connect a government AI-Powered acquisition system with an industry AI-Powered proposal platform. The coupled capabilities enhance the extensive user requirement development, market research, Sources Sought, RFI, determination of set-aside, solicitation, award, and contracting processes and shorten them to days or hours.",
+  "functions_claimed": [
+   {
+    "function_id": "workflow_approvals",
+    "function": "Workflow & approvals",
+    "evidence": "ACQBOT uses the latest Large Language Model (LLM) generative capabilities paired with intuitive workflows and Robotic Process Automation (RPA) to connect a government AI-Powered acquisition system with an industry AI-Powered proposal platform."
+   },
+   {
+    "function_id": "ai_analytics",
+    "function": "AI, analytics & business intelligence",
+    "evidence": "ACQBOT uses the latest Large Language Model (LLM) generative capabilities paired with intuitive workflows and Robotic Process Automation (RPA) to connect a government AI-Powered acquisition system with an industry AI-Powered proposal platform."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2514023311/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2514023311"
+ }
+]
