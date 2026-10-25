@@ -1,0 +1,85 @@
+[
+ {
+  "fork_id": "F1206061351",
+  "vendor": "Oracle",
+  "product": "Oracle Service Cloud (OSvC)",
+  "service_model": [
+   "IaaS",
+   "PaaS",
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Customer Relations Management (CRM)",
+   "Customer Service"
+  ],
+  "deadramp_category": "CRM",
+  "description": "The Oracle Service Cloud is Oracle's premier Software as a Service (SaaS) solution providing the industry's best in class customer service platform for enterprise customers. Oracle Service Cloud is deployed onto a robust, secure infrastructure hosting Oracle's patented CX software applications in an environment accredited to FedRAMP-Moderate specifications. The Oracle Service Cloud leverages a fault-tolerant core application framework offering flexible add-on modules providing customers with a customizable, out-of-the-box feature set to support both customer-facing and customer service agent-facing functions. The Oracle Service Cloud is offered as a hosted cloud solution (i.e., operated and maintained by Oracle within its secure hosting environment at co-location facilities in the United States) providing customers with a modern, efficient and secure cloud solution via a proven Software as a Service (SaaS) delivery model.",
+  "functions_claimed": [
+   {
+    "function_id": "case_service_records",
+    "function": "Customer service cases & service platform",
+    "evidence": "The Oracle Service Cloud is Oracle's premier Software as a Service (SaaS) solution providing the industry's best in class customer service platform for enterprise customers."
+   },
+   {
+    "function_id": "configuration_extensibility",
+    "function": "Modules, customization & codeless configuration",
+    "evidence": "The Oracle Service Cloud leverages a fault-tolerant core application framework offering flexible add-on modules providing customers with a customizable, out-of-the-box feature set to support both customer-facing and customer service agent-facing functions."
+   },
+   {
+    "function_id": "hosting_delivery",
+    "function": "Hosting / SaaS delivery platform",
+    "evidence": "The Oracle Service Cloud is offered as a hosted cloud solution (i.e., operated and maintained by Oracle within its secure hosting environment at co-location facilities in the United States) providing customers with a modern, efficient and secure cloud solution via a proven Software as a Service (SaaS) delivery model."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1206061351/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1206061351"
+ },
+ {
+  "fork_id": "FR1935661915",
+  "vendor": "WalkMe, Inc",
+  "product": "WalkMe DAP",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "CRM",
+  "description": "WalkMe maximizes and accelerates the impact of your digital transformation strategy by driving user adoption of your digital assets. Leverage WalkMe’s Digital Adoption Platform to constantly identify gaps and problem areas, and drive users to success, codelessly, and without changes to your underlying platforms.The WalkMe Digital Adoption Platform (DAP) system adapts software and websites to meet the needs of employees, customers & citizens. The WalkMe DAP system creates a consistent user experience, streamlining productivity and engagement while reducing costs.  The WalkMe FedRAMP offering is specific to federal customers and is built on a dedicated government environment.",
+  "functions_claimed": [
+   {
+    "function_id": "guidance_adoption",
+    "function": "User guidance & digital adoption",
+    "evidence": "WalkMe maximizes and accelerates the impact of your digital transformation strategy by driving user adoption of your digital assets."
+   },
+   {
+    "function_id": "gap_identification",
+    "function": "Gap & problem-area identification",
+    "evidence": "Leverage WalkMe’s Digital Adoption Platform to constantly identify gaps and problem areas, and drive users to success, codelessly, and without changes to your underlying platforms"
+   },
+   {
+    "function_id": "engagement_tracking",
+    "function": "Engagement & productivity tracking",
+    "evidence": "The WalkMe DAP system creates a consistent user experience, streamlining productivity and engagement while reducing costs."
+   },
+   {
+    "function_id": "configuration_extensibility",
+    "function": "Modules, customization & codeless configuration",
+    "evidence": "Leverage WalkMe’s Digital Adoption Platform to constantly identify gaps and problem areas, and drive users to success, codelessly, and without changes to your underlying platforms"
+   },
+   {
+    "function_id": "hosting_delivery",
+    "function": "Hosting / SaaS delivery platform",
+    "evidence": "The WalkMe FedRAMP offering is specific to federal customers and is built on a dedicated government environment."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1935661915/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1935661915"
+ }
+]
