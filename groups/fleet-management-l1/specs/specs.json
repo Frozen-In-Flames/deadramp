@@ -1,0 +1,100 @@
+[
+ {
+  "fork_id": "FR2226146186",
+  "vendor": "Agile Fleet",
+  "product": "FleetCommander",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Low",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Fleet Management",
+  "description": "FleetCommander is a robust, customizable Fleet Management Information System (FMIS). \nThe platform offers seamless vehicle reservation capabilities, along with tools to analyze and forecast fleet demand and capacity. It also streamlines data collection for odometer readings, driver credentials, check-in and check-out activity, and more. With intuitive reporting and analytics features, FleetCommander provides the visibility and control needed to optimize fleet utilization, enhance compliance, and support data-driven decision-making.",
+  "functions_claimed": [
+   {
+    "function_id": "vehicle_registry",
+    "function": "Vehicle & asset registry",
+    "evidence": "FleetCommander is a robust, customizable Fleet Management Information System (FMIS)."
+   },
+   {
+    "function_id": "vehicle_reservation",
+    "function": "Vehicle reservation & assignment",
+    "evidence": "The platform offers seamless vehicle reservation capabilities, along with tools to analyze and forecast fleet demand and capacity."
+   },
+   {
+    "function_id": "checkin_checkout",
+    "function": "Check-in / check-out activity records",
+    "evidence": "It also streamlines data collection for odometer readings, driver credentials, check-in and check-out activity, and more."
+   },
+   {
+    "function_id": "usage_metering",
+    "function": "Usage & odometer records",
+    "evidence": "It also streamlines data collection for odometer readings, driver credentials, check-in and check-out activity, and more."
+   },
+   {
+    "function_id": "operator_records",
+    "function": "Operator / driver credential & account records",
+    "evidence": "It also streamlines data collection for odometer readings, driver credentials, check-in and check-out activity, and more."
+   },
+   {
+    "function_id": "demand_forecasting",
+    "function": "Demand & capacity forecasting",
+    "evidence": "The platform offers seamless vehicle reservation capabilities, along with tools to analyze and forecast fleet demand and capacity."
+   },
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting & analytics",
+    "evidence": "With intuitive reporting and analytics features, FleetCommander provides the visibility and control needed to optimize fleet utilization, enhance compliance, and support data-driven decision-making."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2226146186/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2226146186"
+ },
+ {
+  "fork_id": "FR2332984245",
+  "vendor": "ChargePoint, Inc.",
+  "product": "CP Fed Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Fleet Management",
+  "description": "The information system manages the use of and processes the transactions/ sessions for electric vehicle charging for stations sold to US federal and associated customers. The cloud information system communicates with charging stations located at client sites, facilitating interactions between public and government users and the charging infrastructure, establishes/ initiates charging sessions, and accepts payments and/or account authorization for station use. The system stores customer/ organizational information to provide services to the end user/ customer/ organization. The system identifies and validates authorized users of the charging infrastructure and updates user/ organizational account with usage statistics.",
+  "functions_claimed": [
+   {
+    "function_id": "usage_metering",
+    "function": "Usage & odometer records",
+    "evidence": "The system identifies and validates authorized users of the charging infrastructure and updates user/ organizational account with usage statistics."
+   },
+   {
+    "function_id": "operator_records",
+    "function": "Operator / driver credential & account records",
+    "evidence": "The system stores customer/ organizational information to provide services to the end user/ customer/ organization."
+   },
+   {
+    "function_id": "ev_charging",
+    "function": "EV charging stations & sessions",
+    "evidence": "The information system manages the use of and processes the transactions/ sessions for electric vehicle charging for stations sold to US federal and associated customers."
+   },
+   {
+    "function_id": "payment_processing",
+    "function": "Payment processing",
+    "evidence": "The cloud information system communicates with charging stations located at client sites, facilitating interactions between public and government users and the charging infrastructure, establishes/ initiates charging sessions, and accepts payments and/or account authorization for station use."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Access control & user validation",
+    "evidence": "The system identifies and validates authorized users of the charging infrastructure and updates user/ organizational account with usage statistics."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2332984245/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2332984245"
+ }
+]
