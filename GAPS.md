@@ -675,6 +675,19 @@ The fork's own substance is a cloud infrastructure platform, platform layer rath
 
 The Group 31 category union's extended families (instant disbursement execution / payment rails, travel booking execution engines, financial wellness delivery tools, streaming / real-time reporting pipelines) are already registered under Group 31 and are not re-registered here. Baseline gaps at High: MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13 — the build explicitly does NOT inherit the fork's FIPS posture; stdlib is not a validated module); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Platform-layer: multi-tenancy (the fork operates multi-tenant regions in reality; single-tenant reference deployment); TLS only when configured; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: zero claims tag for this fork (region prose — ITAR, sovereignty, data-center inventory; not even the hosting family tags, and the category name in its business_categories list is a filing label, not a claim); all eleven core functions are carried, not claimed, under the Merge Rule. Named absences for the category at both tiers (not built, not gaps): banking integration & account verification, payroll integration & wage calculation, lending & credit, trading & investment execution, tax reporting & remittance, GRC platform functions.
 
+## Singleton 41 — Customer Service L3-adjacent (1 fork)
+
+The fork's own substance is a virtualized-environment hosting platform, specified in groups/customer-service-l3/UNION-SPEC.md, not implemented:
+- [ ] open — Virtualization & cloud hosting platform (IaaS / PaaS / SaaS in one High boundary; the product itself)
+- [ ] open — Authorization acceleration & control inheritance (assessment reuse across hosted customers)
+- [ ] open — Continuous monitoring & SOC operations (24/7 SOC)
+- [ ] open — Vulnerability management & patching operations
+- [ ] open — Incident response operations (hosting boundary)
+- [ ] open — Migration & lift-and-shift services (legacy / COTS, hybrid cloud)
+- [ ] open — Hosted third-party application ecosystem (each catalogue application is its own vendor's product)
+
+The Group 26/27 category union's extended families (event detection & orchestration engines, automation execution engines, GRC platform, real-time channels, AI assistance, SLA policy engine, notification delivery, reporting / analytics engines) are already registered under Groups 26 and 27 and are not re-registered here. Named absences at every tier (not gaps): knowledge base articles; satisfaction / CSAT surveys. Baseline gaps at High: MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13 — the fork's "FIPS PUB 199 High" wording is an impact categorization, not a validated-module claim, and the build inherits neither reading); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Platform-layer: multi-tenancy (the fork is inherently multi-agency; the build is a single-tenant reference deployment); TLS only when configured; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: zero claims tag for this fork — its description's trailing catalogue of roughly twenty third-party hosted applications was excluded before matching (matching it would have manufactured six family hits, every one from another vendor's blurb), and its own prose is hosting-boundary prose; the source record does not even self-categorize the fork. All ten core functions are carried, not claimed, under the Merge Rule.
+
 ## Later groups
 
 Each group appends its section here when it ships.
