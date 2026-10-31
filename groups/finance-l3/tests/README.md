@@ -185,3 +185,46 @@ a `budget_set` action (finance has no CRM `search` action).
 - The AC-7 expiry test uses a separate server with
   `lockout_seconds=1` and a real 1.2-second sleep (the proven
   CRM L3 approach); no clock is monkeypatched.
+
+## Remainder addition (unit `addition:finance-l3`)
+
+The suite grows **249 → 259 tests** with `tests/test_additions.py`
+(10 tests), pinning the remainder addition (OneStream Cloud -
+High, `FR1721059275A`) spec'd under the group's verbatim
+8-family taxonomy: sheet count / append order / membership
+against `remainder.json`, the literal claim tables (founding
+fork empty, as shipped; newcomer `reporting` +
+`hosting_platform`), verbatim evidence with the first-match rule
+pinned (a second `reporting` sentence exists and is not the
+evidence), the single census citation verifying verbatim and
+equal to the `reporting` evidence, the near-miss pins
+("budgeting" is not the `spend` token; integration prose is not
+the `api_platform` verbatim phrase; the hosting claim rests on
+"SaaS offering" alone), the named-absence token pins (the
+standing trading & investment execution absence stands — no
+trading token of any kind), and three substrate cases in the
+newcomer's shape (a period-close consolidation into
+spend-vs-budget and the on-read summary, to the cent; float /
+boolean amounts rejected whole; an over-cap request rejected
+whole). See `ADDENDUM.md`.
+
+**Drill re-runs in this tree (additions).** Both signature
+drills were re-run against the enlarged suite. Drill 1 (earned
+cap): the comparison in `_check_access_cap` was patched out as
+a scoped replacement (target asserted to occur exactly once) —
+**259 tests ran, exactly 6 failed**: the shipped drill's 5
+(`test_earned_wage` ×2, `test_negative_control` ×2,
+`test_service` over-cap) plus exactly 1 from the additions
+module,
+`test_additions.TestOneStreamSubstrate.test_over_cap_request_rejected_whole`.
+Drill 2 (audit verifier): `verify_chain` patched to return
+`(True, None)` unconditionally (scoped replacement, target
+asserted once) — the audit test files ran (**47 tests, exactly
+4 failed**), the identical failure set to the shipped drill 2
+record above. Both files were restored from pre-mutation
+copies in `scratch/` (`store.py.premutation-additions`,
+`audit.py.premutation-additions`) and verified SHA-256-identical
+to the shipped hashes (`6ec44f3c…` / `c027a74b…`); the full
+suite re-ran green after each restore. Raw failure lists:
+`scratch/additions_mutation_run.txt`,
+`scratch/additions_mutation_audit_run.txt`.

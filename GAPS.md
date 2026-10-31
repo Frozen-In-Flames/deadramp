@@ -1190,6 +1190,15 @@ New gap functions: none — every function the addition fork describes is claime
 
 Existing gaps gaining members from this fork: remote proctoring & identity proofing gains the proctoring half IN SUBSTANCE (the fork names its own online proctoring platform; no taxonomy family exists for proctoring, so no claim fired — the absence retires as a substance finding and survives as a claims absence, now 0 of 9); assessment delivery & test-driver engines gain a claim-backed member (the fork claims assessments and its whole function is test-driver delivery; the scoring half gains no claimant — no score or grade wording anywhere); reporting / analytics engines gain a claim-backed member at the records level. Explicitly no claimant: identity proofing, deterministic scoring & AI grading, integrations & APIs (no "api" substring at all — absence survives 0 of 9), notifications & reminders (survives 0 of 9 despite the fork scheduling sessions). Citation note: of the fork's two census citations, one verifies strict-verbatim and is itself a claim evidence sentence; the second verifies only whitespace-normalized (the cached source text carries a line break inside it) — neither is load-bearing, and both facts are pinned in the group's tests exactly as measured.
 
+## Remainder Addition — Finance L3-adjacent (+1 fork)
+
+New extended functions from the addition fork, specified in groups/finance-l3/ADDENDUM.md, not implemented:
+- [ ] open — Corporate performance management (CPM) engine: consolidation, planning, budgeting, and forecasting as computation (registered with claim adjacency — the fork claims reporting in its records form; the computation layer is Extended. Recorded as DISTINCT from the federal financial management system of record gap registered at L2: CPM layer versus general-ledger system of record, on the L2 addition's own non-conflation precedent)
+- [ ] open — Data integration & connector surface: ERP integration and Office / spreadsheet add-in connectivity (asserted in substance; the API-platform family's verbatim phrase is absent, so no claim fired)
+- [ ] open — Solution marketplace & application extensibility: a marketplace of add-on solutions over the platform (asserted in substance from the fork's own marketplace prose)
+
+Existing gaps gaining claimants: none — streaming / real-time reporting pipelines explicitly gain none (no real-time token; the claimed reporting is the on-read records form). Named absences all stand at this tier, token-verified: trading & investment execution (no trade / invest / execute token — forecasting is planning prose, not execution), banking, payroll, lending & credit, tax, GRC platform. Platform notes recorded for the fork (its own cloud hosting, fault-tolerant architecture, client distribution) with nothing inherited by the build; its hosting posture does not transfer and the SC-13 gap stands.
+
 ## Later groups
 
 Each group appends its section here when it ships.

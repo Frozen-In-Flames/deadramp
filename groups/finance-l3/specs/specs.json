@@ -29,5 +29,34 @@
   "functions_claimed": [],
   "source_url": "https://www.fedramp.gov/marketplace/products/F1603047866/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1603047866"
+ },
+ {
+  "fork_id": "FR1721059275A",
+  "vendor": "OneStream Software",
+  "product": "OneStream Cloud - High",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Finance",
+  "description": "OneStream is a Corporate Performance Management (CPM) platform designed to support financial consolidation, reporting, planning, budgeting, and forecasting. Delivered as a SaaS offering, the OneStream Government Community Cloud is hosted via Microsoft Azure Government and tailored to meet the needs of federal, state, local, and tribal governments as well as research institutions and government contractors. The platform is built on a fault-tolerant, 64-bit architecture, ensuring high availability and scalability through multiple web and application servers.\n\nThe OneStream App for Windows is deployed using Microsoft ClickOnce Infrastructure or manual installation via an installation package provided by OneStream (OneStream Desktop). OneStream integrates with Microsoft Office through an Excel add-in, allowing users to interact with data and workflows directly within spreadsheets. The platform also supports data integration from multiple ERP and financial systems, enabling streamlined financial reporting and analysis.\n \nOneStream also offers customers the option to extend their application to address frequently faced business challenges through pre-packaged CPM solutions via the OneStream Solution Exchange. Customers who leverage Solution Exchange to install applications developed by OneStream or a third party are responsible for determining if the solution meets customer requirements prior to installation.",
+  "functions_claimed": [
+   {
+    "function_id": "reporting",
+    "function": "Reporting & analytics",
+    "evidence": "OneStream is a Corporate Performance Management (CPM) platform designed to support financial consolidation, reporting, planning, budgeting, and forecasting."
+   },
+   {
+    "function_id": "hosting_platform",
+    "function": "SaaS / cloud delivery (platform note)",
+    "evidence": "Delivered as a SaaS offering, the OneStream Government Community Cloud is hosted via Microsoft Azure Government and tailored to meet the needs of federal, state, local, and tribal governments as well as research institutions and government contractors."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1721059275A/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1721059275A"
  }
 ]

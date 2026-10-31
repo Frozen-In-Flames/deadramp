@@ -284,3 +284,23 @@ certifies organizations.
   this build is a single-tenant reference deployment). Demo
   identities are hooks, not an IdP (IA-2 stays with the embedding
   organization).
+
+## Remainder addition
+
+Per [`ADDENDUM.md`](ADDENDUM.md) (unit `addition:finance-l3`):
+**OneStream Cloud - High** (OneStream Software, FedRAMP High /
+Certified) joins the group as its second fork — previously
+uncategorized in the source, assigned to Finance by the
+remainder census from its own description. Under the group's
+verbatim taxonomy it carries the group's **first claims**:
+`reporting` (substantive, its first-named finance function) and
+`hosting_platform` (the platform-note family, on the verbatim
+phrase "SaaS offering"; the delivery form is recorded, no
+hosting posture is inherited). The founding fork's zero-claim
+sheet stands exactly as shipped. The core is unchanged
+(byte-identical `src/`); its headline CPM engine, its
+integration surface, and its solution marketplace are
+registered as gaps in the addendum. Tests: **249 → 259**, all
+passing, with both signature mutation drills re-run in this
+tree (earned cap: exactly 6 failures under mutation; audit
+verifier: exactly 4).
