@@ -14,7 +14,7 @@ overlap.
 
 ```bash
 cd groups/grc-l3
-PYTHONPATH=src python3 -m unittest discover -s tests        # 166 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 180 tests
 ```
 
 (Run exactly as above: helpers are imported as a top-level module
@@ -45,6 +45,7 @@ Status at delivery: **166 tests, OK** (118 inherited from Group 33,
 | `test_audit_failure.py` | 7 | **[L3] AU-5** fail closed: `AuditWriteError` rollback in `record()`, store create/evidence-id/transition roll back in full (no record, no id consumed), service create is not a success |
 | `test_lockout.py` | 6 | **[L3] AC-7** unsuccessful logon lockout over HTTP: threshold, `auth:locked` audit, per-user scope, success resets counter, lock expiry |
 | `test_negative_control.py` | 5 | Negative control #1 (below), unchanged from Group 33 |
+| `test_additions.py` | 14 | Remainder addition (unit `addition:grc-l3`) — spec integrity for the appended Exiger sheet (count/order/membership, the original claim table standing, the literal **zero-claim** table and whole-taxonomy zero-claim set, tier fields, verbatim description, census citation accounting, no-exclusion pin, `policy_management` absence pin, near-miss pins) + 2 substrate cases (third-party finding with read-time derivation; evidence verify-by-content with reviewer separation + verbatim indicator result) |
 | `grc_helpers.py` | — | Shared fixtures: demo users (ADMIN=alice/admin, MEMBER=bob/member, VIEWER=carol/viewer, **[L3]** AUDITOR=dana/auditor), `USERS_REGISTRY` (incl. dana), `make_store()` (store + one governed system `SYS-001` + one indicator `KSI-1` → IA-2), `fresh_store()`, `make_system()`, `make_indicator()`, `make_finding()` |
 | `store.py.premutation` | — | Pre-mutation copy of `../src/grc/store.py` used by the mutation drill below (SHA-256 recorded there) |
 
@@ -229,3 +230,35 @@ L3-specific notes:
   `DEMO_USERS` (there is no service-level `USERS` dict in this
   package, unlike CRM's); the HTTP tests pass `USERS_REGISTRY` from
   `grc_helpers` explicitly, as the Group 33 suite did.
+
+## Remainder addition — drill re-runs (unit `addition:grc-l3`)
+
+The addition changes no core code (`src/` byte-identical), so both
+signature drills were re-run in this tree against the enlarged
+suite (180 tests). Raw outputs in `../scratch/
+additions_mutation_run.txt` and `../scratch/
+additions_mutation_audit_run.txt`.
+
+**Drill 1 re-run — status derivation.** `derive_finding_status`
+in `src/grc/store.py` patched so the overdue branch never fires
+(`if _coerce_as_of(as_of) > due:` → `if False:`; the line occurs
+exactly once in the file, count asserted before patching). The
+full suite ran: **180 tests, exactly 9 failures** — the shipped
+drill's identical 8 plus exactly 1 from the additions module,
+`test_additions.TestAdditionSubstrateCases.
+test_exiger_third_party_finding_derivation`, tripping on the
+mutant exactly as designed. `store.py` was restored from
+`../scratch/store.py.premutation` and verified SHA-256-identical
+to the shipped hash (`0fe88eb1…`); the suite re-ran green.
+
+**Drill 2 re-run — audit verifier.** `AuditLog.verify_chain` in
+`src/grc/audit.py` patched to return `(True, None)`
+unconditionally (scoped insert at the verifier's head, occurrence
+count asserted = 1). The four audit test files ran: **42 tests,
+exactly 4 failures** — the shipped drill's identical set
+(mutated-entry control, broken link, missing hash fields,
+edited-JSONL reload). The additions module adds no audit-chain
+case, so it adds no failure here. `audit.py` was restored from
+`../scratch/audit.py.premutation` and verified SHA-256-identical
+to the shipped hash (`df7b1ef9…`); the full suite re-ran green:
+**180 tests, OK**.

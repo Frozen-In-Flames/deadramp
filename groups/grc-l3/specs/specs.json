@@ -27,5 +27,23 @@
   ],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2009746321/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2009746321"
+ },
+ {
+  "fork_id": "FR2122140784A",
+  "vendor": "Covergent Solutions Inc dba Exiger Government Solutions (EGS)",
+  "product": "Exiger Federal Cloud (EFC) - High",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "Exiger Government Solutions (EGS) developed a Software-as-a-Service (SaaS) product named 1Exiger which provides access to multiple modules - Due Diligence Intelligence (DDIQ), Third Party Management (3PM), Supply Dynamics (SDX), and Analytics.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2122140784A/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2122140784A"
  }
 ]

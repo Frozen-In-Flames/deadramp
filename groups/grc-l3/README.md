@@ -199,6 +199,25 @@ inside inherited files for the uplifts, 41 in new uplift files),
 including two mutation-verified negative controls — the status
 derivation and the audit-chain verifier (see `tests/README.md`).
 
+## Remainder addition (unit `addition:grc-l3`)
+
+The group now specs **2 forks**: the remainder census added
+**Exiger Federal Cloud (EFC) - High** (Covergent Solutions Inc
+dba Exiger Government Solutions (EGS), FedRAMP High / Certified)
+as a second spec sheet. Under the group's 14-family taxonomy
+applied verbatim it claims **0 functions** — a zero-claim fork:
+its entire marketplace description is one sentence naming its
+own product and four modules (Due Diligence Intelligence, Third
+Party Management, Supply Dynamics, Analytics), and no functional
+pattern phrase of any family appears in it. The group total
+stays **2 claims** (1 of 2 forks claiming); the named absence
+`policy_management` survives at this tier (0 of 2). The core is
+unchanged (`src/` byte-identical); the addition brings 14 new
+spec-integrity and substrate tests — **180 tests, OK** — and
+both signature drills were re-run in this tree (derivation:
+exactly 9 failures under mutation; audit verifier: exactly 4).
+Full account in [`ADDENDUM.md`](ADDENDUM.md).
+
 ## Control mapping summary
 
 Against the NIST SP 800-53 Rev. 5 **High** baseline families (this
