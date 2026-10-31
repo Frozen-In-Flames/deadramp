@@ -1,0 +1,44 @@
+[
+ {
+  "fork_id": "FR2113157410",
+  "vendor": "Public Health Foundation",
+  "product": "TRAIN Learning Network",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "Low",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Learning Management",
+  "description": "The Public Health Foundation’s TRAIN Learning Network is a Learning Management System (LMS) powered by KMI Learning’s flexible, scalable LMS. It brings together best-in-class training in public health, population health, and emergency preparedness through its extensive network of government agencies, academic institutions, nonprofits, and professional associations. As a secure, multi-tenant SaaS solution, TRAIN provides each agency or organization with a branded portal and the flexibility to restrict access to its training content internally or make it available across the entire TRAIN community. TRAIN administrators are able to create and post courses, link to external training, track and report on learner activity, manage continuing education, award certificates, and communicate directly with registered learners. The system also offers a streamlined LMS experience for organizations outside of public health, and all organizations can take advantage of custom feature development and system integrations.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2113157410/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2113157410; description whitespace normalized (words verbatim)"
+ },
+ {
+  "fork_id": "FR2135043135",
+  "vendor": "SRR International,Inc.",
+  "product": "CloudLCMS",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Learning Management",
+  "description": "The CloudLCMS is a rapid authoring learning content management platform. The CloudLCMS produces fully 508 compliant eLearning courses that are able to be exported in SCORM 1.2, 2004, xAPI and HTML. The courses are fully responsive and utilize a deep scrolling design that will function on all modern PC and mobile platforms. The system is a collaborative environment that allows developers to work together with a team or individually. The CloudLCMS allows for custom themes and menus along with plugins to extend functionality within training courses.",
+  "functions_claimed": [
+   {
+    "function_id": "content_standards_distribution",
+    "function": "Content standards & distribution (SCORM / AICC / cmi5)",
+    "evidence": "The CloudLCMS produces fully 508 compliant eLearning courses that are able to be exported in SCORM 1.2, 2004, xAPI and HTML."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2135043135/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2135043135; description whitespace normalized (words verbatim)"
+ }
+]
