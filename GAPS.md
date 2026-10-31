@@ -1161,6 +1161,13 @@ New extended function from the addition fork, specified in groups/customer-servi
 
 Existing gap gaining a member by substance: knowledge base articles / self-service gains the addition fork, which asserts "self-service" in its own words — while the claim-level named absence stands (0 of 3 forks claim the knowledge base family, the phrase missing the family's operative word "article"). Explicitly no claimant: real-time channels (stays 0 of 3 — the fork is known for live chat but its listing carries no channel token; reputation is not evidence), AI assistance / deflection (no AI token), satisfaction / CSAT surveys (absence untouched). The enlarged group's floor changes, stated plainly: the union spec's "no fork has zero claims" no longer holds — 1 of 3 forks claims zero, and the group total stays 8.
 
+## Remainder Addition — Cybersecurity L1 (+1 fork)
+
+New extended function from the addition fork, specified in groups/cybersecurity-l1/ADDENDUM.md, not implemented:
+- [ ] open — Crowdsourced security testing & disclosure coordination platform: researcher-community marketplace, engagement management, and disclosure coordination (registered from the fork's described function; no taxonomy family exists for it — vulnerability management is scanning tooling and application security is testing engines, and a human researcher marketplace is neither. The findings its engagements produce are ingestible by the Core today)
+
+Explicitly no claimant, recorded because the product name makes this the easy place to cheat: application security testing engines (the name says "Security Testing," the description never does; the substance is booked once, under the new gap, not double-booked), vulnerability scanners (the fork runs no scan), detection engines / staffed SOC (no marker). The enlarged group's floor changes, stated plainly: the union spec's "no zero-claim forks" no longer holds — 1 of 6 forks claims zero, and the group total stays 13. All 17 zero-count families remain at 0 of 6.
+
 ## Later groups
 
 Each group appends its section here when it ships.

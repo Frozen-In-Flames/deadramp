@@ -160,5 +160,23 @@
   ],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR1817874315/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1817874315"
+ },
+ {
+  "fork_id": "FR1919750997",
+  "vendor": "HackerOne",
+  "product": "HackerOne Continuous Security Testing Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "HackerOne is a multi-tenant Vulnerability Disclosure and crowdsourced Bug Bounty platform. Organizations rely on HackerOne to detect unknown security vulnerabilities in public-facing systems as well as sensitive assets that are not publicly disclosed. This is done by giving customers access to the world\u2019s largest community of crowdsourced security researchers. Researchers then conduct remote, internet based, crowdsourced vulnerability discovery and disclosure services against internet-accessible assets, including public-facing websites, networks, systems, and applications.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1919750997/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1919750997"
  }
 ]

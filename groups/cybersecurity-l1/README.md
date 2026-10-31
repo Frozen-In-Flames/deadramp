@@ -279,3 +279,28 @@ Further, plainly:
   certification**, and it does not claim either. The control mapping
   above states which baseline families the build's features answer
   to; nothing more.
+
+## Remainder addition
+
+**Unit `addition:cybersecurity-l1`** (see
+[`ADDENDUM.md`](ADDENDUM.md)): **HackerOne / HackerOne Continuous
+Security Testing Platform** (`FR1919750997`, LI-SaaS / FedRAMP
+Certified, previously uncategorized in the source) is appended as
+the group's **6th spec sheet**. Under the group's 25-family
+taxonomy applied verbatim it is a **zero-claim fork** — its
+three-sentence vulnerability-disclosure / bug-bounty description
+produces no raw hit in any family (the word "testing" appears
+only in its product name, which is never matched) — so the group
+total stays **13 claims**, **5 of 6** forks claim, the union
+spec's "no zero-claim forks" floor no longer holds (recorded
+plainly in the addendum), and the composition is now Low 4 +
+LI-SaaS 2 with the baseline unchanged. Its described function —
+a crowdsourced security testing & disclosure coordination
+platform — is registered as a new gap in the addendum; no
+existing gap gains a claimant. The core is unchanged: `src/` is
+byte-identical to the shipped build (all 8 modules
+SHA-256-verified), and the suite is now **205 tests, OK**,
+including the additions module; the severity-blind scoring drill
+was re-run in this tree and failed exactly 32 tests (the shipped
+31 plus 1 additions case), with `store.py` restored
+byte-identical.

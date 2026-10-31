@@ -96,6 +96,7 @@ entry point for this group.)
 | `test_service.py` | 9 API access — live HTTP server on an ephemeral port: `/health`, 401 unknown user and role mismatch, 403 viewer ingesting, full flow (asset → finding → bulk → CSV → transition → assign → risk → risk transition → control assess → posture → search → audit), `audit_read` admin-only over HTTP, denied attempts audited with `:denied` |
 | `test_main_cli.py` | `python -m cyber serve` subprocess with demo users alice/bob/carol answering `/health`, `/assets`, `/posture` and `/audit` |
 | `test_negative_control.py` | Negative control (below) |
+| `test_additions.py` | Remainder addition (unit `addition:cybersecurity-l1`) — spec-integrity pins for the appended HackerOne sheet (zero-claim: literal empty claim table, the all-25 zero-claim set, the originals' claim tables exactly as shipped, census citations verified but tagging nothing, near-miss pins, group totals) + 2 substrate cases (researcher-disclosure flow with severity-scored ingest, triage, and posture counts; bulk disclosure batch, atomic, control-linked) |
 | `cyber_helpers.py` | Shared fixtures: demo users (ADMIN=alice/admin, ANALYST=bob/analyst, VIEWER=carol/viewer), `make_store()` building a CyberStore + AuditLog + one asset (`core-server-01`, criticality high) + one ingested finding (high severity, score 6.0/high), plus `fresh_store()`, `make_asset()`, `sample_finding_item()`, `ingest_sample_finding()` and `create_sample_risk()` |
 
 ## Negative control
@@ -152,6 +153,27 @@ copied from Group 4's record:
    verified identical to the pre-mutation hash and to the Group 4
    L2 original (`diff` empty).
 5. **Re-run green:** **194 tests, OK**.
+
+### Remainder addition re-verification (unit `addition:cybersecurity-l1`)
+
+The drill above was re-run in this tree after the HackerOne
+remainder addition (see `../ADDENDUM.md`), the core being
+unchanged: the same severity-blind constant-3 mutant was applied
+to the same scoring line in `src/cyber/store.py` (the line was
+asserted to occur exactly once before patching; pre-mutation copy
+at `../scratch/store.py.premutation-additions`) and the full
+suite ran — **205 tests ran, exactly 32 failed**: the 31 failures
+recorded above plus exactly 1 from the new additions module
+(`test_additions.TestHackerOneSubstrate.test_researcher_findings_scored_triaged_and_counted`).
+The failure set was compared both directions against the shipped
+drill's list (`../scratch/shipped_drill_failures.txt`): no
+shipped failure is missing from the mutant run, and no other new
+failure appeared. `store.py` was restored from the pre-mutation
+copy and verified SHA-256-identical
+(`f692fc74e9366e8fcdf2ba1d869632492676bf55c30fb3dc921bc0c60cedc5de`);
+the suite re-ran green (**205 tests, OK**). Raw output at
+`../scratch/additions_mutation_run.txt`, failure names at
+`../scratch/additions_drill_failures.txt`.
 
 For comparison, Group 4's record for the weight-1 live mutant
 (`score = 1 * CRITICALITY_WEIGHTS[criticality]`) was 30 failures.
