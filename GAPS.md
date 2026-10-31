@@ -1313,6 +1313,23 @@ New extended function from this fork, specified in groups/human-resources-l1/UNI
 
 The carried Group 21 Extended set remains registered once under that group and is not re-registered. Absence accounting at this tier, stated plainly: all six of the category's named absences STAND here, re-probed token-by-token against this fork at zero hits each — leave & time-off, policy acknowledgements, payroll, background checks, salary / compensation, and time & attendance. The two retired at L2 do not retire here: the L2 retirement rested on another fork's own words (leave asserted, and "time, attendance" in its text), this fork contains no leave and no attendance wording at all, and its substance is scheduling, a different function from attendance tracking, so the retirement rests on words this fork does not have. The fork's single claim is recorded at exact weight: the automation family fires on scheduling automation with no AI wording anywhere in its text. One privacy note is recorded in the spec: the substrate holds neither clinician names nor schedules, the two things the real product's records consist of. Core-boundary decision, stated once in the union spec with its price: no core function is claim-supported for this fork — the twelve-function substrate is carried down whole, carried, not claimed.
 
+## Remainder Singleton 63 — Research L1 (1 fork)
+
+New extended functions from this fork, specified in groups/research-l1/UNION-SPEC.md, not implemented — the fork's substance, named rather than forced into the category's data-commons-shaped families:
+- [ ] open — Systematic review automation engine (living systematic reviews)
+- [ ] open — Literature search-strategy execution
+- [ ] open — Title/abstract & full-text screening pipeline
+- [ ] open — Data extraction from studies
+- [ ] open — Quality assessment & regulator verification support
+- [ ] open — Review protocol creation
+- [ ] open — Meta-analysis export
+- [ ] open — Shared dictionary management
+- [ ] open — Project / team / role administration for review programs ("management of projects, teams, roles" is the noun in its text, not the verb the taxonomy's family wants)
+- [ ] open — Customizable review workflows
+- [ ] open — Human-in-the-loop AI suggestion surface
+
+All nine taxonomy families stand at zero for this fork, token-verified; no dataset content of any kind is named in its text (review steps, never contents), no scoring or ranking vocabulary appears ("quality assessment" assesses reviews), and no literature database or methods-standard token appears. The parent group's carried Extended set remains registered once under Singleton 53 and is not re-registered. Core-boundary decision, stated once in the union spec with its price: no core function is claim-supported for this fork — the eleven-function data-commons substrate is carried down whole, carried, not claimed.
+
 ## Later groups
 
 Each group appends its section here when it ships.

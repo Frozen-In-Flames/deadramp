@@ -1,0 +1,20 @@
+[
+ {
+  "fork_id": "FR2207359708",
+  "vendor": "Evidence Prime",
+  "product": "Laser AI",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Research",
+  "description": "LASER is a system automating the development of Living Systematic Reviews using natural language processing (NLP) and artificial intelligence techniques, which synthesizes available knowledge about a given health problem continuously and with minimal human involvement. As a result, LASER speeds up the process of literature reviews, decreases its costs, and improves the quality of the reviews allowing overworked human specialists to focus on the essential elements offloading much of the repetitive tasks to the AI-enabled system. LASER also provides a human-centric user interface, enabling smooth interaction with suggestions provided by the AI.\n\nLASER supports classical systematic reviews as well as enables quick verification of the quality of the reviews by the regulators and the sponsors, makes it possible to perform a larger number of reviews for personalized medicine or the creation of high-quality rapid assessments in the face of epidemics or ecological disasters.\n\nLASER is built with larger organizations in mind, providing a high level of security as well as enterprise-grade management of projects, teams, roles, shared dictionaries, and customizable workflow processes. LASER helps with the following steps of literature reviews: creation of the review protocol, construction and execution of a search strategy, T&A screening, screening of full texts, data extraction, quality assessment, export of data to meta-analysis tools.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2207359708/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22T02:27:38.974Z); product record id FR2207359708"
+ }
+]
