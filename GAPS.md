@@ -1084,6 +1084,20 @@ New extended functions at this tier, specified in groups/learning-management-l1/
 
 The L2 sibling's 26-family taxonomy was applied verbatim at this tier: one claim in two forks (SCORM 1.2 content standards distribution), and TRAIN is a zero-claim fork whose own verbs (multi-tenancy, branded portals, tracking, continuing education, certificates) match none of the L2 fork's literal phrases; its asserted functions are the new gaps above, itemized in the spec rather than claimed.
 
+## Remainder Group 3 — Talent Management L2 (2 forks, new category)
+
+Extended functions from the group's forks, specified in groups/talent-management-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Video interview platform
+- [ ] open — Assessment delivery & scoring engines
+- [ ] open — Predictive I-O models & AI
+- [ ] open — Virtual event platform
+- [ ] open — Pipeline automation engine
+- [ ] open — Analytics & visualization engines (incl. ROI determination)
+- [ ] open — Talent development programs
+- [ ] open — Identity provider / candidate identity verification (IA-2 stays with the embedding organization)
+
+Boundary, stated in the spec: this group is the candidate-facing pre-hire acquisition surface; Human Resources L2 remains the personnel system of record, and no HR forks were imported. Deliberate absences: no communications surface and no integration registry, because neither description claims them; no score field exists anywhere in the build.
+
 ## Later groups
 
 Each group appends its section here when it ships.

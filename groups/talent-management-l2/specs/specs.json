@@ -1,0 +1,110 @@
+[
+ {
+  "fork_id": "FR1831429369",
+  "vendor": "HireVue",
+  "product": "Recruitment Assessments and Video Interviewing",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Talent Management",
+  "description": "HireVue helps global enterprises gain a competitive advantage in the modern talent marketplace with video interviewing software and recruitment assessments. The HireVue platform is transforming the way organizations discover, hire, and develop talent. By combining video interviews with predictive, validated I-O science and artificial intelligence.\n\nBased in Sandy, Utah, HireVue works with more than 700 customers across government and commercial industry, powering millions of annual interviews in over 180 countries. To learn more, visit us at (www.hirevue.com).",
+  "functions_claimed": [
+   {
+    "function_id": "recruiting_hiring_process",
+    "function": "Recruiting & hiring process",
+    "evidence": "The HireVue platform is transforming the way organizations discover, hire, and develop talent."
+   },
+   {
+    "function_id": "video_interviewing",
+    "function": "Video interviewing",
+    "evidence": "HireVue helps global enterprises gain a competitive advantage in the modern talent marketplace with video interviewing software and recruitment assessments."
+   },
+   {
+    "function_id": "recruitment_assessments",
+    "function": "Recruitment assessments",
+    "evidence": "HireVue helps global enterprises gain a competitive advantage in the modern talent marketplace with video interviewing software and recruitment assessments."
+   },
+   {
+    "function_id": "io_science_ai",
+    "function": "Predictive assessment science & AI (I-O science)",
+    "evidence": "By combining video interviews with predictive, validated I-O science and artificial intelligence."
+   },
+   {
+    "function_id": "talent_development",
+    "function": "Talent development",
+    "evidence": "The HireVue platform is transforming the way organizations discover, hire, and develop talent."
+   },
+   {
+    "function_id": "saas_delivery",
+    "function": "Software delivery (platform)",
+    "evidence": "HireVue helps global enterprises gain a competitive advantage in the modern talent marketplace with video interviewing software and recruitment assessments."
+   }
+  ],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR1831429369",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1831429369/"
+ },
+ {
+  "fork_id": "FR2113557839",
+  "vendor": "Yello Dba Recsolu Inc",
+  "product": "Yello Government Recruiting Solution",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Talent Management",
+  "description": "Yello is a talent acquisition software designed to simplify and modernize the recruiting and hiring process. Yello’s technology allows federal government customers 1) Efficiently conduct and manage in-person and virtual recruitment events, 2) Customize, organize, and automate robust and diverse talent acquisition pipelines, and 3) Capture key metrics and visualize data analytics on applicants in real-time so agencies can speed up the hiring process and determine return on investment",
+  "functions_claimed": [
+   {
+    "function_id": "talent_acquisition",
+    "function": "Talent acquisition",
+    "evidence": "Yello is a talent acquisition software designed to simplify and modernize the recruiting and hiring process."
+   },
+   {
+    "function_id": "recruiting_hiring_process",
+    "function": "Recruiting & hiring process",
+    "evidence": "Yello is a talent acquisition software designed to simplify and modernize the recruiting and hiring process."
+   },
+   {
+    "function_id": "recruitment_events",
+    "function": "Recruitment events (in-person & virtual)",
+    "evidence": "Efficiently conduct and manage in-person and virtual recruitment events"
+   },
+   {
+    "function_id": "talent_pipelines",
+    "function": "Talent acquisition pipelines",
+    "evidence": "Customize, organize, and automate robust and diverse talent acquisition pipelines"
+   },
+   {
+    "function_id": "pipeline_automation",
+    "function": "Pipeline automation",
+    "evidence": "Customize, organize, and automate robust and diverse talent acquisition pipelines"
+   },
+   {
+    "function_id": "applicant_analytics",
+    "function": "Applicant metrics & analytics",
+    "evidence": "Capture key metrics and visualize data analytics on applicants in real-time so agencies can speed up the hiring process and determine return on investment"
+   },
+   {
+    "function_id": "analytics_visualization",
+    "function": "Data analytics visualization",
+    "evidence": "Capture key metrics and visualize data analytics on applicants in real-time so agencies can speed up the hiring process and determine return on investment"
+   },
+   {
+    "function_id": "saas_delivery",
+    "function": "Software delivery (platform)",
+    "evidence": "Yello is a talent acquisition software designed to simplify and modernize the recruiting and hiring process."
+   }
+  ],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2113557839",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2113557839/"
+ }
+]

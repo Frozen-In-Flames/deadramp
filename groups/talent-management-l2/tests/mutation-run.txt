@@ -1,0 +1,48 @@
+Mutation verification run — Talent Management L2
+==================================================
+
+Invariant under test: the stage bounds rule (Core 5, SI-10).
+A stage movement's stage_index must always satisfy
+0 <= stage_index < len(stages) for the placement's pipeline,
+enforced by TalentMgmtStore._check_stage_bounds before any
+movement is stored, so a placement's derived current stage
+always names a real stage.
+
+Mutation applied: the body of _check_stage_bounds in
+src/talentmgmt/store.py replaced with
+    return None  # MUTANT (mutation drill)
+
+Pre-mutation store.py SHA-256 (tests/store.py.sha256):
+d81a59e21334fefa7bac2f2d5fc959402763fbd201b9ba3017ecae5fa669b12c
+(pre-mutation copy kept at tests/store.py.premutation)
+
+Result under mutation: Ran 99 tests — FAILED (failures=5).
+
+Failing tests (exactly the ones that exercise the bounds rule):
+  1. test_negative_control.TestNegativeControlStageBounds
+       .test_canonical_expectation_rejects_out_of_bounds_movement
+  2. test_negative_control.TestNegativeControlStageBounds
+       .test_mutant_also_breaks_negative_and_boolean_indices
+  3. test_placements.TestPlacements
+       .test_out_of_bounds_indices_rejected_whole
+  4. test_placements.TestPlacements
+       .test_non_integer_indices_rejected
+  5. test_service.TestService
+       .test_full_flow_and_bounds_over_http
+         (the mutant returned 201 for stage_index 99 over HTTP)
+
+The third negative-control test (test_mutant_would_not_reject)
+passes under the drill by construction: it exercises the test's
+own MutantTalentMgmtStore subclass, whose seam is already a
+no-op; mutating the base class does not change its behavior.
+
+Interpretation: with the seam removed, out-of-bounds, negative,
+and boolean stage indices are silently stored — the derived
+current stage then either cannot be resolved at all (IndexError)
+or silently resolves to the pipeline's last stage (negative
+indexing). The suite catches the removal, so the bounds tests
+test the invariant, not that code ran.
+
+After the run, store.py was restored from
+tests/store.py.premutation and verified byte-identical by
+SHA-256; the full suite is green again (99 tests, OK).
