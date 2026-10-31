@@ -1,0 +1,20 @@
+[
+ {
+  "fork_id": "FR2212912561",
+  "vendor": "Itamar Medical",
+  "product": "Itamar Dispatcher Cloud (IDC)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Health & Wellness",
+  "description": "The Zoll-Itamar Dispatcher Cloud (IDC) supports health care providers conducting home sleep apnea tests utilizing the WatchPAT device. The provider integrates the IDC APIs into supported patient management systems to initialize WatchPAT devices and collect test results. The patients take the sleep study using the device and a proprietary Mobile application that communicates and transfers sleep study data to IDC in a secure manner.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2212912561/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2212912561"
+ }
+]

@@ -1298,6 +1298,14 @@ New extended functions from this fork, specified in groups/event-management-l1/U
 
 Named absences, token-verified at zero tokens each: registration / ticketing / RSVP / attendee management (no attendee registry exists anywhere in the build — no record can hold a person's name, email, or phone; speakers are opaque references only), agenda / scheduling / calendar, fees / payment / pricing / sponsorship (hence the build deliberately has no money shape at all), venue / catering, certificates / CE credits, surveys / feedback, recording / streaming production / captioning, email campaigns, event analytics / reporting, badge / lead retrieval, matching algorithm / scoring / ranking vocabulary, integrations / API / CRM, mobile app, social promotion, and lodging / travel. One evidence correction is recorded in the addendum: the matchmaking claim's evidence was re-based from the sentence stating the customer's need to the sentence asserting provision, count unchanged.
 
+## Remainder Singleton 61 — Health & Wellness L1 (1 fork)
+
+New extended functions from this fork, specified in groups/health-wellness-l1/UNION-SPEC.md, not implemented:
+- [ ] open — Home sleep-test dispatch & device initialization engine: dispatching home diagnostic devices to patients and initializing them (the fork's own headline function; the records substrate holds none of the device pipeline)
+- [ ] open — Sleep study results collection & provider review: collecting study data and test results for clinician review — clinical content, Extended by construction in this category (the EEG singleton's precedent); the substrate cannot hold it, and its measurement records are caller-recorded administration values only
+
+Existing registered gaps gaining a member by substance only (no claimant): EMR / EHR integration engines & documentation depth; device connectivity / sync pipelines; multi-device native apps. The category's carried Extended set remains registered once under Group 18 and is not re-registered. Absence accounting at this tier, stated plainly: the telehealth media absence SURVIVES at L1 — token-verified (video / virtual / telehealth / visit all zero in this fork's text; a device-dispatched home diagnostic is not a media visit), because the retirement at L2 rested on another fork's own words at L2 and does not transfer down a tier; clinical decision support, descriptive access control, and descriptive audit absences also stand, and all eleven taxonomy families stand at zero for this fork. Core-boundary decision, stated once in the union spec with its price: no core function is claim-supported for this fork — the ten-function substrate is carried down whole, carried, not claimed. The build is not a medical device and claims no FDA status.
+
 ## Later groups
 
 Each group appends its section here when it ships.
