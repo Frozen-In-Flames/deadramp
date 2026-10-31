@@ -1810,6 +1810,19 @@ Gaps from Remainder Group 4, specified in groups/cloud-infrastructure-hosting-l2
 - [ ] open — Assessment & Authorization support services
 - [ ] open — Residency & personnel verification
 
+## Remainder Group 5 — Library Systems L1 (2 forks)
+
+Gaps from Remainder Group 5, specified in groups/library-systems-l1/UNION-SPEC.md, not implemented. Five of the category's ten families stand at zero claims across the group (discovery and delivery, digital preservation, course resource lists, research activities, knowledge management) and are registered here in their own names:
+- [ ] open — Discovery & delivery service
+- [ ] open — Digital preservation system
+- [ ] open — Course resource list management
+- [ ] open — Research activities platform
+- [ ] open — Knowledge management system
+- [ ] open — Accessible delivery & rendering
+- [ ] open — Automation engine
+- [ ] open — Integration transport
+- [ ] open — Identity provider (IA-2 stays with the embedding organization)
+
 ## Later groups
 
 Each group appends its section here when it ships.

@@ -1,0 +1,21 @@
+.................F.......F.....................
+======================================================================
+FAIL: test_availability_seam_blocks_second_loan (test_circulation.CirculationTests.test_availability_seam_blocks_second_loan)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hatch/workspace/deadramp/groups/library-systems-l1/tests/test_circulation.py", line 23, in test_availability_seam_blocks_second_loan
+    with self.assertRaises(ValidationError):
+AssertionError: ValidationError not raised
+
+======================================================================
+FAIL: test_canonical_rejects_over_quantity_loan (test_negative_control.NegativeControlTests.test_canonical_rejects_over_quantity_loan)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hatch/workspace/deadramp/groups/library-systems-l1/tests/test_negative_control.py", line 31, in test_canonical_rejects_over_quantity_loan
+    with self.assertRaises(ValidationError):
+AssertionError: ValidationError not raised
+
+----------------------------------------------------------------------
+Ran 47 tests in 0.527s
+
+FAILED (failures=2)

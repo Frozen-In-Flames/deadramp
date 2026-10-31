@@ -1,0 +1,72 @@
+[
+ {
+  "fork_id": "F1305132147",
+  "vendor": "Ex Libris",
+  "product": "Higher-Ed Platform (Alma, Primo, Leganto, Esploro)",
+  "service_model": [
+   "SaaS"
+  ],
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Library Systems",
+  "description": "Ex Libris Higher-Ed Platform, consisting of Alma, Primo, Leganto, Esploro and Rialto, is an open platform that provides common cross-product services while ensuring reliability, security, and ease of integration with 3rd-party products and tools.",
+  "classification_evidence": "Together, the Ex Libris Primo discovery and delivery system, the Rosetta system for the long-term preservation of digital assets, the Leganto system for managing course resource lists, the Esploro system for maximizing visibility, efficiency, and compliance of research activities, and the Alma library management solution constitute a platform for transforming the collection-focused library into an essential, service-focused component of a research institution.",
+  "classification_source_url": "https://knowledge.exlibrisgroup.com/Alma/Product_Documentation/010Alma_Online_Help_(English)/010Getting_Started/010Alma_Introduction/030Alma_Advantages?v=10",
+  "functions_claimed": [
+   {
+    "function_id": "platform_services",
+    "function": "Open platform / common cross-product services",
+    "evidence": "Ex Libris Higher-Ed Platform, consisting of Alma, Primo, Leganto, Esploro and Rialto, is an open platform that provides common cross-product services while ensuring reliability, security, and ease of integration with 3rd-party products and tools."
+   },
+   {
+    "function_id": "integration",
+    "function": "Integration with third-party products and services",
+    "evidence": "Ex Libris Higher-Ed Platform, consisting of Alma, Primo, Leganto, Esploro and Rialto, is an open platform that provides common cross-product services while ensuring reliability, security, and ease of integration with 3rd-party products and tools."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1305132147/",
+  "source": "GSA FedRAMP Marketplace dataset (cached); product record id F1305132147; classification from remainder/nosignal_report.json (vendor's own live page)"
+ },
+ {
+  "fork_id": "FR1818459251",
+  "vendor": "Sirsi Corporation (SirsiDynix)",
+  "product": "EOS.Web",
+  "service_model": [
+   "SaaS"
+  ],
+  "fedramp_impact_level": "Low",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Library Systems",
+  "description": "SirsiDynix provides libraries with the automation, accessibility, and flexibility to thrive in the modern age through its Integrated Library System (ILS) offerings. Our customers benefit from our products' security, ease of use, robust capabilities, and integration with numerous additional services, with FedRAMP Authorization making these products usable in ways that meet the compliance needs of government customers.",
+  "classification_evidence": "EOS.Web is an integrated library system designed specifically for special libraries that delivers the flexibility and scalability to support knowledge management across all industries.",
+  "classification_source_url": "https://www.sirsidynix.com/products/",
+  "functions_claimed": [
+   {
+    "function_id": "library_management",
+    "function": "Library management / integrated library system",
+    "evidence": "SirsiDynix provides libraries with the automation, accessibility, and flexibility to thrive in the modern age through its Integrated Library System (ILS) offerings."
+   },
+   {
+    "function_id": "integration",
+    "function": "Integration with third-party products and services",
+    "evidence": "Our customers benefit from our products' security, ease of use, robust capabilities, and integration with numerous additional services, with FedRAMP Authorization making these products usable in ways that meet the compliance needs of government customers."
+   },
+   {
+    "function_id": "library_automation",
+    "function": "Library automation",
+    "evidence": "SirsiDynix provides libraries with the automation, accessibility, and flexibility to thrive in the modern age through its Integrated Library System (ILS) offerings."
+   },
+   {
+    "function_id": "accessibility",
+    "function": "Accessibility",
+    "evidence": "SirsiDynix provides libraries with the automation, accessibility, and flexibility to thrive in the modern age through its Integrated Library System (ILS) offerings."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1818459251/",
+  "source": "GSA FedRAMP Marketplace dataset (cached); product record id FR1818459251; classification from remainder/nosignal_report.json (vendor's own live page)"
+ }
+]
