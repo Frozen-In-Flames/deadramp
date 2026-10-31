@@ -1,0 +1,111 @@
+[
+ {
+  "fork_id": "FR2700857472",
+  "vendor": "CLEATUS, Inc.",
+  "product": "CLEATUS",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [],
+  "deadramp_category": "Marketing & Sales",
+  "description": "CLEATUS is a cloud-based Software-as-a-Service (SaaS) platform that provides AI-powered government contracting business development and proposal support. Users discover and evaluate federal contracting opportunities, manage capture and pipeline activities, generate and refine proposal content, and automate recurring business development workflows. The system is hosted in AWS GovCloud (US), with us-gov-west-1 as the primary region and us-gov-east-1 as a warm standby, and it processes, stores, and transmits Controlled Unclassified Information (CUI) for organizations that support the Department of Defense. The system does not process classified information.",
+  "functions_claimed": [
+   {
+    "function_id": "opportunity_discovery",
+    "function": "Opportunity discovery",
+    "evidence": "Users discover and evaluate federal contracting opportunities, manage capture and pipeline activities, generate and refine proposal content, and automate recurring business development workflows."
+   },
+   {
+    "function_id": "opportunity_evaluation",
+    "function": "Opportunity evaluation",
+    "evidence": "Users discover and evaluate federal contracting opportunities, manage capture and pipeline activities, generate and refine proposal content, and automate recurring business development workflows."
+   },
+   {
+    "function_id": "capture_pipeline",
+    "function": "Capture & pipeline management",
+    "evidence": "Users discover and evaluate federal contracting opportunities, manage capture and pipeline activities, generate and refine proposal content, and automate recurring business development workflows."
+   },
+   {
+    "function_id": "proposal_content",
+    "function": "Proposal content generation & refinement",
+    "evidence": "Users discover and evaluate federal contracting opportunities, manage capture and pipeline activities, generate and refine proposal content, and automate recurring business development workflows."
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Business-development workflow automation",
+    "evidence": "Users discover and evaluate federal contracting opportunities, manage capture and pipeline activities, generate and refine proposal content, and automate recurring business development workflows."
+   },
+   {
+    "function_id": "ai_powered_support",
+    "function": "AI-powered business development & proposal support",
+    "evidence": "CLEATUS is a cloud-based Software-as-a-Service (SaaS) platform that provides AI-powered government contracting business development and proposal support."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2700857472/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2700857472"
+ },
+ {
+  "fork_id": "FR2700857469",
+  "vendor": "Zeta Global Corp.",
+  "product": "Zeta Marketing Platform for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Analytics",
+   "Artificial Intelligence (AI)",
+   "Communication",
+   "Data Management",
+   "Marketing & Sales"
+  ],
+  "deadramp_category": "Marketing & Sales",
+  "description": "Zeta Marketing Platform for Government (ZMP-GOV) is a\nmulti-tenant SaaS marketing platform for federal agencies.\nThe certified offering covers outbound email: audience\nsegmentation, campaign authoring, scheduling, delivery,\nsuppression management, and engagement reporting.\nAgencies load their own contact lists and content. ZMP-GOV\nsends the email and reports on delivery and engagement.\nThe service is hosted in AWS US East/West.",
+  "functions_claimed": [
+   {
+    "function_id": "audience_segmentation",
+    "function": "Audience segmentation",
+    "evidence": "The certified offering covers outbound email: audience segmentation, campaign authoring, scheduling, delivery, suppression management, and engagement reporting."
+   },
+   {
+    "function_id": "campaign_authoring",
+    "function": "Campaign authoring",
+    "evidence": "The certified offering covers outbound email: audience segmentation, campaign authoring, scheduling, delivery, suppression management, and engagement reporting."
+   },
+   {
+    "function_id": "campaign_scheduling",
+    "function": "Campaign scheduling",
+    "evidence": "The certified offering covers outbound email: audience segmentation, campaign authoring, scheduling, delivery, suppression management, and engagement reporting."
+   },
+   {
+    "function_id": "outbound_email_delivery",
+    "function": "Outbound email delivery",
+    "evidence": "The certified offering covers outbound email: audience segmentation, campaign authoring, scheduling, delivery, suppression management, and engagement reporting."
+   },
+   {
+    "function_id": "suppression_management",
+    "function": "Suppression management",
+    "evidence": "The certified offering covers outbound email: audience segmentation, campaign authoring, scheduling, delivery, suppression management, and engagement reporting."
+   },
+   {
+    "function_id": "engagement_reporting",
+    "function": "Engagement reporting",
+    "evidence": "The certified offering covers outbound email: audience segmentation, campaign authoring, scheduling, delivery, suppression management, and engagement reporting."
+   },
+   {
+    "function_id": "contact_lists",
+    "function": "Contact list loading",
+    "evidence": "Agencies load their own contact lists and content."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2700857469/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2700857469"
+ }
+]

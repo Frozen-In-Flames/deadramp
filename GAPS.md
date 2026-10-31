@@ -1631,6 +1631,21 @@ New extended functions from this set, specified in groups/human-resources-untier
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Six claims stand, one at automation weight only (automating time tracking, with zero AI wording in the text). The documented control claims are the richest of any untiered set so far, all from one fork: identification (including IAL2/AAL2, MFA, and federation), access control, audit, cryptographic protection (FIPS 140-3 modules), configuration management, and incident response documented, risk assessment in part — balanced by the standing caution that the same fork's prose asserts a FedRAMP Moderate authorization its own record contradicts (impact Unknown, Initial Implementation), recorded as the fork's assertion and moving no tier, with assessment withheld because its sentence is inseparable from that assertion. The tiered tiers' retired absences do not transfer: leave and time-off, policy acknowledgements, background checks, and salary stand in this set, while payroll and time and attendance fall in substance without a family — gaps, not claims.
 
+## Untiered Set 18 — Marketing & Sales (2 forks, tier null; NEW CATEGORY)
+
+New extended functions from this set, specified in groups/marketing-sales-untiered/UNION-SPEC.md, not implemented:
+- [ ] open — AI models / agents (the build contains no inference)
+- [ ] open — Live opportunity-discovery feeds & contract-search engines
+- [ ] open — Market intelligence & competitor / forecast analytics
+- [ ] open — Proposal generation engine
+- [ ] open — Workflow execution engine (the build's workflow registry records only and never executes)
+- [ ] open — Segmentation engine
+- [ ] open — Email sending transport & deliverability
+- [ ] open — Bounce/complaint handling automation, campaign template management, preference management (each named in a fork's certified-services record but absent from its description — gaps resting on the description rule, caveat recorded in the union spec)
+- [ ] open — Platform layer
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This category has no tiered group anywhere in the registry, so its taxonomy (thirteen families) was derived fresh from these two forks' own descriptions, the Contract Management and Storage method, and is recorded as the category's taxonomy from here on; the two forks describe non-overlapping businesses and their families are kept visibly separate. Thirteen claims stand, every one on its fork's own sentence. No control family is documented: one fork's CUI handling sentence states no mechanism, and hosting and multi-tenancy sentences are platform prose. Named absences, token-verified in both descriptions: CRM and customer-relationship records — the category's expected centre — lead management, advertising, social media, SMS, search marketing, landing pages, A/B testing, personalization, and scoring. The fresh core has no money shape (neither description states fees, prices, or budgets) and computes no score (no scoring vocabulary in either description); its signature is the suppression gate.
+
 ## Later groups
 
 Each group appends its section here when it ships.
