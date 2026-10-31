@@ -1456,6 +1456,21 @@ New extended functions from this set, specified in groups/development-tools-unti
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. The documented control claims: access control documented at one fork and audit at two, traced to families; at the prose tier, configuration management, system integrity, and assessment are documented (assessment recorded exactly as the fork states it, including that authorization has not yet been granted); identification and authentication pointedly not documented — no SSO or authentication phrase occurs anywhere in the set — and every other family is listed as not documented. Named absences: seven of seventeen families stand at zero, including configuration-as-code, artifact registry, compliance/KSI, and search. Wording artifacts are recorded at their weights: both landing-zone hits fire on the word tenant inside multi-tenant, and one deployment claim fires on a product noun.
 
+## Untiered Set 7 — Construction (6 forks, tier null)
+
+New extended functions from this set, specified in groups/construction-untiered/UNION-SPEC.md, not implemented:
+- [ ] open — Construction commissioning engine
+- [ ] open — Cost estimating engines & benchmark cost data
+- [ ] open — AI technical document review, UFGS checking & cited question-answering
+- [ ] open — Document control platform depth
+- [ ] open — GIS/spatial platform & asset location tracking
+- [ ] open — Permitting, licensing & right-of-way management
+- [ ] open — Asset management platform (no taxonomy family exists for it in this category)
+- [ ] open — Workflow automation engines
+- [ ] open — Prevailing-wage determination depth (the standing gap; claimed in name only in this set)
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. The documented control claims stand at audit only, and that at artifact weight (audit-ready); every other family is listed as not documented. The set's three payroll-and-compliance claims are compliance in name, not in substance — spec-checking performed on customer documents and a posture adjective — so the payroll records substrate and its compliance derivation are carried, not claimed in substance, and the claims are recorded at artifact weight rather than repaired. Named absences: ten of twenty-three families stand at zero, including inspections and punchlists — a commissioning platform whose work is checklists, functional tests, issues, and observations claims none of it, because the family's words never occur — and search and reporting, where a search-and-question-answering product earns nothing because the pattern requires searching.
+
 ## Later groups
 
 Each group appends its section here when it ships.

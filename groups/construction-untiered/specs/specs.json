@@ -1,0 +1,273 @@
+[
+ {
+  "fork_id": "FR2701557038",
+  "vendor": "Facility Grid, LLC",
+  "product": "Facility Grid",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Construction",
+   "Operations Management",
+   "Collaboration",
+   "Data Management"
+  ],
+  "deadramp_category": "Construction",
+  "description": "Facility Grid is a multi-tenant SaaS platform for construction commissioning, quality control and turnover. Commissioning agents, general contractors and building owners use it to plan and record commissioning work on new and renovated buildings: equipment and system inventories, installation checklists, functional performance tests, issues and observations, schedules, documents, and the turnover package handed to the owner at completion.\n\n**Federal use.** Facility Grid is used on federal construction and renovation projects delivered by prime contractors for the US Army Corps of Engineers, the Department of Veterans Affairs, the Department of Energy, the General Services Administration, the US Coast Guard and the Department of Homeland Security. On these projects the commissioning records are contract deliverables owned by the agency, and agency staff or agency-appointed commissioning agents use the platform to review and accept them.\n\n**Scope.** This listing covers the Facility Grid commissioning platform (marketed as FG Construct): the web application, the REST API, and the server-side services behind the iOS and Android apps. It runs on Amazon Web Services in the commercial us-east-2 region. FG Validate and FG Sustain are separate products and are not part of this offering. The mobile apps are installed client software and are outside FedRAMP scope; the services they call are in scope.\n\n**Certification path.** Facility Grid is pursuing a FedRAMP 20x Class A Certification for the existing commercial service on the strength of its SOC 2 Type II examination, and a Class C (Moderate) Certification afterwards, assessed by Insight Assurance.",
+  "functions_claimed": [
+   {
+    "function_id": "project_records",
+    "function": "Project & job-order records",
+    "evidence": "Federal use.** Facility Grid is used on federal construction and renovation projects delivered by prime contractors for the US Army Corps of Engineers, the Department of Veterans Affairs, the Department of Energy, the General Services Administration, the US Coast Guard and the Department of Homeland Security."
+   },
+   {
+    "function_id": "contract_lifecycle",
+    "function": "Contract lifecycle management",
+    "evidence": "On these projects the commissioning records are contract deliverables owned by the agency, and agency staff or agency-appointed commissioning agents use the platform to review and accept them."
+   },
+   {
+    "function_id": "documents_forms",
+    "function": "Documents, forms, templates & clauses",
+    "evidence": "Commissioning agents, general contractors and building owners use it to plan and record commissioning work on new and renovated buildings: equipment and system inventories, installation checklists, functional performance tests, issues and observations, schedules, documents, and the turnover package handed to the owner at completion."
+   },
+   {
+    "function_id": "contractor_hierarchy",
+    "function": "Contractor & subcontractor participation",
+    "evidence": "Federal use.** Facility Grid is used on federal construction and renovation projects delivered by prime contractors for the US Army Corps of Engineers, the Department of Veterans Affairs, the Department of Energy, the General Services Administration, the US Coast Guard and the Department of Homeland Security."
+   },
+   {
+    "function_id": "schedule_milestones",
+    "function": "Schedule & milestone records",
+    "evidence": "Commissioning agents, general contractors and building owners use it to plan and record commissioning work on new and renovated buildings: equipment and system inventories, installation checklists, functional performance tests, issues and observations, schedules, documents, and the turnover package handed to the owner at completion."
+   },
+   {
+    "function_id": "multi_tenancy",
+    "function": "Multi-tenant deployment (platform property)",
+    "evidence": "Facility Grid is a multi-tenant SaaS platform for construction commissioning, quality control and turnover."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2701557038/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2701557038"
+ },
+ {
+  "fork_id": "FR2633734906",
+  "vendor": "Four BT, LLC",
+  "product": "Four BT Benchmark Construction Estimator",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [],
+  "deadramp_category": "Construction",
+  "description": "Support Government construction cost estimating and program support for a variety of programs, including but not limited to JOC, SABER, SATOC, MATOC, IDIQ, spanning repair, renovation, maintenance, new construction, and sustainment of facilities and other built structures and associate planning, procurement, and project delivery activities and teams.",
+  "functions_claimed": [
+   {
+    "function_id": "project_records",
+    "function": "Project & job-order records",
+    "evidence": "Support Government construction cost estimating and program support for a variety of programs, including but not limited to JOC, SABER, SATOC, MATOC, IDIQ, spanning repair, renovation, maintenance, new construction, and sustainment of facilities and other built structures and associate planning, procurement, and project delivery activities and teams."
+   },
+   {
+    "function_id": "cost_data_estimating",
+    "function": "Cost data & estimating",
+    "evidence": "Support Government construction cost estimating and program support for a variety of programs, including but not limited to JOC, SABER, SATOC, MATOC, IDIQ, spanning repair, renovation, maintenance, new construction, and sustainment of facilities and other built structures and associate planning, procurement, and project delivery activities and teams."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2633734906/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2633734906"
+ },
+ {
+  "fork_id": "FR2520254824",
+  "vendor": "InEight, Inc.",
+  "product": "InEight Document US Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Collaboration",
+   "Communication",
+   "Construction",
+   "Data Management",
+   "Operations Management",
+   "Storage"
+  ],
+  "deadramp_category": "Construction",
+  "description": "InEight Document is construction document control software that is uniquely suited to the demands of complex construction due to its configurability and tracking capabilities. This SaaS offering for the US Government uses a multi-tenant Government-Only cloud computing environment. It is available to public, federal, state, local, and tribal governments, as well as research institutions, federal contractors, and government contractors.",
+  "functions_claimed": [
+   {
+    "function_id": "documents_forms",
+    "function": "Documents, forms, templates & clauses",
+    "evidence": "InEight Document is construction document control software that is uniquely suited to the demands of complex construction due to its configurability and tracking capabilities."
+   },
+   {
+    "function_id": "multi_tenancy",
+    "function": "Multi-tenant deployment (platform property)",
+    "evidence": "This SaaS offering for the US Government uses a multi-tenant Government-Only cloud computing environment."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2520254824/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2520254824"
+ },
+ {
+  "fork_id": "FR2631258135",
+  "vendor": "Specset",
+  "product": "Specset Cloud Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Construction"
+  ],
+  "deadramp_category": "Construction",
+  "description": "The Specset Cloud Platform is an AI platform for construction document review. It automates technical review across project manuals, drawing sheets and shop drawings: submittal review against project specifications, UFGS (Unified Facilities Guide Specifications) compliance checking, design review automation, asset management logic, and search and question answering across a project's documents. The platform flags potential issues and returns cited answers drawn from the customer's own project documents. Specset is the trade name of Spot.xyz Corporation, formerly Specbook. The SOC 2 Type II report supporting this package is issued to Spot.xyz Corporation DBA Specset, and the Unique Entity Identifier above is registered to that entity. FedRAMP ID FR2631258135 is the sole active Marketplace listing for this offering; a duplicate listing created at intake, FR2631747321, is pending retirement, requested 2026-08-31.",
+  "functions_claimed": [
+   {
+    "function_id": "project_records",
+    "function": "Project & job-order records",
+    "evidence": "It automates technical review across project manuals, drawing sheets and shop drawings: submittal review against project specifications, UFGS (Unified Facilities Guide Specifications) compliance checking, design review automation, asset management logic, and search and question answering across a project's documents."
+   },
+   {
+    "function_id": "documents_forms",
+    "function": "Documents, forms, templates & clauses",
+    "evidence": "The Specset Cloud Platform is an AI platform for construction document review."
+   },
+   {
+    "function_id": "compliance_payroll",
+    "function": "Prevailing-wage & workforce compliance records",
+    "evidence": "It automates technical review across project manuals, drawing sheets and shop drawings: submittal review against project specifications, UFGS (Unified Facilities Guide Specifications) compliance checking, design review automation, asset management logic, and search and question answering across a project's documents."
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow & process automation",
+    "evidence": "It automates technical review across project manuals, drawing sheets and shop drawings: submittal review against project specifications, UFGS (Unified Facilities Guide Specifications) compliance checking, design review automation, asset management logic, and search and question answering across a project's documents."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML capability",
+    "evidence": "The Specset Cloud Platform is an AI platform for construction document review."
+   },
+   {
+    "function_id": "submittal_rfi",
+    "function": "Submittal & RFI records",
+    "evidence": "It automates technical review across project manuals, drawing sheets and shop drawings: submittal review against project specifications, UFGS (Unified Facilities Guide Specifications) compliance checking, design review automation, asset management logic, and search and question answering across a project's documents."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2631258135/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2631258135"
+ },
+ {
+  "fork_id": "FR2631747321",
+  "vendor": "Specset",
+  "product": "Specset Cloud Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Construction"
+  ],
+  "deadramp_category": "Construction",
+  "description": "The Specset Cloud Platform is an AI platform for construction document review. It automates technical review across project manuals, drawing sheets and shop drawings: submittal review against project specifications, UFGS (Unified Facilities Guide Specifications) compliance checking, design review automation, asset management logic, and search and question answering across a project's documents. The platform flags potential issues and returns cited answers drawn from the customer's own project documents. Specset is the trade name of Spot.xyz Corporation, formerly Specbook. The SOC 2 Type II report supporting this package is issued to Spot.xyz Corporation DBA Specset, and the Unique Entity Identifier above is registered to that entity. FedRAMP ID FR2631258135 is the sole active Marketplace listing for this offering; a duplicate listing created at intake, FR2631747321, is pending retirement, requested 2026-08-31.",
+  "functions_claimed": [
+   {
+    "function_id": "project_records",
+    "function": "Project & job-order records",
+    "evidence": "It automates technical review across project manuals, drawing sheets and shop drawings: submittal review against project specifications, UFGS (Unified Facilities Guide Specifications) compliance checking, design review automation, asset management logic, and search and question answering across a project's documents."
+   },
+   {
+    "function_id": "documents_forms",
+    "function": "Documents, forms, templates & clauses",
+    "evidence": "The Specset Cloud Platform is an AI platform for construction document review."
+   },
+   {
+    "function_id": "compliance_payroll",
+    "function": "Prevailing-wage & workforce compliance records",
+    "evidence": "It automates technical review across project manuals, drawing sheets and shop drawings: submittal review against project specifications, UFGS (Unified Facilities Guide Specifications) compliance checking, design review automation, asset management logic, and search and question answering across a project's documents."
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow & process automation",
+    "evidence": "It automates technical review across project manuals, drawing sheets and shop drawings: submittal review against project specifications, UFGS (Unified Facilities Guide Specifications) compliance checking, design review automation, asset management logic, and search and question answering across a project's documents."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML capability",
+    "evidence": "The Specset Cloud Platform is an AI platform for construction document review."
+   },
+   {
+    "function_id": "submittal_rfi",
+    "function": "Submittal & RFI records",
+    "evidence": "It automates technical review across project manuals, drawing sheets and shop drawings: submittal review against project specifications, UFGS (Unified Facilities Guide Specifications) compliance checking, design review automation, asset management logic, and search and question answering across a project's documents."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2631747321/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2631747321"
+ },
+ {
+  "fork_id": "FR2701247929",
+  "vendor": "Trimble Inc.",
+  "product": "Trimble for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Construction",
+   "Collaboration",
+   "Analytics"
+  ],
+  "deadramp_category": "Construction",
+  "description": "**Trimble** is delivering a Software as a Service (SaaS) cloud computing environment built within a secure Government Community Cloud. Designed specifically for U.S. Federal Government departments, agencies, and defense/civilian contractors, Trimble Connect for Government provides a unified, highly secure ecosystem for managing infrastructure, spatial data, capital projects, permitting, and facility assets across their entire lifecycle.\n\nBy establishing a FedRAMP Moderate baseline, Trimble enables federal agencies and DoD contractors to comply with federal security mandates (including CMMC alignment for defense projects) while modernizing digital engineering, field operations, and spatial asset management.\n\n### Key Modular Packages Included in Scope\n\n1. **Trimble Field Collaboration**\n   * **Target Audience:** Federal agencies requiring highly secure, air-gapped capable spatial data management.\n   * **Core Functionality:** Provides foundational spatial database infrastructure and GIS integration to support field operations, mapping, and mission-critical asset location tracking in high-security environments.\n\n2. **Trimble Project Management**\n   * **Target Audience:** Contractors and agencies needing precision field data layout and project management for high-compliance defense and civil construction builds.\n   * **Core Functionality:** Connects design-to-build workflows in the field, facilitating high-accuracy layout, project tracking, collaboration, and quality assurance across DoD and federal civil construction sites.\n\n3. **Trimble Asset Management**\n   * **Target Audience:** Federal agencies managing extensive facility networks, military bases, and transportation infrastructure (e.g., runway distributions, airfield facilities, roads and utilities).\n   * **Core Functionality:** Serves as a centralized facilities data core to map asset distribution, track condition assessments, streamline maintenance workflows, and optimize lifecycle capital planning.\n\n4. **Trimble Permit Management**\n   * **Target Audience:** Public lands, defense, and civilian agencies managing land use, licensing, and infrastructure rights-of-way.\n   * **Core Functionality:** Streamlines the end-to-end management of permitting, licensing, land use applications, and right-of-way approvals in a compliant, audit-ready cloud environment.",
+  "functions_claimed": [
+   {
+    "function_id": "project_records",
+    "function": "Project & job-order records",
+    "evidence": "Federal Government departments, agencies, and defense/civilian contractors, Trimble Connect for Government provides a unified, highly secure ecosystem for managing infrastructure, spatial data, capital projects, permitting, and facility assets across their entire lifecycle."
+   },
+   {
+    "function_id": "compliance_payroll",
+    "function": "Prevailing-wage & workforce compliance records",
+    "evidence": "**Target Audience:** Contractors and agencies needing precision field data layout and project management for high-compliance defense and civil construction builds."
+   },
+   {
+    "function_id": "location_tracking",
+    "function": "GPS & location tracking",
+    "evidence": "**Core Functionality:** Provides foundational spatial database infrastructure and GIS integration to support field operations, mapping, and mission-critical asset location tracking in high-security environments."
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow & process automation",
+    "evidence": "**Core Functionality:** Connects design-to-build workflows in the field, facilitating high-accuracy layout, project tracking, collaboration, and quality assurance across DoD and federal civil construction sites."
+   },
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging",
+    "evidence": "**Core Functionality:** Streamlines the end-to-end management of permitting, licensing, land use applications, and right-of-way approvals in a compliant, audit-ready cloud environment."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2701247929/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2701247929"
+ }
+]
