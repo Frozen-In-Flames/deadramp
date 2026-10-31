@@ -1,0 +1,350 @@
+[
+ {
+  "category_proposal": "Health & Wellness",
+  "evidence_sentence": "CirrusMD\u2019s multidisciplinary care team of doctors and health coaches delivers 24/7/365 physician-first care and guidance at scale for health plans and large self-insured employers.",
+  "fork_id": "FR2220549818",
+  "is_new_category": false,
+  "notes": "Official CirrusMD About page. Homepage also states patients connect to an expert physician in under a minute and describes chat-enabled care; the cited sentence is from the vendor's About page.",
+  "product": "CirrusMD Virtual Health Chat for Government",
+  "source_url": "https://www.cirrusmd.com/about-cirrusmd",
+  "sources_checked": [
+   "https://www.cirrusmd.com/",
+   "https://www.cirrusmd.com/about-cirrusmd"
+  ],
+  "status": "resolved",
+  "vendor": "CirrusMD"
+ },
+ {
+  "category_proposal": "System Administration",
+  "evidence_sentence": "At CloudFit, we provide a comprehensive suite of managed services tailored to optimize and secure your Microsoft Cloud environment.",
+  "fork_id": "FR2700754078",
+  "is_new_category": false,
+  "notes": "Vendor homepage and About page both carry this Managed Services sentence. Prose emphasizes managed services performed by the vendor to optimize and secure the customer's Microsoft Cloud environment, so it meets the census boundary for System Administration; not pure platform prose.",
+  "product": "CloudFit Federal Platform",
+  "source_url": "https://cloudfitsoftware.com/",
+  "sources_checked": [
+   "https://cloudfitsoftware.com/",
+   "https://cloudfitsoftware.com/about-us/"
+  ],
+  "status": "resolved",
+  "vendor": "CloudFit Software, LLC"
+ },
+ {
+  "category_proposal": "Cloud Infrastructure & Hosting",
+  "evidence_sentence": "Elastic Cloud allows you to centrally manage hosted deployments of the Elastic Stack and serverless projects for your Observability, Security, and Search use cases.",
+  "fork_id": "FR2004446306",
+  "is_new_category": true,
+  "notes": "platform_general=true. Official Elastic Docs page. Sentence states the hosted-deployment/hosting function itself, spanning Search, Observability and Security, so no single existing functional category fits; propose new Cloud Infrastructure & Hosting.",
+  "product": "Elastic Cloud",
+  "source_url": "http://www.elastic.co/docs/deploy-manage/deploy/elastic-cloud",
+  "sources_checked": [
+   "http://www.elastic.co/docs/deploy-manage/deploy/elastic-cloud",
+   "https://www.elastic.co/cloud?rogue=virtual%20event&baymax=&storm=&elektra="
+  ],
+  "status": "resolved",
+  "vendor": "Elastic"
+ },
+ {
+  "category_proposal": "Library Systems",
+  "evidence_sentence": "Together, the Ex Libris Primo discovery and delivery system, the Rosetta system for the long-term preservation of digital assets, the Leganto system for managing course resource lists, the Esploro system for maximizing visibility, efficiency, and compliance of research activities, and the Alma library management solution constitute a platform for transforming the collection-focused library into an essential, service-focused component of a research institution.",
+  "fork_id": "F1305132147",
+  "is_new_category": true,
+  "notes": "Official Ex Libris Knowledge Center (vendor documentation portal). Sentence names Primo, Leganto, Esploro and Alma together as the platform, covering the fork's bundle except Rosetta is additionally named. No existing DeadRamp category fits library systems.",
+  "product": "Higher-Ed Platform (Alma, Primo, Leganto, Esploro)",
+  "source_url": "https://knowledge.exlibrisgroup.com/Alma/Product_Documentation/010Alma_Online_Help_(English)/010Getting_Started/010Alma_Introduction/030Alma_Advantages?v=10",
+  "sources_checked": [
+   "https://knowledge.exlibrisgroup.com/Alma/Product_Documentation/010Alma_Online_Help_(English)/010Getting_Started/010Alma_Introduction/030Alma_Advantages?v=10"
+  ],
+  "status": "resolved",
+  "vendor": "Ex Libris"
+ },
+ {
+  "category_proposal": "Health & Wellness",
+  "evidence_sentence": "HealthEdge combines flexible delivery models with an integrated suite of software solutions to transform payer operations, connecting data, workflows and performance across the health plan enterprise.",
+  "fork_id": "FR2700137029",
+  "is_new_category": false,
+  "notes": "Official HealthEdge (healthedge.com) press release, section 'One Platform Spanning Critical Health Plan Operations'. Describes the integrated suite for health payer operations.",
+  "product": "HealthEdge Integrated Solution Suite",
+  "source_url": "https://healthedge.com/press-release/healthedge-and-healthproof-merge-creating-disruptive-ai-powered-healthcare-payer-technology-and-services-leader/",
+  "sources_checked": [
+   "https://healthedge.com/press-release/healthedge-and-healthproof-merge-creating-disruptive-ai-powered-healthcare-payer-technology-and-services-leader/"
+  ],
+  "status": "resolved",
+  "vendor": "HealthEdge Software"
+ },
+ {
+  "category_proposal": "Cloud Infrastructure & Hosting",
+  "evidence_sentence": "Infrastructure Services provide access to computing, storage, and network resources to enable Client to quickly provision or set-up cloud computing infrastructure environments.",
+  "fork_id": "F1211011660",
+  "is_new_category": true,
+  "notes": "platform_general=true. Evidence is from IBM's own IBM Cloud for Government Service Description (ibm.com, updated December 12, 2018), in the section describing IBM Cloud for Government Infrastructure Services. The current government page (ibm.com/products/cloud/government) was also checked. Sentence states the infrastructure/hosting function itself; propose new Cloud Infrastructure & Hosting.",
+  "product": "IBM Cloud for Government",
+  "source_url": "https://www.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=87022587USEN&",
+  "sources_checked": [
+   "https://www.ibm.com/products/cloud/government",
+   "https://www.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=87022587USEN&",
+   "https://www.ibm.com/products/cloud"
+  ],
+  "status": "resolved",
+  "vendor": "IBM"
+ },
+ {
+  "category_proposal": "Cloud Infrastructure & Hosting",
+  "evidence_sentence": "Software to support real\u2011time visibility into application performance, identification and resolution of IT issues quickly, strengthened access controls for sensitive data and applications and optimization of applications and infrastructure across hybrid environments.",
+  "fork_id": "F1208031461A",
+  "is_new_category": true,
+  "notes": "Duplicate pair with F1208031461 (same product, researched once, identical evidence for both IDs). platform_general=true. Evidence is the text under the heading 'FedRAMP authorized solutions: Platform services' on IBM's own Federal Government Solutions page; the heading supplies the product context and the sentence states the platform bundle's functions (application-performance visibility, IT issue resolution, access controls, and optimization of applications and infrastructure across hybrid environments). No dedicated IBM product page for the bundle under its exact FedRAMP name was found. The bundle spans observability, identity/access and resource optimization, so no single existing functional category fits; propose new Cloud Infrastructure & Hosting as a general platform.",
+  "product": "IBM Platform Services for Government",
+  "source_url": "https://www.ibm.com/industries/federal/grit-veterans",
+  "sources_checked": [
+   "https://www.ibm.com/industries/federal/grit-veterans",
+   "https://www.ibm.com/products/cloud/government",
+   "https://www.ibm.com/products/maas360/government"
+  ],
+  "status": "resolved",
+  "vendor": "IBM"
+ },
+ {
+  "category_proposal": "Cloud Infrastructure & Hosting",
+  "evidence_sentence": "Software to support real\u2011time visibility into application performance, identification and resolution of IT issues quickly, strengthened access controls for sensitive data and applications and optimization of applications and infrastructure across hybrid environments.",
+  "fork_id": "F1208031461",
+  "is_new_category": true,
+  "notes": "Duplicate pair with F1208031461A (same product, researched once, identical evidence for both IDs). platform_general=true. Evidence is the text under the heading 'FedRAMP authorized solutions: Platform services' on IBM's own Federal Government Solutions page; the heading supplies the product context and the sentence states the platform bundle's functions (application-performance visibility, IT issue resolution, access controls, and optimization of applications and infrastructure across hybrid environments). No dedicated IBM product page for the bundle under its exact FedRAMP name was found. The bundle spans observability, identity/access and resource optimization, so no single existing functional category fits; propose new Cloud Infrastructure & Hosting as a general platform.",
+  "product": "IBM Platform Services for Government",
+  "source_url": "https://www.ibm.com/industries/federal/grit-veterans",
+  "sources_checked": [
+   "https://www.ibm.com/industries/federal/grit-veterans",
+   "https://www.ibm.com/products/cloud/government",
+   "https://www.ibm.com/products/maas360/government"
+  ],
+  "status": "resolved",
+  "vendor": "IBM"
+ },
+ {
+  "category_proposal": "Cloud Infrastructure & Hosting",
+  "evidence_sentence": "The IBM SmartCloud for Government is an Infrastructure as a Service (IaaS) offering that is a private multi-tenant cloud specific for Federal Government users.",
+  "fork_id": "F1206081363",
+  "is_new_category": true,
+  "notes": "platform_general=true. Legacy offering: no current IBM product page was found. Evidence is vendor's own words only, from an IBM-hosted document on ibm.com (IBM GSA IT Schedule terms, Chapter 9, revised January 25, 2017). The IBM Docs FedRAMP offerings page checked also describes it as the IBM SmartCloud for Government Infrastructure-as-a-Service (IaaS) offering. Sentence states the IaaS/private-cloud hosting function itself; propose new Cloud Infrastructure & Hosting.",
+  "product": "SmartCloud for Government",
+  "source_url": "https://www.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=GVO13001USEN",
+  "sources_checked": [
+   "https://www.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=GVO13001USEN",
+   "https://www.ibm.com/docs/en/cds-saas-flex?topic=fedramp-offerings"
+  ],
+  "status": "resolved",
+  "vendor": "IBM"
+ },
+ {
+  "category_proposal": "Enterprise Resource Planning",
+  "evidence_sentence": "Infor Government Solutions offers a comprehensive suite of 20+ fully integrated business applications.",
+  "fork_id": "FR1710033970",
+  "is_new_category": true,
+  "notes": "Official Infor brochure page (infor.com) states the IGS function only at suite level; it does not state one primary function. Infor's public-sector page describes the same suite spanning finance, procurement and workforce/HR data, so the suite spans the existing Finance, Human Resources and Operations Management categories. Best single fit is a NEW category 'Enterprise Resource Planning' (flagged per instructions) rather than forcing one of the three.",
+  "product": "Infor Government Solutions (IGS) Software as a Service",
+  "source_url": "https://www.infor.com/resources/infor-government-saas-overview",
+  "sources_checked": [
+   "https://www.infor.com/resources/infor-government-saas-overview",
+   "https://www.infor.com/industries/public-sector",
+   "https://trust.infor.com/?_ga=2.31747006.1848653415.1657795724-2066635721.1643207199",
+   "https://docs.infor.com/inforos/2025.x/en-us/useradminlib_cloud/iontechconceag_cloud_osm/pcl1568885578411.html"
+  ],
+  "status": "resolved",
+  "vendor": "Infor"
+ },
+ {
+  "category_proposal": "Cloud Infrastructure & Hosting",
+  "evidence_sentence": "FISMA Community Cloud is a federal government-dedicated multi-tenant community cloud platform that enables agencies and government contractors to cost-effectively procure virtualized cloud server, network and security infrastructure resources available at a fixed or consumption-based price.",
+  "fork_id": "F1303221956",
+  "is_new_category": true,
+  "notes": "platform_general=true. The IT-CNP page states in the following paragraph that this Community Cloud is delivered utilizing the FedRAMP JAB certified GovDataHosting Cloud Platform (GCP). The evidence sentence states the hosting/infrastructure-resource function itself as pure platform prose, not administration services performed, so not System Administration.",
+  "product": "GovDataHosting Cloud Platform",
+  "source_url": "https://www.it-cnp.com/fisma-government-community-cloud",
+  "sources_checked": [
+   "https://www.it-cnp.com/fisma-government-community-cloud",
+   "https://www.govdatahosting.com/blog/introduction-our-government-cloud-solutions"
+  ],
+  "status": "resolved",
+  "vendor": "IT-CNP"
+ },
+ {
+  "category_proposal": "Cloud Infrastructure & Hosting",
+  "evidence_sentence": "We operate government cloud regions in the US, UK, and Australia and provide governments worldwide with a range of deployment models to meet local data residency, classification, operational, and security requirements.",
+  "fork_id": "FR1900048743",
+  "is_new_category": true,
+  "notes": "platform_general=true. Official Oracle Government Cloud page (oracle.com Europe mirror of the government cloud page). Sentence states operating government cloud regions / providing deployment models, i.e. the hosting/infrastructure function itself; propose new Cloud Infrastructure & Hosting.",
+  "product": "Oracle Cloud Infrastructure-Government Cloud",
+  "source_url": "https://www.oracle.com/europe/government/govcloud/",
+  "sources_checked": [
+   "https://www.oracle.com/europe/government/govcloud/",
+   "https://www.oracle.com/cloud/distributed-cloud/service-availability/"
+  ],
+  "status": "resolved",
+  "vendor": "Oracle"
+ },
+ {
+  "category_proposal": "Cloud Infrastructure & Hosting",
+  "evidence_sentence": "Deploy your application into a secure GSSOne\u2122 environment designed to meet federal security requirements.",
+  "fork_id": "F1403283529",
+  "is_new_category": true,
+  "notes": "platform_general=true. Vendor FedRAMP page, under 'Deploy', states the hosting function itself: deployment of a customer application into the secure GSSOne environment. Platform/environment prose, not a sentence emphasizing administration services performed, so not System Administration.",
+  "product": "GSS One - Azure",
+  "source_url": "https://projecthosts.com/solutions/fedramp/",
+  "sources_checked": [
+   "https://projecthosts.com/solutions/fedramp/"
+  ],
+  "status": "resolved",
+  "vendor": "Project Hosts Inc."
+ },
+ {
+  "category_proposal": "Cloud Infrastructure & Hosting",
+  "evidence_sentence": "Rackspace Government Cloud is a fully managed security Platform-as-a-Service that addresses FedRAMP\u2019s Moderate security requirements, enabling your SaaS cloud solution to achieve FedRAMP ATO faster and at lower cost.",
+  "fork_id": "F1510137547",
+  "is_new_category": true,
+  "notes": "platform_general=true. Vendor government cloud page defines the offering as a Platform-as-a-Service on public, private or hybrid infrastructure. The evidence sentence states the platform/hosting function itself, so the new Cloud Infrastructure & Hosting category is proposed rather than forcing System Administration.",
+  "product": "Rackspace Government Cloud",
+  "source_url": "https://www.rackspace.com/en-gb/cloud/rackspace-government-cloud",
+  "sources_checked": [
+   "https://www.rackspace.com/en-gb/cloud/rackspace-government-cloud"
+  ],
+  "status": "resolved",
+  "vendor": "Rackspace Government Solutions"
+ },
+ {
+  "category_proposal": "Cloud Infrastructure & Hosting",
+  "evidence_sentence": "We host and deploy SAP IBP in a cloud environment secured by DoD FedRAMP\u00ae + Impact Level 4 (DoD IL4) controls.",
+  "fork_id": "F1602257856",
+  "is_new_category": true,
+  "notes": "platform_general=true. Vendor sapns2.com page describes its DoD secure cloud environment hosting/deploying SAP solutions (SAP IBP given as the example in this sentence) as SaaS. The sentence states the secure cloud hosting function for DoD, as pure platform/environment prose, so not System Administration.",
+  "product": "DoD Cloud Intelligent Enterprise \u2013 DD-CIE",
+  "source_url": "https://sapns2.com/what-it-means-to-be-all-in-in-the-world-of-cloud-innovation-speed-and-security-2/",
+  "sources_checked": [
+   "https://sapns2.com/what-it-means-to-be-all-in-in-the-world-of-cloud-innovation-speed-and-security-2/",
+   "http://sapns2.com/government-cloud/",
+   "https://support.sap.com/en/product/onboarding-resource-center/ns2.html"
+  ],
+  "status": "resolved",
+  "vendor": "SAP National Security Services (SAP NS2)"
+ },
+ {
+  "category_proposal": "Cloud Infrastructure & Hosting",
+  "evidence_sentence": "SAP NS2 Government Cloud is a portfolio of cloud environments purpose-built for federal agencies, defense and intelligence communities, and regulated industries.",
+  "fork_id": "FR1719841002",
+  "is_new_category": true,
+  "notes": "platform_general=true. Researched separately from DD-CIE. The sapns2.com information sheet checked lists Cloud Intelligence Enterprise (CIE) among the three secure cloud environments in which SAP NS2 hosts and deploys SAP solutions, and the SAP support onboarding page describes CIE for the federal and government space. The Government Cloud page sentence states the cloud-environment portfolio function itself, so not System Administration.",
+  "product": "SAP NS2 Cloud Intelligent Enterprise",
+  "source_url": "http://sapns2.com/government-cloud/",
+  "sources_checked": [
+   "http://sapns2.com/government-cloud/",
+   "https://sapns2.com/wp-content/uploads/2025/02/SAP-NS2-Commercially-Regulated-Environments-Secure-Cloud-Industries.pdf",
+   "https://support.sap.com/en/product/onboarding-resource-center/ns2.html"
+  ],
+  "status": "resolved",
+  "vendor": "SAP National Security Services (SAP NS2)"
+ },
+ {
+  "category_proposal": "Library Systems",
+  "evidence_sentence": "EOS.Web is an integrated library system designed specifically for special libraries that delivers the flexibility and scalability to support knowledge management across all industries.",
+  "fork_id": "FR1818459251",
+  "is_new_category": true,
+  "notes": "Official SirsiDynix Products page. No existing DeadRamp category fits an integrated library system for special libraries.",
+  "product": "EOS.Web",
+  "source_url": "https://www.sirsidynix.com/products/",
+  "sources_checked": [
+   "https://www.sirsidynix.com/products/"
+  ],
+  "status": "resolved",
+  "vendor": "Sirsi Corporation (SirsiDynix)"
+ },
+ {
+  "category_proposal": "Learning Management",
+  "evidence_sentence": "With the Skillsoft Percipio Platform, you can experience multiple ways to learn.",
+  "fork_id": "F1207261443",
+  "is_new_category": false,
+  "notes": "Official Skillsoft documentation portal (documentation.skillsoft.com), 'The Skillsoft Percipio Platform for Learning'. The page goes on to list Watch/Read/Listen/Attend/Practice/Assess modes. Evidence is for the Skillsoft Percipio learning platform that the Private Cloud offering delivers; no separate Private Cloud-specific function sentence was found on the official documentation pages checked.",
+  "product": "Private Cloud",
+  "source_url": "https://documentation.skillsoft.com/en_us/compliance_trng/content/b_learner/lrnr_getting_started.htm",
+  "sources_checked": [
+   "https://documentation.skillsoft.com/en_us/compliance_trng/content/b_learner/lrnr_getting_started.htm",
+   "https://documentation.skillsoft.com/en_us/percipio/content/B_Learner/lrnr_content.htm"
+  ],
+  "status": "resolved",
+  "vendor": "Skillsoft"
+ },
+ {
+  "category_proposal": "Operations Management",
+  "evidence_sentence": "Through SMX Elevate, we leverage our IP and Intelligent Automation Platform (IAP) to design, build, operate, and secure multi-cloud platforms for mission critical cloud workloads, specializing in highly regulated and security-first clients including Federal Government, DoD, healthcare industries, and financial services.",
+  "fork_id": "F1603077867",
+  "is_new_category": false,
+  "notes": "Evidence is SMX's own capability sheet on smxtech.com and states the IAP's own function (designing, building, operating and securing multi-cloud platforms), not any third-party ISV product hosted on it; the same sheet describes the IAP's cornerstones as automation via Infrastructure-as-Code, Operations-as-Code, and Policy and Compliance-as-Code. Operating multi-cloud platforms is an operations function, so existing category Operations Management is proposed; the sentence does not state a general hosting offer, so the new 'Cloud Infrastructure & Hosting' category was not used. The 2026 Elevate Playbook (also smxtech.com) corroborates: it describes the IAP as turning the routine work of building, running, and securing cloud environments into reusable code.",
+  "product": "Elevate Intelligent Automation Platform (IAP)",
+  "source_url": "http://www.smxtech.com/wp-content/uploads/2025/02/SMX_SolutionCap_ELEVATE_Platform_Feb2025.pdf",
+  "sources_checked": [
+   "http://www.smxtech.com/wp-content/uploads/2025/02/SMX_SolutionCap_ELEVATE_Platform_Feb2025.pdf",
+   "https://www.smxtech.com/wp-content/uploads/2026/06/SMX-Elevate-Playbook.pdf",
+   "https://www.smxtech.com/solutions/digital-transformation-solutions/",
+   "https://www.smxtech.com/wp-content/uploads/2025/01/SMX_SolutionCap_ElevateManage_Jan2025.pdf"
+  ],
+  "status": "resolved",
+  "vendor": "SMX (formerly Smartronix)"
+ },
+ {
+  "category_proposal": null,
+  "evidence_sentence": null,
+  "fork_id": "FR1901852210",
+  "is_new_category": false,
+  "notes": "Unresolved under the vendor-domain/docs/official-.gov-only rule. https://www.terida.com/ failed to resolve/fetch via browser.open (no page text returned). The official CanadaBuys .gov page (achatscanada.canada.ca) for TERIDA SYSTEMS LTD was fetched and contained only company/listing statements (FedRAMP/StateRAMP listing, CSPV qualification, NCIA BOA, RegTech as an all-inclusive term) with no sentence stating CLASsoft's function. Search results otherwise returned only third-party reproductions of TERIDA's EINPresswire releases (e.g. securityboulevard.com, einpresswire.com, journalofcyberpolicy.com, potomacofficersclub.com) and aggregators (cbinsights.com), which do not qualify as citation sources under the rules; those releases do contain vendor-authored CLASsoft function language, but no qualifying vendor-domain or .gov source for it could be fetched.",
+  "product": "Terida RegTech Framework - CLASsoft",
+  "source_url": null,
+  "sources_checked": [
+   "https://www.terida.com/",
+   "https://achatscanada.canada.ca/en/node/preview/373447"
+  ],
+  "status": "unresolved",
+  "vendor": "TERIDA"
+ },
+ {
+  "fork_id": "AGENCYNITCIAAS",
+  "notes": "ADJUDICATED UNRESOLVED by coordinator. Batch proposed DISC cloud hosting, but no USDA page ties the name \"vGov\" to DISC. USDA's own OCIO page (archived copy at UNT web archive) describes \"Virtual Worlds (vGov)\" as \"a partnership of several federal government agencies (both civilian and military) exploring the development and application of virtual worlds technology in a secure environment\" \u2014 which contradicts the marketplace record's IaaS hosting-catalogue framing. No live agency page states a citable function for this offering under its own name; the DISC mapping is a guess from the fork ID (NITC) and is rejected.",
+  "product": "vGov",
+  "sources_checked": [
+   "https://www.usda.gov/about-usda/general-information/staff-offices/office-chief-information-officer/ocio-centers-and-sub-centers",
+   "https://www.usda.gov/disc/business-enterprise/enterprise-standards",
+   "https://webarchive.library.unt.edu/web/20130215090457mp_/http://www.ocio.usda.gov/enabling-the-business"
+  ],
+  "status": "unresolved",
+  "vendor": "United States Department of Agriculture"
+ },
+ {
+  "category_proposal": "Cloud Infrastructure & Hosting",
+  "evidence_sentence": "Treasury\u2019s recently awarded Blanket Purchase Agreement (BPA) for cloud services (Treasury Cloud [TCloud]) will support our design, development, and implementation of security patterns and guardrails with expanded Security Operations Center (SOC) capabilities to accommodate increased telemetry from cloud assets and workloads.",
+  "fork_id": "FR1801046750",
+  "is_new_category": true,
+  "notes": "platform_general=true. Paired record with AGENCYWC2 (same TCloud service family); researched once and reported for both IDs. Evidence is Treasury's own FY 2025 Departmental Offices Capital Investment Plan (home.treasury.gov), CEA - Cloud Enterprise section, which names Treasury Cloud (TCloud) as the Department's BPA for cloud services; the same section describes the investment as providing a common cloud operating platform for Departmental workloads through the Treasury enterprise shared services cloud environments. That is an enterprise cloud hosting/platform function, hence the NEW category 'Cloud Infrastructure & Hosting'. No dedicated TCloud product page was found on treasury.gov; the Capital Investment Plan is the agency's own citable statement.",
+  "product": "Treasury Cloud (TCloud)",
+  "source_url": "https://home.Treasury.gov/system/files/266/FY-2025-DO-Capital-Investment-Plan.pdf",
+  "sources_checked": [
+   "https://home.Treasury.gov/system/files/266/FY-2025-DO-Capital-Investment-Plan.pdf",
+   "https://home.treasury.gov/footer/privacy-act/privacy-and-civil-liberties-impact-assessments/do-pclia",
+   "https://home.treasury.gov/news/press-releases/TG993"
+  ],
+  "status": "resolved",
+  "vendor": "United States Department of the Treasury"
+ },
+ {
+  "category_proposal": "Cloud Infrastructure & Hosting",
+  "evidence_sentence": "Treasury\u2019s recently awarded Blanket Purchase Agreement (BPA) for cloud services (Treasury Cloud [TCloud]) will support our design, development, and implementation of security patterns and guardrails with expanded Security Operations Center (SOC) capabilities to accommodate increased telemetry from cloud assets and workloads.",
+  "fork_id": "AGENCYWC2",
+  "is_new_category": true,
+  "notes": "platform_general=true. Paired record with FR1801046750 (same TCloud service family); same research and same evidence sentence applied, per instructions. 'Moderate' variant check: on the Treasury pages checked (home.treasury.gov), TCloud is described only as a single enterprise cloud services BPA/program; no agency page checked states a distinct 'Moderate' variant or a Moderate/High split for TCloud, so the Moderate distinction could not be confirmed or refuted from the agency's own words. The evidence therefore supports the TCloud family function (enterprise cloud services/platform), not a Moderate-specific function.",
+  "product": "Treasury Cloud Moderate",
+  "source_url": "https://home.Treasury.gov/system/files/266/FY-2025-DO-Capital-Investment-Plan.pdf",
+  "sources_checked": [
+   "https://home.Treasury.gov/system/files/266/FY-2025-DO-Capital-Investment-Plan.pdf",
+   "https://home.treasury.gov/footer/privacy-act/privacy-and-civil-liberties-impact-assessments/do-pclia",
+   "https://home.treasury.gov/news/press-releases/TG993"
+  ],
+  "status": "resolved",
+  "vendor": "United States Department of the Treasury"
+ }
+]
