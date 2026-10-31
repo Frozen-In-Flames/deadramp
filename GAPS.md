@@ -1359,6 +1359,27 @@ New extended functions from this fork, specified in groups/storage-l3/UNION-SPEC
 
 The parent group's ten registered gaps remain registered once under Singleton 64 and are not re-registered (this fork's air-gap storage prose is an instance of the payload-plane gap; its keyword-search phrase an instance of the full-text search gap). The five High baseline gaps from the uplift decision (MFA / authenticator management, FIPS-validated cryptography — the fork's IL4/IL5 posture does not transfer, even at High — encryption at rest, audit retention, session lock / termination) are recorded in the union spec. Absence accounting, stated plainly: retention, the founding fork's signature family, occurs zero times in this fork's prose and stands unclaimed at this tier; legal hold, immutability / WORM, supervision, enforcement, and storage management also stand at zero tokens; backup and descriptive audit retire in substance only, on this fork's words, producing no claims. The single raw hit in the fork's whole text, a directory-integration phrase inside its excluded workloads catalogue, was removed before matching and is pinned in tests. Core-boundary decision, stated once in the union spec: no core function is claim-supported by this fork — all fourteen substrate functions are carried up whole under the Merge Rule, carried, not claimed. This completes the remainder census's singleton units: every tiered unit is now built.
 
+## Untiered Set 1 — Cybersecurity & Risk Management (27 forks, tier null)
+
+New extended functions from this set, specified in groups/cybersecurity-untiered/UNION-SPEC.md, not implemented (claimant counts in parentheses):
+- [ ] open — AI / ML security engines (13 claimants)
+- [ ] open — Detection engines & staffed SOC operations (9)
+- [ ] open — Identity provider products (8)
+- [ ] open — SOAR / response automation execution (7)
+- [ ] open — Endpoint management agents (5)
+- [ ] open — EDR / XDR platforms (4)
+- [ ] open — Threat intelligence platforms (3)
+- [ ] open — Network enforcement planes (3)
+- [ ] open — Insider-risk / DLP engines (3)
+- [ ] open — Log / telemetry pipelines (3)
+- [ ] open — Identity proofing & fraud engines (2)
+- [ ] open — CSPM / CNAPP / SSPM platforms (2)
+- [ ] open — Application security testing engines (2)
+- [ ] open — Phishing simulation & training platforms (2)
+- [ ] open — Encryption & key-management platform layer (the build performs no cryptography; the platform layer includes the SC-13 note)
+
+Tier discipline, stated plainly: this set's forks publish no FedRAMP impact level, so tier stays null — no baseline is asserted and no CMMC equivalence is drawn anywhere in the group's docs. In place of a baseline, the union spec carries a Documented control claims section: IA documented by 8 forks, SC by 6, AC by 5, CA by 4, RA by 2, AU by 1, each traced to the claiming fork's own sentence; every other 800-53 family is listed as not documented and was never filled in from a baseline. Named absences: data protection and secure enclave stand at 0 of 27; audit logging at 1 of 27. One fork claims zero (a zero-trust marketing journey that is not ZTNA phrasing; the taxonomy was not re-tuned for it).
+
 ## Later groups
 
 Each group appends its section here when it ships.

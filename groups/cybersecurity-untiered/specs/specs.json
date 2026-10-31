@@ -1,0 +1,1103 @@
+[
+ {
+  "fork_id": "F1602167854",
+  "vendor": "BlackBerry",
+  "product": "BlackBerry CylanceProtect & CylanceOptics",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "BlackBerry's CylanceProtect redefines what antivirus (AV) can and should do for your organization by leveraging artificial intelligence to detect and prevent malware from executing on your endpoints in real time. By taking a mathematical approach to malware identification utilizing patent-pending, machine learning techniques instead of reactive signatures and sandboxes, BlackBerry's CylanceProtect renders new malware, viruses, bots and unknown future variants useless. BlackBerry's CylanceProtect has developed the most accurate, efficient and effective solution for preventing advanced persistent threats and malware from executing on your organization's endpoints. At the core of BlackBerry's CylanceProtect unprecedented malware identification capability is a revolutionary machine learning research platform that harnesses the power of algorithmic science and artificial intelligence. It analyzes and classifies hundreds of thousands of characteristics per file, breaking them down to an atomic level to discern whether an object is \"good\" or \"bad\" in real time. BlackBerry's CylanceOptics, part of the prevention-first BlackBerry's CylanceProtect Security Platform, is an artificial intelligence (AI) driven endpoint detection and response (EDR) solution designed to extend the prevention delivered by BlackBerry's CylanceProtect through root cause analysis, scalable threat hunting, and automated threat detection and response without increasing costs or security team workloads. BlackBerry's CylanceProtect and BlackBerry's CylanceOptics are managed through a single web interface within the FedRAMP boundary, and both capabilities are included in the BlackBerry's CylanceProtect and CylanceOptics cloud service offering.",
+  "functions_claimed": [
+   {
+    "function_id": "endpoint_detection",
+    "function": "Endpoint security, EDR & XDR",
+    "evidence": "BlackBerry's CylanceOptics, part of the prevention-first BlackBerry's CylanceProtect Security Platform, is an artificial intelligence (AI) driven endpoint detection and response (EDR) solution designed to extend the prevention delivered by BlackBerry's CylanceProtect through root cause analysis, scalable threat hunting, and automated threat detection and response without increasing costs or sec..."
+   },
+   {
+    "function_id": "detection_response",
+    "function": "Threat detection, SOC & managed response (SIEM/SOAR/MDR)",
+    "evidence": "BlackBerry's CylanceOptics, part of the prevention-first BlackBerry's CylanceProtect Security Platform, is an artificial intelligence (AI) driven endpoint detection and response (EDR) solution designed to extend the prevention delivered by BlackBerry's CylanceProtect through root cause analysis, scalable threat hunting, and automated threat detection and response without increasing costs or sec..."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "BlackBerry's CylanceProtect redefines what antivirus (AV) can and should do for your organization by leveraging artificial intelligence to detect and prevent malware from executing on your endpoints in real time."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1602167854/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1602167854"
+ },
+ {
+  "fork_id": "FR2232465502",
+  "vendor": "Broadcom",
+  "product": "Symantec Gov Cloud Security (GCS)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Symantec Gov Cloud Security (GCS) is designed to provide security to U.S. government agencies\u2019 networks and protection for their information. It leverages common foundational components that support several individual Symantec cloud services in a single boundary. \n\n\nThe following Symantec solution(s) are FedRAMP authorized: \n\n- Symantec Gov Cloud \u2013 Web Protection \n\n\nSymantec Gov Cloud \u2013 Web Protection, which includes the Symantec Cloud Secure Web Gateway (Cloud SWG), allows federal agencies to apply network security policies across web and cloud applications. It helps protect users with web and cloud security services that connect all devices to a FedRAMP-authorized intelligent control point for high-performance, cloud-based threat protection services. Configure and enforce web and cloud application access-control policies that streamline security operations and reduce operational and maintenance costs, while also improving user productivity. \n\n\n- Deliver the foundation for a complete Security Service Edge (SSE) solution through a single SKU. \n\n- Authenticate users and enforce user, group, and location-based security controls, regardless of their location or device. \n\n- Simplify the user experience through a single agent that orchestrates inspection through multiple layers of security.\n\n- Control employee access to Shadow IT cloud apps (unsanctioned cloud applications) to reduce the attack footprint, and ensure security, while maintaining productivity. \n\n- Deliver a proxy-based architecture that delivers Secure Web Gateway and Advanced Threat Protection that terminates, inspects, and controls high volumes of web and cloud traffic, even when it is SSL/TLS encrypted. \n\n- Set policies based on website content-based classifications and threat risk levels for consistent and acceptable use and prevent users from accessing known and unknown malicious sites. \n\n- Classify URLs in 80+ categories covering more than 50 languages for comprehensive analysis and threat detection. \n\n- Enable application-level point-to-point connectivity, cloaking all resources from the end-user devices and the internet. \n\n- Block high-risk and advanced threats with multilayer file inspection to prevent the download of malicious files that will compromise the agency\u2019s security. \n\n- Threat Risk Levels \u2013 Set web access policies based on a URL\u2019s relative level of threat risk.\n\nSymantec Gov Cloud \u2013 Web Protection delivers an added layer of protection that actively safeguards an agency\u2019s digital assets.\r\n\r\nUser-based licensing of Symantec Gov Cloud \u2013 Web Protection provides the option to also deploy any number of on-premises appliances (physical or virtual), depending on an agency\u2019s use case for either a full cloud, on-premises Edge SWS, or hybrid solutio",
+  "functions_claimed": [
+   {
+    "function_id": "detection_response",
+    "function": "Threat detection, SOC & managed response (SIEM/SOAR/MDR)",
+    "evidence": "Configure and enforce web and cloud application access-control policies that streamline security operations and reduce operational and maintenance costs, while also improving user productivity."
+   },
+   {
+    "function_id": "network_security",
+    "function": "Network security, segmentation & zero-trust access",
+    "evidence": "The following Symantec solution(s) are FedRAMP authorized: \n\n- Symantec Gov Cloud \u2013 Web Protection \n\n\nSymantec Gov Cloud \u2013 Web Protection, which includes the Symantec Cloud Secure Web Gateway (Cloud SWG), allows federal agencies to apply network security policies across web and cloud applications."
+   },
+   {
+    "function_id": "encryption_feature",
+    "function": "Encryption & key management",
+    "evidence": "- Deliver a proxy-based architecture that delivers Secure Web Gateway and Advanced Threat Protection that terminates, inspects, and controls high volumes of web and cloud traffic, even when it is SSL/TLS encrypted."
+   },
+   {
+    "function_id": "automation",
+    "function": "Automation & orchestration",
+    "evidence": "- Simplify the user experience through a single agent that orchestrates inspection through multiple layers of security."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2232465502/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2232465502"
+ },
+ {
+  "fork_id": "FR2232465502A",
+  "vendor": "Broadcom",
+  "product": "Symantec Gov Cloud Security (GCS) - High",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Symantec Gov Cloud Security (GCS) is designed to provide security to U.S. government agencies\u2019 networks and protection for their information. It leverages common foundational components that support several individual Symantec cloud services in a single boundary. \n\n\nThe following Symantec solution(s) are FedRAMP authorized: \n\n- Symantec Gov Cloud \u2013 Web Protection \n\n\nSymantec Gov Cloud \u2013 Web Protection, which includes the Symantec Cloud Secure Web Gateway (Cloud SWG), allows federal agencies to apply network security policies across web and cloud applications. It helps protect users with web and cloud security services that connect all devices to a FedRAMP-authorized intelligent control point for high-performance, cloud-based threat protection services. Configure and enforce web and cloud application access-control policies that streamline security operations and reduce operational and maintenance costs, while also improving user productivity. \n\n\n- Deliver the foundation for a complete Security Service Edge (SSE) solution through a single SKU. \n\n- Authenticate users and enforce user, group, and location-based security controls, regardless of their location or device. \n\n- Simplify the user experience through a single agent that orchestrates inspection through multiple layers of security.\n\n- Control employee access to Shadow IT cloud apps (unsanctioned cloud applications) to reduce the attack footprint, and ensure security, while maintaining productivity. \n\n- Deliver a proxy-based architecture that delivers Secure Web Gateway and Advanced Threat Protection that terminates, inspects, and controls high volumes of web and cloud traffic, even when it is SSL/TLS encrypted. \n\n- Set policies based on website content-based classifications and threat risk levels for consistent and acceptable use and prevent users from accessing known and unknown malicious sites. \n\n- Classify URLs in 80+ categories covering more than 50 languages for comprehensive analysis and threat detection. \n\n- Enable application-level point-to-point connectivity, cloaking all resources from the end-user devices and the internet. \n\n- Block high-risk and advanced threats with multilayer file inspection to prevent the download of malicious files that will compromise the agency\u2019s security. \n\n- Threat Risk Levels \u2013 Set web access policies based on a URL\u2019s relative level of threat risk.\n\nSymantec Gov Cloud \u2013 Web Protection delivers an added layer of protection that actively safeguards an agency\u2019s digital assets.\r\n\r\nUser-based licensing of Symantec Gov Cloud \u2013 Web Protection provides the option to also deploy any number of on-premises appliances (physical or virtual), depending on an agency\u2019s use case for either a full cloud, on-premises Edge SWS, or hybrid solutio",
+  "functions_claimed": [
+   {
+    "function_id": "detection_response",
+    "function": "Threat detection, SOC & managed response (SIEM/SOAR/MDR)",
+    "evidence": "Configure and enforce web and cloud application access-control policies that streamline security operations and reduce operational and maintenance costs, while also improving user productivity."
+   },
+   {
+    "function_id": "network_security",
+    "function": "Network security, segmentation & zero-trust access",
+    "evidence": "The following Symantec solution(s) are FedRAMP authorized: \n\n- Symantec Gov Cloud \u2013 Web Protection \n\n\nSymantec Gov Cloud \u2013 Web Protection, which includes the Symantec Cloud Secure Web Gateway (Cloud SWG), allows federal agencies to apply network security policies across web and cloud applications."
+   },
+   {
+    "function_id": "encryption_feature",
+    "function": "Encryption & key management",
+    "evidence": "- Deliver a proxy-based architecture that delivers Secure Web Gateway and Advanced Threat Protection that terminates, inspects, and controls high volumes of web and cloud traffic, even when it is SSL/TLS encrypted."
+   },
+   {
+    "function_id": "automation",
+    "function": "Automation & orchestration",
+    "evidence": "- Simplify the user experience through a single agent that orchestrates inspection through multiple layers of security."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2232465502A/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2232465502A"
+ },
+ {
+  "fork_id": "FR2304757473",
+  "vendor": "Cisco Systems Inc.",
+  "product": "Cisco Security Cloud for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Cisco Security Cloud for Government provides cloud-based security solutions with multiple component products.\r\n\r\n \r\n\r\n\r\n\r\nCisco Umbrella for Government \r\n\r\nCisco Umbrella for Government delivers advanced, cloud-native cybersecurity, ensuring protection and compliance for government agencies to support their mission. It significantly uplevels government cybersecurity, offering comprehensive protection that meets the unique needs of government agencies. Cisco Umbrella for Government provides a comprehensive security suite with DNS-layer security and Secure Internet Gateway (SIG) capabilities, such as secure web gateway (SWG) , cloud-delivered firewall and intrusion prevention (Snort IPS), cloud access security broker (CASB), and data loss prevention (DLP), and integration with CISA Protective DNS. The feature set is comparable to the Cisco Umbrella product in use by over 30,000 Enterprise customers. Cisco Secure Access for Government includes more robust SSE capabilities than Cisco Umbrella for Government. Agencies looking for ZTNA and a high-performance architecture should choose Secure Access for Government.\r\n\r\n \r\n\r\n\r\n\r\nCisco Secure Access for Government\r\n\r\nCisco Secure Access for Government is a comprehensive Security Service Edge solution grounded in Zero Trust, that empowers Federal, State, and Local agencies to secure their workforce and data, simplify operations, and advance their mission with confidence. Its adaptive security capabilities, powered by Cisco Talos and AI, enable real-time threat detection, behavioral analysis, and predictive defense\u2014ensuring proactive protection of your people and data against evolving cyber risks. With a comprehensive zero trust approach and a unique unified client, users gain seamless, secure access to critical applications across devices and locations\u2014without compromising usability or performance. When paired with Catalyst\u00ae SD-WAN, Cisco Secure Access for Government delivers a holistic SASE solution. Enhanced integration with Catalyst SD-WAN will be available in 2026.\r\n\r\nKey capabilities include:\r\n\r\nA single platform for IT teams that centralizes management, streamlines policy enforcement, and reduces overhead. AI-driven automation accelerates response times and reduces human error, which integrates with  solutions like Duo and Cisco SD-WAN will enable a compliant, Zero Trust architecture tailored for public sector needs.\r\nCloud-native and continuously updated, Cisco Secure Access removes hardware complexity and scales effortlessly to meet the demands of dynamic government environments. The result: stronger security, improved user experience, and simplified operations\u2014all built to protect the mission and serve the public. \r\nSecure Access for Government includes the following: Secure Internet Access (SIA) and Secure Private Access (SPA). Both products have Essentials and Advantage SKUs.\r\nOffers robust protection against modern-day cyber threats through Zero Trust Network Access, DNS security, Secure Web Gateway (SWG), Data Loss Prevention (DLP), Cloud-Delivered Firewall (FWaaS), Cloud Access Security Broker (CASB), VPN as-a-Service (VPNaaS), Advanced Malware Protection, and Talos\u00ae Threat Intelligence capabilities.\r\nExtends DNS security with an Integration with the Cybersecurity and Infrastructure Security Agency (CISA\u2019s) Protective DNS (PDNS).\r\n \r\n\r\n\r\n\r\nCisco Security Cloud Control\r\n\r\nCisco Security Cloud Control is a security platform that allows you to manage your security products and achieve security outcomes from a single integrated interface. Integrating security products in the platform is a streamlined experience. Within Security Cloud Control, user and group management occurs at the platform level. Roles are assigned to these users and groups to define their privileges for administering Security Cloud Control and the integrated products. Navigation between products and tools is intuitive and standardized with a common platform menu and toolbar for all integrated products.\r\n\r\n\r\n\r\n\r\nCisco Security Cloud Control - Firewall Management for Government \r\n\r\nCisco Security Cloud Control - Firewall Management for Government delivers cloud-native firewall policy and device management through a unified management plane accessible through an intuitive web-based console. It enables centralized, scalable, and secure orchestration of Cisco next-generation firewalls (NGFWs) \u2014 including ASA and Secure Firewall Threat Defense (FTD) devices \u2014 across hybrid, cloud, and on-premises environments. With real-time visibility into traffic and threats, automated policy and object updates, and zero-touch provisioning for remote deployments - Security Cloud Control Firewall Management for Government reduces operational complexity for IT teams while strengthening cyber resilience and enabling secure modernization across mission-critical infrastructure. This product will now also include AIOps features like Policy Analyzer & Optimizer, Feature adoption, and a summary dashboard for customers to ensuring faster and accurate anomaly detection using Artificial Intelligence. A SAL Eventing License Utilization Dashboard will also be available to the customers.\r\n\r\n \r\n\r\n\r\n\r\nCisco Multicloud Defense for Government \r\n\r\nCisco Multicloud Defense for Government is designed to provide consistent, automated protection across multicloud environments, including AWS, Azure, GCP, and OCI. It integrates network security with multicloud networking, offering multi-directional protection to stop inbound attacks, prevent lateral movement, and block data exfiltration. With its centralized SaaS control plane, Cisco Multicloud Defense simplifies security management, enabling organizations to create and enforce unified security policies across all cloud environments in real-time. By leveraging advanced features such as dynamic policy management, continuous asset discovery, and automation, Cisco Multicloud Defense empowers organizations to reduce complexity, enhance operational efficiency, and maintain robust security across their multi-cloud infrastructure.\r\n\r\n \r\n\r\n\r\n\r\nCisco Secure Email Threat Defense for Government\r\n\r\nCisco Secure Email Threat Defense for Government exemplifies our ongoing commitment to delivering trusted, government-grade email security for agencies, contractors, and organizations handling regulated or sensitive data. Secure Email Threat Defense, a cloud-scale advanced email security layer, harnesses AI powered detections to provide comprehensive protection against advanced email threats, integrated as an API-based supplemental control or with the addition of new pre-delivery inline gateway protection.\r\n\r\nBeyond the governance and compliance benefits, Cisco Secure Email Threat Defense for Government delivers a set of advanced protection capabilities that align directly with real-world email threat risks \u2014 especially for organizations that are particularly sensitive to BEC, phishing, QR Code/Quishing Detection, brand impersonation, or high-risk personnel.\r\n\r\n \r\n\r\n\r\n\r\nDuo Federal\r\n\r\nDuo\u2019s Federal Editions can verify the identity of users with secure and easy to use two-factor authentication methods that helps public sector entities satisfy NIST 800-63-3 and 53/63/171 authentication requirements. In addition to verifying users\u2019 identities, Duo\u2019s solution checks the security health of every device authenticating into the environment, at the time of access. Admins can use Duo to enforce stricter device and application access policies, such as blocking login requests based on location or anonymous networks. Duo ensures only trusted users and devices can access protected applications. This complete security solution prevents modern attackers that often target multiple areas - including credential theft and the exploitation of known software vulnerabilities affecting outdated software versions.",
+  "functions_claimed": [
+   {
+    "function_id": "detection_response",
+    "function": "Threat detection, SOC & managed response (SIEM/SOAR/MDR)",
+    "evidence": "Its adaptive security capabilities, powered by Cisco Talos and AI, enable real-time threat detection, behavioral analysis, and predictive defense\u2014ensuring proactive protection of your people and data against evolving cyber risks."
+   },
+   {
+    "function_id": "threat_intel",
+    "function": "Threat intelligence",
+    "evidence": "Offers robust protection against modern-day cyber threats through Zero Trust Network Access, DNS security, Secure Web Gateway (SWG), Data Loss Prevention (DLP), Cloud-Delivered Firewall (FWaaS), Cloud Access Security Broker (CASB), VPN as-a-Service (VPNaaS), Advanced Malware Protection, and Talos\u00ae Threat Intelligence capabilities."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "Duo Federal \n \nDuo\u2019s Federal Editions can verify the identity of users with secure and easy to use two-factor authentication methods that helps public sector entities satisfy NIST 800-63-3 and 53/63/171 authentication requirements."
+   },
+   {
+    "function_id": "network_security",
+    "function": "Network security, segmentation & zero-trust access",
+    "evidence": "Cisco Umbrella for Government provides a comprehensive security suite with DNS-layer security and Secure Internet Gateway (SIG) capabilities, such as secure web gateway (SWG) , cloud-delivered firewall and intrusion prevention (Snort IPS), cloud access security broker (CASB), and data loss prevention (DLP), and integration with CISA Protective DNS."
+   },
+   {
+    "function_id": "phishing_awareness",
+    "function": "Phishing defense & security awareness training",
+    "evidence": "Beyond the governance and compliance benefits, Cisco Secure Email Threat Defense for Government delivers a set of advanced protection capabilities that align directly with real-world email threat risks \u2014 especially for organizations that are particularly sensitive to BEC, phishing, QR Code/Quishing Detection, brand impersonation, or high-risk personnel."
+   },
+   {
+    "function_id": "insider_dlp",
+    "function": "Insider risk, DLP & data security",
+    "evidence": "Cisco Umbrella for Government provides a comprehensive security suite with DNS-layer security and Secure Internet Gateway (SIG) capabilities, such as secure web gateway (SWG) , cloud-delivered firewall and intrusion prevention (Snort IPS), cloud access security broker (CASB), and data loss prevention (DLP), and integration with CISA Protective DNS."
+   },
+   {
+    "function_id": "asset_inventory",
+    "function": "Asset inventory, visibility & attack surface",
+    "evidence": "By leveraging advanced features such as dynamic policy management, continuous asset discovery, and automation, Cisco Multicloud Defense empowers organizations to reduce complexity, enhance operational efficiency, and maintain robust security across their multi-cloud infrastructure."
+   },
+   {
+    "function_id": "endpoint_management",
+    "function": "Endpoint management, patching & IT automation",
+    "evidence": "Cisco Security Cloud Control - Firewall Management for Government  \n \nCisco Security Cloud Control - Firewall Management for Government delivers cloud-native firewall policy and device management through a unified management plane accessible through an intuitive web-based console."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "Its adaptive security capabilities, powered by Cisco Talos and AI, enable real-time threat detection, behavioral analysis, and predictive defense\u2014ensuring proactive protection of your people and data against evolving cyber risks."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "With real-time visibility into traffic and threats, automated policy and object updates, and zero-touch provisioning for remote deployments - Security Cloud Control Firewall Management for Government reduces operational complexity for IT teams while strengthening cyber resilience and enabling secure modernization across mission-critical infrastructure."
+   },
+   {
+    "function_id": "access_control_feature",
+    "function": "Access control & least privilege (platform feature)",
+    "evidence": "Key capabilities include: \n \nA single platform for IT teams that centralizes management, streamlines policy enforcement, and reduces overhead."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs & integrations",
+    "evidence": "Cisco Umbrella for Government provides a comprehensive security suite with DNS-layer security and Secure Internet Gateway (SIG) capabilities, such as secure web gateway (SWG) , cloud-delivered firewall and intrusion prevention (Snort IPS), cloud access security broker (CASB), and data loss prevention (DLP), and integration with CISA Protective DNS."
+   },
+   {
+    "function_id": "automation",
+    "function": "Automation & orchestration",
+    "evidence": "It enables centralized, scalable, and secure orchestration of Cisco next-generation firewalls (NGFWs) \u2014 including ASA and Secure Firewall Threat Defense (FTD) devices \u2014 across hybrid, cloud, and on-premises environments."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2304757473/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2304757473"
+ },
+ {
+  "fork_id": "FR2000863987",
+  "vendor": "Cloudflare",
+  "product": "Cloudflare for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Cloudflare is a global network, designed to help agencies enhance the security, performance and reliability for any Internet-connected service.  Our FedRAMP offering protects entire agency networks, helps agencies build Internet-scale applications efficiently, accelerates any website or Internet application, wards off DDoS attacks, keeps hackers at bay, and helps agencies in their journey to Zero Trust. Learn more at https://www.cloudflare.com/public-sector/",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2000863987/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2000863987"
+ },
+ {
+  "fork_id": "FR2633734912",
+  "vendor": "ConnectSecure LLC",
+  "product": "ConnectSecure Vulnerability and Compliance Manager",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Governance, Risk, and Compliance (GRC)"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "ConnectSecure Vulnerability and Compliance Manager is a\ncloud-hosted Software-as-a-Service (SaaS) application\npurpose-built for the Managed Service Provider (MSP)\ncommunity. It empowers small and medium-sized\nbusinesses to protect their IT assets from security threats\nthrough comprehensive, affordable vulnerability and\ncompliance management.",
+  "functions_claimed": [
+   {
+    "function_id": "compliance_grc",
+    "function": "GRC, compliance automation & continuous authorization",
+    "evidence": "It empowers small and medium-sized\nbusinesses to protect their IT assets from security threats\nthrough comprehensive, affordable vulnerability and\ncompliance management."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2633734912/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2633734912"
+ },
+ {
+  "fork_id": "FR2134254227",
+  "vendor": "Devo",
+  "product": "Devo.Gov-US",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Devo is a cloud-native logging and security analytics platform. Devo ingests logs at cloud scale, stores all logs in their native format, and allows the customer to query the data immediately upon initial ingesting. Devo provides multiple applications on the platform including the Devo Intelligent SIEM, SOAR, Security Operations, MITRE ATT&CK Advisor, Relay, Collectors, and the Devo Exchange allowing the customer\u2019s SOC and IT Operations teams to leverage and collaborate on the same data. Our newly added capabilities include, the Devo User and Entity Behavior Analytics (UEBA), Devo ThreatLink, and Devo Data Orchestrator capabilities as well as the Devo Endpoint Agent, powered by Snare Solutions - a centralized security log collection and management platform. Additionally, in partnership with one of our Managed Security Service Providers (MSSP), we\u2019re happy to offer Managed Detection and Response (MDR) Services.",
+  "functions_claimed": [
+   {
+    "function_id": "detection_response",
+    "function": "Threat detection, SOC & managed response (SIEM/SOAR/MDR)",
+    "evidence": "Devo provides multiple applications on the platform including the Devo Intelligent SIEM, SOAR, Security Operations, MITRE ATT&CK Advisor, Relay, Collectors, and the Devo Exchange allowing the customer\u2019s SOC and IT Operations teams to leverage and collaborate on the same data."
+   },
+   {
+    "function_id": "insider_dlp",
+    "function": "Insider risk, DLP & data security",
+    "evidence": "Our newly added capabilities include, the Devo User and Entity Behavior Analytics (UEBA), Devo ThreatLink, and Devo Data Orchestrator capabilities as well as the Devo Endpoint Agent, powered by Snare Solutions - a centralized security log collection and management platform."
+   },
+   {
+    "function_id": "automation",
+    "function": "Automation & orchestration",
+    "evidence": "Our newly added capabilities include, the Devo User and Entity Behavior Analytics (UEBA), Devo ThreatLink, and Devo Data Orchestrator capabilities as well as the Devo Endpoint Agent, powered by Snare Solutions - a centralized security log collection and management platform."
+   },
+   {
+    "function_id": "log_telemetry",
+    "function": "Log & telemetry collection, pipelines & security data lakes",
+    "evidence": "Our newly added capabilities include, the Devo User and Entity Behavior Analytics (UEBA), Devo ThreatLink, and Devo Data Orchestrator capabilities as well as the Devo Endpoint Agent, powered by Snare Solutions - a centralized security log collection and management platform."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2134254227/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2134254227"
+ },
+ {
+  "fork_id": "FR2635050845",
+  "vendor": "DigiCert, Inc.",
+  "product": "DigiCert for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Development Tools",
+   "Governance, Risk, and Compliance (GRC)"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "DigiCert for U.S. Government helps federal agencies reduce certificate-related outages gain control over the digital identities, certificates, cryptographic keys, and software their systems depend on. The unified SaaS platform gives teams a consistent way to manage these risks across their users, devices, workloads, and applications.\n\nThrough  DigiCert\u00ae ONE  on AWS GovCloud (US), the platform helps agencies discover and automate certificate lifecycles, operate private certificate authorities, protect software-signing processes and supply chains, and enforce consistent administrative access controls. These integrated capabilities help agencies reduce certificate-related outages, strengthen cyber resilience, improve auditability, and manage digital trust across cloud, hybrid, and on-premises environments.\n\nDigiCert for U.S. Government includes three integrated solutions:\n\n\u2022\tDigiCert\u00ae Trust Lifecycle Manager:\nCA-agnostic certificate lifecycle management (CLM) solution providing centralized discovery, inventory, enrollment, and automated renewal of public and private certificates across users, devices, servers, and infrastructure, eliminating manual tracking and reducing certificate-related outages. It supports standard enrollment protocols (ACME, EST, SCEP, and CMP) and integrates natively with AWS services alongside CMDB platforms, endpoint management tools, identity providers, and third-party scanners.\n\n\u2022\tDigiCert\u00ae Private CA:\nPrivate certificate authority solution enabling organizations to create, manage, and operate privately trusted root and intermediate CAs for issuing certificates to internal users, devices, servers, and workloads.\n\n\u2022\tDigiCert\u00ae Software Trust Manager:\nA code signing and secure releases solution that provides centralized, policy-driven management of code signing keys and certificates, HSM-backed private key protection, CI/CD pipeline integrations, approval workflows, and comprehensive audit logging. DigiCert ONE environments supporting Software Trust Manager are covered by applicable independent security and compliance attestations, including SOC 2 Type II and WebTrust, depending on the deployment and region. DigiCert uses FIPS 140-2 and/or FIPS 140-3 compliant Hardware Security Modules (HSMs), as applicable, to protect cryptographic keys. Software Trust Manager helps organizations secure software signing and release processes, enforce signing policies, protect signing keys, and strengthen software release security.",
+  "functions_claimed": [
+   {
+    "function_id": "endpoint_management",
+    "function": "Endpoint management, patching & IT automation",
+    "evidence": "It supports standard enrollment protocols (ACME, EST, SCEP, and CMP) and integrates natively with AWS services alongside CMDB platforms, endpoint management tools, identity providers, and third-party scanners."
+   },
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging & activity trails",
+    "evidence": "These integrated capabilities help agencies reduce certificate-related outages, strengthen cyber resilience, improve auditability, and manage digital trust across cloud, hybrid, and on-premises environments."
+   },
+   {
+    "function_id": "access_control_feature",
+    "function": "Access control & least privilege (platform feature)",
+    "evidence": "Through  DigiCert\u00ae ONE  on AWS GovCloud (US), the platform helps agencies discover and automate certificate lifecycles, operate private certificate authorities, protect software-signing processes and supply chains, and enforce consistent administrative access controls."
+   },
+   {
+    "function_id": "encryption_feature",
+    "function": "Encryption & key management",
+    "evidence": "Government helps federal agencies reduce certificate-related outages gain control over the digital identities, certificates, cryptographic keys, and software their systems depend on."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2635050845/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2635050845"
+ },
+ {
+  "fork_id": "FR2630354482",
+  "vendor": "Dispel LLC",
+  "product": "Dispel Zero Trust Engine",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Virtual Private Network (VPN)"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Dispel Zero Trust Engine (DZTE) is a cloud-hosted zero trust remote access and privileged access management platform that provides secure, isolated, identity-federated connectivity to operational technology and enterprise environments. It delivers moving-target-defense networking, brokered remote sessions, and least-privilege access for federal and critical-infrastructure customers.",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "Dispel Zero Trust Engine (DZTE) is a cloud-hosted zero trust remote access and privileged access management platform that provides secure, isolated, identity-federated connectivity to operational technology and enterprise environments."
+   },
+   {
+    "function_id": "endpoint_management",
+    "function": "Endpoint management, patching & IT automation",
+    "evidence": "Dispel Zero Trust Engine (DZTE) is a cloud-hosted zero trust remote access and privileged access management platform that provides secure, isolated, identity-federated connectivity to operational technology and enterprise environments."
+   },
+   {
+    "function_id": "access_control_feature",
+    "function": "Access control & least privilege (platform feature)",
+    "evidence": "It delivers moving-target-defense networking, brokered remote sessions, and least-privilege access for federal and critical-infrastructure customers."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2630354482/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2630354482"
+ },
+ {
+  "fork_id": "FR2628647233",
+  "vendor": "Dispel, LLC",
+  "product": "Dispel Zero Trust Engine (DZTE) For Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Virtual Private Network (VPN)",
+   "Network Management"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "DZTE is a Government-only cloud computing SaaS that provides secure remote access to critical systems, enabling customers to implement compensating controls for operational technology and legacy technology environments.",
+  "functions_claimed": [
+   {
+    "function_id": "endpoint_management",
+    "function": "Endpoint management, patching & IT automation",
+    "evidence": "DZTE is a Government-only cloud computing SaaS that provides secure remote access to critical systems, enabling customers to implement compensating controls for operational technology and legacy technology environments."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2628647233/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2628647233"
+ },
+ {
+  "fork_id": "FR2632054495",
+  "vendor": "JupiterOne, Inc.",
+  "product": "JupiterOne GovCloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "JupiterOne is a cloud-based cyber asset attack surface management (CAASM) platform that gives security teams visibility into an organization's digital assets, the relationships between those assets, and the risks and compliance gaps affecting them. The platform integrates with an organization's existing cloud providers, identity and access management tools, code repositories, endpoint management, vulnerability scanners, and ticketing systems to automatically build and continuously update an asset inventory, map asset relationships in a graph model, and let users query that inventory in natural language. Built-in compliance dashboards map assets and controls to supported compliance frameworks and surface the evidence needed to demonstrate adherence, while configurable rules and alerts monitor for vulnerabilities, policy violations, and risk changes over time.",
+  "functions_claimed": [
+   {
+    "function_id": "vuln_management",
+    "function": "Vulnerability scanning & management",
+    "evidence": "The platform integrates with an organization's existing cloud providers, identity and access management tools, code repositories, endpoint management, vulnerability scanners, and ticketing systems to automatically build and continuously update an asset inventory, map asset relationships in a graph model, and let users query that inventory in natural language."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "The platform integrates with an organization's existing cloud providers, identity and access management tools, code repositories, endpoint management, vulnerability scanners, and ticketing systems to automatically build and continuously update an asset inventory, map asset relationships in a graph model, and let users query that inventory in natural language."
+   },
+   {
+    "function_id": "compliance_grc",
+    "function": "GRC, compliance automation & continuous authorization",
+    "evidence": "Built-in compliance dashboards map assets and controls to supported compliance frameworks and surface the evidence needed to demonstrate adherence, while configurable rules and alerts monitor for vulnerabilities, policy violations, and risk changes over time."
+   },
+   {
+    "function_id": "asset_inventory",
+    "function": "Asset inventory, visibility & attack surface",
+    "evidence": "JupiterOne is a cloud-based cyber asset attack surface management (CAASM) platform that gives security teams visibility into an organization's digital assets, the relationships between those assets, and the risks and compliance gaps affecting them."
+   },
+   {
+    "function_id": "endpoint_management",
+    "function": "Endpoint management, patching & IT automation",
+    "evidence": "The platform integrates with an organization's existing cloud providers, identity and access management tools, code repositories, endpoint management, vulnerability scanners, and ticketing systems to automatically build and continuously update an asset inventory, map asset relationships in a graph model, and let users query that inventory in natural language."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "Built-in compliance dashboards map assets and controls to supported compliance frameworks and surface the evidence needed to demonstrate adherence, while configurable rules and alerts monitor for vulnerabilities, policy violations, and risk changes over time."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs & integrations",
+    "evidence": "The platform integrates with an organization's existing cloud providers, identity and access management tools, code repositories, endpoint management, vulnerability scanners, and ticketing systems to automatically build and continuously update an asset inventory, map asset relationships in a graph model, and let users query that inventory in natural language."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2632054495/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2632054495"
+ },
+ {
+  "fork_id": "FR2116544598",
+  "vendor": "Keeper Security",
+  "product": "Keeper Security Government Cloud Password Manager and Privileged Access Manager",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Keeper Security Government Cloud (KSGC) transforms the way government organizations protect their operations against password-related data breaches and cyberthreats including ransomware and phishing attacks. KSGC provides IT administrators with visibility, management and control over their organization's password security, monitoring and reporting. The KSGC cybersecurity platform utilizes a zero-trust framework and zero-knowledge security architecture and integrates with on-premise, cloud and hybrid-cloud environments. KSGC utilizes granular, role-based administrative controls including delegated administration. IT Administrators can enforce critical internal control policies including password complexity, IP white listing, two-factor authentication and Data Loss Prevention (DLP). KSGC's modern provisioning tools allow organizations to rapidly deploy cybersecurity protection to thousands of users, on all their devices, and can integrate with any identity stack including AD, LDAP, SSO (SAML), SCIM and APIs. The cybersecurity platform includes robust event logging, reporting and auditing capabilities with seamless integration with Security Information and Event Management (SIEM) systems.",
+  "functions_claimed": [
+   {
+    "function_id": "detection_response",
+    "function": "Threat detection, SOC & managed response (SIEM/SOAR/MDR)",
+    "evidence": "The cybersecurity platform includes robust event logging, reporting and auditing capabilities with seamless integration with Security Information and Event Management (SIEM) systems."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "IT Administrators can enforce critical internal control policies including password complexity, IP white listing, two-factor authentication and Data Loss Prevention (DLP)."
+   },
+   {
+    "function_id": "phishing_awareness",
+    "function": "Phishing defense & security awareness training",
+    "evidence": "Keeper Security Government Cloud (KSGC) transforms the way government organizations protect their operations against password-related data breaches and cyberthreats including ransomware and phishing attacks."
+   },
+   {
+    "function_id": "insider_dlp",
+    "function": "Insider risk, DLP & data security",
+    "evidence": "IT Administrators can enforce critical internal control policies including password complexity, IP white listing, two-factor authentication and Data Loss Prevention (DLP)."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "KSGC provides IT administrators with visibility, management and control over their organization's password security, monitoring and reporting."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs & integrations",
+    "evidence": "The KSGC cybersecurity platform utilizes a zero-trust framework and zero-knowledge security architecture and integrates with on-premise, cloud and hybrid-cloud environments."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2116544598/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2116544598"
+ },
+ {
+  "fork_id": "FR2527245282",
+  "vendor": "Mimic Networks, Inc.",
+  "product": "Mimic Enterprise Ransomware Defense Platform (ERDP)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "The Mimic platform delivers a high-assurance ransomware resilience layer that operates at runtime to stop damage and maintain operational continuity. Built for speed, deception, and recovery, Mimic protects critical applications before ransomware can encrypt or exfiltrate data. Unlike traditional tools, Mimic deploys in the kernel, enabling rapid deflection, application immutability, and lifeboat-based recovery. The platform includes the following core components:\r\n\r\nAutomated Deflection and Runtime Resilience\r\nEarly and Deterministic Response: Mimic continuously monitors application behavior at the kernel level across Windows and Linux systems. At the first sign of ransomware or unauthorized change, protection is triggered in real time\u2014without reliance on manual SOC involvement.\r\n\r\nAutomated Deflection Measures: Mimic acts faster than ransomware can execute, deploying the following capabilities automatically:\r\nApplication Immutability: Critical applications are instantly locked into a protected state, preventing any changes from being made. This protects both against malicious encryption and violations of internal change policies.\r\nAI-Driven Deception: When an attack is detected, Mimic fabricates decoy data that mirrors real applications and critical assets. These AI-generated lures convince attackers they have succeeded\u2014slowing them down and buying time for response and forensics.\r\nAdversary Containment: By operating inside the application\u2019s runtime environment, Mimic halts ransomware progression deterministically, even in cases of zero-days or evasive techniques.\r\n\r\nRecovery Through the Lifeboat Approach\r\nIsolated Recovery in Minutes: Mimic\u2019s recovery workflows leverage the Lifeboat\u2014an isolated, clean environment where compromised applications are relaunched safely. This ensures continued operation while the primary environment is investigated and remediated.\r\nResilient Recovery Process: The platform enables a secure and controlled recovery that includes:\r\nSpinning up trusted application instances in a separate environment,\r\nEnforcing authentication controls to prevent attacker reentry, and\r\nReintegrating recovered systems in a compliant, structured manner.\r\n\r\nTesting and Assurance Tools\r\nContinuous Validation with Customers: Mimic supports ongoing evaluation of its controls in collaboration with the customer\u2019s security team through built-in testing features.\r\nArena: A secure sandbox that mirrors production environments, enabling customers to simulate attacks and observe platform behavior in controlled conditions.\r\nSignal Generator: A ransomware simulation engine that replicates real-world adversary tactics\u2014allowing validation of deflection and recovery mechanisms without risking operational harm.\r\n\r\nBy integrating ultra-fast response, deception-based defense, and secure recovery, the Mimic platform delivers a last line of defense against ransomware. These automated controls are designed to support internal security frameworks and compliance with standards such as GDPR, SOC 2, FedRAMP, and IL 4\u2014ensuring that even when ransomware breaches initial defenses, operations continue without compromise.",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "Resilient Recovery Process: The platform enables a secure and controlled recovery that includes: \nSpinning up trusted application instances in a separate environment, \nEnforcing authentication controls to prevent attacker reentry, and \nReintegrating recovered systems in a compliant, structured manner."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "AI-Driven Deception: When an attack is detected, Mimic fabricates decoy data that mirrors real applications and critical assets."
+   },
+   {
+    "function_id": "encryption_feature",
+    "function": "Encryption & key management",
+    "evidence": "Built for speed, deception, and recovery, Mimic protects critical applications before ransomware can encrypt or exfiltrate data."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2527245282/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2527245282"
+ },
+ {
+  "fork_id": "FR2630354494",
+  "vendor": "NextgenID, Inc.",
+  "product": "NextgenID User Interface as a Service (UIaaS)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "The NextgenID UIaaS is a SaaS offering that resides in the AWS East/West Infrastructure as a Service (IaaS) cloud environment. NextgenID UIaaS provides identity & credential management services utilizing Supervised Remote Identity Proofing (SRIP) services. NextgenID UIaaS provides clients with an identity-proofing solution meeting digital Identity Assurance Level 3 (IAL3), and lower, requirements. Applicants that have a requirement to provide evidence of their identity utilize the NextgenID UIaaS Identity Station and Identity as a Service software to self-enroll while being remotely supervised by a SRIP Agent so that the requirements for IAL3 are met. The NextgenID UIaaS Identity Station captures the applicant's biometrics and identity documentation, including biometrics (fingerprints and photo), documents (driver's license, passport, etc.), and other biographic information to verify the identity of the applicant. After the SRIP Agent has verified the applicant's identity, the NextgenID UIaaS transmits the package to the adjudicating agency.",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "NextgenID UIaaS provides identity & credential management services utilizing Supervised Remote Identity Proofing (SRIP) services."
+   },
+   {
+    "function_id": "fraud_identity",
+    "function": "Identity proofing & fraud prevention",
+    "evidence": "NextgenID UIaaS provides identity & credential management services utilizing Supervised Remote Identity Proofing (SRIP) services."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2630354494/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2630354494"
+ },
+ {
+  "fork_id": "FR2701857797",
+  "vendor": "Optimal Labs",
+  "product": "9line",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Artificial Intelligence (AI)",
+   "Development Tools"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "9line tells agencies which vulnerabilities in their software and AI supply chain actually affect them, with evidence an assessor can re-check. A customer submits a repository or container image through the web application or API. 9line generates a CycloneDX SBOM, inventories the AI models and agents it contains, matches components against vulnerability data, and determines whether each vulnerable code path is reachable using a deterministic call-graph engine. It returns a VEX document in which every statement carries its evidence. An in-boundary model (Amazon Bedrock in AWS GovCloud) explains verdicts but cannot clear a finding.",
+  "functions_claimed": [
+   {
+    "function_id": "vuln_management",
+    "function": "Vulnerability scanning & management",
+    "evidence": "9line generates a CycloneDX SBOM, inventories the AI models and agents it contains, matches components against vulnerability data, and determines whether each vulnerable code path is reachable using a deterministic call-graph engine."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "9line tells agencies which vulnerabilities in their software and AI supply chain actually affect them, with evidence an assessor can re-check."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs & integrations",
+    "evidence": "A customer submits a repository or container image through the web application or API."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2701857797/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2701857797"
+ },
+ {
+  "fork_id": "FR2631054533",
+  "vendor": "Portal26, Inc.",
+  "product": "AI Security, Governance, & Telemetry Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Cybersecurity & Risk Management",
+   "Governance, Risk, and Compliance (GRC)"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Portal26 is an AI visibility, security, governance, and adoption management\nplatform. Portal26 provides a SaaS application for Agentic, Generative and Embedded\nAI governance and adoption, together with AI network gateways for\nreal-time traffic routing and analysis.\n\nThe platform gives agencies detailed visibility into AI\ndeployment, usage, risk, cost, business value, compliance, and overall impact \u2014 enabling \na rich understanding where and how AI is used, ensure its security, assess its contribution,\nand ensure alignment with mission objectives, regulations, and policy.\n\nThe FedRAMP offering is deployed in AWS GovCloud (US) for direct use by\nfederal agency customers handling Controlled Unclassified Information\n(CUI). Federal customer data is encrypted in transit and at rest, and\npersonally identifiable information is additionally encrypted at the field\nlevel under a key specific to each customer.",
+  "functions_claimed": [
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "Portal26 is an AI visibility, security, governance, and adoption management\nplatform."
+   },
+   {
+    "function_id": "encryption_feature",
+    "function": "Encryption & key management",
+    "evidence": "Federal customer data is encrypted in transit and at rest, and\npersonally identifiable information is additionally encrypted at the field\nlevel under a key specific to each customer."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2631054533/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2631054533"
+ },
+ {
+  "fork_id": "FR2634436150",
+  "vendor": "Remedio Technologies Inc",
+  "product": "Remedio",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Governance, Risk, and Compliance (GRC)",
+   "System Administration"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "**Remedio: correction beats visibility. Find it, fix it, prove it \u2014 at machine speed.**\n\nRemedio is a configuration-focused device hardening and autonomous remediation offering that finds, fixes, and verifies security misconfigurations, unpatched vulnerabilities, unauthorized applications, and unmanaged AI tools across agency endpoints and servers, wherever they run \u2014 on premises, remote, or in the cloud. Hardening continues off-network, indefinitely.\n\nRemedio closes the loop between detection and correction by applying policy-controlled, automated fixes and giving administrators an instant, auditable rollback path for every change. This lets government security teams enforce baselines like DISA STIG, NIST 800-53, and CIS Benchmarks continuously \u2014 not just at audit time \u2014 while reducing the manual workload historically required to close configuration and compliance gaps at scale.\n\n**Core capabilities**\n\n1. **Remedio Baseline \u2014 configuration hardening.** Establishes and continuously enforces secure configuration baselines (Golden Images) across Windows, Linux, and macOS endpoints and servers, automatically correcting drift as it occurs.\n2. **Remedio Fortify \u2014 vulnerability and misconfiguration remediation.** Identifies and prioritizes vulnerabilities and misconfigurations, then applies safe, automated remediation at scale to reduce patch and hardening backlogs.\n3. **Remedio Assure \u2014 continuous compliance.** Continuously validates configuration and remediation state against required control frameworks and agency-specific policy, maintaining audit-ready evidence and full traceability for oversight and reporting.\n4. **Remedio Gate \u2014 application control.** Discovers and controls installed software, scripts, and services, blocking unauthorized or risky applications, browser plugins, and dev-tool extensions before they create exposure.\n5. **Remedio AI Govern \u2014 shadow AI governance.** Discovers and governs AI tools, models, agents, and connected integrations in use across the environment, bringing shadow AI into visibility and enforcing approved-use policy and access controls.\n\n**How it works**\n\nEach Remedio capability operates on a continuous cycle: **Review** (aggregate device state against secure baselines), **Reveal** (surface misconfigurations, identity gaps, and shadow AI usage), **Reassess** (ongoing validation against baselines and compliance mandates), **Remediate** (apply policy-controlled fixes, closing findings as they are detected rather than waiting on manual ticket cycles), and **Revert** (instant rollback of any change if conditions require). The cycle runs on the device itself, so scanning and remediation continue while a device is off the network, and findings upload when it reconnects. Every remediation action is logged for audit and reporting purposes, and the platform includes built-in ROI reporting to quantify time saved, risk reduced, and compliance gains.\n\nLive evidence: [Trust Center](https://trust.remedio.io) \u00b7 [Secure Configuration Guide](https://trust.remedio.io/scg) \u00b7 [Certification progress](https://trust.remedio.io/progress) \u00b7 [remedio.io](https://remedio.io)",
+  "functions_claimed": [
+   {
+    "function_id": "compliance_grc",
+    "function": "GRC, compliance automation & continuous authorization",
+    "evidence": "**Remedio Assure \u2014 continuous compliance.** Continuously validates configuration and remediation state against required control frameworks and agency-specific policy, maintaining audit-ready evidence and full traceability for oversight and reporting."
+   },
+   {
+    "function_id": "cloud_saas_security",
+    "function": "Cloud & SaaS security posture (CSPM/CNAPP/SSPM)",
+    "evidence": "Find it, fix it, prove it \u2014 at machine speed.**\n\nRemedio is a configuration-focused device hardening and autonomous remediation offering that finds, fixes, and verifies security misconfigurations, unpatched vulnerabilities, unauthorized applications, and unmanaged AI tools across agency endpoints and servers, wherever they run \u2014 on premises, remote, or in the cloud."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "Find it, fix it, prove it \u2014 at machine speed.**\n\nRemedio is a configuration-focused device hardening and autonomous remediation offering that finds, fixes, and verifies security misconfigurations, unpatched vulnerabilities, unauthorized applications, and unmanaged AI tools across agency endpoints and servers, wherever they run \u2014 on premises, remote, or in the cloud."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "**Remedio Assure \u2014 continuous compliance.** Continuously validates configuration and remediation state against required control frameworks and agency-specific policy, maintaining audit-ready evidence and full traceability for oversight and reporting."
+   },
+   {
+    "function_id": "access_control_feature",
+    "function": "Access control & least privilege (platform feature)",
+    "evidence": "**Remedio AI Govern \u2014 shadow AI governance.** Discovers and governs AI tools, models, agents, and connected integrations in use across the environment, bringing shadow AI into visibility and enforcing approved-use policy and access controls."
+   },
+   {
+    "function_id": "automation",
+    "function": "Automation & orchestration",
+    "evidence": "**Remedio Fortify \u2014 vulnerability and misconfiguration remediation.** Identifies and prioritizes vulnerabilities and misconfigurations, then applies safe, automated remediation at scale to reduce patch and hardening backlogs."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2634436150/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2634436150"
+ },
+ {
+  "fork_id": "FR2001938710",
+  "vendor": "SailPoint Technologies, Inc. (Pre SCR review)",
+  "product": "SailPoint Identity Security Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "SailPoint Identity Security Cloud is a SaaS-based, multi-tenant suite that provides complete visibility and control over access to applications, systems, and sensitive data. SailPoint Identity Security Cloud consists of SailPoints IdentityNow, Cloud Infrastructure Entitlement Management, and AI-driven identity offerings.",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "SailPoint Identity Security Cloud is a SaaS-based, multi-tenant suite that provides complete visibility and control over access to applications, systems, and sensitive data."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "SailPoint Identity Security Cloud consists of SailPoints IdentityNow, Cloud Infrastructure Entitlement Management, and AI-driven identity offerings."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2001938710/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2001938710"
+ },
+ {
+  "fork_id": "FR2700857464",
+  "vendor": "Securin, Inc.",
+  "product": "Securin Preemptive Exposure Management Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Securin Platform is an AI-native Preemptive Exposure\nManagement Platform. It shows which risks are exploitable,\nwhat to fix first, and how to act before attackers do. Through\nOffensive Exposure Validation, Securin uses attacker\ntechniques not scanner signatures to validate exploitability,\nprioritize remediation, and prove fixes worked. It unifies\nexternal attack surface discovery, vulnerability and threat\nintelligence, risk-based prioritization, and validation into one\ncontinuous CTEM workflow: Discover, Validate, Prioritize,\nMobilize.",
+  "functions_claimed": [
+   {
+    "function_id": "risk_scoring",
+    "function": "Risk assessment, scoring & third-party risk",
+    "evidence": "It unifies\nexternal attack surface discovery, vulnerability and threat\nintelligence, risk-based prioritization, and validation into one\ncontinuous CTEM workflow: Discover, Validate, Prioritize,\nMobilize."
+   },
+   {
+    "function_id": "asset_inventory",
+    "function": "Asset inventory, visibility & attack surface",
+    "evidence": "It unifies\nexternal attack surface discovery, vulnerability and threat\nintelligence, risk-based prioritization, and validation into one\ncontinuous CTEM workflow: Discover, Validate, Prioritize,\nMobilize."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "Securin Platform is an AI-native Preemptive Exposure\nManagement Platform."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2700857464/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2700857464"
+ },
+ {
+  "fork_id": "FR1919071020",
+  "vendor": "SentinelOne",
+  "product": "SentinelOne Singularity Platform Moderate",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to analyze and automatically contextualize endpoint data collected across Windows, macOS, Linux, and Cloud Workloads. Data is contextualized and correlated into our patented Storylines technology, which accelerates triage and reduces mean time to detect/respond. Data is organized into a cohesive threat narrative which allows analysts to easily identify threat-related events as well as pivot and hunt to scope threat tactics, techniques, and impact. This gives our customers the ability to quickly stop ransomware and cyber attacks at machine speed with 1-click automated remediation and rollback of malicious activities and changes. Additionally, SentinelOne offers world-class managed detection and response (MDR), digital forensics and incident response (DFIR), and threat hunting services. Our MDR service not only augments security teams by triaging active or suspicious alerts and mitigating and blocking threats as needed, but also keeps them informed and protected from global advanced persistent threat (APT) campaigns, novel attacker techniques, and emerging trends in cybercrime with included threat hunting services. Customers can also call on SentinelOne\u2019s integrated DFIR team for deeper forensic analysis of an event and assistance with incident response. \n\nThe following SentinelOne Singularity Platform services are FedRAMP High Authorized: \n\n-Cloud Funnel\n-Cloud Workload Protection (CWP)\n-Digital Forensics & Incident Response (DFIR) services\n-Endpoint Detection and Response (EDR)\n-Extended Detection and Response (XDR)\n-Singularity Network Discovery,\n-RemoteOps and RemoteOps Forensics\n-SentineOnel Agent (Windows, macOS, Linux, and cloud-native Kubernetes)\n-SentinelOne Collector Agent\n-SentinelOne Management Console\n-Singularity Data Lake\n-Singularity Marketplace\n-Singularity Vulnerability Management\n-Vigilance Managed Detection and Response (MDR) services\n-WatchTower and WatchTower Pro Threat Hunting services",
+  "functions_claimed": [
+   {
+    "function_id": "vuln_management",
+    "function": "Vulnerability scanning & management",
+    "evidence": "The following SentinelOne Singularity Platform services are FedRAMP High Authorized: \n\n-Cloud Funnel\n-Cloud Workload Protection (CWP)\n-Digital Forensics & Incident Response (DFIR) services\n-Endpoint Detection and Response (EDR)\n-Extended Detection and Response (XDR)\n-Singularity Network Discovery,\n-RemoteOps and RemoteOps Forensics\n-SentineOnel Agent (Windows, macOS, Linux, and cloud-native Kub..."
+   },
+   {
+    "function_id": "endpoint_detection",
+    "function": "Endpoint security, EDR & XDR",
+    "evidence": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data."
+   },
+   {
+    "function_id": "detection_response",
+    "function": "Threat detection, SOC & managed response (SIEM/SOAR/MDR)",
+    "evidence": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "SentinelOne leverages advanced machine learning algorithms and behavioral AI to analyze and automatically contextualize endpoint data collected across Windows, macOS, Linux, and Cloud Workloads."
+   },
+   {
+    "function_id": "automation",
+    "function": "Automation & orchestration",
+    "evidence": "This gives our customers the ability to quickly stop ransomware and cyber attacks at machine speed with 1-click automated remediation and rollback of malicious activities and changes."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1919071020/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1919071020"
+ },
+ {
+  "fork_id": "FR2635050855",
+  "vendor": "SuperGov, Inc",
+  "product": "SuperFile",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Collaboration",
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Design & Multimedia",
+   "Finance",
+   "Governance, Risk, and Compliance (GRC)",
+   "Health & Wellness",
+   "Law Enforcement",
+   "Legal & Policy"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "SuperFile: Stay in control after you share. SuperFile helps organizations protect and share sensitive files while retaining control over access. Users can see who has access, manage sharing permissions, and revoke access after a file has been shared. Security controls are built into each file. SuperFile combines dynamic key generation, layered encryption, and embedded access controls with trusted device verification and decryption in memory. Files synchronize across devices, giving authorized users access wherever they work. Encrypted sharing and configurable settings let organizations determine who can open and share their content.",
+  "functions_claimed": [
+   {
+    "function_id": "access_control_feature",
+    "function": "Access control & least privilege (platform feature)",
+    "evidence": "SuperFile combines dynamic key generation, layered encryption, and embedded access controls with trusted device verification and decryption in memory."
+   },
+   {
+    "function_id": "encryption_feature",
+    "function": "Encryption & key management",
+    "evidence": "SuperFile combines dynamic key generation, layered encryption, and embedded access controls with trusted device verification and decryption in memory."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2635050855/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2635050855"
+ },
+ {
+  "fork_id": "FR2634659091",
+  "vendor": "Tactical Takedown LLC",
+  "product": "TNT Business Resilience Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Artificial Intelligence (AI)",
+   "Governance, Risk, and Compliance (GRC)"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "TNT is a multi-tenant, cloud-hosted (SaaS) platform for continuous security testing and compliance management. Core capabilities: (1) automated, authorized penetration testing and adversary emulation against customer-designated in-scope targets; (2) asset discovery and inventory with vulnerability aggregation and risk scoring; (3) governance, risk, and compliance monitoring that maps findings and evidence to frameworks such as NIST SP 800-53, PCI DSS, HIPAA, CIS Controls, and SOC 2 and reports control gaps with remediation guidance; and (4) security reporting and dashboards. An optional lightweight TNT endpoint sensor forwards host security telemetry to the platform's cloud analysis services for continuous analysis and threat hunting. The TNT Business Resilience Platform also integrates Agger ransomware protection capabilities, including endpoint-based behavioral detection, prevention, and response. Applicable cloud services supporting these capabilities are incorporated into the TNT service architecture and FedRAMP assessment scope. Automated assessment and analysis are performed by AI agents operating under human supervision.",
+  "functions_claimed": [
+   {
+    "function_id": "endpoint_detection",
+    "function": "Endpoint security, EDR & XDR",
+    "evidence": "An optional lightweight TNT endpoint sensor forwards host security telemetry to the platform's cloud analysis services for continuous analysis and threat hunting."
+   },
+   {
+    "function_id": "detection_response",
+    "function": "Threat detection, SOC & managed response (SIEM/SOAR/MDR)",
+    "evidence": "An optional lightweight TNT endpoint sensor forwards host security telemetry to the platform's cloud analysis services for continuous analysis and threat hunting."
+   },
+   {
+    "function_id": "compliance_grc",
+    "function": "GRC, compliance automation & continuous authorization",
+    "evidence": "TNT is a multi-tenant, cloud-hosted (SaaS) platform for continuous security testing and compliance management."
+   },
+   {
+    "function_id": "risk_scoring",
+    "function": "Risk assessment, scoring & third-party risk",
+    "evidence": "Core capabilities: (1) automated, authorized penetration testing and adversary emulation against customer-designated in-scope targets; (2) asset discovery and inventory with vulnerability aggregation and risk scoring; (3) governance, risk, and compliance monitoring that maps findings and evidence to frameworks such as NIST SP 800-53, PCI DSS, HIPAA, CIS Controls, and SOC 2 and reports control g..."
+   },
+   {
+    "function_id": "app_security",
+    "function": "Application security testing & API security",
+    "evidence": "TNT is a multi-tenant, cloud-hosted (SaaS) platform for continuous security testing and compliance management."
+   },
+   {
+    "function_id": "asset_inventory",
+    "function": "Asset inventory, visibility & attack surface",
+    "evidence": "Core capabilities: (1) automated, authorized penetration testing and adversary emulation against customer-designated in-scope targets; (2) asset discovery and inventory with vulnerability aggregation and risk scoring; (3) governance, risk, and compliance monitoring that maps findings and evidence to frameworks such as NIST SP 800-53, PCI DSS, HIPAA, CIS Controls, and SOC 2 and reports control g..."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "Automated assessment and analysis are performed by AI agents operating under human supervision."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "Core capabilities: (1) automated, authorized penetration testing and adversary emulation against customer-designated in-scope targets; (2) asset discovery and inventory with vulnerability aggregation and risk scoring; (3) governance, risk, and compliance monitoring that maps findings and evidence to frameworks such as NIST SP 800-53, PCI DSS, HIPAA, CIS Controls, and SOC 2 and reports control g..."
+   },
+   {
+    "function_id": "log_telemetry",
+    "function": "Log & telemetry collection, pipelines & security data lakes",
+    "evidence": "An optional lightweight TNT endpoint sensor forwards host security telemetry to the platform's cloud analysis services for continuous analysis and threat hunting."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2634659091/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2634659091"
+ },
+ {
+  "fork_id": "FR2632731472",
+  "vendor": "Transmittr, Inc.",
+  "product": "Casco for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Artificial Intelligence (AI)"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Casco is an agentic system that provides autonomous, 24/7 security testing and vulnerability assessments for web applications, APIs, cloud infrastructure, and AI systems. Casco was founded in February 2025 with the objective of making artificial intelligence-powered services production-grade, and Casco is delivered to customers across the United States, United Kingdom, and Europe in the cloud service provider, artificial intelligence, cybersecurity, and SaaS industries.",
+  "functions_claimed": [
+   {
+    "function_id": "vuln_management",
+    "function": "Vulnerability scanning & management",
+    "evidence": "Casco is an agentic system that provides autonomous, 24/7 security testing and vulnerability assessments for web applications, APIs, cloud infrastructure, and AI systems."
+   },
+   {
+    "function_id": "app_security",
+    "function": "Application security testing & API security",
+    "evidence": "Casco is an agentic system that provides autonomous, 24/7 security testing and vulnerability assessments for web applications, APIs, cloud infrastructure, and AI systems."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "Casco is an agentic system that provides autonomous, 24/7 security testing and vulnerability assessments for web applications, APIs, cloud infrastructure, and AI systems."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs & integrations",
+    "evidence": "Casco is an agentic system that provides autonomous, 24/7 security testing and vulnerability assessments for web applications, APIs, cloud infrastructure, and AI systems."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2632731472/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2632731472"
+ },
+ {
+  "fork_id": "FR2516140413",
+  "vendor": "TransUnion LLC",
+  "product": "TransUnion TruValidate",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "TransUnion TruValidate\u2122 for Government leverages one of the world\u2019s most robust identity platforms to deliver accurate matching of personally identifiable information (PII). Identity Verification for Government not only validates the accuracy of consumer-provided information against our curated datasets, including financial institution data, public records data and telecommunications carrier data, it also enables increased fraud capture while enforcing privacy principles. This allows agencies to make informed decisions with full context to help expose risk and establish trust by verifying consumer identities. Thousands of data sources provides for a robust supply chain to reduce risks to agencies. TransUnion TruValidate for Government can solve for many fraud prevention use cases, including account origination, transaction risk and password reset. The solution is FedRAMP and NIST SP800-63 conformant for unsupervised or supervised identity proofing and available via a robust and secure application interface (API). Data retention is configurable for timeframes between 0 and 36 months.",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "TransUnion TruValidate\u2122 for Government leverages one of the world\u2019s most robust identity platforms to deliver accurate matching of personally identifiable information (PII)."
+   },
+   {
+    "function_id": "fraud_identity",
+    "function": "Identity proofing & fraud prevention",
+    "evidence": "Identity Verification for Government not only validates the accuracy of consumer-provided information against our curated datasets, including financial institution data, public records data and telecommunications carrier data, it also enables increased fraud capture while enforcing privacy principles."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs & integrations",
+    "evidence": "The solution is FedRAMP and NIST SP800-63 conformant for unsupervised or supervised identity proofing and available via a robust and secure application interface (API)."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2516140413/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2516140413"
+ },
+ {
+  "fork_id": "FR1935245314",
+  "vendor": "Trellix",
+  "product": "Trellix GovCloud Security Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Trellix GovCloud Security Platform (formerly known as Trellix XDR GovCloud) is a SaaS offering that is deployed on AWS GovCloud IaaS. The SaaS offering is made up of a suite of solutions developed by Trellix. Trellix GovCloud Security Platform enables customers to centrally manage security for their organization while leveraging real-time monitoring and protection of the environment. Machine learning, artificial intelligence, and behavioral analysis are used to detect and respond to suspicious activity based on comparing observed activity to real-world adversarial attack techniques.\n\n- Trellix ePolicy Orchestrator (ePO) is a SaaS-based centralized management console for using Trellix's Endpoint solution with enhanced native security controls without the complexity of on-premises infrastructure. The client-side component of Trellix ePO provides secure communication between Trellix ePO and managed products. In addition to downloading and enforcing policies, Trellix Agent performs client-side tasks such as deploying and updating endpoint products. In order to manage an endpoint with Trellix ePO, Trellix Agent must be installed on each system in your network. As an optional deployment method, Trellix also offers the ePO On-prem platform that can be installed on the customer\u2019s premises, as well as in air-gapped environments.\n- Trellix Endpoint Detection and Response (EDR) provides continuous data collection and advanced analytics that helps you detect suspicious behavior on your endpoints. Using alert ranking and data visualization, you can quickly understand the threat and take immediate action. \nTrellix ML Protect (formerly known as Trellix Real Protect) is a machine learning cloud which enhances our Endpoints pre-execution machine learning with post-execution to detect dynamic behavior based on machine learning algorithms derived from over a billion sensors and over 30 years of experience.\n- Trellix Global Threat Intelligence (GTI) is based on activity from millions of sensors world-wide and an extensive research team, Trellix publishes timely, relevant threat activity via GTI. This always-on, cloud-based threat intelligence service enables accurate protection against known and fast-emerging threats by providing threat determination and contextual reputation metrics. GTI integrates directly with our security products, instantly protecting against emerging threats to reduce operational efforts and time between detection and containment.\n- Trellix Threat Intelligence Exchange (TIE) acts as a reputation broker that combines threat intelligence from imported global sources, such as Trellix Global Threat Intelligence (GTI) and third-party threat information (such as VirusTotal) with intelligence from local sources, including endpoints, gateways, and advanced analysis solutions. Using Trellix Data Exchange Layer (DXL), it instantly shares this collective intelligence across the security ecosystem, allowing security solutions to operate as one to enhance protection throughout the organization.\n- Trellix Insights is an industry-first proactive security solution that changes the cyber security paradigm with the capability to stop threats before the attack. It provides actionable and preemptive threat intelligence by leveraging Trellix's cutting-edge threat research, augmented with sophisticated AI applied to real-time threat telemetry streamed from over 1 billion sensors. This global insight is applied to assess an organization's environment and its security posture to predict and prioritize actions for the Security Operations Team.\n- Trellix Helix Connect integrates data from security tools (Trellix native controls and 490+ third parties) to tell you the complete story of an attack. Data is ingested from multiple sources, then correlated by pre-built analytics and rules to create multi-vector, multi-vendor detections.",
+  "functions_claimed": [
+   {
+    "function_id": "endpoint_detection",
+    "function": "Endpoint security, EDR & XDR",
+    "evidence": "Trellix GovCloud Security Platform (formerly known as Trellix XDR GovCloud) is a SaaS offering that is deployed on AWS GovCloud IaaS."
+   },
+   {
+    "function_id": "detection_response",
+    "function": "Threat detection, SOC & managed response (SIEM/SOAR/MDR)",
+    "evidence": "This global insight is applied to assess an organization's environment and its security posture to predict and prioritize actions for the Security Operations Team."
+   },
+   {
+    "function_id": "threat_intel",
+    "function": "Threat intelligence",
+    "evidence": "- Trellix Global Threat Intelligence (GTI) is based on activity from millions of sensors world-wide and an extensive research team, Trellix publishes timely, relevant threat activity via GTI."
+   },
+   {
+    "function_id": "cloud_saas_security",
+    "function": "Cloud & SaaS security posture (CSPM/CNAPP/SSPM)",
+    "evidence": "Trellix GovCloud Security Platform (formerly known as Trellix XDR GovCloud) is a SaaS offering that is deployed on AWS GovCloud IaaS."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "Machine learning, artificial intelligence, and behavioral analysis are used to detect and respond to suspicious activity based on comparing observed activity to real-world adversarial attack techniques."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "Using alert ranking and data visualization, you can quickly understand the threat and take immediate action."
+   },
+   {
+    "function_id": "automation",
+    "function": "Automation & orchestration",
+    "evidence": "- Trellix ePolicy Orchestrator (ePO) is a SaaS-based centralized management console for using Trellix's Endpoint solution with enhanced native security controls without the complexity of on-premises infrastructure."
+   },
+   {
+    "function_id": "log_telemetry",
+    "function": "Log & telemetry collection, pipelines & security data lakes",
+    "evidence": "It provides actionable and preemptive threat intelligence by leveraging Trellix's cutting-edge threat research, augmented with sophisticated AI applied to real-time threat telemetry streamed from over 1 billion sensors."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1935245314/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1935245314"
+ },
+ {
+  "fork_id": "FR2633058240",
+  "vendor": "Ultra Security, Inc.",
+  "product": "Ultra Agentic Security Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Artificial Intelligence (AI)"
+  ],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Ultra is an agentic security platform that secures AI agents and their tool use at runtime. A customer-deployed enforcement point sits inline \u2014 authenticating, proxying, and governing every agent and Model Context Protocol (MCP) tool call \u2014 while Ultra Hub delivers centralized identity, policy, guardrails, and observability across the agent runtime. Together they give organizations autonomous-runtime security: real-time visibility and control over what AI agents can access and do, so agentic AI can be deployed and scaled safely.",
+  "functions_claimed": [
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "Ultra is an agentic security platform that secures AI agents and their tool use at runtime."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "Together they give organizations autonomous-runtime security: real-time visibility and control over what AI agents can access and do, so agentic AI can be deployed and scaled safely."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2633058240/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2633058240"
+ },
+ {
+  "fork_id": "FR2308034636",
+  "vendor": "Wiz, Inc.",
+  "product": "Wiz Moderate for U.S. Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Wiz Moderate for U.S. Government (Wiz Mod) is an agentless vulnerability scanning tool that uses an application programming interface (API) connector to scan customer environments in AWS GovCloud. Wiz Mod Gov scans various cloud architectures including virtual machines (VMs), containers, serverless, and PaaS solutions. Integrations with the continuous integration/continuous deployment (CI/CD) pipeline allow Wiz Inc. customers to define scanning policies for images and Infrastructure as Code (IaC) prior to deploying into production. Wiz Mod inventories the technologies discovered in the environment to provide insight into all assets, including third-party access to the environment and code libraries detected on workloads. In addition to scanning for vulnerabilities and configuration standards and uses a threat intelligence feed to scan cloud workloads, detect malicious code, and provide information regarding the severity of the threat, and can give insight into all the privileged role assignments in the environment.",
+  "functions_claimed": [
+   {
+    "function_id": "vuln_management",
+    "function": "Vulnerability scanning & management",
+    "evidence": "Government (Wiz Mod) is an agentless vulnerability scanning tool that uses an application programming interface (API) connector to scan customer environments in AWS GovCloud."
+   },
+   {
+    "function_id": "threat_intel",
+    "function": "Threat intelligence",
+    "evidence": "In addition to scanning for vulnerabilities and configuration standards and uses a threat intelligence feed to scan cloud workloads, detect malicious code, and provide information regarding the severity of the threat, and can give insight into all the privileged role assignments in the environment."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs & integrations",
+    "evidence": "Government (Wiz Mod) is an agentless vulnerability scanning tool that uses an application programming interface (API) connector to scan customer environments in AWS GovCloud."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2308034636/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2308034636"
+ }
+]
