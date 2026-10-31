@@ -80,5 +80,83 @@
   ],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2626247309/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2626247309"
+ },
+ {
+  "fork_id": "F1603157879",
+  "vendor": "Apptio an IBM company",
+  "product": "Apptio for Technology Business Management and Cloud Financial Management (TBM)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Finance",
+  "description": "Apptio is a market leading SaaS provider of Technology Business Management (TBM) and cloud financial management solutions that help IT leaders measure, manage and communicate the cost, quality, consumption, and value of technology investments.  \nIT leaders leverage Apptio's TBM suite of applications to optimize costs and to: \n- Optimize costs \n\n- Consolidate infrastructure and applications  \n\n- Price and recover shared services  \n\n- Execute cloud-first strategies \n\nCloud leaders lean on Apptio\u2019s Cloudability Government application to:  \n- Empower FinOps teams \n\n- Allocate cloud costs back to the agency \n\n- Enable team ownership across the cloud program \n\n- Optimize cloud costs across AWS, Azure and GCP",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1603157879/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1603157879"
+ },
+ {
+  "fork_id": "FR2022243058",
+  "vendor": "CGI Federal",
+  "product": "Momentum Enterprise Suite",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Finance",
+  "description": "CGI's Momentum is a market-leading, full-featured, flexible web-based system built to support the full federal financial, budget, asset and procurement management lifecycles. Designed specifically for federal business operations, CGI's Momentum Enterprise Solution helps federal IT leaders fulfill federal mandates, in an agile and cost-effective way. With zero expensive customizations or software extensions, Momentum is a transparent, accountable and proven solution that comes out-of-the-box ready to strengthen your agency's ability to maximize taxpayer dollars and bolster its diverse business processes.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2022243058/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2022243058"
+ },
+ {
+  "fork_id": "F1308202329",
+  "vendor": "Coupa Software Inc",
+  "product": "Coupa Spend Management for Federal",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Finance",
+  "description": "Coupa Spend Management for Federal is a cloud and mobile platform for managing procurement/acquisition/contract related processes. It covers the end-to-end process, including supplier identification, sourcing, contracting, procurement against contracts, invoicing, payments, and spend analytics to ensure compliance and efficiency.\n\nKey capabilities include:\n\n- Consumer-grade end user and supplier experience to ensure broad adoption of the platform and maximize the value of each dollar spent. Proven, secure solution that offers extensive configuration options, avoiding the need for custom code that is expensive to write and maintain  \n\n- Full auditability for FAR/DFARS processes, including related contract documents and communications across internal agency team members and external vendors. Reduction in manual and paper-based processes using the latest in Artificial Intelligence (AI), Machine Learning (ML), and Image Recognition.\n\n-Support for compliance with Cost Accounting Standards (CAS) and other regulatory and/or compliance mandates.",
+  "functions_claimed": [
+   {
+    "function_id": "spend_management",
+    "function": "Spend management",
+    "evidence": "It covers the end-to-end process, including supplier identification, sourcing, contracting, procurement against contracts, invoicing, payments, and spend analytics to ensure compliance and efficiency."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1308202329/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1308202329"
+ },
+ {
+  "fork_id": "FR1821933307",
+  "vendor": "Innovest Systems, LLC",
+  "product": "Trust & Wealth Management Solutions",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Finance",
+  "description": "A browser-based, highly secure, integrated, real-time trust accounting and wealth management platform offered in a multi-currency Software as a Service (SaaS) environment.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1821933307/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1821933307"
  }
 ]

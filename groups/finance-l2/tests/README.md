@@ -7,11 +7,12 @@ function / spec claim it traces to.
 
 ```bash
 cd groups/finance-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 202 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 213 tests
 ```
 
-Status at delivery: **202 tests, OK** against the implementation in
-`../src/`. (Run exactly as above: helpers are imported as a top-level
+Status at delivery: **213 tests, OK** against the implementation in
+`../src/` (202 shipped + 11 from the remainder additions,
+`test_additions.py`, tracing to `../ADDENDUM.md`). (Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
 entry point for this group.)
@@ -31,6 +32,7 @@ entry point for this group.)
 | `test_service.py` | 9 API access + 10 Access control + 11 Audit log — live HTTP server on an ephemeral port: `/health` without auth, 401 unknown user and role mismatch, 404 as JSON with no stack trace, full flow (create program → participants → accrual → request → approve by another user → disbursement → booking → budget → vs-actual → summary), SoD over HTTP (creator approve → 403, request still `requested`), over-cap request over HTTP → 400 with no request created, summary without period → 400, audit endpoint admin-only (member/viewer → 403) and denied attempts recorded with the `:denied` suffix |
 | `test_main_cli.py` | `python -m finance serve` subprocess with demo users alice/bob/carol on an ephemeral port |
 | `test_negative_control.py` | Negative control (below) |
+| `test_additions.py` | Remainder additions (`addition:finance-l2`, `../ADDENDUM.md`) — spec integrity for the 4 added forks (membership/unit order against `../../remainder.json`, literal per-fork claim table incl. the three zero-claim forks, verbatim evidence, census citations, Coupa evidence re-anchor, near-miss pins), one substrate case per addition fork, and the earned-cap invariant re-pinned over addition-era records |
 | `finance_helpers.py` | Shared fixtures: demo users (ADMIN/MEMBER/VIEWER/OUTSIDER), `make_store()` building a FinanceStore + AuditLog + a program owned by MEMBER with VIEWER added as member, and the canonical builders (`make_employee`, `make_traveler`, `make_accrual`, `make_request`, `approved_request`, `disbursed_request`, `make_booking`) |
 
 ## Negative control
@@ -75,6 +77,16 @@ kept at `../scratch/store.py.premutation` with its hash at
 `../scratch/store.py.sha256`) and the suite re-run: **202 tests,
 OK**. The suite catches this defect class; the negative control is
 not decorative.
+
+**Additions re-run (2026-10-31, `addition:finance-l2`):** the core
+is unchanged, so the same drill was re-run in this tree with the
+identical mutant. The full suite ran: **213 tests, 6 failures** —
+the shipped drill's 5, plus
+`test_additions.TestAdditionSubstrateCases.test_additions_earned_cap_still_enforced`,
+the additions module's cap case, tripping exactly as designed.
+`store.py` was restored from the pre-mutation copy and verified
+SHA-256-identical to the same shipped hash; the suite re-ran green
+at 213. Raw failure list in `../scratch/additions_mutation_run.txt`.
 
 ## Interpretation notes
 

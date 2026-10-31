@@ -234,3 +234,14 @@ certifies organizations.
   (one sibling describes its own multi-tenant delivery; this build
   is a single-tenant reference deployment). Demo identities are
   hooks, not an IdP (IA-2 stays with the embedding organization).
+
+## Additions (remainder census)
+
+The group now also covers the 4 previously uncategorized forks of
+remainder build unit `addition:finance-l2` — Apptio TBM, CGI
+Momentum, Coupa Spend Management for Federal, and Innovest Trust &
+Wealth Management — spec'd under the group's existing taxonomy in
+[`ADDENDUM.md`](ADDENDUM.md): 1 new claim (Coupa,
+`spend_management`), three zero-claim forks pinned as such, core
+unchanged (`src/` byte-identical), tests 202 → 213. The group total
+is 6 forks, 9 claims.

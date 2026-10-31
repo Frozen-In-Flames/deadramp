@@ -986,6 +986,18 @@ New extended functions from the addition forks, specified in groups/research-l2/
 
 Enlargements of families already registered under Singleton 53: data delivery / transfer engine for sharing (+2 claimants: Terra, ROSALIND); query & analysis workspace engines (+3 by substance: Terra, ROSALIND, Seven Bridges — analysis is their headline activity but the data_analysis claim itself did not fire on their wording, recorded as such). Platform notes: multi-tenancy asserted by ROSALIND and Wellspring of their own platforms; Wellspring's product runs inside a third-party government cloud (the fork's dependency, outside this build). Three addition forks claim zero families (Ipsos, Seven Bridges, Wellspring) under the taxonomy, whose patterns are the original fork's literal phrases.
 
+## Remainder Addition — Finance L2 (+4 forks)
+
+New extended functions from the addition forks, specified in groups/finance-l2/ADDENDUM.md, not implemented:
+- [ ] open — Federal financial management system of record (Momentum)
+- [ ] open — Procurement lifecycle engine: supplier identification, sourcing, contracting, invoicing, supplier payment execution (Coupa; its payments recorded here, deliberately NOT enlarging the earned-wage payment-rails gap)
+- [ ] open — Spend analytics engine (Coupa)
+- [ ] open — Technology business management & cloud cost allocation / optimization (FinOps) engine (Apptio)
+- [ ] open — Trust accounting & wealth management platform, multi-currency (Innovest; the union's "trading & investment execution" named absence still stands: Innovest asserts wealth management, not trading)
+- [ ] open — AI / ML document processing & image recognition (Coupa)
+
+No existing Extended gap gains a claimant in this addition. Three addition forks claim zero families (Apptio, Momentum, Innovest) under the taxonomy, pinned in tests with near-misses itemized ("multi-currency" is not "multi-tenant"; "SaaS provider" is not "SaaS offering"). Coupa's one claim was re-anchored from its product-name sentence to its functional sentence under the name-only precedent.
+
 ## Later groups
 
 Each group appends its section here when it ships.
