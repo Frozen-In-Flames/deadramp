@@ -1168,6 +1168,14 @@ New extended function from the addition fork, specified in groups/cybersecurity-
 
 Explicitly no claimant, recorded because the product name makes this the easy place to cheat: application security testing engines (the name says "Security Testing," the description never does; the substance is booked once, under the new gap, not double-booked), vulnerability scanners (the fork runs no scan), detection engines / staffed SOC (no marker). The enlarged group's floor changes, stated plainly: the union spec's "no zero-claim forks" no longer holds — 1 of 6 forks claims zero, and the group total stays 13. All 17 zero-count families remain at 0 of 6.
 
+## Remainder Addition — Customer Service L3-adjacent (+1 fork)
+
+New extended functions from the addition fork, specified in groups/customer-service-l3/ADDENDUM.md, not implemented:
+- [ ] open — Survey & feedback-collection engine: survey capture and feedback-signal collection across channels (registered WITH a claim — this fork's satisfaction-surveys claim retires the category's standing named absence at this tier; the records its flagged signals write are Core, the engine is Extended)
+- [ ] open — Platform connectors & integration API surface: connectors into external platforms asserted in substance by the fork's closing bullet (this taxonomy has no integrations family, so no claim fired)
+
+Existing gap gaining a claimant: AI assistance / deflection / learned models gains this fork at this tier (proprietary AI over structured and unstructured feedback data). Named absence retired, stated plainly: satisfaction / CSAT surveys, recorded in the union spec as claimed by no fork at any tier of this category, is claimed here in the fork's own words. The other standing absence, knowledge base / help articles, survives (claimed by neither fork at this tier). Explicitly no claimant: event detection & orchestration engines, real-time channels, reporting / analytics engines — each itemized with its token-level reason in the addendum.
+
 ## Later groups
 
 Each group appends its section here when it ships.

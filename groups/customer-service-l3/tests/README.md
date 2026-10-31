@@ -6,8 +6,9 @@ Run from the group directory:
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-**112 tests, all passing** (Python stdlib `unittest` only, zero
-third-party dependencies).
+**126 tests, all passing** (Python stdlib `unittest` only, zero
+third-party dependencies; 112 shipped + 14 remainder-addition
+tests — see the additions record at the end of this file).
 
 This suite **extends the shipped Group 26/27 (Customer Service
 L1/L2) suite**: the inherited tests were copied and pass with only
@@ -19,6 +20,8 @@ the higher tier (High) in full while reusing the Group 26/27 code
 Status at delivery: **112 tests, OK** (69 inherited from Groups
 26/27, 7 added inside inherited files for the uplifts, 36 in new
 files). The suite takes ~14s: most fixtures run a live HTTP server.
+The remainder addition (below) brings the suite to **126 tests,
+OK**.
 
 ## Layout
 
@@ -40,6 +43,7 @@ files). The suite takes ~14s: most fixtures run a live HTTP server.
 | `test_audit_failure.py` | 5 | **[L3] AU-5** fail closed: `AuditWriteError` rollback in `record()`, store create/status roll back in full (no record, no id consumed), service create is not a success |
 | `test_audit_query.py` | 12 | **[L3] AU-7** audit reduction & search: `AuditLog.query` filters (actor/action/target/since/until), `GET /audit` query params, auditor can use the reduced search, agent cannot |
 | `test_lockout.py` | 6 | **[L3] AC-7** unsuccessful logon lockout over HTTP: threshold, `auth:locked` audit, per-user scope, below-threshold admission, success resets counter, lock expiry |
+| `test_additions.py` | 14 | **Remainder addition** (unit `addition:customer-service-l3`): spec integrity for the Medallia sheet (membership, literal 2-claim table, verbatim description/evidence, census citations, no-exclusion pin, absence accounting, near-miss pins) + 2 substrate cases (feedback-case breach flow; audit-chain tamper localization) |
 | `custsvc_helpers.py` | — | Shared fixtures: demo users (ADMIN/AGENT/VIEWER + **[L3]** AUDITOR), `make_store()`, `make_case()` |
 
 ## Coverage map — High-baseline uplifts
@@ -129,3 +133,41 @@ changes:
    `audit.py` restored from `scratch/audit.py.premutation`,
    SHA-256-verified (`3d0965771e6a38c3ddc3da82686a2afa55de6b5f20101d961e5d10ee308f8157`),
    suite green again.
+
+## Remainder addition — drill re-runs (Oct 31, 2026)
+
+The remainder addition (Medallia GovCloud, `../ADDENDUM.md`) adds
+`test_additions.py` (14 tests) and changes no core code, so **both**
+signature drills were re-run in this tree against the enlarged
+suite (126 tests):
+
+1. **Breach drill.** `CustsvcStore._is_breached`'s final return in
+   `src/custsvc/store.py` was patched to `return False` (the target
+   line occurs exactly once; count asserted, patch scoped — the
+   net effect is breach never derived, the shipped drill's
+   mutant). Result: **exactly 8 failures** — the shipped drill's
+   7 (`test_breach.py` ×2, `test_negative_control.py` ×2,
+   `test_status_reports.py` ×2, `test_service.py` ×1) plus exactly
+   1 from the additions module
+   (`test_additions.py::test_medallia_feedback_case_breach_flow`),
+   tripping as designed. Mutant output at
+   `scratch/additions_mutation_run.txt`; `store.py` restored from
+   `scratch/additions_store.py.premutation`, SHA-256-verified
+   identical to the shipped hash
+   (`40c4d9c6ad5f4b3f12c4876cd9de5ccdfe829bfc5578343b9585a4bd7cc2b24a`),
+   suite green.
+2. **Audit-hash drill.** The hash comparison in `verify_chain()`
+   (`src/custsvc/audit.py`, `if expected != stored_hash:` → `if
+   False:`; the line occurs exactly once, count asserted). Result:
+   **exactly 3 failures** — the shipped drill's 2
+   (`test_negative_control_2_mutated_entry_fails_at_index_1`,
+   `test_edited_jsonl_line_detected_after_reload`) plus exactly 1
+   from the additions module
+   (`test_additions.py::test_medallia_audit_chain_detects_tampering`),
+   tripping as designed. Mutant output at
+   `scratch/additions_mutation_audit_run.txt`; `audit.py` restored
+   from `scratch/additions_audit.py.premutation`, SHA-256-verified
+   identical to the shipped hash
+   (`3d0965771e6a38c3ddc3da82686a2afa55de6b5f20101d961e5d10ee308f8157`),
+   suite green. Final state: **126 tests, OK**, and the full
+   `src/` tree is byte-identical to the shipped build.

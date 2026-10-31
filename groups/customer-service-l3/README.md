@@ -63,9 +63,25 @@ Consecutive failed logons lock a username (AC-7): at
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-112 tests, all passing, including two mutation-verified negative
-controls. See `tests/README.md` for the coverage map and the
-mutation records.
+126 tests, all passing (112 shipped + 14 remainder-addition),
+including two mutation-verified negative controls. See
+`tests/README.md` for the coverage map and the mutation records.
+
+## Remainder addition (Oct 31, 2026)
+
+One previously uncategorized fork joined this group under census
+unit `addition:customer-service-l3`: **Medallia GovCloud**
+(Medallia, Inc., FedRAMP High / Certified) — see
+[`ADDENDUM.md`](ADDENDUM.md). It is the first fork at this tier to
+claim anything: **2 claims** under the verbatim taxonomy
+(satisfaction surveys — retiring the category's standing named
+absence at this tier — and AI assistance, giving the registered
+AI gap a claimant here). The core is unchanged (`src/`
+byte-identical; all 10 functions remain carried, not claimed, for
+both forks), FedHIVE's sheet stands at zero claims, and the
+enlarged suite is **126 tests, green**, with both signature
+drills re-run in this tree (8 and 3 failures under mutation, each
+exactly the shipped set plus one additions case).
 
 ## Endpoints
 
