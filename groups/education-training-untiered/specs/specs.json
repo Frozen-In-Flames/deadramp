@@ -1,0 +1,290 @@
+[
+ {
+  "fork_id": "FR2700137041",
+  "vendor": "Dossier",
+  "product": "Dossier for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Education & Training",
+   "Human Resources",
+   "Learning Management",
+   "Talent Development",
+   "Talent Management"
+  ],
+  "category_as_filed_in_source": "Education & Training",
+  "deadramp_category": "Education & Training",
+  "description": "Dossier for Government is a cloud-based competency and training management solution for federal agencies. It replaces paper competency folders with a single system of record for defining the competencies each role requires, assessing staff against those requirements on recurring cycles, delivering the training that closes the gaps, and producing current competency status on demand at the team, facility, or department level.\n\nThe service is built for federal workforces with recurring, externally driven competency obligations \u2014 including clinical and nursing education staff, and healthcare technology management personnel responsible for maintaining and repairing medical equipment. Assessment schedules, advance notifications, and overdue flags are tracked by the system rather than depending on manual review of paper files.\n\n**Services included**\n\n- **Dossier Profile** \u2014 the core competency management service. Role-based competency definitions and assigned core tasks, assessments with assessor sign-off and proficiency ratings, configurable reassessment cycles, supporting attachments, automated notification of upcoming and overdue assessments, dashboards and reporting, role-based access control, and audit logging.\n- **Dossier Learn** \u2014 an integrated learning management system. Course and training assignment, delivery, and completion tracking, linked to the competency requirements held in Dossier Profile.\n- **Dossier Development Program** \u2014 structured career development supporting clinical ladder programs. Defined advancement levels and criteria, evidence submission against those criteria, and review and progression tracking.\n\n**Security category.** Each included service is categorized Low under FIPS 199 for confidentiality, integrity, and availability.\n\n**Information handled.** Dossier for Government holds employee competency, training, and development records: employee name, work email address, job title and role, facility and organizational unit, assigned core tasks, competency ratings, assessment and due dates, assessor identity, training and course completion records, development program submissions, supporting attachments such as checklists and certifications, account role assignment, and audit logs of user activity.\n\nThe service is not intended to hold protected health information, patient or beneficiary records, clinical or treatment data, controlled unclassified information, Social Security numbers, or financial or payment data. Permitted use is defined in the terms of service and in the Secure Configuration Guide.\n\nDossier for Government is delivered as multi-tenant SaaS.",
+  "functions_claimed": [
+   {
+    "function_id": "course_catalog",
+    "function": "Course, catalog & training program management",
+    "evidence": "Course and training assignment, delivery, and completion tracking, linked to the competency requirements held in Dossier Profile."
+   },
+   {
+    "function_id": "learner_progress",
+    "function": "Learner progress, readiness & experience tracking",
+    "evidence": "Course and training assignment, delivery, and completion tracking, linked to the competency requirements held in Dossier Profile."
+   },
+   {
+    "function_id": "assessments",
+    "function": "Assessments & testing \u2014 delivery & administration",
+    "evidence": "Assessment schedules, advance notifications, and overdue flags are tracked by the system rather than depending on manual review of paper files."
+   },
+   {
+    "function_id": "certificates_credentials",
+    "function": "Certification, licensure & credential records",
+    "evidence": "**Information handled.** Dossier for Government holds employee competency, training, and development records: employee name, work email address, job title and role, facility and organizational unit, assigned core tasks, competency ratings, assessment and due dates, assessor identity, training and course completion records, development program submissions, supporting attachments such as checklis..."
+   },
+   {
+    "function_id": "scheduling",
+    "function": "Scheduling of training & assessment sessions",
+    "evidence": "Assessment schedules, advance notifications, and overdue flags are tracked by the system rather than depending on manual review of paper files."
+   },
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting, dashboards & analytics",
+    "evidence": "Role-based competency definitions and assigned core tasks, assessments with assessor sign-off and proficiency ratings, configurable reassessment cycles, supporting attachments, automated notification of upcoming and overdue assessments, dashboards and reporting, role-based access control, and audit logging."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Access control & authorized-user access",
+    "evidence": "Role-based competency definitions and assigned core tasks, assessments with assessor sign-off and proficiency ratings, configurable reassessment cycles, supporting attachments, automated notification of upcoming and overdue assessments, dashboards and reporting, role-based access control, and audit logging."
+   },
+   {
+    "function_id": "ai_automation",
+    "function": "AI & automation tools",
+    "evidence": "Role-based competency definitions and assigned core tasks, assessments with assessor sign-off and proficiency ratings, configurable reassessment cycles, supporting attachments, automated notification of upcoming and overdue assessments, dashboards and reporting, role-based access control, and audit logging."
+   },
+   {
+    "function_id": "hosting_platform",
+    "function": "Hosting & platform services (PaaS, multi-tenant, hosted cloud)",
+    "evidence": "Dossier for Government is delivered as multi-tenant SaaS."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2700137041/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2700137041; tier null: census unit untiered:Education & Training in remainder.json assigned this fork to Education & Training from its own description (category as filed: Education & Training); the source publishes no impact level for this offering, so no tier is recorded"
+ },
+ {
+  "fork_id": "FR1912662229",
+  "vendor": "KnowBe4, Inc.",
+  "product": "KnowBe4 Security Awareness Training",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "category_as_filed_in_source": "Uncategorized (none in source)",
+  "deadramp_category": "Education & Training",
+  "description": "KnowBe4 is the world's most popular integrated Security Awareness Training and Simulated Phishing platform with thousands of active enterprise accounts. You finally have a platform to better manage the urgent IT security problems of social engineering, phishing and ransomware attacks. KnowBe4 gives you self-service enrollment, and both pre-and post-training phishing security tests that show you the percentage of end-users that are Phish-prone. Our highly effective, frequent, \"double-random\" Phishing Security Tests provide several remedial options in case an employee falls for a simulated phishing attack.\n\nKnowBe4 provides you with the world's largest library of 800+ security awareness training content, including interactive modules, videos, games, posters and newsletters. You can schedule regular Phishing Security Tests from our large library of over 2,500 \"known-to-work\" templates or you can also create your own custom phishing templates. And with our powerful Smart Groups feature, you can use each employees' behavior and user attributes to tailor phishing campaigns, training assignments, remedial learning and reporting. Your enterprise can get the KnowBe4 platform quickly deployed into production. Our Customer Success team gets you going in no time, without the need for consulting hours. And our Active Directory Integration (ADI) allows you to easily sync user data and saves you time by eliminating the need to manually manage user changes. Once the ADI is configured, users will be added, changed and archived in sync with changes made within AD automatically.\n\nWe use FedRAMP compliant Amazon Web Services East (AWS US East), which is maintained in an ISO certified facility. There is no unauthorized external access to data, we only store just enough information to accomplish the services we are set to provide, which minimally are email addresses with recorded clicks. All email addresses are encrypted and kept private. And KnowBe4 has been PCI compliant from day one. KnowBe4 courses are SCORM compliant, so we can deliver courseware for your in-house LMS if needed. However, KnowBe4 does have its own LMS that lives in the cloud, and we can report back to you about all enrolled employees, their status, completion, and many other parameters.",
+  "functions_claimed": [
+   {
+    "function_id": "course_catalog",
+    "function": "Course, catalog & training program management",
+    "evidence": "KnowBe4 courses are SCORM compliant, so we can deliver courseware for your in-house LMS if needed."
+   },
+   {
+    "function_id": "enrollment_registration",
+    "function": "Enrollments & candidate registration",
+    "evidence": "KnowBe4 gives you self-service enrollment, and both pre-and post-training phishing security tests that show you the percentage of end-users that are Phish-prone."
+   },
+   {
+    "function_id": "learner_progress",
+    "function": "Learner progress, readiness & experience tracking",
+    "evidence": "However, KnowBe4 does have its own LMS that lives in the cloud, and we can report back to you about all enrolled employees, their status, completion, and many other parameters."
+   },
+   {
+    "function_id": "scheduling",
+    "function": "Scheduling of training & assessment sessions",
+    "evidence": "You can schedule regular Phishing Security Tests from our large library of over 2,500 \"known-to-work\" templates or you can also create your own custom phishing templates."
+   },
+   {
+    "function_id": "content_media",
+    "function": "Learning content, recording & media",
+    "evidence": "KnowBe4 provides you with the world's largest library of 800+ security awareness training content, including interactive modules, videos, games, posters and newsletters."
+   },
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting, dashboards & analytics",
+    "evidence": "And with our powerful Smart Groups feature, you can use each employees' behavior and user attributes to tailor phishing campaigns, training assignments, remedial learning and reporting."
+   },
+   {
+    "function_id": "ai_automation",
+    "function": "AI & automation tools",
+    "evidence": "Once the ADI is configured, users will be added, changed and archived in sync with changes made within AD automatically."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1912662229/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1912662229; tier null: census unit untiered:Education & Training in remainder.json assigned this fork to Education & Training from its own description (category as filed: Uncategorized (none in source)); the source publishes no impact level for this offering, so no tier is recorded"
+ },
+ {
+  "fork_id": "FR2635447609",
+  "vendor": "MyEvaluations.com Inc.",
+  "product": "MyEvaluations",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Analytics",
+   "Artificial Intelligence (AI)",
+   "Data Management",
+   "Education & Training",
+   "Human Resources",
+   "Learning Management"
+  ],
+  "category_as_filed_in_source": "Analytics",
+  "deadramp_category": "Education & Training",
+  "description": "MyEvaluations is an integrated SaaS platform for medical education\nmanagement, supporting assessments and competency management,\ncurriculum, scheduling and clinical hours, procedure and patient logs,\nonboarding and credentialing, accreditation workflows, institutional\nreporting, analytics, and continuous educational improvement.",
+  "functions_claimed": [
+   {
+    "function_id": "course_catalog",
+    "function": "Course, catalog & training program management",
+    "evidence": "MyEvaluations is an integrated SaaS platform for medical education\nmanagement, supporting assessments and competency management,\ncurriculum, scheduling and clinical hours, procedure and patient logs,\nonboarding and credentialing, accreditation workflows, institutional\nreporting, analytics, and continuous educational improvement."
+   },
+   {
+    "function_id": "assessments",
+    "function": "Assessments & testing \u2014 delivery & administration",
+    "evidence": "MyEvaluations is an integrated SaaS platform for medical education\nmanagement, supporting assessments and competency management,\ncurriculum, scheduling and clinical hours, procedure and patient logs,\nonboarding and credentialing, accreditation workflows, institutional\nreporting, analytics, and continuous educational improvement."
+   },
+   {
+    "function_id": "certificates_credentials",
+    "function": "Certification, licensure & credential records",
+    "evidence": "MyEvaluations is an integrated SaaS platform for medical education\nmanagement, supporting assessments and competency management,\ncurriculum, scheduling and clinical hours, procedure and patient logs,\nonboarding and credentialing, accreditation workflows, institutional\nreporting, analytics, and continuous educational improvement."
+   },
+   {
+    "function_id": "scheduling",
+    "function": "Scheduling of training & assessment sessions",
+    "evidence": "MyEvaluations is an integrated SaaS platform for medical education\nmanagement, supporting assessments and competency management,\ncurriculum, scheduling and clinical hours, procedure and patient logs,\nonboarding and credentialing, accreditation workflows, institutional\nreporting, analytics, and continuous educational improvement."
+   },
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting, dashboards & analytics",
+    "evidence": "MyEvaluations is an integrated SaaS platform for medical education\nmanagement, supporting assessments and competency management,\ncurriculum, scheduling and clinical hours, procedure and patient logs,\nonboarding and credentialing, accreditation workflows, institutional\nreporting, analytics, and continuous educational improvement."
+   },
+   {
+    "function_id": "recruitment_workforce",
+    "function": "Recruiting, hiring, onboarding & workforce management",
+    "evidence": "MyEvaluations is an integrated SaaS platform for medical education\nmanagement, supporting assessments and competency management,\ncurriculum, scheduling and clinical hours, procedure and patient logs,\nonboarding and credentialing, accreditation workflows, institutional\nreporting, analytics, and continuous educational improvement."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2635447609/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2635447609; tier null: census unit untiered:Education & Training in remainder.json assigned this fork to Education & Training from its own description (category as filed: Analytics); the source publishes no impact level for this offering, so no tier is recorded"
+ },
+ {
+  "fork_id": "FR1916744879",
+  "vendor": "Proofpoint, Inc.",
+  "product": "Proofpoint Security Awareness Training",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "category_as_filed_in_source": "Uncategorized (none in source)",
+  "deadramp_category": "Education & Training",
+  "description": "Proofpoint takes a holistic approach to cybersecurity education and awareness and provides you with a proven framework that drives behavior change and real security outcomes. With Proofpoint Security Awareness Training, you get tailored cybersecurity education online that\u2019s targeted to the vulnerabilities, roles and competencies of your users. And it provides that education in bite-sized chunks, so it creates sustainable habits. This ensures your users have the right response when they\u2019re faced with sophisticated attacks. What\u2019s more, it tracks all the metrics that your CISO needs.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1916744879/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1916744879; tier null: census unit untiered:Education & Training in remainder.json assigned this fork to Education & Training from its own description (category as filed: Uncategorized (none in source)); the source publishes no impact level for this offering, so no tier is recorded"
+ },
+ {
+  "fork_id": "FR2633734917",
+  "vendor": "Simuhealth Technologies Inc.",
+  "product": "Simuhealth",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Analytics",
+   "Operations Management",
+   "Education & Training",
+   "Learning Management"
+  ],
+  "category_as_filed_in_source": "Analytics",
+  "deadramp_category": "Education & Training",
+  "description": "Simuhealth is a cloud-based operations platform for healthcare simulation training programs. It provides the digital infrastructure that powers simulation programs and centers, including scheduling and resource coordination, equipment and inventory lifecycle management, scenario and curriculum management, learner and instructor workflows, competency tracking, utilization analytics, and accreditation evidence management. Simuhealth is delivered as a multi-tenant SaaS offering hosted on Amazon Web Services.",
+  "functions_claimed": [
+   {
+    "function_id": "course_catalog",
+    "function": "Course, catalog & training program management",
+    "evidence": "Simuhealth is a cloud-based operations platform for healthcare simulation training programs."
+   },
+   {
+    "function_id": "scheduling",
+    "function": "Scheduling of training & assessment sessions",
+    "evidence": "It provides the digital infrastructure that powers simulation programs and centers, including scheduling and resource coordination, equipment and inventory lifecycle management, scenario and curriculum management, learner and instructor workflows, competency tracking, utilization analytics, and accreditation evidence management."
+   },
+   {
+    "function_id": "simulations",
+    "function": "Simulations & simulation debriefing",
+    "evidence": "Simuhealth is a cloud-based operations platform for healthcare simulation training programs."
+   },
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting, dashboards & analytics",
+    "evidence": "It provides the digital infrastructure that powers simulation programs and centers, including scheduling and resource coordination, equipment and inventory lifecycle management, scenario and curriculum management, learner and instructor workflows, competency tracking, utilization analytics, and accreditation evidence management."
+   },
+   {
+    "function_id": "hosting_platform",
+    "function": "Hosting & platform services (PaaS, multi-tenant, hosted cloud)",
+    "evidence": "Simuhealth is delivered as a multi-tenant SaaS offering hosted on Amazon Web Services."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2633734917/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2633734917; tier null: census unit untiered:Education & Training in remainder.json assigned this fork to Education & Training from its own description (category as filed: Analytics); the source publishes no impact level for this offering, so no tier is recorded"
+ },
+ {
+  "fork_id": "FR2635050850",
+  "vendor": "Toonimo Inc.",
+  "product": "Toonimo Digital Adoption Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Customer Service",
+   "Education & Training",
+   "Artificial Intelligence (AI)",
+   "Analytics",
+   "Content Management System (CMS)"
+  ],
+  "category_as_filed_in_source": "Customer Service",
+  "deadramp_category": "Education & Training",
+  "description": "Toonimo is a cloud-native SaaS digital adoption platform that delivers in-application walkthroughs, AI chatbot and voicebot guidance, process intelligence, and analytics so organizations can help employees and constituents complete tasks in existing web applications. The FedRAMP authorization boundary is commercial Amazon Web Services only (containers on Kubernetes/EKS, managed database, object storage, CDN, WAF, KMS). Oracle Cloud Infrastructure is used for some commercial non-federal tenants and is outside this boundary.\n\nTarget certification: FedRAMP 20x Class C (Moderate) via Program Certification (no agency sponsor). Marketplace status: Initial Implementation. FedRAMP ID pending assignment.",
+  "functions_claimed": [
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting, dashboards & analytics",
+    "evidence": "Toonimo is a cloud-native SaaS digital adoption platform that delivers in-application walkthroughs, AI chatbot and voicebot guidance, process intelligence, and analytics so organizations can help employees and constituents complete tasks in existing web applications."
+   },
+   {
+    "function_id": "ai_automation",
+    "function": "AI & automation tools",
+    "evidence": "Toonimo is a cloud-native SaaS digital adoption platform that delivers in-application walkthroughs, AI chatbot and voicebot guidance, process intelligence, and analytics so organizations can help employees and constituents complete tasks in existing web applications."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2635050850/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2635050850; tier null: census unit untiered:Education & Training in remainder.json assigned this fork to Education & Training from its own description (category as filed: Customer Service); the source publishes no impact level for this offering, so no tier is recorded"
+ }
+]
