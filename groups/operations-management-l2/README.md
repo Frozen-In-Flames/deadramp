@@ -219,6 +219,40 @@ practices of NIST SP 800-171 behind CMMC L2:
   rest is a deployment-layer control, stated plainly and not
   claimed here).
 
+## Additions (remainder unit, 2026-10-31)
+
+Twenty previously uncategorized FedRAMP Moderate offerings have
+joined this group under the remainder census
+(`addition:operations-management-l2`): Accenture Federal Cloud
+ERP, AINS eCase, Bizagi Cloud, Canon Office Cloud, FM:Systems
+OpenBlue Workplace, IBM Automation Services for Government,
+Ivanti Neurons for ITSM, M.C. Dean InfraLink, Manhattan
+Government Cloud, iSite Contract Management Portal, Pitney Bowes
+SendPro 360, PTC Cloud Services, GoRPM, Smartsheet Gov, ARIS
+Government Cloud, stackArmor Clarity, StackArmor Rally, Tyler
+Federal Product Suite, UiPath Automation Cloud Public Sector,
+and Xerox Managed Print Services. The group now covers **22
+forks**; their spec sheets are appended to `specs/specs.json`
+(the two sheets above are byte-preserved), and the union of
+record is UNION-SPEC.md plus **ADDENDUM.md**.
+
+What changed: spec coverage (2 → 22 forks, 20 → 27 taxonomy
+claims — the newcomers claim only `workflow_automation` ×6 and
+`integrations` ×1 under the group's taxonomy applied verbatim;
+14 claim zero families, with near-misses itemized in
+`scratch/ADDITIONS_ARTIFACTS.md`) and tests (119 → 126, all
+passing; the `_is_overdue` mutation drill re-run in this tree,
+exactly 9 failures, restored and hash-verified — see
+`tests/README.md`).
+
+What did **not** change: the code (`src/` is untouched — the
+additions warranted no core extension; every claimed family
+already rides the shipped union), the 12 core functions, the
+taxonomy, and the Moderate/L2 baseline. The newcomers' own
+engines (print fleets, supply chain, PLM, ITSM, case
+management, process mining, mailroom operations, and more) are
+Extended gaps, named in ADDENDUM.md §5 for the final GAPS batch.
+
 ## Honesty: what is NOT in this build
 
 - **Extended capabilities are NOT implemented.** No workflow
@@ -236,7 +270,9 @@ practices of NIST SP 800-171 behind CMMC L2:
   services presuppose, and says so.
 - **Scheduling/rostering and IoT/telemetry are absent — 0 claims.**
   No sibling in this group supports either in the union contract,
-  so neither is built or implied.
+  so neither is built or implied. (After the additions: still 0
+  taxonomy claims and unbuilt, though two additions assert
+  adjacent substance — see ADDENDUM.md §5.)
 - **No federal information content is stored — by design.** One
   sibling states it does not produce, store, or transmit federal
   information, and the build honors that shape: records are

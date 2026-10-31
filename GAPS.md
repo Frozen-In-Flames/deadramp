@@ -894,6 +894,25 @@ Extended functions, specified in groups/travel-management-l2/UNION-SPEC.md, not 
 
 Platform-layer: the commercial SaaS / PaaS offerings the fork integrates are its own components, outside this build; hosting regions are a deployment property; encryption at rest (deployment layer; TLS when configured); multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: the category is new and this singleton completes the singleton phase. The description (three sentences) contains no booking / reservation, per-diem, reimbursement, approval, or receipt vocabulary — checked absences, itemized in the spec; authorization, decision, and voucher records enter Core only as the records forms the claimed travel and expense services presuppose, under explicit core-boundary decisions. Traveler records carry opaque references in a shape pinned to exactly six keys.
 
+## Remainder Addition — Operations Management L2 (+20 forks)
+
+New extended functions from the addition forks, specified in groups/operations-management-l2/ADDENDUM.md, not implemented:
+- [ ] open — Managed print services engine (Canon, Xerox)
+- [ ] open — Supply chain & logistics execution suite (Manhattan)
+- [ ] open — Product lifecycle management (PLM) platform (PTC)
+- [ ] open — IT service management (ITSM) suite (Ivanti)
+- [ ] open — Infrastructure maintenance management system (InfraLink)
+- [ ] open — Facilities & real property management suite / IWMS (FM:Systems, GoRPM, IBM TRIRIGA overlap)
+- [ ] open — Case management platforms incl. EEO + FOIA (Tyler Federal, AINS eCase)
+- [ ] open — Business process modeling, process mining & enterprise architecture platform (Software AG ARIS / ALFABET)
+- [ ] open — Mail & package operations (Pitney Bowes)
+- [ ] open — Strategic portfolio & agile planning platforms (Clarity, Rally)
+- [ ] open — Back-office ERP suite (Accenture)
+- [ ] open — Contract progress management application (iSite)
+- [ ] open — Enterprise asset management depth: predictive maintenance / asset health / IoT telemetry analytics (IBM Maximo)
+
+Enlargements of families already registered under Group 36: the workflow automation execution engine is now asserted by 7 of 22 forks (adds the RPA / process-automation platforms UiPath and Bizagi); integration connector engines & catalog now 2 of 22 (adds IBM webMethods). Absence update: scheduling & rostering and IoT / telematics remain at zero taxonomy claims and unbuilt, but are no longer universal absences in this category (InfraLink asserts scheduling substance; IBM asserts IoT integration substance).
+
 ## Later groups
 
 Each group appends its section here when it ships.

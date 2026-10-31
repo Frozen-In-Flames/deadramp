@@ -33,6 +33,7 @@ entry point for this group.)
 | `test_service.py` | 8 | REST API — live HTTP server (ephemeral port): health with no auth, 401 unknown user / role mismatch, 403 viewer write + `workflow_write` for operator (denied attempts audited with `:denied`), full flow (person → org → project+member → asset → work order → assign/transition → inspection → usage → workflow create/PATCH → report/search → audit), `audit_read` admin-only, 400/404 envelopes, `?now=` derivation on work-order and report endpoints |
 | `test_main_cli.py` | 1 | `python -m opsmgmt serve` subprocess on an ephemeral port with demo users alice/bob/carol |
 | `test_negative_control.py` | 2 | Negative control (below) |
+| `test_additions.py` | 7 | Remainder additions (below) — spec integrity (22 sheets, shipped two first with 7/13 claims, 27 total), exact census-unit membership (20 fork IDs, Moderate/L2), house schema conformity, taxonomy + verbatim-evidence audit, the exact adjudicated claim map (7 claims / 6 forks / 14 zero-claim), workflow-registry Core pin exercised per workflow claimant (registry never executes; admin-only writes), integrations Extended honesty pin (no connector/execution entry point on the store) |
 | `opsmgmt_helpers.py` | — | Shared fixtures: demo users (ADMIN/OPERATOR/VIEWER), `USERS` registry, `fresh_store()`, and `make_store()` building an OpsStore + AuditLog + a person + an organization + a project with the person as a member (created by ADMIN) |
 
 ## Negative control
@@ -89,3 +90,37 @@ this defect class; the negative control is not decorative.
   per the builder's documented convention in `store.py`; all three
   roles hold it, and a `None` actor is denied. Pinned in
   `test_reports_search.py`.
+
+## Additions (remainder unit `addition:operations-management-l2`, 2026-10-31)
+
+The 20 remainder forks appended to `specs/specs.json` (see
+`../ADDENDUM.md`) warranted **no core extension** — every claimed
+family rides the shipped union — so `src/` is unchanged and the
+suite grows only by `test_additions.py` (7 tests, in the layout
+table above). Suite status for the enlarged group: **126 tests,
+OK** (run exactly as above).
+
+Negative control for the additions: with no new core function to
+drill, the group's signature drill was **re-run in this tree**.
+`OpsStore._is_overdue` in the real `src/opsmgmt/store.py` was
+patched to `return False`; the full suite ran: **126 tests,
+exactly 9 failed**, the identical failure set to the shipped
+drill above (the 7 additions tests do not exercise `_is_overdue`
+and pass under the mutant, as expected):
+
+- `test_negative_control.TestNegativeControlMutantDerivation.test_overdue_list_view_canonical_but_mutant_not`
+- `test_negative_control.TestNegativeControlMutantDerivation.test_overdue_work_order_overdue_canonical_but_mutant_not`
+- `test_reports_search.TestReport.test_report_overdue_is_now_dependent`
+- `test_reports_search.TestReport.test_report_shape_and_counts`
+- `test_service.TestFullFlow.test_full_flow`
+- `test_work_orders.TestOverdueDerivation.test_in_progress_past_due_overdue`
+- `test_work_orders.TestOverdueDerivation.test_now_forms`
+- `test_work_orders.TestOverdueDerivation.test_overdue_is_derived_not_stored`
+- `test_work_orders.TestOverdueDerivation.test_overdue_open_work_order_overdue`
+
+`store.py` was restored from `scratch/store.py.premutation.additions`
+and verified **SHA-256 identical to the shipped build's recorded
+hash** (`8fe67ec242573e5d001071174ea4853fee74995ccc0f3ce02fd1a25f0bc411a6`,
+`scratch/store.py.sha256`) — i.e. byte-identical to the code that
+shipped with the original group — and the suite re-run: **126
+tests, OK**. Raw drill output: `scratch/additions_mutation_run.txt`.
