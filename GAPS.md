@@ -1823,6 +1823,12 @@ Gaps from Remainder Group 5, specified in groups/library-systems-l1/UNION-SPEC.m
 - [ ] open — Integration transport
 - [ ] open — Identity provider (IA-2 stays with the embedding organization)
 
+## Untiered Set 29 — Cloud Infrastructure & Hosting (Project Hosts GSS One, F1403283529)
+
+No new gap is registered by this set. Four already-registered founding gaps gain a taxonomy claimant from this fork, noted here and not re-registered: monitoring & observability engines; backup execution & disaster-recovery orchestration; operations execution engines; platform-layer multi-tenancy. Two more gain substance only (Assessment & Authorization support services; the identity provider gap).
+
+Resolution note, stated plainly: tier stays null. This fork claims four families under the founding group's taxonomy applied verbatim, proven by the extractor reproducing the founding group's 34 claims exactly before tagging — classification needed the live-docs citation, claims did not, and the two evidence streams never mix. The category's centre is a named absence here: hosting_platform stands at zero, because "cloud computing environment" is not the family's phrase, and security_services stands at zero on a case artifact (lowercase "intrusion prevention" against title-case patterns), recorded rather than repaired. A boundary strain is recorded in the set's union spec and readme, not smoothed: the census boundary sends performed-services prose to System Administration, this description is dense with it, and the set keeps the research pass's recorded adjudication to this category, importing nothing from System Administration. Documented control claims stand in place of a baseline: contingency planning at the taxonomy tier, six families at the prose tier, eight families not documented.
+
 ## Later groups
 
 Each group appends its section here when it ships.
