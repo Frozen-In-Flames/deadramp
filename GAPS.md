@@ -880,6 +880,20 @@ Extended functions, specified in groups/research-l2/UNION-SPEC.md, not implement
 
 Platform-layer: encryption at rest (deployment layer; TLS when configured); multi-tenancy (the fork claims it of its own platform; single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: the category is new; the description is two sentences, the first a baseline determination that tags nothing, so all nine claims come from the single platform sentence. Privacy discipline: the dataset record shape is pinned to exactly nine keys (metadata, checksum, access tier) so no field can hold research subject data, genomic or clinical payloads, or dataset contents; verify-by-content hashes caller bytes transiently and discards them; access requests are rejected for open datasets rather than gated falsely.
 
+## Singleton 55 — Travel Management L2 (1 fork, new category)
+
+Extended functions, specified in groups/travel-management-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Travel booking & reservation engine
+- [ ] open — Carrier, hotel & GDS reservation integrations
+- [ ] open — Payment & disbursement execution (vouchers are records; no money moves)
+- [ ] open — Receipt capture & imaging / OCR
+- [ ] open — Integration connector engines (the registry holds definitions only)
+- [ ] open — Notification delivery transport (notifications are records)
+- [ ] open — Report generation engine & dashboards (beyond registry summaries)
+- [ ] open — Identity provider / identity management service
+
+Platform-layer: the commercial SaaS / PaaS offerings the fork integrates are its own components, outside this build; hosting regions are a deployment property; encryption at rest (deployment layer; TLS when configured); multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: the category is new and this singleton completes the singleton phase. The description (three sentences) contains no booking / reservation, per-diem, reimbursement, approval, or receipt vocabulary — checked absences, itemized in the spec; authorization, decision, and voucher records enter Core only as the records forms the claimed travel and expense services presuppose, under explicit core-boundary decisions. Traveler records carry opaque references in a shape pinned to exactly six keys.
+
 ## Later groups
 
 Each group appends its section here when it ships.

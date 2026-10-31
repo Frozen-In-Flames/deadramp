@@ -1,0 +1,68 @@
+[
+ {
+  "fork_id": "FR2607452240",
+  "vendor": "IBM",
+  "product": "GO.gov",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Travel Management"
+  ],
+  "deadramp_category": "Travel Management",
+  "description": "The GO.gov system is a multi-component System of Systems (SoS) designed to provide an integrated suite of travel, expense, integration, notification, and reporting services in support of Federal agencies. GO.gov\u2019s core purpose is to streamline and standardize federal travel and expense operations while maintaining compliance with federal security and privacy regulations. GO.gov integrates several commercial Software-as-a-Service (SaaS) and Platform-as-a-Service (PaaS) offerings with secure hosting environments within AWS GovCloud (US) and AWS East/West commercial regions to provide a unified, end-to-end business capability.",
+  "functions_claimed": [
+   {
+    "function_id": "travel_services",
+    "function": "Travel services",
+    "evidence": "The GO.gov system is a multi-component System of Systems (SoS) designed to provide an integrated suite of travel, expense, integration, notification, and reporting services in support of Federal agencies."
+   },
+   {
+    "function_id": "expense_services",
+    "function": "Expense services",
+    "evidence": "The GO.gov system is a multi-component System of Systems (SoS) designed to provide an integrated suite of travel, expense, integration, notification, and reporting services in support of Federal agencies."
+   },
+   {
+    "function_id": "integration_services",
+    "function": "Integration services",
+    "evidence": "The GO.gov system is a multi-component System of Systems (SoS) designed to provide an integrated suite of travel, expense, integration, notification, and reporting services in support of Federal agencies."
+   },
+   {
+    "function_id": "notification_services",
+    "function": "Notification services",
+    "evidence": "The GO.gov system is a multi-component System of Systems (SoS) designed to provide an integrated suite of travel, expense, integration, notification, and reporting services in support of Federal agencies."
+   },
+   {
+    "function_id": "reporting_services",
+    "function": "Reporting services",
+    "evidence": "The GO.gov system is a multi-component System of Systems (SoS) designed to provide an integrated suite of travel, expense, integration, notification, and reporting services in support of Federal agencies."
+   },
+   {
+    "function_id": "travel_expense_operations",
+    "function": "Travel and expense operations (streamline and standardize)",
+    "evidence": "GO.gov\u2019s core purpose is to streamline and standardize federal travel and expense operations while maintaining compliance with federal security and privacy regulations."
+   },
+   {
+    "function_id": "security_privacy_compliance",
+    "function": "Compliance with federal security and privacy regulations",
+    "evidence": "GO.gov\u2019s core purpose is to streamline and standardize federal travel and expense operations while maintaining compliance with federal security and privacy regulations."
+   },
+   {
+    "function_id": "system_of_systems_composition",
+    "function": "Multi-component System of Systems composition",
+    "evidence": "The GO.gov system is a multi-component System of Systems (SoS) designed to provide an integrated suite of travel, expense, integration, notification, and reporting services in support of Federal agencies."
+   },
+   {
+    "function_id": "cloud_hosting_platform",
+    "function": "Cloud hosting platform (SaaS/PaaS composition, GovCloud and commercial regions)",
+    "evidence": "GO.gov integrates several commercial Software-as-a-Service (SaaS) and Platform-as-a-Service (PaaS) offerings with secure hosting environments within AWS GovCloud (US) and AWS East/West commercial regions to provide a unified, end-to-end business capability."
+   }
+  ],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2607452240",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2607452240/"
+ }
+]
