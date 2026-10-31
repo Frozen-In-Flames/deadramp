@@ -1,0 +1,66 @@
+[
+ {
+  "fork_id": "FR2634047811",
+  "vendor": "86Borders LLC",
+  "product": "86Borders ConnectAllCare",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Health & Wellness"
+  ],
+  "deadramp_category": "Health & Wellness",
+  "description": "86Borders is the trusted partner for health plans seeking measurable outcomes and quality improvement through human-first member engagement. By pairing local Care Coordinators with our ConnectAllCare (CAC) platform, we help payers and other risk-bearing entities reach hard-to-engage members, overcome social and behavioral barriers, and translate genuine connection into improved outcomes, higher quality scores, and healthier communities. 86Borders ConnectAllCare is a cloud-based healthcare coordination platform managing patient engagement and social care, deployed on AWS Commercial infrastructure.\n\n### Certification Package Metadata [CPO-CSO-MTD]\n- **Accountable Official:** Dan McDonald, Chief Executive Officer (CEO) (dmcdonald@86borders.com)\n- **Version:** 1.0.3\n- **Date and Time of Last Update:** 2026-10-20T13:50:00.000Z\n- **Source of Update:** Manual",
+  "functions_claimed": [
+   {
+    "function_id": "patient_engagement",
+    "function": "Patient engagement & surveys",
+    "evidence": "86Borders ConnectAllCare is a cloud-based healthcare coordination platform managing patient engagement and social care, deployed on AWS Commercial infrastructure."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2634047811/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2634047811"
+ },
+ {
+  "fork_id": "FR2633734921",
+  "vendor": "Elvo",
+  "product": "Elvo",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Health & Wellness"
+  ],
+  "deadramp_category": "Health & Wellness",
+  "description": "Elvo is a clinician-directed platform that supports evidence-based at-home data collection and exercise programs between skilled therapy visits, during telehealth visits, or other use cases as deemed appropriate by clinicians. For example, clinicians create home exercise programs; the platform can then deliver them through a customized interface and records objective session metrics. Those metrics can for example combine quantitative performance data with standardized qualitative ratings. The platform is highly evidence-based. It operationalizes documented protocols rather than introducing new treatment methods.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2633734921/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2633734921"
+ },
+ {
+  "fork_id": "FR1825232355",
+  "vendor": "WellHive Holdings, LLC",
+  "product": "WellHive",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Health & Wellness",
+  "description": "WellHive is a SaaS solution built to help enterprise healthcare systems navigate their patients\u2019 care across federal and commercial boundaries. WellHive connects and unifies care and benefits management activities across various systems and organizations through integrations with Electronic Health Records (EHRs) and practice management systems, provider networks, and over 700 insurance carriers. \n\nWellHive capabilities delivered leveraging these connections include Integrated Scheduling, and Insurance Verification and Discovery. WellHive is hosted on AWS GovCloud and utilizes AWS services to provide both the availability and scalability required to meet our customer\u2019s needs. In addition to a FedRAMP Moderate authorization, WellHive is also compliant with HIPAA and NIST 800-53 Appendix J Privacy Controls.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1825232355/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1825232355"
+ }
+]

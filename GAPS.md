@@ -1524,6 +1524,27 @@ New extended functions from this set, specified in groups/system-administration-
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This set records zero claims: the category taxonomy is its founding fork's own exact phrases and none occurs in these four descriptions, so no core function is claim-supported and the substrate is carried, not claimed. All four documented control families come from one fork's single sentence (MFA, role-based access controls, encryption, audit logging); another fork's built-in-controls sentence is recorded as general-terms prose, not traced to a family, and every other family is listed as not documented. The founding named absences stand in substance here but claimless: monitoring in three forks, incident management and ticketing in one. One fork's product name carries (High) while its record's impact is Unknown — the tier stays null, pinned by test.
 
+## Untiered Set 11 — Health & Wellness (3 forks, tier null)
+
+New extended functions from this set, specified in groups/health-wellness-untiered/UNION-SPEC.md, not implemented:
+- [ ] open — Patient engagement channels & content (one claimant in this set)
+- [ ] open — Survey instruments depth
+- [ ] open — EMR/EHR integration engines
+- [ ] open — Insurance verification, benefits discovery & claims adjudication engines
+- [ ] open — Care coordination & navigation platform depth
+- [ ] open — Integrated scheduling engines
+- [ ] open — At-home therapy delivery & session-metrics analytics
+- [ ] open — Telehealth visit support (wording present in one fork; no family exists for it at this tier, and the L2 retirement does not transfer)
+- [ ] open — Measurement & outcome analytics engines
+- [ ] open — Clinical decision support
+- [ ] open — Device connectivity / sync pipelines
+- [ ] open — AI/ML models & personalization engines
+- [ ] open — Automation / workflow engines
+- [ ] open — Multi-device native apps
+- [ ] open — Hosting platform layer
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This set records one claim; the sole claim is an extended-disposition family, so no core function is claim-supported and the substrate is carried, not claimed. The one documented control assertion is a fork's HIPAA and NIST privacy-controls compliance sentence, recorded at compliance-assertion weight as its claim about itself; every 800-53 family is listed as not documented. One fork's prose asserts a FedRAMP Moderate authorization while its own record says impact Unknown and status In Process — recorded as the fork's assertion, moving no tier. Named absences: ten of eleven families stand at zero, including EMR integration with the substance present in other words, and measurement data where objective session metrics is not the family's phrase.
+
 ## Later groups
 
 Each group appends its section here when it ships.
