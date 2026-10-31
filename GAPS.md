@@ -1154,6 +1154,13 @@ New extended function from the addition fork, specified in groups/cms-l2/ADDENDU
 
 No existing gap gains a claimant, itemized in the addendum: bulk ingestion & index-in-place engines (extraction is the reverse direction from ingestion), platform hosting itself (delivery-model prose), enterprise search indexing engines (no search token anywhere in the description). The enlarged group's floor changes, stated plainly: the union spec's "no fork has zero claims" no longer holds — the addition fork's entire description is one 38-word sentence that tags no family under the taxonomy applied verbatim, so 4 of 5 forks claim and the group total stays 19. All six named absences survive at 0 of 5 forks.
 
+## Remainder Addition — Customer Service L1 (+1 fork)
+
+New extended function from the addition fork, specified in groups/customer-service-l1/ADDENDUM.md, not implemented:
+- [ ] open — Proactive engagement & outreach: proactive customer engagement and outreach (asserted in substance by the fork's own words, "proactive engagement"; no taxonomy family covers outreach — registered from the described function, not from a claim)
+
+Existing gap gaining a member by substance: knowledge base articles / self-service gains the addition fork, which asserts "self-service" in its own words — while the claim-level named absence stands (0 of 3 forks claim the knowledge base family, the phrase missing the family's operative word "article"). Explicitly no claimant: real-time channels (stays 0 of 3 — the fork is known for live chat but its listing carries no channel token; reputation is not evidence), AI assistance / deflection (no AI token), satisfaction / CSAT surveys (absence untouched). The enlarged group's floor changes, stated plainly: the union spec's "no fork has zero claims" no longer holds — 1 of 3 forks claims zero, and the group total stays 8.
+
 ## Later groups
 
 Each group appends its section here when it ships.

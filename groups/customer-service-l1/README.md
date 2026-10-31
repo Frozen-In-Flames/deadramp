@@ -22,6 +22,22 @@ an AI deflection bot. Those are Extended functions, specified in
 `UNION-SPEC.md` and registered in the repo-level `GAPS.md` for the
 final batch.
 
+## Remainder addition (Oct 31, 2026)
+
+One previously uncategorized fork joined the group under census
+unit `addition:customer-service-l1`: **Zendesk / Zendesk Customer
+Support and Help Desk Platform** (`FR1821856903`, FedRAMP LI-SaaS /
+Certified) — see `ADDENDUM.md`. It is a **zero-claim fork**: its
+three-sentence marketplace description contains no taxonomy token,
+so it adds **0 claims** (group total unchanged at 8; now 2 of 3
+forks claiming) and **no core change** (`src/` byte-identical).
+Its substance — self-service and proactive engagement — is
+registered as gap material in the addendum, not claimed. The group
+composition is now Low 2 + LI-SaaS 1 (the Low union baseline is
+unchanged; LI-SaaS adds nothing). Tests are now **80, all passing**,
+including a re-run of the breach-derivation drill (exactly 8
+failures under the mutant; see `tests/README.md`).
+
 ## Run it
 
 From this directory:
@@ -49,7 +65,7 @@ Authenticate with `X-User` / `X-Role` headers matching a row above.
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-69 tests, all passing, including one mutation-verified negative
+80 tests, all passing, including one mutation-verified negative
 control. See `tests/README.md` for the coverage map and the mutation
 record.
 
@@ -126,7 +142,9 @@ a FedRAMP authorization and not a CMMC certification.
 
 ## Layout
 
-- `specs/specs.json` — 2 spec sheets with evidence sentences
+- `specs/specs.json` — 3 spec sheets with evidence sentences
+- `ADDENDUM.md` — the remainder addition (Zendesk): zero claims,
+  core-delta decision, gaps
 - `UNION-SPEC.md` — the merged spec: ranking, core, baseline,
   contract, gaps
 - `src/custsvc/` — errors, access, audit, store, service, `__main__`
