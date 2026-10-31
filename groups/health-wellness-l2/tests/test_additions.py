@@ -72,10 +72,13 @@ class TestAdditionSpecIntegrity(unittest.TestCase):
     verbatim descriptions, census citations, near-miss pins."""
 
     def test_sheet_count_and_order(self):
-        """8 sheets: the shipped 5 untouched in place, then the 3
-        additions in census unit order."""
+        """The first 8 sheets: the shipped 5 untouched in place,
+        then the 3 additions in census unit order. (A 9th sheet --
+        the no-signal addition FR2220549818 -- is appended after
+        these and pinned in test_nosignal_addition.py, so this pin
+        is scoped to the first 8.)"""
         specs = _load_specs()
-        self.assertEqual([s["fork_id"] for s in specs],
+        self.assertEqual([s["fork_id"] for s in specs[:8]],
                          ORIGINAL_ORDER + UNIT_ORDER)
 
     def test_membership_matches_remainder_unit(self):
@@ -86,7 +89,7 @@ class TestAdditionSpecIntegrity(unittest.TestCase):
                     if u["unit_id"] == "addition:health-wellness-l2")
         self.assertEqual(unit["fork_ids"], UNIT_ORDER)
         specs = _load_specs()
-        self.assertEqual([s["fork_id"] for s in specs[5:]],
+        self.assertEqual([s["fork_id"] for s in specs[5:8]],
                          unit["fork_ids"])
 
     def test_literal_claim_table_all_zero(self):
@@ -98,13 +101,16 @@ class TestAdditionSpecIntegrity(unittest.TestCase):
             self.assertEqual(got, expected, fork_id)
 
     def test_group_totals_unchanged(self):
-        """The additions add no claims: the group total stays 19 and
-        3 of the group's 8 forks now carry zero claims."""
+        """The additions add no claims: the group total stays 19
+        (the later no-signal sheet also adds none) and all 3 of the
+        unit's forks carry zero claims. (The group-wide zero-claim
+        count is now 4 with the no-signal fork; that count is
+        pinned in test_nosignal_addition.py.)"""
         specs = _load_specs()
         self.assertEqual(
             sum(len(s["functions_claimed"]) for s in specs), 19)
         self.assertEqual(
-            sum(1 for s in specs if not s["functions_claimed"]), 3)
+            sum(1 for s in specs[:8] if not s["functions_claimed"]), 3)
 
     def test_addition_tier_fields(self):
         """All 3 additions are FedRAMP Moderate / L2 / SaaS, so the

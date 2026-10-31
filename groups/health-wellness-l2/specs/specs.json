@@ -244,5 +244,25 @@
   "functions_claimed": [],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2002367706/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2002367706"
+ },
+ {
+  "fork_id": "FR2220549818",
+  "vendor": "CirrusMD",
+  "product": "CirrusMD Virtual Health Chat for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Health & Wellness",
+  "description": "CirrusMD Virtual Health Chat for Government increases access to Agency Care and is delivered as a SaaS offering using a multi-tenant Government Only Community cloud computing environment. The CirrusMD system provides a SaaS cloud-based service offering that is architected using best-of-breed security solutions, utilizing the government community deployment model, allowing for repeatable, secure, and elastic delivery of application services to the government user community. The system enables the government to meet its goals of agile computing, generating fiscal savings, and increasing utilization of federal IT platforms. The CirrusMD system is a government cloud-based service offering that is fully secure and complies with HIPAA and GDPR.\r\n\r\nCirrusMD owns and operates the CirrusMD Virtual Health Chat for Government information system within the SaaS cloud deployment model. The collection of events is within the trusted path of the environment and tailored for the Federal customer environment. The Federal customer does not manage or control the underlying SaaS cloud environment, including network, server, operating system, storage, or individual application capabilities, except for the connectivity between environments, which is all supported by the provider.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2220549818/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2220549818",
+  "classification_evidence": "CirrusMD\u2019s multidisciplinary care team of doctors and health coaches delivers 24/7/365 physician-first care and guidance at scale for health plans and large self-insured employers.",
+  "classification_source_url": "https://www.cirrusmd.com/about-cirrusmd"
  }
 ]

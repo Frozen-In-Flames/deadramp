@@ -270,3 +270,182 @@ fired, recorded as such):**
   trip. `store.py` was restored from the pre-mutation copy and
   verified SHA-256-identical to the shipped hash; the suite
   re-ran green. Recorded in `tests/README.md`.
+
+## 7. No-signal addition: CirrusMD (post-census)
+
+One further fork joins the group after the additions above:
+
+| Fork | Vendor / product |
+|---|---|
+| `FR2220549818` | CirrusMD / CirrusMD Virtual Health Chat for Government |
+
+**Why it was not in the census units.** This fork sat in the
+remainder census's **`no-signal-set`**: its cached marketplace
+description is generic SaaS / security / hosting boilerplate, and
+the census recorded **no citations and a `no_signal` flag**
+(reason "prose_only") — no citable function could be read out of
+the description, so no build unit proposed a category for it.
+
+**Classification basis (live-docs research pass).** The category
+was resolved afterwards from the vendor's own public pages
+(`../../remainder/nosignal_report.json`, entry `FR2220549818`,
+status "resolved", existing category — not a new one):
+
+> "CirrusMD’s multidisciplinary care team of doctors and health
+> coaches delivers 24/7/365 physician-first care and guidance at
+> scale for health plans and large self-insured employers."
+> — https://www.cirrusmd.com/about-cirrusmd
+
+That sentence is recorded on the fork's spec sheet as
+`classification_evidence`, with `classification_source_url`
+alongside it. **It is a classification citation, not claim
+evidence**: it does not occur in the fork's cached marketplace
+description (asserted in the tests), and no claim below rests on
+it. Claims are tagged from the cached description only, exactly as
+in §1.
+
+**Method.** Identical to §1, with one strengthening: the spec
+sheet was produced by `scratch/nosignal_extract.py`, which parses
+the `TAXONOMY` literal out of the shipped `scratch/extract.py` via
+`ast` (parsed, never executed) and asserts its 11 triples — and,
+before tagging the newcomer, **re-applies the taxonomy to all 8
+shipped sheets' descriptions and reproduces their stored claim
+tables exactly** (5 founding + 3 additions; taxonomy-verbatim
+proof). The sheet is **appended** to `specs/specs.json` after the
+8 shipped sheets, which are verified deep-equal against git HEAD
+(both in the extractor and in
+`tests/test_nosignal_addition.py`); its description is verified
+identical in both cached sources (`raw/data_dump.json` and
+`remainder/uncovered.json`). The fork is FedRAMP **Moderate** and
+FedRAMP Certified, SaaS, Government Community Cloud, so the group
+stays single-tier and the L2 baseline is inherited in full.
+**No exclusion trap applies:** the record's `certified_services`
+field is empty (asserted in the extractor); only `service_desc`
+was matched.
+
+**What the fork claims: 0.** The description is delivery and
+posture prose — a multi-tenant Government Community Cloud SaaS
+offering, "best-of-breed security solutions", "fully secure and
+complies with HIPAA and GDPR", and a provider-managed-environment
+paragraph. No family's phrase fires:
+
+| Family | On CirrusMD's words |
+|---|---|
+| measurement_data | absent — no glucose / clinical-metrics wording |
+| analysis_reporting | absent — no review/analysis, patterns, or scorecard phrase |
+| care_guidance | absent — "increases access to Agency Care" is not "care journey" or a guidance phrase |
+| patient_engagement | absent — the word **"patient" occurs nowhere** in the description |
+| claims_processing | absent — no claims or reimbursement wording |
+| emr_integration | absent — no integration wording at all |
+| ai_platform | absent — no AI wording |
+| automation | absent — neither "automated" nor "automates" appears |
+| device_connectivity | absent — no device wording |
+| multi_device_access | absent — "multi-tenant" is tenancy, not "multi-device accessibility" |
+| hosting_platform | absent — community-cloud delivery prose, but neither of Dexcom's Google phrases; hosting is platform-layer regardless |
+
+The group's claim total stays **19**, and **4 of its 9 forks now
+carry zero claims** (the 3 additions + CirrusMD). Near-misses are
+itemized in `scratch/nosignal_near_miss_feed.json` and pinned in
+the tests: "Virtual Health Chat" (the product name, in sentences
+1 and 5) names a channel no family covers; "Agency Care" is not
+`care_guidance`; "multi-tenant" is not `multi_device_access`;
+"cloud-based service offering" is not Dexcom's hosting phrases;
+"fully secure" / HIPAA / GDPR prose is posture, the UNION-SPEC
+correction classes 1/2/9 — it earns no tag.
+
+**Named-absence updates on this fork's words.** Telehealth was
+retired as an absence in §2 on GTS's words; CirrusMD's cached
+description adds no telehealth *function* sentence of its own (the
+channel appears only in the product name), so the retirement
+stands as recorded in §2 and CirrusMD enters the telehealth gap
+family by substance in the gap list below, through its
+classification citation — not through a claim. Access control /
+audit in text is **still absent — now 0/9 forks**: CirrusMD's
+security prose is posture, not functional RBAC/audit wording, and
+the word "audit" never appears; Core 9/10 remain
+baseline-carried, not claimed. Clinical decision support stands
+absent (no wording of any kind).
+
+**Core-delta decision.** No family is claimed, so no claim buys a
+new records form; the described surface was checked against the
+Core anyway:
+
+| CirrusMD surface | Records form it presupposes | Core delta |
+|---|---|---|
+| Virtual health chat visit with a physician | **Core 6** activity/appointment records (a visit is an activity record; the chat channel is an engine — see gaps) | **Carried** |
+| Care-team guidance and follow-up | **Core 5** plan records with derived status; **Core 3** enrollment derivation | **Carried** |
+| Chat transcripts / clinical conversation content | None — the payload is clinical content, Extended by construction under the group's privacy discipline; no activity field can hold it | **Gap** (channel gap below) |
+
+**Result: the core is unchanged.** `src/` is byte-identical to
+the shipped build, including tracked files (`src/health/store.py`
+SHA-256
+`c83cd2d269cb08c5d259d7fc1b16f7d8a761df006e0e9e3889daa4d5c928c711`
+before and after this section's work, the mutation drill
+included). The tier baseline does not change. The build remains a
+records substrate, **not a medical device, and claims no FDA
+status** — for CirrusMD exactly as for the other eight.
+
+**Gaps.**
+
+- **New gap function** (1):
+  - **Chat-based virtual care channel** — secure text-chat
+    encounters between patients and the care team, including chat
+    delivery and routing (CirrusMD). Distinct from the telehealth
+    media engine (real-time video, GTS): this fork's channel is
+    chat, identified from its product name and its classification
+    citation; the visit record itself is Core 6, and no
+    conversation content is stored anywhere in the substrate.
+    With this, telehealth delivery has two claimants-by-substance
+    across two channels (GTS video, CirrusMD chat).
+- **Existing gap gaining substance** (no family claim fired,
+  recorded as such):
+  - **Hosting platform** — CirrusMD's description is multi-tenant
+    Government Community Cloud delivery prose throughout. A
+    platform-layer property, never a health function, exactly as
+    recorded for Dexcom in the union spec.
+
+**Updated union statement.** The group now covers **9 forks**
+(5 original siblings + 3 remainder additions + 1 no-signal
+addition), **19 claims** in total (19 + 0 + 0), with **5 of 9**
+forks carrying at least one claim and 4 pinned at zero. The
+merged build is unchanged: the same 10-function health records
+substrate, now spec'd against 9 marketplace offerings. The
+no-signal fork widens the group's character once more — a
+chat-first virtual-care platform whose marketplace description
+says almost nothing about its function, which is precisely why
+the census set it aside and why its classification rests on the
+vendor's own live documentation, cited on the sheet. The privacy
+discipline binds it identically: no field in any record can hold
+real PHI, diagnosis content, or clinical free text, and the
+fork's chat content is Extended by construction.
+
+**Verification.**
+
+- Spec integrity is pinned by `tests/test_nosignal_addition.py`:
+  sheet count and order (9), the 8 shipped sheets deep-equal to
+  git HEAD, membership against the census `no-signal-set`, the
+  literal zero-claim table, the unchanged group claim total (19),
+  the description verbatim against both cached sources, the
+  classification fields pinned against
+  `remainder/nosignal_report.json` (with the classification
+  sentence asserted absent from the cached description), and the
+  near-miss pins. The fork is exercised against the substrate in
+  the same module: a virtual health chat visit as a Core 6
+  activity record with its exact contract key set (no channel,
+  message, or transcript field exists), completed, with a
+  follow-up plan deriving overdue and carrying its enrollment.
+- Three whole-file pins in `tests/test_additions.py` were scoped
+  to that unit's own slice (the first 8 sheets / the unit's
+  zero-claim count) because a 9th sheet now follows theirs; every
+  fact they pin about the additions unit is unchanged, and the
+  scoping is recorded in their docstrings.
+- **Tests: 80 → 91, all passing.**
+- **Negative control:** the group's signature drill was re-run in
+  this tree: the overdue branch of
+  `HealthStore._derive_plan_status` was patched to return
+  `"current"` and the full suite ran — **91 tests, exactly 11
+  failures**: the additions re-run's 10 plus the new CirrusMD
+  substrate case, tripping exactly as designed. `store.py` was
+  restored from the pre-mutation copy and verified
+  SHA-256-identical to the shipped hash; the suite re-ran green.
+  Recorded in `tests/README.md`.

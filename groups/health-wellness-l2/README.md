@@ -29,6 +29,30 @@ absence is retired: GTS is a telehealth platform, so telehealth
 media leaves the absence list and is registered as a gap with a
 claimant (see the gap list below, item 9).
 
+**No-signal addition:** one further fork — CirrusMD Virtual Health
+Chat for Government (CirrusMD), FedRAMP Certified / Moderate —
+joined the group after the remainder census, which had left it in
+its **no-signal set**: its marketplace description is generic
+SaaS / security / hosting boilerplate, and the census recorded no
+citable function for it. Its category was resolved by the live-docs
+research pass on the vendor's own About page
+(https://www.cirrusmd.com/about-cirrusmd): "CirrusMD’s
+multidisciplinary care team of doctors and health coaches delivers
+24/7/365 physician-first care and guidance at scale for health
+plans and large self-insured employers." That sentence is recorded
+on its spec sheet (`specs/specs.json`, 9 sheets) as the
+**classification citation, not claim evidence** — it does not occur
+in the fork's cached description. Under the group's taxonomy
+applied verbatim CirrusMD claims **zero** families: its cached
+description is delivery and posture prose (multi-tenant Government
+Community Cloud, "fully secure", HIPAA/GDPR compliance) and never
+uses the word "patient". The zero is pinned in tests with
+near-misses itemized (`ADDENDUM.md` section 7). The core is
+unchanged (`src/` byte-identical, 91 tests). Its chat channel is
+registered as a new gap (see the gap list below, item 12); the
+visit record itself is Core 6, and no conversation content can be
+stored anywhere in the substrate.
+
 It was written from that contract only: original code, no vendor
 code, assets, or branding from any sibling offering. Python 3,
 **standard library only**, no external dependencies (verified
@@ -251,7 +275,7 @@ PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
 67 tests, all passing at delivery; 80 tests after the remainder
-additions. See `tests/README.md` for the coverage table, the
+additions; 91 tests after the no-signal addition. See `tests/README.md` for the coverage table, the
 negative control, and the mutation-verification drill record. A live smoke (`scratch/smoke.py`) drives the store and
 the HTTP service end to end: program → participant → enroll →
 measurement → plan with a past due date → derived status `overdue`
@@ -300,6 +324,7 @@ as registered:
 9. Telehealth media (**named absence retired by the remainder additions**: the original 5 claimed none; the addition fork GTS VirtualHealth claims telehealth visits and video-teleconferencing explicitly — now a gap with a claimant; the visit record itself is Core 6)
 10. Multi-device native apps (a platform/access property, not a records function)
 11. Hosting platform (a platform-layer property — Dexcom's Google Cloud / GKE prose; never a health function)
+12. Chat-based virtual care channel (**no-signal addition**: CirrusMD's channel is secure text-chat encounters — distinct from the video media engine, item 9; the visit record itself is Core 6, and no chat content is stored)
 
 **Privacy discipline is constitutive.** See the dedicated section
 above: opaque references only, no diagnosis or clinical free text

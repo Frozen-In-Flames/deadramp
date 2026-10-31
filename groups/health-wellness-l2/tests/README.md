@@ -7,12 +7,14 @@ claim family / control family it traces to.
 
 ```bash
 cd groups/health-wellness-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 80 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 91 tests
 ```
 
 Status at delivery: **67 tests, OK** against the implementation in
 `../src/`; **80 tests, OK** after the remainder additions
-(`test_additions.py`, see `../ADDENDUM.md`). (Run exactly as above: helpers are imported as a top-level
+(`test_additions.py`, see `../ADDENDUM.md`); **91 tests, OK** after
+the no-signal addition (`test_nosignal_addition.py`, see
+`../ADDENDUM.md` section 7). (Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
 entry point for this group.)
@@ -34,7 +36,8 @@ entry point for this group.)
 | `test_service.py` | REST API — live HTTP server: health, 401 unknown user / role mismatch, full flow (program → participant → enroll → measurement → plan derived overdue → activity → eligibility status → complete → derived completed → scorecard + report; member reads own enrollment), **privacy boundary: smuggled `diagnosis`/`note`/`name`/`dob`/`member_number` keys -> 400 and nothing stored**, member write 403 + denied audited, member scope over HTTP (403 on another participant's enrollment), audit admin+auditor only, report member 403, 400/404 envelopes, DELETE 404 |
 | `test_main_cli.py` | `python -m health serve` subprocess with demo users alice/bob/carol/dana; no-subcommand returns 2 |
 | `test_negative_control.py` | Negative control (below) |
-| `test_additions.py` | Remainder additions (unit `addition:health-wellness-l2`) — spec integrity: 8 sheets in order (5 shipped + 3 appended in census unit order), membership against `remainder.json`, the literal **zero-claim** table for all 3 additions (taxonomy verbatim; group total stays 19), tier fields, descriptions verbatim against the cached dataset, 4/4 census citations as substrings (verification ≠ claim), per-fork near-miss pins (substance token present, family phrase absent). Plus one substrate case per fork: GTS telehealth visit as a Core 6 activity record with exact key set (no media field) + Core 4 monitoring measurement + plan/enrollment deriving overdue; Solventum Core 7 coverage record under opaque `plan_ref` deriving upcoming → current → ended with exact key set (no insurer/member fields); Somnoware Core 5 CPAP plan deriving current → overdue → completed over a Core 4 measurement with no diagnosis field |
+| `test_additions.py` | Remainder additions (unit `addition:health-wellness-l2`) — spec integrity: the unit's slice of the sheets, the first 8 in order (5 shipped + 3 appended in census unit order; a 9th, no-signal, sheet follows — pinned in `test_nosignal_addition.py`), membership against `remainder.json`, the literal **zero-claim** table for all 3 additions (taxonomy verbatim; group total stays 19), tier fields, descriptions verbatim against the cached dataset, 4/4 census citations as substrings (verification ≠ claim), per-fork near-miss pins (substance token present, family phrase absent). Plus one substrate case per fork: GTS telehealth visit as a Core 6 activity record with exact key set (no media field) + Core 4 monitoring measurement + plan/enrollment deriving overdue; Solventum Core 7 coverage record under opaque `plan_ref` deriving upcoming → current → ended with exact key set (no insurer/member fields); Somnoware Core 5 CPAP plan deriving current → overdue → completed over a Core 4 measurement with no diagnosis field |
+| `test_nosignal_addition.py` | No-signal addition (`FR2220549818`, CirrusMD) — spec integrity: 9 sheets in order, the 8 shipped sheets deep-equal to git HEAD, membership against the census `no-signal-set` (citations [], no_signal pinned), the literal **zero-claim** table for the fork (taxonomy verbatim; group total stays 19; 4 of 9 forks at zero), tier fields, description verbatim against both cached sources (raw dataset and `remainder/uncovered.json`), the classification citation pinned against `remainder/nosignal_report.json` (verbatim sentence + URL; asserted NOT present in the cached description — classification ≠ claim evidence), near-miss pins (delivery/posture tokens present, all family phrases absent, the word "patient" absent). Plus one substrate case: CirrusMD virtual health chat visit as a Core 6 activity record with exact key set (no channel/message field) + follow-up plan and enrollment deriving overdue |
 | `health_helpers.py` | Shared fixtures: demo users (ADMIN=alice/admin, CLINICIAN=bob/clinician, MEMBER=carol/member, AUDITOR=dana/auditor), `USERS` registry, `fresh_store()`, and `make_store()` building a HealthStore + AuditLog + one program ("Diabetes Care") + one participant under opaque ref "carol" (both created by ADMIN) |
 
 ## Negative control
@@ -100,3 +103,18 @@ restored from `scratch/store.py.premutation-additions` and verified
 SHA-256-identical to the shipped hash
 (`c83cd2d269cb08c5d259d7fc1b16f7d8a761df006e0e9e3889daa4d5c928c711`);
 the suite re-ran green: **80 tests, OK**.
+
+**No-signal addition re-run (2026-10-31, fork `FR2220549818`).** The
+core is again unchanged, so the same drill was re-run in this tree:
+the overdue branch of `_derive_plan_status` patched to
+`return "current"`, full suite run — **91 tests, exactly 11
+failures**: the additions re-run's 10 above plus 1 from
+`test_nosignal_addition.py`
+(`test_cirrusmd_chat_visit_is_an_activity_record`), which derives
+plan/enrollment status and trips exactly as designed. Raw output in
+`scratch/nosignal_mutation_run.txt`. `store.py` was restored from
+`scratch/store.py.premutation-nosignal` and verified
+SHA-256-identical to the shipped hash
+(`c83cd2d269cb08c5d259d7fc1b16f7d8a761df006e0e9e3889daa4d5c928c711`);
+the suite re-ran green: **91 tests, OK**, with `src/` byte-identical
+including the tracked bytecode.
