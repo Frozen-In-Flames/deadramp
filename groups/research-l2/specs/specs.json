@@ -1,0 +1,68 @@
+[
+ {
+  "fork_id": "FR2125059322",
+  "vendor": "Center for Translational Data Science (CTDS)",
+  "product": "Gen3 Data Ecosystems Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Research"
+  ],
+  "deadramp_category": "Research",
+  "description": "The Gen3 Data Ecosystems Platform system has been determined to have a security categorization of Moderate (M). The Gen3 Data Ecosystems Platform (Gen3) is an open-source multi-tenant Software as a Service (SaaS) platform for developing, configuring, and operating cloud-based data commons, data ecosystems (also known as data meshes), and workspaces for managing, analyzing, and sharing both open access and controlled access data.",
+  "functions_claimed": [
+   {
+    "function_id": "data_commons_operation",
+    "function": "Data commons development, configuration & operation",
+    "evidence": "The Gen3 Data Ecosystems Platform (Gen3) is an open-source multi-tenant Software as a Service (SaaS) platform for developing, configuring, and operating cloud-based data commons, data ecosystems (also known as data meshes), and workspaces for managing, analyzing, and sharing both open access and controlled access data."
+   },
+   {
+    "function_id": "data_ecosystems_meshes",
+    "function": "Data ecosystems / data meshes",
+    "evidence": "The Gen3 Data Ecosystems Platform (Gen3) is an open-source multi-tenant Software as a Service (SaaS) platform for developing, configuring, and operating cloud-based data commons, data ecosystems (also known as data meshes), and workspaces for managing, analyzing, and sharing both open access and controlled access data."
+   },
+   {
+    "function_id": "workspaces",
+    "function": "Workspaces",
+    "evidence": "The Gen3 Data Ecosystems Platform (Gen3) is an open-source multi-tenant Software as a Service (SaaS) platform for developing, configuring, and operating cloud-based data commons, data ecosystems (also known as data meshes), and workspaces for managing, analyzing, and sharing both open access and controlled access data."
+   },
+   {
+    "function_id": "data_management",
+    "function": "Data management (managing data)",
+    "evidence": "The Gen3 Data Ecosystems Platform (Gen3) is an open-source multi-tenant Software as a Service (SaaS) platform for developing, configuring, and operating cloud-based data commons, data ecosystems (also known as data meshes), and workspaces for managing, analyzing, and sharing both open access and controlled access data."
+   },
+   {
+    "function_id": "data_analysis",
+    "function": "Data analysis (analyzing data)",
+    "evidence": "The Gen3 Data Ecosystems Platform (Gen3) is an open-source multi-tenant Software as a Service (SaaS) platform for developing, configuring, and operating cloud-based data commons, data ecosystems (also known as data meshes), and workspaces for managing, analyzing, and sharing both open access and controlled access data."
+   },
+   {
+    "function_id": "data_sharing",
+    "function": "Data sharing",
+    "evidence": "The Gen3 Data Ecosystems Platform (Gen3) is an open-source multi-tenant Software as a Service (SaaS) platform for developing, configuring, and operating cloud-based data commons, data ecosystems (also known as data meshes), and workspaces for managing, analyzing, and sharing both open access and controlled access data."
+   },
+   {
+    "function_id": "access_tiers_open_controlled",
+    "function": "Open access & controlled access data",
+    "evidence": "The Gen3 Data Ecosystems Platform (Gen3) is an open-source multi-tenant Software as a Service (SaaS) platform for developing, configuring, and operating cloud-based data commons, data ecosystems (also known as data meshes), and workspaces for managing, analyzing, and sharing both open access and controlled access data."
+   },
+   {
+    "function_id": "open_source_platform",
+    "function": "Open-source platform (platform note)",
+    "evidence": "The Gen3 Data Ecosystems Platform (Gen3) is an open-source multi-tenant Software as a Service (SaaS) platform for developing, configuring, and operating cloud-based data commons, data ecosystems (also known as data meshes), and workspaces for managing, analyzing, and sharing both open access and controlled access data."
+   },
+   {
+    "function_id": "saas_multi_tenancy",
+    "function": "Multi-tenant SaaS delivery (platform note)",
+    "evidence": "The Gen3 Data Ecosystems Platform (Gen3) is an open-source multi-tenant Software as a Service (SaaS) platform for developing, configuring, and operating cloud-based data commons, data ecosystems (also known as data meshes), and workspaces for managing, analyzing, and sharing both open access and controlled access data."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2125059322/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22T02:27:38.974Z); product record id FR2125059322"
+ }
+]
