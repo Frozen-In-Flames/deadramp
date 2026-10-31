@@ -143,6 +143,19 @@ types follow the same pattern with their own prefixes. Audit entries
 are `{ts, actor, action, target, details, seq, prev_hash, hash}` (see
 `UNION-SPEC.md` for every dict shape and the full contract).
 
+## Remainder addition (1 fork)
+
+The remainder census added 1 previously uncategorized fork to
+this group: **Microsoft 365 Government Community Cloud &
+Supporting Services** (`MSO365MTA`, FedRAMP High, In Process).
+Spec'd under the group's existing 21-family taxonomy applied
+verbatim, it carries **1 claim** (messaging & chat — its listing's
+first sentence, which is also the census citation) for group
+totals of **18 forks, 50 claims, 14 of 18 claiming**. The core is
+unchanged (`src/` byte-identical); tests 239 → 251. One new gap
+is named (collaborative continuous monitoring service). Full
+record: [`ADDENDUM.md`](ADDENDUM.md).
+
 ## How to run tests
 
 Tests live in `tests/` (standard library `unittest`), maintained

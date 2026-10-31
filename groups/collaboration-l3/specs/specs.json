@@ -621,5 +621,27 @@
   "functions_claimed": [],
   "source_url": "https://www.fedramp.gov/marketplace/products/F1305072116/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1305072116"
+ },
+ {
+  "fork_id": "MSO365MTA",
+  "vendor": "Microsoft",
+  "product": "Microsoft 365 Government Community Cloud & Supporting Services",
+  "service_model": [],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Collaboration",
+  "description": "Microsoft 365 (M365) Government Community Cloud (GCC) is a suite of cloud-hosted messaging and collaboration services to meet the unique and evolving requirements of the United States Federal, State, Local, and Tribal governments, as well as contractors holding or processing data on behalf of the US Government. These cloud-based services are designed to provide organizations with streamlined communication, high availability, comprehensive security, and simplified information technology (IT) management. M365 GCC provides the interactivity of on-premises client and server applications with the flexibility and scalability of web-based services. M365 GCC leverages Azure Government as the IaaS/PaaS for the underlying infrastructure and hardware. Therefore, M365 GCC relies on Azure Government-inherited services. For more information on these Azure Government services, refer to the Azure Government ATO package.\nFederal agencies interested in collaborative continuous monitoring with Microsoft should reach out to: M365CollabConMon@microsoft.com",
+  "functions_claimed": [
+   {
+    "function_id": "messaging_chat",
+    "function": "Messaging & chat",
+    "evidence": "Microsoft 365 (M365) Government Community Cloud (GCC) is a suite of cloud-hosted messaging and collaboration services to meet the unique and evolving requirements of the United States Federal, State, Local, and Tribal governments, as well as contractors holding or processing data on behalf of the US Government."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/MSO365MTA/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id MSO365MTA"
  }
 ]

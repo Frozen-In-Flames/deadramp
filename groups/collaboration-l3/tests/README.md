@@ -14,11 +14,15 @@ overlap.
 
 ```bash
 cd groups/collaboration-l3
-PYTHONPATH=src python3 -m unittest discover -s tests        # 239 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 251 tests
 ```
 
 Status at delivery: **239 tests, OK** (192 inherited from Group 2,
-47 added for the High uplifts). (Run exactly as above: helpers are
+47 added for the High uplifts). The remainder addition
+(`addition:collaboration-l3`, Microsoft 365 GCC) added
+`test_additions.py` (12 tests): **251 tests, OK** — see
+`../ADDENDUM.md` and the additions drill record under Mutation
+verification below. (Run exactly as above: helpers are
 imported as a top-level module from the tests directory and
 `tests/__init__.py` is empty by design, so package-mode discovery
 with `-t .` is not the supported entry point for this group.)
@@ -44,6 +48,7 @@ with `-t .` is not the supported entry point for this group.)
 | `test_service.py` | 24 | 9 API access — live HTTP server: health, 401 unknown user / role mismatch, 403 viewer posting, full flow (workspace → channel → message → file → event → search → notifications → audit), denied attempts audited with `:denied`; **AC-5/AU-9 (5 new)**: dana reads `/audit`, cannot list/create workspaces, `GET /audit/verify` 200 for dana / 403 for bob |
 | `test_main_cli.py` | 3 | `python -m collab serve` subprocess with demo users alice/bob/carol; **+2 new**: dana=auditor in the startup line `"(demo users: alice=admin, bob=member, carol=viewer, dana=auditor)"`, `--max-failed-logins` / `--lockout-seconds` accepted (parse-level defaults 3/300) and plumbed through |
 | `test_negative_control.py` | 5 | Negative controls #1 and #2 (below) |
+| `test_additions.py` | 12 | Remainder addition `addition:collaboration-l3` (MSO365MTA): spec integrity (membership vs `remainder.json`, literal claim table — 1 claim, `messaging_chat`; the 20-family unclaimed set; verbatim evidence; description = cached source; the census citation, which is also the claim's evidence; near-miss pins; source-as-published registry fields) + substrate at the High baseline (mention notification, opaque file list view, hash chain verifies + audit reduction query; membership-boundary post case — the additions case that trips under Drill A) |
 | `collab_helpers.py` | — | Shared fixtures: demo users (ADMIN/MEMBER/VIEWER/AUDITOR/OUTSIDER), `make_store()` building a CollabStore + AuditLog + a workspace owned by MEMBER with VIEWER added, and sample message/file/event/board helpers; L3 adds the `AUDITOR` user / `dana` registry entry |
 
 ## Coverage map — High-baseline uplifts
@@ -119,6 +124,21 @@ SHA-256 verified identical — and the full suite re-run:
 
 The suite catches both defect classes; neither negative control is
 decorative.
+
+**Additions drill re-run (remainder unit
+`addition:collaboration-l3`).** The core is unchanged by the
+addition, so Drill A was re-run in this tree: `store.py` was
+copied to `../scratch/store.py.premutation_additions` and the
+membership condition in `_require_workspace_access` was patched
+to `if False:` — the exact mutant of Drill A. The full suite ran:
+**251 tests, 15 failures** — Drill A's original 14 plus 1 from
+the new additions module (`test_additions.py`'s M365
+membership-boundary post case), tripping exactly as designed.
+`store.py` was restored from the pre-mutation copy — SHA-256
+verified identical to the shipped hash (`bd894169…`) — the whole
+`src/` tree was re-verified against the pre-addition hash list in
+`../scratch/`, and the suite re-ran: **251 tests, OK**. Raw
+output: `../scratch/additions_mutation_run.txt`.
 
 ## Group 2 test adaptations (complete list)
 
