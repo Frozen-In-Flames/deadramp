@@ -170,3 +170,27 @@ admin excepted).
   edited on disk is detected after reload). The membership-guard
   mutation drill was performed against the real source in this
   tree, with results recorded in [tests/README.md](tests/README.md).
+
+## Remainder addition
+
+Per [`ADDENDUM.md`](ADDENDUM.md) (unit `addition:law-enforcement-l3`):
+**TRAPWIRE Threat Detection and Analysis System** (TRAPWIRE, FedRAMP
+High / Certified) joins the group as its third fork — previously
+uncategorized in the source, assigned to Law Enforcement by the
+remainder census from its own description. Under the group's
+verbatim taxonomy it is the group's **third zero-claim sheet**
+(0 raw hits across all 9 families; the group total stays 0 claims
+across 3 forks): its vocabulary is physical threat detection over
+human incident reports, a third vocabulary the legal-research
+taxonomy does not reach. The functions its description asserts in
+its own words — real-time threat detection and alerting, incident
+reporting, pattern analysis, originator-controlled information
+sharing, mass warning and notification, and an integration API —
+are registered in the addendum as this fork's own verticals, all
+Extended and not implemented. Category discipline is pinned at the
+token level in the addendum: no facial-recognition, surveillance,
+camera/sensor, or predictive-policing token exists in its text and
+none is attributed; real-time detection and alerting *is* its own
+described function and is booked as such. The original pair's
+sheets stand exactly as shipped, and the core is unchanged
+(`src/` byte-identical; tests 102 → 110).

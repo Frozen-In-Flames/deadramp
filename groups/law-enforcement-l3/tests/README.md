@@ -1,17 +1,18 @@
 # Law Enforcement L3-adjacent — test suite
 
-**102 tests, all passing** (Python standard-library `unittest` only;
+**110 tests, all passing** (Python standard-library `unittest` only;
 no third-party dependencies). Inherited from Group 34's suite
 (82 tests), with the adaptations listed below plus 20 new tests for
 the High-baseline uplifts (1 in `test_access.py`, 19 in
-`test_l3_uplifts.py`).
+`test_l3_uplifts.py`), plus 8 remainder-addition tests in
+`test_additions.py` (see the additions section at the end).
 
 ## Running
 
 ```bash
 cd groups/law-enforcement-l3
 PYTHONPATH=src python3 -m unittest discover -s tests -p 'test_*.py'
-# -> Ran 102 tests ... OK
+# -> Ran 110 tests ... OK
 ```
 
 (`PYTHONPATH=src` is the documented runner, as in Group 34; the
@@ -37,6 +38,7 @@ and which is gitignored.)
 | `test_negative_control.py` | 2 | Inherited in-suite negative controls (see below) |
 | `test_main_cli.py` | 1 | `python -m lawenf serve` boots, answers `/health`, serves a request |
 | `test_l3_uplifts.py` | 19 | **New for Group 35**: hash chain + tamper negative control, audit query, fail-closed rollback (log and store level), auditor role over HTTP, `/audit/verify`, audit filters over HTTP, AC-7 lockout (incl. success-resets), CLI lockout flags |
+| `test_additions.py` | 8 | Remainder addition (`addition:law-enforcement-l3`): spec integrity for the TRAPWIRE sheet (membership, all-zero claim tables, verbatim descriptions, census citations, near-miss and category-discipline token pins) + 2 substrate cases in the newcomer's shape (protection-network membership boundary; report record integrity + counts) |
 
 ## Adaptations from Group 34's suite
 
@@ -97,3 +99,42 @@ Performed for this group, per the merged-build contract:
   sleeps for the 300-second default.
 - The documented runner above (`PYTHONPATH=src`) is the supported
   invocation, as in Group 34.
+
+## Remainder addition (unit `addition:law-enforcement-l3`)
+
+The suite grows **102 → 110 tests** with `tests/test_additions.py`
+(8 tests), pinning the remainder addition (TRAPWIRE Threat
+Detection and Analysis System, `F1602057825A`) spec'd under the
+group's verbatim 9-family taxonomy: sheet count / append order /
+membership against `remainder.json`, the literal claim tables
+(all three sheets empty — the newcomer is the group's third
+zero-claim sheet, 0 raw hits across all 9 families),
+descriptions equal to the cached marketplace text, both census
+citations verifying verbatim and tagging nothing, the near-miss
+pins ("Cross-organizational collaboration" is not the verbatim
+`collaboration` phrase; "secure web access" is not "secure
+access controls"; the description contains no "cloud", "search",
+or "document" token), the category-discipline pins (no facial /
+recognition / surveillance / camera / sensor / predict token;
+"real-time" present in the fork's own words; "criminal" exactly
+once, naming acts), and two substrate cases in the newcomer's
+shape (a protection-network matter whose membership boundary
+denies an outsider; a report record held as metadata + checksum
+with verify-by-content and counts on read). See `ADDENDUM.md`.
+
+**Drill re-run in this tree (additions).** The group's signature
+membership-guard drill was re-run against the enlarged suite:
+the `PermissionDenied` raise in `_require_matter_access`
+(`src/lawenf/store.py`) was replaced with `return None` as a
+scoped replacement (target text asserted to occur exactly once)
+— **110 tests ran, exactly 6 failed**: the shipped drill's 5
+(`test_negative_control` canonical denial, `test_service`
+full-flow, `test_sources` outsider-cannot-list, `test_matters`
+outsider read denied and outsider scoped-write denied) plus
+exactly 1 from the additions module,
+`test_additions.TestTrapwireSubstrate.test_protection_network_membership_boundary`.
+`store.py` was restored from the pre-mutation copy in `scratch/`
+(`store.py.premutation-additions`) and verified SHA-256-identical
+to the shipped hash (`18070d55…`); the full suite re-ran green
+after the restore. Raw failure list:
+`scratch/additions_mutation_run.txt`.
