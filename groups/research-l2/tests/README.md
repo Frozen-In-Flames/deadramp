@@ -7,10 +7,12 @@ function / control family it traces to, per `../UNION-SPEC.md`.
 
 ```bash
 cd groups/research-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 85 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 97 tests
 ```
 
 Status at delivery: **85 tests, OK**.
+Status after the remainder additions (`addition:research-l2`):
+**97 tests, OK**.
 
 ## Layout
 
@@ -28,6 +30,7 @@ Status at delivery: **85 tests, OK**.
 | `test_audit.py` | 5 | 11 Audit log — mutation recording, entry shape, JSONL persistence round-trip, no mutation API |
 | `test_main_cli.py` | 1 | CLI — `python -m research serve` subprocess answers `/health` |
 | `test_negative_control.py` | 3 | Negative control (below) |
+| `test_additions.py` | 12 | Remainder additions (`addition:research-l2`, see `../ADDENDUM.md`) — spec integrity: sheet count/order, membership vs `remainder.json`, literal claim table (2 claims, both `data_sharing`), zero-claim forks/families pinned, near-miss pins, census citations; substrate cases: Terra sharing flow + grant derivation at three clocks, ROSALIND tier gate + revocation, Ipsos pinned dataset shape, Seven Bridges workspace/tier listing + outsider boundary, Wellspring organization shape + summary counts |
 | `research_helpers.py` | — | Canonical fixture: commons `gen3-commons` by bob, erin added as staff member (the canonical decider — requests are bob's, and the decider is never the requester), ORG-100 organization; outsider dave in no commons; fixed clock anchors (T0, window, expiry) |
 
 ## Negative control
@@ -71,6 +74,30 @@ the boundary test (a read at exactly `expires_at` still derives
 contract) is a canonical-expectation test that passes under both
 implementations — the mutant agrees with the contract at that one
 instant by construction.
+
+## Mutation verification — additions re-run (2026-10-31)
+
+The remainder additions left the core unchanged, so the same
+drill was re-run in this tree against the enlarged suite:
+`_derive_grant_status` in the real `src/research/store.py` was
+patched to return `"active"` unconditionally and the full suite
+was run.
+
+- Patched run: **97 ran, exactly 9 failed** — the original
+  drill's 7 above, plus 2 from the new additions module:
+  - `test_additions.TestAdditionSubstrateCases.test_terra_sharing_flow_and_grant_derivation`
+  - `test_additions.TestAdditionSubstrateCases.test_rosalind_tier_gate_and_revocation`
+- `store.py` was then restored from
+  `scratch/store.py.premutation.additions` and verified
+  **SHA-256-identical** (`ff43a9ac…`, the shipped hash in
+  `scratch/store.py.sha256`); the suite is green again (97/97).
+  Raw drill output is in `scratch/additions_mutation_run.txt`.
+
+The two additions failures are the derivation-dependent cases by
+design: Terra's flow reads the grant at three clocks and recounts
+the summary after expiry, and ROSALIND's case reads a revoked
+grant inside its window — both report `active` under the mutant
+and are rejected by the canonical expectations.
 
 ## Interpretation notes
 

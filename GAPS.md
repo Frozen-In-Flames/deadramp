@@ -971,6 +971,21 @@ New extended functions from the addition forks, specified in groups/development-
 
 Enlargements of families already registered under Group 29: CI / CD execution engines (+Copado, +FGC); business modeling & automation engines (+Copado, first claimant at this tier); landing-zone provisioning & hosted platform operations (+FGC, +Cloud.gov); static code analysis engine (+Copado by substance: "code scanning" / "quality gates" — the family claim did not fire); release automation & data migration engine (+Copado by substance: Salesforce metadata deployment — the family's phrasing did not fire on the reversed wording); external-system integration engines (+Copado). One addition fork claims zero families (Unqork; its lone verb "build" is not a CI claim and its visual builder is never called "visual"), pinned in tests.
 
+## Remainder Addition — Research L2 (+5 forks)
+
+New extended functions from the addition forks, specified in groups/research-l2/ADDENDUM.md, not implemented:
+- [ ] open — Interactive analysis environment & workflow execution engine (Terra)
+- [ ] open — Bioinformatics analysis pipeline engines (ROSALIND, Seven Bridges)
+- [ ] open — Diagnostic monitoring & variant surveillance platform incl. BioBank sample tracking (ROSALIND)
+- [ ] open — Knowledge-graph storage & searchable library engine (ROSALIND)
+- [ ] open — Elastic storage & compute allocation engine (Seven Bridges)
+- [ ] open — Multi-modal survey research platform (Ipsos)
+- [ ] open — AI analytics engine over LLMs (Ipsos)
+- [ ] open — Technology transfer & IP management suite (Wellspring)
+- [ ] open — Document generation & e-signature workflow engines + external integration components (Wellspring fork excess)
+
+Enlargements of families already registered under Singleton 53: data delivery / transfer engine for sharing (+2 claimants: Terra, ROSALIND); query & analysis workspace engines (+3 by substance: Terra, ROSALIND, Seven Bridges — analysis is their headline activity but the data_analysis claim itself did not fire on their wording, recorded as such). Platform notes: multi-tenancy asserted by ROSALIND and Wellspring of their own platforms; Wellspring's product runs inside a third-party government cloud (the fork's dependency, outside this build). Three addition forks claim zero families (Ipsos, Seven Bridges, Wellspring) under the taxonomy, whose patterns are the original fork's literal phrases.
+
 ## Later groups
 
 Each group appends its section here when it ships.

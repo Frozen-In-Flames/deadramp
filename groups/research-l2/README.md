@@ -18,6 +18,27 @@ It was written from that contract only: original code, no vendor
 code, assets, or branding from the sibling offering. Python 3,
 **standard library only**, no external dependencies.
 
+## Remainder additions
+
+Five previously uncategorized forks joined this group in the
+remainder census (unit `addition:research-l2`; see
+[`ADDENDUM.md`](ADDENDUM.md)): **Terra** (Broad Institute),
+**Ipsos Research**, **ROSALIND**, **Seven Bridges Platform**,
+and **Wellspring WTIMS** — three genomics data platforms, a
+survey-research platform, and a technology-transfer suite, all
+FedRAMP Moderate. Spec'd under the group's existing taxonomy
+applied verbatim, they add **2 claims** (both `data_sharing`:
+Terra and ROSALIND) and three zero-claim sheets — the taxonomy's
+patterns are the Gen3 sentence's literal phrases, and the
+near-misses are itemized in the addendum rather than tuned for.
+**The core did not change**: `src/` is byte-identical to the
+singleton build, and the newcomers' own engines (analysis
+pipelines, the survey platform, the tech-transfer suite) are
+named as Extended gaps in the addendum. The group now covers
+**6 forks and 11 claims**; the privacy discipline is unchanged
+— dataset records are metadata + checksum only, and grants are
+records that confer nothing.
+
 ## The 11 core functions
 
 1. **Data commons registry & membership** — commons (`com-`)
@@ -127,13 +148,14 @@ are audited with the action suffixed `:denied`.
 
 ```bash
 cd groups/research-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 85 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 97 tests
 ```
 
-**85 tests, all passing**, including the mutation-verified
+**97 tests, all passing**, including the mutation-verified
 negative control: removing the grant-status derivation from the
-real store makes exactly 7 tests fail (see `tests/README.md` for
-the drill record).
+real store makes exactly 9 tests fail in the enlarged suite
+(7 in the original singleton suite; see `tests/README.md` for
+both drill records).
 
 ## Honesty
 

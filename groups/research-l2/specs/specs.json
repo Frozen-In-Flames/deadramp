@@ -64,5 +64,107 @@
   ],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2125059322/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22T02:27:38.974Z); product record id FR2125059322"
+ },
+ {
+  "fork_id": "FR2000939520",
+  "vendor": "Broad Institute, Inc.",
+  "product": "Terra",
+  "service_model": [
+   "PaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Research",
+  "description": "Terra is a public, cloud-based platform that provides biomedical researchers with a flexible environment for doing secure and scalable analysis. Terra users can upload their data to the cloud or access datasets sponsored by partner organizations that are hosted through convenient data exploration interfaces. Users can prepare and process data with or without coding expertise, leveraging Terra's repository of best-practice, ready-to-use bioinformatics workflows. Once data is processed, results can be explored in real-time with Terra's in-app integration of interactive analysis tools such as JupyterLab and Jupyter Notebooks. Collaborating with other users is easy with Terra's built-in capabilities for sharing work selectively, protecting data from unwanted re-distribution.",
+  "functions_claimed": [
+   {
+    "function_id": "data_sharing",
+    "function": "Data sharing",
+    "evidence": "Collaborating with other users is easy with Terra's built-in capabilities for sharing work selectively, protecting data from unwanted re-distribution."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2000939520/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22T02:27:38.974Z); product record id FR2000939520"
+ },
+ {
+  "fork_id": "FR2104636677",
+  "vendor": "Ipsos America, Inc.",
+  "product": "Ipsos Research",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Research",
+  "description": "Ipsos: Multi-Modal Survey Research and AI-Powered Data Analytics for the Public Sector\n\nIpsos delivers a secure, FedRAMP Moderate Authorized platform designed to help federal agencies gather critical data and translate it into actionable intelligence. We provide end-to-end support for the entire research lifecycle, from survey design and deployment to advanced, AI-driven analysis.\n\nCore Capabilities:\n\nOur platform supports a full range of data collection methods to reach any audience, including:\n\n* Digital Surveys: Modern, responsive web-based surveys with the capability to distribute invitations via email and SMS.\n* Paper-Based Logistics: We manage the complete paper survey lifecycle, partnering with vetted vendors for printing and mailing, while handling all high-speed scanning and data capture in-house.\n \nNext-Generation AI Analytics:\n\nOur platform securely accesses a suite of leading Large Language Models (LLMs) through AWS Bedrock, a managed service that has achieved FedRAMP High authorization. This allows us to transform vast amounts of unstructured text from open-ended survey responses into clear, data-driven insights. Our AI engine can:\n\n* Automatically Classify Verbatims: Instantly categorize thousands of qualitative responses into key themes.\n* Extract Actionable Insights: Identify and summarize key takeaways, emerging trends, and critical recommendations.\n* Enhance Data Quality and Security: Automatically identify and flag comments containing extreme keywords or potential Personally Identifiable Information (PII) for manual review, redaction, and follow-up, ensuring data integrity and compliance.\n* Generate Executive Summaries: Produce concise narratives to support rapid and informed decision-making.\n \n\nWhy Ipsos for Government?\n\nOur combination of multi-modal survey expertise and secure, AI-powered analytics empowers public sector organizations across all verticals\u2014including healthcare, defense, and civilian agencies\u2014to understand public sentiment, evaluate program effectiveness, and make mission-critical decisions with greater speed and confidence. All data is managed within our secure GovCloud environment, adhering to the strictest contractual and regulatory standards.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2104636677/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22T02:27:38.974Z); product record id FR2104636677"
+ },
+ {
+  "fork_id": "FR2204842850",
+  "vendor": "Rosalind, Inc.",
+  "product": "ROSALIND",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Research",
+  "description": "ROSALIND is a multi-tenant SaaS solution for bioinformatics analyses, COVID diagnostic monitoring, knowledge management, and scientific collaboration. As a cloud-based software platform, ROSALIND provides a web interface for scientists and researchers to securely analyze and interpret datasets. Rosalind provides two web-based solutions, ROSALIND DxM and ROSALIND Research. Both operate in a visual manner and do not require command-line programming, cloud infrastructure setup, or bioinformatics pipeline development.\n\n- ROSALIND DxM provides real-time SARS-CoV-2 variant surveillance and diagnostic monitoring incorporating international viral sequence data. DxM also includes a comprehensive BioBank of SARS-CoV-2 specimens with sample tracking and workflow management for test panel creation, panel blinding, and results submission across participating labs and organizations.\n- ROSALIND Research provides visual analysis, interpretation, and cloud-based data sharing of genomic datasets produced with Next Generation Sequencing (NGS), NanoString instruments, and other multi-omic methods. ROSALIND Research features analysis pipelines for gene expression and gene regulation studies, including Single-Cell RNA-seq, bulk RNA-seq, miRNA-seq, ATAC-seq, ChIP-seq, and Proteomics.\n\nRosalind uses knowledge graphs to securely store institutional data as searchable libraries while enabling permissions-based data sharing between authorized users and across institutions.",
+  "functions_claimed": [
+   {
+    "function_id": "data_sharing",
+    "function": "Data sharing",
+    "evidence": "- ROSALIND Research provides visual analysis, interpretation, and cloud-based data sharing of genomic datasets produced with Next Generation Sequencing (NGS), NanoString instruments, and other multi-omic methods."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2204842850/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22T02:27:38.974Z); product record id FR2204842850"
+ },
+ {
+  "fork_id": "FR2033152148",
+  "vendor": "Seven Bridges Genomics, Inc",
+  "product": "Seven Bridges Platform",
+  "service_model": [
+   "PaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Research",
+  "description": "The Seven Bridges Platform is a cloud-based environment for conducting bioinformatic analyses. It is a central hub for teams to store, analyze, and jointly interpret their bioinformatic data. The Platform co-locates analysis pipelines alongside the largest genomic datasets to optimize processing. It allocates storage and compute resources on demand, to meet the needs of ever-growing analyses.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2033152148/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22T02:27:38.974Z); product record id FR2033152148"
+ },
+ {
+  "fork_id": "FR1924344515",
+  "vendor": "Wellspring Worldwide, Inc.",
+  "product": "Wellspring Tech Transfer and IP Management Suite (WTIMS)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Research",
+  "description": "The Wellspring Tech Transfer and IP Management Suite is delivered as a SaaS offering using a multi-tenant Government Community cloud computing environment. It is available to federal, state, local, and tribal governments, as well as research institutions, federal contractors, government contractors.\n\nWellspring Sophia is a browser based application used to manage all of the initiatives and activities required in the technology transfer field. Sophia provides over 30 modules, plug-ins, and integrations that include IP management, contract management, reporting, disclosure and project submissions, and more. With more than 15 years in the tech transfer industry and more than 250 institutions using our solutions, Wellspring provides the most complete technology transfer management software available with unparalleled functionality, flexibility, and support staff to professionals in the technology transfer field worldwide.\n\nEvolve is Wellspring's next-generation software platform that streamlines technology transfer and IP management from invention disclosure through licensing and commercialization, with intuitive workflows, and seamless data integrations. The Evolve application runs inside Salesforce Gov Cloud and relies on Sophia hosted services for capabilities that extend beyond native Salesforce functionality along with functionality to migrate Sophia users to evolve to leverage more modernized components.\n\nAll four components are hosted within the FedRAMP environment and communicate with Salesforce Gov Cloud over HTTPS and provided the following functionality:\n\n- Evolve DocGen: Generates PDFs from Salesforce record data and document templates\n- Evolve DocSign: Manages electronic signature workflows with a signer-facing hosted UI\n- Evolve iEdison API: Pushes invention disclosure, patent, and utilization data from Salesforce to the NIST iEdison API\n- Evolve Migration Worker: Prefect-based worker that authenticates directly to Salesforce Gov Cloud and performs bulk data loads, file operations, and schema changes during the Sophia-to-Evolve migration.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1924344515/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22T02:27:38.974Z); product record id FR1924344515"
  }
 ]
