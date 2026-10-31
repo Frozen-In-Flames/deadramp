@@ -1,0 +1,61 @@
+[
+ {
+  "fork_id": "FR2304546222",
+  "vendor": "My Business Matches",
+  "product": "Vendor Event & Business Matchmaking Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Low",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Event Management",
+  "description": "My Business Matches (MBM) is the definitive source for federal agencies when it comes to their Event & Business Matchmaking needs. Our platform deals with event preparation, conference management and vendor outreach for any onsite, hybrid or virtual occasion, in need of support. You can access our technology effortlessly as it is created to be compliant with federal devices and firewalls. MBM is a FedRAMP Authorized Secure Service! Be assured that our gathering functions let you provide both safe and interactive webinars, business matchmaking, networking roundtables and speakers engagements.",
+  "functions_claimed": [
+   {
+    "function_id": "event_preparation",
+    "function": "Event preparation",
+    "evidence": "Our platform deals with event preparation, conference management and vendor outreach for any onsite, hybrid or virtual occasion, in need of support."
+   },
+   {
+    "function_id": "conference_management",
+    "function": "Conference management",
+    "evidence": "Our platform deals with event preparation, conference management and vendor outreach for any onsite, hybrid or virtual occasion, in need of support."
+   },
+   {
+    "function_id": "vendor_outreach",
+    "function": "Vendor outreach",
+    "evidence": "Our platform deals with event preparation, conference management and vendor outreach for any onsite, hybrid or virtual occasion, in need of support."
+   },
+   {
+    "function_id": "event_formats",
+    "function": "Event formats (onsite, hybrid, virtual)",
+    "evidence": "Our platform deals with event preparation, conference management and vendor outreach for any onsite, hybrid or virtual occasion, in need of support."
+   },
+   {
+    "function_id": "webinars",
+    "function": "Webinars",
+    "evidence": "Be assured that our gathering functions let you provide both safe and interactive webinars, business matchmaking, networking roundtables and speakers engagements."
+   },
+   {
+    "function_id": "business_matchmaking",
+    "function": "Business matchmaking",
+    "evidence": "Be assured that our gathering functions let you provide both safe and interactive webinars, business matchmaking, networking roundtables and speakers engagements."
+   },
+   {
+    "function_id": "networking_roundtables",
+    "function": "Networking roundtables",
+    "evidence": "Be assured that our gathering functions let you provide both safe and interactive webinars, business matchmaking, networking roundtables and speakers engagements."
+   },
+   {
+    "function_id": "speaker_engagements",
+    "function": "Speaker engagements",
+    "evidence": "Be assured that our gathering functions let you provide both safe and interactive webinars, business matchmaking, networking roundtables and speakers engagements."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2304546222/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2304546222"
+ }
+]

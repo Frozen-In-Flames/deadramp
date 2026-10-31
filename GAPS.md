@@ -1286,6 +1286,18 @@ Baseline gaps recorded at this tier (uplifts considered and not taken, named in 
 
 No new gap functions. One status change in the category's registered set, and the accounting that goes with it, specified in groups/fleet-management-l2/UNION-SPEC.md: the Extended function "Live telematics & GPS streaming" gains a claimant — this fork claims the telematics family at exact weight on its single-sentence description (the tokens gps, live, and location appear nowhere in its text, so no GPS or live-streaming capability is attributed beyond the word telematics, and the family stays Extended: the claim buys no Core function). The absence accounting against the parent group's seven zero-claim families: telematics retires at claim level in its telematics half only; the other six survive token-verified — maintenance & inspection, dispatch routing, ELD / hours-of-service (despite the vendor's ELD business elsewhere in the market; reputation is not evidence), API & integrations, descriptive audit, and descriptive search. The ten families claimed at L1 are each unclaimed here, flagged as unclaimed rather than absent. One trap recorded: the record's leveraged-systems field names a different vendor's EV charging product — a record field, never matched, and it manufactured no ev_charging claim (pinned by test). Core-boundary decision, stated once in the union spec with its price: no core function is claim-supported by this fork — the ten-function substrate is carried up whole under the Merge Rule, carried, not claimed.
 
+## Remainder Singleton 60 — Event Management L1 (1 fork, new category)
+
+New extended functions from this fork, specified in groups/event-management-l1/UNION-SPEC.md, not implemented:
+- [ ] open — Event delivery & presentation plane: webcast / streaming and the attendee join experience
+- [ ] open — Outreach delivery transport (outreach records are Core; nothing is sent)
+- [ ] open — Matchmaking recommendation & pairing-suggestion engine: the source carries no algorithm, scoring, ranking, or criteria vocabulary, so the build invents none — qualification in the Core is coverage over tags the organizer and vendors themselves recorded, and a recommendation engine is this gap, not a hidden feature
+- [ ] open — Live session facilitation: the chat / polling / Q&A tooling behind the prose adjective "interactive"
+- [ ] open — Speaker sourcing & booking
+- [ ] open — Identity provider (demo identities are hooks, as everywhere in this repo)
+
+Named absences, token-verified at zero tokens each: registration / ticketing / RSVP / attendee management (no attendee registry exists anywhere in the build — no record can hold a person's name, email, or phone; speakers are opaque references only), agenda / scheduling / calendar, fees / payment / pricing / sponsorship (hence the build deliberately has no money shape at all), venue / catering, certificates / CE credits, surveys / feedback, recording / streaming production / captioning, email campaigns, event analytics / reporting, badge / lead retrieval, matching algorithm / scoring / ranking vocabulary, integrations / API / CRM, mobile app, social promotion, and lodging / travel. One evidence correction is recorded in the addendum: the matchmaking claim's evidence was re-based from the sentence stating the customer's need to the sentence asserting provision, count unchanged.
+
 ## Later groups
 
 Each group appends its section here when it ships.
