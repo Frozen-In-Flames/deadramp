@@ -1,0 +1,33 @@
+[
+ {
+  "fork_id": "FR2635050861",
+  "vendor": "VirtualDojo, Inc.",
+  "product": "VirtualDojo AI CRM",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Customer Relations Management (CRM)"
+  ],
+  "deadramp_category": "CRM",
+  "description": "VirtualDojo AI CRM is a cloud-based customer relationship management\nplatform with AI-powered proposal generation, contact management,\npipeline forecasting, and document automation. The platform is designed\nfor government contractors and federal agencies managing procurement\nworkflows, storing Controlled Unclassified Information (CUI) including\ngovernment contract data, customer PII, proposal documents, and\nfinancial/pricing data.",
+  "functions_claimed": [
+   {
+    "function_id": "account_contact_registry",
+    "function": "Account & contact records",
+    "evidence": "VirtualDojo AI CRM is a cloud-based customer relationship management\nplatform with AI-powered proposal generation, contact management,\npipeline forecasting, and document automation."
+   },
+   {
+    "function_id": "ai_scoring",
+    "function": "AI/ML models & scoring",
+    "evidence": "VirtualDojo AI CRM is a cloud-based customer relationship management\nplatform with AI-powered proposal generation, contact management,\npipeline forecasting, and document automation."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2635050861/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2635050861"
+ }
+]

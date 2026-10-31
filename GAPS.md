@@ -1692,6 +1692,17 @@ No new gap is registered by this set. One already-registered gap gains a claiman
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Three claims stand: access control and audit on one first-party sentence (the audit family read at its audit-trail end), and financial reporting at artifact weight only, where the report pattern fires on a vulnerability-reporting phrase in a transparency sentence — recorded at that weight in the spec, the union spec, and the artifacts log, not repaired and not hidden. The headline named absence is the accounting core itself: the description is built around a single immutable financial ledger and financial correctness, yet fires nothing, because "financial ledger" is not "general ledger" and no accounting phrase occurs; payment processing, reconciliation, and API integration stand absent in the same way, substance present in other words. Documented controls are identification, access control, and audit at trail weight, all from that one sentence; encryption is not documented because the word occurs nowhere, and a future-directed sentence about being built toward security standards is posture prose, not assessment. Two of the core's thirteen functions are claim-supported; eleven are carried, not claimed, with the money machinery — integer cents, floats rejected — preserved exactly.
 
+## Untiered Set 23 — Customer Relations Management (CRM) (1 fork, tier null)
+
+New extended functions from this set, specified in groups/crm-untiered/UNION-SPEC.md, not implemented (the founding group's extended tail stands registered under it; knowledge base and self-service content and marketing automation are already registered there and gain no claimant here):
+- [ ] open — AI proposal-generation engine (the AI function this fork's description actually names)
+- [ ] open — Pipeline forecasting engine
+- [ ] open — Document automation engine (an asserted function with no family in the taxonomy — recorded as untaxonomied, no family stretched to hold it)
+- [ ] open — Integration connector engines
+- [ ] open — Platform layer
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Two claims stand, both on the description's first sentence: account and contact registry on its own words — the family's first claim anywhere in the category, where at the founding tier it stood at zero as carried substrate — and AI scoring at bare-token weight, the shape the category's Low singleton set, where the AI token fires with no scoring, model, or predictive function asserted anywhere; the family stays extended and the build computes no score, test-enforced. No control family is documented: access control and audit tag zero, and one sentence asserting the product stores CUI including customer PII names no mechanism or framework, so it documents nothing — and it draws the build's privacy boundary, since the build's shapes hold opaque references only and cannot hold PII. The record's certified-services catalogue was never matched; matching it would have fabricated a pipeline claim on its sales-pipeline phrase alone. Named absences: customer service cases — a CRM description that never says customer service — opportunities and pipeline at pattern weight with forecasting substance present, campaigns, and hosting delivery.
+
 ## Later groups
 
 Each group appends its section here when it ships.
