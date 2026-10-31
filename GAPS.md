@@ -1346,6 +1346,19 @@ New extended functions from this fork, specified in groups/storage-l2/UNION-SPEC
 
 Platform layer: FIPS-validated cryptography (SC-13) is not stated by the fork and is not claimed; encryption at rest is deployment-layer. Named absences, token-verified at zero tokens each: object / block / file storage (no buckets, volumes, or shares — the category's expected centre is absent from its founding fork, which is an email archive), backup / restore / snapshots, replication / disaster recovery, deduplication / compression, tiering / lifecycle / cold storage, content versioning, WORM / immutability (notable: retention is claimed, immutability is not), legal hold (the description's "legal liabilities" is benefit prose), capacity / quota, content scanning, journaling, and bulk migration. Core-boundary decisions are stated once in the union spec with their prices: metadata never payloads; custody records hold no key material; an extend-retention enforcement record provably does not alter the retention derivation (test-pinned).
 
+## Remainder Singleton 65 — Storage L3-adjacent (1 fork)
+
+New extended functions from this fork, specified in groups/storage-l3/UNION-SPEC.md, not implemented:
+- [ ] open — Backup & recovery engine: the fork's headline function (it retires the category's backup absence in substance on this fork's own words; it produces no claim, because the taxonomy is the founding fork's archive vocabulary)
+- [ ] open — Anomaly detection & alerting engine
+- [ ] open — Granular data remediation engine
+- [ ] open — Workload protection connectors
+- [ ] open — Management console (the fork's command-center surface)
+- [ ] open — SaaS operations automation
+- [ ] open — Hybrid cloud synchronization engine
+
+The parent group's ten registered gaps remain registered once under Singleton 64 and are not re-registered (this fork's air-gap storage prose is an instance of the payload-plane gap; its keyword-search phrase an instance of the full-text search gap). The five High baseline gaps from the uplift decision (MFA / authenticator management, FIPS-validated cryptography — the fork's IL4/IL5 posture does not transfer, even at High — encryption at rest, audit retention, session lock / termination) are recorded in the union spec. Absence accounting, stated plainly: retention, the founding fork's signature family, occurs zero times in this fork's prose and stands unclaimed at this tier; legal hold, immutability / WORM, supervision, enforcement, and storage management also stand at zero tokens; backup and descriptive audit retire in substance only, on this fork's words, producing no claims. The single raw hit in the fork's whole text, a directory-integration phrase inside its excluded workloads catalogue, was removed before matching and is pinned in tests. Core-boundary decision, stated once in the union spec: no core function is claim-supported by this fork — all fourteen substrate functions are carried up whole under the Merge Rule, carried, not claimed. This completes the remainder census's singleton units: every tiered unit is now built.
+
 ## Later groups
 
 Each group appends its section here when it ships.

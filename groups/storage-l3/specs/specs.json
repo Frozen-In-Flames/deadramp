@@ -1,0 +1,20 @@
+[
+ {
+  "fork_id": "FR2115384377",
+  "vendor": "Commvault Systems, Inc.",
+  "product": "Commvault Cloud for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Storage",
+  "description": "Commvault Cloud for Government delivers a fully automated cyber resilient SaaS data backup and recovery solution, with automated deployment, reduced overhead, automated patching and upgrades, continuous security monitoring, and requiring no Agency maintenance. Fully differentiated storage enables the move to cloud by providing the option to leverage cloud or on-premises storage within the web console for hybrid cloud workloads that require synchronization to sustain operational readiness and mission delivery.\r\n\r\nCommvault Cloud for Government capabilities include the following workloads:\r\n\r\n-Microsoft 365 - For Exchange, Teams, SharePoint, and OneDrive\r\n-Dynamics 365 - For CE applications + Power Platform\r\n-Salesforce - For Salesforce\r\n-Active Directory - For Entra ID and Active Directory\r\n-VM & Kubernetes \u2013 Azure VM, Kubernetes, Microsoft Hyper-V, VMWare, AWC EC2, VMWare Cloud\r\n-Endpoint \u2013 For Laptops and Desktops\r\n-File & Object \u2013 For Windows Server, Azure Blob & Files, OCI Object Storage, Amazon S3, Linux/Unix\r\n-File & Object Archive \u2013 For compliance ready archiving\r\n-Database \u2013 For Microsoft SQL, Oracle, SAP HANA\r\n-Air Gap Protection (AGP) \u2013 secure and scalable cloud storage from Azure in minutes, delivering against your organization\u2019s hybrid cloud strategy is available for Commvault Complete\u2122 and HyperScale\u2122 X deployments.\r\nThe web-based console, called Command Center, provides a holistic customer data platform with both default and customizable configurations, -automated procedures for critical data protection and recovery tasks. Command Center delivers fully automated alerts on pre-set data anomalies, integrated audit reports, key word search (e.g., identifying PII or potential data spillages) and the ability remediate data issues at the granular level (e.g., file, specific email) using integrated indexing and metadata tags designed to protect data at IL4 & IL 5.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2115384377/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2115384377"
+ }
+]
