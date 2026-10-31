@@ -1,0 +1,33 @@
+[
+ {
+  "fork_id": "F1603047866",
+  "vendor": "Amazon Web Services, Inc.",
+  "product": "AWS GovCloud",
+  "service_model": [
+   "IaaS",
+   "PaaS",
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Finance",
+   "Operations Management",
+   "Storage",
+   "Development Tools",
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Analytics",
+   "Artificial Intelligence (AI)",
+   "Network Management",
+   "System Administration"
+  ],
+  "deadramp_category": "Finance",
+  "description": "AWS GovCloud (US) is an AWS Region designed to allow US government agencies and customers supporting the US government to move more sensitive workloads into the cloud. In addition to complying with FedRAMP requirements, the AWS GovCloud (US) framework adheres to U.S. International Traffic in Arms Regulations (ITAR) regulations. Additional information is available at http://aws.amazon.com/govcloud-us/. AWS GovCloud (US-East) and (US-West) Regions are operated by employees who are U.S. citizens on U.S. soil. AWS GovCloud (US) is only accessible to U.S. entities and root account holders who pass a screening process. The AWS GovCloud (US) network consists of AWS\u2019s internal data center facilities, servers, networking equipment, and host software systems that are within AWS\u2019s reasonable control, which are used to provide AWS services in the AWS GovCloud (US) Regions. Federal agencies interested in collaborative continuous monitoring with AWS should reach out to: aws-collaborative-conmon@amazon.com.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1603047866/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1603047866"
+ }
+]
