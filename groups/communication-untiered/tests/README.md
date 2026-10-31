@@ -1,0 +1,87 @@
+# Tests — Communication untiered set merged build
+
+Stdlib `unittest` only. Every test docstring names the core function /
+claim / control family it traces to.
+
+## Run
+
+```bash
+cd groups/communication-untiered
+PYTHONPATH=src python3 -m unittest discover -s tests        # 100 tests
+```
+
+Status at delivery: **100 tests, OK** — the founding Communication
+L2 group's 82-test core suite carried byte-identical with the code
+(its `test_additions.py` not carried: it pins the founding group's
+remainder-addition unit, a different census unit), plus 18 spec
+tests in `test_specs.py` pinning this untiered set. The one carried
+file that differs from the founding tree is `comm_helpers.py`,
+whose docstring was relabeled to name this untiered set (labeling
+only; no behavior change). (Run exactly as above: helpers are
+imported as a top-level module from the tests directory and
+`tests/__init__.py` is empty by design, so package-mode discovery
+with `-t .` is not the supported entry point for this group.)
+
+## Layout
+
+| File | Covers |
+|---|---|
+| `test_access.py` | Access control (RBAC) — exact permission matrix for admin/operator/viewer, `permissions_for()`, `can()`, `require()`, unknown role/action denied |
+| `test_audit.py` | Append-only audit log — entry keys, User actor normalised to name, append-only/copies, JSONL persistence + reload on construction (in group `scratch/`), store recording each mutation action, failed ops record nothing |
+| `test_contacts.py` | Directory contacts — creation shape/provenance, `ct-` ids, get/list sorted by id, validation (empty name/addresses, bad kind, empty address), viewer write denied, failed ops consume no ids |
+| `test_groups.py` | Directory groups — `grp-` creation, add member, duplicate membership → `ValidationError`, unknown ids → `NotFoundError`, `list_group_members` returns contact dicts |
+| `test_channels.py` | Channels — all four known kinds {email, sms, voice, push}, `ch-` ids, invalid kind, `channel_write` admin-only, `set_channel_enabled` |
+| `test_templates.py` | Templates — `tpl-` creation, `render_template` substitutes every placeholder, missing variable → `ValidationError`, extra variables ignored |
+| `test_messages.py` | Message composition + delivery records — literal and template compose, recipient union deduped order-stable, default kind order email,sms,voice,push, `skipped_recipients`, zero-deliveries → `ValidationError` with no message/id consumed, malformed `send_at` |
+| `test_dispatch.py` | Dispatch with receipts + scheduling — reference-transport receipt labelled `reference_transport: True`, disabled/absent channel → `failed`/`no_enabled_channel`, `send_at` gate (`dispatch_due` skips future, explicit `now` string/datetime, `dispatch_message` future → `ValidationError`), viewer cannot dispatch, no re-dispatch |
+| `test_ack.py` | Acknowledgement tracking — ack requires `delivered` status and `require_ack=True`, `ack_status` totals/pending, viewer denied, unknown ids |
+| `test_search.py` | Immutable records + search — literal case-insensitive substring over contacts (name + addresses), messages (subject + body), deliveries (address); literal not regex; shape `{contacts, messages, deliveries}` |
+| `test_service.py` | REST API — live HTTP server: health, 401 unknown user / role mismatch, 403 viewer write + channel_write for operator, full flow (contact → group → channel → template → message → dispatch-due → ack → search → audit), `audit_read` admin-only, denied attempts audited with `:denied`, 400/404 envelopes |
+| `test_main_cli.py` | `python -m comm serve` subprocess with demo users alice/bob/carol |
+| `test_negative_control.py` | Negative control (below) |
+| `test_specs.py` | Untiered Set 13 spec pins — exactly 2 sheets; membership exact (ids and order) against census unit `untiered:Communication` in `remainder.json`; the High paired record F1302271924A excluded; tier discipline (impact "Unknown", `cmmc_tier` null) on every sheet; registry fields vs `forks.json`; descriptions vs `remainder/uncovered.json`; literal claim table ({notifications_alerts} / {messaging, voice_telephony}, 3 total, no zero-claim fork); every claim's evidence verbatim in its description under the founding `\r`→space normalization; removal pins (AtHoc incident-events not scheduling; AtHoc self-reporting not reporting) and near-miss pins (location visibility not tracking; permission-based not permits/identity; call center not contact center; "securely" not secure transmission; Cisco access lists not identity; Cisco video substance with no family; no "acknowledg" in Cisco) |
+| `comm_helpers.py` | Shared fixtures: demo users (ADMIN/OPERATOR/VIEWER), `USERS` registry, `fresh_store()`, and `make_store()` building a CommStore + AuditLog + a contact + a group containing it + an enabled email channel (created by ADMIN). Docstring relabeled for this set; otherwise byte-identical to the founding helpers |
+
+## Negative control
+
+`test_negative_control.py` is carried byte-identical from the
+founding group and implements the contract's required mutant: a
+`CommStore` subclass (`MutantCommStore`) whose
+`_first_enabled_channel` always returns a fake enabled channel — the
+enabled-channel check is skipped. The traced claim, named in the
+module's docstrings, is that **dispatch honors the send gate**: a
+disabled or absent channel must fail the delivery with
+`failure_reason='no_enabled_channel'`, and a viewer must not dispatch.
+For each canonical case (disabled channel, absent channel, viewer
+dispatch) the test asserts three things: the canonical expectation
+(failed delivery / `PermissionDenied` from the real implementation,
+with the delivery staying queued for the viewer case), that the
+mutant would NOT produce that expectation (it delivers anyway / waves
+the viewer through its gate), and — via a literal
+`assertRaises(AssertionError)` — that treating the mutant's outcome
+as the expected outcome fails.
+
+## Mutation verification (this tree)
+
+VERIFIED at this build (2026-10-31). The send-gate condition in
+`CommStore._dispatch_deliveries` (`src/comm/store.py`, line 589) —
+the line `if channel is None:` immediately following
+`channel = self._first_enabled_channel(delivery["channel_kind"])` in
+the dispatch loop — was patched to `if False:`, the exact live
+counterpart of the mutant in `test_negative_control.py`, so dispatch
+delivered even with a disabled or absent channel. The full suite was
+run: **100 tests ran, exactly 4 failed** — the founding drill's
+identical failure set (raw output in `scratch/mutation_run.txt`):
+
+- `test_dispatch.TestDispatch.test_dispatch_due_absent_channel_fails`
+- `test_dispatch.TestDispatch.test_dispatch_due_no_enabled_channel_fails`
+- `test_negative_control.TestNegativeControlMutantDispatch.test_absent_channel_fails_canonical_but_mutant_delivers`
+- `test_negative_control.TestNegativeControlMutantDispatch.test_disabled_channel_fails_canonical_but_mutant_delivers`
+
+No spec test failed under the mutant. `store.py` was then restored
+from the pre-mutation copy (`scratch/store.py.premutation`) and
+verified SHA-256-identical to the pre-mutation hash and to the
+founding group's shipped hash
+(`6ccd412c2c1a836694d74687804aa90abe31f4c54eba62e916c31cb6dc5e6110`),
+and the suite re-run: **100 tests, OK**. The suite catches this
+defect class; the negative control is not decorative.

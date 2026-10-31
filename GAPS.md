@@ -1554,6 +1554,22 @@ New extended functions from this set, specified in groups/legal-policy-untiered/
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This set records zero claims and no documented control claims at all: the taxonomy is one product's phrases, and these forks describe eDiscovery, litigation AI, and FOIA case management in other words — the same outcome the category's six tiered additions recorded. Assurance and posture prose (auditable release packages, highest level of security) is recorded as prose, not control claims, and one fork's certified-services record names — which literally read Audit Logging and Authentication — were never matched, because matching them would have fabricated claims. No core function is claim-supported: the substrate, with its sandbox single-use rule and its no-query-text privacy design, is carried, not claimed.
 
+## Untiered Set 13 — Communication (2 forks, tier null)
+
+New extended functions from this set, specified in groups/communication-untiered/UNION-SPEC.md, not implemented (the founding group's other extended gaps are already registered under the parent group and are not re-registered here):
+- [ ] open — Video conferencing, meetings & real-time media transport engines (no taxonomy family exists for them in this category; the standing absence continues)
+- [ ] open — Voice/telephony media, call-control & endpoint interoperability engines
+- [ ] open — Presence & availability services
+- [ ] open — Desktop sharing & collaboration content sharing
+- [ ] open — Crisis-communication orchestration & multi-channel alerting engines
+- [ ] open — Personnel accountability, location/status visibility & field-reporting platform
+- [ ] open — Inter-organizational federated communication networks
+- [ ] open — Voicemail & unified messaging engines
+- [ ] open — Real channel transports (the build's transport is a labelled reference stub, never a real channel)
+- [ ] open — Platform layer (encryption at rest, TLS-when-configured, multi-tenancy, demo identities not an IdP)
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Three claims stand; two raw hits were removed under the founding group's recorded correction classes (incident events are not scheduling events; self-reporting framed as an accountability input is not reporting analytics), each pinned by test. The documented control claims stand at access control in part, at the prose tier only; identification is pointedly not documented (personnel accountability is not authentication), and cryptographic protection is not documented (securely is an adverb; safeguarding prose is framework-free). Video conferencing has no family in this taxonomy, against the most video-heavy description in the category — the absence is recorded, not repaired.
+
 ## Later groups
 
 Each group appends its section here when it ships.
