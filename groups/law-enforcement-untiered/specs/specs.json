@@ -1,0 +1,45 @@
+[
+ {
+  "fork_id": "FR2628943632",
+  "vendor": "Pryme Infil, Inc.",
+  "product": "Pryme Infil",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [
+   "Law Enforcement",
+   "Operations Management"
+  ],
+  "deadramp_category": "Law Enforcement",
+  "description": "Cloud-based command-and-control platform for public safety operations, providing operational planning, real-time team coordination, encrypted messaging, GPS mapping, risk assessments, and after-action documentation for law enforcement and public safety agencies.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at ../../raw/data_dump.json), product record joined by FedRAMP ID",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2628943632/"
+ },
+ {
+  "fork_id": "FR2631258113",
+  "vendor": "TRM Labs, Inc.",
+  "product": "TRM Labs on GovCloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Law Enforcement",
+   "Analytics"
+  ],
+  "deadramp_category": "Law Enforcement",
+  "description": "TRM Labs provides blockchain intelligence and all-source AI investigation software that helps law enforcement, national security agencies, financial institutions, and cryptocurrency businesses detect, investigate, and disrupt fraud and financial crime. Delivered as multi-tenant Software as a Service from AWS GovCloud under the cloud service offering TRM Labs on GovCloud, the platform combines on-chain investigation with all-source intelligence. Investigators can trace cryptocurrency flows across over 66 blockchains and more than 1.9 billion assets in a single multi-chain graph with glass-box attribution, and resolve a lead - a name, an account, an address - across connected sources including corporate registries, sanctions data, and the dark web. All capabilities share a common identity and access management layer, workspace-based multi-tenancy, and a unified data plane within the GovCloud authorization boundary.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at ../../raw/data_dump.json), product record joined by FedRAMP ID",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2631258113/"
+ }
+]

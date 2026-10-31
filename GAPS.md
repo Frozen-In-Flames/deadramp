@@ -1603,6 +1603,21 @@ New extended functions from this set, specified in groups/cms-untiered/UNION-SPE
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. One claim stands, at catalogue weight inside a first-party capabilities list; the category's no-zero-claims floor, already fallen at the tiered addition, falls here too, recorded not repaired — the zero-claim fork's whole function, document generation, has no family. The documented control claims stand at access control and identification, both at prose weight (role-based permissions; single sign-on via SAML and OpenID Connect), traced to sentences and never converted to taxonomy claims; a SOC 2 sentence is recorded at compliance-assertion weight, and every other family is listed as not documented. One of twelve core functions is claim-supported; eleven are carried, not claimed.
 
+## Untiered Set 17 — Law Enforcement (2 forks, tier null)
+
+New extended functions from this set, specified in groups/law-enforcement-untiered/UNION-SPEC.md, not implemented (the founding group's engine gaps are already registered under it and are not re-registered here):
+- [ ] open — Command-and-control & operational planning platform
+- [ ] open — Real-time team coordination & encrypted messaging engines / real transports
+- [ ] open — GPS mapping & location services
+- [ ] open — Operational risk-assessment tooling
+- [ ] open — After-action documentation & reporting engine
+- [ ] open — Blockchain intelligence & multi-chain investigation graph engine
+- [ ] open — All-source fusion & lead/identity resolution
+- [ ] open — AI investigation models
+- [ ] open — Workspace multi-tenancy / platform layer
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This set records zero claims: the founding taxonomy is a legal-research taxonomy and neither operational description fires any of its phrases — the same outcome this category recorded at its Low singleton and its High addition. The documented control claims stand at identification documented (an identity and access management layer, no mechanism named), access control documented in part at prose weight, and cryptographic protection at prose weight (encrypted messaging, bounded: no algorithm or standard claimed); an operational risk-assessments phrase is a function, not risk-assessment control language, and after-action documentation is not audit. Category discipline is pinned by test on the descriptions themselves: facial, predictive, surveillance, camera, sensor, and the phrase real-time intelligence occur zero times in both descriptions, and none of those functions is attributed in any form. No core function is claim-supported: the substrate is carried, not claimed.
+
 ## Later groups
 
 Each group appends its section here when it ships.
