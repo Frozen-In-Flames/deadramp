@@ -25,6 +25,20 @@ It was written from that contract only: original code, no vendor
 code, assets, or branding from the sibling offering. Python 3,
 **standard library only**, no external dependencies.
 
+**Remainder addition (unit `addition:mobile-device-management-l2`,
+see `ADDENDUM.md`):** a second fork — Ivanti Neurons for MDM
+(Formerly MobileIron), a genuine mobile-device / unified
+endpoint management platform — was spec'd into this group under
+the existing 16-family taxonomy applied verbatim. It claims
+**0 families**: the taxonomy, defined from the founding fork's
+TEM prose, contains no device-management family, so the group
+total stays **16 claims across 2 forks**. The newcomer's
+described device functions (provisioning, app delivery,
+zero-trust enforcement, threat defense) retire several of the
+category's named absences *in substance* and are registered as
+Extended gaps in the addendum; the core is unchanged and
+`src/` is byte-identical. Tests: **89, all passing**.
+
 ## The 14 core functions
 
 1. **Customer organizations & membership** — organizations
@@ -143,13 +157,15 @@ are audited with the action suffixed `:denied`.
 
 ```bash
 cd groups/mobile-device-management-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 75 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 89 tests
 ```
 
-**75 tests, all passing**, including the mutation-verified
-negative control: stubbing the availability derivation in the
-real store to return the bare budget makes exactly 4 tests fail
-(see `tests/README.md` for the drill record).
+**89 tests, all passing** (75 shipped + 14 additions), including
+the mutation-verified negative control: stubbing the
+availability derivation in the real store to return the bare
+budget makes exactly 5 tests fail in the enlarged suite (the
+shipped drill's 4 plus the additions derivation case; see
+`tests/README.md` for both drill records).
 
 ## Honesty
 

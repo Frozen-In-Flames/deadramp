@@ -97,5 +97,23 @@
   ],
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2505553757",
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2505553757/"
+ },
+ {
+  "fork_id": "F1507116930",
+  "vendor": "Ivanti",
+  "product": "Ivanti Neurons for MDM (Formerly MobileIron)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Mobile Device Management (MDM)",
+  "description": "MobileIron Government Cloud provides Government agencies with the foundation of the first mobile-centric, zero trust security platform to securely access and protect data across the digital workplace. MobileIron's zero trust approach validates the device, to ensure that only authorized users, devices, apps, and services can access business resources. With MobileIron, Government agencies can secure and manage data on any device across multiple operating systems such as iOS, Android, Windows 10, macOS, Zebra and Oculus. MobileIron technology automatically provisions enterprise settings such as Wi-Fi and VPN, secures corporate email and email attachments, applications and content delivery for both GSE and BYOD programs. With MobileIron, IT departments can deliver the right resources to authorized personnel while protecting sensitive government data, preserving the privacy of end-user data, and maintaining the seamless native device experience. MobileIron Government Cloud has been purpose built to provide a cloud-based, scalable architecture that enables rapid deployment and scales up to millions of users. The MobileIron Unified Endpoint Management (UEM) platform incorporates identity, context, and privacy enforcement to set the appropriate level of access to data and services while allowing IT departments to securely manage their global mobile workforce from a single console. . When user choice and end user experience matters, MobileIron Cloud provides the simplest onboarding and superior on device experience which improves user productivity. MobileIron Government Cloud offering now includes MobileIron Threat Defense (MTD). MTD builds upon MobileIron's mobile-centric, zero trust security framework by providing a single app that continually detects and remediates against known and unknown (zero-day) device, network and app-level threats on Android and iOS devices, with or without cellular or Wi-Fi connectivity. Deployment and activation of MTD on mobile devices is accomplished silently on managed and unmanaged devices in order to drive towards 100 percent user adoption. In addition to protecting federal data from mobile attacks, MTD helps federal agencies to comply with regulatory requirements, reduce total cost of ownership, and drive business innovation with secure mobile devices, apps, and cloud services.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID F1507116930",
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1507116930/"
  }
 ]

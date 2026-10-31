@@ -7,10 +7,11 @@ function / control family it traces to, per `../UNION-SPEC.md`.
 
 ```bash
 cd groups/mobile-device-management-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 75 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 89 tests
 ```
 
-Status at delivery: **75 tests, OK**.
+Status at delivery: **75 tests, OK**. After the remainder
+addition below: **89 tests, OK**.
 
 ## Layout
 
@@ -32,6 +33,7 @@ Status at delivery: **75 tests, OK**.
 | `test_main_cli.py` | 1 | CLI — `python -m mdm serve` subprocess answers `/health` |
 | `test_store_validation.py` | 3 | Cross-cutting SI-10 — failed operations consume no id, money boundary across entities, no score/rating/optimization field on any view |
 | `test_negative_control.py` | 3 | Negative control (below) |
+| `test_additions.py` | 14 | Remainder addition (`addition:mobile-device-management-l2`) — spec integrity for the Ivanti fork (zero-claim table, citation accounting, named-absence pins) + 2 substrate cases (mobility estate budget derivation; provisioning order lifecycle) |
 | `mdm_helpers.py` | — | Canonical fixture: organization by bob, erin added as staff member (the canonical decider), funded budget 1,000,000 − 300,000 − 200,000 = 500,000 available; outsider dave in no organization |
 
 ## Negative control
@@ -70,6 +72,27 @@ obligated/spent sums (computed separately in the budget view)
 still pass under the mutant, the stored-record key pin is
 untouched by this mutation, and the mutant's own subclass test
 passes by construction, as expected.
+
+**Additions drill re-run (remainder unit
+`addition:mobile-device-management-l2`):** the core is
+unchanged by the addition, so the same drill was re-run in this
+tree. `store.py` was copied to
+`scratch/store.py.premutation-additions` and the derivation
+return line (`return budget["budget_cents"] - obligated -
+spent`, occurrence count asserted = 1) was patched to
+`return budget["budget_cents"]`.
+
+- Patched run: **89 ran, exactly 5 failed** — the shipped
+  drill's 4, identically, plus exactly 1 from the additions
+  module:
+  - `test_additions.TestAdditionSubstrateCases.test_ivanti_mobility_estate_budget_derivation`
+- `store.py` was then restored from the pre-mutation copy and
+  verified **SHA-256-identical** to the shipped hash
+  (`8c0c787a…`, `scratch/store.py.sha256`); all 7 `src/mdm`
+  modules verified against the pre-work hash list
+  (`scratch/additions_src_hashes_before.txt`); the suite is
+  green again (89/89). Raw drill output is in
+  `scratch/additions_mutation_run.txt`.
 
 ## Interpretation notes
 
