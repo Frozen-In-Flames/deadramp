@@ -1,0 +1,61 @@
+[
+ {
+  "fork_id": "FR2415334644",
+  "vendor": "United States Department of Agriculture",
+  "product": "AgCloud Managed Platform Services (AMPS)",
+  "service_model": [
+   "PaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "System Administration",
+  "description": "The AMPS system boundary is a General Support System (GSS) that is made up of operating systems (OS) and services designed to run on third-party cloud hosting platforms. The purpose of this system is to allow USDA customers to leverage the robust capabilities of a FedRAMP cloud service provider (CSP) hosting environment for application delivery while DISC maintains the full management of the OS and services required to meet DISC controls at the High baseline level. The FedRAMP\u2019ed CSPs are outside of the security boundary and AMPS inherits controls from the CSP. The AMPS system is a major part of DISC\u2019s cloud service offering for applications external to DISC. The system enables applications running in the cloud environment to take advantage of CSP virtualization of their computing environments. CSP virtualization alongside the Highly Available (HA) network that AMPS runs on, provides applications leveraging this environment with many advantages over a typical physical computing environment including, but not limited to, faster processing, greater up-time, and redundancy. The AMPS system is not publicly accessible. This system is only available to organizations who contract with DISC. No entity outside of the USDA (external users) has access to this system.",
+  "functions_claimed": [
+   {
+    "function_id": "general_support_system",
+    "function": "General Support System (GSS) of operating systems & services",
+    "evidence": "The AMPS system boundary is a General Support System (GSS) that is made up of operating systems (OS) and services designed to run on third-party cloud hosting platforms."
+   },
+   {
+    "function_id": "managed_os_and_services",
+    "function": "Full management of operating systems & services",
+    "evidence": "The purpose of this system is to allow USDA customers to leverage the robust capabilities of a FedRAMP cloud service provider (CSP) hosting environment for application delivery while DISC maintains the full management of the OS and services required to meet DISC controls at the High baseline level."
+   },
+   {
+    "function_id": "application_delivery",
+    "function": "Application delivery on the managed platform",
+    "evidence": "The purpose of this system is to allow USDA customers to leverage the robust capabilities of a FedRAMP cloud service provider (CSP) hosting environment for application delivery while DISC maintains the full management of the OS and services required to meet DISC controls at the High baseline level."
+   },
+   {
+    "function_id": "third_party_hosting_platform",
+    "function": "Operation on third-party CSP hosting platforms",
+    "evidence": "The AMPS system boundary is a General Support System (GSS) that is made up of operating systems (OS) and services designed to run on third-party cloud hosting platforms."
+   },
+   {
+    "function_id": "control_inheritance",
+    "function": "Control inheritance from the underlying CSP",
+    "evidence": "The FedRAMP\u2019ed CSPs are outside of the security boundary and AMPS inherits controls from the CSP."
+   },
+   {
+    "function_id": "virtualization_enablement",
+    "function": "CSP virtualization of computing environments",
+    "evidence": "The system enables applications running in the cloud environment to take advantage of CSP virtualization of their computing environments."
+   },
+   {
+    "function_id": "high_availability",
+    "function": "Highly Available (HA) network, up-time & redundancy",
+    "evidence": "CSP virtualization alongside the Highly Available (HA) network that AMPS runs on, provides applications leveraging this environment with many advantages over a typical physical computing environment including, but not limited to, faster processing, greater up-time, and redundancy."
+   },
+   {
+    "function_id": "restricted_access",
+    "function": "Access restricted to contracting organizations",
+    "evidence": "This system is only available to organizations who contract with DISC."
+   }
+  ],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2415334644",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2415334644/"
+ }
+]
