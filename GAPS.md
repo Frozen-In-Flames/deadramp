@@ -917,6 +917,21 @@ Enlargements of families already registered under Group 36: the workflow automat
 
 No new extended functions; the addition enlarges families already registered under Group 4 (claimant counts in groups/cybersecurity-l2/ADDENDUM.md): identity, authentication & privileged-access products (+7 forks, now the union's largest Extended family at 15 of 72); AI / ML-powered analytics & anomaly detection (+5); network security enforcement (+4); insider-risk, DLP & data-security monitoring engines (+4); automation & orchestration engines / SOAR (+4); cloud & SaaS posture engines (+3); application-security testing engines (+3); threat-intelligence feeds (+2); identity proofing & fraud prevention (+2); endpoint management & patching agents (+2); endpoint security agents / EDR & XDR (+1); phishing simulation & security-awareness training (+1); log & telemetry pipelines (+1). Platform note: encryption & key management gains 3 claimants (no key-management service added; the substrate's hooks-not-IdP decision is reaffirmed). Three addition forks claim zero families under the taxonomy applied verbatim (Login.gov, Proofpoint TAP, Qualys) — their near-misses are itemized in the addendum rather than tuned for.
 
+## Remainder Addition — System Administration L2 (+8 forks)
+
+New extended functions from the addition forks, specified in groups/system-administration-l2/ADDENDUM.md, not implemented:
+- [ ] open — Virtual workspace & desktop delivery platform (Citrix DaaS)
+- [ ] open — Observability & AIOps platform (Dynatrace)
+- [ ] open — IT service & asset management suite, ITSM / ITAM (OpenText; Oracle service desk rides it)
+- [ ] open — Universal discovery & CMDB engine (OpenText)
+- [ ] open — Project & portfolio management platform (OpenText)
+- [ ] open — DEX analytics & endpoint automation platform (TeamViewer)
+- [ ] open — Geospatial (GIS) application platform (Esri's ArcGIS payload)
+- [ ] open — Managed backup & disaster-recovery services (Contegix, DLH, Oracle, Esri)
+- [ ] open — Security operations services: SOC / SIEM / vulnerability scanning (Esri, Contegix, DLH)
+
+Enlargements of families already registered under Singleton 54: managed OS & services administration operations (now the substance of 5 of 9 forks); virtualization engine (2 of 9; Citrix's headline function); application delivery & hosting runtime; high-availability network operation (substance only). Named-absence update: monitoring, incident response, ticketing, and backup / DR are no longer universal absences of the enlarged group (asserted as engines by addition forks; still zero claims, unbuilt, gap-named above); SLA vocabulary remains universally absent.
+
 ## Later groups
 
 Each group appends its section here when it ships.

@@ -18,6 +18,28 @@ work.** The full reasoning lives in
 [`UNION-SPEC.md`](UNION-SPEC.md); the per-fork spec sheet is
 [`specs/specs.json`](specs/specs.json).
 
+## Additions (remainder census)
+
+8 previously uncategorized forks joined this group from the
+remainder census (unit `addition:system-administration-l2`):
+Citrix for Government, Contegix / Valiantys Federal, DLH
+Infinibyte Cloud, Dynatrace Platform, Esri Managed Cloud
+Services Advanced Plus, OpenText ITMX Platform, Oracle Federal
+Managed Cloud Services, and TeamViewer DEX Platform — all
+FedRAMP Moderate, so the tier and baseline are unchanged. Their
+sheets are appended to `specs/specs.json` (entries 2–9; the
+shipped sheet is preserved byte-for-byte), spec'd under the
+group's existing taxonomy applied verbatim: **1 new claim**
+(Citrix, `virtualization_enablement`, which rides its shipped
+Extended disposition) and **7 zero-claim forks**, whose
+near-misses are itemized rather than rounded up. **What
+changed:** the spec of record (see
+[`ADDENDUM.md`](ADDENDUM.md)), the gap list (9 new engines named,
+4 shipped gaps enlarged), and the test count (71 → 78).
+**What did not change:** `src/` is byte-identical to the shipped
+build (store SHA-256 verified), the 12-function core, the
+taxonomy, and the Moderate/L2 baseline.
+
 ## Core functions (12)
 
 1. Customer organizations & membership (the records form of the
@@ -112,7 +134,7 @@ Errors are JSON `{"error": …}` with 400 (validation), 401
 ## Tests
 
 ```bash
-PYTHONPATH=src python3 -m unittest discover -s tests   # 71 tests
+PYTHONPATH=src python3 -m unittest discover -s tests   # 78 tests
 ```
 
 See [`tests/README.md`](tests/README.md) for the coverage map
@@ -128,7 +150,12 @@ SHA-256-verified).
   description stored as evidence in `specs/specs.json`. The
   taxonomy was defined from that description (new category,
   Group 1 method); counts are a floor. One of the description's
-  nine sentences tags nothing (offering positioning).
+  nine sentences tags nothing (offering positioning). The 8
+  remainder additions add exactly 1 claim under the same
+  taxonomy applied verbatim (9 claims over 9 forks); the other
+  7 additions claim zero families, recorded plainly in
+  `ADDENDUM.md` with their near-misses itemized — the taxonomy
+  was not widened to admit them.
 - **What is not built.** The managed-services work itself —
   administering, patching, provisioning, and tending operating
   systems and services — plus the application delivery/hosting

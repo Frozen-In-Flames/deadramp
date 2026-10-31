@@ -7,10 +7,12 @@ function / control family it traces to, per `../UNION-SPEC.md`.
 
 ```bash
 cd groups/system-administration-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 71 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 78 tests
 ```
 
-Status at delivery: **71 tests, OK**.
+Status: **78 tests, OK** (71 at singleton delivery; 78 after the
+remainder additions — see the additions row and drill re-run
+below).
 
 ## Layout
 
@@ -29,6 +31,7 @@ Status at delivery: **71 tests, OK**.
 | `test_main_cli.py` | 1 | CLI — `python -m sysadmin serve` subprocess answers `/health` |
 | `test_store_validation.py` | 3 | Cross-cutting SI-10 — failed operations consume no id and change nothing; no score/rating/health/posture key on any view (recursive scan) |
 | `test_negative_control.py` | 3 | Negative control (below) |
+| `test_additions.py` | 7 | Remainder additions (unit `addition:system-administration-l2`) — spec integrity: 9 sheets with the shipped sheet first and unchanged (8 claims; group total 9), exact census membership, house schema, taxonomy/verbatim-evidence audit, the exact claim map (1 claim over 1 fork, 7 zero-claim forks); the virtualization Extended honesty pin (no engine entry point on the store) and the claimant's records-substrate case (pinned nine-key system shape) |
 | `sysadmin_helpers.py` | — | Canonical fixture: organization `AGENCY-1` by bob, erin added as staff member (the canonical decider), system `SYS-OS-1` (operating_system, platform `PLAT-A`), application `APP-PORTAL`, service request due 2026-06-10 so `as_of` 2026-06-05 → not overdue and 2026-06-15 → overdue; outsider dave in no organization |
 
 ## Negative control
@@ -74,6 +77,18 @@ resolved cases still pass under the mutant (the mutant agrees
 with the correct answer there, by construction), the
 stored-record key pins are untouched by this mutation, and the
 mutant's own subclass test passes by construction, as expected.
+
+**Additions re-run (2026-10-31).** The remainder additions
+changed no core code, so the drill was re-run in this tree
+against the enlarged suite: `_is_overdue` patched to `return
+False` in the real `src/sysadmin/store.py` → **78 ran, exactly
+6 failed**, the identical failure set to the shipped drill above
+(the 7 additions tests do not depend on the derivation and pass
+under the mutant, as constructed). `store.py` was restored from
+`scratch/store.py.premutation.additions` and verified
+SHA-256-identical to the shipped hash (`46c4f2dc…`); the suite
+is green again (78/78). Raw drill output is in
+`scratch/additions_mutation_run.txt`.
 
 ## Interpretation notes
 

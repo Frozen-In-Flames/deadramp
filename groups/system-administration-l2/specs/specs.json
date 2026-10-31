@@ -57,5 +57,157 @@
   ],
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2415334644",
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2415334644/"
+ },
+ {
+  "fork_id": "FR1819254092",
+  "vendor": "Citrix",
+  "product": "Citrix for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "System Administration",
+  "description": "Citrix for Governmentis comprised of: -Citrix Cloud platform provides capabilities to administer Citrix services. It allows customers to create, manage, and deploy workspaces with applications and data to their end-users from a single console, connecting to customer resources on any cloud or infrastructure a customer chooses. -Citrix DaaS (Desktop as a Service) provides virtualization solutions allowing control of virtual machines, desktops, applications, and security while providing users access from anywhere on any device. This hybrid cloud solution enables secure access to virtual applications, desktops, and data from cloud and on-premises infrastructure.",
+  "functions_claimed": [
+   {
+    "function_id": "virtualization_enablement",
+    "function": "CSP virtualization of computing environments",
+    "evidence": "-Citrix DaaS (Desktop as a Service) provides virtualization solutions allowing control of virtual machines, desktops, applications, and security while providing users access from anywhere on any device."
+   }
+  ],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR1819254092",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1819254092/"
+ },
+ {
+  "fork_id": "FR1833967442",
+  "vendor": "Contegix",
+  "product": "Valiantys Federal (Formerly Contegix)",
+  "service_model": [
+   "PaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "System Administration",
+  "description": "SecureCloud is provided by Valiantys Federal as a FedRAMP moderate Platform as a Service (PaaS) offering. The solution offers a multi-tenant, cloud-based, environment, with the option for deployment of single-tenant environments if required. Valiantys Federal solutions are designed to provide end-to-end managed hosting that empowers customers to retain complete control over the application environment, while dramatically reducing the time and cost associated with in-house administration. SecureCloud supports and deploys a variety of technologies based on tenant requirements. Valiantys also offers a cadre of US-based personnel specializing in deployment, configuration, and management of Atlassian tools, as well as optimizing DevSecOps workflows. Managed hosting services include performance monitoring and troubleshooting, Operating System management and patching, managed backups, and managed firewalls. Valiantys Federal also manages system owner approved configuration changes supporting the tenant\u2019s environment. Providing a secure operating environment is at the forefront of SecureCloud and with that focus, Valiantys Federal provides a variety of services to meet tenant requirements for NIST, CMMC, and 800-171 requirements including audit capabilities, disaster recovery, and incident response support. These services include DoD STIG hardened servers, vulnerability scanning, a dedicated SIEM server, and the option for Disaster Recovery as a Service to meet agency specific RTO/RPOs for mission critical applications.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR1833967442",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1833967442/"
+ },
+ {
+  "fork_id": "FR2000951694",
+  "vendor": "DLH Corporation",
+  "product": "DLH Infinibyte Cloud",
+  "service_model": [
+   "PaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "System Administration",
+  "description": "Infinibyte Cloud is a secure, flexible, and highly available public cloud platform-as-a-service (PaaS) that allows customers to host federal applications in a FedRAMP Moderate compliant environment. Infinibyte Cloud is a multi-tenant hosting platform that provides comprehensive managed solutions including the setup, configuration, security hardening, management, patching, monitoring, scanning, backup, and support of customer environments comprised of virtual machines, operating systems, and databases. The information security architecture leverages \"defense in depth\" concepts to provide multiple layers of security controls for customer systems. Infinibyte Cloud supports a number of operating systems, databases, services, and applications, including Microsoft Windows Server, Red Hat Enterprise Linux, AlmaLinux, Microsoft Active Directory, Microsoft SQL Server, Oracle Database, MySQL, MongoDB, Microsoft IIS, Apache HTTP Server.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2000951694",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2000951694/"
+ },
+ {
+  "fork_id": "FR2016131254",
+  "vendor": "Dynatrace",
+  "product": "Dynatrace Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "System Administration",
+  "description": "Dynatrace exists to make software work perfectly. Our platform combines broad and deep observability and continuous runtime application security with advanced AIOps to provide answers and intelligent automation from data. This enables agencies to modernize and automate cloud operations, deliver software faster and more securely, and ensure flawless digital experiences.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2016131254",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2016131254/"
+ },
+ {
+  "fork_id": "F1311252651",
+  "vendor": "ESRI",
+  "product": "Esri Managed Cloud Services Advanced Plus",
+  "service_model": [
+   "PaaS",
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "System Administration",
+  "description": "Esri is a leading provider of geographic information systems (GIS) with decades of experience hosting solutions for customers. Esri Managed Cloud Services provides organizations with ready-to-use instances of ArcGIS running in the cloud and includes the infrastructure (facilities, hardware, network, and security), the software (Esri and third party), application deployment, testing, ongoing data management (data updates, backup, and archive), technical support, monitoring, and supporting 24/7 Security Operations Center. The environment has been architected following FISMA, NIST, and CIS guidance to facilitate FedRAMP moderate geospatial Platform-as-a-Service (PaaS) and Software-as-a-Service (SaaS) authorizations of our customer environments. EMCS enables quickly sharing geospatial content and providing access to critical information while the organization maintains complete control over the access to their services and maps. EMCS leverages the Amazon Web Services East / West Regions FedRAMP moderate cloud infrastructure.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID F1311252651",
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1311252651/"
+ },
+ {
+  "fork_id": "FR2215946050",
+  "vendor": "OpenText",
+  "product": "ITMX Platform featuring Service & Asset Management, Universal Discovery, CMDB and Project & Portfolio Management",
+  "service_model": [
+   "SaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "System Administration",
+  "description": "OpenText provides the most complete and integrated Information Management platform, allowing companies to organize, integrate and protect data and content as it flows through business processes inside and outside the organization. The OpenText IT Management Platform (ITMX) offers Service & Asset Management (ITSM, ITAM), Universal Discovery & CMDB, and Project & Portfolio Management (PPM) in AWS GovCloud. - ITSM \u2013 Empower users with a modern self-service experience and boost IT efficiency with codeless configurations, built-in AI, and advanced automation. - ITAM \u2013 Govern your IT assets across their lifecycles. Procurement, financial, vendor, and contract management processes are included in one centralized platform. - Discovery and CMDB \u2013 Discover, map, and manage your hybrid IT configurations\u2014on cloud or off. Service dependency mapping and proactive impact analysis improve your IT visibility and reduce service disruptions. - PPM \u2013 Drive business value through comprehensive strategic portfolio management and investment optimization, while ensuring projects are on time, in budget and satisfy goals. A strong workflow engine and what-if analysis scenario planning power this strategic portfolio and project management tool. Hosted in the FedRAMP compliant Amazon Web Services (AWS) cloud, these services are fully configurable and scalable, and the service include integrations, and updates to the latest release.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2215946050",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2215946050/"
+ },
+ {
+  "fork_id": "F1209041518",
+  "vendor": "Oracle",
+  "product": "Federal Managed Cloud Services",
+  "service_model": [
+   "IaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "System Administration",
+  "description": "Oracle Federal Managed Cloud Services provides hosting, applications management, infrastructure support, and operation and maintenance (O&M) services to U.S. federal government agencies. Primary services include hardware and facilities setup/configuration, application management, testing, monitoring, patching, incident management, problem resolution, technical and functional service desk, point upgrades, security, and disaster recovery. The FMCS Infrastructure information system resides in a physically and logically isolated Federal Government Zone within the general security perimeter of Oracle's U.S. Data Centers. The environment has been architected following FISMA and NIST guidance to help Federal customers achieve and maintain Authority To Operate (accreditation) for their relevant information systems or data hosted at Oracle.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID F1209041518",
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1209041518/"
+ },
+ {
+  "fork_id": "FR2624215150",
+  "vendor": "TeamViewer",
+  "product": "TeamViewer DEX Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "System Administration",
+  "description": "TeamViewer helps IT teams deliver frictionless IT for employees and seamless IT operations for IT teams, transforming IT from a cost center into a strategic enabler. As a leader in the Digital Employee Experience (DEX) market, we provide a powerful end-user computing automation platform that enables organizations to lower service desk costs, maintain compliance, prevent user frustration, and improve the experience employees have with their devices and IT services. The platform is built on a client-server architecture hosted on Microsoft Azure Government. The Client service creates a secure, persistent connection with the DEX Platform service, enabling immediate outbound communication and real-time, device-generated, event-driven data delivery. A secondary communication channel, also initiated by the Client service, is used for large file transfers or non-urgent events such as inventory changes. Key Capabilities Experience Analytics Visualize and measure the end-user experience with continuous, real-time metrics across: \u2022 Stability \u2013 Frequency of OS and application crashes, hangs, and service failures, often unreported but highly disruptive. Events are captured in real-time and can be linked directly to ITSM tickets. \u2022 Responsiveness \u2013 Performance during normal operation, from OS startup speed to synthetic tests of system resources such as process creation, file operations, and registry access. \u2022 Performance \u2013 Weighted load and throughput scores for CPU, memory, and disk resources. Employee Sentiment Capture real-time employee feedback on device performance, stability, and responsiveness through contextual surveys. Trigger follow-up actions when satisfaction scores are low. Send targeted notifications to employees about outages, maintenance windows, or important events. Endpoint Troubleshooting Remotely investigate and remediate device issues in real time\u2014whether for a single device, a group, or the entire environment\u2014reducing mean time to resolution (MTTR). Instruction Scheduling Extend Endpoint Troubleshooting by scheduling recurring instructions for ongoing maintenance or monitoring. Endpoint Automation Leverage real-time OS events to maintain baseline configurations, ensure critical services are always running, and prevent configuration drift. Content Distribution Optimize Microsoft Configuration Manager (ConfigMgr) software delivery and updates through peer-to-peer file sharing, reducing the need for on-premises Distribution Point servers and improving delivery speed. Inventory Insights Track hardware and software changes in real time. All events are normalized against a software catalog, giving IT a consolidated view of the environment and the ability to reduce software sprawl. Application Experience Management (AXM) Proactively monitor application performance at the endpoint. Real-time events provide visibility into application-level issues and version performance differences, enabling application owners to act quickly. Patch Insights Streamline patching cycles by identifying problematic devices or failed updates. Initiate patch deployment directly via ConfigMgr, WSUS, or Microsoft Update by triggering the Windows Update Agent. API Access Extend the DEX Platform with custom workflows and integrations into third-party systems such as ServiceNow to fit seamlessly into existing IT ecosystems.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2624215150",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2624215150/"
  }
 ]
