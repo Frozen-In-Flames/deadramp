@@ -1,0 +1,478 @@
+[
+ {
+  "fork_id": "FR2701557058",
+  "vendor": "38North Security, LLC",
+  "product": "Northwatch",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Governance, Risk, and Compliance (GRC)"
+  ],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "NorthWatch is a security assurance and visibility SaaS platform built to meet the reporting standards of FedRAMP 20x and the FedRAMP 2026 Consolidated Rules (CR26).\n\nIt consists of the following services:\n\nKey Security Indicators (KSI). This module presents the KSIs measured in a customer environment. It visualizes and reports the current and historical status of each KSI, and it provides the implementation, the validations, and a JSON summary of each KSI's source, measure and value. If the customer uses the NorthWatch validation engine, a validation agent is enrolled in the customer environment. The agent performs the KSI validations against the telemetry sources present there and reports the results to the NorthWatch service.\n\nSignificant Change Notification (SCN). This module provides the form that meets the SCN reporting requirements for adaptive and transformative changes. It tracks each change through its lifecycle, collects evidence from third parties, and keeps a historical record of every change that meets the adaptive or transformative criteria. The module is built to take notifications from the customer's change-management system through its API, so the form is populated from that system rather than retyped. The notifications are published to the customer's assessor and agency customers through the Certification Data Sharing module as the twelve-month archive the ruleset requires.\n\nVulnerability Evaluation and Reporting (VER). This module ingests the customer's scan results by API, applies the defined security context of the customer system to each result, and derives the Potential Adverse Impact (PAIN) rating on the N1 to N5 scale. The risk equation is automated from the factors in the VER ruleset and can be customized to capture the security context of the customer system. The module polls the CISA Known Exploited Vulnerabilities (KEV) catalog, the FIRST Exploit Prediction Scoring System (EPSS), and the NIST National Vulnerability Database (NVD) to determine the exploitability of each identified vulnerability. It also accepts findings from other sources and applies the same contextual logic to them. It sets the remediation and mitigation SLAs from the PAIN rating, the likely exploitability, and the internet reachability of each vulnerability. The module records accepted vulnerabilities and their reporting requirements, the full vulnerability history, the remediation plans a customer authors in the module, and the mitigation activities taken to reduce risk.\n\nDocuments. This module is the customer's register of the governance documents FedRAMP 20x requires: policies, procedures, plans, inventories and records. Each document has a defined class with its required sections and accepted formats. A customer authors a document in the module, uploads one produced elsewhere, or has the module generate it from live system data (for example the certification package overview, the SCN twelve-month archive, the incident evaluation log and the quarterly review record). The module versions each document, checks its completeness and staleness against the rules, and lets the customer publish selected documents to its assessor and its agency customers as part of the signed certification package.\n\nReporting. This module produces the reports the customer, its assessor and FedRAMP read, on a schedule or on demand. It includes the three FedRAMP vulnerability reports (Vulnerability Detail, Accepted Vulnerability Information, and Historical Activity) and the asset inventory, compliance, corrective action plan, detailed vulnerability, executive summary and trend analysis reports. A customer defines a report from these types with its own scope, format and schedule, and the module keeps the history of every run. Reports are produced as JSON, CSV, PDF or XLSX.\n\nCertification Data Sharing (CDS). This module publishes the machine-readable JSON artifacts the FedRAMP rulesets define, each signed, together with a human-readable form. It is not a standalone service; it is the public face of the information held in the other modules: the certification package and its overview, the KSI summary, the SCN archive, the retained snapshot series, and the documents the customer has chosen to publish. Every artifact is reachable from a well-known discovery document on the customer's trust domain, so an assessor or an agency can find and verify it without an account.",
+  "functions_claimed": [
+   {
+    "function_id": "ksi_tracking",
+    "function": "Security indicators (KSI) tracking & validation",
+    "evidence": "It consists of the following services:\n\nKey Security Indicators (KSI)."
+   },
+   {
+    "function_id": "assessment_authorization",
+    "function": "Assessment & authorization support",
+    "evidence": "The notifications are published to the customer's assessor and agency customers through the Certification Data Sharing module as the twelve-month archive the ruleset requires."
+   },
+   {
+    "function_id": "policy_management",
+    "function": "Policy management",
+    "evidence": "This module is the customer's register of the governance documents FedRAMP 20x requires: policies, procedures, plans, inventories and records."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2701557058/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2701557058"
+ },
+ {
+  "fork_id": "FR2628647239",
+  "vendor": "Advent Business Company Inc.",
+  "product": "Enablement®",
+  "service_model": [
+   "SaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Development Tools",
+   "Data Management",
+   "Artificial Intelligence (AI)",
+   "System Administration",
+   "Mobile Device Management (MDM)",
+   "Governance, Risk, and Compliance (GRC)",
+   "Content Management System (CMS)",
+   "Operations Management",
+   "Finance"
+  ],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "**Enablement®: Own your compliance. Send nothing out. Need no experts, no AI.**\n\nMost compliance platforms make you hire specialists, wire in third-party services, and increasingly hand your data to AI you cannot audit. Enablement flips that. It is a self-contained, deterministic, zero-trust platform where your teams build and run everything visually, and nothing ever leaves your boundary.\n\n1. **No-code process building. No developers, no AI, no token bills.** Business users design complete workflows (BPMN) visually and get web and mobile interfaces generated automatically. No coding, no integration team, no consultants. The engine is deterministic rather than generative: it never hallucinates, never invents an answer, and costs nothing per token. What you design is exactly what runs, the same way every time, fully auditable.\n2. **Deploy anywhere. True portability.** Run Enablement in any commercial cloud, any government cloud, your own data center, or as a fully self-contained appliance. No cloud lock-in, no vendor-specific dependency. Move it, mirror it, or air-gap it.\n3. **Rapid CMMC Level 2 compliance, with continuous monitoring built in.** CMMC Level 2 readiness comes out of the box, backed by native, always-on continuous monitoring. No separate scanning products to buy, license, or integrate. Assess, monitor, and produce authorization evidence from day one, on a single system.\n4. **A genuine zero-trust boundary. Your data never touches a third party.** Your source code lives in its own repository. No data is sent to any outside service for authentication, code analysis, container scanning, file scanning, or continuous monitoring. Nothing is shipped to a SaaS, a scanning vendor, or an AI provider. What happens in your boundary stays in your boundary.\n5. **Access control and document marking that remove human error.** Fine-grained role-based and attribute-based access control (RBAC and ABAC) governs exactly who can see and do what. Documents are marked automatically to federal standards (DoW and NARA). No manual labeling, no inconsistent tags, no mislabeled files. The platform does the marking so people cannot get it wrong.\n6. **Stop data leaks before they happen.** Human error is the number one cause of data spillage. Enablement checks every share and warns before a document reaches unauthorized personnel, catching the mistake at the moment of sharing rather than after a breach. A potential disclosure, and the liability that follows, becomes a blocked action.\n7. **Every authentication method, and your password never reaches the server.** Passkeys, single sign-on (SSO), authenticator apps, email, and more. The password is proven with a challenge-response, so the secret never leaves the user's device; the server stores only a verifier and salt, never the password or any recoverable form of it. Strong, flexible, phishing-resistant sign-in without ever transmitting the credential.\n8. **One control set, three frameworks.** Policies and controls are written once and mapped to FedRAMP 20x Key Security Indicators, CMMC Level 2 practices, and SOC 2 Trust Services Criteria. A Section 508 Accessibility Conformance Report (VPAT 2.5) is available on request. Built by CMMI-appraised, ISO-certified Advent.\n\n**Intended agency use.** Enablement is intended for both FedRAMP use cases: direct use by agency customers, and indirect use as a third-party information resource inside other cloud service offerings that agencies use directly.\n\nLive evidence: [FedRAMP Trust Center](https://enablement.cc/ml/20x/trust) · [Secure Configuration Guide](https://enablement.cc/ml/20x/scg) · [enablement.company](https://enablement.company)",
+  "functions_claimed": [
+   {
+    "function_id": "continuous_monitoring",
+    "function": "Continuous monitoring",
+    "evidence": "**Rapid CMMC Level 2 compliance, with continuous monitoring built in.** CMMC Level 2 readiness comes out of the box, backed by native, always-on continuous monitoring."
+   },
+   {
+    "function_id": "ksi_tracking",
+    "function": "Security indicators (KSI) tracking & validation",
+    "evidence": "**One control set, three frameworks.** Policies and controls are written once and mapped to FedRAMP 20x Key Security Indicators, CMMC Level 2 practices, and SOC 2 Trust Services Criteria."
+   },
+   {
+    "function_id": "policy_management",
+    "function": "Policy management",
+    "evidence": "**One control set, three frameworks.** Policies and controls are written once and mapped to FedRAMP 20x Key Security Indicators, CMMC Level 2 practices, and SOC 2 Trust Services Criteria."
+   },
+   {
+    "function_id": "api_integrations",
+    "function": "APIs & integrations",
+    "evidence": "No coding, no integration team, no consultants."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2628647239/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2628647239"
+ },
+ {
+  "fork_id": "FR2635930439",
+  "vendor": "Advent Business Company Inc.",
+  "product": "Enablement®",
+  "service_model": [
+   "SaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Development Tools",
+   "Data Management",
+   "Artificial Intelligence (AI)",
+   "System Administration",
+   "Mobile Device Management (MDM)",
+   "Governance, Risk, and Compliance (GRC)",
+   "Content Management System (CMS)",
+   "Operations Management",
+   "Finance"
+  ],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "**Enablement®: Own your compliance. Send nothing out. Need no experts, no AI.**\n\nMost compliance platforms make you hire specialists, wire in third-party services, and increasingly hand your data to AI you cannot audit. Enablement flips that. It is a self-contained, deterministic, zero-trust platform where your teams build and run everything visually, and nothing ever leaves your boundary.\n\n1. **No-code process building. No developers, no AI, no token bills.** Business users design complete workflows (BPMN) visually and get web and mobile interfaces generated automatically. No coding, no integration team, no consultants. The engine is deterministic rather than generative: it never hallucinates, never invents an answer, and costs nothing per token. What you design is exactly what runs, the same way every time, fully auditable.\n2. **Deploy anywhere. True portability.** Run Enablement in any commercial cloud, any government cloud, your own data center, or as a fully self-contained appliance. No cloud lock-in, no vendor-specific dependency. Move it, mirror it, or air-gap it.\n3. **Rapid CMMC Level 2 compliance, with continuous monitoring built in.** CMMC Level 2 readiness comes out of the box, backed by native, always-on continuous monitoring. No separate scanning products to buy, license, or integrate. Assess, monitor, and produce authorization evidence from day one, on a single system.\n4. **A genuine zero-trust boundary. Your data never touches a third party.** Your source code lives in its own repository. No data is sent to any outside service for authentication, code analysis, container scanning, file scanning, or continuous monitoring. Nothing is shipped to a SaaS, a scanning vendor, or an AI provider. What happens in your boundary stays in your boundary.\n5. **Access control and document marking that remove human error.** Fine-grained role-based and attribute-based access control (RBAC and ABAC) governs exactly who can see and do what. Documents are marked automatically to federal standards (DoW and NARA). No manual labeling, no inconsistent tags, no mislabeled files. The platform does the marking so people cannot get it wrong.\n6. **Stop data leaks before they happen.** Human error is the number one cause of data spillage. Enablement checks every share and warns before a document reaches unauthorized personnel, catching the mistake at the moment of sharing rather than after a breach. A potential disclosure, and the liability that follows, becomes a blocked action.\n7. **Every authentication method, and your password never reaches the server.** Passkeys, single sign-on (SSO), authenticator apps, email, and more. The password is proven with a challenge-response, so the secret never leaves the user's device; the server stores only a verifier and salt, never the password or any recoverable form of it. Strong, flexible, phishing-resistant sign-in without ever transmitting the credential.\n8. **One control set, three frameworks.** Policies and controls are written once and mapped to FedRAMP 20x Key Security Indicators, CMMC Level 2 practices, and SOC 2 Trust Services Criteria. A Section 508 Accessibility Conformance Report (VPAT 2.5) is available on request. Built by CMMI-appraised, ISO-certified Advent.\n\n**Intended agency use.** Enablement is intended for both FedRAMP use cases: direct use by agency customers, and indirect use as a third-party information resource inside other cloud service offerings that agencies use directly.\n\nLive evidence: [FedRAMP Trust Center](https://enablement.cc/ml/20x/trust) · [Secure Configuration Guide](https://enablement.cc/ml/20x/scg) · [enablement.company](https://enablement.company)",
+  "functions_claimed": [
+   {
+    "function_id": "continuous_monitoring",
+    "function": "Continuous monitoring",
+    "evidence": "**Rapid CMMC Level 2 compliance, with continuous monitoring built in.** CMMC Level 2 readiness comes out of the box, backed by native, always-on continuous monitoring."
+   },
+   {
+    "function_id": "ksi_tracking",
+    "function": "Security indicators (KSI) tracking & validation",
+    "evidence": "**One control set, three frameworks.** Policies and controls are written once and mapped to FedRAMP 20x Key Security Indicators, CMMC Level 2 practices, and SOC 2 Trust Services Criteria."
+   },
+   {
+    "function_id": "policy_management",
+    "function": "Policy management",
+    "evidence": "**One control set, three frameworks.** Policies and controls are written once and mapped to FedRAMP 20x Key Security Indicators, CMMC Level 2 practices, and SOC 2 Trust Services Criteria."
+   },
+   {
+    "function_id": "api_integrations",
+    "function": "APIs & integrations",
+    "evidence": "No coding, no integration team, no consultants."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2635930439/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2635930439"
+ },
+ {
+  "fork_id": "FR2628943633",
+  "vendor": "Boundera",
+  "product": "Boundera SaaS",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management"
+  ],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "Boundera automates FedRAMP 20x compliance from continuous evidence collection to certification package. The platform connects to a provider's cloud accounts and code repositories, collects evidence on an automatic schedule, and persistently validates every Key Security Indicator against the FedRAMP 2026 Consolidated Rules. Every result carries evidence lineage, and every run records score history, so providers can show a trend over time instead of a point-in-time snapshot.\n\nVulnerability Detection and Response (VDR) is built in. Scanner findings and failed KSI assertions become tracked vulnerability records with due dates, dispositions, and remediation clocks aligned to FedRAMP timelines. For technical findings, Boundera's AI agent drafts code and infrastructure fixes as pull requests that engineers review before anything merges.\n\nProviders publish current posture through a branded Trust Center and grant assessors controlled access to KSIs, rules, evidence, vulnerabilities, SDR and other packages. Exports validate against the official FedRAMP 2026 JSON schemas.\n\nBoundera is available as a SaaS service or as a self-deployed installation that runs entirely within a customer's cloud environment. Boundera uses the same production platform internally to pursue its own FedRAMP 20x Class C certification.",
+  "functions_claimed": [
+   {
+    "function_id": "ksi_tracking",
+    "function": "Security indicators (KSI) tracking & validation",
+    "evidence": "Scanner findings and failed KSI assertions become tracked vulnerability records with due dates, dispositions, and remediation clocks aligned to FedRAMP timelines."
+   },
+   {
+    "function_id": "assessment_authorization",
+    "function": "Assessment & authorization support",
+    "evidence": "Providers publish current posture through a branded Trust Center and grant assessors controlled access to KSIs, rules, evidence, vulnerabilities, SDR and other packages."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2628943633/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2628943633"
+ },
+ {
+  "fork_id": "FR2631258122",
+  "vendor": "Cahill Swift, LLC",
+  "product": "Cahill Swift Compliance Management Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Governance, Risk, and Compliance (GRC)"
+  ],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "The Cahill Swift Compliance Management Platform is a cloud-based offering supporting federal transportation safety compliance programs. The platform operates within a single FedRAMP 20x Class C certification boundary with a unified continuous-monitoring and automated evidence program. The initial service, Rallidocs, will be used by Federal Railroad Administration personnel to review and approve railroad industry drug and alcohol testing policies under 49 CFR Part 219, with structured review workflows and tamper-evident approval records. Additional compliance management services will be added to the offering through the FedRAMP change management process as they become production-ready, and will appear on the public service list when included in the Minimum Assessment Scope.",
+  "functions_claimed": [
+   {
+    "function_id": "policy_management",
+    "function": "Policy management",
+    "evidence": "The initial service, Rallidocs, will be used by Federal Railroad Administration personnel to review and approve railroad industry drug and alcohol testing policies under 49 CFR Part 219, with structured review workflows and tamper-evident approval records."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2631258122/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2631258122"
+ },
+ {
+  "fork_id": "FR2631258125",
+  "vendor": "Certivo, Inc.",
+  "product": "Certivo Compliance Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Governance, Risk, and Compliance (GRC)",
+   "Artificial Intelligence (AI)",
+   "Data Management",
+   "Operations Management",
+   "Analytics"
+  ],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "Certivo is an AI-powered product and supply chain compliance platform for manufacturers and regulated industries. It replaces manual, spreadsheet-driven compliance work with a continuously maintained evidence base that links every supplier document to the parts, products, and requirements it supports.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2631258125/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2631258125"
+ },
+ {
+  "fork_id": "FR2630354485",
+  "vendor": "ComplianceAid INC.",
+  "product": "ComplianceAide Government Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Cybersecurity & Risk Management",
+   "Governance, Risk, and Compliance (GRC)"
+  ],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "ComplianceAide is an evidence-cited, human-approved SaaS compliance copilot for cybersecurity and regulatory readiness. The service connects to customer-approved evidence in governed repositories such as SharePoint; evaluates evidence clarity, recency, traceability, and sufficiency; maps evidence to applicable controls and framework requirements; identifies unsupported, partial, stale, missing, or conflicting evidence; and produces source-linked, review-ready assessments, reports, policies, control narratives, System Security Plan (SSP) support, Security Assessment Report (SAR) support, Plan of Action and Milestones (POA&M) entries, validation matrices, and executive readiness briefs. A named human reviewer approves, revises, rejects, or requests additional evidence before work product is accepted. ComplianceAide supports FedRAMP and NIST SP 800-53 readiness and package-preparation workflows; it does not replace an independent assessor or Authorizing Official, make authorization decisions, or currently represent a FedRAMP-authorized cloud service offering.",
+  "functions_claimed": [
+   {
+    "function_id": "policy_management",
+    "function": "Policy management",
+    "evidence": "The service connects to customer-approved evidence in governed repositories such as SharePoint; evaluates evidence clarity, recency, traceability, and sufficiency; maps evidence to applicable controls and framework requirements; identifies unsupported, partial, stale, missing, or conflicting evidence; and produces source-linked, review-ready assessments, reports, policies, control narratives, System Security Plan (SSP) support, Security Assessment Report (SAR) support, Plan of Action and Milestones (POA&M) entries, validation matrices, and executive readiness briefs."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2630354485/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2630354485"
+ },
+ {
+  "fork_id": "FR2633957422",
+  "vendor": "MediaLab Solutions LLC",
+  "product": "Vastian (MediaLab by Vastian)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Content Management System (CMS)",
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Education & Training",
+   "Governance, Risk, and Compliance (GRC)",
+   "Learning Management",
+   "Operations Management",
+   "Storage"
+  ],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "Vastian (MediaLab by Vastian) is a web-based Software-as-\na-Service (SaaS) platform that helps healthcare\norganizations and other regulated entities manage quality,\ncompliance, workforce readiness, and operational\nworkflows. The platform provides integrated capabilities for\ndocument management, inspection and survey readiness,\ncompetency and personnel management, continuing\neducation and training, event and incident management,\nperformance improvement, workflow automation, and\nreporting. Configurable workflows, role-based access\ncontrols, and centralized data management help\norganizations standardize processes, maintain compliance,\nimprove operational efficiency, and support readiness\nacross clinical, laboratory, and enterprise operations.\nImplementation, training, and technical support services are\navailable as part of the offering.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2633957422/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2633957422"
+ },
+ {
+  "fork_id": "FR2631054539",
+  "vendor": "Mycroft Technologies Inc",
+  "product": "Mycroft GRC Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Governance, Risk, and Compliance (GRC)",
+   "Mobile Device Management (MDM)"
+  ],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "The Mycroft Platform is a compliance and security management solution designed to help customers build, maintain, and demonstrate compliance with various security frameworks. Key capabilities include: Compliance Automation: task management dashboards and templates for policy documentation, vendor and risk management, and IT asset management. Continuous Monitoring: automated evidence collection and control monitoring. Vulnerability and Threat Monitoring: centralized tracking via integrations with third-party tools and cloud security posture management. Mycroft Agent: installed on customer-employee workstations to provide device management, control monitoring, and Endpoint Detection and Response (EDR). AI Integration: leverages generative AI (large language models) for conversational troubleshooting, adaptive remediation, and context-specific guidance, which requires customer review prior to implementation.",
+  "functions_claimed": [
+   {
+    "function_id": "continuous_monitoring",
+    "function": "Continuous monitoring",
+    "evidence": "Continuous Monitoring: automated evidence collection and control monitoring."
+   },
+   {
+    "function_id": "control_framework_compliance",
+    "function": "Control & framework compliance management",
+    "evidence": "Key capabilities include: Compliance Automation: task management dashboards and templates for policy documentation, vendor and risk management, and IT asset management."
+   },
+   {
+    "function_id": "risk_management",
+    "function": "Risk management",
+    "evidence": "Key capabilities include: Compliance Automation: task management dashboards and templates for policy documentation, vendor and risk management, and IT asset management."
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow & automation",
+    "evidence": "Key capabilities include: Compliance Automation: task management dashboards and templates for policy documentation, vendor and risk management, and IT asset management."
+   },
+   {
+    "function_id": "api_integrations",
+    "function": "APIs & integrations",
+    "evidence": "Vulnerability and Threat Monitoring: centralized tracking via integrations with third-party tools and cloud security posture management."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2631054539/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2631054539"
+ },
+ {
+  "fork_id": "FR2632558735",
+  "vendor": "Ocasio Convergence Holdings LLC",
+  "product": "Axiom Convergence Engine (ACE)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Governance, Risk, and Compliance (GRC)",
+   "Cybersecurity & Risk Management"
+  ],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "Axiom Convergence Engine (ACE) is an AI/ML governance, control, and audit cloud service offering designed to evaluate source validity, structural readiness, claim scope, authorization boundaries, evidence integrity, and reviewability before AI-assisted output is permitted to move downstream. ACE produces machine-verifiable governance decisions and reviewable evidence records for high-stakes AI/ML workflows. This listing represents an Initial Implementation offering pursuing FedRAMP 20x certification; ACE is not currently FedRAMP Certified or authorized to operate in a federal production environment.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2632558735/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2632558735"
+ },
+ {
+  "fork_id": "FR2700754082",
+  "vendor": "PlatformOne Group Inc",
+  "product": "ComplianceONE",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Governance, Risk, and Compliance (GRC)",
+   "Cybersecurity & Risk Management",
+   "Artificial Intelligence (AI)"
+  ],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "ComplianceONE is a multi-tenant governance, risk and compliance (GRC) platform that federal agencies, their contractors and commercial organizations use to manage FedRAMP, NIST SP 800-53, NIST SP 800-171/CMMC, GovRAMP, DoD Impact Level, TX-RAMP, ITAR and AS9100 programs. It holds control implementation records, policies, procedures, evidence files, POA&Ms, risks, incidents and assessment results; generates certification documents; reads security posture from customer-authorized integrations; and offers AI drafting assistance whose output a person reviews.",
+  "functions_claimed": [
+   {
+    "function_id": "policy_management",
+    "function": "Policy management",
+    "evidence": "It holds control implementation records, policies, procedures, evidence files, POA&Ms, risks, incidents and assessment results; generates certification documents; reads security posture from customer-authorized integrations; and offers AI drafting assistance whose output a person reviews."
+   },
+   {
+    "function_id": "api_integrations",
+    "function": "APIs & integrations",
+    "evidence": "It holds control implementation records, policies, procedures, evidence files, POA&Ms, risks, incidents and assessment results; generates certification documents; reads security posture from customer-authorized integrations; and offers AI drafting assistance whose output a person reviews."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2700754082/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2700754082"
+ },
+ {
+  "fork_id": "FR2700137045",
+  "vendor": "RegScale, Inc.",
+  "product": "RegScale Trust Center 20x (Class C)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Governance, Risk, and Compliance (GRC)"
+  ],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "The RegScale Trust Center is an automated Governance, Risk, and Compliance (GRC) offering built for FedRAMP 20x and CR26. It delivers continuous controls monitoring and publishes a FedRAMP-compatible trust center that meets every FedRAMP 20x provider rule, generating schema-valid, machine-readable evidence directly from live security posture and republishing automatically on change.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2700137045/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2700137045"
+ },
+ {
+  "fork_id": "FR2629068830",
+  "vendor": "SunStone Secure, LLC",
+  "product": "SunStone Artemis Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Governance, Risk, and Compliance (GRC)",
+   "Cybersecurity & Risk Management"
+  ],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "SunStone Artemis Platform is SunStone's Federal Platform running on AWS GovCloud and Commercial AWS. The Apollo Digital Twin Engine can ingest and process OSCAL 1.1.3 models, prototype and extension models, markdown, and other document content to support agency AO and ISSO analysis workflows for CSO inventory, data flows, POA&Ms, incidents, threat models, testing exercises, change artifacts, impact assessments, deviation requests, and NIST 800-53 documentation.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2629068830/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2629068830"
+ },
+ {
+  "fork_id": "FR2633053629",
+  "vendor": "TGuardAI Inc.",
+  "product": "TrustGuard AI Compliance Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Governance, Risk, and Compliance (GRC)",
+   "Artificial Intelligence (AI)"
+  ],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "TrustGuard AI is a comprehensive, AI-native Governance, Risk, and Compliance (GRC) platform that unifies internal compliance automation and external threat monitoring in a single system of record. Inside the organization, TrustGuard AI continuously collects evidence, maps it to recognized control frameworks — including FedRAMP, SOC 2, ISO 27001, NIST 800-53, NIST CSF, HIPAA, PCI DSS, and CMMC — and uses retrieval-augmented AI to assess controls, surface gaps, draft remediations, and generate audit-ready, machine-readable findings and reports. Looking outward, it delivers continuous third-party and supply-chain risk monitoring, scoring vendors and partners against real-world security signals so teams can quantify exposure, prioritize outreach, and track remediation across their entire ecosystem. By combining automated internal compliance with external security ratings and attack-surface intelligence, TrustGuard AI gives security, risk, and compliance leaders one continuously-updated view of their posture — from their own controls to every vendor they depend on. The platform is offered as SaaS. The provider maintains a SOC 2 Type 2 program and is undergoing a FedRAMP 20x Moderate (Class C) assessment; the FedRAMP-assessed instance operates in production within AWS GovCloud (US).",
+  "functions_claimed": [
+   {
+    "function_id": "control_framework_compliance",
+    "function": "Control & framework compliance management",
+    "evidence": "TrustGuard AI is a comprehensive, AI-native Governance, Risk, and Compliance (GRC) platform that unifies internal compliance automation and external threat monitoring in a single system of record."
+   },
+   {
+    "function_id": "audit_support",
+    "function": "Audit support & assessor review",
+    "evidence": "Inside the organization, TrustGuard AI continuously collects evidence, maps it to recognized control frameworks — including FedRAMP, SOC 2, ISO 27001, NIST 800-53, NIST CSF, HIPAA, PCI DSS, and CMMC — and uses retrieval-augmented AI to assess controls, surface gaps, draft remediations, and generate audit-ready, machine-readable findings and reports."
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow & automation",
+    "evidence": "TrustGuard AI is a comprehensive, AI-native Governance, Risk, and Compliance (GRC) platform that unifies internal compliance automation and external threat monitoring in a single system of record."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2633053629/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2633053629"
+ },
+ {
+  "fork_id": "FR2630354484",
+  "vendor": "VisualVault LLC",
+  "product": "VisualVault Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Governance, Risk, and Compliance (GRC)"
+  ],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "VisualVault is a secure, scalable platform that helps government agencies automate constituent-facing processes that require Compliance and Enforcement — from licensing and permitting to case management and general compliance enforcement. It enables agencies to configure workflows and adapt to evolving requirements.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2630354484/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2630354484"
+ }
+]

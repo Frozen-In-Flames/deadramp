@@ -1380,6 +1380,24 @@ New extended functions from this set, specified in groups/cybersecurity-untiered
 
 Tier discipline, stated plainly: this set's forks publish no FedRAMP impact level, so tier stays null — no baseline is asserted and no CMMC equivalence is drawn anywhere in the group's docs. In place of a baseline, the union spec carries a Documented control claims section: IA documented by 8 forks, SC by 6, AC by 5, CA by 4, RA by 2, AU by 1, each traced to the claiming fork's own sentence; every other 800-53 family is listed as not documented and was never filled in from a baseline. Named absences: data protection and secure enclave stand at 0 of 27; audit logging at 1 of 27. One fork claims zero (a zero-trust marketing journey that is not ZTNA phrasing; the taxonomy was not re-tuned for it).
 
+## Untiered Set 3 — Governance, Risk, and Compliance (GRC) (15 forks, tier null)
+
+New extended functions from this set, specified in groups/grc-untiered/UNION-SPEC.md, not implemented:
+- [ ] open — Automated evidence collection & validation engine
+- [ ] open — Continuous-monitoring feeds & scanner integrations
+- [ ] open — Vulnerability scanning engine
+- [ ] open — Automated KSI validation
+- [ ] open — Posture & risk scoring engines (the claiming forks' own engines — this category computes no scores anywhere, and the set's posture remains counts only)
+- [ ] open — Hosted enclave & PaaS operations
+- [ ] open — FedRAMP package generation
+- [ ] open — Policy lifecycle engine
+- [ ] open — Agentic workflow execution
+- [ ] open — AI control-narrative & assessment-response generation
+- [ ] open — Data-integration connector engine
+- [ ] open — Fork excess: healthcare quality suite; AI/ML governance evaluation engine; digital-twin OSCAL analysis engine; no-code BPM platform
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. The documented control claims, traced to the forks' own sentences: CA documented (continuous monitoring, assessor support, framework compliance, KSI tracking), PM documented (policy management, six forks), AU documented in part (audit support; evidence management NOT documented despite evidence prose in nearly every description), RA documented in part (risk management, one fork; vulnerability remediation not documented); AC and IA not documented, and the remaining families listed as not documented, never filled from a baseline. The category's two historic named absences are not absent here: policy management leads this set at six claims and risk management is claimed once, both at the records disposition (no risk-register object, no score). This set's own named absences: evidence management, posture reporting, vulnerability remediation, identity access hooks, and platform hosting all stand at 0 of 15. One exclusion removal is recorded: an assessment claim whose only assessor hit sat inside the fork's own "does not replace an independent assessor" sentence.
+
 ## Later groups
 
 Each group appends its section here when it ships.
