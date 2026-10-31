@@ -375,5 +375,44 @@
   ],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR1716961549/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1716961549"
+ },
+ {
+  "fork_id": "FR2135637226",
+  "vendor": "Pearson VUE",
+  "product": "Pearson Federal Cloud System",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Education & Training",
+  "description": "Pearson VUEs Pearson Federal Cloud System securely delivers assessments to registered testing candidates for over 450 assessment programs. Agencies and other government organizations can use the Pearson Federal Cloud System to administer high stakes assessments\n to potential job candidates. The system is built on Microsoft\u2019s Azure Commercial Cloud infrastructure-as-a-service (IaaS)\n\n\nPearson VUE\u2019s FedRAMP boundary includes candidate registration and scheduling systems; candidate testing on Athena Browser Edition (A-BE) or Athena Desktop (A-DE) test drivers; the OnVUE online proctoring platform; and reporting systems, including IntelliVUE.",
+  "functions_claimed": [
+   {
+    "function_id": "enrollment_registration",
+    "function": "Enrollments & candidate registration",
+    "evidence": "Pearson VUEs Pearson Federal Cloud System securely delivers assessments to registered testing candidates for over 450 assessment programs."
+   },
+   {
+    "function_id": "assessments",
+    "function": "Assessments & testing \u2014 delivery & administration",
+    "evidence": "Pearson VUEs Pearson Federal Cloud System securely delivers assessments to registered testing candidates for over 450 assessment programs."
+   },
+   {
+    "function_id": "scheduling",
+    "function": "Scheduling of training & assessment sessions",
+    "evidence": "The system is built on Microsoft\u2019s Azure Commercial Cloud infrastructure-as-a-service (IaaS)\n\n\nPearson VUE\u2019s FedRAMP boundary includes candidate registration and scheduling systems; candidate testing on Athena Browser Edition (A-BE) or Athena Desktop (A-DE) test drivers; the OnVUE online proctoring platform; and reporting systems, including IntelliVUE."
+   },
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting, dashboards & analytics",
+    "evidence": "The system is built on Microsoft\u2019s Azure Commercial Cloud infrastructure-as-a-service (IaaS)\n\n\nPearson VUE\u2019s FedRAMP boundary includes candidate registration and scheduling systems; candidate testing on Athena Browser Edition (A-BE) or Athena Desktop (A-DE) test drivers; the OnVUE online proctoring platform; and reporting systems, including IntelliVUE."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2135637226/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2135637226"
  }
 ]

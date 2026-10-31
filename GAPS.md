@@ -1184,6 +1184,12 @@ New extended functions from the addition fork, specified in groups/data-manageme
 
 Existing gaps gaining a member by substance (no claimant): query & visualization engines (the fork's "analysis, reporting, visualizations" — booked once, decision-support purpose included, not double-booked) and the integration runtime & connector engine ("streamline fragmented data processes into a single proven system"). Booked nowhere, recorded so the description is fully accounted for: project management & team collaboration, asserted in the fork's first sentence, are Operations and Collaboration functions, not this group's gaps. Group state, stated plainly: the enlarged group holds 0 claims across 2 forks — both forks spec'd, the substrate carried whole from the L2 parent and claimed by neither, which is the carried-not-claimed doctrine working as designed at the lightest tier.
 
+## Remainder Addition — Education & Training L2 (+1 fork)
+
+New gap functions: none — every function the addition fork describes is claimed, Core, or already in the union's Extended set; a new name would double-book.
+
+Existing gaps gaining members from this fork: remote proctoring & identity proofing gains the proctoring half IN SUBSTANCE (the fork names its own online proctoring platform; no taxonomy family exists for proctoring, so no claim fired — the absence retires as a substance finding and survives as a claims absence, now 0 of 9); assessment delivery & test-driver engines gain a claim-backed member (the fork claims assessments and its whole function is test-driver delivery; the scoring half gains no claimant — no score or grade wording anywhere); reporting / analytics engines gain a claim-backed member at the records level. Explicitly no claimant: identity proofing, deterministic scoring & AI grading, integrations & APIs (no "api" substring at all — absence survives 0 of 9), notifications & reminders (survives 0 of 9 despite the fork scheduling sessions). Citation note: of the fork's two census citations, one verifies strict-verbatim and is itself a claim evidence sentence; the second verifies only whitespace-normalized (the cached source text carries a line break inside it) — neither is load-bearing, and both facts are pinned in the group's tests exactly as measured.
+
 ## Later groups
 
 Each group appends its section here when it ships.

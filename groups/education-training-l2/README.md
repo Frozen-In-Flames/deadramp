@@ -21,6 +21,21 @@ code, assets, or branding from any sibling offering. Python 3,
 programmatically: every import in `src/` is in
 `sys.stdlib_module_names`; see `scratch/verify_deps.py`).
 
+**Remainder addition (2026-10-31):** 1 previously uncategorized
+fork from the remainder census — Pearson VUE / Pearson Federal
+Cloud System (FedRAMP Moderate) — was spec'd into this group
+under the same 21-family taxonomy applied verbatim (see
+`ADDENDUM.md`). It claims 4 families (enrollment/candidate
+registration, assessments, scheduling, reporting), all already
+Core, so the build is unchanged (`src/` byte-identical) and the
+group now covers **9 forks, 47 claims**; the suite grew 65 → 79
+tests, all passing, with the group's signature compliance-
+derivation drill re-run in this tree (exactly 9 failures under
+mutation). The addition also asserts online proctoring in its own
+words — a substance the taxonomy has no family for; it is
+registered as a claimant on the existing proctoring gap in the
+addendum, not as a claim.
+
 ## What the group is: a records substrate
 
 The claim counts in the union spec prove a **records substrate**, not

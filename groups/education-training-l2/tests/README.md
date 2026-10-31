@@ -33,6 +33,7 @@ entry point for this group.)
 | `test_service.py` | REST API — live HTTP server: health, 401 unknown user / role mismatch, full flow (course → enroll → session → assessment + response → credential → compliance derived overdue → progress completed → derived completed → report), learner write 403 + denied audited, learner scope over HTTP (403 on another learner's enrollment), audit admin+auditor only, report learner 403, 400/404 envelopes |
 | `test_main_cli.py` | `python -m learn serve` subprocess with demo users alice/bob/carol/dana |
 | `test_negative_control.py` | Negative control (below) |
+| `test_additions.py` | Remainder addition (unit `addition:education-training-l2`) — spec integrity for the appended Pearson VUE sheet (membership, literal 4-claim table, verbatim evidence, census citation accounting, proctoring/near-miss pins) + 2 substrate cases (candidate testing flow; compliance derivation — the latter trips the drill below) |
 | `learn_helpers.py` | Shared fixtures: demo users (ADMIN/INSTRUCTOR/LEARNER/AUDITOR), `USERS` registry, `fresh_store()`, and `make_store()` building a LearnStore + AuditLog + one course (created by ADMIN) |
 
 ## Negative control
@@ -79,3 +80,34 @@ verified identical to the pre-mutation hash in
 `scratch/store.py.sha256`) and the suite re-run: **65 tests, OK**.
 The suite catches this defect class; the negative control is not
 decorative.
+
+## Remainder addition — drill re-run (2026-10-31)
+
+The core is unchanged by the remainder addition (unit
+`addition:education-training-l2`, Pearson VUE; see
+`../ADDENDUM.md`), so the signature drill above was re-run in
+this tree against the enlarged suite. The same scoped patch —
+`return "overdue"` → `return "current"` in the
+`if as_of_date > due:` branch of `LearnStore._derive_status`
+(the named line occurs exactly once in the file; count asserted,
+patch scoped to that branch) — was applied to
+`src/learn/store.py`. The full suite ran: **79 tests, exactly 9
+failures** — the shipped drill's 8 plus exactly 1 from the new
+additions module, tripping as designed:
+
+- `test_compliance.TestCompliance.test_overdue_when_past_due_and_incomplete`
+- `test_compliance.TestCompliance.test_derivation_deterministic_in_as_of`
+- `test_compliance.TestCompliance.test_in_progress_does_not_complete`
+- `test_compliance.TestCompliance.test_list_compliance_derives_each`
+- `test_compliance.TestCompliance.test_validation_and_permissions`
+- `test_negative_control.TestNegativeControlMutantCompliance.test_past_due_incomplete_is_overdue_canonical_but_mutant_current`
+- `test_reporting.TestReporting.test_report_compliance_uses_derived_status`
+- `test_service.TestFullFlow.test_full_flow`
+- `test_additions.TestAdditionSubstrateCases.test_pearson_candidate_compliance_derivation`
+
+`store.py` was then restored from the pre-mutation copy
+(`scratch/store.py.premutation-additions`) — SHA-256
+`f9c8ea1018db3d3ba10fc21bd00a7c592f4adf682d3a23e0fdc6a7417cbd3ffc`,
+identical to the shipped hash — and the suite re-run: **79
+tests, OK**. The raw failure list is in
+`scratch/additions_mutation_run.txt`.
