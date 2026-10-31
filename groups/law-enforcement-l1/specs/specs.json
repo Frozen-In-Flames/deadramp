@@ -1,0 +1,20 @@
+[
+ {
+  "fork_id": "FR2527955211",
+  "vendor": "Flock Safety",
+  "product": "Flock Safety Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Low",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Law Enforcement",
+  "description": "Flock Safety is a public safety solution that assists cities, businesses, schools, and law enforcement agencies in collaboratively eliminating crime and maintaining community safety. Flock develops and manufactures license plate reading (LPR) technology, audio recognition sensors, video cameras, and accompanying software to capture objective evidence required by law enforcement to solve crimes.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at ../../raw/data_dump.json), product record joined by FedRAMP ID",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2527955211/"
+ }
+]
