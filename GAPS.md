@@ -1056,6 +1056,22 @@ New extended functions from the addition forks, specified in groups/cybersecurit
 
 Enlargements of families already registered under Group 8: network enforcement planes +1 (Cisco, the group's largest network surface); identity products +2; DLP engines +1; AI / ML detection models +1; threat-intel feeds +1; SOAR / workflow automation +1; cloud / SaaS posture engines +1 by substance (CASB named twice, no posture phrasing). Posture / risk scoring engines explicitly gain no claimants, and neither addition fork claims risk scoring, so no computed score enters the enlarged build. One correction applied in the addition spec: a raw endpoint-management match was dropped because the sentence manages firewall appliances, a network function, not endpoints.
 
+## Remainder Group 1 — Contract Management L2 (2 forks, new category)
+
+Extended functions from the group's forks, specified in groups/contract-management-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Regulatory content & interpretation: FAR / DFARS corpus, agency supplements, updates
+- [ ] open — Workflow execution engine
+- [ ] open — Analytics engine: PALT measurement, bottleneck / spend analysis beyond registry counts and sums
+- [ ] open — Opportunity portal front-end (the public / directed web portal itself)
+- [ ] open — Reverse auction engine: live bidding, price discovery
+- [ ] open — Submission intake transport (electronic bid / proposal receipt channel)
+- [ ] open — Payment processing rails: fee collection / settlement (the core records payments, moves no money)
+- [ ] open — Integration transport (the system-to-system interfaces themselves)
+- [ ] open — Communication transport (the secure messaging channel itself)
+- [ ] open — Identity provider / registration verification service (registration records are not identity proofing; IA-2 stays with the embedding organization)
+
+Boundary, stated in the spec: procurement operations tooling lives in Operations Management; post-award grants administration lives in Grant Management; this group's financial-assistance claims reach only as far as opportunities. Checked absences in both descriptions: no contract authoring / clause library, no e-signature, no source selection / evaluation / scoring, no invoicing or government disbursement.
+
 ## Later groups
 
 Each group appends its section here when it ships.

@@ -1,0 +1,80 @@
+........F.................F........FF.....F/usr/lib/python3.12/unittest/case.py:589: ResourceWarning: unclosed file <_io.TextIOWrapper name=3 encoding='utf-8'>
+  if method() is not None:
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.FF...............................................F............
+======================================================================
+FAIL: test_failed_operations_record_nothing (test_audit.TestAuditLog.test_failed_operations_record_nothing)
+AU-2: a rejected operation appends no entry.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hatch/workspace/deadramp/groups/contract-management-l2/tests/test_audit.py", line 92, in test_failed_operations_record_nothing
+    with self.assertRaises(ValidationError):
+AssertionError: ValidationError not raised
+
+======================================================================
+FAIL: test_base_award_above_ceiling_rejected_at_creation (test_contracts.TestContracts.test_base_award_above_ceiling_rejected_at_creation)
+Signature invariant at creation: the bounds seam runs
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hatch/workspace/deadramp/groups/contract-management-l2/tests/test_contracts.py", line 74, in test_base_award_above_ceiling_rejected_at_creation
+    with self.assertRaises(ValidationError):
+AssertionError: ValidationError not raised
+
+======================================================================
+FAIL: test_below_zero_modification_rejected (test_contracts.TestModifications.test_below_zero_modification_rejected)
+Signature invariant: de-obligation may reach zero exactly
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hatch/workspace/deadramp/groups/contract-management-l2/tests/test_contracts.py", line 183, in test_below_zero_modification_rejected
+    with self.assertRaises(ValidationError):
+AssertionError: ValidationError not raised
+
+======================================================================
+FAIL: test_cumulative_mods_checked_together (test_contracts.TestModifications.test_cumulative_mods_checked_together)
+Signature invariant: the seam sums the base award and
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hatch/workspace/deadramp/groups/contract-management-l2/tests/test_contracts.py", line 173, in test_cumulative_mods_checked_together
+    with self.assertRaises(ValidationError):
+AssertionError: ValidationError not raised
+
+======================================================================
+FAIL: test_over_ceiling_modification_rejected_whole (test_contracts.TestModifications.test_over_ceiling_modification_rejected_whole)
+Signature invariant: one cent past the ceiling is
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hatch/workspace/deadramp/groups/contract-management-l2/tests/test_contracts.py", line 160, in test_over_ceiling_modification_rejected_whole
+    with self.assertRaises(ValidationError):
+AssertionError: ValidationError not raised
+
+======================================================================
+FAIL: test_canonical_expectation_rejects_over_ceiling_modification (test_negative_control.TestNegativeControlModificationBounds.test_canonical_expectation_rejects_over_ceiling_modification)
+Canonical (Core 4): a first modification is recorded; the
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hatch/workspace/deadramp/groups/contract-management-l2/tests/test_negative_control.py", line 60, in test_canonical_expectation_rejects_over_ceiling_modification
+    with self.assertRaises(ValidationError):
+AssertionError: ValidationError not raised
+
+======================================================================
+FAIL: test_mutant_also_breaks_creation_and_floor (test_negative_control.TestNegativeControlModificationBounds.test_mutant_also_breaks_creation_and_floor)
+Mutant contrast: the real store rejects an over-ceiling
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hatch/workspace/deadramp/groups/contract-management-l2/tests/test_negative_control.py", line 103, in test_mutant_also_breaks_creation_and_floor
+    with self.assertRaises(ValidationError):
+AssertionError: ValidationError not raised
+
+======================================================================
+FAIL: test_full_flow_and_bounds_over_http (test_service.TestService.test_full_flow_and_bounds_over_http)
+Service: the full flow — organization, members,
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hatch/workspace/deadramp/groups/contract-management-l2/tests/test_service.py", line 144, in test_full_flow_and_bounds_over_http
+    self.assertEqual(status, 400)
+AssertionError: 201 != 400
+
+----------------------------------------------------------------------
+Ran 106 tests in 1.136s
+
+FAILED (failures=8)

@@ -1,0 +1,165 @@
+[
+ {
+  "fork_id": "F1506046707",
+  "vendor": "Unison",
+  "product": "Contracting SaaS",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Contract Management",
+  "description": "Unison is the leading provider of SaaS contract management capabilities for government contractors and government agencies. Unison enables acquisition and contracts professionals to boost compliance and productivity throughout their contracting lifecycles.\r\n\r\nUnison Contracting SaaS enables Federal agencies to:\r\n- Fully comply with FAR/DFARS and agency supplements\r\n- Receive successful audits\r\n- Quickly and effectively respond to protests\r\n- Waste less time on duplicative data entry, analysis, and reporting\r\n- Eliminate process bottlenecks and compress PALT\r\n- Efficiently acquire commercial goods and services\r\n- Interact with the vendor community\r\n\r\nUnison Contracting SaaS enables government contractors to:\r\n-Accurately and promptly address the heavy flow of urgent data calls from federal customers, auditors, and executives\r\n-Mitigate insidious contracting risks with enhanced visibility and a better understanding of FAR/DFARS and agency-specific regulations\r\n-Implement an efficient, standardized workflow to enable scalability of contracts under management without proportional increases to the size and cost of the contracts department",
+  "functions_claimed": [
+   {
+    "function_id": "contract_lifecycle_management",
+    "function": "Contract lifecycle management",
+    "evidence": "Unison is the leading provider of SaaS contract management capabilities for government contractors and government agencies."
+   },
+   {
+    "function_id": "regulatory_compliance",
+    "function": "Regulatory compliance (FAR/DFARS & contracting mandates)",
+    "evidence": "Fully comply with FAR/DFARS and agency supplements"
+   },
+   {
+    "function_id": "audit_support",
+    "function": "Audit support & auditability",
+    "evidence": "Receive successful audits"
+   },
+   {
+    "function_id": "vendor_interaction",
+    "function": "Vendor community interaction",
+    "evidence": "Interact with the vendor community"
+   },
+   {
+    "function_id": "protest_response",
+    "function": "Protest response",
+    "evidence": "Quickly and effectively respond to protests"
+   },
+   {
+    "function_id": "reporting_analysis",
+    "function": "Analysis & reporting",
+    "evidence": "Waste less time on duplicative data entry, analysis, and reporting"
+   },
+   {
+    "function_id": "workflow_standardization",
+    "function": "Standardized workflow",
+    "evidence": "Implement an efficient, standardized workflow to enable scalability of contracts under management without proportional increases to the size and cost of the contracts department"
+   },
+   {
+    "function_id": "data_calls",
+    "function": "Data-call response",
+    "evidence": "Accurately and promptly address the heavy flow of urgent data calls from federal customers, auditors, and executives"
+   },
+   {
+    "function_id": "risk_visibility",
+    "function": "Contracting risk visibility",
+    "evidence": "Mitigate insidious contracting risks with enhanced visibility and a better understanding of FAR/DFARS and agency-specific regulations"
+   },
+   {
+    "function_id": "commercial_acquisition",
+    "function": "Commercial goods & services acquisition",
+    "evidence": "Efficiently acquire commercial goods and services"
+   },
+   {
+    "function_id": "saas_delivery",
+    "function": "SaaS delivery (platform)",
+    "evidence": "Unison is the leading provider of SaaS contract management capabilities for government contractors and government agencies."
+   }
+  ],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID F1506046707",
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1506046707/"
+ },
+ {
+  "fork_id": "F1510017461",
+  "vendor": "Unison",
+  "product": "FedConnect",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Contract Management",
+  "description": "FedConnect provides US Government Acquisition leaders and Contract Officers a secure, full-lifecycle, auditable approach to interacting with vendors and complying with Paperless Contracting mandates. FedConnect is a Federal acquisition and grants portal where vendors and grant applicants can find opportunities for federal contracts, grants, and other types of assistance funding. It was developed to bridge the gap between government agencies and their vendor and grant applicant/recipient communities in order to streamline the process of doing business with government. \n\nThrough the FedConnect portal, Federal Government representatives are able to issue opportunity requests and make awards via the internet. Company representatives are able to review opportunities, submit bids or proposals, and receive awards. FedConnect provides an open channel of communication with the government that is both secure and auditable.\n\nThere are three types of government opportunities facilitated through FedConnect: traditional eRFX issuance, Reverse Auction events, and Financial Assistance opportunities, e.g. grants. For eRFX and Financial Assistance opportunities, FedConnect is offered by subscription fee to Federal Government agencies that are federally regulated. For Reverse Auction only, there is no subscription fee to Federal Government agencies. The bidding and winning vendor company is responsible for payment upon award.\n\nOn the government side, FedConnect is accessed through a system-to-system interface to the Unison Contracting and Grants software applications, where Government procurement and grant representatives become indirect users of FedConnect.\n\nOn the Vendor/Applicant side, FedConnect is accessed via the internet with a browser. Anyone can access the FedConnect web site and review public opportunities. However, to receive directed opportunities that are not publicly issued, respond electronically, and receive ongoing communications, a vendor/applicant must be registered.\n\nTo learn more about FedConnect and its capabilities, please visit the public portion of the FedConnect site.",
+  "functions_claimed": [
+   {
+    "function_id": "contract_lifecycle_management",
+    "function": "Contract lifecycle management",
+    "evidence": "FedConnect provides US Government Acquisition leaders and Contract Officers a secure, full-lifecycle, auditable approach to interacting with vendors and complying with Paperless Contracting mandates."
+   },
+   {
+    "function_id": "regulatory_compliance",
+    "function": "Regulatory compliance (FAR/DFARS & contracting mandates)",
+    "evidence": "FedConnect provides US Government Acquisition leaders and Contract Officers a secure, full-lifecycle, auditable approach to interacting with vendors and complying with Paperless Contracting mandates."
+   },
+   {
+    "function_id": "audit_support",
+    "function": "Audit support & auditability",
+    "evidence": "FedConnect provides US Government Acquisition leaders and Contract Officers a secure, full-lifecycle, auditable approach to interacting with vendors and complying with Paperless Contracting mandates."
+   },
+   {
+    "function_id": "vendor_interaction",
+    "function": "Vendor community interaction",
+    "evidence": "FedConnect provides US Government Acquisition leaders and Contract Officers a secure, full-lifecycle, auditable approach to interacting with vendors and complying with Paperless Contracting mandates."
+   },
+   {
+    "function_id": "opportunity_portal",
+    "function": "Opportunity portal (find & review opportunities)",
+    "evidence": "FedConnect is a Federal acquisition and grants portal where vendors and grant applicants can find opportunities for federal contracts, grants, and other types of assistance funding."
+   },
+   {
+    "function_id": "opportunity_issuance",
+    "function": "Opportunity issuance (eRFX)",
+    "evidence": "Through the FedConnect portal, Federal Government representatives are able to issue opportunity requests and make awards via the internet."
+   },
+   {
+    "function_id": "award_management",
+    "function": "Award issuance & receipt",
+    "evidence": "Through the FedConnect portal, Federal Government representatives are able to issue opportunity requests and make awards via the internet."
+   },
+   {
+    "function_id": "bid_submission",
+    "function": "Bid & proposal submission",
+    "evidence": "Company representatives are able to review opportunities, submit bids or proposals, and receive awards."
+   },
+   {
+    "function_id": "reverse_auction",
+    "function": "Reverse auction events",
+    "evidence": "There are three types of government opportunities facilitated through FedConnect: traditional eRFX issuance, Reverse Auction events, and Financial Assistance opportunities, e.g. grants."
+   },
+   {
+    "function_id": "financial_assistance",
+    "function": "Financial assistance / grants opportunities",
+    "evidence": "FedConnect is a Federal acquisition and grants portal where vendors and grant applicants can find opportunities for federal contracts, grants, and other types of assistance funding."
+   },
+   {
+    "function_id": "subscription_billing",
+    "function": "Subscription & award-fee billing",
+    "evidence": "For eRFX and Financial Assistance opportunities, FedConnect is offered by subscription fee to Federal Government agencies that are federally regulated."
+   },
+   {
+    "function_id": "system_integration",
+    "function": "System-to-system integration",
+    "evidence": "On the government side, FedConnect is accessed through a system-to-system interface to the Unison Contracting and Grants software applications, where Government procurement and grant representatives become indirect users of FedConnect."
+   },
+   {
+    "function_id": "vendor_registration",
+    "function": "Vendor / applicant registration",
+    "evidence": "However, to receive directed opportunities that are not publicly issued, respond electronically, and receive ongoing communications, a vendor/applicant must be registered."
+   },
+   {
+    "function_id": "secure_communication",
+    "function": "Secure communication channel",
+    "evidence": "FedConnect provides an open channel of communication with the government that is both secure and auditable."
+   }
+  ],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID F1510017461",
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1510017461/"
+ }
+]
