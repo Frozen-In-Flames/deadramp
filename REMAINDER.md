@@ -634,3 +634,11 @@ Boundary set, recorded rather than silently resolved: managed-hosting platforms 
 - `remainder.json` — the machine-readable census: all 283 forks with registry fields, proposed category, verbatim citations, bucket and build unit; the 74 build units; the proposed build order. All counts in this document are reproducible from it (`remainder/aggregate.py`).
 - `remainder/` — census scratch: `uncovered.json` (the 283 with descriptions), `chunk_1..6.json` (classifier inputs), `class_chunk_1..6.json` (classifier outputs), `class_all.json` (merged), `raw_products.json` (extracted raw records), `aggregate.py`, `build_md.py`.
 
+## Final reconciliation (2026-10-31)
+
+The remainder phase is complete. Mechanical check, run by the parent against every shipped `groups/*/specs/specs.json`: **779 forks covered, zero forks in more than one group**, and the only registry forks not covered are the two the live-doc resolution honestly left unclassified:
+
+- **FR1901852210 — TERIDA CLASsoft** (impact Unknown). The vendor's site was unfetchable and the only function language lives in vendor press releases reproduced on third-party distribution sites, which do not qualify as the vendor's own page. A future ruling on whether vendor-authored releases count is Aries's to make; it has not been taken.
+- **AGENCYNITCIAAS — USDA vGov** (Moderate). Live documentation contradicts the marketplace record: USDA's own OCIO page defines vGov as a virtual-worlds partnership of federal agencies, not the IaaS hosting catalogue the marketplace record describes. The fork is the map's honest edge — the one place where the vendor's own words and the registry disagree, recorded rather than resolved by guessing.
+
+781 = 779 covered + 2 honestly unclassified. No-signal resolution accounting: 21 of 23 resolved — 5 joined existing groups/sets, 13 founded Cloud Infrastructure & Hosting (L2, L3-adjacent, untiered), 2 founded Library Systems L1, 1 founded Enterprise Resource Planning L2.
