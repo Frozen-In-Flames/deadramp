@@ -1838,6 +1838,27 @@ New gaps at this tier from the uplift decision, specified in groups/cloud-infras
 - [ ] open — Audit retention (AU-11)
 - [ ] open — Session lock / termination (AC-11/AC-12)
 
+## Singleton 66 — Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)
+
+Gaps from Singleton 66, specified in groups/enterprise-resource-planning-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Suite platform & portal presentation layer
+- [ ] open — Identity federation service
+- [ ] open — Integration execution & orchestration runtime (the build's registries store records and never execute)
+- [ ] open — API gateway runtime
+- [ ] open — Data lake & schema-on-read engine
+- [ ] open — Financial close & consolidation engine
+- [ ] open — Source-to-settle execution engine
+- [ ] open — Expense policy enforcement & fraud detection engine
+- [ ] open — Manufacturing production engine
+- [ ] open — Supplier exchange network
+- [ ] open — Talent management engine
+- [ ] open — Workforce scheduling optimizer
+- [ ] open — Payroll calculation engine
+- [ ] open — Business intelligence platform
+- [ ] open — Enterprise performance management engine
+- [ ] open — Governance, risk & compliance engine
+- [ ] open — Platform layer: the fork's GovCloud / ITAR / CJIS / HIPAA posture does not transfer to the build; FIPS-validated cryptography (SC-13) is not claimed
+
 ## Later groups
 
 Each group appends its section here when it ships.
