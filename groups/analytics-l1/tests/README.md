@@ -91,6 +91,43 @@ mode above and in package mode with `-t .`). The full mutant-run
 output is kept at `scratch/mutation-run.txt`. The suite catches
 this defect class; the negative control is not decorative.
 
+## Remainder addition — unit `addition:analytics-l1` (2026-10-31)
+
+`test_additions.py` (13 tests) pins the appended spec sheet for
+`FR2017459185` (HP Inc. / Workforce Experience Platform
+Collaboration): sheet count and append position, membership against
+`remainder.json`, the literal claim table under the verbatim
+24-family taxonomy (**transform**, **alerts_monitoring**,
+**collaboration** — the latter two artifact-weight claims pinned as
+artifacts, see `../ADDENDUM.md` §2), verbatim evidence, the census
+citation, the near-miss absence set, and the combined group totals
+(17 sheets, 57 claims). Its substrate half exercises the fork
+against the unchanged core in its own shape: UC telemetry
+aggregates ingested (metadata-only registry shape), per-vendor
+grouped totals, `describe` statistics, an SVG chart and CSV export
+from one query result, and the audit trail across the operations.
+
+**Suite: 136 → 149 tests, all passing.**
+
+**Mutation drill, re-run in this tree for the addition** (the core
+is unchanged, so the group's signature drill applies): the `avg`
+aggregation in `src/analytics/query.py` was patched to return the
+bare sum in both places an average is computed (the `_aggregate`
+avg branch: `return (sum(numbers)) if numbers else None`;
+`describe`'s mean: `"mean": sum(numbers),`) and the full suite ran:
+**149 tests, 13 failures** — the original drill's 12
+(`test_negative_control` ×4, `test_describe` ×5, `test_query` ×2,
+`test_service` ×1, the same set recorded above) plus exactly 1 from
+the new additions module,
+`test_additions.TestAdditionSubstrate.test_grouped_query_and_describe`,
+tripping on its `describe` mean assertion exactly as designed.
+`query.py` was restored from the pre-mutation copy
+(`scratch/query.py.premutation_additions`) and verified SHA-256
+`f15c9b8f528db4675de1437588aadf95a45067b0429bc1287a08ce6720faea2c`
+— identical to the shipped hash and to `scratch/query.py.pristine`
+— and the suite re-ran green (149 tests, OK). The failure list is
+kept at `scratch/additions_mutation_failures.txt`.
+
 ## Interpretation notes
 
 Where UNION-SPEC's contract left a shape open, the suite follows the

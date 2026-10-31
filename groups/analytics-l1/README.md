@@ -191,3 +191,24 @@ Also, plainly:
   to; nothing more. The Moderate/High apparatus of the sibling Analytics
   groups (800-171 depth, the L3 audit-chain uplift, 800-172-derived
   enhancements) is **not** inherited downward into this tier.
+
+## Remainder addition (2026-10-31)
+
+One previously uncategorized fork joined this group under remainder
+unit `addition:analytics-l1`: **HP Inc. / Workforce Experience
+Platform Collaboration** (`FR2017459185`, LI-SaaS, Certified),
+spec'd under the group's verbatim 24-family taxonomy as the 17th
+sheet in [`specs/specs.json`](specs/specs.json) (the original 16
+sheets are untouched). It carries **3 claims** — alerts/monitoring
+(substantive), plus sharing/collaboration and transformation at
+**wording-artifact weight** (the product name, and "workplace
+transformation"), recorded as artifacts in
+[`ADDENDUM.md`](ADDENDUM.md), which also names 2 new Extended gaps
+(a collaboration/UC telemetry engine and an end-user experience &
+productivity analytics engine) for the repo's final GAPS batch.
+**The core is unchanged** — all three claimed families are Extended
+at this tier — so `src/` is byte-identical to the shipped build,
+the Low/L1 baseline is untouched, and the group's signature
+avg-mutant drill was re-run against the enlarged suite (13 failures
+under mutation: the original 12 plus the additions substrate case).
+Tests: **136 → 149, all passing**.
