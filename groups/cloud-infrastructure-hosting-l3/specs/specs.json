@@ -1,0 +1,226 @@
+[
+ {
+  "fork_id": "F1211011660",
+  "vendor": "IBM",
+  "product": "IBM Cloud for Government",
+  "service_model": [
+   "IaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cloud Infrastructure & Hosting",
+  "description": "IBM Cloud for Government is a high performance, high security Cloud, providing both Infrastructure and Platform Cloud Services. IBM Cloud for Government delivers seamless integrated computing environments across multiple data centers. IBM integrates and automates infrastructure and platform services empowering federal agencies with complete control, security, scalability and ease-of-management via an Agency Portal and Secure Open API. The Agency portal and API provide administrators and developers with direct access to more than 100 backend systems, services and activities. IBM Cloud for Government is designed for optimized network management, various performance levels and enhanced security. It provides automated provisioning of services in public, private, and hybrid cloud offerings with quick and easy access to developer tools. Services include orchestration of bare metal and virtual servers, networking services, VMWare, and development tools such as with object storage, auto scaling, and load balancing.",
+  "functions_claimed": [],
+  "classification_evidence": "Infrastructure Services provide access to computing, storage, and network resources to enable Client to quickly provision or set-up cloud computing infrastructure environments.",
+  "classification_source_url": "https://www.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=87022587USEN&",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID F1211011660",
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1211011660/"
+ },
+ {
+  "fork_id": "F1208031461A",
+  "vendor": "IBM",
+  "product": "IBM Platform Services for Government",
+  "service_model": [
+   "SaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "Agency Authorization In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cloud Infrastructure & Hosting",
+  "description": "IBM Platform Services provides core services for managing devices, applications, content, identity & access management, end-to-end visibility, dynamic resource allocation, and improved operational risk and resiliency. These services work together to modernize device management, IAM, observability, application resource monitoring, and providing clients with AI-driven recommendations and tips that are prioritized and customized for your applications. \r\n\r\nIBM MaaS360 for Government is a comprehensive, cloud-based unified endpoint management and security platform for devices, applications and content built on a secure multi-tenant architecture. Government agencies use MaaS360 to protect data and optimize productivity, enabling employees to work anytime and anywhere through trusted mobile interactions. MaaS360 offers device management and security without the added costs and complexities of deploying hardware and software, dealing with intricate configurations, and dedicating additional resources to support the solution on an ongoing basis. MaaS360 allows administrators to manage and enable security on smartphones, tablets and laptops and increase end users’ productivity by enabling secure access to their enterprise data on their endpoint devices. \r\n\r\nIBM Verify for Government is an Identity-as-a-Service (IDaaS) platform enabling organizations to secure and modernize experiences for workforce and citizens. IBM Verify provides modern Single-sign-on (SSO) using standard protocols (SAML, OIDC, OAuth, etc.), supports legacy protocols and access to thousands of popular cloud service applications, and in-house applications, with hundreds of pre-built templates for faster integration. IBM Verify manages the lifecycle of users and groups through a scalable and elastic directory, provides granular, attribute-based policies, and supports multi-factor authentication. Government agencies can provide a digital first experience for secure and frictionless authentication for citizens. \r\n\r\nIBM Instana for Government is a leading full-stack observability tool that automatically and continuously delivers the highest-fidelity data in one-second granularity, with end-to-end distributed tracing of every call or request, and provides a graphing model with dynamic maps to show you how everything is related. IBM Instana for Government allows you to see the exact data you want in the context you need to quickly determine the cause of an issue and take immediate action to fix it. Government agencies can monitor their entire stack with end-to-end visibility across shared services and gain real-time contextual understanding to find and fix problems faster.\r\n\r\nIBM Turbonomic for Government is the leading Application Resource Management (ARM) solution that dynamically allocates resources in real-time boosting efficiency, minimizing cloud expense, and preventing downtime. IBM Turbonomic for Government delivers continuously optimized application resource performance across hybrid multi-cloud environments providing intelligence automation and proactive resource management that scales existing resources efficiently; preemptive analytics to help maximize resource utilization; dynamic resource allocation; and seamless integration across on premises, public, private, hybrid and multiple cloud domains.\r\n\r\nIBM Concert for Government is the connective tissue that harmonizes data from disparate tools and environments, transforming it into actionable knowledge aimed at improving operational risk and resiliency and freeing up teams to focus more on innovation. IBM Concert for Government provides AI-driven recommendations and tips that are prioritized and customized for your applications. Get automated data analysis from disparate systems and tools, identify operational issues before they escalate, increase efficiency with Concert’s recommendations and automation of repetitive tasks. Government agencies can uncover crucial insights about their operations and get application-specific recommendations for improvement.",
+  "functions_claimed": [
+   {
+    "function_id": "multi_tenancy",
+    "function": "Multi-tenancy / shared service",
+    "evidence": "IBM MaaS360 for Government is a comprehensive, cloud-based unified endpoint management and security platform for devices, applications and content built on a secure multi-tenant architecture."
+   },
+   {
+    "function_id": "monitoring_observability",
+    "function": "Monitoring & observability",
+    "evidence": "These services work together to modernize device management, IAM, observability, application resource monitoring, and providing clients with AI-driven recommendations and tips that are prioritized and customized for your applications."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity, access & directory services",
+    "evidence": "IBM Platform Services provides core services for managing devices, applications, content, identity & access management, end-to-end visibility, dynamic resource allocation, and improved operational risk and resiliency."
+   },
+   {
+    "function_id": "resource_optimization",
+    "function": "Application resource management & optimization",
+    "evidence": "IBM Platform Services provides core services for managing devices, applications, content, identity & access management, end-to-end visibility, dynamic resource allocation, and improved operational risk and resiliency."
+   },
+   {
+    "function_id": "ai_recommendations",
+    "function": "AI-driven operational recommendations",
+    "evidence": "These services work together to modernize device management, IAM, observability, application resource monitoring, and providing clients with AI-driven recommendations and tips that are prioritized and customized for your applications."
+   }
+  ],
+  "classification_evidence": "Software to support real‑time visibility into application performance, identification and resolution of IT issues quickly, strengthened access controls for sensitive data and applications and optimization of applications and infrastructure across hybrid environments.",
+  "classification_source_url": "https://www.ibm.com/industries/federal/grit-veterans",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID F1208031461A",
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1208031461A/"
+ },
+ {
+  "fork_id": "F1206081363",
+  "vendor": "IBM",
+  "product": "SmartCloud for Government",
+  "service_model": [
+   "IaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cloud Infrastructure & Hosting",
+  "description": "IBM's SmartCloud for Government (SCG) is a secure multi-tenant Infrastructure as a Service (IaaS) cloud computing environment for U.S. Federal customers.\n\nSCG services include provisioning of compute, memory, network, OS, and storage resources to meet client production and development/test computing needs.\n\n\nSCG IaaS services can be bundled with enterprise class, fully managed, cloud hosting services, including:\n\nOS Provisioning and Administration\nEnterprise System Management\nSecurity Operation Center (SOC)\nStorage Management and Backup.\nIBM SCG required services\nStorage management\nFirewall and Network Administration (Boundary management services)\nService Desk\nAccess Management\nCloud Network\nIBM SCG rated services\nSCG Cloud-VM/CPU\nSCG Cloud-Memory\nSCG Cloud-Network\nSCG Load Balancer\nSOC-SOAR\nStandard Endpoint Protection Services\nSystem Vulnerability Scanning\nSecurity Governance and Compliance\n \n\nThese SCG IaaS capabilities can also be leveraged to support a broad range of IBM and 3rd party software offerings using a PaaS or SaaS delivery model.\n\nThe SCG solutions are delivered from IBM Federal Data Centers (FDC) that are expressly designed and managed to meet FISMA requirements.\n\nIBM SCG enables customers to choose cloud solutions and services that meet their workload requirements and helps Government agencies deliver business outcomes with faster time to value and a lower total cost of ownership",
+  "functions_claimed": [
+   {
+    "function_id": "multi_tenancy",
+    "function": "Multi-tenancy / shared service",
+    "evidence": "IBM's SmartCloud for Government (SCG) is a secure multi-tenant Infrastructure as a Service (IaaS) cloud computing environment for U.S."
+   }
+  ],
+  "classification_evidence": "The IBM SmartCloud for Government is an Infrastructure as a Service (IaaS) offering that is a private multi-tenant cloud specific for Federal Government users.",
+  "classification_source_url": "https://www.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=GVO13001USEN",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID F1206081363",
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1206081363/"
+ },
+ {
+  "fork_id": "F1303221956",
+  "vendor": "IT-CNP",
+  "product": "GovDataHosting Cloud Platform",
+  "service_model": [
+   "PaaS",
+   "IaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cloud Infrastructure & Hosting",
+  "description": "IT-CNP’s FedRAMP Class D (High) certified GovDataHosting Cloud Platform is delivered as a fully managed, FISMA-compliant Platform-as-a-Service (PaaS) offering using multi-tenant Federal Government cloud and private cloud computing environment deployment models. The GovDataHosting Cloud Platform is deployed over both our own purpose-built GovDataHosting IaaS and AWS GovCloud IaaS, giving customers a choice of underlying infrastructure under one identical, fully managed PaaS authorization. The GovDataHosting Cloud Platform supports the full range of federal mission needs — low, moderate, and high impact information systems — under a single high-baseline authorization. Rather than selling raw infrastructure and leaving security and compliance to the customer, our platform bundles fully managed infrastructure, platform runtime, security operations, and compliance documentation into one predictable subscription — eliminating the multi-vendor cost and complexity of assembling a compliant environment from raw Infrastructure-as-a-Service (IaaS) components. Certified support personnel manage every layer beneath the customer application: physical datacenter security, redundant power/cooling, network, storage, hypervisor servers, operating systems, databases, web and application runtimes, patching, backup, disaster recovery, identity and access management, continuous monitoring, and the underlying NIST SP 800-53 control set. This fully managed security and compliance model maximizes control inheritance, so customers inherit the heavy lifting of FedRAMP High compliance and remain responsible only for application-layer controls — letting program teams focus on their system mission and software application delivery instead of infrastructure and platform compliance. 100% of our datacenters and 24/7/365 mission-critical support are provided from the continental United States by U.S. persons, and the platform is available exclusively to U.S. Federal, state, and local government entities and their respective authorized contractors. The GovDataHosting Cloud Platform enables government customers to quickly and cost effectively deploy FedRAMP and NIST SP 800-53 compliant information systems while leveraging elastic compute, memory, disk, and network resources that scale up or down to accommodate periodic spikes in processing demand — available under flexible fixed monthly subscription or consumption-based billing models to match each program’s budget and procurement preferences.",
+  "functions_claimed": [
+   {
+    "function_id": "multi_tenancy",
+    "function": "Multi-tenancy / shared service",
+    "evidence": "IT-CNP’s FedRAMP Class D (High) certified GovDataHosting Cloud Platform is delivered as a fully managed, FISMA-compliant Platform-as-a-Service (PaaS) offering using multi-tenant Federal Government cloud and private cloud computing environment deployment models."
+   },
+   {
+    "function_id": "monitoring_observability",
+    "function": "Monitoring & observability",
+    "evidence": "Certified support personnel manage every layer beneath the customer application: physical datacenter security, redundant power/cooling, network, storage, hypervisor servers, operating systems, databases, web and application runtimes, patching, backup, disaster recovery, identity and access management, continuous monitoring, and the underlying NIST SP 800-53 control set."
+   },
+   {
+    "function_id": "backup_disaster_recovery",
+    "function": "Backup, restore & disaster recovery",
+    "evidence": "Certified support personnel manage every layer beneath the customer application: physical datacenter security, redundant power/cooling, network, storage, hypervisor servers, operating systems, databases, web and application runtimes, patching, backup, disaster recovery, identity and access management, continuous monitoring, and the underlying NIST SP 800-53 control set."
+   }
+  ],
+  "classification_evidence": "FISMA Community Cloud is a federal government-dedicated multi-tenant community cloud platform that enables agencies and government contractors to cost-effectively procure virtualized cloud server, network and security infrastructure resources available at a fixed or consumption-based price.",
+  "classification_source_url": "https://www.it-cnp.com/fisma-government-community-cloud",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID F1303221956",
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1303221956/"
+ },
+ {
+  "fork_id": "FR1900048743",
+  "vendor": "Oracle",
+  "product": "Oracle Cloud Infrastructure-Government Cloud",
+  "service_model": [
+   "IaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cloud Infrastructure & Hosting",
+  "description": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available services that scale elastically. With Oracle Cloud Infrastructure, public sector entities can use Oracle development tools to enhance existing applications while creating and integrating new cloud-native applications.",
+  "functions_claimed": [],
+  "classification_evidence": "We operate government cloud regions in the US, UK, and Australia and provide governments worldwide with a range of deployment models to meet local data residency, classification, operational, and security requirements.",
+  "classification_source_url": "https://www.oracle.com/europe/government/govcloud/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR1900048743",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1900048743/"
+ },
+ {
+  "fork_id": "FR1801046750",
+  "vendor": "United States Department of the Treasury",
+  "product": "Treasury Cloud (TCloud)",
+  "service_model": [
+   "IaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cloud Infrastructure & Hosting",
+  "description": "The Treasury Cloud High (TCloud-H) system is owned and operated by the Department of the Treasury, serving as a multi-cloud IaaS/PaaS hosting environment designed to process High Impact level information. It includes the following multitenant, government-exclusive cloud platforms: \r\n•\tAmazon Web Services (AWS) GovCloud East/West, \r\n•\tOracle Cloud Infrastructure (OCI) GovCloud East/West, \r\n•\tMicrosoft Azure GovCloud East/West, and \r\n•\tGoogle Cloud Platform (GCP) GovCloud East4/Central1 \r\nTCloud-H FedRAMP’ed environment is offered as a shared service to Treasury Bureau’s, available in two cloud hosting models: Boundary Protected and Managed. Contractual support from each cloud vendor is in place to design, build, maintain, and manage every individual platform based on the hosting model. TCloud-H allows Treasury customers to incorporate innovative tools and forward-thinking IT solutions throughout the design, build, and maintenance phases of a cloud-based project. \r\nTCloud provides the following Boundary Protected and Managed services to meet business or mission requirements:\r\nBoundary Protected Hosting Environment\r\n•\tCloud account provisioning and invoicing, with transparency on service utilization with FinOps dashboards.\r\n•\tIntrusion Prevention Services (IPS); VPN; Direct connection with Treasury T-NET network.\r\n•\tMonitoring of network ingress and egress traffic.\r\n•\tPreconfigured networking resources.\r\n•\tSingle Sign-On with connection to TCloud Active Directory.\r\n•\tIAM policies, groups, roles, preconfigured to enforce identify guardrails. \r\n•\tAudit trails and change monitoring that produce alerts and notifications to predetermined set of stakeholders.\r\n•\tManagement, configuration, and provisioning of Atlassian software suite available for customers- JIRA, Confluence, Stash (BitBucket), and Bamboo.\r\n•\tSelf-managed access to private or intra-VPC native cloud services and resources provided by each CSP.\r\nManaged Hosting Environment\r\n•\tCloud account provisioning and invoicing, with transparency on service utilization with FinOps dashboards.\r\n•\tRemote Desktop Services.\r\n•\tOperating System (OS) level patching performed as part of monthly patch deployments.\r\n•\tVulnerability scanning: OS and Databases.\r\n•\tIdentification, prioritization, and mitigation of OS and Database level vulnerabilities.\r\n•\tConfiguration management for OS and Databases. \r\n•\tIntrusion Prevention Services (IPS); VPN; Web Application Firewall (WAF); Direct connection with Treasury T-NET network.\r\n•\tAnti-Virus and Host Based Firewall. \r\n•\tEndpoint Detection and Response. \r\n•\tAudit log ingestion and monitoring (OS Level, Database, and CSP).\r\n•\tDirectory services, accounts and permission management provided through Microsoft Active Directory.\r\n•\tIAM policies, groups, roles, preconfigured to enforce identify guardrails. \r\n•\tIAM audit trails and change monitoring that produce alerts and notifications to predetermined set of stakeholders.\r\n•\tSingle Sign-On with connection to TCloud Active Directory.\r\n•\tMonitoring of network ingress and egress traffic.  \r\n•\tPreconfigured networking resources, with audit trails and change monitoring that produce alerts and notifications to predetermined set of stakeholders.\r\n•\tUnified cloud security platform that includes vulnerability management, compliance and posture management, workload protection, and container security.\r\n•\tDisaster recovery and Contingency Planning - Backup and restore.\r\n•\tDisaster recovery and Contingency Planning - Different availability zones for resiliency.\r\n•\tSecurity incident and response monitoring and coordination with appropriate stakeholders.\r\n•\tManagement, configuration, and provisioning of Atlassian software suite available for customers- JIRA, Confluence, Stash (BitBucket), and Bamboo.\r\n•\tAccess to native cloud services and resources provided by each CSP.",
+  "functions_claimed": [
+   {
+    "function_id": "hosting_platform",
+    "function": "Hosting / managed cloud platform",
+    "evidence": "The Treasury Cloud High (TCloud-H) system is owned and operated by the Department of the Treasury, serving as a multi-cloud IaaS/PaaS hosting environment designed to process High Impact level information."
+   },
+   {
+    "function_id": "dedicated_environments",
+    "function": "Dedicated / enclave environments & hosting models",
+    "evidence": "TCloud-H FedRAMP’ed environment is offered as a shared service to Treasury Bureau’s, available in two cloud hosting models: Boundary Protected and Managed."
+   },
+   {
+    "function_id": "deployment_configuration",
+    "function": "Deployment templates & preconfigured resources",
+    "evidence": "Preconfigured networking resources."
+   },
+   {
+    "function_id": "infrastructure_providers",
+    "function": "Underlying cloud infrastructure & providers",
+    "evidence": "Self-managed access to private or intra-VPC native cloud services and resources provided by each CSP."
+   },
+   {
+    "function_id": "monitoring_observability",
+    "function": "Monitoring & observability",
+    "evidence": "Monitoring of network ingress and egress traffic."
+   },
+   {
+    "function_id": "security_services",
+    "function": "Platform security services (IPS/IDS, WAF, endpoint)",
+    "evidence": "Intrusion Prevention Services (IPS); VPN; Direct connection with Treasury T-NET network."
+   },
+   {
+    "function_id": "backup_disaster_recovery",
+    "function": "Backup, restore & disaster recovery",
+    "evidence": "Disaster recovery and Contingency Planning - Backup and restore."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity, access & directory services",
+    "evidence": "Single Sign-On with connection to TCloud Active Directory."
+   },
+   {
+    "function_id": "managed_operations",
+    "function": "Managed operations (patching, scanning, configuration)",
+    "evidence": "Operating System (OS) level patching performed as part of monthly patch deployments."
+   },
+   {
+    "function_id": "account_provisioning",
+    "function": "Cloud account provisioning, invoicing & utilization transparency",
+    "evidence": "Cloud account provisioning and invoicing, with transparency on service utilization with FinOps dashboards."
+   }
+  ],
+  "classification_evidence": "Treasury’s recently awarded Blanket Purchase Agreement (BPA) for cloud services (Treasury Cloud [TCloud]) will support our design, development, and implementation of security patterns and guardrails with expanded Security Operations Center (SOC) capabilities to accommodate increased telemetry from cloud assets and workloads.",
+  "classification_source_url": "https://home.Treasury.gov/system/files/266/FY-2025-DO-Capital-Investment-Plan.pdf",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR1801046750",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1801046750/"
+ }
+]

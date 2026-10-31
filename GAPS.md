@@ -1829,6 +1829,15 @@ No new gap is registered by this set. Four already-registered founding gaps gain
 
 Resolution note, stated plainly: tier stays null. This fork claims four families under the founding group's taxonomy applied verbatim, proven by the extractor reproducing the founding group's 34 claims exactly before tagging — classification needed the live-docs citation, claims did not, and the two evidence streams never mix. The category's centre is a named absence here: hosting_platform stands at zero, because "cloud computing environment" is not the family's phrase, and security_services stands at zero on a case artifact (lowercase "intrusion prevention" against title-case patterns), recorded rather than repaired. A boundary strain is recorded in the set's union spec and readme, not smoothed: the census boundary sends performed-services prose to System Administration, this description is dense with it, and the set keeps the research pass's recorded adjudication to this category, importing nothing from System Administration. Documented control claims stand in place of a baseline: contingency planning at the taxonomy tier, six families at the prose tier, eight families not documented.
 
+## Remainder Group 6 — Cloud Infrastructure & Hosting L3-adjacent (6 forks)
+
+New gaps at this tier from the uplift decision, specified in groups/cloud-infrastructure-hosting-l3/UNION-SPEC.md, not implemented (the founding group's fourteen gaps are NOT re-registered; their claimant movements at this tier — several gaining claimants, five losing all taxonomy claimants here including the encryption and CDN gaps — are recorded in the union spec):
+- [ ] open — Stronger authentication (IA-2(1)/(2)/IA-5) — an identity-provider property, not taken as an uplift
+- [ ] open — FIPS-validated cryptography (SC-13)
+- [ ] open — Encryption at rest (SC-28)
+- [ ] open — Audit retention (AU-11)
+- [ ] open — Session lock / termination (AC-11/AC-12)
+
 ## Later groups
 
 Each group appends its section here when it ships.

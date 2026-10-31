@@ -1,0 +1,48 @@
+Negative-control mutation drill (recorded run) — audit hash chain
+==================================================================
+
+Invariant under test: the audit hash chain (AU-9, AU-3) — every
+audit entry's `hash` is the SHA-256 of the canonical JSON of
+{seq, ts, actor, action, target, details, prev_hash}, chained to
+its predecessor, so any in-place edit, deletion, or file tampering
+is detected by AuditLog.verify_chain at the first bad index. This
+seam is new at this tier (a High-baseline uplift); it has no
+founding counterpart.
+
+Mutation: in src/cloudinfra/audit.py, the return of _entry_hash
+was replaced with the constant `"0" * 64` (the function kept, the
+hash removed). The premutation file is preserved at
+tests/audit.py.premutation; the premutation SHA-256 is recorded in
+tests/audit.py.sha256.
+
+Command: PYTHONPATH=src python3 -m unittest discover -s tests
+
+Outcome: exactly 4 failures recorded by the drill:
+- test_audit_chain.TestHashChainFields.test_hash_is_sha256_of_canonical_json
+  (the hash is recomputed independently with hashlib; a constant
+  is not the SHA-256 of anything)
+- test_audit_chain.TestHashChainTamper.test_in_place_edit_localized
+  (under a constant hash an edited entry still verifies, so the
+  expected (False, 1) becomes (True, None))
+- test_audit_chain.TestHashChainPersistence.test_edited_jsonl_line_fails_verification_after_reload
+  (the edited line's stored constant hash matches its recomputed
+  constant hash after reload, so the tamper goes undetected)
+- test_negative_control.TestAuditDrillRecord.test_audit_restored_byte_identical
+  (the byte-identical pin — expected to fail while audit.py is
+  mutated; it passes again after the restore)
+
+One further error appeared in the drill run and is not counted
+above: test_negative_control.TestAuditDrillRecord.test_audit_mutation_run_recorded
+errors because this record does not exist yet while the drill is
+running; it passes once this file is written.
+
+Under a constant hash the chain still self-links and a clean log
+still verifies, so the three discriminating failures above are
+exactly the tests that tell a real hash from a constant. (The
+structural tamper cases — stripped hash field, deleted entry,
+rewritten prev_hash — fail verification in both worlds and so
+pass under the mutant too.)
+
+failures recorded by the drill: 4
+
+Restored byte-identical: sha256 matches tests/audit.py.sha256.

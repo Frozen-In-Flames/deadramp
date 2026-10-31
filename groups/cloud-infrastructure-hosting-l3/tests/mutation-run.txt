@@ -1,0 +1,41 @@
+Negative-control mutation drill (recorded run)
+==============================================
+
+Invariant under test: the deployment slot rule — within one
+tenancy, at most one deployment of a given workload reference may
+be active at a time (Core function 5, SI-10 input validation).
+The invariant is the founding L2 group's signature invariant,
+carried up whole to this tier; the drill is the founding drill
+re-run in this tree.
+
+Mutation: in src/cloudinfra/store.py, the body of
+CloudInfraStore._check_deployment_slot was replaced with
+`return None` (the seam kept, the check removed). The premutation
+file is preserved at tests/store.py.premutation; the premutation
+SHA-256 is recorded in tests/store.py.sha256.
+
+Command: PYTHONPATH=src python3 -m unittest discover -s tests
+
+Outcome: exactly 4 failures recorded by the drill:
+- test_deployments.TestDeployments.test_slot_rule_blocks_second_active_same_workload
+  (the refused second activation succeeds under the mutant)
+- test_negative_control.TestNegativeControlDeploymentSlot.test_canonical_expectation_refuses_second_activation
+  (the canonical-expectation test: the real store no longer refuses)
+- test_service.TestService.test_end_to_end_flow
+  (the slot refusal over HTTP returns 200 instead of 400)
+- test_negative_control.TestDrillRecord.test_store_restored_byte_identical
+  (the byte-identical pin — expected to fail while store.py is
+  mutated; it passes again after the restore)
+
+Three further errors appeared in the drill run and are not counted
+above: test_negative_control.TestDrillRecord.test_mutation_run_recorded
+errors because this record does not exist yet while the drill is
+running (it passes once this file is written), and the two
+TestAuditDrillRecord tests error because the audit-hash drill of
+this tier had not yet been run at that point (see
+audit-mutation-run.txt).
+
+failures recorded by the drill: 4
+
+Restored byte-identical: sha256 matches tests/store.py.sha256.
+The failure set is identical to the founding L2 drill's.
