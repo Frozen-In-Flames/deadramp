@@ -14,7 +14,10 @@ Status at delivery: **104 tests, OK** against the implementation
 in `../src/`. After the remainder addition (unit
 `addition:learning-management-l2`): **118 tests, OK** (see the
 additions row in the layout table and the drill re-run record at
-the end of this file). (Run exactly as above: helpers are imported as a
+the end of this file). After the no-signal addition
+(F1207261443, Skillsoft / Private Cloud): **133 tests, OK** (see
+the no-signal row in the layout table and the second drill
+re-run record at the end of this file). (Run exactly as above: helpers are imported as a
 top-level module from the tests directory and `tests/__init__.py`
 is empty by design, so package-mode discovery with `-t .` is not
 the supported entry point for this group.)
@@ -39,7 +42,8 @@ the supported entry point for this group.)
 | `test_service.py` | 10 | REST API — live HTTP server: health, 401 unknown user / role mismatch, full flow (learner → course → content → lesson plan → event → register → authorization decided by a different actor → IDP → competency → progress → statement → compliance derived overdue → completed → report → search), learner write 403 + denied audited, learner scope over HTTP, audit admin+auditor only, 400/404 envelopes |
 | `test_main_cli.py` | 1 | `python -m lms serve` subprocess with demo users alice/bob/carol/dana |
 | `test_negative_control.py` | 3 | Negative control (below) |
-| `test_additions.py` | 14 | Remainder addition (unit `addition:learning-management-l2`) — spec integrity for the appended Percipio sheet (count/order/membership, the original claim table standing at 26, the literal **zero-claim** table and whole-taxonomy zero-claim set, tier fields, verbatim description, census citation accounting, exclusion-segment pin, named-absence rechecks, near-miss pins) + 2 substrate cases (progress record with compliance status derived at read; catalogue content records with an exact-eight-key statement and recursive no-score scan) |
+| `test_additions.py` | 14 | Remainder addition (unit `addition:learning-management-l2`) — spec integrity for the appended Percipio sheet (count/order/membership, the original claim table standing at 26, the literal **zero-claim** table and whole-taxonomy zero-claim set, tier fields, verbatim description, census citation accounting, exclusion-segment pin, named-absence rechecks, near-miss pins) + 2 substrate cases (progress record with compliance status derived at read; catalogue content records with an exact-eight-key statement and recursive no-score scan). Three whole-file pins (count/order, membership, zero-claim list) are scoped to this unit's own slice (the first 2 sheets) since the no-signal sheet now follows — disclosed in their docstrings |
+| `test_nosignal_addition.py` | 15 | No-signal addition (F1207261443, Skillsoft / Private Cloud) — spec integrity for the appended sheet (count/order, both shipped sheets deep-equal to git HEAD, membership against the census `no-signal-set` with its `no_signal` flag / empty citations / classifier note pinned, the literal **zero-claim** table and whole-taxonomy zero-claim set, unchanged group total of 26 with 2 of 3 forks at zero, tier fields, description verbatim against both cached sources, classification fields pinned against `../../remainder/nosignal_report.json` with the classification sentence asserted absent from the cached description, the **platform-documentation caveat** pinned on the report's notes and on ADDENDUM §7's text, named-absence rechecks, near-miss pins) + 2 substrate cases (hosted catalogue content with progress record and compliance status derived at read; an exact-eight-key statement over a hosted content item with recursive no-score scan) |
 | `lms_helpers.py` | — | Shared fixtures: demo users (ADMIN/INSTRUCTOR/LEARNER/AUDITOR), `USERS` registry, `fresh_store()`, and `make_store()` building an LmsStore + AuditLog + one learner (ref `carol`) + one course |
 
 ## Negative control
@@ -112,3 +116,28 @@ tripping on the mutant exactly as designed. `store.py` was
 restored from `../scratch/store.py.premutation-additions` and
 verified SHA-256-identical to the shipped hash (`820d9712…`);
 the suite re-ran green: **118 tests, OK**.
+
+## No-signal addition — drill re-run (F1207261443, Skillsoft / Private Cloud)
+
+The addition changes no core code (`src/` byte-identical, all 7
+`lms` module hashes verified against the pre-work baseline in
+`../scratch/nosignal_src_hashes_before.txt`), so the group's
+signature drill was re-run in this tree against the enlarged
+suite (133 tests). Raw output in
+`../scratch/nosignal_mutation_run.txt`.
+
+**Drill re-run — compliance derivation.** The overdue branch of
+`LmsStore._derive_status` in `src/lms/store.py` (`return
+"overdue"` under `if as_of_date > due:`) was patched to `return
+"current"` — the same scoped patch as the original drill (the
+branch text occurs exactly once in the file, count asserted
+before patching). The full suite ran: **133 tests, exactly 11
+failures** — the shipped drill's identical 9, the additions
+re-run's +1
+(`test_additions.TestAdditionSubstrateCases.test_percipio_progress_and_compliance_derivation`),
+and exactly 1 from the no-signal module,
+`test_nosignal_addition.TestNoSignalSubstrateCases.test_private_cloud_progress_and_compliance_derivation`,
+tripping on the mutant exactly as designed. `store.py` was
+restored from `../scratch/store.py.premutation-nosignal` and
+verified SHA-256-identical to the shipped hash (`820d9712…`);
+the suite re-ran green: **133 tests, OK**.

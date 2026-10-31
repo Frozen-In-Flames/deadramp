@@ -165,5 +165,25 @@
   "functions_claimed": [],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2118043605/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2118043605; description whitespace normalized (words verbatim)"
+ },
+ {
+  "fork_id": "F1207261443",
+  "vendor": "Skillsoft",
+  "product": "Private Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Learning Management",
+  "description": "Skillsoft is a U.S. based educational technology company that produces learning management system software and content. It is one of the world's largest corporate training providers, with 10,000 customers, 60 million users, and 2,400 employees as of 2014. Skillsoft is an education provider to many U.S. DoD and U.S. Federal organizations.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1207261443/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1207261443; description whitespace normalized (words verbatim)",
+  "classification_evidence": "With the Skillsoft Percipio Platform, you can experience multiple ways to learn.",
+  "classification_source_url": "https://documentation.skillsoft.com/en_us/compliance_trng/content/b_learner/lrnr_getting_started.htm"
  }
 ]

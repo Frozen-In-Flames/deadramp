@@ -43,6 +43,40 @@ this tree (exactly 10 failures under mutation: the shipped 9
 plus the additions case). Full account in
 [`ADDENDUM.md`](ADDENDUM.md).
 
+## No-signal addition (post-census)
+
+The group now specs **3 forks**: after the census, **Skillsoft
+Private Cloud** (Skillsoft, FedRAMP Moderate / Certified) was
+added as a third spec sheet. The census had set this fork
+aside in its **no-signal set**: its cached marketplace
+description is a 339-character company profile of Skillsoft
+only, from which no function could be cited. Its category was
+resolved afterwards from the vendor's own public pages
+(`../../remainder/nosignal_report.json`): Learning Management,
+on the sentence "With the Skillsoft Percipio Platform, you
+can experience multiple ways to learn." from Skillsoft's
+documentation portal
+(https://documentation.skillsoft.com/en_us/compliance_trng/content/b_learner/lrnr_getting_started.htm),
+recorded on the sheet as `classification_evidence` /
+`classification_source_url`. **Caveat, stated plainly:** the
+evidence is Skillsoft's **Percipio platform documentation** —
+the platform this Private Cloud offering delivers; no Private
+Cloud-specific sentence exists on the official pages checked.
+The group's second fork *is* Percipio under a different
+offering record; the two records are distinct forks and both
+stand. Under the group's 26-family taxonomy applied verbatim,
+Private Cloud claims **0 functions** — a zero-claim fork, with
+zero raw hits: no functional pattern phrase of any family
+appears in its company-profile description. The group total
+stays **26 claims** (1 of 3 forks claiming), and every checked
+absence survives in both senses on its words. The core is
+unchanged (`src/` byte-identical); the addition brings 15 new
+spec-integrity and substrate tests — **133 tests, OK** — and
+the signature compliance-derivation drill was re-run in this
+tree (exactly 11 failures under mutation: the shipped 9, the
+additions case, and the no-signal case). Full account in
+[`ADDENDUM.md`](ADDENDUM.md) §7–§11.
+
 ## What the fork is: a learning records substrate
 
 The claims prove a **records substrate**, not a learning-delivery

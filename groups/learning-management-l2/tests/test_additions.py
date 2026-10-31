@@ -170,9 +170,13 @@ class TestAdditionSpecIntegrity(unittest.TestCase):
 
     def test_sheet_count_and_order(self):
         """2 sheets: the shipped singleton untouched in place,
-        then the addition in census unit order."""
+        then the addition in census unit order. (Scoped to this
+        unit's own slice — the first 2 sheets: a third sheet,
+        the no-signal addition, now follows; it is pinned in
+        test_nosignal_addition.py. Every fact pinned here about
+        this unit is unchanged.)"""
         specs = _load_specs()
-        self.assertEqual([s["fork_id"] for s in specs],
+        self.assertEqual([s["fork_id"] for s in specs[:2]],
                          ORIGINAL_ORDER + UNIT_ORDER)
 
     def test_membership_matches_remainder_unit(self):
@@ -185,7 +189,7 @@ class TestAdditionSpecIntegrity(unittest.TestCase):
         self.assertEqual(unit["fork_ids"], UNIT_ORDER)
         self.assertEqual(unit["extends_group"], "learning-management-l2")
         specs = _load_specs()
-        self.assertEqual([s["fork_id"] for s in specs[1:]],
+        self.assertEqual([s["fork_id"] for s in specs[1:2]],
                          unit["fork_ids"])
 
     def test_original_claim_table_stands(self):
@@ -231,11 +235,17 @@ class TestAdditionSpecIntegrity(unittest.TestCase):
 
     def test_group_totals(self):
         """The group total stays 26 claims; 1 of 2 forks claims.
-        Every family is claimed by exactly the original fork."""
+        Every family is claimed by exactly the original fork.
+        (The zero-claim list is scoped to this unit's own slice
+        — the first 2 sheets: the no-signal fork appended after
+        them also claims zero, pinned in
+        test_nosignal_addition.py. The sum and the by-family
+        pins below run over the whole file and are unaffected:
+        the third sheet adds no claims.)"""
         specs = _load_specs()
         self.assertEqual(
             sum(len(s["functions_claimed"]) for s in specs), 26)
-        zero = [s["fork_id"] for s in specs
+        zero = [s["fork_id"] for s in specs[:2]
                 if not s["functions_claimed"]]
         self.assertEqual(zero, ["FR2118043605"])
         by_family = {}
