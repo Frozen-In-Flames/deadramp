@@ -1,0 +1,151 @@
+[
+ {
+  "fork_id": "F1405214357",
+  "vendor": "PowerTrain Inc.",
+  "product": "PowerTrain Government Learning Enclave - SaaS",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Learning Management",
+  "description": "The PowerTrain Government Enclave (PGE) is a secure, FedRAMP-authorized cloud environment that hosts a diverse portfolio of mission and enterprise applications. This includes the Government Learning Enclave (GLE), PowerTrain\u2019s integrated learning ecosystem, as well as a range of Software-as-a-Service (SaaS) offerings and other secure applications. Key solutions within the enclave include the Callisto Learning Platform (powered by Moodle\u2122), Career Voyager Talent Management Platform, LMS Xpress, AegisIQ, Drupal\u2122 Secure Baseline for Government, Veracity LRS, and Rustici Content Controller. All applications are deployed within a unified security framework and support multi-factor authentication and single sign-on for secure, seamless access. The Callisto Learning Platform powered by Moodle\u2122 is hardened and secured for government use to provide a comprehensive suite of learning delivery and management tools for enterprises large and small. Included in its approved baseline are the current Moodle\u2122 long term release; Electronic Human Resource Integration (EHRI) data collection and reporting; integrated Authorization, Agreement, and Certification of Training Form (SF-182); Individual Development Plans (IDP); comprehensive registration management for live learning events with adjustable workflow, wait list management, and automated notifications; competency management; lesson plans; mandatory training compliance; configurable reports; and support for multiple tenants. The Career Voyager Talent Platform includes Career Mapping, Leadership Succession Planning, Candidate Review, and PowerSurvey. Career Mapping enables users to map a progressive career ladder of job opportunities within an organization, as well as view skills, abilities, competencies, recommended training, and developmental activities necessary to progress from one position to another; Leadership Succession Planning resources, assessments, tools, and reference materials to promote self-discovery, accelerate career advancement, and support leadership development; Candidate Review System supports talent acquisition efforts for fellowships, technical internships, and other multi-phase, interactive application processes; and PowerSurvey supports a variety of employee data collection and secure reporting efforts. LMS-Express is a powerful, lightweight learning management system designed for targeted asynchronous eLearning content delivery. AegisIQ is a hardened and secure version of MediaWiki\u2122 and includes additional functionality to support the unique reporting requirements of government users. Our Drupal\u2122 Secure Baseline for Government is a hardened and secure version of Drupal\u2122 and includes a number of Drupal\u2122 modules cleared for use in the baseline with the ability to extend functionality. Veracity LRS is a robust solution designed to capture, store, and return data about learning experiences in compliance with the Experience API (xAPI) specifications. It serves as a central repository for learning records, enabling detailed tracking and analysis of learner activities across the components of the PowerTrain Learning Ecosystem. With powerful analytics capabilities, the LRS allows organizations to provide a comprehensive view of learning outcomes and effectiveness, enabling educators to make informed decisions to enhance learning strategies and improve overall educational outcomes. Rustici Content Controller ensures uniform access to training materials such as SCORM 1.2, SCORM 2004 (2nd, 3rd, & 4th editions), AICC, xAPI, cmi5, MP3, MP4, and PDF, enhancing the interoperability and efficiency of content delivery without the need for duplicating course files. This capability not only streamlines the management of eLearning content but also supports seamless, secure, and scalable training deployments. Event Registration System supports online registration for live and virtual events. Moodle\u2122 is a registered trademark of Moodle Pty Ltd or its related affiliates. Drupal\u2122 is a registered trademark of Dries Buytaert. MediaWiki\u2122 is a registered trademark of the Wikimedia Foundation. PowerTrain Government Enclave applications currently In Process include: Learnito (Powered by SparkLearn).",
+  "functions_claimed": [
+   {
+    "function_id": "hosting_platform",
+    "function": "Cloud hosting platform (platform note)",
+    "evidence": "The PowerTrain Government Enclave (PGE) is a secure, FedRAMP-authorized cloud environment that hosts a diverse portfolio of mission and enterprise applications."
+   },
+   {
+    "function_id": "identity_authentication",
+    "function": "Identity & authentication \u2014 MFA / SSO (platform)",
+    "evidence": "All applications are deployed within a unified security framework and support multi-factor authentication and single sign-on for secure, seamless access."
+   },
+   {
+    "function_id": "learning_content_delivery",
+    "function": "Learning delivery & management",
+    "evidence": "The Callisto Learning Platform powered by Moodle\u2122 is hardened and secured for government use to provide a comprehensive suite of learning delivery and management tools for enterprises large and small."
+   },
+   {
+    "function_id": "ehri_data_collection_reporting",
+    "function": "EHRI data collection & reporting (HR integration)",
+    "evidence": "Included in its approved baseline are the current Moodle\u2122 long term release; Electronic Human Resource Integration (EHRI) data collection and reporting; integrated Authorization, Agreement, and Certification of Training Form (SF-182); Individual Development Plans (IDP); comprehensive registration management for live learning events with adjustable workflow, wait list management, and automated notifications; competency management; lesson plans; mandatory training compliance; configurable reports; and support for multiple tenants."
+   },
+   {
+    "function_id": "training_authorization_forms",
+    "function": "Training authorization & certification forms (SF-182)",
+    "evidence": "Included in its approved baseline are the current Moodle\u2122 long term release; Electronic Human Resource Integration (EHRI) data collection and reporting; integrated Authorization, Agreement, and Certification of Training Form (SF-182); Individual Development Plans (IDP); comprehensive registration management for live learning events with adjustable workflow, wait list management, and automated notifications; competency management; lesson plans; mandatory training compliance; configurable reports; and support for multiple tenants."
+   },
+   {
+    "function_id": "individual_development_plans",
+    "function": "Individual Development Plans (IDP)",
+    "evidence": "Included in its approved baseline are the current Moodle\u2122 long term release; Electronic Human Resource Integration (EHRI) data collection and reporting; integrated Authorization, Agreement, and Certification of Training Form (SF-182); Individual Development Plans (IDP); comprehensive registration management for live learning events with adjustable workflow, wait list management, and automated notifications; competency management; lesson plans; mandatory training compliance; configurable reports; and support for multiple tenants."
+   },
+   {
+    "function_id": "event_registration",
+    "function": "Registration management for learning events",
+    "evidence": "Included in its approved baseline are the current Moodle\u2122 long term release; Electronic Human Resource Integration (EHRI) data collection and reporting; integrated Authorization, Agreement, and Certification of Training Form (SF-182); Individual Development Plans (IDP); comprehensive registration management for live learning events with adjustable workflow, wait list management, and automated notifications; competency management; lesson plans; mandatory training compliance; configurable reports; and support for multiple tenants."
+   },
+   {
+    "function_id": "adjustable_workflow",
+    "function": "Adjustable workflow",
+    "evidence": "Included in its approved baseline are the current Moodle\u2122 long term release; Electronic Human Resource Integration (EHRI) data collection and reporting; integrated Authorization, Agreement, and Certification of Training Form (SF-182); Individual Development Plans (IDP); comprehensive registration management for live learning events with adjustable workflow, wait list management, and automated notifications; competency management; lesson plans; mandatory training compliance; configurable reports; and support for multiple tenants."
+   },
+   {
+    "function_id": "waitlist_management",
+    "function": "Wait list management",
+    "evidence": "Included in its approved baseline are the current Moodle\u2122 long term release; Electronic Human Resource Integration (EHRI) data collection and reporting; integrated Authorization, Agreement, and Certification of Training Form (SF-182); Individual Development Plans (IDP); comprehensive registration management for live learning events with adjustable workflow, wait list management, and automated notifications; competency management; lesson plans; mandatory training compliance; configurable reports; and support for multiple tenants."
+   },
+   {
+    "function_id": "automated_notifications",
+    "function": "Automated notifications",
+    "evidence": "Included in its approved baseline are the current Moodle\u2122 long term release; Electronic Human Resource Integration (EHRI) data collection and reporting; integrated Authorization, Agreement, and Certification of Training Form (SF-182); Individual Development Plans (IDP); comprehensive registration management for live learning events with adjustable workflow, wait list management, and automated notifications; competency management; lesson plans; mandatory training compliance; configurable reports; and support for multiple tenants."
+   },
+   {
+    "function_id": "competency_management",
+    "function": "Competency management",
+    "evidence": "Included in its approved baseline are the current Moodle\u2122 long term release; Electronic Human Resource Integration (EHRI) data collection and reporting; integrated Authorization, Agreement, and Certification of Training Form (SF-182); Individual Development Plans (IDP); comprehensive registration management for live learning events with adjustable workflow, wait list management, and automated notifications; competency management; lesson plans; mandatory training compliance; configurable reports; and support for multiple tenants."
+   },
+   {
+    "function_id": "lesson_plans",
+    "function": "Lesson plans",
+    "evidence": "Included in its approved baseline are the current Moodle\u2122 long term release; Electronic Human Resource Integration (EHRI) data collection and reporting; integrated Authorization, Agreement, and Certification of Training Form (SF-182); Individual Development Plans (IDP); comprehensive registration management for live learning events with adjustable workflow, wait list management, and automated notifications; competency management; lesson plans; mandatory training compliance; configurable reports; and support for multiple tenants."
+   },
+   {
+    "function_id": "mandatory_training_compliance",
+    "function": "Mandatory training compliance",
+    "evidence": "Included in its approved baseline are the current Moodle\u2122 long term release; Electronic Human Resource Integration (EHRI) data collection and reporting; integrated Authorization, Agreement, and Certification of Training Form (SF-182); Individual Development Plans (IDP); comprehensive registration management for live learning events with adjustable workflow, wait list management, and automated notifications; competency management; lesson plans; mandatory training compliance; configurable reports; and support for multiple tenants."
+   },
+   {
+    "function_id": "reporting",
+    "function": "Reporting & configurable reports",
+    "evidence": "Included in its approved baseline are the current Moodle\u2122 long term release; Electronic Human Resource Integration (EHRI) data collection and reporting; integrated Authorization, Agreement, and Certification of Training Form (SF-182); Individual Development Plans (IDP); comprehensive registration management for live learning events with adjustable workflow, wait list management, and automated notifications; competency management; lesson plans; mandatory training compliance; configurable reports; and support for multiple tenants."
+   },
+   {
+    "function_id": "multi_tenancy",
+    "function": "Multi-tenancy (platform note)",
+    "evidence": "Included in its approved baseline are the current Moodle\u2122 long term release; Electronic Human Resource Integration (EHRI) data collection and reporting; integrated Authorization, Agreement, and Certification of Training Form (SF-182); Individual Development Plans (IDP); comprehensive registration management for live learning events with adjustable workflow, wait list management, and automated notifications; competency management; lesson plans; mandatory training compliance; configurable reports; and support for multiple tenants."
+   },
+   {
+    "function_id": "career_mapping",
+    "function": "Career mapping & recommended training",
+    "evidence": "Career Mapping enables users to map a progressive career ladder of job opportunities within an organization, as well as view skills, abilities, competencies, recommended training, and developmental activities necessary to progress from one position to another; Leadership Succession Planning resources, assessments, tools, and reference materials to promote self-discovery, accelerate career advancement, and support leadership development; Candidate Review System supports talent acquisition efforts for fellowships, technical internships, and other multi-phase, interactive application processes; and PowerSurvey supports a variety of employee data collection and secure reporting efforts."
+   },
+   {
+    "function_id": "succession_planning",
+    "function": "Leadership succession planning",
+    "evidence": "Career Mapping enables users to map a progressive career ladder of job opportunities within an organization, as well as view skills, abilities, competencies, recommended training, and developmental activities necessary to progress from one position to another; Leadership Succession Planning resources, assessments, tools, and reference materials to promote self-discovery, accelerate career advancement, and support leadership development; Candidate Review System supports talent acquisition efforts for fellowships, technical internships, and other multi-phase, interactive application processes; and PowerSurvey supports a variety of employee data collection and secure reporting efforts."
+   },
+   {
+    "function_id": "candidate_review",
+    "function": "Candidate review (talent acquisition)",
+    "evidence": "Career Mapping enables users to map a progressive career ladder of job opportunities within an organization, as well as view skills, abilities, competencies, recommended training, and developmental activities necessary to progress from one position to another; Leadership Succession Planning resources, assessments, tools, and reference materials to promote self-discovery, accelerate career advancement, and support leadership development; Candidate Review System supports talent acquisition efforts for fellowships, technical internships, and other multi-phase, interactive application processes; and PowerSurvey supports a variety of employee data collection and secure reporting efforts."
+   },
+   {
+    "function_id": "employee_surveys",
+    "function": "Employee surveys & data collection",
+    "evidence": "Career Mapping enables users to map a progressive career ladder of job opportunities within an organization, as well as view skills, abilities, competencies, recommended training, and developmental activities necessary to progress from one position to another; Leadership Succession Planning resources, assessments, tools, and reference materials to promote self-discovery, accelerate career advancement, and support leadership development; Candidate Review System supports talent acquisition efforts for fellowships, technical internships, and other multi-phase, interactive application processes; and PowerSurvey supports a variety of employee data collection and secure reporting efforts."
+   },
+   {
+    "function_id": "knowledge_base_wiki",
+    "function": "Knowledge base / wiki platform (adjacent product)",
+    "evidence": "AegisIQ is a hardened and secure version of MediaWiki\u2122 and includes additional functionality to support the unique reporting requirements of government users."
+   },
+   {
+    "function_id": "web_cms_platform",
+    "function": "Web content management platform (adjacent product)",
+    "evidence": "Our Drupal\u2122 Secure Baseline for Government is a hardened and secure version of Drupal\u2122 and includes a number of Drupal\u2122 modules cleared for use in the baseline with the ability to extend functionality."
+   },
+   {
+    "function_id": "learning_experience_records",
+    "function": "Learning record store \u2014 experience data capture, storage & return (xAPI LRS)",
+    "evidence": "Veracity LRS is a robust solution designed to capture, store, and return data about learning experiences in compliance with the Experience API (xAPI) specifications."
+   },
+   {
+    "function_id": "learner_activity_tracking",
+    "function": "Learner activity tracking",
+    "evidence": "It serves as a central repository for learning records, enabling detailed tracking and analysis of learner activities across the components of the PowerTrain Learning Ecosystem."
+   },
+   {
+    "function_id": "learning_analytics",
+    "function": "Learning analytics & outcomes analysis",
+    "evidence": "With powerful analytics capabilities, the LRS allows organizations to provide a comprehensive view of learning outcomes and effectiveness, enabling educators to make informed decisions to enhance learning strategies and improve overall educational outcomes."
+   },
+   {
+    "function_id": "content_standards_distribution",
+    "function": "Content standards & distribution (SCORM / AICC / cmi5)",
+    "evidence": "Rustici Content Controller ensures uniform access to training materials such as SCORM 1.2, SCORM 2004 (2nd, 3rd, & 4th editions), AICC, xAPI, cmi5, MP3, MP4, and PDF, enhancing the interoperability and efficiency of content delivery without the need for duplicating course files."
+   },
+   {
+    "function_id": "learning_content_management",
+    "function": "eLearning content management",
+    "evidence": "This capability not only streamlines the management of eLearning content but also supports seamless, secure, and scalable training deployments."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1405214357/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1405214357; description whitespace normalized (words verbatim)"
+ }
+]

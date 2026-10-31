@@ -756,6 +756,29 @@ The fork's own engines, named from its description's own verbs in groups/law-enf
 
 The Group 34 category union's extended families (the legal corpora themselves, citation-validation engines, editorial enhancement systems, corpus search & relevance engines, AI / ML research assistance, document content storage / rendering / redaction) are already registered under Group 34 and are not re-registered here. Standing category exclusions (zero claims, not built): surveillance, facial recognition, predictive policing, real-time intelligence feeds — of these, only surveillance-class function is asserted by this fork's prose (as the engines above); the other three appear nowhere in its description and are not attributed to it. Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: the fork is FedRAMP Low; at L1 the audit trace holds on the FedRAMP Low side only, and Group 34's SI-7 and AU-6 citations are deliberately not imported (not Low selections; checksums are an implementation property at this tier).
 
+## Singleton 48 — Learning Management L2 (1 fork, new category)
+
+Extended functions, specified in groups/learning-management-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Learning delivery engine (the LMS runtime itself)
+- [ ] open — SCORM / AICC / cmi5 packaging & distribution runtime
+- [ ] open — xAPI protocol runtime & LRS conformance (statement records are Core; the protocol engine is not)
+- [ ] open — EHRI integration engine
+- [ ] open — Learning analytics & outcomes engines
+- [ ] open — Career mapping & recommendation engine
+- [ ] open — Leadership succession planning suite
+- [ ] open — Candidate review / talent acquisition system
+- [ ] open — Employee survey engine
+- [ ] open — Knowledge base / wiki platform (adjacent product)
+- [ ] open — Web CMS platform (adjacent product)
+- [ ] open — Content authoring tools & lesson-plan editor
+- [ ] open — SF-182 form rendering / routing / signature workflow (authorization records are Core)
+- [ ] open — Configurable report builder & dashboards
+- [ ] open — Workflow execution engine (the registry holds definitions only)
+- [ ] open — Notification automation & delivery transport
+- [ ] open — Identity provider / MFA / SSO service
+
+Platform-layer: multi-tenancy (claimed by the fork; single-tenant reference deployment); encryption at rest (deployment layer; TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: the category is new and strictly separate from Education & Training; no assessment or credential family exists in its taxonomy, because the description's only "assessments" names succession-planning resources and "Certification" occurs only inside the SF-182 form's proper name (the only "scor" hits are inside "SCORM") — checked absences, itemized in the spec. LRS statement records carry an exact eight-key shape with result text verbatim and no score field anywhere.
+
 ## Later groups
 
 Each group appends its section here when it ships.
