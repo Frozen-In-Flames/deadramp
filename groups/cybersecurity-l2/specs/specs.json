@@ -2085,5 +2085,679 @@
   ],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2219763604/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2219763604"
+ },
+ {
+  "fork_id": "FR2104942200",
+  "vendor": "Acuant, Inc.",
+  "product": "Connect, Ozone, & Facial Recognition System (COFRS)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Acuant is a leading global provider of identity verification, regulatory compliance (AML/KYC) and digital\nidentity solutions. Acuant's Trusted Identity Platform is powered by AI and human assisted machine learning to deliver unparalleled results and operational efficiency. Acuant Connect, Ozone and Facial Recognition System (COFRS) combines four product lines to fulfill the need to authenticate an individual against an identity document they present to establish a trusted relationship. \n\nCOFRS is a Software as a Service (SaaS) solution that provides an extremely robust basis for identity proofing. The products together authenticate the physical and digital information protecting the authenticity and integrity of the document, provide an assessment of the degree of match of the individual to the photo(s) stored on the document, and perform presentation attack detection via liveness assessment of the individual performing the transaction.\n\n- AssureID Connect SaaS authenticates the physical security features of the document\n- Ozone eMRTD Authentication SaaS ensures the electronic data is cryptographically intact and digitally bound to a trusted issuing authority\n- Once the document has been determined to be authentic and unmodified from its initial issuance, Acuant FaceID Government SaaS performs a facial recognition match of the photo(s)\nfrom the document with the individual presenting the document\n- Acuant Passive Liveness SaaS performs presentation attack detection to thwart fraud \n\nDocument authentication is vital part of confirming the identity of an individual. Authenticating a document requires reviewing the physical document for the presence of known security features;features which are specific to each document type and series from a given issuer. The security features that are found on the presented document then need to be compared against the expected/known security features for the specific document and its issuer.\n\nAdditionally, with the advent of electronic identity documents, the electronic data stored on the document must be authenticated and validated using Public Key Infrastructure (PKI) components to cryptographically assess the data encoded in the chip of the document and their binding to the Issuer. Finally, to ensure the document belongs to the individual presenting the document, a biometric match comparing the image from the document to the individual should be made, and the liveness of the individual must be determined - especially in remote vetting situations.",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "Acuant's Trusted Identity Platform is powered by AI and human assisted machine learning to deliver unparalleled results and operational efficiency."
+   },
+   {
+    "function_id": "fraud_identity",
+    "function": "Identity proofing & fraud prevention",
+    "evidence": "Acuant is a leading global provider of identity verification, regulatory compliance (AML/KYC) and digital\nidentity solutions."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "Acuant's Trusted Identity Platform is powered by AI and human assisted machine learning to deliver unparalleled results and operational efficiency."
+   },
+   {
+    "function_id": "encryption_feature",
+    "function": "Encryption & key management",
+    "evidence": "- AssureID Connect SaaS authenticates the physical security features of the document\n- Ozone eMRTD Authentication SaaS ensures the electronic data is cryptographically intact and digitally bound to a trusted issuing authority\n- Once the document has been determined to be authentic and unmodified from its initial issuance, Acuant FaceID Government SaaS performs a facial recognition match of the ..."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2104942200/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2104942200"
+ },
+ {
+  "fork_id": "FR2031936863",
+  "vendor": "Armis Federal LLC",
+  "product": "Armis FedRAMP Edition (AFE)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Armis FedRAMP Edition (AFE) is an agentless, enterprise-class security platform built off of the Armis Centrix\u2122 engine to help organizations discover and secure managed, unmanaged, and IoT devices, including medical devices and industrial control systems (ICS). Armis discovers every managed, unmanaged, and IoT device in any environment, analyzes device behavior to identify risks, vulnerabilities or attacks, and protects critical business information and systems. Armis easily integrates with existing security products. AFE passively monitors wired and wireless traffic in the environment to identify every device and to understand its behavior without disruption. AFE analyzes this data in the AFE Risk Engine which uses device profiles and characteristics from the AFE Device Knowledgebase to identify each device, assess its risks & vulnerabilities, detect threats, and recommend remediation actions.\n\nVisibility:\n\nAFE closes the Continuous Diagnostic and Mitigation Dashboard visibility gap with unmanaged and IoT devices. AFE discovers and classifies every managed, unmanaged, and IoT device in the environment including servers, laptops, smartphones, VoIP phones, smart TVs, IP cameras, printers, 5G, HVAC controls, medical devices, industrial controls, and more. AFE can even identify off-network devices using Wi-Fi, Bluetooth, and other protocols in any environment. The comprehensive device inventory that AFE generates includes critical information such as device manufacturer, model, serial number, location, username, operating system, installed applications, and connections made over time. In addition to discovering and classifying a device, AFE calculates its risk score based on factors such as vulnerabilities, known attack patterns, as well as the behaviors observed of each device in the environment. This risk score helps security teams understand their attack surface and meet compliance with regulatory frameworks that require identification and prioritization of vulnerabilities.\n\nInsights:\n\nThe AFE Risk Engine continuously monitors the behavior of every device in the environment for behavioral anomalies. Working with the AFE Device Knowledgebase, AFE compares the real-time behavior of each device with:\n\u25cf        Historical device behavior\n\u25cf        Behavior of similar devices in the Customer's environment\n\u25cf        Behavior of similar devices in other environments\n\u25cf        Common attack techniques\n\u25cf        Information from threat intelligence feeds\n\nActions:\n\nWith these types of critical device and behavioral insights, AFE is able to identify threats and attacks. When AFE detects a threat, it can alert security teams and trigger automated action to stop an attack. Through integrations with network infrastructure, as well as the Customer's existing security enforcement points like Cisco and Palo Alto Networks firewalls, and network access control (NAC) products such as Cisco ISE and Aruba ClearPass, AFE can restrict access or quarantine suspicious or malicious devices.\n\nEasy Integration:\n\nAFE requires no agents or additional hardware to deploy. AFE integrates with existing firewalls or NAC, security management systems such as SIEM, ticketing systems, and asset databases. These integrations allow AFE to leverage existing investments to achieve greater value and more automated response.\n\n\n\nVIPR Pro:\n\nArmis Centrix\u2122 for VIPR Pro delivers a FedRAMP-authorized cyber exposure management solution that helps federal agencies bridge the gap between fragmented security data and actionable risk reduction. Built to solve extreme alert fatigue, VIPR Pro acts as a centralized aggregator that ingests, correlates, and de-duplicates static security findings; including traditional vulnerabilities, cloud misconfigurations, and application security flaws - from across an agency\u2019s existing security stack. \n\nRather than hunting for active threats, the platform applies machine learning to consolidate disparate scan data, reducing finding volumes by up to 50-to-1. VIPR Pro contextualizes these findings by overlaying external threat intelligence, exploit likelihood, and agency-defined asset criticality to automatically prioritize the highest-impact exposures. Utilizing predictive AI to instantly determine asset ownership and initiate automated bulk-ticketing, the solution shortens manual assessment times by 80% and accelerates Mean Time to Remediation (MTTR) by up to 90%. Federal agencies can now operationalize their vulnerability management programs, orchestrate cross-departmental fixes, and maintain continuous compliance through a unified, fully auditable risk-resolution lifecycle.",
+  "functions_claimed": [
+   {
+    "function_id": "vuln_management",
+    "function": "Vulnerability scanning & management",
+    "evidence": "VIPR Pro:\n\nArmis Centrix\u2122 for VIPR Pro delivers a FedRAMP-authorized cyber exposure management solution that helps federal agencies bridge the gap between fragmented security data and actionable risk reduction."
+   },
+   {
+    "function_id": "detection_response",
+    "function": "Threat detection, SOC & managed response (SIEM/SOAR/MDR)",
+    "evidence": "AFE integrates with existing firewalls or NAC, security management systems such as SIEM, ticketing systems, and asset databases."
+   },
+   {
+    "function_id": "threat_intel",
+    "function": "Threat intelligence",
+    "evidence": "Working with the AFE Device Knowledgebase, AFE compares the real-time behavior of each device with:\n\u25cf        Historical device behavior\n\u25cf        Behavior of similar devices in the Customer's environment\n\u25cf        Behavior of similar devices in other environments\n\u25cf        Common attack techniques\n\u25cf        Information from threat intelligence feeds\n\nActions:\n\nWith these types of critical device an..."
+   },
+   {
+    "function_id": "compliance_grc",
+    "function": "GRC, compliance automation & continuous authorization",
+    "evidence": "Federal agencies can now operationalize their vulnerability management programs, orchestrate cross-departmental fixes, and maintain continuous compliance through a unified, fully auditable risk-resolution lifecycle."
+   },
+   {
+    "function_id": "risk_scoring",
+    "function": "Risk assessment, scoring & third-party risk",
+    "evidence": "In addition to discovering and classifying a device, AFE calculates its risk score based on factors such as vulnerabilities, known attack patterns, as well as the behaviors observed of each device in the environment."
+   },
+   {
+    "function_id": "cloud_saas_security",
+    "function": "Cloud & SaaS security posture (CSPM/CNAPP/SSPM)",
+    "evidence": "Built to solve extreme alert fatigue, VIPR Pro acts as a centralized aggregator that ingests, correlates, and de-duplicates static security findings; including traditional vulnerabilities, cloud misconfigurations, and application security flaws - from across an agency\u2019s existing security stack."
+   },
+   {
+    "function_id": "network_security",
+    "function": "Network security, segmentation & zero-trust access",
+    "evidence": "Through integrations with network infrastructure, as well as the Customer's existing security enforcement points like Cisco and Palo Alto Networks firewalls, and network access control (NAC) products such as Cisco ISE and Aruba ClearPass, AFE can restrict access or quarantine suspicious or malicious devices."
+   },
+   {
+    "function_id": "app_security",
+    "function": "Application security testing & API security",
+    "evidence": "Built to solve extreme alert fatigue, VIPR Pro acts as a centralized aggregator that ingests, correlates, and de-duplicates static security findings; including traditional vulnerabilities, cloud misconfigurations, and application security flaws - from across an agency\u2019s existing security stack."
+   },
+   {
+    "function_id": "asset_inventory",
+    "function": "Asset inventory, visibility & attack surface",
+    "evidence": "This risk score helps security teams understand their attack surface and meet compliance with regulatory frameworks that require identification and prioritization of vulnerabilities."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "Rather than hunting for active threats, the platform applies machine learning to consolidate disparate scan data, reducing finding volumes by up to 50-to-1."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "Visibility:\n\nAFE closes the Continuous Diagnostic and Mitigation Dashboard visibility gap with unmanaged and IoT devices."
+   },
+   {
+    "function_id": "access_control_feature",
+    "function": "Access control & least privilege (platform feature)",
+    "evidence": "Through integrations with network infrastructure, as well as the Customer's existing security enforcement points like Cisco and Palo Alto Networks firewalls, and network access control (NAC) products such as Cisco ISE and Aruba ClearPass, AFE can restrict access or quarantine suspicious or malicious devices."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs & integrations",
+    "evidence": "Armis easily integrates with existing security products."
+   },
+   {
+    "function_id": "automation",
+    "function": "Automation & orchestration",
+    "evidence": "These integrations allow AFE to leverage existing investments to achieve greater value and more automated response."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2031936863/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2031936863"
+ },
+ {
+  "fork_id": "FR1814168113",
+  "vendor": "Authentic8, Inc.",
+  "product": "Silo",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Silo is a remote browser that embeds security, identity and data policies directly into the browser. Available from anywhere, policies follow users regardless of environment. By shifting exposure away from the user's network and devices, Silo reduces risk and improves internal processes. With a configurable, centrally managed browser, users unlock the power of SaaS.\nAuthentic8 is redefining how enterprises conduct business on the web with the Silo web isolation platform. Silo insulates and isolates all web data and code execution from user endpoints, providing powerful, proactive security while giving users full, interactive access to the web. Silo also gives IT complete control over how the web is used. Commercial enterprises and public sector organizations use Silo solutions to provide secure web access; to control web data, apps, and workflows; and to conduct sensitive online research.",
+  "functions_claimed": [
+   {
+    "function_id": "network_security",
+    "function": "Network security, segmentation & zero-trust access",
+    "evidence": "Authentic8 is redefining how enterprises conduct business on the web with the Silo web isolation platform."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1814168113/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1814168113"
+ },
+ {
+  "fork_id": "F1605107897",
+  "vendor": "Cisco Systems Inc.",
+  "product": "Cisco Cloudlock for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Cisco Cloudlock is the cloud-native Cloud Access Security Broker (CASB) that helps accelerate use of the cloud. Cisco Cloudlock secures your cloud users, data, and apps, combating account compromises, data breaches, and cloud app ecosystem risks, while facilitating compliance through a simple, open, and automated API-driven approach. Cisco Cloudlock is a simple, open, and automated solution that combats cloud account compromises, malicious insiders, data breaches, compliance violations, and cloud app ecosystem risks. With crowd-sourced security analytics across billions of data points, advanced machine learning, and the data scientist-led CyberLab, Cisco Cloudlock provides actionable cybersecurity intelligence that provides visibility and control over the most critical cloud security risks.\n\nCloud User Security: Cross-platform User and Entity Behavior Analytics (UEBA) for SaaS, IaaS, PaaS, and IDaaS environments leverages advanced machine learning algorithms to detect anomalies. Cloudlock can also detect activities outside of whitelisted countries and actions across distances at impossible speeds. **Cloud Data Security:** Cloud Data Loss Prevention (DLP) continuously monitors cloud environments to detect and secure sensitive information through countless out-of-the-box policies as well as highly-tunable custom policies. Automated response actions can remediate risk in the event of a policy violation, including end-user notifications, encryption, transfer of ownership, quarantine, and more.\n\nCloud App Security: The Cisco Cloudlock Apps Firewall discovers cloud apps connected via OAuth to your corporate environment, and provides a crowd-sourced Community Trust Rating for individual apps, as well as the ability to ban or whitelist them based on risk profile and access scope, increase employee awareness with email alerts, and revoke apps in bulk across the entire user base.",
+  "functions_claimed": [
+   {
+    "function_id": "network_security",
+    "function": "Network security, segmentation & zero-trust access",
+    "evidence": "Cloud App Security: The Cisco Cloudlock Apps Firewall discovers cloud apps connected via OAuth to your corporate environment, and provides a crowd-sourced Community Trust Rating for individual apps, as well as the ability to ban or whitelist them based on risk profile and access scope, increase employee awareness with email alerts, and revoke apps in bulk across the entire user base."
+   },
+   {
+    "function_id": "insider_dlp",
+    "function": "Insider risk, DLP & data security",
+    "evidence": "Cloud User Security: Cross-platform User and Entity Behavior Analytics (UEBA) for SaaS, IaaS, PaaS, and IDaaS environments leverages advanced machine learning algorithms to detect anomalies."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "With crowd-sourced security analytics across billions of data points, advanced machine learning, and the data scientist-led CyberLab, Cisco Cloudlock provides actionable cybersecurity intelligence that provides visibility and control over the most critical cloud security risks."
+   },
+   {
+    "function_id": "encryption_feature",
+    "function": "Encryption & key management",
+    "evidence": "Automated response actions can remediate risk in the event of a policy violation, including end-user notifications, encryption, transfer of ownership, quarantine, and more."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs & integrations",
+    "evidence": "Cisco Cloudlock secures your cloud users, data, and apps, combating account compromises, data breaches, and cloud app ecosystem risks, while facilitating compliance through a simple, open, and automated API-driven approach."
+   },
+   {
+    "function_id": "automation",
+    "function": "Automation & orchestration",
+    "evidence": "Automated response actions can remediate risk in the event of a policy violation, including end-user notifications, encryption, transfer of ownership, quarantine, and more."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1605107897/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1605107897"
+ },
+ {
+  "fork_id": "FR1823149273",
+  "vendor": "Duo Security (a Cisco Company)",
+  "product": "Duo Federal",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Duo\u2019s Federal Editions can verify the identity of users with secure and easy to use two-factor authentication methods that helps public sector entities satisfy NIST 800-63-3 and 53/63/171 authentication requirements. In addition to verifying users\u2019 identities, Duo\u2019s solution checks the security health of every device authenticating into the environment, at the time of access. Admins can use Duo to enforce stricter device and application access policies, such as blocking login requests based on location or anonymous networks. Duo ensures only trusted users and devices can access protected applications. This complete security solution prevents modern attackers that often target multiple areas - including credential theft and the exploitation of known software vulnerabilities affecting outdated software versions.",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "Duo\u2019s Federal Editions can verify the identity of users with secure and easy to use two-factor authentication methods that helps public sector entities satisfy NIST 800-63-3 and 53/63/171 authentication requirements."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1823149273/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1823149273"
+ },
+ {
+  "fork_id": "FR1829538820",
+  "vendor": "General Services Administration",
+  "product": "Login.gov",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Login.gov offers the public secure and private online access to participating government programs. With one login.gov account, users can sign in to multiple government agencies. Our goal is to make managing federal benefits, services and applications easier and more secure.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1829538820/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1829538820"
+ },
+ {
+  "fork_id": "FR1718334757",
+  "vendor": "ID.me",
+  "product": "ID.me Identity Gateway",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "ID.me's Identity Gateway is a shared service for citizen and employee facing authentication and consists of a NIST 800-63-3 Identity Assurance Level 1 and 2 and Authenticator Assurance Level 1 and 2 as well as a NIST 800-63-2 Level of Assurance 1, 2, and 3 certified Credential Service Provider, a Credential Broker, and an Attribute Exchange. ID.me is the only citizen facing Credential Service Provider with a Supervised Remote capability that enables all users, including individuals without credit history and who live overseas, to reach Identity Assurance Level 2 without needing to visit a location in-person. ID.me is capable of immediately upgrading any government Identity Provider or login system to NIST IAL2/AAL2 within the look and feel of the agency\u2019s brand.\n\nAn Intelligent Policy Engine provides a dynamic orchestration capability that enables agencies to configure adaptive Risk-Based Authentication and Attribute Based Access Control by policy. Once configured, the Intelligent Policy Engine dynamically routes users through Identity Proofing and Multi-Factor Authentication based on their demographic need and preference. ID.me\u2019s Identity Gateway integrates directly with applications or with all Identity and Access Management platforms via open protocols like SAML 2.0, OAuth 2.0, and OpenID Connect. ID.me\u2019s Credential Service Provider certification is available at (https://www.idmanagement.gov/trust-services/#consumer-identity-credentials) and the Kantara Initiative Trust Registry (https://kantarainitiative.org/trust-registry/). Kantara is a GSA approved Trust Framework Solution provider. To learn more about ID.me, visit https://www.id.me/business/identity-gateway.",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "ID.me's Identity Gateway is a shared service for citizen and employee facing authentication and consists of a NIST 800-63-3 Identity Assurance Level 1 and 2 and Authenticator Assurance Level 1 and 2 as well as a NIST 800-63-2 Level of Assurance 1, 2, and 3 certified Credential Service Provider, a Credential Broker, and an Attribute Exchange."
+   },
+   {
+    "function_id": "fraud_identity",
+    "function": "Identity proofing & fraud prevention",
+    "evidence": "Once configured, the Intelligent Policy Engine dynamically routes users through Identity Proofing and Multi-Factor Authentication based on their demographic need and preference."
+   },
+   {
+    "function_id": "risk_scoring",
+    "function": "Risk assessment, scoring & third-party risk",
+    "evidence": "An Intelligent Policy Engine provides a dynamic orchestration capability that enables agencies to configure adaptive Risk-Based Authentication and Attribute Based Access Control by policy."
+   },
+   {
+    "function_id": "access_control_feature",
+    "function": "Access control & least privilege (platform feature)",
+    "evidence": "An Intelligent Policy Engine provides a dynamic orchestration capability that enables agencies to configure adaptive Risk-Based Authentication and Attribute Based Access Control by policy."
+   },
+   {
+    "function_id": "automation",
+    "function": "Automation & orchestration",
+    "evidence": "An Intelligent Policy Engine provides a dynamic orchestration capability that enables agencies to configure adaptive Risk-Based Authentication and Attribute Based Access Control by policy."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1718334757/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1718334757"
+ },
+ {
+  "fork_id": "F1511167634",
+  "vendor": "Kiteworks USA, LLC",
+  "product": "Kiteworks Federal Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "The Kiteworks Private Data Network is a FedRAMP Authorized service at the Moderate Impact Level that provides data security, governance, and compliance capabilities. The service consists of the following core components and functions:\r\n\r\nSystem Components\r\n\r\n- Virtual private cloud (VPC) environment with dedicated servers for each customer\r\n- Encrypted file storage system\r\n- Data transfer protocols including SFTP, HTTPS, and SMTP\r\n- Authentication and authorization services\r\n- Audit logging and monitoring systems\r\n- Security scanning and threat detection services\r\n\r\nCore Functions\r\n\r\n- File transfer and sharing capabilities via web interface, email, SFTP, MFT, and APIs\r\n- Role- and attribute-based access control and user authentication\r\n- File encryption at rest and in transit using FIPS 140-3 validated cryptographic modules\r\n- Audit logging of all system and user activities\r\n- Integration with customer directory services (LDAP/Active Directory, etc., see below)\r\n- Multi-factor authentication support\r\n- DLP integration\r\n- Embedded antivirus\r\n\r\nPossessionless Editing (SafeEDIT) System Components and Functions\r\n\r\n- File streaming service for secure remote data access and collaboration\r\n- Data rendering system for file type conversion\r\n- Audit logging system for data interactions\r\n- Versioning system for file changes\r\n- Authorization validation service\r\n- File integrity verification system\r\n- Session management service\r\n- Access revocation controls\r\n- Activity monitoring system\r\n\r\nSecurity Features\r\n\r\n- Customer-managed encryption keys\r\n- Single-tenant deployment providing data isolation between customers\r\n- Continuous security monitoring and scanning\r\n- File-level role- and attributed-based access controls\r\n- Remote device management capabilities\r\n- Security event logging and reporting\r\n- Integration with customer SIEM systems\r\n\r\nCompliance Capabilities\r\n\r\n- Audit log generation and retention\r\n- Policy enforcement mechanisms\r\n- Compliance reporting tools\r\n- Data locality controls\r\n- Access tracking and monitoring\r\n- Chain of custody documentation\r\n\r\nIntegration Interfaces\r\n\r\n- REST APIs for system integration and SCIM authentication support\r\n- SMTP interface for email services\r\n- SFTP/FTPS/CIFS/SMB interfaces for file transfer\r\n- LDAP/AD, SAML 2.0, Kerberos, PIV/CAC, time-based one-time password (TOTP) authenticators, SMS, and SFTP certificate connectors for authentication\r\n- SIEM integration for security monitoring\r\n- DLP and CDR system integrations\r\n- The system operates within a defined authorization boundary and undergoes continuous monitoring and regular security assessments in accordance with FedRAMP requirements.\r\n\r\nTo learn more about what Kiteworks can do for government agencies, please visit: https://www.kiteworks.com/solutions/government/",
+  "functions_claimed": [
+   {
+    "function_id": "detection_response",
+    "function": "Threat detection, SOC & managed response (SIEM/SOAR/MDR)",
+    "evidence": "The service consists of the following core components and functions: \n \nSystem Components \n \n- Virtual private cloud (VPC) environment with dedicated servers for each customer \n- Encrypted file storage system \n- Data transfer protocols including SFTP, HTTPS, and SMTP \n- Authentication and authorization services \n- Audit logging and monitoring systems \n- Security scanning and threat detection se..."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "The service consists of the following core components and functions: \n \nSystem Components \n \n- Virtual private cloud (VPC) environment with dedicated servers for each customer \n- Encrypted file storage system \n- Data transfer protocols including SFTP, HTTPS, and SMTP \n- Authentication and authorization services \n- Audit logging and monitoring systems \n- Security scanning and threat detection se..."
+   },
+   {
+    "function_id": "insider_dlp",
+    "function": "Insider risk, DLP & data security",
+    "evidence": "The service consists of the following core components and functions: \n \nSystem Components \n \n- Virtual private cloud (VPC) environment with dedicated servers for each customer \n- Encrypted file storage system \n- Data transfer protocols including SFTP, HTTPS, and SMTP \n- Authentication and authorization services \n- Audit logging and monitoring systems \n- Security scanning and threat detection se..."
+   },
+   {
+    "function_id": "endpoint_management",
+    "function": "Endpoint management, patching & IT automation",
+    "evidence": "The service consists of the following core components and functions: \n \nSystem Components \n \n- Virtual private cloud (VPC) environment with dedicated servers for each customer \n- Encrypted file storage system \n- Data transfer protocols including SFTP, HTTPS, and SMTP \n- Authentication and authorization services \n- Audit logging and monitoring systems \n- Security scanning and threat detection se..."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "The service consists of the following core components and functions: \n \nSystem Components \n \n- Virtual private cloud (VPC) environment with dedicated servers for each customer \n- Encrypted file storage system \n- Data transfer protocols including SFTP, HTTPS, and SMTP \n- Authentication and authorization services \n- Audit logging and monitoring systems \n- Security scanning and threat detection se..."
+   },
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging & activity trails",
+    "evidence": "The service consists of the following core components and functions: \n \nSystem Components \n \n- Virtual private cloud (VPC) environment with dedicated servers for each customer \n- Encrypted file storage system \n- Data transfer protocols including SFTP, HTTPS, and SMTP \n- Authentication and authorization services \n- Audit logging and monitoring systems \n- Security scanning and threat detection se..."
+   },
+   {
+    "function_id": "access_control_feature",
+    "function": "Access control & least privilege (platform feature)",
+    "evidence": "The service consists of the following core components and functions: \n \nSystem Components \n \n- Virtual private cloud (VPC) environment with dedicated servers for each customer \n- Encrypted file storage system \n- Data transfer protocols including SFTP, HTTPS, and SMTP \n- Authentication and authorization services \n- Audit logging and monitoring systems \n- Security scanning and threat detection se..."
+   },
+   {
+    "function_id": "encryption_feature",
+    "function": "Encryption & key management",
+    "evidence": "The service consists of the following core components and functions: \n \nSystem Components \n \n- Virtual private cloud (VPC) environment with dedicated servers for each customer \n- Encrypted file storage system \n- Data transfer protocols including SFTP, HTTPS, and SMTP \n- Authentication and authorization services \n- Audit logging and monitoring systems \n- Security scanning and threat detection se..."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs & integrations",
+    "evidence": "The service consists of the following core components and functions: \n \nSystem Components \n \n- Virtual private cloud (VPC) environment with dedicated servers for each customer \n- Encrypted file storage system \n- Data transfer protocols including SFTP, HTTPS, and SMTP \n- Authentication and authorization services \n- Audit logging and monitoring systems \n- Security scanning and threat detection se..."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1511167634/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1511167634"
+ },
+ {
+  "fork_id": "F1512167750",
+  "vendor": "Okta",
+  "product": "Okta IDaaS Regulated Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "The Okta IDaaS Regulated Cloud service offering provides centralized identity and access management capabilities to customers who want to manage access across any application or device, whether they are on-premise in the customer's office/data center or in the cloud. The Okta IDaaS Regulated Cloud service provides several important capabilities, including:\n- Okta Identity Engine (OIE)\n- Okta Multi-factor authentication (MFA)\n- Okta Adaptive MFA (AMFA)\n- Okta Single Sign-On (SSO)\n- Okta Verify\n- Okta API Integration\n- Okta FastPass - NIST 800-63B AAL2/AAL3 authenticator",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "The Okta IDaaS Regulated Cloud service offering provides centralized identity and access management capabilities to customers who want to manage access across any application or device, whether they are on-premise in the customer's office/data center or in the cloud."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs & integrations",
+    "evidence": "The Okta IDaaS Regulated Cloud service provides several important capabilities, including:\n- Okta Identity Engine (OIE)\n- Okta Multi-factor authentication (MFA)\n- Okta Adaptive MFA (AMFA)\n- Okta Single Sign-On (SSO)\n- Okta Verify\n- Okta API Integration\n- Okta FastPass - NIST 800-63B AAL2/AAL3 authenticator"
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1512167750/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1512167750"
+ },
+ {
+  "fork_id": "F1301101857",
+  "vendor": "OpenText",
+  "product": "OpenText\u2122 Core Application Security (Fortify On Demand)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "The OpenText\u2122 Core Application Security (FoD) for US Public Sector performs security assessments of application code and web site/web services testing without any software to install or manage. Static Code Scanning of code such as Java, .NET and other major programming languages for security defects are performed in the FoD System at the code layer followed by an audit review by a OpenText Fortify Static auditor. Dynamic Web Site and Web Services testing use OpenText Fortify's WebInspect software as the scan engine, followed by a review from a OpenText Fortify Dynamic tester.",
+  "functions_claimed": [
+   {
+    "function_id": "app_security",
+    "function": "Application security testing & API security",
+    "evidence": "The OpenText\u2122 Core Application Security (FoD) for US Public Sector performs security assessments of application code and web site/web services testing without any software to install or manage."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1301101857/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1301101857"
+ },
+ {
+  "fork_id": "FR2301844932",
+  "vendor": "Orca Security",
+  "product": "Orca Cloud Security Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Orca Security provides an agentless Cloud Security Platform that discovers all cloud assets, and identifies, prioritizes, and remediates risks and compliance issues across your cloud environments in AWS GovCloud, AWS US East/West and Azure Government. The platform detects cloud risks, including vulnerabilities, malware, misconfigurations, API risks, lateral movement risks, weak and leaked passwords, and overly permissive identities. Orca deploys in minutes, provides visibility into all your assets, and automatically includes new assets as they are added. The Orca Platform helps federal agencies and contractors achieve regulatory compliance with over 65 out-of-the-box frameworks, CIS Benchmarks, and custom compliance checks. Leveraging a Unified Data Model, Orca performs contextual analysis of all the risks in your cloud estate, uncovering potential attack paths (with references to the MITRE ATT&CK framework), enabling rapid identification of which risks present the highest danger to mission data and security objectives.",
+  "functions_claimed": [
+   {
+    "function_id": "cloud_saas_security",
+    "function": "Cloud & SaaS security posture (CSPM/CNAPP/SSPM)",
+    "evidence": "Orca Security provides an agentless Cloud Security Platform that discovers all cloud assets, and identifies, prioritizes, and remediates risks and compliance issues across your cloud environments in AWS GovCloud, AWS US East/West and Azure Government."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs & integrations",
+    "evidence": "The platform detects cloud risks, including vulnerabilities, malware, misconfigurations, API risks, lateral movement risks, weak and leaked passwords, and overly permissive identities."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2301844932/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2301844932"
+ },
+ {
+  "fork_id": "FR1913470600",
+  "vendor": "Palo Alto Networks, Inc.",
+  "product": "Palo Alto Networks Government Cloud Services",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Strata Network Security Platform\n\nSecure users, apps, and data anywhere\u2014 on-premises, in the cloud, or hybrid. Get complete Zero Trust network security to see and secure everything from your headquarters to branch offices and data centers, as well as your mobile workforce.\n \nPrisma Access - a Secure Access Service Edge (SASE) that provides scalable, cloud-delivered networking and security to branch offices and remote users. With Prisma Access, agencies are able to rapidly enable consistent, secure connectivity for remote locations and employees.\n\nPrisma SD-WAN - a product that provides deep application visibility, with Layer 7 intelligence for network policy creation and traffic engineering. It automates operations and problem avoidance using machine learning and data science methodologies. Prisma SD-WAN enables branch services such as networking and security to be delivered from the cloud, simplifying WAN management.\n\nZTNA Connector - The Zero Trust Network Access (ZTNA) Connector lets you connect Prisma Access to your organization's private apps simply and securely. ZTNA Connector provides mobile users and users at branch locations access to your private apps using an automated secure tunnel. Because the ZTNA Connector sets up the tunnels automatically, you don't have to manually set up IPSec tunnels and routing to the data center or headquarters locations, public cloud locations, and partner networks where your private apps are located.\n\nColo Connect - Colo-Connect builds on the Colo-based performance hub concept, offering high-bandwidth (up to 20 Gbps) private connections along with seamless Layer 2/3 connectivity to Prisma Access from existing performance hubs. \n\nTraffic Replication - We partnered with Google Cloud Platform (GCP) to enable Google Cloud Packet Mirroring outside the Prisma Access security processing node so it wouldn\u2019t interfere with the security inspection efficacy and overall performance of Prisma Access.Google Cloud Packet Mirroring clones the traffic and delivers a line-rate performance with zero impact on current operations. As with any GCP service, traffic cloning enables Prisma Access Traffic Replication to elastically manage the scale of traffic volume for any of the largest organizations.\n\n5g SASE - Prisma SASE 5G extends comprehensive zero-trust security to enterprise 5G deployments. Prisma SASE 5G feature integrates zero-trust security with 5G networks, enabling service providers to offer comprehensive SASE services for 5G-connected devices without the complexity of agents or inline hardware.\n\nExplicit Proxy - Prisma Access provides a complete cloud Secure Web Gateway (SWG) capability, including an Explicit Proxy connection method based in the cloud. If your organization\u2019s existing network already uses explicit proxy and deploys PAC files on your client endpoints, you can smoothly migrate from legacy proxy-based SWG solutions to Prisma Access to secure mobile users\u2019 outbound internet traffic. You can also use an Explicit Proxy if you need to use a proxy for compliance purposes.\n\nCloud Manager for Prisma Access - a cloud delivered solution used by customers to manage Prisma Access from Palo Alto Networks\u2019 Hub. Fawkes allows customers to quickly onboard branches and mobile users through an intuitive and function oriented user experience. Fawkes also provides configuration management of Prisma Access\u2019 security policies.\n\nStrata Logging Service (SLS, formerly CDL) - collects, normalizes, and integrates data from Palo Alto Networks products with public cloud scale.\n\nWildFire - an analysis and prevention engine for highly evasive zero-day exploits and malware. The cloud-based service employs a unique multi-technique approach combining dynamic and static analysis and innovative machine learning techniques to detect and prevent even the most evasive threats. It is a subscription service that works with the Palo Alto Networks Next Generation Firewalls (including VM-Series and CN-Series), Prisma Access, Prisma Cloud, Cortex XSIAM, and Cortex XDR.\n\nAdvanced URL Filtering - Advanced URL Filtering is a comprehensive URL filtering solution that protects your network and users from web-based threats. Combining the capabilities of PAN-DB with a web security engine powered by machine learning, Advanced URL Filtering categorizes and blocks malicious URLs in real-time. With an Advanced URL Filtering license (or legacy URL filtering license), you can restrict access to websites and control user interactions with web content. For example, you can prevent users from accessing websites known to host malware or entering corporate credentials into websites in specific categories.\n\nSaaS Security (API, Inline, SSPM) - is an integrated CASB (Cloud Access Security Broker) solution that helps Security teams meet the challenges of protecting the growing availability of sanctioned and unsanctioned SaaS applications and maintaining compliance consistently in the cloud while stopping threats to sensitive information, users and resources. SaaS Security Inline helps discover and manage risks posed by unsanctioned SaaS applications while SaaS Security Posture Management (SSPM) helps detect and remediate misconfigured security settings in sanctioned SaaS applications through continuous monitoring.\n\nInline DLP - serves as a data security service integrated with various Palo Alto Networks services (called channels) such as SaaS Security, Prisma Access, Prisma Cloud, and the Next Generation Firewall platform to provide data security at these various enforcement points. These channels send files to the DLP service via APIs, where DLP will scan the file, perform analysis to detect sensitive data in violation of customer policies in the file, and return this verdict and other data back to the channel. The channel then uses this information to take remedial action in order to protect sensitive data.\n\nEmail DLP - Enterprise DLP prevents exfiltration of emails containing sensitive information with AI/ML powered data detections. For example, Enterprise DLP can prevent exfiltration of sensitive data over an outbound email sent from a salesperson within your organization to their personal email.\n\nACE - a generic platform that enables the firewall or Panorama to download App-IDs from the cloud for applications that do not have specific predefined App-IDs from the Palo Alto Networks content releases.\n\nCIE - Identity-based security controls are a foundational requirement to achieve Zero Trust. Palo Alto Networks Cloud Identity Engine is an entirely new cloud-based architecture for identity-based security that can consistently authenticate and authorize your users, regardless of location and where user identity stores live - on-premises, in the cloud, or hybrid. As a result, security teams can effortlessly allow all users access to applications and data everywhere and quickly move toward a Zero Trust security posture.\n\nIoT Security - Protects your IoT attack surface with the industry\u2019s smartest IoT Security solution delivering ML-powered visibility, prevention, and zero-trust enforcement in a single platform. IoT Edge Cloud now included. \n\nDevice Security - a unified, AI-first solution that provides comprehensive\nprotection and monitoring across your entire attack surface. To achieve this, it discovers all connected devices, as well as identifies and mitigates hidden risks that would otherwise remain invisible.\n\nPrisma SD-WAN - a product that provides deep application visibility, with Layer 7 intelligence for network policy creation and traffic engineering. It automates operations and problem avoidance using machine learning and data science methodologies. Prisma SD-WAN enables branch services such as networking and security to be delivered from the cloud, simplifying WAN management.\n\nStrata\u00ae Cloud Manager (SCM) for Prisma Access - AI-powered unified solution for managing and operating the entire network security infrastructure. It transforms how organizations oversee their NGFW & SASE deployments, aggregating telemetry from every enforcement point to deliver actionable insights. By combining AI-driven intelligence, automated operations, and integrated threat intelligence, it helps security teams stay ahead of emerging risks, maintain optimal performance, and reduce operational costs.\nStrata Cloud Manager is available in Essentials and Pro (paid) tiers.\n\nCloud Next-Generation Firewall (CNGFW) - Cloud NGFW is Palo Alto Networks ML-powered Next-Generation Firewall (NGFW) capability delivered as a fully managed cloud-native service by Palo Alto Networks on the Amazon Web Services (AWS) and Azure platforms. This deployment model combines the power of the Palo Alto NGFW with the ease of use. The Cloud NGFW service provides advanced application visibility and access control using Palo Alto Networks\u2019 App-ID and URL filtering technologies. It provides threat prevention and detection through cloud-delivered security services and threat prevention signatures.\n\nMSP for Prisma SASE - a set of two services (pa-passthru-api-service and pa-custom-api-service) that provide APIs to support the following functionality: Aggregate application, application usage, threats and URL metrics across tenants in a tenant hierarchy Constrain the list of tenants being aggregated to the list of tenants that are authorized for the user in question.\n\nAIOps - AIOps harnesses big data from operational appliances and has the unique ability to detect and respond to issues instantaneously. Using the power of ML, AIOps strategizes using the various forms of data it compiles to yield automated insights that work to refine and iterate continually. AIOps seeks to address a quickly evolving IT landscape using the convenience of machine learning, automation and big data.\n\nRemote Browser Isolation (RBI) - Fully isolate zero-day web attacks far away from local devices and browsers. Deliver superior browser isolation without sacrificing web performance with Palo Alto Network\u2019s RBI, which combines the latest isolation technologies with proprietary technologies and creates a no-code execution channel between users and web content.\n\nAdvanced Threat Prevention (ATP) - Advanced Threat Prevention Powered by Precision AI defends your network against both commodity threats\u2014which are pervasive but not sophisticated\u2014and targeted, advanced threats perpetuated by organized cyber adversaries. Advanced Threat Prevention includes comprehensive exploit, malware, and command-and-control protection, and Palo Alto Networks frequently publishes updates that equip the firewall with the very latest threat intelligence.\n\nPrisma Access Browser (PAB) - The Prisma Access Secure Enterprise Browser (Prisma Access Browser) is a browser designed specifically for enterprise use and is fortified with security features to protect users and organizations against cyber threats like phishing, malware, eavesdropping, and data exfiltration. Prisma Access Browser is the only solution that secures both managed and unmanaged devices, through a natively integrated enterprise browser that extends protection to the devices by placing security in the browser.\n\r\n\r\nRBI (Remote Browser Isolation): RBI is an isolation solution that can isolate all malware, including zero-day attacks that result from browsing and web activity, away from your end users and your network. Natively integrated with Prisma Access, RBI allows you to easily apply isolation profiles to existing security policies. With isolation profiles, you can control what browser actions are permitted for your users.\r\n\r\nAll traffic in isolation undergoes analysis and threat prevention provided by Cloud-Delivered Security Services such as Advanced Threat Prevention, Advanced WildFire, Advanced URL Filtering, DNS Security, and SaaS Security.\nApp Services (Hub, API Gateway, Visualization & Reporting, Prisma Access Insights)\n\u25cf        API Gateway supports unified access to the open APIs of PANW SASE applications. Currently, API Gateway is used by Cloud Management      Prisma Access, SD-WAN, Cortex Data Lake (CDL), and Prisma Access Insights customers. Working in conjunction with PANW Global IdP (Identity Provider), which provides authentication services, API Gateway provides authorization services for RESTful API and routing those APIs to multiple applications and regions.\n\u25cf        Prisma Access Insights is a comprehensive platform for global visibility and monitoring for the Prisma Access service. It continuously monitors the health and performance of your Prisma Access environment with Insights in the Prisma Access app.\n\u25cf        Visualization & Reporting is the security visualization and reporting product for network security use cases. It provides dashboards to end users to monitor and understand the security of their networks and how different security subscriptions from Palo Alto Networks are performing.\n\nCortex\n\nPalo Alto Networks offers the industry\u2019s most comprehensive product portfolio for security operations, empowering organizations and agencies with best-in-class detection, investigation, automation, and response capabilities.\n\nCortex XDR - a cloud-based service providing a prevention, detection and response platform that integrates network, endpoint, and cloud data to stop sophisticated attacks. Cortex XDR leverages logs, alerts, and information from Palo Alto Networks and third-party security products. It also enforces security policies on endpoints, preventing malware and data loss. Cortex XDR correlates security alerts and network logs with the endpoint processes that generated the alerts, allowing customers to investigate security alerts, as well as search for and remotely respond to threats.\n\nCortex Xpanse - an active attack surface management solution that helps your organization discover, understand and respond to unknown risks in all internet-connected systems and services. Xpanse scans the entire internet automatically and continuously, discovering and indexing previously unknown risks, using supervised ML models to continuously map your attack surface and prioritize remediation efforts, while reducing MTTR with the help of built-in automated playbooks.\n\nCortex XSIAM - a cloud-delivered, integrated SOC platform that unifies key functions, including EDR, XDR, SOAR, ASM, UEBA, TIP, and SIEM, consolidating multiple products into a single, integrated platform. XSIAM delivers an intelligent data foundation by integrating telemetry from any source, providing unified security operations across any hybrid IT architecture.\n\nCortex XSOAR - a comprehensive security orchestration, automation, and response (SOAR) platform that unifies case management, automation, real-time collaboration, and threat intelligence management to serve security teams across the incident lifecycle.\n\nCortex Cloud - a unified security platform that enhances application security, cloud posture management and runtime protection. It integrates AppSec, identity, data, cloud infrastructure, and workload security while providing a code-to-cloud-to-runtime-to-SOC approach. With a strong shift-left strategy, it enables proactive remediation using both in-house and third-party tools. The Cloud Detection and Response (CDR) capabilities leverage multiple data sources to deliver real-time threat detection, protection and automated response. \n\nPrisma Cloud Enterprise (SaaS) - We secure applications from code to cloud, enabling security and DevOps teams to collaborate effectively and accelerate secure cloud-native application development and deployment.\n\n\n\nPrisma Cloud - a cloud-native security platform that consistently provides comprehensive visibility into misconfiguration and over-permissive roles, with threat detection and compliance assurance across multi-cloud environments.\n\u25cf        CSPM\n\u25cf        Agentless Workload Security\n\u25cf        CIEM\n\u25cf        API Visibility\n\u25cf        Secret Security\n\u25cf        SCA\n\u25cf        IaC Security\n\nPrisma Cloud Compute (Delivered via Prisma Cloud) - a cloud-native platform that delivers cloud workload protection. Prisma Cloud Compute provides holistic protection across hosts, containers, and serverless deployments in any cloud, throughout the software lifecycle. Prisma Cloud Compute protects all workloads regardless of their underlying compute technology or the cloud in which they run. In addition, it provides Web Application and API Security (WAAS) for any cloud native architecture.\n\u25cf        Cloud Workload Protection\n\u25cf        Web Application API Security",
+  "functions_claimed": [
+   {
+    "function_id": "endpoint_detection",
+    "function": "Endpoint security, EDR & XDR",
+    "evidence": "It is a subscription service that works with the Palo Alto Networks Next Generation Firewalls (including VM-Series and CN-Series), Prisma Access, Prisma Cloud, Cortex XSIAM, and Cortex XDR."
+   },
+   {
+    "function_id": "detection_response",
+    "function": "Threat detection, SOC & managed response (SIEM/SOAR/MDR)",
+    "evidence": "Cortex\n\nPalo Alto Networks offers the industry\u2019s most comprehensive product portfolio for security operations, empowering organizations and agencies with best-in-class detection, investigation, automation, and response capabilities."
+   },
+   {
+    "function_id": "threat_intel",
+    "function": "Threat intelligence",
+    "evidence": "By combining AI-driven intelligence, automated operations, and integrated threat intelligence, it helps security teams stay ahead of emerging risks, maintain optimal performance, and reduce operational costs."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "Working in conjunction with PANW Global IdP (Identity Provider), which provides authentication services, API Gateway provides authorization services for RESTful API and routing those APIs to multiple applications and regions."
+   },
+   {
+    "function_id": "cloud_saas_security",
+    "function": "Cloud & SaaS security posture (CSPM/CNAPP/SSPM)",
+    "evidence": "SaaS Security (API, Inline, SSPM) - is an integrated CASB (Cloud Access Security Broker) solution that helps Security teams meet the challenges of protecting the growing availability of sanctioned and unsanctioned SaaS applications and maintaining compliance consistently in the cloud while stopping threats to sensitive information, users and resources."
+   },
+   {
+    "function_id": "network_security",
+    "function": "Network security, segmentation & zero-trust access",
+    "evidence": "Prisma Access - a Secure Access Service Edge (SASE) that provides scalable, cloud-delivered networking and security to branch offices and remote users."
+   },
+   {
+    "function_id": "app_security",
+    "function": "Application security testing & API security",
+    "evidence": "Cortex Cloud - a unified security platform that enhances application security, cloud posture management and runtime protection."
+   },
+   {
+    "function_id": "phishing_awareness",
+    "function": "Phishing defense & security awareness training",
+    "evidence": "Prisma Access Browser (PAB) - The Prisma Access Secure Enterprise Browser (Prisma Access Browser) is a browser designed specifically for enterprise use and is fortified with security features to protect users and organizations against cyber threats like phishing, malware, eavesdropping, and data exfiltration."
+   },
+   {
+    "function_id": "insider_dlp",
+    "function": "Insider risk, DLP & data security",
+    "evidence": "Inline DLP - serves as a data security service integrated with various Palo Alto Networks services (called channels) such as SaaS Security, Prisma Access, Prisma Cloud, and the Next Generation Firewall platform to provide data security at these various enforcement points."
+   },
+   {
+    "function_id": "asset_inventory",
+    "function": "Asset inventory, visibility & attack surface",
+    "evidence": "IoT Security - Protects your IoT attack surface with the industry\u2019s smartest IoT Security solution delivering ML-powered visibility, prevention, and zero-trust enforcement in a single platform."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "It automates operations and problem avoidance using machine learning and data science methodologies."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "App Services (Hub, API Gateway, Visualization & Reporting, Prisma Access Insights)\n\u25cf        API Gateway supports unified access to the open APIs of PANW SASE applications."
+   },
+   {
+    "function_id": "access_control_feature",
+    "function": "Access control & least privilege (platform feature)",
+    "evidence": "The Cloud NGFW service provides advanced application visibility and access control using Palo Alto Networks\u2019 App-ID and URL filtering technologies."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs & integrations",
+    "evidence": "SaaS Security (API, Inline, SSPM) - is an integrated CASB (Cloud Access Security Broker) solution that helps Security teams meet the challenges of protecting the growing availability of sanctioned and unsanctioned SaaS applications and maintaining compliance consistently in the cloud while stopping threats to sensitive information, users and resources."
+   },
+   {
+    "function_id": "automation",
+    "function": "Automation & orchestration",
+    "evidence": "Cortex XSOAR - a comprehensive security orchestration, automation, and response (SOAR) platform that unifies case management, automation, real-time collaboration, and threat intelligence management to serve security teams across the incident lifecycle."
+   },
+   {
+    "function_id": "log_telemetry",
+    "function": "Log & telemetry collection, pipelines & security data lakes",
+    "evidence": "It transforms how organizations oversee their NGFW & SASE deployments, aggregating telemetry from every enforcement point to deliver actionable insights."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1913470600/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1913470600"
+ },
+ {
+  "fork_id": "FR1720461312",
+  "vendor": "Proofpoint, Inc.",
+  "product": "Proofpoint Email and Information Protection Service",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "The Proofpoint Email and Information Protection Service is a powerful cloud email security service that integrates threat protection, virus protection, spam detection, data loss prevention (DLP), and digital asset protection technologies into an extensible message management platform. The service is designed to fit easily into existing messaging infrastructure, providing efficient performance, accurate message analysis, and a web-based interface for reporting, configuration, and management tasks.",
+  "functions_claimed": [
+   {
+    "function_id": "insider_dlp",
+    "function": "Insider risk, DLP & data security",
+    "evidence": "The Proofpoint Email and Information Protection Service is a powerful cloud email security service that integrates threat protection, virus protection, spam detection, data loss prevention (DLP), and digital asset protection technologies into an extensible message management platform."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "The service is designed to fit easily into existing messaging infrastructure, providing efficient performance, accurate message analysis, and a web-based interface for reporting, configuration, and management tasks."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1720461312/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1720461312"
+ },
+ {
+  "fork_id": "FR1819168894",
+  "vendor": "Proofpoint, Inc.",
+  "product": "Proofpoint Targeted Attack Protection",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Proofpoint Targeted Attack Protection (TAP) helps detect, mitigate, and block advanced threat that target people through email. It detects both known and new, never-before-seen attacks that use malicious attachments and URLs to install malware on a device or trick users to share their passwords or other sensitive information.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1819168894/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1819168894"
+ },
+ {
+  "fork_id": "F1508207205",
+  "vendor": "Qualys",
+  "product": "Qualys Cloud Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "The Qualys Cloud Platform (QCP) is a multi-tenant shared cloud service environment. Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities. With its Qualys sensors, a core service of the Qualys Cloud Platform, make it easy to extend your security throughout your global enterprise. These sensors, which can be in the form of appliances or lightweight agents, are remotely deployable, centrally managed and self-updating. They collect data automatically and seamlessly sending it to the Qualys Cloud Platform. Subscribers simply use the Qualys software without the burden of licensing, maintenance and costs for owning the software itself.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1508207205/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1508207205"
+ },
+ {
+  "fork_id": "FR1821062403",
+  "vendor": "Saviynt, Inc.",
+  "product": "Saviynt Enterprise Identity Cloud (EIC)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Saviynt delivers an intelligent and converged platform for Identity Governance and Administration (IGA), Privileged Access Management (PAM) and Cloud Security that enables its customers to effectively manage risk, address continuous compliance needs and securely adopt cloud technologies with confidence. The solution combines advanced analytics with fine-grained privilege management to secure critical data, infrastructure and application assets for Cloud and Enterprise in a unified platform. \n\nSaviynt's completely managed and flexible platform ensures a worry-free adoption of IGA services such as user lifecycle management, access request and certification, Segregation of Duties (SOD) management, infrastructure access governance for IaaS providers (AWS, GCP & Azure), data access governance as well as PAM services. Saviynt's PAM solution is an identity-led service designed for elastic cloud and hybrid IT. It secures privileged access for any application or infrastructure workloads and extends governance to bring-your-own vaults. It is designed to ensure zero standing privileges, provide Just In Time (JIT) access, accelerate rollout at any scale with auto-registration of workloads, and lower the total cost of ownership by eliminating traditional jump boxes.",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "Saviynt delivers an intelligent and converged platform for Identity Governance and Administration (IGA), Privileged Access Management (PAM) and Cloud Security that enables its customers to effectively manage risk, address continuous compliance needs and securely adopt cloud technologies with confidence."
+   },
+   {
+    "function_id": "compliance_grc",
+    "function": "GRC, compliance automation & continuous authorization",
+    "evidence": "Saviynt delivers an intelligent and converged platform for Identity Governance and Administration (IGA), Privileged Access Management (PAM) and Cloud Security that enables its customers to effectively manage risk, address continuous compliance needs and securely adopt cloud technologies with confidence."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1821062403/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1821062403"
+ },
+ {
+  "fork_id": "FR2110342613",
+  "vendor": "Tanium",
+  "product": "Tanium Cloud for US Government (TC-USG)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "functions_claimed": [
+   {
+    "function_id": "endpoint_management",
+    "function": "Endpoint management, patching & IT automation",
+    "evidence": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2110342613/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2110342613"
+ },
+ {
+  "fork_id": "FR1731347234",
+  "vendor": "Zimperium",
+  "product": "Zimperium Mobile Endpoint Cyber Security",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Zimperium Mobile Endpoint Cyber Security is a Cloud based application deployed on the AWS GovCloud infrastructure which, when combined with the Zimperium mobile application (zIPS), provides a comprehensive Mobile Threat Defense (MTD) solution. Zimperium's Amazon GovCloud based application provides security teams with visibility on the threats and vulnerabilities across all mobile devices in the organization to assess organization risk, identify security gaps and remediate. The zIPS on-device app incorporates machine learning techniques to detect anomalies to the mobile device's operating system's statistics, memory, CPU and other system parameters and accurately identify not only the specific type of malicious attack, but also the forensics associated with the who, what, where, when, and how of an attack occurrence.",
+  "functions_claimed": [
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "The zIPS on-device app incorporates machine learning techniques to detect anomalies to the mobile device's operating system's statistics, memory, CPU and other system parameters and accurately identify not only the specific type of malicious attack, but also the forensics associated with the who, what, where, when, and how of an attack occurrence."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1731347234/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1731347234"
  }
 ]

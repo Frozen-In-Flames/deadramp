@@ -12,6 +12,9 @@ PYTHONPATH=src python3 -m unittest discover -s tests
 
 Status at delivery: **194 tests, OK** against the implementation in
 `../src/`, verified by the coordinator's own run (2026-10-25).
+With the additions module (`test_additions.py`, remainder unit
+`addition:cybersecurity-l2`): **204 tests, OK**, verified
+2026-10-31, including the re-run mutation drill recorded below.
 (Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
@@ -34,6 +37,7 @@ entry point for this group.)
 | `test_service.py` | 9 API access — live HTTP server on an ephemeral port: `/health`, 401 unknown user and role mismatch, 403 viewer ingesting, full flow (asset → finding → bulk → CSV → transition → assign → risk → risk transition → control assess → posture → search → audit), `audit_read` admin-only over HTTP, denied attempts audited with `:denied` |
 | `test_main_cli.py` | `python -m cyber serve` subprocess with demo users alice/bob/carol answering `/health`, `/assets`, `/posture` and `/audit` |
 | `test_negative_control.py` | Negative control (below) |
+| `test_additions.py` | Additions (ADDENDUM.md) — spec integrity for the 18 remainder forks: 72-sheet count and unit order, membership against `remainder.json`, the literal per-fork claim table (67 claims), the pinned zero-claim set (Login.gov, Proofpoint TAP, Qualys), verbatim evidence sentences; plus a per-fork substrate case for all 18 (ingestion under the fork's product as source, deterministic scoring, lifecycle, search, and the Core surfaces its claims name: asset rescoring, risk register, control assessment, posture, audit) and a bulk-atomicity case mixing addition sources |
 | `cyber_helpers.py` | Shared fixtures: demo users (ADMIN=alice/admin, ANALYST=bob/analyst, VIEWER=carol/viewer), `make_store()` building a CyberStore + AuditLog + one asset (`core-server-01`, criticality high) + one ingested finding (high severity, score 6.0/high), plus `fresh_store()`, `make_asset()`, `sample_finding_item()`, `ingest_sample_finding()` and `create_sample_risk()` |
 
 ## Negative control
@@ -72,6 +76,23 @@ f692fc74e9366e8fcdf2ba1d869632492676bf55c30fb3dc921bc0c60cedc5de,
 verified identical to the pre-mutation hash) and the suite re-run:
 **194 tests, OK**. The suite catches this defect class; the negative
 control is not decorative.
+
+## Mutation verification — additions re-run (2026-10-31)
+
+The additions changed no core code, so the same drill was re-run in
+this tree against the enlarged suite. The scoring line in
+`src/cyber/store.py` (line 115) was patched to `score = 1 *
+CRITICALITY_WEIGHTS[criticality]` and the full suite ran: **204
+tests ran, 52 failed** — the original score-dependent surfaces plus
+**22 failures from `test_additions.py`**, whose per-fork cases
+assert the deterministic score (high severity on a high-criticality
+asset = 6.0/high, rescore to 8.0/critical) for every one of the 18
+addition forks and so trip on the mutant exactly as designed.
+`store.py` was restored from `scratch/store.py.premutation`
+(SHA-256
+f692fc74e9366e8fcdf2ba1d869632492676bf55c30fb3dc921bc0c60cedc5de,
+verified identical to the pre-mutation hash) and the suite re-run:
+**204 tests, OK**.
 
 ## Interpretation notes
 

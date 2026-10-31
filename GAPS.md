@@ -913,6 +913,10 @@ New extended functions from the addition forks, specified in groups/operations-m
 
 Enlargements of families already registered under Group 36: the workflow automation execution engine is now asserted by 7 of 22 forks (adds the RPA / process-automation platforms UiPath and Bizagi); integration connector engines & catalog now 2 of 22 (adds IBM webMethods). Absence update: scheduling & rostering and IoT / telematics remain at zero taxonomy claims and unbuilt, but are no longer universal absences in this category (InfraLink asserts scheduling substance; IBM asserts IoT integration substance).
 
+## Remainder Addition — Cybersecurity L2 (+18 forks)
+
+No new extended functions; the addition enlarges families already registered under Group 4 (claimant counts in groups/cybersecurity-l2/ADDENDUM.md): identity, authentication & privileged-access products (+7 forks, now the union's largest Extended family at 15 of 72); AI / ML-powered analytics & anomaly detection (+5); network security enforcement (+4); insider-risk, DLP & data-security monitoring engines (+4); automation & orchestration engines / SOAR (+4); cloud & SaaS posture engines (+3); application-security testing engines (+3); threat-intelligence feeds (+2); identity proofing & fraud prevention (+2); endpoint management & patching agents (+2); endpoint security agents / EDR & XDR (+1); phishing simulation & security-awareness training (+1); log & telemetry pipelines (+1). Platform note: encryption & key management gains 3 claimants (no key-management service added; the substrate's hooks-not-IdP decision is reaffirmed). Three addition forks claim zero families under the taxonomy applied verbatim (Login.gov, Proofpoint TAP, Qualys) — their near-misses are itemized in the addendum rather than tuned for.
+
 ## Later groups
 
 Each group appends its section here when it ships.

@@ -19,6 +19,44 @@ and no detection or enforcement engine**: no scanner, no endpoint
 agent, no firewall, no phishing simulator. Those engines are the
 Extended tail, listed plainly in the honesty section below.
 
+## Additions: the 18 remainder forks (unit `addition:cybersecurity-l2`)
+
+Eighteen previously uncategorized FedRAMP Moderate offerings have
+since been spec'd into this group under the same taxonomy, applied
+verbatim: Acuant COFRS, Armis FedRAMP Edition, Authentic8 Silo,
+Cisco Cloudlock, Duo Federal, Login.gov, ID.me Identity Gateway,
+Kiteworks, Okta IDaaS, Fortify On Demand, Orca Security, Palo Alto
+Networks Government Cloud Services, Proofpoint Email and
+Information Protection, Proofpoint Targeted Attack Protection,
+Qualys Cloud Platform, Saviynt EIC, Tanium TC-USG, and Zimperium —
+**72 forks** in total, **271 claims**, with the full record in
+[`ADDENDUM.md`](ADDENDUM.md). What changed and what did not:
+
+- **Spec sheets:** the 18 new sheets are appended to
+  `specs/specs.json`; the original 54 are byte-for-byte untouched.
+  Three additions carry zero claims — Login.gov, Proofpoint TAP,
+  and Qualys — because their own descriptions phrase their
+  function in none of the taxonomy's patterns; that is pinned in
+  tests, not hidden (ADDENDUM §2, with per-fork near-misses).
+- **Core: unchanged.** Every function the additions claim maps to
+  a disposition the union spec already had, and no claim
+  presupposes a records form the build lacks, so `src/` is
+  byte-identical to the build described below. The unit is
+  identity-heavy (7 of 18 claim identity products) and the answer
+  is the one the original spec gave: access-control hooks and
+  ingested output, not an identity provider.
+- **Gaps:** no new gap functions; thirteen already-registered
+  Extended gaps gain claimants (identity products +7, AI/ML
+  analytics +5, network enforcement +4, DLP engines +4, SOAR +4,
+  posture engines +3, appsec testing +3, threat intel +2, identity
+  proofing +2, endpoint management +2, EDR/XDR +1, phishing
+  defense +1, log pipelines +1) — itemized in ADDENDUM §5.
+- **Tests:** 194 → **204, OK**, including the additions module
+  (`tests/test_additions.py`) and a re-run of the mutation drill
+  in this tree (52 failures under the severity-blind mutant, 22
+  of them from the additions module; store restored and
+  hash-verified).
+
 ## The 11 core functions
 
 1. **Asset inventory** — a register of assets (name, kind, owner,
@@ -140,7 +178,7 @@ PYTHONPATH=src python -m unittest discover -s tests
 
 **194 tests, OK** at delivery, including a mutation-verified
 negative control on the risk-scoring function (see
-`tests/README.md`).
+`tests/README.md`). With the additions module: **204 tests, OK**.
 
 ## Control-family mapping (summary)
 
