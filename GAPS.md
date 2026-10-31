@@ -1413,6 +1413,20 @@ New extended functions from this set, specified in groups/operations-management-
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. The set's two standing claims carry no control language, so the documented control claims stand at the prose tier: identification and authentication documented at four forks, access control documented at four, cryptographic protection at three, assessment at three, audit at two (both at records/readiness weight), configuration management and system integrity at one each; awareness, contingency, incident response, maintenance, media, physical, planning, program management, personnel, risk assessment, and system acquisition are not documented. Named absences: asset management — this category's signature absence — stands at zero claimed while standing in substance in six or more forks, because the founding phrase never occurs; scheduling and IoT/telematics stand in substance without a family; five AI-filed forks assert no scoped AI phrase. Seven of the set's nine raw hits were removed under the founding group's scoping discipline (authorization-services hits in boundary and status prose, one name-only token), each recorded with its reason.
 
+## Untiered Set 4 — Artificial Intelligence (AI) (9 forks, tier null)
+
+New extended functions from this set, specified in groups/ai-untiered/UNION-SPEC.md, not implemented:
+- [ ] open — Learned inference: the models themselves (four claimants in this set; the build's inference surface remains a labeled reference stub, never a model)
+- [ ] open — Agentic workflow execution engines
+- [ ] open — Voice & speech AI engines
+- [ ] open — Model serving & inference infrastructure
+- [ ] open — Document understanding, summarization & report generation
+- [ ] open — Knowledge-base / retrieval (RAG) engines
+- [ ] open — Evaluation & benchmarking engines
+- [ ] open — Vertical workflow applications (public-records generation, human-services case work, constituent contact center)
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. The documented control claims: audit documented (two forks, one at administration-surface weight and one as audit-data persistence under a zero-retention mode); access control with identification language documented at one fork; content-policy and guardrail configuration documented at one fork; multi-tenancy documented as a platform assertion only, with no isolation language; model governance, usage monitoring, zero persistence, and every other family are not documented. Named absences: nine of the category's sixteen families stand at zero in this set, including model gateway, model governance, usage metering, interaction records, and zero persistence. One exclusion removal is recorded: a model-gateway hit whose only evidence sentence states that calls are not sent to third-party model providers.
+
 ## Later groups
 
 Each group appends its section here when it ships.

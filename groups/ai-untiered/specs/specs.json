@@ -1,0 +1,270 @@
+[
+ {
+  "fork_id": "FR2633053633",
+  "vendor": "Anthropic",
+  "product": "Claude",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)"
+  ],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "Claude is Anthropic's AI assistant, delivered as a cloud service and accessed through multiple interfaces that share the same underlying platform, models, and security controls: the Claude application on web, desktop, and mobile; Claude Code for agentic software development; Claude Cowork for delegating multi-step knowledge work; and the Claude API and Developer Platform for programmatic access to Claude models and agent-building capabilities. Users interact with Claude in natural language to draft and analyze documents, reason over uploaded files, search connected data sources, write and run code, and automate multi-step work. Organization administrators manage identity, access, data retention, and audit controls across all interfaces from a single deployment. Customer content is not used to train Anthropic's models by default.",
+  "functions_claimed": [
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging & trails",
+    "evidence": "Organization administrators manage identity, access, data retention, and audit controls across all interfaces from a single deployment."
+   },
+   {
+    "function_id": "agentic_workflows",
+    "function": "Agentic & automated workflow automation",
+    "evidence": "Claude is Anthropic's AI assistant, delivered as a cloud service and accessed through multiple interfaces that share the same underlying platform, models, and security controls: the Claude application on web, desktop, and mobile; Claude Code for agentic software development; Claude Cowork for delegating multi-step knowledge work; and the Claude API and Developer Platform for programmatic access..."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2633053633/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2633053633"
+ },
+ {
+  "fork_id": "FR2633153276",
+  "vendor": "Anyreach, Inc.",
+  "product": "Anyreach App Software Application",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Communication",
+   "Contact Center",
+   "Customer Service"
+  ],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "Anyreach App is a cloud-hosted SaaS offering for building, deploying, and operating omnichannel conversational AI agents. Anyreach is preparing the offering for direct use by federal agencies in constituent-service and contact-center workflows. An adopting agency will make its own risk decision and issue the applicable authorization for integration into its federal information system.",
+  "functions_claimed": [
+   {
+    "function_id": "learned_inference",
+    "function": "Learned AI/ML inference (LLMs, ML, NLU, predictive models)",
+    "evidence": "Anyreach App is a cloud-hosted SaaS offering for building, deploying, and operating omnichannel conversational AI agents."
+   },
+   {
+    "function_id": "agentic_workflows",
+    "function": "Agentic & automated workflow automation",
+    "evidence": "Anyreach App is a cloud-hosted SaaS offering for building, deploying, and operating omnichannel conversational AI agents."
+   },
+   {
+    "function_id": "contact_center",
+    "function": "Contact center & customer experience",
+    "evidence": "Anyreach App is a cloud-hosted SaaS offering for building, deploying, and operating omnichannel conversational AI agents."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2633153276/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2633153276"
+ },
+ {
+  "fork_id": "FR2632558748",
+  "vendor": "Baseten Labs, Inc.",
+  "product": "Baseten Inference Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)"
+  ],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "A cloud-based AI inference platform that provides managed model deployment, autoscaling, and serving infrastructure for production machine learning workloads.",
+  "functions_claimed": [
+   {
+    "function_id": "learned_inference",
+    "function": "Learned AI/ML inference (LLMs, ML, NLU, predictive models)",
+    "evidence": "A cloud-based AI inference platform that provides managed model deployment, autoscaling, and serving infrastructure for production machine learning workloads."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2632558748/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2632558748"
+ },
+ {
+  "fork_id": "FR2632054530",
+  "vendor": "Beam Up Ltd",
+  "product": "Beam",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)"
+  ],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "Beam is a browser-based SaaS platform for human services agencies. Notes records staff conversations and produces an AI transcript and summary against customer-defined templates; a human reviews, edits, and copies the output into the customer's case management system; Reports, a function within Notes, summarizes uploaded documents, recordings, handwritten notes, video, or existing Notes into a report against a customer template. Talk is a conversational AI voice and chat agent that answers resident calls and chats, with SIP transfer to a human agent on triage need, safeguarding risk, or explicit request. Interpret provides real-time interpretation, combining speech-to-text, LLM interpretation, and text-to-speech, through a browser interface or over a telephone path. The US deployment is standalone: customer data is stored and processed entirely within the continental United States, in US data centers, with backups stored in US data centers.",
+  "functions_claimed": [
+   {
+    "function_id": "learned_inference",
+    "function": "Learned AI/ML inference (LLMs, ML, NLU, predictive models)",
+    "evidence": "Talk is a conversational AI voice and chat agent that answers resident calls and chats, with SIP transfer to a human agent on triage need, safeguarding risk, or explicit request."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2632054530/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2632054530"
+ },
+ {
+  "fork_id": "FR2628647242",
+  "vendor": "Bland AI",
+  "product": "Bland",
+  "service_model": [
+   "PaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Contact Center"
+  ],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "Bland is an enterprise voice AI platform for building, deploying, and operating AI phone agents at scale. Bland runs its own speech and language models, so customer calls are not sent to third-party frontier model providers. Speech-to-text, reasoning, and text-to-speech all run on Bland’s own models within Bland’s boundary.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2628647242/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2628647242"
+ },
+ {
+  "fork_id": "FR2700137035",
+  "vendor": "Caldera AI Inc.",
+  "product": "Mesa",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Legal & Policy",
+   "Research"
+  ],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "Mesa is an AI platform for government agencies, used by federal, state, and local government staff. It has two workspaces: Research, for researching statutes, regulations, case law, and an agency’s own documents with cited answers, and Public Records, for handling public records requests from intake through review, redaction, and release. Mesa is a multi-tenant software-as-a-service application hosted on Google Cloud in the United States.",
+  "functions_claimed": [
+   {
+    "function_id": "multi_tenancy",
+    "function": "Multi-tenant architecture & tenant isolation",
+    "evidence": "Mesa is a multi-tenant software-as-a-service application hosted on Google Cloud in the United States."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2700137035/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2700137035"
+ },
+ {
+  "fork_id": "FR2628647238",
+  "vendor": "Eleven Labs Inc.",
+  "product": "ElevenLabs Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)"
+  ],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "The ElevenLabs Platform is a cloud-based AI voice and audio service that enables organizations to generate, transform, and deploy AI-produced speech and audio at scale. The FedRAMP Class A certification scope of the offering comprises three services — Text to Speech, Speech to Text, and Agents — delivered via the ElevenLabs API and the ElevenAgents platform, and applies only when the services are operated in Zero Retention Mode (ZRM), in which customer inputs and outputs are not retained and only system and audit data is persisted. All services share a common identity and access management layer, workspace-based multi-tenancy, and a unified data plane, with capabilities accessible to enterprise workspace administrators and developers integrating via API.",
+  "functions_claimed": [
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging & trails",
+    "evidence": "The FedRAMP Class A certification scope of the offering comprises three services — Text to Speech, Speech to Text, and Agents — delivered via the ElevenLabs API and the ElevenAgents platform, and applies only when the services are operated in Zero Retention Mode (ZRM), in which customer inputs and outputs are not retained and only system and audit data is persisted."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Identity & access control",
+    "evidence": "All services share a common identity and access management layer, workspace-based multi-tenancy, and a unified data plane, with capabilities accessible to enterprise workspace administrators and developers integrating via API."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2628647238/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2628647238"
+ },
+ {
+  "fork_id": "FR2634659079",
+  "vendor": "ThinkTrends LLC",
+  "product": "ThinkTrends AI Platform",
+  "service_model": [
+   "SaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Analytics",
+   "Artificial Intelligence (AI)",
+   "Collaboration",
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Development Tools",
+   "Governance, Risk, and Compliance (GRC)",
+   "Operations Management",
+   "Research"
+  ],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "ThinkTrends AI Platform is a cloud-based, enterprise-grade\nAgentic AI platform developed by ThinkTrends LLC. It\nprovides federal agencies and commercial organizations with\na unified environment for deploying, managing, and operating\nAI-powered agents, knowledge bases, data pipelines, and\nintelligent workflows. Key capabilities include:\n- **AI Agent Studio**: Build and deploy conversational AI\nagents with RAG (Retrieval-Augmented Generation), memory,\nand tool integrations backed by Amazon foundation models.\n- **Knowledge Base Management**: Ingest, index, and query\nstructured and unstructured documents using vector\nembeddings for grounded, citation-based AI responses.\n- **Agent Flow Orchestration**: Design and execute visual\nnode-based AI workflows for automated, multi-step tasks.\n- **Data Pipelines**: Managed Agentic ETL-based pipelines\nfor data ingestion, transformation, and delivery.\n- **Guardrails & Safety**: Configurable content safety\nguardrails (HIPAA, PII, tone, compliance policies) applied at\nthe agent and platform level.\n- **File & Drive Integration**: Secure file management\nintegrated with Google Drive and native cloud storage.\n- **Enterprise Connectors**: Native integrations with Slack,\nJira, Google Workspace, Microsoft 365, and agency\nenterprise systems.\n- **Agentic Governance**: Ability to run automated evaluation\njobs, analyse agent responses against accuracy, relevance,\nand safety benchmarks, and iteratively improve prompts\nbased on those scores",
+  "functions_claimed": [
+   {
+    "function_id": "learned_inference",
+    "function": "Learned AI/ML inference (LLMs, ML, NLU, predictive models)",
+    "evidence": "It\nprovides federal agencies and commercial organizations with\na unified environment for deploying, managing, and operating\nAI-powered agents, knowledge bases, data pipelines, and\nintelligent workflows."
+   },
+   {
+    "function_id": "guardrails",
+    "function": "Configurable security guardrails / content policy",
+    "evidence": "- **Guardrails & Safety**: Configurable content safety\nguardrails (HIPAA, PII, tone, compliance policies) applied at\nthe agent and platform level."
+   },
+   {
+    "function_id": "agentic_workflows",
+    "function": "Agentic & automated workflow automation",
+    "evidence": "ThinkTrends AI Platform is a cloud-based, enterprise-grade\nAgentic AI platform developed by ThinkTrends LLC."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2634659079/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2634659079"
+ },
+ {
+  "fork_id": "FR2632054534",
+  "vendor": "Thread AI, Inc.",
+  "product": "Lemma (GovCloud)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Operations Management"
+  ],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "Lemma is Thread AI's AI workflow orchestration platform, deployed in AWS GovCloud (US) for federal customers and the contractors that support them.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2632054534/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2632054534"
+ }
+]
