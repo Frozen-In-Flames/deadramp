@@ -643,6 +643,17 @@ Extended functions new with this fork, specified in groups/data-management-l1/UN
 
 The Group 12 category union's extended families (distributed storage, integration runtime, record linkage, search indexing, content processing, workflow, query / visualization, hosting, case depth, AI/ML, field-level lineage, retention disposition execution) are already registered under Groups 12 and 28 and are not re-registered here. Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: zero claims tag for this fork (three sentences of boundary prose); all twelve core functions are carried, not claimed, under an explicit core-boundary decision, and at this tier the never-self-approve guard traces to AC-3, AC-5 being lineage only (not a Low selection).
 
+## Singleton 39 — CMS L3-adjacent (1 fork)
+
+Extended functions new with this fork, specified in groups/cms-l3/UNION-SPEC.md, not implemented:
+- [ ] open — Learned ML / AI classification engine (automatically classify physical and digital content)
+- [ ] open — Learned ML / AI extraction engine (extract content / data from physical and digital content)
+- [ ] open — Learned ML / AI enrichment engine (enrich content with derived metadata; the substrate stores caller-supplied metadata only and derives none)
+- [ ] open — Physical-content intake & digitization pipeline (scanning / conversion of physical records into the platform)
+- [ ] open — The content services platform runtime itself (hosting / delivery of the SaaS platform)
+
+The Group 20 category union's extended families (rendering & templating engines, visual editors, CDN / delivery, enterprise search indexing, bulk ingestion, library ILS vertical, BPM / case engine, engagement vertical, personalization, editorial workflow engines beyond lifecycle mechanics) are already registered under Groups 20 and 24 and are not re-registered here. Baseline gaps at High: MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Platform-layer: multi-tenancy (single-tenant reference deployment); TLS only when configured; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: zero claims tag for this fork (a single-sentence description); all twelve core functions are carried, not claimed, under the Merge Rule, and no retention / disposition language is imported from the vendor's broader reputation.
+
 ## Later groups
 
 Each group appends its section here when it ships.
