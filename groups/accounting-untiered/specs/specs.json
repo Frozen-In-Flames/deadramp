@@ -1,0 +1,41 @@
+[
+ {
+  "fork_id": "FR2633734927",
+  "vendor": "Meterbox Inc.",
+  "product": "Meterbox",
+  "service_model": [
+   "SaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Accounting",
+   "Finance",
+   "Customer Relations Management (CRM)"
+  ],
+  "deadramp_category": "Accounting",
+  "description": "Meterbox replaces fragmented monetization infrastructure with one programmable platform, built around a single immutable financial ledger. Every customer interaction becomes one financial event; everything else is projected from it. Instead of synchronizing systems, we derive different business views from one authoritative source \u2014 which reduces operational complexity while increasing financial correctness. Meterbox emphasizes customer data isolation, privacy by default, comprehensive auditability, strong authentication and access controls, flexible deployment for regulated or sovereign environments, and support for privacy and data-rights requirements. The platform is being built toward major enterprise security and compliance standards, while transparently documenting its current certifications, roadmap, security practices, third-party providers, accessibility efforts, and vulnerability-reporting processes.",
+  "functions_claimed": [
+   {
+    "function_id": "financial_reporting",
+    "function": "Financial reporting & statements",
+    "evidence": "The platform is being built toward major enterprise security and compliance standards, while transparently documenting its current certifications, roadmap, security practices, third-party providers, accessibility efforts, and vulnerability-reporting processes."
+   },
+   {
+    "function_id": "audit",
+    "function": "Audit trail & audit management",
+    "evidence": "Meterbox emphasizes customer data isolation, privacy by default, comprehensive auditability, strong authentication and access controls, flexible deployment for regulated or sovereign environments, and support for privacy and data-rights requirements."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Access control & authentication",
+    "evidence": "Meterbox emphasizes customer data isolation, privacy by default, comprehensive auditability, strong authentication and access controls, flexible deployment for regulated or sovereign environments, and support for privacy and data-rights requirements."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2633734927/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2633734927"
+ }
+]
