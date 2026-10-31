@@ -1,0 +1,82 @@
+[
+ {
+  "fork_id": "FR2700555848",
+  "vendor": "Dynatrace",
+  "product": "Dynatrace Platform for FedRAMP Class D (High)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [],
+  "deadramp_category": "System Administration",
+  "description": "Dynatrace is the AI-powered platform for unified observability, security, and automation. It turns high-volume telemetry into precise answers, reducing operational risk and connecting technical decisions to mission impact. Agencies see how their systems behave, know why something broke and what it affects, and know what is likely to break next, so teams spend their time focused on the mission instead of on triage. One platform and one data model replace fragmented tools with a single source of truth, lowering the cost and complexity of the monitoring estate. OneAgent automatically discovers and instruments applications, microservices, infrastructure, and their dependencies, and Smartscape maps those relationships in real time. Grail, a causational data lakehouse, holds logs, metrics, traces, events, and mission and business data in full context. Causal AI pinpoints root cause and impact automatically, and predictive AI forecasts capacity shortfalls, resource exhaustion, and degrading service trends before mission users are affected, so teams act on answers instead of alerts. Those answers can trigger remediation workflows from the same data and the same model. Application observability, infrastructure observability, log analytics, application security, digital experience, business observability, and AI/LLM all run on that platform.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2700555848",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2700555848/"
+ },
+ {
+  "fork_id": "FR2630354491",
+  "vendor": "Freshworks",
+  "product": "Freshworks for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Operations Management",
+   "Artificial Intelligence (AI)",
+   "System Administration"
+  ],
+  "deadramp_category": "System Administration",
+  "description": "Freshservice, by Freshworks for Government, is the AI-powered, unified service operations platform that is fast to deploy, intuitive to use, and enables every employee to be more productive. Freshservice offers powerful governance and scale, without the operational drag of legacy platforms. This is a critical requirement for federal agencies navigating ever-changing and demanding missions. Some highlights of the Freshservice solution include but are not limited to: Freshservice ITSM \u2013 A comprehensive IT Service Management solution built on ITIL best practices, unifying incident, problem, change, and request management on a single platform Freshservice ITOM \u2013 IT Operations Management with dependency mapping and signal correlation across systems, enabling proactive incident coordination before employees feel the impact Freshservice ITAM \u2013 Continuous, agentless hybrid IT discovery, inventory, and dependency mapping delivers instant visibility into hardware, software, and services across data centers, hybrid, and multi-cloud environments, with insights to optimize infrastructure and applications Freshservice ESM \u2013 Extends service delivery beyond IT to HR, Finance, and other business teams on a common data and workflow model Freddy AI \u2013 Domain-specialized AI for IT service operations, powering a continually increasing portfolio of AI service workflows built on a decade of experience, workflow, and service domain context across tens of thousands of customers. By unifying agentic and assistive AI, Freddy AI enables zero-touch resolutions, proactive operations, and service intelligence to anticipate and solve problems at the source Major Incident Management, extended with FireHydrant \u2013 An end-to-end incident management platform bringing on-call and alerting, chat-native response, and retrospectives into a single workflow, powered by AI and automation to help teams respond more effectively and resolve incidents faster Freshservice empowers organizations to: Deliver service, operations, and asset management from a single AI-powered platform Resolve employee requests instantly, routing issues to the right team and context Coordinate onboarding and access across IT, HR, and Finance for a smoother employee experience Get ahead of major incidents by connecting signals and mapping dependencies across systems Maintain accurate asset records through continuous, automated discovery Deploy rapidly through no-code setup, intuitive configuration, and built-in best practices, without extensive consulting or custom development Reduce costs and increase efficiencies with transparent pricing and built-in security, compliance, and governance controls",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2630354491",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2630354491/"
+ },
+ {
+  "fork_id": "FR2217348295",
+  "vendor": "NetApp",
+  "product": "Cloud Insights",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "System Administration",
+  "description": "Cloud Insights is a SaaS observability platform for on-premises, hybrid cloud and multi-cloud resources, for full-stack visibility across organizations\u2019 IT ecosystems. Cloud Insights provides organizations a consolidated view of their entire infrastructure for capacity management and optimization, monitoring, advanced reporting and and performance/configuration troubleshooting. Cloud Insights is used by organizations at all levels of scale and across a variety of different industries to deliver the following use cases: - Visualizing performance and capacity across heterogeneous resources and infrastructure through customizable dashboards - Optimization and waste reduction for storage and compute resources on-prem and in the cloud - A consistent UI and operational workflows for organizations with workloads split between cloud on on-prem locations, and throughout cloud migrations - In-depth observability for Kubernetes platform administrators with Pod-to-Storage mapping, a visual cluster explorer and correlation of metrics to logs - Suite of features for managing NetApp ONTAP storage - Intelligent insights to automatically identify potential performance issues and risks of capacity exhaustion and provide remedial actions to prevent outage or degradation - Customizable BI reporting and data warehouse for chargeback, showback and capacity planning",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2217348295",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2217348295/"
+ },
+ {
+  "fork_id": "FR2701457585",
+  "vendor": "PDQ",
+  "product": "PDQ for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Mobile Device Management (MDM)",
+   "System Administration"
+  ],
+  "deadramp_category": "System Administration",
+  "description": "PDQ is an endpoint management platform designed for IT administrators and sysadmins. Manage, secure, and automate Windows and macOS endpoints across remote, hybrid, and on-site environments from a central platform. PDQ is designed to make the grind of everyday IT workflows seamless and the thorny why-the-hell-isn\u2019t-this-working issues easier to diagnose. Core capabilities include patch management, vulnerability remediation, software deployment, remote desktop access and monitoring, and IT automation. In short, the stuff you actually tell us to build. Just look at our Discord. Vulnerability remediation: Vulnerabilities are continuously detected and prioritized using real-world exploit activity in addition to CVSS, enabling remediation based on real, not theoretical, business risk. Patch management: Patch Windows OS and more than 1,000 Windows and macOS packages from a hand-built library sourced directly from publishers, virus-scanned, stripped of nonsense, and typically updated within hours of a new release. Software deployment and automation: PDQ's prebuilt workflows and automations can be running within minutes of onboarding. From there, sysadmins can combine custom multistep packages, advanced PowerShell Scanners, dynamic device groups, vulnerability automations, and a community-shared script library to create an end-to-end system tailor-built for their environment, reducing what was once days into minutes. Remote desktop and diagnostics: For when all else fails, PDQ ships with native device-level diagnostics and a remote desktop tool that fires up quickly to help you diagnose, fix, and move on, whether you\u2019re dealing with an x64 Lenovo or an ARM MacBook Pro. Multitenant management: Multitenant support allows IT teams managing multiple environments to operate from a single console. Real-time automation: Event-driven automation allows IT teams to execute workflows based on device state and predefined conditions. Deployments trigger the moment a condition is met without waiting for a scheduled window. Offline device deployment: Offline device deployment queuing ensures no device is skipped, regardless of connectivity at the time a deployment runs. Where compliance, regulatory, or org policy requires it, PDQ\u2019s core deployment and patching capabilities can also be deployed as an on-premises, agentless solution. PDQ is SOC 2 certified and includes security features such as MFA, role-based access controls, encryption, and audit logging to support compliance requirements. Pricing is publicly available and supports self-service purchasing without requiring a sales call. A 14-day free trial is available with no credit card required.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2701457585",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2701457585/"
+ }
+]
