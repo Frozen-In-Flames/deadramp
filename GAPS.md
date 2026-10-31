@@ -834,6 +834,24 @@ Product capabilities named in the listing but explicitly outside its FedRAMP Min
 
 The Group 36 category union's extended families (workflow execution, real-time intelligence & analytics, AI models, low-code builder, integration connectors, mobile apps, network connectivity & cloud operations, identity provider, security enforcement plane, policy enforcement plane, governance console) are already registered under Group 36 and are not re-registered here. Named absences from the category record: scheduling / rostering (zero claims at L2; this fork names conference session scheduling only as an out-of-scope capability) and IoT / telematics (zero claims everywhere). Platform-layer: multi-tenancy (asserted by the fork of its own platform; single-tenant reference deployment); encryption at rest (deployment layer); TLS only when configured; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: zero claims tag for this fork; the one raw hit (integrations) fired only inside the listing's scope-exclusion sentence and was removed under the boundary-disclaimer and excluded-catalogue precedents. At L1 the audit trace holds on the FedRAMP Low side only, and Group 36's AU-6 citation is deliberately not imported.
 
+## Singleton 51 — Network Management L2 (1 fork, new category)
+
+Extended functions, specified in groups/network-management-l2/UNION-SPEC.md, not implemented (the build manages no live network, pushes no configuration, and collects no telemetry):
+- [ ] open — Network optimization engine ("optimize" is a real verb in this fork's description, unlike the name-only case at Singleton 50; claimed, engine Extended)
+- [ ] open — Network intelligence / AI engine
+- [ ] open — Device provisioning & deployment engine
+- [ ] open — Network configuration push / control plane (configuration changes are records; closing one alters no device or network record)
+- [ ] open — Firmware management engine
+- [ ] open — Traffic control & SD-WAN policy engine (named from the device gloss, not a claim)
+- [ ] open — Telemetry collection & polling engine (telemetry in Core is caller-supplied records only)
+- [ ] open — Alert evaluation & delivery transport (alerts are records)
+- [ ] open — Integration connectors
+- [ ] open — Automation execution engine (the registry holds definitions only)
+- [ ] open — Cloud management web application
+- [ ] open — FIPS-validated cryptography (SC-13; the fork's platform property — the build claims no validated cryptography)
+
+Platform-layer: U.S. data residency (deployment property); platform scalability / multi-region operation; encryption at rest (deployment layer; TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: the category is new; the description is platform prose (three of nine sentences tag nothing), and no reporting family exists in its taxonomy because the description carries no report or dashboard vocabulary — registry summaries are substrate, not a reporting claim. Device records carry a nine-key pinned shape with classes from the description's generic glosses; vendor model designations appear only inside stored evidence.
+
 ## Later groups
 
 Each group appends its section here when it ships.

@@ -1,0 +1,81 @@
+[
+ {
+  "fork_id": "FR2315535023",
+  "vendor": "Cisco Systems Inc.",
+  "product": "Cisco Meraki US Government Region",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Network Management",
+  "description": "Cisco Meraki for Government provides a secure and efficient way to support your networking transformation within budget. Our cloud-managed platform simplifies networking to make it easier to deploy, manage, and optimize networks – driving IT modernization and enabling hybrid work. Meraki helps future proof networks and allows agencies to stay ahead of changing citizen and regulatory demands while improving employee productivity. Meraki has developed the most sophisticated platform in the industry based on cloud-first operations, network intelligence (AI), and open APIs to better integrate and automate processes, while providing a way to customize the monitoring and management of a network. The Meraki platform is built with a modern cloud-managed architecture that is able to quickly scale to meet the needs of customers worldwide. We have taken that knowledge and technical sophistication to create a tailored solution for the U.S. Government. Our solution gives government agencies the ability to quickly deploy, scale and manage cloud networks anywhere in the world in an effort to help meet their cloud-first initiatives. Security is a high priority of our solution, which is why we created a separate platform that stores data on U.S. soil and includes FIPS to further protect government telemetry data from device to cloud. Meraki will offer certain MS (Switching), MR (Wireless) and MX (Security and SD-WAN) devices as part of the offering.",
+  "functions_claimed": [
+   {
+    "function_id": "cloud_managed_networking",
+    "function": "Cloud-managed networking platform",
+    "evidence": "Our cloud-managed platform simplifies networking to make it easier to deploy, manage, and optimize networks – driving IT modernization and enabling hybrid work."
+   },
+   {
+    "function_id": "network_deployment",
+    "function": "Network deployment",
+    "evidence": "Our cloud-managed platform simplifies networking to make it easier to deploy, manage, and optimize networks – driving IT modernization and enabling hybrid work."
+   },
+   {
+    "function_id": "network_management",
+    "function": "Network management",
+    "evidence": "Our cloud-managed platform simplifies networking to make it easier to deploy, manage, and optimize networks – driving IT modernization and enabling hybrid work."
+   },
+   {
+    "function_id": "network_optimization",
+    "function": "Network optimization",
+    "evidence": "Our cloud-managed platform simplifies networking to make it easier to deploy, manage, and optimize networks – driving IT modernization and enabling hybrid work."
+   },
+   {
+    "function_id": "network_intelligence_ai",
+    "function": "Network intelligence (AI)",
+    "evidence": "Meraki has developed the most sophisticated platform in the industry based on cloud-first operations, network intelligence (AI), and open APIs to better integrate and automate processes, while providing a way to customize the monitoring and management of a network."
+   },
+   {
+    "function_id": "open_apis",
+    "function": "Open APIs",
+    "evidence": "Meraki has developed the most sophisticated platform in the industry based on cloud-first operations, network intelligence (AI), and open APIs to better integrate and automate processes, while providing a way to customize the monitoring and management of a network."
+   },
+   {
+    "function_id": "process_integration_automation",
+    "function": "Process integration & automation",
+    "evidence": "Meraki has developed the most sophisticated platform in the industry based on cloud-first operations, network intelligence (AI), and open APIs to better integrate and automate processes, while providing a way to customize the monitoring and management of a network."
+   },
+   {
+    "function_id": "monitoring_customization",
+    "function": "Customizable monitoring & management",
+    "evidence": "Meraki has developed the most sophisticated platform in the industry based on cloud-first operations, network intelligence (AI), and open APIs to better integrate and automate processes, while providing a way to customize the monitoring and management of a network."
+   },
+   {
+    "function_id": "platform_scalability",
+    "function": "Platform scalability",
+    "evidence": "The Meraki platform is built with a modern cloud-managed architecture that is able to quickly scale to meet the needs of customers worldwide."
+   },
+   {
+    "function_id": "telemetry_protection",
+    "function": "Telemetry data protection",
+    "evidence": "Security is a high priority of our solution, which is why we created a separate platform that stores data on U.S. soil and includes FIPS to further protect government telemetry data from device to cloud."
+   },
+   {
+    "function_id": "us_data_residency",
+    "function": "U.S. data residency",
+    "evidence": "Security is a high priority of our solution, which is why we created a separate platform that stores data on U.S. soil and includes FIPS to further protect government telemetry data from device to cloud."
+   },
+   {
+    "function_id": "device_offering",
+    "function": "Network device offering (switching, wireless, security & SD-WAN)",
+    "evidence": "Meraki will offer certain MS (Switching), MR (Wireless) and MX (Security and SD-WAN) devices as part of the offering."
+   }
+  ],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2315535023",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2315535023/"
+ }
+]
