@@ -1618,6 +1618,19 @@ New extended functions from this set, specified in groups/law-enforcement-untier
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This set records zero claims: the founding taxonomy is a legal-research taxonomy and neither operational description fires any of its phrases — the same outcome this category recorded at its Low singleton and its High addition. The documented control claims stand at identification documented (an identity and access management layer, no mechanism named), access control documented in part at prose weight, and cryptographic protection at prose weight (encrypted messaging, bounded: no algorithm or standard claimed); an operational risk-assessments phrase is a function, not risk-assessment control language, and after-action documentation is not audit. Category discipline is pinned by test on the descriptions themselves: facial, predictive, surveillance, camera, sensor, and the phrase real-time intelligence occur zero times in both descriptions, and none of those functions is attributed in any form. No core function is claim-supported: the substrate is carried, not claimed.
 
+## Untiered Set 16 — Human Resources (2 forks, tier null)
+
+New extended functions from this set, specified in groups/human-resources-untiered/UNION-SPEC.md, not implemented (already-registered gaps gaining claimants or substance here — the time, attendance and leave engine, integration connectors, AI and workflow automation engines, and federal retirement and benefits depth — are noted in the union spec, not re-registered):
+- [ ] open — Payroll processing engine
+- [ ] open — Expense tracking & management
+- [ ] open — Project time tracking & resource scheduling engines
+- [ ] open — Employee communications & messaging platform
+- [ ] open — Document management services
+- [ ] open — Identity federation / privileged access management services (the documented side of an IdP; the build ships hooks, not an IdP)
+- [ ] open — Security operations engines: continuous monitoring, vulnerability management, incident response (documented by one fork; the build performs none of them)
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Six claims stand, one at automation weight only (automating time tracking, with zero AI wording in the text). The documented control claims are the richest of any untiered set so far, all from one fork: identification (including IAL2/AAL2, MFA, and federation), access control, audit, cryptographic protection (FIPS 140-3 modules), configuration management, and incident response documented, risk assessment in part — balanced by the standing caution that the same fork's prose asserts a FedRAMP Moderate authorization its own record contradicts (impact Unknown, Initial Implementation), recorded as the fork's assertion and moving no tier, with assessment withheld because its sentence is inseparable from that assertion. The tiered tiers' retired absences do not transfer: leave and time-off, policy acknowledgements, background checks, and salary stand in this set, while payroll and time and attendance fall in substance without a family — gaps, not claims.
+
 ## Later groups
 
 Each group appends its section here when it ships.
