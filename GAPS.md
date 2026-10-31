@@ -1330,6 +1330,22 @@ New extended functions from this fork, specified in groups/research-l1/UNION-SPE
 
 All nine taxonomy families stand at zero for this fork, token-verified; no dataset content of any kind is named in its text (review steps, never contents), no scoring or ranking vocabulary appears ("quality assessment" assesses reviews), and no literature database or methods-standard token appears. The parent group's carried Extended set remains registered once under Singleton 53 and is not re-registered. Core-boundary decision, stated once in the union spec with its price: no core function is claim-supported for this fork — the eleven-function data-commons substrate is carried down whole, carried, not claimed.
 
+## Remainder Singleton 64 — Storage L2 (1 fork, new category)
+
+New extended functions from this fork, specified in groups/storage-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Archived payload storage plane: storing the actual archived content (the Core holds metadata records only — no field can hold a subject, body, or content)
+- [ ] open — Archive ingest pipeline: capturing messages into the archive
+- [ ] open — Full-text content indexing & search engine (discovery records in the Core carry no free-text query field by design)
+- [ ] open — Encryption & decryption engine (the encryption family is Extended; the build performs no cryptography — its custody records are Core)
+- [ ] open — Key management hardware & premise equipment
+- [ ] open — Retrieval delivery transport & export file production
+- [ ] open — Supervision review console & workflow engine
+- [ ] open — Policy enforcement execution (enforcement records are Core; nothing executes)
+- [ ] open — Mail platform & directory connectors
+- [ ] open — Disposition execution: destroying the payload itself (the Core's disposition is a derivation-gated record)
+
+Platform layer: FIPS-validated cryptography (SC-13) is not stated by the fork and is not claimed; encryption at rest is deployment-layer. Named absences, token-verified at zero tokens each: object / block / file storage (no buckets, volumes, or shares — the category's expected centre is absent from its founding fork, which is an email archive), backup / restore / snapshots, replication / disaster recovery, deduplication / compression, tiering / lifecycle / cold storage, content versioning, WORM / immutability (notable: retention is claimed, immutability is not), legal hold (the description's "legal liabilities" is benefit prose), capacity / quota, content scanning, journaling, and bulk migration. Core-boundary decisions are stated once in the union spec with their prices: metadata never payloads; custody records hold no key material; an extend-retention enforcement record provably does not alter the retention derivation (test-pinned).
+
 ## Later groups
 
 Each group appends its section here when it ships.

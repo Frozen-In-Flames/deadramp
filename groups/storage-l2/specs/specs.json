@@ -1,0 +1,76 @@
+[
+ {
+  "fork_id": "F1304222071",
+  "vendor": "Proofpoint, Inc.",
+  "product": "Proofpoint Email Archive",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Storage",
+  "description": "The Federal Production Environment provides a complete message archiving solution that can protect an organization from legal liabilities and regulatory risks while improving email storage management and end-user productivity. Its web interface offers fully secure email archiving with robust search and discovery, supervision, and enforcement features. The solution securely stores electronic messages for a specified retention period, while keeping the messages fully searchable and retrievable in real-time or with a batch process. This allows archived messages to be easily viewed, retrieved to a user's email inbox or exported to an Outlook data file.\n\nThe Archiving Customer Premise Equipment (CPE) is software-based, a hardware-based version is also available, and is installed within the Microsoft Office 365 ITAR environment behind the firewall to provide the tight integration and security typically only afforded to internal systems. The CPE integrates with Microsoft Exchange to ensure reliable, native format message archiving. Its integration with Active Directory facilitates unified login and access control management. Since the CPE is the only holder of the encryption keys used with Proofpoint's DoubleBlind\u2122 Encryption technology, any processing that involves encryption or decryption happens on the CPE.\n\nProofpoint's DoubleBlind\u2122 Encryption technology guarantees the security of data, ensuring that no one outside the organization can access archived data. When a message reaches the CPE, it is encrypted before being sent outside the Microsoft Office 365 ITAR firewall over a secure connection to the Proofpoint Federal Production Environment. Messages are only decrypted when an authorized user on the customer network conducts a search from Outlook or from the CPE's web-based user interface. Data can never be viewed without access to both the archiving CPE within the Microsoft Office 365 ITAR environment and the Proofpoint Federal Production Environment.",
+  "functions_claimed": [
+   {
+    "function_id": "message_archiving",
+    "function": "Message archiving",
+    "evidence": "The Federal Production Environment provides a complete message archiving solution that can protect an organization from legal liabilities and regulatory risks while improving email storage management and end-user productivity."
+   },
+   {
+    "function_id": "storage_management",
+    "function": "Email storage management",
+    "evidence": "The Federal Production Environment provides a complete message archiving solution that can protect an organization from legal liabilities and regulatory risks while improving email storage management and end-user productivity."
+   },
+   {
+    "function_id": "retention",
+    "function": "Retention for a specified period",
+    "evidence": "The solution securely stores electronic messages for a specified retention period, while keeping the messages fully searchable and retrievable in real-time or with a batch process."
+   },
+   {
+    "function_id": "search_discovery",
+    "function": "Search & discovery",
+    "evidence": "Its web interface offers fully secure email archiving with robust search and discovery, supervision, and enforcement features."
+   },
+   {
+    "function_id": "supervision",
+    "function": "Supervision",
+    "evidence": "Its web interface offers fully secure email archiving with robust search and discovery, supervision, and enforcement features."
+   },
+   {
+    "function_id": "policy_enforcement",
+    "function": "Policy enforcement",
+    "evidence": "Its web interface offers fully secure email archiving with robust search and discovery, supervision, and enforcement features."
+   },
+   {
+    "function_id": "retrieval_export",
+    "function": "Retrieval & export",
+    "evidence": "The solution securely stores electronic messages for a specified retention period, while keeping the messages fully searchable and retrievable in real-time or with a batch process."
+   },
+   {
+    "function_id": "mail_platform_integration",
+    "function": "Mail platform integration (native format)",
+    "evidence": "The CPE integrates with Microsoft Exchange to ensure reliable, native format message archiving."
+   },
+   {
+    "function_id": "directory_integration",
+    "function": "Directory integration & unified login",
+    "evidence": "Its integration with Active Directory facilitates unified login and access control management."
+   },
+   {
+    "function_id": "message_encryption",
+    "function": "Message encryption & decryption",
+    "evidence": "Since the CPE is the only holder of the encryption keys used with Proofpoint's DoubleBlind\u2122 Encryption technology, any processing that involves encryption or decryption happens on the CPE."
+   },
+   {
+    "function_id": "customer_key_custody",
+    "function": "Customer-held encryption key custody",
+    "evidence": "Since the CPE is the only holder of the encryption keys used with Proofpoint's DoubleBlind\u2122 Encryption technology, any processing that involves encryption or decryption happens on the CPE."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1304222071/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1304222071"
+ }
+]
