@@ -1661,6 +1661,17 @@ New extended functions from this set, specified in groups/network-management-unt
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Two claims stand, both on the one family: one at full weight (remote management of satellite terminals) and one at artifact weight (the manage pattern firing on the identities you already manage, an authentication layer, recorded as artifact). The documented control claims: identification documented (certificate-based authentication, 802.1X/EAP-TLS, federated directories), access control in part, audit at the prose tier, cryptographic protection in part at prose weight with no FIPS-validated crypto claimed; one fork's incident lifecycle phrase is a function, not incident-response control language. One fork's prose asserts a FIPS 199 Moderate categorization while disclaiming a FedRAMP Moderate authorization in the same paragraph — the record stays Unknown, both pinned together by test. Named absences: eleven of twelve families stand at zero, several with substance present in other words (provisioning, REST API, configurable alerting, cloud-based), and the taxonomy has no reporting or audit family at all.
 
+## Untiered Set 20 — Talent Development (2 forks, tier null; NEW CATEGORY)
+
+New extended functions from this set, specified in groups/talent-development-untiered/UNION-SPEC.md, not implemented:
+- [ ] open — Live development delivery (the sessions behind a program; their form is unnamed by either description)
+- [ ] open — Assessment instruments and their administration / scoring engines
+- [ ] open — Analytics / trend-computation engine behind the dashboard
+- [ ] open — AI models (no fork describes one — registered for completeness only, not as a claimed-function gap)
+- [ ] open — Platform layer (the AWS GovCloud substrate one fork names)
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This category has no tiered group anywhere in the registry, so its five-family taxonomy was derived fresh from these two forks' own descriptions, the new-category method, and is recorded as the category's taxonomy from here on; the two development families are kept visibly separate because each fork claims development only in its own words. Five claims stand, every family at one of two forks with zero overlap, every claim on its fork's own sentence. No control family is documented: one fork's privacy sentence names no mechanism or framework, and the other fork's GovCloud sentence is platform prose; the word security occurs in neither description. Named absences, token-verified in both descriptions: coaching — one fork's market identity, absent from its government description, because reputation is not evidence — mentoring, training and courses, learning systems, skills, competency, succession, career, performance appraisal, engagement, certification, feedback, AI, and scoring. The fresh core computes no score and holds no person reference in its snapshots; its signature is the small-cohort guard, a floor of five below which an aggregate snapshot is refused, the build's own rule grounded in one fork's privacy sentence as a design note only, not a fork attainment.
+
 ## Later groups
 
 Each group appends its section here when it ships.

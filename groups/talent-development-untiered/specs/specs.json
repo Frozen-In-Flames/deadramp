@@ -1,0 +1,70 @@
+[
+ {
+  "fork_id": "FR2318956176",
+  "vendor": "BetterUp, Inc.",
+  "product": "BetterUp for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Talent Development",
+  "description": "BetterUp for Government (BUFG) is a Workforce Performance and Optimization platform designed specifically to help government organizations achieve their mission-critical objectives. BUFG delivers performance-driven behavioral and mindset development aligned to each agency’s unique goals. Through the Partner Analytics Dashboard (PAD), BUFG equips government leaders with near real-time insights into emerging behavioral trends across their workforce, while fully safeguarding the privacy of individual program participants.",
+  "functions_claimed": [
+   {
+    "function_id": "behavioral_mindset_development",
+    "function": "Behavioral and mindset development",
+    "evidence": "BUFG delivers performance-driven behavioral and mindset development aligned to each agency’s unique goals."
+   },
+   {
+    "function_id": "workforce_analytics",
+    "function": "Workforce analytics & leader insights",
+    "evidence": "Through the Partner Analytics Dashboard (PAD), BUFG equips government leaders with near real-time insights into emerging behavioral trends across their workforce, while fully safeguarding the privacy of individual program participants."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2318956176/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2318956176"
+ },
+ {
+  "fork_id": "FR2635930421",
+  "vendor": "SOFware LLC",
+  "product": "FORGE",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Talent Development",
+   "Talent Management",
+   "Education & Training",
+   "Analytics"
+  ],
+  "deadramp_category": "Talent Development",
+  "description": "FORGE is a software-as-a-service platform deployed in AWS GovCloud (US) that supports workforce assessment, talent development, and organizational decision-making for U.S. government customers.",
+  "functions_claimed": [
+   {
+    "function_id": "workforce_assessment",
+    "function": "Workforce assessment",
+    "evidence": "FORGE is a software-as-a-service platform deployed in AWS GovCloud (US) that supports workforce assessment, talent development, and organizational decision-making for U.S."
+   },
+   {
+    "function_id": "talent_development",
+    "function": "Talent development",
+    "evidence": "FORGE is a software-as-a-service platform deployed in AWS GovCloud (US) that supports workforce assessment, talent development, and organizational decision-making for U.S."
+   },
+   {
+    "function_id": "decision_support",
+    "function": "Organizational decision support",
+    "evidence": "FORGE is a software-as-a-service platform deployed in AWS GovCloud (US) that supports workforce assessment, talent development, and organizational decision-making for U.S."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2635930421/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2635930421"
+ }
+]
