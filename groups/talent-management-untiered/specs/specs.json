@@ -1,0 +1,44 @@
+[
+ {
+  "fork_id": "FR2635930425",
+  "vendor": "CodeSignal, Inc.",
+  "product": "CodeSignal",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Human Resources",
+   "Talent Management",
+   "Talent Development",
+   "Education & Training",
+   "Artificial Intelligence (AI)"
+  ],
+  "deadramp_category": "Talent Management",
+  "description": "CodeSignal is a multi-tenant SaaS platform for technical and non-technical skills evaluation and development. It provides pre-hire assessments delivered in a browser-based IDE, live collaborative technical interviews, AI-conducted screening interviews, behavioral and cognitive assessments, assessment proctoring and integrity services, experiential technical learning, and the integration, administration, reporting, identity, and API services that support them.\n\nThe offering is hosted on Amazon Web Services in the United States. Tenant data is logically segregated.\n\nCustomer data handled includes candidate, learner, and user PII (name, email address, IP address), assessment and learning content, submitted work, results, and, for the proctoring and integrity services, government-issued identity documents and session video. The offering does not process protected health information or cardholder data.\n\nSeveral services use third-party foundation model subprocessors.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2635930425",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2635930425/"
+ },
+ {
+  "fork_id": "FR2631747327",
+  "vendor": "Geographic Solutions Inc.",
+  "product": "VOS Sapphire",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [],
+  "deadramp_category": "Talent Management",
+  "description": "VOS Sapphire is a cloud-based workforce development platform that helps government agencies modernize employment services. It combines labor exchange, case management, employer services, unemployment insurance integration, labor market information, reporting, and program management into one secure system. VOS Sapphire streamlines operations through automation, improves collaboration and compliance, and delivers personalized services for job seekers, employers, workforce professionals, educators, and partner organizations.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2631747327",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2631747327/"
+ }
+]

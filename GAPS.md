@@ -1672,6 +1672,20 @@ New extended functions from this set, specified in groups/talent-development-unt
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This category has no tiered group anywhere in the registry, so its five-family taxonomy was derived fresh from these two forks' own descriptions, the new-category method, and is recorded as the category's taxonomy from here on; the two development families are kept visibly separate because each fork claims development only in its own words. Five claims stand, every family at one of two forks with zero overlap, every claim on its fork's own sentence. No control family is documented: one fork's privacy sentence names no mechanism or framework, and the other fork's GovCloud sentence is platform prose; the word security occurs in neither description. Named absences, token-verified in both descriptions: coaching — one fork's market identity, absent from its government description, because reputation is not evidence — mentoring, training and courses, learning systems, skills, competency, succession, career, performance appraisal, engagement, certification, feedback, AI, and scoring. The fresh core computes no score and holds no person reference in its snapshots; its signature is the small-cohort guard, a floor of five below which an aggregate snapshot is refused, the build's own rule grounded in one fork's privacy sentence as a design note only, not a fork attainment.
 
+## Untiered Set 21 — Talent Management (2 forks, tier null)
+
+New extended functions from this set, specified in groups/talent-management-untiered/UNION-SPEC.md, not implemented (the founding group's eight gaps stand at zero claimants here and are noted in the union spec, not re-registered):
+- [ ] open — Assessment proctoring & integrity services
+- [ ] open — Experiential technical learning platform
+- [ ] open — Integration & API services layer
+- [ ] open — Labor exchange platform
+- [ ] open — Workforce case management system
+- [ ] open — Employer services platform
+- [ ] open — Unemployment insurance integration & administration
+- [ ] open — Labor market information service
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Zero claims stand: the founding taxonomy is a hiring-pipeline taxonomy and neither fork's description fires any of its twelve families, a result that survives a case-insensitive re-check, so the zero does not turn on case. In substance the forks describe recruitment assessments, video interviewing, and a public workforce-services platform — each gapped in its own name rather than approximated into the category, including the boundary strain recorded plainly: one fork is a public labor-exchange platform, not an agency hiring pipeline. One fork's certified-services record names scores, session recordings, and SSO and SCIM provisioning; it was never matched, because matching it would have fabricated claims and an identity mechanism its description never states, and the word score occurs in neither description. Documented controls: identity in part at the prose tier only, from one fork's identity service surface with no mechanism named; tenancy segregation is platform prose and an outcome sentence about compliance is not assessment. No core function is claim-supported — the substrate is carried, not claimed, with its stage bounds rule and no-score doctrine intact.
+
 ## Later groups
 
 Each group appends its section here when it ships.
