@@ -1,0 +1,26 @@
+[
+ {
+  "fork_id": "FR2035740126",
+  "vendor": "Sprinklr, Inc.",
+  "product": "Sprinklr CXM for Government (CXM)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "CRM",
+  "description": "Sprinklr CXM for Government helps organizations create, manage, and optimize customer experiences across various digital channels including social media, messaging, email, and websites. Sprinklr's AI-backed core platform consists of five products: Modern Marketing, Modern Advertising, Modern Research, Modern Care, and Modern Engagement.",
+  "functions_claimed": [
+   {
+    "function_id": "ai_scoring",
+    "function": "AI/ML models & scoring",
+    "evidence": "Sprinklr's AI-backed core platform consists of five products: Modern Marketing, Modern Advertising, Modern Research, Modern Care, and Modern Engagement."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2035740126/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2035740126"
+ }
+]

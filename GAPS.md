@@ -1242,6 +1242,20 @@ New extended functions from the addition fork, specified in groups/travel-manage
 
 Existing gaps gaining claimants: none — booking engine, carrier / hotel / GDS integrations, payment & disbursement execution, receipt capture, report generation (adherence-to-standards prose is not report generation), connector engines, notification transport, and identity each explicitly gain nothing, token-verified in the addendum. All five of the founding fork's checked absences SURVIVE against the newcomer: booking / reservation, per-diem, reimbursement, approval, and receipt vocabulary are all absent from its text too — no absence retires, because a retirement must rest on the fork's own words. This closes the remainder census's single-fork addition units: every tiered addition is now spec'd into its shipped group.
 
+## Remainder Singleton 56 — Customer Relations Management (CRM) L1 (1 fork)
+
+New extended functions from this fork, specified in groups/crm-l1/UNION-SPEC.md, not implemented:
+- [ ] open — Unified customer experience management (CXM) platform: the unified platform itself, over the records substrate
+- [ ] open — Social media management & publishing engine
+- [ ] open — Social listening & research analytics engine
+- [ ] open — Advertising campaign management engine
+- [ ] open — Care engagement depth: the engagement machinery of the fork's care product beyond the substrate's case and interaction records
+- [ ] open — Engagement & messaging orchestration engine
+- [ ] open — Marketing platform functions (the fork's marketing product as an engine; the claim-level campaigns absence below stands)
+- [ ] open — AI-backed core platform: the fork's AI-backed core itself (its one claim, ai_scoring, is recorded at exact weight — an AI-backed platform is asserted, no scoring, model, or ML function is described; the family is Extended in this category and stays Extended, and the build implements no AI and computes no score anywhere)
+
+The carried CRM Extended set from the parent group (casework depth, guidance runtime, analytics engines, customization engines, knowledge base, marketing automation, integration connectors) remains registered once under Group 25 and is not re-registered here. Named absences at this tier, stated plainly: opportunity / pipeline stands at 0 claims at EVERY tier of this category; campaigns / audience lists stand at 0 claims at claim level (the fork's advertising and marketing product names are gap-named as engines without retiring the claim-level absence); knowledge base, integrations, and hosting also tag zero here. Core-boundary decision, stated once in the union spec with its price: no core function is claim-supported for this fork — the ten-function substrate is carried whole from the L2 build, carried, not claimed.
+
 ## Later groups
 
 Each group appends its section here when it ships.
