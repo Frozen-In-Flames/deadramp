@@ -1,0 +1,629 @@
+[
+ {
+  "fork_id": "F1607067912",
+  "proposed_category": "Development Tools",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Cloud.gov provides a Platform-as-a-Service (PaaS) based on Cloud Foundry, enabling instant provisioning of services and environments, easy deployment of applications, and rapid scaling to match demand."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "PaaS for application deployment/delivery."
+ },
+ {
+  "fork_id": "FR2701557058",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "NorthWatch is a security assurance and visibility SaaS platform built to meet the reporting standards of FedRAMP 20x and the FedRAMP 2026 Consolidated Rules (CR26)."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "FedRAMP compliance reporting/assurance platform."
+ },
+ {
+  "fork_id": "FR2634047811",
+  "proposed_category": "Health & Wellness",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "86Borders ConnectAllCare is a cloud-based healthcare coordination platform managing patient engagement and social care, deployed on AWS Commercial infrastructure."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Healthcare coordination / patient engagement."
+ },
+ {
+  "fork_id": "F1404043549",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Accenture Federal Cloud ERP is a secure cloud offering delivering virtualized back-office ERP solutions, covering Financial Management, Property/Asset Management, HR and Payroll, to US federal customers."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Back-office ERP umbrella across finance/assets/HR."
+ },
+ {
+  "fork_id": "FR2104942200",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "COFRS is a Software as a Service (SaaS) solution that provides an extremely robust basis for identity proofing.",
+   "Acuant is a leading global provider of identity verification, regulatory compliance (AML/KYC) and digital identity solutions."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Identity verification / identity proofing."
+ },
+ {
+  "fork_id": "FR2628647239",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "CMMC Level 2 readiness comes out of the box, backed by native, always-on continuous monitoring.",
+   "Policies and controls are written once and mapped to FedRAMP 20x Key Security Indicators, CMMC Level 2 practices, and SOC 2 Trust Services Criteria."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Compliance platform; headline is 'Own your compliance.'"
+ },
+ {
+  "fork_id": "FR2635930439",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "CMMC Level 2 readiness comes out of the box, backed by native, always-on continuous monitoring.",
+   "Policies and controls are written once and mapped to FedRAMP 20x Key Security Indicators, CMMC Level 2 practices, and SOC 2 Trust Services Criteria."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Duplicate description of FR2628647239; same classification."
+ },
+ {
+  "fork_id": "FR2701557054",
+  "proposed_category": "Development Tools",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "KineticCode is a multi-tenant SaaS CI/CD governance platform that wraps GitHub-based software delivery with auditable controls for organizations handling sensitive and controlled information."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "CI/CD / software delivery governance."
+ },
+ {
+  "fork_id": "AGENCYHUDSAAS",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "eCASE is a dynamic case management and rapid application development platform that empowers professionals to elevate trust in public institutions."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Case management platform with workflows/document management."
+ },
+ {
+  "fork_id": "FR2620235600",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Anecdotes is an Agentic GRC platform that delivers continuous compliance for enterprises managing GRC at scale."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Self-described GRC / continuous compliance."
+ },
+ {
+  "fork_id": "FR2633053633",
+  "proposed_category": "Artificial Intelligence (AI)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Users interact with Claude in natural language to draft and analyze documents, reason over uploaded files, search connected data sources, write and run code, and automate multi-step work."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "AI assistant; first sentence also names it Anthropic's AI assistant."
+ },
+ {
+  "fork_id": "FR2633153276",
+  "proposed_category": "Artificial Intelligence (AI)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Anyreach App is a cloud-hosted SaaS offering for building, deploying, and operating omnichannel conversational AI agents."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Conversational AI agent platform."
+ },
+ {
+  "fork_id": "FR2631054484",
+  "proposed_category": "Development Tools",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Cursor is an AI-powered software development platform that helps developers and organizations understand, generate, review, and maintain software."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Software development is the functional domain; AI is the method."
+ },
+ {
+  "fork_id": "F1603157879",
+  "proposed_category": "Finance",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Apptio is a market leading SaaS provider of Technology Business Management (TBM) and cloud financial management solutions that help IT leaders measure, manage and communicate the cost, quality, consumption, and value of technology investments."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Technology/cloud financial management."
+ },
+ {
+  "fork_id": "FR2700429895",
+  "proposed_category": "Data Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Built on a proprietary graph-based data model, Ardoq ingests and continuously updates information from an organization's existing systems, replacing static documentation with a live, queryable view of how technology and business capabilities connect."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Enterprise architecture platform built on a live graph data model."
+ },
+ {
+  "fork_id": "FR2632755834",
+  "proposed_category": "Network Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Armada Platform (\"AP\") is a cloud-based Software-as-a-Service (SaaS) platform for federal agency customers that provides centralized connectivity provisioning and remote management of satellite communications terminals and associated connected assets through a unified management console."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Connectivity provisioning / satcom terminal management; fleet mapping is a listed capability."
+ },
+ {
+  "fork_id": "FR2031936863",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Armis discovers every managed, unmanaged, and IoT device in any environment, analyzes device behavior to identify risks, vulnerabilities or attacks, and protects critical business information and systems."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Device discovery and security / risk analysis."
+ },
+ {
+  "fork_id": "FR2701457595",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The AtomAI Platform is a cloud-based SaaS platform that modernizes maintenance, asset management, and project coordination for public sector organizations, utilities, and infrastructure owners."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Maintenance, asset management and project coordination."
+ },
+ {
+  "fork_id": "FR1814168113",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Silo is a remote browser that embeds security, identity and data policies directly into the browser.",
+   "Silo insulates and isolates all web data and code execution from user endpoints, providing powerful, proactive security while giving users full, interactive access to the web."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Remote browser / web isolation security."
+ },
+ {
+  "fork_id": "FR2632558748",
+  "proposed_category": "Artificial Intelligence (AI)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "A cloud-based AI inference platform that provides managed model deployment, autoscaling, and serving infrastructure for production machine learning workloads."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "AI/ML model inference and serving."
+ },
+ {
+  "fork_id": "FR2632054530",
+  "proposed_category": "Artificial Intelligence (AI)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Talk is a conversational AI voice and chat agent that answers resident calls and chats, with SIP transfer to a human agent on triage need, safeguarding risk, or explicit request."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "AI transcription, conversational agent and interpretation functions for human services agencies."
+ },
+ {
+  "fork_id": "FR2318956176",
+  "proposed_category": "Talent Development",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "BetterUp for Government (BUFG) is a Workforce Performance and Optimization platform designed specifically to help government organizations achieve their mission-critical objectives."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Workforce performance / behavioral and mindset development platform."
+ },
+ {
+  "fork_id": "FR1918442180",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Bizagi is a leading provider of digital process automation."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Digital process automation; rest of description is largely marketing/PaaS prose."
+ },
+ {
+  "fork_id": "F1302271924",
+  "proposed_category": "Communication",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "BlackBerry's AtHoc is a networked crisis communication platform enabling corporations and government agencies to communicate and collaborate securely with their personnel and with other organizations through multiple devices during times of crises."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Crisis communication platform."
+ },
+ {
+  "fork_id": "F1602167854",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "BlackBerry's CylanceProtect redefines what antivirus (AV) can and should do for your organization by leveraging artificial intelligence to detect and prevent malware from executing on your endpoints in real time."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Endpoint malware prevention / EDR."
+ },
+ {
+  "fork_id": "FR2628647242",
+  "proposed_category": "Artificial Intelligence (AI)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Bland is an enterprise voice AI platform for building, deploying, and operating AI phone agents at scale."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Voice AI agent platform."
+ },
+ {
+  "fork_id": "FR2017462201",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Offered as a SaaS solution, Prodigo Marketplace is a virtual e-commerce procurement product that enables maximum, sustained cost savings throughout VA's healthcare supply chain for all clinical and non-clinical supplies and services."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Procurement / healthcare supply-chain ordering gateway (product in description is Prodigo Marketplace)."
+ },
+ {
+  "fork_id": "FR2628943633",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Boundera automates FedRAMP 20x compliance from continuous evidence collection to certification package."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "FedRAMP compliance automation, not general cybersecurity."
+ },
+ {
+  "fork_id": "FR2000939520",
+  "proposed_category": "Research",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Terra is a public, cloud-based platform that provides biomedical researchers with a flexible environment for doing secure and scalable analysis."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Biomedical research analysis platform."
+ },
+ {
+  "fork_id": "FR2232465502",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Deliver a proxy-based architecture that delivers Secure Web Gateway and Advanced Threat Protection that terminates, inspects, and controls high volumes of web and cloud traffic, even when it is SSL/TLS encrypted."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Web protection / secure web gateway. Description text ends truncated ('hybrid solutio')."
+ },
+ {
+  "fork_id": "FR2232465502A",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Deliver a proxy-based architecture that delivers Secure Web Gateway and Advanced Threat Protection that terminates, inspects, and controls high volumes of web and cloud traffic, even when it is SSL/TLS encrypted."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Duplicate description of FR2232465502; same truncation at end."
+ },
+ {
+  "fork_id": "FR2701557044",
+  "proposed_category": "Development Tools",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Moderniza converts legacy estates (COBOL, VB6, PHP, Java, .NET and others) into modern, tested, containerised applications through an evidence-driven pipeline of five steps: Blueprint, Contract, Code, Testing and Deploy."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Legacy application modernization / conversion."
+ },
+ {
+  "fork_id": "FR2631258122",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Cahill Swift Compliance Management Platform is a cloud-based offering supporting federal transportation safety compliance programs."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Compliance management platform."
+ },
+ {
+  "fork_id": "FR2700137035",
+  "proposed_category": "Artificial Intelligence (AI)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Mesa is an AI platform for government agencies, used by federal, state, and local government staff."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "AI platform with Research and Public Records workspaces."
+ },
+ {
+  "fork_id": "FR1923039219",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Canon Office Cloud is a managed print platform offering two services to help federal agencies manage their print environment.",
+   "Output and Scan Management Service: designed to help provide access control to documents, reduce overall printing costs, and improve office productivity."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Managed print services: output/scan management plus print-device fleet auditing."
+ },
+ {
+  "fork_id": "FR2009476860",
+  "proposed_category": "Legal & Policy",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Casepoint is a data discovery platform for legal, investigatory, compliance, and IT teams who struggle to get actionable insights for data-centric business processes like eDiscovery, investigations, and information requests."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Legal data discovery / eDiscovery."
+ },
+ {
+  "fork_id": "FR2631258125",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Certivo is an AI-powered product and supply chain compliance platform for manufacturers and regulated industries.",
+   "It replaces manual, spreadsheet-driven compliance work with a continuously maintained evidence base that links every supplier document to the parts, products, and requirements it supports."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Product/supply-chain compliance; AI is the method."
+ },
+ {
+  "fork_id": "FR2022243058",
+  "proposed_category": "Finance",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "CGI's Momentum is a market-leading, full-featured, flexible web-based system built to support the full federal financial, budget, asset and procurement management lifecycles."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Federal financial/budget management system."
+ },
+ {
+  "fork_id": "FR2220549818",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": false,
+  "note": "Description is generic SaaS/security/hosting boilerplate (agile computing, fiscal savings, HIPAA/GDPR compliance, trusted-path event collection) with no sentence describing the health-chat function beyond the product name and a vague 'increases access to Agency Care' phrase."
+ },
+ {
+  "fork_id": "F1605107897",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Cisco Cloudlock secures your cloud users, data, and apps, combating account compromises, data breaches, and cloud app ecosystem risks, while facilitating compliance through a simple, open, and automated API-driven approach."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Cloud access security broker (CASB)."
+ },
+ {
+  "fork_id": "FR2304757473A",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Cisco Security Cloud for Government provides cloud-based security solutions with multiple component products."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Security suite; all listed components are security products."
+ },
+ {
+  "fork_id": "FR2304757473",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Cisco Security Cloud for Government provides cloud-based security solutions with multiple component products."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Duplicate description of FR2304757473A."
+ },
+ {
+  "fork_id": "F1604017885",
+  "proposed_category": "Communication",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Cisco Unified Communications Manager Cloud for Government (Cisco UCM Cloud for Government) is a complete unified communications service from the Cisco Cloud."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Unified communications service."
+ },
+ {
+  "fork_id": "F1511207635",
+  "proposed_category": "Collaboration",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Whether you need to collaborate with remote colleagues, reach hybrid users, host webinars, address customer complaints, or offer technical support remotely, the Webex for Government Suite is the secure, compliant, collaboration solution."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Meetings/messaging/calling collaboration suite."
+ },
+ {
+  "fork_id": "FR1819254092",
+  "proposed_category": "System Administration",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Citrix DaaS (Desktop as a Service) provides virtualization solutions allowing control of virtual machines, desktops, applications, and security while providing users access from anywhere on any device."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Virtual desktop/application workspace delivery and administration."
+ },
+ {
+  "fork_id": "FR2700857472",
+  "proposed_category": "Marketing & Sales",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "CLEATUS is a cloud-based Software-as-a-Service (SaaS) platform that provides AI-powered government contracting business development and proposal support.",
+   "Users discover and evaluate federal contracting opportunities, manage capture and pipeline activities, generate and refine proposal content, and automate recurring business development workflows."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Government-contracting business development / capture pipeline."
+ },
+ {
+  "fork_id": "FR2700754078",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": true,
+  "note": "Managed general cloud hosting environment for customer applications/workloads; description lists security, governance, compliance, monitoring, identity, operational support and hosting with no single primary function of its own."
+ },
+ {
+  "fork_id": "FR2000863987",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Our FedRAMP offering protects entire agency networks, helps agencies build Internet-scale applications efficiently, accelerates any website or Internet application, wards off DDoS attacks, keeps hackers at bay, and helps agencies in their journey to Zero Trust."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": true,
+  "note": "General network platform; security/protection functions dominate the offering sentence."
+ }
+]

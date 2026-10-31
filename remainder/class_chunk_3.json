@@ -1,0 +1,630 @@
+[
+ {
+  "fork_id": "FR2630354487",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Projects are tracked throughout the procurement cycle, from initial brief creation to the final awarding of a provider proposal.",
+   "The application can intelligently guide users in creating project briefs ('RFPs / Request for Proposals') or proposals, by leveraging AI and ML to suggest answers, automatically scope projects, analyze user input, and match clients with suitable providers and support the approval process."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Primary function is procurement/RFP sourcing and provider matching; no Procurement category in vocabulary, Operations Management is closest."
+ },
+ {
+  "fork_id": "FR2002757173",
+  "proposed_category": "Human Resources",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The GRB Platform is a complete Software-as-a-Service (SaaS) cloud-based Federal Retirement and Benefits Administration solution that meets the goals and objectives of the HR Line of Business (HRLoB)."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Federal retirement/benefits administration for HR specialists."
+ },
+ {
+  "fork_id": "F1311252652",
+  "proposed_category": "Communication",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "More than 1,000 public sector organizations use Granicus' highly secure cloud communications solutions every day to enhance the citizen experience for greater than 150 million people.",
+   "As the only FedRAMP-authorized marketing automation platform, Granicus' GovDelivery Communications Cloud serves federal, state, and local government customers and is the most secure marketing solution available for any public-sector organization."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Citizen communications cloud; marketing automation noted but primary framing is communications."
+ },
+ {
+  "fork_id": "FR1919750997",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "HackerOne is a multi-tenant Vulnerability Disclosure and crowdsourced Bug Bounty platform.",
+   "Organizations rely on HackerOne to detect unknown security vulnerabilities in public-facing systems as well as sensitive assets that are not publicly disclosed."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2218359666",
+  "proposed_category": "Media",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Haivision Hub for Government (HUB-GOV) is an easy-to-use video network service for securely and reliably transporting live streaming video from agency networks to other inter- and intra-agency destinations or for connecting live streams between agency networks and commercial cloud destinations."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Live video streaming transport service."
+ },
+ {
+  "fork_id": "FR2621445678",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "For Governance, Risk, and Compliance (GRC), Halo supports FedRAMP, CMMC, and DoD compliance programs by enabling compliance activities to be managed as part of day-to-day operations rather than as a separate workstream.",
+   "Halo's GRC module provides functionality for vulnerability and risk management, Plan of Action and Milestones (POA&M) tracking, asset inventory, deviation management, OSCAL-based system documentation, and cross-framework control mapping."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Detailed specific function described is the GRC module; broader ITSM/ESM capabilities also mentioned."
+ },
+ {
+  "fork_id": "FR2631258132",
+  "proposed_category": "Development Tools",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Harness.io Software-as-a-Service (SaaS) is a fully managed, cloud-native software delivery platform that provides continuous integration, continuous delivery, security testing, and related DevSecOps capabilities using a cloud computing environment."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2700137029",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": false,
+  "note": "Description is a single vague sentence about an agentic operational/financial platform for payers and agencies; no specific function named."
+ },
+ {
+  "fork_id": "FR1831429369",
+  "proposed_category": "Talent Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "HireVue helps global enterprises gain a competitive advantage in the modern talent marketplace with video interviewing software and recruitment assessments.",
+   "The HireVue platform is transforming the way organizations discover, hire, and develop talent."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Recruitment / hiring."
+ },
+ {
+  "fork_id": "FR2017459185",
+  "proposed_category": "Analytics",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "WXP Collaboration provides monitoring and analytics for collaboration and unified communication technology."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Function is monitoring/analytics of collaboration technology, not collaboration itself."
+ },
+ {
+  "fork_id": "F1408115175",
+  "proposed_category": "Collaboration",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Huddle provides the most secure, easy-to-use, and tightly integrated workspaces for government agencies to collaborate with each other and contractors."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR1728053006",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "IAS4G provides a portfolio of automation products that deliver enterprise-grade asset management and real estate solutions designed specifically for U.S. Federal agencies.",
+   "IBM\u00ae Maximo Application Suite (MAS) as a Service for Government is an intelligent Enterprise Asset Management (EAM) platform that enables predictive maintenance, operational insight, and optimization of asset performance across complex enterprise environments."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Multi-component bundle; stated portfolio emphasis is enterprise asset management and real estate/facilities."
+ },
+ {
+  "fork_id": "F1211011660",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": true,
+  "note": "General IaaS/PaaS hyperscaler-style platform covering servers, networking, storage, VMware and developer tools with no single primary function emphasized."
+ },
+ {
+  "fork_id": "F1208031461A",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": true,
+  "note": "Bundle of unrelated platform services (endpoint management, IAM, observability, resource management) with no single primary function."
+ },
+ {
+  "fork_id": "F1208031461",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": true,
+  "note": "Duplicate description of the Moderate variant; bundle of unrelated platform services with no single primary function."
+ },
+ {
+  "fork_id": "F1206081363",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": true,
+  "note": "General IaaS environment provisioning compute, memory, network, OS and storage; no single primary function emphasized."
+ },
+ {
+  "fork_id": "FR1718334757",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "ID.me's Identity Gateway is a shared service for citizen and employee facing authentication and consists of a NIST 800-63-3 Identity Assurance Level 1 and 2 and Authenticator Assurance Level 1 and 2 as well as a NIST 800-63-2 Level of Assurance 1, 2, and 3 certified Credential Service Provider, a Credential Broker, and an Attribute Exchange."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Identity proofing / authentication; no IAM-specific category in vocabulary."
+ },
+ {
+  "fork_id": "F1512017638",
+  "proposed_category": "Collaboration",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "IdeaScale allows organizations to solicit input from personnel and other stakeholders and collaboratively transform that input into actionable project plans.",
+   "IdeaScale is an innovation management SaaS provider that uses crowdsourcing to help organizations find and develop the next big thing, whether it's new policies and services or new cost-savings and employee engagement measures, IdeaScale allows organizations to solicit input from personnel and other stakeholders and collaboratively transform that input into actionable project plans."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Innovation crowdsourcing; Collaboration is closest vocabulary fit."
+ },
+ {
+  "fork_id": "FR2629068833",
+  "proposed_category": "Data Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Immuta's SaaS platform, the Immuta Data Security Platform, provides a number of capabilities that enable customers to govern and provision data access, automating how data is delivered to both human and non-human consumers while maintaining continuous compliance."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Data access governance/provisioning."
+ },
+ {
+  "fork_id": "FR2701457600",
+  "proposed_category": "Development Tools",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Elixium is a software delivery workspace for teams of people and AI agents: boards, stories, epics, decisions and test plans, where work an AI agent drafts stays a proposal until a person approves it."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Secondary customer-support feature noted in description but primary framing is software delivery workspace."
+ },
+ {
+  "fork_id": "FR2520254824",
+  "proposed_category": "Construction",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "InEight Document is construction document control software that is uniquely suited to the demands of complex construction due to its configurability and tracking capabilities."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR1710033970",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": true,
+  "note": "Integrated multi-suite ERP bundle spanning finance, supply, manufacturing, HCM, asset management and analytics with no single primary function."
+ },
+ {
+  "fork_id": "FR2029331613",
+  "proposed_category": "Data Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "IICS for FedRAMP is a microservices-based, cloud-native data management solution which leverages industry-leading metadata capabilities to accelerate and automate core data management and data governance functions."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR1800263217",
+  "proposed_category": "Legal & Policy",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Innovative Driven Government Cloud (ID Gov-Cloud) is a Software as a Service (SaaS) offering that provides secure and scalable government legal document services within a compliant cloud environment.",
+   "Built on industry-leading technologies Relativity and Nuix and paired with expert consulting, agencies can leverage the full scope of eDiscovery services within one scalable platform, including (but not limited to) processing, document review, advanced analytics, assisted review, legal hold services, and production."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "eDiscovery / legal document services."
+ },
+ {
+  "fork_id": "FR1821933307",
+  "proposed_category": "Finance",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "A browser-based, highly secure, integrated, real-time trust accounting and wealth management platform offered in a multi-currency Software as a Service (SaaS) environment."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Trust accounting and wealth management."
+ },
+ {
+  "fork_id": "FR2628943629",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "IVM SmartHub is an intelligent, centralized access and asset management solution designed to streamline how organizations control, track, and manage access to IVM Smart Solutions."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Access and asset management operations."
+ },
+ {
+  "fork_id": "FR2104636677",
+  "proposed_category": "Research",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "We provide end-to-end support for the entire research lifecycle, from survey design and deployment to advanced, AI-driven analysis."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Survey research platform; AI analytics is a supporting capability."
+ },
+ {
+  "fork_id": "FR2031155471",
+  "proposed_category": "Content Management System (CMS)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Iron Mountain InSight system is a cloud-based Software-as-a-Service (SaaS) solution that provides customers with a content services platform that leverages Machine Learning (ML) and Artificial Intelligence (AI) to automatically classify, extract, and enrich physical and digital content."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Content services platform."
+ },
+ {
+  "fork_id": "FR2631154499",
+  "proposed_category": "Network Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "IronWiFi works with any access point, switch or controller that speaks RADIUS and 802.1X, so an agency adds certificate-based authentication and policy without replacing hardware or running RADIUS and NPS servers on premises."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Wi-Fi/wired network authentication layer (cloud RADIUS)."
+ },
+ {
+  "fork_id": "F1303221956",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": true,
+  "note": "Fully managed general PaaS hosting platform bundling infrastructure, runtime, security operations and compliance; no single primary function of its own."
+ },
+ {
+  "fork_id": "FR2212912561",
+  "proposed_category": "Health & Wellness",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Zoll-Itamar Dispatcher Cloud (IDC) supports health care providers conducting home sleep apnea tests utilizing the WatchPAT device."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Home sleep apnea testing support."
+ },
+ {
+  "fork_id": "FR1816364586",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Ivanti Service Manager, powered by HEAT, helps IT teams meet today's government and user demands for effective service delivery and support.",
+   "Service Manager is designed to be the central point of contact between users, employees and the IT organization."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "IT service management (ITSM)."
+ },
+ {
+  "fork_id": "F1507116930",
+  "proposed_category": "Mobile Device Management (MDM)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "With MobileIron, Government agencies can secure and manage data on any device across multiple operating systems such as iOS, Android, Windows 10, macOS, Zebra and Oculus.",
+   "The MobileIron Unified Endpoint Management (UEM) platform incorporates identity, context, and privacy enforcement to set the appropriate level of access to data and services while allowing IT departments to securely manage their global mobile workforce from a single console."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Unified endpoint / mobile device management."
+ },
+ {
+  "fork_id": "FR2632054495",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "JupiterOne is a cloud-based cyber asset attack surface management (CAASM) platform that gives security teams visibility into an organization's digital assets, the relationships between those assets, and the risks and compliance gaps affecting them."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2116544598",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Keeper Security Government Cloud (KSGC) transforms the way government organizations protect their operations against password-related data breaches and cyberthreats including ransomware and phishing attacks.",
+   "KSGC provides IT administrators with visibility, management and control over their organization's password security, monitoring and reporting."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Password manager and privileged access manager."
+ },
+ {
+  "fork_id": "F1511167634",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Kiteworks Private Data Network is a FedRAMP Authorized service at the Moderate Impact Level that provides data security, governance, and compliance capabilities."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Secure file transfer/sharing framed in description primarily as data security, governance and compliance."
+ },
+ {
+  "fork_id": "FR1912662229",
+  "proposed_category": "Education & Training",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "KnowBe4 is the world's most popular integrated Security Awareness Training and Simulated Phishing platform with thousands of active enterprise accounts.",
+   "KnowBe4 provides you with the world's largest library of 800+ security awareness training content, including interactive modules, videos, games, posters and newsletters."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Security awareness training."
+ },
+ {
+  "fork_id": "FR2607537684",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Kovr AI is a patented AI-native cyber compliance automation platform purpose-built for organizations navigating the most demanding federal and commercial cybersecurity frameworks including FedRAMP, Cybersecurity Maturity Model Certification (CMMC 2.0), NIST SP 800-53, NIST SP 800-171, DoD Security Requirements Guide (SRG), FISMA, DoD Risk Management Framework (RMF), PCI-DSS, ISO 27001, and more."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Cyber compliance / authorization automation."
+ },
+ {
+  "fork_id": "FR2632054521",
+  "proposed_category": "Research",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Leadership Connect is a software-as-a-service platform for federal market and policy intelligence.",
+   "It provides a continuously maintained directory of decision-makers and organizations across the U.S. Congress, the federal executive branch, state and local government, and the private sector, together with federal contract award and subaward analysis, federal and state legislative tracking, congressional hearing coverage, and relationship-graph analytics."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Market/policy intelligence used for acquisition and legislative research; source listed many filing categories, not relied on."
+ },
+ {
+  "fork_id": "FR2701857792",
+  "proposed_category": "Content Management System (CMS)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Liferay SaaS is a fully managed digital experience platform (DXP) for building and operating public websites, constituent, customer and partner portals, employee intranets, and self-service applications on a single platform."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Core capabilities listed first are content and site management."
+ },
+ {
+  "fork_id": "FR2700555844",
+  "proposed_category": "Development Tools",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Linear is the product development system for teams and agents, purpose-built for planning and building software products.",
+   "It is a multi-tenant SaaS offering that provides issue tracking, project and cycle planning, roadmaps and initiatives, product intelligence, and agent workflows, delivered through web, desktop, and mobile clients and a public GraphQL API."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Software product development / issue tracking."
+ },
+ {
+  "fork_id": "FR2701247925",
+  "proposed_category": "Legal & Policy",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Litmas AI is a legal AI platform for litigation teams, hosted on AWS in the United States.",
+   "At its core is an agentic associate that takes a litigator's request and calls the platform's tools to complete it: evidence mapping, legal research, citation validation and drafting."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Litigation legal AI."
+ },
+ {
+  "fork_id": "FR1927682057",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "InfraLink, formerly known as Infrastructure Maintenance Management System (IMMS), integrates the cyber-physical systems lifecycle from design through implementation and sustainment, enabling configuration management and providing a systematic approach to planning and continuous improvement across project activities.",
+   "Rely on InfraLink to support all aspects of critical infrastructure management."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Infrastructure maintenance / operations management."
+ },
+ {
+  "fork_id": "FR2630354492",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The system provides work order management, preventive maintenance scheduling, asset tracking, standardized procedure management, realtime team communication, and reporting/analytics."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Computerized maintenance management system (CMMS)."
+ },
+ {
+  "fork_id": "FR2129953050",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Manhattan Government Cloud provides US government agencies and customers supporting the US government a secure and reliable enterprise supply chain and logistics system."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Supply chain and logistics operations; no supply-chain category in vocabulary."
+ },
+ {
+  "fork_id": "FR1711262842",
+  "proposed_category": "Customer Service",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Medallia Experience Cloud (MEC), leads the market in the understanding and management of experience for agencies, public sector employees, and citizens.",
+   "Medallia captures experience signals created on daily journeys in-person, traditional surveys, on calls, digital channels, over video and social media, and IoT interactions."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Citizen/customer experience management and service recovery."
+ },
+ {
+  "fork_id": "FR2633957422",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The platform provides integrated capabilities for document management, inspection and survey readiness, competency and personnel management, continuing education and training, event and incident management, performance improvement, workflow automation, and reporting."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Healthcare quality/compliance management; description lists many sub-capabilities, compliance/quality is the framing function."
+ },
+ {
+  "fork_id": "FR2004146362",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "MediaLab provides an integrated web-based SaaS platform for healthcare quality management.",
+   "MediaLab's offering address many different areas of compliance within healthcare facilities, including continuing education and training, document management of policies and procedures, inspection readiness and accreditation management, competency assessment, management of personnel files and certifications, and management of non-conforming events, instrument maintenance, and quality monitoring data."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Healthcare quality and compliance management."
+ }
+]

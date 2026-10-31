@@ -1,0 +1,628 @@
+[
+ {
+  "fork_id": "F1508207205",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Threat/vulnerability identification is primary."
+ },
+ {
+  "fork_id": "FR1733061545",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "GoRPM empowers organizations to collect, aggregate, analyze, manage and understand their real property, personal property, and facilities investments."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Real property / facilities asset management."
+ },
+ {
+  "fork_id": "F1510137547",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": true,
+  "note": "General managed cloud foundation wrapping VMware/AWS; hosting/compliance prose, no single primary function."
+ },
+ {
+  "fork_id": "FR2102031769",
+  "proposed_category": "Development Tools",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "It runs natively on Amazon Web Services (AWS), and allows organizations to increase operational efficiency, refocus on innovation, and quickly build, deploy, and scale applications."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Turnkey application platform for building/deploying containerized apps."
+ },
+ {
+  "fork_id": "FR2700137045",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The RegScale Trust Center is an automated Governance, Risk, and Compliance (GRC) offering built for FedRAMP 20x and CR26."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2004753002",
+  "proposed_category": "Legal & Policy",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "When it comes to e-discovery, you need the truth to act quickly, whether it's understanding your organization's risk around an internal issue, preparing evidence for litigation or investigations, working through M&A activity, or even performing proactive compliance monitoring.",
+   "RelativityOne Government brings the entire e-discovery process together in one secure and extensible platform, connected to your organization’s most sensitive data - and supported by the community of experts you need to untangle it all."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "E-discovery for litigation/investigations."
+ },
+ {
+  "fork_id": "FR2634436150",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Remedio is a configuration-focused device hardening and autonomous remediation offering that finds, fixes, and verifies security misconfigurations, unpatched vulnerabilities, unauthorized applications, and unmanaged AI tools across agency endpoints and servers, wherever they run — on premises, remote, or in the cloud."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Device hardening / remediation."
+ },
+ {
+  "fork_id": "FR2701457579",
+  "proposed_category": "Development Tools",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Replit for Government is a cloud platform that lets government organizations securely build, run and deploy software with the help of AI."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Cloud development environment; description has a gap where the AI agent name appears missing."
+ },
+ {
+  "fork_id": "FR2632436493",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Unified Acquisition Platform is Rohirrim's certified cloud infrastructure supporting two complementary offerings for the government solicitation lifecycle: UnifiedRespond, used by government contractors to research and draft responses to solicitations, and UnifiedAcquire, used by government agencies to write and issue those solicitations."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Government solicitation / acquisition lifecycle."
+ },
+ {
+  "fork_id": "FR2204842850",
+  "proposed_category": "Research",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "ROSALIND is a multi-tenant SaaS solution for bioinformatics analyses, COVID diagnostic monitoring, knowledge management, and scientific collaboration.",
+   "As a cloud-based software platform, ROSALIND provides a web interface for scientists and researchers to securely analyze and interpret datasets."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Bioinformatics / scientific research analysis."
+ },
+ {
+  "fork_id": "FR2001938710",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "SailPoint Identity Security Cloud is a SaaS-based, multi-tenant suite that provides complete visibility and control over access to applications, systems, and sensitive data."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Identity security / access control."
+ },
+ {
+  "fork_id": "FR2633153272",
+  "proposed_category": "Fleet Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Samsara Connected Operations Cloud is a software-as-a-service platform that connects vehicles, equipment, sites, and workers to provide real-time operational visibility.",
+   "Samsara IoT devices, including vehicle gateways, dash cameras, and environmental sensors, transmit data to the cloud platform, where customers use applications for fleet telematics, video-based safety, equipment monitoring, driver workflows, and regulatory compliance."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Fleet telematics-led connected operations."
+ },
+ {
+  "fork_id": "FR2700857493",
+  "proposed_category": "Fleet Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Samsara Connected Operations Cloud is a software-as-a-service platform that connects vehicles, equipment, sites, and workers to provide real-time operational visibility.",
+   "Samsara IoT devices, including vehicle gateways, dash cameras, and environmental sensors, transmit data to the cloud platform, where customers use applications for fleet telematics, video-based safety, equipment monitoring, driver workflows, and regulatory compliance."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Duplicate listing of FR2633153272, same description."
+ },
+ {
+  "fork_id": "F1602257856",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": true,
+  "note": "Secure hosting environment whose description is a catalogue of hosted SAP suites (S/4HANA, SuccessFactors, IBP); no primary function of this fork itself."
+ },
+ {
+  "fork_id": "FR1719841002",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": true,
+  "note": "Secure hosting environment whose description is a catalogue of hosted SAP solutions across CIE/CRE; no primary function of this fork itself."
+ },
+ {
+  "fork_id": "FR1821062403",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Saviynt delivers an intelligent and converged platform for Identity Governance and Administration (IGA), Privileged Access Management (PAM) and Cloud Security that enables its customers to effectively manage risk, address continuous compliance needs and securely adopt cloud technologies with confidence."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Identity governance / privileged access."
+ },
+ {
+  "fork_id": "FR2214346691",
+  "proposed_category": "Artificial Intelligence (AI)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Gobo provides an intuitive, AI-enabled cognitive automation platform designed to analyze complex datasets, apply intelligent operational logic, and streamline workflows across enterprise IT infrastructure, services, and business processes."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "AI cognitive automation platform."
+ },
+ {
+  "fork_id": "FR2700857464",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Securin Platform is an AI-native Preemptive Exposure Management Platform.",
+   "It unifies external attack surface discovery, vulnerability and threat intelligence, risk-based prioritization, and validation into one continuous CTEM workflow: Discover, Validate, Prioritize, Mobilize."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Exposure / attack surface management."
+ },
+ {
+  "fork_id": "FR1919071020",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Endpoint detection and response / SIEM."
+ },
+ {
+  "fork_id": "FR2033152148",
+  "proposed_category": "Research",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Seven Bridges Platform is a cloud-based environment for conducting bioinformatic analyses.",
+   "It is a central hub for teams to store, analyze, and jointly interpret their bioinformatic data."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Bioinformatic research analyses."
+ },
+ {
+  "fork_id": "FR2428039108",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "DepotFinity is an advanced charge management software designed by Siemens to optimize the operation and maintenance of electric vehicle (EV) charging infrastructure."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "EV charging infrastructure operation/maintenance."
+ },
+ {
+  "fork_id": "FR2634659087",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "SignifiVISION is a cloud-based software-as-a-service platform used to manage and support Signifi unattended self-service kiosk and locker solutions.",
+   "The offering provides centralized administration, monitoring, configuration, operational support, and related service functionality for deployed environments."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Kiosk/locker operations administration."
+ },
+ {
+  "fork_id": "FR2633841585",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Silkline is a supply chain and procurement platform that enables collaboration on quotes, orders, parts management, and production workflows."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Supply chain / procurement operations. Note anomalous sentence in description about capabilities FedRAMP organizations do not get, ignored per rules."
+ },
+ {
+  "fork_id": "FR2633734917",
+  "proposed_category": "Education & Training",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Simuhealth is a cloud-based operations platform for healthcare simulation training programs.",
+   "It provides the digital infrastructure that powers simulation programs and centers, including scheduling and resource coordination, equipment and inventory lifecycle management, scenario and curriculum management, learner and instructor workflows, competency tracking, utilization analytics, and accreditation evidence management."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Healthcare simulation training program operations."
+ },
+ {
+  "fork_id": "FR1818459251",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": false,
+  "note": "Description speaks generically about vendor ILS offerings, security and FedRAMP usability; no sentence states EOS.Web's own specific function."
+ },
+ {
+  "fork_id": "FR2701557049",
+  "proposed_category": "Research",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Sixtyfour provides AI-powered identity intelligence for government investigations, vetting and fraud detection.",
+   "Its research platform and APIs investigate people and organizations across public records and online sources, resolving identities, examining backgrounds and uncovering relationships."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Identity intelligence research for investigations/vetting."
+ },
+ {
+  "fork_id": "FR2118043605",
+  "proposed_category": "Learning Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Skillsoft's Percipio is a SaaS learning experience platform that authenticates users, tracks learner's progress, and connects users to content and other optional services."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Learning experience platform."
+ },
+ {
+  "fork_id": "F1207261443",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": false,
+  "note": "Description is a company profile of Skillsoft only; no function stated for this Private Cloud offering."
+ },
+ {
+  "fork_id": "FR2633734932",
+  "proposed_category": "Legal & Policy",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Alira is an AI-powered case management platform purpose-built for Freedom of Information Act (FOIA) processing and records disclosure workflows in federal agencies."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "FOIA / records disclosure case management."
+ },
+ {
+  "fork_id": "FR2230252267",
+  "proposed_category": "Communication",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Slack has transformed business communication.",
+   "It's the leading channels-based messaging platform, used by millions to align their teams, unify their systems, and drive their business forward."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Channels-based messaging."
+ },
+ {
+  "fork_id": "FR1730866868",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "With Smartsheet Gov, your agency can operate with an increased sense of agility, manage work in real time, and make better decisions with timely and accurate information."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Work management platform."
+ },
+ {
+  "fork_id": "F1603077867",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": true,
+  "note": "General automation PaaS for cloud adoption plus a catalogue of third-party ISV products (ignored per rules); no single primary function."
+ },
+ {
+  "fork_id": "FR2000945223",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "ARIS provides a comprehensive platform to model, analyze, and optimize business processes across government operations.",
+   "The solution supports all stages of business process management, from process discovery to design, analysis, and continuous improvement."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Business process management; GRC is a listed capability, not the primary framing."
+ },
+ {
+  "fork_id": "FR2635930421",
+  "proposed_category": "Talent Development",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "FORGE is a software-as-a-service platform deployed in AWS GovCloud (US) that supports workforce assessment, talent development, and organizational decision-making for U.S. government customers."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Single-sentence description."
+ },
+ {
+  "fork_id": "FR2135915901",
+  "proposed_category": "Health & Wellness",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "RHSP utilizes robust AI-inclusive methodologies to create a comprehensive multi-service platform to derive medical codes, assist with medical terminology, and ease the provider workflow."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Medical coding / revenue-cycle health services platform."
+ },
+ {
+  "fork_id": "FR2002367706",
+  "proposed_category": "Health & Wellness",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Somnoware delivers accelerated diagnosis and outcome management for patients with OSA and COPD through its cloud-based platform."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Sleep/pulmonary diagnosis and care management."
+ },
+ {
+  "fork_id": "FR2631258135",
+  "proposed_category": "Construction",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Specset Cloud Platform is an AI platform for construction document review."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Construction document review automation."
+ },
+ {
+  "fork_id": "FR2631747321",
+  "proposed_category": "Construction",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Specset Cloud Platform is an AI platform for construction document review."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Duplicate listing of FR2631258135 per its own description, pending retirement."
+ },
+ {
+  "fork_id": "FR2035740126",
+  "proposed_category": "Customer Relations Management (CRM)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Sprinklr CXM for Government helps organizations create, manage, and optimize customer experiences across various digital channels including social media, messaging, email, and websites."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Customer experience management."
+ },
+ {
+  "fork_id": "FR2135043135",
+  "proposed_category": "Learning Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The CloudLCMS is a rapid authoring learning content management platform.",
+   "The CloudLCMS produces fully 508 compliant eLearning courses that are able to be exported in SCORM 1.2, 2004, xAPI and HTML."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Learning content authoring/management."
+ },
+ {
+  "fork_id": "FR1722532017",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The solution provides modern project and portfolio management tools to prioritize requirements, maximize resources, and optimize work with ease."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Project and portfolio management."
+ },
+ {
+  "fork_id": "FR2130949241",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Rally, hosted by stackArmor, helps US government agencies plan, manage, track their work with a focus on continuous improvement."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Work / portfolio planning and tracking."
+ },
+ {
+  "fork_id": "FR2310051488",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "COMPASS is a contract execution management system designed for the Department of Defense (DoD) customers to manage contract lifecycles from award to completion."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Contract lifecycle execution management; no contract-specific vocabulary category exists, Operations Management is closest fit."
+ },
+ {
+  "fork_id": "FR2630447318",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Boltline is a multi-tenant manufacturing execution and operations SaaS platform.",
+   "Federal customers use Boltline to manage engineering-to-production workflows, including parts, bills of materials, inventory, work plans, orders, integrations, attachments, and auditable workflow activity."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Manufacturing execution."
+ },
+ {
+  "fork_id": "FR2629068830",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Apollo Digital Twin Engine can ingest and process OSCAL 1.1.3 models, prototype and extension models, markdown, and other document content to support agency AO and ISSO analysis workflows for CSO inventory, data flows, POA&Ms, incidents, threat models, testing exercises, change artifacts, impact assessments, deviation requests, and NIST 800-53 documentation."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Authorization/compliance analysis workflows (OSCAL, POA&Ms, NIST 800-53)."
+ },
+ {
+  "fork_id": "FR2635050855",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "SuperFile helps organizations protect and share sensitive files while retaining control over access.",
+   "Users can see who has access, manage sharing permissions, and revoke access after a file has been shared."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Secure file sharing / access control and encryption."
+ },
+ {
+  "fork_id": "FR2631747315",
+  "proposed_category": "Research",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Sustainment Digital Manufacturing Hub (DMH) is a cloud-based supplier discovery and market research platform that helps government agencies identify, evaluate, and connect with qualified U.S. manufacturing suppliers."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Supplier discovery / market research."
+ },
+ {
+  "fork_id": "FR1901136437",
+  "proposed_category": "Data Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "OpenFLIS is an easily customizable, FedRAMP Ready, cloud-based data collation, retrieval, and dissemination platform that enables users to search and display information across multiple databases, sources, and formats."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Data collation, retrieval and dissemination."
+ }
+]

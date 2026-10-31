@@ -1,0 +1,574 @@
+[
+ {
+  "fork_id": "FR2634659091",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "TNT is a multi-tenant, cloud-hosted (SaaS) platform for continuous security testing and compliance management."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Primary function stated first is continuous security testing."
+ },
+ {
+  "fork_id": "FR2100740435",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Tango Reserve is a SaaS workplace solution for managing your use of workspaces.",
+   "Tango provides this the capability to manage conference rooms, assigned seats, hoteling areas, neighborhoods, and provides operational Analytics for workplace optimization efforts."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Workplace/workspace operations; extended Tango catalogue ignored per rule 3."
+ },
+ {
+  "fork_id": "FR2110342613",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Endpoint management and security platform; brief description."
+ },
+ {
+  "fork_id": "FR2701247935",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Tansi is a cloud-based operational ERP and operations execution platform that works alongside an organization's existing ERP to manage field execution, workforce readiness, asset operations, and compliance in one configurable system."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Operations execution is the stated primary function."
+ },
+ {
+  "fork_id": "FR2624215150",
+  "proposed_category": "System Administration",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "TeamViewer helps IT teams deliver frictionless IT for employees and seamless IT operations for IT teams, transforming IT from a cost center into a strategic enabler.",
+   "As a leader in the Digital Employee Experience (DEX) market, we provide a powerful end-user computing automation platform that enables organizations to lower service desk costs, maintain compliance, prevent user frustration, and improve the experience employees have with their devices and IT services."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "IT/end-user computing administration and endpoint operations."
+ },
+ {
+  "fork_id": "FR1912051231",
+  "proposed_category": "Development Tools",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "FGC DSO enables U.S. federal government agencies to easily adopt practices to enhance software supply chain with a solution to automate development, security, and operations (DevSecOps) practices through every phase of the software development life cycle.",
+   "FGC DSO SaaS enables rapid adoption of a continuous integration and continuous deployment (CI/CD) pipeline to deliver high quality citizen and public applications through its integrated security validation tools as a managed service."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "DevSecOps/CI-CD development tooling."
+ },
+ {
+  "fork_id": "FR1901852210",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": false,
+  "note": "General RegTech framework described for infinite applications across many unrelated objects and use cases; no single primary function."
+ },
+ {
+  "fork_id": "FR2633053629",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "TrustGuard AI is a comprehensive, AI-native Governance, Risk, and Compliance (GRC) platform that unifies internal compliance automation and external threat monitoring in a single system of record."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "GRC is explicitly named as the platform type."
+ },
+ {
+  "fork_id": "FR2634659079",
+  "proposed_category": "Artificial Intelligence (AI)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "ThinkTrends AI Platform is a cloud-based, enterprise-grade Agentic AI platform developed by ThinkTrends LLC.",
+   "It provides federal agencies and commercial organizations with a unified environment for deploying, managing, and operating AI-powered agents, knowledge bases, data pipelines, and intelligent workflows."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Agentic AI platform."
+ },
+ {
+  "fork_id": "FR2632054534",
+  "proposed_category": "Artificial Intelligence (AI)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Lemma is Thread AI's AI workflow orchestration platform, deployed in AWS GovCloud (US) for federal customers and the contractors that support them."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Anomalously brief one-sentence description, but it names AI workflow orchestration."
+ },
+ {
+  "fork_id": "FR2635050850",
+  "proposed_category": "Education & Training",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Toonimo is a cloud-native SaaS digital adoption platform that delivers in-application walkthroughs, AI chatbot and voicebot guidance, process intelligence, and analytics so organizations can help employees and constituents complete tasks in existing web applications."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Digital adoption via in-application walkthroughs and guidance."
+ },
+ {
+  "fork_id": "FR2632731472",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Casco is an agentic system that provides autonomous, 24/7 security testing and vulnerability assessments for web applications, APIs, cloud infrastructure, and AI systems."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Security testing/vulnerability assessment."
+ },
+ {
+  "fork_id": "FR2516140413",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Identity Verification for Government not only validates the accuracy of consumer-provided information against our curated datasets, including financial institution data, public records data and telecommunications carrier data, it also enables increased fraud capture while enforcing privacy principles.",
+   "This allows agencies to make informed decisions with full context to help expose risk and establish trust by verifying consumer identities."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Identity verification and fraud/risk exposure."
+ },
+ {
+  "fork_id": "F1602057825A",
+  "proposed_category": "Law Enforcement",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "TRAPWIRE is a software platform for detecting and alerting on threats against your assets and personnel in real-time.",
+   "The TRAPWIRE Threat Detection and Analysis System brings security organizations into a protection network that detects and alerts on mutual threats spanning time and geography, allowing users to break down stovepipes and interdict threats before they materialize into successful criminal or terrorist acts."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Physical threat detection for law-enforcement/anti-terrorism network, not cyber."
+ },
+ {
+  "fork_id": "FR1935245314",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Trellix GovCloud Security Platform enables customers to centrally manage security for their organization while leveraging real-time monitoring and protection of the environment.",
+   "Machine learning, artificial intelligence, and behavioral analysis are used to detect and respond to suspicious activity based on comparing observed activity to real-world adversarial attack techniques."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Central security management and threat detection/response; suite catalogue under that umbrella."
+ },
+ {
+  "fork_id": "FR2701247929",
+  "proposed_category": "Construction",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Trimble Connect for Government provides a unified, highly secure ecosystem for managing infrastructure, spatial data, capital projects, permitting, and facility assets across their entire lifecycle."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Multi-module suite centred on infrastructure/capital-project lifecycle."
+ },
+ {
+  "fork_id": "FR2631258113",
+  "proposed_category": "Law Enforcement",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "TRM Labs provides blockchain intelligence and all-source AI investigation software that helps law enforcement, national security agencies, financial institutions, and cryptocurrency businesses detect, investigate, and disrupt fraud and financial crime."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Investigation software for law enforcement/financial crime."
+ },
+ {
+  "fork_id": "FR2108649352",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Icomplaints is the leading standard for federal EEO case management and is used by most major federal agencies."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Suite's shared primary function is case management/BPM operations."
+ },
+ {
+  "fork_id": "FR2132958724",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The UiPath Business Automation Platform offers comprehensive, integrated AI-powered automation capabilities, including: UI + API Automation, Process Orchestration, Document Understanding/IDP, Process and Task Mining, Low-code Application Development, Testing, Digital Assistants, and more.",
+   "It implements governance and management tools across these capabilities, and delivers an open architecture with connectors to optimize and automate processes across any technology."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Process automation/orchestration is the primary function."
+ },
+ {
+  "fork_id": "FR2633058240",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Ultra is an agentic security platform that secures AI agents and their tool use at runtime.",
+   "Together they give organizations autonomous-runtime security: real-time visibility and control over what AI agents can access and do, so agentic AI can be deployed and scaled safely."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Runtime security for AI agents."
+ },
+ {
+  "fork_id": "F1506046707",
+  "proposed_category": "NEW: Contract Management",
+  "new_category": true,
+  "new_category_reason": "No existing vocabulary category names contract management: Legal & Policy is law/policy work, Finance/Accounting are financial functions, and Operations Management is generic operations rather than the contracts lifecycle the description centres on.",
+  "citations": [
+   "Unison is the leading provider of SaaS contract management capabilities for government contractors and government agencies.",
+   "Unison enables acquisition and contracts professionals to boost compliance and productivity throughout their contracting lifecycles."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Contract management through the contracting lifecycle."
+ },
+ {
+  "fork_id": "F1510017461",
+  "proposed_category": "NEW: Contract Management",
+  "new_category": true,
+  "new_category_reason": "Grant Management covers only the grants portion; the description's first and primary framing is full-lifecycle government acquisition and contracting with vendors, which no existing category names.",
+  "citations": [
+   "FedConnect provides US Government Acquisition leaders and Contract Officers a secure, full-lifecycle, auditable approach to interacting with vendors and complying with Paperless Contracting mandates.",
+   "FedConnect is a Federal acquisition and grants portal where vendors and grant applicants can find opportunities for federal contracts, grants, and other types of assistance funding."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Acquisition/contracting portal is primary; grants are one facilitated type, so Grant Management would cover only part."
+ },
+ {
+  "fork_id": "AGENCYNITCIAAS",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": true,
+  "note": "General IaaS/PaaS hosting platform catalogue with many infrastructure options and no single primary function."
+ },
+ {
+  "fork_id": "FR1801046750",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": true,
+  "note": "Multi-cloud IaaS/PaaS hosting environment listing many unrelated services; no single primary function."
+ },
+ {
+  "fork_id": "AGENCYWC2",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": true,
+  "note": "Multi-tenant IaaS/PaaS hosting environment listing many unrelated services; no single primary function."
+ },
+ {
+  "fork_id": "FR2125561001",
+  "proposed_category": "Development Tools",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Unqork is a no-code, cloud-based development platform that empowers organizations to rapidly build robust enterprise-grade software without writing a single line of code."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "No-code application development platform."
+ },
+ {
+  "fork_id": "FR2316433331",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "USU IT Asset Management (CCITAMS) is an IT asset management tool.",
+   "The solution supports both hardware and software, virtual or physical assets, on-premises or in the cloud."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "IT asset management operations."
+ },
+ {
+  "fork_id": "FR2025456731",
+  "proposed_category": "Data Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Vaultara offers an enterprise-wide software-only solution that provides secure, bi-directional electronic transfer to any digital file using Vaultara's Hybrid/SaaS technology.",
+   "Vaultara is committed to the secure digital delivery of data in the public sector."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Secure electronic file/data transfer and delivery."
+ },
+ {
+  "fork_id": "FR2635050861",
+  "proposed_category": "Customer Relations Management (CRM)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "VirtualDojo AI CRM is a cloud-based customer relationship management platform with AI-powered proposal generation, contact management, pipeline forecasting, and document automation."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "CRM explicitly named."
+ },
+ {
+  "fork_id": "FR2630354484",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "VisualVault is a secure, scalable platform that helps government agencies automate constituent-facing processes that require Compliance and Enforcement — from licensing and permitting to case management and general compliance enforcement."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Compliance and enforcement process automation."
+ },
+ {
+  "fork_id": "FR1825232355",
+  "proposed_category": "Health & Wellness",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "WellHive is a SaaS solution built to help enterprise healthcare systems navigate their patients’ care across federal and commercial boundaries.",
+   "WellHive connects and unifies care and benefits management activities across various systems and organizations through integrations with Electronic Health Records (EHRs) and practice management systems, provider networks, and over 700 insurance carriers."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Healthcare care/benefits navigation."
+ },
+ {
+  "fork_id": "FR1924344515",
+  "proposed_category": "Research",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Wellspring Sophia is a browser based application used to manage all of the initiatives and activities required in the technology transfer field.",
+   "Evolve is Wellspring's next-generation software platform that streamlines technology transfer and IP management from invention disclosure through licensing and commercialization, with intuitive workflows, and seamless data integrations."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Technology transfer for research institutions, from disclosure to commercialization."
+ },
+ {
+  "fork_id": "FR2631654537",
+  "proposed_category": "Data Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Wisedocs Platform is a cloud-based, AI-powered document processing system designed to help insurance companies, independent medical evaluation firms, and legal entities process medical claims.",
+   "The Platform uses optical character recognition to process unstructured medical documents such as handwritten clinician notes, medical briefs and records, and discharge summaries, and creates fully searchable records."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Document processing and searchable records management."
+ },
+ {
+  "fork_id": "FR2308034636",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Wiz Moderate for U.S. Government (Wiz Mod) is an agentless vulnerability scanning tool that uses an application programming interface (API) connector to scan customer environments in AWS GovCloud."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Cloud vulnerability scanning."
+ },
+ {
+  "fork_id": "FR1726564822",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Workiva provides connected reporting and compliance through its intuitive cloud platform that modernizes how people work within thousands of commercial organizations and hundreds of federal, state, and local government agencies.",
+   "Manage risk assessments, evidence requests, issues, and findings with real-time reports and dashboards."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Connected compliance and risk-assessment reporting."
+ },
+ {
+  "fork_id": "FR1730334049",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Xerox Managed Print and Capture Services (MPCS) for US Government is a cloud-based solution developed specifically to help US Federal, State, and Local government agencies manage the print and document capture life cycles within an organization while maximizing productivity, security and reducing waste and risk.",
+   "Managed print services focus on the management of print output devices themselves, related supplies, and service requirements."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Managed print operations."
+ },
+ {
+  "fork_id": "FR2628943630",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "CARTN is a cloud-based real-time asset tracking and visibility platform designed to help organizations track, manage, and monitor physical assets across facilities."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Real-time physical asset tracking operations."
+ },
+ {
+  "fork_id": "FR1714261912",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The AuthentX Cloud provides end-to-end identity, credential and access management to US Federal agencies, quasi-federal agencies, and private organizations that require interoperable identity authentication services with Federal systems and infrastructure."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Identity, credential and access management."
+ },
+ {
+  "fork_id": "FR2113557839",
+  "proposed_category": "Talent Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Yello is a talent acquisition software designed to simplify and modernize the recruiting and hiring process."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Talent acquisition/recruiting."
+ },
+ {
+  "fork_id": "FR1821856903",
+  "proposed_category": "Customer Service",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Zendesk is a cloud-based customer service platform, designed for companies that want to build customer relationships that are more meaningful, personal, and productive.",
+   "Zendesk strives to bring businesses and customers closer together by enabling companies to provide great support and mature with self-service and proactive engagement."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Customer service/support platform."
+ },
+ {
+  "fork_id": "FR2700857469",
+  "proposed_category": "Marketing & Sales",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Zeta Marketing Platform for Government (ZMP-GOV) is a multi-tenant SaaS marketing platform for federal agencies.",
+   "The certified offering covers outbound email: audience segmentation, campaign authoring, scheduling, delivery, suppression management, and engagement reporting."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Marketing platform; certified scope is outbound email campaigns."
+ },
+ {
+  "fork_id": "FR1731347234",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Zimperium Mobile Endpoint Cyber Security is a Cloud based application deployed on the AWS GovCloud infrastructure which, when combined with the Zimperium mobile application (zIPS), provides a comprehensive Mobile Threat Defense (MTD) solution.",
+   "Zimperium's Amazon GovCloud based application provides security teams with visibility on the threats and vulnerabilities across all mobile devices in the organization to assess organization risk, identify security gaps and remediate."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Mobile threat defense, not device management."
+ },
+ {
+  "fork_id": "FR2504771625",
+  "proposed_category": "Data Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "ZL Unified Archive (ZL UA) offers a comprehensive electronic records management system designed to centralize and automate records capture, storage, retention, and disposition for all federal agencies."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Electronic records management/archive."
+ }
+]

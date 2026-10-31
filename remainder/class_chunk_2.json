@@ -1,0 +1,645 @@
+[
+ {
+  "fork_id": "FR2635930425",
+  "proposed_category": "Talent Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "CodeSignal is a multi-tenant SaaS platform for technical and non-technical skills evaluation and development.",
+   "It provides pre-hire assessments delivered in a browser-based IDE, live collaborative technical interviews, AI-conducted screening interviews, behavioral and cognitive assessments, assessment proctoring and integrity services, experiential technical learning, and the integration, administration, reporting, identity, and API services that support them."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Pre-hire skills assessment and screening is the lead function; learning is supporting."
+ },
+ {
+  "fork_id": "FR1706403967",
+  "proposed_category": "Data Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Collibra Data Intelligence Cloud is your system of record for data.",
+   "It delivers the only end-to-end, integrated Data Intelligence platform that is purpose-built to automate data workflows and deliver trusted data insights to users."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2115384377",
+  "proposed_category": "Storage",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Commvault Cloud for Government delivers a fully automated cyber resilient SaaS data backup and recovery solution, with automated deployment, reduced overhead, automated patching and upgrades, continuous security monitoring, and requiring no Agency maintenance."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Primary function is data backup and recovery / protected storage."
+ },
+ {
+  "fork_id": "F1506246782",
+  "proposed_category": "Legal & Policy",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Complete Discovery Source (CDS) is a pioneer in the eDiscovery industry, providing litigation technology and hosting, advisory services, and managed services to support complex discovery matters."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2630354485",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "ComplianceAide is an evidence-cited, human-approved SaaS compliance copilot for cybersecurity and regulatory readiness.",
+   "The service connects to customer-approved evidence in governed repositories such as SharePoint; evaluates evidence clarity, recency, traceability, and sufficiency; maps evidence to applicable controls and framework requirements; identifies unsupported, partial, stale, missing, or conflicting evidence; and produces source-linked, review-ready assessments, reports, policies, control narratives, System Security Plan (SSP) support, Security Assessment Report (SAR) support, Plan of Action and Milestones (POA&M) entries, validation matrices, and executive readiness briefs."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2631054482",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Concourse platform is a cloud-based, configurable software platform that enables government agencies, educational institutions, and other public-sector organizations to digitize, manage, and automate their operational workflows."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": true,
+  "note": "Description appears truncated: it ends by saying capability categories are listed individually below, but no list follows in the source text."
+ },
+ {
+  "fork_id": "FR2633734912",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "ConnectSecure Vulnerability and Compliance Manager is a cloud-hosted Software-as-a-Service (SaaS) application purpose-built for the Managed Service Provider (MSP) community.",
+   "It empowers small and medium-sized businesses to protect their IT assets from security threats through comprehensive, affordable vulnerability and compliance management."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR1833967442",
+  "proposed_category": "System Administration",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Valiantys Federal solutions are designed to provide end-to-end managed hosting that empowers customers to retain complete control over the application environment, while dramatically reducing the time and cost associated with in-house administration.",
+   "Managed hosting services include performance monitoring and troubleshooting, Operating System management and patching, managed backups, and managed firewalls."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": true,
+  "note": "General PaaS managed-hosting platform; emphasis is hosting administration."
+ },
+ {
+  "fork_id": "FR2200507410",
+  "proposed_category": "Development Tools",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Copado GovCloud is a cloud DevOps platform designed to make Salesforce releases faster, more efficient, and scalable across hundreds of production and sandbox instances."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2632558740",
+  "proposed_category": "Travel Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Aggregation of travel data to support comprehensive reporting and analysis."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Single-sentence description; function stated is aggregation of travel data."
+ },
+ {
+  "fork_id": "F1308202329",
+  "proposed_category": "Finance",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Coupa Spend Management for Federal is a cloud and mobile platform for managing procurement/acquisition/contract related processes.",
+   "It covers the end-to-end process, including supplier identification, sourcing, contracting, procurement against contracts, invoicing, payments, and spend analytics to ensure compliance and efficiency."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Spend/procurement management classified under Finance."
+ },
+ {
+  "fork_id": "FR2122140784A",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Exiger Government Solutions (EGS) developed a Software-as-a-Service (SaaS) product named 1Exiger which provides access to multiple modules - Due Diligence Intelligence (DDIQ), Third Party Management (3PM), Supply Dynamics (SDX), and Analytics."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Thin description: only module names are given; due diligence and third-party management are the named risk functions."
+ },
+ {
+  "fork_id": "FR2633957417",
+  "proposed_category": "Human Resources",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Dayforce HCM, Public Sector (Dayforce Pub Sec) is a Software as a Service (SaaS) Human Capital Management (HCM) cloud service offering deployed in a public cloud environment for use by U.S. Federal Government agencies.",
+   "The service provides integrated capabilities for human resources, payroll, workforce management, benefits administration, document management, employee communications, analytics, reporting, and secure application integration through a single logical application platform."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "F1210161615",
+  "proposed_category": "Legal & Policy",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Deloitte Evidence Management System (EMS) provides advanced technology and experienced staff to assist government agencies responding to requests stemming from litigation, congressional inquiries, FOIA, investigations, and other similar use cases."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "F1606087903",
+  "proposed_category": "Human Resources",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Replicon Inc. provides cloud time tracking applications including timesheet and expense management software, using SaaS, for automating employee time tracking, project time tracking, expense tracking and resource scheduling."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2134254227",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Devo is a cloud-native logging and security analytics platform.",
+   "Devo ingests logs at cloud scale, stores all logs in their native format, and allows the customer to query the data immediately upon initial ingesting."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2100845343",
+  "proposed_category": "Data Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "DevResults is a web application with tools for data capture, analysis, reporting, visualizations, project management, and team collaboration.",
+   "DevResults was designed to streamline fragmented data processes into a single proven system, allowing for the utilization of data for decision making across activities and throughout government agencies, non-profit organizations, and private sector companies."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2635050845",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "DigiCert for U.S. Government helps federal agencies reduce certificate-related outages gain control over the digital identities, certificates, cryptographic keys, and software their systems depend on."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2630354482",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Dispel Zero Trust Engine (DZTE) is a cloud-hosted zero trust remote access and privileged access management platform that provides secure, isolated, identity-federated connectivity to operational technology and enterprise environments."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2628647233",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "DZTE is a Government-only cloud computing SaaS that provides secure remote access to critical systems, enabling customers to implement compensating controls for operational technology and legacy technology environments."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2000951694",
+  "proposed_category": "System Administration",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Infinibyte Cloud is a secure, flexible, and highly available public cloud platform-as-a-service (PaaS) that allows customers to host federal applications in a FedRAMP Moderate compliant environment.",
+   "Infinibyte Cloud is a multi-tenant hosting platform that provides comprehensive managed solutions including the setup, configuration, security hardening, management, patching, monitoring, scanning, backup, and support of customer environments comprised of virtual machines, operating systems, and databases."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": true,
+  "note": "General PaaS hosting platform; emphasis is managed hosting/system administration."
+ },
+ {
+  "fork_id": "FR1814557199",
+  "proposed_category": "Data Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The DNAnexus Platform is a public cloud analysis and data management platform for processing high-throughput molecular data; for combining molecular, clinical, and real-world data to discover relationships relevant to patient and population health, precision medicine, drug discovery and regulatory approval; and for enabling a network of government, academic, and commercial collaborators to securely form research communities."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "F1609267945",
+  "proposed_category": "Legal & Policy",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "DocuSign is a San Francisco- and Seattle-based company that provides electronic signature technology and Digital Transaction Management services to facilitate electronic exchanges of contracts and signed documents."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "No e-signature category in vocabulary; contract/signed-document exchange is closest to Legal & Policy."
+ },
+ {
+  "fork_id": "F1605027893",
+  "proposed_category": "Legal & Policy",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "DocuSign CLM is a secure contract lifecycle management product in DocuSign's Agreement Cloud.",
+   "DocuSign CLM manages contracts in addition to all other types of documents across desktop, mobile, and partner applications like Salesforce."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2700137041",
+  "proposed_category": "Education & Training",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Dossier for Government is a cloud-based competency and training management solution for federal agencies.",
+   "It replaces paper competency folders with a single system of record for defining the competencies each role requires, assessing staff against those requirements on recurring cycles, delivering the training that closes the gaps, and producing current competency status on demand at the team, facility, or department level."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR1823149273",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Duo ensures only trusted users and devices can access protected applications.",
+   "Admins can use Duo to enforce stricter device and application access policies, such as blocking login requests based on location or anonymous networks."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2016131254",
+  "proposed_category": "System Administration",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Our platform combines broad and deep observability and continuous runtime application security with advanced AIOps to provide answers and intelligent automation from data.",
+   "This enables agencies to modernize and automate cloud operations, deliver software faster and more securely, and ensure flawless digital experiences."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Observability / cloud-operations monitoring classified under System Administration."
+ },
+ {
+  "fork_id": "FR2700555848",
+  "proposed_category": "System Administration",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Dynatrace is the AI-powered platform for unified observability, security, and automation.",
+   "Agencies see how their systems behave, know why something broke and what it affects, and know what is likely to break next, so teams spend their time focused on the mission instead of on triage."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Observability platform; primary stated function is unified observability."
+ },
+ {
+  "fork_id": "FR2004446306",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": true,
+  "note": "Family of hosted SaaS products / managed Elastic Stack hosting prose with a feature list (security, alerting, monitoring, reporting, machine learning, graphing); no single primary function for this fork is stated."
+ },
+ {
+  "fork_id": "FR2628647238",
+  "proposed_category": "Artificial Intelligence (AI)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The ElevenLabs Platform is a cloud-based AI voice and audio service that enables organizations to generate, transform, and deploy AI-produced speech and audio at scale."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2633734921",
+  "proposed_category": "Health & Wellness",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Elvo is a clinician-directed platform that supports evidence-based at-home data collection and exercise programs between skilled therapy visits, during telehealth visits, or other use cases as deemed appropriate by clinicians.",
+   "For example, clinicians create home exercise programs; the platform can then deliver them through a customized interface and records objective session metrics."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2633058235",
+  "proposed_category": "Finance",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Emburse Enterprise is a cloud-based SaaS solution that enables organizations to manage employee expense reporting, approval, and reimbursement workflows."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2014363920",
+  "proposed_category": "NEW: Energy Management",
+  "new_category": true,
+  "new_category_reason": "Primary function is energy procurement via reverse auction for energy supply. None of the 36 categories covers energy sourcing/procurement: Finance is general money/expense management, and Marketing & Sales, Operations Management and Analytics only describe supporting consulting/alerts, not the auction itself.",
+  "citations": [
+   "Enel X's Exchange application focuses on enabling our customers to get the best price on energy by using an online reverse auction.",
+   "We enable competition by conducting auctions for these energy providers to compete for a customers' business, increasing liquidity and driving down price."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "F1311252651",
+  "proposed_category": "System Administration",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Esri Managed Cloud Services provides organizations with ready-to-use instances of ArcGIS running in the cloud and includes the infrastructure (facilities, hardware, network, and security), the software (Esri and third party), application deployment, testing, ongoing data management (data updates, backup, and archive), technical support, monitoring, and supporting 24/7 Security Operations Center."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": true,
+  "note": "Managed cloud hosting service for ArcGIS instances; emphasis is hosting/infrastructure administration, not GIS analysis itself."
+ },
+ {
+  "fork_id": "FR2207359708",
+  "proposed_category": "Research",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "LASER is a system automating the development of Living Systematic Reviews using natural language processing (NLP) and artificial intelligence techniques, which synthesizes available knowledge about a given health problem continuously and with minimal human involvement."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "AI/NLP is the technique; the function performed is systematic-review research synthesis."
+ },
+ {
+  "fork_id": "F1305132147",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": false,
+  "note": "Description is a single generic platform sentence listing component product names (Alma, Primo, Leganto, Esploro, Rialto) and cross-product services/reliability/security/integration, with no function stated for any component or for this fork. Appears truncated/anomalous."
+ },
+ {
+  "fork_id": "FR2701557038",
+  "proposed_category": "Construction",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Facility Grid is a multi-tenant SaaS platform for construction commissioning, quality control and turnover.",
+   "Commissioning agents, general contractors and building owners use it to plan and record commissioning work on new and renovated buildings: equipment and system inventories, installation checklists, functional performance tests, issues and observations, schedules, documents, and the turnover package handed to the owner at completion."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2630354495",
+  "proposed_category": "Data Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Files.com is a Software-as-a-Service (SaaS) platform with one unified application and API to manage, store, and transfer files across your organization."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR1828574469",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "OpenBlue Employee features desk and resource scheduling, interactive floor plans, contactless workflows, visitor management, and much more."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2324454026",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "OpenBlue Workplace is an Integrated Workplace Management Solution (IWMS) designed for space management and optimization, asset management, move management, facility maintenance, strategic real estate planning, and facility project management."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2633734906",
+  "proposed_category": "Construction",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Support Government construction cost estimating and program support for a variety of programs, including but not limited to JOC, SABER, SATOC, MATOC, IDIQ, spanning repair, renovation, maintenance, new construction, and sustainment of facilities and other built structures and associate planning, procurement, and project delivery activities and teams."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2630354491",
+  "proposed_category": "System Administration",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Freshservice, by Freshworks for Government, is the AI-powered, unified service operations platform that is fast to deploy, intuitive to use, and enables every employee to be more productive.",
+   "Freshservice ITSM – A comprehensive IT Service Management solution built on ITIL best practices, unifying incident, problem, change, and request management on a single platform"
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Lead named solution is IT Service Management / IT operations, classified under System Administration."
+ },
+ {
+  "fork_id": "FR2701256060",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Fulcrum is a cloud manufacturing operations system for small and mid-sized discrete manufacturers, including CNC machine shops, sheet metal fabricators, and aerospace and defense suppliers.",
+   "It combines ERP, MRP and manufacturing execution in one web application, from quoting and planning through scheduling, shop-floor tracking, quality, shipping and invoicing."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "AI assistant Archie is a component; the system itself is manufacturing operations."
+ },
+ {
+  "fork_id": "FR1834348080",
+  "proposed_category": "Human Resources",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "GDCI provides proven, efficiently priced Federalized SaaS Human Resource Applications to support the critical human capital functions across the employee lifecycle."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR1829538820",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Login.gov offers the public secure and private online access to participating government programs.",
+   "With one login.gov account, users can sign in to multiple government agencies."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Single sign-on / identity access service, classified with identity and access security."
+ },
+ {
+  "fork_id": "FR2631747327",
+  "proposed_category": "Talent Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "VOS Sapphire is a cloud-based workforce development platform that helps government agencies modernize employment services.",
+   "It combines labor exchange, case management, employer services, unemployment insurance integration, labor market information, reporting, and program management into one secure system."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Workforce/employment-services platform for job seekers and employers, not internal agency HR."
+ },
+ {
+  "fork_id": "FR1918150046",
+  "proposed_category": "Fleet Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Geotab Telematics Platform (Government) (GTP Gov) is an end-to-end vehicle Telematics product, providing fleet management tools to Government fleets."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ },
+ {
+  "fork_id": "FR2035860874",
+  "proposed_category": "Health & Wellness",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The GTS-VP offers Customer Agencies a powerful, flexible and convenient solution to provide Remote Patient Monitoring (RPM), Real Time Telehealth visits, and Store and Forward Technology (labs, images, and clinical data) services.",
+   "The GTS-VP connects healthcare providers, patients, and patient families to communicate healthcare information from remote patient monitoring tools and through video-teleconferencing."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": ""
+ }
+]

@@ -1,0 +1,647 @@
+[
+ {
+  "fork_id": "FR2633734927",
+  "proposed_category": "Accounting",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Meterbox replaces fragmented monetization infrastructure with one programmable platform, built around a single immutable financial ledger.",
+   "Every customer interaction becomes one financial event; everything else is projected from it."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Monetization platform built around a financial ledger."
+ },
+ {
+  "fork_id": "MSO365MTA",
+  "proposed_category": "Collaboration",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Microsoft 365 (M365) Government Community Cloud (GCC) is a suite of cloud-hosted messaging and collaboration services to meet the unique and evolving requirements of the United States Federal, State, Local, and Tribal governments, as well as contractors holding or processing data on behalf of the US Government."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Suite whose stated primary services are messaging and collaboration."
+ },
+ {
+  "fork_id": "FR2527245282",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Mimic platform delivers a high-assurance ransomware resilience layer that operates at runtime to stop damage and maintain operational continuity.",
+   "Built for speed, deception, and recovery, Mimic protects critical applications before ransomware can encrypt or exfiltrate data."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Ransomware defense/recovery platform."
+ },
+ {
+  "fork_id": "F1610037949",
+  "proposed_category": "Travel Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "As the first comprehensive, fully functional system designed expressly for government agencies to manage employee relocation, that trust is well founded.",
+   "The software automates FTR, JTR, DSSR, and 6FAM CONUS/OCONUS relocation policy, and adheres to E-Gov Travel, GSA/OMB reporting, and Section 508 standards."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Employee relocation management under federal travel regulations."
+ },
+ {
+  "fork_id": "F1506256801",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The iSite® Contract Management Portal is a web-based system that provides easy-to-use functionality for your task performers, task managers, program managers and finance managers for viewing and managing the day-to-day progress of your Federal Government contracts."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Contract progress management portal; no contract-specific category in vocabulary."
+ },
+ {
+  "fork_id": "FR2304546222",
+  "proposed_category": "NEW: Event Management",
+  "new_category": true,
+  "new_category_reason": "No existing category covers event/conference management and business-matchmaking gatherings; Collaboration covers collaborative work tools and Marketing & Sales does not cover event preparation or conference management.",
+  "citations": [
+   "Our platform deals with event preparation, conference management and vendor outreach for any onsite, hybrid or virtual occasion, in need of support.",
+   "Be assured that our gathering functions let you provide both safe and interactive webinars, business matchmaking, networking roundtables and speakers engagements."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Event preparation, conference management and matchmaking gatherings."
+ },
+ {
+  "fork_id": "FR2631054539",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Mycroft Platform is a compliance and security management solution designed to help customers build, maintain, and demonstrate compliance with various security frameworks."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Compliance management is the stated primary purpose, with security monitoring supporting it."
+ },
+ {
+  "fork_id": "FR2635447609",
+  "proposed_category": "Education & Training",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "MyEvaluations is an integrated SaaS platform for medical education management, supporting assessments and competency management, curriculum, scheduling and clinical hours, procedure and patient logs, onboarding and credentialing, accreditation workflows, institutional reporting, analytics, and continuous educational improvement."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Medical education management, assessments and competency management."
+ },
+ {
+  "fork_id": "FR2631054487",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "BitRip is a cloud-based asset tracking and inventory management platform that uses smart labels to bridge cloud-based data with physical assets in the field."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Asset tracking and inventory management for field assets."
+ },
+ {
+  "fork_id": "FR2634659083",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "NavigatorCRE is a commercial real estate (CRE) technology platform that provides a centralized, cloud-based system for portfolio, property, and workplace management.",
+   "The platform aggregates real estate data from disparate sources into a single interface, enabling organizations to manage lease administration, space planning, facilities operations, and portfolio analytics."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Real-estate portfolio, property, workplace and facilities management."
+ },
+ {
+  "fork_id": "FR2217348295",
+  "proposed_category": "System Administration",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Cloud Insights is a SaaS observability platform for on-premises, hybrid cloud and multi-cloud resources, for full-stack visibility across organizations’ IT ecosystems.",
+   "Cloud Insights provides organizations a consolidated view of their entire infrastructure for capacity management and optimization, monitoring, advanced reporting and and performance/configuration troubleshooting."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "IT infrastructure observability, capacity and performance monitoring/troubleshooting."
+ },
+ {
+  "fork_id": "F1508127183",
+  "proposed_category": "Analytics",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "NetComm offers a variety of cloud-based services through Beacon, NetComm's data analytics toolset that allows users to create customized dashboards tailored to an organization's or agency's particular needs, including:"
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Named toolset is data analytics/dashboarding; other listed items are a service catalogue."
+ },
+ {
+  "fork_id": "FR2632054516",
+  "proposed_category": "NEW: Manufacturing",
+  "new_category": true,
+  "new_category_reason": "No existing category covers manufacturing/engineering-intent conversion; Operations Management covers running operations, not transforming engineering intent into manufacturable decisions, and Design & Multimedia does not cover manufacturing.",
+  "citations": [
+   "NeuraBridge is intelligence software for high-precision manufacturing.",
+   "It transforms engineering intent into structured, manufacturable decisions for aerospace and defense teams."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Manufacturing engineering decision software."
+ },
+ {
+  "fork_id": "FR2631258127",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "NEXGEN Asset Management (NEXGEN AM) is a cloud-hosted Enterprise Asset Management (EAM) and Computerized Maintenance Management System (CMMS) delivered as Software as a Service (SaaS).",
+   "Federal agencies use NEXGEN AM to manage government-owned physical assets, facilities, vehicles, equipment, and critical infrastructure."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Asset lifecycle and predictive maintenance management."
+ },
+ {
+  "fork_id": "FR2630354494",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "NextgenID UIaaS provides identity & credential management services utilizing Supervised Remote Identity Proofing (SRIP) services.",
+   "NextgenID UIaaS provides clients with an identity-proofing solution meeting digital Identity Assurance Level 3 (IAL3), and lower, requirements."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Identity proofing and credential management."
+ },
+ {
+  "fork_id": "FR2001462460",
+  "proposed_category": "Content Management System (CMS)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Nintex Drawloop DocGen equips government organizations to generate precise and accurate documents.",
+   "With just a few clicks users can instantly transform data from any standard or custom object in Salesforce into documents such as contracts, work orders, or recruitment documents."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Document generation and document package management."
+ },
+ {
+  "fork_id": "FR2632558735",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Axiom Convergence Engine (ACE) is an AI/ML governance, control, and audit cloud service offering designed to evaluate source validity, structural readiness, claim scope, authorization boundaries, evidence integrity, and reviewability before AI-assisted output is permitted to move downstream.",
+   "ACE produces machine-verifiable governance decisions and reviewable evidence records for high-stakes AI/ML workflows."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Governance/audit of AI/ML output, not AI generation itself."
+ },
+ {
+  "fork_id": "FR2702058502",
+  "proposed_category": "Data Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "At its core is the **OcientAIQ Unified Data Platform**, a petabyte-scale data foundation that sits between an organization's AI ecosystem and its enterprise data.",
+   "It unifies ingest, governance, query execution, and optimization, so AI agents, analysts, and applications get fast, governed access to massive, high-velocity data without moving, duplicating, or simplifying it first."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Core is a unified data platform under the AI ecosystem branding."
+ },
+ {
+  "fork_id": "F1512167750",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Okta IDaaS Regulated Cloud service offering provides centralized identity and access management capabilities to customers who want to manage access across any application or device, whether they are on-premise in the customer's office/data center or in the cloud."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Identity and access management, SSO and MFA."
+ },
+ {
+  "fork_id": "FR1721059275A",
+  "proposed_category": "Finance",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "OneStream is a Corporate Performance Management (CPM) platform designed to support financial consolidation, reporting, planning, budgeting, and forecasting."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Corporate performance management for finance."
+ },
+ {
+  "fork_id": "FR2629068832",
+  "proposed_category": "Data Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "OATI services focus on data / transaction management, warehousing, and retrieval in real-time."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Stated focus is data/transaction management, warehousing and retrieval for energy organizations."
+ },
+ {
+  "fork_id": "FR2632054491",
+  "proposed_category": "Research",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "OpenClinica is a Software-as-a-Service (SaaS) eClinical platform that centralizes clinical trial technology for electronic data capture (EDC), eConsent, eCOA (electronic clinical outcome assessments), and reporting and analytics."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "eClinical platform for clinical trials run by sponsors and research organizations."
+ },
+ {
+  "fork_id": "FR2215946050",
+  "proposed_category": "System Administration",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The OpenText IT Management Platform (ITMX) offers Service & Asset Management (ITSM, ITAM), Universal Discovery & CMDB, and Project & Portfolio Management (PPM) in AWS GovCloud."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "IT service and asset management platform (ITSM/ITAM, CMDB, PPM)."
+ },
+ {
+  "fork_id": "F1301101857",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The OpenText™ Core Application Security (FoD) for US Public Sector performs security assessments of application code and web site/web services testing without any software to install or manage."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Application code and web security assessment/scanning."
+ },
+ {
+  "fork_id": "FR2701857797",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "9line tells agencies which vulnerabilities in their software and AI supply chain actually affect them, with evidence an assessor can re-check.",
+   "9line generates a CycloneDX SBOM, inventories the AI models and agents it contains, matches components against vulnerability data, and determines whether each vulnerable code path is reachable using a deterministic call-graph engine."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Software/AI supply-chain vulnerability analysis with SBOM/VEX."
+ },
+ {
+  "fork_id": "F1209041518",
+  "proposed_category": "System Administration",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Oracle Federal Managed Cloud Services provides hosting, applications management, infrastructure support, and operation and maintenance (O&M) services to U.S. federal government agencies.",
+   "Primary services include hardware and facilities setup/configuration, application management, testing, monitoring, patching, incident management, problem resolution, technical and functional service desk, point upgrades, security, and disaster recovery."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Managed hosting, infrastructure support and O&M services."
+ },
+ {
+  "fork_id": "FR1900048743",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": true,
+  "note": "General government cloud infrastructure/platform covering many workloads with no single primary function emphasized."
+ },
+ {
+  "fork_id": "FR2301844932",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Orca Security provides an agentless Cloud Security Platform that discovers all cloud assets, and identifies, prioritizes, and remediates risks and compliance issues across your cloud environments in AWS GovCloud, AWS US East/West and Azure Government.",
+   "The platform detects cloud risks, including vulnerabilities, malware, misconfigurations, API risks, lateral movement risks, weak and leaked passwords, and overly permissive identities."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Cloud security posture and risk detection/remediation."
+ },
+ {
+  "fork_id": "FR1913470600",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Get complete Zero Trust network security to see and secure everything from your headquarters to branch offices and data centers, as well as your mobile workforce.",
+   "Prisma Access - a Secure Access Service Edge (SASE) that provides scalable, cloud-delivered networking and security to branch offices and remote users."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Long multi-product catalogue, but umbrella function stated up front is Zero Trust network security."
+ },
+ {
+  "fork_id": "FR2628647241",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Partos is an AI-native operating system for the U.S. aerospace and defense supply chain, unifying prime contractors, suppliers, and sub-tier vendors in a single Government Community Cloud environment on AWS GovCloud (US).",
+   "It delivers end-to-end, multi-tier supply chain risk visibility and active risk management, and orchestrates domestic and international supplier payments—ACH, RTP, and wires—with compliance tracing preserved throughout."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Supply-chain unification, supplier vetting and supply-chain risk management."
+ },
+ {
+  "fork_id": "FR2701457585",
+  "proposed_category": "System Administration",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "PDQ is an endpoint management platform designed for IT administrators and sysadmins.",
+   "Core capabilities include patch management, vulnerability remediation, software deployment, remote desktop access and monitoring, and IT automation."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Endpoint management, patching and software deployment for sysadmins."
+ },
+ {
+  "fork_id": "FR2135637226",
+  "proposed_category": "Education & Training",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Pearson VUEs Pearson Federal Cloud System securely delivers assessments to registered testing candidates for over 450 assessment programs.",
+   "Agencies and other government organizations can use the Pearson Federal Cloud System to administer high stakes assessments to potential job candidates."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Assessment delivery and administration for testing candidates."
+ },
+ {
+  "fork_id": "FR1818240234",
+  "proposed_category": "Human Resources",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Perceptyx's online employee engagement survey technology is built to support four phases of service to Perceptyx clients, including a configuration module to support planning and survey set-up, data collection module, diagnostic reporting module and action planning module, each module runs on the Perceptyx proprietary web software platform."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Employee engagement surveys, lifecycle listening and feedback."
+ },
+ {
+  "fork_id": "FR2628650874",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "AI-powered procurement workspace intended for direct use by federal agency acquisition teams within agency-authorized federal information systems.",
+   "Tarly Cowork helps contracting professionals run market research, draft acquisition documents (IGCEs, solicitations, evaluation materials), and manage procurement files with grounded citations to authoritative federal data sources (SAM.gov, USAspending, the FAR and agency supplements)."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "AI-powered procurement/acquisition workspace for contracting professionals."
+ },
+ {
+  "fork_id": "FR2634450946",
+  "proposed_category": "Data Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Pinecone is a fully managed vector database for AI applications.",
+   "It stores, indexes, and searches high-dimensional vector embeddings to power retrieval for semantic search, recommendation, and retrieval-augmented generation (RAG) workloads."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Vector database service; storage/indexing/search of embeddings is the function."
+ },
+ {
+  "fork_id": "FR2102577114",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Pitney Bowes SendPro 360 is a comprehensive, cloud-based sending, receiving, locker management, and analytics solution that powers your mailroom operations for maximum efficiency and transparency."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Mailroom sending, receiving and locker operations."
+ },
+ {
+  "fork_id": "FR2700754082",
+  "proposed_category": "Governance, Risk, and Compliance (GRC)",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "ComplianceONE is a multi-tenant governance, risk and compliance (GRC) platform that federal agencies, their contractors and commercial organizations use to manage FedRAMP, NIST SP 800-53, NIST SP 800-171/CMMC, GovRAMP, DoD Impact Level, TX-RAMP, ITAR and AS9100 programs."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "GRC platform for FedRAMP/NIST/CMMC and related programs."
+ },
+ {
+  "fork_id": "FR2631054533",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Portal26 is an AI visibility, security, governance, and adoption management platform.",
+   "Portal26 provides a SaaS application for Agentic, Generative and Embedded AI governance and adoption, together with AI network gateways for real-time traffic routing and analysis."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "AI security, visibility and governance platform with network gateways."
+ },
+ {
+  "fork_id": "FR2634357692",
+  "proposed_category": "Learning Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Collaborative Learning Environment (CLE) is a full-featured, end-to-end virtual school platform for managing learning, providing brick-and-mortar-like classroom experiences using audio, video, live collaboration tools and asynchronous tools and LMS capabilities."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Virtual school / LMS platform."
+ },
+ {
+  "fork_id": "F1403283529",
+  "proposed_category": null,
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [],
+  "no_signal": true,
+  "no_signal_reason": "prose_only",
+  "platform_general": true,
+  "note": "General Support System PaaS composed of many general support/security services with no single primary function for this offering."
+ },
+ {
+  "fork_id": "FR1720461312",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Proofpoint Email and Information Protection Service is a powerful cloud email security service that integrates threat protection, virus protection, spam detection, data loss prevention (DLP), and digital asset protection technologies into an extensible message management platform."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Email security: threat, virus, spam and DLP protection."
+ },
+ {
+  "fork_id": "F1304222071",
+  "proposed_category": "Storage",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Federal Production Environment provides a complete message archiving solution that can protect an organization from legal liabilities and regulatory risks while improving email storage management and end-user productivity.",
+   "The solution securely stores electronic messages for a specified retention period, while keeping the messages fully searchable and retrievable in real-time or with a batch process."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Email archiving, retention, search and retrieval."
+ },
+ {
+  "fork_id": "FR1916744879",
+  "proposed_category": "Education & Training",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "With Proofpoint Security Awareness Training, you get tailored cybersecurity education online that’s targeted to the vulnerabilities, roles and competencies of your users."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Cybersecurity awareness education/training."
+ },
+ {
+  "fork_id": "FR1819168894",
+  "proposed_category": "Cybersecurity & Risk Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Proofpoint Targeted Attack Protection (TAP) helps detect, mitigate, and block advanced threat that target people through email."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Targeted attack protection for email-borne threats."
+ },
+ {
+  "fork_id": "FR2628943632",
+  "proposed_category": "Law Enforcement",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "Cloud-based command-and-control platform for public safety operations, providing operational planning, real-time team coordination, encrypted messaging, GPS mapping, risk assessments, and after-action documentation for law enforcement and public safety agencies."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Command-and-control for law enforcement/public safety operations."
+ },
+ {
+  "fork_id": "F1608097919",
+  "proposed_category": "Operations Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "PTC Cloud Services is a FedRAMP Certified Software as a Service (SaaS) offering that provides Product Lifecycle Management (PLM) capabilities through PTC Windchill and PTC Windchill+ FedRAMP deployed within the PTC Cloud Services FedRAMP environment, along with Service Lifecycle Management (SLM) services.",
+   "PTC Cloud Services delivers a comprehensive suite of applications that enable users to securely create, manage, and collaborate on product data across the product lifecycle, including product development, manufacturing, operations, service, and support activities."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Product lifecycle and service lifecycle management across development, manufacturing, operations and service."
+ },
+ {
+  "fork_id": "FR2113157410",
+  "proposed_category": "Learning Management",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "The Public Health Foundation’s TRAIN Learning Network is a Learning Management System (LMS) powered by KMI Learning’s flexible, scalable LMS."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "LMS for public-health training."
+ },
+ {
+  "fork_id": "FR1924942935",
+  "proposed_category": "Human Resources",
+  "new_category": false,
+  "new_category_reason": null,
+  "citations": [
+   "QGenda is the leader in cloud-based call and scheduling automation (https://www.qgenda.com/customers/federal/).",
+   "Leading physician groups, hospitals, academic medical centers, and enterprise health systems use QGenda to optimize their workforce to allow them to provide the best possible patient care."
+  ],
+  "no_signal": false,
+  "no_signal_reason": null,
+  "platform_general": false,
+  "note": "Workforce call/scheduling automation for healthcare organizations."
+ }
+]
