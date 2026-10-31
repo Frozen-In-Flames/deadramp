@@ -1,0 +1,51 @@
+[
+ {
+  "fork_id": "FR2218359666",
+  "vendor": "Haivision Systems, Inc.",
+  "product": "Haivision Hub for Government (HUB-GOV)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Media",
+  "description": "Haivision Hub for Government (HUB-GOV) is an easy-to-use video network service for securely and reliably transporting live streaming video from agency networks to other inter- and intra-agency destinations or for connecting live streams between agency networks and commercial cloud destinations. Hub Gov accomplishes this routing while adding minimal latency and providing AES-256 encryption of live streams.\n\nOffering start-up, integrated device control, stream optimization, and status & monitoring, all from a single browser window, Haivision Hub is ideal for any government organization needing an on-demand low latency video contribution network for any public affairs, citizen-facing communications, or cross-agency collaboration with live video.",
+  "functions_claimed": [
+   {
+    "function_id": "live_video_transport",
+    "function": "Live video transport & routing",
+    "evidence": "Haivision Hub for Government (HUB-GOV) is an easy-to-use video network service for securely and reliably transporting live streaming video from agency networks to other inter- and intra-agency destinations or for connecting live streams between agency networks and commercial cloud destinations."
+   },
+   {
+    "function_id": "stream_encryption",
+    "function": "Stream encryption (AES-256)",
+    "evidence": "Hub Gov accomplishes this routing while adding minimal latency and providing AES-256 encryption of live streams."
+   },
+   {
+    "function_id": "service_startup",
+    "function": "Start-up",
+    "evidence": "Offering start-up, integrated device control, stream optimization, and status & monitoring, all from a single browser window, Haivision Hub is ideal for any government organization needing an on-demand low latency video contribution network for any public affairs, citizen-facing communications, or cross-agency collaboration with live video."
+   },
+   {
+    "function_id": "device_control",
+    "function": "Integrated device control",
+    "evidence": "Offering start-up, integrated device control, stream optimization, and status & monitoring, all from a single browser window, Haivision Hub is ideal for any government organization needing an on-demand low latency video contribution network for any public affairs, citizen-facing communications, or cross-agency collaboration with live video."
+   },
+   {
+    "function_id": "stream_optimization",
+    "function": "Stream optimization",
+    "evidence": "Offering start-up, integrated device control, stream optimization, and status & monitoring, all from a single browser window, Haivision Hub is ideal for any government organization needing an on-demand low latency video contribution network for any public affairs, citizen-facing communications, or cross-agency collaboration with live video."
+   },
+   {
+    "function_id": "status_monitoring",
+    "function": "Status & monitoring",
+    "evidence": "Offering start-up, integrated device control, stream optimization, and status & monitoring, all from a single browser window, Haivision Hub is ideal for any government organization needing an on-demand low latency video contribution network for any public affairs, citizen-facing communications, or cross-agency collaboration with live video."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2218359666/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2218359666"
+ }
+]

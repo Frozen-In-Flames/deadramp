@@ -1733,6 +1733,18 @@ New extended functions from this set, specified in groups/manufacturing-untiered
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This category has no tiered group anywhere in the registry; the census proposed it for this single fork, and its four-family taxonomy was derived fresh from the fork's own two-sentence description, the new-category method, recorded as the category's taxonomy from here on — in particular not imported from Operations Management, the census's boundary case. Four claims stand, every family at one of one, each on its defining sentence; the identity sentence carries its family at identity-sentence weight and is disposed extended. No control family is documented: neither sentence contains any control language, token-verified. Named absences, token-verified: design and CAD, PLM, MES, quality and inspection, machine control, supply chain, production scheduling, digital twin, robotics, workflow, analytics, AI, scoring, and money functions — and export control and ITAR handling, despite the description's aerospace and defense audience, because audience is not evidence. The fresh core holds no money shape and computes no score; its signature is the decision-basis guard, under which a decision record must rest on at least one distinct, existing, same-organization intent record or it is refused.
 
+## Untiered Set 27 — Media (1 fork, tier null; NEW CATEGORY)
+
+New extended functions from this set, specified in groups/media-untiered/UNION-SPEC.md, not implemented:
+- [ ] open — Live video transport & routing engine (the network itself)
+- [ ] open — Stream encryption implementation (the build performs no cryptography; route records carry a caller-stated label only)
+- [ ] open — Device control channel (control actions are recorded, never sent)
+- [ ] open — Stream optimization engine
+- [ ] open — Status & monitoring telemetry collection
+- [ ] open — Platform layer (hosting and the single-browser-window console)
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This category has no tiered group anywhere in the registry, so its six-family taxonomy was derived fresh from the fork's own three-sentence description, the new-category method, and is recorded as the category's taxonomy from here on. Six claims stand: transport and encryption on their own sentences, the other four riding a feature enumeration at list weight. One control family is documented at full family weight — cryptographic protection, on a named mechanism (AES-256 encryption of live streams) — while "securely" is an adverb documenting nothing and device control is bounded as not access control. Named absences, token-verified: recording, playback and VOD, transcoding, media library, editing, captions, any named streaming protocol (the word protocol occurs nowhere), scheduling, advertising, viewership analytics, DRM, CDN, and storage. The fresh core holds records about media, never media itself — no field can hold content — computes no score and no latency figure, and its signature is the one-live-session guard.
+
 ## Later groups
 
 Each group appends its section here when it ships.
