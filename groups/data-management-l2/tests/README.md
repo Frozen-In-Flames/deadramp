@@ -7,11 +7,12 @@ claim / control family it traces to.
 
 ```bash
 cd groups/data-management-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 196 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 208 tests
 ```
 
 Status at delivery: **196 tests, OK** against the implementation in
-`../src/`. (Run exactly as above: helpers are imported as a top-level
+`../src/`; after the remainder additions (below): **208 tests, OK**.
+(Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
 entry point for this group.)
@@ -32,6 +33,7 @@ entry point for this group.)
 | `test_service.py` | REST API — live HTTP server: health (no auth), 401 unknown user + role mismatch, 403 viewer dataset create (denied attempt audited `<action>:denied`), full flow (dataset → source → ingestion → quality rule → check → access request by carol → decide by bob → grants list → retention policy → retention-due → export → search → audit as alice; audit as bob/carol → 403), 400/404 error envelopes |
 | `test_main_cli.py` | `python -m datamgmt serve --port <free>` subprocess (PYTHONPATH=src), waits for health, answers alice on `/audit` and carol/bob on `/datasets`, terminates |
 | `test_negative_control.py` | Negative control (below) |
+| `test_additions.py` | Remainder additions (`addition:data-management-l2`) — spec integrity: 13 sheets (original 8 in shipped order + the unit's 5 in unit order), membership against `remainder.json`, the literal per-fork claim table (IICS 3, Collibra/DNAnexus/OpenFLIS 1 each), the zero-claim set {Vaultara}, verbatim evidence, single-tier invariant, group totals (34 claims, 12 of 13 forks claiming); substrate cases: Collibra access-governance flow with self-decision denied twice (plain viewer, and the guard-isolated name-identical decider holding `access_decide`), DNAnexus source/ingestion/provenance, IICS governance + search + deterministic quality check, OpenFLIS catalog search by name and tag, Vaultara ingestion + export-manifest checksum records |
 | `datamgmt_helpers.py` | Shared fixtures: demo users (ADMIN=alice/admin, STEWARD=bob/steward, VIEWER=carol/viewer), `USERS` registry, `fresh_store()`, and `make_store()` building a DataMgmtStore + AuditLog + the canonical dataset ("Claims Extract", cui, tags [claims, nightly], schema patient_id/amount, created by STEWARD) + the canonical source ("ehr-feed", api, ehr.internal, registered by STEWARD) |
 
 ## Negative control
@@ -71,3 +73,21 @@ Mutation verification: VERIFIED by the coordinator (2026-10-25). The self-approv
 - `test_negative_control.TestNegativeControlMutantSelfApproval.test_viewer_self_decision_denied_canonical_but_mutant_approves`
 
 `store.py` was then restored from a pre-mutation copy (SHA-256 `dc35677ccdaf4d416a10a5364128f54bb1b1802fd8a99c00271ad081caf2774e`, verified identical to the pre-mutation hash) and the suite re-run: **196 tests, OK**. The suite catches this defect class; the negative control is not decorative.
+
+**Additions re-run (2026-10-31):** the core is unchanged by the
+remainder additions, so the same drill was re-run in this tree
+against the enlarged suite. The guard in `store.py` was patched to
+a no-op and the full suite ran: **208 tests, exactly 5 failed** —
+the original 4 above plus
+`test_additions.TestAdditionSubstrateCases.test_collibra_approval_substrate_and_self_decision_denied`,
+whose guard-isolated leg (a name-identical decider holding
+`access_decide`, the isolation documented in
+`test_negative_control.py`) trips on the mutant as designed.
+`store.py` was restored from `scratch/store.py.premutation.additions`
+and verified SHA-256-identical to the shipped hash above; the suite
+re-ran: **208 tests, OK**. Raw record:
+`scratch/additions_mutation_run.txt`, including the transparency
+note that a first run failed only the original 4 (the additions
+case's plain-viewer leg is also denied by the permission layer)
+before the case was strengthened to isolate the guard and the
+drill re-run.

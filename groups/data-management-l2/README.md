@@ -11,6 +11,24 @@ It was written from that contract only: original code, no vendor
 code, assets, or branding from any sibling offering. Python 3,
 **standard library only**, no external dependencies.
 
+## Additions (remainder unit `addition:data-management-l2`)
+
+Five previously uncategorized forks joined this group in the
+remainder pass — Collibra Platform for Government, DNAnexus
+Platform, Informatica Intelligent Cloud Services (IICS), OpenFLIS,
+and Vaultara Flare Services — spec'd under the group's existing
+19-family taxonomy applied verbatim (see `ADDENDUM.md`). The group
+now covers **13 forks and 34 evidenced claims** (6 new). **What
+changed:** `specs/specs.json` gained 5 sheets (the original 8 are
+byte-for-byte untouched) and the suite grew by an additions module.
+**What did not:** the core — every claimed family already had a
+disposition in `UNION-SPEC.md` and a records form in the build, so
+`src/` is byte-identical to the shipped build and the Moderate/L2
+baseline is unchanged. One addition (Vaultara) carries **zero
+claims** under the verbatim taxonomy — its secure-transfer phrasing
+matches neither "managed file transfer" nor "MFT" — pinned in the
+tests and itemized in the addendum rather than tuned for.
+
 ## The 12 core functions
 
 1. **Dataset registry** — datasets (`ds-`) with owner, classification
@@ -110,12 +128,14 @@ audited with the action suffixed `:denied`.
 
 ```bash
 cd groups/data-management-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 196 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 208 tests
 ```
 
-**196 tests, all passing**, including the mutation-verified negative
+**208 tests, all passing**, including the mutation-verified negative
 control: disabling the self-approval guard in the real store makes
-exactly 4 tests fail (see `tests/README.md` for the drill record).
+exactly 5 tests fail (the original drill's 4 plus the additions
+module's guard-isolated Collibra case; see `tests/README.md` for
+both drill records).
 
 ## Honesty
 
@@ -139,7 +159,9 @@ exactly 4 tests fail (see `tests/README.md` for the drill record).
   certificate is configured; encryption at rest is a deployment-layer
   property. The deployment is a single-tenant reference deployment.
 - Claims discipline: every function above traces to a sibling claim
-  in `specs/specs.json` (28 evidenced claims across 8 forks, after 6
-  documented wording-artifact corrections) or to the Moderate/L2
-  control families in `UNION-SPEC.md`. Counts are a floor, stated
-  as such.
+  in `specs/specs.json` (28 evidenced claims across the original 8
+  forks, after 6 documented wording-artifact corrections; 34 claims
+  across 13 forks after the remainder additions, whose 6 claims and
+  1 zero-claim fork are recorded in `ADDENDUM.md`) or to the
+  Moderate/L2 control families in `UNION-SPEC.md`. Counts are a
+  floor, stated as such.

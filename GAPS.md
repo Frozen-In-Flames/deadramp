@@ -946,6 +946,10 @@ New extended functions from the addition forks, specified in groups/legal-policy
 - [ ] open — Contract lifecycle management engine (DocuSign CLM)
 - [ ] open — Agreement workflow automation engine (DocuSign)
 
+## Remainder Addition — Data Management L2 (+5 forks)
+
+No new extended functions; the addition enlarges families already registered under Group 12 (claimant counts in groups/data-management-l2/ADDENDUM.md): integration runtime & connector engine (+2: DNAnexus, Informatica IICS); workflow / BPM execution engine (+1: Collibra); search indexing engine (+1: OpenFLIS); query & visualization engines (+1: IICS). The file-transfer transport gap gains Vaultara Flare as a described-function member with zero taxonomy claims (its "electronic transfer / digital delivery" phrasing matches neither "managed file transfer" nor "MFT") — recorded with exactly that caveat. Unclaimed domain engines in the newcomers' prose (DNAnexus's molecular analysis, Collibra's intelligence platform) are recorded as near-miss substance in the addendum, not as gaps.
+
 ## Later groups
 
 Each group appends its section here when it ships.

@@ -303,5 +303,129 @@
   ],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2531434700/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2531434700"
+ },
+ {
+  "fork_id": "FR1706403967",
+  "vendor": "Collibra",
+  "product": "Collibra Platform for Government (CPG)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Data Management",
+  "description": "The Collibra Data Intelligence Cloud is your system of record for data. It delivers the only end-to-end, integrated Data Intelligence platform that is purpose-built to automate data workflows and deliver trusted data insights to users. Collibra connects IT and the business by removing the fragmentation and complexity of traditional data management technologies. The Collibra Data Intelligence Cloud enables Data Citizens to easily access trustworthy data, automate processes, manage compliance and, ultimately, make their data meaningful.",
+  "functions_claimed": [
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow, automation, review & approvals",
+    "evidence": "It delivers the only end-to-end, integrated Data Intelligence platform that is purpose-built to automate data workflows and deliver trusted data insights to users."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1706403967/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1706403967"
+ },
+ {
+  "fork_id": "FR1814557199",
+  "vendor": "DNAnexus, Inc.",
+  "product": "DNAnexus Platform",
+  "service_model": [
+   "PaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Data Management",
+  "description": "The DNAnexus Platform is a public cloud analysis and data management platform for processing high-throughput molecular data; for combining molecular, clinical, and real-world data to discover relationships relevant to patient and population health, precision medicine, drug discovery and regulatory approval; and for enabling a network of government, academic, and commercial collaborators to securely form research communities. DNAnexus presents a Platform-as-a-Service including a brandable, customizable web interface, and an API for integration with upstream and downstream systems such as Laboratory Information Management, Clinical Trial Management, Electronic Data Capture, and clinical interpretation and reporting systems.\n\nPrecision.FDA.gov (https://precision.fda.gov/) the FDA's web service for collaborative advancement of regulatory standards for Next Generation Sequencing-based drugs and devices, is enabled by the DNAnexus Platform API, leveraging the Platform's secure and compliant analysis and data management services to deliver a fit-for-purpose interface to a secure community of researchers from government, academic, and commercial sectors.",
+  "functions_claimed": [
+   {
+    "function_id": "integration_exchange",
+    "function": "Integration, connectivity & data exchange",
+    "evidence": "DNAnexus presents a Platform-as-a-Service including a brandable, customizable web interface, and an API for integration with upstream and downstream systems such as Laboratory Information Management, Clinical Trial Management, Electronic Data Capture, and clinical interpretation and reporting systems."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1814557199/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1814557199"
+ },
+ {
+  "fork_id": "FR2029331613",
+  "vendor": "Informatica LLC",
+  "product": "Informatica Intelligent Cloud Services (IICS)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Data Management",
+  "description": "IICS for FedRAMP is a microservices-based, cloud-native data management solution which leverages industry-leading metadata capabilities to accelerate and automate core data management and data governance functions. IICS includes support for both Cloud Data Integration and Cloud Application Integration: \n\nCloud Data Integration \n\nBuilt on a next-generation, microservices-driven software as a service (SaaS), Informatica Cloud Data Integration enables you to connect to industry-leading applications and data sources across on-premises and the cloud and allows you to integrate the data sources at scale. Optimize the performance of your development teams by employing a codeless UI; using drag-and-drop interfaces, and making complex integrations simple. \n\nCloud Application Integration \n\nInformatica Cloud Application Integration (CAI) service offers a single, trusted solution to support any integration pattern, data set, user-type, or endpoint to automate business processes, expedite transactions, and enable real-time analytics. It is based on a modular, microservices-based architecture for agile support of future business requirements. CAI supports multiple new and unique integration patterns, which include on-premises to cloud real-time data integration, real-time/B2B application integration, process orchestration, data synchronization, and more. Users can integrate multi-cloud and hybrid applications without writing a single line of code. \n\nEach of the above services leverages Informatica's Secure Agent, which runs all your Cloud Data Integration and Cloud Application Integration workloads inside the customer\u2019s infrastructure, ensuring the highest levels of security and performance.",
+  "functions_claimed": [
+   {
+    "function_id": "integration_exchange",
+    "function": "Integration, connectivity & data exchange",
+    "evidence": "IICS includes support for both Cloud Data Integration and Cloud Application Integration: \n\nCloud Data Integration \n\nBuilt on a next-generation, microservices-driven software as a service (SaaS), Informatica Cloud Data Integration enables you to connect to industry-leading applications and data sources across on-premises and the cloud and allows you to integrate the data sources at scale."
+   },
+   {
+    "function_id": "data_governance",
+    "function": "Data governance & access controls",
+    "evidence": "IICS for FedRAMP is a microservices-based, cloud-native data management solution which leverages industry-leading metadata capabilities to accelerate and automate core data management and data governance functions."
+   },
+   {
+    "function_id": "query_reporting",
+    "function": "Query, reporting & analytics",
+    "evidence": "Cloud Application Integration \n\nInformatica Cloud Application Integration (CAI) service offers a single, trusted solution to support any integration pattern, data set, user-type, or endpoint to automate business processes, expedite transactions, and enable real-time analytics."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2029331613/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2029331613"
+ },
+ {
+  "fork_id": "FR1901136437",
+  "vendor": "Synergetics Incorporated",
+  "product": "Open Federal Logistics Information System (OpenFLIS)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Data Management",
+  "description": "OpenFLIS is an easily customizable, FedRAMP Ready, cloud-based data collation, retrieval, and dissemination platform that enables users to search and display information across multiple databases, sources, and formats. When coupled with the Synergetics Craft Product Architecture (SCPA) application tool, OpenFLIS provides the ability to reach across technological generations and sources to provide access and visibility to any data in any format. The system consists of the SCPA collation and dissemination tool as well as provisioning, cataloging, search and discovery, Information Management / Knowledge Management (IM/KM), and administrator\u2019s modules that comprise the platform.",
+  "functions_claimed": [
+   {
+    "function_id": "catalog_search",
+    "function": "Catalog search & discovery",
+    "evidence": "OpenFLIS is an easily customizable, FedRAMP Ready, cloud-based data collation, retrieval, and dissemination platform that enables users to search and display information across multiple databases, sources, and formats."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1901136437/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1901136437"
+ },
+ {
+  "fork_id": "FR2025456731",
+  "vendor": "Vaultara, LLC",
+  "product": "Vaultara Flare Services",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Data Management",
+  "description": "Vaultara offers an enterprise-wide software-only solution that provides secure, bi-directional electronic transfer to any digital file using Vaultara's Hybrid/SaaS technology. Maximizing security, efficiency, and cost savings, Vaultara offers this solution for quick, secure, contact-less data sharing, drastically reducing the need for physical media. Vaultara is committed to the secure digital delivery of data in the public sector. By achieving FedRAMP authorization, the U.S. federal government will be able to deploy Vaultara software across various departments and agencies.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2025456731/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2025456731"
  }
 ]
