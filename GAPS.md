@@ -802,6 +802,21 @@ Category named absences (not claimed by this fork; recorded so the category's ex
 
 Platform-layer: encryption at rest (deployment layer); multi-tenancy (the fork asserts it of its hosting platform; the build is a single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: the fork is a Telecommunication Expense Management and Managed Mobility system filed under MDM; its description contains zero device-management vocabulary, the taxonomy reflects the TEM surface actually claimed, and the inventory record shape is pinned to ten keys so no field can hold a phone number, IMEI, serial, or any real device identifier.
 
+## Singleton 49 — Legal & Policy L2 (1 fork, new category)
+
+Extended functions, specified in groups/legal-policy-l2/UNION-SPEC.md, not implemented:
+- [ ] open — AI agent runtime (LLM inference, agent orchestration, grounding / retrieval, model transport bridge)
+- [ ] open — Legal corpus content (the statutes / regulations / guidance / datasets themselves, curation and update pipeline, licensing)
+- [ ] open — Full-text & semantic search engines (indexing, vector / semantic ranking over the corpus; saved searches are digest records in Core)
+- [ ] open — Sandbox runtime (the isolated single-use execution environment itself; executions are recorded, never performed)
+- [ ] open — Code execution engine
+- [ ] open — Document generation engine (drafting / generation from corpus and session context)
+- [ ] open — Identity provider / federation service (the fork federates identity with enforced MFA; IA-2 stays with the embedding organization)
+- [ ] open — Security monitoring & platform security services (deployment-platform layer)
+- [ ] open — FIPS-validated cryptography (claimed by the fork's own platform; the standard library is not a validated module and none is claimed)
+
+Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP. Spec notes: the category is new and strictly separate from Law Enforcement (legal research platforms); this fork is an AI agent workspace grounded in a curated legal library with an administration console, and every product function sits in its description's first sentence. Privacy discipline: documents are metadata + SHA-256 only with verify-by-content, and the store layer has no parameter that can accept query text — the service layer hashes queries before the store sees them.
+
 ## Later groups
 
 Each group appends its section here when it ships.

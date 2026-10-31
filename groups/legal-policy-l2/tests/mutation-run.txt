@@ -1,0 +1,43 @@
+................................................../usr/lib/python3.12/unittest/case.py:589: ResourceWarning: unclosed file <_io.BufferedReader name=3>
+  if method() is not None:
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.FF.................F....F..................
+======================================================================
+FAIL: test_canonical_expectation_rejects_second_execution (test_negative_control.TestNegativeControlSandboxSingleUse.test_canonical_expectation_rejects_second_execution)
+Canonical (Core 4): first execution recorded; the second
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hatch/workspace/deadramp/groups/legal-policy-l2/tests/test_negative_control.py", line 54, in test_canonical_expectation_rejects_second_execution
+    with self.assertRaises(ValidationError):
+AssertionError: ValidationError not raised
+
+======================================================================
+FAIL: test_mutant_also_breaks_derived_consumption_semantics (test_negative_control.TestNegativeControlSandboxSingleUse.test_mutant_also_breaks_derived_consumption_semantics)
+Mutant contrast: the real store's report counts exactly
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hatch/workspace/deadramp/groups/legal-policy-l2/tests/test_negative_control.py", line 83, in test_mutant_also_breaks_derived_consumption_semantics
+    with self.assertRaises(ValidationError):
+AssertionError: ValidationError not raised
+
+======================================================================
+FAIL: test_flow (test_service.TestFullFlow.test_flow)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hatch/workspace/deadramp/groups/legal-policy-l2/tests/test_service.py", line 164, in test_flow
+    self.assertEqual(status, 400)
+AssertionError: 201 != 400
+
+======================================================================
+FAIL: test_single_use_rule (test_sessions_executions.TestExecutions.test_single_use_rule)
+Core 4 (signature invariant): a second execution on a
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hatch/workspace/deadramp/groups/legal-policy-l2/tests/test_sessions_executions.py", line 195, in test_single_use_rule
+    with self.assertRaises(ValidationError):
+AssertionError: ValidationError not raised
+
+----------------------------------------------------------------------
+Ran 94 tests in 0.257s
+
+FAILED (failures=4)

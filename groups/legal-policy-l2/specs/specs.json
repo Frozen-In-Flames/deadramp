@@ -1,0 +1,79 @@
+[
+ {
+  "fork_id": "FR2619254906",
+  "vendor": "Vulcan Technologies, Inc.",
+  "product": "VulcanGov (Justinian for Government)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [
+   "Legal & Policy",
+   "Artificial Intelligence (AI)"
+  ],
+  "deadramp_category": "Legal & Policy",
+  "description": "VulcanGov (Justinian for Government) is a SaaS AI platform for government: an AI agent workspace grounded in a curated, continuously updated library of federal and state statutes, regulations, guidance and housing datasets, with full-text and semantic search, secure single-use agent sandboxes for code execution and document generation, and an administration console for agency user management, session audit visibility and usage export. It is delivered from a government-only environment in AWS GovCloud (US) (us-gov-east-1) on a containerized microservices architecture: AWS ECS Fargate, Aurora PostgreSQL, S3 object storage, OpenSearch and ElastiCache. Federal customer data is stored and processed in AWS GovCloud (US); large language model inference is provided by Amazon Bedrock through a documented transport bridge, and every cross-boundary resource, including any temporary deviation, is disclosed in the published third-party information resources and service-scope lists rather than omitted. Data is encrypted at rest (AWS KMS, AES-256) and in transit (TLS 1.2/1.3) with FIPS 140-validated cryptographic modules; identity and access are federated through Okta for Government with enforced multi-factor authentication; security monitoring uses Datadog for Government, Wiz for Government and native AWS security services. Available to federal, state and local governments and to organizations working on their behalf. Public offering information, the secure configuration guide and live availability status are published on the Trust Center at https://trust.vulcangov.app; FedRAMP Certification Data is available to federal reviewers through its gated portal.",
+  "functions_claimed": [
+   {
+    "function_id": "ai_agent_workspace",
+    "function": "AI agent workspace",
+    "evidence": "VulcanGov (Justinian for Government) is a SaaS AI platform for government: an AI agent workspace grounded in a curated, continuously updated library of federal and state statutes, regulations, guidance and housing datasets, with full-text and semantic search, secure single-use agent sandboxes for code execution and document generation, and an administration console for agency user management, session audit visibility and usage export."
+   },
+   {
+    "function_id": "legal_library",
+    "function": "Curated legal library (statutes, regulations, guidance, datasets)",
+    "evidence": "VulcanGov (Justinian for Government) is a SaaS AI platform for government: an AI agent workspace grounded in a curated, continuously updated library of federal and state statutes, regulations, guidance and housing datasets, with full-text and semantic search, secure single-use agent sandboxes for code execution and document generation, and an administration console for agency user management, session audit visibility and usage export."
+   },
+   {
+    "function_id": "search",
+    "function": "Full-text and semantic search",
+    "evidence": "VulcanGov (Justinian for Government) is a SaaS AI platform for government: an AI agent workspace grounded in a curated, continuously updated library of federal and state statutes, regulations, guidance and housing datasets, with full-text and semantic search, secure single-use agent sandboxes for code execution and document generation, and an administration console for agency user management, session audit visibility and usage export."
+   },
+   {
+    "function_id": "agent_sandboxes",
+    "function": "Secure single-use agent sandboxes",
+    "evidence": "VulcanGov (Justinian for Government) is a SaaS AI platform for government: an AI agent workspace grounded in a curated, continuously updated library of federal and state statutes, regulations, guidance and housing datasets, with full-text and semantic search, secure single-use agent sandboxes for code execution and document generation, and an administration console for agency user management, session audit visibility and usage export."
+   },
+   {
+    "function_id": "code_execution",
+    "function": "Code execution (in agent sandboxes)",
+    "evidence": "VulcanGov (Justinian for Government) is a SaaS AI platform for government: an AI agent workspace grounded in a curated, continuously updated library of federal and state statutes, regulations, guidance and housing datasets, with full-text and semantic search, secure single-use agent sandboxes for code execution and document generation, and an administration console for agency user management, session audit visibility and usage export."
+   },
+   {
+    "function_id": "document_generation",
+    "function": "Document generation",
+    "evidence": "VulcanGov (Justinian for Government) is a SaaS AI platform for government: an AI agent workspace grounded in a curated, continuously updated library of federal and state statutes, regulations, guidance and housing datasets, with full-text and semantic search, secure single-use agent sandboxes for code execution and document generation, and an administration console for agency user management, session audit visibility and usage export."
+   },
+   {
+    "function_id": "agency_user_management",
+    "function": "Agency user management (administration console)",
+    "evidence": "VulcanGov (Justinian for Government) is a SaaS AI platform for government: an AI agent workspace grounded in a curated, continuously updated library of federal and state statutes, regulations, guidance and housing datasets, with full-text and semantic search, secure single-use agent sandboxes for code execution and document generation, and an administration console for agency user management, session audit visibility and usage export."
+   },
+   {
+    "function_id": "session_audit_visibility",
+    "function": "Session audit visibility (administration console)",
+    "evidence": "VulcanGov (Justinian for Government) is a SaaS AI platform for government: an AI agent workspace grounded in a curated, continuously updated library of federal and state statutes, regulations, guidance and housing datasets, with full-text and semantic search, secure single-use agent sandboxes for code execution and document generation, and an administration console for agency user management, session audit visibility and usage export."
+   },
+   {
+    "function_id": "usage_export",
+    "function": "Usage export (administration console)",
+    "evidence": "VulcanGov (Justinian for Government) is a SaaS AI platform for government: an AI agent workspace grounded in a curated, continuously updated library of federal and state statutes, regulations, guidance and housing datasets, with full-text and semantic search, secure single-use agent sandboxes for code execution and document generation, and an administration console for agency user management, session audit visibility and usage export."
+   },
+   {
+    "function_id": "identity_federation",
+    "function": "Identity federation & MFA (platform)",
+    "evidence": "Data is encrypted at rest (AWS KMS, AES-256) and in transit (TLS 1.2/1.3) with FIPS 140-validated cryptographic modules; identity and access are federated through Okta for Government with enforced multi-factor authentication; security monitoring uses Datadog for Government, Wiz for Government and native AWS security services."
+   },
+   {
+    "function_id": "saas_delivery",
+    "function": "SaaS delivery (platform)",
+    "evidence": "VulcanGov (Justinian for Government) is a SaaS AI platform for government: an AI agent workspace grounded in a curated, continuously updated library of federal and state statutes, regulations, guidance and housing datasets, with full-text and semantic search, secure single-use agent sandboxes for code execution and document generation, and an administration console for agency user management, session audit visibility and usage export."
+   }
+  ],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2619254906",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2619254906/"
+ }
+]
