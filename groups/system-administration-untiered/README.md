@@ -70,6 +70,52 @@ and none is inferred (the mirror of the founding group's
 artifact, where the fork's prose said "High baseline level"
 and its record said Moderate).
 
+## No-signal addition — CloudFit (a 5th fork)
+
+One further fork joins the set (see
+[`ADDENDUM.md`](ADDENDUM.md)):
+
+| Fork | Vendor | Product | Claims |
+|---|---|---|---:|
+| FR2700754078 | CloudFit Software, LLC | CloudFit Federal Platform | 0 |
+
+It sat in the remainder census's **no-signal-set**: its
+cached marketplace description is managed-platform prose and
+the census recorded no citations and a `no_signal` flag, so
+no build unit proposed a category for it. Its classification
+as System Administration was resolved afterwards by the
+live-docs research pass, on the vendor's own sentence —
+"At CloudFit, we provide a comprehensive suite of managed
+services tailored to optimize and secure your Microsoft
+Cloud environment." (https://cloudfitsoftware.com/) — whose
+prose emphasizes managed services **performed by the
+vendor**, meeting the census's recorded managed-platform
+boundary. The sentence is recorded on its spec sheet as
+`classification_evidence` with its source URL — a
+classification citation, **not claim evidence** (it does not
+occur in the cached description, pinned by test). **Tier
+null restated:** the fork's source record publishes no
+impact level, so its sheet records `fedramp_impact_level:
+"Unknown"` and `cmmc_tier: null`, exactly like the set's
+four, and no baseline is asserted for it.
+
+Under the taxonomy applied verbatim it claims **0
+families** (0 raw hits): a "managed federal cloud
+environment", "application hosting capabilities",
+"monitoring", and "identity management" are asserted in
+substance in vocabulary the founding fork's exact phrases
+do not hold — recorded as near-misses, not rounded up, so
+the set stands at **0 claims across 5 forks**, all
+zero-claim. It adds **no documented control claim**: its
+delivered-capabilities sentence is function prose under the
+set's recorded rule (identity management names no
+mechanism), and the documented set (IA, AC, SC, AU — PDQ
+alone) is unchanged. The core is unchanged — `src/`
+byte-identical — and four already-registered gaps gain the
+fork in substance (managed administration operations,
+application hosting runtime, monitoring engines, third-party
+CSP hosting platforms).
+
 ## The 12 core functions
 
 1. **Customer organizations & membership** — customer
@@ -241,6 +287,16 @@ The category's signature derived-overdue mutation drill was
 re-run in this tree — exactly 6 failures under the mutant, the
 founding drill's identical set, store restored and SHA-256
 verified (see `tests/README.md`).
+
+**93 tests, OK** after the no-signal addition: 11 further
+spec tests pin the appended CloudFit sheet (shipped sheets
+deep-equal to git HEAD; tier null on the new sheet; the
+literal zero-claim table; the classification citation pinned
+against `../../remainder/nosignal_report.json`), and the
+signature drill was re-run — exactly 7 failures under the
+mutant (the shipped 6 plus the addition's substrate case),
+store restored and SHA-256 verified (see `tests/README.md`
+and `ADDENDUM.md`).
 
 ## Byte-identity accounting
 

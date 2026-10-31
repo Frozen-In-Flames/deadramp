@@ -78,5 +78,35 @@
   "functions_claimed": [],
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2701457585",
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2701457585/"
+ },
+ {
+  "fork_id": "FR2700754078",
+  "vendor": "CloudFit Software, LLC",
+  "product": "CloudFit Federal Platform",
+  "service_model": [
+   "SaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Cybersecurity & Risk Management",
+   "Governance, Risk, and Compliance (GRC)",
+   "System Administration",
+   "Data Management",
+   "Development Tools",
+   "Analytics",
+   "Artificial Intelligence (AI)",
+   "Network Management"
+  ],
+  "deadramp_category": "System Administration",
+  "description": "CloudFit Federal Platform (CFP) is a CloudFit-operated cloud service offering hosted within Microsoft Azure Government. CFP provides a managed federal cloud environment for hosting customer SaaS applications and cloud workloads. The platform delivers security, governance, compliance, monitoring, identity management, operational support, platform services, and application hosting capabilities within a standardized CloudFit-managed service boundary. CFP is designed to support regulated workloads requiring alignment with federal cybersecurity and compliance frameworks, including FedRAMP, NIST 800-53, RMF, CMMC, and related requirements. The platform enables CloudFit to onboard, operate, monitor, and support customer applications while maintaining a consistent security and compliance posture across hosted services.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2700754078",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2700754078/",
+  "classification_evidence": "At CloudFit, we provide a comprehensive suite of managed services tailored to optimize and secure your Microsoft Cloud environment.",
+  "classification_source_url": "https://cloudfitsoftware.com/"
  }
 ]

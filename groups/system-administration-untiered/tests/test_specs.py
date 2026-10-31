@@ -12,6 +12,13 @@ the extractor (scratch/extract.py) at extraction time.
 Traces to: remainder.json build unit
 'untiered:System Administration' (4 forks, all FedRAMP impact
 Unknown) and the founding group's spec schema.
+
+Scoping note (no-signal addition): a fifth sheet, FR2700754078
+(CloudFit), is appended after this unit's four sheets by the
+no-signal addition (see ADDENDUM.md and
+test_nosignal_addition.py). The unit-scoped pins below read the
+first-four slice, so every fact they pin about this unit is
+unchanged; the appended sheet is pinned by its own module.
 """
 
 import json
@@ -72,13 +79,15 @@ def normalize(text):
 class TestMembership(unittest.TestCase):
 
     def test_specs_cover_exactly_the_remainder_unit(self):
+        # Unit slice: the first four sheets (a fifth, no-signal
+        # sheet is appended after them; see module docstring).
         specs = load_specs()
-        self.assertEqual([s['fork_id'] for s in specs],
+        self.assertEqual([s['fork_id'] for s in specs[:4]],
                          load_unit_ids())
 
     def test_four_forks(self):
-        self.assertEqual(len(load_specs()), 4)
-        self.assertEqual([s['fork_id'] for s in load_specs()],
+        self.assertEqual(len(load_specs()[:4]), 4)
+        self.assertEqual([s['fork_id'] for s in load_specs()[:4]],
                          EVERY_FORK)
 
 
@@ -124,7 +133,10 @@ class TestClaims(unittest.TestCase):
         self.assertEqual(counts, FAMILY_COUNTS)
 
     def test_zero_claim_forks_reported_plainly(self):
-        zero = [s['fork_id'] for s in load_specs()
+        # Unit slice, as in TestMembership: the appended
+        # no-signal fork is also zero-claim and is pinned by
+        # test_nosignal_addition.py.
+        zero = [s['fork_id'] for s in load_specs()[:4]
                 if not s['functions_claimed']]
         self.assertEqual(zero, ZERO_CLAIM_IDS)
 

@@ -11,7 +11,7 @@ this set.
 
 ```bash
 cd groups/system-administration-untiered
-PYTHONPATH=src python3 -m unittest discover -s tests        # 82 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 93 tests
 ```
 
 Status at delivery: **82 tests, OK** (71 carried core tests +
@@ -20,6 +20,13 @@ Status at delivery: **82 tests, OK** (71 carried core tests +
 server (health, organization/system/request creation, derived
 overdue at a pinned read clock, a viewer's write denied 403
 and recorded in the audit log).
+
+**No-signal addition (2026-10-31): 93 tests, OK** — the 82
+above plus 11 in `test_nosignal_addition.py` for the appended
+CloudFit sheet (see `../ADDENDUM.md`). Three unit-scoped pins
+in `test_specs.py` (membership ×2, the zero-claim list) now
+read the unit's first-four slice, disclosed in that module's
+docstring; every fact they pin about the unit is unchanged.
 
 ## Layout
 
@@ -39,6 +46,7 @@ and recorded in the audit log).
 | `test_store_validation.py` | 3 | Cross-cutting input validation — failed operations consume no id and change nothing; no score/rating/health/posture key on any view (recursive scan) |
 | `test_negative_control.py` | 3 | Negative control (below) |
 | `test_specs.py` | 11 | This set's spec integrity — membership vs the `untiered:System Administration` remainder unit (exact, in unit order), tier discipline (`fedramp_impact_level` "Unknown" on every sheet, `cmmc_tier` null on every sheet, no tier inferred from Dynatrace's "(High)" product name), the pinned literal result of **0 claims** with all eight per-family counts at 0, the four zero-claim forks reported plainly, the evidence-verbatim discipline kept in force, and each sheet's description equal to the census description under the founding normalization |
+| `test_nosignal_addition.py` | 11 | No-signal addition (`../ADDENDUM.md`) — sheet count/order, the 4 shipped sheets deep-equal to git HEAD, membership against the census `no-signal-set` (its `no_signal` flag and empty citations pinned), tier discipline on the new sheet (Unknown / null), the literal zero-claim table and set totals (0 claims, 5 of 5 zero-claim), description verbatim against both cached sources, the classification fields pinned against `../../remainder/nosignal_report.json` (classification sentence asserted NOT in the cached description), near-miss pins, and one substrate case (managed-platform system with pinned nine-key shape, hosted application, support request deriving overdue at read) |
 | `sysadmin_helpers.py` | — | Canonical fixture (carried; docstring relabeled to this set): organization `AGENCY-1` by bob, erin added as staff member (the canonical decider), system `SYS-OS-1` (operating_system, platform `PLAT-A`), application `APP-PORTAL`, service request due 2026-06-10 so `as_of` 2026-06-05 → not overdue and 2026-06-15 → overdue; outsider dave in no organization |
 
 Not carried: the founding group's `test_additions.py`, which
@@ -94,6 +102,18 @@ resolved cases still pass under the mutant (the mutant agrees
 with the correct answer there, by construction), the
 stored-record key pins are untouched by this mutation, and the
 mutant's own subclass test passes by construction, as expected.
+
+**No-signal addition re-run (2026-10-31, `../ADDENDUM.md`):**
+the core is unchanged, so the same drill was re-run in this
+tree with the identical mutant (`_is_overdue` → `return
+False`). The full suite ran: **93 tests, exactly 7 failures**
+— the shipped drill's 6, plus
+`test_nosignal_addition.TestNoSignalSubstrateCase.test_cloudfit_managed_platform_records`,
+the addition module's substrate case, tripping exactly as
+designed; no spec test tripped. `store.py` was restored from
+`scratch/store.py.premutation` and verified SHA-256-identical
+to the shipped hash (`46c4f2dc…`); the suite re-ran green at
+93. Raw failure list in `../scratch/nosignal_drill_output.txt`.
 
 ## Interpretation notes
 
