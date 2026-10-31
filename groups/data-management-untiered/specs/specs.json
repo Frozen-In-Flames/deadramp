@@ -1,0 +1,248 @@
+[
+ {
+  "fork_id": "FR2700429895",
+  "vendor": "Ardoq Inc",
+  "product": "Ardoq",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Data Management",
+   "Artificial Intelligence (AI)",
+   "Analytics",
+   "Operations Management",
+   "Governance, Risk, and Compliance (GRC)"
+  ],
+  "deadramp_category": "Data Management",
+  "description": "Ardoq is a cloud-based software-as-a-service enterprise architecture platform that gives organizations a single, connected model of their IT and business landscape, covering applications, infrastructure, processes, data, and strategic initiatives. Built on a proprietary graph-based data model, Ardoq ingests and continuously updates information from an organization's existing systems, replacing static documentation with a live, queryable view of how technology and business capabilities connect. It has built-in AI capabilities, visualization, and dashboards that help expedite access to and transformation of architecture into consumable insights for non-technical stakeholders.\n\nAgencies use Ardoq to gain visibility into AI deployment and current-state architecture, plan and track technology transformation and modernization initiatives, and maintain ongoing oversight of technical risk, dependencies, and change across the enterprise. The platform supports IT portfolio management, application rationalization, cloud migration planning, risk and compliance reporting, strategic planning and execution, and tracking of AI adoption across the technology estate.",
+  "functions_claimed": [
+   {
+    "function_id": "ingestion_collection",
+    "function": "Ingestion & data collection",
+    "evidence": "Built on a proprietary graph-based data model, Ardoq ingests and continuously updates information from an organization's existing systems, replacing static documentation with a live, queryable view of how technology and business capabilities connect."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML analysis & orchestration",
+    "evidence": "It has built-in AI capabilities, visualization, and dashboards that help expedite access to and transformation of architecture into consumable insights for non-technical stakeholders."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2700429895/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2700429895"
+ },
+ {
+  "fork_id": "FR2630354495",
+  "vendor": "Files.com",
+  "product": "Files.com",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Data Management",
+   "Storage"
+  ],
+  "deadramp_category": "Data Management",
+  "description": "Files.com is a Software-as-a-Service (SaaS) platform with one unified application and API to manage, store, and transfer files across your organization.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2630354495/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2630354495"
+ },
+ {
+  "fork_id": "FR2629068833",
+  "vendor": "Immuta",
+  "product": "Immuta Federal",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Data Management",
+   "Governance, Risk, and Compliance (GRC)"
+  ],
+  "deadramp_category": "Data Management",
+  "description": "Immuta's SaaS platform, the Immuta Data Security Platform, provides a number of capabilities that enable customers to govern and provision data access, automating how data is delivered to both human and non-human consumers while maintaining continuous compliance. These capabilities are managed through Immuta\u2019s web-based interface and Application Programming Interface (API). Authentication to Immuta\u2019s service is controlled via a variety of Single Sign-on (SSO) and directory systems maintained by the customer or a third party. Management of each customer\u2019s Immuta environment is split into a number of roles so that customers desiring a separation of duties for governance purposes can limit users to specific roles to achieve that goal. User attributes can be defined within the platform\u2019s identity manager or synced from an external identity management system. This functionality is central to implementing attribute-based access and control (ABAC) of data, which is a key capability of the platform. Users allowed to act under the application admin role may register metadata from their cloud data warehouse systems, such as Snowflake, Databricks, Starburst, Redshift, Synapse, and BigQuery, etc., with Immuta. Selected tables from these warehouses then appear as entries in Immuta\u2019s metadata catalog interface, where users can add documentation, discuss the data, and tag tables and columns. Tables, called Data Sources in Immuta, can further be grouped into Immuta Projects, which are a logical collection of Data Sources, users, documentation, and clearly defined purposes. Immuta Projects ensure that customers can use data in accordance with laws and regulations that require traceability to the legitimate reasons that sensitive data is used in the various distinct contexts that permeate each organization. Registered metadata is also analyzed by the platform\u2019s Sensitive Data Discovery functionality, which can determine if data in a column is in one of a number of categories, such as personally identifiable information (PII) or \u201cPII First Name,\u201d that are commonly used to drive data access policies. Analysis of this data occurs completely in the customer\u2019s data platform; no data ever leaves back to Immuta. This information is used to tag data within Immuta. Additionally, for customers who have successfully cataloged data in other systems, this kind of information can be synced to Immuta from a variety of common external catalogs. As users, data, and their attributes are registered with Immuta, users are allowed to act under the Data Owner and Governance roles, and can use Immuta\u2019s natural language policy builder to apply access control policies to the data at the data set and row levels, and minimize access to data through Privacy Enhancing Technologies (PETs). Each Data Owner can manage such policies for the data they own. Users in the Governance role can manage policies at a global level. This global policy capability allows governors to review policies for compliance and set up policies that automatically impact new data and new users as they are added to the system. Based on these policies, Immuta connects to the customer cloud data warehouse and administers those policies into the data platform in question, keeping Immuta out of the data path but still enforcing policy. Users query data in the systems they are already using, but Immuta enforces their access based on the defined policies. Immuta also extends this policy-driven model to AI agents acting on behalf of users. When an agent requests data, Immuta evaluates the request in real time and provisions a temporary, scoped role in the underlying data platform \u2013 reflecting only the permissions relevant to that specific task. This access is automatically removed once the task is complete, so no standing privilege persists. Because the agent acts on behalf of a human user rather than as that user, Immuta maintains a dual-identity audit trail showing both the human who delegated the request and the agent that acted. Finally, Immuta provides robust auditing of actions taken within the platform to allow customers to document their data controls and have evidence for compliance purposes. For certain cloud warehouses, such as Databricks or Starburst, this examination extends to queries users perform in the source data systems. For others, Immuta logs and warehouse logs can easily produce an organization\u2019s complete compliance picture when combined in their existing log aggregation and analysis system. This audit trail extends to agent activity, distinguishing human actions, agent actions, and agent-on-behalf-of-user actions.",
+  "functions_claimed": [
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML analysis & orchestration",
+    "evidence": "Immuta also extends this policy-driven model to AI agents acting on behalf of users."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2629068833/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2629068833"
+ },
+ {
+  "fork_id": "FR2702058502",
+  "vendor": "Ocient Inc.",
+  "product": "OcientAIQ",
+  "service_model": [
+   "PaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Analytics",
+   "Artificial Intelligence (AI)",
+   "Data Management",
+   "Storage"
+  ],
+  "deadramp_category": "Data Management",
+  "description": "OcientAIQ\u2122 is Ocient's ecosystem for running AI on petabyte-scale data sets in production. It combines proven solutions, expert delivery, and a platform built for speed, trust, and cost control.\n\nAt its core is the **OcientAIQ Unified Data Platform**, a petabyte-scale data foundation that sits between an organization's AI ecosystem and its enterprise data. It unifies ingest, governance, query execution, and optimization, so AI agents, analysts, and applications get fast, governed access to massive, high-velocity data without moving, duplicating, or simplifying it first.\n\nOcientAIQ also includes:\n\n- **OcientAIQ Solutions:** outcome-focused solutions for data-intensive industries, including national security.\n- **OcientAIQ Solutions Delivery:** the people, processes, and AI-driven tools that tailor each solution to the customer's environment, from requirements through production support.\n\n**FedRAMP scope:** this certification covers OcientAIQ delivered through Ocient's cloud and managed cloud deployment model, in which Ocient operates and manages the service. Customer-operated on-premises, hybrid, sovereign, and air-gapped deployments are not part of this cloud service offering.",
+  "functions_claimed": [
+   {
+    "function_id": "ingestion_collection",
+    "function": "Ingestion & data collection",
+    "evidence": "It unifies ingest, governance, query execution, and optimization, so AI agents, analysts, and applications get fast, governed access to massive, high-velocity data without moving, duplicating, or simplifying it first."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML analysis & orchestration",
+    "evidence": "OcientAIQ\u2122 is Ocient's ecosystem for running AI on petabyte-scale data sets in production."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2702058502/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2702058502"
+ },
+ {
+  "fork_id": "FR2629068832",
+  "vendor": "Open Access Technology International, Inc.",
+  "product": "OATI Marketplace",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Customer Service",
+   "Data Management",
+   "Research"
+  ],
+  "deadramp_category": "Data Management",
+  "description": "OATI services focus on data / transaction management, warehousing, and retrieval in real-time. These services are delivered via OATI managed Data Centers that are equipped with multiple redundant systems and networks and provide a secure production application environment, with multiple redundant systems and networks.\nOATI provides services to over 700 energy industry organizations in North America. Over 90% of the wholesale power entities in North America use OATI services in their operations. OATI, as a provider of SaaS, reduces the burden and expense for energy industry participants who must deploy mission-critical software that complies with industry regulations and Sarbanes-Oxley requirements (SOX).",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2629068832/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2629068832"
+ },
+ {
+  "fork_id": "FR2634450946",
+  "vendor": "Pinecone Systems, Inc.",
+  "product": "Pinecone",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Data Management",
+   "Development Tools"
+  ],
+  "deadramp_category": "Data Management",
+  "description": "Pinecone is a fully managed vector database for AI applications. It stores, indexes, and\nsearches high-dimensional vector embeddings to power retrieval for semantic search,\nrecommendation, and retrieval-augmented generation (RAG) workloads. Customers create\nindexes in a cloud region of their choosing and interact with the service through\ndocumented APIs and client SDKs. The service is operated by Pinecone on public cloud\ninfrastructure, with customer data encrypted at rest (AES-256, with a distinct data\nencryption key for every stored object, so no data key is shared between customers) and in\ntransit (TLS 1.2 minimum).",
+  "functions_claimed": [
+   {
+    "function_id": "catalog_search",
+    "function": "Catalog search & discovery",
+    "evidence": "It stores, indexes, and\nsearches high-dimensional vector embeddings to power retrieval for semantic search,\nrecommendation, and retrieval-augmented generation (RAG) workloads."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML analysis & orchestration",
+    "evidence": "Pinecone is a fully managed vector database for AI applications."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2634450946/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2634450946"
+ },
+ {
+  "fork_id": "FR2631654537",
+  "vendor": "Wisedocs USA Inc.",
+  "product": "Wisedocs for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Data Management",
+   "Artificial Intelligence (AI)",
+   "Health & Wellness",
+   "Legal & Policy"
+  ],
+  "deadramp_category": "Data Management",
+  "description": "The Wisedocs Platform is a cloud-based, AI-powered document processing system designed to help insurance companies, independent medical evaluation firms, and legal entities process medical claims. The Platform uses optical character recognition to process unstructured medical documents such as handwritten clinician notes, medical briefs and records, and discharge summaries, and creates fully searchable records. It organizes, indexes, and identifies duplicate documents to streamline the review, documentation, and management of the medical record life cycle, with embedded machine learning supporting document processing workflows via foundational model providers including AWS Bedrock, Google Cloud Vertex AI, and Azure OpenAI Service. The Platform is hosted on AWS cloud infrastructure and made available to customers through a web application format.",
+  "functions_claimed": [
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML analysis & orchestration",
+    "evidence": "The Wisedocs Platform is a cloud-based, AI-powered document processing system designed to help insurance companies, independent medical evaluation firms, and legal entities process medical claims."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2631654537/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2631654537"
+ },
+ {
+  "fork_id": "FR2504771625",
+  "vendor": "ZL Technologies, Inc.",
+  "product": "ZL Unified Archive (ZL UA)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [],
+  "deadramp_category": "Data Management",
+  "description": "ZL Unified Archive's massively scalable architecture consolidates managing all unstructured content on one platform. Data can be managed in-place and via archiving, for requirements in records management, FOIA, eDiscovery, compliance, privacy, and information governance, while enabling agencies to extract intelligence for analytics and AI training.\n\nZL Unified Archive (ZL UA) offers a comprehensive electronic records management system designed to centralize and automate records capture, storage, retention, and disposition for all federal agencies. This system is tailored to meet the statutory and regulatory requirements set forth by the Federal Records Act, the National Archives and Records Administration (NARA), and the Code of Federal Regulations (36 CFR Chapter XII, Subchapter B), ensuring compliance across all types of records, including temporary, permanent, and essential documents. The platform enables compliance with all NARA Universal Electronic Records Management (UERM), DoDM 8180.01 guidelines, and DoD 5015.2 classified records handling.\n\nData is stored in an encrypted content and data storage system for retention per the agency's policies for which it is being collected. APIs enable the retrieval of this data for future use. Access to all data is restricted to authorized personnel of each agency. Additionally, data can be exported through a user interface that necessitates authentication through an identity management system approved by each agency. Data is safeguarded by allowing IP addresses and firewalls to be listed at the network level, ensuring it is not accessible to individuals outside the agency's scope. The authorization boundary determines the realm of what is accessible in our platform.\n\nKey functionalities of the platform include:\n- In-place management of data, enabling the extraction of intelligence from documents without creating copies\n- Defensible deletion and cleanup of files\n- The capability to channel governed, relevant data into analytics and AI applications\n- Capture of records from a variety of electronic sources\n- Manual and automated classification of records\n- Global search, including sorting by relevance, for eDiscovery, investigations, and FOIA requests\n- Custom retention periods with time-, event-, and metadata-based triggers\n-Retention of records by agency-specific and General Retention Schedules\n- A complete audit log details all actions taken on documents for defensible records management and document deletion\n- A unified system for records management, compliance, eDiscovery, and FOIA requests, so that actions taken on documents are applied universally",
+  "functions_claimed": [
+   {
+    "function_id": "dataset_registry",
+    "function": "Dataset, records & repository registry",
+    "evidence": "Data can be managed in-place and via archiving, for requirements in records management, FOIA, eDiscovery, compliance, privacy, and information governance, while enabling agencies to extract intelligence for analytics and AI training."
+   },
+   {
+    "function_id": "catalog_search",
+    "function": "Catalog search & discovery",
+    "evidence": "Key functionalities of the platform include:\n- In-place management of data, enabling the extraction of intelligence from documents without creating copies\n- Defensible deletion and cleanup of files\n- The capability to channel governed, relevant data into analytics and AI applications\n- Capture of records from a variety of electronic sources\n- Manual and automated classification of records\n- Glo..."
+   },
+   {
+    "function_id": "retention_disposition",
+    "function": "Retention, disposition & records lifecycle",
+    "evidence": "ZL Unified Archive (ZL UA) offers a comprehensive electronic records management system designed to centralize and automate records capture, storage, retention, and disposition for all federal agencies."
+   },
+   {
+    "function_id": "query_reporting",
+    "function": "Query, reporting & analytics",
+    "evidence": "Data can be managed in-place and via archiving, for requirements in records management, FOIA, eDiscovery, compliance, privacy, and information governance, while enabling agencies to extract intelligence for analytics and AI training."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML analysis & orchestration",
+    "evidence": "Data can be managed in-place and via archiving, for requirements in records management, FOIA, eDiscovery, compliance, privacy, and information governance, while enabling agencies to extract intelligence for analytics and AI training."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2504771625/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2504771625"
+ }
+]
