@@ -1,0 +1,23 @@
+[
+ {
+  "fork_id": "FR2634357692",
+  "vendor": "Progressive Expert Consulting",
+  "product": "Collaborative Learning Environment",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Education & Training",
+   "Learning Management"
+  ],
+  "deadramp_category": "Learning Management",
+  "description": "The Collaborative Learning Environment (CLE) is a full-featured, end-to-end virtual school platform for managing learning, providing brick-and-mortar-like classroom experiences using audio, video, live collaboration tools and asynchronous tools and LMS capabilities. System capabilities include: - Real-time collaboration with audio, video, shared content, and recording capabilities - User management - Reporting and data analysis - Classroom management including assignments, evaluations, and grading - Central repository for media and other shared materials with the ability to build and edit course materials from a single workspace",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2634357692/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2634357692; description whitespace normalized (words verbatim); census unit untiered:Learning Management in remainder.json (the fork is filed under Education & Training in forks.json; the census assigned it to Learning Management from its own description)"
+ }
+]

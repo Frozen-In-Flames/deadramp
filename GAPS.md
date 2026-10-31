@@ -1712,6 +1712,19 @@ New extended functions from this set, specified in groups/finance-untiered/UNION
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. One claim stands, at artifact weight: the reporting family fires on "employee expense reporting", the expense-report filing workflow the fork exists to manage, not on reporting and analytics phrasing of the kind the family's founding claim rests on — it documents no analytics capability and supports no core function, and it is flagged at that weight in the spec, the union spec, and the artifacts log. No control family is documented: one sentence naming "authorized users" names a population, not a mechanism, and the word encrypt occurs nowhere. The loudest named absence is spend management: the fork's whole domain is expenses, yet the token "spend" occurs nowhere in its description — "expense" does not contain it — token-pinned; expense management itself has no family in the category taxonomy at all. Zero of the core's eleven functions are claim-supported at full weight; the substrate is carried, not claimed, with its money machinery — integer cents, floats and booleans rejected — preserved exactly.
 
+## Untiered Set 25 — Learning Management (1 fork, tier null)
+
+New extended functions from this set, specified in groups/learning-management-untiered/UNION-SPEC.md, not implemented (the founding group's gaps stand registered under it at zero claimants from this set; its learning-analytics gap gains substance from this fork's reporting prose, noted in the union spec, not re-registered):
+- [ ] open — Virtual school / virtual classroom delivery runtime
+- [ ] open — Real-time collaboration & session recording services
+- [ ] open — Course material authoring workspace
+- [ ] open — Media & shared-materials repository service
+- [ ] open — Assignment, evaluation & grading engine (the fork's asserted function, registered as specified-not-implemented — the build still computes no score)
+- [ ] open — User administration service
+- [ ] open — Platform layer
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Zero claims stand: the description is five capability bullets of virtual-school prose and no family's phrase fires, a zero pinned mechanically by re-applying the taxonomy in the spec tests — the same outcome as the founding group's own addition fork. No control family is documented: security, authentication, access control, encrypt, audit, and compliance each occur zero times, token-verified, and "user management" is a product function naming no mechanism. The taxonomy-level absences are the story here: virtual classroom and collaboration, course authoring, grading, and a media repository are all asserted in substance with no family to hold them — gapped in their own names, never forced — and the category's standards surface is entirely absent (no xAPI token, no SCORM, AICC, or cmi5 token; the substring "scor" occurs zero times). Zero of the core's fourteen functions are claim-supported; the substrate is carried, not claimed, with its doctrines intact: LRS statements pinned to exactly eight keys with no score field anywhere, compliance derived at read, and the workflow registry never executing.
+
 ## Later groups
 
 Each group appends its section here when it ships.
