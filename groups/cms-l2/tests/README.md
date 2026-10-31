@@ -7,7 +7,7 @@ claim / control family it traces to.
 
 ```bash
 cd groups/cms-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 98 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 108 tests
 ```
 
 Status at delivery: **98 tests, OK** against the implementation in
@@ -15,6 +15,12 @@ Status at delivery: **98 tests, OK** against the implementation in
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
 entry point for this group.)
+
+Status after the remainder addition (unit `addition:cms-l2`):
+**108 tests, OK** — the 98 above plus 10 in `test_additions.py`
+(see the addition section at the end of this file). The core is
+unchanged; the signature drill was re-run in this tree and failed
+exactly 5 tests under mutation (record below).
 
 ## Layout
 
@@ -33,6 +39,7 @@ entry point for this group.)
 | `test_report.py` | Reporting / reporting — empty report (all statuses 0, 4 built-in types), counts by status/site/type, publish-record count, assets by kind (zeros included), totals, determinism and read access for any role |
 | `test_service.py` | REST API — live HTTP server: health (no auth), 401 unknown user + role mismatch, 403 viewer site create (denied attempt audited `<action>:denied`), full flow (site → section → types → tag → item by dave → PATCH update → revisions → submit → approve-by-author 403 → approve by carol → windowed publish by bob → publishes list → item window at pinned `now` → asset with computed checksum → search → report → archive → audit as alice; audit as non-admin → 403), return flow over HTTP, 400/404 error envelopes |
 | `test_main_cli.py` | `python -m cms serve --port <free>` subprocess (PYTHONPATH=src), waits for health, answers alice on `/audit` and erin/bob on `/sites`, terminates |
+| `test_additions.py` | Remainder addition (unit `addition:cms-l2`) — spec integrity for the appended Iron Mountain InSight sheet (count/order, membership vs `remainder.json`, the literal **zero-claim** table pinned, group totals 19 claims / exactly 1 zero-claim fork, tier fields, verbatim description, census citation = the whole description verifying and tagging nothing, near-miss token pins) plus 2 substrate cases (content record with classification/extraction metadata + tag and a physical-content asset registration found by metadata search; editorial lifecycle with the editor-author approval denial) |
 | `test_negative_control.py` | Negative control (below) |
 | `cms_helpers.py` | Shared fixtures: demo users (ADMIN=alice/admin, PUBLISHER=bob/publisher, EDITOR=carol/editor, AUTHOR=dave/author, VIEWER=erin/viewer), `USERS` registry, `fresh_store()`, `make_store()` (canonical site "Main Site" by PUBLISHER + section "News" by EDITOR), `make_item()`, `drive_to_approved()` and `drive_to_published()` |
 | `store.py.premutation` | Pre-mutation copy of `../src/cms/store.py`, kept for the negative-control drill restore/hash check below (kept here because this group's `scratch/` is owned by a sibling worker) |
@@ -79,3 +86,30 @@ directory (`tests/store.py.premutation`, SHA-256
 verified identical to the pre-mutation hash) and the suite re-run:
 **98 tests, OK**. The suite catches this defect class; the negative
 control is not decorative.
+
+## Remainder addition — drill re-run (unit addition:cms-l2)
+
+The addition (Iron Mountain InSight, `FR2031155471`) claims zero
+families and changes no core code, so the group's signature drill
+was re-run in this tree at addition time. The guard body in
+`CmsStore._check_approver_not_author` (`src/cms/store.py`) was
+patched to a no-op (`return None`) — the guard line
+`if actor_name(actor) == item["author"]:` occurs exactly once in
+the file (count asserted before patching), so the mutant was
+never unscoped — and the full suite ran: **108 tests ran, exactly
+5 failed** —
+
+- `test_additions.TestAdditionSubstrateCases.test_insight_item_lifecycle_author_guard`
+- `test_lifecycle.TestLifecycle.test_author_cannot_approve_own_item_store_level`
+- `test_lifecycle.TestLifecycle.test_editor_who_authored_cannot_review_own`
+- `test_negative_control.TestNegativeControlMutantAuthorApproval.test_author_approve_denied_canonical_but_mutant_approves`
+- `test_negative_control.TestNegativeControlMutantAuthorApproval.test_author_return_denied_canonical_but_mutant_returns`
+
+— the shipped drill's 4 plus exactly 1 from the new additions
+module (the InSight lifecycle author-guard case), tripping as
+designed. `store.py` was restored from the pre-mutation copy
+(`scratch/store.py.premutation-additions`) and verified SHA-256
+`e1d05424812f17b5bf1de6023bde72e08983a1790854d36df50d3ef2ad232de1`,
+identical to the shipped hash; the suite re-ran: **108 tests,
+OK**. The raw failure list is in
+`scratch/additions_mutation_run.txt`.

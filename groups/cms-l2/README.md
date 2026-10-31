@@ -157,12 +157,31 @@ audited with the action suffixed `:denied`.
 
 ```bash
 cd groups/cms-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 98 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 108 tests
 ```
 
-**98 tests, all passing**, including the mutation-verified negative
+**108 tests, all passing**, including the mutation-verified negative
 control: disabling the author-approval guard in the real store makes
-exactly 4 tests fail (see `tests/README.md` for the drill record).
+exactly 4 tests fail in the shipped suite — and exactly 5 with the
+remainder addition's tests included (see `tests/README.md` for both
+drill records).
+
+## Remainder addition
+
+One previously uncategorized fork joined the group in the remainder
+pass (unit `addition:cms-l2`; see `ADDENDUM.md`): **Iron Mountain
+InSight** (Iron Mountain, FedRAMP Moderate / Certified, SaaS). Its
+entire marketplace description is one sentence — a "content
+services platform" that uses ML/AI to "automatically classify,
+extract, and enrich physical and digital content" — and under the
+group's taxonomy applied verbatim it claims **zero** families: the
+census citation is that sentence, it verifies verbatim, and it
+tags nothing. The group total stays 19 claims across 5 forks, and
+the union spec's "no fork has zero claims" floor no longer holds
+(pinned in tests, not hidden). Its headline engine — ML/AI content
+classification, extraction & enrichment — is registered as a gap
+in the addendum; the core is unchanged and `src/` is
+byte-identical.
 
 ## Honesty
 

@@ -1147,6 +1147,13 @@ New extended functions from the addition fork, specified in groups/communication
 
 Existing gap enlarged by substance: the search & eDiscovery engines gap gains the addition fork on its described function ("find information they need") even though the family claim did not fire (no search token). Explicitly no claimant: secure & encrypted transmission (platform prose, no operative phrasing, no "encrypt" anywhere in the description), workflow / BPM engines (no token). The category's standing named absence survives: video conferencing / real-time media is claimed by 0 of 7 forks at this tier — the flagship messaging suite's High listing never mentions media, calls, or video.
 
+## Remainder Addition — CMS L2 (+1 fork)
+
+New extended function from the addition fork, specified in groups/cms-l2/ADDENDUM.md, not implemented:
+- [ ] open — ML/AI content classification, extraction & enrichment engine: automatically classifying, extracting, and enriching physical and digital content (registered from the fork's described headline function, not from a claim; the records its outputs would write — item metadata, tags, asset registrations — are Core, the engine is Extended)
+
+No existing gap gains a claimant, itemized in the addendum: bulk ingestion & index-in-place engines (extraction is the reverse direction from ingestion), platform hosting itself (delivery-model prose), enterprise search indexing engines (no search token anywhere in the description). The enlarged group's floor changes, stated plainly: the union spec's "no fork has zero claims" no longer holds — the addition fork's entire description is one 38-word sentence that tags no family under the taxonomy applied verbatim, so 4 of 5 forks claim and the group total stays 19. All six named absences survive at 0 of 5 forks.
+
 ## Later groups
 
 Each group appends its section here when it ships.
