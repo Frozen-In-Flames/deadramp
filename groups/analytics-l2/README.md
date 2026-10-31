@@ -151,3 +151,20 @@ Further, plainly:
   certification**, and it does not claim either. The control mapping
   above states which baseline families the build's features answer to;
   nothing more.
+
+## Remainder additions (unit `addition:analytics-l2`)
+
+One previously uncategorized offering — **NetComm / Beacon** — was
+spec'd into this group under its existing taxonomy, applied verbatim
+(see `ADDENDUM.md`). What changed: `specs/specs.json` grew from 128
+to 129 sheets (the original 128 byte-for-byte untouched), adding
+**2 claims**: visualization & dashboards (the toolset's named
+function, a Core family) and sharing & collaboration (Extended,
+fired inside the fork's own service catalogue and recorded at
+catalogue weight, not counted as a gap enlargement). What did
+**not** change: the implementation. The core is the same 10
+functions, `src/` is byte-identical, and the tier baseline is
+unchanged; the fork's remaining described surface is a back-office
+service catalogue (HR / finance / property automation tools,
+digital signatures, e-workflows, mobile capabilities) named as
+Extended gaps in the addendum for the final batch.

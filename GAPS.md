@@ -1115,6 +1115,16 @@ New extended functions from the addition fork, specified in groups/ai-l2/ADDENDU
 
 Enlargements: agentic & automated workflow engines +1 claimant (now 5 of 12 in the group); learned AI / ML inference +1 by substance, explicitly not a claimant (the fork's semantic intelligence and public-comment analysis are recorded so the final batch sizes the inference gap honestly). Document processing & generation explicitly gains no claimant. The fork claims no learned inference under the taxonomy despite its AI branding ("AI-enabled" is not "ai-powered"; "intelligent agents" is not "ai agents"), pinned in tests; its audit claim rests on the single word "auditability", a wording artifact with a recorded precedent in the group.
 
+## Remainder Addition — Analytics L2 (+1 fork)
+
+New extended functions from the addition fork, specified in groups/analytics-l2/ADDENDUM.md, not implemented (all fork excess from its own service catalogue):
+- [ ] open — Automated back-office service tools (HR, finance & property management)
+- [ ] open — Digital signature engine
+- [ ] open — E-workflow tooling (explicitly distinguished from the group's Extended scheduling & workflow automation family)
+- [ ] open — Mobile client capabilities
+
+No existing gap gains a counted claimant: the fork's collaboration claim fired inside its own service catalogue and is recorded at catalogue weight (the catalogue lists the fork's own offered services, so the third-party-catalogue exclusion does not apply, but the artifact-weight precedent does); its visualization claim is Core (dashboard composition), not a gap.
+
 ## Later groups
 
 Each group appends its section here when it ships.

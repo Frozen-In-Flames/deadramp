@@ -7,7 +7,7 @@ function / spec claim it traces to.
 
 ```bash
 cd groups/analytics-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 136 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 147 tests
 PYTHONPATH=src python3 -m unittest discover -s tests -t .   # package mode, also green
 ```
 
@@ -15,7 +15,8 @@ Status at delivery: **136 tests, OK** against the implementation in
 `../src/`. (The suite was first validated against an independent
 reference implementation written from UNION-SPEC.md alone, then aligned
 to the shipped implementation where the spec left a shape open — see
-"Interpretation notes".)
+"Interpretation notes".) After the remainder additions below:
+**147 tests, OK**.
 
 ## Layout
 
@@ -31,6 +32,7 @@ to the shipped implementation where the spec left a shape open — see
 | `test_service.py` | 8 API access — live HTTP server: auth 401, permission 403, validation 400, missing 404, `{error}` envelope, denied attempts audited |
 | `test_main_cli.py` | `python -m analytics serve` subprocess with demo users alice/bob/carol |
 | `test_negative_control.py` | Negative control (below) |
+| `test_additions.py` | Remainder addition (ADDENDUM.md) — spec integrity for the appended NetComm / Beacon sheet (membership, literal claim table, verbatim evidence, census citation, near-miss pins, group totals) + the fork's substrate case (customized dashboard composition; dashboard averages are means) |
 | `analytics_helpers.py` | Canonical sales dataset + row-shape normalisation |
 
 ## Negative control
@@ -47,6 +49,20 @@ Verified by mutation: patching `src/analytics/query.py` so both the
 `avg` aggregate and `describe`'s mean return `sum(numbers)` makes the
 suite fail with **12 failures**, including all 4 negative-control tests
 (plus the describe, grouped-avg, aggregate, and service describe tests).
+
+**Drill re-run for the remainder addition (unit
+`addition:analytics-l2`).** The core is unchanged by the addition, so
+the same drill was re-run in this tree: both avg sites patched to
+return `sum(numbers)`, full suite ran — **147 tests, exactly 13
+failures**: the shipped drill's 12 plus exactly 1 from the new
+additions module (`test_additions.TestBeaconSubstrate.
+test_dashboard_statistics_are_means_not_sums` — grouped avg 15 and
+describe mean 20 asserted against the mutant's sums), tripping
+exactly as designed. `query.py` was restored from the pre-mutation
+copy (`scratch/query.py.premutation`) and verified SHA-256-identical
+to the shipped hash
+(`f15c9b8f528db4675de1437588aadf95a45067b0429bc1287a08ce6720faea2c`);
+the suite re-ran green. Raw output: `scratch/additions_mutation_run.txt`.
 
 ## Interpretation notes
 

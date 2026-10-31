@@ -4684,5 +4684,34 @@
   ],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2023601671/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2023601671"
+ },
+ {
+  "fork_id": "F1508127183",
+  "vendor": "NetComm",
+  "product": "Beacon",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Analytics",
+  "description": "NetComm is the government's expert for unifying the user experience at the agency IT edge, delivering custom information management software solutions to a wide range of government clients. A Women-Owned Small Business (WOSB) with 30 years of Federal experience, NetComm offers a variety of cloud-based services through Beacon, NetComm's data analytics toolset that allows users to create customized dashboards tailored to an organization's or agency's particular needs, including:\n\n- Automated HR, finance, property management, digital signatures, e-workflows, online collaboration and dashboard tools, specifically tailored to help clients meet their organizational goals \n- Improved access to and analysis of complex data \n- Standards & best practices for security & privacy management in the cloud \n- Mobile Capabilities \n- Data Visualization and Dashboarding\n\nBeacon leverages the Amazon Web Services GovCloud region FedRAMP moderate cloud Infrastructure as a Service (IaaS).",
+  "functions_claimed": [
+   {
+    "function_id": "visualization",
+    "function": "Visualization & dashboards",
+    "evidence": "A Women-Owned Small Business (WOSB) with 30 years of Federal experience, NetComm offers a variety of cloud-based services through Beacon, NetComm's data analytics toolset that allows users to create customized dashboards tailored to an organization's or agency's particular needs, including:\n\n- Automated HR, finance, property management, digital signatures, e-workflows, online collaboration and ..."
+   },
+   {
+    "function_id": "collaboration",
+    "function": "Sharing & collaboration",
+    "evidence": "A Women-Owned Small Business (WOSB) with 30 years of Federal experience, NetComm offers a variety of cloud-based services through Beacon, NetComm's data analytics toolset that allows users to create customized dashboards tailored to an organization's or agency's particular needs, including:\n\n- Automated HR, finance, property management, digital signatures, e-workflows, online collaboration and ..."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1508127183/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1508127183"
  }
 ]
