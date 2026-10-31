@@ -1,0 +1,4090 @@
+[
+ {
+  "section": "Group 1 \u2014 Analytics L2 (128 forks)",
+  "text": "Predictive ML (the remainder of the statistical/ML claim family; core covers descriptive statistics only)"
+ },
+ {
+  "section": "Group 1 \u2014 Analytics L2 (128 forks)",
+  "text": "Alerts, monitoring & detection"
+ },
+ {
+  "section": "Group 1 \u2014 Analytics L2 (128 forks)",
+  "text": "Real-time / streaming analytics"
+ },
+ {
+  "section": "Group 1 \u2014 Analytics L2 (128 forks)",
+  "text": "Collaboration (shared workspaces around analytics)"
+ },
+ {
+  "section": "Group 1 \u2014 Analytics L2 (128 forks)",
+  "text": "Proprietary-source connectors (core covers open-format file ingest only)"
+ },
+ {
+  "section": "Group 1 \u2014 Analytics L2 (128 forks)",
+  "text": "Data transformation / ETL"
+ },
+ {
+  "section": "Group 1 \u2014 Analytics L2 (128 forks)",
+  "text": "Governance beyond the dataset registry"
+ },
+ {
+  "section": "Group 1 \u2014 Analytics L2 (128 forks)",
+  "text": "Geospatial analytics"
+ },
+ {
+  "section": "Group 1 \u2014 Analytics L2 (128 forks)",
+  "text": "Text / NLP analytics"
+ },
+ {
+  "section": "Group 1 \u2014 Analytics L2 (128 forks)",
+  "text": "Archiving"
+ },
+ {
+  "section": "Group 1 \u2014 Analytics L2 (128 forks)",
+  "text": "Self-service BI"
+ },
+ {
+  "section": "Group 1 \u2014 Analytics L2 (128 forks)",
+  "text": "KPI management"
+ },
+ {
+  "section": "Group 1 \u2014 Analytics L2 (128 forks)",
+  "text": "Scheduling"
+ },
+ {
+  "section": "Group 1 \u2014 Analytics L2 (128 forks)",
+  "text": "Media analytics"
+ },
+ {
+  "section": "Group 2 \u2014 Collaboration L2 (57 forks)",
+  "text": "Workflow / process-automation engines (the group's #2 claim family)"
+ },
+ {
+  "section": "Group 2 \u2014 Collaboration L2 (57 forks)",
+  "text": "AI assistance, speech, and analytics"
+ },
+ {
+  "section": "Group 2 \u2014 Collaboration L2 (57 forks)",
+  "text": "Learning, training, mentoring"
+ },
+ {
+  "section": "Group 2 \u2014 Collaboration L2 (57 forks)",
+  "text": "Task & project management beyond board cards"
+ },
+ {
+  "section": "Group 2 \u2014 Collaboration L2 (57 forks)",
+  "text": "Voice / telephony / contact center"
+ },
+ {
+  "section": "Group 2 \u2014 Collaboration L2 (57 forks)",
+  "text": "Records & governance beyond the versioning/audit seed"
+ },
+ {
+  "section": "Group 2 \u2014 Collaboration L2 (57 forks)",
+  "text": "Knowledge management"
+ },
+ {
+  "section": "Group 2 \u2014 Collaboration L2 (57 forks)",
+  "text": "Meetings / video media transport (coordination surface is core; a stdlib build carries no A/V)"
+ },
+ {
+  "section": "Group 2 \u2014 Collaboration L2 (57 forks)",
+  "text": "E-signature"
+ },
+ {
+  "section": "Group 3 \u2014 Analytics L3-adjacent (54 forks)",
+  "text": "Alerts, monitoring & detection (27 of 54 forks claim it; kept Extended because each claimant binds alerting to its own domain telemetry \u2014 reasoning in the group spec)"
+ },
+ {
+  "section": "Group 3 \u2014 Analytics L3-adjacent (54 forks)",
+  "text": "Predictive ML remainder (family #1 at 34 of 54)"
+ },
+ {
+  "section": "Group 3 \u2014 Analytics L3-adjacent (54 forks)",
+  "text": "Real-time / streaming (18), collaboration (17), proprietary connectors (17), governance (11), transformation (10), text/NLP (6), archiving (4), scheduling (3), geospatial (3), media analytics (2), self-service BI (2), KPI (0 claims in this group)"
+ },
+ {
+  "section": "Group 3 \u2014 Analytics L3-adjacent (54 forks)",
+  "text": "MFA / authenticator management (IA-2(1)/(2), IA-5) \u2014 IdP layer, hooks only"
+ },
+ {
+  "section": "Group 3 \u2014 Analytics L3-adjacent (54 forks)",
+  "text": "FIPS-validated cryptography (SC-13) \u2014 Python stdlib is not a validated module; not claimed"
+ },
+ {
+  "section": "Group 3 \u2014 Analytics L3-adjacent (54 forks)",
+  "text": "Encryption at rest (SC-28) \u2014 deployment layer"
+ },
+ {
+  "section": "Group 3 \u2014 Analytics L3-adjacent (54 forks)",
+  "text": "Audit retention enforcement (AU-11)"
+ },
+ {
+  "section": "Group 3 \u2014 Analytics L3-adjacent (54 forks)",
+  "text": "Session lock / termination (AC-11/AC-12) \u2014 stateless per-request auth in the current build"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "AI/ML detection models (17 siblings)"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "SOAR / orchestration engines (14)"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "Detection engines and staffed SOC services (13) \u2014 ingestion and triage of their output is core"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "Network enforcement planes (11)"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "Threat-intelligence feeds (9)"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "Backup / recovery products (9)"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "Full GRC automation suites (8) \u2014 control mapping is core"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "Identity products (8) \u2014 hooks only, no IdP"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "EDR/XDR agents (7)"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "Phishing simulation / training (7)"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "DLP / insider monitoring engines (7)"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "AppSec testing engines (6)"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "CSPM/CNAPP/SSPM posture engines (5)"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "Log / telemetry pipelines (5)"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "Vulnerability scanners (4) \u2014 ingestion and tracking is core"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "CUI enclaves / VDI (3)"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "Identity proofing / fraud (2)"
+ },
+ {
+  "section": "Group 4 \u2014 Cybersecurity & Risk Management L2 (54 forks)",
+  "text": "Endpoint management agents (2)"
+ },
+ {
+  "section": "Group 5 \u2014 Accounting L2 (21 forks)",
+  "text": "AI / analytics & BI"
+ },
+ {
+  "section": "Group 5 \u2014 Accounting L2 (21 forks)",
+  "text": "Project / program / portfolio management"
+ },
+ {
+  "section": "Group 5 \u2014 Accounting L2 (21 forks)",
+  "text": "Risk register / GRC suites (separation of duties, approvals, and the audit trail are the in-core seed)"
+ },
+ {
+  "section": "Group 5 \u2014 Accounting L2 (21 forks)",
+  "text": "Audit management workbenches (the core carries the audit trail, not audit management)"
+ },
+ {
+  "section": "Group 5 \u2014 Accounting L2 (21 forks)",
+  "text": "Fixed-asset registers"
+ },
+ {
+  "section": "Group 5 \u2014 Accounting L2 (21 forks)",
+  "text": "Records retention"
+ },
+ {
+  "section": "Group 5 \u2014 Accounting L2 (21 forks)",
+  "text": "Forecasting / EPM"
+ },
+ {
+  "section": "Group 5 \u2014 Accounting L2 (21 forks)",
+  "text": "Supply chain"
+ },
+ {
+  "section": "Group 5 \u2014 Accounting L2 (21 forks)",
+  "text": "GovCon / grants"
+ },
+ {
+  "section": "Group 5 \u2014 Accounting L2 (21 forks)",
+  "text": "Crypto investigation"
+ },
+ {
+  "section": "Group 5 \u2014 Accounting L2 (21 forks)",
+  "text": "Time tracking"
+ },
+ {
+  "section": "Group 5 \u2014 Accounting L2 (21 forks)",
+  "text": "E-signature"
+ },
+ {
+  "section": "Group 5 \u2014 Accounting L2 (21 forks)",
+  "text": "Payroll"
+ },
+ {
+  "section": "Group 5 \u2014 Accounting L2 (21 forks)",
+  "text": "Tax"
+ },
+ {
+  "section": "Group 5 \u2014 Accounting L2 (21 forks)",
+  "text": "Forensic investigation"
+ },
+ {
+  "section": "Group 7 \u2014 Analytics L1 (16 forks)",
+  "text": "Real-time / streaming (8 of 16 \u2014 joint-largest family in this group, its biggest gap)"
+ },
+ {
+  "section": "Group 7 \u2014 Analytics L1 (16 forks)",
+  "text": "Proprietary-source connectors (5) \u2014 core covers open CSV/JSON only"
+ },
+ {
+  "section": "Group 7 \u2014 Analytics L1 (16 forks)",
+  "text": "Predictive ML, remainder of the statistics/ML family (5)"
+ },
+ {
+  "section": "Group 7 \u2014 Analytics L1 (16 forks)",
+  "text": "Alerts / monitoring (3)"
+ },
+ {
+  "section": "Group 7 \u2014 Analytics L1 (16 forks)",
+  "text": "Collaboration (3)"
+ },
+ {
+  "section": "Group 7 \u2014 Analytics L1 (16 forks)",
+  "text": "Archiving (2)"
+ },
+ {
+  "section": "Group 7 \u2014 Analytics L1 (16 forks)",
+  "text": "Transformation (1)"
+ },
+ {
+  "section": "Group 7 \u2014 Analytics L1 (16 forks)",
+  "text": "Text / NLP (1)"
+ },
+ {
+  "section": "Group 6 \u2014 Collaboration L3-adjacent (17 forks)",
+  "text": "Workflow / process-automation engines (4 siblings)"
+ },
+ {
+  "section": "Group 6 \u2014 Collaboration L3-adjacent (17 forks)",
+  "text": "AI assistance & speech (5)"
+ },
+ {
+  "section": "Group 6 \u2014 Collaboration L3-adjacent (17 forks)",
+  "text": "Records & governance beyond the versioning/audit seed (5)"
+ },
+ {
+  "section": "Group 6 \u2014 Collaboration L3-adjacent (17 forks)",
+  "text": "Voice / telephony / contact center (2)"
+ },
+ {
+  "section": "Group 6 \u2014 Collaboration L3-adjacent (17 forks)",
+  "text": "Task & project management beyond board cards (2)"
+ },
+ {
+  "section": "Group 6 \u2014 Collaboration L3-adjacent (17 forks)",
+  "text": "Learning / training / mentoring (1)"
+ },
+ {
+  "section": "Group 6 \u2014 Collaboration L3-adjacent (17 forks)",
+  "text": "Knowledge management (0 claims in this group; carried from the L2 union)"
+ },
+ {
+  "section": "Group 6 \u2014 Collaboration L3-adjacent (17 forks)",
+  "text": "Meetings / video media transport (0 claims in this group)"
+ },
+ {
+  "section": "Group 6 \u2014 Collaboration L3-adjacent (17 forks)",
+  "text": "E-signature (0 claims in this group)"
+ },
+ {
+  "section": "Group 9 \u2014 Artificial Intelligence (AI) L2 (11 forks)",
+  "text": "Learned AI/ML inference: real LLMs, ML, NLU, and predictive models (8 of 11 forks claim it; the group's #1 family). Each vendor's models are their own; the shipped core's responder is a deterministic reference stub (echo/template/rules) labeled `reference_stub: true` on every response, and is not a substitute for inference."
+ },
+ {
+  "section": "Group 9 \u2014 Artificial Intelligence (AI) L2 (11 forks)",
+  "text": "Agentic & automated workflow engines (4)"
+ },
+ {
+  "section": "Group 9 \u2014 Artificial Intelligence (AI) L2 (11 forks)",
+  "text": "Document processing & generation workloads (4)"
+ },
+ {
+  "section": "Group 9 \u2014 Artificial Intelligence (AI) L2 (11 forks)",
+  "text": "Analytics, dashboards & reporting (2)"
+ },
+ {
+  "section": "Group 9 \u2014 Artificial Intelligence (AI) L2 (11 forks)",
+  "text": "Contact center & customer experience (1)"
+ },
+ {
+  "section": "Group 9 \u2014 Artificial Intelligence (AI) L2 (11 forks)",
+  "text": "Vertical domain applications: compliance/ERP enclave, IT asset management, electronics data exchange, manufacturing QC, requirements management, acquisition support, cloud infrastructure (one sibling each)"
+ },
+ {
+  "section": "Group 8 \u2014 Cybersecurity & Risk Management L3-adjacent (16 forks)",
+  "text": "Identity products (IdP / PAM / IGA / MFA engines)"
+ },
+ {
+  "section": "Group 8 \u2014 Cybersecurity & Risk Management L3-adjacent (16 forks)",
+  "text": "Endpoint management agents"
+ },
+ {
+  "section": "Group 8 \u2014 Cybersecurity & Risk Management L3-adjacent (16 forks)",
+  "text": "DLP engines"
+ },
+ {
+  "section": "Group 8 \u2014 Cybersecurity & Risk Management L3-adjacent (16 forks)",
+  "text": "AI/ML detection models"
+ },
+ {
+  "section": "Group 8 \u2014 Cybersecurity & Risk Management L3-adjacent (16 forks)",
+  "text": "Network enforcement planes"
+ },
+ {
+  "section": "Group 8 \u2014 Cybersecurity & Risk Management L3-adjacent (16 forks)",
+  "text": "Backup & recovery products"
+ },
+ {
+  "section": "Group 8 \u2014 Cybersecurity & Risk Management L3-adjacent (16 forks)",
+  "text": "SOAR / workflow automation"
+ },
+ {
+  "section": "Group 8 \u2014 Cybersecurity & Risk Management L3-adjacent (16 forks)",
+  "text": "Threat-intelligence feeds"
+ },
+ {
+  "section": "Group 8 \u2014 Cybersecurity & Risk Management L3-adjacent (16 forks)",
+  "text": "EDR agents"
+ },
+ {
+  "section": "Group 8 \u2014 Cybersecurity & Risk Management L3-adjacent (16 forks)",
+  "text": "Cloud / SaaS posture engines"
+ },
+ {
+  "section": "Group 8 \u2014 Cybersecurity & Risk Management L3-adjacent (16 forks)",
+  "text": "Phishing simulation / training content"
+ },
+ {
+  "section": "Group 8 \u2014 Cybersecurity & Risk Management L3-adjacent (16 forks)",
+  "text": "Fraud / identity-proofing products"
+ },
+ {
+  "section": "Group 8 \u2014 Cybersecurity & Risk Management L3-adjacent (16 forks)",
+  "text": "AppSec engines"
+ },
+ {
+  "section": "Group 8 \u2014 Cybersecurity & Risk Management L3-adjacent (16 forks)",
+  "text": "Log pipelines"
+ },
+ {
+  "section": "Group 8 \u2014 Cybersecurity & Risk Management L3-adjacent (16 forks)",
+  "text": "CUI enclaves / VDI"
+ },
+ {
+  "section": "Group 8 \u2014 Cybersecurity & Risk Management L3-adjacent (16 forks)",
+  "text": "Vulnerability scanners (ingestion and tracking is core)"
+ },
+ {
+  "section": "Group 8 \u2014 Cybersecurity & Risk Management L3-adjacent (16 forks)",
+  "text": "Plus the substrate-adjacent families named in the spec's long tail (2)"
+ },
+ {
+  "section": "Group 10 \u2014 Collaboration L1 (10 forks)",
+  "text": "AI assistance / speech / analytics (4 of 10 \u2014 this group's top tagged family)"
+ },
+ {
+  "section": "Group 10 \u2014 Collaboration L1 (10 forks)",
+  "text": "Workflow / process automation (1)"
+ },
+ {
+  "section": "Group 10 \u2014 Collaboration L1 (10 forks)",
+  "text": "Learning / training / mentoring (1)"
+ },
+ {
+  "section": "Group 10 \u2014 Collaboration L1 (10 forks)",
+  "text": "Knowledge management (1)"
+ },
+ {
+  "section": "Group 10 \u2014 Collaboration L1 (10 forks)",
+  "text": "Voice / telephony / contact center"
+ },
+ {
+  "section": "Group 10 \u2014 Collaboration L1 (10 forks)",
+  "text": "Task & project management beyond board cards"
+ },
+ {
+  "section": "Group 10 \u2014 Collaboration L1 (10 forks)",
+  "text": "Records & governance beyond the versioning/audit seed"
+ },
+ {
+  "section": "Group 10 \u2014 Collaboration L1 (10 forks)",
+  "text": "Meetings / video media transport"
+ },
+ {
+  "section": "Group 10 \u2014 Collaboration L1 (10 forks)",
+  "text": "E-signature"
+ },
+ {
+  "section": "Group 11 \u2014 Communication L2 (10 forks)",
+  "text": "Email security & threat-detection engines (behavioral baselining, detonation, quarantine)"
+ },
+ {
+  "section": "Group 11 \u2014 Communication L2 (10 forks)",
+  "text": "AI/ML models and virtual-assistant intelligence (incl. conversational IVR)"
+ },
+ {
+  "section": "Group 11 \u2014 Communication L2 (10 forks)",
+  "text": "Voice / telephony media, IVR conversation engines, carrier integration"
+ },
+ {
+  "section": "Group 11 \u2014 Communication L2 (10 forks)",
+  "text": "Video / media transport (claimed by 0 of 10 descriptions; named for completeness)"
+ },
+ {
+  "section": "Group 11 \u2014 Communication L2 (10 forks)",
+  "text": "Archiving & eDiscovery engines (multi-channel capture, retention/disposition, legal holds, FOIA production)"
+ },
+ {
+  "section": "Group 11 \u2014 Communication L2 (10 forks)",
+  "text": "Correspondence / casework depth (incl. inter-organization exchange)"
+ },
+ {
+  "section": "Group 11 \u2014 Communication L2 (10 forks)",
+  "text": "Key & certificate lifecycle automation (CA connectors, issuance, deployment)"
+ },
+ {
+  "section": "Group 11 \u2014 Communication L2 (10 forks)",
+  "text": "End-to-end encrypted message transport and identity proofing"
+ },
+ {
+  "section": "Group 11 \u2014 Communication L2 (10 forks)",
+  "text": "Personnel / asset tracking platform (devices, live location, geofencing)"
+ },
+ {
+  "section": "Group 11 \u2014 Communication L2 (10 forks)",
+  "text": "Permits / passes / surveys and payment processing"
+ },
+ {
+  "section": "Group 11 \u2014 Communication L2 (10 forks)",
+  "text": "E-signature execution"
+ },
+ {
+  "section": "Group 11 \u2014 Communication L2 (10 forks)",
+  "text": "Workflow / BPM engines and reporting / analytics engines beyond the records substrate"
+ },
+ {
+  "section": "Group 13 \u2014 Education & Training L2 (8 forks)",
+  "text": "Talent, skills & marketplace matching (incl. career exploration / coaching and AI career assistants) (3 of 8)"
+ },
+ {
+  "section": "Group 13 \u2014 Education & Training L2 (8 forks)",
+  "text": "Recruiting, HCM / HRIS & workforce management suites (incl. performance and policy management)"
+ },
+ {
+  "section": "Group 13 \u2014 Education & Training L2 (8 forks)",
+  "text": "Course content authoring & delivery, media streaming"
+ },
+ {
+  "section": "Group 13 \u2014 Education & Training L2 (8 forks)",
+  "text": "Simulation engines (capture, debriefing & playback); the simulation records are Core, the engine is not"
+ },
+ {
+  "section": "Group 13 \u2014 Education & Training L2 (8 forks)",
+  "text": "Remote proctoring & identity proofing (0 of 8 claims; explicitly not inferred from \"secure assessment delivery\")"
+ },
+ {
+  "section": "Group 13 \u2014 Education & Training L2 (8 forks)",
+  "text": "Deterministic scoring & AI grading (0 of 8; assessments are administration records only, no score field exists by design)"
+ },
+ {
+  "section": "Group 13 \u2014 Education & Training L2 (8 forks)",
+  "text": "General cloud hosting / PaaS (4 of 8; multi-tenancy is a deployment property)"
+ },
+ {
+  "section": "Group 13 \u2014 Education & Training L2 (8 forks)",
+  "text": "Collaboration & social learning (1 of 8)"
+ },
+ {
+  "section": "Group 13 \u2014 Education & Training L2 (8 forks)",
+  "text": "Data storage & processing services beyond the substrate's own records"
+ },
+ {
+  "section": "Group 13 \u2014 Education & Training L2 (8 forks)",
+  "text": "Notifications & reminders (0 of 8)"
+ },
+ {
+  "section": "Group 13 \u2014 Education & Training L2 (8 forks)",
+  "text": "Integrations & APIs as a union function (0 of 8)"
+ },
+ {
+  "section": "Group 12 \u2014 Data Management L2 (8 forks)",
+  "text": "Distributed storage engines (data lake / warehouse internals, database engines, replication)"
+ },
+ {
+  "section": "Group 12 \u2014 Data Management L2 (8 forks)",
+  "text": "Integration runtime & connector engine (iPaaS execution)"
+ },
+ {
+  "section": "Group 12 \u2014 Data Management L2 (8 forks)",
+  "text": "PPRL record-linkage engine & de-identification engines"
+ },
+ {
+  "section": "Group 12 \u2014 Data Management L2 (8 forks)",
+  "text": "Enterprise search indexing engine (the core searches registry metadata)"
+ },
+ {
+  "section": "Group 12 \u2014 Data Management L2 (8 forks)",
+  "text": "Content processing engines (OCR, transcription, categorization)"
+ },
+ {
+  "section": "Group 12 \u2014 Data Management L2 (8 forks)",
+  "text": "Workflow / BPM execution & guided-interview engines"
+ },
+ {
+  "section": "Group 12 \u2014 Data Management L2 (8 forks)",
+  "text": "Query & visualization engines"
+ },
+ {
+  "section": "Group 12 \u2014 Data Management L2 (8 forks)",
+  "text": "IaaS / PaaS hosting (compute, private cloud, DaaS, AaaS)"
+ },
+ {
+  "section": "Group 12 \u2014 Data Management L2 (8 forks)",
+  "text": "Kubernetes provisioning & cluster lifecycle engine"
+ },
+ {
+  "section": "Group 12 \u2014 Data Management L2 (8 forks)",
+  "text": "Asset inspection & capital-planning applications"
+ },
+ {
+  "section": "Group 12 \u2014 Data Management L2 (8 forks)",
+  "text": "Managed file transfer transport"
+ },
+ {
+  "section": "Group 12 \u2014 Data Management L2 (8 forks)",
+  "text": "Case management depth (vetting / adjudication)"
+ },
+ {
+  "section": "Group 12 \u2014 Data Management L2 (8 forks)",
+  "text": "AI/ML analytics & orchestration in bundled applications"
+ },
+ {
+  "section": "Group 12 \u2014 Data Management L2 (8 forks)",
+  "text": "Field-level / transformation lineage beyond ingestion records (the build's provenance is bounded to ingestion granularity, stated in the spec)"
+ },
+ {
+  "section": "Group 12 \u2014 Data Management L2 (8 forks)",
+  "text": "Retention disposition execution (deletion / archival engines, NARA / FOIA production; the core schedules and reports due state only)"
+ },
+ {
+  "section": "Group 12 \u2014 Data Management L2 (8 forks)",
+  "text": "Plus the families named in the spec's long tail"
+ },
+ {
+  "section": "Group 15 \u2014 Contact Center L2 (5 forks)",
+  "text": "PAM & Zero Trust enforcement engines (incl. just-in-time privileged access, session recording)"
+ },
+ {
+  "section": "Group 15 \u2014 Contact Center L2 (5 forks)",
+  "text": "Identity risk analytics & prescriptive recommendations"
+ },
+ {
+  "section": "Group 15 \u2014 Contact Center L2 (5 forks)",
+  "text": "Observability collection engines (collectors, metric collection, forecasting)"
+ },
+ {
+  "section": "Group 15 \u2014 Contact Center L2 (5 forks)",
+  "text": "Voice / telephony media & the callback connection engine (incl. ACD routing)"
+ },
+ {
+  "section": "Group 15 \u2014 Contact Center L2 (5 forks)",
+  "text": "Claims adjudication & fraud / waste / abuse detection engines (incl. rules execution; the core keeps a rule registry only)"
+ },
+ {
+  "section": "Group 15 \u2014 Contact Center L2 (5 forks)",
+  "text": "Personnel-security / facility-clearance management depth"
+ },
+ {
+  "section": "Group 15 \u2014 Contact Center L2 (5 forks)",
+  "text": "Integration connector engines"
+ },
+ {
+  "section": "Group 15 \u2014 Contact Center L2 (5 forks)",
+  "text": "AI/ML models (1 claim)"
+ },
+ {
+  "section": "Group 15 \u2014 Contact Center L2 (5 forks)",
+  "text": "Knowledge-base articles (0 of 5 claims; named absence)"
+ },
+ {
+  "section": "Group 15 \u2014 Contact Center L2 (5 forks)",
+  "text": "Satisfaction / CSAT surveys (0 of 5 claims; named absence)"
+ },
+ {
+  "section": "Group 15 \u2014 Contact Center L2 (5 forks)",
+  "text": "SLA policy engine (tiers, business-hour calendars, escalation; 0 of 5 claim SLA terms; the core derives breach from a per-case due time only)"
+ },
+ {
+  "section": "Group 14 \u2014 Communication L3-adjacent (6 forks)",
+  "text": "Workflow / BPM engines beyond the approval-less dispatch substrate"
+ },
+ {
+  "section": "Group 14 \u2014 Communication L3-adjacent (6 forks)",
+  "text": "End-to-end encrypted message transport and secure data-exchange networks; fax transport networks and carrier integration"
+ },
+ {
+  "section": "Group 14 \u2014 Communication L3-adjacent (6 forks)",
+  "text": "Key & certificate lifecycle automation (CA connectors, issuance, deployment)"
+ },
+ {
+  "section": "Group 14 \u2014 Communication L3-adjacent (6 forks)",
+  "text": "Voice / telephony media, IVR and virtual-agent conversation engines; mission-critical voice ecosystems"
+ },
+ {
+  "section": "Group 14 \u2014 Communication L3-adjacent (6 forks)",
+  "text": "Virtual-workspace streaming and remote-experience delivery; edge delivery / CDN platform functions"
+ },
+ {
+  "section": "Group 14 \u2014 Communication L3-adjacent (6 forks)",
+  "text": "Carried from the Group 11 union at this tier (0 claims in this group's descriptions; named so the union is complete): email security engines, AI/ML models, archiving & eDiscovery engines, correspondence / casework depth, personnel / asset tracking, permits / passes / surveys, e-signature execution, payment processing, reporting / analytics engines beyond the records substrate"
+ },
+ {
+  "section": "Group 16 \u2014 Cybersecurity & Risk Management L1 (5 forks)",
+  "text": "AI/ML-powered analytics & anomaly detection models (2 of 5)"
+ },
+ {
+  "section": "Group 16 \u2014 Cybersecurity & Risk Management L1 (5 forks)",
+  "text": "Full GRC automation suites beyond the substrate (3 of 5 claim the family; control mapping & assessment records are Core)"
+ },
+ {
+  "section": "Group 16 \u2014 Cybersecurity & Risk Management L1 (5 forks)",
+  "text": "Automation & orchestration engines (SOAR / workflow) (1)"
+ },
+ {
+  "section": "Group 16 \u2014 Cybersecurity & Risk Management L1 (5 forks)",
+  "text": "Identity products / IdP (1; the core ships access-control hooks only)"
+ },
+ {
+  "section": "Group 16 \u2014 Cybersecurity & Risk Management L1 (5 forks)",
+  "text": "Phishing-defense enforcement & simulation / training content (1; DMARC enforcement)"
+ },
+ {
+  "section": "Group 17 \u2014 Development Tools L1 (5 forks)",
+  "text": "CI/CD execution engines (pipeline execution: build / test / deploy runners)"
+ },
+ {
+  "section": "Group 17 \u2014 Development Tools L1 (5 forks)",
+  "text": "Code hosting internals (git storage, branching & merging engines)"
+ },
+ {
+  "section": "Group 17 \u2014 Development Tools L1 (5 forks)",
+  "text": "Compilers & build toolchains"
+ },
+ {
+  "section": "Group 17 \u2014 Development Tools L1 (5 forks)",
+  "text": "Configuration-as-code execution & orchestration"
+ },
+ {
+  "section": "Group 17 \u2014 Development Tools L1 (5 forks)",
+  "text": "Compliance assessment & KSI status automation engines"
+ },
+ {
+  "section": "Group 17 \u2014 Development Tools L1 (5 forks)",
+  "text": "Business modeling & automation engines (modeling + execution)"
+ },
+ {
+  "section": "Group 17 \u2014 Development Tools L1 (5 forks)",
+  "text": "Course & content authoring tools"
+ },
+ {
+  "section": "Group 17 \u2014 Development Tools L1 (5 forks)",
+  "text": "Landing-zone / tenant provisioning & hosted platform operations"
+ },
+ {
+  "section": "Group 17 \u2014 Development Tools L1 (5 forks)",
+  "text": "Artifact binary storage backends (the registry holds records + checksums only; verification is by content hash)"
+ },
+ {
+  "section": "Group 18 \u2014 Health & Wellness L2 (5 forks)",
+  "text": "Clinical decision support (0 standalone claims)"
+ },
+ {
+  "section": "Group 18 \u2014 Health & Wellness L2 (5 forks)",
+  "text": "EMR / EHR integration engines & documentation depth (2 of 5 claim the family)"
+ },
+ {
+  "section": "Group 18 \u2014 Health & Wellness L2 (5 forks)",
+  "text": "Medical claims adjudication engine (2 of 5; the core keeps eligibility / coverage records only)"
+ },
+ {
+  "section": "Group 18 \u2014 Health & Wellness L2 (5 forks)",
+  "text": "Device connectivity / sync pipelines (1 of 5)"
+ },
+ {
+  "section": "Group 18 \u2014 Health & Wellness L2 (5 forks)",
+  "text": "AI/ML models & personalization engines (1 of 5)"
+ },
+ {
+  "section": "Group 18 \u2014 Health & Wellness L2 (5 forks)",
+  "text": "Automation / workflow engines (1 of 5)"
+ },
+ {
+  "section": "Group 18 \u2014 Health & Wellness L2 (5 forks)",
+  "text": "Survey instruments depth (within patient engagement, 2 of 5)"
+ },
+ {
+  "section": "Group 18 \u2014 Health & Wellness L2 (5 forks)",
+  "text": "Patient engagement channels & content (2 of 5; care guidance 1 of 5)"
+ },
+ {
+  "section": "Group 18 \u2014 Health & Wellness L2 (5 forks)",
+  "text": "Telehealth media (0 claims; named absence)"
+ },
+ {
+  "section": "Group 18 \u2014 Health & Wellness L2 (5 forks)",
+  "text": "Multi-device native apps (platform property, 2 of 5)"
+ },
+ {
+  "section": "Group 18 \u2014 Health & Wellness L2 (5 forks)",
+  "text": "Hosting platform (1 of 5)"
+ },
+ {
+  "section": "Group 20 \u2014 Content Management System (CMS) L2 (4 forks)",
+  "text": "Rendering & templating engines and visual / WYSIWYG editors"
+ },
+ {
+  "section": "Group 20 \u2014 Content Management System (CMS) L2 (4 forks)",
+  "text": "CDN / delivery network and runtime site serving"
+ },
+ {
+  "section": "Group 20 \u2014 Content Management System (CMS) L2 (4 forks)",
+  "text": "Enterprise search indexing engines (Boolean / concept / fuzzy / multilingual / hierarchical / geospatial; the core searches registry metadata)"
+ },
+ {
+  "section": "Group 20 \u2014 Content Management System (CMS) L2 (4 forks)",
+  "text": "Bulk ingestion & index-in-place engines"
+ },
+ {
+  "section": "Group 20 \u2014 Content Management System (CMS) L2 (4 forks)",
+  "text": "Library ILS vertical (circulation, MARC21 cataloging depth, EDI acquisitions, discovery layer)"
+ },
+ {
+  "section": "Group 20 \u2014 Content Management System (CMS) L2 (4 forks)",
+  "text": "BPM / case-management engine (EEO, labor relations, accommodations, background investigations, IG casework)"
+ },
+ {
+  "section": "Group 20 \u2014 Content Management System (CMS) L2 (4 forks)",
+  "text": "Participant engagement & research platform vertical"
+ },
+ {
+  "section": "Group 20 \u2014 Content Management System (CMS) L2 (4 forks)",
+  "text": "Platform hosting itself (PaaS runtime)"
+ },
+ {
+  "section": "Group 20 \u2014 Content Management System (CMS) L2 (4 forks)",
+  "text": "Personalization / experience optimization"
+ },
+ {
+  "section": "Group 20 \u2014 Content Management System (CMS) L2 (4 forks)",
+  "text": "Editorial workflow engines beyond lifecycle mechanics (parallel review, routing, notifications; claimed by no sibling)"
+ },
+ {
+  "section": "Group 19 \u2014 Construction L2 (4 forks)",
+  "text": "Cost estimating engines & the proprietary cost data behind them (estimate records are Core)"
+ },
+ {
+  "section": "Group 19 \u2014 Construction L2 (4 forks)",
+  "text": "GPS / location tracking platform & mobile field data collection"
+ },
+ {
+  "section": "Group 19 \u2014 Construction L2 (4 forks)",
+  "text": "Fleet & vehicle telematics (vehicle monitoring, driver-behavior score cards)"
+ },
+ {
+  "section": "Group 19 \u2014 Construction L2 (4 forks)",
+  "text": "Contract-lifecycle workflow engines, template & clause libraries, negotiation playbooks with redlining"
+ },
+ {
+  "section": "Group 19 \u2014 Construction L2 (4 forks)",
+  "text": "E-signature execution"
+ },
+ {
+  "section": "Group 19 \u2014 Construction L2 (4 forks)",
+  "text": "AI/ML models (AI data extraction & negotiation assistance) (1)"
+ },
+ {
+  "section": "Group 19 \u2014 Construction L2 (4 forks)",
+  "text": "Workflow / process automation engines (2; lifecycle state machines are the in-core seed)"
+ },
+ {
+  "section": "Group 19 \u2014 Construction L2 (4 forks)",
+  "text": "Prevailing-wage determination depth (rate tables, fringe calculation, certified-payroll generation / e-filing)"
+ },
+ {
+  "section": "Group 19 \u2014 Construction L2 (4 forks)",
+  "text": "Dispatch routing & optimization"
+ },
+ {
+  "section": "Group 21 \u2014 Human Resources L2 (4 forks)",
+  "text": "AI talent intelligence & matching engines (the group's AI flagship)"
+ },
+ {
+  "section": "Group 21 \u2014 Human Resources L2 (4 forks)",
+  "text": "Applicant-tracking workflow engines (end-to-end hiring workflow automation, job-board posting / sync)"
+ },
+ {
+  "section": "Group 21 \u2014 Human Resources L2 (4 forks)",
+  "text": "Position classification intelligence (series & grade recommendation tools)"
+ },
+ {
+  "section": "Group 21 \u2014 Human Resources L2 (4 forks)",
+  "text": "Job analysis & crediting-plan tooling"
+ },
+ {
+  "section": "Group 21 \u2014 Human Resources L2 (4 forks)",
+  "text": "Assessment delivery via third-party providers & assessment content"
+ },
+ {
+  "section": "Group 21 \u2014 Human Resources L2 (4 forks)",
+  "text": "Weighted cumulative & consensus scoring computation (ratings are Core records, stored verbatim; no aggregate field exists by design)"
+ },
+ {
+  "section": "Group 21 \u2014 Human Resources L2 (4 forks)",
+  "text": "Certificates of eligibles as standalone assembled documents (the referral stage is Core)"
+ },
+ {
+  "section": "Group 21 \u2014 Human Resources L2 (4 forks)",
+  "text": "Career sites, talent communities, campus recruiting & events platforms"
+ },
+ {
+  "section": "Group 21 \u2014 Human Resources L2 (4 forks)",
+  "text": "Talent mobility & workforce-exchange marketplace engines"
+ },
+ {
+  "section": "Group 21 \u2014 Human Resources L2 (4 forks)",
+  "text": "Talent management suite depth beyond records"
+ },
+ {
+  "section": "Group 21 \u2014 Human Resources L2 (4 forks)",
+  "text": "Workforce planning & resource-management analytics / models"
+ },
+ {
+  "section": "Group 21 \u2014 Human Resources L2 (4 forks)",
+  "text": "Retirement benefits calculator"
+ },
+ {
+  "section": "Group 21 \u2014 Human Resources L2 (4 forks)",
+  "text": "Employee learning & upskilling delivery"
+ },
+ {
+  "section": "Group 21 \u2014 Human Resources L2 (4 forks)",
+  "text": "Integration connector engines (job boards, personnel-record and payroll-center systems, agency HRIS sync)"
+ },
+ {
+  "section": "Group 21 \u2014 Human Resources L2 (4 forks)",
+  "text": "Document & template assembly engines"
+ },
+ {
+  "section": "Group 21 \u2014 Human Resources L2 (4 forks)",
+  "text": "General cloud hosting / platform services"
+ },
+ {
+  "section": "Group 22 \u2014 Artificial Intelligence (AI) L3-adjacent (3 forks)",
+  "text": "Learned AI/ML inference: real LLMs / ML / NLU / predictive models (3 of 3 claim it; with Group 9's, the final batch's largest single item). The reference responder is a labeled stub, not a substitute."
+ },
+ {
+  "section": "Group 22 \u2014 Artificial Intelligence (AI) L3-adjacent (3 forks)",
+  "text": "Agentic & automated workflow engines (1)"
+ },
+ {
+  "section": "Group 22 \u2014 Artificial Intelligence (AI) L3-adjacent (3 forks)",
+  "text": "Document processing & generation workloads (0 tagged under the verbatim taxonomy; one sibling's entire domain in prose, recorded as a near-miss, not invented)"
+ },
+ {
+  "section": "Group 22 \u2014 Artificial Intelligence (AI) L3-adjacent (3 forks)",
+  "text": "Analytics, dashboards & reporting (0 in this group; carried from the Group 9 union)"
+ },
+ {
+  "section": "Group 22 \u2014 Artificial Intelligence (AI) L3-adjacent (3 forks)",
+  "text": "Contact center & customer experience (0 in this group; carried from the Group 9 union)"
+ },
+ {
+  "section": "Group 22 \u2014 Artificial Intelligence (AI) L3-adjacent (3 forks)",
+  "text": "Vertical domain applications: AI software-development platform, ML lifecycle development & governance platform, digitization-as-a-service (one sibling each)"
+ },
+ {
+  "section": "Group 24 \u2014 Content Management System (CMS) L1 (2 forks)",
+  "text": "Library ILS vertical (this group's dominant vertical): circulation, acquisitions, resource sharing / interlibrary loan, collection management, knowledgebase, access proxying, digital collection management, and the union-catalog data network beneath them"
+ },
+ {
+  "section": "Group 24 \u2014 Content Management System (CMS) L1 (2 forks)",
+  "text": "Mobile application delivery and the companion mobile app itself"
+ },
+ {
+  "section": "Group 24 \u2014 Content Management System (CMS) L1 (2 forks)",
+  "text": "Rendering & templating engines and visual / WYSIWYG editors (carried from the Group 20 union; 0 claims here)"
+ },
+ {
+  "section": "Group 24 \u2014 Content Management System (CMS) L1 (2 forks)",
+  "text": "CDN / delivery network and runtime site serving (carried; one sibling's \"content delivery functionality\" is a recorded near-miss)"
+ },
+ {
+  "section": "Group 24 \u2014 Content Management System (CMS) L1 (2 forks)",
+  "text": "Enterprise search indexing & discovery engines (carried; one sibling's discovery service is a recorded near-miss)"
+ },
+ {
+  "section": "Group 24 \u2014 Content Management System (CMS) L1 (2 forks)",
+  "text": "Analytics & reporting engines beyond registry reporting (carried; \"custom reports / Report Designer\" are recorded near-misses)"
+ },
+ {
+  "section": "Group 24 \u2014 Content Management System (CMS) L1 (2 forks)",
+  "text": "Bulk ingestion & index-in-place engines (carried)"
+ },
+ {
+  "section": "Group 24 \u2014 Content Management System (CMS) L1 (2 forks)",
+  "text": "BPM / case-management engine; participant engagement vertical; personalization (carried from the Group 20 union at 0 claims here)"
+ },
+ {
+  "section": "Group 23 \u2014 Accounting L3-adjacent (2 forks)",
+  "text": "AI / analytics & BI (this group's only claimed Extended family, 1 of 2)"
+ },
+ {
+  "section": "Group 23 \u2014 Accounting L3-adjacent (2 forks)",
+  "text": "Project / program / portfolio management"
+ },
+ {
+  "section": "Group 23 \u2014 Accounting L3-adjacent (2 forks)",
+  "text": "Risk register & GRC suites beyond the separation-of-duties / audit seed"
+ },
+ {
+  "section": "Group 23 \u2014 Accounting L3-adjacent (2 forks)",
+  "text": "Audit-management workbenches"
+ },
+ {
+  "section": "Group 23 \u2014 Accounting L3-adjacent (2 forks)",
+  "text": "Fixed-asset registers"
+ },
+ {
+  "section": "Group 23 \u2014 Accounting L3-adjacent (2 forks)",
+  "text": "Records retention beyond the audit seed"
+ },
+ {
+  "section": "Group 23 \u2014 Accounting L3-adjacent (2 forks)",
+  "text": "Forecasting / EPM"
+ },
+ {
+  "section": "Group 23 \u2014 Accounting L3-adjacent (2 forks)",
+  "text": "Supply chain"
+ },
+ {
+  "section": "Group 23 \u2014 Accounting L3-adjacent (2 forks)",
+  "text": "GovCon / grants specifics"
+ },
+ {
+  "section": "Group 23 \u2014 Accounting L3-adjacent (2 forks)",
+  "text": "Crypto investigation"
+ },
+ {
+  "section": "Group 23 \u2014 Accounting L3-adjacent (2 forks)",
+  "text": "Time tracking"
+ },
+ {
+  "section": "Group 23 \u2014 Accounting L3-adjacent (2 forks)",
+  "text": "E-signature"
+ },
+ {
+  "section": "Group 23 \u2014 Accounting L3-adjacent (2 forks)",
+  "text": "Payroll"
+ },
+ {
+  "section": "Group 23 \u2014 Accounting L3-adjacent (2 forks)",
+  "text": "Tax support"
+ },
+ {
+  "section": "Group 23 \u2014 Accounting L3-adjacent (2 forks)",
+  "text": "Forensic investigation"
+ },
+ {
+  "section": "Group 26 \u2014 Customer Service L1 (2 forks)",
+  "text": "Event detection, diagnosis & orchestration engines (alert records / triage are Core)"
+ },
+ {
+  "section": "Group 26 \u2014 Customer Service L1 (2 forks)",
+  "text": "Automation execution engines (the rule registry is Core; nothing executes, pinned by test)"
+ },
+ {
+  "section": "Group 26 \u2014 Customer Service L1 (2 forks)",
+  "text": "GRC platform (one sibling's sole claim family, incl. compliance-framework support depth)"
+ },
+ {
+  "section": "Group 26 \u2014 Customer Service L1 (2 forks)",
+  "text": "Real-time channels: live chat, voice / telephony (0 claims; named)"
+ },
+ {
+  "section": "Group 26 \u2014 Customer Service L1 (2 forks)",
+  "text": "AI assistance / deflection (0 tagged claims; near-miss recorded)"
+ },
+ {
+  "section": "Group 26 \u2014 Customer Service L1 (2 forks)",
+  "text": "Knowledge base articles (0 of 2; named absence)"
+ },
+ {
+  "section": "Group 26 \u2014 Customer Service L1 (2 forks)",
+  "text": "Satisfaction / CSAT surveys (0 of 2; named absence)"
+ },
+ {
+  "section": "Group 26 \u2014 Customer Service L1 (2 forks)",
+  "text": "SLA policy engine (due / breach derivation only in Core; no sibling claims SLA terms)"
+ },
+ {
+  "section": "Group 26 \u2014 Customer Service L1 (2 forks)",
+  "text": "Notification delivery & status-page hosting (status records / view are Core; delivery is not)"
+ },
+ {
+  "section": "Group 26 \u2014 Customer Service L1 (2 forks)",
+  "text": "Reporting / analytics engines beyond registry reporting (0 claims)"
+ },
+ {
+  "section": "Group 25 \u2014 Customer Relations Management (CRM) L2 (2 forks)",
+  "text": "Customer-service casework depth (knowledge-driven agent desktops, self-service portals, chat / chatbot channels)"
+ },
+ {
+  "section": "Group 25 \u2014 Customer Relations Management (CRM) L2 (2 forks)",
+  "text": "Guidance delivery runtime (in-app overlay engine + codeless authoring tooling)"
+ },
+ {
+  "section": "Group 25 \u2014 Customer Relations Management (CRM) L2 (2 forks)",
+  "text": "Gap-identification & adoption-analytics engines (telemetry collection, gap detection, engagement analytics beyond record counts)"
+ },
+ {
+  "section": "Group 25 \u2014 Customer Relations Management (CRM) L2 (2 forks)",
+  "text": "Customization & module engines (add-on module execution, codeless configuration runtimes)"
+ },
+ {
+  "section": "Group 25 \u2014 Customer Relations Management (CRM) L2 (2 forks)",
+  "text": "Knowledge base & self-service content (0 claims here)"
+ },
+ {
+  "section": "Group 25 \u2014 Customer Relations Management (CRM) L2 (2 forks)",
+  "text": "Marketing-automation engines & email delivery (0 claims here)"
+ },
+ {
+  "section": "Group 25 \u2014 Customer Relations Management (CRM) L2 (2 forks)",
+  "text": "AI/ML models & scoring (0 claims here; no score is computed anywhere in the core, by design)"
+ },
+ {
+  "section": "Group 25 \u2014 Customer Relations Management (CRM) L2 (2 forks)",
+  "text": "Integration connector engines (0 claims here; near-miss recorded)"
+ },
+ {
+  "section": "Group 27 \u2014 Customer Service L2 (2 forks)",
+  "text": "Commerce platform hosting & point-of-sale systems (one sibling's entire domain: POS hosting for grocery / gas / loyalty / food-ordering, commerce applications, commerce API platform)"
+ },
+ {
+  "section": "Group 27 \u2014 Customer Service L2 (2 forks)",
+  "text": "PCS relocation platform (the other sibling's domain: relocation financial workflows from obligation to financial-system interfaces, travel-voucher processing, supplier integration)"
+ },
+ {
+  "section": "Group 27 \u2014 Customer Service L2 (2 forks)",
+  "text": "Automation execution engines (the rule registry is Core; one sibling's automation prose is a recorded near-miss, 0 tagged claims)"
+ },
+ {
+  "section": "Group 27 \u2014 Customer Service L2 (2 forks)",
+  "text": "E-signature execution & PIV-based signer identity assurance (prose present in one sibling; 0 tagged claims)"
+ },
+ {
+  "section": "Group 27 \u2014 Customer Service L2 (2 forks)",
+  "text": "Event detection, diagnosis & orchestration engines (0 claims here; carried from the Group 26 union)"
+ },
+ {
+  "section": "Group 27 \u2014 Customer Service L2 (2 forks)",
+  "text": "GRC platform (0 claims here; carried from the Group 26 union)"
+ },
+ {
+  "section": "Group 27 \u2014 Customer Service L2 (2 forks)",
+  "text": "Real-time channels: live chat, voice / telephony (0 claims; named)"
+ },
+ {
+  "section": "Group 27 \u2014 Customer Service L2 (2 forks)",
+  "text": "AI assistance / deflection (0 claims; named)"
+ },
+ {
+  "section": "Group 27 \u2014 Customer Service L2 (2 forks)",
+  "text": "Knowledge base articles (0 of 2; named absence at both tiers)"
+ },
+ {
+  "section": "Group 27 \u2014 Customer Service L2 (2 forks)",
+  "text": "Satisfaction / CSAT surveys (0 of 2; named absence; near-miss recorded)"
+ },
+ {
+  "section": "Group 27 \u2014 Customer Service L2 (2 forks)",
+  "text": "SLA policy engine (due / breach derivation only in Core; no sibling at either tier claims SLA terms)"
+ },
+ {
+  "section": "Group 27 \u2014 Customer Service L2 (2 forks)",
+  "text": "Notification delivery & status-page hosting (status records / view are Core; delivery is not)"
+ },
+ {
+  "section": "Group 27 \u2014 Customer Service L2 (2 forks)",
+  "text": "Reporting / analytics engines beyond registry reporting (reporting is this group's sole claim, 1 of 2)"
+ },
+ {
+  "section": "Group 28 \u2014 Data Management L3-adjacent (2 forks)",
+  "text": "Distributed storage engines"
+ },
+ {
+  "section": "Group 28 \u2014 Data Management L3-adjacent (2 forks)",
+  "text": "Integration runtime & connector engine"
+ },
+ {
+  "section": "Group 28 \u2014 Data Management L3-adjacent (2 forks)",
+  "text": "PPRL record-linkage & de-identification engines"
+ },
+ {
+  "section": "Group 28 \u2014 Data Management L3-adjacent (2 forks)",
+  "text": "Enterprise search indexing engine"
+ },
+ {
+  "section": "Group 28 \u2014 Data Management L3-adjacent (2 forks)",
+  "text": "Content processing engines (OCR / transcription / categorization)"
+ },
+ {
+  "section": "Group 28 \u2014 Data Management L3-adjacent (2 forks)",
+  "text": "Workflow / BPM & guided-interview engines"
+ },
+ {
+  "section": "Group 28 \u2014 Data Management L3-adjacent (2 forks)",
+  "text": "Query & visualization engines"
+ },
+ {
+  "section": "Group 28 \u2014 Data Management L3-adjacent (2 forks)",
+  "text": "IaaS / PaaS hosting; Kubernetes provisioning engine"
+ },
+ {
+  "section": "Group 28 \u2014 Data Management L3-adjacent (2 forks)",
+  "text": "Asset inspection & capital-planning apps"
+ },
+ {
+  "section": "Group 28 \u2014 Data Management L3-adjacent (2 forks)",
+  "text": "Managed file transfer transport (claimed outright by one sibling at this tier; transfers in the core are ingestion-shaped records)"
+ },
+ {
+  "section": "Group 28 \u2014 Data Management L3-adjacent (2 forks)",
+  "text": "Case management depth"
+ },
+ {
+  "section": "Group 28 \u2014 Data Management L3-adjacent (2 forks)",
+  "text": "AI/ML analytics in bundled apps"
+ },
+ {
+  "section": "Group 28 \u2014 Data Management L3-adjacent (2 forks)",
+  "text": "Field-level / transformation lineage (provenance stays bounded to ingestion granularity)"
+ },
+ {
+  "section": "Group 28 \u2014 Data Management L3-adjacent (2 forks)",
+  "text": "Retention disposition execution"
+ },
+ {
+  "section": "Group 29 \u2014 Development Tools L2 (2 forks)",
+  "text": "CI/CD execution engines (pipeline execution: build / test / deploy runners; claimed 1 of 2 here)"
+ },
+ {
+  "section": "Group 29 \u2014 Development Tools L2 (2 forks)",
+  "text": "Code hosting internals (git storage, branching & merging engines; 0 claims here)"
+ },
+ {
+  "section": "Group 29 \u2014 Development Tools L2 (2 forks)",
+  "text": "Compilers & build toolchains"
+ },
+ {
+  "section": "Group 29 \u2014 Development Tools L2 (2 forks)",
+  "text": "Configuration-as-code execution & orchestration (0 claims here; \"strict configuration control\" is a recorded near-miss)"
+ },
+ {
+  "section": "Group 29 \u2014 Development Tools L2 (2 forks)",
+  "text": "Compliance assessment & KSI status automation engines (0 claims here)"
+ },
+ {
+  "section": "Group 29 \u2014 Development Tools L2 (2 forks)",
+  "text": "Business modeling & automation engines (modeling plus execution)"
+ },
+ {
+  "section": "Group 29 \u2014 Development Tools L2 (2 forks)",
+  "text": "Course & content authoring tools"
+ },
+ {
+  "section": "Group 29 \u2014 Development Tools L2 (2 forks)",
+  "text": "Landing-zone / tenant provisioning & hosted platform operations (0 claims here; \"environment management\" near-miss)"
+ },
+ {
+  "section": "Group 29 \u2014 Development Tools L2 (2 forks)",
+  "text": "Artifact binary storage backends (the registry holds records + checksums only)"
+ },
+ {
+  "section": "Group 29 \u2014 Development Tools L2 (2 forks)",
+  "text": "Feature-flag & feature-management runtime (flag evaluation, targeting, percentage rollouts, kill-switch)"
+ },
+ {
+  "section": "Group 29 \u2014 Development Tools L2 (2 forks)",
+  "text": "Experimentation engine (hypothesis-driven development)"
+ },
+ {
+  "section": "Group 29 \u2014 Development Tools L2 (2 forks)",
+  "text": "Static code analysis engine (rule sets, quality profiles & gates)"
+ },
+ {
+  "section": "Group 29 \u2014 Development Tools L2 (2 forks)",
+  "text": "Security posture monitoring & automated remediation engine"
+ },
+ {
+  "section": "Group 29 \u2014 Development Tools L2 (2 forks)",
+  "text": "Release automation, environment management & data migration engine"
+ },
+ {
+  "section": "Group 29 \u2014 Development Tools L2 (2 forks)",
+  "text": "External-system integration engines (claimed 1 of 2 here)"
+ },
+ {
+  "section": "Group 30 \u2014 Education & Training L1 (2 forks)",
+  "text": "Adaptive learning / knowledge-gap remediation engine (one sibling's patented algorithms, described in prose; 0 tagged claims \u2014 the verbatim taxonomy was not re-tuned to capture it)"
+ },
+ {
+  "section": "Group 30 \u2014 Education & Training L1 (2 forks)",
+  "text": "Talent, skills & marketplace matching incl. career exploration / coaching and AI career assistants (carried from the Group 13 union; 0 claims here)"
+ },
+ {
+  "section": "Group 30 \u2014 Education & Training L1 (2 forks)",
+  "text": "Recruiting, HCM / HRIS & workforce management suites incl. performance and policy management (carried; 0 claims here)"
+ },
+ {
+  "section": "Group 30 \u2014 Education & Training L1 (2 forks)",
+  "text": "Course content authoring & delivery, media streaming (carried; 0 claims here)"
+ },
+ {
+  "section": "Group 30 \u2014 Education & Training L1 (2 forks)",
+  "text": "Simulation engines: capture, debriefing & playback (carried; 0 claims here)"
+ },
+ {
+  "section": "Group 30 \u2014 Education & Training L1 (2 forks)",
+  "text": "Remote proctoring & identity proofing (0 claims in either tier of this category)"
+ },
+ {
+  "section": "Group 30 \u2014 Education & Training L1 (2 forks)",
+  "text": "Deterministic scoring & AI grading (0 claims in either tier; assessments are administration records only, no score field by design)"
+ },
+ {
+  "section": "Group 30 \u2014 Education & Training L1 (2 forks)",
+  "text": "Collaboration & social learning (carried; 0 claims here)"
+ },
+ {
+  "section": "Group 30 \u2014 Education & Training L1 (2 forks)",
+  "text": "Data storage & processing services beyond the substrate's own records (carried; 0 claims here)"
+ },
+ {
+  "section": "Group 30 \u2014 Education & Training L1 (2 forks)",
+  "text": "Notifications & reminders (0 claims in either tier)"
+ },
+ {
+  "section": "Group 30 \u2014 Education & Training L1 (2 forks)",
+  "text": "Integrations & APIs as a union function (0 claims in either tier)"
+ },
+ {
+  "section": "Group 32 \u2014 Fleet Management L1 (2 forks)",
+  "text": "Live telematics & GPS streaming (0 claims in this group; named)"
+ },
+ {
+  "section": "Group 32 \u2014 Fleet Management L1 (2 forks)",
+  "text": "Dispatch routing & optimization (0 claims; named)"
+ },
+ {
+  "section": "Group 32 \u2014 Fleet Management L1 (2 forks)",
+  "text": "ELD / hours-of-service integrations (0 claims; named)"
+ },
+ {
+  "section": "Group 32 \u2014 Fleet Management L1 (2 forks)",
+  "text": "Demand & capacity forecasting engine (claimed 1 of 2)"
+ },
+ {
+  "section": "Group 32 \u2014 Fleet Management L1 (2 forks)",
+  "text": "EV charging station communication & session control (claimed 1 of 2; the core holds charging session records only, no live station communication)"
+ },
+ {
+  "section": "Group 32 \u2014 Fleet Management L1 (2 forks)",
+  "text": "Payment processing (claimed 1 of 2)"
+ },
+ {
+  "section": "Group 32 \u2014 Fleet Management L1 (2 forks)",
+  "text": "Analytics & utilization-optimization engines beyond registry reporting (claimed 1 of 2)"
+ },
+ {
+  "section": "Group 32 \u2014 Fleet Management L1 (2 forks)",
+  "text": "Hosted platform operations (platform-layer)"
+ },
+ {
+  "section": "Group 31 \u2014 Finance L2 (2 forks)",
+  "text": "Instant disbursement execution / payment rails (ACH, wire, card networks): the execution remainder of the earned-wage-access claim; the core records disbursements and moves no money"
+ },
+ {
+  "section": "Group 31 \u2014 Finance L2 (2 forks)",
+  "text": "Travel booking execution engines (live air / hotel inventory, ticketing, reservation systems): the execution remainder of the travel-booking claim; the core holds booking records only"
+ },
+ {
+  "section": "Group 31 \u2014 Finance L2 (2 forks)",
+  "text": "Financial wellness delivery tools (the budgeting / coaching / savings products behind the offering registry): the execution remainder of the financial-wellness claim"
+ },
+ {
+  "section": "Group 31 \u2014 Finance L2 (2 forks)",
+  "text": "Streaming / real-time reporting pipelines (core reporting is computed on read from records)"
+ },
+ {
+  "section": "Group 31 \u2014 Finance L2 (2 forks)",
+  "text": "Banking integration & account verification (0 claims; entity shapes forbid real account identifiers by design)"
+ },
+ {
+  "section": "Group 31 \u2014 Finance L2 (2 forks)",
+  "text": "Payroll system integration & wage calculation (0 claims; accruals record amounts computed elsewhere)"
+ },
+ {
+  "section": "Group 31 \u2014 Finance L2 (2 forks)",
+  "text": "Lending & credit engines (0 claims; access is to already-earned wages only)"
+ },
+ {
+  "section": "Group 31 \u2014 Finance L2 (2 forks)",
+  "text": "Trading & investment execution (0 claims)"
+ },
+ {
+  "section": "Group 31 \u2014 Finance L2 (2 forks)",
+  "text": "Tax reporting & remittance (0 claims)"
+ },
+ {
+  "section": "Group 31 \u2014 Finance L2 (2 forks)",
+  "text": "GRC platform functions (0 claims in text; source category label only)"
+ },
+ {
+  "section": "Group 34 \u2014 Law Enforcement L2 (2 forks)",
+  "text": "The legal corpora themselves (primary / secondary law content databases and practical-guidance content: content, editorial maintenance, licensing)"
+ },
+ {
+  "section": "Group 34 \u2014 Law Enforcement L2 (2 forks)",
+  "text": "Citation-validation engines (editorial systems that determine treatment; the core records a caller-supplied treatment and determines none)"
+ },
+ {
+  "section": "Group 34 \u2014 Law Enforcement L2 (2 forks)",
+  "text": "Editorial enhancement systems (headnotes, taxonomy assignment, enrichment pipelines)"
+ },
+ {
+  "section": "Group 34 \u2014 Law Enforcement L2 (2 forks)",
+  "text": "Corpus search & relevance engines (full-text indexing / ranking over the legal corpus; the core searches registry metadata only)"
+ },
+ {
+  "section": "Group 34 \u2014 Law Enforcement L2 (2 forks)",
+  "text": "AI/ML research assistance (0 claims in these descriptions; named for union completeness)"
+ },
+ {
+  "section": "Group 34 \u2014 Law Enforcement L2 (2 forks)",
+  "text": "Document content storage, rendering & redaction (the registry holds metadata + checksums only, by the privacy rule)"
+ },
+ {
+  "section": "Group 33 \u2014 Governance, Risk, and Compliance (GRC) L2 (2 forks)",
+  "text": "Automated evidence-validation engine, incl. API / telemetry evidence collection"
+ },
+ {
+  "section": "Group 33 \u2014 Governance, Risk, and Compliance (GRC) L2 (2 forks)",
+  "text": "Continuous-monitoring feeds & scanner integrations"
+ },
+ {
+  "section": "Group 33 \u2014 Governance, Risk, and Compliance (GRC) L2 (2 forks)",
+  "text": "Vulnerability scanning engine (prioritization / scoring of findings; the core records findings and remediation verbatim)"
+ },
+ {
+  "section": "Group 33 \u2014 Governance, Risk, and Compliance (GRC) L2 (2 forks)",
+  "text": "Automated KSI validation"
+ },
+ {
+  "section": "Group 33 \u2014 Governance, Risk, and Compliance (GRC) L2 (2 forks)",
+  "text": "Posture / risk scoring engines (deliberately absent from the core; no aggregate is computed anywhere)"
+ },
+ {
+  "section": "Group 33 \u2014 Governance, Risk, and Compliance (GRC) L2 (2 forks)",
+  "text": "Hosted enclave & PaaS operations themselves (one sibling's own domain; also the other sibling's hosting claim)"
+ },
+ {
+  "section": "Group 33 \u2014 Governance, Risk, and Compliance (GRC) L2 (2 forks)",
+  "text": "FedRAMP authorization package generation"
+ },
+ {
+  "section": "Group 35 \u2014 Law Enforcement L3-adjacent (2 forks)",
+  "text": "Device unlocking (Cellebrite)"
+ },
+ {
+  "section": "Group 35 \u2014 Law Enforcement L3-adjacent (2 forks)",
+  "text": "Evidence extraction from mobile devices (Cellebrite)"
+ },
+ {
+  "section": "Group 35 \u2014 Law Enforcement L3-adjacent (2 forks)",
+  "text": "Forensic analysis engines (both siblings)"
+ },
+ {
+  "section": "Group 35 \u2014 Law Enforcement L3-adjacent (2 forks)",
+  "text": "Evidence ingest & processing pipelines (Magnet One)"
+ },
+ {
+  "section": "Group 35 \u2014 Law Enforcement L3-adjacent (2 forks)",
+  "text": "Evidence review (Magnet One)"
+ },
+ {
+  "section": "Group 35 \u2014 Law Enforcement L3-adjacent (2 forks)",
+  "text": "Chain-of-custody enforcement over evidence (Cellebrite; the substrate's checksums / verify-by-content / hash chain are records-side analogues, stated as analogues, not equivalents)"
+ },
+ {
+  "section": "Group 35 \u2014 Law Enforcement L3-adjacent (2 forks)",
+  "text": "Information sharing / collaboration over evidence (both siblings)"
+ },
+ {
+  "section": "Group 35 \u2014 Law Enforcement L3-adjacent (2 forks)",
+  "text": "Forensic reporting (Cellebrite; beyond the substrate's counts-only registry reporting)"
+ },
+ {
+  "section": "Group 36 \u2014 Operations Management L2 (2 forks)",
+  "text": "Workflow automation execution engine (the registry is Core; execution is the engine)"
+ },
+ {
+  "section": "Group 36 \u2014 Operations Management L2 (2 forks)",
+  "text": "Real-time intelligence & analytics engine (streaming intelligence, outcome analytics beyond registry reporting)"
+ },
+ {
+  "section": "Group 36 \u2014 Operations Management L2 (2 forks)",
+  "text": "AI models (1 claim)"
+ },
+ {
+  "section": "Group 36 \u2014 Operations Management L2 (2 forks)",
+  "text": "Low-code application builder & deployment engine"
+ },
+ {
+  "section": "Group 36 \u2014 Operations Management L2 (2 forks)",
+  "text": "Integration connector engines & catalog"
+ },
+ {
+  "section": "Group 36 \u2014 Operations Management L2 (2 forks)",
+  "text": "Mobile applications & offline sync"
+ },
+ {
+  "section": "Group 36 \u2014 Operations Management L2 (2 forks)",
+  "text": "Network connectivity services & cloud platform operations (platform-layer; one sibling's own service)"
+ },
+ {
+  "section": "Group 36 \u2014 Operations Management L2 (2 forks)",
+  "text": "Authorization service / identity provider (the build ships RBAC hooks, not an IdP)"
+ },
+ {
+  "section": "Group 36 \u2014 Operations Management L2 (2 forks)",
+  "text": "Common security services enforcement plane"
+ },
+ {
+  "section": "Group 36 \u2014 Operations Management L2 (2 forks)",
+  "text": "Policy enforcement plane (runtime enforcement across projects)"
+ },
+ {
+  "section": "Group 36 \u2014 Operations Management L2 (2 forks)",
+  "text": "Governance / compliance console engine (continuous compliance monitoring depth)"
+ },
+ {
+  "section": "Group 36 \u2014 Operations Management L2 (2 forks)",
+  "text": "Scheduling & rostering (0 of 2; named absence)"
+ },
+ {
+  "section": "Group 36 \u2014 Operations Management L2 (2 forks)",
+  "text": "IoT / telematics data collection (0 of 2; named absence)"
+ },
+ {
+  "section": "Singleton 37 \u2014 Communication L1 (1 fork)",
+  "text": "Campaign orchestration engine (visual campaign orchestration, cross-channel campaign execution, campaign / journey lifecycle; the fork's signature function)"
+ },
+ {
+  "section": "Singleton 37 \u2014 Communication L1 (1 fork)",
+  "text": "Audience segmentation engine (targeted segmentation over audience data)"
+ },
+ {
+  "section": "Singleton 37 \u2014 Communication L1 (1 fork)",
+  "text": "Customer profile store & identity resolution (beyond the directory's contact records)"
+ },
+ {
+  "section": "Singleton 37 \u2014 Communication L1 (1 fork)",
+  "text": "Real-time interaction management (real-time decisioning / interaction handling)"
+ },
+ {
+  "section": "Singleton 37 \u2014 Communication L1 (1 fork)",
+  "text": "Workflow / BPM engine (campaign-creation workflow as an engine incl. approval chains; claim remainder \u2014 the approval-less dispatch substrate is Core)"
+ },
+ {
+  "section": "Singleton 37 \u2014 Communication L1 (1 fork)",
+  "text": "Reporting / analytics engines beyond the records substrate (campaign-effectiveness analytics and dashboards)"
+ },
+ {
+  "section": "Singleton 37 \u2014 Communication L1 (1 fork)",
+  "text": "Real channel execution (email / SMS / push delivery networks and direct-mail fulfillment; core dispatch is the labelled reference transport and transmits nothing)"
+ },
+ {
+  "section": "Singleton 37 \u2014 Communication L1 (1 fork)",
+  "text": "Managed-service operations (hosting / operating the platform itself)"
+ },
+ {
+  "section": "Singleton 38 \u2014 Data Management L1 (1 fork)",
+  "text": "Web crawling & snapshot capture engine (the product's central function; the substrate records ingestions and captures nothing)"
+ },
+ {
+  "section": "Singleton 38 \u2014 Data Management L1 (1 fork)",
+  "text": "Web page rendering for capture (dynamic / JS pages)"
+ },
+ {
+  "section": "Singleton 38 \u2014 Data Management L1 (1 fork)",
+  "text": "Change detection & dynamic monitoring engine"
+ },
+ {
+  "section": "Singleton 38 \u2014 Data Management L1 (1 fork)",
+  "text": "Archive storage, integrity sealing & replay / playback of captured pages (the substrate holds registry metadata only)"
+ },
+ {
+  "section": "Singleton 38 \u2014 Data Management L1 (1 fork)",
+  "text": "Full-content search & indexing over the archive (core search is registry-metadata only)"
+ },
+ {
+  "section": "Singleton 39 \u2014 CMS L3-adjacent (1 fork)",
+  "text": "Learned ML / AI classification engine (automatically classify physical and digital content)"
+ },
+ {
+  "section": "Singleton 39 \u2014 CMS L3-adjacent (1 fork)",
+  "text": "Learned ML / AI extraction engine (extract content / data from physical and digital content)"
+ },
+ {
+  "section": "Singleton 39 \u2014 CMS L3-adjacent (1 fork)",
+  "text": "Learned ML / AI enrichment engine (enrich content with derived metadata; the substrate stores caller-supplied metadata only and derives none)"
+ },
+ {
+  "section": "Singleton 39 \u2014 CMS L3-adjacent (1 fork)",
+  "text": "Physical-content intake & digitization pipeline (scanning / conversion of physical records into the platform)"
+ },
+ {
+  "section": "Singleton 39 \u2014 CMS L3-adjacent (1 fork)",
+  "text": "The content services platform runtime itself (hosting / delivery of the SaaS platform)"
+ },
+ {
+  "section": "Singleton 40 \u2014 CRM L3-adjacent (1 fork)",
+  "text": "No-code / low-code application development engine & model-based design tooling (the description's central assertion; a near-miss to the configuration family, not a tagged claim)"
+ },
+ {
+  "section": "Singleton 40 \u2014 CRM L3-adjacent (1 fork)",
+  "text": "Case management & BPM / workflow execution engines (case automation, process orchestration, workflow execution; the substrate's case records are Core, the automation acting on cases is not)"
+ },
+ {
+  "section": "Singleton 40 \u2014 CRM L3-adjacent (1 fork)",
+  "text": "Decisioning engine (named in the source record, not in the description; record-named, not description-claimed)"
+ },
+ {
+  "section": "Singleton 40 \u2014 CRM L3-adjacent (1 fork)",
+  "text": "GenAI application tooling and AI / ML models generally (record-named as above)"
+ },
+ {
+  "section": "Singleton 40 \u2014 CRM L3-adjacent (1 fork)",
+  "text": "Managed cloud operations & application scaling platform (the deployment layer itself, operated)"
+ },
+ {
+  "section": "Singleton 42 \u2014 Finance L3-adjacent (1 fork)",
+  "text": "The cloud infrastructure platform itself (the provider's regions: compute, storage, networking, database, and the rest of the service catalog operated as infrastructure)"
+ },
+ {
+  "section": "Singleton 42 \u2014 Finance L3-adjacent (1 fork)",
+  "text": "Region operations & sovereignty properties (US-citizen / US-soil operation, ITAR environment, the regions' FedRAMP High boundary)"
+ },
+ {
+  "section": "Singleton 42 \u2014 Finance L3-adjacent (1 fork)",
+  "text": "Eligibility screening of root account holders"
+ },
+ {
+  "section": "Singleton 42 \u2014 Finance L3-adjacent (1 fork)",
+  "text": "Collaborative continuous monitoring with the provider"
+ },
+ {
+  "section": "Singleton 41 \u2014 Customer Service L3-adjacent (1 fork)",
+  "text": "Virtualization & cloud hosting platform (IaaS / PaaS / SaaS in one High boundary; the product itself)"
+ },
+ {
+  "section": "Singleton 41 \u2014 Customer Service L3-adjacent (1 fork)",
+  "text": "Authorization acceleration & control inheritance (assessment reuse across hosted customers)"
+ },
+ {
+  "section": "Singleton 41 \u2014 Customer Service L3-adjacent (1 fork)",
+  "text": "Continuous monitoring & SOC operations (24/7 SOC)"
+ },
+ {
+  "section": "Singleton 41 \u2014 Customer Service L3-adjacent (1 fork)",
+  "text": "Vulnerability management & patching operations"
+ },
+ {
+  "section": "Singleton 41 \u2014 Customer Service L3-adjacent (1 fork)",
+  "text": "Incident response operations (hosting boundary)"
+ },
+ {
+  "section": "Singleton 41 \u2014 Customer Service L3-adjacent (1 fork)",
+  "text": "Migration & lift-and-shift services (legacy / COTS, hybrid cloud)"
+ },
+ {
+  "section": "Singleton 41 \u2014 Customer Service L3-adjacent (1 fork)",
+  "text": "Hosted third-party application ecosystem (each catalogue application is its own vendor's product)"
+ },
+ {
+  "section": "Singleton 43 \u2014 GRC L1 (1 fork)",
+  "text": "Questionnaire automation engine (a named activity in the fork's prose that no taxonomy family names)"
+ },
+ {
+  "section": "Singleton 43 \u2014 GRC L1 (1 fork)",
+  "text": "Trust Center publication (customer-facing publication of the security program description / posture; core posture is internal counts)"
+ },
+ {
+  "section": "Singleton 43 \u2014 GRC L1 (1 fork)",
+  "text": "Vendor risk assessment engine (evaluating / scoring vendors \u2014 the risk claim's engine remainder; the records are Core and no score is computed)"
+ },
+ {
+  "section": "Singleton 43 \u2014 GRC L1 (1 fork)",
+  "text": "Continuous-monitoring engine & evidence-collection integrations (automated control checks and evidence collection from connected systems; overlaps Group 33's registered validation-engine and feed entries, named here from this fork's own claims)"
+ },
+ {
+  "section": "Singleton 44 \u2014 GRC L3-adjacent (1 fork)",
+  "text": "AI accreditation & compliance prediction engine"
+ },
+ {
+  "section": "Singleton 44 \u2014 GRC L3-adjacent (1 fork)",
+  "text": "Continuous device-log monitoring & breach / vulnerability prediction (the engine half of the claimed continuous monitoring)"
+ },
+ {
+  "section": "Singleton 44 \u2014 GRC L3-adjacent (1 fork)",
+  "text": "AI risk prediction engine (the engine half of the claimed risk management; any scoring engine belongs here too)"
+ },
+ {
+  "section": "Singleton 44 \u2014 GRC L3-adjacent (1 fork)",
+  "text": "AI-powered data lake & ML platform (AI / ML model machinery generally; no model or inference is built anywhere in this group)"
+ },
+ {
+  "section": "Singleton 44 \u2014 GRC L3-adjacent (1 fork)",
+  "text": "Software factory & application hosting platform (app store, tenant hosting, CI / CD, Kubernetes across clouds; platform layer)"
+ },
+ {
+  "section": "Singleton 44 \u2014 GRC L3-adjacent (1 fork)",
+  "text": "Traceability, provenance & auditability platform"
+ },
+ {
+  "section": "Singleton 44 \u2014 GRC L3-adjacent (1 fork)",
+  "text": "Low- / no-code process configuration designer & movement / service tracking"
+ },
+ {
+  "section": "Singleton 44 \u2014 GRC L3-adjacent (1 fork)",
+  "text": "Grants lifecycle automation"
+ },
+ {
+  "section": "Singleton 44 \u2014 GRC L3-adjacent (1 fork)",
+  "text": "Supply-chain ecosystem engines"
+ },
+ {
+  "section": "Singleton 44 \u2014 GRC L3-adjacent (1 fork)",
+  "text": "Healthcare ecosystem platform"
+ },
+ {
+  "section": "Singleton 44 \u2014 GRC L3-adjacent (1 fork)",
+  "text": "Emergency-response coordination platform"
+ },
+ {
+  "section": "Singleton 44 \u2014 GRC L3-adjacent (1 fork)",
+  "text": "Blockchain / RPA machinery asserted across the suite"
+ },
+ {
+  "section": "Singleton 45 \u2014 Grant Management L2 (1 fork, new category)",
+  "text": "Applicant portal web application (the responsive browser UI itself, incl. branding customization & rendering and device adaptation)"
+ },
+ {
+  "section": "Singleton 45 \u2014 Grant Management L2 (1 fork, new category)",
+  "text": "Workflow execution engine (the registry holds definitions only)"
+ },
+ {
+  "section": "Singleton 45 \u2014 Grant Management L2 (1 fork, new category)",
+  "text": "Form designer & form rendering engine (the registry holds definitions only)"
+ },
+ {
+  "section": "Singleton 45 \u2014 Grant Management L2 (1 fork, new category)",
+  "text": "Document storage & content management engine (core holds metadata / checksums only)"
+ },
+ {
+  "section": "Singleton 45 \u2014 Grant Management L2 (1 fork, new category)",
+  "text": "E-signature signing engine (ceremony & cryptographic binding; signature events are recorded)"
+ },
+ {
+  "section": "Singleton 45 \u2014 Grant Management L2 (1 fork, new category)",
+  "text": "Payment / disbursement execution for awards (awards are records; no money moves)"
+ },
+ {
+  "section": "Singleton 45 \u2014 Grant Management L2 (1 fork, new category)",
+  "text": "Reporting & analytics engines beyond registry summaries (dashboards, ad-hoc generation, exports)"
+ },
+ {
+  "section": "Singleton 45 \u2014 Grant Management L2 (1 fork, new category)",
+  "text": "Notification & message delivery transport (email / SMS / push; records only)"
+ },
+ {
+  "section": "Singleton 45 \u2014 Grant Management L2 (1 fork, new category)",
+  "text": "Applicant matching & opportunity recommendation"
+ },
+ {
+  "section": "Singleton 45 \u2014 Grant Management L2 (1 fork, new category)",
+  "text": "Eligibility determination & merit-scoring engines (nothing is scored, by design)"
+ },
+ {
+  "section": "Singleton 45 \u2014 Grant Management L2 (1 fork, new category)",
+  "text": "Closeout automation & financial reconciliation engines"
+ },
+ {
+  "section": "Singleton 45 \u2014 Grant Management L2 (1 fork, new category)",
+  "text": "Identity provider / identity management service (the build ships RBAC hooks; IA-2 stays with the embedding organization)"
+ },
+ {
+  "section": "Singleton 46 \u2014 Health & Wellness L3-adjacent (1 fork)",
+  "text": "EEG signal acquisition & real-time streaming pipeline"
+ },
+ {
+  "section": "Singleton 46 \u2014 Health & Wellness L3-adjacent (1 fork)",
+  "text": "EEG waveform review rendering (physician review surface)"
+ },
+ {
+  "section": "Singleton 46 \u2014 Health & Wellness L3-adjacent (1 fork)",
+  "text": "Continuous AI seizure monitoring & Seizure Burden quantification"
+ },
+ {
+  "section": "Singleton 46 \u2014 Health & Wellness L3-adjacent (1 fork)",
+  "text": "Seizure detection & alerting (suspected status epilepticus)"
+ },
+ {
+  "section": "Singleton 46 \u2014 Health & Wellness L3-adjacent (1 fork)",
+  "text": "Bedside diagnostic support"
+ },
+ {
+  "section": "Singleton 47 \u2014 Law Enforcement L1 (1 fork)",
+  "text": "License plate recognition engine & camera network (plate reads, vehicle matching)"
+ },
+ {
+  "section": "Singleton 47 \u2014 Law Enforcement L1 (1 fork)",
+  "text": "Audio recognition sensors & detection"
+ },
+ {
+  "section": "Singleton 47 \u2014 Law Enforcement L1 (1 fork)",
+  "text": "Video management & evidence-capture pipeline (the substrate captures nothing and stores no content)"
+ },
+ {
+  "section": "Singleton 47 \u2014 Law Enforcement L1 (1 fork)",
+  "text": "Camera / sensor hardware (the manufactured devices themselves)"
+ },
+ {
+  "section": "Singleton 47 \u2014 Law Enforcement L1 (1 fork)",
+  "text": "Public-safety collaboration & crime-analysis platform (the inter-agency layer beyond the devices)"
+ },
+ {
+  "section": "Singleton 48 \u2014 Learning Management L2 (1 fork, new category)",
+  "text": "Learning delivery engine (the LMS runtime itself)"
+ },
+ {
+  "section": "Singleton 48 \u2014 Learning Management L2 (1 fork, new category)",
+  "text": "SCORM / AICC / cmi5 packaging & distribution runtime"
+ },
+ {
+  "section": "Singleton 48 \u2014 Learning Management L2 (1 fork, new category)",
+  "text": "xAPI protocol runtime & LRS conformance (statement records are Core; the protocol engine is not)"
+ },
+ {
+  "section": "Singleton 48 \u2014 Learning Management L2 (1 fork, new category)",
+  "text": "EHRI integration engine"
+ },
+ {
+  "section": "Singleton 48 \u2014 Learning Management L2 (1 fork, new category)",
+  "text": "Learning analytics & outcomes engines"
+ },
+ {
+  "section": "Singleton 48 \u2014 Learning Management L2 (1 fork, new category)",
+  "text": "Career mapping & recommendation engine"
+ },
+ {
+  "section": "Singleton 48 \u2014 Learning Management L2 (1 fork, new category)",
+  "text": "Leadership succession planning suite"
+ },
+ {
+  "section": "Singleton 48 \u2014 Learning Management L2 (1 fork, new category)",
+  "text": "Candidate review / talent acquisition system"
+ },
+ {
+  "section": "Singleton 48 \u2014 Learning Management L2 (1 fork, new category)",
+  "text": "Employee survey engine"
+ },
+ {
+  "section": "Singleton 48 \u2014 Learning Management L2 (1 fork, new category)",
+  "text": "Knowledge base / wiki platform (adjacent product)"
+ },
+ {
+  "section": "Singleton 48 \u2014 Learning Management L2 (1 fork, new category)",
+  "text": "Web CMS platform (adjacent product)"
+ },
+ {
+  "section": "Singleton 48 \u2014 Learning Management L2 (1 fork, new category)",
+  "text": "Content authoring tools & lesson-plan editor"
+ },
+ {
+  "section": "Singleton 48 \u2014 Learning Management L2 (1 fork, new category)",
+  "text": "SF-182 form rendering / routing / signature workflow (authorization records are Core)"
+ },
+ {
+  "section": "Singleton 48 \u2014 Learning Management L2 (1 fork, new category)",
+  "text": "Configurable report builder & dashboards"
+ },
+ {
+  "section": "Singleton 48 \u2014 Learning Management L2 (1 fork, new category)",
+  "text": "Workflow execution engine (the registry holds definitions only)"
+ },
+ {
+  "section": "Singleton 48 \u2014 Learning Management L2 (1 fork, new category)",
+  "text": "Notification automation & delivery transport"
+ },
+ {
+  "section": "Singleton 48 \u2014 Learning Management L2 (1 fork, new category)",
+  "text": "Identity provider / MFA / SSO service"
+ },
+ {
+  "section": "Singleton 50 \u2014 Mobile Device Management (MDM) L2 (1 fork, new category)",
+  "text": "Optimization engine (named from the product name only; no optimization claim exists in the description)"
+ },
+ {
+  "section": "Singleton 50 \u2014 Mobile Device Management (MDM) L2 (1 fork, new category)",
+  "text": "Workflow execution / routing engine (the registry holds definitions only)"
+ },
+ {
+  "section": "Singleton 50 \u2014 Mobile Device Management (MDM) L2 (1 fork, new category)",
+  "text": "Carrier & network integration engines (carrier order execution, bill feeds, data integration)"
+ },
+ {
+  "section": "Singleton 50 \u2014 Mobile Device Management (MDM) L2 (1 fork, new category)",
+  "text": "Bill reconciliation engine beyond registry validation runs"
+ },
+ {
+  "section": "Singleton 50 \u2014 Mobile Device Management (MDM) L2 (1 fork, new category)",
+  "text": "Budget projection / forecasting engine (projections are recorded verbatim, never computed)"
+ },
+ {
+  "section": "Singleton 50 \u2014 Mobile Device Management (MDM) L2 (1 fork, new category)",
+  "text": "Analytics engine beyond registry summaries"
+ },
+ {
+  "section": "Singleton 50 \u2014 Mobile Device Management (MDM) L2 (1 fork, new category)",
+  "text": "Report generation engine"
+ },
+ {
+  "section": "Singleton 50 \u2014 Mobile Device Management (MDM) L2 (1 fork, new category)",
+  "text": "Alert delivery transport (alerts are records)"
+ },
+ {
+  "section": "Singleton 50 \u2014 Mobile Device Management (MDM) L2 (1 fork, new category)",
+  "text": "Web portal / single-pane web application"
+ },
+ {
+  "section": "Singleton 50 \u2014 Mobile Device Management (MDM) L2 (1 fork, new category)",
+  "text": "Managed Mobility services operations"
+ },
+ {
+  "section": "Singleton 50 \u2014 Mobile Device Management (MDM) L2 (1 fork, new category)",
+  "text": "Mobile device enrollment & provisioning plane"
+ },
+ {
+  "section": "Singleton 50 \u2014 Mobile Device Management (MDM) L2 (1 fork, new category)",
+  "text": "Remote wipe / lock / device command plane"
+ },
+ {
+  "section": "Singleton 50 \u2014 Mobile Device Management (MDM) L2 (1 fork, new category)",
+  "text": "Device policy management & compliance enforcement"
+ },
+ {
+  "section": "Singleton 50 \u2014 Mobile Device Management (MDM) L2 (1 fork, new category)",
+  "text": "Mobile application management"
+ },
+ {
+  "section": "Singleton 50 \u2014 Mobile Device Management (MDM) L2 (1 fork, new category)",
+  "text": "Device location & tracking services"
+ },
+ {
+  "section": "Singleton 49 \u2014 Legal & Policy L2 (1 fork, new category)",
+  "text": "AI agent runtime (LLM inference, agent orchestration, grounding / retrieval, model transport bridge)"
+ },
+ {
+  "section": "Singleton 49 \u2014 Legal & Policy L2 (1 fork, new category)",
+  "text": "Legal corpus content (the statutes / regulations / guidance / datasets themselves, curation and update pipeline, licensing)"
+ },
+ {
+  "section": "Singleton 49 \u2014 Legal & Policy L2 (1 fork, new category)",
+  "text": "Full-text & semantic search engines (indexing, vector / semantic ranking over the corpus; saved searches are digest records in Core)"
+ },
+ {
+  "section": "Singleton 49 \u2014 Legal & Policy L2 (1 fork, new category)",
+  "text": "Sandbox runtime (the isolated single-use execution environment itself; executions are recorded, never performed)"
+ },
+ {
+  "section": "Singleton 49 \u2014 Legal & Policy L2 (1 fork, new category)",
+  "text": "Code execution engine"
+ },
+ {
+  "section": "Singleton 49 \u2014 Legal & Policy L2 (1 fork, new category)",
+  "text": "Document generation engine (drafting / generation from corpus and session context)"
+ },
+ {
+  "section": "Singleton 49 \u2014 Legal & Policy L2 (1 fork, new category)",
+  "text": "Identity provider / federation service (the fork federates identity with enforced MFA; IA-2 stays with the embedding organization)"
+ },
+ {
+  "section": "Singleton 49 \u2014 Legal & Policy L2 (1 fork, new category)",
+  "text": "Security monitoring & platform security services (deployment-platform layer)"
+ },
+ {
+  "section": "Singleton 49 \u2014 Legal & Policy L2 (1 fork, new category)",
+  "text": "FIPS-validated cryptography (claimed by the fork's own platform; the standard library is not a validated module and none is claimed)"
+ },
+ {
+  "section": "Singleton 52 \u2014 Operations Management L1 (1 fork)",
+  "text": "Submission management engine (custom submission forms / form builder, submission intake, reviewer assignment)"
+ },
+ {
+  "section": "Singleton 52 \u2014 Operations Management L1 (1 fork)",
+  "text": "Review & evaluation engine (reviewer / judge scoring and feedback; substrate inspection records hold verbatim outcomes only)"
+ },
+ {
+  "section": "Singleton 52 \u2014 Operations Management L1 (1 fork)",
+  "text": "Automated communications"
+ },
+ {
+  "section": "Singleton 52 \u2014 Operations Management L1 (1 fork)",
+  "text": "Reporting (the product's reporting capability, beyond registry summaries)"
+ },
+ {
+  "section": "Singleton 52 \u2014 Operations Management L1 (1 fork)",
+  "text": "Program website builder"
+ },
+ {
+  "section": "Singleton 52 \u2014 Operations Management L1 (1 fork)",
+  "text": "Galleries"
+ },
+ {
+  "section": "Singleton 52 \u2014 Operations Management L1 (1 fork)",
+  "text": "Conference session scheduling"
+ },
+ {
+  "section": "Singleton 52 \u2014 Operations Management L1 (1 fork)",
+  "text": "Payments"
+ },
+ {
+  "section": "Singleton 52 \u2014 Operations Management L1 (1 fork)",
+  "text": "Third-party integrations"
+ },
+ {
+  "section": "Singleton 51 \u2014 Network Management L2 (1 fork, new category)",
+  "text": "Network optimization engine (\"optimize\" is a real verb in this fork's description, unlike the name-only case at Singleton 50; claimed, engine Extended)"
+ },
+ {
+  "section": "Singleton 51 \u2014 Network Management L2 (1 fork, new category)",
+  "text": "Network intelligence / AI engine"
+ },
+ {
+  "section": "Singleton 51 \u2014 Network Management L2 (1 fork, new category)",
+  "text": "Device provisioning & deployment engine"
+ },
+ {
+  "section": "Singleton 51 \u2014 Network Management L2 (1 fork, new category)",
+  "text": "Network configuration push / control plane (configuration changes are records; closing one alters no device or network record)"
+ },
+ {
+  "section": "Singleton 51 \u2014 Network Management L2 (1 fork, new category)",
+  "text": "Firmware management engine"
+ },
+ {
+  "section": "Singleton 51 \u2014 Network Management L2 (1 fork, new category)",
+  "text": "Traffic control & SD-WAN policy engine (named from the device gloss, not a claim)"
+ },
+ {
+  "section": "Singleton 51 \u2014 Network Management L2 (1 fork, new category)",
+  "text": "Telemetry collection & polling engine (telemetry in Core is caller-supplied records only)"
+ },
+ {
+  "section": "Singleton 51 \u2014 Network Management L2 (1 fork, new category)",
+  "text": "Alert evaluation & delivery transport (alerts are records)"
+ },
+ {
+  "section": "Singleton 51 \u2014 Network Management L2 (1 fork, new category)",
+  "text": "Integration connectors"
+ },
+ {
+  "section": "Singleton 51 \u2014 Network Management L2 (1 fork, new category)",
+  "text": "Automation execution engine (the registry holds definitions only)"
+ },
+ {
+  "section": "Singleton 51 \u2014 Network Management L2 (1 fork, new category)",
+  "text": "Cloud management web application"
+ },
+ {
+  "section": "Singleton 51 \u2014 Network Management L2 (1 fork, new category)",
+  "text": "FIPS-validated cryptography (SC-13; the fork's platform property \u2014 the build claims no validated cryptography)"
+ },
+ {
+  "section": "Singleton 54 \u2014 System Administration L2 (1 fork, new category)",
+  "text": "Managed OS & services administration operations (the full management itself)"
+ },
+ {
+  "section": "Singleton 54 \u2014 System Administration L2 (1 fork, new category)",
+  "text": "System provisioning & deployment operations"
+ },
+ {
+  "section": "Singleton 54 \u2014 System Administration L2 (1 fork, new category)",
+  "text": "Application delivery & hosting runtime"
+ },
+ {
+  "section": "Singleton 54 \u2014 System Administration L2 (1 fork, new category)",
+  "text": "Virtualization engine (the underlying cloud provider's)"
+ },
+ {
+  "section": "Singleton 54 \u2014 System Administration L2 (1 fork, new category)",
+  "text": "High-availability network operation"
+ },
+ {
+  "section": "Singleton 54 \u2014 System Administration L2 (1 fork, new category)",
+  "text": "Third-party CSP hosting platforms (outside the fork's own boundary)"
+ },
+ {
+  "section": "Singleton 53 \u2014 Research L2 (1 fork, new category)",
+  "text": "Data commons runtime engine"
+ },
+ {
+  "section": "Singleton 53 \u2014 Research L2 (1 fork, new category)",
+  "text": "Data ingestion / ETL engine"
+ },
+ {
+  "section": "Singleton 53 \u2014 Research L2 (1 fork, new category)",
+  "text": "Data harmonization engine"
+ },
+ {
+  "section": "Singleton 53 \u2014 Research L2 (1 fork, new category)",
+  "text": "Indexing & metadata catalog engines beyond the registry"
+ },
+ {
+  "section": "Singleton 53 \u2014 Research L2 (1 fork, new category)",
+  "text": "Query & analysis workspace engines"
+ },
+ {
+  "section": "Singleton 53 \u2014 Research L2 (1 fork, new category)",
+  "text": "Cohort builder / cohort discovery engine"
+ },
+ {
+  "section": "Singleton 53 \u2014 Research L2 (1 fork, new category)",
+  "text": "Cross-commons federation / data mesh networking"
+ },
+ {
+  "section": "Singleton 53 \u2014 Research L2 (1 fork, new category)",
+  "text": "Data delivery / transfer engine for sharing"
+ },
+ {
+  "section": "Singleton 53 \u2014 Research L2 (1 fork, new category)",
+  "text": "Access enforcement on data delivery (grants are records that confer nothing; no data moves in this build)"
+ },
+ {
+  "section": "Singleton 53 \u2014 Research L2 (1 fork, new category)",
+  "text": "Identity provider / identity management service"
+ },
+ {
+  "section": "Singleton 55 \u2014 Travel Management L2 (1 fork, new category)",
+  "text": "Travel booking & reservation engine"
+ },
+ {
+  "section": "Singleton 55 \u2014 Travel Management L2 (1 fork, new category)",
+  "text": "Carrier, hotel & GDS reservation integrations"
+ },
+ {
+  "section": "Singleton 55 \u2014 Travel Management L2 (1 fork, new category)",
+  "text": "Payment & disbursement execution (vouchers are records; no money moves)"
+ },
+ {
+  "section": "Singleton 55 \u2014 Travel Management L2 (1 fork, new category)",
+  "text": "Receipt capture & imaging / OCR"
+ },
+ {
+  "section": "Singleton 55 \u2014 Travel Management L2 (1 fork, new category)",
+  "text": "Integration connector engines (the registry holds definitions only)"
+ },
+ {
+  "section": "Singleton 55 \u2014 Travel Management L2 (1 fork, new category)",
+  "text": "Notification delivery transport (notifications are records)"
+ },
+ {
+  "section": "Singleton 55 \u2014 Travel Management L2 (1 fork, new category)",
+  "text": "Report generation engine & dashboards (beyond registry summaries)"
+ },
+ {
+  "section": "Singleton 55 \u2014 Travel Management L2 (1 fork, new category)",
+  "text": "Identity provider / identity management service"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L2 (+20 forks)",
+  "text": "Managed print services engine (Canon, Xerox)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L2 (+20 forks)",
+  "text": "Supply chain & logistics execution suite (Manhattan)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L2 (+20 forks)",
+  "text": "Product lifecycle management (PLM) platform (PTC)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L2 (+20 forks)",
+  "text": "IT service management (ITSM) suite (Ivanti)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L2 (+20 forks)",
+  "text": "Infrastructure maintenance management system (InfraLink)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L2 (+20 forks)",
+  "text": "Facilities & real property management suite / IWMS (FM:Systems, GoRPM, IBM TRIRIGA overlap)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L2 (+20 forks)",
+  "text": "Case management platforms incl. EEO + FOIA (Tyler Federal, AINS eCase)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L2 (+20 forks)",
+  "text": "Business process modeling, process mining & enterprise architecture platform (Software AG ARIS / ALFABET)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L2 (+20 forks)",
+  "text": "Mail & package operations (Pitney Bowes)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L2 (+20 forks)",
+  "text": "Strategic portfolio & agile planning platforms (Clarity, Rally)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L2 (+20 forks)",
+  "text": "Back-office ERP suite (Accenture)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L2 (+20 forks)",
+  "text": "Contract progress management application (iSite)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L2 (+20 forks)",
+  "text": "Enterprise asset management depth: predictive maintenance / asset health / IoT telemetry analytics (IBM Maximo)"
+ },
+ {
+  "section": "Remainder Addition \u2014 System Administration L2 (+8 forks)",
+  "text": "Virtual workspace & desktop delivery platform (Citrix DaaS)"
+ },
+ {
+  "section": "Remainder Addition \u2014 System Administration L2 (+8 forks)",
+  "text": "Observability & AIOps platform (Dynatrace)"
+ },
+ {
+  "section": "Remainder Addition \u2014 System Administration L2 (+8 forks)",
+  "text": "IT service & asset management suite, ITSM / ITAM (OpenText; Oracle service desk rides it)"
+ },
+ {
+  "section": "Remainder Addition \u2014 System Administration L2 (+8 forks)",
+  "text": "Universal discovery & CMDB engine (OpenText)"
+ },
+ {
+  "section": "Remainder Addition \u2014 System Administration L2 (+8 forks)",
+  "text": "Project & portfolio management platform (OpenText)"
+ },
+ {
+  "section": "Remainder Addition \u2014 System Administration L2 (+8 forks)",
+  "text": "DEX analytics & endpoint automation platform (TeamViewer)"
+ },
+ {
+  "section": "Remainder Addition \u2014 System Administration L2 (+8 forks)",
+  "text": "Geospatial (GIS) application platform (Esri's ArcGIS payload)"
+ },
+ {
+  "section": "Remainder Addition \u2014 System Administration L2 (+8 forks)",
+  "text": "Managed backup & disaster-recovery services (Contegix, DLH, Oracle, Esri)"
+ },
+ {
+  "section": "Remainder Addition \u2014 System Administration L2 (+8 forks)",
+  "text": "Security operations services: SOC / SIEM / vulnerability scanning (Esri, Contegix, DLH)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Legal & Policy L2 (+6 forks)",
+  "text": "eDiscovery processing & collection engine (CDS, Deloitte EMS, IDGC)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Legal & Policy L2 (+6 forks)",
+  "text": "eDiscovery document review platform, incl. hosted review ecosystems (CDS, Deloitte EMS, IDGC, RelativityOne)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Legal & Policy L2 (+6 forks)",
+  "text": "eDiscovery production, disposition & archiving engine (Deloitte EMS, IDGC)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Legal & Policy L2 (+6 forks)",
+  "text": "Legal hold & preservation management (Deloitte EMS, IDGC)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Legal & Policy L2 (+6 forks)",
+  "text": "AI document analysis for discovery: summarization / classification / redaction, assisted review, analytics & visualizations (Deloitte EMS, IDGC, RelativityOne, CDS)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Legal & Policy L2 (+6 forks)",
+  "text": "OCR & document extraction engine (Deloitte EMS)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Legal & Policy L2 (+6 forks)",
+  "text": "FOIA & disclosure release engine (Deloitte EMS)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Legal & Policy L2 (+6 forks)",
+  "text": "Electronic signature engine: ceremony, binding / validity, envelope & transaction workflow (DocuSign)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Legal & Policy L2 (+6 forks)",
+  "text": "Contract lifecycle management engine (DocuSign CLM)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Legal & Policy L2 (+6 forks)",
+  "text": "Agreement workflow automation engine (DocuSign)"
+ },
+ {
+  "section": "Remainder Addition \u2014 GRC L2 (+5 forks)",
+  "text": "Policy lifecycle management engine: authoring / approval / enforcement (policy records are Core; the lifecycle is an engine) (Anecdotes, MediaLab)"
+ },
+ {
+  "section": "Remainder Addition \u2014 GRC L2 (+5 forks)",
+  "text": "Agentic workflow execution engine (Anecdotes)"
+ },
+ {
+  "section": "Remainder Addition \u2014 GRC L2 (+5 forks)",
+  "text": "AI control-narrative & assessment-response generation / secure AI enclave (Kovr)"
+ },
+ {
+  "section": "Remainder Addition \u2014 GRC L2 (+5 forks)",
+  "text": "Data-integration connector engine (Workiva)"
+ },
+ {
+  "section": "Remainder Addition \u2014 GRC L2 (+5 forks)",
+  "text": "IT service management suite ITSM / ESM incl. CMDB / SLA (Halo fork excess)"
+ },
+ {
+  "section": "Remainder Addition \u2014 GRC L2 (+5 forks)",
+  "text": "Healthcare quality management suite (MediaLab fork excess)"
+ },
+ {
+  "section": "Remainder Addition \u2014 GRC L2 (+5 forks)",
+  "text": "Connected financial & regulatory reporting / publishing platform (Workiva fork excess)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Development Tools L2 (+4 forks)",
+  "text": "No-code / low-code application development platform: visual application builder & runtime (Unqork)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Development Tools L2 (+4 forks)",
+  "text": "Compliance documentation & SSP generation tooling (Cloud.gov; distinct from assessment automation: this is documentation generation)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Research L2 (+5 forks)",
+  "text": "Interactive analysis environment & workflow execution engine (Terra)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Research L2 (+5 forks)",
+  "text": "Bioinformatics analysis pipeline engines (ROSALIND, Seven Bridges)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Research L2 (+5 forks)",
+  "text": "Diagnostic monitoring & variant surveillance platform incl. BioBank sample tracking (ROSALIND)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Research L2 (+5 forks)",
+  "text": "Knowledge-graph storage & searchable library engine (ROSALIND)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Research L2 (+5 forks)",
+  "text": "Elastic storage & compute allocation engine (Seven Bridges)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Research L2 (+5 forks)",
+  "text": "Multi-modal survey research platform (Ipsos)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Research L2 (+5 forks)",
+  "text": "AI analytics engine over LLMs (Ipsos)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Research L2 (+5 forks)",
+  "text": "Technology transfer & IP management suite (Wellspring)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Research L2 (+5 forks)",
+  "text": "Document generation & e-signature workflow engines + external integration components (Wellspring fork excess)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Finance L2 (+4 forks)",
+  "text": "Federal financial management system of record (Momentum)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Finance L2 (+4 forks)",
+  "text": "Procurement lifecycle engine: supplier identification, sourcing, contracting, invoicing, supplier payment execution (Coupa; its payments recorded here, deliberately NOT enlarging the earned-wage payment-rails gap)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Finance L2 (+4 forks)",
+  "text": "Spend analytics engine (Coupa)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Finance L2 (+4 forks)",
+  "text": "Technology business management & cloud cost allocation / optimization (FinOps) engine (Apptio)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Finance L2 (+4 forks)",
+  "text": "Trust accounting & wealth management platform, multi-currency (Innovest; the union's \"trading & investment execution\" named absence still stands: Innovest asserts wealth management, not trading)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Finance L2 (+4 forks)",
+  "text": "AI / ML document processing & image recognition (Coupa)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Collaboration L2 (+3 forks)",
+  "text": "Innovation management & crowdsourcing platform (IdeaScale)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Collaboration L2 (+3 forks)",
+  "text": "Centralized administration console for collaboration services (Webex)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Collaboration L2 (+3 forks)",
+  "text": "Virtual visitation scheduling portal: business-rules / workflow configuration, zero-touch device connectivity (Webex)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Collaboration L2 (+3 forks)",
+  "text": "Collaboration hardware endpoints & purpose-built devices (Webex, platform layer)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Collaboration L2 (+3 forks)",
+  "text": "Product-specific connector engines (Huddle, office-suite integrations)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Health & Wellness L2 (+3 forks)",
+  "text": "Telehealth media engine (GTS; this retires the group's standing telehealth named absence: GTS claims telehealth visits in its own words; the visit is a Core activity record, the media channel is the gap)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Health & Wellness L2 (+3 forks)",
+  "text": "Store-and-forward clinical data service: labs / images / clinical data (GTS)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Health & Wellness L2 (+3 forks)",
+  "text": "Medical coding engine / computer-assisted coding (Solventum; named separately from the coding step inside the adjudication gap, reasoning in the addendum)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Health & Wellness L2 (+3 forks)",
+  "text": "Grouper / classification & reimbursement content services (Solventum)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Health & Wellness L2 (+3 forks)",
+  "text": "Clinical documentation integrity tooling (Solventum)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Health & Wellness L2 (+3 forks)",
+  "text": "Diagnostic report generation engine (Somnoware)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Health & Wellness L2 (+3 forks)",
+  "text": "Therapy progress & risk-profile console (Somnoware; values are Core records; no risk profile is computed in this build)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Human Resources L2 (+3 forks)",
+  "text": "Time, attendance & leave tracking engine (GDC; retires the group's two standing absences, leave & time-off and time & attendance, asserted in substance in its own prose; the tracking surface is an engine, not a records form)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Human Resources L2 (+3 forks)",
+  "text": "Organizational chart generation & maintenance automation (GDC)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Human Resources L2 (+3 forks)",
+  "text": "Employee engagement survey & listening platform (Perceptyx; its whole function, which has no taxonomy family)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Human Resources L2 (+3 forks)",
+  "text": "Federal retirement & benefits administration platform depth (GRB fork excess, distinct from the existing calculator gap)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Human Resources L2 (+3 forks)",
+  "text": "Employee self-service portal & HR dashboard (GDC)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Human Resources L2 (+3 forks)",
+  "text": "Uniform allowance request processing (GDC)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L1 (+3 forks)",
+  "text": "Workspace scheduling & reservation engine (FM:Systems, Tango; the headline function of both workplace forks; the verbatim taxonomy has no scheduling family, so this stands at zero claims while asserted in substance by 2 of 4 forks at this tier)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L1 (+3 forks)",
+  "text": "Visitor & event management (FM:Systems)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L1 (+3 forks)",
+  "text": "Interactive floor plans, wayfinding & digital signage (FM:Systems, Tango)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L1 (+3 forks)",
+  "text": "IoT sensor integration & workspace-utilization sensing (FM:Systems, Tango by catalogue substance; likewise no taxonomy family)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L1 (+3 forks)",
+  "text": "Workplace analytics & optimization engine (FM:Systems, Tango, by substance)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L1 (+3 forks)",
+  "text": "Procurement marketplace & requisitioning engine (SCMC)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Operations Management L1 (+3 forks)",
+  "text": "Real-estate portfolio suite: space planning, lease administration / accounting, transaction & predictive analytics (Tango catalogue excess)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Cybersecurity L3-adjacent (+2 forks)",
+  "text": "Firewall management & orchestration plane: NGFW policy / device management, zero-touch provisioning, AIOps policy analysis (Cisco)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Cybersecurity L3-adjacent (+2 forks)",
+  "text": "HSM as a Service: cloud HSM & key-management service (AuthentX; distinct from the SC-13 platform gap; the fork's own FIPS 140-2 Level 3 HSM certification is its platform property and does not transfer to this build)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Cybersecurity L3-adjacent (+2 forks)",
+  "text": "Inline email security platform (Cisco; named separately from the phishing family's simulation / training content)"
+ },
+ {
+  "section": "Remainder Group 1 \u2014 Contract Management L2 (2 forks, new category)",
+  "text": "Regulatory content & interpretation: FAR / DFARS corpus, agency supplements, updates"
+ },
+ {
+  "section": "Remainder Group 1 \u2014 Contract Management L2 (2 forks, new category)",
+  "text": "Workflow execution engine"
+ },
+ {
+  "section": "Remainder Group 1 \u2014 Contract Management L2 (2 forks, new category)",
+  "text": "Analytics engine: PALT measurement, bottleneck / spend analysis beyond registry counts and sums"
+ },
+ {
+  "section": "Remainder Group 1 \u2014 Contract Management L2 (2 forks, new category)",
+  "text": "Opportunity portal front-end (the public / directed web portal itself)"
+ },
+ {
+  "section": "Remainder Group 1 \u2014 Contract Management L2 (2 forks, new category)",
+  "text": "Reverse auction engine: live bidding, price discovery"
+ },
+ {
+  "section": "Remainder Group 1 \u2014 Contract Management L2 (2 forks, new category)",
+  "text": "Submission intake transport (electronic bid / proposal receipt channel)"
+ },
+ {
+  "section": "Remainder Group 1 \u2014 Contract Management L2 (2 forks, new category)",
+  "text": "Payment processing rails: fee collection / settlement (the core records payments, moves no money)"
+ },
+ {
+  "section": "Remainder Group 1 \u2014 Contract Management L2 (2 forks, new category)",
+  "text": "Integration transport (the system-to-system interfaces themselves)"
+ },
+ {
+  "section": "Remainder Group 1 \u2014 Contract Management L2 (2 forks, new category)",
+  "text": "Communication transport (the secure messaging channel itself)"
+ },
+ {
+  "section": "Remainder Group 1 \u2014 Contract Management L2 (2 forks, new category)",
+  "text": "Identity provider / registration verification service (registration records are not identity proofing; IA-2 stays with the embedding organization)"
+ },
+ {
+  "section": "Remainder Group 2 \u2014 Learning Management L1 (2 forks, new tier group)",
+  "text": "Learning content authoring environment: rapid / collaborative authoring, themes & menus, plugins, 508-conformant output (CloudLCMS)"
+ },
+ {
+  "section": "Remainder Group 2 \u2014 Learning Management L1 (2 forks, new tier group)",
+  "text": "Course posting & publication workflow (TRAIN)"
+ },
+ {
+  "section": "Remainder Group 2 \u2014 Learning Management L1 (2 forks, new tier group)",
+  "text": "Branded portal rendering & presentation engine (TRAIN)"
+ },
+ {
+  "section": "Remainder Group 2 \u2014 Learning Management L1 (2 forks, new tier group)",
+  "text": "Continuing education management engine (TRAIN)"
+ },
+ {
+  "section": "Remainder Group 2 \u2014 Learning Management L1 (2 forks, new tier group)",
+  "text": "Certificate issuance & verification service (TRAIN)"
+ },
+ {
+  "section": "Remainder Group 2 \u2014 Learning Management L1 (2 forks, new tier group)",
+  "text": "System integration engines (TRAIN)"
+ },
+ {
+  "section": "Remainder Group 3 \u2014 Talent Management L2 (2 forks, new category)",
+  "text": "Video interview platform"
+ },
+ {
+  "section": "Remainder Group 3 \u2014 Talent Management L2 (2 forks, new category)",
+  "text": "Assessment delivery & scoring engines"
+ },
+ {
+  "section": "Remainder Group 3 \u2014 Talent Management L2 (2 forks, new category)",
+  "text": "Predictive I-O models & AI"
+ },
+ {
+  "section": "Remainder Group 3 \u2014 Talent Management L2 (2 forks, new category)",
+  "text": "Virtual event platform"
+ },
+ {
+  "section": "Remainder Group 3 \u2014 Talent Management L2 (2 forks, new category)",
+  "text": "Pipeline automation engine"
+ },
+ {
+  "section": "Remainder Group 3 \u2014 Talent Management L2 (2 forks, new category)",
+  "text": "Analytics & visualization engines (incl. ROI determination)"
+ },
+ {
+  "section": "Remainder Group 3 \u2014 Talent Management L2 (2 forks, new category)",
+  "text": "Talent development programs"
+ },
+ {
+  "section": "Remainder Group 3 \u2014 Talent Management L2 (2 forks, new category)",
+  "text": "Identity provider / candidate identity verification (IA-2 stays with the embedding organization)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Analytics L1 (+1 fork)",
+  "text": "Collaboration & unified-communications telemetry engine: multi-vendor UC telemetry collection, experience visibility / insights (the fork's whole product; named separately from the generic alerts gap, which covers engines over data already in the platform)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Analytics L1 (+1 fork)",
+  "text": "End-user experience & productivity analytics engine (by substance; no family claims it, no score defined or computed)"
+ },
+ {
+  "section": "Remainder Addition \u2014 AI L2 (+1 fork)",
+  "text": "Infrastructure Digital Twin & infrastructure performance management engine"
+ },
+ {
+  "section": "Remainder Addition \u2014 AI L2 (+1 fork)",
+  "text": "Service transition management: migration planning / tracking incl. IPv6, with automated configuration management & capacity planning"
+ },
+ {
+  "section": "Remainder Addition \u2014 AI L2 (+1 fork)",
+  "text": "EIS service management suite: SLA / service-level monitoring, CLIN & invoice management with reconciliation & dispute support, service inventory lifecycle, provider credit recovery (fork excess)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Analytics L2 (+1 fork)",
+  "text": "Automated back-office service tools (HR, finance & property management)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Analytics L2 (+1 fork)",
+  "text": "Digital signature engine"
+ },
+ {
+  "section": "Remainder Addition \u2014 Analytics L2 (+1 fork)",
+  "text": "E-workflow tooling (explicitly distinguished from the group's Extended scheduling & workflow automation family)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Analytics L2 (+1 fork)",
+  "text": "Mobile client capabilities"
+ },
+ {
+  "section": "Remainder Addition \u2014 Collaboration L3-adjacent (+1 fork)",
+  "text": "Collaborative continuous monitoring service (the fork's closing sentence names an agency-vendor continuous-monitoring arrangement with no family in this taxonomy)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Communication L2 (+1 fork)",
+  "text": "Marketing automation & citizen-engagement campaign engine: audience targeting / segmentation and automated campaign execution (registered from the fork's described function; its headline \"marketing automation platform\" phrasing fires no taxonomy family)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Communication L3-adjacent (+1 fork)",
+  "text": "App integration & connector platform: connecting third-party software tools and services into the messaging surface (the group's taxonomy has no integrations family at all; the function is asserted in substance only)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Communication L3-adjacent (+1 fork)",
+  "text": "Persistent channel / workspace collaboration surface: channels as persistent team rooms (distinct from the build's delivery-channel records; the workspace substrate proper belongs to the Collaboration groups' builds)"
+ },
+ {
+  "section": "Remainder Addition \u2014 CMS L2 (+1 fork)",
+  "text": "ML/AI content classification, extraction & enrichment engine: automatically classifying, extracting, and enriching physical and digital content (registered from the fork's described headline function, not from a claim; the records its outputs would write \u2014 item metadata, tags, asset registrations \u2014 are Core, the engine is Extended)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Customer Service L1 (+1 fork)",
+  "text": "Proactive engagement & outreach: proactive customer engagement and outreach (asserted in substance by the fork's own words, \"proactive engagement\"; no taxonomy family covers outreach \u2014 registered from the described function, not from a claim)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Cybersecurity L1 (+1 fork)",
+  "text": "Crowdsourced security testing & disclosure coordination platform: researcher-community marketplace, engagement management, and disclosure coordination (registered from the fork's described function; no taxonomy family exists for it \u2014 vulnerability management is scanning tooling and application security is testing engines, and a human researcher marketplace is neither. The findings its engagements produce are ingestible by the Core today)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Customer Service L3-adjacent (+1 fork)",
+  "text": "Survey & feedback-collection engine: survey capture and feedback-signal collection across channels (registered WITH a claim \u2014 this fork's satisfaction-surveys claim retires the category's standing named absence at this tier; the records its flagged signals write are Core, the engine is Extended)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Customer Service L3-adjacent (+1 fork)",
+  "text": "Platform connectors & integration API surface: connectors into external platforms asserted in substance by the fork's closing bullet (this taxonomy has no integrations family, so no claim fired)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Data Management L1 (+1 fork)",
+  "text": "M&E / results-management platform functions: indicator and results frameworks, progress measurement (a domain application asserted across the fork's description; no taxonomy family covers it)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Data Management L1 (+1 fork)",
+  "text": "Data-capture tooling & collection instruments: capture tooling and instrument design (distinct from the web-capture engine already registered under this group's founding fork and from the guided-interview engine)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Finance L3-adjacent (+1 fork)",
+  "text": "Corporate performance management (CPM) engine: consolidation, planning, budgeting, and forecasting as computation (registered with claim adjacency \u2014 the fork claims reporting in its records form; the computation layer is Extended. Recorded as DISTINCT from the federal financial management system of record gap registered at L2: CPM layer versus general-ledger system of record, on the L2 addition's own non-conflation precedent)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Finance L3-adjacent (+1 fork)",
+  "text": "Data integration & connector surface: ERP integration and Office / spreadsheet add-in connectivity (asserted in substance; the API-platform family's verbatim phrase is absent, so no claim fired)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Finance L3-adjacent (+1 fork)",
+  "text": "Solution marketplace & application extensibility: a marketplace of add-on solutions over the platform (asserted in substance from the fork's own marketplace prose)"
+ },
+ {
+  "section": "Remainder Addition \u2014 GRC L3-adjacent (+1 fork)",
+  "text": "Third-party risk & due-diligence intelligence platform: third-party due diligence and third-party management intelligence (registered from the fork's described function; its entire description is one 243-character sentence naming its product and four of its own modules, and the word \"risk\" appears nowhere in it)"
+ },
+ {
+  "section": "Remainder Addition \u2014 GRC L3-adjacent (+1 fork)",
+  "text": "Supply-chain risk visibility & analytics platform: supply dynamics and supply-chain visibility analytics (registered from the described function; bare \"Analytics\" is not the posture-reporting family and, per category doctrine, no score follows from it)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Law Enforcement L3-adjacent (+1 fork)",
+  "text": "Threat detection & real-time alerting: real-time detection and alerting over a human incident-reporting network (the fork's headline function, described in its own words; distinct from the real-time intelligence feeds exclusion written for the group's original pair \u2014 this is human reports, not feeds or sensors, and the distinction is recorded rather than smoothed)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Law Enforcement L3-adjacent (+1 fork)",
+  "text": "Incident reporting & structured suspicious-activity reporting: web, mobile field, and community reporting channels"
+ },
+ {
+  "section": "Remainder Addition \u2014 Law Enforcement L3-adjacent (+1 fork)",
+  "text": "Pattern analysis & analyst support: pattern analysis over reported incidents with analyst support tooling"
+ },
+ {
+  "section": "Remainder Addition \u2014 Law Enforcement L3-adjacent (+1 fork)",
+  "text": "Originator-controlled cross-organizational information sharing: sharing under the originator's control (registered as its own vertical, NOT folded into the existing information sharing over evidence gap \u2014 different object and control model, on the non-conflation precedent)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Law Enforcement L3-adjacent (+1 fork)",
+  "text": "Mass warning & notification: warning and notification distribution"
+ },
+ {
+  "section": "Remainder Addition \u2014 Law Enforcement L3-adjacent (+1 fork)",
+  "text": "Integration API & system-of-systems data integration: integration surface for connecting systems"
+ },
+ {
+  "section": "Remainder Addition \u2014 Learning Management L2 (+1 fork)",
+  "text": "Licensed content library & practice-lab environments: the hosted off-the-shelf catalogue itself \u2014 thousands of video courses, ebooks, audiobooks, boot camps, hands-on practice labs, and the assessment content it includes, booked once as content (the substrate's catalog holds records ABOUT content, and the already-registered delivery-engine gap is the runtime, not the catalogue; no registered gap named the content supply itself)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Mobile Device Management (MDM) L2 (+1 fork)",
+  "text": "Zero-trust access validation engine: device validation, identity / context / privacy evaluation, and per-request access-level decisions (the fork describes a validation plane, not records)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Mobile Device Management (MDM) L2 (+1 fork)",
+  "text": "Mobile threat defense engine: continual detection and remediation of device, network, and app-level threats including zero-day, on and off connectivity, with silent deployment"
+ },
+ {
+  "section": "Remainder Addition \u2014 Travel Management L2 (+1 fork)",
+  "text": "Employee relocation management & processing engine: the relocation lifecycle (a permanent move, distinct from a trip; the fork's headline function \u2014 no registered gap names it)"
+ },
+ {
+  "section": "Remainder Addition \u2014 Travel Management L2 (+1 fork)",
+  "text": "Relocation policy & entitlement rules automation: automation of the federal relocation policy corpus the fork names in its own words (recorded as distinct from per-diem computation, which remains an absence \u2014 the fork automates relocation policy without naming any per-diem computation)"
+ },
+ {
+  "section": "Remainder Singleton 56 \u2014 Customer Relations Management (CRM) L1 (1 fork)",
+  "text": "Unified customer experience management (CXM) platform: the unified platform itself, over the records substrate"
+ },
+ {
+  "section": "Remainder Singleton 56 \u2014 Customer Relations Management (CRM) L1 (1 fork)",
+  "text": "Social media management & publishing engine"
+ },
+ {
+  "section": "Remainder Singleton 56 \u2014 Customer Relations Management (CRM) L1 (1 fork)",
+  "text": "Social listening & research analytics engine"
+ },
+ {
+  "section": "Remainder Singleton 56 \u2014 Customer Relations Management (CRM) L1 (1 fork)",
+  "text": "Advertising campaign management engine"
+ },
+ {
+  "section": "Remainder Singleton 56 \u2014 Customer Relations Management (CRM) L1 (1 fork)",
+  "text": "Care engagement depth: the engagement machinery of the fork's care product beyond the substrate's case and interaction records"
+ },
+ {
+  "section": "Remainder Singleton 56 \u2014 Customer Relations Management (CRM) L1 (1 fork)",
+  "text": "Engagement & messaging orchestration engine"
+ },
+ {
+  "section": "Remainder Singleton 56 \u2014 Customer Relations Management (CRM) L1 (1 fork)",
+  "text": "Marketing platform functions (the fork's marketing product as an engine; the claim-level campaigns absence below stands)"
+ },
+ {
+  "section": "Remainder Singleton 56 \u2014 Customer Relations Management (CRM) L1 (1 fork)",
+  "text": "AI-backed core platform: the fork's AI-backed core itself (its one claim, ai_scoring, is recorded at exact weight \u2014 an AI-backed platform is asserted, no scoring, model, or ML function is described; the family is Extended in this category and stays Extended, and the build implements no AI and computes no score anywhere)"
+ },
+ {
+  "section": "Remainder Singleton 57 \u2014 Energy Management L1 (1 fork, new category)",
+  "text": "Reverse auction execution engine: conducting the auction itself (the Core records auctions, bids, and the derived outcome; it runs no auction)"
+ },
+ {
+  "section": "Remainder Singleton 57 \u2014 Energy Management L1 (1 fork, new category)",
+  "text": "Price-trigger evaluation engine: evaluating market prices against subscription triggers (alert records are Core; \"automated alerts\" is recorded at artifact weight)"
+ },
+ {
+  "section": "Remainder Singleton 57 \u2014 Energy Management L1 (1 fork, new category)",
+  "text": "Alert & notification delivery transport"
+ },
+ {
+  "section": "Remainder Singleton 57 \u2014 Energy Management L1 (1 fork, new category)",
+  "text": "Market intelligence engine: producing the market analysis the fork describes (market-update notifications are booked once, under the notification records)"
+ },
+ {
+  "section": "Remainder Singleton 57 \u2014 Energy Management L1 (1 fork, new category)",
+  "text": "Advisory practice itself: the energy budgeting and risk consulting the fork's people perform"
+ },
+ {
+  "section": "Remainder Singleton 57 \u2014 Energy Management L1 (1 fork, new category)",
+  "text": "Price chart rendering & dashboards"
+ },
+ {
+  "section": "Remainder Singleton 57 \u2014 Energy Management L1 (1 fork, new category)",
+  "text": "Supply contract lifecycle & execution"
+ },
+ {
+  "section": "Remainder Singleton 57 \u2014 Energy Management L1 (1 fork, new category)",
+  "text": "Payment / settlement execution"
+ },
+ {
+  "section": "Remainder Singleton 57 \u2014 Energy Management L1 (1 fork, new category)",
+  "text": "Identity provider (demo identities are hooks, as everywhere in this repo)"
+ },
+ {
+  "section": "Remainder Singleton 57 \u2014 Energy Management L1 (1 fork, new category)",
+  "text": "Energy data integrations: the meter, market, and supplier data feeds the platform consumes"
+ },
+ {
+  "section": "Remainder Singleton 58 \u2014 Development Tools L3-adjacent (1 fork)",
+  "text": "Container orchestration platform: the managed container platform the fork is (the Core holds development-work records; it runs no containers)"
+ },
+ {
+  "section": "Remainder Singleton 58 \u2014 Development Tools L3-adjacent (1 fork)",
+  "text": "Integrated development environment / developer workspace"
+ },
+ {
+  "section": "Remainder Singleton 58 \u2014 Development Tools L3-adjacent (1 fork)",
+  "text": "Platform monitoring & logging (observability): the platform's own telemetry surface (\"monitoring, logging\" in the fork's prose fired no family \u2014 the audit patterns key on the word audit \u2014 and is recorded as near-miss, not claim)"
+ },
+ {
+  "section": "Remainder Singleton 58 \u2014 Development Tools L3-adjacent (1 fork)",
+  "text": "Platform networking: the container platform's network fabric"
+ },
+ {
+  "section": "Remainder Singleton 60 \u2014 Event Management L1 (1 fork, new category)",
+  "text": "Event delivery & presentation plane: webcast / streaming and the attendee join experience"
+ },
+ {
+  "section": "Remainder Singleton 60 \u2014 Event Management L1 (1 fork, new category)",
+  "text": "Outreach delivery transport (outreach records are Core; nothing is sent)"
+ },
+ {
+  "section": "Remainder Singleton 60 \u2014 Event Management L1 (1 fork, new category)",
+  "text": "Matchmaking recommendation & pairing-suggestion engine: the source carries no algorithm, scoring, ranking, or criteria vocabulary, so the build invents none \u2014 qualification in the Core is coverage over tags the organizer and vendors themselves recorded, and a recommendation engine is this gap, not a hidden feature"
+ },
+ {
+  "section": "Remainder Singleton 60 \u2014 Event Management L1 (1 fork, new category)",
+  "text": "Live session facilitation: the chat / polling / Q&A tooling behind the prose adjective \"interactive\""
+ },
+ {
+  "section": "Remainder Singleton 60 \u2014 Event Management L1 (1 fork, new category)",
+  "text": "Speaker sourcing & booking"
+ },
+ {
+  "section": "Remainder Singleton 60 \u2014 Event Management L1 (1 fork, new category)",
+  "text": "Identity provider (demo identities are hooks, as everywhere in this repo)"
+ },
+ {
+  "section": "Remainder Singleton 61 \u2014 Health & Wellness L1 (1 fork)",
+  "text": "Home sleep-test dispatch & device initialization engine: dispatching home diagnostic devices to patients and initializing them (the fork's own headline function; the records substrate holds none of the device pipeline)"
+ },
+ {
+  "section": "Remainder Singleton 61 \u2014 Health & Wellness L1 (1 fork)",
+  "text": "Sleep study results collection & provider review: collecting study data and test results for clinician review \u2014 clinical content, Extended by construction in this category (the EEG singleton's precedent); the substrate cannot hold it, and its measurement records are caller-recorded administration values only"
+ },
+ {
+  "section": "Remainder Singleton 62 \u2014 Human Resources L1 (1 fork)",
+  "text": "Workforce scheduling & call-scheduling engine: the fork's whole function (deciding who works when, in advance, for healthcare organizations) \u2014 it matches none of the category's 25 families and is named here rather than forced into one; the automation machinery behind the fork's one claim is this engine's, not a separate item"
+ },
+ {
+  "section": "Remainder Singleton 63 \u2014 Research L1 (1 fork)",
+  "text": "Systematic review automation engine (living systematic reviews)"
+ },
+ {
+  "section": "Remainder Singleton 63 \u2014 Research L1 (1 fork)",
+  "text": "Literature search-strategy execution"
+ },
+ {
+  "section": "Remainder Singleton 63 \u2014 Research L1 (1 fork)",
+  "text": "Title/abstract & full-text screening pipeline"
+ },
+ {
+  "section": "Remainder Singleton 63 \u2014 Research L1 (1 fork)",
+  "text": "Data extraction from studies"
+ },
+ {
+  "section": "Remainder Singleton 63 \u2014 Research L1 (1 fork)",
+  "text": "Quality assessment & regulator verification support"
+ },
+ {
+  "section": "Remainder Singleton 63 \u2014 Research L1 (1 fork)",
+  "text": "Review protocol creation"
+ },
+ {
+  "section": "Remainder Singleton 63 \u2014 Research L1 (1 fork)",
+  "text": "Meta-analysis export"
+ },
+ {
+  "section": "Remainder Singleton 63 \u2014 Research L1 (1 fork)",
+  "text": "Shared dictionary management"
+ },
+ {
+  "section": "Remainder Singleton 63 \u2014 Research L1 (1 fork)",
+  "text": "Project / team / role administration for review programs (\"management of projects, teams, roles\" is the noun in its text, not the verb the taxonomy's family wants)"
+ },
+ {
+  "section": "Remainder Singleton 63 \u2014 Research L1 (1 fork)",
+  "text": "Customizable review workflows"
+ },
+ {
+  "section": "Remainder Singleton 63 \u2014 Research L1 (1 fork)",
+  "text": "Human-in-the-loop AI suggestion surface"
+ },
+ {
+  "section": "Remainder Singleton 64 \u2014 Storage L2 (1 fork, new category)",
+  "text": "Archived payload storage plane: storing the actual archived content (the Core holds metadata records only \u2014 no field can hold a subject, body, or content)"
+ },
+ {
+  "section": "Remainder Singleton 64 \u2014 Storage L2 (1 fork, new category)",
+  "text": "Archive ingest pipeline: capturing messages into the archive"
+ },
+ {
+  "section": "Remainder Singleton 64 \u2014 Storage L2 (1 fork, new category)",
+  "text": "Full-text content indexing & search engine (discovery records in the Core carry no free-text query field by design)"
+ },
+ {
+  "section": "Remainder Singleton 64 \u2014 Storage L2 (1 fork, new category)",
+  "text": "Encryption & decryption engine (the encryption family is Extended; the build performs no cryptography \u2014 its custody records are Core)"
+ },
+ {
+  "section": "Remainder Singleton 64 \u2014 Storage L2 (1 fork, new category)",
+  "text": "Key management hardware & premise equipment"
+ },
+ {
+  "section": "Remainder Singleton 64 \u2014 Storage L2 (1 fork, new category)",
+  "text": "Retrieval delivery transport & export file production"
+ },
+ {
+  "section": "Remainder Singleton 64 \u2014 Storage L2 (1 fork, new category)",
+  "text": "Supervision review console & workflow engine"
+ },
+ {
+  "section": "Remainder Singleton 64 \u2014 Storage L2 (1 fork, new category)",
+  "text": "Policy enforcement execution (enforcement records are Core; nothing executes)"
+ },
+ {
+  "section": "Remainder Singleton 64 \u2014 Storage L2 (1 fork, new category)",
+  "text": "Mail platform & directory connectors"
+ },
+ {
+  "section": "Remainder Singleton 64 \u2014 Storage L2 (1 fork, new category)",
+  "text": "Disposition execution: destroying the payload itself (the Core's disposition is a derivation-gated record)"
+ },
+ {
+  "section": "Remainder Singleton 65 \u2014 Storage L3-adjacent (1 fork)",
+  "text": "Backup & recovery engine: the fork's headline function (it retires the category's backup absence in substance on this fork's own words; it produces no claim, because the taxonomy is the founding fork's archive vocabulary)"
+ },
+ {
+  "section": "Remainder Singleton 65 \u2014 Storage L3-adjacent (1 fork)",
+  "text": "Anomaly detection & alerting engine"
+ },
+ {
+  "section": "Remainder Singleton 65 \u2014 Storage L3-adjacent (1 fork)",
+  "text": "Granular data remediation engine"
+ },
+ {
+  "section": "Remainder Singleton 65 \u2014 Storage L3-adjacent (1 fork)",
+  "text": "Workload protection connectors"
+ },
+ {
+  "section": "Remainder Singleton 65 \u2014 Storage L3-adjacent (1 fork)",
+  "text": "Management console (the fork's command-center surface)"
+ },
+ {
+  "section": "Remainder Singleton 65 \u2014 Storage L3-adjacent (1 fork)",
+  "text": "SaaS operations automation"
+ },
+ {
+  "section": "Remainder Singleton 65 \u2014 Storage L3-adjacent (1 fork)",
+  "text": "Hybrid cloud synchronization engine"
+ },
+ {
+  "section": "Untiered Set 1 \u2014 Cybersecurity & Risk Management (27 forks, tier null)",
+  "text": "AI / ML security engines (13 claimants)"
+ },
+ {
+  "section": "Untiered Set 1 \u2014 Cybersecurity & Risk Management (27 forks, tier null)",
+  "text": "Detection engines & staffed SOC operations (9)"
+ },
+ {
+  "section": "Untiered Set 1 \u2014 Cybersecurity & Risk Management (27 forks, tier null)",
+  "text": "Identity provider products (8)"
+ },
+ {
+  "section": "Untiered Set 1 \u2014 Cybersecurity & Risk Management (27 forks, tier null)",
+  "text": "SOAR / response automation execution (7)"
+ },
+ {
+  "section": "Untiered Set 1 \u2014 Cybersecurity & Risk Management (27 forks, tier null)",
+  "text": "Endpoint management agents (5)"
+ },
+ {
+  "section": "Untiered Set 1 \u2014 Cybersecurity & Risk Management (27 forks, tier null)",
+  "text": "EDR / XDR platforms (4)"
+ },
+ {
+  "section": "Untiered Set 1 \u2014 Cybersecurity & Risk Management (27 forks, tier null)",
+  "text": "Threat intelligence platforms (3)"
+ },
+ {
+  "section": "Untiered Set 1 \u2014 Cybersecurity & Risk Management (27 forks, tier null)",
+  "text": "Network enforcement planes (3)"
+ },
+ {
+  "section": "Untiered Set 1 \u2014 Cybersecurity & Risk Management (27 forks, tier null)",
+  "text": "Insider-risk / DLP engines (3)"
+ },
+ {
+  "section": "Untiered Set 1 \u2014 Cybersecurity & Risk Management (27 forks, tier null)",
+  "text": "Log / telemetry pipelines (3)"
+ },
+ {
+  "section": "Untiered Set 1 \u2014 Cybersecurity & Risk Management (27 forks, tier null)",
+  "text": "Identity proofing & fraud engines (2)"
+ },
+ {
+  "section": "Untiered Set 1 \u2014 Cybersecurity & Risk Management (27 forks, tier null)",
+  "text": "CSPM / CNAPP / SSPM platforms (2)"
+ },
+ {
+  "section": "Untiered Set 1 \u2014 Cybersecurity & Risk Management (27 forks, tier null)",
+  "text": "Application security testing engines (2)"
+ },
+ {
+  "section": "Untiered Set 1 \u2014 Cybersecurity & Risk Management (27 forks, tier null)",
+  "text": "Phishing simulation & training platforms (2)"
+ },
+ {
+  "section": "Untiered Set 1 \u2014 Cybersecurity & Risk Management (27 forks, tier null)",
+  "text": "Encryption & key-management platform layer (the build performs no cryptography; the platform layer includes the SC-13 note)"
+ },
+ {
+  "section": "Untiered Set 3 \u2014 Governance, Risk, and Compliance (GRC) (15 forks, tier null)",
+  "text": "Automated evidence collection & validation engine"
+ },
+ {
+  "section": "Untiered Set 3 \u2014 Governance, Risk, and Compliance (GRC) (15 forks, tier null)",
+  "text": "Continuous-monitoring feeds & scanner integrations"
+ },
+ {
+  "section": "Untiered Set 3 \u2014 Governance, Risk, and Compliance (GRC) (15 forks, tier null)",
+  "text": "Vulnerability scanning engine"
+ },
+ {
+  "section": "Untiered Set 3 \u2014 Governance, Risk, and Compliance (GRC) (15 forks, tier null)",
+  "text": "Automated KSI validation"
+ },
+ {
+  "section": "Untiered Set 3 \u2014 Governance, Risk, and Compliance (GRC) (15 forks, tier null)",
+  "text": "Posture & risk scoring engines (the claiming forks' own engines \u2014 this category computes no scores anywhere, and the set's posture remains counts only)"
+ },
+ {
+  "section": "Untiered Set 3 \u2014 Governance, Risk, and Compliance (GRC) (15 forks, tier null)",
+  "text": "Hosted enclave & PaaS operations"
+ },
+ {
+  "section": "Untiered Set 3 \u2014 Governance, Risk, and Compliance (GRC) (15 forks, tier null)",
+  "text": "FedRAMP package generation"
+ },
+ {
+  "section": "Untiered Set 3 \u2014 Governance, Risk, and Compliance (GRC) (15 forks, tier null)",
+  "text": "Policy lifecycle engine"
+ },
+ {
+  "section": "Untiered Set 3 \u2014 Governance, Risk, and Compliance (GRC) (15 forks, tier null)",
+  "text": "Agentic workflow execution"
+ },
+ {
+  "section": "Untiered Set 3 \u2014 Governance, Risk, and Compliance (GRC) (15 forks, tier null)",
+  "text": "AI control-narrative & assessment-response generation"
+ },
+ {
+  "section": "Untiered Set 3 \u2014 Governance, Risk, and Compliance (GRC) (15 forks, tier null)",
+  "text": "Data-integration connector engine"
+ },
+ {
+  "section": "Untiered Set 3 \u2014 Governance, Risk, and Compliance (GRC) (15 forks, tier null)",
+  "text": "Fork excess: healthcare quality suite; AI/ML governance evaluation engine; digital-twin OSCAL analysis engine; no-code BPM platform"
+ },
+ {
+  "section": "Untiered Set 2 \u2014 Operations Management (20 forks, tier null)",
+  "text": "CMMS/EAM depth (computerized maintenance management and enterprise asset management engines)"
+ },
+ {
+  "section": "Untiered Set 2 \u2014 Operations Management (20 forks, tier null)",
+  "text": "Manufacturing execution & ERP/MRP"
+ },
+ {
+  "section": "Untiered Set 2 \u2014 Operations Management (20 forks, tier null)",
+  "text": "Procurement & sourcing platforms"
+ },
+ {
+  "section": "Untiered Set 2 \u2014 Operations Management (20 forks, tier null)",
+  "text": "Contract execution management"
+ },
+ {
+  "section": "Untiered Set 2 \u2014 Operations Management (20 forks, tier null)",
+  "text": "EV charging network management"
+ },
+ {
+  "section": "Untiered Set 2 \u2014 Operations Management (20 forks, tier null)",
+  "text": "Real-estate/facilities portfolio platform"
+ },
+ {
+  "section": "Untiered Set 2 \u2014 Operations Management (20 forks, tier null)",
+  "text": "Kiosk & locker access management"
+ },
+ {
+  "section": "Untiered Set 2 \u2014 Operations Management (20 forks, tier null)",
+  "text": "AI assistants & agents"
+ },
+ {
+  "section": "Untiered Set 2 \u2014 Operations Management (20 forks, tier null)",
+  "text": "Supply-chain risk & payments orchestration"
+ },
+ {
+  "section": "Untiered Set 4 \u2014 Artificial Intelligence (AI) (9 forks, tier null)",
+  "text": "Learned inference: the models themselves (four claimants in this set; the build's inference surface remains a labeled reference stub, never a model)"
+ },
+ {
+  "section": "Untiered Set 4 \u2014 Artificial Intelligence (AI) (9 forks, tier null)",
+  "text": "Agentic workflow execution engines"
+ },
+ {
+  "section": "Untiered Set 4 \u2014 Artificial Intelligence (AI) (9 forks, tier null)",
+  "text": "Voice & speech AI engines"
+ },
+ {
+  "section": "Untiered Set 4 \u2014 Artificial Intelligence (AI) (9 forks, tier null)",
+  "text": "Model serving & inference infrastructure"
+ },
+ {
+  "section": "Untiered Set 4 \u2014 Artificial Intelligence (AI) (9 forks, tier null)",
+  "text": "Document understanding, summarization & report generation"
+ },
+ {
+  "section": "Untiered Set 4 \u2014 Artificial Intelligence (AI) (9 forks, tier null)",
+  "text": "Knowledge-base / retrieval (RAG) engines"
+ },
+ {
+  "section": "Untiered Set 4 \u2014 Artificial Intelligence (AI) (9 forks, tier null)",
+  "text": "Evaluation & benchmarking engines"
+ },
+ {
+  "section": "Untiered Set 4 \u2014 Artificial Intelligence (AI) (9 forks, tier null)",
+  "text": "Vertical workflow applications (public-records generation, human-services case work, constituent contact center)"
+ },
+ {
+  "section": "Untiered Set 5 \u2014 Data Management (8 forks, tier null)",
+  "text": "AI/ML engines (six claimants in this set; the build computes nothing learned)"
+ },
+ {
+  "section": "Untiered Set 5 \u2014 Data Management (8 forks, tier null)",
+  "text": "Vector database & embedding index engine"
+ },
+ {
+  "section": "Untiered Set 5 \u2014 Data Management (8 forks, tier null)",
+  "text": "Document processing engines (OCR, classification, deduplication)"
+ },
+ {
+  "section": "Untiered Set 5 \u2014 Data Management (8 forks, tier null)",
+  "text": "Petabyte-scale warehouse & analytics engine"
+ },
+ {
+  "section": "Untiered Set 5 \u2014 Data Management (8 forks, tier null)",
+  "text": "Enterprise architecture graph platform"
+ },
+ {
+  "section": "Untiered Set 5 \u2014 Data Management (8 forks, tier null)",
+  "text": "Policy enforcement plane & ABAC engine"
+ },
+ {
+  "section": "Untiered Set 5 \u2014 Data Management (8 forks, tier null)",
+  "text": "Managed file transfer transport"
+ },
+ {
+  "section": "Untiered Set 5 \u2014 Data Management (8 forks, tier null)",
+  "text": "Archive, eDiscovery & FOIA production, including disposition execution (the build records schedules; it executes nothing)"
+ },
+ {
+  "section": "Untiered Set 5 \u2014 Data Management (8 forks, tier null)",
+  "text": "Search indexing engine"
+ },
+ {
+  "section": "Untiered Set 5 \u2014 Data Management (8 forks, tier null)",
+  "text": "Query & visualization engines"
+ },
+ {
+  "section": "Untiered Set 6 \u2014 Development Tools (7 forks, tier null)",
+  "text": "AI code-generation & AI-agent development engines"
+ },
+ {
+  "section": "Untiered Set 6 \u2014 Development Tools (7 forks, tier null)",
+  "text": "Cloud development environments (hosted IDE workspaces)"
+ },
+ {
+  "section": "Untiered Set 6 \u2014 Development Tools (7 forks, tier null)",
+  "text": "Legacy modernization & code-conversion engines"
+ },
+ {
+  "section": "Untiered Set 6 \u2014 Development Tools (7 forks, tier null)",
+  "text": "CI/CD governance & promotion-gating engines"
+ },
+ {
+  "section": "Untiered Set 6 \u2014 Development Tools (7 forks, tier null)",
+  "text": "Secrets & sensitive-data detection engines"
+ },
+ {
+  "section": "Untiered Set 6 \u2014 Development Tools (7 forks, tier null)",
+  "text": "Pipeline governance configuration records (the category's standing records-configuration gap, claimed in substance here)"
+ },
+ {
+  "section": "Untiered Set 6 \u2014 Development Tools (7 forks, tier null)",
+  "text": "Fork excess: customer support platform"
+ },
+ {
+  "section": "Untiered Set 7 \u2014 Construction (6 forks, tier null)",
+  "text": "Construction commissioning engine"
+ },
+ {
+  "section": "Untiered Set 7 \u2014 Construction (6 forks, tier null)",
+  "text": "Cost estimating engines & benchmark cost data"
+ },
+ {
+  "section": "Untiered Set 7 \u2014 Construction (6 forks, tier null)",
+  "text": "AI technical document review, UFGS checking & cited question-answering"
+ },
+ {
+  "section": "Untiered Set 7 \u2014 Construction (6 forks, tier null)",
+  "text": "Document control platform depth"
+ },
+ {
+  "section": "Untiered Set 7 \u2014 Construction (6 forks, tier null)",
+  "text": "GIS/spatial platform & asset location tracking"
+ },
+ {
+  "section": "Untiered Set 7 \u2014 Construction (6 forks, tier null)",
+  "text": "Permitting, licensing & right-of-way management"
+ },
+ {
+  "section": "Untiered Set 7 \u2014 Construction (6 forks, tier null)",
+  "text": "Asset management platform (no taxonomy family exists for it in this category)"
+ },
+ {
+  "section": "Untiered Set 7 \u2014 Construction (6 forks, tier null)",
+  "text": "Workflow automation engines"
+ },
+ {
+  "section": "Untiered Set 7 \u2014 Construction (6 forks, tier null)",
+  "text": "Prevailing-wage determination depth (the standing gap; claimed in name only in this set)"
+ },
+ {
+  "section": "Untiered Set 8 \u2014 Education & Training (6 forks, tier null)",
+  "text": "Phishing simulation & security-awareness engines"
+ },
+ {
+  "section": "Untiered Set 8 \u2014 Education & Training (6 forks, tier null)",
+  "text": "Training content delivery & LMS engines"
+ },
+ {
+  "section": "Untiered Set 8 \u2014 Education & Training (6 forks, tier null)",
+  "text": "Competency management & assessment-cycle engines"
+ },
+ {
+  "section": "Untiered Set 8 \u2014 Education & Training (6 forks, tier null)",
+  "text": "Notification & reminder engine (a founding gap that gains a claimant in this set)"
+ },
+ {
+  "section": "Untiered Set 8 \u2014 Education & Training (6 forks, tier null)",
+  "text": "Medical education management engines"
+ },
+ {
+  "section": "Untiered Set 8 \u2014 Education & Training (6 forks, tier null)",
+  "text": "Simulation-center operations engines"
+ },
+ {
+  "section": "Untiered Set 8 \u2014 Education & Training (6 forks, tier null)",
+  "text": "Digital adoption & in-app guidance engines"
+ },
+ {
+  "section": "Untiered Set 8 \u2014 Education & Training (6 forks, tier null)",
+  "text": "AI assistants & guidance bots"
+ },
+ {
+  "section": "Untiered Set 8 \u2014 Education & Training (6 forks, tier null)",
+  "text": "Directory integration & provisioning sync"
+ },
+ {
+  "section": "Untiered Set 8 \u2014 Education & Training (6 forks, tier null)",
+  "text": "Career development & clinical ladder engines"
+ },
+ {
+  "section": "Untiered Set 8 \u2014 Education & Training (6 forks, tier null)",
+  "text": "Credentialing & accreditation workflow engines"
+ },
+ {
+  "section": "Untiered Set 8 \u2014 Education & Training (6 forks, tier null)",
+  "text": "Deterministic scoring & proficiency-rating engines"
+ },
+ {
+  "section": "Untiered Set 8 \u2014 Education & Training (6 forks, tier null)",
+  "text": "Recruiting/HCM suite"
+ },
+ {
+  "section": "Untiered Set 8 \u2014 Education & Training (6 forks, tier null)",
+  "text": "Talent & marketplace matching (no claimant in this set)"
+ },
+ {
+  "section": "Untiered Set 8 \u2014 Education & Training (6 forks, tier null)",
+  "text": "Remote proctoring & identity proofing (no claimant in this set)"
+ },
+ {
+  "section": "Untiered Set 8 \u2014 Education & Training (6 forks, tier null)",
+  "text": "Hosting / multi-tenancy platform layer"
+ },
+ {
+  "section": "Untiered Set 9 \u2014 Research (4 forks, tier null)",
+  "text": "Market & policy intelligence platform"
+ },
+ {
+  "section": "Untiered Set 9 \u2014 Research (4 forks, tier null)",
+  "text": "Contract award & subaward analysis"
+ },
+ {
+  "section": "Untiered Set 9 \u2014 Research (4 forks, tier null)",
+  "text": "Entity / relationship-graph analytics"
+ },
+ {
+  "section": "Untiered Set 9 \u2014 Research (4 forks, tier null)",
+  "text": "Saved-search, alerting & entity-tracking"
+ },
+ {
+  "section": "Untiered Set 9 \u2014 Research (4 forks, tier null)",
+  "text": "Clinical-trial EDC (electronic data capture)"
+ },
+ {
+  "section": "Untiered Set 9 \u2014 Research (4 forks, tier null)",
+  "text": "eConsent & eCOA"
+ },
+ {
+  "section": "Untiered Set 9 \u2014 Research (4 forks, tier null)",
+  "text": "Clinical-trial reporting & analytics"
+ },
+ {
+  "section": "Untiered Set 9 \u2014 Research (4 forks, tier null)",
+  "text": "Identity resolution & background investigation"
+ },
+ {
+  "section": "Untiered Set 9 \u2014 Research (4 forks, tier null)",
+  "text": "Ongoing identity monitoring"
+ },
+ {
+  "section": "Untiered Set 9 \u2014 Research (4 forks, tier null)",
+  "text": "Supplier discovery & market research"
+ },
+ {
+  "section": "Untiered Set 9 \u2014 Research (4 forks, tier null)",
+  "text": "Supplier intelligence & capabilities data"
+ },
+ {
+  "section": "Untiered Set 10 \u2014 System Administration (4 forks, tier null)",
+  "text": "Observability & monitoring engines"
+ },
+ {
+  "section": "Untiered Set 10 \u2014 System Administration (4 forks, tier null)",
+  "text": "AI root-cause & predictive analytics"
+ },
+ {
+  "section": "Untiered Set 10 \u2014 System Administration (4 forks, tier null)",
+  "text": "IT service management systems"
+ },
+ {
+  "section": "Untiered Set 10 \u2014 System Administration (4 forks, tier null)",
+  "text": "IT operations & asset discovery engines"
+ },
+ {
+  "section": "Untiered Set 10 \u2014 System Administration (4 forks, tier null)",
+  "text": "Endpoint management operations"
+ },
+ {
+  "section": "Untiered Set 10 \u2014 System Administration (4 forks, tier null)",
+  "text": "Vulnerability detection & remediation prioritization"
+ },
+ {
+  "section": "Untiered Set 10 \u2014 System Administration (4 forks, tier null)",
+  "text": "Capacity, optimization & chargeback reporting engines"
+ },
+ {
+  "section": "Untiered Set 10 \u2014 System Administration (4 forks, tier null)",
+  "text": "Platform layer (multi-tenancy, encryption at rest, TLS by deployment)"
+ },
+ {
+  "section": "Untiered Set 11 \u2014 Health & Wellness (3 forks, tier null)",
+  "text": "Patient engagement channels & content (one claimant in this set)"
+ },
+ {
+  "section": "Untiered Set 11 \u2014 Health & Wellness (3 forks, tier null)",
+  "text": "Survey instruments depth"
+ },
+ {
+  "section": "Untiered Set 11 \u2014 Health & Wellness (3 forks, tier null)",
+  "text": "EMR/EHR integration engines"
+ },
+ {
+  "section": "Untiered Set 11 \u2014 Health & Wellness (3 forks, tier null)",
+  "text": "Insurance verification, benefits discovery & claims adjudication engines"
+ },
+ {
+  "section": "Untiered Set 11 \u2014 Health & Wellness (3 forks, tier null)",
+  "text": "Care coordination & navigation platform depth"
+ },
+ {
+  "section": "Untiered Set 11 \u2014 Health & Wellness (3 forks, tier null)",
+  "text": "Integrated scheduling engines"
+ },
+ {
+  "section": "Untiered Set 11 \u2014 Health & Wellness (3 forks, tier null)",
+  "text": "At-home therapy delivery & session-metrics analytics"
+ },
+ {
+  "section": "Untiered Set 11 \u2014 Health & Wellness (3 forks, tier null)",
+  "text": "Telehealth visit support (wording present in one fork; no family exists for it at this tier, and the L2 retirement does not transfer)"
+ },
+ {
+  "section": "Untiered Set 11 \u2014 Health & Wellness (3 forks, tier null)",
+  "text": "Measurement & outcome analytics engines"
+ },
+ {
+  "section": "Untiered Set 11 \u2014 Health & Wellness (3 forks, tier null)",
+  "text": "Clinical decision support"
+ },
+ {
+  "section": "Untiered Set 11 \u2014 Health & Wellness (3 forks, tier null)",
+  "text": "Device connectivity / sync pipelines"
+ },
+ {
+  "section": "Untiered Set 11 \u2014 Health & Wellness (3 forks, tier null)",
+  "text": "AI/ML models & personalization engines"
+ },
+ {
+  "section": "Untiered Set 11 \u2014 Health & Wellness (3 forks, tier null)",
+  "text": "Automation / workflow engines"
+ },
+ {
+  "section": "Untiered Set 11 \u2014 Health & Wellness (3 forks, tier null)",
+  "text": "Multi-device native apps"
+ },
+ {
+  "section": "Untiered Set 11 \u2014 Health & Wellness (3 forks, tier null)",
+  "text": "Hosting platform layer"
+ },
+ {
+  "section": "Untiered Set 12 \u2014 Legal & Policy (3 forks, tier null)",
+  "text": "Legal research, evidence mapping & citation-validation engine"
+ },
+ {
+  "section": "Untiered Set 12 \u2014 Legal & Policy (3 forks, tier null)",
+  "text": "FOIA case management system of record"
+ },
+ {
+  "section": "Untiered Set 12 \u2014 Legal & Policy (3 forks, tier null)",
+  "text": "Discovery platform app builder / extensibility"
+ },
+ {
+  "section": "Untiered Set 13 \u2014 Communication (2 forks, tier null)",
+  "text": "Video conferencing, meetings & real-time media transport engines (no taxonomy family exists for them in this category; the standing absence continues)"
+ },
+ {
+  "section": "Untiered Set 13 \u2014 Communication (2 forks, tier null)",
+  "text": "Voice/telephony media, call-control & endpoint interoperability engines"
+ },
+ {
+  "section": "Untiered Set 13 \u2014 Communication (2 forks, tier null)",
+  "text": "Presence & availability services"
+ },
+ {
+  "section": "Untiered Set 13 \u2014 Communication (2 forks, tier null)",
+  "text": "Desktop sharing & collaboration content sharing"
+ },
+ {
+  "section": "Untiered Set 13 \u2014 Communication (2 forks, tier null)",
+  "text": "Crisis-communication orchestration & multi-channel alerting engines"
+ },
+ {
+  "section": "Untiered Set 13 \u2014 Communication (2 forks, tier null)",
+  "text": "Personnel accountability, location/status visibility & field-reporting platform"
+ },
+ {
+  "section": "Untiered Set 13 \u2014 Communication (2 forks, tier null)",
+  "text": "Inter-organizational federated communication networks"
+ },
+ {
+  "section": "Untiered Set 13 \u2014 Communication (2 forks, tier null)",
+  "text": "Voicemail & unified messaging engines"
+ },
+ {
+  "section": "Untiered Set 13 \u2014 Communication (2 forks, tier null)",
+  "text": "Real channel transports (the build's transport is a labelled reference stub, never a real channel)"
+ },
+ {
+  "section": "Untiered Set 13 \u2014 Communication (2 forks, tier null)",
+  "text": "Platform layer (encryption at rest, TLS-when-configured, multi-tenancy, demo identities not an IdP)"
+ },
+ {
+  "section": "Untiered Set 15 \u2014 Fleet Management (2 forks, tier null)",
+  "text": "Live telematics & GPS streaming (two claimants in this set; the founding named absence gains claimants)"
+ },
+ {
+  "section": "Untiered Set 15 \u2014 Fleet Management (2 forks, tier null)",
+  "text": "Integration engines & external connectors"
+ },
+ {
+  "section": "Untiered Set 15 \u2014 Fleet Management (2 forks, tier null)",
+  "text": "Video-based safety & dash-camera analytics engines"
+ },
+ {
+  "section": "Untiered Set 15 \u2014 Fleet Management (2 forks, tier null)",
+  "text": "IoT device telemetry ingestion & equipment/environmental monitoring engines"
+ },
+ {
+  "section": "Untiered Set 15 \u2014 Fleet Management (2 forks, tier null)",
+  "text": "Alerting & notification engines"
+ },
+ {
+  "section": "Untiered Set 15 \u2014 Fleet Management (2 forks, tier null)",
+  "text": "Driver workflow & compliance applications"
+ },
+ {
+  "section": "Untiered Set 15 \u2014 Fleet Management (2 forks, tier null)",
+  "text": "Dashboarding front-ends beyond registry reporting"
+ },
+ {
+  "section": "Untiered Set 15 \u2014 Fleet Management (2 forks, tier null)",
+  "text": "Platform layer"
+ },
+ {
+  "section": "Untiered Set 14 \u2014 Content Management System (CMS) (2 forks, tier null)",
+  "text": "Enterprise search indexing engines (one claimant, at catalogue weight)"
+ },
+ {
+  "section": "Untiered Set 14 \u2014 Content Management System (CMS) (2 forks, tier null)",
+  "text": "Rendering & templating engines and visual/WYSIWYG editors"
+ },
+ {
+  "section": "Untiered Set 14 \u2014 Content Management System (CMS) (2 forks, tier null)",
+  "text": "Personalization / experience optimization"
+ },
+ {
+  "section": "Untiered Set 14 \u2014 Content Management System (CMS) (2 forks, tier null)",
+  "text": "Editorial workflow engines beyond lifecycle mechanics"
+ },
+ {
+  "section": "Untiered Set 14 \u2014 Content Management System (CMS) (2 forks, tier null)",
+  "text": "Document & media versioning depth"
+ },
+ {
+  "section": "Untiered Set 14 \u2014 Content Management System (CMS) (2 forks, tier null)",
+  "text": "Document generation engines (one fork's whole function, with no family in the taxonomy)"
+ },
+ {
+  "section": "Untiered Set 14 \u2014 Content Management System (CMS) (2 forks, tier null)",
+  "text": "Low-code application builders & form engines"
+ },
+ {
+  "section": "Untiered Set 14 \u2014 Content Management System (CMS) (2 forks, tier null)",
+  "text": "Identity federation / SSO services (IdP)"
+ },
+ {
+  "section": "Untiered Set 14 \u2014 Content Management System (CMS) (2 forks, tier null)",
+  "text": "Multi-site & multilingual site operations depth"
+ },
+ {
+  "section": "Untiered Set 14 \u2014 Content Management System (CMS) (2 forks, tier null)",
+  "text": "Headless delivery & integration engines"
+ },
+ {
+  "section": "Untiered Set 14 \u2014 Content Management System (CMS) (2 forks, tier null)",
+  "text": "CDN / delivery network and runtime site serving"
+ },
+ {
+  "section": "Untiered Set 14 \u2014 Content Management System (CMS) (2 forks, tier null)",
+  "text": "Platform hosting itself"
+ },
+ {
+  "section": "Untiered Set 14 \u2014 Content Management System (CMS) (2 forks, tier null)",
+  "text": "Platform layer (encryption at rest, TLS-when-configured, multi-tenancy, demo identities not an IdP)"
+ },
+ {
+  "section": "Untiered Set 17 \u2014 Law Enforcement (2 forks, tier null)",
+  "text": "Command-and-control & operational planning platform"
+ },
+ {
+  "section": "Untiered Set 17 \u2014 Law Enforcement (2 forks, tier null)",
+  "text": "Real-time team coordination & encrypted messaging engines / real transports"
+ },
+ {
+  "section": "Untiered Set 17 \u2014 Law Enforcement (2 forks, tier null)",
+  "text": "GPS mapping & location services"
+ },
+ {
+  "section": "Untiered Set 17 \u2014 Law Enforcement (2 forks, tier null)",
+  "text": "Operational risk-assessment tooling"
+ },
+ {
+  "section": "Untiered Set 17 \u2014 Law Enforcement (2 forks, tier null)",
+  "text": "After-action documentation & reporting engine"
+ },
+ {
+  "section": "Untiered Set 17 \u2014 Law Enforcement (2 forks, tier null)",
+  "text": "Blockchain intelligence & multi-chain investigation graph engine"
+ },
+ {
+  "section": "Untiered Set 17 \u2014 Law Enforcement (2 forks, tier null)",
+  "text": "All-source fusion & lead/identity resolution"
+ },
+ {
+  "section": "Untiered Set 17 \u2014 Law Enforcement (2 forks, tier null)",
+  "text": "AI investigation models"
+ },
+ {
+  "section": "Untiered Set 17 \u2014 Law Enforcement (2 forks, tier null)",
+  "text": "Workspace multi-tenancy / platform layer"
+ },
+ {
+  "section": "Untiered Set 16 \u2014 Human Resources (2 forks, tier null)",
+  "text": "Payroll processing engine"
+ },
+ {
+  "section": "Untiered Set 16 \u2014 Human Resources (2 forks, tier null)",
+  "text": "Expense tracking & management"
+ },
+ {
+  "section": "Untiered Set 16 \u2014 Human Resources (2 forks, tier null)",
+  "text": "Project time tracking & resource scheduling engines"
+ },
+ {
+  "section": "Untiered Set 16 \u2014 Human Resources (2 forks, tier null)",
+  "text": "Employee communications & messaging platform"
+ },
+ {
+  "section": "Untiered Set 16 \u2014 Human Resources (2 forks, tier null)",
+  "text": "Document management services"
+ },
+ {
+  "section": "Untiered Set 16 \u2014 Human Resources (2 forks, tier null)",
+  "text": "Identity federation / privileged access management services (the documented side of an IdP; the build ships hooks, not an IdP)"
+ },
+ {
+  "section": "Untiered Set 16 \u2014 Human Resources (2 forks, tier null)",
+  "text": "Security operations engines: continuous monitoring, vulnerability management, incident response (documented by one fork; the build performs none of them)"
+ },
+ {
+  "section": "Untiered Set 18 \u2014 Marketing & Sales (2 forks, tier null; NEW CATEGORY)",
+  "text": "AI models / agents (the build contains no inference)"
+ },
+ {
+  "section": "Untiered Set 18 \u2014 Marketing & Sales (2 forks, tier null; NEW CATEGORY)",
+  "text": "Live opportunity-discovery feeds & contract-search engines"
+ },
+ {
+  "section": "Untiered Set 18 \u2014 Marketing & Sales (2 forks, tier null; NEW CATEGORY)",
+  "text": "Market intelligence & competitor / forecast analytics"
+ },
+ {
+  "section": "Untiered Set 18 \u2014 Marketing & Sales (2 forks, tier null; NEW CATEGORY)",
+  "text": "Proposal generation engine"
+ },
+ {
+  "section": "Untiered Set 18 \u2014 Marketing & Sales (2 forks, tier null; NEW CATEGORY)",
+  "text": "Workflow execution engine (the build's workflow registry records only and never executes)"
+ },
+ {
+  "section": "Untiered Set 18 \u2014 Marketing & Sales (2 forks, tier null; NEW CATEGORY)",
+  "text": "Segmentation engine"
+ },
+ {
+  "section": "Untiered Set 18 \u2014 Marketing & Sales (2 forks, tier null; NEW CATEGORY)",
+  "text": "Email sending transport & deliverability"
+ },
+ {
+  "section": "Untiered Set 18 \u2014 Marketing & Sales (2 forks, tier null; NEW CATEGORY)",
+  "text": "Bounce/complaint handling automation, campaign template management, preference management (each named in a fork's certified-services record but absent from its description \u2014 gaps resting on the description rule, caveat recorded in the union spec)"
+ },
+ {
+  "section": "Untiered Set 18 \u2014 Marketing & Sales (2 forks, tier null; NEW CATEGORY)",
+  "text": "Platform layer"
+ },
+ {
+  "section": "Untiered Set 19 \u2014 Network Management (2 forks, tier null)",
+  "text": "Network access authentication / RADIUS & 802.1X engine"
+ },
+ {
+  "section": "Untiered Set 19 \u2014 Network Management (2 forks, tier null)",
+  "text": "Cloud PKI & certificate lifecycle engine"
+ },
+ {
+  "section": "Untiered Set 19 \u2014 Network Management (2 forks, tier null)",
+  "text": "Wi-Fi ITDR engine"
+ },
+ {
+  "section": "Untiered Set 19 \u2014 Network Management (2 forks, tier null)",
+  "text": "Captive portal & guest / roaming access services"
+ },
+ {
+  "section": "Untiered Set 19 \u2014 Network Management (2 forks, tier null)",
+  "text": "Satellite terminal provisioning & connectivity management"
+ },
+ {
+  "section": "Untiered Set 19 \u2014 Network Management (2 forks, tier null)",
+  "text": "Fleet mapping & geospatial awareness platform"
+ },
+ {
+  "section": "Untiered Set 19 \u2014 Network Management (2 forks, tier null)",
+  "text": "Incident lifecycle management engine"
+ },
+ {
+  "section": "Untiered Set 19 \u2014 Network Management (2 forks, tier null)",
+  "text": "GPU orchestration (fork excess)"
+ },
+ {
+  "section": "Untiered Set 19 \u2014 Network Management (2 forks, tier null)",
+  "text": "Platform layer"
+ },
+ {
+  "section": "Untiered Set 20 \u2014 Talent Development (2 forks, tier null; NEW CATEGORY)",
+  "text": "Live development delivery (the sessions behind a program; their form is unnamed by either description)"
+ },
+ {
+  "section": "Untiered Set 20 \u2014 Talent Development (2 forks, tier null; NEW CATEGORY)",
+  "text": "Assessment instruments and their administration / scoring engines"
+ },
+ {
+  "section": "Untiered Set 20 \u2014 Talent Development (2 forks, tier null; NEW CATEGORY)",
+  "text": "Analytics / trend-computation engine behind the dashboard"
+ },
+ {
+  "section": "Untiered Set 20 \u2014 Talent Development (2 forks, tier null; NEW CATEGORY)",
+  "text": "AI models (no fork describes one \u2014 registered for completeness only, not as a claimed-function gap)"
+ },
+ {
+  "section": "Untiered Set 20 \u2014 Talent Development (2 forks, tier null; NEW CATEGORY)",
+  "text": "Platform layer (the AWS GovCloud substrate one fork names)"
+ },
+ {
+  "section": "Untiered Set 21 \u2014 Talent Management (2 forks, tier null)",
+  "text": "Assessment proctoring & integrity services"
+ },
+ {
+  "section": "Untiered Set 21 \u2014 Talent Management (2 forks, tier null)",
+  "text": "Experiential technical learning platform"
+ },
+ {
+  "section": "Untiered Set 21 \u2014 Talent Management (2 forks, tier null)",
+  "text": "Integration & API services layer"
+ },
+ {
+  "section": "Untiered Set 21 \u2014 Talent Management (2 forks, tier null)",
+  "text": "Labor exchange platform"
+ },
+ {
+  "section": "Untiered Set 21 \u2014 Talent Management (2 forks, tier null)",
+  "text": "Workforce case management system"
+ },
+ {
+  "section": "Untiered Set 21 \u2014 Talent Management (2 forks, tier null)",
+  "text": "Employer services platform"
+ },
+ {
+  "section": "Untiered Set 21 \u2014 Talent Management (2 forks, tier null)",
+  "text": "Unemployment insurance integration & administration"
+ },
+ {
+  "section": "Untiered Set 21 \u2014 Talent Management (2 forks, tier null)",
+  "text": "Labor market information service"
+ },
+ {
+  "section": "Untiered Set 23 \u2014 Customer Relations Management (CRM) (1 fork, tier null)",
+  "text": "AI proposal-generation engine (the AI function this fork's description actually names)"
+ },
+ {
+  "section": "Untiered Set 23 \u2014 Customer Relations Management (CRM) (1 fork, tier null)",
+  "text": "Pipeline forecasting engine"
+ },
+ {
+  "section": "Untiered Set 23 \u2014 Customer Relations Management (CRM) (1 fork, tier null)",
+  "text": "Document automation engine (an asserted function with no family in the taxonomy \u2014 recorded as untaxonomied, no family stretched to hold it)"
+ },
+ {
+  "section": "Untiered Set 23 \u2014 Customer Relations Management (CRM) (1 fork, tier null)",
+  "text": "Integration connector engines"
+ },
+ {
+  "section": "Untiered Set 23 \u2014 Customer Relations Management (CRM) (1 fork, tier null)",
+  "text": "Platform layer"
+ },
+ {
+  "section": "Untiered Set 24 \u2014 Finance (1 fork, tier null)",
+  "text": "Expense reporting, approval & reimbursement workflow engine (this fork's described function entire, named by no taxonomy family \u2014 registered in its own name)"
+ },
+ {
+  "section": "Untiered Set 24 \u2014 Finance (1 fork, tier null)",
+  "text": "Travel & expense policy enforcement engine"
+ },
+ {
+  "section": "Untiered Set 24 \u2014 Finance (1 fork, tier null)",
+  "text": "Platform layer"
+ },
+ {
+  "section": "Untiered Set 25 \u2014 Learning Management (1 fork, tier null)",
+  "text": "Virtual school / virtual classroom delivery runtime"
+ },
+ {
+  "section": "Untiered Set 25 \u2014 Learning Management (1 fork, tier null)",
+  "text": "Real-time collaboration & session recording services"
+ },
+ {
+  "section": "Untiered Set 25 \u2014 Learning Management (1 fork, tier null)",
+  "text": "Course material authoring workspace"
+ },
+ {
+  "section": "Untiered Set 25 \u2014 Learning Management (1 fork, tier null)",
+  "text": "Media & shared-materials repository service"
+ },
+ {
+  "section": "Untiered Set 25 \u2014 Learning Management (1 fork, tier null)",
+  "text": "Assignment, evaluation & grading engine (the fork's asserted function, registered as specified-not-implemented \u2014 the build still computes no score)"
+ },
+ {
+  "section": "Untiered Set 25 \u2014 Learning Management (1 fork, tier null)",
+  "text": "User administration service"
+ },
+ {
+  "section": "Untiered Set 25 \u2014 Learning Management (1 fork, tier null)",
+  "text": "Platform layer"
+ },
+ {
+  "section": "Untiered Set 26 \u2014 Manufacturing (1 fork, tier null; NEW CATEGORY)",
+  "text": "Engineering-intent transformation engine (including the manufacturing-intelligence engine entire)"
+ },
+ {
+  "section": "Untiered Set 26 \u2014 Manufacturing (1 fork, tier null; NEW CATEGORY)",
+  "text": "Platform layer"
+ },
+ {
+  "section": "Untiered Set 27 \u2014 Media (1 fork, tier null; NEW CATEGORY)",
+  "text": "Live video transport & routing engine (the network itself)"
+ },
+ {
+  "section": "Untiered Set 27 \u2014 Media (1 fork, tier null; NEW CATEGORY)",
+  "text": "Stream encryption implementation (the build performs no cryptography; route records carry a caller-stated label only)"
+ },
+ {
+  "section": "Untiered Set 27 \u2014 Media (1 fork, tier null; NEW CATEGORY)",
+  "text": "Device control channel (control actions are recorded, never sent)"
+ },
+ {
+  "section": "Untiered Set 27 \u2014 Media (1 fork, tier null; NEW CATEGORY)",
+  "text": "Stream optimization engine"
+ },
+ {
+  "section": "Untiered Set 27 \u2014 Media (1 fork, tier null; NEW CATEGORY)",
+  "text": "Status & monitoring telemetry collection"
+ },
+ {
+  "section": "Untiered Set 27 \u2014 Media (1 fork, tier null; NEW CATEGORY)",
+  "text": "Platform layer (hosting and the single-browser-window console)"
+ },
+ {
+  "section": "Untiered Set 28 \u2014 Travel Management (1 fork, tier null)",
+  "text": "Travel data aggregation & analytics engine (this fork's described function entire, registered in its own name, not from a claim)"
+ },
+ {
+  "section": "Untiered Set 28 \u2014 Travel Management (1 fork, tier null)",
+  "text": "Platform layer"
+ },
+ {
+  "section": "No-Signal Addition \u2014 Health & Wellness L2 (CirrusMD, FR2220549818)",
+  "text": "Chat-based virtual care channel (telehealth delivery now has two substance-claimants across two channels: video visits and chat)"
+ },
+ {
+  "section": "No-Signal Addition \u2014 Operations Management L2 (SMX Elevate IAP, F1603077867)",
+  "text": "Cloud platform operations & lifecycle management engine"
+ },
+ {
+  "section": "No-Signal Addition \u2014 Operations Management L2 (SMX Elevate IAP, F1603077867)",
+  "text": "Built-in compliance automation & policy guardrails engine"
+ },
+ {
+  "section": "No-Signal Addition \u2014 Learning Management L2 (Skillsoft Private Cloud, F1207261443)",
+  "text": "Private-cloud hosting & managed delivery service (a vendor-operated dedicated deployment of the learning platform; the offering's entire classified function, registered from the classified function, not from a claim)"
+ },
+ {
+  "section": "No-Signal Addition \u2014 Health & Wellness Untiered Set (HealthEdge, FR2700137029)",
+  "text": "Health plan claims adjudication & pricing engine"
+ },
+ {
+  "section": "No-Signal Addition \u2014 Health & Wellness Untiered Set (HealthEdge, FR2700137029)",
+  "text": "Benefits administration platform"
+ },
+ {
+  "section": "No-Signal Addition \u2014 Health & Wellness Untiered Set (HealthEdge, FR2700137029)",
+  "text": "Care & utilization management workflows for health plans"
+ },
+ {
+  "section": "No-Signal Addition \u2014 Health & Wellness Untiered Set (HealthEdge, FR2700137029)",
+  "text": "Regulatory compliance reporting engine for payers (from the fork's regulatory sentence, explicitly not a control claim)"
+ },
+ {
+  "section": "Remainder Group 4 \u2014 Cloud Infrastructure & Hosting L2 (6 forks)",
+  "text": "Hosting platform / provisioning & orchestration engines (the platform layer entire)"
+ },
+ {
+  "section": "Remainder Group 4 \u2014 Cloud Infrastructure & Hosting L2 (6 forks)",
+  "text": "Elastic Stack hosting engine"
+ },
+ {
+  "section": "Remainder Group 4 \u2014 Cloud Infrastructure & Hosting L2 (6 forks)",
+  "text": "Template execution engine (the build's template registry stores settings verbatim and never executes)"
+ },
+ {
+  "section": "Remainder Group 4 \u2014 Cloud Infrastructure & Hosting L2 (6 forks)",
+  "text": "Monitoring & observability engines"
+ },
+ {
+  "section": "Remainder Group 4 \u2014 Cloud Infrastructure & Hosting L2 (6 forks)",
+  "text": "Platform security service engines"
+ },
+ {
+  "section": "Remainder Group 4 \u2014 Cloud Infrastructure & Hosting L2 (6 forks)",
+  "text": "Backup execution & disaster-recovery orchestration"
+ },
+ {
+  "section": "Remainder Group 4 \u2014 Cloud Infrastructure & Hosting L2 (6 forks)",
+  "text": "Identity provider / SSO / directory services (IA-2 stays with the embedding organization)"
+ },
+ {
+  "section": "Remainder Group 4 \u2014 Cloud Infrastructure & Hosting L2 (6 forks)",
+  "text": "Encryption implementation & key management"
+ },
+ {
+  "section": "Remainder Group 4 \u2014 Cloud Infrastructure & Hosting L2 (6 forks)",
+  "text": "Operations execution engines"
+ },
+ {
+  "section": "Remainder Group 4 \u2014 Cloud Infrastructure & Hosting L2 (6 forks)",
+  "text": "Invoicing / billing & FinOps engine (no fork states any amount, rate, or fee, so the build holds no money shape anywhere)"
+ },
+ {
+  "section": "Remainder Group 4 \u2014 Cloud Infrastructure & Hosting L2 (6 forks)",
+  "text": "AI recommendation engine"
+ },
+ {
+  "section": "Remainder Group 4 \u2014 Cloud Infrastructure & Hosting L2 (6 forks)",
+  "text": "Application resource management engine"
+ },
+ {
+  "section": "Remainder Group 4 \u2014 Cloud Infrastructure & Hosting L2 (6 forks)",
+  "text": "CDN operation"
+ },
+ {
+  "section": "Remainder Group 4 \u2014 Cloud Infrastructure & Hosting L2 (6 forks)",
+  "text": "Assessment & Authorization support services"
+ },
+ {
+  "section": "Remainder Group 4 \u2014 Cloud Infrastructure & Hosting L2 (6 forks)",
+  "text": "Residency & personnel verification"
+ },
+ {
+  "section": "Remainder Group 5 \u2014 Library Systems L1 (2 forks)",
+  "text": "Discovery & delivery service"
+ },
+ {
+  "section": "Remainder Group 5 \u2014 Library Systems L1 (2 forks)",
+  "text": "Digital preservation system"
+ },
+ {
+  "section": "Remainder Group 5 \u2014 Library Systems L1 (2 forks)",
+  "text": "Course resource list management"
+ },
+ {
+  "section": "Remainder Group 5 \u2014 Library Systems L1 (2 forks)",
+  "text": "Research activities platform"
+ },
+ {
+  "section": "Remainder Group 5 \u2014 Library Systems L1 (2 forks)",
+  "text": "Knowledge management system"
+ },
+ {
+  "section": "Remainder Group 5 \u2014 Library Systems L1 (2 forks)",
+  "text": "Accessible delivery & rendering"
+ },
+ {
+  "section": "Remainder Group 5 \u2014 Library Systems L1 (2 forks)",
+  "text": "Automation engine"
+ },
+ {
+  "section": "Remainder Group 5 \u2014 Library Systems L1 (2 forks)",
+  "text": "Integration transport"
+ },
+ {
+  "section": "Remainder Group 5 \u2014 Library Systems L1 (2 forks)",
+  "text": "Identity provider (IA-2 stays with the embedding organization)"
+ },
+ {
+  "section": "Remainder Group 6 \u2014 Cloud Infrastructure & Hosting L3-adjacent (6 forks)",
+  "text": "Stronger authentication (IA-2(1)/(2)/IA-5) \u2014 an identity-provider property, not taken as an uplift"
+ },
+ {
+  "section": "Remainder Group 6 \u2014 Cloud Infrastructure & Hosting L3-adjacent (6 forks)",
+  "text": "FIPS-validated cryptography (SC-13)"
+ },
+ {
+  "section": "Remainder Group 6 \u2014 Cloud Infrastructure & Hosting L3-adjacent (6 forks)",
+  "text": "Encryption at rest (SC-28)"
+ },
+ {
+  "section": "Remainder Group 6 \u2014 Cloud Infrastructure & Hosting L3-adjacent (6 forks)",
+  "text": "Audit retention (AU-11)"
+ },
+ {
+  "section": "Remainder Group 6 \u2014 Cloud Infrastructure & Hosting L3-adjacent (6 forks)",
+  "text": "Session lock / termination (AC-11/AC-12)"
+ },
+ {
+  "section": "Singleton 66 \u2014 Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)",
+  "text": "Suite platform & portal presentation layer"
+ },
+ {
+  "section": "Singleton 66 \u2014 Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)",
+  "text": "Identity federation service"
+ },
+ {
+  "section": "Singleton 66 \u2014 Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)",
+  "text": "Integration execution & orchestration runtime (the build's registries store records and never execute)"
+ },
+ {
+  "section": "Singleton 66 \u2014 Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)",
+  "text": "API gateway runtime"
+ },
+ {
+  "section": "Singleton 66 \u2014 Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)",
+  "text": "Data lake & schema-on-read engine"
+ },
+ {
+  "section": "Singleton 66 \u2014 Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)",
+  "text": "Financial close & consolidation engine"
+ },
+ {
+  "section": "Singleton 66 \u2014 Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)",
+  "text": "Source-to-settle execution engine"
+ },
+ {
+  "section": "Singleton 66 \u2014 Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)",
+  "text": "Expense policy enforcement & fraud detection engine"
+ },
+ {
+  "section": "Singleton 66 \u2014 Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)",
+  "text": "Manufacturing production engine"
+ },
+ {
+  "section": "Singleton 66 \u2014 Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)",
+  "text": "Supplier exchange network"
+ },
+ {
+  "section": "Singleton 66 \u2014 Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)",
+  "text": "Talent management engine"
+ },
+ {
+  "section": "Singleton 66 \u2014 Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)",
+  "text": "Workforce scheduling optimizer"
+ },
+ {
+  "section": "Singleton 66 \u2014 Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)",
+  "text": "Payroll calculation engine"
+ },
+ {
+  "section": "Singleton 66 \u2014 Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)",
+  "text": "Business intelligence platform"
+ },
+ {
+  "section": "Singleton 66 \u2014 Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)",
+  "text": "Enterprise performance management engine"
+ },
+ {
+  "section": "Singleton 66 \u2014 Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)",
+  "text": "Governance, risk & compliance engine"
+ },
+ {
+  "section": "Singleton 66 \u2014 Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)",
+  "text": "Platform layer: the fork's GovCloud / ITAR / CJIS / HIPAA posture does not transfer to the build; FIPS-validated cryptography (SC-13) is not claimed"
+ }
+]
