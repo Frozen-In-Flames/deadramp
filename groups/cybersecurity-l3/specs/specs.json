@@ -626,5 +626,113 @@
   ],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR1719759604/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1719759604"
+ },
+ {
+  "fork_id": "FR2304757473A",
+  "vendor": "Cisco Systems Inc.",
+  "product": "Cisco Security Cloud for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "Cisco Security Cloud for Government provides cloud-based security solutions with multiple component products.\r\n\r\n \r\n\r\n\r\n\r\nCisco Umbrella for Government \r\n\r\nCisco Umbrella for Government delivers advanced, cloud-native cybersecurity, ensuring protection and compliance for government agencies to support their mission. It significantly uplevels government cybersecurity, offering comprehensive protection that meets the unique needs of government agencies. Cisco Umbrella for Government provides a comprehensive security suite with DNS-layer security and Secure Internet Gateway (SIG) capabilities, such as secure web gateway (SWG) , cloud-delivered firewall and intrusion prevention (Snort IPS), cloud access security broker (CASB), and data loss prevention (DLP), and integration with CISA Protective DNS. The feature set is comparable to the Cisco Umbrella product in use by over 30,000 Enterprise customers. Cisco Secure Access for Government includes more robust SSE capabilities than Cisco Umbrella for Government. Agencies looking for ZTNA and a high-performance architecture should choose Secure Access for Government.\r\n\r\n \r\n\r\n\r\n\r\nCisco Secure Access for Government\r\n\r\nCisco Secure Access for Government is a comprehensive Security Service Edge solution grounded in Zero Trust, that empowers Federal, State, and Local agencies to secure their workforce and data, simplify operations, and advance their mission with confidence. Its adaptive security capabilities, powered by Cisco Talos and AI, enable real-time threat detection, behavioral analysis, and predictive defense\u2014ensuring proactive protection of your people and data against evolving cyber risks. With a comprehensive zero trust approach and a unique unified client, users gain seamless, secure access to critical applications across devices and locations\u2014without compromising usability or performance. When paired with Catalyst\u00ae SD-WAN, Cisco Secure Access for Government delivers a holistic SASE solution. Enhanced integration with Catalyst SD-WAN will be available in 2026.\r\n\r\nKey capabilities include:\r\n\r\nA single platform for IT teams that centralizes management, streamlines policy enforcement, and reduces overhead. AI-driven automation accelerates response times and reduces human error, which integrates with  solutions like Duo and Cisco SD-WAN will enable a compliant, Zero Trust architecture tailored for public sector needs.\r\nCloud-native and continuously updated, Cisco Secure Access removes hardware complexity and scales effortlessly to meet the demands of dynamic government environments. The result: stronger security, improved user experience, and simplified operations\u2014all built to protect the mission and serve the public. \r\nSecure Access for Government includes the following: Secure Internet Access (SIA) and Secure Private Access (SPA). Both products have Essentials and Advantage SKUs.\r\nOffers robust protection against modern-day cyber threats through Zero Trust Network Access, DNS security, Secure Web Gateway (SWG), Data Loss Prevention (DLP), Cloud-Delivered Firewall (FWaaS), Cloud Access Security Broker (CASB), VPN as-a-Service (VPNaaS), Advanced Malware Protection, and Talos\u00ae Threat Intelligence capabilities.\r\nExtends DNS security with an Integration with the Cybersecurity and Infrastructure Security Agency (CISA\u2019s) Protective DNS (PDNS).\r\n \r\n\r\n\r\n\r\nCisco Security Cloud Control\r\n\r\nCisco Security Cloud Control is a security platform that allows you to manage your security products and achieve security outcomes from a single integrated interface. Integrating security products in the platform is a streamlined experience. Within Security Cloud Control, user and group management occurs at the platform level. Roles are assigned to these users and groups to define their privileges for administering Security Cloud Control and the integrated products. Navigation between products and tools is intuitive and standardized with a common platform menu and toolbar for all integrated products.\r\n\r\n\r\n\r\n\r\nCisco Security Cloud Control - Firewall Management for Government \r\n\r\nCisco Security Cloud Control - Firewall Management for Government delivers cloud-native firewall policy and device management through a unified management plane accessible through an intuitive web-based console. It enables centralized, scalable, and secure orchestration of Cisco next-generation firewalls (NGFWs) \u2014 including ASA and Secure Firewall Threat Defense (FTD) devices \u2014 across hybrid, cloud, and on-premises environments. With real-time visibility into traffic and threats, automated policy and object updates, and zero-touch provisioning for remote deployments - Security Cloud Control Firewall Management for Government reduces operational complexity for IT teams while strengthening cyber resilience and enabling secure modernization across mission-critical infrastructure. This product will now also include AIOps features like Policy Analyzer & Optimizer, Feature adoption, and a summary dashboard for customers to ensuring faster and accurate anomaly detection using Artificial Intelligence. A SAL Eventing License Utilization Dashboard will also be available to the customers.\r\n\r\n \r\n\r\n\r\n\r\nCisco Multicloud Defense for Government \r\n\r\nCisco Multicloud Defense for Government is designed to provide consistent, automated protection across multicloud environments, including AWS, Azure, GCP, and OCI. It integrates network security with multicloud networking, offering multi-directional protection to stop inbound attacks, prevent lateral movement, and block data exfiltration. With its centralized SaaS control plane, Cisco Multicloud Defense simplifies security management, enabling organizations to create and enforce unified security policies across all cloud environments in real-time. By leveraging advanced features such as dynamic policy management, continuous asset discovery, and automation, Cisco Multicloud Defense empowers organizations to reduce complexity, enhance operational efficiency, and maintain robust security across their multi-cloud infrastructure.\r\n\r\n \r\n\r\n\r\n\r\nCisco Secure Email Threat Defense for Government\r\n\r\nCisco Secure Email Threat Defense for Government exemplifies our ongoing commitment to delivering trusted, government-grade email security for agencies, contractors, and organizations handling regulated or sensitive data. Secure Email Threat Defense, a cloud-scale advanced email security layer, harnesses AI powered detections to provide comprehensive protection against advanced email threats, integrated as an API-based supplemental control or with the addition of new pre-delivery inline gateway protection.\r\n\r\nBeyond the governance and compliance benefits, Cisco Secure Email Threat Defense for Government delivers a set of advanced protection capabilities that align directly with real-world email threat risks \u2014 especially for organizations that are particularly sensitive to BEC, phishing, QR Code/Quishing Detection, brand impersonation, or high-risk personnel.\r\n\r\n \r\n\r\n\r\n\r\nDuo Federal\r\n\r\nDuo\u2019s Federal Editions can verify the identity of users with secure and easy to use two-factor authentication methods that helps public sector entities satisfy NIST 800-63-3 and 53/63/171 authentication requirements. In addition to verifying users\u2019 identities, Duo\u2019s solution checks the security health of every device authenticating into the environment, at the time of access. Admins can use Duo to enforce stricter device and application access policies, such as blocking login requests based on location or anonymous networks. Duo ensures only trusted users and devices can access protected applications. This complete security solution prevents modern attackers that often target multiple areas - including credential theft and the exploitation of known software vulnerabilities affecting outdated software versions.",
+  "functions_claimed": [
+   {
+    "function_id": "detection_response",
+    "function": "Threat detection, SOC & managed response (SIEM/SOAR/MDR)",
+    "evidence": "Its adaptive security capabilities, powered by Cisco Talos and AI, enable real-time threat detection, behavioral analysis, and predictive defense\u2014ensuring proactive protection of your people and data against evolving cyber risks."
+   },
+   {
+    "function_id": "threat_intel",
+    "function": "Threat intelligence",
+    "evidence": "Offers robust protection against modern-day cyber threats through Zero Trust Network Access, DNS security, Secure Web Gateway (SWG), Data Loss Prevention (DLP), Cloud-Delivered Firewall (FWaaS), Cloud Access Security Broker (CASB), VPN as-a-Service (VPNaaS), Advanced Malware Protection, and Talos\u00ae Threat Intelligence capabilities."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "Duo Federal \n \nDuo\u2019s Federal Editions can verify the identity of users with secure and easy to use two-factor authentication methods that helps public sector entities satisfy NIST 800-63-3 and 53/63/171 authentication requirements."
+   },
+   {
+    "function_id": "network_security",
+    "function": "Network security, segmentation & zero-trust access",
+    "evidence": "Cisco Umbrella for Government provides a comprehensive security suite with DNS-layer security and Secure Internet Gateway (SIG) capabilities, such as secure web gateway (SWG) , cloud-delivered firewall and intrusion prevention (Snort IPS), cloud access security broker (CASB), and data loss prevention (DLP), and integration with CISA Protective DNS."
+   },
+   {
+    "function_id": "phishing_awareness",
+    "function": "Phishing defense & security awareness training",
+    "evidence": "Beyond the governance and compliance benefits, Cisco Secure Email Threat Defense for Government delivers a set of advanced protection capabilities that align directly with real-world email threat risks \u2014 especially for organizations that are particularly sensitive to BEC, phishing, QR Code/Quishing Detection, brand impersonation, or high-risk personnel."
+   },
+   {
+    "function_id": "insider_dlp",
+    "function": "Insider risk, DLP & data security",
+    "evidence": "Cisco Umbrella for Government provides a comprehensive security suite with DNS-layer security and Secure Internet Gateway (SIG) capabilities, such as secure web gateway (SWG) , cloud-delivered firewall and intrusion prevention (Snort IPS), cloud access security broker (CASB), and data loss prevention (DLP), and integration with CISA Protective DNS."
+   },
+   {
+    "function_id": "asset_inventory",
+    "function": "Asset inventory, visibility & attack surface",
+    "evidence": "By leveraging advanced features such as dynamic policy management, continuous asset discovery, and automation, Cisco Multicloud Defense empowers organizations to reduce complexity, enhance operational efficiency, and maintain robust security across their multi-cloud infrastructure."
+   },
+   {
+    "function_id": "ai_ml",
+    "function": "AI/ML-powered analytics & anomaly detection",
+    "evidence": "Its adaptive security capabilities, powered by Cisco Talos and AI, enable real-time threat detection, behavioral analysis, and predictive defense\u2014ensuring proactive protection of your people and data against evolving cyber risks."
+   },
+   {
+    "function_id": "reporting_dashboards",
+    "function": "Dashboards, reporting & analytics",
+    "evidence": "With real-time visibility into traffic and threats, automated policy and object updates, and zero-touch provisioning for remote deployments - Security Cloud Control Firewall Management for Government reduces operational complexity for IT teams while strengthening cyber resilience and enabling secure modernization across mission-critical infrastructure."
+   },
+   {
+    "function_id": "access_control_feature",
+    "function": "Access control & least privilege (platform feature)",
+    "evidence": "Key capabilities include: \n \nA single platform for IT teams that centralizes management, streamlines policy enforcement, and reduces overhead."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs & integrations",
+    "evidence": "Cisco Umbrella for Government provides a comprehensive security suite with DNS-layer security and Secure Internet Gateway (SIG) capabilities, such as secure web gateway (SWG) , cloud-delivered firewall and intrusion prevention (Snort IPS), cloud access security broker (CASB), and data loss prevention (DLP), and integration with CISA Protective DNS."
+   },
+   {
+    "function_id": "automation",
+    "function": "Automation & orchestration",
+    "evidence": "It enables centralized, scalable, and secure orchestration of Cisco next-generation firewalls (NGFWs) \u2014 including ASA and Secure Firewall Threat Defense (FTD) devices \u2014 across hybrid, cloud, and on-premises environments."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2304757473A/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2304757473A"
+ },
+ {
+  "fork_id": "FR1714261912",
+  "vendor": "XTec, Incorporated",
+  "product": "AuthentX Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cybersecurity & Risk Management",
+  "description": "The AuthentX Cloud provides end-to-end identity, credential and access management to US Federal agencies, quasi-federal agencies, and private organizations that require interoperable identity authentication services with Federal systems and infrastructure. The primary use of AuthentX in the Federal government is to satisfy Homeland Security Presidential Directive #12 (HSPD-12), Federal Identity, Credential and Access Management (FICAM) and related policies, mandates and standards from the Office of Management and Budget (OMB), Department of Homeland Security (DHS), and National Institute of Standards and Technology (NIST) Special Publications (SP). Therefore, the AuthentX Cloud solution offered is aligned with federal mandates and high assurance requirements regarding cybersecurity, multi-factor authentication, Federal interoperability, and secure solutions for consolidation of data centers. The AuthentX Cloud consists of COTS hardware, software, and network components assembled and connected in multiple data centers. Hardware includes the XTec AuthentX XaNode appliances, the XTec AuthentX Secure Appliance (ASA), enrollment and issuance peripherals, the XTec XNode and XTec card readers, and Thales SafeNet Hardware Security Modules (HSM's). The software of the AuthentX system is built entirely from source to produce the AuthentX Linux Operating System (OS), customized embedded Microsoft OS, the AuthentX Enrollment Manager application, as well as other software packages.\n\nXTec's AuthentX Cloud also provides Hardware Security Module (HSM) as a Service using Thales Trusted Cyber Technologies' (TCT) flagship Luna T-Series HSM.  This cloud-based HSM, known as Luna as a Service, allows customers to generate, store, protect and manage cryptographic keys used to secure sensitive data and critical applications.  The Luna T-Series HSM at the core of Luna as a Service is FIPS 140-2, Level 3 certified, and is approved for use in National Security Systems PKI.  XTec's AuthentX Cloud Luna as a Service is offered using three (3) models:\n\n- Luna as a Service Dedicated HSM provides customers full cryptographic control of the entire HSM.\n- Luna as a Service Managed HSM provides customers HSM cryptographic capabilities in a scalable, cost-effective model. Administrative tasks such as provisioning, configuring, monitoring, and patching are all performed by U.S.-based Luna as a Service engineers.\n- Luna as a Service Credential System provides customers a cloud service model of Thales TCT's Luna Credential System (LCS).  LCS offers multi-factor authentication by maintaining user credentials in a centralized hardware device that is securely accessible through the cloud service by endpoints in a distributed network.  LCS is a multi-purpose, secure credential system ideally suited for an environment in which the endpoints, or users cannot use a traditional authentication token.",
+  "functions_claimed": [
+   {
+    "function_id": "identity_access",
+    "function": "Identity, authentication & privileged access",
+    "evidence": "The AuthentX Cloud provides end-to-end identity, credential and access management to US Federal agencies, quasi-federal agencies, and private organizations that require interoperable identity authentication services with Federal systems and infrastructure."
+   },
+   {
+    "function_id": "encryption_feature",
+    "function": "Encryption & key management",
+    "evidence": "This cloud-based HSM, known as Luna as a Service, allows customers to generate, store, protect and manage cryptographic keys used to secure sensitive data and critical applications."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1714261912/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1714261912"
  }
 ]

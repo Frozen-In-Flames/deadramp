@@ -22,6 +22,16 @@ Two modules are byte-identical to the parent (`__init__.py`,
 `access`, `store`, `service`, `__main__`). No vendor code, text, or
 branding appears anywhere.
 
+**Remainder additions:** 2 previously uncategorized High forks
+joined this group under remainder unit `addition:cybersecurity-l3`
+— Cisco Security Cloud for Government and XTec AuthentX Cloud —
+spec'd under the same 25-family taxonomy verbatim (14 new claims;
+74 across 18 forks), with **no change to the core** (`src/`
+byte-identical) and 11 new tests. See `ADDENDUM.md` for the claim
+table, the one wording-artifact correction, the core-delta
+decisions, and the new gaps (a firewall management plane, HSM as
+a Service, an inline email security platform).
+
 ## The core (11 functions, at High)
 
 1. **Asset inventory** — systems under management with owner, labels,
@@ -127,11 +137,13 @@ the operation back; see AU-5 above).
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-**236 tests, all passing** — the L2 parent's 194-test suite (carried
+**247 tests, all passing** — the L2 parent's 194-test suite (carried
 up; three files adapted where the uplift changed behavior, listed in
 `tests/README.md`) plus 42 new tests for the High uplift: the audit
 hash chain and tamper detection, fail-closed writes, audit query,
-and logon lockout. `tests/README.md` documents the layout, the
+and logon lockout — and, since the remainder additions, 11 more in
+`tests/test_additions.py` pinning the 2 added spec sheets and
+exercising the substrate under their claims. `tests/README.md` documents the layout, the
 negative controls, and the mutation verification record (the
 severity-blind scoring mutant was run against this suite: 30
 failures, file restored byte-identical).
@@ -181,8 +193,9 @@ Full traceability, including which tests cite which family, is in
 ## Layout
 
 ```
-specs/specs.json    one sheet per fork (16), claims with evidence
+specs/specs.json    one sheet per fork (18), claims with evidence
 UNION-SPEC.md       ranking, core definition, baseline, traceability
+ADDENDUM.md         the 2 remainder additions: claims, deltas, gaps
 src/cyber/          the package (stdlib only)
 tests/              unittest suite + tests/README.md
 scratch/            the claim extractor used to build the spec sheets

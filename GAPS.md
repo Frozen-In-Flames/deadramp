@@ -1047,6 +1047,15 @@ New extended functions from the addition forks, specified in groups/operations-m
 
 Enlargements: integration connector engines & catalog +1 claimant at this tier (Tango; the original fork's separate out-of-scope integrations gap gains nothing); mobile applications & offline sync +1 by substance (FM:Systems). The addition gives the group its first taxonomy claim (group total 0 to 1).
 
+## Remainder Addition — Cybersecurity L3-adjacent (+2 forks)
+
+New extended functions from the addition forks, specified in groups/cybersecurity-l3/ADDENDUM.md, not implemented:
+- [ ] open — Firewall management & orchestration plane: NGFW policy / device management, zero-touch provisioning, AIOps policy analysis (Cisco)
+- [ ] open — HSM as a Service: cloud HSM & key-management service (AuthentX; distinct from the SC-13 platform gap; the fork's own FIPS 140-2 Level 3 HSM certification is its platform property and does not transfer to this build)
+- [ ] open — Inline email security platform (Cisco; named separately from the phishing family's simulation / training content)
+
+Enlargements of families already registered under Group 8: network enforcement planes +1 (Cisco, the group's largest network surface); identity products +2; DLP engines +1; AI / ML detection models +1; threat-intel feeds +1; SOAR / workflow automation +1; cloud / SaaS posture engines +1 by substance (CASB named twice, no posture phrasing). Posture / risk scoring engines explicitly gain no claimants, and neither addition fork claims risk scoring, so no computed score enters the enlarged build. One correction applied in the addition spec: a raw endpoint-management match was dropped because the sentence manages firewall appliances, a network function, not endpoints.
+
 ## Later groups
 
 Each group appends its section here when it ships.

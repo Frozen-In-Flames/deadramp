@@ -1,12 +1,22 @@
 # Tests — Cybersecurity & Risk Management L3-adjacent merged build
 
-236 tests, all passing, standard library only. From the group root:
+247 tests, all passing, standard library only. From the group root:
 
 ```
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-Expected: `Ran 236 tests ... OK`.
+Expected: `Ran 247 tests ... OK`.
+
+The original 236 are the shipped suite below; the last 11 are
+`test_additions.py`, added with the remainder additions
+(`../ADDENDUM.md`): spec integrity for the 2 appended sheets
+(membership against `remainder.json`, the literal claim table,
+the pinned endpoint_management correction and near-miss absences,
+verbatim evidence, census citations) plus one substrate case per
+addition fork at the High baseline (deterministic scoring,
+lifecycle, search, counts-only posture, hash-chain verification,
+and the auditor's denied ingest).
 
 ## Provenance
 
@@ -53,7 +63,8 @@ would.
 | `test_audit_query.py` | 12 | [L3] AU-7: query() filters (actor/action/target/since/until, inclusive bounds, composition), `GET /audit` parameter pass-through, analyst denied |
 | `test_lockout.py` | 6 | [L3] AC-7: lockout at threshold, `auth:locked` auditing, unknown-user lockout, per-user isolation, success resets counter, lock expiry |
 | `test_negative_control.py` | 5 | Negative control #1: severity-blind scoring mutant (same failure count as the L2 parent) |
-| **Total** | **236** | |
+| `test_additions.py` | 11 | Remainder additions (ADDENDUM): the 2 appended sheets pinned literally, the correction and near-misses as absences, census citations, per-fork substrate cases at High |
+| **Total** | **247** | |
 
 ## Negative controls
 
@@ -94,6 +105,16 @@ Group 4 procedure:
 
 The drill is repeatable: apply the same one-line replacement, rerun,
 observe the failures, restore, verify the hash.
+
+**Additions re-run (remainder unit `addition:cybersecurity-l3`):**
+the core was unchanged by the additions, so the same drill was
+re-run in this tree — **247 ran, 33 failed**: the shipped drill's
+30 plus exactly 3 from `test_additions.py` (both forks' substrate
+cases and the AuthentX auditor case, all tripping on the
+deterministic-score assertions). `store.py` was restored from the
+pre-mutation copy (`scratch/store.py.premutation-additions`) and
+verified SHA-256-identical (`1e58d852…`); the suite re-ran green
+at 247. Raw output: `scratch/additions_mutation_run.txt`.
 
 ## Interpretation notes
 
