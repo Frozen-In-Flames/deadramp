@@ -688,6 +688,16 @@ The fork's own substance is a virtualized-environment hosting platform, specifie
 
 The Group 26/27 category union's extended families (event detection & orchestration engines, automation execution engines, GRC platform, real-time channels, AI assistance, SLA policy engine, notification delivery, reporting / analytics engines) are already registered under Groups 26 and 27 and are not re-registered here. Named absences at every tier (not gaps): knowledge base articles; satisfaction / CSAT surveys. Baseline gaps at High: MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13 — the fork's "FIPS PUB 199 High" wording is an impact categorization, not a validated-module claim, and the build inherits neither reading); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Platform-layer: multi-tenancy (the fork is inherently multi-agency; the build is a single-tenant reference deployment); TLS only when configured; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: zero claims tag for this fork — its description's trailing catalogue of roughly twenty third-party hosted applications was excluded before matching (matching it would have manufactured six family hits, every one from another vendor's blurb), and its own prose is hosting-boundary prose; the source record does not even self-categorize the fork. All ten core functions are carried, not claimed, under the Merge Rule.
 
+## Singleton 43 — GRC L1 (1 fork)
+
+Extended functions new with this fork, specified in groups/grc-l1/UNION-SPEC.md, not implemented:
+- [ ] open — Questionnaire automation engine (a named activity in the fork's prose that no taxonomy family names)
+- [ ] open — Trust Center publication (customer-facing publication of the security program description / posture; core posture is internal counts)
+- [ ] open — Vendor risk assessment engine (evaluating / scoring vendors — the risk claim's engine remainder; the records are Core and no score is computed)
+- [ ] open — Continuous-monitoring engine & evidence-collection integrations (automated control checks and evidence collection from connected systems; overlaps Group 33's registered validation-engine and feed entries, named here from this fork's own claims)
+
+The Group 33 category union's extended families (automated evidence validation, posture / risk scoring engines, workflow automation engines, vulnerability scanning engine, automated KSI validation, FedRAMP authorization package generation, hosted enclave & PaaS operations) are already registered under Group 33 and are not re-registered here. Named absence (not a gap): policy management — no policy vocabulary in the fork's prose, the same absence as at L2. Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: the fork is FedRAMP Low (not LI-SaaS) and a FedRAMP 20x Class B Pilot participant, recorded as program context, not converted into claims; at L1 the audit trace holds on the FedRAMP Low side only (FAR 52.204-21 carries no audit practice), and no SI-7 claim is made.
+
 ## Later groups
 
 Each group appends its section here when it ships.

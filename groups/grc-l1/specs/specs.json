@@ -1,0 +1,43 @@
+[
+ {
+  "fork_id": "FR2525556241",
+  "vendor": "Vanta Inc.",
+  "product": "Vanta - Trust Management Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Low",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Governance, Risk, and Compliance (GRC)"
+  ],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "The Vanta Trust Management Platform provides customers with an end-to-end security and compliance automation suite that focuses on the following activities: continuous and automated governance, risk, and compliance (GRC), vendor risk management, questionnaire automation, and up-to-date security program description displayed on the customers' Trust Center website. In addition, Vanta works closely with customers and selected audit partners to help streamline compliance against security compliance frameworks such as System and Organization Controls (SOC) 2, International Organization for Standardization (ISO) 27001, ISO 42001, National Institute of Standards and Technology Artificial Intelligence Risk Management Framework (NIST AI RMF), CIS CSC, NIST CSF, FedRAMP, and more. Vanta serves as a continuous monitoring solution to ensure organizations reach and maintain a state of security.",
+  "functions_claimed": [
+   {
+    "function_id": "continuous_monitoring",
+    "function": "Continuous monitoring",
+    "evidence": "Vanta serves as a continuous monitoring solution to ensure organizations reach and maintain a state of security."
+   },
+   {
+    "function_id": "control_framework_compliance",
+    "function": "Control & framework compliance management",
+    "evidence": "The Vanta Trust Management Platform provides customers with an end-to-end security and compliance automation suite that focuses on the following activities: continuous and automated governance, risk, and compliance (GRC), vendor risk management, questionnaire automation, and up-to-date security program description displayed on the customers' Trust Center website."
+   },
+   {
+    "function_id": "risk_management",
+    "function": "Risk management",
+    "evidence": "The Vanta Trust Management Platform provides customers with an end-to-end security and compliance automation suite that focuses on the following activities: continuous and automated governance, risk, and compliance (GRC), vendor risk management, questionnaire automation, and up-to-date security program description displayed on the customers' Trust Center website."
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow & automation",
+    "evidence": "The Vanta Trust Management Platform provides customers with an end-to-end security and compliance automation suite that focuses on the following activities: continuous and automated governance, risk, and compliance (GRC), vendor risk management, questionnaire automation, and up-to-date security program description displayed on the customers' Trust Center website."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2525556241/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2525556241"
+ }
+]
