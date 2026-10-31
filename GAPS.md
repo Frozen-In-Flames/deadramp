@@ -1009,6 +1009,19 @@ New extended functions from the addition forks, specified in groups/collaboratio
 
 Enlargements of families already registered under Group 2: meetings / video media transport +1 (Webex); voice / telephony / contact center +1 (Webex); workflow / process-automation engines +1 (Webex, at wording-artifact weight); AI assistance / speech / analytics +1 (Webex, at wording-artifact weight); records & governance beyond the seed +1 (Huddle); task & project management beyond board cards +1 by substance (Huddle, claim did not fire). The encryption platform note gains no claimant. One addition fork claims zero families (IdeaScale: "collaboratively transform" is not a workspaces phrase; "project plans" is not project management), pinned in tests.
 
+## Remainder Addition — Health & Wellness L2 (+3 forks)
+
+New extended functions from the addition forks, specified in groups/health-wellness-l2/ADDENDUM.md, not implemented:
+- [ ] open — Telehealth media engine (GTS; this retires the group's standing telehealth named absence: GTS claims telehealth visits in its own words; the visit is a Core activity record, the media channel is the gap)
+- [ ] open — Store-and-forward clinical data service: labs / images / clinical data (GTS)
+- [ ] open — Medical coding engine / computer-assisted coding (Solventum; named separately from the coding step inside the adjudication gap, reasoning in the addendum)
+- [ ] open — Grouper / classification & reimbursement content services (Solventum)
+- [ ] open — Clinical documentation integrity tooling (Solventum)
+- [ ] open — Diagnostic report generation engine (Somnoware)
+- [ ] open — Therapy progress & risk-profile console (Somnoware; values are Core records; no risk profile is computed in this build)
+
+Enlargements by substance, no family claim fired, recorded as such: device connectivity / sync pipelines +GTS (RPM device integration); EMR / EHR integration engines +Somnoware; AI / ML models +Solventum and +Somnoware. Claims adjudication gains no claimant (Solventum's "reimbursement content" is a content service, gapped separately above). All three addition forks claim zero families under the taxonomy (built from the original five's glucose / CGM vocabulary), pinned in tests with near-misses itemized; the clinical-decision-support absence stands.
+
 ## Later groups
 
 Each group appends its section here when it ships.

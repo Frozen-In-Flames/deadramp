@@ -190,5 +190,59 @@
   ],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2210851632/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2210851632"
+ },
+ {
+  "fork_id": "FR2035860874",
+  "vendor": "Global Telehealth Services, inc.",
+  "product": "GTS VirtualHealth Platform (GTS-VP)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Health & Wellness",
+  "description": "The GTS-VP offers Customer Agencies a powerful, flexible and convenient solution to provide Remote Patient Monitoring (RPM), Real Time Telehealth visits, and Store and Forward Technology (labs, images, and clinical data) services. The GTS-VP connects healthcare providers, patients, and patient families to communicate healthcare information from remote patient monitoring tools and through video-teleconferencing. The GTS-VP integrates with RPM medical devices from most any manufacturer and can be readily configured to work across multiple disease types and chronic conditions. The GTS-VP is also designed to make use of existing agency workflows and business processes with the ability to expand to address conditions and incorporate devices and capabilities that have yet to be developed.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2035860874/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2035860874"
+ },
+ {
+  "fork_id": "FR2135915901",
+  "vendor": "Solventum",
+  "product": "Solventum RevCycle Health Services Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Health & Wellness",
+  "description": "RevCycle Health Services Platform (RHSP) is a platform which hosts and supports the operations of key Solventum software systems. These systems include (but are not limited to) Natural Language Processing (NLP) for automatic suggestion of CPT and ICD codes to assist with Computer Assisted Coding (CAC); GPCS (Grouper Plus Content Services) providing reliable, classification, grouping, edits and reimbursement content; Clinical Documentation Integrity (CDI); Enterprise Analytics reporting; worksheet services; clinician created document input; medical coding edits; medical evaluation and management; medical coding assistance system. RHSP utilizes robust AI-inclusive methodologies to create a comprehensive multi-service platform to derive medical codes, assist with medical terminology, and ease the provider workflow.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2135915901/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2135915901"
+ },
+ {
+  "fork_id": "FR2002367706",
+  "vendor": "Somnoware Healthcare Systems",
+  "product": "Somnoware",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Health & Wellness",
+  "description": "Somnoware delivers accelerated diagnosis and outcome management for patients with OSA and COPD through its cloud-based platform. Physicians can generate diagnostic reports for any sleep or pulmonary test instantly by leveraging Somnoware's clinical intelligence and integrations with all major diagnostic devices, EMR applications, and therapy manufacturers. Providers have real-time insights to patient CPAP therapy progress, risk profiles, and engagement metrics via Somnoware\u2019s Care Management Console.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2002367706/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2002367706"
  }
 ]

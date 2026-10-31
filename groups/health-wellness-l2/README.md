@@ -15,6 +15,20 @@ are FedRAMP Moderate (4 FedRAMP Certified, CuraPatient Agency
 Authorization In Process); 19 evidenced claims across the 5 spec
 sheets in `specs/specs.json`.
 
+**Remainder additions (unit `addition:health-wellness-l2`):** 3
+previously uncategorized forks — GTS VirtualHealth Platform
+(Global Telehealth Services, inc.), Solventum RevCycle Health
+Services Platform (Solventum), and Somnoware (Somnoware Healthcare
+Systems), all FedRAMP Certified / Moderate — are spec'd in
+`ADDENDUM.md` and appended to `specs/specs.json` (8 sheets). All 3
+claim **zero** families under the group's taxonomy applied verbatim
+(the patterns are the original five's literal phrases), pinned in
+tests with near-misses itemized; the group's claim total stays 19.
+The core is unchanged (`src/` byte-identical, 80 tests). One named
+absence is retired: GTS is a telehealth platform, so telehealth
+media leaves the absence list and is registered as a gap with a
+claimant (see the gap list below, item 9).
+
 It was written from that contract only: original code, no vendor
 code, assets, or branding from any sibling offering. Python 3,
 **standard library only**, no external dependencies (verified
@@ -236,9 +250,9 @@ There is no DELETE or PATCH route and no audit-mutation route.
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-67 tests, all passing at delivery. See `tests/README.md` for the
-coverage table, the negative control, and the mutation-verification
-drill record. A live smoke (`scratch/smoke.py`) drives the store and
+67 tests, all passing at delivery; 80 tests after the remainder
+additions. See `tests/README.md` for the coverage table, the
+negative control, and the mutation-verification drill record. A live smoke (`scratch/smoke.py`) drives the store and
 the HTTP service end to end: program → participant → enroll →
 measurement → plan with a past due date → derived status `overdue`
 (plan and enrollment) → completion → derived status `completed`; a
@@ -283,7 +297,7 @@ as registered:
 6. Automation / workflow engines
 7. Survey instruments depth
 8. Patient engagement channels & content
-9. Telehealth media (**0 claims — named absence**: no description claims video/virtual visits)
+9. Telehealth media (**named absence retired by the remainder additions**: the original 5 claimed none; the addition fork GTS VirtualHealth claims telehealth visits and video-teleconferencing explicitly — now a gap with a claimant; the visit record itself is Core 6)
 10. Multi-device native apps (a platform/access property, not a records function)
 11. Hosting platform (a platform-layer property — Dexcom's Google Cloud / GKE prose; never a health function)
 

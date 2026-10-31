@@ -7,11 +7,12 @@ claim family / control family it traces to.
 
 ```bash
 cd groups/health-wellness-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 67 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 80 tests
 ```
 
 Status at delivery: **67 tests, OK** against the implementation in
-`../src/`. (Run exactly as above: helpers are imported as a top-level
+`../src/`; **80 tests, OK** after the remainder additions
+(`test_additions.py`, see `../ADDENDUM.md`). (Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
 entry point for this group.)
@@ -33,6 +34,7 @@ entry point for this group.)
 | `test_service.py` | REST API — live HTTP server: health, 401 unknown user / role mismatch, full flow (program → participant → enroll → measurement → plan derived overdue → activity → eligibility status → complete → derived completed → scorecard + report; member reads own enrollment), **privacy boundary: smuggled `diagnosis`/`note`/`name`/`dob`/`member_number` keys -> 400 and nothing stored**, member write 403 + denied audited, member scope over HTTP (403 on another participant's enrollment), audit admin+auditor only, report member 403, 400/404 envelopes, DELETE 404 |
 | `test_main_cli.py` | `python -m health serve` subprocess with demo users alice/bob/carol/dana; no-subcommand returns 2 |
 | `test_negative_control.py` | Negative control (below) |
+| `test_additions.py` | Remainder additions (unit `addition:health-wellness-l2`) — spec integrity: 8 sheets in order (5 shipped + 3 appended in census unit order), membership against `remainder.json`, the literal **zero-claim** table for all 3 additions (taxonomy verbatim; group total stays 19), tier fields, descriptions verbatim against the cached dataset, 4/4 census citations as substrings (verification ≠ claim), per-fork near-miss pins (substance token present, family phrase absent). Plus one substrate case per fork: GTS telehealth visit as a Core 6 activity record with exact key set (no media field) + Core 4 monitoring measurement + plan/enrollment deriving overdue; Solventum Core 7 coverage record under opaque `plan_ref` deriving upcoming → current → ended with exact key set (no insurer/member fields); Somnoware Core 5 CPAP plan deriving current → overdue → completed over a Core 4 measurement with no diagnosis field |
 | `health_helpers.py` | Shared fixtures: demo users (ADMIN=alice/admin, CLINICIAN=bob/clinician, MEMBER=carol/member, AUDITOR=dana/auditor), `USERS` registry, `fresh_store()`, and `make_store()` building a HealthStore + AuditLog + one program ("Diabetes Care") + one participant under opaque ref "carol" (both created by ADMIN) |
 
 ## Negative control
@@ -82,3 +84,19 @@ verified identical to the pre-mutation hash in
 `scratch/store.py.sha256`) and the suite re-run: **67 tests, OK**.
 The suite catches this defect class; the negative control is not
 decorative.
+
+**Additions re-run (remainder unit `addition:health-wellness-l2`).**
+The core is unchanged by the additions, so the same drill was
+re-run in this tree: the overdue branch of `_derive_plan_status`
+patched to `return "current"`, full suite run — **80 tests,
+exactly 10 failures**: the original drill's 8 above plus 2 from
+`test_additions.py`
+(`test_gts_telehealth_visit_is_an_activity_record`,
+`test_somnoware_cpap_plan_and_measurement_shapes`), which derive
+plan/enrollment status and trip exactly as designed; the Solventum
+coverage case does not depend on plan derivation and did not trip.
+Raw output in `scratch/additions_mutation_run.txt`. `store.py` was
+restored from `scratch/store.py.premutation-additions` and verified
+SHA-256-identical to the shipped hash
+(`c83cd2d269cb08c5d259d7fc1b16f7d8a761df006e0e9e3889daa4d5c928c711`);
+the suite re-ran green: **80 tests, OK**.
