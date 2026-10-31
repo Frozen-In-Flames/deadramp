@@ -1,0 +1,100 @@
+[
+ {
+  "fork_id": "FR2632054521",
+  "vendor": "Leadership Connect, Inc.",
+  "product": "Leadership Connect",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Analytics",
+   "Artificial Intelligence (AI)",
+   "Collaboration",
+   "Customer Relations Management (CRM)",
+   "Customer Service",
+   "Data Management",
+   "Legal & Policy",
+   "Marketing & Sales",
+   "Operations Management",
+   "Research"
+  ],
+  "deadramp_category": "Research",
+  "description": "Leadership Connect is a software-as-a-service platform for federal market and policy intelligence. It provides a continuously maintained directory of decision-makers and organizations across the U.S. Congress, the federal executive branch, state and local government, and the private sector, together with federal contract award and subaward analysis, federal and state legislative tracking, congressional hearing coverage, and relationship-graph analytics.\n\nFederal agency personnel use Leadership Connect to carry out assigned mission functions: identifying and contacting counterparts across government for interagency and intergovernmental coordination, preparing for congressional hearings and legislative engagement, researching vendors and prior contract activity in support of acquisition planning and market research, and monitoring personnel, policy, and spending changes relevant to their program responsibilities.\n\nIn the course of that work, the offering creates, collects, processes, stores, and maintains information supplied by or generated on behalf of agency customers. This includes agency user account and profile records, authentication and session data, single sign-on identity assertions where an agency has configured federated access, agency-created saved lists of tracked people and organizations, saved searches and alert configurations, records of lists and views shared among users within an agency account, entity-tracking selections, uploaded contact records where an agency imports its own data, and usage and audit records associated with individual agency users. Some of this information reflects an agency's areas of interest, coordination activity, or acquisition research and is treated accordingly.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2632054521/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2632054521"
+ },
+ {
+  "fork_id": "FR2632054491",
+  "vendor": "OpenClinica LLC",
+  "product": "OpenClinica4 (OC4)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Health & Wellness",
+   "Research",
+   "Data Management",
+   "Analytics"
+  ],
+  "deadramp_category": "Research",
+  "description": "OpenClinica is a Software-as-a-Service (SaaS) eClinical platform that centralizes clinical trial technology for electronic data capture (EDC), eConsent, eCOA (electronic clinical outcome assessments), and reporting and analytics. OpenClinica is hosted on AWS US East/West as a Public Cloud deployment. The platform serves academic institutions, pharmaceutical, biotech and medtech sponsors, and contract research organizations (CROs) running clinical trials, including federally funded research studies.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2632054491/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2632054491"
+ },
+ {
+  "fork_id": "FR2701557049",
+  "vendor": "Sixtyfourai",
+  "product": "Sixtyfour Identity Intelligence Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Marketing & Sales",
+   "Research"
+  ],
+  "deadramp_category": "Research",
+  "description": "Sixtyfour provides AI-powered identity intelligence for government investigations, vetting and fraud detection. Its research platform and APIs investigate people and organizations across public records and online sources, resolving identities, examining backgrounds and uncovering relationships. Sixtyfour turns fragmented information into source-backed intelligence for individual cases, large-scale analysis and ongoing monitoring.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2701557049/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2701557049"
+ },
+ {
+  "fork_id": "FR2631747315",
+  "vendor": "Sustainment Technologies Inc.",
+  "product": "Sustainment Digital Manufacturing Hub",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Operations Management",
+   "Collaboration",
+   "Analytics",
+   "Artificial Intelligence (AI)",
+   "Data Management"
+  ],
+  "deadramp_category": "Research",
+  "description": "Sustainment Digital Manufacturing Hub (DMH) is a cloud-based supplier discovery and market research platform that helps government agencies identify, evaluate, and connect with qualified U.S. manufacturing suppliers. DMH provides AI-driven supplier intelligence, including capabilities data, certifications, machine and process information, and past performance context. Our platform enables acquisition teams, program offices, and sourcing specialists to conduct market research and strengthen the defense industrial base. DMH is the government enclave of the Sustainment platform, purpose-built for federal security and compliance requirements.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2631747315/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2631747315"
+ }
+]
