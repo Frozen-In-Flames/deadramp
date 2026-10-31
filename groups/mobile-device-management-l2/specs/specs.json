@@ -1,0 +1,101 @@
+[
+ {
+  "fork_id": "FR2505553757",
+  "vendor": "Turning Point Global Solutions, L.L.C",
+  "product": "Network Inventory and Optimization Solution (NiOS®)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Mobile Device Management (MDM)",
+  "description": "TurningPoint’s Network Inventory and Optimization Solution (NiOS®) is a comprehensive Telecommunication Expense Management (TEM) and Managed Mobility (MM) system that facilitates enterprise-wide management and automation of telecom ordering, inventory management, bill validation, financial management, and reporting. NiOS® provides US federal, state, and local governments with a single-pane window for telecom lifecycle management. The following are the high-level functional characteristics of NiOS®: • A built-in, customizable workflow enables customers to manage service orders, including move/add/change/disconnect (MACD), port, suspend, and restore requests. • It offers customers a unified view of inventory data, covering all telecom services, such as wireline, mobility, and future technologies. • Assists customers in reconciling and verifying telecom bills against agency contracts, orders, quotes, and inventory; initiates and tracks disputes through resolution. • Provides visibility into budgets, obligated, spent, and available values with projections; and associated system alerts to proactively manage budget and internal customer chargebacks • Allows customers to generate various reports, providing access to accurate, comprehensive insights on spending, enhancing governance, and ensuring cost control. NiOS® is a software-as-a-service (SaaS) application hosted on Amazon Web Services (AWS) GOVCLOUD (US) using a secure, high-availability, multi-availability zones, multi-tenant architecture. The authorization boundary comprises a secure web-based portal, processing modules for data integration, analytics, Application Processing Interfaces (APIs), and supporting databases.",
+  "functions_claimed": [
+   {
+    "function_id": "telecom_service_orders",
+    "function": "Telecom ordering & service orders",
+    "evidence": "A built-in, customizable workflow enables customers to manage service orders, including move/add/change/disconnect (MACD), port, suspend, and restore requests."
+   },
+   {
+    "function_id": "configurable_workflow",
+    "function": "Built-in customizable workflow",
+    "evidence": "A built-in, customizable workflow enables customers to manage service orders, including move/add/change/disconnect (MACD), port, suspend, and restore requests."
+   },
+   {
+    "function_id": "inventory_management",
+    "function": "Telecom service inventory management",
+    "evidence": "It offers customers a unified view of inventory data, covering all telecom services, such as wireline, mobility, and future technologies."
+   },
+   {
+    "function_id": "bill_validation",
+    "function": "Bill validation, reconciliation & verification",
+    "evidence": "Assists customers in reconciling and verifying telecom bills against agency contracts, orders, quotes, and inventory; initiates and tracks disputes through resolution."
+   },
+   {
+    "function_id": "dispute_management",
+    "function": "Bill dispute initiation & tracking",
+    "evidence": "Assists customers in reconciling and verifying telecom bills against agency contracts, orders, quotes, and inventory; initiates and tracks disputes through resolution."
+   },
+   {
+    "function_id": "financial_management",
+    "function": "Financial management",
+    "evidence": "TurningPoint’s Network Inventory and Optimization Solution (NiOS®) is a comprehensive Telecommunication Expense Management (TEM) and Managed Mobility (MM) system that facilitates enterprise-wide management and automation of telecom ordering, inventory management, bill validation, financial management, and reporting."
+   },
+   {
+    "function_id": "budget_visibility",
+    "function": "Budget visibility (obligated, spent, available)",
+    "evidence": "Provides visibility into budgets, obligated, spent, and available values with projections; and associated system alerts to proactively manage budget and internal customer chargebacks"
+   },
+   {
+    "function_id": "budget_alerts",
+    "function": "Budget alerts",
+    "evidence": "Provides visibility into budgets, obligated, spent, and available values with projections; and associated system alerts to proactively manage budget and internal customer chargebacks"
+   },
+   {
+    "function_id": "chargebacks",
+    "function": "Internal customer chargebacks",
+    "evidence": "Provides visibility into budgets, obligated, spent, and available values with projections; and associated system alerts to proactively manage budget and internal customer chargebacks"
+   },
+   {
+    "function_id": "reporting",
+    "function": "Reporting & spending insights",
+    "evidence": "Allows customers to generate various reports, providing access to accurate, comprehensive insights on spending, enhancing governance, and ensuring cost control."
+   },
+   {
+    "function_id": "lifecycle_single_view",
+    "function": "Telecom lifecycle management, single-pane view",
+    "evidence": "NiOS® provides US federal, state, and local governments with a single-pane window for telecom lifecycle management."
+   },
+   {
+    "function_id": "web_portal",
+    "function": "Secure web-based portal",
+    "evidence": "The authorization boundary comprises a secure web-based portal, processing modules for data integration, analytics, Application Processing Interfaces (APIs), and supporting databases."
+   },
+   {
+    "function_id": "data_integration",
+    "function": "Data integration",
+    "evidence": "The authorization boundary comprises a secure web-based portal, processing modules for data integration, analytics, Application Processing Interfaces (APIs), and supporting databases."
+   },
+   {
+    "function_id": "analytics",
+    "function": "Analytics",
+    "evidence": "The authorization boundary comprises a secure web-based portal, processing modules for data integration, analytics, Application Processing Interfaces (APIs), and supporting databases."
+   },
+   {
+    "function_id": "api_access",
+    "function": "APIs (Application Processing Interfaces)",
+    "evidence": "The authorization boundary comprises a secure web-based portal, processing modules for data integration, analytics, Application Processing Interfaces (APIs), and supporting databases."
+   },
+   {
+    "function_id": "cloud_hosting_platform",
+    "function": "Cloud hosting platform (platform note)",
+    "evidence": "NiOS® is a software-as-a-service (SaaS) application hosted on Amazon Web Services (AWS) GOVCLOUD (US) using a secure, high-availability, multi-availability zones, multi-tenant architecture."
+   }
+  ],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2505553757",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2505553757/"
+ }
+]

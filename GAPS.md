@@ -779,6 +779,29 @@ Extended functions, specified in groups/learning-management-l2/UNION-SPEC.md, no
 
 Platform-layer: multi-tenancy (claimed by the fork; single-tenant reference deployment); encryption at rest (deployment layer; TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: the category is new and strictly separate from Education & Training; no assessment or credential family exists in its taxonomy, because the description's only "assessments" names succession-planning resources and "Certification" occurs only inside the SF-182 form's proper name (the only "scor" hits are inside "SCORM") — checked absences, itemized in the spec. LRS statement records carry an exact eight-key shape with result text verbatim and no score field anywhere.
 
+## Singleton 50 — Mobile Device Management (MDM) L2 (1 fork, new category)
+
+Extended functions, specified in groups/mobile-device-management-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Optimization engine (named from the product name only; no optimization claim exists in the description)
+- [ ] open — Workflow execution / routing engine (the registry holds definitions only)
+- [ ] open — Carrier & network integration engines (carrier order execution, bill feeds, data integration)
+- [ ] open — Bill reconciliation engine beyond registry validation runs
+- [ ] open — Budget projection / forecasting engine (projections are recorded verbatim, never computed)
+- [ ] open — Analytics engine beyond registry summaries
+- [ ] open — Report generation engine
+- [ ] open — Alert delivery transport (alerts are records)
+- [ ] open — Web portal / single-pane web application
+- [ ] open — Managed Mobility services operations
+
+Category named absences (not claimed by this fork; recorded so the category's expected device surface is accounted for, not silently missing):
+- [ ] open — Mobile device enrollment & provisioning plane
+- [ ] open — Remote wipe / lock / device command plane
+- [ ] open — Device policy management & compliance enforcement
+- [ ] open — Mobile application management
+- [ ] open — Device location & tracking services
+
+Platform-layer: encryption at rest (deployment layer); multi-tenancy (the fork asserts it of its hosting platform; the build is a single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: the fork is a Telecommunication Expense Management and Managed Mobility system filed under MDM; its description contains zero device-management vocabulary, the taxonomy reflects the TEM surface actually claimed, and the inventory record shape is pinned to ten keys so no field can hold a phone number, IMEI, serial, or any real device identifier.
+
 ## Later groups
 
 Each group appends its section here when it ships.
