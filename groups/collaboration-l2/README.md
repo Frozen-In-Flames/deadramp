@@ -129,6 +129,23 @@ separately against the same contract in `UNION-SPEC.md`:
 PYTHONPATH=src python -m unittest discover -s tests
 ```
 
+## Remainder additions
+
+Three previously uncategorized forks joined this group in the
+remainder pass (see [`ADDENDUM.md`](ADDENDUM.md)): **Cisco Webex for
+Government** (7 claims), **Huddle** (4 claims), and **IdeaScale Gov**
+(0 claims — its innovation-management & crowdsourcing function has
+no family in the group's taxonomy and is registered as a gap, not
+rounded into a claim). The spec count is now **60 forks, 233
+claims**; the taxonomy was applied verbatim, the core is unchanged
+(`src/` byte-identical), and the suite grew 192 → **208 tests**,
+including a re-run of the membership mutation drill (16 failures
+under the mutant: the original 14 plus 2 additions cases). Five new
+gap functions are named in the addendum (innovation management &
+crowdsourcing, an administration console, a virtual-visitation
+scheduling portal, collaboration hardware endpoints, and
+product-specific connector engines).
+
 ## Control-family mapping (summary)
 
 Per `UNION-SPEC.md`, against the NIST SP 800-53 Rev. 5 Moderate baseline

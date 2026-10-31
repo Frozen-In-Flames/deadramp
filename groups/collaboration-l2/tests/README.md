@@ -7,11 +7,12 @@ function / spec claim it traces to.
 
 ```bash
 cd groups/collaboration-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 192 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 208 tests
 ```
 
 Status at delivery: **192 tests, OK** against the implementation in
-`../src/`. (Run exactly as above: helpers are imported as a top-level
+`../src/`. Status after the remainder additions (below): **208 tests,
+OK**. (Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
 entry point for this group.)
@@ -33,6 +34,7 @@ entry point for this group.)
 | `test_service.py` | 9 API access — live HTTP server: health, 401 unknown user / role mismatch, 403 viewer posting, full flow (workspace → channel → message → file → event → search → notifications → audit), `audit_read` admin-only over HTTP, denied attempts audited with `:denied` |
 | `test_main_cli.py` | `python -m collab serve` subprocess with demo users alice/bob/carol |
 | `test_negative_control.py` | Negative control (below) |
+| `test_additions.py` | Remainder additions (ADDENDUM.md) — spec integrity for the 3 addition forks (unit membership/order, literal claim table, verbatim evidence, census citations, near-miss and wording-artifact pins, IdeaScale's zero-claim pin) plus one substrate case per fork (Webex messaging/files/meeting surface + membership boundary, Huddle versioning/audit/search, IdeaScale substrate minimum) |
 | `collab_helpers.py` | Shared fixtures: demo users (ADMIN/MEMBER/VIEWER/OUTSIDER), `make_store()` building a CollabStore + AuditLog + a workspace owned by MEMBER with VIEWER added, and sample message/file/event/board helpers |
 
 ## Negative control
@@ -63,6 +65,17 @@ test_service (HTTP 403 case). `store.py` was then restored from a
 pre-mutation copy (SHA-256 verified identical to the pre-mutation
 hash) and the suite re-run: **192 tests, OK**. The suite catches this
 defect class; the negative control is not decorative.
+
+**Additions re-run (2026-10-31).** The remainder additions changed
+no core code (`src/` byte-identical), so the signature drill was
+re-run in this tree with the same patch (`_require_workspace_access`
+membership condition → `if False:`): **208 tests ran, 16 failed** —
+the original drill's 14 plus 2 from the new `test_additions.py` (the
+Webex membership-boundary post case and the IdeaScale outsider-read
+case), tripping exactly as designed. `store.py` was restored from
+the pre-mutation copy, verified SHA-256-identical to the shipped
+hash (`d2b943e2…`), and the suite re-ran green: **208 tests, OK**.
+Raw output: `scratch/additions_mutation_run.txt`.
 
 ## Interpretation notes
 

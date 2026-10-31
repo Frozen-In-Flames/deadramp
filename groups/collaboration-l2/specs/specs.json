@@ -2252,5 +2252,116 @@
   ],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR1825941347A/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1825941347A"
+ },
+ {
+  "fork_id": "F1511207635",
+  "vendor": "Cisco Systems Inc.",
+  "product": "Webex for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Collaboration",
+  "description": "Webex for Government addresses the U.S. public sector\u2019s collaboration needs in a single, secure package, relieving customers of the complexity of managing multiple point products from different vendors. \n\nThe\u202fWebex for Government Suite\u202fprovides a core set of capabilities that enable\u202fa hybrid\u202fworkforce to collaborate\u202fsecurely and\u202feffectively\u202ffrom anywhere, on any device, and with anyone. Those core capabilities include:  \n\n\u2022        Webex for Government Meetings simplifies your company\u2019s workflows at scale.  Equip your team with the most powerful tool to meet and exceed your agency\u2019s goals.\n\u2022        Webex for Government Messaging keeps work flowing in between meetings with rich messaging and secure file sharing for continuous teamwork.\n\u2022        Webex for Government Calling is a proven cloud calling solution that delivers enterprise-grade calling functionality, enabling you to replace your on-premises PBX network with a globally trusted cloud calling solution.  Webex Calling also provides powerful tools like voice queues and call routing to strengthen customer relationships.\n\u2022        Webex for Government Webinars simplifies webinar delivery and drives engagement with immersive content and interactive audience experiences.\n\u2022        Webex for Government Control Hub provides a centralized and comprehensive administrative portal for all your collaboration services.\n\u2022        Virtual Visitation Service is an advanced scheduling portal feature to allow configuration of business rules, workflows, and zero touch device connectivity within Webex for Government Meetings. \n\nWhether you need to collaborate with remote colleagues, reach hybrid users, host webinars, address customer complaints, or offer technical support remotely, the Webex for Government Suite is the secure, compliant, collaboration solution. With Webex for Government Suite, you can reimagine your work by optimizing collaboration through AI-enabled software and hardware. It also helps you to reimagine your workspaces through collaboration devices that are purpose-built for your diverse needs and spaces. This collaboration solution can take your hybrid work setup from \u201cgood enough\u201d to one that empowers your teams to collaborate seamlessly and securely so that you can focus on delivering additional business outcomes.\n\nThe Cisco Unified Communication Manager Cloud for Government service is now included in the Webex for Government ATO. Cisco Unified Communications Manager Cloud for Government (Cisco UCM Cloud for Government) is a complete unified communications service from the Cisco Cloud. It is built to provide government-level security so that organizations can collaborate with anyone, anywhere, on any device. The service is hosted by Cisco, sold by Cisco Powered partners.",
+  "functions_claimed": [
+   {
+    "function_id": "messaging_chat",
+    "function": "Messaging & chat",
+    "evidence": "\u2022        Webex for Government Messaging keeps work flowing in between meetings with rich messaging and secure file sharing for continuous teamwork."
+   },
+   {
+    "function_id": "meetings_video",
+    "function": "Meetings, video & web conferencing",
+    "evidence": "Those core capabilities include:  \n\n\u2022        Webex for Government Meetings simplifies your company\u2019s workflows at scale."
+   },
+   {
+    "function_id": "voice_contact",
+    "function": "Voice, telephony & contact center",
+    "evidence": "Webex Calling also provides powerful tools like voice queues and call routing to strengthen customer relationships."
+   },
+   {
+    "function_id": "file_sharing",
+    "function": "File sharing, storage & content management",
+    "evidence": "\u2022        Webex for Government Messaging keeps work flowing in between meetings with rich messaging and secure file sharing for continuous teamwork."
+   },
+   {
+    "function_id": "workspaces",
+    "function": "Shared workspaces & team collaboration",
+    "evidence": "Whether you need to collaborate with remote colleagues, reach hybrid users, host webinars, address customer complaints, or offer technical support remotely, the Webex for Government Suite is the secure, compliant, collaboration solution."
+   },
+   {
+    "function_id": "workflow",
+    "function": "Workflow & process automation",
+    "evidence": "Those core capabilities include:  \n\n\u2022        Webex for Government Meetings simplifies your company\u2019s workflows at scale."
+   },
+   {
+    "function_id": "ai_assistance",
+    "function": "AI assistance, speech & analytics",
+    "evidence": "With Webex for Government Suite, you can reimagine your work by optimizing collaboration through AI-enabled software and hardware."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1511207635/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1511207635"
+ },
+ {
+  "fork_id": "F1408115175",
+  "vendor": "Huddle US",
+  "product": "Huddle Enterprise Cloud Content Collaboration and File Sharing Portal for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Collaboration",
+  "description": "Huddle provides the most secure, easy-to-use, and tightly integrated workspaces for government agencies to collaborate with each other and contractors. Its zero-trust architecture provides a highly controlled environment that is fully auditable for data governance and compliance.\n- Total control over who can access, view, and edit workspaces and documents.\n- Integrations with Microsoft Office ensure a seamless experience.\n- Fully auditable workspaces with trackable tasks and assignments.\n- Supports stringent security and risk mitigation strategies.",
+  "functions_claimed": [
+   {
+    "function_id": "workspaces",
+    "function": "Shared workspaces & team collaboration",
+    "evidence": "Huddle provides the most secure, easy-to-use, and tightly integrated workspaces for government agencies to collaborate with each other and contractors."
+   },
+   {
+    "function_id": "api_integration",
+    "function": "APIs, integrations & interoperability",
+    "evidence": "Huddle provides the most secure, easy-to-use, and tightly integrated workspaces for government agencies to collaborate with each other and contractors."
+   },
+   {
+    "function_id": "audit",
+    "function": "Audit logging & trails",
+    "evidence": "Its zero-trust architecture provides a highly controlled environment that is fully auditable for data governance and compliance."
+   },
+   {
+    "function_id": "records_governance",
+    "function": "Records, governance & compliance management",
+    "evidence": "Its zero-trust architecture provides a highly controlled environment that is fully auditable for data governance and compliance."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1408115175/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1408115175"
+ },
+ {
+  "fork_id": "F1512017638",
+  "vendor": "IdeaScale",
+  "product": "IdeaScale Gov",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Collaboration",
+  "description": "IdeaScale is an innovation management SaaS provider that uses crowdsourcing to help organizations find and develop the next big thing, whether it's new policies and services or new cost-savings and employee engagement measures, IdeaScale allows organizations to solicit input from personnel and other stakeholders and collaboratively transform that input into actionable project plans.\n\nThe IdeaScale Gov offering provides these innovation management and crowdsourcing capabilities in a secure environment for federal agency use and benefit, allowing agencies to make the most of the collective knowledge of their numbers.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1512017638/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1512017638"
  }
 ]
