@@ -31,6 +31,24 @@ reused.** Everything Group 12 says about Moderate / NIST SP 800-171
 stays in Group 12. This group's claims are the Low baseline's and
 FAR 52.204-21's only, as written in `UNION-SPEC.md`.
 
+## Remainder addition (unit `addition:data-management-l1`)
+
+One previously uncategorized fork has since joined the group:
+**DevResults** (DevResults, FR2100845343), FedRAMP **LI-SaaS**,
+FedRAMP Certified — see [`ADDENDUM.md`](ADDENDUM.md). It claims
+**zero** functions under the verbatim taxonomy, exactly as the
+original fork does, so the group now stands at **2 forks, 0
+claims, 0 of 2 claiming**, and the honesty section below applies
+to both forks unchanged. The core is unchanged — `src/`
+byte-identical to the shipped build — and the suite grew from
+196 to **207 tests**, all passing, including a re-run of the
+self-approval guard drill in this tree (exactly 5 failures
+under mutation; see `tests/README.md`). Two new gap functions
+(the fork's M&E results-management platform functions and its
+data-capture tooling) and two substance memberships in existing
+gaps are recorded in the addendum for the GAPS.md registry at
+ship.
+
 ## The 12 core functions (carried substrate)
 
 1. **Dataset registry** — datasets (`ds-`) with owner, classification

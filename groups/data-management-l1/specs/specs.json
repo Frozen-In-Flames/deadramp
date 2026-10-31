@@ -16,5 +16,23 @@
   "functions_claimed": [],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2409367364/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2409367364"
+ },
+ {
+  "fork_id": "FR2100845343",
+  "vendor": "DevResults",
+  "product": "DevResults",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "LI-SaaS",
+  "cmmc_tier": "L1",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Data Management",
+  "description": "DevResults is a web application with tools for data capture, analysis, reporting, visualizations, project management, and team collaboration. DevResults was designed to streamline fragmented data processes into a single proven system, allowing for the utilization of data for decision making across activities and throughout government agencies, non-profit organizations, and private sector companies. Over the past decade, DevResults has supported partners with managing data, measuring progress, and learning from the results. DevResults will allow users across an organization and around the world to better utilize data for management and decision-making.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2100845343/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2100845343"
  }
 ]

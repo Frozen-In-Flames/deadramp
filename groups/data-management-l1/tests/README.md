@@ -94,3 +94,58 @@ OK**. Full drill output: `../scratch/mutation-run.txt`; pre-mutation
 copy and hash: `../scratch/store.py.premutation`,
 `../scratch/store.py.sha256`. The suite catches this defect class;
 the negative control is not decorative.
+
+## Remainder addition — unit `addition:data-management-l1`
+
+`test_additions.py` (11 tests) pins the addition of DevResults /
+DevResults (FR2100845343) under the group's 19-family taxonomy
+applied verbatim (parsed via `ast` from `../scratch/extract.py`
+and asserted equal to the Group 12 parent's taxonomy in
+`../scratch/additions_extract.py`, which also reproduces the
+original fork's shipped sheet deep-equal before tagging): sheet
+count and append order (2 sheets, original first), unit
+membership against `../../remainder.json`, the literal claim
+tables (the newcomer's is empty and the original's is exactly as
+shipped — the group is 0 claims across 2 forks), the zero-claim
+set (all 19 families), the census citations (2 / 2 verbatim in
+the description; both tag nothing — verification is not a
+claim), registry fields as published, the near-miss pins
+("data capture" vs. `ingestion_collection`; "analysis,
+reporting, visualizations" vs. `query_reporting`; consolidation
+prose vs. `integration_exchange`), and the group totals (2 forks
+/ 0 claims / 0 of 2 claiming / LI-SaaS 2). Two substrate cases
+exercise the shipped Core in the newcomer's shape: a
+partner-results flow (indicator/value dataset, manual
+field-reports source, completed 1,200-record and failed
+50-record ingestions, provenance over completed runs only, a
+checksummed export manifest, catalog search by tag and by
+schema field name) and an access-governance flow (carol's
+request for the results dataset, the self-decision denial, the
+steward's approval minting exactly one grant). Both are
+carried-substrate cases: the fork claims no family.
+
+**Drill re-run in this tree (additions).** The core is
+unchanged, so the group's signature drill was re-run: the
+self-approval guard in `DataMgmtStore._check_decider_not_requester`
+(`../src/datamgmt/store.py`) was patched to a no-op
+(`return None`) — the exact mutation recorded above, applied as
+a scoped replacement of the guard's body with the target text
+asserted to occur exactly once — and the full suite ran:
+**207 tests, exactly 5 failures** — the shipped drill's 4 plus
+exactly 1 from the additions module:
+
+- `test_access_governance.TestDecideAccess.test_admin_self_decision_also_denied`
+- `test_access_governance.TestDecideAccess.test_self_decision_denied_request_stays_requested_no_grant`
+- `test_negative_control.TestNegativeControlMutantSelfApproval.test_steward_self_decision_denied_canonical_but_mutant_approves`
+- `test_negative_control.TestNegativeControlMutantSelfApproval.test_viewer_self_decision_denied_canonical_but_mutant_approves`
+- `test_additions.TestDevResultsSubstrate.test_access_to_results_dataset_is_never_self_approved`
+
+`store.py` was then restored from the pre-mutation copy
+(`../scratch/store.py.premutation-additions`) and verified
+SHA-256-identical to the shipped hash
+(`dc35677ccdaf4d416a10a5364128f54bb1b1802fd8a99c00271ad081caf2774e`);
+the suite re-ran green: **207 tests, OK**. All 7 `datamgmt`
+modules are SHA-256-identical to their pre-addition hashes
+(`../scratch/additions_src_hashes_before.txt` /
+`additions_src_hashes_after.txt` — diff empty). Raw drill
+output: `../scratch/additions_mutation_run.txt`.
