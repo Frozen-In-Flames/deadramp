@@ -1646,6 +1646,21 @@ New extended functions from this set, specified in groups/marketing-sales-untier
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This category has no tiered group anywhere in the registry, so its taxonomy (thirteen families) was derived fresh from these two forks' own descriptions, the Contract Management and Storage method, and is recorded as the category's taxonomy from here on; the two forks describe non-overlapping businesses and their families are kept visibly separate. Thirteen claims stand, every one on its fork's own sentence. No control family is documented: one fork's CUI handling sentence states no mechanism, and hosting and multi-tenancy sentences are platform prose. Named absences, token-verified in both descriptions: CRM and customer-relationship records — the category's expected centre — lead management, advertising, social media, SMS, search marketing, landing pages, A/B testing, personalization, and scoring. The fresh core has no money shape (neither description states fees, prices, or budgets) and computes no score (no scoring vocabulary in either description); its signature is the suppression gate.
 
+## Untiered Set 19 — Network Management (2 forks, tier null)
+
+New extended functions from this set, specified in groups/network-management-untiered/UNION-SPEC.md, not implemented (the founding group's engine gaps are already registered under it and are not re-registered here; its alert-evaluation and telemetry-collection gaps gain substance from this set, noted in the union spec):
+- [ ] open — Network access authentication / RADIUS & 802.1X engine
+- [ ] open — Cloud PKI & certificate lifecycle engine
+- [ ] open — Wi-Fi ITDR engine
+- [ ] open — Captive portal & guest / roaming access services
+- [ ] open — Satellite terminal provisioning & connectivity management
+- [ ] open — Fleet mapping & geospatial awareness platform
+- [ ] open — Incident lifecycle management engine
+- [ ] open — GPU orchestration (fork excess)
+- [ ] open — Platform layer
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Two claims stand, both on the one family: one at full weight (remote management of satellite terminals) and one at artifact weight (the manage pattern firing on the identities you already manage, an authentication layer, recorded as artifact). The documented control claims: identification documented (certificate-based authentication, 802.1X/EAP-TLS, federated directories), access control in part, audit at the prose tier, cryptographic protection in part at prose weight with no FIPS-validated crypto claimed; one fork's incident lifecycle phrase is a function, not incident-response control language. One fork's prose asserts a FIPS 199 Moderate categorization while disclaiming a FedRAMP Moderate authorization in the same paragraph — the record stays Unknown, both pinned together by test. Named absences: eleven of twelve families stand at zero, several with substance present in other words (provisioning, REST API, configurable alerting, cloud-based), and the taxonomy has no reporting or audit family at all.
+
 ## Later groups
 
 Each group appends its section here when it ships.
