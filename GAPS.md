@@ -1545,6 +1545,15 @@ New extended functions from this set, specified in groups/health-wellness-untier
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This set records one claim; the sole claim is an extended-disposition family, so no core function is claim-supported and the substrate is carried, not claimed. The one documented control assertion is a fork's HIPAA and NIST privacy-controls compliance sentence, recorded at compliance-assertion weight as its claim about itself; every 800-53 family is listed as not documented. One fork's prose asserts a FedRAMP Moderate authorization while its own record says impact Unknown and status In Process — recorded as the fork's assertion, moving no tier. Named absences: ten of eleven families stand at zero, including EMR integration with the substance present in other words, and measurement data where objective session metrics is not the family's phrase.
 
+## Untiered Set 12 — Legal & Policy (3 forks, tier null)
+
+New extended functions from this set, specified in groups/legal-policy-untiered/UNION-SPEC.md, not implemented (the founding nine gaps and the ten addition gaps stand as registered, gain no claimants here, and are not re-registered; in-substance joins to already-registered gaps — eDiscovery processing, legal hold, AI document analysis, FOIA release, AI agent runtime, document generation — are recorded in the union spec):
+- [ ] open — Legal research, evidence mapping & citation-validation engine
+- [ ] open — FOIA case management system of record
+- [ ] open — Discovery platform app builder / extensibility
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This set records zero claims and no documented control claims at all: the taxonomy is one product's phrases, and these forks describe eDiscovery, litigation AI, and FOIA case management in other words — the same outcome the category's six tiered additions recorded. Assurance and posture prose (auditable release packages, highest level of security) is recorded as prose, not control claims, and one fork's certified-services record names — which literally read Audit Logging and Authentication — were never matched, because matching them would have fabricated claims. No core function is claim-supported: the substrate, with its sandbox single-use rule and its no-query-text privacy design, is carried, not claimed.
+
 ## Later groups
 
 Each group appends its section here when it ships.

@@ -1,0 +1,67 @@
+[
+ {
+  "fork_id": "FR2009476860",
+  "vendor": "Casepoint LLC",
+  "product": "Casepoint Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Legal & Policy",
+  "description": "Casepoint is a data discovery platform for legal, investigatory, compliance, and IT teams who struggle to get actionable insights for data-centric business processes like eDiscovery, investigations, and information requests. Casepoint empowers leading corporations and government organizations to reduce costs, lower risk, and improve time-to-insight. Casepoint’s easy-to-use AI-powered platform is purpose-built for organizations that require the highest level of security and scalability to meet the evolving demands of the modern data landscape.\r\n\r\nCasepoint Government is delivered as a SaaS offering using a multi-tenant government-only cloud computing environment and is used by government agencies to meet their complex needs, including:\r\nLegal Holds\r\nRegulatory Enforcement / Investigations\r\nLitigation (eDiscovery)\r\nFOIA / PRR\r\nCongressional Inquiries\r\nLegal Data Storage\r\nTask / Case Strategy and Management\r\nThe Casepoint Government platform includes Casepoint Legal Hold, Casepoint eDiscovery, Casepoint FOIA, Casepoint Filestore, APIs for cloud collections, task management, and an app builder. Casepoint Government provides agencies with the capabilities needed to manage large volumes of data in litigation, investigations, congressional inquiries, and FOIA requests, including cloud-based collections, processing, culling, review, and highly customizable productions. It also offers built-in artificial intelligence and analytics with advanced tools for predictive analysis, search, and data visualization.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by General Services Administration, last change 2026-10-22T02:27:38.974Z), product record joined by FedRAMP ID FR2009476860",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2009476860/"
+ },
+ {
+  "fork_id": "FR2701247925",
+  "vendor": "Litmas, Inc.",
+  "product": "Litmas AI",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Legal & Policy",
+   "Artificial Intelligence (AI)",
+   "Research"
+  ],
+  "deadramp_category": "Legal & Policy",
+  "description": "Litmas AI is a legal AI platform for litigation teams, hosted on AWS in the United States. At its core is an agentic associate that takes a litigator's request and calls the platform's tools to complete it: evidence mapping, legal research, citation validation and drafting. Every fact is traced to its source page and line, and drafts of motions, pleadings and responses are tied to that mapped record.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by General Services Administration, last change 2026-10-22T02:27:38.974Z), product record joined by FedRAMP ID FR2701247925",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2701247925/"
+ },
+ {
+  "fork_id": "FR2633734932",
+  "vendor": "Skyward IT Solutions",
+  "product": "Alira",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Analytics",
+   "Collaboration",
+   "Data Management",
+   "Content Management System (CMS)",
+   "Legal & Policy",
+   "Artificial Intelligence (AI)"
+  ],
+  "deadramp_category": "Legal & Policy",
+  "description": "Alira is an AI-powered case management platform purpose-built for Freedom of Information Act (FOIA) processing and records disclosure workflows in federal agencies. Alira replaces manual, spreadsheet- and email-driven FOIA intake and processing with a single system of record that helps agency FOIA offices meet statutory response deadlines, apply exemptions consistently, and produce defensible, auditable release packages. Alira combines purpose-built case management with AI assistance for the most time-consuming parts of the FOIA lifecycle. Alira is designed for direct use by federal agency FOIA offices and their analysts, requesters, and program office contacts, and supports the full request lifecycle from intake through release.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by General Services Administration, last change 2026-10-22T02:27:38.974Z), product record joined by FedRAMP ID FR2633734932",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2633734932/"
+ }
+]
