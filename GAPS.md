@@ -1272,6 +1272,16 @@ New extended functions from this fork, specified in groups/energy-management-l1/
 
 Named absences, token-verified at zero tokens each and stated plainly: demand response / curtailment (the vendor's best-known business in the wider market — reputation is not evidence, and its description here is an energy procurement exchange), EV charging, energy storage, renewables / solar / carbon, energy efficiency / building management, metering / consumption / usage, billing / payment, grid services / capacity, and contract execution / e-signature. The taxonomy deliberately has no hosting family: the description carries no hosting or cloud language, and the record's SaaS / Public Cloud fields are record data, never claims. The build controls nothing physical: it holds records about energy procurement and operates no grid, charging, building, or metering system.
 
+## Remainder Singleton 58 — Development Tools L3-adjacent (1 fork)
+
+New extended functions from this fork, specified in groups/development-tools-l3/UNION-SPEC.md, not implemented:
+- [ ] open — Container orchestration platform: the managed container platform the fork is (the Core holds development-work records; it runs no containers)
+- [ ] open — Integrated development environment / developer workspace
+- [ ] open — Platform monitoring & logging (observability): the platform's own telemetry surface ("monitoring, logging" in the fork's prose fired no family — the audit patterns key on the word audit — and is recorded as near-miss, not claim)
+- [ ] open — Platform networking: the container platform's network fabric
+
+Baseline gaps recorded at this tier (uplifts considered and not taken, named in the union spec): MFA / authenticator management, FIPS-validated cryptography (SC-13 — the fork's own FedRAMP High and GovCloud posture does not transfer to this build), encryption at rest, audit retention, and session lock / termination. Build-pipeline execution and managed platform operations are this fork's instances of gaps already registered under the L2 union and are not re-registered. Named absences, token-checked: issue / bug tracking, code review, search, and source-code hosting are asserted in no form in the fork's prose — a container platform vendor's description that never mentions the development-work vocabulary its category is named for. Core-boundary decision, stated once in the union spec: hosted_platform is a platform note in this category, so no core function is claim-supported by this fork — all ten substrate functions are carried up whole under the Merge Rule, carried, not claimed.
+
 ## Later groups
 
 Each group appends its section here when it ships.

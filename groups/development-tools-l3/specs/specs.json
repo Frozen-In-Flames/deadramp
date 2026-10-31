@@ -1,0 +1,26 @@
+[
+ {
+  "fork_id": "FR2102031769",
+  "vendor": "Red Hat",
+  "product": "Red Hat OpenShift Service on AWS (ROSA)",
+  "service_model": [
+   "PaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Development Tools",
+  "description": "Red Hat\u00ae OpenShift\u00ae Service on AWS (ROSA) is a turnkey application platform jointly managed, operated and supported by Red Hat and AWS. It runs natively on Amazon Web Services (AWS), and allows organizations to increase operational efficiency, refocus on innovation, and quickly build, deploy, and scale applications. Red Hat OpenShift Service on AWS includes fully integrated development and operational productivity features including Kubernetes, an Integrated Development Environment (IDE), build pipelines, monitoring, logging and networking. With 24/7 monitoring and management to ensure seamless operations, organizations can focus on accelerating application delivery, not managing infrastructure. This offering is a FedRAMP High baseline, Platform-as-a-Service (PaaS) cloud service for developing and running containerized applications offered on the FedRAMP authorized AWS GovCloud (US).",
+  "functions_claimed": [
+   {
+    "function_id": "hosted_platform",
+    "function": "Hosted platform & managed operations",
+    "evidence": "This offering is a FedRAMP High baseline, Platform-as-a-Service (PaaS) cloud service for developing and running containerized applications offered on the FedRAMP authorized AWS GovCloud (US)."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2102031769/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2102031769"
+ }
+]
