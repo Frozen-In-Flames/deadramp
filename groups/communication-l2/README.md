@@ -207,3 +207,18 @@ the NIST SP 800-171 Rev. 2 practices that define CMMC L2:
   certification**, and it does not claim either. The control mapping
   above states which baseline families the build's features answer
   to; nothing more.
+
+## Remainder addition
+
+**Granicus / GovDelivery Communications Cloud** (`F1311252652`,
+FedRAMP Moderate) joined this group from the remainder census
+(unit `addition:communication-l2`); see
+[`ADDENDUM.md`](ADDENDUM.md). Spec'd under the group's existing
+taxonomy verbatim, it adds **1 claim** (`messaging`; group total
+52 → 53, now **11 forks, 11 of 11 claiming**). The core is
+unchanged (`src/` byte-identical) and the suite is **92 tests**,
+including the re-run send-gate mutation drill (exactly 5 failures
+under mutation). One new gap is registered in the addendum:
+the marketing automation & citizen-engagement campaign engine
+(audience targeting and automated campaigns) that the fork's
+description headlines but the taxonomy does not name.

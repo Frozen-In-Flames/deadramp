@@ -7,11 +7,12 @@ claim / control family it traces to.
 
 ```bash
 cd groups/communication-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 82 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 92 tests
 ```
 
 Status at delivery: **82 tests, OK** against the implementation in
-`../src/`. (Run exactly as above: helpers are imported as a top-level
+`../src/`; **92 tests, OK** after the remainder addition below.
+(Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
 entry point for this group.)
@@ -33,6 +34,7 @@ entry point for this group.)
 | `test_service.py` | REST API — live HTTP server: health, 401 unknown user / role mismatch, 403 viewer write + channel_write for operator, full flow (contact → group → channel → template → message → dispatch-due → ack → search → audit), `audit_read` admin-only, denied attempts audited with `:denied`, 400/404 envelopes |
 | `test_main_cli.py` | `python -m comm serve` subprocess with demo users alice/bob/carol |
 | `test_negative_control.py` | Negative control (below) |
+| `test_additions.py` | Remainder addition (Granicus / GovDelivery, `F1311252652`) — spec integrity: sheet count/order, membership vs `remainder.json`, literal claim table ({messaging}), verbatim evidence, census citations verified-but-untagged, near-miss pins, group totals (11 forks / 53 claims); substrate cases: targeted group message via reference transport + ack drain, send-gate absent-sms case |
 | `comm_helpers.py` | Shared fixtures: demo users (ADMIN/OPERATOR/VIEWER), `USERS` registry, `fresh_store()`, and `make_store()` building a CommStore + AuditLog + a contact + a group containing it + an enabled email channel (created by ADMIN) |
 
 ## Negative control
@@ -74,3 +76,23 @@ run: **82 tests ran, 4 failed** —
 verified identical to the pre-mutation hash) and the suite re-run:
 **82 tests, OK**. The suite catches this defect class; the negative
 control is not decorative.
+
+## Additions drill re-run (remainder unit addition:communication-l2)
+
+RE-VERIFIED at the addition build (2026-10-31). The core is
+unchanged by the addition, so the same send-gate drill was re-run
+in this tree: the condition `if channel is None:` in
+`CommStore._dispatch_deliveries` (`src/comm/store.py`, the line
+immediately following the `_first_enabled_channel` lookup) was
+patched to `if False:` and the full suite ran: **92 tests, exactly
+5 failures** — the shipped drill's 4 above plus 1 from the new
+additions module:
+
+- `test_additions.TestGranicusSubstrate.test_send_gate_absent_sms_channel_fails`
+
+(the remaining failure list is byte-identical to the shipped
+drill's; raw list in `scratch/additions_mutation_run.txt`.)
+`store.py` was restored from the pre-mutation copy
+(`scratch/store.py.premutation_additions`) and verified
+SHA-256-identical to the shipped hash
+(`6ccd412c…`); the suite re-ran: **92 tests, OK**.

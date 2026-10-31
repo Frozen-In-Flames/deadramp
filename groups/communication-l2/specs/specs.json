@@ -458,5 +458,29 @@
   ],
   "source_url": "https://www.fedramp.gov/marketplace/products/F1512017637/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1512017637"
+ },
+ {
+  "fork_id": "F1311252652",
+  "vendor": "Granicus",
+  "product": "GovDelivery Communications Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Communication",
+  "description": "More than 1,000 public sector organizations use Granicus' highly secure cloud communications solutions every day to enhance the citizen experience for greater than 150 million people. As the only FedRAMP-authorized marketing automation platform, Granicus' GovDelivery Communications Cloud serves federal, state, and local government customers and is the most secure marketing solution available for any public-sector organization. The Advanced Package for Communications Cloud and the Targeted Messaging Service are feature offerings available with Granicus' GovDelivery Communications Cloud.",
+  "functions_claimed": [
+   {
+    "function_id": "messaging",
+    "function": "Email & messaging channels",
+    "evidence": "The Advanced Package for Communications Cloud and the Targeted Messaging Service are feature offerings available with Granicus' GovDelivery Communications Cloud."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1311252652/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1311252652"
  }
 ]
