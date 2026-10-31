@@ -1,0 +1,50 @@
+[
+ {
+  "fork_id": "FR2701857792",
+  "vendor": "Liferay, Inc.",
+  "product": "Liferay SaaS",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Collaboration",
+   "Content Management System (CMS)",
+   "Customer Service",
+   "Development Tools",
+   "Marketing & Sales"
+  ],
+  "deadramp_category": "Content Management System (CMS)",
+  "description": "Liferay SaaS is a fully managed digital experience platform\n(DXP) for building and operating public websites,\nconstituent, customer and partner portals, employee\nintranets, and self-service applications on a single platform.\nLiferay hosts, monitors, patches, and upgrades the service;\ncustomers configure and extend it without managing\ninfrastructure or application servers.\nCore capabilities:\n- Content and site management: visual page builder with\nreusable fragments and templates, multi-site and\nmultilingual management, and editorial approval workflows\n- Documents and media: centralized storage, versioning,\nand permission-controlled access to documents and digital\nassets\n- Low-code applications: custom data models (Liferay\nObjects), forms, and configurable workflows for requests,\napplications, and approvals\n- Identity and access: single sign-on via SAML 2.0 and\nOpenID Connect, granular role-based permissions, and user\nsegmentation\n- Search and personalization: enterprise search and\naudience-targeted content\n- Integration: headless REST and GraphQL APIs, plus client\nextensions for custom front ends and integrations without\nmodifying the core platform\nLiferay SaaS runs on Google Cloud Platform (FedRAMP-\ncertified infrastructure) in U.S. regions and is operated under\nLiferay's SOC 2 Type II–audited security program.",
+  "functions_claimed": [
+   {
+    "function_id": "search_discovery",
+    "function": "Search & discovery",
+    "evidence": "Core capabilities:\n- Content and site management: visual page builder with\nreusable fragments and templates, multi-site and\nmultilingual management, and editorial approval workflows\n- Documents and media: centralized storage, versioning,\nand permission-controlled access to documents and digital\nassets\n- Low-code applications: custom data models (Liferay\nObjects), forms, and configurable workflo..."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2701857792/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2701857792"
+ },
+ {
+  "fork_id": "FR2001462460",
+  "vendor": "Nintex",
+  "product": "Nintex Drawloop DocGen",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [],
+  "deadramp_category": "Content Management System (CMS)",
+  "description": "Nintex Drawloop DocGen equips government organizations to generate precise and accurate documents. With just a few clicks users can instantly transform data from any standard or custom object in Salesforce into documents such as contracts, work orders, or recruitment documents. Nintex Drawloop DocGen allows users to create, manage and generate document packages in both Lightning or Classic, without losing the benefits of an easy-to-use and familiar user experience. Users can output data to a variety of endpoints and know their document data is secure and compliant throughout the process.\n\nMore information about Nintex Drawloop DocGen can be found at https://www.nintex.com/docgen.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2001462460/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2001462460"
+ }
+]

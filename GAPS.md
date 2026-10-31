@@ -1584,6 +1584,25 @@ New extended functions from this set, specified in groups/fleet-management-untie
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Four claims stand (a duplicate pair, spec'd as separate sheets per the Phase 1 rule, with identical tables); no numbered core function is claim-supported — every core family stands at zero here — so the substrate is carried, not claimed, and the set's telematics claim stands on the single word telematics at exact weight, with the streaming engine extended. No documented control claims: the only control-adjacent phrase, regulatory compliance, names an application area, not a control family. Named absences: ELD and hours-of-service stand at zero — the phrase driver workflows and regulatory compliance is present, and the vendor's ELD business elsewhere is reputation, not evidence; reporting and analytics stand at zero with dashboards and reporting listed in other words.
 
+## Untiered Set 14 — Content Management System (CMS) (2 forks, tier null)
+
+New extended functions from this set, specified in groups/cms-untiered/UNION-SPEC.md, not implemented (standing founding gaps with no claimant or substance here — library ILS vertical, BPM/case depth, participant engagement vertical, bulk ingestion engines — remain registered under the founding group and are not re-registered):
+- [ ] open — Enterprise search indexing engines (one claimant, at catalogue weight)
+- [ ] open — Rendering & templating engines and visual/WYSIWYG editors
+- [ ] open — Personalization / experience optimization
+- [ ] open — Editorial workflow engines beyond lifecycle mechanics
+- [ ] open — Document & media versioning depth
+- [ ] open — Document generation engines (one fork's whole function, with no family in the taxonomy)
+- [ ] open — Low-code application builders & form engines
+- [ ] open — Identity federation / SSO services (IdP)
+- [ ] open — Multi-site & multilingual site operations depth
+- [ ] open — Headless delivery & integration engines
+- [ ] open — CDN / delivery network and runtime site serving
+- [ ] open — Platform hosting itself
+- [ ] open — Platform layer (encryption at rest, TLS-when-configured, multi-tenancy, demo identities not an IdP)
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. One claim stands, at catalogue weight inside a first-party capabilities list; the category's no-zero-claims floor, already fallen at the tiered addition, falls here too, recorded not repaired — the zero-claim fork's whole function, document generation, has no family. The documented control claims stand at access control and identification, both at prose weight (role-based permissions; single sign-on via SAML and OpenID Connect), traced to sentences and never converted to taxonomy claims; a SOC 2 sentence is recorded at compliance-assertion weight, and every other family is listed as not documented. One of twelve core functions is claim-supported; eleven are carried, not claimed.
+
 ## Later groups
 
 Each group appends its section here when it ships.
