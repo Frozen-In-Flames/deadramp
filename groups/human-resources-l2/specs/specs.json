@@ -266,5 +266,117 @@
   ],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2016962740/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2016962740"
+ },
+ {
+  "fork_id": "FR1834348080",
+  "vendor": "GDC Integration, Inc.",
+  "product": "General Support System (GSS)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Human Resources",
+  "description": "GDCI provides proven, efficiently priced Federalized SaaS Human Resource\r\nApplications to support the critical human capital functions across the employee\r\nlifecycle.\r\n\r\nTime, Attendance & Leave:\r\nPaycheck 8 reduces the challenging and time consuming effort of tracking and reporting time, attendance, and leave (including VLTP and FLMA). Utilizing agency/department\r\nbusiness rules, Paycheck8 pre-edits to eliminate and reduce time-entry errors, corrected T&A\u2019s and Leave balances. \r\n\r\nLabor and Employee Relations:\r\nLabor-Employee Relations Information System (LERIS) is a state-of-the-art case management and reporting system designed to meet the needs of the labor/employee relations specialist, EEO case manager and other HR specialists, along with agency leadership.\r\n\r\nPerformance Management:\r\nePM is a proven web-based HR system developed to support the effective management, process development, and performance tracking of the appraisal process from start to finish, while maintaining compliance with performance and awards laws.\r\n\r\nOnboarding:\r\neForms is innovative technology designed to improve productivity and eliminate redundant manual data entry for new employee enrollment. It is inclusive of the new hire process and management of enrollment forms and procedures.\r\n\r\nHR Self Service:\r\nConnect HR is an easy to manage HR dashboard designed to leverage the benefits of single sign on, role management, collaboration, communication, business intelligence and document management.\r\n\r\nPersonnel Actions & Awards Tracking:\r\neTracker is a tool developed to easily and efficiently manage, process and track Request for Personnel Action (SF 52), Notification of Personnel Action (SF 50) and Awards Processing.\r\n\r\nUniform Management:\r\nThe Uniform Allowance Management System (UNAW) conveniently provides complete processing, tracking and approval of uniform allowance requests online.\r\n\r\nOrganizational Chart Automation:\r\nFedChart is a workforce planning tool that automates the creation, maintenance, and updating of organizational charts, adhering to agency-specific business rules and\r\nrequirements. Utilizing federal HR data, FedChart visualizes an agency\u2019s organizational structure, positions, and workforce costs.\r\n\r\nHR Data Reporting Automation:\r\nFedLens is a research-based, three module tool designed to enhance data-driven workforce management and planning through automated reports, trend analysis, and predictive analytics. It comprises three modules (Diagnostics, Snapshots, and Predictions) which provide insight based on data benchmarked against standards from the Office of Personnel Management (OPM).\r\n\r\nFEVS Data Reporting Automation:\r\nFedViews is an automated tool for Federal Employee Viewpoint Survey (FEVS) reporting, trend analysis, and workforce planning. It assists federal agencies in generating FEVS reports in compliance with OPM requirements and enables federal HR leaders to compare viewpoint data over time, identify trends, and benchmark scores across departments and within agencies. Action planning modules allow agencies to develop targeted action planning to improve engagement over time.",
+  "functions_claimed": [
+   {
+    "function_id": "onboarding",
+    "function": "New-hire onboarding & entrance-on-duty",
+    "evidence": "Onboarding: \neForms is innovative technology designed to improve productivity and eliminate redundant manual data entry for new employee enrollment."
+   },
+   {
+    "function_id": "performance_management",
+    "function": "Performance management",
+    "evidence": "Performance Management: \nePM is a proven web-based HR system developed to support the effective management, process development, and performance tracking of the appraisal process from start to finish, while maintaining compliance with performance and awards laws."
+   },
+   {
+    "function_id": "benefits_retirement",
+    "function": "Benefits & retirement administration",
+    "evidence": "HR Self Service: \nConnect HR is an easy to manage HR dashboard designed to leverage the benefits of single sign on, role management, collaboration, communication, business intelligence and document management."
+   },
+   {
+    "function_id": "personnel_actions_cases",
+    "function": "Personnel actions, forms & case management",
+    "evidence": "Labor and Employee Relations: \nLabor-Employee Relations Information System (LERIS) is a state-of-the-art case management and reporting system designed to meet the needs of the labor/employee relations specialist, EEO case manager and other HR specialists, along with agency leadership."
+   },
+   {
+    "function_id": "awards_recognition",
+    "function": "Awards & recognition",
+    "evidence": "Performance Management: \nePM is a proven web-based HR system developed to support the effective management, process development, and performance tracking of the appraisal process from start to finish, while maintaining compliance with performance and awards laws."
+   },
+   {
+    "function_id": "workforce_planning",
+    "function": "Workforce planning & resource management",
+    "evidence": "Organizational Chart Automation: \nFedChart is a workforce planning tool that automates the creation, maintenance, and updating of organizational charts, adhering to agency-specific business rules and \nrequirements."
+   },
+   {
+    "function_id": "ai_automation",
+    "function": "AI & workflow automation",
+    "evidence": "Organizational Chart Automation: \nFedChart is a workforce planning tool that automates the creation, maintenance, and updating of organizational charts, adhering to agency-specific business rules and \nrequirements."
+   },
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting, dashboards & analytics",
+    "evidence": "Time, Attendance & Leave: \nPaycheck 8 reduces the challenging and time consuming effort of tracking and reporting time, attendance, and leave (including VLTP and FLMA)."
+   },
+   {
+    "function_id": "audit_compliance",
+    "function": "Audit & compliance review",
+    "evidence": "Performance Management: \nePM is a proven web-based HR system developed to support the effective management, process development, and performance tracking of the appraisal process from start to finish, while maintaining compliance with performance and awards laws."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1834348080/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1834348080"
+ },
+ {
+  "fork_id": "FR2002757173",
+  "vendor": "Government Retirement & Benefits, Inc.",
+  "product": "GRB Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Human Resources",
+  "description": "The GRB Platform is a complete Software-as-a-Service (SaaS) cloud-based Federal Retirement and Benefits Administration solution that meets the goals and objectives of the HR Line of Business (HRLoB). Offered on a subscription basis for unlimited use and developed specifically for the Federal sector, the GRB Platform combines tools and capabilities for human resource specialists, managers, and employees into a common system. The GRB Platform contains a flexible bi-directional interface used to communicate with an Agency's payroll/HRIS system, third party benefits providers, and any outside parties as necessary.",
+  "functions_claimed": [
+   {
+    "function_id": "benefits_retirement",
+    "function": "Benefits & retirement administration",
+    "evidence": "The GRB Platform is a complete Software-as-a-Service (SaaS) cloud-based Federal Retirement and Benefits Administration solution that meets the goals and objectives of the HR Line of Business (HRLoB)."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2002757173/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2002757173"
+ },
+ {
+  "fork_id": "FR1818240234",
+  "vendor": "Perceptyx",
+  "product": "Perceptyx Insights Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Human Resources",
+  "description": "Perceptyx's online employee engagement survey technology is built to support four phases of service to Perceptyx clients, including a configuration module to support planning and survey set-up, data collection module, diagnostic reporting module and action planning module, each module runs on the Perceptyx proprietary web software platform.\n\nUsing the Perceptyx real-time technology for each phase of a project, Perceptyx can create web applications specifically suited to the unique data collection and reporting needs of any organization. From creation to collection to interactive result reporting, the whole process is done in real-time and is hosted on the Perceptyx robust, secure network.\n\nPerceptyx technology supports performance improvement services for each client in the following phases:\n\n1. Design, development, configuration, and testing.\n2. Deploy, data collection, training, and monitoring.\n3. Analysis, diagnosis, and final report configuration.\n4. Report distribution, action planning, and executive presentations.\n\nEach phase of the project provides specific services for the client leveraged by the Perceptyx technology and facilitated by Project Managers.\n\nThe services included as part of the Perceptyx Insights Platform include the following:\n\n1. Ask Service - Point-in-time employee surveys to illuminate the employee experience\n2. Sense Service - Lifecycle surveys and always-on listening to keep pace with your people\n3. Dialogue Service - Crowdsourced insights to engage your people on the topics that matter most\n4. Develop Service - Multi-rater feedback to improve manager effectiveness and build leaders",
+  "functions_claimed": [
+   {
+    "function_id": "reporting_analytics",
+    "function": "Reporting, dashboards & analytics",
+    "evidence": "Perceptyx's online employee engagement survey technology is built to support four phases of service to Perceptyx clients, including a configuration module to support planning and survey set-up, data collection module, diagnostic reporting module and action planning module, each module runs on the Perceptyx proprietary web software platform."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1818240234/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1818240234"
  }
 ]

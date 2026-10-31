@@ -1022,6 +1022,18 @@ New extended functions from the addition forks, specified in groups/health-welln
 
 Enlargements by substance, no family claim fired, recorded as such: device connectivity / sync pipelines +GTS (RPM device integration); EMR / EHR integration engines +Somnoware; AI / ML models +Solventum and +Somnoware. Claims adjudication gains no claimant (Solventum's "reimbursement content" is a content service, gapped separately above). All three addition forks claim zero families under the taxonomy (built from the original five's glucose / CGM vocabulary), pinned in tests with near-misses itemized; the clinical-decision-support absence stands.
 
+## Remainder Addition — Human Resources L2 (+3 forks)
+
+New extended functions from the addition forks, specified in groups/human-resources-l2/ADDENDUM.md, not implemented:
+- [ ] open — Time, attendance & leave tracking engine (GDC; retires the group's two standing absences, leave & time-off and time & attendance, asserted in substance in its own prose; the tracking surface is an engine, not a records form)
+- [ ] open — Organizational chart generation & maintenance automation (GDC)
+- [ ] open — Employee engagement survey & listening platform (Perceptyx; its whole function, which has no taxonomy family)
+- [ ] open — Federal retirement & benefits administration platform depth (GRB fork excess, distinct from the existing calculator gap)
+- [ ] open — Employee self-service portal & HR dashboard (GDC)
+- [ ] open — Uniform allowance request processing (GDC)
+
+Enlargements of families already registered under Group 21: workforce planning & resource-management analytics / models (+GDC); integration connector engines (+GRB by substance); document & template assembly engines (+GDC by substance). AI talent intelligence & matching engines explicitly gain no claimant (one addition's automation claim carries zero AI wording anywhere, recorded as a wording artifact).
+
 ## Later groups
 
 Each group appends its section here when it ships.

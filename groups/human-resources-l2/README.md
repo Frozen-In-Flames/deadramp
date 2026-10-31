@@ -353,3 +353,32 @@ organizations. The L2 / FedRAMP Moderate equivalence used here is a
 planning/matching equivalence only. This build is **not a FedRAMP
 authorization and confers no CMMC certification**, and it claims
 neither.
+
+## Remainder additions (2026-10-31)
+
+The remainder census unit `addition:human-resources-l2` appended
+3 previously uncategorized forks to this group — GDC Integration
+General Support System (GSS), Government Retirement & Benefits
+GRB Platform, and Perceptyx Insights Platform — spec'd under the
+group's existing 25-family taxonomy applied verbatim (proven by
+exact reproduction of the original claim tables). See
+`ADDENDUM.md` for the full record. In brief: **11 new claims**
+(group total 49 across 7 forks, 7 of 7 claiming); **the core is
+unchanged** (`src/` byte-identical; the additions' claims all ride
+the shipped records forms); **tests 77 → 89, all passing**, with
+the group's signature lifecycle-derivation drill re-run in this
+tree (exactly 7 failures under mutation: the original 5 plus 2
+from the additions module). The group's character broadens from
+hiring-centric to post-hire operations: reporting & analytics
+becomes the largest family (4 of 7), and benefits & retirement
+gains a substantive specialist (GRB). Two of the six named
+absences above are **retired** by GDC's own prose — leave &
+time-off and time & attendance are asserted in substance by its
+Paycheck 8 module — and enter the gap registry as a time,
+attendance & leave tracking engine for the final batch, alongside
+5 further new gaps named in `ADDENDUM.md` §5 (org-chart
+automation, the employee survey & listening platform, GRB's
+administration depth, the self-service portal, uniform allowance
+processing). The payroll absence stands: the word's single
+appearance in the enlarged group is GRB naming an external
+payroll/HRIS system it interfaces with.

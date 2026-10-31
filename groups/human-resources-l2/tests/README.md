@@ -7,11 +7,12 @@ claim family / control family it traces to.
 
 ```bash
 cd groups/human-resources-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 77 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 89 tests
 ```
 
 Status at delivery: **77 tests, OK** against the implementation in
-`../src/`. (Run exactly as above: helpers are imported as a top-level
+`../src/`. After the remainder additions (below): **89 tests, OK**,
+implementation unchanged. (Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
 entry point for this group.)
@@ -36,6 +37,7 @@ entry point for this group.)
 | `test_service.py` | REST API — live HTTP server: health, 401 unknown user / role mismatch, full flow (person → position → vacancy → application → evaluation + entry → lifecycle derived in_progress then complete → performance → benefits → case → report), employee write 403 + denied audited, employee scope over HTTP (403 on another person's application; org-level vacancy readable), audit admin+auditor only, report employee 403, 400/404 envelopes |
 | `test_main_cli.py` | `python -m hr serve` subprocess with demo users alice/bob/carol/dana |
 | `test_negative_control.py` | Negative control (below) |
+| `test_additions.py` | Remainder additions (unit `addition:human-resources-l2`, see `../ADDENDUM.md`) — spec integrity: sheet count/unit order, membership vs `remainder.json`, literal per-fork claim table (GDC 9 / GRB 1 / Perceptyx 1), zero-claim families (16) pinned, near-miss pins (LERIS labor-relations phrasing, "role management", GRB "interface", Perceptyx "performance improvement"), wording-artifact pins (GDC benefits/awards/AI/audit), absence-update pins (leave retired; time & attendance retired by substance, literal probe still zero; payroll single external reference); substrate cases: GDC onboarding derivation + performance cycle + case kinds, GRB retirement/benefits records + employee scope, Perceptyx counts-only reporting + no-score scan |
 | `hr_helpers.py` | Shared fixtures: demo users (ADMIN/SPECIALIST/EMPLOYEE/AUDITOR), `USERS` registry, `fresh_store()`, and `make_store()` building an HrStore + AuditLog + one position ("Program Analyst", series "0343", grade "13", created by ADMIN) + one person (person_ref "carol", kind "employee", created by ADMIN) |
 
 ## Negative control
@@ -80,3 +82,24 @@ verified identical to the pre-mutation hash in
 `scratch/store.py.sha256`) and the suite re-run: **77 tests, OK**.
 The suite catches this defect class; the negative control is not
 decorative.
+
+## Remainder additions — drill re-run (2026-10-31)
+
+The remainder additions (unit `addition:human-resources-l2`,
+`../ADDENDUM.md`) changed no core code, so the group's signature
+drill was re-run in this tree: the complete branch of
+`HrStore._derive_case_status` was patched exactly as in the
+original drill (`return "complete"` → `return "in_progress"` under
+the all-done/waived condition) and the full suite ran — **89
+tests, exactly 7 failures**: the original drill's 5
+(`test_lifecycle` add-task and derivation progression,
+`test_negative_control` canonical case, `test_reporting` derived
+status, `test_service` full flow) plus 2 from the new
+`test_additions.py` (the GDC onboarding derivation case and the
+Perceptyx counts-only reporting case), tripping exactly as
+designed. `store.py` was restored from
+`scratch/store.py.premutation-additions` and verified
+SHA-256-identical to the shipped hash
+(`ec34ab5e…`, matching `scratch/store.py.sha256`); the suite
+re-ran green: **89 tests, OK**. Raw mutant output:
+`scratch/additions_mutation_run.txt`.
