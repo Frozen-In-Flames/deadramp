@@ -1,0 +1,41 @@
+[
+ {
+  "fork_id": "FR2632054516",
+  "vendor": "Neuramill, Inc.",
+  "product": "NeuraBridge",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [],
+  "deadramp_category": "Manufacturing",
+  "description": "NeuraBridge is intelligence software for high-precision manufacturing. It transforms engineering intent into structured, manufacturable decisions for aerospace and defense teams.",
+  "functions_claimed": [
+   {
+    "function_id": "manufacturing_intelligence",
+    "function": "Manufacturing intelligence software",
+    "evidence": "NeuraBridge is intelligence software for high-precision manufacturing."
+   },
+   {
+    "function_id": "engineering_intent",
+    "function": "Engineering intent",
+    "evidence": "It transforms engineering intent into structured, manufacturable decisions for aerospace and defense teams."
+   },
+   {
+    "function_id": "intent_transformation",
+    "function": "Transformation of engineering intent into decisions",
+    "evidence": "It transforms engineering intent into structured, manufacturable decisions for aerospace and defense teams."
+   },
+   {
+    "function_id": "manufacturable_decisions",
+    "function": "Structured, manufacturable decisions",
+    "evidence": "It transforms engineering intent into structured, manufacturable decisions for aerospace and defense teams."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2632054516/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2632054516"
+ }
+]
