@@ -716,6 +716,24 @@ The fork is a managed multi-tenant AI platform suite, not a GRC product; its GRC
 
 The Group 33 category union's extended families (automated evidence validation, monitoring feeds & scanner integrations, vulnerability scanning engine, automated KSI validation, posture / risk scoring engines, hosted enclave & PaaS operations, FedRAMP package generation) are already registered under Group 33 and are not re-registered here. Named absence (not a gap): policy management — zero claims at every GRC tier so far. Baseline gaps at High: MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Platform-layer: multi-tenancy (the fork operates multi-tenant; single-tenant reference deployment); TLS only when configured; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: both tagged claims are engine claims — the Core implements the records substrate their outputs land in (monitoring results, finding records, counts-only posture); no scoring follows from the risk tag.
 
+## Singleton 45 — Grant Management L2 (1 fork, new category)
+
+Extended functions, specified in groups/grant-management-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Applicant portal web application (the responsive browser UI itself, incl. branding customization & rendering and device adaptation)
+- [ ] open — Workflow execution engine (the registry holds definitions only)
+- [ ] open — Form designer & form rendering engine (the registry holds definitions only)
+- [ ] open — Document storage & content management engine (core holds metadata / checksums only)
+- [ ] open — E-signature signing engine (ceremony & cryptographic binding; signature events are recorded)
+- [ ] open — Payment / disbursement execution for awards (awards are records; no money moves)
+- [ ] open — Reporting & analytics engines beyond registry summaries (dashboards, ad-hoc generation, exports)
+- [ ] open — Notification & message delivery transport (email / SMS / push; records only)
+- [ ] open — Applicant matching & opportunity recommendation
+- [ ] open — Eligibility determination & merit-scoring engines (nothing is scored, by design)
+- [ ] open — Closeout automation & financial reconciliation engines
+- [ ] open — Identity provider / identity management service (the build ships RBAC hooks; IA-2 stays with the embedding organization)
+
+Platform-layer: encryption at rest (deployment layer; TLS when configured); multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP. Spec notes: the category is new, so the taxonomy was defined from this fork's own description (17 families, 17 claims); the description contains no money vocabulary and no scoring vocabulary — money enters only as fields on records the claimed functions presuppose, under an explicit core-boundary decision, and no score field exists anywhere in the build.
+
 ## Later groups
 
 Each group appends its section here when it ships.

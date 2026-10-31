@@ -1,0 +1,72 @@
+"""Command-line entry point: ``python -m grants serve ...``.
+
+Demo users (documented demo identities, not an identity provider --
+production identity belongs to the embedding organization):
+
+- ``alice`` -- admin
+- ``bob``   -- member
+- ``carol`` -- viewer
+
+Callers authenticate with ``X-User`` / ``X-Role`` headers matching
+these names and roles. When ``--certfile`` and ``--keyfile`` are
+given, the server serves over TLS using the standard library
+``ssl`` module.
+"""
+
+import argparse
+import ssl
+import sys
+
+from .audit import AuditLog
+from .service import make_server
+from .store import GrantsStore
+
+DEMO_USERS = {
+    "alice": "admin",
+    "bob": "member",
+    "carol": "viewer",
+}
+
+
+def build_parser():
+    parser = argparse.ArgumentParser(prog="grants")
+    subparsers = parser.add_subparsers(dest="command")
+    serve = subparsers.add_parser("serve", help="run the grants HTTP service")
+    serve.add_argument("--host", default="127.0.0.1")
+    serve.add_argument("--port", type=int, default=8000)
+    serve.add_argument("--audit-log", default=None, help="path to a JSONL audit log")
+    serve.add_argument("--certfile", default=None, help="TLS certificate file (PEM)")
+    serve.add_argument("--keyfile", default=None, help="TLS private key file (PEM)")
+    return parser
+
+
+def main(argv=None):
+    parser = build_parser()
+    args = parser.parse_args(argv)
+    if args.command != "serve":
+        parser.print_help()
+        return 2
+    if bool(args.certfile) != bool(args.keyfile):
+        parser.error("--certfile and --keyfile must be given together")
+
+    audit = AuditLog(path=args.audit_log)
+    store = GrantsStore(audit=audit)
+    server = make_server(args.host, args.port, store, audit, dict(DEMO_USERS))
+
+    scheme = "http"
+    if args.certfile and args.keyfile:
+        context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+        context.load_cert_chain(certfile=args.certfile, keyfile=args.keyfile)
+        server.socket = context.wrap_socket(server.socket, server_side=True)
+        scheme = "https"
+
+    print("grants service listening on %s://%s:%d" % (scheme, args.host, args.port))
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        pass
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

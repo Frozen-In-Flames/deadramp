@@ -1,0 +1,106 @@
+[
+ {
+  "fork_id": "FR2311952621",
+  "vendor": "Ernst & Young LLP",
+  "product": "EY Grants Accelerator",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Grant Management",
+  "description": "EY Grants Accelerator (EYGA) is a cloud-native solution designed to streamline the entire grant lifecycle for grantmaking organizations. EYGA offers an external-facing portal that allows applicants to explore grant opportunities, submit and manage applications, access post award reports, receive secure messages, and maintain their account and profile information. This portal can be customized to align with agency branding guidelines and is a responsive website accessible through any modern web browser, adapting based on the device being used. The administrator workspace equips staff to efficiently manage the entire grant process from pre-award through closeout. It includes features such as system notifications, communication tools, internal notes, views, configurable workflows, form design, document management, e-signature, and reporting.  EYGA is hosted within EY Government and Public Sector Azure Government platform, which provides support including but not limited to flexible deployment, identity management, security operations and governance for the EYGA application.",
+  "functions_claimed": [
+   {
+    "function_id": "applicant_portal",
+    "function": "Applicant portal (external-facing)",
+    "evidence": "EYGA offers an external-facing portal that allows applicants to explore grant opportunities, submit and manage applications, access post award reports, receive secure messages, and maintain their account and profile information."
+   },
+   {
+    "function_id": "opportunity_exploration",
+    "function": "Grant opportunity exploration",
+    "evidence": "EYGA offers an external-facing portal that allows applicants to explore grant opportunities, submit and manage applications, access post award reports, receive secure messages, and maintain their account and profile information."
+   },
+   {
+    "function_id": "application_submission_management",
+    "function": "Application submission & management",
+    "evidence": "EYGA offers an external-facing portal that allows applicants to explore grant opportunities, submit and manage applications, access post award reports, receive secure messages, and maintain their account and profile information."
+   },
+   {
+    "function_id": "post_award_reports_access",
+    "function": "Post-award report access",
+    "evidence": "EYGA offers an external-facing portal that allows applicants to explore grant opportunities, submit and manage applications, access post award reports, receive secure messages, and maintain their account and profile information."
+   },
+   {
+    "function_id": "messaging_communications",
+    "function": "Secure messaging & communication tools",
+    "evidence": "EYGA offers an external-facing portal that allows applicants to explore grant opportunities, submit and manage applications, access post award reports, receive secure messages, and maintain their account and profile information."
+   },
+   {
+    "function_id": "account_profile_management",
+    "function": "Applicant account & profile management",
+    "evidence": "EYGA offers an external-facing portal that allows applicants to explore grant opportunities, submit and manage applications, access post award reports, receive secure messages, and maintain their account and profile information."
+   },
+   {
+    "function_id": "portal_customization_branding",
+    "function": "Portal customization & branding",
+    "evidence": "This portal can be customized to align with agency branding guidelines and is a responsive website accessible through any modern web browser, adapting based on the device being used."
+   },
+   {
+    "function_id": "grant_process_administration",
+    "function": "Grant process administration (pre-award through closeout)",
+    "evidence": "The administrator workspace equips staff to efficiently manage the entire grant process from pre-award through closeout."
+   },
+   {
+    "function_id": "system_notifications",
+    "function": "System notifications",
+    "evidence": "It includes features such as system notifications, communication tools, internal notes, views, configurable workflows, form design, document management, e-signature, and reporting."
+   },
+   {
+    "function_id": "internal_notes",
+    "function": "Internal notes",
+    "evidence": "It includes features such as system notifications, communication tools, internal notes, views, configurable workflows, form design, document management, e-signature, and reporting."
+   },
+   {
+    "function_id": "configurable_workflows",
+    "function": "Configurable workflows",
+    "evidence": "It includes features such as system notifications, communication tools, internal notes, views, configurable workflows, form design, document management, e-signature, and reporting."
+   },
+   {
+    "function_id": "form_design",
+    "function": "Form design",
+    "evidence": "It includes features such as system notifications, communication tools, internal notes, views, configurable workflows, form design, document management, e-signature, and reporting."
+   },
+   {
+    "function_id": "document_management",
+    "function": "Document management",
+    "evidence": "It includes features such as system notifications, communication tools, internal notes, views, configurable workflows, form design, document management, e-signature, and reporting."
+   },
+   {
+    "function_id": "e_signature",
+    "function": "E-signature",
+    "evidence": "It includes features such as system notifications, communication tools, internal notes, views, configurable workflows, form design, document management, e-signature, and reporting."
+   },
+   {
+    "function_id": "reporting",
+    "function": "Reporting",
+    "evidence": "It includes features such as system notifications, communication tools, internal notes, views, configurable workflows, form design, document management, e-signature, and reporting."
+   },
+   {
+    "function_id": "identity_management",
+    "function": "Identity management (platform)",
+    "evidence": "EYGA is hosted within EY Government and Public Sector Azure Government platform, which provides support including but not limited to flexible deployment, identity management, security operations and governance for the EYGA application."
+   },
+   {
+    "function_id": "hosting_platform",
+    "function": "Cloud hosting platform (platform note)",
+    "evidence": "EYGA is hosted within EY Government and Public Sector Azure Government platform, which provides support including but not limited to flexible deployment, identity management, security operations and governance for the EYGA application."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2311952621/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2311952621"
+ }
+]
