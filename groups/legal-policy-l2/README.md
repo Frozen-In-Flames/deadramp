@@ -24,6 +24,26 @@ It was written from that contract only: original code, no vendor
 code, assets, or branding. Python 3, **standard library only**, no
 external dependencies.
 
+## Additions (remainder unit `addition:legal-policy-l2`)
+
+Six previously uncategorized forks joined this group in the
+remainder pass — CDS Federal Cloud, Deloitte Evidence Management
+System, DocuSign IAM eSignature, DocuSign CLM, Innovative Driven
+Government Cloud, and RelativityOne Government (all FedRAMP
+Moderate) — spec'd in `specs/specs.json` (7 sheets) under this
+group's taxonomy applied **verbatim**. What joined: six
+eDiscovery, evidence-management, e-signature, and
+contract-lifecycle platforms the census filed under Legal &
+Policy from their own descriptions. What changed: the spec only —
+the newcomers claim **zero** of the 11 taxonomy families (the
+taxonomy is the original fork's own phrases; see `ADDENDUM.md`
+for the per-fork near-misses), and their engines are registered
+as 10 new gaps for the final batch. What did not change: the
+core — `src/` is byte-identical, the tier baseline is untouched,
+and the group's signature single-use drill was re-run against
+the enlarged suite (106 tests; exactly 5 fail under the mutant).
+Full record: [`ADDENDUM.md`](ADDENDUM.md).
+
 ## The 13 core functions
 
 1. **Agency registry & membership** — agencies (`agy-`) keyed by an
@@ -174,13 +194,15 @@ to the 110 practices of NIST SP 800-171 Rev. 2.
 
 ```bash
 cd groups/legal-policy-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 94 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 106 tests
 ```
 
-**94 tests, all passing**, including the mutation-verified
-negative control: removing the single-use sandbox check from the
-real store makes exactly 4 tests fail (see `tests/README.md` for
-the drill record).
+**106 tests, all passing** (94 at delivery + 12 additions
+tests), including the mutation-verified negative control:
+removing the single-use sandbox check from the real store makes
+exactly 4 tests fail at delivery scope and exactly 5 against the
+enlarged suite (the additions module's sandbox case is the fifth;
+see `tests/README.md` for both drill records).
 
 ## Honesty
 

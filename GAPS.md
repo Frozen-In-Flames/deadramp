@@ -932,6 +932,20 @@ New extended functions from the addition forks, specified in groups/system-admin
 
 Enlargements of families already registered under Singleton 54: managed OS & services administration operations (now the substance of 5 of 9 forks); virtualization engine (2 of 9; Citrix's headline function); application delivery & hosting runtime; high-availability network operation (substance only). Named-absence update: monitoring, incident response, ticketing, and backup / DR are no longer universal absences of the enlarged group (asserted as engines by addition forks; still zero claims, unbuilt, gap-named above); SLA vocabulary remains universally absent.
 
+## Remainder Addition — Legal & Policy L2 (+6 forks)
+
+New extended functions from the addition forks, specified in groups/legal-policy-l2/ADDENDUM.md, not implemented (the group's original nine Extended gaps gain no claimants; the newcomers claim zero families under the taxonomy, which is the original fork's literal phrases):
+- [ ] open — eDiscovery processing & collection engine (CDS, Deloitte EMS, IDGC)
+- [ ] open — eDiscovery document review platform, incl. hosted review ecosystems (CDS, Deloitte EMS, IDGC, RelativityOne)
+- [ ] open — eDiscovery production, disposition & archiving engine (Deloitte EMS, IDGC)
+- [ ] open — Legal hold & preservation management (Deloitte EMS, IDGC)
+- [ ] open — AI document analysis for discovery: summarization / classification / redaction, assisted review, analytics & visualizations (Deloitte EMS, IDGC, RelativityOne, CDS)
+- [ ] open — OCR & document extraction engine (Deloitte EMS)
+- [ ] open — FOIA & disclosure release engine (Deloitte EMS)
+- [ ] open — Electronic signature engine: ceremony, binding / validity, envelope & transaction workflow (DocuSign)
+- [ ] open — Contract lifecycle management engine (DocuSign CLM)
+- [ ] open — Agreement workflow automation engine (DocuSign)
+
 ## Later groups
 
 Each group appends its section here when it ships.

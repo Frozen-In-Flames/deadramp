@@ -75,5 +75,113 @@
   ],
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2619254906",
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2619254906/"
+ },
+ {
+  "fork_id": "F1506246782",
+  "vendor": "Complete Discovery Source",
+  "product": "Complete Discovery Source Federal Cloud (CDS-F)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Legal & Policy",
+  "description": "Complete Discovery Source (CDS) is a pioneer in the eDiscovery industry, providing litigation technology and hosting, advisory services, and managed services to support complex discovery matters. With a team of seasoned legal experts and technicians, we provide leading-edge technology, advanced analytics, and a secure, scalable infrastructure to support the data initiatives of State and Federal agencies and departments. CDS is the first choice of the Am Law 100 and Fortune 500 and is recognized as Best in End-to-End eDiscovery by the National Law Journal and New York Law Journal. CDS supports more than 25 eDiscovery technologies including Relativity and Clearwell. CDS is headquartered in New York with regional offices in Washington DC, Chicago, and Houston. The company maintains highly secure ISO 27001 certified hosting and SSAE 16 Type 2 audited data centers in the US and EU.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID F1506246782",
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1506246782/"
+ },
+ {
+  "fork_id": "F1210161615",
+  "vendor": "Deloitte",
+  "product": "Evidence Management System (EMS)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Legal & Policy",
+  "description": "The Deloitte Government and Public Sector Technology Center (GPS TC) provides Software-as-a-Service (SaaS) to government agencies, legal departments, and public entities utilizing machine technology and web services. Deloitte Evidence Management System (EMS) provides advanced technology and experienced staff to assist government agencies responding to requests stemming from litigation, congressional inquiries, FOIA, investigations, and other similar use cases. Our capabilities assist other offerings that need to collect, extract, or analyze unstructured data.\r\n\r\n \r\n\r\nDeloitte EMS draws on years of experience providing government and public sector clients secure eDiscovery solutions and support. Deloitte\u2019s highly skilled technical resources engage a full array of EDRM data management solutions and services that include identifying, preserving, collecting, reviewing, producing, dispositioning, and archiving. Clients who partner with Deloitte can utilize a wide variety of application software in a secure and scalable environment to address their identified mission requirements.\r\n\r\n \r\n\r\n- Disclosure/FOIA (SecureReleaseTM) Advanced Analytics (i.e. active learning, culling data)\r\n\r\n- NavigAite: A Generative AI solution that leverages Relativity, a Large Language Model (LLM) and prompt engineering to summarize, classify, and redact text across extensive document collections\r\n\r\n- SmarText: An OCR solution that leverages LLMs to organize documents, perform data extraction and analysis, and identify redactions for documents integrated with SecureReleaseTM or other document review platforms and tools\r\n\r\n- Information Governance\r\n\r\n- Program Integrity\r\n\r\n- Investigations (i.e., criminal, financial, employment)\r\n\r\n- Data Collection including mobile data/devices, social media, websites, O365 Project and Contract Management Trial Support\r\n\r\n- Customizable and tailored workflows",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID F1210161615",
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1210161615/"
+ },
+ {
+  "fork_id": "F1609267945",
+  "vendor": "DocuSign",
+  "product": "Docusign - IAM eSignature",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Hybrid Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Legal & Policy",
+  "description": "DocuSign is a San Francisco- and Seattle-based company that provides electronic signature technology and Digital Transaction Management services to facilitate electronic exchanges of contracts and signed documents. DocuSign's features include authentication services, user identity management and workflow automation. Signatures processed by DocuSign are comparable to traditional signatures based on the product's compliance with the ESIGN Act as well as the European Union's Directive 1999/93/EC on electronic signatures. DocuSign Federal is a SaaS application oriented towards federal government entities. Operated and managed as a government community cloud, DocuSign Federal provides government customers with an enterprise signing service to facilitate paperless workflow management. More information about DocuSign Federal can be found at https://www.docusign.com/federal (https://www.docusign.com/solutions/industries/government/federal).",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID F1609267945",
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1609267945/"
+ },
+ {
+  "fork_id": "F1605027893",
+  "vendor": "DocuSign",
+  "product": "DocuSign CLM",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Legal & Policy",
+  "description": "DocuSign CLM is a secure contract lifecycle management product in DocuSign's Agreement Cloud. DocuSign CLM manages contracts in addition to all other types of documents across desktop, mobile, and partner applications like Salesforce. DocuSign CLM goes beyond standard document and contract management with advanced workflows that automate manual tasks and complex processes to speed time-to-revenue. Businesses use DocuSign CLM to optimize collaboration and processes across internal departments, as well as with prospects and customers.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID F1605027893",
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1605027893/"
+ },
+ {
+  "fork_id": "FR1800263217",
+  "vendor": "Innovative Discovery, LLC",
+  "product": "Innovative Driven Government Cloud (IDGC)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Legal & Policy",
+  "description": "The Innovative Driven Government Cloud (ID Gov-Cloud) is a Software as a Service (SaaS) offering that provides secure and scalable government legal document services within a compliant cloud environment. Built on industry-leading technologies Relativity and Nuix and paired with expert consulting, agencies can leverage the full scope of eDiscovery services within one scalable platform, including (but not limited to) processing, document review, advanced analytics, assisted review, legal hold services, and production.\r\n\r\n \r\n\r\nEvery service package is within a secure and user-friendly customer interface. Government agencies also gain the added capabilities of Innovative Discovery's government project management teams and optimal workflows, benefitting from years of experience supporting complex government electronic discovery requests.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR1800263217",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1800263217/"
+ },
+ {
+  "fork_id": "FR2004753002",
+  "vendor": "Relativity ODA LLC",
+  "product": "RelativityOne Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Legal & Policy",
+  "description": "When it comes to e-discovery, you need the truth to act quickly, whether it's understanding your organization's risk around an internal issue, preparing evidence for litigation or investigations, working through M&A activity, or even performing proactive compliance monitoring. But with the tremendous amount of data out there, finding the truth isn't easy. We've developed powerful technology to help. RelativityOne Government brings the entire e-discovery process together in one secure and extensible platform, connected to your organization\u2019s most sensitive data - and supported by the community of experts you need to untangle it all. Start and finish e-discovery in one solution with best-in-class security, scale, and performance and extend the functionality of the platform to meet your unique needs by leaning on apps built by our ecosystem of Relativity developer partners or building them yourself. With the latest in advanced searching and analytics, machine learning, and visualizations all built in, RelativityOne Government is your complete platform for\u202forganizing data, discovering the truth, and acting on it.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2004753002",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2004753002/"
  }
 ]

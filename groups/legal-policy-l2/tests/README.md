@@ -8,10 +8,11 @@ function / spec claim / control family it traces to, per
 
 ```bash
 cd groups/legal-policy-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 94 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 106 tests
 ```
 
-Status at delivery: **94 tests, OK**.
+Status at delivery: **94 tests, OK**. Status after the remainder
+additions (below): **106 tests, OK**.
 
 ## Layout
 
@@ -29,6 +30,7 @@ Status at delivery: **94 tests, OK**.
 | `test_service.py` | 6 | Service contract — live HTTP on an ephemeral port: `/health` no auth, **401** (unknown user / role mismatch, audited `:denied`), **403** (member creating an agency; viewer writing; outsider reading), **400** (validation; second sandbox execution; bad base64; float quantity), **404**, the full flow, the **query_text hashing path** (response and `store._searches` hold `sha256(text)`; the text appears nowhere in the record), audit endpoint admin-only with the read itself audited |
 | `test_main_cli.py` | 1 | CLI — `python -m legalpol serve` subprocess answers `/health` |
 | `test_negative_control.py` | 3 | Negative control (below) |
+| `test_additions.py` | 12 | Remainder additions (below) — spec integrity for the 6 `addition:legal-policy-l2` sheets (membership/order, zero-claim table, verbatim-pattern absence, census citations pinned, schema/tier) + one substrate case per newcomer against the unchanged core + an additions export-checksum case |
 | `legalpol_helpers.py` | — | Canonical fixture: agency created by ADMIN (alice) with MEMBER (bob) and VIEWER (carol) as members; MEMBER2 (erin) and OUTSIDER (dave) are platform members outside the fixture agency |
 | `smoke.py` | — | Live smoke driver (not a unittest): real server, agency + workspace + sandbox session, two executions, second rejected 400 |
 
@@ -73,6 +75,42 @@ still pass under the mutant (consumption flips correctly either
 way), and `test_mutant_would_not_reject` passes because it exercises
 the subclass mutant directly, independent of the real seam — as
 expected.
+
+## Additions (remainder unit `addition:legal-policy-l2`)
+
+The 6 remainder forks (CDS Federal Cloud, Deloitte EMS, DocuSign
+IAM eSignature, DocuSign CLM, IDGC, RelativityOne Government) were
+spec'd under this group's taxonomy applied **verbatim** by
+`scratch/extract_additions.py` — which asserts its taxonomy copy
+equals the original extractor's before tagging — and claim
+**zero** of the 11 families (see `../ADDENDUM.md` §2 for the
+per-fork near-misses). The core is unchanged, so the additions
+module pins the spec outcome (membership, the zero-claim table,
+pattern absence from the texts themselves, the 9 census citations
+verbatim, sheet schema and tier) and exercises the unchanged
+substrate once per newcomer: document + verify-by-content (CDS),
+digest-only saved search (Deloitte EMS), document + usage +
+report (DocuSign eSignature), per-workspace document refs
+(DocuSign CLM), multi-execution session records (IDGC), the
+sandbox single-use rule (RelativityOne), and an export checksum
+recomputed independently over additions usage records.
+
+**Additions mutation drill (re-run of the signature drill in
+this tree):** `_check_sandbox_unused` in the real
+`src/legalpol/store.py` was patched to the same no-op mutant body
+and the full suite run. **106 ran, exactly 5 failed** — the
+original drill's 4 single-use-dependent tests plus
+`test_additions.TestAdditionSubstrate.test_relativityone_sandbox_single_use`.
+The store was restored from `tests/store.py.premutation` and
+verified SHA-256-identical
+(`7030f9fde2aafbd76e653d6805fe7b2f8509ed9108600f91d4c0aacefff85093`);
+the suite is green again (106/106). Raw output:
+`scratch/additions_mutation_run.txt`. Transparency note: a first
+patch attempt in this session dropped a closing parenthesis from
+the replaced seam body, producing a syntactically invalid store;
+that run's output was discarded, the drill was re-done with the
+seam body replaced verbatim, and the mutant source was
+syntax-checked (`compile()`) before the recorded run.
 
 ## Live smoke
 
