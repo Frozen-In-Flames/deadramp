@@ -1,0 +1,301 @@
+[
+ {
+  "fork_id": "FR2004446306",
+  "vendor": "Elastic",
+  "product": "Elastic Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cloud Infrastructure & Hosting",
+  "description": "Elastic Cloud is a family of software-as-a-service (SaaS) products that includes the Elasticsearch Service (ESS).  ESS is a service in which Elastic hosts and manages Elastic Stack components, including Elasticsearch and Kibana, on infrastructure from multiple public cloud providers including Amazon Web Services (AWS). ESS offerings include advanced Elastic Stack features such as security, alerting, monitoring, reporting, machine learning, and graphing capabilities. ESS deployments allow customers to launch with use-case-configured templates, including hot-warm-cold architecture, CPU-optimized workloads, I/O optimized workloads, and memory optimized workloads. ESS also includes enhanced security features such as default encryption at rest and Security Assertion Markup Language (SAML) and native authentication for hosted deployments.",
+  "functions_claimed": [
+   {
+    "function_id": "hosting_platform",
+    "function": "Hosting / managed cloud platform",
+    "evidence": "ESS is a service in which Elastic hosts and manages Elastic Stack components, including Elasticsearch and Kibana, on infrastructure from multiple public cloud providers including Amazon Web Services (AWS)."
+   },
+   {
+    "function_id": "deployment_configuration",
+    "function": "Deployment templates & preconfigured resources",
+    "evidence": "ESS deployments allow customers to launch with use-case-configured templates, including hot-warm-cold architecture, CPU-optimized workloads, I/O optimized workloads, and memory optimized workloads."
+   },
+   {
+    "function_id": "infrastructure_providers",
+    "function": "Underlying cloud infrastructure & providers",
+    "evidence": "ESS is a service in which Elastic hosts and manages Elastic Stack components, including Elasticsearch and Kibana, on infrastructure from multiple public cloud providers including Amazon Web Services (AWS)."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity, access & directory services",
+    "evidence": "ESS also includes enhanced security features such as default encryption at rest and Security Assertion Markup Language (SAML) and native authentication for hosted deployments."
+   },
+   {
+    "function_id": "encryption",
+    "function": "Encryption at rest",
+    "evidence": "ESS also includes enhanced security features such as default encryption at rest and Security Assertion Markup Language (SAML) and native authentication for hosted deployments."
+   }
+  ],
+  "classification_evidence": "Elastic Cloud allows you to centrally manage hosted deployments of the Elastic Stack and serverless projects for your Observability, Security, and Search use cases.",
+  "classification_source_url": "http://www.elastic.co/docs/deploy-manage/deploy/elastic-cloud",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2004446306",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2004446306/"
+ },
+ {
+  "fork_id": "F1208031461",
+  "vendor": "IBM",
+  "product": "IBM Platform Services for Government",
+  "service_model": [
+   "SaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cloud Infrastructure & Hosting",
+  "description": "IBM Platform Services provides core services for managing devices, applications, content, identity & access management, end-to-end visibility, dynamic resource allocation, and improved operational risk and resiliency. These services work together to modernize device management, IAM, observability, application resource monitoring, and providing clients with AI-driven recommendations and tips that are prioritized and customized for your applications. \r\n\r\nIBM MaaS360 for Government is a comprehensive, cloud-based unified endpoint management and security platform for devices, applications and content built on a secure multi-tenant architecture. Government agencies use MaaS360 to protect data and optimize productivity, enabling employees to work anytime and anywhere through trusted mobile interactions. MaaS360 offers device management and security without the added costs and complexities of deploying hardware and software, dealing with intricate configurations, and dedicating additional resources to support the solution on an ongoing basis. MaaS360 allows administrators to manage and enable security on smartphones, tablets and laptops and increase end users’ productivity by enabling secure access to their enterprise data on their endpoint devices. \r\n\r\nIBM Verify for Government is an Identity-as-a-Service (IDaaS) platform enabling organizations to secure and modernize experiences for workforce and citizens. IBM Verify provides modern Single-sign-on (SSO) using standard protocols (SAML, OIDC, OAuth, etc.), supports legacy protocols and access to thousands of popular cloud service applications, and in-house applications, with hundreds of pre-built templates for faster integration. IBM Verify manages the lifecycle of users and groups through a scalable and elastic directory, provides granular, attribute-based policies, and supports multi-factor authentication. Government agencies can provide a digital first experience for secure and frictionless authentication for citizens. \r\n\r\nIBM Instana for Government is a leading full-stack observability tool that automatically and continuously delivers the highest-fidelity data in one-second granularity, with end-to-end distributed tracing of every call or request, and provides a graphing model with dynamic maps to show you how everything is related. IBM Instana for Government allows you to see the exact data you want in the context you need to quickly determine the cause of an issue and take immediate action to fix it. Government agencies can monitor their entire stack with end-to-end visibility across shared services and gain real-time contextual understanding to find and fix problems faster.\r\n\r\nIBM Turbonomic for Government is the leading Application Resource Management (ARM) solution that dynamically allocates resources in real-time boosting efficiency, minimizing cloud expense, and preventing downtime. IBM Turbonomic for Government delivers continuously optimized application resource performance across hybrid multi-cloud environments providing intelligence automation and proactive resource management that scales existing resources efficiently; preemptive analytics to help maximize resource utilization; dynamic resource allocation; and seamless integration across on premises, public, private, hybrid and multiple cloud domains.\r\n\r\nIBM Concert for Government is the connective tissue that harmonizes data from disparate tools and environments, transforming it into actionable knowledge aimed at improving operational risk and resiliency and freeing up teams to focus more on innovation. IBM Concert for Government provides AI-driven recommendations and tips that are prioritized and customized for your applications. Get automated data analysis from disparate systems and tools, identify operational issues before they escalate, increase efficiency with Concert’s recommendations and automation of repetitive tasks. Government agencies can uncover crucial insights about their operations and get application-specific recommendations for improvement.",
+  "functions_claimed": [
+   {
+    "function_id": "multi_tenancy",
+    "function": "Multi-tenancy / shared service",
+    "evidence": "IBM MaaS360 for Government is a comprehensive, cloud-based unified endpoint management and security platform for devices, applications and content built on a secure multi-tenant architecture."
+   },
+   {
+    "function_id": "monitoring_observability",
+    "function": "Monitoring & observability",
+    "evidence": "These services work together to modernize device management, IAM, observability, application resource monitoring, and providing clients with AI-driven recommendations and tips that are prioritized and customized for your applications."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity, access & directory services",
+    "evidence": "IBM Platform Services provides core services for managing devices, applications, content, identity & access management, end-to-end visibility, dynamic resource allocation, and improved operational risk and resiliency."
+   },
+   {
+    "function_id": "resource_optimization",
+    "function": "Application resource management & optimization",
+    "evidence": "IBM Platform Services provides core services for managing devices, applications, content, identity & access management, end-to-end visibility, dynamic resource allocation, and improved operational risk and resiliency."
+   },
+   {
+    "function_id": "ai_recommendations",
+    "function": "AI-driven operational recommendations",
+    "evidence": "These services work together to modernize device management, IAM, observability, application resource monitoring, and providing clients with AI-driven recommendations and tips that are prioritized and customized for your applications."
+   }
+  ],
+  "classification_evidence": "Software to support real‑time visibility into application performance, identification and resolution of IT issues quickly, strengthened access controls for sensitive data and applications and optimization of applications and infrastructure across hybrid environments.",
+  "classification_source_url": "https://www.ibm.com/industries/federal/grit-veterans",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID F1208031461",
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1208031461/"
+ },
+ {
+  "fork_id": "F1510137547",
+  "vendor": "Rackspace Government Solutions",
+  "product": "Rackspace Government Cloud",
+  "service_model": [
+   "PaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cloud Infrastructure & Hosting",
+  "description": "Rackspace Government Cloud (RGC) is purpose-built to help organizations achieve Assessment & Authorization faster and with cost savings of up to 70%. Whether you are a government agency, systems integrator, or independent software vendor, RGC is the foundation you need to rapidly deliver mission value via the cloud.\n\nRackspace Government Cloud (RGC) wraps VMware and AWS in a secure-by-design management platform to meet the compliance requirements for FedRAMP and DoD Cloud Computing SRG. Customer solutions will be deployed and managed in secured enclaves within US Rackspace datacenters and/or AWS East/West and GovCloud. Customers are provided with dedicated application stacks to maintain data security at the necessary levels. All this is backed by a 24x7x365 U.S. only support model that allows Rackspace to provide the highest levels of assurance and security to our government customers.\n\nBenefits Include:\n- 24/7/365 operations and system support providing a fully-managed cloud solution up to and including guest operating systems and networks\n- Secure-by-design cloud environment with proactive support, continuous monitoring, and governance\n- Fully redundant solutions, with backup, restore, and disaster recovery built-in\n- Comprehensive system security services as standard, including enterprise-grade log aggregation, endpoint protection, file integrity monitoring, and host-based Intrusion Prevention Systems (IPS) and Intrusion Detection Systems (IDS)\n- Unique combination of automation, accredited tooling, and human expertise, enabling cyber and operational support",
+  "functions_claimed": [
+   {
+    "function_id": "hosting_platform",
+    "function": "Hosting / managed cloud platform",
+    "evidence": "24/7/365 operations and system support providing a fully-managed cloud solution up to and including guest operating systems and networks"
+   },
+   {
+    "function_id": "dedicated_environments",
+    "function": "Dedicated / enclave environments & hosting models",
+    "evidence": "Customer solutions will be deployed and managed in secured enclaves within US Rackspace datacenters and/or AWS East/West and GovCloud."
+   },
+   {
+    "function_id": "infrastructure_providers",
+    "function": "Underlying cloud infrastructure & providers",
+    "evidence": "Rackspace Government Cloud (RGC) wraps VMware and AWS in a secure-by-design management platform to meet the compliance requirements for FedRAMP and DoD Cloud Computing SRG."
+   },
+   {
+    "function_id": "monitoring_observability",
+    "function": "Monitoring & observability",
+    "evidence": "Secure-by-design cloud environment with proactive support, continuous monitoring, and governance"
+   },
+   {
+    "function_id": "security_services",
+    "function": "Platform security services (IPS/IDS, WAF, endpoint)",
+    "evidence": "Comprehensive system security services as standard, including enterprise-grade log aggregation, endpoint protection, file integrity monitoring, and host-based Intrusion Prevention Systems (IPS) and Intrusion Detection Systems (IDS)"
+   },
+   {
+    "function_id": "backup_disaster_recovery",
+    "function": "Backup, restore & disaster recovery",
+    "evidence": "Fully redundant solutions, with backup, restore, and disaster recovery built-in"
+   },
+   {
+    "function_id": "managed_operations",
+    "function": "Managed operations (patching, scanning, configuration)",
+    "evidence": "24/7/365 operations and system support providing a fully-managed cloud solution up to and including guest operating systems and networks"
+   },
+   {
+    "function_id": "us_operations_residency",
+    "function": "U.S.-only operations & data residency",
+    "evidence": "Customer solutions will be deployed and managed in secured enclaves within US Rackspace datacenters and/or AWS East/West and GovCloud."
+   },
+   {
+    "function_id": "compliance_authorization_support",
+    "function": "Assessment & Authorization support",
+    "evidence": "Rackspace Government Cloud (RGC) is purpose-built to help organizations achieve Assessment & Authorization faster and with cost savings of up to 70%."
+   }
+  ],
+  "classification_evidence": "Rackspace Government Cloud is a fully managed security Platform-as-a-Service that addresses FedRAMP’s Moderate security requirements, enabling your SaaS cloud solution to achieve FedRAMP ATO faster and at lower cost.",
+  "classification_source_url": "https://www.rackspace.com/en-gb/cloud/rackspace-government-cloud",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID F1510137547",
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1510137547/"
+ },
+ {
+  "fork_id": "F1602257856",
+  "vendor": "SAP National Security Services Inc. (SAP NS2)",
+  "product": "DoD Cloud Intelligent Enterprise – DD-CIE",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cloud Infrastructure & Hosting",
+  "description": "Disclaimer: FedRAMP does not review or endorse vendor-submitted content. Vendors are responsible for accuracy of product descriptions, provided services, and contact information.\r\nThe SAP NS2 DoD Cloud Intelligent Enterprise (DDCIE) IL4 is a secure cloud environment purpose-built to meet U.S. Department of War requirements. SAP NS2 DDCIE IL4 supports defense agencies and mission partners with compliant, scalable SAP solutions.  All solutions are authorized by DISA at a FedRAMP+ IL4 moderate baseline.  \r\nThe SAP NS2 DDCIE IL4 environment hosts the following suite of SAP cloud solutions: SAP S/4HANA Cloud Private Edition, PCE Sidecar, SAP SuccessFactors Human Capital Management, and SAP Integrated Business Planning.\r\n----\r\nSAP NS2 DDCIE is operated exclusively by U.S. citizens with operations and data restricted to U.S. soil. Environments are designed to meet stringent federal security and compliance requirements. Solutions enable agencies and regulated organizations to modernize operations, strengthen resilience, and drive mission success.\r\nSolutions available:\r\nSAP S/4HANA Private Cloud Edition: A modern, intelligent SAP Cloud ERP solution delivered as a managed cloud service. SAP S/4HANA Private Cloud Edition enables organizations to streamline operations, gain real-time insights, and accelerate digital transformation while maintaining control, security, and customization of critical systems.\r\nSAP SuccessFactors Human Capital Management (HCM): A comprehensive, cloud-based human capital management suite designed to optimize workforce performance and engagement. SAP SuccessFactors supports the full employee lifecycle, from recruiting and onboarding to performance, learning, and workforce analytics, ensuring organizations align talent with mission objectives.\r\nIncludes: Employee Central, Employee Central Payroll, Learning, Performance & Goals, Succession & Development, Compensation, Recruiting, Onboarding, Workforce Planning, and Workforce Analytics.\r\nSAP SuccessFactors Employee Central Payroll delivers a robust, integrated payroll engine with enhanced resilience, compliance with U.S. federal requirements, and secure operations by U.S. persons.\r\nSAP Integrated Business Planning: A cloud-based supply chain planning solution that enables real-time, data-driven decision-making. SAP IBP integrates sales and operations planning, demand forecasting, supply planning, and inventory optimization to improve forecast accuracy, reduce costs, and enhance service levels.",
+  "functions_claimed": [
+   {
+    "function_id": "hosting_platform",
+    "function": "Hosting / managed cloud platform",
+    "evidence": "The SAP NS2 DoD Cloud Intelligent Enterprise (DDCIE) IL4 is a secure cloud environment purpose-built to meet U.S."
+   }
+  ],
+  "classification_evidence": "We host and deploy SAP IBP in a cloud environment secured by DoD FedRAMP® + Impact Level 4 (DoD IL4) controls.",
+  "classification_source_url": "https://sapns2.com/what-it-means-to-be-all-in-in-the-world-of-cloud-innovation-speed-and-security-2/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID F1602257856",
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1602257856/"
+ },
+ {
+  "fork_id": "FR1719841002",
+  "vendor": "SAP National Security Services Inc. (SAP NS2)",
+  "product": "SAP NS2 Cloud Intelligent Enterprise",
+  "service_model": [
+   "PaaS",
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cloud Infrastructure & Hosting",
+  "description": "Disclaimer: FedRAMP does not review or endorse vendor-submitted content. Vendors are responsible for accuracy of product descriptions, provided services, and contact information.\r\n\r\nThe DISA Provisional Authorization (PA) for the Unclassified, DoD Cloud Intelligent Enterprise by SAP National Security Services (NS2), Federal Government Community dated 17 March 2026 includes the SAP NS2 Commercially Regulated Environment (CRE) and the SAP NS2 Cloud Intelligent Enterprise (CIE) at Impact Level 2 (IL2)\r\nThe SAP NS2 Cloud Intelligent Enterprise (CIE) is a secure, U.S.-based cloud environment enables federal civilian agencies to deploy and operate mission-critical SAP solutions within a compliant, automated cloud framework.\r\nThe SAP NS2 CIE environment has the following suite of SAP cloud solutions available: SAP S/4HANA Private Cloud Edition (PCE), SAP Analytics Cloud (SAC), SAP Business Technology Platform (BTP), SAP SuccessFactors, SAP Employee Central Payroll, PCE Sidecar and HANA Cloud. \r\nThe SAP NS2 Commercial Regulated Environment (CRE) is a secure, U.S.-based cloud environment designed to support Department of War (DoW) contractors including Aerospace & Defense customers. SAP NS2 CRE enables customers to run mission-critical SAP workloads with compliance, resilience, and performance at the core. \r\nThe SAP NS2 CRE environment hosts the following suite of SAP cloud solutions: SAP S/4HANA Cloud Private Edition, SAP HANA Cloud, SAP Analytics Cloud, SAP Business Technology Platform, SAP SuccessFactors, SAP Employee Central Payroll, SAP Integrated Business Planning (IBP), PCE Sidecar and SAP Fieldglass.\r\n---\r\nAll SAP NS2 cloud environments are operated exclusively by U.S. citizens with operations and data restricted to U.S. soil. Environments support both Software-as-a-Service (SaaS) and Platform-as-a-Service (PaaS) solutions with built-in intelligence, seamless integration, and consistent user experience across applications.\r\nEnvironments are designed to meet stringent U.S. security and compliance requirements. Solutions enable agencies and regulated organizations to modernize operations, strengthen resilience, and drive mission success. \r\nSolutions available across SAP NS2 environments:\r\nSAP S/4HANA Private Cloud Edition: A modern, intelligent SAP Cloud ERP solution delivered as a managed cloud service. SAP S/4HANA Cloud Private Edition enables organizations to streamline operations, gain real-time insights, and accelerate digital transformation while maintaining control, security, and customization of critical systems.\r\nSAP Business Technology Platform (SAP BTP): An integrated platform for application development, data management, analytics, and integration. SAP BTP enables organizations to extend and connect SAP and non-SAP applications while accelerating innovation in a secure, compliant environment.\r\nSAP HANA Cloud: A fully managed, in-memory cloud database that supports advanced analytics and application development. SAP HANA Cloud enables real-time data processing, integration, and scalability across hybrid environments.\r\nSAP Analytics Cloud: A unified analytics solution that brings together business intelligence, planning, and predictive analytics in a single platform. It empowers organizations to make faster, data-driven decisions with real-time visibility and AI-driven insights.\r\nSAP SuccessFactors Human Capital Management (HCM): A comprehensive, cloud-based human capital management suite designed to optimize workforce performance and engagement. SAP SuccessFactors supports the full employee lifecycle, from recruiting and onboarding to performance, learning, and workforce analytics, ensuring organizations align talent with mission objectives.\r\nIncludes: Employee Central, Employee Central Payroll, Learning, Performance & Goals, Succession & Development, Compensation, Recruiting, Onboarding, Workforce Planning, and Workforce Analytics.\r\nSAP SuccessFactors Employee Central Payroll delivers a robust, integrated payroll engine with enhanced resilience, compliance with U.S. federal requirements, and secure operations by U.S. citizens.\r\nSAP Integrated Business Planning: A cloud-based supply chain planning solution that enables real-time, data-driven decision-making. SAP IBP integrates sales and operations planning, demand forecasting, supply planning, and inventory optimization to improve forecast accuracy, reduce costs, and enhance service levels.\r\nSAP Fieldglass: A cloud-based vendor management system (VMS) that helps organizations procure, manage, and optimize external workforce and services. SAP Fieldglass increases visibility, compliance, and cost control across contingent labor and services procurement.",
+  "functions_claimed": [
+   {
+    "function_id": "hosting_platform",
+    "function": "Hosting / managed cloud platform",
+    "evidence": "The SAP NS2 Cloud Intelligent Enterprise (CIE) is a secure, U.S.-based cloud environment enables federal civilian agencies to deploy and operate mission-critical SAP solutions within a compliant, automated cloud framework."
+   },
+   {
+    "function_id": "us_operations_residency",
+    "function": "U.S.-only operations & data residency",
+    "evidence": "The SAP NS2 Cloud Intelligent Enterprise (CIE) is a secure, U.S.-based cloud environment enables federal civilian agencies to deploy and operate mission-critical SAP solutions within a compliant, automated cloud framework."
+   }
+  ],
+  "classification_evidence": "SAP NS2 Government Cloud is a portfolio of cloud environments purpose-built for federal agencies, defense and intelligence communities, and regulated industries.",
+  "classification_source_url": "http://sapns2.com/government-cloud/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR1719841002",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1719841002/"
+ },
+ {
+  "fork_id": "AGENCYWC2",
+  "vendor": "United States Department of the Treasury",
+  "product": "Treasury Cloud Moderate",
+  "service_model": [
+   "PaaS",
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Cloud Infrastructure & Hosting",
+  "description": "The Treasury Cloud Moderate (TCloud-M) System is owned and operated by the Department of the Treasury, serving as a multi-tenant IaaS/PaaS hosting environment designed to process Moderate Impact level information. TCloud-M is offered as a shared service, available in two cloud hosting models: Boundary Protected and Managed. The IaaS/PaaS provider used for this solution is Amazon Web Services (AWS) US East/West. The TCloud-M platform enables Treasury customers to concentrate on the operational and business aspects of their web presence, such as usability, information architecture, and content authoring, without the need to repeatedly configure and reinvent the technical infrastructure. This platform supports a variety of highly available services hosted on AWS and delivered to end-users through the Akamai Content Delivery Network (CDN).\r\nTCloud-M provides the following boundary protected and managed services to meet business or mission requirements:\r\nBoundary Protected Hosting Environment\r\n•\tCloud account provisioning and invoicing, with transparency on service utilization with FinOps dashboards.\r\n•\tIntrusion Prevention Services (IPS); VPN; Direct connection with Treasury T-NET network.\r\n•\tMonitoring of network ingress and egress traffic.\r\n•\tPreconfigured networking resources.\r\n•\tSingle Sign-On with connection to TCloud Active Directory.\r\n•\tIAM policies, groups, roles, preconfigured to enforce identify guardrails. \r\n•\tAudit trails and change monitoring that produce alerts and notifications to predetermined set of stakeholders.\r\n•\tManagement, configuration, and provisioning of Atlassian software suite available for customers- JIRA, Confluence, Stash (BitBucket), and Bamboo.\r\n•\tAccess to native cloud services and resources provided by the CSP.\r\nManaged Hosting Environment\r\n•\tCloud account provisioning and invoicing, with transparency on service utilization with FinOps dashboards.\r\n•\tRemote Desktop Services.\r\n•\tOperating System (OS) level patching performed as part of monthly patch deployments.\r\n•\tVulnerability scanning: OS, Databases, and Web application.\r\n•\tIdentification, prioritization, and mitigation of OS and Database level vulnerabilities.\r\n•\tConfiguration management for OS and Databases .\r\n•\t Intrusion Prevention Services (IPS); VPN; Web Application Firewall (WAF); Direct connection with Treasury T-NET network.\r\n•\tAnti-Virus and Host Based Firewall. \r\n•\tEndpoint Detection and Response.\r\n•\tAudit log ingestion and monitoring (OS Level, Database, and CSP).\r\n•\tDirectory services, accounts and permission management provided through Microsoft Active Directory.\r\n•\tIAM policies, groups, roles, preconfigured to enforce identify guardrails. \r\n•\tIAM audit trails and change monitoring that produce alerts and notifications to predetermined set of stakeholders.\r\n•\tSingle Sign-On with connection to TCloud Active Directory.\r\n•\tMonitoring of network ingress and egress traffic. \r\n•\tPreconfigured networking resources, with audit trails and change monitoring that produce alerts and notifications to predetermined set of stakeholders.\r\n•\tUnified cloud security platform that includes vulnerability management, compliance and posture management, workload protection, and container security. \r\n•\tDisaster recovery and Contingency Planning - Backup and restore.\r\n•\tDisaster recovery and Contingency Planning - Different availability zones for resiliency.\r\n•\tSecurity incident and response monitoring and coordination with appropriate stakeholders.\r\n•\tManagement, configuration, and provisioning of Atlassian software suite available for customers- JIRA, Confluence, Stash (BitBucket), and Bamboo.\r\n•\tAccess to native cloud services and resources provided by each CSP.",
+  "functions_claimed": [
+   {
+    "function_id": "hosting_platform",
+    "function": "Hosting / managed cloud platform",
+    "evidence": "The Treasury Cloud Moderate (TCloud-M) System is owned and operated by the Department of the Treasury, serving as a multi-tenant IaaS/PaaS hosting environment designed to process Moderate Impact level information."
+   },
+   {
+    "function_id": "dedicated_environments",
+    "function": "Dedicated / enclave environments & hosting models",
+    "evidence": "TCloud-M is offered as a shared service, available in two cloud hosting models: Boundary Protected and Managed."
+   },
+   {
+    "function_id": "multi_tenancy",
+    "function": "Multi-tenancy / shared service",
+    "evidence": "The Treasury Cloud Moderate (TCloud-M) System is owned and operated by the Department of the Treasury, serving as a multi-tenant IaaS/PaaS hosting environment designed to process Moderate Impact level information."
+   },
+   {
+    "function_id": "deployment_configuration",
+    "function": "Deployment templates & preconfigured resources",
+    "evidence": "Preconfigured networking resources."
+   },
+   {
+    "function_id": "infrastructure_providers",
+    "function": "Underlying cloud infrastructure & providers",
+    "evidence": "The IaaS/PaaS provider used for this solution is Amazon Web Services (AWS) US East/West."
+   },
+   {
+    "function_id": "monitoring_observability",
+    "function": "Monitoring & observability",
+    "evidence": "Monitoring of network ingress and egress traffic."
+   },
+   {
+    "function_id": "security_services",
+    "function": "Platform security services (IPS/IDS, WAF, endpoint)",
+    "evidence": "Intrusion Prevention Services (IPS); VPN; Direct connection with Treasury T-NET network."
+   },
+   {
+    "function_id": "backup_disaster_recovery",
+    "function": "Backup, restore & disaster recovery",
+    "evidence": "Disaster recovery and Contingency Planning - Backup and restore."
+   },
+   {
+    "function_id": "identity_access",
+    "function": "Identity, access & directory services",
+    "evidence": "Single Sign-On with connection to TCloud Active Directory."
+   },
+   {
+    "function_id": "managed_operations",
+    "function": "Managed operations (patching, scanning, configuration)",
+    "evidence": "Operating System (OS) level patching performed as part of monthly patch deployments."
+   },
+   {
+    "function_id": "account_provisioning",
+    "function": "Cloud account provisioning, invoicing & utilization transparency",
+    "evidence": "Cloud account provisioning and invoicing, with transparency on service utilization with FinOps dashboards."
+   },
+   {
+    "function_id": "content_delivery",
+    "function": "Content delivery network",
+    "evidence": "This platform supports a variety of highly available services hosted on AWS and delivered to end-users through the Akamai Content Delivery Network (CDN)."
+   }
+  ],
+  "classification_evidence": "Treasury’s recently awarded Blanket Purchase Agreement (BPA) for cloud services (Treasury Cloud [TCloud]) will support our design, development, and implementation of security patterns and guardrails with expanded Security Operations Center (SOC) capabilities to accommodate increased telemetry from cloud assets and workloads.",
+  "classification_source_url": "https://home.Treasury.gov/system/files/266/FY-2025-DO-Capital-Investment-Plan.pdf",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; produced by the General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID AGENCYWC2",
+  "source_url": "https://www.fedramp.gov/marketplace/products/AGENCYWC2/"
+ }
+]

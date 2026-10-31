@@ -1791,6 +1791,25 @@ No new gap is registered by this addition. Four already-registered gaps gain a c
 
 Resolution note, stated plainly: tier stays null, as for every sheet in this set. This fork claims zero under the set's taxonomy applied verbatim, and the set now stands at zero claims across 5 forks: its description's near-misses are the set's usual class ("managed federal cloud environment" is not "full management of the OS and services"). It has no documented-control effect: its delivered-capabilities sentence is function prose under the set's own precedent — "identity management" names no mechanism, contrasted in the addendum with the one fork whose sentence named MFA, role-based access, encryption, and audit logging — so identification is recorded but not traced, and framework names are alignment prose. Its classification satisfies the census's recorded managed-platform boundary (managed-hosting prose emphasizing administration services performed) and rests on the vendor's own live homepage prose, recorded on the sheet as classification evidence with its source URL, pinned as not occurring in the cached description.
 
+## Remainder Group 4 — Cloud Infrastructure & Hosting L2 (6 forks)
+
+Gaps from Remainder Group 4, specified in groups/cloud-infrastructure-hosting-l2/UNION-SPEC.md, not implemented:
+- [ ] open — Hosting platform / provisioning & orchestration engines (the platform layer entire)
+- [ ] open — Elastic Stack hosting engine
+- [ ] open — Template execution engine (the build's template registry stores settings verbatim and never executes)
+- [ ] open — Monitoring & observability engines
+- [ ] open — Platform security service engines
+- [ ] open — Backup execution & disaster-recovery orchestration
+- [ ] open — Identity provider / SSO / directory services (IA-2 stays with the embedding organization)
+- [ ] open — Encryption implementation & key management
+- [ ] open — Operations execution engines
+- [ ] open — Invoicing / billing & FinOps engine (no fork states any amount, rate, or fee, so the build holds no money shape anywhere)
+- [ ] open — AI recommendation engine
+- [ ] open — Application resource management engine
+- [ ] open — CDN operation
+- [ ] open — Assessment & Authorization support services
+- [ ] open — Residency & personnel verification
+
 ## Later groups
 
 Each group appends its section here when it ships.
