@@ -1034,6 +1034,19 @@ New extended functions from the addition forks, specified in groups/human-resour
 
 Enlargements of families already registered under Group 21: workforce planning & resource-management analytics / models (+GDC); integration connector engines (+GRB by substance); document & template assembly engines (+GDC by substance). AI talent intelligence & matching engines explicitly gain no claimant (one addition's automation claim carries zero AI wording anywhere, recorded as a wording artifact).
 
+## Remainder Addition — Operations Management L1 (+3 forks)
+
+New extended functions from the addition forks, specified in groups/operations-management-l1/ADDENDUM.md, not implemented:
+- [ ] open — Workspace scheduling & reservation engine (FM:Systems, Tango; the headline function of both workplace forks; the verbatim taxonomy has no scheduling family, so this stands at zero claims while asserted in substance by 2 of 4 forks at this tier)
+- [ ] open — Visitor & event management (FM:Systems)
+- [ ] open — Interactive floor plans, wayfinding & digital signage (FM:Systems, Tango)
+- [ ] open — IoT sensor integration & workspace-utilization sensing (FM:Systems, Tango by catalogue substance; likewise no taxonomy family)
+- [ ] open — Workplace analytics & optimization engine (FM:Systems, Tango, by substance)
+- [ ] open — Procurement marketplace & requisitioning engine (SCMC)
+- [ ] open — Real-estate portfolio suite: space planning, lease administration / accounting, transaction & predictive analytics (Tango catalogue excess)
+
+Enlargements: integration connector engines & catalog +1 claimant at this tier (Tango; the original fork's separate out-of-scope integrations gap gains nothing); mobile applications & offline sync +1 by substance (FM:Systems). The addition gives the group its first taxonomy claim (group total 0 to 1).
+
 ## Later groups
 
 Each group appends its section here when it ships.

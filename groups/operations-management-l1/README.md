@@ -194,9 +194,31 @@ served with the matching read permission.
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-119 tests. See `tests/README.md` for the coverage table, the
-negative control, and the mutation-verification drill record for
-this tree.
+129 tests (119 shipped + 10 additions). See `tests/README.md` for
+the coverage table, the negative control, and the
+mutation-verification drill records for this tree.
+
+## Remainder additions (unit `addition:operations-management-l1`)
+
+Three previously uncategorized forks joined this group from the
+Phase 2 remainder census — Booz Allen Hamilton's Supply Chain
+Master Catalog, FM:Systems' OpenBlue Employee, and Tango, all
+LI-SaaS — spec'd under the group's existing 19-family taxonomy
+applied verbatim. Full record in [`ADDENDUM.md`](ADDENDUM.md).
+Headline: **1 new claim** (Tango, integrations — the enlarged
+group's first), core unchanged (`src/` byte-identical), tests
+119 → 129. SCMC and FM:Systems claim zero families: SCMC is a
+healthcare supply-chain procurement gateway (whose description
+names a different product, Prodigo Marketplace, than its listing
+title), and FM:Systems is a workplace scheduling platform whose
+headline function has no taxonomy family — the category's
+scheduling absence, now asserted in substance by 2 of the group's
+4 forks and still claimed by none. The newcomers' engines
+(scheduling & reservation, procurement marketplace, visitor
+management, floor plans & signage, IoT sensing, workplace
+analytics, Tango's real-estate catalogue) are named as gaps in
+the addendum; the substrate remains, as shipped, not a substitute
+for any fork's actual surface.
 
 ## Control-family mapping (Low baseline)
 

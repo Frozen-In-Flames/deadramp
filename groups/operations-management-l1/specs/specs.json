@@ -14,5 +14,59 @@
     "functions_claimed": [],
     "source_url": "https://www.fedramp.gov/marketplace/products/FR2113346550/",
     "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2113346550"
+  },
+  {
+    "fork_id": "FR2017462201",
+    "vendor": "Booz Allen Hamilton",
+    "product": "Supply Chain Master Catalog (SCMC) Government Cloud Solution",
+    "service_model": "['SaaS']",
+    "deployment_model": "Government Community Cloud",
+    "fedramp_impact_level": "LI-SaaS",
+    "cmmc_tier": "L1",
+    "authorization_status": "FedRAMP Certified",
+    "business_categories_in_source": "[]",
+    "deadramp_category": "Operations Management",
+    "description": "Offered as a SaaS solution, Prodigo Marketplace is a virtual e-commerce procurement product that enables maximum, sustained cost savings throughout VA's healthcare supply chain for all clinical and non-clinical supplies and services. By effectively driving contract utilization at the point-of-requisition, Prodigo Marketplace assures users are purchasing the right items from the right vendors at the right price. As VA's single purchasing gateway, enabled and sustained via Booz Allen Hamilton's secure cloud infrastructure, Prodigo Marketplace directs users to their preferred sources of supply. This online requisitioning tool offers users a simple, easy-to-use ordering experience; reducing clinical disruption and the time users spend on administrative tasks.",
+    "functions_claimed": [],
+    "source_url": "https://www.fedramp.gov/marketplace/products/FR2017462201/",
+    "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2017462201"
+  },
+  {
+    "fork_id": "FR1828574469",
+    "vendor": "FM:Systems",
+    "product": "OpenBlue Employee",
+    "service_model": "['SaaS']",
+    "deployment_model": "Public Cloud",
+    "fedramp_impact_level": "LI-SaaS",
+    "cmmc_tier": "L1",
+    "authorization_status": "FedRAMP Certified",
+    "business_categories_in_source": "[]",
+    "deadramp_category": "Operations Management",
+    "description": "OpenBlue Employee, formerly FMS:Employee, offers solutions for organizations with powerful, integrated scheduling features. Built for flexible, collaborative workplaces and designed to increase efficiency and productivity for in-office and remote employees. OpenBlue Employee features desk and resource scheduling, interactive floor plans, contactless workflows, visitor management, and much more. \r\n\r\nRoom & Resource Scheduling - Quickly find and reserve rooms, equipment and services for your remote and in-office employees.\r\n\r\nHoteling & Desk Sharing - Give employees easy access to calendars and reserve spaces with the convenience of mobile scheduling.\r\n\r\nService Management - Streamline complex orders and keep service providers one step ahead of your fast-paced organization with pricing and inventory controls and a dynamic management console.\r\n\r\nInteractive Floor plans - Desk-sharing initiatives are the future of modern workplaces as cloud and mobile technologies offer an \u2018anytime, anywhere\u2019 work style.\r\n\r\nOutlook Integration - Make the most of your Outlook calendar by integrating with our room booking and resource scheduling software.\r\n\r\nEvent & Visitor Management - Ensure events and visitors are managed properly from start to finish. Set up new events and capture critical information with a few simple clicks.\r\n\r\nIoT Sensor Integration - Measure actual workspace utilization and identify patterns and trends to build a smarter workspace.\r\n\r\nWorkplace Services & Booking Hardware - Simplify operations and encourage collaboration with streamlined service management and interactive booking hardware.\r\n\r\nReporting & Analytics - Dive into the data and analyze trends by location, person, or department to understand what spaces are underutilized and under-performing.",
+    "functions_claimed": [],
+    "source_url": "https://www.fedramp.gov/marketplace/products/FR1828574469/",
+    "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1828574469"
+  },
+  {
+    "fork_id": "FR2100740435",
+    "vendor": "Tango",
+    "product": "Tango",
+    "service_model": "['SaaS']",
+    "deployment_model": "Public Cloud",
+    "fedramp_impact_level": "LI-SaaS",
+    "cmmc_tier": "L1",
+    "authorization_status": "FedRAMP Certified",
+    "business_categories_in_source": "[]",
+    "deadramp_category": "Operations Management",
+    "description": "Tango Reserve is a SaaS workplace solution for managing your use of workspaces. Tango provides this the capability to manage conference rooms, assigned seats, hoteling areas, neighborhoods, and provides operational Analytics for workplace optimization efforts.\n\n Functionality includes:\n\nScalable instance\nSolution delivers a workspace hoteling, conference room, and assetreservation system.\nSecure authentication\nEnd user interface(s) to find available places to work and reserve workstations, conference rooms, and resources like equipment, services, health & wellness, parking, and transportation.\nAllows employees to set profile preferences, check-in, cancel and modify their reservations at their convenience.\nAdd digital signage like Room Kiosks, Lobby Kiosks, Desk Signs, and ID Screens\nWayfinding options to locate colleagues to enhance engagement, teamwork, and productivity.\nUtilize integrations with existing platforms to rapidly adopt and deploy.\nSelf-service administrative tools and capabilities\nAbility to set limitless configuration of users and space relationships\nAnalytics: Tango Reserve allows operational data to be revealed to understand how your office and people are working. By measuring your office space and managing your workplace operations this supports the agency mission to make data-driven decisions about your workplace and real estate as well as save tax-payers money.\n \n\nIn addition to the solutions listed above, Tango customers can also license the extended services through the Tango Core applications:\n\nTango Space Management software helps organizations plan, forecast and operate from a single solution.  Space is space planning software to streamline space allocation, plan moves, analyze floor plans, and test potential scenarios. Key features include, CAD integration, stacking and blocking, planning and forecasting, scenario planning, move management, IoT integrations, and allocation reporting.\n\nTango Transactions is built on a foundation of proven analytic capabilities, innovative data sets, native mapping and mobile-first experiences that are required to win in today\u2019s dynamic corporate real estate environment. Key features include scenario development, pipeline management, budgeting, property analysis, mapping, and budgeting.\n\nTango Platform provides both a single source of truth for all location and asset information.\n \n\nTango\u2019s Program & Project Management software solution organizes project portfolio and aligns activities across budgets & timelines. Provides a program view of all activities, including new builds, retrofits, remodels, closures, and special projects. Tango Projects is a single, integrated solution to align program budgets, timelines, and development activities across portfolio of projects, to quickly identify exceptions and take corrective action.\n\nTango\u2019s Lease Administration and Lease Accounting software brings together lease financials, accounting, and administration to manage all lease activities including options, expirations, renewals, key clauses, co-tenancy, recurring costs, rent rolls, expense reconciliation, and is built to comply with FASB ACS 842, IFRS 16 and GASB 87.\n\nTango Predictive Analytics solutions provide the necessary intelligence to develop smarter location strategies and make better capital investment decisions by combining advanced AI/ML modeling with data in a scalable geospatial analytics platform.\n\nTango Edge, an extension of the company\u2019s Integrated Workplace Management System solution, provides a fully integrated collaboration workspace and communications hub that enables your partners to access and interact with Tango solutions.\n\nAgencies leverage these solutions to manage:\n\nHybrid Work \u2013 Manage and measure work from any location including WFH (work from home), the office, other Agencies, or coworking locations.\n \nReduce the Footprint \u2013 Measure the actual utilization of space for short duration Workplace Surveys as well as continuous, consistent, and systematic measurement of People, Presence, and Workplace use across the entire portfolio year after year. Agencies can cut their office space by up to 50%, as facilitated for GSA\u2019s 1800F HQ in Washington, DC. Tango Reserve Analytics data analysis provides management the support tool necessary to augment space planning and office space invest/divest decisions.\n \nZero Emission Buildings \u2013 Through actual utilization measurement, real estate reduction, and shared desk strategies, Agencies can reduce their office space, and thus reduce their Carbon Footprint by up to 50%",
+    "functions_claimed": [
+      {
+        "function_id": "integrations",
+        "function": "Integrations & interoperability",
+        "evidence": "Utilize integrations with existing platforms to rapidly adopt and deploy."
+      }
+    ],
+    "source_url": "https://www.fedramp.gov/marketplace/products/FR2100740435/",
+    "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2100740435"
   }
 ]

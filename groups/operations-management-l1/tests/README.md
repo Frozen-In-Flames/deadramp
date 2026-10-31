@@ -11,11 +11,11 @@ wording only (group references; zero logic changes — see
 
 ```bash
 cd groups/operations-management-l1
-PYTHONPATH=src python3 -m unittest discover -s tests        # 119 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 129 tests
 ```
 
 Status at delivery: **119 tests, OK** against the implementation in
-`../src/`. (Run exactly as above: helpers are imported as a top-level
+`../src/`; **129 tests, OK** after the remainder additions below. (Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
 entry point for this group.)
@@ -37,6 +37,7 @@ entry point for this group.)
 | `test_service.py` | 8 | REST API — live HTTP server (ephemeral port): health with no auth, 401 unknown user / role mismatch, 403 viewer write + `workflow_write` for operator (denied attempts audited with `:denied`), full flow (person → org → project+member → asset → work order → assign/transition → inspection → usage → workflow create/PATCH → report/search → audit), `audit_read` admin-only, 400/404 envelopes, `?now=` derivation on work-order and report endpoints |
 | `test_main_cli.py` | 1 | `python -m opsmgmt serve` subprocess on an ephemeral port with demo users alice/bob/carol |
 | `test_negative_control.py` | 2 | Negative control (below) |
+| `test_additions.py` | 10 | Remainder additions (unit `addition:operations-management-l1`) — spec integrity (4 sheets, original first and unchanged, exact census membership, house schema, taxonomy labels, verbatim evidence, literal claim map: 1 claim / Tango `integrations`; SCMC and FM:Systems zero-claim), census citations 4/4 verbatim but tagging nothing, near-miss pins, and one substrate case per addition fork (SCMC procurement records + report overdue derivation; FM:Systems reservable-room asset + never-executing workflow, no reservation/scheduling API on the store; Tango workplace records, integrations Extended-only — no connector entry point) |
 | `opsmgmt_helpers.py` | — | Shared fixtures: demo users (ADMIN/OPERATOR/VIEWER), `USERS` registry, `fresh_store()`, and `make_store()` building an OpsStore + AuditLog + a person + an organization + a project with the person as a member (created by ADMIN) |
 
 ## Negative control
@@ -83,6 +84,25 @@ output in `scratch/mutation-run.txt`) —
 recorded in `scratch/store.py.sha256` and verified identical after
 restore) and the suite re-run: **119 tests, OK**. The suite catches
 this defect class; the negative control is not decorative.
+
+## Additions drill re-run (remainder unit, 2026-10-31)
+
+The core did not change for the remainder additions (ADDENDUM.md
+§3), so the same live drill was re-run in this tree after
+`test_additions.py` landed: the final return of
+`OpsStore._is_overdue` was patched to `return False` and the full
+suite ran — **129 tests, exactly 11 failures**: the original
+drill's 9 above, plus 2 from the additions module, tripping
+exactly as designed —
+
+- `test_additions.TestAdditionSubstrateCases.test_scmc_procurement_records_ride_the_substrate`
+- `test_additions.TestAdditionSubstrateCases.test_tango_integrations_claim_is_extended_only`
+
+`store.py` was restored from the additions pre-mutation copy
+(`scratch/additions_store.py.premutation`) and verified
+SHA-256-identical to the shipped hash above; the suite re-ran:
+**129 tests, OK**. Full record in
+`scratch/additions_mutation_run.txt`.
 
 ## Implementation notes (as implemented, pinned by tests)
 
