@@ -19,6 +19,30 @@ library only**, no external dependencies (verified
 programmatically: every import in `src/` is in
 `sys.stdlib_module_names`; see `scratch/verify_deps.py`).
 
+## Remainder addition (unit `addition:learning-management-l2`)
+
+The group now specs **2 forks**: the remainder census added
+**Percipio** (Skillsoft, FedRAMP Moderate / Certified) as a
+second spec sheet. Under the group's 26-family taxonomy applied
+verbatim it claims **0 functions** — a zero-claim fork: its
+entire marketplace description is five sentences of positioning
+prose ("authenticates users, tracks learner's progress, and
+connects users to content") in which no functional pattern
+phrase of any of the 26 families appears. The group total stays
+**26 claims** (1 of 2 forks claiming). The singleton's checked
+absences were rechecked: scoring and credential absences
+survive in both senses; the assessment absence survives at
+claim level (no assessment family exists) while the newcomer
+names assessments as catalogue content; the delivery-engine and
+identity gaps each gain a member by substance, and the fork's
+licensed content library is registered as one new gap. The core
+is unchanged (`src/` byte-identical); the addition brings 14
+new spec-integrity and substrate tests — **118 tests, OK** —
+and the signature compliance-derivation drill was re-run in
+this tree (exactly 10 failures under mutation: the shipped 9
+plus the additions case). Full account in
+[`ADDENDUM.md`](ADDENDUM.md).
+
 ## What the fork is: a learning records substrate
 
 The claims prove a **records substrate**, not a learning-delivery

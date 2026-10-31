@@ -7,11 +7,14 @@ function / claim family / control family it traces to.
 
 ```bash
 cd groups/learning-management-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 104 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 118 tests
 ```
 
 Status at delivery: **104 tests, OK** against the implementation
-in `../src/`. (Run exactly as above: helpers are imported as a
+in `../src/`. After the remainder addition (unit
+`addition:learning-management-l2`): **118 tests, OK** (see the
+additions row in the layout table and the drill re-run record at
+the end of this file). (Run exactly as above: helpers are imported as a
 top-level module from the tests directory and `tests/__init__.py`
 is empty by design, so package-mode discovery with `-t .` is not
 the supported entry point for this group.)
@@ -36,6 +39,7 @@ the supported entry point for this group.)
 | `test_service.py` | 10 | REST API — live HTTP server: health, 401 unknown user / role mismatch, full flow (learner → course → content → lesson plan → event → register → authorization decided by a different actor → IDP → competency → progress → statement → compliance derived overdue → completed → report → search), learner write 403 + denied audited, learner scope over HTTP, audit admin+auditor only, 400/404 envelopes |
 | `test_main_cli.py` | 1 | `python -m lms serve` subprocess with demo users alice/bob/carol/dana |
 | `test_negative_control.py` | 3 | Negative control (below) |
+| `test_additions.py` | 14 | Remainder addition (unit `addition:learning-management-l2`) — spec integrity for the appended Percipio sheet (count/order/membership, the original claim table standing at 26, the literal **zero-claim** table and whole-taxonomy zero-claim set, tier fields, verbatim description, census citation accounting, exclusion-segment pin, named-absence rechecks, near-miss pins) + 2 substrate cases (progress record with compliance status derived at read; catalogue content records with an exact-eight-key statement and recursive no-score scan) |
 | `lms_helpers.py` | — | Shared fixtures: demo users (ADMIN/INSTRUCTOR/LEARNER/AUDITOR), `USERS` registry, `fresh_store()`, and `make_store()` building an LmsStore + AuditLog + one learner (ref `carol`) + one course |
 
 ## Negative control
@@ -85,3 +89,26 @@ verified identical to the pre-mutation hash in
 `scratch/store.py.sha256`) and the suite re-run: **104 tests,
 OK**. The suite catches this defect class; the negative control
 is not decorative.
+
+## Remainder addition — drill re-run (unit `addition:learning-management-l2`)
+
+The addition changes no core code (`src/` byte-identical, all 7
+`lms` module hashes verified against the pre-work baseline in
+`../scratch/additions_src_hashes_before.txt`), so the group's
+signature drill was re-run in this tree against the enlarged
+suite (118 tests). Raw output in
+`../scratch/additions_mutation_run.txt`.
+
+**Drill re-run — compliance derivation.** The overdue branch of
+`LmsStore._derive_status` in `src/lms/store.py` (`return
+"overdue"` under `if as_of_date > due:`) was patched to `return
+"current"` — the same scoped patch as the original drill (the
+branch text occurs exactly once in the file, count asserted
+before patching). The full suite ran: **118 tests, exactly 10
+failures** — the shipped drill's identical 9 plus exactly 1 from
+the additions module,
+`test_additions.TestAdditionSubstrateCases.test_percipio_progress_and_compliance_derivation`,
+tripping on the mutant exactly as designed. `store.py` was
+restored from `../scratch/store.py.premutation-additions` and
+verified SHA-256-identical to the shipped hash (`820d9712…`);
+the suite re-ran green: **118 tests, OK**.

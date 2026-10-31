@@ -1219,6 +1219,13 @@ New extended functions from the addition fork, specified in groups/law-enforceme
 
 Existing gaps gaining claimants: none (the fork describes no forensic, evidence, or device function; the carried Extended set gains nothing). Named absence partially retired in substance: incident / case management — incident REPORTING is now described at this tier, while case management proper remains undescribed. Absences surviving: evidence management & chain of custody as an operational system, criminal records / RMS, investigative case files. Category discipline, token-pinned in the addendum: facial recognition, surveillance, camera / sensor monitoring, and predictive policing appear nowhere in the fork's text (0 tokens each) and are not attributed to it — reputation is not evidence. Group state, stated plainly: 0 claims across 3 forks at this tier; the substrate is the legal-research records core carried to High, claimed by none of the three, each of which speaks a different function vocabulary (legal research, digital forensics, physical threat detection).
 
+## Remainder Addition — Learning Management L2 (+1 fork)
+
+New extended function from the addition fork, specified in groups/learning-management-l2/ADDENDUM.md, not implemented:
+- [ ] open — Licensed content library & practice-lab environments: the hosted off-the-shelf catalogue itself — thousands of video courses, ebooks, audiobooks, boot camps, hands-on practice labs, and the assessment content it includes, booked once as content (the substrate's catalog holds records ABOUT content, and the already-registered delivery-engine gap is the runtime, not the catalogue; no registered gap named the content supply itself)
+
+Existing gaps gaining a member by substance (no claimant): the learning delivery engine ("connects users to content," catalogue offered across web and mobile apps) and the identity provider / MFA / SSO service gap (authentication half only — "authenticates users"; no MFA or SSO phrase, and the IA-2 posture is unchanged). Checked absences rechecked against the newcomer: scoring survives in both senses (zero score tokens, not even a SCORM substring); credential survives in both senses; assessment survives at claim level only (no assessment family exists in this taxonomy; the fork names assessments as catalogue content, booked once under the new library gap, never as administration); proctoring, authoring, discussion, virtual classroom, and gamification survive in both senses. Explicitly no claimant: learning analytics engines, SCORM / AICC / cmi5 packaging runtime (no standards token at all), xAPI protocol runtime (no API token anywhere).
+
 ## Later groups
 
 Each group appends its section here when it ships.
