@@ -1398,6 +1398,21 @@ New extended functions from this set, specified in groups/grc-untiered/UNION-SPE
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. The documented control claims, traced to the forks' own sentences: CA documented (continuous monitoring, assessor support, framework compliance, KSI tracking), PM documented (policy management, six forks), AU documented in part (audit support; evidence management NOT documented despite evidence prose in nearly every description), RA documented in part (risk management, one fork; vulnerability remediation not documented); AC and IA not documented, and the remaining families listed as not documented, never filled from a baseline. The category's two historic named absences are not absent here: policy management leads this set at six claims and risk management is claimed once, both at the records disposition (no risk-register object, no score). This set's own named absences: evidence management, posture reporting, vulnerability remediation, identity access hooks, and platform hosting all stand at 0 of 15. One exclusion removal is recorded: an assessment claim whose only assessor hit sat inside the fork's own "does not replace an independent assessor" sentence.
 
+## Untiered Set 2 — Operations Management (20 forks, tier null)
+
+New extended functions from this set, specified in groups/operations-management-untiered/UNION-SPEC.md, not implemented (the standing category gaps — workflow execution, real-time intelligence, AI models, low-code builder, connectors, mobile/offline sync, network/platform operations, authorization services, enforcement planes, governance console, scheduling, IoT collection, multi-tenancy, encryption at rest — are already registered under the parent groups and are not re-registered here):
+- [ ] open — CMMS/EAM depth (computerized maintenance management and enterprise asset management engines)
+- [ ] open — Manufacturing execution & ERP/MRP
+- [ ] open — Procurement & sourcing platforms
+- [ ] open — Contract execution management
+- [ ] open — EV charging network management
+- [ ] open — Real-estate/facilities portfolio platform
+- [ ] open — Kiosk & locker access management
+- [ ] open — AI assistants & agents
+- [ ] open — Supply-chain risk & payments orchestration
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. The set's two standing claims carry no control language, so the documented control claims stand at the prose tier: identification and authentication documented at four forks, access control documented at four, cryptographic protection at three, assessment at three, audit at two (both at records/readiness weight), configuration management and system integrity at one each; awareness, contingency, incident response, maintenance, media, physical, planning, program management, personnel, risk assessment, and system acquisition are not documented. Named absences: asset management — this category's signature absence — stands at zero claimed while standing in substance in six or more forks, because the founding phrase never occurs; scheduling and IoT/telematics stand in substance without a family; five AI-filed forks assert no scoped AI phrase. Seven of the set's nine raw hits were removed under the founding group's scoping discipline (authorization-services hits in boundary and status prose, one name-only token), each recorded with its reason.
+
 ## Later groups
 
 Each group appends its section here when it ships.
