@@ -14,6 +14,18 @@ re-extraction that quietly re-tunes the taxonomy, or a sheet edit
 that manufactures a claim, fails here instead of drifting. The
 near-miss pins hold the recorded adjudications: substance present
 in the text, family phrase absent, no claim issued.
+
+Post-census scoping (recorded, per the founding group's no-signal
+precedent): a fourth sheet — FR2700137029, HealthEdge, a
+``no-signal-set`` fork resolved to this category by the live-docs
+research pass — is appended after this set's 3 sheets (see
+ADDENDUM.md and tests/test_nosignal_addition.py, which pin the
+enlarged file). The whole-file aggregate pins below (sheet count,
+census-unit membership, claim total, zero-claim set) are therefore
+scoped to this set's own slice, ``specs[:3]``; every fact they pin
+about the set is unchanged. Per-sheet pins (tier discipline,
+registry fields, descriptions, evidence) run over all sheets,
+including the appended one.
 """
 
 import json
@@ -41,6 +53,9 @@ class TestSpecSheets(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.specs = _load(os.path.join(_GROUP_DIR, "specs", "specs.json"))
+        # This set's own slice: the 3 shipped sheets. A post-census
+        # no-signal sheet is appended after them (see docstring).
+        cls.set_specs = cls.specs[:3]
         cls.by_id = {s["fork_id"]: s for s in cls.specs}
         rem = _load(os.path.join(_ROOT, "remainder.json"))
         unit = [u for u in rem["build_units"] if u["unit_id"] == UNIT_ID]
@@ -57,11 +72,15 @@ class TestSpecSheets(unittest.TestCase):
         }
 
     def test_exactly_three_sheets(self):
-        self.assertEqual(len(self.specs), 3)
+        """The set's own slice is exactly 3 sheets (a post-census
+        no-signal sheet follows it; see docstring)."""
+        self.assertEqual(len(self.set_specs), 3)
 
     def test_membership_exact_against_census_unit(self):
-        self.assertEqual([s["fork_id"] for s in self.specs], self.unit_ids)
-        self.assertEqual(set(self.by_id), set(self.unit_ids))
+        self.assertEqual([s["fork_id"] for s in self.set_specs],
+                         self.unit_ids)
+        self.assertEqual({s["fork_id"] for s in self.set_specs},
+                         set(self.unit_ids))
         self.assertEqual(len(self.unit_ids), 3)
 
     def test_tier_discipline_on_every_sheet(self):
@@ -90,11 +109,12 @@ class TestSpecSheets(unittest.TestCase):
         for fid, expected in EXPECTED_CLAIMS.items():
             got = [c["function_id"] for c in self.by_id[fid]["functions_claimed"]]
             self.assertEqual(got, expected, fid)
-        total = sum(len(s["functions_claimed"]) for s in self.specs)
+        total = sum(len(s["functions_claimed"]) for s in self.set_specs)
         self.assertEqual(total, 1)
 
     def test_zero_claim_forks_named(self):
-        zero = {s["fork_id"] for s in self.specs if not s["functions_claimed"]}
+        zero = {s["fork_id"] for s in self.set_specs
+                if not s["functions_claimed"]}
         self.assertEqual(zero, {"FR2633734921", "FR1825232355"})
 
     def test_every_evidence_verbatim_in_description(self):

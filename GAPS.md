@@ -1775,6 +1775,16 @@ One new gap from the no-signal resolution, specified in groups/learning-manageme
 
 Resolution note, stated plainly: this fork claims zero under the group's taxonomy applied verbatim, proven by the extractor reproducing both shipped claim tables exactly before tagging — its cached description is 339 characters of company profile, and the group total stays at 26 claims across 3 forks. Its classification carries a recorded caveat at exactly its strength: the citable sentence comes from Skillsoft's own Percipio platform documentation, the platform this Private Cloud offering delivers, and no Private Cloud-specific sentence exists on the official pages checked; the caveat is stated in the addendum and the group readme and pinned by test on both records. The kinship is stated, not hidden: the group's addition fork is Percipio itself under a different offering record — platform listing and private-cloud delivery listing are distinct forks, and both stand. The founding singleton's checked absences survive in both senses on this fork's words.
 
+## No-Signal Addition — Health & Wellness Untiered Set (HealthEdge, FR2700137029)
+
+New gaps from the no-signal resolution, specified in groups/health-wellness-untiered/ADDENDUM.md, not implemented (the EMR/EHR integration engines gap gains substance from this fork's integration sentence — noted in the addendum, not re-registered):
+- [ ] open — Health plan claims adjudication & pricing engine
+- [ ] open — Benefits administration platform
+- [ ] open — Care & utilization management workflows for health plans
+- [ ] open — Regulatory compliance reporting engine for payers (from the fork's regulatory sentence, explicitly not a control claim)
+
+Resolution note, stated plainly: tier stays null, as for every sheet in this set. This fork claims zero under the set's taxonomy applied verbatim — its prose is health-plan claims-administration vocabulary, a different dialect from the taxonomy's clinical phrases — and its plan-administration functions (claims adjudication, benefits administration, care and utilization management) are gapped in their own names rather than approximated into clinical families. The set total stays at 1 claim across 4 forks. No documented-control effect: the description names no control language of any kind, the set's emptiest control surface, and the HIPAA mention lives in the classification press release, not in the description, so it documents nothing. Its classification rests on HealthEdge's own press release at suite-level weight, recorded on the sheet as classification evidence with its source URL and pinned as not occurring in the cached description.
+
 ## Later groups
 
 Each group appends its section here when it ships.

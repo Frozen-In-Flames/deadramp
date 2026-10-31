@@ -62,5 +62,29 @@
   "functions_claimed": [],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR1825232355/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1825232355"
+ },
+ {
+  "fork_id": "FR2700137029",
+  "vendor": "HealthEdge Software, Inc.",
+  "product": "HealthEdge Integrated Solution Suite",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government-Only Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Health & Wellness",
+   "Operations Management",
+   "System Administration"
+  ],
+  "deadramp_category": "Health & Wellness",
+  "description": "The HealthEdge Integrated Solution Suite provides payers\nand agencies with an agentic platform of operational\ninfrastructure designed to guarantee an enduring financial\nedge.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2700137029/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2700137029",
+  "classification_evidence": "HealthEdge combines flexible delivery models with an integrated suite of software solutions to transform payer operations, connecting data, workflows and performance across the health plan enterprise.",
+  "classification_source_url": "https://healthedge.com/press-release/healthedge-and-healthproof-merge-creating-disruptive-ai-powered-healthcare-payer-technology-and-services-leader/"
  }
 ]

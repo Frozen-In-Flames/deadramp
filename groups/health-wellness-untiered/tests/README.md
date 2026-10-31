@@ -15,11 +15,12 @@ group README re-anchors it.
 
 ```bash
 cd groups/health-wellness-untiered
-PYTHONPATH=src python3 -m unittest discover -s tests        # 80 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 91 tests
 ```
 
-Status at delivery: **80 tests, OK** — 67 carried core tests plus
-13 spec tests. (Run exactly as above: helpers are imported as a
+Status: **91 tests, OK** — 67 carried core tests, 13 spec tests,
+and 11 no-signal addition tests (the HealthEdge append; see the
+mutation-verification re-run entry below). (Run exactly as above: helpers are imported as a
 top-level module from the tests directory and `tests/__init__.py`
 is empty by design, so package-mode discovery with `-t .` is not
 the supported entry point for this group.)
@@ -41,7 +42,8 @@ the supported entry point for this group.)
 | `test_service.py` | REST API — live HTTP server: health, 401 unknown user / role mismatch, full flow (program → participant → enroll → measurement → plan derived overdue → activity → eligibility status → complete → derived completed → scorecard + report; member reads own enrollment), **privacy boundary: smuggled `diagnosis`/`note`/`name`/`dob`/`member_number` keys -> 400 and nothing stored**, member write 403 + denied audited, member scope over HTTP (403 on another participant's enrollment), audit admin+auditor only, report member 403, 400/404 envelopes, DELETE 404 |
 | `test_main_cli.py` | `python -m health serve` subprocess with demo users alice/bob/carol/dana; no-subcommand returns 2 |
 | `test_negative_control.py` | Negative control (below) |
-| `test_specs.py` | This set's spec pins — exactly 3 sheets; membership exact against census unit `untiered:Health & Wellness` in `remainder.json`; every sheet's tier null / impact "Unknown"; registry fields and descriptions verbatim against `forks.json` and the census record; the literal claim table (**1 claim total**: 86Borders `patient_engagement`; Elvo and WellHive zero-claim, named); every claim's evidence verbatim in its description; near-miss pins (WellHive EHR-integration substance not claimed, AWS hosting prose not claimed by either fork, Elvo session metrics not `clinical metrics`, 86Borders "quality scores" not `scorecards`); WellHive's "FedRAMP Moderate authorization" prose pinned as not moving its recorded impact or tier |
+| `test_specs.py` | This set's spec pins — exactly 3 sheets; membership exact against census unit `untiered:Health & Wellness` in `remainder.json`; every sheet's tier null / impact "Unknown"; registry fields and descriptions verbatim against `forks.json` and the census record; the literal claim table (**1 claim total**: 86Borders `patient_engagement`; Elvo and WellHive zero-claim, named); every claim's evidence verbatim in its description; near-miss pins (WellHive EHR-integration substance not claimed, AWS hosting prose not claimed by either fork, Elvo session metrics not `clinical metrics`, 86Borders "quality scores" not `scorecards`); WellHive's "FedRAMP Moderate authorization" prose pinned as not moving its recorded impact or tier. Post-census scoping: the whole-file aggregate pins (sheet count, membership, claim total, zero-claim set) are scoped to the set's own slice (`specs[:3]`) because the no-signal sheet follows it — recorded in the module docstring |
+| `test_nosignal_addition.py` | No-signal addition pins (ADDENDUM.md) — 4 sheets in order (the set's 3 + FR2700137029 HealthEdge appended); the 3 shipped sheets deep-equal to git HEAD; membership against the census `no-signal-set` (citations [], `no_signal`); the literal zero-claim table for HealthEdge and the unchanged set total (1); tier discipline on the new sheet (impact "Unknown", `cmmc_tier` null); description verbatim against both cached sources; the classification fields pinned against `remainder/nosignal_report.json` (suite-level press-release sentence, asserted absent from the cached description); near-miss pins ("agentic" not the `ai_platform` phrase, "payers" not claims processing, no control language at all); one substrate case: a coverage record under an opaque `plan_ref` deriving upcoming → current → ended, and an operations plan deriving overdue with its enrollment |
 | `health_helpers.py` | Shared fixtures: demo users (ADMIN=alice/admin, CLINICIAN=bob/clinician, MEMBER=carol/member, AUDITOR=dana/auditor), `USERS` registry, `fresh_store()`, and `make_store()` building a HealthStore + AuditLog + one program ("Diabetes Care") + one participant under opaque ref "carol" (both created by ADMIN) |
 
 ## Negative control
@@ -94,3 +96,21 @@ identical to the founding group's shipped hash and to the
 pre-mutation hash in `scratch/store.py.sha256`) and the suite
 re-run: **80 tests, OK**. The suite catches this defect class; the
 negative control is not decorative.
+
+**Re-run after the no-signal addition (2026-10-31).** The core is
+unchanged by the HealthEdge append, so the same drill was re-run
+in this tree with the identical mutant (the overdue branch of
+`_derive_plan_status` returning `"current"`). The full suite ran:
+**91 tests, exactly 9 failed** — the shipped drill's 8 above, plus
+the new substrate case from the no-signal module, tripping exactly
+as designed (its operations plan derives `overdue` canonically and
+`current` under the mutant):
+
+- `test_nosignal_addition.TestNoSignalSubstrateCase.test_healthedge_coverage_record_and_derived_statuses`
+
+No spec-integrity test tripped. Raw output in
+`scratch/nosignal_mutation_run.txt`. `store.py` was restored from
+the pre-mutation copy (`scratch/nosignal_store_backup.py`) and
+verified SHA-256-identical to the shipped hash
+(`c83cd2d269cb08c5d259d7fc1b16f7d8a761df006e0e9e3889daa4d5c928c711`);
+the suite re-ran green: **91 tests, OK**.

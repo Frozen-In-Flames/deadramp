@@ -53,6 +53,39 @@ the assignment. Authorization statuses as recorded span Initial
 Implementation (2) and FedRAMP In Process (1) — a status is record
 data, not a claim.
 
+## No-signal addition (post-census): HealthEdge
+
+One further fork is appended to `specs/specs.json` after the set's
+3 sheets (see [`ADDENDUM.md`](ADDENDUM.md)):
+
+| Fork | Vendor | Product | Claims |
+|---|---|---|---:|
+| FR2700137029 | HealthEdge Software, Inc. | HealthEdge Integrated Solution Suite | 0 |
+
+This fork sat in the census's `no-signal-set` — its marketplace
+description is a single vague sentence naming no function — and
+its category was resolved afterwards by the live-docs research
+pass, on the vendor's own press-release sentence: "HealthEdge
+combines flexible delivery models with an integrated suite of
+software solutions to transform payer operations, connecting data,
+workflows and performance across the health plan enterprise."
+(https://healthedge.com/press-release/healthedge-and-healthproof-merge-creating-disruptive-ai-powered-healthcare-payer-technology-and-services-leader/).
+The sentence is recorded on the sheet as `classification_evidence`
+with its source URL, at **suite level** (it describes the
+integrated suite as a whole); it is a classification citation, not
+claim evidence, and it does not occur in the fork's cached
+description. Under the taxonomy applied verbatim the fork claims
+**0** families — the set total stays **1 claim across 4 forks** —
+and its description asserts no control language of any family, so
+the Documented control claims section below is unchanged. **Tier
+null restated for the newcomer**: its sheet records impact
+"Unknown" and `cmmc_tier: null`, exactly like the set's sheets; no
+baseline is asserted and no CMMC equivalence is drawn. The core is
+unchanged (`src/` byte-identical); the fork is a payer-side
+operations platform joining a care-delivery set, and it is, like
+the rest of this build, **not a medical device and claims no FDA
+status**.
+
 ## The 10 core functions
 
 1. **Participant registry** — participants as records (`par-`)
@@ -253,7 +286,7 @@ There is no DELETE or PATCH route and no audit-mutation route.
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-**80 tests, OK** at delivery: the founding group's 67-test core
+**91 tests, OK**: the founding group's 67-test core
 suite carried with the code (minus its additions module, which pins
 a different census unit), plus 13 spec tests pinning this set
 (exactly 3 sheets; membership exact against `remainder.json`; every
@@ -261,10 +294,15 @@ sheet's tier null / impact "Unknown"; registry fields and
 descriptions verbatim; the literal claim table — 1 claim total,
 Elvo and WellHive zero-claim; every claim's evidence verbatim;
 near-miss pins; WellHive's Moderate prose pinned as moving no
-tier). The founding group's signature derived-status mutation drill
-was re-run in this tree — exactly 8 failures under the mutant, the
-founding drill's identical set, store restored and SHA-256 verified
-(see `tests/README.md`). A live smoke (`scratch/smoke.py`) drives
+tier), plus 11 no-signal addition tests pinning the appended
+HealthEdge sheet (deep-equality of the 3 shipped sheets against git
+HEAD, the literal zero-claim table, tier discipline, the
+classification citation pins, and one substrate case). The founding
+group's signature derived-status mutation drill was re-run in this
+tree — exactly 8 failures under the mutant, the founding drill's
+identical set, store restored and SHA-256 verified — and re-run
+again after the no-signal addition: exactly 9 failures, the same 8
+plus the new substrate case (see `tests/README.md`). A live smoke (`scratch/smoke.py`) drives
 the store and the HTTP service end to end: program → participant →
 enroll → measurement → plan with a past due date → derived status
 `overdue` (plan and enrollment) → completion → derived status
