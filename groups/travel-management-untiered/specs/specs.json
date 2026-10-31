@@ -1,0 +1,24 @@
+[
+ {
+  "fork_id": "FR2632558740",
+  "vendor": "Cornerstone Information Systems",
+  "product": "Upstream Gov",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Travel Management",
+   "Accounting",
+   "Analytics"
+  ],
+  "deadramp_category": "Travel Management",
+  "description": "Aggregation of travel data to support comprehensive reporting and analysis.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2632558740",
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2632558740/"
+ }
+]
