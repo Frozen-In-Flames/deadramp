@@ -12,7 +12,9 @@ PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
 Status at delivery: **146 tests, OK** against the implementation in
-`../src/`. (Run exactly as above: helpers are imported as a top-level
+`../src/`. After the remainder addition (unit `addition:ai-l2`,
+see `../ADDENDUM.md`): **157 tests, OK** — the original 146 plus
+11 in `test_additions.py`. (Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
 entry point for this group.) Test scratch files (audit JSONL) are
@@ -33,6 +35,7 @@ created only under the group's `scratch/` directory, never `/tmp`.
 | `test_service.py` | 8 API access — live HTTP server: health without auth, 401 unknown user / role mismatch, 403 viewer actions, 404 unknown model/path, 400 invalid input, 422 policy-blocked completion, 429 quota-exceeded completion, full flows (models/templates/keys/quotas/completions/sessions/requests/usage/policy rules + delete/eval datasets + runs/audit), secret-once over HTTP, `audit_read` admin-only, denied attempts (401/403/422/429) audited with the `:denied` suffix, no stack traces |
 | `test_main_cli.py` | `python -m aigateway serve` subprocess with demo users alice/bob/carol, including the `--zero-persistence` flag end-to-end over HTTP and the no-command help path |
 | `test_negative_control.py` | Negative control (below) |
+| `test_additions.py` | Remainder addition (`addition:ai-l2`, ADDENDUM.md) — spec integrity for the appended Gobo sheet (membership vs `remainder.json`, the literal 2-claim table, the 14-family zero-claim set, verbatim evidence, census citation, near-miss pins incl. "AI-enabled" ≠ `learned_inference` and the agents sentence tagging nothing, group totals 12 forks / 47 claims), plus the fork's substrate cases: a labeled-stub automation invocation, metered and audited, and a human-in-the-loop policy block stored as `blocked_input` and audited (trips the policy mutant) |
 | `aigateway_helpers.py` | Shared fixtures: demo users (ADMIN/MEMBER/VIEWER/OTHER_MEMBER), `make_store()` building an AIGatewayStore + AuditLog + an ADMIN-registered echo model, template/rules model helpers, and scratch-dir helpers confined to the group's `scratch/` |
 
 ## Negative control
@@ -75,6 +78,18 @@ zero-persistence, no session turn appended for a blocked invoke).
 verified identical to the pre-mutation hash) and the suite re-run:
 **146 tests, OK**. The suite catches this defect class; the
 negative control is not decorative.
+
+**Additions re-run (remainder unit `addition:ai-l2`).** The core
+was unchanged by the addition, so the same drill was re-run in
+this tree against the enlarged suite: `_first_policy_match`
+patched to `return None`, full suite run — **157 tests ran,
+exactly 15 failed**: the original drill's 14 above plus exactly 1
+from `test_additions.py` (the human-in-the-loop block case, which
+asserts a `PolicyBlocked` the mutant cannot produce). `store.py`
+was restored from `scratch/store.py.premutation_additions` and
+verified SHA-256-identical to the shipped hash
+(`4a2b74e4…e3f`); the suite re-ran green at **157 tests, OK**. Raw
+output: `scratch/additions_mutation_run.txt`.
 
 ## Interpretation notes
 

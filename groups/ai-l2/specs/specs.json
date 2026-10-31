@@ -469,5 +469,34 @@
   ],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2619944785/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2619944785"
+ },
+ {
+  "fork_id": "FR2214346691",
+  "vendor": "Secunetics, Inc.",
+  "product": "Gobo Framework (Gobo)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Artificial Intelligence (AI)",
+  "description": "Gobo provides an intuitive, AI-enabled cognitive automation platform designed to analyze complex datasets, apply intelligent operational logic, and streamline workflows across enterprise IT infrastructure, services, and business processes. The Gobo platform is built to bring actionable intelligence to light, prioritizing simplicity of use, speed of results, and quality of outcomes. Through secure, web-based applications called I2Apps, Gobo automates routine engineering and operations tasks while maintaining strict human-in-the-loop control, auditability, and governance. As a vendor-agnostic platform, Gobo integrates seamlessly with existing systems and data environments, empowering federal agencies to modernize their operations while avoiding costly vendor lock-in.\r\n\r\nTo support diverse agency missions, Gobo delivers core capabilities across three key operational areas:\r\nAI-Enabled Cognitive Automation: Gobo applies semantic intelligence to help agencies empower personnel to automate complex, data-intensive tasks at scale. As a prime example of this capability, Gobo modernizes public comment analysis and regulatory review management. Alongside this, Gobo features intelligent agents to orchestrate complex administrative and technical processes with speed, precision, and reliable predictability.\r\nInfrastructure Digital Twin (IDT) and Performance Management: Leveraging Gobo's IDT capabilities, the platform provides deep, continuous visibility to enable secure, unified, and adaptive IT ecosystems. Gobo streamlines complex migrations with Service Transition Management, facilitating structured transition planning and tracking for critical federal mandates such as the IPv6 transition. This is supported by automated Configuration Management, and Capacity Planning, alongside real-time performance tracking to optimize network operations and ensure system availability.\r\nEnterprise Infrastructure Solutions (EIS) Support: To automate administrative oversight, Gobo streamlines GSA EIS service management, allowing agencies to monitor how well telecommunications service providers meet promised service levels. The platform provides precision Contract Line Item Number (CLIN) and Invoice Management to track line items, automate invoice reconciliation, and facilitate dispute resolution. This capability operates alongside continuous SLA and Service Inventory Management to track the full lifecycle of agency IT assets and recover service provider credits.",
+  "functions_claimed": [
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging & trails",
+    "evidence": "Through secure, web-based applications called I2Apps, Gobo automates routine engineering and operations tasks while maintaining strict human-in-the-loop control, auditability, and governance."
+   },
+   {
+    "function_id": "agentic_workflows",
+    "function": "Agentic & automated workflow automation",
+    "evidence": "Gobo provides an intuitive, AI-enabled cognitive automation platform designed to analyze complex datasets, apply intelligent operational logic, and streamline workflows across enterprise IT infrastructure, services, and business processes."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2214346691/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2214346691"
  }
 ]

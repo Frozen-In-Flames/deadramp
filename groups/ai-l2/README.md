@@ -252,3 +252,25 @@ Further, plainly:
   to; nothing more. It also confers no AI capability claim: the
   registry, gateway, and harness are platform plumbing around models
   this build does not contain.
+
+## Remainder addition (unit `addition:ai-l2`)
+
+One previously uncategorized fork joined this group in the
+remainder census: **Secunetics, Inc. / Gobo Framework (Gobo)**
+(`FR2214346691`, FedRAMP Moderate / Certified), spec'd under the
+group's existing 16-family taxonomy applied verbatim — see
+[`ADDENDUM.md`](ADDENDUM.md). It claims 2 families
+(`agentic_workflows`, substantively; `audit_logging`, on the word
+"auditability" — the Asato precedent), and notably **no**
+`learned_inference`: its "AI-enabled", "semantic intelligence",
+and "intelligent agents" wording matches none of the family's
+patterns, recorded as a by-substance enlargement of the inference
+gap rather than a claim. The core is unchanged (`src/`
+byte-identical); the group now stands at 12 forks, 47 claims,
+tests 146 → 157, with the group's signature policy-mutant drill
+re-run in this tree (exactly 15 failures under mutation, 1 of
+them the additions module's human-in-the-loop case). Three new
+gap functions from the fork's own surface (infrastructure digital
+twin & performance management, service transition management,
+and an EIS service management suite) are named in the addendum
+for the final batch.

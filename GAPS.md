@@ -1106,6 +1106,15 @@ New extended functions from the addition fork, specified in groups/analytics-l1/
 
 Enlargements of families already registered under Group 7: alerts / monitoring engines +1 claimant (substantive); proprietary-source connectors +1 by substance; real-time / streaming analytics +1 by substance. Two of the fork's three claims are wording artifacts, recorded at artifact weight and not counted as enlargements: sharing & collaboration fired on the product name, and data transformation fired on "workplace transformation" (organizational change, its evidence sentence containing no data wording at all), both pinned by test.
 
+## Remainder Addition — AI L2 (+1 fork)
+
+New extended functions from the addition fork, specified in groups/ai-l2/ADDENDUM.md, not implemented:
+- [ ] open — Infrastructure Digital Twin & infrastructure performance management engine
+- [ ] open — Service transition management: migration planning / tracking incl. IPv6, with automated configuration management & capacity planning
+- [ ] open — EIS service management suite: SLA / service-level monitoring, CLIN & invoice management with reconciliation & dispute support, service inventory lifecycle, provider credit recovery (fork excess)
+
+Enlargements: agentic & automated workflow engines +1 claimant (now 5 of 12 in the group); learned AI / ML inference +1 by substance, explicitly not a claimant (the fork's semantic intelligence and public-comment analysis are recorded so the final batch sizes the inference gap honestly). Document processing & generation explicitly gains no claimant. The fork claims no learned inference under the taxonomy despite its AI branding ("AI-enabled" is not "ai-powered"; "intelligent agents" is not "ai agents"), pinned in tests; its audit claim rests on the single word "auditability", a wording artifact with a recorded precedent in the group.
+
 ## Later groups
 
 Each group appends its section here when it ships.
