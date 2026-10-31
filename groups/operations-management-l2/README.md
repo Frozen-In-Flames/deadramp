@@ -253,6 +253,37 @@ engines (print fleets, supply chain, PLM, ITSM, case
 management, process mining, mailroom operations, and more) are
 Extended gaps, named in ADDENDUM.md §5 for the final GAPS batch.
 
+## No-signal addition (2026-10-31)
+
+One more fork has joined: **SMX Elevate Intelligent Automation
+Platform (IAP)** (F1603077867, FedRAMP Moderate / PaaS). The
+remainder census left it unclassified — its marketplace
+description carries no citable function sentence — and the
+live-docs research pass resolved it to Operations Management on
+SMX's own capability sheet: "Through SMX Elevate, we leverage
+our IP and Intelligent Automation Platform (IAP) to design,
+build, operate, and secure multi-cloud platforms for mission
+critical cloud workloads..." (source:
+http://www.smxtech.com/wp-content/uploads/2025/02/SMX_SolutionCap_ELEVATE_Platform_Feb2025.pdf).
+The group now covers **23 forks**; the sheet is appended to
+`specs/specs.json` (the 22 earlier sheets are byte-preserved)
+and carries the classification sentence and URL as
+`classification_evidence` / `classification_source_url`,
+distinct from claim evidence.
+
+Under the group's taxonomy applied verbatim, the fork claims
+**zero families** (raw pass 3 hits: one third-party ISV
+catalogue exclusion, two scoping removals — full record in
+`scratch/NOSIGNAL_ARTIFACTS.md`), so the group total stays 27
+claims, the code is untouched, and nothing about the tier, the
+baseline, or the 12 core functions changed. Tests: 126 → 134,
+all passing; the `_is_overdue` mutation drill re-run in this
+tree, exactly 9 failures, restored and hash-verified — see
+`tests/README.md`. Its own engines (multi-cloud platform
+operations and lifecycle management; built-in compliance
+automation and policy guardrails) are Extended gaps, named in
+ADDENDUM.md §8 for the final GAPS batch.
+
 ## Honesty: what is NOT in this build
 
 - **Extended capabilities are NOT implemented.** No workflow

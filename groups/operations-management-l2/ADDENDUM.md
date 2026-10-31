@@ -282,3 +282,163 @@ work management (the census's classification), not because
 their vocabulary matches two other products'. Every engine is
 named in §5. Nothing about the tier, the baseline, or the
 12-function core changed to admit them.
+
+## 8. No-signal addition (2026-10-31)
+
+One further fork joins, by a different route than §1's twenty.
+The remainder census left 23 forks unclassified — their cached
+marketplace descriptions carry no citable function sentence
+(`REMAINDER.md`, unit `no-signal-set`). The live-docs research
+pass (`remainder/nosignal_report.json`, `remainder/NOSIGNAL.md`)
+resolved this one to Operations Management from the vendor's own
+public documentation:
+
+| Fork ID | Vendor / Product |
+|---|---|
+| F1603077867 | SMX (Formerly Smartronix) / Elevate Intelligent Automation Platform (IAP) |
+
+**Classification basis.** SMX's own capability sheet
+(smxtech.com) states: "Through SMX Elevate, we leverage our IP
+and Intelligent Automation Platform (IAP) to design, build,
+operate, and secure multi-cloud platforms for mission critical
+cloud workloads, specializing in highly regulated and
+security-first clients including Federal Government, DoD,
+healthcare industries, and financial services."
+Source: http://www.smxtech.com/wp-content/uploads/2025/02/SMX_SolutionCap_ELEVATE_Platform_Feb2025.pdf
+The sentence and URL are stored on the sheet as
+`classification_evidence` / `classification_source_url` — the
+classification citation, kept distinct from claim evidence:
+citations are not claims. The sentence is not a substring of the
+cached description (asserted at build time, pinned by test), and
+no claim rests on it. (The research report's notes add that the
+IAP's cornerstones are automation via Infrastructure-as-Code,
+Operations-as-Code, and Policy and Compliance-as-Code.) The fork is **FedRAMP Moderate**, so it
+joins at this group's tier by construction and the baseline
+does not change (§1's baseline statement stands).
+
+**How it was spec'd.** The group's 19-family taxonomy was
+applied verbatim — parsed out of `scratch/extract.py` via `ast`
+(never executed), asserted identical to the additions literal —
+after first reproducing the group's current shipped claim tables
+exactly: a mechanical pass over the 22 shipped descriptions plus
+the §2 adjudications (3 removals, 2 evidence re-anchors)
+reproduces all 22 tables, 27 claims, ids/labels/evidence equal
+(`scratch/extract_nosignal.py`). Claims were then tagged only
+from the fork's own cached description
+(`remainder/uncovered.json`, asserted byte-identical to the raw
+cache's `service_desc`), with the description's five third-party
+ISV catalogue paragraphs (Beyond Identity, C3 AI, ColorTokens,
+eShare, Versa — partner products deployable through the
+platform) excluded before matching, as in the shipped group's
+discipline. Raw pass: **3 hits**. Dispositions, each recorded in
+full in `scratch/NOSIGNAL_ARTIFACTS.md`:
+
+- `security_services` — **excluded**: the only hit sits in the
+  Versa catalogue paragraph, and the matched text is Versa's own
+  feature name ("Security Services Edge (SSE)") — a name-only
+  token inside another product's expansion (the SCAP class).
+- `workflow_automation` — **removed**: the sole hit is the
+  offering's own product name ("Intelligent Automation
+  Platform") inside the certification sentence — a name-only
+  token (UiPath precedent); no other sentence matches the
+  pattern while asserting the function ("automations" plural
+  does not fire), so there is nothing to re-anchor to.
+- `authorization_services` — **removed**: the sole hit asserts
+  the platform's own platform-level authorization posture,
+  inherited by tenants — the class removed for IBM IAS4G
+  ("integrated within the single FedRAMP authorization
+  boundary"); the MCSS services-offered standard is not met.
+
+**Final: 0 claims.** SMX joins the group's zero-claim majority
+(now 15 of 23). The claim ranking in §3 is unchanged — no family
+moved; group totals stay **27 claims over 23 forks**. Named
+absences on its own words (itemized in
+`scratch/NOSIGNAL_ARTIFACTS.md`): all 19 families, with
+substance recorded, not rounded up — provisioning, monitoring,
+security, and lifecycle management of multi-cloud platforms are
+asserted in its own words and held by no family; "integrates"
+is the verb form; governance and policy-guardrail substance
+stands without the scoped phrases; "Elevate AI" is AI branding
+without a scoped phrase.
+
+**Core-delta decision: zero functions. `src/` is unchanged** —
+by the §4 construction, a fork with no claims presupposes no
+core extension. The substrate the fork's substance rides is the
+shipped one (directory, project, work, workflow-definition
+records under access control and audit); a substrate case for
+this fork is pinned in `tests/test_nosignal.py`.
+`src/opsmgmt/store.py` remains SHA-256
+`8fe67ec242573e5d001071174ea4853fee74995ccc0f3ce02fd1a25f0bc411a6`,
+the shipped build's recorded hash.
+
+**Gaps gained.**
+
+New — engines this fork asserts in substance that neither the
+shipped union's gap list nor §5 names:
+
+- **Cloud platform operations & lifecycle management engine** —
+  provisioning, monitoring, security, and lifecycle management
+  of multi-cloud platforms, run as code (Infrastructure-as-Code
+  / Operations-as-Code) (SMX Elevate IAP; adjacent to, but not
+  the same as, the shipped union's platform-layer connectivity
+  gap).
+- **Built-in compliance automation & policy guardrails
+  engine** — native controls and automations supporting CMMC,
+  HIPAA, HITECH, CJIS, PCI, SOC 1/2, FedRAMP, and DoD IL
+  baselines, with policy-driven guardrails over multi-tenant
+  and cross-domain operations (SMX Elevate IAP; related to the
+  shipped governance/compliance console and policy enforcement
+  plane gaps, which are MCSS's console/enforcement depth, not
+  this baseline-content automation).
+
+Already registered — gaining substance, noted here, not
+re-registered:
+
+- **Authorization service / identity provider** (UNION-SPEC
+  gap) — SMX's "Elevate ATO Fast Track" accelerator asserts
+  authorization-acceleration substance for customers' own
+  FedRAMP/CMMC/DoD authorization processes.
+- **AI models** (UNION-SPEC gap) — SMX's own "Elevate AI"
+  accelerator (secure generative AI) asserts AI substance at
+  branding level; `ai_capability` remains TrackVia's claim
+  alone.
+- **Platform layer — multi-tenancy** — SMX asserts multi-tenant
+  and cross-domain operation of its own platform (cf. the
+  IAS4G/ARIS assertions in §5); the build remains a
+  single-tenant reference deployment.
+
+**Verification (no-signal addition).**
+
+- Forks spec'd: **1 / 1**, with a recorded zero-claim outcome;
+  the 22 shipped sheets are preserved byte-for-byte (asserted at
+  build time) and pinned deep-equal to git HEAD by test.
+- Core implemented: **12 / 12** (the shipped union core;
+  extended by 0 functions).
+- Tests: **126 → 134** (new file `tests/test_nosignal.py`, 8
+  tests: HEAD deep-equality, membership, schema, verbatim
+  description-of-record, the literal zero-claim table,
+  classification-field pins, and the substrate case). Full
+  suite green. One transparency note: `test_additions.py`'s
+  whole-file assertions are scoped to its era's 22 sheets
+  (`specs[:22]` / `specs[2:22]`, noted in that module); every
+  assertion about the additions unit keeps its exact strength.
+- Negative control: the core is unchanged, so the group's
+  signature drill was **re-run in this tree** (2026-10-31):
+  `OpsStore._is_overdue` patched to `return False` in the real
+  `src/opsmgmt/store.py` → **134 ran, exactly 9 failed**, the
+  identical failure set to the shipped drill; store restored
+  and SHA-256-verified identical to the shipped hash; suite
+  re-run **134, OK**. Record in `tests/README.md`; raw output
+  `scratch/nosignal_mutation_run.txt`; pre-mutation copy
+  `scratch/store.py.premutation.nosignal`.
+
+**Updated union statement.** The group is now **23 forks over
+one records substrate**. The 23rd arrived by live documentation
+rather than marketplace prose, and the taxonomy — applied
+verbatim, untested by its vocabulary — holds it at zero claims:
+its own capability sheet classifies it by operating multi-cloud
+platforms, a function this group's families, defined from two
+other products' descriptions, do not name. It is in this group
+because SMX's own words describe operations work, and its
+engines are named above. Nothing about the tier, the baseline,
+or the 12-function core changed to admit it.

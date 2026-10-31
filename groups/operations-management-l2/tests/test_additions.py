@@ -9,8 +9,14 @@ and near-miss record in scratch/ADDITIONS_ARTIFACTS.md). These tests pin
 the spec outcome the way the rest of the suite pins the original two
 forks' claims:
 
-- the specs file holds 22 sheets and the two shipped sheets are first
-  and unchanged in content (7 and 13 claims, 27 claims in total);
+- the specs file's first 22 sheets are the founding pair plus this
+  unit's 20, the two shipped sheets first and unchanged in content
+  (7 and 13 claims, 27 claims across the 22). The file now also
+  carries a 23rd sheet -- the no-signal addition F1603077867
+  (ADDENDUM.md section 8), pinned by test_nosignal.py -- so this
+  module's assertions are scoped to the 22 sheets of its own era
+  (specs[:22] / specs[2:22]); every assertion about the additions
+  unit itself keeps its exact strength;
 - addition membership is exactly the census unit's 20 fork IDs;
 - every addition claim is a taxonomy family whose stored evidence is
   a verbatim substring of the fork's own description;
@@ -90,22 +96,25 @@ class TestAdditionSpecs(unittest.TestCase):
     """Additions spec integrity, traced to ADDENDUM.md sections 1-2."""
 
     def test_specs_file_has_22_sheets_and_originals_first(self):
-        """22 sheets total; the shipped two lead, with their shipped
-        claim counts (7 and 13); the enlarged group totals 27 claims."""
+        """The founding pair plus this unit's 20 are the file's first
+        22 sheets; the shipped two lead, with their shipped claim
+        counts (7 and 13); those 22 sheets total 27 claims. (A 23rd,
+        no-signal sheet follows them -- test_nosignal.py's scope.)"""
         specs = _load_specs()
-        self.assertEqual(len(specs), 22)
-        self.assertEqual([s["fork_id"] for s in specs[:2]], ORIGINAL_IDS)
-        self.assertEqual(len(specs[0]["functions_claimed"]), 7)
-        self.assertEqual(len(specs[1]["functions_claimed"]), 13)
+        era = specs[:22]
+        self.assertEqual(len(era), 22)
+        self.assertEqual([s["fork_id"] for s in era[:2]], ORIGINAL_IDS)
+        self.assertEqual(len(era[0]["functions_claimed"]), 7)
+        self.assertEqual(len(era[1]["functions_claimed"]), 13)
         self.assertEqual(
-            sum(len(s["functions_claimed"]) for s in specs), 27)
+            sum(len(s["functions_claimed"]) for s in era), 27)
 
     def test_addition_membership_is_exactly_the_census_unit(self):
         """The appended sheets are exactly the unit's 20 fork IDs,
         each Moderate / L2 / Operations Management (census-assigned
         category; forks.json lists them as uncategorized)."""
         specs = _load_specs()
-        additions = specs[2:]
+        additions = specs[2:22]
         self.assertEqual([s["fork_id"] for s in additions], ADDITION_IDS)
         for s in additions:
             with self.subTest(fork=s["fork_id"]):
@@ -121,7 +130,7 @@ class TestAdditionSpecs(unittest.TestCase):
         specs = _load_specs()
         house_keys = set(specs[0].keys())
         self.assertEqual(set(specs[1].keys()), house_keys)
-        for s in specs[2:]:
+        for s in specs[2:22]:
             with self.subTest(fork=s["fork_id"]):
                 self.assertEqual(set(s.keys()), house_keys)
                 for c in s["functions_claimed"]:
@@ -133,7 +142,7 @@ class TestAdditionSpecs(unittest.TestCase):
         families with the taxonomy's label, and its evidence is a
         verbatim substring of the fork's own description."""
         specs = _load_specs()
-        for s in specs[2:]:
+        for s in specs[2:22]:
             for c in s["functions_claimed"]:
                 with self.subTest(fork=s["fork_id"],
                                   function=c["function_id"]):
@@ -150,7 +159,7 @@ class TestAdditionSpecs(unittest.TestCase):
         (near-miss record: scratch/ADDITIONS_ARTIFACTS.md)."""
         specs = _load_specs()
         seen = {}
-        for s in specs[2:]:
+        for s in specs[2:22]:
             seen[s["fork_id"]] = {c["function_id"]
                                   for c in s["functions_claimed"]}
         for fid in ADDITION_IDS:
