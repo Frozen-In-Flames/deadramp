@@ -158,6 +158,25 @@ PYTHONPATH=src python -m unittest discover -s tests
 
 **118 tests, OK** at delivery, including a mutation-verified
 negative control on the status derivation (see `tests/README.md`).
+After the remainder additions below: **132 tests, OK**.
+
+## Remainder additions (unit `addition:grc-l2`)
+
+Five previously uncategorized offerings — **Anecdotes**, **Halo**,
+**Kovr Nova**, **MediaLab Federal**, and the **Workiva Platform** —
+were spec'd into this group under its existing taxonomy, applied
+verbatim (see `ADDENDUM.md`). What changed: `specs/specs.json`
+grew from 2 to 7 sheets (the original 2 byte-for-byte untouched),
+adding **13 claims**; the group's two former named absences,
+risk management and policy management, are now claimed and are
+carried as records (assessment/finding records; catalog and
+evidence records) — with no score computed anywhere, as before.
+What did **not** change: the implementation. The core is the same
+10 functions, `src/` is byte-identical, and the tier baseline is
+unchanged; the new surfaces the additions actually run (policy
+lifecycle, agentic execution, AI narrative generation, ITSM,
+healthcare quality, connected reporting) are named as Extended
+gaps in the addendum for the final batch.
 
 ## Control mapping summary
 

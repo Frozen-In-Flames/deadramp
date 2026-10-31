@@ -12,6 +12,9 @@ PYTHONPATH=src python3 -m unittest discover -s tests
 
 Status at delivery: **118 tests, OK** against the implementation in
 `../src/`, verified by the build worker's own run (2026-10-25).
+After the remainder additions (unit `addition:grc-l2`, see
+`../ADDENDUM.md`): **132 tests, OK**, re-verified on the final tree
+by the additions build (2026-10-31).
 (Run exactly as above: helpers are imported as a top-level module
 from the tests directory and `tests/__init__.py` is empty by design,
 so package-mode discovery with `-t .` is not the supported entry
@@ -31,6 +34,7 @@ point for this group.)
 | `test_posture.py` | 7 Posture reporting — empty-store shape with every bucket present at zero, counts by framework/system/status, open + overdue counts via the read-time derivation (as_of moves the overdue count), verbatim severity buckets, indicator-results and evidence summaries, and a recursive assertion that no key anywhere mentions score/rating/grade/percent; posture writes no audit entry |
 | `test_service.py` | 8 REST API — live HTTP server on an ephemeral port: `/health`, 401 unknown user / role mismatch / missing headers, 404 and 400 JSON `{error}` shapes, 403s for viewer posting, member framework registration, member evidence review, member authorization management, `audit_read` admin-only over HTTP, **denied attempts audited with `:denied`**, and a full flow (catalog → framework/control → system → indicator → result → evidence + verify → finding + derived status → illegal transition 400 → assessment → authorization → posture) |
 | `test_main_cli.py` | `python -m grc serve` subprocess with demo users alice/bob/carol answering `/health`, `/systems`, `/posture` and `/audit`, role mismatch → 401, no-subcommand → help + exit 2 |
+| `test_additions.py` | Remainder additions (unit `addition:grc-l2`) — spec integrity for the 5 appended sheets (count/order, membership vs `remainder.json`, the literal per-fork claim table, verbatim evidence, census citations, the pinned zero-claim families, near-miss pins, the Kovr wording artifact, the retired-absence claimant sets) plus one substrate case per addition fork against the unchanged core, with posture recursively asserted score-free |
 | `test_negative_control.py` | Negative control (below) |
 | `test_audit.py` | 10 Audit log — entry keys (AU-3), actor normalization, append-only surface (no update/delete API, `entries()` returns copies), JSONL persistence + reload, the store recording each mutation action (`framework_create`, `control_create`, `system_create`, `indicator_create`, `indicator_result_record`, `evidence_create`, `evidence_review`, `finding_create`, `finding_transition`, `assessment_create`, `authorization_create`, `authorization_transition`) incl. the transition `details` payload, reads and failed ops writing nothing |
 | `grc_helpers.py` | Shared fixtures: demo users (ADMIN=alice/admin, MEMBER=bob/member, VIEWER=carol/viewer), `make_store()` building a GrcStore + AuditLog + one governed system (`SYS-001`) + one indicator (`KSI-1` → IA-2), plus `fresh_store()`, `make_system()`, `make_indicator()`, `make_finding()` |
@@ -80,6 +84,20 @@ e2eac653fb99f97b2a8348f0814eb2b65caa3fc6da0e4103897da67ff3369eeb,
 verified identical to the pre-mutation hash) and the suite re-run:
 **118 tests, OK**. The suite catches this defect class; the negative
 control is not decorative.
+
+**Additions re-run (2026-10-31).** The core is unchanged by the
+remainder additions, so the same drill was re-run on the enlarged
+tree: the same patch (`if _coerce_as_of(as_of) > due:` →
+`if False:` in `derive_finding_status`) and the full suite ran:
+**132 tests, 10 failures** — the original 8 above, plus 2 from the
+new `test_additions.py` (`test_halo_poam_finding_lifecycle_and_derivation`
+and `test_workiva_risk_records_and_counts_only_posture`, both of
+which read overdue state derived by the mutated function). Raw
+failure list: `../scratch/additions_mutation_failures.txt`.
+`store.py` was restored from `tests/store.py.premutation` and
+verified SHA-256-identical
+(e2eac653fb99f97b2a8348f0814eb2b65caa3fc6da0e4103897da67ff3369eeb);
+the suite re-ran: **132 tests, OK**.
 
 ## Interpretation notes
 

@@ -109,5 +109,165 @@
   ],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2206159758/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2206159758"
+ },
+ {
+  "fork_id": "FR2620235600",
+  "vendor": "Anecdotes",
+  "product": "Anecdotes",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "Anecdotes is an Agentic GRC platform that delivers continuous compliance for enterprises managing GRC at scale. Built on an audit-grade data foundation, it automates evidence collection, maps controls across 60+ industry frameworks and custom policies, and gives teams real-time visibility into their risk and compliance posture. Where traditional tools automate workflows, Anecdotes agents execute them end to end, replacing point-in-time assessments with continuous monitoring. \nAnecdotes is the first agentic GRC platform to achieve FedRAMP 20x Class C (Moderate) Certification, bringing Continuous Control Monitoring to organizations operating under federal cloud security standards.",
+  "functions_claimed": [
+   {
+    "function_id": "continuous_monitoring",
+    "function": "Continuous monitoring",
+    "evidence": "Where traditional tools automate workflows, Anecdotes agents execute them end to end, replacing point-in-time assessments with continuous monitoring."
+   },
+   {
+    "function_id": "control_framework_compliance",
+    "function": "Control & framework compliance management",
+    "evidence": "Built on an audit-grade data foundation, it automates evidence collection, maps controls across 60+ industry frameworks and custom policies, and gives teams real-time visibility into their risk and compliance posture."
+   },
+   {
+    "function_id": "posture_reporting",
+    "function": "Compliance posture reporting & dashboards",
+    "evidence": "Built on an audit-grade data foundation, it automates evidence collection, maps controls across 60+ industry frameworks and custom policies, and gives teams real-time visibility into their risk and compliance posture."
+   },
+   {
+    "function_id": "policy_management",
+    "function": "Policy management",
+    "evidence": "Built on an audit-grade data foundation, it automates evidence collection, maps controls across 60+ industry frameworks and custom policies, and gives teams real-time visibility into their risk and compliance posture."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2620235600/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2620235600"
+ },
+ {
+  "fork_id": "FR2621445678",
+  "vendor": "Halo",
+  "product": "Halo",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "Halo is a multi-tenant cloud platform that provides a unified operating environment for service management, workflow automation, reporting, and compliance operations. The platform is designed to support organizations in managing operational processes, security workflows, and regulated service delivery from a single, integrated system.\n\nFor Governance, Risk, and Compliance (GRC), Halo supports FedRAMP, CMMC, and DoD compliance programs by enabling compliance activities to be managed as part of day-to-day operations rather than as a separate workstream. Halo's GRC module provides functionality for vulnerability and risk management, Plan of Action and Milestones (POA&M) tracking, asset inventory, deviation management, OSCAL-based system documentation, and cross-framework control mapping. It also supports continuous monitoring packages, Key Security Indicator validation, and Ongoing Authorization deliverables in both human-readable and machine-readable formats.\n\nIn addition to GRC, the Halo platform supports broader enterprise service management capabilities, including IT Service Management (ITSM), Enterprise Service Management (ESM), Configuration Management (CMDB), and Service Level Management (SLM). These include core ITIL practices such as change management, incident management, user access management, self-service portals, automated task assignment and escalation, SLA tracking, and executive dashboards.",
+  "functions_claimed": [
+   {
+    "function_id": "continuous_monitoring",
+    "function": "Continuous monitoring",
+    "evidence": "It also supports continuous monitoring packages, Key Security Indicator validation, and Ongoing Authorization deliverables in both human-readable and machine-readable formats."
+   },
+   {
+    "function_id": "risk_management",
+    "function": "Risk management",
+    "evidence": "Halo's GRC module provides functionality for vulnerability and risk management, Plan of Action and Milestones (POA&M) tracking, asset inventory, deviation management, OSCAL-based system documentation, and cross-framework control mapping."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2621445678/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2621445678"
+ },
+ {
+  "fork_id": "FR2607537684",
+  "vendor": "Kovr.ai",
+  "product": "Kovr Nova",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "Legacy FedRAMP Ready",
+  "business_categories_in_source": [],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "Kovr AI is a patented AI-native cyber compliance automation platform purpose-built for organizations navigating the most demanding federal and commercial cybersecurity frameworks including FedRAMP, Cybersecurity Maturity Model Certification (CMMC 2.0), NIST SP 800-53, NIST SP 800-171, DoD Security Requirements Guide (SRG), FISMA, DoD Risk Management Framework (RMF), PCI-DSS, ISO 27001, and more. Designed to replace the manual, document-heavy workflows that have historically made federal authorization a multi-year, multi-million-dollar undertaking, Kovr compresses the path from readiness to Authorization to Operate (ATO) by automating the most labor-intensive phases of the compliance lifecycle.\n \nKovr's AI-powered engine empowers users with evidence processing, control analysis, and artifact generation including System Security Plans (SSPs), Security Assessment Reports (SARs), Plans of Action and Milestones (POA&Ms), and Security Requirements Traceability Matrices (SRTMs) directly from system documentation inputs reducing artifact preparation time from weeks to days. The platform natively supports NIST SP 800-53 Rev 5 and 800-171 control baselines, OSCAL-format exports, and continuous controls monitoring (CCM), enabling organizations to maintain their authorization posture between assessment cycles and satisfy evolving continuous monitoring requirements across FedRAMP Rev 5, CMMC, and DoD SRG frameworks.\n \nArtemis, Kovr's secure AI enclave, allows ISSOs, compliance officers, and security teams to generate control implementation narratives, draft assessment responses, and accelerate evidence collection without exposing sensitive system data to external AI services. Pre-built connectors and automated evidence ingestion eliminate manual artifact management, while integrated POA&M lifecycle tracking provides real-time visibility into remediation status.",
+  "functions_claimed": [
+   {
+    "function_id": "continuous_monitoring",
+    "function": "Continuous monitoring",
+    "evidence": "The platform natively supports NIST SP 800-53 Rev 5 and 800-171 control baselines, OSCAL-format exports, and continuous controls monitoring (CCM), enabling organizations to maintain their authorization posture between assessment cycles and satisfy evolving continuous monitoring requirements across FedRAMP Rev 5, CMMC, and DoD SRG frameworks."
+   },
+   {
+    "function_id": "control_framework_compliance",
+    "function": "Control & framework compliance management",
+    "evidence": "Kovr AI is a patented AI-native cyber compliance automation platform purpose-built for organizations navigating the most demanding federal and commercial cybersecurity frameworks including FedRAMP, Cybersecurity Maturity Model Certification (CMMC 2.0), NIST SP 800-53, NIST SP 800-171, DoD Security Requirements Guide (SRG), FISMA, DoD Risk Management Framework (RMF), PCI-DSS, ISO 27001, and more."
+   },
+   {
+    "function_id": "risk_management",
+    "function": "Risk management",
+    "evidence": "Kovr AI is a patented AI-native cyber compliance automation platform purpose-built for organizations navigating the most demanding federal and commercial cybersecurity frameworks including FedRAMP, Cybersecurity Maturity Model Certification (CMMC 2.0), NIST SP 800-53, NIST SP 800-171, DoD Security Requirements Guide (SRG), FISMA, DoD Risk Management Framework (RMF), PCI-DSS, ISO 27001, and more."
+   },
+   {
+    "function_id": "workflow_automation",
+    "function": "Workflow & automation",
+    "evidence": "Kovr AI is a patented AI-native cyber compliance automation platform purpose-built for organizations navigating the most demanding federal and commercial cybersecurity frameworks including FedRAMP, Cybersecurity Maturity Model Certification (CMMC 2.0), NIST SP 800-53, NIST SP 800-171, DoD Security Requirements Guide (SRG), FISMA, DoD Risk Management Framework (RMF), PCI-DSS, ISO 27001, and more."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2607537684/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2607537684"
+ },
+ {
+  "fork_id": "FR2004146362",
+  "vendor": "MediaLab, Inc.",
+  "product": "MediaLab Federal",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "MediaLab provides an integrated web-based SaaS platform for healthcare quality management. MediaLab's offering address many different areas of compliance within healthcare facilities, including continuing education and training, document management of policies and procedures, inspection readiness and accreditation management, competency assessment, management of personnel files and certifications, and management of non-conforming events, instrument maintenance, and quality monitoring data. Role-based permissions allow key users to access and update data across all applications to meet any healthcare facility's unique needs.",
+  "functions_claimed": [
+   {
+    "function_id": "policy_management",
+    "function": "Policy management",
+    "evidence": "MediaLab's offering address many different areas of compliance within healthcare facilities, including continuing education and training, document management of policies and procedures, inspection readiness and accreditation management, competency assessment, management of personnel files and certifications, and management of non-conforming events, instrument maintenance, and quality monitoring data."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2004146362/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2004146362"
+ },
+ {
+  "fork_id": "FR1726564822",
+  "vendor": "Workiva",
+  "product": "Workiva Platform",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Governance, Risk, and Compliance (GRC)",
+  "description": "Workiva provides connected reporting and compliance through its intuitive cloud platform that modernizes how people work within thousands of commercial organizations and hundreds of federal, state, and local government agencies.\n\nWorkiva’s platform is built upon a data management engine, offering controlled collaboration, data integration, granular permissions and a full audit trail. Workiva helps mitigate risk, improves productivity and gives users confidence in their data-driven decisions.\nComplex reports made easy— our customers create and connect data and narrative to consolidate and publish financial, performance, and regulatory reports. We provide confidence in the numbers and enable pride in the delivery.\n\nCompliance made simple— streamline documentation, testing, and reporting in a connected environment. Manage risk assessments, evidence requests, issues, and findings with real-time reports and dashboards.\n\nConnect your documents and data at enterprise scale in a collaborative work management platform. Import documents, sync with Excel®, or connect Workiva to a variety of agency information systems. Workiva is built for the way government agencies work.\nTrust your data from beginning to end. Workiva can be used across interdependent agency teams and departments to create a single source of truth for mission-critical processes.",
+  "functions_claimed": [
+   {
+    "function_id": "risk_management",
+    "function": "Risk management",
+    "evidence": "Manage risk assessments, evidence requests, issues, and findings with real-time reports and dashboards."
+   },
+   {
+    "function_id": "api_integrations",
+    "function": "APIs & integrations",
+    "evidence": "Workiva’s platform is built upon a data management engine, offering controlled collaboration, data integration, granular permissions and a full audit trail."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1726564822/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1726564822"
  }
 ]
