@@ -1,0 +1,21 @@
+[
+ {
+  "fork_id": "F1306282198A",
+  "vendor": "Pegasystems",
+  "product": "Pega Cloud for Government",
+  "service_model": [
+   "SaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "CRM",
+  "description": "Pega Cloud for Government is a fully managed cloud designed specifically for US Government Agencies. It provides the tools, environments, and operational support necessary to enable applications to scale with consistent performance while meeting strict FedRAMP security standards. Pega Government Platform (PGP) is a no-code application development solution, allowing Government users to collaboratively build applications together with model-based design, ensuring the final solution meets end-user needs. The agile, secure, unified solution gives agencies a tool for transformation without having to “rip and replace” existing systems. Pega Cloud for Government (PCFG) is an authorized FedRAMP High cloud service provider utilizing AWS GovCloud as an IaaS.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1306282198A/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1306282198A"
+ }
+]
