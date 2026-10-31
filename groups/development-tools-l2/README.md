@@ -10,6 +10,17 @@ The 2 forks: **AutoRABIT for Public Sector - CodeScan, Guard, &
 ARMOR** (AutoRABIT Holding, Inc.) · **LaunchDarkly** (LaunchDarkly).
 **Both are FedRAMP Moderate and FedRAMP Certified.**
 
+**Remainder additions (see `ADDENDUM.md`):** 4 previously
+uncategorized forks from the remainder census now spec into this
+group — **Cloud.gov** (18F), **Copado GovCloud**, **Federal
+GovCloud (FGC) DevSecOps** (TechTrend), and **Unqork for
+Government** — all FedRAMP Moderate / Certified, tagged under the
+group's existing taxonomy verbatim: 7 new claims, the core
+unchanged (`src/` byte-identical), Unqork a pinned zero-claim
+fork, and 2 new Extended gaps named (no-code application
+development platform; compliance documentation & SSP generation
+tooling). The group now covers 6 forks and 11 claims.
+
 It was written from the group contract only: original code, no
 vendor code, assets, or branding from any sibling offering. Python
 3, **standard library only**, no external dependencies (verified
@@ -203,10 +214,14 @@ failures get 400; unknown objects get 404. Errors are always JSON
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-66 tests, all passing at delivery. See `tests/README.md` for the
-coverage table, the negative control, and the mutation-verification
-drill record (performed fresh in this tree: lifecycle-gate mutant →
-8 failures; store restored SHA-256-verified; suite green). A live
+66 tests at delivery; the remainder additions add 12
+spec-integrity and substrate tests — **78 tests, all passing**.
+See `tests/README.md` for the coverage table, the negative
+control, and the mutation-verification drill record (performed
+fresh in this tree: lifecycle-gate mutant → 8 failures; store
+restored SHA-256-verified; suite green — and re-run for the
+additions: 9 failures on 78 tests, the additions module's
+lifecycle-gate case tripping as designed). A live
 smoke (`scratch/smoke.py`) drives the store and the HTTP service end
 to end: project → issue → lifecycle to `resolved` → review → build
 record → release → artifact with checksum verify → environment →

@@ -56,5 +56,115 @@
   ],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2120962552/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2120962552"
+ },
+ {
+  "fork_id": "F1607067912",
+  "vendor": "18F - 18F Cloud.gov",
+  "product": "CG-TTS - Cloud.Gov",
+  "service_model": [
+   "PaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Development Tools",
+  "description": "Cloud.gov is designed and operated by US government workers, for US government work. Cloud.gov reduces the barriers to rapid, incremental, compliant, secure, and scalable delivery of government services by all government agencies, leveraging best-of-breed modern practices. Cloud.gov provides a Platform-as-a-Service (PaaS) based on Cloud Foundry, enabling instant provisioning of services and environments, easy deployment of applications, and rapid scaling to match demand. Cloud.gov includes tools to quickly incorporate 800-53 NIST control documentation into easily-prepared and comprehensive System Security Plans (SSPs) for evaluation by local agency information security organizations or FedRAMP, reducing the time it takes for teams to gain Authority To Operate (ATO).",
+  "functions_claimed": [
+   {
+    "function_id": "hosted_platform",
+    "function": "Hosted platform & managed operations",
+    "evidence": "Cloud.gov provides a Platform-as-a-Service (PaaS) based on Cloud Foundry, enabling instant provisioning of services and environments, easy deployment of applications, and rapid scaling to match demand."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1607067912/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id F1607067912"
+ },
+ {
+  "fork_id": "FR2200507410",
+  "vendor": "Copado",
+  "product": "Copado GovCloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Development Tools",
+  "description": "Copado GovCloud is a cloud DevOps platform designed to make Salesforce releases faster, more efficient, and scalable across hundreds of production and sandbox instances. Copado GovCloud integrates with all major Git solutions and ensures developers, administrators, and low-code Salesforce users can all commit changes to a central Git repository or seamlessly deploy from a QA environment to production. Copado is used by small organizations and large enterprises across a wide range of industries to accelerate time to market for Salesforce applications, enhance developer efficiency, increase security visibility, improve Salesforce testing capabilities and enable digital cloud transformations. The services in scope for Copado GovCloud are:\n\n- Deploying Salesforce metadata to production and sandbox instances, with Git integration for version control and branch management. \n- Change management including agile development processes, quality gates, and code scanning. \n- Continuous deployment and continuous integration, including visual pipeline configuration.\n- Compliance rules for Salesforce metadata, including rule creation, monitoring, and enforcement of policies across user stories, Git snapshots, and deployments. * Test data seeding across sandboxes ensuring accurate quality assurance prior to production deployments.",
+  "functions_claimed": [
+   {
+    "function_id": "ci_pipeline",
+    "function": "CI build/test pipeline automation",
+    "evidence": "- Continuous deployment and continuous integration, including visual pipeline configuration."
+   },
+   {
+    "function_id": "visual_modeling",
+    "function": "Visual modeling & design",
+    "evidence": "- Continuous deployment and continuous integration, including visual pipeline configuration."
+   },
+   {
+    "function_id": "api_integrations",
+    "function": "API & integrations",
+    "evidence": "Copado GovCloud integrates with all major Git solutions and ensures developers, administrators, and low-code Salesforce users can all commit changes to a central Git repository or seamlessly deploy from a QA environment to production."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2200507410/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2200507410"
+ },
+ {
+  "fork_id": "FR1912051231",
+  "vendor": "TechTrend, Inc.",
+  "product": "Federal GovCloud (FGC) DevSecOps",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Development Tools",
+  "description": "Federal GovCloud DevSecOps (FGC DSO) combines an array of tools, integrates them together under the FedRAMP umbrella and provides a complete software-as-a-service solution to include hosting, patching and help desk support. FGC DSO enables U.S. federal government agencies to easily adopt practices to enhance software supply chain with a solution to automate development, security, and operations (DevSecOps) practices through every phase of the software development life cycle. FGC DSO SaaS enables rapid adoption of a continuous integration and continuous deployment (CI/CD) pipeline to deliver high quality citizen and public applications through its integrated security validation tools as a managed service. It resides on a FedRAMP authorized government cloud infrastructure and is provisioned as a dedicated suite of tools leveraging a suite of tools and technologies that provide the foundation to implement DevSecOps. Landing zones for applications are cloud vendor agnostic and the FGC DSO platform supports application deployments and secure management of infrastructure on Azure, Amazon Web Services, Google Cloud, low-code platforms (e.g., Power Platform), and on-premises or hybrid environments. \n\nFGC DSO has an integrated software factory capability which provides a managed hosting environment for PaaS services as part of the FGC DSO security authorization boundary that allow agencies to obtain application landing zone cloud hosting while meeting zero trust requirements. With FGC DSO, Federal agencies can focus on developing repeatable, modern, and secure applications to support their missions by utilizing a turnkey platform that help to meet federal security mandates. Leveraging FGC DSO will speed up agile application development, security compliance, integration testing, deployment and secure operational monitoring.",
+  "functions_claimed": [
+   {
+    "function_id": "ci_pipeline",
+    "function": "CI build/test pipeline automation",
+    "evidence": "FGC DSO SaaS enables rapid adoption of a continuous integration and continuous deployment (CI/CD) pipeline to deliver high quality citizen and public applications through its integrated security validation tools as a managed service."
+   },
+   {
+    "function_id": "landing_zones",
+    "function": "Deployment environments, landing zones & tenants",
+    "evidence": "Landing zones for applications are cloud vendor agnostic and the FGC DSO platform supports application deployments and secure management of infrastructure on Azure, Amazon Web Services, Google Cloud, low-code platforms (e.g., Power Platform), and on-premises or hybrid environments."
+   },
+   {
+    "function_id": "hosted_platform",
+    "function": "Hosted platform & managed operations",
+    "evidence": "FGC DSO has an integrated software factory capability which provides a managed hosting environment for PaaS services as part of the FGC DSO security authorization boundary that allow agencies to obtain application landing zone cloud hosting while meeting zero trust requirements."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1912051231/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1912051231"
+ },
+ {
+  "fork_id": "FR2125561001",
+  "vendor": "Unqork, Inc.",
+  "product": "Unqork for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Development Tools",
+  "description": "Unqork is a no-code, cloud-based development platform that empowers organizations to rapidly build robust enterprise-grade software without writing a single line of code. Advanced no-code platforms such as Unqork come \"out-of-the-box\" with all the toolsets and elements necessary to build and manage applications.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2125561001/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2125561001"
  }
 ]

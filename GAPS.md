@@ -963,6 +963,14 @@ New extended functions from the addition forks, specified in groups/grc-l2/ADDEN
 
 Enlargements of families already registered under Group 33: automated evidence-validation engine incl. collection (+Kovr, Anecdotes by substance); continuous-monitoring feeds (+3 claimants); automated KSI validation (+Halo by substance); FedRAMP package generation (+Kovr). Posture / risk scoring engines gain no claimants, and no score is computed anywhere in the enlarged build. Absence retirement: the group's two standing named absences, risk_management and policy_management, are retired by this addition — newcomers claim both, and each claim buys its records form under the standard treatment (assessments and findings as records; policy documents as evidence records), with the policy lifecycle registered above as the genuinely new engine gap.
 
+## Remainder Addition — Development Tools L2 (+4 forks)
+
+New extended functions from the addition forks, specified in groups/development-tools-l2/ADDENDUM.md, not implemented:
+- [ ] open — No-code / low-code application development platform: visual application builder & runtime (Unqork)
+- [ ] open — Compliance documentation & SSP generation tooling (Cloud.gov; distinct from assessment automation: this is documentation generation)
+
+Enlargements of families already registered under Group 29: CI / CD execution engines (+Copado, +FGC); business modeling & automation engines (+Copado, first claimant at this tier); landing-zone provisioning & hosted platform operations (+FGC, +Cloud.gov); static code analysis engine (+Copado by substance: "code scanning" / "quality gates" — the family claim did not fire); release automation & data migration engine (+Copado by substance: Salesforce metadata deployment — the family's phrasing did not fire on the reversed wording); external-system integration engines (+Copado). One addition fork claims zero families (Unqork; its lone verb "build" is not a CI claim and its visual builder is never called "visual"), pinned in tests.
+
 ## Later groups
 
 Each group appends its section here when it ships.

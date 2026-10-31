@@ -41,6 +41,7 @@ entry point for this group.)
 | `test_service.py` | REST API — live HTTP server: health, 401 unknown user / role mismatch, full flow (project → issue + lifecycle → review → build → release → artifact + verify → environment → deployment → search), viewer write 403 + denied audited, audit admin-only, 400/404 envelopes |
 | `test_main_cli.py` | `python -m devtools serve` subprocess with demo users alice/bob/carol |
 | `test_negative_control.py` | Negative control (below) |
+| `test_additions.py` | Remainder additions (unit `addition:development-tools-l2`, see `../ADDENDUM.md`) — spec integrity: sheet count/unit order, membership vs `remainder.json`, literal per-fork claim table (7 claims), verbatim evidence, census citations (5/5), zero-claim fork (Unqork) and 12 zero-claim families pinned, near-miss pins, Copado visual wording-artifact pin; substrate cases: one per addition fork against the unchanged core (Cloud.gov environment/deployment records, Copado build/release/deployment records + artifact verify, FGC landing-zone deployment, Unqork project/issue records incl. the lifecycle gate) |
 | `devtools_helpers.py` | Shared fixtures: demo users (ADMIN/DEVELOPER/VIEWER), `USERS` registry, `fresh_store()`, and `make_store()` building a DevToolsStore + AuditLog + one project (created by ADMIN) |
 
 ## Coverage table
@@ -109,6 +110,32 @@ verified identical to the pre-mutation hash in
 to Group 17's shipped `store.py`) and the suite re-run: **66 tests,
 OK**. The suite catches this defect class; the negative control is
 not decorative.
+
+## Remainder additions — spec integrity and drill re-run
+
+`test_additions.py` (12 tests) pins the appended spec sheets and
+exercises one substrate case per addition fork; see its module
+docstring and `../ADDENDUM.md`. Status after the additions:
+**78 tests, OK**.
+
+The group's signature mutation drill was **re-run in this tree**
+for the additions (2026-10-31): the same lifecycle-gate patch as
+above (`if status not in allowed:` → `if False and status not in
+allowed:` in `DevToolsStore.set_issue_status`). The full suite
+ran: **78 tests, 9 failed** (raw output in
+`scratch/additions_mutation_run.txt`) — the original drill's 8
+(the `test_issues` illegal-transition subtests, the two
+`test_negative_control` canonicals, and
+`test_service.TestServiceAccessAndErrors.test_validation_400_and_not_found_404`)
+plus 1 from the new additions module,
+`test_additions.TestAdditionSubstrateCases.test_unqork_zero_claim_fork_records_and_lifecycle_gate`,
+whose direct assertion of the gate (open → resolved rejected,
+state unchanged) trips on the mutant exactly as designed.
+`store.py` was restored from the pre-mutation copy
+(`scratch/store.py.premutation.additions`) and verified
+SHA-256-identical to the shipped hash
+(`36b04bd5b46d5c550800575ec7dc7239654fa469338a8e1652ff611ad41925e0`);
+the suite re-ran green: **78 tests, OK**.
 
 ## Smoke
 
