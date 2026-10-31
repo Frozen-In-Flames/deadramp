@@ -734,6 +734,17 @@ Extended functions, specified in groups/grant-management-l2/UNION-SPEC.md, not i
 
 Platform-layer: encryption at rest (deployment layer; TLS when configured); multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP. Spec notes: the category is new, so the taxonomy was defined from this fork's own description (17 families, 17 claims); the description contains no money vocabulary and no scoring vocabulary — money enters only as fields on records the claimed functions presuppose, under an explicit core-boundary decision, and no score field exists anywhere in the build.
 
+## Singleton 46 — Health & Wellness L3-adjacent (1 fork)
+
+The fork's clinical engines, specified in groups/health-wellness-l3/UNION-SPEC.md, not implemented (per the category privacy rule they may not be built on this substrate, and nothing in the build performs or claims any diagnostic function):
+- [ ] open — EEG signal acquisition & real-time streaming pipeline
+- [ ] open — EEG waveform review rendering (physician review surface)
+- [ ] open — Continuous AI seizure monitoring & Seizure Burden quantification
+- [ ] open — Seizure detection & alerting (suspected status epilepticus)
+- [ ] open — Bedside diagnostic support
+
+The Group 18 category union's extended families (clinical decision support, EMR / EHR integration, claims adjudication, device connectivity, AI / ML models, automation engines, survey depth, engagement channels, telehealth media, native apps, hosting platform) are already registered under Group 18 and are not re-registered here. Baseline gaps at High: MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Platform-layer: multi-tenancy (single-tenant reference deployment); TLS only when configured; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: zero claims tag for this fork (the category taxonomy was defined from glucose / CGM descriptions and contains no phrase that fires on an EEG platform's vocabulary; six broad first-pass hits were removed by the inherited tightened patterns). The build is not a medical device and claims no FDA status; the fork's clearance belongs to the fork's product.
+
 ## Later groups
 
 Each group appends its section here when it ships.

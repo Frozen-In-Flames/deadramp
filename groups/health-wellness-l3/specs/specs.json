@@ -1,0 +1,22 @@
+[
+ {
+  "fork_id": "FR2317262742",
+  "vendor": "Ceribell",
+  "product": "Ceribell EEG",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [
+   "Health & Wellness"
+  ],
+  "deadramp_category": "Health & Wellness",
+  "description": "The Ceribell EEG System is an FDA cleared, AI-powered, neurodiagnostic platform that enables bedside diagnosis and real-time monitoring of suspected seizure patients. The SaaS EEG portal enables real-time streaming of Ceribell EEG data to allow physicians to securely review from anywhere. The cloud-hosted portal also powers continuous AI monitoring that provides a real-time Seizure Burden trendline and alerts indicating suspected status epilepticus.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2317262742/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2317262742"
+ }
+]
