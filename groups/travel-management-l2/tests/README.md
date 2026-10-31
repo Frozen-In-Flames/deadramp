@@ -2,10 +2,11 @@
 
 ```bash
 cd groups/travel-management-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 96 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 110 tests
 ```
 
-**96 tests, all passing.** Python standard library only.
+**110 tests, all passing** (96 shipped + 14 additions, see the
+remainder-addition section below). Python standard library only.
 
 ## Coverage map
 
@@ -50,6 +51,34 @@ never exceed the report's total, enforced at
   restored from `scratch/store.py.premutation` and verified
   **SHA-256-identical** (`a4098ea6…`, recorded in
   `scratch/store.py.sha256`); the suite is green again.
+
+## Remainder addition (unit `addition:travel-management-l2`)
+
+`test_additions.py` (14 tests) pins the addition fork (mLINQS /
+mLINQS Hosting Service, `F1610037949`): sheet count/order and
+membership against `remainder.json`, the original fork's claim
+table standing exactly (9 claims), the literal zero-claim table
+and whole-taxonomy zero-claim set for the newcomer, tier fields,
+the description verbatim against the cached source, census
+citation accounting (both verify, neither tags), the
+no-exclusion-trap pin, the singleton's five checked absences
+re-searched at the token level (booking, per-diem,
+reimbursement, approval, receipt — all survive), and near-miss
+pins. Two substrate cases run the fork's surface through the
+records form it presupposes: a relocation expense flow ending
+at the voucher cap, and the traveler record's pinned six-key
+shape with trip phase derived at read.
+
+**Drill re-run in this tree:** the core is unchanged, so the
+signature voucher-cap drill was re-run. The cap condition in
+`TravelStore._check_voucher_cap` (`if already + amount_cents >
+total:`, occurring exactly once) was patched to `if False:` —
+**110 ran, exactly 6 failures**: the shipped drill's 5 plus
+exactly 1 from the additions module
+(`test_additions...test_mlinqs_relocation_expense_flow_and_voucher_cap`).
+`store.py` was restored from `scratch/store.py.premutation-additions`
+and verified SHA-256-identical (`a4098ea6…`); the suite re-ran
+green. Raw output in `scratch/additions_mutation_run.txt`.
 
 ## Interpretation notes
 

@@ -64,5 +64,23 @@
   ],
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID FR2607452240",
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2607452240/"
+ },
+ {
+  "fork_id": "F1610037949",
+  "vendor": "mLINQS",
+  "product": "mLINQS Hosting Service",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Travel Management",
+  "description": "Since 2004, more than 30 federal agencies have trusted moveLINQ to process thousands of employee moves annually. As the first comprehensive, fully functional system designed expressly for government agencies to manage employee relocation, that trust is well founded. Agencies can be confident that every relocation processed using moveLINQ will be in full compliance. The software automates FTR, JTR, DSSR, and 6FAM CONUS/OCONUS relocation policy, and adheres to E-Gov Travel, GSA/OMB reporting, and Section 508 standards. Now mLINQS offers its leading relocation management on a hosted platform. As with other hosted solutions, this Software as a Service (SaaS) model provides agencies higher availability at a lower cost. Federal managers are able to focus their budgets on business objectives rather than infrastructure and the need to predict and meet future capacity. By leveraging efficiencies attained by hosting multiple federal agencies, mLINQS Hosting Services provides increased scalability and flexibility while increasing support services to customers.",
+  "functions_claimed": [],
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last change 2026-10-22), product record joined by FedRAMP ID F1610037949",
+  "source_url": "https://www.fedramp.gov/marketplace/products/F1610037949/"
  }
 ]

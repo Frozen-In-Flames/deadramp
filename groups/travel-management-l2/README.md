@@ -15,6 +15,30 @@ It was written from that contract only: original code, no vendor
 code, assets, or branding from the sibling offering. Python 3,
 **standard library only**, no external dependencies.
 
+## Remainder addition (unit `addition:travel-management-l2`)
+
+The group now specs **2 forks**: the remainder census added
+**mLINQS Hosting Service** (mLINQS, FedRAMP Moderate /
+Certified) as a second spec sheet. Under the group's 9-family
+taxonomy applied verbatim it claims **0 functions** — a
+zero-claim fork: its entire marketplace description is eight
+sentences about employee relocation ("process thousands of
+employee moves annually", "automates FTR, JTR, DSSR, and 6FAM
+CONUS/OCONUS relocation policy") in which none of the
+taxonomy's verbatim patterns, all defined from GO.gov's own
+suite-list vocabulary, appears. The group total stays
+**9 claims** (1 of 2 forks claiming). The singleton's five
+checked absences were re-searched against the newcomer and all
+survive — no booking, per-diem, reimbursement, approval, or
+receipt vocabulary in either listing — and the fork's
+relocation processing and policy-automation functions are
+registered as two new gaps. The core is unchanged (`src/`
+byte-identical); the addition brings 14 new spec-integrity and
+substrate tests — **110 tests, OK** — and the signature
+voucher-cap drill was re-run in this tree (exactly 6 failures
+under mutation: the shipped 5 plus the additions case). Full
+account in [`ADDENDUM.md`](ADDENDUM.md).
+
 ## The 13 core functions
 
 1. **Organization registry & membership** — organizations (`org-`)
