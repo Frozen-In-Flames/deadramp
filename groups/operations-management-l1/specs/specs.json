@@ -1,0 +1,18 @@
+[
+  {
+    "fork_id": "FR2113346550",
+    "vendor": "OpenWater Software LLC",
+    "product": "OpenWater",
+    "service_model": "['SaaS']",
+    "deployment_model": "Public Cloud",
+    "fedramp_impact_level": "LI-SaaS",
+    "cmmc_tier": "L1",
+    "authorization_status": "FedRAMP Certified",
+    "business_categories_in_source": "['Operations Management']",
+    "deadramp_category": "Operations Management",
+    "description": "OpenWater is a multi-tenant SaaS application and review platform that organizations use to run awards, abstracts and call-for-papers, grants, scholarships, fellowships, accreditation, and competition programs.\n\nProgram administrators build custom online submission forms and assign submissions to reviewers and judges for scoring and feedback.\n\nThe FedRAMP certification covers OpenWater's Submission Management and Review & Evaluation services only. Other OpenWater capabilities, including automated communications, reporting, program website builder, galleries, conference session scheduling, payments, and third-party integrations, are not included in the FedRAMP Minimum Assessment Scope.",
+    "functions_claimed": [],
+    "source_url": "https://www.fedramp.gov/marketplace/products/FR2113346550/",
+    "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2113346550"
+  }
+]

@@ -817,6 +817,23 @@ Extended functions, specified in groups/legal-policy-l2/UNION-SPEC.md, not imple
 
 Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP. Spec notes: the category is new and strictly separate from Law Enforcement (legal research platforms); this fork is an AI agent workspace grounded in a curated legal library with an administration console, and every product function sits in its description's first sentence. Privacy discipline: documents are metadata + SHA-256 only with verify-by-content, and the store layer has no parameter that can accept query text — the service layer hashes queries before the store sees them.
 
+## Singleton 52 — Operations Management L1 (1 fork)
+
+The fork's own certified services, specified in groups/operations-management-l1/UNION-SPEC.md, not implemented (nothing in the build performs or claims judging or scoring):
+- [ ] open — Submission management engine (custom submission forms / form builder, submission intake, reviewer assignment)
+- [ ] open — Review & evaluation engine (reviewer / judge scoring and feedback; substrate inspection records hold verbatim outcomes only)
+
+Product capabilities named in the listing but explicitly outside its FedRAMP Minimum Assessment Scope, per the listing's own scope sentence:
+- [ ] open — Automated communications
+- [ ] open — Reporting (the product's reporting capability, beyond registry summaries)
+- [ ] open — Program website builder
+- [ ] open — Galleries
+- [ ] open — Conference session scheduling
+- [ ] open — Payments
+- [ ] open — Third-party integrations
+
+The Group 36 category union's extended families (workflow execution, real-time intelligence & analytics, AI models, low-code builder, integration connectors, mobile apps, network connectivity & cloud operations, identity provider, security enforcement plane, policy enforcement plane, governance console) are already registered under Group 36 and are not re-registered here. Named absences from the category record: scheduling / rostering (zero claims at L2; this fork names conference session scheduling only as an out-of-scope capability) and IoT / telematics (zero claims everywhere). Platform-layer: multi-tenancy (asserted by the fork of its own platform; single-tenant reference deployment); encryption at rest (deployment layer); TLS only when configured; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: zero claims tag for this fork; the one raw hit (integrations) fired only inside the listing's scope-exclusion sentence and was removed under the boundary-disclaimer and excluded-catalogue precedents. At L1 the audit trace holds on the FedRAMP Low side only, and Group 36's AU-6 citation is deliberately not imported.
+
 ## Later groups
 
 Each group appends its section here when it ships.
