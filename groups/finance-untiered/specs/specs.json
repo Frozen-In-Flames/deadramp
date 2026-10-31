@@ -1,0 +1,29 @@
+[
+ {
+  "fork_id": "FR2633058235",
+  "vendor": "Emburse",
+  "product": "Emburse Enterprise",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Finance",
+   "Travel Management"
+  ],
+  "deadramp_category": "Finance",
+  "description": "Emburse Enterprise is a cloud-based SaaS solution that enables organizations to manage employee expense reporting, approval, and reimbursement workflows. For federal agency use, the solution is designed to enable authorized users to submit, review, approve, and administer business expenses in accordance with applicable organizational travel and expense policies. Potential users within a federal agency may include employees, expense approvers, finance and administrative personnel, and authorized system administrators.",
+  "functions_claimed": [
+   {
+    "function_id": "reporting",
+    "function": "Reporting & analytics",
+    "evidence": "Emburse Enterprise is a cloud-based SaaS solution that enables organizations to manage employee expense reporting, approval, and reimbursement workflows."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2633058235/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2633058235"
+ }
+]
