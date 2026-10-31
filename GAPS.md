@@ -1443,6 +1443,19 @@ New extended functions from this set, specified in groups/data-management-untier
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. The documented control claims: retention and disposition under the Federal Records Act and NARA documented at one fork in the taxonomy itself; at the prose tier, access control, identification, audit, and cryptographic protection are documented (Immuta's ABAC enforcement and audit trail; Pinecone's AES-256 and TLS figures), and every other family is listed as not documented. Named absences: data governance stands at zero of eight — the set includes a flagship data-governance product whose prose says govern and provision, never the family's phrases; API access, content processing, quality validation, integration exchange, and file transfer also stand at zero, several against prose that describes the function in other words. No raw hits were removed in this set's exclusion pass.
 
+## Untiered Set 6 — Development Tools (7 forks, tier null)
+
+New extended functions from this set, specified in groups/development-tools-untiered/UNION-SPEC.md, not implemented (the founding fifteen — CI/CD execution, code hosting internals, compilers, config-as-code execution, compliance automation, business modeling, course authoring, landing-zone provisioning, artifact storage, feature flags, experimentation, static analysis, security monitoring, release automation, integration engines — are already registered under the parent groups and are not re-registered here):
+- [ ] open — AI code-generation & AI-agent development engines
+- [ ] open — Cloud development environments (hosted IDE workspaces)
+- [ ] open — Legacy modernization & code-conversion engines
+- [ ] open — CI/CD governance & promotion-gating engines
+- [ ] open — Secrets & sensitive-data detection engines
+- [ ] open — Pipeline governance configuration records (the category's standing records-configuration gap, claimed in substance here)
+- [ ] open — Fork excess: customer support platform
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. The documented control claims: access control documented at one fork and audit at two, traced to families; at the prose tier, configuration management, system integrity, and assessment are documented (assessment recorded exactly as the fork states it, including that authorization has not yet been granted); identification and authentication pointedly not documented — no SSO or authentication phrase occurs anywhere in the set — and every other family is listed as not documented. Named absences: seven of seventeen families stand at zero, including configuration-as-code, artifact registry, compliance/KSI, and search. Wording artifacts are recorded at their weights: both landing-zone hits fire on the word tenant inside multi-tenant, and one deployment claim fires on a product noun.
+
 ## Later groups
 
 Each group appends its section here when it ships.

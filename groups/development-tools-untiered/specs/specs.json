@@ -1,0 +1,224 @@
+[
+ {
+  "fork_id": "FR2701557054",
+  "vendor": "Aequitas Cyber Labs",
+  "product": "KineticCode",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Development Tools",
+   "Governance, Risk, and Compliance (GRC)",
+   "Cybersecurity & Risk Management"
+  ],
+  "deadramp_category": "Development Tools",
+  "description": "KineticCode is a multi-tenant SaaS CI/CD governance platform that wraps GitHub-based software delivery with auditable controls for organizations handling sensitive and controlled information.\n\n- **Pull-request gating:** required human approval, automated unit-test and coverage validation (including detection of empty or no-op tests), and automatic review.\n- **Sensitive-data detection:** CUI/FCI marking assistance and detection of secrets, tokens and credentials in checked-in code, plus detection of risky code patterns.\n- **Tamper evidence:** build checksums generated and re-verified at each environment promotion.\n- **Controlled promotion:** strict sequential Dev, Test, Stage, Prod promotion with notifications on mismatch or stalled promotions.\n- **Audit and evidence:** persistent audit trail of scans, approvals, merges and promotions, with a dashboard of pull requests, branches and environment status.\n- **Access governance:** business-unit and role-based views, with detection and flagging of access-policy violations for human remediation.",
+  "functions_claimed": [
+   {
+    "function_id": "code_review",
+    "function": "Code review & discussion",
+    "evidence": "- **Pull-request gating:** required human approval, automated unit-test and coverage validation (including detection of empty or no-op tests), and automatic review."
+   },
+   {
+    "function_id": "landing_zones",
+    "function": "Deployment environments, landing zones & tenants",
+    "evidence": "KineticCode is a multi-tenant SaaS CI/CD governance platform that wraps GitHub-based software delivery with auditable controls for organizations handling sensitive and controlled information."
+   },
+   {
+    "function_id": "hosted_platform",
+    "function": "Hosted platform & managed operations",
+    "evidence": "KineticCode is a multi-tenant SaaS CI/CD governance platform that wraps GitHub-based software delivery with auditable controls for organizations handling sensitive and controlled information."
+   },
+   {
+    "function_id": "access_control",
+    "function": "Access control",
+    "evidence": "- **Access governance:** business-unit and role-based views, with detection and flagging of access-policy violations for human remediation."
+   },
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging",
+    "evidence": "KineticCode is a multi-tenant SaaS CI/CD governance platform that wraps GitHub-based software delivery with auditable controls for organizations handling sensitive and controlled information."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2701557054/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2701557054"
+ },
+ {
+  "fork_id": "FR2631054484",
+  "vendor": "Anysphere, Inc.",
+  "product": "Cursor",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP In Process",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Development Tools"
+  ],
+  "deadramp_category": "Development Tools",
+  "description": "Cursor is an AI-powered software development platform that helps developers and organizations understand, generate, review, and maintain software. The offering includes the Cursor editor, AI-assisted development workflows, and related cloud services. Anysphere, Inc. is pursuing FedRAMP 20x Class C certification for the Cursor platform, and A-LIGN is performing the independent assessment. Certification has not yet been granted. Anysphere's FedRAMP 20x Class A application is under FedRAMP review. Origin, Cursor's Git hosting product, is not part of this offering and is not offered to FedRAMP customers; service capabilities that operate on Origin repositories are outside the assessed scope.",
+  "functions_claimed": [
+   {
+    "function_id": "code_review",
+    "function": "Code review & discussion",
+    "evidence": "Cursor is an AI-powered software development platform that helps developers and organizations understand, generate, review, and maintain software."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2631054484/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2631054484"
+ },
+ {
+  "fork_id": "FR2701557044",
+  "vendor": "Business Integra Technology Solutions, Inc.",
+  "product": "Moderniza",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Development Tools",
+   "Artificial Intelligence (AI)"
+  ],
+  "deadramp_category": "Development Tools",
+  "description": "Moderniza converts legacy estates (COBOL, VB6, PHP, Java, .NET and others) into modern, tested, containerised applications through an evidence-driven pipeline of five steps: Blueprint, Contract, Code, Testing and Deploy. Every step leaves a ledger the customer can audit.",
+  "functions_claimed": [
+   {
+    "function_id": "audit_logging",
+    "function": "Audit logging",
+    "evidence": "Every step leaves a ledger the customer can audit."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2701557044/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2701557044"
+ },
+ {
+  "fork_id": "FR2631258132",
+  "vendor": "Harness, Inc.",
+  "product": "Harness for Government",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Development Tools",
+  "description": "Harness.io Software-as-a-Service (SaaS) is a fully managed, cloud-native software delivery platform that provides continuous integration, continuous delivery, security testing, and related DevSecOps capabilities using a cloud computing environment.",
+  "functions_claimed": [
+   {
+    "function_id": "ci_pipeline",
+    "function": "CI build/test pipeline automation",
+    "evidence": "Harness.io Software-as-a-Service (SaaS) is a fully managed, cloud-native software delivery platform that provides continuous integration, continuous delivery, security testing, and related DevSecOps capabilities using a cloud computing environment."
+   },
+   {
+    "function_id": "deployment_release",
+    "function": "Deployment & release",
+    "evidence": "Harness.io Software-as-a-Service (SaaS) is a fully managed, cloud-native software delivery platform that provides continuous integration, continuous delivery, security testing, and related DevSecOps capabilities using a cloud computing environment."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2631258132/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2631258132"
+ },
+ {
+  "fork_id": "FR2701457600",
+  "vendor": "IndirectTek LLC",
+  "product": "Elixium",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [],
+  "deadramp_category": "Development Tools",
+  "description": "Elixium is a software delivery workspace for teams of people and AI agents: boards, stories, epics, decisions and test plans, where work an AI agent drafts stays a proposal until a person approves it. It includes a customer support platform: in-app chat, support tickets, support email and a support phone line.",
+  "functions_claimed": [],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2701457600/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2701457600"
+ },
+ {
+  "fork_id": "FR2700555844",
+  "vendor": "Linear Orbit, Inc.",
+  "product": "Linear",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Operations Management",
+   "Development Tools",
+   "Collaboration",
+   "Artificial Intelligence (AI)"
+  ],
+  "deadramp_category": "Development Tools",
+  "description": "Linear is the product development system for teams and agents, purpose-built for planning and building software products. It is a multi-tenant SaaS offering that provides issue tracking, project and cycle planning, roadmaps and initiatives, product intelligence, and agent workflows, delivered through web, desktop, and mobile clients and a public GraphQL API.\n\nLinear is currently listed in the **Initial Implementation** phase and is pursuing a FedRAMP 20x certification for its existing commercial offering, starting with a Class A submission and progressing toward Class C. Linear does not operate a separate government-only environment; the certification scope is the production Linear service hosted on Google Cloud Platform with Cloudflare at the network edge.\n\nProgress toward certification is published at least quarterly in Linear\u2019s Trust Center (https://trust.linear.app).",
+  "functions_claimed": [
+   {
+    "function_id": "issue_tracking",
+    "function": "Issue & work-item tracking",
+    "evidence": "It is a multi-tenant SaaS offering that provides issue tracking, project and cycle planning, roadmaps and initiatives, product intelligence, and agent workflows, delivered through web, desktop, and mobile clients and a public GraphQL API."
+   },
+   {
+    "function_id": "landing_zones",
+    "function": "Deployment environments, landing zones & tenants",
+    "evidence": "It is a multi-tenant SaaS offering that provides issue tracking, project and cycle planning, roadmaps and initiatives, product intelligence, and agent workflows, delivered through web, desktop, and mobile clients and a public GraphQL API."
+   },
+   {
+    "function_id": "hosted_platform",
+    "function": "Hosted platform & managed operations",
+    "evidence": "It is a multi-tenant SaaS offering that provides issue tracking, project and cycle planning, roadmaps and initiatives, product intelligence, and agent workflows, delivered through web, desktop, and mobile clients and a public GraphQL API."
+   },
+   {
+    "function_id": "api_integrations",
+    "function": "API & integrations",
+    "evidence": "It is a multi-tenant SaaS offering that provides issue tracking, project and cycle planning, roadmaps and initiatives, product intelligence, and agent workflows, delivered through web, desktop, and mobile clients and a public GraphQL API."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2700555844/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2700555844"
+ },
+ {
+  "fork_id": "FR2701457579",
+  "vendor": "Replit, Inc.",
+  "product": "Replit for Government",
+  "service_model": [
+   "SaaS",
+   "PaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Artificial Intelligence (AI)",
+   "Collaboration",
+   "Development Tools"
+  ],
+  "deadramp_category": "Development Tools",
+  "description": "Replit for Government is a cloud platform that lets\ngovernment organizations securely build, run and deploy\nsoftware with the help of AI. It combines , an AI agent that\nplans, builds, tests and changes applications from natural-\nlanguage prompts, with a Cloud Development Environment\nthat gives each user an isolated cloud workspace with a\npersistent filesystem, in-browser and SSH access, real-time\ncollaboration and AI coding assistance. Through Replit\nDeployments,\nUsers can deploy applications that are immediately\nshareable with your teams on a secure platform for mission\ncritical federal systems..",
+  "functions_claimed": [
+   {
+    "function_id": "project_collaboration",
+    "function": "Project/repository registry & code collaboration",
+    "evidence": "It combines , an AI agent that\nplans, builds, tests and changes applications from natural-\nlanguage prompts, with a Cloud Development Environment\nthat gives each user an isolated cloud workspace with a\npersistent filesystem, in-browser and SSH access, real-time\ncollaboration and AI coding assistance."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2701457579/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2701457579"
+ }
+]
