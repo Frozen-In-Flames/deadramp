@@ -266,3 +266,18 @@ selected NIST SP 800-172 enhanced requirements):
   certification**, and it does not claim either. The control
   mapping above states which baseline families the build's
   features answer to; nothing more.
+
+## Remainder addition (Oct 31, 2026)
+
+One previously uncategorized fork joined this group under
+remainder unit `addition:communication-l3`: **GovSlack**
+(Slack Technologies, FedRAMP High / Certified), appended as the
+seventh spec sheet. Under the group's taxonomy applied verbatim
+it claims exactly one function — **messaging** — and the core is
+unchanged (`src/` byte-identical); the suite is now **149
+tests**. Two new gap functions are named (an app integration &
+connector platform, and the persistent channel/workspace
+collaboration surface), and the group's standing named absence —
+video conferencing, still claimed by 0 of 7 forks — survives the
+addition, because GovSlack's High listing never mentions media.
+Full record: [`ADDENDUM.md`](ADDENDUM.md).

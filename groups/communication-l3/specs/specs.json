@@ -167,5 +167,29 @@
   ],
   "source_url": "https://www.fedramp.gov/marketplace/products/FR2118055930/",
   "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2118055930"
+ },
+ {
+  "fork_id": "FR2230252267",
+  "vendor": "Slack Technologies",
+  "product": "GovSlack",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "High",
+  "cmmc_tier": "L3-adjacent",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Communication",
+  "description": "GovSlack is an instance of Slack created specifically for the purposes of handling high workloads for Government customers and highly regulated commercial sectors. Slack has transformed business communication. It's the leading channels-based messaging platform, used by millions to align their teams, unify their systems, and drive their business forward. Only Slack offers a secure, enterprise-grade environment that can scale with the largest companies in the world. It is a new layer of the business technology stack where people can work together more effectively, connect all their other software tools and services, and find information they need to do their best work. Slack is where work happens.",
+  "functions_claimed": [
+   {
+    "function_id": "messaging",
+    "function": "Email & messaging channels",
+    "evidence": "It's the leading channels-based messaging platform, used by millions to align their teams, unify their systems, and drive their business forward."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2230252267/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2230252267"
  }
 ]

@@ -239,3 +239,34 @@ L3-specific notes:
   builds a fresh server per test so failure counters never leak
   between tests, and the expiry test uses `lockout_seconds=0.3`
   with a 0.5 s sleep rather than mocking the clock.
+
+## Remainder addition — unit addition:communication-l3 (Oct 31, 2026)
+
+One fork appended to `specs/specs.json` (6 → 7 sheets): GovSlack
+(`FR2230252267`, Slack Technologies, FedRAMP High / Certified).
+Full record in [`../ADDENDUM.md`](../ADDENDUM.md).
+
+| File | Tests | Covers |
+|---|---:|---|
+| `test_additions.py` | 11 | Addition spec integrity: sheet count/order + membership vs `../../remainder.json`, registry fields as published, literal claim table (exactly 1 claim — `messaging`), the 20-family zero-claim set, group totals (7 forks / 12 claims / 6 claiming), verbatim evidence + description byte-equal to the cached record, census citations 2/2, near-miss token pins; substrate cases: group-addressed messaging flow (compose → dispatch with `reference_transport` receipt → ack), send gate with no enabled channel, High baseline (chain verifies; auditor cannot compose) |
+
+**Status: 149 tests, OK** (138 shipped + 11 additions).
+
+**Drill re-run (Drill 1, send gate).** The core is unchanged, so
+the group's signature drill was re-run in this tree:
+`src/comm/store.py` was copied to
+`scratch/store.py.premutation_additions` and the send-gate line in
+`CommStore._dispatch_deliveries` (`if channel is None:`, the exact
+line the shipped drill record names) was patched to `if False:`.
+The full suite ran: **149 tests, exactly 5 failed** — the shipped
+drill's 4 (`test_dispatch_due_absent_channel_fails`,
+`test_dispatch_due_no_enabled_channel_fails`, and the two
+negative-control canonical cases) plus exactly 1 from the
+additions module
+(`test_additions.TestAdditionsSubstrate.test_govslack_send_gate_no_enabled_channel`),
+tripping exactly as designed. `store.py` was restored from the
+pre-mutation copy — SHA-256 verified identical to the shipped
+hash (`bfc7877c…`) — and the suite re-ran green. Raw output:
+`scratch/additions_mutation_run.txt`. Drill 2 (audit hash) was
+not re-run: the addition changes no audit code or audit-facing
+behavior, and its shipped record stands.
