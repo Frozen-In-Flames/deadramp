@@ -1,0 +1,66 @@
+[
+ {
+  "fork_id": "FR2633153272",
+  "vendor": "Samsara Inc.",
+  "product": "Samsara Connected Operations Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Fleet Management",
+   "Operations Management"
+  ],
+  "deadramp_category": "Fleet Management",
+  "description": "The Samsara Connected Operations Cloud is a software-as-a-service platform that connects vehicles, equipment, sites, and workers to provide real-time operational visibility. Samsara IoT devices, including vehicle gateways, dash cameras, and environmental sensors, transmit data to the cloud platform, where customers use applications for fleet telematics, video-based safety, equipment monitoring, driver workflows, and regulatory compliance. The platform provides dashboards, alerting, reporting, and open APIs for integration with customer systems.",
+  "functions_claimed": [
+   {
+    "function_id": "telematics_gps",
+    "function": "Live telematics & GPS tracking",
+    "evidence": "Samsara IoT devices, including vehicle gateways, dash cameras, and environmental sensors, transmit data to the cloud platform, where customers use applications for fleet telematics, video-based safety, equipment monitoring, driver workflows, and regulatory compliance."
+   },
+   {
+    "function_id": "api_integrations",
+    "function": "API & integrations",
+    "evidence": "The platform provides dashboards, alerting, reporting, and open APIs for integration with customer systems."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2633153272/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2633153272"
+ },
+ {
+  "fork_id": "FR2700857493",
+  "vendor": "Samsara Inc.",
+  "product": "Samsara Connected Operations Cloud",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Public Cloud",
+  "fedramp_impact_level": "Unknown",
+  "cmmc_tier": null,
+  "authorization_status": "Initial Implementation",
+  "business_categories_in_source": [
+   "Fleet Management",
+   "Operations Management"
+  ],
+  "deadramp_category": "Fleet Management",
+  "description": "The Samsara Connected Operations Cloud is a software-as-a-service platform that connects vehicles, equipment, sites, and workers to provide real-time operational visibility. Samsara IoT devices, including vehicle gateways, dash cameras, and environmental sensors, transmit data to the cloud platform, where customers use applications for fleet telematics, video-based safety, equipment monitoring, driver workflows, and regulatory compliance. The platform provides dashboards, alerting, reporting, and open APIs for integration with customer systems.",
+  "functions_claimed": [
+   {
+    "function_id": "telematics_gps",
+    "function": "Live telematics & GPS tracking",
+    "evidence": "Samsara IoT devices, including vehicle gateways, dash cameras, and environmental sensors, transmit data to the cloud platform, where customers use applications for fleet telematics, video-based safety, equipment monitoring, driver workflows, and regulatory compliance."
+   },
+   {
+    "function_id": "api_integrations",
+    "function": "API & integrations",
+    "evidence": "The platform provides dashboards, alerting, reporting, and open APIs for integration with customer systems."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR2700857493/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR2700857493"
+ }
+]

@@ -1570,6 +1570,20 @@ New extended functions from this set, specified in groups/communication-untiered
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Three claims stand; two raw hits were removed under the founding group's recorded correction classes (incident events are not scheduling events; self-reporting framed as an accountability input is not reporting analytics), each pinned by test. The documented control claims stand at access control in part, at the prose tier only; identification is pointedly not documented (personnel accountability is not authentication), and cryptographic protection is not documented (securely is an adverb; safeguarding prose is framework-free). Video conferencing has no family in this taxonomy, against the most video-heavy description in the category — the absence is recorded, not repaired.
 
+## Untiered Set 15 — Fleet Management (2 forks, tier null)
+
+New extended functions from this set, specified in groups/fleet-management-untiered/UNION-SPEC.md, not implemented:
+- [ ] open — Live telematics & GPS streaming (two claimants in this set; the founding named absence gains claimants)
+- [ ] open — Integration engines & external connectors
+- [ ] open — Video-based safety & dash-camera analytics engines
+- [ ] open — IoT device telemetry ingestion & equipment/environmental monitoring engines
+- [ ] open — Alerting & notification engines
+- [ ] open — Driver workflow & compliance applications
+- [ ] open — Dashboarding front-ends beyond registry reporting
+- [ ] open — Platform layer
+
+Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Four claims stand (a duplicate pair, spec'd as separate sheets per the Phase 1 rule, with identical tables); no numbered core function is claim-supported — every core family stands at zero here — so the substrate is carried, not claimed, and the set's telematics claim stands on the single word telematics at exact weight, with the streaming engine extended. No documented control claims: the only control-adjacent phrase, regulatory compliance, names an application area, not a control family. Named absences: ELD and hours-of-service stand at zero — the phrase driver workflows and regulatory compliance is present, and the vendor's ELD business elsewhere is reputation, not evidence; reporting and analytics stand at zero with dashboards and reporting listed in other words.
+
 ## Later groups
 
 Each group appends its section here when it ships.
