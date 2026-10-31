@@ -1,0 +1,26 @@
+[
+ {
+  "fork_id": "FR1918150046",
+  "vendor": "Geotab",
+  "product": "Geotab Telematics Platform Government (GTP Gov)",
+  "service_model": [
+   "SaaS"
+  ],
+  "deployment_model": "Government Community Cloud",
+  "fedramp_impact_level": "Moderate",
+  "cmmc_tier": "L2",
+  "authorization_status": "FedRAMP Certified",
+  "business_categories_in_source": [],
+  "deadramp_category": "Fleet Management",
+  "description": "The Geotab Telematics Platform (Government) (GTP Gov) is an end-to-end vehicle Telematics product, providing fleet management tools to Government fleets.",
+  "functions_claimed": [
+   {
+    "function_id": "telematics_gps",
+    "function": "Live telematics & GPS tracking",
+    "evidence": "The Geotab Telematics Platform (Government) (GTP Gov) is an end-to-end vehicle Telematics product, providing fleet management tools to Government fleets."
+   }
+  ],
+  "source_url": "https://www.fedramp.gov/marketplace/products/FR1918150046/",
+  "source": "GSA FedRAMP Marketplace dataset (cached at raw/data_dump.json; dataset produced_by=General Services Administration, last_change=2026-10-22T02:27:38.974Z); product record id FR1918150046"
+ }
+]
