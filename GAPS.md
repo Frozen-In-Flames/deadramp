@@ -1430,16 +1430,16 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## Untiered Set 5 — Data Management (8 forks, tier null)
 
 New extended functions from this set, specified in groups/data-management-untiered/UNION-SPEC.md, not implemented (the standing category gaps with no claimant in this set — integration runtime, record-linkage and de-identification engines, workflow and guided-interview engines, hosting, case management, cluster lifecycle, field-level lineage — are already registered under the parent groups and are not re-registered here):
-- [ ] open — AI/ML engines (six claimants in this set; the build computes nothing learned)
-- [ ] open — Vector database & embedding index engine
-- [ ] open — Document processing engines (OCR, classification, deduplication)
-- [ ] open — Petabyte-scale warehouse & analytics engine
-- [ ] open — Enterprise architecture graph platform
-- [ ] open — Policy enforcement plane & ABAC engine
-- [ ] open — Managed file transfer transport
-- [ ] open — Archive, eDiscovery & FOIA production, including disposition execution (the build records schedules; it executes nothing)
-- [ ] open — Search indexing engine
-- [ ] open — Query & visualization engines
+- [x] reference — AI/ML engines (six claimants in this set; the build computes nothing learned)
+- [x] built — Vector database & embedding index engine
+- [x] reference — Document processing engines (OCR, classification, deduplication)
+- [x] built — Petabyte-scale warehouse & analytics engine
+- [x] built — Enterprise architecture graph platform
+- [x] built — Policy enforcement plane & ABAC engine
+- [x] reference — Managed file transfer transport
+- [x] built — Archive, eDiscovery & FOIA production, including disposition execution (the build records schedules; it executes nothing)
+- [x] reference — Search indexing engine
+- [x] built — Query & visualization engines
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. The documented control claims: retention and disposition under the Federal Records Act and NARA documented at one fork in the taxonomy itself; at the prose tier, access control, identification, audit, and cryptographic protection are documented (Immuta's ABAC enforcement and audit trail; Pinecone's AES-256 and TLS figures), and every other family is listed as not documented. Named absences: data governance stands at zero of eight — the set includes a flagship data-governance product whose prose says govern and provision, never the family's phrases; API access, content processing, quality validation, integration exchange, and file transfer also stand at zero, several against prose that describes the function in other words. No raw hits were removed in this set's exclusion pass.
 

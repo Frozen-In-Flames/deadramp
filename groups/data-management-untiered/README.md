@@ -322,3 +322,44 @@ recorded then and not before.
   0; integration & exchange has 0; managed file transfer has 0;
   and two forks (Files.com, OATI Marketplace) carry zero claims
   at all. Nothing was back-filled to make the set look complete.
+
+## Final GAPS batch (2026-11-07)
+
+The 10 open Extended entries registered for this set are closed
+by one new module, `src/datamgmt/extensions.py`
+(`DataMgmtExtensions`, wrapping the core store; all 7 core
+modules remain byte-identical to the accounting above). Six
+entries are built as records plus deterministic derivations in
+the sibling Data Management units' adjudicated forms, at tier
+null: vector database & embedding index (collection/index
+*definitions* plus embedding-job records with counts as
+reported — no vector value exists in any shape, no embedding is
+computed), petabyte-scale warehouse & analytics (configuration
+records with the scale label recorded verbatim as the
+platform's own, plus reported query runs and a read-derived
+summary; no data held), enterprise architecture graph (node/edge
+records over opaque refs, degrees derived at read), policy
+enforcement plane & ABAC (policy definitions held as data,
+subject attributes recorded as names present, decision outcomes
+derived at read by a presence-match seam — enforcement itself
+is not performed, and a decision changes no core access state),
+archive / eDiscovery / FOIA production (production records, plus
+disposition *decision* and execution-reference records in the
+L2/L3-adjacent units' adjudicated form — nothing is executed,
+per PLATFORM-LAYER.md decision 4), and query & visualization
+(definitions in text-free structure plus reported run counts;
+nothing executes or renders here). Four entries ship as labeled
+reference implementations (`reference_stub: True`; transfers
+`reference_transport: True`): AI/ML engines, document
+processing engines, managed file transfer transport, and the
+search indexing engine. No entry was re-judged; the per-entry
+dispositions, the two in-entry adjudication notes, and the
+long-tail enumeration (including the standing category gaps
+this unit does not touch) are in `BATCH.md`. Suite: 202 tests
+before, **241 tests after, OK**, including a fresh
+mutation-verified negative control on the ABAC presence-match
+seam (exactly 3 failures under the mutant; see
+`tests/README.md`). Tier null binds the new surface exactly as
+it binds the core: a test scans every extension record and view
+recursively and finds no tier-, baseline-, or
+equivalence-shaped key.

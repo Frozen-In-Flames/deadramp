@@ -104,3 +104,44 @@ carried with the one docstring labeling fix noted above. NOT
 carried: `test_additions.py` (it pins the founding tree's remainder
 additions unit, a different census unit). Added here:
 `test_specs.py` (6 tests).
+
+## Final GAPS batch module
+
+| File | Covers |
+|---|---|
+| `test_gaps_batch.py` | The batch extension surface (`src/datamgmt/extensions.py`, 39 tests): one class per closed entry — vector collection definitions + reported embedding-job counts (no parameter accepts a vector value, pinned by TypeError), warehouse configuration records + reported query runs + read-derived summary, graph node/edge records with degrees derived at read, ABAC policy definitions + attribute-presence records + decision views derived by the match seam, production records + disposition decision/execution-reference records with eligibility derived from the core's `retention_due`, query/visualization definitions in text-free structure (TypeError on any text/batch parameter) with views derived from run reports, and the four labeled stubs (AI/ML models and runs, document processing jobs and outputs, file transfers, search indexes and snapshots — `reference_stub: True` / `reference_transport: True` throughout, core literal search pinned unchanged). Cross-cutting: a recursive scan over every extension record and view (no tier/baseline/equivalence-shaped key, no float value, no numeric list), stub-label pins, denied attempts audited `ext_<action>:denied`, failed operations consuming no id |
+
+## Batch negative control — mutation-verified
+
+`test_gaps_batch.py`'s `TestAbacMatchNegativeControl`
+implements the batch's fresh mutant: a `DataMgmtExtensions`
+subclass (`MutantExtensions`) whose `_attributes_satisfy` seam
+returns `True` unconditionally — every subject matches every
+policy. The traced claim is that **an ABAC decision matches
+only when every attribute name the policy requires is recorded
+present for the subject** (the policy-enforcement entry's
+derivation; the deterministic presence match of the
+personalization precedent). The canonical case (policy requires
+`clearance` + `need_to_know`; the subject has only `clearance`
+recorded) asserts three things: the canonical expectation
+(`matched` is False, `missing_attributes` names `need_to_know`)
+on the real implementation, that the mutant would NOT produce
+that expectation (its view reports `matched` True), and — via a
+literal `assertRaises(AssertionError)` — that treating the
+mutant's outcome as the expected outcome fails.
+
+Mutation verification in THIS tree (2026-11-07): the seam in
+the real `src/datamgmt/extensions.py` was patched to
+`return True`, the full suite was run: **241 tests ran,
+exactly 3 failed** —
+
+- `test_gaps_batch.TestAbac.test_decision_outcome_derived_at_read_not_stored`
+- `test_gaps_batch.TestAbacMatchNegativeControl.test_no_attributes_recorded_never_matches`
+- `test_gaps_batch.TestAbacMatchNegativeControl.test_unmatched_subject_denied_by_match_canonical`
+
+— exactly the tests that pin the derivation. `extensions.py`
+was then restored from `scratch/extensions.py.premutation` and
+verified SHA-256-identical to the pre-mutation hash
+(`6aacdd7d7b50c486f9f4d9095c288a2fa1ccf8e413c51834a2f5f4b528c88245`,
+recorded in `scratch/extensions.py.sha256`); the suite re-ran:
+**241 tests, OK**. Raw record: `scratch/gaps_batch_mutation_run.txt`.
