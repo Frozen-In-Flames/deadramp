@@ -1259,16 +1259,16 @@ The carried CRM Extended set from the parent group (casework depth, guidance run
 ## Remainder Singleton 57 — Energy Management L1 (1 fork, new category)
 
 New extended functions from this fork, specified in groups/energy-management-l1/UNION-SPEC.md, not implemented:
-- [ ] open — Reverse auction execution engine: conducting the auction itself (the Core records auctions, bids, and the derived outcome; it runs no auction)
-- [ ] open — Price-trigger evaluation engine: evaluating market prices against subscription triggers (alert records are Core; "automated alerts" is recorded at artifact weight)
-- [ ] open — Alert & notification delivery transport
-- [ ] open — Market intelligence engine: producing the market analysis the fork describes (market-update notifications are booked once, under the notification records)
-- [ ] open — Advisory practice itself: the energy budgeting and risk consulting the fork's people perform
-- [ ] open — Price chart rendering & dashboards
-- [ ] open — Supply contract lifecycle & execution
-- [ ] open — Payment / settlement execution
-- [ ] open — Identity provider (demo identities are hooks, as everywhere in this repo)
-- [ ] open — Energy data integrations: the meter, market, and supplier data feeds the platform consumes
+- [x] built — Reverse auction execution engine: conducting the auction itself (the Core records auctions, bids, and the derived outcome; it runs no auction)
+- [x] reference — Price-trigger evaluation engine: evaluating market prices against subscription triggers (alert records are Core; "automated alerts" is recorded at artifact weight)
+- [x] built — Alert & notification delivery transport
+- [x] built — Market intelligence engine: producing the market analysis the fork describes (market-update notifications are booked once, under the notification records)
+- [x] built — Advisory practice itself: the energy budgeting and risk consulting the fork's people perform
+- [x] built — Price chart rendering & dashboards
+- [x] built — Supply contract lifecycle & execution
+- [x] built — Payment / settlement execution
+- [x] reference — Identity provider (demo identities are hooks, as everywhere in this repo)
+- [x] reference — Energy data integrations: the meter, market, and supplier data feeds the platform consumes
 
 Named absences, token-verified at zero tokens each and stated plainly: demand response / curtailment (the vendor's best-known business in the wider market — reputation is not evidence, and its description here is an energy procurement exchange), EV charging, energy storage, renewables / solar / carbon, energy efficiency / building management, metering / consumption / usage, billing / payment, grid services / capacity, and contract execution / e-signature. The taxonomy deliberately has no hosting family: the description carries no hosting or cloud language, and the record's SaaS / Public Cloud fields are record data, never claims. The build controls nothing physical: it holds records about energy procurement and operates no grid, charging, building, or metering system.
 

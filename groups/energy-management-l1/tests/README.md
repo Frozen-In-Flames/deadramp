@@ -6,8 +6,9 @@ Run from this directory:
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-**74 tests, all passing** (Python 3 standard library `unittest`
-only). Each test module's header names the core function, spec
+**115 tests, all passing** (Python 3 standard library `unittest`
+only — 74 core tests plus 41 from the final GAPS batch, below).
+Each test module's header names the core function, spec
 claim, or control family it traces to.
 
 | Module | Covers |
@@ -26,6 +27,7 @@ claim, or control family it traces to.
 | `test_main_cli.py` | CLI argument handling and demo-user wiring |
 | `test_specs.py` | Spec integrity: membership == census unit {FR2014363920}, recorded fields match `forks.json`, taxonomy == the 9 own-description families, evidence verbatim, census citations verify |
 | `test_negative_control.py` | The mutation-verified negative control (below) |
+| `test_gaps_batch.py` | Final GAPS batch extension surface: per-entry shapes and labels, core records byte-identical after extension operations, derived-never-stored delivery / contract / chart views, the settlement cap and its negative control (below), stub labels, and a recursive no-score / no-credential / no-feed-data key scan |
 
 ## Negative control — mutation-verified
 
@@ -61,3 +63,41 @@ failures are exactly the tests that pin the invariant). The store
 was then restored from `scratch/store.py.premutation` and verified
 **byte-identical by SHA-256** (`scratch/store.py.sha256`), and the
 full suite re-ran green: **74 tests, OK**.
+
+## Final GAPS batch — negative control (fresh, for the new code)
+
+The batch's fresh invariant is the settlement cap in
+`src/energy/extensions.py`: outstanding settlement-request
+amounts for a supply contract never exceed the contract's
+recorded amount (quantity x integer cents per unit, derived at
+read), enforced by the single seam `_check_settlement_cap`. An
+oracle that accepts an over-cap request is testing that code
+ran, not that the cap holds — so it is verified two ways:
+
+1. **In-suite three-leg control**
+   (`test_gaps_batch.TestSettlementCapNegativeControl`): the
+   canonical cases — a single request one cent over the contract
+   value, and two requests each within value whose sum exceeds
+   it — raise `ValidationError` from both the seam and the
+   extension surface and store nothing / consume no id; a local
+   mutant gate that waves every request through is shown NOT to
+   produce the canonical outcome, and treating the mutant's
+   outcome as the expectation raises `AssertionError`.
+2. **External drill** (performed on this tree, recorded in
+   `scratch/gaps_batch_mutation_run.txt`): the seam's comparison
+   in the real `src/energy/extensions.py` was patched to
+   `if False:` and the full suite re-run.
+
+**Drill result: exactly 4 failures out of 115 tests:**
+
+- `test_gaps_batch.TestSettlementCapNegativeControl.test_single_request_one_cent_over_value`
+- `test_gaps_batch.TestSettlementCapNegativeControl.test_two_requests_each_within_value_whose_sum_exceeds_it`
+- `test_gaps_batch.TestSettlements.test_requests_capped_at_contract_value`
+- `test_gaps_batch.TestSettlements.test_paid_report_keeps_the_commitment`
+
+Every other test still passed against the mutant, and no core
+test failed (the mutant weakens only the new cap, nothing
+else). The module was then restored from
+`scratch/extensions.py.premutation` and verified
+**byte-identical by SHA-256** (`scratch/extensions.py.sha256`),
+and the full suite re-ran green: **115 tests, OK**.

@@ -81,7 +81,7 @@ built at the LI-SaaS/L1 baseline:
 ```sh
 PYTHONPATH=src python3 -m energy serve --port 8765
 # demo users: alice=admin, bob=member, carol=viewer (X-User / X-Role headers)
-PYTHONPATH=src python3 -m unittest discover -s tests   # 74 tests
+PYTHONPATH=src python3 -m unittest discover -s tests   # 115 tests
 ```
 
 Python 3 standard library only; there is nothing to install.
@@ -130,3 +130,23 @@ table in [`UNION-SPEC.md`](UNION-SPEC.md).
   verify verbatim and both happen to be claim-bearing sentences
   for the auction family — recorded as the coincidence direction;
   no citation was load-bearing.
+
+## Final GAPS batch (2026-11-07)
+
+The 10 Extended functions named above are closed in their
+records forms by `src/energy/extensions.py` (`EnergyExtensions`,
+41 new tests in `tests/test_gaps_batch.py`; see `BATCH.md` for
+the per-entry disposition): auction execution as session/run
+records with verbatim reported outcomes (the core outcome stays
+the core's derivation, pinned byte-identical), alert delivery
+as reference-transport records, market intelligence as reported
+conclusions (no notification double-booked), the advisory
+practice as session records, charts and dashboards as
+definitions, supply contracts with value and lifecycle state
+derived at read, and settlement as request records capped by
+the contract's recorded amount — plus labeled reference
+implementations for price-trigger evaluation, the identity
+provider, and energy data integrations. Nothing in the batch
+conducts, evaluates, delivers, produces, performs, renders,
+executes, or pays; every record carries its `*_here: False`
+label.
