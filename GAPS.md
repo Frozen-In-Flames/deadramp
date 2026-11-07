@@ -1664,10 +1664,10 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## Untiered Set 20 — Talent Development (2 forks, tier null; NEW CATEGORY)
 
 New extended functions from this set, specified in groups/talent-development-untiered/UNION-SPEC.md, not implemented:
-- [ ] open — Live development delivery (the sessions behind a program; their form is unnamed by either description)
-- [ ] open — Assessment instruments and their administration / scoring engines
-- [ ] open — Analytics / trend-computation engine behind the dashboard
-- [ ] open — AI models (no fork describes one — registered for completeness only, not as a claimed-function gap)
+- [x] built — Live development delivery (the sessions behind a program; their form is unnamed by either description)
+- [x] reference — Assessment instruments and their administration / scoring engines
+- [x] built — Analytics / trend-computation engine behind the dashboard
+- [x] reference — AI models (no fork describes one — registered for completeness only, not as a claimed-function gap)
 - [x] re-scoped — Platform layer (the AWS GovCloud substrate one fork names)
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This category has no tiered group anywhere in the registry, so its five-family taxonomy was derived fresh from these two forks' own descriptions, the new-category method, and is recorded as the category's taxonomy from here on; the two development families are kept visibly separate because each fork claims development only in its own words. Five claims stand, every family at one of two forks with zero overlap, every claim on its fork's own sentence. No control family is documented: one fork's privacy sentence names no mechanism or framework, and the other fork's GovCloud sentence is platform prose; the word security occurs in neither description. Named absences, token-verified in both descriptions: coaching — one fork's market identity, absent from its government description, because reputation is not evidence — mentoring, training and courses, learning systems, skills, competency, succession, career, performance appraisal, engagement, certification, feedback, AI, and scoring. The fresh core computes no score and holds no person reference in its snapshots; its signature is the small-cohort guard, a floor of five below which an aggregate snapshot is refused, the build's own rule grounded in one fork's privacy sentence as a design note only, not a fork attainment.

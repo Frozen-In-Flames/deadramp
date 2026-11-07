@@ -168,3 +168,32 @@ never this build's attainment.
   BetterUp is known for in its market — is absent from its
   government description's prose, and reputation is not
   evidence.
+
+## Final GAPS batch coverage
+
+The four open gap entries of this set are closed by
+`src/talentdev/extensions.py` (`TalentDevExtensions`, a
+store-level extension surface over the core; see `BATCH.md` for
+the per-entry record): live development delivery (idx 930) is
+built in its records form — delivery session records bound to a
+core program and attendance records bound to a core
+participation of that program, with the delivery view derived
+at read; no session is delivered here
+(`delivered_here: False` on every record). The assessment
+instruments and their administration / scoring engines
+(idx 931) ship as a labeled reference implementation
+(`reference_stub: True`; instrument labels held as data,
+administration outcomes recorded verbatim, nothing administered
+or judged here, no core record changed). The analytics /
+trend-computation engine (idx 932) is built in its
+records-and-derivation form — trend definitions held as data
+and a view deriving counts and sums over the core's own
+recorded snapshots only; no trend is computed from raw data and
+no dashboard is rendered. AI models (idx 933) ship as a labeled
+reference implementation (`reference_stub: True`,
+`inference_here: False`; no fork describes one, and the class
+has no inference-shaped method). Tier stays null on the new
+surface exactly as on the core — a recursive scan pins the
+absence of tier/baseline/equivalence and score-shaped keys —
+people remain opaque references only, and no score is computed
+anywhere. Suite: 58 tests before, 86 after.

@@ -114,3 +114,71 @@ the same mutant applied by monkeypatch, with the canonical check
 asserted to fail against it — plus the discriminating other arm
 (a cohort of exactly `MIN_COHORT_SIZE` IS recorded on the real
 store, so the invariant is a floor, not a ban).
+
+## Final GAPS batch coverage (Untiered Set 20)
+
+`test_gaps_batch.py` — 28 tests pinning the batch extension
+surface in `src/talentdev/extensions.py` (`TalentDevExtensions`):
+delivery session and attendance records for live development
+delivery (idx 930, built records form — session bound to a core
+program, attendance bound to a core participation of the same
+program, the delivery view derived at read and stored nowhere);
+instrument reference and administration report records for the
+assessment instruments / administration / scoring engines
+(idx 931, labeled reference — `reference_stub: True`,
+`administered_here` / `judged_here` False, no numeric field on a
+report, and a pin that recording them changes no core record);
+trend definition records and the trend view for the analytics /
+trend-computation engine (idx 932, built records-and-derivation
+form — sums and counts derived at read over the core's own
+recorded snapshots only, the stored definition carrying no
+totals); model reference and report records for AI models
+(idx 933, labeled reference — `reference_stub: True`,
+`inference_here: False`, and a pin that no inference-shaped
+method exists on the class). Also pinned across the whole new
+surface: RBAC through the core matrix with denials audited
+under a `:denied` suffix and failed operations consuming no id;
+exact key sets per record type; a recursive scan proving no
+tier/baseline/equivalence key and none of the founding forbidden
+key parts (score, grade, rank, rating, rate, money keys,
+personal-data keys) exists anywhere on the new surface; no
+float values in any stored extension record; the summary is
+counts only; and no public method accepts `**kwargs`
+(content-shaped keyword arguments raise `TypeError`).
+
+Suite total with the batch: 58 before, **86 after, OK**.
+
+### Negative control — the latest-label drill (batch, fresh)
+
+The batch's shared derivation seam is
+`TalentDevExtensions._latest_label`: every latest-label view
+(a program's latest attendance label, an instrument's latest
+reported label, a trend view's latest period label, a model's
+latest reported label) reads the most recently **recorded**
+record's label. An oracle that passes whether the seam reads
+the newest or the oldest record would be testing that code ran,
+not that "latest" means latest. The drill mutates the seam in
+the real `src/talentdev/extensions.py`:
+
+    return records[-1][key] if records else None   # becomes
+    return records[0][key] if records else None  # MUTANT (drill): earliest-reading
+
+then the full suite is re-run. Result: exactly 4 failures, all
+latest-label dependent —
+
+- `test_gaps_batch.TestBatchNegativeControl.test_canonical_check_passes_on_the_real_derivation`
+- `test_gaps_batch.TestDeliverySessions.test_delivery_view_is_derived_never_stored`
+- `test_gaps_batch.TestTrendDefinitions.test_trend_view_derives_sums_over_core_snapshots`
+- `test_gaps_batch.TestModelReference.test_report_is_verbatim_and_view_derives_latest`
+
+No other test moved: views whose fixtures record a single
+report (the instrument view) read the same label under both
+readings and correctly kept passing. After the drill,
+`extensions.py` is restored byte-identical (SHA-256
+`eba5b223f7ecc4be054e5da50528d3d1a50bb08a18b1373dbb3a48c9296897bc`)
+and the suite is fully green again. `test_gaps_batch.py` also
+carries the drill's in-tree form: the same earliest-reading
+mutant applied by monkeypatch, with the canonical check
+asserted to fail against it — plus the discriminating other arm
+(a single attendance's view reports that record's label on the
+real seam).
