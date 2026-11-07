@@ -2,7 +2,7 @@
 
 Rule (Aries, Oct 25, 2026): every gap named by any group build — functions specified in a group's union spec but not implemented, and baseline requirements a build gap-lists instead of claiming — is collected HERE, in one registry. The gaps are worked as a single final batch at the very end of the repo, after the last sibling group (and the singleton/remainder forks) has shipped. Groups do not stop to close their own gaps mid-pipeline; they name them, register them here on ship, and the line keeps moving.
 
-Status key: `open` = registered, not yet built. The final batch closes entries or re-scopes them in writing; an entry never disappears silently.
+Status key: `open` = registered, not yet built. Final-batch closures: `built` = built and tested as an in-substrate extension; `reference` = shipped as a labeled reference implementation; `re-scoped` = closed in writing (platform-layer entries by PLATFORM-LAYER.md; text-bounded entries by their own stated bound, recorded in gaps-batch/DECISION.md). The final batch closes entries or re-scopes them in writing; an entry never disappears silently.
 
 ## Group 1 — Analytics L2 (128 forks)
 
@@ -32,7 +32,7 @@ Extended functions, specified in groups/collaboration-l2/UNION-SPEC.md, not impl
 - [ ] open — Voice / telephony / contact center
 - [ ] open — Records & governance beyond the versioning/audit seed
 - [ ] open — Knowledge management
-- [ ] open — Meetings / video media transport (coordination surface is core; a stdlib build carries no A/V)
+- [x] re-scoped — Meetings / video media transport (coordination surface is core; a stdlib build carries no A/V)
 - [ ] open — E-signature
 
 ## Group 3 — Analytics L3-adjacent (54 forks)
@@ -43,18 +43,18 @@ Extended functions, specified in groups/analytics-l3/UNION-SPEC.md, not implemen
 - [ ] open — Real-time / streaming (18), collaboration (17), proprietary connectors (17), governance (11), transformation (10), text/NLP (6), archiving (4), scheduling (3), geospatial (3), media analytics (2), self-service BI (2), KPI (0 claims in this group)
 
 Baseline gaps at High (platform layer; gap-listed, never implied closed):
-- [ ] open — MFA / authenticator management (IA-2(1)/(2), IA-5) — IdP layer, hooks only
-- [ ] open — FIPS-validated cryptography (SC-13) — Python stdlib is not a validated module; not claimed
-- [ ] open — Encryption at rest (SC-28) — deployment layer
-- [ ] open — Audit retention enforcement (AU-11)
-- [ ] open — Session lock / termination (AC-11/AC-12) — stateless per-request auth in the current build
+- [x] re-scoped — MFA / authenticator management (IA-2(1)/(2), IA-5) — IdP layer, hooks only
+- [x] re-scoped — FIPS-validated cryptography (SC-13) — Python stdlib is not a validated module; not claimed
+- [x] re-scoped — Encryption at rest (SC-28) — deployment layer
+- [x] re-scoped — Audit retention enforcement (AU-11)
+- [x] re-scoped — Session lock / termination (AC-11/AC-12) — stateless per-request auth in the current build
 
 ## Group 4 — Cybersecurity & Risk Management L2 (54 forks)
 
 Extended functions, specified in groups/cybersecurity-l2/UNION-SPEC.md, not implemented. By design the build is the shared defensive substrate only: no offensive tooling and no engine of any kind. The engines are the gaps:
 - [ ] open — AI/ML detection models (17 siblings)
 - [ ] open — SOAR / orchestration engines (14)
-- [ ] open — Detection engines and staffed SOC services (13) — ingestion and triage of their output is core
+- [x] re-scoped — Detection engines and staffed SOC services (13) — ingestion and triage of their output is core
 - [ ] open — Network enforcement planes (11)
 - [ ] open — Threat-intelligence feeds (9)
 - [ ] open — Backup / recovery products (9)
@@ -140,7 +140,7 @@ Platform notes: multi-tenancy (6 claim it) — the build is a single-tenant refe
 ## Group 8 — Cybersecurity & Risk Management L3-adjacent (16 forks)
 
 Extended functions, specified in groups/cybersecurity-l3/UNION-SPEC.md, not implemented (18). Same engine families as Group 4, carried to the High tier; the shipped build is the defensive substrate only:
-- [ ] open — Identity products (IdP / PAM / IGA / MFA engines)
+- [x] re-scoped — Identity products (IdP / PAM / IGA / MFA engines)
 - [ ] open — Endpoint management agents
 - [ ] open — DLP engines
 - [ ] open — AI/ML detection models
@@ -730,7 +730,7 @@ Extended functions, specified in groups/grant-management-l2/UNION-SPEC.md, not i
 - [ ] open — Applicant matching & opportunity recommendation
 - [ ] open — Eligibility determination & merit-scoring engines (nothing is scored, by design)
 - [ ] open — Closeout automation & financial reconciliation engines
-- [ ] open — Identity provider / identity management service (the build ships RBAC hooks; IA-2 stays with the embedding organization)
+- [x] re-scoped — Identity provider / identity management service (the build ships RBAC hooks; IA-2 stays with the embedding organization)
 
 Platform-layer: encryption at rest (deployment layer; TLS when configured); multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP. Spec notes: the category is new, so the taxonomy was defined from this fork's own description (17 families, 17 claims); the description contains no money vocabulary and no scoring vocabulary — money enters only as fields on records the claimed functions presuppose, under an explicit core-boundary decision, and no score field exists anywhere in the build.
 
@@ -775,7 +775,7 @@ Extended functions, specified in groups/learning-management-l2/UNION-SPEC.md, no
 - [ ] open — Configurable report builder & dashboards
 - [ ] open — Workflow execution engine (the registry holds definitions only)
 - [ ] open — Notification automation & delivery transport
-- [ ] open — Identity provider / MFA / SSO service
+- [x] re-scoped — Identity provider / MFA / SSO service
 
 Platform-layer: multi-tenancy (claimed by the fork; single-tenant reference deployment); encryption at rest (deployment layer; TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: the category is new and strictly separate from Education & Training; no assessment or credential family exists in its taxonomy, because the description's only "assessments" names succession-planning resources and "Certification" occurs only inside the SF-182 form's proper name (the only "scor" hits are inside "SCORM") — checked absences, itemized in the spec. LRS statement records carry an exact eight-key shape with result text verbatim and no score field anywhere.
 
@@ -811,9 +811,9 @@ Extended functions, specified in groups/legal-policy-l2/UNION-SPEC.md, not imple
 - [ ] open — Sandbox runtime (the isolated single-use execution environment itself; executions are recorded, never performed)
 - [ ] open — Code execution engine
 - [ ] open — Document generation engine (drafting / generation from corpus and session context)
-- [ ] open — Identity provider / federation service (the fork federates identity with enforced MFA; IA-2 stays with the embedding organization)
+- [x] re-scoped — Identity provider / federation service (the fork federates identity with enforced MFA; IA-2 stays with the embedding organization)
 - [ ] open — Security monitoring & platform security services (deployment-platform layer)
-- [ ] open — FIPS-validated cryptography (claimed by the fork's own platform; the standard library is not a validated module and none is claimed)
+- [x] re-scoped — FIPS-validated cryptography (claimed by the fork's own platform; the standard library is not a validated module and none is claimed)
 
 Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP. Spec notes: the category is new and strictly separate from Law Enforcement (legal research platforms); this fork is an AI agent workspace grounded in a curated legal library with an administration console, and every product function sits in its description's first sentence. Privacy discipline: documents are metadata + SHA-256 only with verify-by-content, and the store layer has no parameter that can accept query text — the service layer hashes queries before the store sees them.
 
@@ -848,7 +848,7 @@ Extended functions, specified in groups/network-management-l2/UNION-SPEC.md, not
 - [ ] open — Integration connectors
 - [ ] open — Automation execution engine (the registry holds definitions only)
 - [ ] open — Cloud management web application
-- [ ] open — FIPS-validated cryptography (SC-13; the fork's platform property — the build claims no validated cryptography)
+- [x] re-scoped — FIPS-validated cryptography (SC-13; the fork's platform property — the build claims no validated cryptography)
 
 Platform-layer: U.S. data residency (deployment property); platform scalability / multi-region operation; encryption at rest (deployment layer; TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: the category is new; the description is platform prose (three of nine sentences tag nothing), and no reporting family exists in its taxonomy because the description carries no report or dashboard vocabulary — registry summaries are substrate, not a reporting claim. Device records carry a nine-key pinned shape with classes from the description's generic glosses; vendor model designations appear only inside stored evidence.
 
@@ -1051,7 +1051,7 @@ Enlargements: integration connector engines & catalog +1 claimant at this tier (
 
 New extended functions from the addition forks, specified in groups/cybersecurity-l3/ADDENDUM.md, not implemented:
 - [ ] open — Firewall management & orchestration plane: NGFW policy / device management, zero-touch provisioning, AIOps policy analysis (Cisco)
-- [ ] open — HSM as a Service: cloud HSM & key-management service (AuthentX; distinct from the SC-13 platform gap; the fork's own FIPS 140-2 Level 3 HSM certification is its platform property and does not transfer to this build)
+- [x] re-scoped — HSM as a Service: cloud HSM & key-management service (AuthentX; distinct from the SC-13 platform gap; the fork's own FIPS 140-2 Level 3 HSM certification is its platform property and does not transfer to this build)
 - [ ] open — Inline email security platform (Cisco; named separately from the phishing family's simulation / training content)
 
 Enlargements of families already registered under Group 8: network enforcement planes +1 (Cisco, the group's largest network surface); identity products +2; DLP engines +1; AI / ML detection models +1; threat-intel feeds +1; SOAR / workflow automation +1; cloud / SaaS posture engines +1 by substance (CASB named twice, no posture phrasing). Posture / risk scoring engines explicitly gain no claimants, and neither addition fork claims risk scoring, so no computed score enters the enlarged build. One correction applied in the addition spec: a raw endpoint-management match was dropped because the sentence manages firewall appliances, a network function, not endpoints.
@@ -1068,7 +1068,7 @@ Extended functions from the group's forks, specified in groups/contract-manageme
 - [ ] open — Payment processing rails: fee collection / settlement (the core records payments, moves no money)
 - [ ] open — Integration transport (the system-to-system interfaces themselves)
 - [ ] open — Communication transport (the secure messaging channel itself)
-- [ ] open — Identity provider / registration verification service (registration records are not identity proofing; IA-2 stays with the embedding organization)
+- [x] re-scoped — Identity provider / registration verification service (registration records are not identity proofing; IA-2 stays with the embedding organization)
 
 Boundary, stated in the spec: procurement operations tooling lives in Operations Management; post-award grants administration lives in Grant Management; this group's financial-assistance claims reach only as far as opportunities. Checked absences in both descriptions: no contract authoring / clause library, no e-signature, no source selection / evaluation / scoring, no invoicing or government disbursement.
 
@@ -1094,7 +1094,7 @@ Extended functions from the group's forks, specified in groups/talent-management
 - [ ] open — Pipeline automation engine
 - [ ] open — Analytics & visualization engines (incl. ROI determination)
 - [ ] open — Talent development programs
-- [ ] open — Identity provider / candidate identity verification (IA-2 stays with the embedding organization)
+- [x] re-scoped — Identity provider / candidate identity verification (IA-2 stays with the embedding organization)
 
 Boundary, stated in the spec: this group is the candidate-facing pre-hire acquisition surface; Human Resources L2 remains the personnel system of record, and no HR forks were imported. Deliberate absences: no communications surface and no integration registry, because neither description claims them; no score field exists anywhere in the build.
 
@@ -1363,7 +1363,7 @@ The parent group's ten registered gaps remain registered once under Singleton 64
 
 New extended functions from this set, specified in groups/cybersecurity-untiered/UNION-SPEC.md, not implemented (claimant counts in parentheses):
 - [ ] open — AI / ML security engines (13 claimants)
-- [ ] open — Detection engines & staffed SOC operations (9)
+- [x] re-scoped — Detection engines & staffed SOC operations (9)
 - [ ] open — Identity provider products (8)
 - [ ] open — SOAR / response automation execution (7)
 - [ ] open — Endpoint management agents (5)
@@ -1376,7 +1376,7 @@ New extended functions from this set, specified in groups/cybersecurity-untiered
 - [ ] open — CSPM / CNAPP / SSPM platforms (2)
 - [ ] open — Application security testing engines (2)
 - [ ] open — Phishing simulation & training platforms (2)
-- [ ] open — Encryption & key-management platform layer (the build performs no cryptography; the platform layer includes the SC-13 note)
+- [x] re-scoped — Encryption & key-management platform layer (the build performs no cryptography; the platform layer includes the SC-13 note)
 
 Tier discipline, stated plainly: this set's forks publish no FedRAMP impact level, so tier stays null — no baseline is asserted and no CMMC equivalence is drawn anywhere in the group's docs. In place of a baseline, the union spec carries a Documented control claims section: IA documented by 8 forks, SC by 6, AC by 5, CA by 4, RA by 2, AU by 1, each traced to the claiming fork's own sentence; every other 800-53 family is listed as not documented and was never filled in from a baseline. Named absences: data protection and secure enclave stand at 0 of 27; audit logging at 1 of 27. One fork claims zero (a zero-trust marketing journey that is not ZTNA phrasing; the taxonomy was not re-tuned for it).
 
@@ -1520,7 +1520,7 @@ New extended functions from this set, specified in groups/system-administration-
 - [ ] open — Endpoint management operations
 - [ ] open — Vulnerability detection & remediation prioritization
 - [ ] open — Capacity, optimization & chargeback reporting engines
-- [ ] open — Platform layer (multi-tenancy, encryption at rest, TLS by deployment)
+- [x] re-scoped — Platform layer (multi-tenancy, encryption at rest, TLS by deployment)
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This set records zero claims: the category taxonomy is its founding fork's own exact phrases and none occurs in these four descriptions, so no core function is claim-supported and the substrate is carried, not claimed. All four documented control families come from one fork's single sentence (MFA, role-based access controls, encryption, audit logging); another fork's built-in-controls sentence is recorded as general-terms prose, not traced to a family, and every other family is listed as not documented. The founding named absences stand in substance here but claimless: monitoring in three forks, incident management and ticketing in one. One fork's product name carries (High) while its record's impact is Unknown — the tier stays null, pinned by test.
 
@@ -1566,7 +1566,7 @@ New extended functions from this set, specified in groups/communication-untiered
 - [ ] open — Inter-organizational federated communication networks
 - [ ] open — Voicemail & unified messaging engines
 - [ ] open — Real channel transports (the build's transport is a labelled reference stub, never a real channel)
-- [ ] open — Platform layer (encryption at rest, TLS-when-configured, multi-tenancy, demo identities not an IdP)
+- [x] re-scoped — Platform layer (encryption at rest, TLS-when-configured, multi-tenancy, demo identities not an IdP)
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Three claims stand; two raw hits were removed under the founding group's recorded correction classes (incident events are not scheduling events; self-reporting framed as an accountability input is not reporting analytics), each pinned by test. The documented control claims stand at access control in part, at the prose tier only; identification is pointedly not documented (personnel accountability is not authentication), and cryptographic protection is not documented (securely is an adverb; safeguarding prose is framework-free). Video conferencing has no family in this taxonomy, against the most video-heavy description in the category — the absence is recorded, not repaired.
 
@@ -1580,7 +1580,7 @@ New extended functions from this set, specified in groups/fleet-management-untie
 - [ ] open — Alerting & notification engines
 - [ ] open — Driver workflow & compliance applications
 - [ ] open — Dashboarding front-ends beyond registry reporting
-- [ ] open — Platform layer
+- [x] re-scoped — Platform layer
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Four claims stand (a duplicate pair, spec'd as separate sheets per the Phase 1 rule, with identical tables); no numbered core function is claim-supported — every core family stands at zero here — so the substrate is carried, not claimed, and the set's telematics claim stands on the single word telematics at exact weight, with the streaming engine extended. No documented control claims: the only control-adjacent phrase, regulatory compliance, names an application area, not a control family. Named absences: ELD and hours-of-service stand at zero — the phrase driver workflows and regulatory compliance is present, and the vendor's ELD business elsewhere is reputation, not evidence; reporting and analytics stand at zero with dashboards and reporting listed in other words.
 
@@ -1599,7 +1599,7 @@ New extended functions from this set, specified in groups/cms-untiered/UNION-SPE
 - [ ] open — Headless delivery & integration engines
 - [ ] open — CDN / delivery network and runtime site serving
 - [ ] open — Platform hosting itself
-- [ ] open — Platform layer (encryption at rest, TLS-when-configured, multi-tenancy, demo identities not an IdP)
+- [x] re-scoped — Platform layer (encryption at rest, TLS-when-configured, multi-tenancy, demo identities not an IdP)
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. One claim stands, at catalogue weight inside a first-party capabilities list; the category's no-zero-claims floor, already fallen at the tiered addition, falls here too, recorded not repaired — the zero-claim fork's whole function, document generation, has no family. The documented control claims stand at access control and identification, both at prose weight (role-based permissions; single sign-on via SAML and OpenID Connect), traced to sentences and never converted to taxonomy claims; a SOC 2 sentence is recorded at compliance-assertion weight, and every other family is listed as not documented. One of twelve core functions is claim-supported; eleven are carried, not claimed.
 
@@ -1642,7 +1642,7 @@ New extended functions from this set, specified in groups/marketing-sales-untier
 - [ ] open — Segmentation engine
 - [ ] open — Email sending transport & deliverability
 - [ ] open — Bounce/complaint handling automation, campaign template management, preference management (each named in a fork's certified-services record but absent from its description — gaps resting on the description rule, caveat recorded in the union spec)
-- [ ] open — Platform layer
+- [x] re-scoped — Platform layer
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This category has no tiered group anywhere in the registry, so its taxonomy (thirteen families) was derived fresh from these two forks' own descriptions, the Contract Management and Storage method, and is recorded as the category's taxonomy from here on; the two forks describe non-overlapping businesses and their families are kept visibly separate. Thirteen claims stand, every one on its fork's own sentence. No control family is documented: one fork's CUI handling sentence states no mechanism, and hosting and multi-tenancy sentences are platform prose. Named absences, token-verified in both descriptions: CRM and customer-relationship records — the category's expected centre — lead management, advertising, social media, SMS, search marketing, landing pages, A/B testing, personalization, and scoring. The fresh core has no money shape (neither description states fees, prices, or budgets) and computes no score (no scoring vocabulary in either description); its signature is the suppression gate.
 
@@ -1657,7 +1657,7 @@ New extended functions from this set, specified in groups/network-management-unt
 - [ ] open — Fleet mapping & geospatial awareness platform
 - [ ] open — Incident lifecycle management engine
 - [ ] open — GPU orchestration (fork excess)
-- [ ] open — Platform layer
+- [x] re-scoped — Platform layer
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Two claims stand, both on the one family: one at full weight (remote management of satellite terminals) and one at artifact weight (the manage pattern firing on the identities you already manage, an authentication layer, recorded as artifact). The documented control claims: identification documented (certificate-based authentication, 802.1X/EAP-TLS, federated directories), access control in part, audit at the prose tier, cryptographic protection in part at prose weight with no FIPS-validated crypto claimed; one fork's incident lifecycle phrase is a function, not incident-response control language. One fork's prose asserts a FIPS 199 Moderate categorization while disclaiming a FedRAMP Moderate authorization in the same paragraph — the record stays Unknown, both pinned together by test. Named absences: eleven of twelve families stand at zero, several with substance present in other words (provisioning, REST API, configurable alerting, cloud-based), and the taxonomy has no reporting or audit family at all.
 
@@ -1668,7 +1668,7 @@ New extended functions from this set, specified in groups/talent-development-unt
 - [ ] open — Assessment instruments and their administration / scoring engines
 - [ ] open — Analytics / trend-computation engine behind the dashboard
 - [ ] open — AI models (no fork describes one — registered for completeness only, not as a claimed-function gap)
-- [ ] open — Platform layer (the AWS GovCloud substrate one fork names)
+- [x] re-scoped — Platform layer (the AWS GovCloud substrate one fork names)
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This category has no tiered group anywhere in the registry, so its five-family taxonomy was derived fresh from these two forks' own descriptions, the new-category method, and is recorded as the category's taxonomy from here on; the two development families are kept visibly separate because each fork claims development only in its own words. Five claims stand, every family at one of two forks with zero overlap, every claim on its fork's own sentence. No control family is documented: one fork's privacy sentence names no mechanism or framework, and the other fork's GovCloud sentence is platform prose; the word security occurs in neither description. Named absences, token-verified in both descriptions: coaching — one fork's market identity, absent from its government description, because reputation is not evidence — mentoring, training and courses, learning systems, skills, competency, succession, career, performance appraisal, engagement, certification, feedback, AI, and scoring. The fresh core computes no score and holds no person reference in its snapshots; its signature is the small-cohort guard, a floor of five below which an aggregate snapshot is refused, the build's own rule grounded in one fork's privacy sentence as a design note only, not a fork attainment.
 
@@ -1699,7 +1699,7 @@ New extended functions from this set, specified in groups/crm-untiered/UNION-SPE
 - [ ] open — Pipeline forecasting engine
 - [ ] open — Document automation engine (an asserted function with no family in the taxonomy — recorded as untaxonomied, no family stretched to hold it)
 - [ ] open — Integration connector engines
-- [ ] open — Platform layer
+- [x] re-scoped — Platform layer
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Two claims stand, both on the description's first sentence: account and contact registry on its own words — the family's first claim anywhere in the category, where at the founding tier it stood at zero as carried substrate — and AI scoring at bare-token weight, the shape the category's Low singleton set, where the AI token fires with no scoring, model, or predictive function asserted anywhere; the family stays extended and the build computes no score, test-enforced. No control family is documented: access control and audit tag zero, and one sentence asserting the product stores CUI including customer PII names no mechanism or framework, so it documents nothing — and it draws the build's privacy boundary, since the build's shapes hold opaque references only and cannot hold PII. The record's certified-services catalogue was never matched; matching it would have fabricated a pipeline claim on its sales-pipeline phrase alone. Named absences: customer service cases — a CRM description that never says customer service — opportunities and pipeline at pattern weight with forecasting substance present, campaigns, and hosting delivery.
 
@@ -1708,7 +1708,7 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 New extended functions from this set, specified in groups/finance-untiered/UNION-SPEC.md, not implemented (the founding group's extended tail — payment rails, booking engines, wellness tools, streaming pipelines — stands registered under it, not re-registered):
 - [ ] open — Expense reporting, approval & reimbursement workflow engine (this fork's described function entire, named by no taxonomy family — registered in its own name)
 - [ ] open — Travel & expense policy enforcement engine
-- [ ] open — Platform layer
+- [x] re-scoped — Platform layer
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. One claim stands, at artifact weight: the reporting family fires on "employee expense reporting", the expense-report filing workflow the fork exists to manage, not on reporting and analytics phrasing of the kind the family's founding claim rests on — it documents no analytics capability and supports no core function, and it is flagged at that weight in the spec, the union spec, and the artifacts log. No control family is documented: one sentence naming "authorized users" names a population, not a mechanism, and the word encrypt occurs nowhere. The loudest named absence is spend management: the fork's whole domain is expenses, yet the token "spend" occurs nowhere in its description — "expense" does not contain it — token-pinned; expense management itself has no family in the category taxonomy at all. Zero of the core's eleven functions are claim-supported at full weight; the substrate is carried, not claimed, with its money machinery — integer cents, floats and booleans rejected — preserved exactly.
 
@@ -1721,7 +1721,7 @@ New extended functions from this set, specified in groups/learning-management-un
 - [ ] open — Media & shared-materials repository service
 - [ ] open — Assignment, evaluation & grading engine (the fork's asserted function, registered as specified-not-implemented — the build still computes no score)
 - [ ] open — User administration service
-- [ ] open — Platform layer
+- [x] re-scoped — Platform layer
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Zero claims stand: the description is five capability bullets of virtual-school prose and no family's phrase fires, a zero pinned mechanically by re-applying the taxonomy in the spec tests — the same outcome as the founding group's own addition fork. No control family is documented: security, authentication, access control, encrypt, audit, and compliance each occur zero times, token-verified, and "user management" is a product function naming no mechanism. The taxonomy-level absences are the story here: virtual classroom and collaboration, course authoring, grading, and a media repository are all asserted in substance with no family to hold them — gapped in their own names, never forced — and the category's standards surface is entirely absent (no xAPI token, no SCORM, AICC, or cmi5 token; the substring "scor" occurs zero times). Zero of the core's fourteen functions are claim-supported; the substrate is carried, not claimed, with its doctrines intact: LRS statements pinned to exactly eight keys with no score field anywhere, compliance derived at read, and the workflow registry never executing.
 
@@ -1729,7 +1729,7 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 
 New extended functions from this set, specified in groups/manufacturing-untiered/UNION-SPEC.md, not implemented:
 - [ ] open — Engineering-intent transformation engine (including the manufacturing-intelligence engine entire)
-- [ ] open — Platform layer
+- [x] re-scoped — Platform layer
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This category has no tiered group anywhere in the registry; the census proposed it for this single fork, and its four-family taxonomy was derived fresh from the fork's own two-sentence description, the new-category method, recorded as the category's taxonomy from here on — in particular not imported from Operations Management, the census's boundary case. Four claims stand, every family at one of one, each on its defining sentence; the identity sentence carries its family at identity-sentence weight and is disposed extended. No control family is documented: neither sentence contains any control language, token-verified. Named absences, token-verified: design and CAD, PLM, MES, quality and inspection, machine control, supply chain, production scheduling, digital twin, robotics, workflow, analytics, AI, scoring, and money functions — and export control and ITAR handling, despite the description's aerospace and defense audience, because audience is not evidence. The fresh core holds no money shape and computes no score; its signature is the decision-basis guard, under which a decision record must rest on at least one distinct, existing, same-organization intent record or it is refused.
 
@@ -1741,7 +1741,7 @@ New extended functions from this set, specified in groups/media-untiered/UNION-S
 - [ ] open — Device control channel (control actions are recorded, never sent)
 - [ ] open — Stream optimization engine
 - [ ] open — Status & monitoring telemetry collection
-- [ ] open — Platform layer (hosting and the single-browser-window console)
+- [x] re-scoped — Platform layer (hosting and the single-browser-window console)
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This category has no tiered group anywhere in the registry, so its six-family taxonomy was derived fresh from the fork's own three-sentence description, the new-category method, and is recorded as the category's taxonomy from here on. Six claims stand: transport and encryption on their own sentences, the other four riding a feature enumeration at list weight. One control family is documented at full family weight — cryptographic protection, on a named mechanism (AES-256 encryption of live streams) — while "securely" is an adverb documenting nothing and device control is bounded as not access control. Named absences, token-verified: recording, playback and VOD, transcoding, media library, editing, captions, any named streaming protocol (the word protocol occurs nowhere), scheduling, advertising, viewership analytics, DRM, CDN, and storage. The fresh core holds records about media, never media itself — no field can hold content — computes no score and no latency figure, and its signature is the one-live-session guard.
 
@@ -1749,7 +1749,7 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 
 New extended functions from this set, specified in groups/travel-management-untiered/UNION-SPEC.md, not implemented (the founding group's long tail — booking engine, carrier, hotel and GDS integrations, payment execution, receipt capture, connector engines, delivery transport, identity, relocation engines — stands registered under it at zero claimants from this set; its report generation gap gains substance but no claimant, noted in the union spec, not re-registered):
 - [ ] open — Travel data aggregation & analytics engine (this fork's described function entire, registered in its own name, not from a claim)
-- [ ] open — Platform layer
+- [x] re-scoped — Platform layer
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Zero claims stand, and with this set the category is zero-claim at every remainder step: the founding addition fork and this untiered fork both stand at zero, and every claim in Travel Management is carried by the founding fork alone. All five of the category's famous checked absences survive on this fork's own words, token-verified: no booking or reservation vocabulary, no per-diem, no reimbursement, no approval, no receipt — and the fork's one near-miss, "comprehensive reporting and analysis", is reporting substance without the family's suite-list phrase, recorded not repaired, while its aggregation function has no family and is gapped in its own name. No control family is documented: the one-sentence description contains no control language of any kind. Zero of the core's thirteen functions are claim-supported; the substrate is carried, not claimed, with the voucher cap and integer-cents machinery preserved exactly. With this set, every Travel Management fork in the registry is spec'd, and the untiered phase of the remainder census is complete: all twenty-eight sets shipped.
 
@@ -1800,7 +1800,7 @@ Gaps from Remainder Group 4, specified in groups/cloud-infrastructure-hosting-l2
 - [ ] open — Monitoring & observability engines
 - [ ] open — Platform security service engines
 - [ ] open — Backup execution & disaster-recovery orchestration
-- [ ] open — Identity provider / SSO / directory services (IA-2 stays with the embedding organization)
+- [x] re-scoped — Identity provider / SSO / directory services (IA-2 stays with the embedding organization)
 - [ ] open — Encryption implementation & key management
 - [ ] open — Operations execution engines
 - [ ] open — Invoicing / billing & FinOps engine (no fork states any amount, rate, or fee, so the build holds no money shape anywhere)
@@ -1821,7 +1821,7 @@ Gaps from Remainder Group 5, specified in groups/library-systems-l1/UNION-SPEC.m
 - [ ] open — Accessible delivery & rendering
 - [ ] open — Automation engine
 - [ ] open — Integration transport
-- [ ] open — Identity provider (IA-2 stays with the embedding organization)
+- [x] re-scoped — Identity provider (IA-2 stays with the embedding organization)
 
 ## Untiered Set 29 — Cloud Infrastructure & Hosting (Project Hosts GSS One, F1403283529)
 
@@ -1832,11 +1832,11 @@ Resolution note, stated plainly: tier stays null. This fork claims four families
 ## Remainder Group 6 — Cloud Infrastructure & Hosting L3-adjacent (6 forks)
 
 New gaps at this tier from the uplift decision, specified in groups/cloud-infrastructure-hosting-l3/UNION-SPEC.md, not implemented (the founding group's fourteen gaps are NOT re-registered; their claimant movements at this tier — several gaining claimants, five losing all taxonomy claimants here including the encryption and CDN gaps — are recorded in the union spec):
-- [ ] open — Stronger authentication (IA-2(1)/(2)/IA-5) — an identity-provider property, not taken as an uplift
-- [ ] open — FIPS-validated cryptography (SC-13)
-- [ ] open — Encryption at rest (SC-28)
-- [ ] open — Audit retention (AU-11)
-- [ ] open — Session lock / termination (AC-11/AC-12)
+- [x] re-scoped — Stronger authentication (IA-2(1)/(2)/IA-5) — an identity-provider property, not taken as an uplift
+- [x] re-scoped — FIPS-validated cryptography (SC-13)
+- [x] re-scoped — Encryption at rest (SC-28)
+- [x] re-scoped — Audit retention (AU-11)
+- [x] re-scoped — Session lock / termination (AC-11/AC-12)
 
 ## Singleton 66 — Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)
 
@@ -1857,7 +1857,7 @@ Gaps from Singleton 66, specified in groups/enterprise-resource-planning-l2/UNIO
 - [ ] open — Business intelligence platform
 - [ ] open — Enterprise performance management engine
 - [ ] open — Governance, risk & compliance engine
-- [ ] open — Platform layer: the fork's GovCloud / ITAR / CJIS / HIPAA posture does not transfer to the build; FIPS-validated cryptography (SC-13) is not claimed
+- [x] re-scoped — Platform layer: the fork's GovCloud / ITAR / CJIS / HIPAA posture does not transfer to the build; FIPS-validated cryptography (SC-13) is not claimed
 
 ## Later groups
 
