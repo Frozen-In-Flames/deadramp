@@ -136,3 +136,26 @@ control-family traceability is in UNION-SPEC.md.
   membership-guard mutant was drilled against the real source in
   this tree (5 failures), restored, and SHA-256-verified — see
   [tests/README.md](tests/README.md).
+
+## Final GAPS batch (Singleton 47 unit)
+
+The 5 open Extended entries of this group's GAPS.md section are
+closed by `src/lawenf/extensions.py` (see `BATCH.md`): camera /
+sensor hardware built as a device registry (registrations +
+reported status records; the devices themselves are hardware
+and are not manufactured or operated here) and the
+public-safety collaboration & crime-analysis platform built as
+share/receipt and analysis/finding records (transport labeled,
+findings reported verbatim, never computed); license plate
+recognition re-judged to a labeled reference implementation
+(recognition and matching against the real world is execution,
+never records — the L3-adjacent unlocking/extraction
+precedent), with audio recognition and the video /
+evidence-capture pipeline shipped as labeled reference
+implementations as drafted. The hard privacy rule binds the
+new surface unchanged: opaque references and SHA-256 digests
+only, no plate text, vehicle identifier, audio, video, or
+person identifier in any field shape, and no score-shaped key
+anywhere. Suite: 110 tests, including a fresh mutation-verified
+negative control (the latest-label seam; 7 failures under the
+earliest-record mutation), recorded in `tests/README.md`.

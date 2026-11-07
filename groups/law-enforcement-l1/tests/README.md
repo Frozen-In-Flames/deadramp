@@ -81,3 +81,65 @@ restored from `scratch/store.py.premutation` and verified
 **SHA-256-identical** (`7e2bcade…`, recorded in
 `scratch/store.py.sha256`); the suite is green again (82, OK). Raw
 drill output: `scratch/mutation-run.txt`.
+
+## Final GAPS batch additions (Singleton 47 unit)
+
+`test_gaps_batch.py` (28 tests) pins the batch extension surface
+in `../src/lawenf/extensions.py` against the group's 5 open
+Extended entries (see `../BATCH.md`): LPR jobs/outcomes, audio
+jobs/outcomes, and capture jobs/outcomes as labeled reference
+records (nothing recognized, detected, captured, or stored
+here; captured artifacts named by SHA-256 + byte count only);
+device registrations + reported status records (built); share /
+receipt records and analysis / finding records (built; transport
+labeled, findings reported verbatim, never computed). It also
+pins the hard privacy rule over the new surface: every new
+record kind's exact key set, a recursive scan that no key is
+score-shaped, signature scans that no parameter could accept
+plate text, a vehicle identifier, audio, video, an image, a
+transcript, evidence content, or a person's identifier, and
+`TypeError` on smuggled fields; plus both founding boundaries
+(role + matter membership, closed-matter write rejection) over
+the extension operations.
+
+### Fresh negative control (this unit)
+
+`test_gaps_batch.py::TestLatestLabelNegativeControl` implements
+the mutant seam as a subclass: `_EarliestLabelExtensions`
+overrides `_latest_label` to read the earliest record. The
+canonical test asserts the real surface's device view reports
+the most recently recorded status; the mutant reports the
+earliest, and treating the mutant's outcome as the expectation
+raises `AssertionError`.
+
+### Mutation verification (the drill, performed on this tree)
+
+The seam was additionally drilled against the real source in
+**this** tree: `LawEnfExtensions._latest_label` in
+`src/lawenf/extensions.py` was patched to read the earliest
+record (`return records[0][key]`), and the suite was run:
+
+```
+Ran 110 tests — FAILED (failures=7)
+  test_gaps_batch.TestLprReference.test_outcome_and_view
+  test_gaps_batch.TestAudioReference.test_outcome_and_view
+  test_gaps_batch.TestCaptureReference
+      .test_outcome_digest_discipline_and_view
+  test_gaps_batch.TestDevicesBuilt
+      .test_status_verbatim_and_view_derives_latest
+  test_gaps_batch.TestCollaborationBuilt
+      .test_share_receipts_and_view
+  test_gaps_batch.TestCollaborationBuilt
+      .test_analysis_findings_and_view
+  test_gaps_batch.TestLatestLabelNegativeControl
+      .test_canonical_latest_is_most_recent
+```
+
+`extensions.py` was then restored from
+`scratch/extensions.py.premutation` and verified
+**SHA-256-identical** (`e1993d6c…`, recorded in
+`scratch/extensions.py.sha256`); the suite is green again
+(110, OK). Raw drill output: `scratch/mutation-run-gaps-batch.txt`.
+
+Suite total after this unit: **110 tests, OK** (82 founding +
+28 batch).

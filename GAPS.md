@@ -748,11 +748,11 @@ The Group 18 category union's extended families (clinical decision support, EMR 
 ## Singleton 47 — Law Enforcement L1 (1 fork)
 
 The fork's own engines, named from its description's own verbs in groups/law-enforcement-l1/UNION-SPEC.md, not implemented (the carried substrate contains no surveillance function and, under the category privacy rule, can hold nothing about any person):
-- [ ] open — License plate recognition engine & camera network (plate reads, vehicle matching)
-- [ ] open — Audio recognition sensors & detection
-- [ ] open — Video management & evidence-capture pipeline (the substrate captures nothing and stores no content)
-- [ ] open — Camera / sensor hardware (the manufactured devices themselves)
-- [ ] open — Public-safety collaboration & crime-analysis platform (the inter-agency layer beyond the devices)
+- [x] reference — License plate recognition engine & camera network (plate reads, vehicle matching)
+- [x] reference — Audio recognition sensors & detection
+- [x] reference — Video management & evidence-capture pipeline (the substrate captures nothing and stores no content)
+- [x] built — Camera / sensor hardware (the manufactured devices themselves)
+- [x] built — Public-safety collaboration & crime-analysis platform (the inter-agency layer beyond the devices)
 
 The Group 34 category union's extended families (the legal corpora themselves, citation-validation engines, editorial enhancement systems, corpus search & relevance engines, AI / ML research assistance, document content storage / rendering / redaction) are already registered under Group 34 and are not re-registered here. Standing category exclusions (zero claims, not built): surveillance, facial recognition, predictive policing, real-time intelligence feeds — of these, only surveillance-class function is asserted by this fork's prose (as the engines above); the other three appear nowhere in its description and are not attributed to it. Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: the fork is FedRAMP Low; at L1 the audit trace holds on the FedRAMP Low side only, and Group 34's SI-7 and AU-6 citations are deliberately not imported (not Low selections; checksums are an implementation property at this tier).
 
