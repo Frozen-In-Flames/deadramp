@@ -111,3 +111,55 @@ delivery: **SMOKE OK**.
 `sys.stdlib_module_names`. Result at delivery: imports found
 `argparse, dataclasses, datetime, http, json, os, ssl, sys,
 threading, urllib`; third-party imports: none. **OK: stdlib only.**
+
+## Final GAPS batch coverage (2026-11-07)
+
+`test_gaps_batch.py` (30 tests) pins the extension surface in
+`src/fleet/extensions.py` (`FleetExtensions`, wrapping the core
+`FleetStore`; all core modules byte-identical) for the 8 entries
+of the GAPS.md section "Group 32 — Fleet Management L1 (2
+forks)" — see `../BATCH.md` for the per-entry disposition:
+
+| Entry | Tests |
+|---|---|
+| Live telematics & GPS streaming (reference) | `TestTelematicsReference` — exact key sets, `reference_stub: True`, `tracked_here`/`sensed_here` False, report count derived at read, coordinate-kwarg smuggling raises `TypeError` |
+| Dispatch routing & optimization (built, records form) | `TestDispatchRecords` — plan steps verbatim, `optimized_here` False, assignment `dispatched_here`/`controlled_here` False and pinned to leave the core reservation untouched, outcomes verbatim |
+| ELD / hours-of-service integrations (reference) | `TestEldReference` — binding `connected_here` False; reported figures/labels verbatim with `evaluated_here` False (over-limit figures still record the reported label — nothing evaluates) |
+| Demand & capacity forecasting engine (built) | `TestForecastDerivation` + `TestDemandTotalsNegativeControl` — inputs verbatim; totals/balance/ratio derived at read, exact (`"3/4"`, whole renders int, empty capacity `None`); floats/bools rejected |
+| EV charging station communication & session control (reference components) | `TestSessionControlReference` — `reference_stub: True`, `communicated_here`/`controlled_here` False, core session record pinned byte-equal before/after |
+| Payment processing (built) | `TestPayments` — exact key set (no credential field), integer cents, float amount and `card_number` kwarg rejected, totals derived at read by outcome |
+| Analytics & utilization-optimization engines beyond registry reporting (built) | `TestAnalytics` — run record pinned to exactly `{id, label, created_by, created_utc}` (no figures stored); view derives counts/sums/exact-fraction shares at read and tracks registry state after recording; recursive scan pins no score/rating/rank/grade/index/coordinate-shaped key anywhere on the surface; optimization requests are reference-only |
+| Hosted platform operations (reference) | `TestPlatformOperationsReference` — `operated_here`/`hosted_here` False, counts by kind/status derived at read |
+| Cross-cutting | `TestCrossCutting` — viewer write denied + audited with `:denied` suffix and no id consumed; no-actor writes denied; extension mutations land on the core audit log with `ext_`-prefixed actions |
+
+### Negative control (fresh, for the new code)
+
+`TestDemandTotalsNegativeControl` implements the batch unit's
+negative control for the demand/capacity derivation seam
+(`_recorded_demand_totals` in `src/fleet/extensions.py`): the
+canonical expectation is demand inputs totalling (15) into the
+demand total and capacity inputs (20) into the capacity total;
+a local kind-swapped mutant yields (20, 15), differs from the
+canonical result, and treating the mutant's output as the
+expectation fails via a literal `assertRaises(AssertionError)`.
+
+**Mutation verification (live drill, 2026-11-07):** the seam
+in the real `extensions.py` was patched to swap the two kind
+filters (`"demand"` ↔ `"capacity"`), and the full suite ran:
+**97 tests ran, exactly 3 failed**, all in `test_gaps_batch.py`
+—
+
+- `test_gaps_batch.TestDemandTotalsNegativeControl.test_canonical_but_mutant_swaps`
+- `test_gaps_batch.TestForecastDerivation.test_view_derives_recorded_totals_exactly`
+- `test_gaps_batch.TestForecastDerivation.test_ratio_whole_renders_int_and_empty_capacity_none`
+
+No core test failed. `extensions.py` was restored from
+`scratch/extensions.py.premutation`, verified byte-identical by
+SHA-256 (`scratch/extensions.py.sha256`,
+`e4d9561eb71504b83c4669d2142016b6e801c66180e647f9b34805dcf7f05470`),
+and the suite re-ran green: **97 tests, OK**. Raw drill output
+is in `scratch/gaps_batch_mutation_run.txt`. The suite catches
+this defect class; the negative control is not decorative.
+
+Full suite after the batch unit: **97 tests, OK** (67 core +
+30 batch).

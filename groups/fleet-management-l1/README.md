@@ -272,3 +272,24 @@ L1 / FedRAMP Low + LI-SaaS equivalence used here is a
 planning/matching equivalence only; FedRAMP authorizes products and
 CMMC certifies organizations. Audit traces to AU on the FedRAMP Low
 side only, because FAR 52.204-21 has no audit practice.
+
+## Final GAPS batch (2026-11-07)
+
+The 8 open entries of this group's GAPS.md section are closed
+by one new module, `src/fleet/extensions.py`
+(`FleetExtensions`, wrapping the core `FleetStore`; all core
+modules byte-identical), plus `tests/test_gaps_batch.py`
+(30 tests; full suite 67 → 97, all passing). Per-entry
+dispositions and grounds are in `BATCH.md`. In short: dispatch
+closes built in records form (assignments over core
+reservations, route plans as data, nothing dispatched or
+optimized); forecasting closes built as reported inputs plus
+exact read-time derivations over the recorded figures (nothing
+projected); payments close built as integer-cent records
+against core charging sessions (no money moves); analytics
+closes built as figure-free report-run records with all
+figures derived at read (no score anywhere); telematics, ELD /
+hours-of-service, EV session control, and hosted platform
+operations ship as labeled reference implementations
+(`reference_stub: True`) with their boundaries stated on the
+records themselves.

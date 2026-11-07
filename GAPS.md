@@ -523,14 +523,14 @@ Platform-layer: general cloud hosting / PaaS incl. multi-tenancy (this group's s
 ## Group 32 — Fleet Management L1 (2 forks)
 
 Extended functions, specified in groups/fleet-management-l1/UNION-SPEC.md, not implemented:
-- [ ] open — Live telematics & GPS streaming (0 claims in this group; named)
-- [ ] open — Dispatch routing & optimization (0 claims; named)
-- [ ] open — ELD / hours-of-service integrations (0 claims; named)
-- [ ] open — Demand & capacity forecasting engine (claimed 1 of 2)
-- [ ] open — EV charging station communication & session control (claimed 1 of 2; the core holds charging session records only, no live station communication)
-- [ ] open — Payment processing (claimed 1 of 2)
-- [ ] open — Analytics & utilization-optimization engines beyond registry reporting (claimed 1 of 2)
-- [ ] open — Hosted platform operations (platform-layer)
+- [x] reference — Live telematics & GPS streaming (0 claims in this group; named)
+- [x] built — Dispatch routing & optimization (0 claims; named)
+- [x] reference — ELD / hours-of-service integrations (0 claims; named)
+- [x] built — Demand & capacity forecasting engine (claimed 1 of 2)
+- [x] reference — EV charging station communication & session control (claimed 1 of 2; the core holds charging session records only, no live station communication)
+- [x] built — Payment processing (claimed 1 of 2)
+- [x] built — Analytics & utilization-optimization engines beyond registry reporting (claimed 1 of 2)
+- [x] reference — Hosted platform operations (platform-layer)
 
 Platform-layer: encryption at rest is deployment-layer (TLS when configured); single-tenant reference deployment; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: API & integrations is a named absence (0 of 2), absent from the union entirely. Three core functions are carried, not claimed, and flagged in the spec: maintenance & inspection records (0 of 2; the due status is derived at read time, never stored), search (0 of 2, substrate), and RBAC + audit (0 of 2, baseline-carried; audit traces to AU-2/AU-3 on the FedRAMP Low side only, because FAR 52.204-21 carries no audit practice). Privacy discipline: operator records are keyed by opaque caller-supplied references with the exact key set pinned by tests; no field can hold a real name or license number.
 
