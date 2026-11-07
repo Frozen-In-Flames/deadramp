@@ -37,6 +37,7 @@ created only under the group's `scratch/` directory, never `/tmp`.
 | `test_negative_control.py` | Negative control (below) |
 | `test_additions.py` | Remainder addition (`addition:ai-l2`, ADDENDUM.md) — spec integrity for the appended Gobo sheet (membership vs `remainder.json`, the literal 2-claim table, the 14-family zero-claim set, verbatim evidence, census citation, near-miss pins incl. "AI-enabled" ≠ `learned_inference` and the agents sentence tagging nothing, group totals 12 forks / 47 claims), plus the fork's substrate cases: a labeled-stub automation invocation, metered and audited, and a human-in-the-loop policy block stored as `blocked_input` and audited (trips the policy mutant) |
 | `test_gaps_batch.py` | Final GAPS batch (see `../BATCH.md`) — the extension surface in `src/aigateway/extensions.py` per entry: inference request/outcome records (digest-only prompt identity, `prompt=`/`output=` TypeError pins, no core request created), agent workflow definitions/run requests/outcomes (nothing executes; no core request or session), document job/result records (opaque refs + digests, content kwargs TypeError), analytics/dashboard figures derived at read over the records visible to the actor (definition key set pinned figure-free, freshness), contact case/event/outcome records (no name or conversation-content parameter), vertical application profiles/activity/views for the entry's seven named domains (stored profile carries no totals), the extension summary and `ext_` audit trail incl. a `:denied` entry, and the batch's fresh negative control (below) |
+| `test_gaps_batch_addition.py` | Final GAPS batch, second unit (see `../BATCH-ADDITION.md`) — the addition surface in `src/aigateway/extensions_addition.py` per entry: twin profiles + performance observations (figures verbatim strings, numeric figure refused, `telemetry=`/`payload=` TypeError pins, view derives counts/labels/latest while the stored profile carries no derived key), transition plans/steps as data (status for an undeclared step refused consuming no id, per-step current status derived at read, configuration changes `applied_here: False` with `config_body=` TypeError, capacity figures verbatim with `computed_here: False`), the EIS suite as labeled reference records (every record `reference_stub: True`, current lifecycle status derived at read, `amount=`/`document=` TypeError pins), a recursive scan pinning no content/payload/amount/score key and no float value across every addition record and view, the addition summary and `exta_` audit trail incl. `:denied` entries, no core request or session created, and the unit's fresh negative control (below) |
 | `aigateway_helpers.py` | Shared fixtures: demo users (ADMIN/MEMBER/VIEWER/OTHER_MEMBER), `make_store()` building an AIGatewayStore + AuditLog + an ADMIN-registered echo model, template/rules model helpers, and scratch-dir helpers confined to the group's `scratch/` |
 
 ## Negative control
@@ -115,6 +116,36 @@ founding tests still passing. `extensions.py` was restored from
 `scratch/extensions.py.premutation` and verified SHA-256-identical
 (`2f7b9432…`); the suite re-ran green at **185 tests, OK**. Raw
 output: `scratch/gaps_batch_mutation_run.txt`.
+
+**Final GAPS batch, second unit (2026-11-07).** The unit added
+one more new module, `src/aigateway/extensions_addition.py` (all
+existing modules byte-identical, `store.py` still `4a2b74e4…e3f`,
+the first unit's `extensions.py` still `2f7b9432…`), and
+`test_gaps_batch_addition.py` (25 tests): **185 → 210 tests,
+OK**. Its fresh negative control is the latest-record seam,
+`AIGatewayExtensionsAddition._latest_record` — the rule that
+every current-state derivation on the addition surface (a
+twin's latest performance report, a plan step's current status,
+a service's current lifecycle status) is the *last* record
+reported for it. `test_gaps_batch_addition.py`'s
+`TestLatestRecordNegativeControl` carries the in-suite
+three-leg form (canonical views over two-report histories read
+the second report everywhere; an earliest-reading mutant
+subclass reads the first everywhere; treating the mutant's
+current status as the canonical expectation raises
+`AssertionError`). The live drill was performed on the real
+module: the seam's return line patched to
+`return records[0] if records else None` (occurrence count
+asserted = 1 before patching), full suite run — **210 tests
+ran, exactly 4 failed**, all in `test_gaps_batch_addition.py`
+(the control's canonical leg, plus the twin-view,
+transition-plan-view, and EIS-service-view tests that pin
+latest derivations), with all 185 founding tests still passing.
+`extensions_addition.py` was restored from
+`scratch/extensions_addition.py.premutation` and verified
+SHA-256-identical (`dcb741db…`); the suite re-ran green at
+**210 tests, OK**. Raw output:
+`scratch/gaps_batch_addition_mutation_run.txt`.
 
 ## Interpretation notes
 

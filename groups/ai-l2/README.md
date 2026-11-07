@@ -305,3 +305,32 @@ gap functions from the fork's own surface (infrastructure digital
 twin & performance management, service transition management,
 and an EIS service management suite) are named in the addendum
 for the final batch.
+
+## Final GAPS batch — second unit (2026-11-07)
+
+The remainder addition fork's 3 gap entries are closed by a
+second new module, `src/aigateway/extensions_addition.py`
+(`AIGatewayExtensionsAddition`, a second wrapper around the
+untouched core store, audit actions prefixed `exta_`; all
+existing modules, the first batch unit's `extensions.py`
+included, byte-identical), with per-entry dispositions in
+[`BATCH-ADDITION.md`](BATCH-ADDITION.md) and tests in
+`tests/test_gaps_batch_addition.py` (suite 185 → 210, all
+passing). Two entries close **built**: the infrastructure
+digital twin surface (twin profiles and performance observation
+records whose figures are the twin operator's reports, held
+verbatim and never aggregated; the live twin is stated absent
+on every record) and service transition management (plan
+records with steps as data, step statuses, configuration
+changes recorded never applied, capacity figures verbatim never
+computed; per-step current status derived at read). One closes
+as a labeled **reference** implementation: the EIS service
+management suite (service, lifecycle, SLA, CLIN, invoice,
+reconciliation, dispute, and credit records — no amount exists
+in any field shape on the surface). The unit's fresh negative
+control is the latest-record seam: reading the earliest record
+instead of the latest must misstate every current-state view,
+and the live drill fails exactly 4 tests (recorded in
+`tests/README.md`). The honesty position is unchanged: this
+build contains no learned model, operates no twin, applies no
+configuration, and performs no EIS suite function.
