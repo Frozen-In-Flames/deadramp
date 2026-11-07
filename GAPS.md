@@ -25,15 +25,15 @@ Extended functions, specified in groups/analytics-l2/UNION-SPEC.md, not implemen
 ## Group 2 — Collaboration L2 (57 forks)
 
 Extended functions, specified in groups/collaboration-l2/UNION-SPEC.md, not implemented:
-- [ ] open — Workflow / process-automation engines (the group's #2 claim family)
-- [ ] open — AI assistance, speech, and analytics
-- [ ] open — Learning, training, mentoring
-- [ ] open — Task & project management beyond board cards
-- [ ] open — Voice / telephony / contact center
-- [ ] open — Records & governance beyond the versioning/audit seed
-- [ ] open — Knowledge management
+- [x] reference — Workflow / process-automation engines (the group's #2 claim family)
+- [x] reference — AI assistance, speech, and analytics
+- [x] built — Learning, training, mentoring
+- [x] built — Task & project management beyond board cards
+- [x] reference — Voice / telephony / contact center
+- [x] built — Records & governance beyond the versioning/audit seed
+- [x] built — Knowledge management
 - [x] re-scoped — Meetings / video media transport (coordination surface is core; a stdlib build carries no A/V)
-- [ ] open — E-signature
+- [x] reference — E-signature
 
 ## Group 3 — Analytics L3-adjacent (54 forks)
 

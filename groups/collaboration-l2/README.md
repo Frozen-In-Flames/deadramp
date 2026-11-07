@@ -146,6 +146,33 @@ crowdsourcing, an administration console, a virtual-visitation
 scheduling portal, collaboration hardware endpoints, and
 product-specific connector engines).
 
+## Final GAPS batch
+
+The group's GAPS.md section closed in the final gaps batch (see
+[`BATCH.md`](BATCH.md)): one new module, `src/collab/extensions.py`
+(`CollabExtensions`), carries the remaining Extended functions in
+records form over the unchanged core — records & governance
+(retention policies, legal holds whose current state derives at
+read, disposition decisions refused while derived eligibility is
+shut), task & project management beyond board cards (projects,
+milestones, card links, dependencies, derived card states; counts
+and states only, no score anywhere), learning/training/mentoring
+records with verbatim reported outcomes, and knowledge management
+(articles whose stored shape is exactly {id, workspace_id, tags,
+created_by, created_utc}, text in append-only revisions). Four
+entries ship as labeled reference implementations
+(`reference_stub: True`): workflow definitions held as data and
+never executed, AI assistance and transcription records with
+outputs as opaque references only, voice/telephony session records
+with no media, and e-signature envelope/ceremony records with no
+signature-value field. The ninth entry, meetings / video media
+transport, was already closed re-scoped in writing and is not
+carried here. Core modules are byte-identical to the shipped
+build; the suite grew 208 → **242 tests**, including a fresh
+mutation-verified negative control on the legal-hold current-state
+derivation (exactly 3 failures under the earliest-label mutant;
+see `tests/README.md`).
+
 ## Control-family mapping (summary)
 
 Per `UNION-SPEC.md`, against the NIST SP 800-53 Rev. 5 Moderate baseline

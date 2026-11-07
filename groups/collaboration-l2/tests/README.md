@@ -7,12 +7,12 @@ function / spec claim it traces to.
 
 ```bash
 cd groups/collaboration-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 208 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 242 tests
 ```
 
 Status at delivery: **192 tests, OK** against the implementation in
 `../src/`. Status after the remainder additions (below): **208 tests,
-OK**. (Run exactly as above: helpers are imported as a top-level
+OK**. Status after the final GAPS batch (below): **242 tests, OK**. (Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
 entry point for this group.)
@@ -35,6 +35,7 @@ entry point for this group.)
 | `test_main_cli.py` | `python -m collab serve` subprocess with demo users alice/bob/carol |
 | `test_negative_control.py` | Negative control (below) |
 | `test_additions.py` | Remainder additions (ADDENDUM.md) — spec integrity for the 3 addition forks (unit membership/order, literal claim table, verbatim evidence, census citations, near-miss and wording-artifact pins, IdeaScale's zero-claim pin) plus one substrate case per fork (Webex messaging/files/meeting surface + membership boundary, Huddle versioning/audit/search, IdeaScale substrate minimum) |
+| `test_gaps_batch.py` | Final GAPS batch (BATCH.md) — 34 tests over `collab/extensions.py`: governance records with derived hold state / retention / disposition eligibility + the fresh hold-derivation negative control, project/milestone/card-link/dependency records with counts-only views, learning records with verbatim outcomes, knowledge-base articles (stored shape exactly {id, workspace_id, tags, created_by, created_utc}; text in append-only revisions), and the four labeled reference surfaces (workflow definitions never execute; AI outputs opaque refs only, no output-text parameter; transcription outcomes; voice sessions, no media; e-signature envelopes/ceremonies, no signature-value field) |
 | `collab_helpers.py` | Shared fixtures: demo users (ADMIN/MEMBER/VIEWER/OUTSIDER), `make_store()` building a CollabStore + AuditLog + a workspace owned by MEMBER with VIEWER added, and sample message/file/event/board helpers |
 
 ## Negative control
@@ -100,3 +101,60 @@ remaining freedom:
   wrapped (`{"workspaces": [...]}`, `{"messages": [...]}`, …), except
   where the contract pins the wrapper (`/notifications` →
   `{"notifications": [...]}`, `/audit` → `{"entries": [...]}`).
+
+## Final GAPS batch (2026-11-07)
+
+`test_gaps_batch.py` (34 tests) pins the batch extension surface in
+`src/collab/extensions.py` (see `../BATCH.md` for the per-entry
+disposition of GAPS.md idx 14-20 and 22): governance records whose
+current hold state, retention elapsed, and disposition eligibility
+are derived at read (dispose refused whole while eligibility is
+shut; recording a decision leaves the core file record deep-equal);
+project/milestone/card-link/dependency records over core board
+cards with counts and states only (recursive scan asserts no
+score-shaped key in any view); learning records with verbatim
+reported outcomes (`assessed_here: False`); knowledge-base articles
+whose stored shape is pinned to exactly {id, workspace_id, tags,
+created_by, created_utc} with text in append-only revisions and the
+current text derived from the latest; and the four labeled
+reference surfaces — workflow definitions as data whose
+registration changes no core record, AI assistance/transcription
+records with no inference/transcription here and no output-text
+parameter (smuggling one raises `TypeError`), voice/telephony
+session records with `connected_here`/`media_here` False, and
+e-signature envelopes/ceremonies with pinned key sets and no
+signature-value field. Access discipline is pinned too: the viewer
+is read-only on this surface with the denial audited
+(`ext_governance_policy_create:denied`), the outsider is denied at
+the core membership boundary, and extension mutations land on the
+core audit log with `ext_`-prefixed actions.
+
+### Fresh negative control: the legal-hold current-state derivation
+
+`test_gaps_batch.py::TestNegativeControlHoldDerivation` pins the
+derivation seam `_current_hold_label` (records & governance,
+control family AU-11 / PLATFORM-LAYER.md decision 4): a hold's
+current state is the **latest** recorded label, so once a release
+is recorded the hold no longer blocks disposition. Three legs: the
+canonical expectation holds on the real implementation (released
+hold reads `reported_released`, inactive, and a dispose decision
+records with `eligible_at_record` True), the earliest-label mutant
+(`_EarliestHoldExtensions`: `states[0]` instead of `states[-1]`)
+does NOT produce it (the released hold still reads
+`reported_issued` and active, and dispose is refused), and the
+mutant's outcome treated as the expectation fails via literal
+`assertRaises(AssertionError)`.
+
+**Live drill (2026-11-07).** The derivation in the shipped
+`extensions.py` was patched at its own line (the identical return
+line also occurs in `_current_card_label`; the mutation was scoped
+by line number to `_current_hold_label`) from `states[-1]` to
+`states[0]`, and the full suite was run: **242 tests ran, exactly 3
+not passing (2 failures + 1 error)**, all in `test_gaps_batch.py`:
+`TestNegativeControlHoldDerivation.test_canonical_latest_label_wins`
+(FAIL), `TestLegalHolds.test_hold_state_derivation` (FAIL), and
+`TestRetentionDecisions.test_dispose_allowed_after_release_and_core_untouched`
+(ERROR — the dispose the release should have opened is refused
+under the mutant). `extensions.py` was restored from the
+pre-mutation copy in `scratch/` (SHA-256 verified identical) and
+the suite re-ran green: **242 tests, OK**.
