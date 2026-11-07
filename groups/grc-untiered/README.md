@@ -275,3 +275,36 @@ document, traced per fork in UNION-SPEC.md:
   `carol` are documented demo users for the RBAC matrix; there is
   no identity provider, no credential store, and no real
   authentication in this build.
+
+## Final GAPS batch (2026-11-07)
+
+The 12 Extended entries named above for this set are now closed
+by the final GAPS batch — full per-entry record in
+[BATCH.md](BATCH.md). All batch code is in one new module,
+`src/grc/extensions.py` (`GrcExtensions` wrapping the core store);
+every core module remains byte-identical, and the suite stands at
+**194 tests, OK** (130 + 64 batch tests, including a fresh
+mutation-verified negative control: the evidence-review
+separation-of-duties guard).
+
+Built, as records over this substrate: evidence collection runs
+and batch evidence-review records (outcomes verbatim, filer ≠
+reviewer, core evidence untouched); a scanner registry whose
+reported findings land as core finding records; scoring-rule
+records held as data plus reported score labels recorded verbatim
+(the records form of the scoring entry — this build still
+computes **no score anywhere**); enclave and hosting-state
+records (nothing is hosted here); authorization-package records
+whose manifests deterministically assemble held records (no
+narrative generated, no document emitted); and policy records
+whose current state and attestation status are derived at read,
+never stored.
+
+Shipped as labeled reference implementations (`reference_stub:
+True`, records only, never execution): continuous-monitoring
+feeds and scanner integrations, automated KSI validation, agentic
+workflow execution, AI control-narrative and assessment-response
+generation, the data-integration connector engine, and the four
+fork-excess surfaces. Tier remains null throughout — the batch
+asserts no baseline and draws no equivalence, pinned by the same
+recursive key scans that pin the no-score invariant.

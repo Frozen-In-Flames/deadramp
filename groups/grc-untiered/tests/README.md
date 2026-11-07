@@ -121,3 +121,63 @@ contract's most literal reading (carried from the founding group):
   [...]}`, `{"results": [...]}`, `{"evidence": [...]}`, `{"findings":
   [...]}`, `{"assessments": [...]}`, `{"authorizations": [...]}`,
   `{"entries": [...]}`); `/posture` is the bare summary dict.
+
+
+## Final GAPS batch (2026-11-07)
+
+`test_gaps_batch.py` (64 tests) pins the batch extension surface in
+`../src/grc/extensions.py` (`GrcExtensions`, wrapping the core
+store; every core module byte-identical — `store.py` still
+`e2eac653…`). Suite status for the group: **194 tests, OK** (130 at
+the set's delivery + 64 batch tests). Per-entry coverage is in
+`../BATCH.md`; in layout terms:
+
+| File | Covers (batch) |
+|---|---|
+| `test_gaps_batch.py` | 12 batch entries — evidence collection runs + batch evidence reviews (verbatim outcomes, core record untouched); scanner registry + scan reports landing core findings verbatim; scoring rules held as data + reported score labels verbatim (records form); enclave records + derived current reported state; package manifest assembly over held records (snapshot-pinned); policy lifecycle (current state + attestation status derived at read, never stored); the six stub families (feeds, KSI validation, workflow execution, narrative generation, connectors, fork excess) with `reference_stub` / `reference_transport` labels pinned and a deep-equal pin that stub creations change no core record; cross-cutting recursive key scans pinning **no score-shaped key** and **no tier-shaped key** anywhere on the extension surface; and the fresh negative control below |
+| `extensions.py.premutation` | Pre-mutation copy of `../src/grc/extensions.py` used by the batch mutation drill below (SHA-256 recorded there) |
+
+### Batch negative control
+
+`TestReviewerNotFilerNegativeControl` implements the batch's
+required mutant in the three-leg house form: a
+separation-of-duties check whose guard never fires, waving any
+reviewer — including the artifact's filer — through. The traced
+claim is that a batch evidence review may never be recorded by the
+actor who filed the artifact, enforced at the single seam
+`_check_reviewer_not_filer` behind
+`GrcExtensions.record_evidence_review`. For the canonical pair
+(filer `alice`, reviewer `alice`) the test asserts the real seam
+raises `ValidationError`, that the mutant would not, and — via a
+literal `assertRaises(AssertionError)` — that treating the
+mutant's outcome as the expected outcome fails. An end-to-end arm
+repeats the separation through the surface: the filer's
+self-review is denied, records nothing, and consumes no review id
+(a second reviewer's review is `evr-1`).
+
+### Batch mutation verification
+
+VERIFIED by the builder (2026-11-07), live drill performed on the
+real implementation. The guard condition in
+`_check_reviewer_not_filer` (`src/grc/extensions.py`) —
+
+```python
+if filed_by is not None and reviewer is not None and filed_by == reviewer:
+```
+
+— was replaced with `if False:`, the exact live counterpart of the
+mutant in the test module, so a filer could record their own
+artifact's batch review. The full suite was run: **194 tests ran,
+exactly 2 failed** —
+
+- `test_gaps_batch.TestReviewerNotFilerNegativeControl.test_real_guard_blocks_the_filer`
+- `test_gaps_batch.TestReviewerNotFilerNegativeControl.test_end_to_end_self_review_denied_and_consumes_no_id`
+
+Both failures sit in the negative-control class, which is the
+surface that exercises the seam; no other test depends on the
+guard. `extensions.py` was then restored from the pre-mutation
+copy (`extensions.py.premutation` in this directory, SHA-256
+`893264ec9c9b3569078607092be1ff308917797efe5498cc74b623ec5f2ffeaa`,
+verified identical after restore) and the suite re-run: **194
+tests, OK**. The drill is fresh for this unit's new code; the
+set's signature derivation drill above stands as delivered.
