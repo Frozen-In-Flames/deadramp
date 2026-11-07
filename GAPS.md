@@ -126,14 +126,14 @@ Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / 
 ## Group 9 — Artificial Intelligence (AI) L2 (11 forks)
 
 The final batch's largest single item lives here:
-- [ ] open — Learned AI/ML inference: real LLMs, ML, NLU, and predictive models (8 of 11 forks claim it; the group's #1 family). Each vendor's models are their own; the shipped core's responder is a deterministic reference stub (echo/template/rules) labeled `reference_stub: true` on every response, and is not a substitute for inference.
+- [x] reference — Learned AI/ML inference: real LLMs, ML, NLU, and predictive models (8 of 11 forks claim it; the group's #1 family). Each vendor's models are their own; the shipped core's responder is a deterministic reference stub (echo/template/rules) labeled `reference_stub: true` on every response, and is not a substitute for inference.
 
 Other extended families, specified in groups/ai-l2/UNION-SPEC.md, not implemented:
-- [ ] open — Agentic & automated workflow engines (4)
-- [ ] open — Document processing & generation workloads (4)
-- [ ] open — Analytics, dashboards & reporting (2)
-- [ ] open — Contact center & customer experience (1)
-- [ ] open — Vertical domain applications: compliance/ERP enclave, IT asset management, electronics data exchange, manufacturing QC, requirements management, acquisition support, cloud infrastructure (one sibling each)
+- [x] reference — Agentic & automated workflow engines (4)
+- [x] reference — Document processing & generation workloads (4)
+- [x] built — Analytics, dashboards & reporting (2)
+- [x] reference — Contact center & customer experience (1)
+- [x] built — Vertical domain applications: compliance/ERP enclave, IT asset management, electronics data exchange, manufacturing QC, requirements management, acquisition support, cloud infrastructure (one sibling each)
 
 Platform notes: multi-tenancy (6 claim it) — the build is a single-tenant reference deployment, tenant isolation is deployment-layer; encryption at rest is deployment-layer (TLS when configured); demo identities are hooks, not an IdP.
 

@@ -36,6 +36,7 @@ created only under the group's `scratch/` directory, never `/tmp`.
 | `test_main_cli.py` | `python -m aigateway serve` subprocess with demo users alice/bob/carol, including the `--zero-persistence` flag end-to-end over HTTP and the no-command help path |
 | `test_negative_control.py` | Negative control (below) |
 | `test_additions.py` | Remainder addition (`addition:ai-l2`, ADDENDUM.md) — spec integrity for the appended Gobo sheet (membership vs `remainder.json`, the literal 2-claim table, the 14-family zero-claim set, verbatim evidence, census citation, near-miss pins incl. "AI-enabled" ≠ `learned_inference` and the agents sentence tagging nothing, group totals 12 forks / 47 claims), plus the fork's substrate cases: a labeled-stub automation invocation, metered and audited, and a human-in-the-loop policy block stored as `blocked_input` and audited (trips the policy mutant) |
+| `test_gaps_batch.py` | Final GAPS batch (see `../BATCH.md`) — the extension surface in `src/aigateway/extensions.py` per entry: inference request/outcome records (digest-only prompt identity, `prompt=`/`output=` TypeError pins, no core request created), agent workflow definitions/run requests/outcomes (nothing executes; no core request or session), document job/result records (opaque refs + digests, content kwargs TypeError), analytics/dashboard figures derived at read over the records visible to the actor (definition key set pinned figure-free, freshness), contact case/event/outcome records (no name or conversation-content parameter), vertical application profiles/activity/views for the entry's seven named domains (stored profile carries no totals), the extension summary and `ext_` audit trail incl. a `:denied` entry, and the batch's fresh negative control (below) |
 | `aigateway_helpers.py` | Shared fixtures: demo users (ADMIN/MEMBER/VIEWER/OTHER_MEMBER), `make_store()` building an AIGatewayStore + AuditLog + an ADMIN-registered echo model, template/rules model helpers, and scratch-dir helpers confined to the group's `scratch/` |
 
 ## Negative control
@@ -90,6 +91,30 @@ was restored from `scratch/store.py.premutation_additions` and
 verified SHA-256-identical to the shipped hash
 (`4a2b74e4…e3f`); the suite re-ran green at **157 tests, OK**. Raw
 output: `scratch/additions_mutation_run.txt`.
+
+**Final GAPS batch (2026-11-07).** The batch unit added one new
+module, `src/aigateway/extensions.py` (the core is byte-identical,
+`store.py` still `4a2b74e4…e3f`), and `test_gaps_batch.py` (28
+tests): **157 → 185 tests, OK**. Its fresh negative control is the
+figure-inclusion seam, `AIGatewayExtensions._counts_toward_figures`
+— the rule, mirroring the core's usage accounting, that every
+stored request record counts toward the analytics figures derived
+at read, blocked records included. `test_gaps_batch.py`'s
+`TestFigureInclusionNegativeControl` carries the in-suite three-leg
+form (canonical figures total 2 over one completed + one blocked
+invocation; a completed-only mutant subclass totals 1 and
+understates the token total; treating the mutant's total as the
+canonical expectation raises `AssertionError`). The live drill was
+performed on the real module: the seam's return line patched to
+`return record["status"] == "completed"`, full suite run — **185
+tests ran, exactly 5 failed**, all in `test_gaps_batch.py` (the
+control's canonical and mutant-comparison legs, plus the three
+analytics tests pinning blocked-inclusive figures: figures
+coverage, actor scoping, dashboard freshness), with all 157
+founding tests still passing. `extensions.py` was restored from
+`scratch/extensions.py.premutation` and verified SHA-256-identical
+(`2f7b9432…`); the suite re-ran green at **185 tests, OK**. Raw
+output: `scratch/gaps_batch_mutation_run.txt`.
 
 ## Interpretation notes
 

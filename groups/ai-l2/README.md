@@ -253,6 +253,37 @@ Further, plainly:
   registry, gateway, and harness are platform plumbing around models
   this build does not contain.
 
+## Final GAPS batch (2026-11-07)
+
+The group's 6 open Extended entries are closed by one new module,
+`src/aigateway/extensions.py` (`AIGatewayExtensions`, a wrapper
+around the untouched core store; all founding core modules
+byte-identical), with per-entry dispositions in
+[`BATCH.md`](BATCH.md) and tests in `tests/test_gaps_batch.py`
+(suite 157 → 185, all passing). Two entries close **built**:
+analytics, dashboards & reporting (dashboard definitions held as
+data with no stored figure; figures derived at read from the
+core's own records over exactly the records visible to the
+actor) and the vertical domain applications (application
+profiles over the core registry for the entry's seven named
+domains, activity records, derived views — the verticals' own
+engines stated absent on every record). Four close as labeled
+**reference** implementations, records only, never execution:
+learned AI/ML inference (request/outcome records; the prompt is
+named only by its digest), agentic & automated workflow engines
+(definitions as data; a run request executes nothing and creates
+no core request or session), document processing & generation
+workloads (jobs and results by opaque reference only), and
+contact center & customer experience (case records; no
+conversation content can exist on the surface). The batch's
+fresh negative control is the analytics figure-inclusion seam:
+counting only completed request records must understate the
+figures, and the live drill fails exactly 5 tests (recorded in
+`tests/README.md`). The honesty position is unchanged: this
+build contains no learned model, and nothing in the extension
+surface executes inference, an agent, a document workload, or a
+contact interaction.
+
 ## Remainder addition (unit `addition:ai-l2`)
 
 One previously uncategorized fork joined this group in the
