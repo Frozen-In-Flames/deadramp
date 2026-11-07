@@ -34,6 +34,7 @@ entry point for this group.)
 | `test_main_cli.py` | `python -m datamgmt serve --port <free>` subprocess (PYTHONPATH=src), waits for health, answers alice on `/audit` and carol/bob on `/datasets`, terminates |
 | `test_negative_control.py` | Negative control (below) |
 | `test_additions.py` | Remainder additions (`addition:data-management-l2`) — spec integrity: 13 sheets (original 8 in shipped order + the unit's 5 in unit order), membership against `remainder.json`, the literal per-fork claim table (IICS 3, Collibra/DNAnexus/OpenFLIS 1 each), the zero-claim set {Vaultara}, verbatim evidence, single-tier invariant, group totals (34 claims, 12 of 13 forks claiming); substrate cases: Collibra access-governance flow with self-decision denied twice (plain viewer, and the guard-isolated name-identical decider holding `access_decide`), DNAnexus source/ingestion/provenance, IICS governance + search + deterministic quality check, OpenFLIS catalog search by name and tag, Vaultara ingestion + export-manifest checksum records |
+| `test_gaps_batch.py` | Final GAPS batch (below) — the extension surface in `../src/datamgmt/extensions.py`: storage records + derived summary, reported linkage pairs + de-identification declarations, query definitions/runs + visualization views, inspections + capital plans, cases (incl. the batch negative control), field-level lineage, the re-judged retention disposition surface, stub/transport labels, file transfers, audit/denial pins |
 | `datamgmt_helpers.py` | Shared fixtures: demo users (ADMIN=alice/admin, STEWARD=bob/steward, VIEWER=carol/viewer), `USERS` registry, `fresh_store()`, and `make_store()` building a DataMgmtStore + AuditLog + the canonical dataset ("Claims Extract", cui, tags [claims, nightly], schema patient_id/amount, created by STEWARD) + the canonical source ("ehr-feed", api, ehr.internal, registered by STEWARD) |
 
 ## Negative control
@@ -91,3 +92,58 @@ note that a first run failed only the original 4 (the additions
 case's plain-viewer leg is also denied by the permission layer)
 before the case was strengthened to isolate the guard and the
 drill re-run.
+
+## Final GAPS batch (2026-11-07)
+
+`test_gaps_batch.py` (49 tests) pins the extension surface in
+`../src/datamgmt/extensions.py` (`DataMgmtExtensions`): one class
+per GAPS.md entry for this group (see `../BATCH.md` for the
+per-entry disposition, the long-tail enumeration, and the retention
+re-judgment grounds), plus cross-cutting pins — `ext_`-prefixed
+actions and `:denied` denials on the core audit log, stub labels
+(`reference_stub: True` on every reference record,
+`reference_transport: True` on file transfers), derived-never-stored
+values (storage summary, capital-plan totals, lineage view), exact
+record shapes that hold opaque references only, the money boundary
+(float/bool rejected, no id consumed), and viewer denials.
+
+### Batch negative control (fresh)
+
+`test_gaps_batch.TestCaseNegativeControl` implements the batch's
+required mutant for the NEW code: a `DataMgmtExtensions` subclass
+(`MutantDataMgmtExtensions`) whose `_check_case_decider_not_opener`
+is a no-op — the separation-of-duties seam of the case-decision
+surface, the extension counterpart of the core's
+`_check_decider_not_requester`. The traced claim: **case decisions
+are never self-decided** (control family AC-5). The test's opener
+is the viewer (cases open under `access_request`, which viewers
+hold) and its decider is a name-identical user holding
+`access_decide` — `User("carol", "steward")` — so the seam is the
+only gate that can deny, the same isolation the core's negative
+control documents. It asserts the canonical expectation
+(PermissionDenied, the case stays `"open"`, no decision exists),
+that the mutant would NOT produce it (it decides and mints
+`cde-`), and — via a literal `assertRaises(AssertionError)` — that
+treating the mutant's outcome as the expected outcome fails.
+
+Mutation verification: VERIFIED by the coordinator (2026-11-07).
+The seam in the real `src/datamgmt/extensions.py` was patched so
+`_check_case_decider_not_opener` returns without raising when the
+decider is the opener (the exact live counterpart of the mutant),
+and the full suite was run: **257 tests ran, exactly 2 failed** —
+
+- `test_gaps_batch.TestCaseManagement.test_self_decision_denied_canonical`
+- `test_gaps_batch.TestCaseNegativeControl.test_name_identical_self_decision`
+
+`extensions.py` was then restored from the pre-mutation copy
+(`scratch/extensions.py.premutation`; SHA-256
+`9bb0c177534126dc02ddb6489be982a2e1e5d3a79e05fc8a07280571968b53d0`,
+verified identical to the pre-mutation hash in
+`scratch/extensions.py.sha256`) and the suite re-run: **257 tests,
+OK**. Raw record: `scratch/gaps_mutation_run.txt`. The core was
+not touched by the batch or the drill: all seven pre-existing
+`src/datamgmt/*.py` modules are SHA-256-identical to their
+pre-batch state (`store.py` still `dc35677c…`).
+
+Full suite status after the batch: **257 tests, OK** (208 at the
+remainder-additions delivery + 49 batch tests).

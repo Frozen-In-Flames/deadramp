@@ -165,3 +165,31 @@ both drill records).
   1 zero-claim fork are recorded in `ADDENDUM.md`) or to the
   Moderate/L2 control families in `UNION-SPEC.md`. Counts are a
   floor, stated as such.
+
+## Final GAPS batch (2026-11-07)
+
+The 16 GAPS.md entries for this group are closed by the batch in
+`src/datamgmt/extensions.py` (`DataMgmtExtensions`, a wrapper
+around the core store; the core modules are unchanged): 8 entries
+built as in-substrate records plus deterministic derivations
+(distributed-storage records with derived views, reported PPRL
+linkage pairs between opaque references and de-identification
+declarations, registered query derivations and definition-only
+visualizations, asset inspections and capital plans, case
+management with a separation-of-duties decision seam, and declared
+field-level transformation lineage over the core's
+ingestion-granularity provenance); 7 entries shipped as labeled
+reference implementations (`reference_stub: True` on every record,
+`reference_transport: True` for file transfers — integration
+runtime, search indexing, content processing, workflow/guided
+interviews, hosting, Kubernetes provisioning, AI/ML); and 1 entry
+re-judged to a labeled reference implementation: retention
+disposition *execution* belongs to the embedding organization's
+records schedule per PLATFORM-LAYER.md, so the batch builds
+disposition decision records with eligibility derived from the
+core schedules, and execution reference records that execute
+nothing — grounds in `BATCH.md`, which also enumerates the
+long-tail catch-all family by family. Per-entry detail:
+`BATCH.md`. Suite: **257 tests, OK**, including a fresh
+mutation-verified negative control on the case-decision guard
+(see `tests/README.md`).
