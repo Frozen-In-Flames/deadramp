@@ -132,6 +132,26 @@ retained records (CM-6). Full traceability table in
   engine, live session facilitation, speaker sourcing & booking,
   and an identity provider. The build records outreach; it sends
   nothing. It records sessions; it presents nothing.
+
+## Final GAPS batch (Remainder Singleton 60 section)
+
+The 6 Extended entries above are now closed by the batch
+extension in `src/events/extensions.py` (see `BATCH.md` for the
+per-entry dispositions): the delivery & presentation plane and
+the identity provider ship as labeled reference records
+(`reference_stub: True`; identity stays with the embedding
+organization per PLATFORM-LAYER.md decision 1); the pairing-
+suggestion engine is likewise a labeled reference (its entry
+forbids inventing criteria — suggestions are caller-stated
+records, and the Core's coverage derivation remains the only
+qualification rule). Outreach delivery, live session
+facilitation (polls with counts derived at read, Q&A, a recorded
+chat log), and speaker sourcing & booking ship as records over
+the Core's own records: delivery outcomes are caller-reported
+labels with `sent_here` / `delivered_here` False, poll tallies
+are never stored, and a booking's current state derives at read
+from append-only state records. The Core modules are untouched,
+byte-identical; the suite is now 101 tests.
 - **Demo identities are hooks, not an IdP.** `alice` / `bob` /
   `carol` exist so the permission matrix can be exercised; IA-2
   stays with the embedding organization.

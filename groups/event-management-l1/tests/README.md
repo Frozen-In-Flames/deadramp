@@ -6,7 +6,7 @@ Run from this directory:
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-**79 tests, all passing** (Python 3 standard library `unittest`
+**101 tests, all passing** (Python 3 standard library `unittest`
 only). Each test module's header names the core function, spec
 claim, or control family it traces to.
 
@@ -25,6 +25,7 @@ claim, or control family it traces to.
 | `test_main_cli.py` | CLI argument handling and demo-user wiring |
 | `test_specs.py` | Spec integrity: membership == census unit {FR2304546222}, recorded fields match `forks.json`, taxonomy == the 8 own-description families, evidence verbatim, matchmaking evidence pinned to the provision sentence, census citations verify |
 | `test_negative_control.py` | The mutation-verified negative control (below) |
+| `test_gaps_batch.py` | Final GAPS batch extension surface (`src/events/extensions.py`): per-entry pins for the 6 Singleton 60 entries incl. stub labels, exact key sets, signature scan, recursive no-score scan, derived poll counts / booking state / join counts, plus the fresh poll-count negative control (below) |
 
 ## Negative control — mutation-verified
 
@@ -66,3 +67,40 @@ its downstream derivations). The store was then restored from
 `scratch/store.py.premutation` and verified **byte-identical by
 SHA-256** (`scratch/store.py.sha256`), and the full suite re-ran
 green: **79 tests, OK**.
+
+## Negative control — final GAPS batch (fresh, for the new code)
+
+The batch extension's signature derivation is the poll count: a
+poll's per-option counts are computed at read from its response
+records alone by the single seam `_derive_poll_counts` in
+`src/events/extensions.py`, each response counting toward the
+option it recorded. An oracle that passes when the derivation
+ignores the recorded choice is testing that code ran, not that
+the counts are the responses' own — so the invariant is verified
+two ways, mirroring the founding control:
+
+1. **In-tree mutant** (`test_gaps_batch.py`,
+   `PollCountNegativeControlTests`): the canonical poll
+   expectation (responses split 2/1/0 across three options) is
+   asserted against a mutant seam that counts every response
+   toward the first option. The test asserts the canonical check
+   raises `AssertionError` against the mutant.
+2. **External drill** (performed on this tree, recorded in
+   `scratch/gaps-batch-mutation-run.txt`): `_derive_poll_counts`
+   in the real `src/events/extensions.py` was patched to the
+   same all-first-option mutant, the full suite re-run, and the
+   file then restored.
+
+**Drill result: exactly 2 failures out of 101 tests:**
+
+- `test_gaps_batch.FacilitationTests.test_poll_counts_derived_at_read`
+- `test_gaps_batch.PollCountNegativeControlTests.test_canonical_check_passes_on_the_real_seam`
+
+Every other test still passed against the mutant (the mutant
+changes only where responses are counted, nothing else). The
+extension file was then restored from
+`scratch/extensions.py.premutation` and verified
+**byte-identical by SHA-256** (`scratch/extensions.py.sha256`),
+and the full suite re-ran green: **101 tests, OK**. All
+pre-existing core modules were also verified byte-identical
+against the pre-build baseline (`scratch/prebuild-src.sha256`).
