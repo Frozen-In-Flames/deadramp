@@ -7,7 +7,7 @@ function / claim family / control family it traces to.
 
 ```bash
 cd groups/learning-management-untiered
-PYTHONPATH=src python3 -m unittest discover -s tests        # 114 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 146 tests
 ```
 
 Status at delivery: **114 tests, OK** against the implementation
@@ -100,3 +100,66 @@ group's shipped store hash, since the module is carried
 byte-identical) and the suite re-run: **114 tests, OK**. The
 suite catches this defect class; the negative control is not
 decorative.
+
+## Final GAPS batch additions (Untiered Set 25)
+
+`test_gaps_batch.py` — **32 tests** pinning the batch extension
+surface in `../src/lms/extensions.py` (the 6 open entries of
+this set, idx 951–956; dispositions in `../BATCH.md`): classroom
+session records with verbatim reported outcomes and read-derived
+views (6), the re-judged collaboration & recording reference
+records with their stub/transport labels (2), authoring drafts
+append-only and pinned to change no core record (3), the media
+metadata registry with exactly-one-target share records and
+learner-filtered views (3), coursework assignments / submissions
+/ evaluations with verbatim outcomes, separation of duties, and
+no computed value anywhere (5), user administration action
+records with the current state derived at read and the core
+learner record pinned unmodified (4), the fresh negative
+control below (3), and the cross-cutting pins (6): the
+no-score/no-grade recursive key scan, the tier-null recursive
+key scan, stub labels present where required, every extension
+mutation audited with an `ext_`-prefixed action, denied writes
+consuming no id, and a signature pin that no public extension
+method accepts `**kwargs`.
+
+### Negative control (fresh, for the batch surface)
+
+`TestAdminStateNegativeControl` traces to idx 956's derivation:
+a learner's current administrative state is derived from the
+**latest** recorded administration action. An
+`LmsExtensions` subclass (`EarliestAdminStateExtensions`) whose
+`_current_admin_state` reads the **earliest** action instead is
+the mutant. For the canonical case (provisioned, then
+suspended) the test asserts three things: the canonical
+expectation (`suspended`, from the real implementation), that
+the mutant would NOT produce it (it says `provisioned`), and —
+via a literal `assertRaises(AssertionError)` — that treating
+the mutant's outcome as the expected outcome fails. Companion
+tests assert the empty case reads `no_recorded_action` under
+both implementations, and that a learner recording an admin
+action is denied with nothing stored.
+
+### Mutation verification (batch surface)
+
+VERIFIED for the batch surface. The derivation seam
+`LmsExtensions._current_admin_state` in
+`../src/lms/extensions.py` — the line
+`return actions[-1]["action_label"]` (the text occurs exactly
+once in the file, count asserted before patching) — was patched
+to `return actions[0]["action_label"]`, the exact live
+counterpart of the mutant above, so the current state read the
+earliest action instead of the latest. The full suite was run:
+**146 tests ran, exactly 2 failed** (raw output in
+`../scratch/gaps-batch-mutation-run.txt`), both in the new
+batch module and no carried test tripped:
+
+- `test_gaps_batch.TestAdminStateNegativeControl.test_latest_action_wins_canonical_but_mutant_earliest`
+- `test_gaps_batch.TestUserAdministration.test_current_state_derived_from_latest_action`
+
+`extensions.py` was then restored from the pre-mutation copy
+(`../scratch/extensions.py.premutation`; SHA-256
+`9efa886d11bec4d78a39d3c2bcc2990374b74491b09961ac839bb4715efff1d3`,
+verified identical to the pre-mutation hash in
+`../scratch/extensions.py.sha256`) and the suite re-run:
+**146 tests, OK**.

@@ -1715,12 +1715,12 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## Untiered Set 25 — Learning Management (1 fork, tier null)
 
 New extended functions from this set, specified in groups/learning-management-untiered/UNION-SPEC.md, not implemented (the founding group's gaps stand registered under it at zero claimants from this set; its learning-analytics gap gains substance from this fork's reporting prose, noted in the union spec, not re-registered):
-- [ ] open — Virtual school / virtual classroom delivery runtime
-- [ ] open — Real-time collaboration & session recording services
-- [ ] open — Course material authoring workspace
-- [ ] open — Media & shared-materials repository service
-- [ ] open — Assignment, evaluation & grading engine (the fork's asserted function, registered as specified-not-implemented — the build still computes no score)
-- [ ] open — User administration service
+- [x] built — Virtual school / virtual classroom delivery runtime
+- [x] reference — Real-time collaboration & session recording services
+- [x] reference — Course material authoring workspace
+- [x] built — Media & shared-materials repository service
+- [x] built — Assignment, evaluation & grading engine (the fork's asserted function, registered as specified-not-implemented — the build still computes no score)
+- [x] built — User administration service
 - [x] re-scoped — Platform layer
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Zero claims stand: the description is five capability bullets of virtual-school prose and no family's phrase fires, a zero pinned mechanically by re-applying the taxonomy in the spec tests — the same outcome as the founding group's own addition fork. No control family is documented: security, authentication, access control, encrypt, audit, and compliance each occur zero times, token-verified, and "user management" is a product function naming no mechanism. The taxonomy-level absences are the story here: virtual classroom and collaboration, course authoring, grading, and a media repository are all asserted in substance with no family to hold them — gapped in their own names, never forced — and the category's standards surface is entirely absent (no xAPI token, no SCORM, AICC, or cmi5 token; the substring "scor" occurs zero times). Zero of the core's fourteen functions are claim-supported; the substrate is carried, not claimed, with its doctrines intact: LRS statements pinned to exactly eight keys with no score field anywhere, compliance derived at read, and the workflow registry never executing.

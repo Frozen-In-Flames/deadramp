@@ -332,3 +332,31 @@ not before.
   is configured; encryption at rest is a deployment-layer
   property. The deployment is a single-tenant reference
   deployment.
+
+## Final GAPS batch (Untiered Set 25)
+
+The set's 6 open gap entries are now built as one extension
+module, `src/lms/extensions.py` (`LmsExtensions` wrapping the
+core store; all 7 core modules byte-identical to the accounting
+above), with per-entry dispositions in
+[`BATCH.md`](BATCH.md): the virtual classroom as session
+administration records with caller-reported outcomes
+(`delivered_here: False`); the media & shared-materials
+repository as a metadata registry (content never held);
+assignments, evaluations and grading as records with outcomes
+verbatim and nothing computed — the no-score invariant extended
+to grade-shaped keys over the whole surface; and user
+administration as action records whose current state derives
+at read. Two entries ship as labeled reference implementations:
+the course material authoring workspace (stub records,
+append-only revisions), and — re-judged from its drafted
+build-extension disposition, with grounds in `BATCH.md` —
+real-time collaboration & session recording, whose substance
+is synchronous media transport and capture
+(`reference_stub: True`, `reference_transport: True`). Tier
+discipline is unchanged and now pinned on the new surface too:
+no record or view carries a tier-shaped key. Suite: **146
+tests, OK** (114 at delivery + 32 batch tests in
+`tests/test_gaps_batch.py`, including a fresh
+mutation-verified negative control on the derived
+administrative state — see `tests/README.md`).
