@@ -322,3 +322,31 @@ Further, plainly:
   this build confers or evidences either regime's standing.
 - "Overdue" is a read-time derivation, not a stored fact: change the
   as-of date and the same record derives differently, by design.
+
+## Final GAPS batch (unit: Singleton 44 — GRC L3-adjacent)
+
+The 12 Extended entries registered from this singleton (inventory
+idx 419–430) are closed by one new module, `src/grc/extensions.py`
+(`GrcExtensions` wrapping the core store); the core is unchanged
+and byte-identical. Nine entries are **built** as records surfaces
+under the category doctrine — prediction records (the fork's
+accreditation and risk engines' reported labels, stored verbatim,
+`inference_here: False`, aggregated as counts of labels only —
+**no inference is performed and no score is computed, here as
+everywhere in this group**), provenance records riding the
+evidence registry's verify-by-content discipline, versioned
+process-configuration definitions (data, never executed) with
+movement records, grant lifecycle records with due-date status
+derived at read (no monetary field exists), supply-chain, health
+program (record shape pinned so no clinical or identifier field
+can exist), and emergency-coordination records, and automation
+run records marked not executed. Three entries ship as **labeled
+reference implementations** (`reference_stub: True`): device-log
+monitoring (`monitoring_here: False`), the ML data lake
+(`inference_here: False`), and software-factory hosting
+(`hosted_here: False`). Suite: **207 tests, OK**, including a
+fresh mutation-verified negative control on the grant derivation.
+Per-entry dispositions and grounds: [`BATCH.md`](BATCH.md). The
+Group 33 union's carried Extended functions and the Exiger
+addition's two gap entries belong to their own GAPS.md sections
+and are not closed by this unit.

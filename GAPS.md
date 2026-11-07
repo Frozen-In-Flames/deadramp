@@ -701,18 +701,18 @@ The Group 33 category union's extended families (automated evidence validation, 
 ## Singleton 44 — GRC L3-adjacent (1 fork)
 
 The fork is a managed multi-tenant AI platform suite, not a GRC product; its GRC slice is one suite whose substance is AI prediction. Its own engines, specified in groups/grc-l3/UNION-SPEC.md, not implemented:
-- [ ] open — AI accreditation & compliance prediction engine
-- [ ] open — Continuous device-log monitoring & breach / vulnerability prediction (the engine half of the claimed continuous monitoring)
-- [ ] open — AI risk prediction engine (the engine half of the claimed risk management; any scoring engine belongs here too)
-- [ ] open — AI-powered data lake & ML platform (AI / ML model machinery generally; no model or inference is built anywhere in this group)
-- [ ] open — Software factory & application hosting platform (app store, tenant hosting, CI / CD, Kubernetes across clouds; platform layer)
-- [ ] open — Traceability, provenance & auditability platform
-- [ ] open — Low- / no-code process configuration designer & movement / service tracking
-- [ ] open — Grants lifecycle automation
-- [ ] open — Supply-chain ecosystem engines
-- [ ] open — Healthcare ecosystem platform
-- [ ] open — Emergency-response coordination platform
-- [ ] open — Blockchain / RPA machinery asserted across the suite
+- [x] built — AI accreditation & compliance prediction engine
+- [x] reference — Continuous device-log monitoring & breach / vulnerability prediction (the engine half of the claimed continuous monitoring)
+- [x] built — AI risk prediction engine (the engine half of the claimed risk management; any scoring engine belongs here too)
+- [x] reference — AI-powered data lake & ML platform (AI / ML model machinery generally; no model or inference is built anywhere in this group)
+- [x] reference — Software factory & application hosting platform (app store, tenant hosting, CI / CD, Kubernetes across clouds; platform layer)
+- [x] built — Traceability, provenance & auditability platform
+- [x] built — Low- / no-code process configuration designer & movement / service tracking
+- [x] built — Grants lifecycle automation
+- [x] built — Supply-chain ecosystem engines
+- [x] built — Healthcare ecosystem platform
+- [x] built — Emergency-response coordination platform
+- [x] built — Blockchain / RPA machinery asserted across the suite
 
 The Group 33 category union's extended families (automated evidence validation, monitoring feeds & scanner integrations, vulnerability scanning engine, automated KSI validation, posture / risk scoring engines, hosted enclave & PaaS operations, FedRAMP package generation) are already registered under Group 33 and are not re-registered here. Named absence (not a gap): policy management — zero claims at every GRC tier so far. Baseline gaps at High: MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Platform-layer: multi-tenancy (the fork operates multi-tenant; single-tenant reference deployment); TLS only when configured; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: both tagged claims are engine claims — the Core implements the records substrate their outputs land in (monitoring results, finding records, counts-only posture); no scoring follows from the risk tag.
 

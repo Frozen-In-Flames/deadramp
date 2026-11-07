@@ -262,3 +262,64 @@ case, so it adds no failure here. `audit.py` was restored from
 `../scratch/audit.py.premutation` and verified SHA-256-identical
 to the shipped hash (`df7b1ef9…`); the full suite re-ran green:
 **180 tests, OK**.
+
+## Final GAPS batch (unit: Singleton 44 — GRC L3-adjacent)
+
+`test_gaps_batch.py` (27 tests) pins the batch extension surface
+(`src/grc/extensions.py`, `GrcExtensions` wrapping the core store;
+per-entry dispositions in `../BATCH.md`): prediction records
+(labels verbatim, `inference_here: False`, kind/system/control
+validation with no id consumed on failure, `record_results`
+permissioning with the auditor denied reads as well as writes,
+counts-of-labels summary), provenance records (content hashed
+never retained, verify-by-content original True / tampered False,
+checksum inherited from a linked Core evidence record, exactly
+one of content/evidence required), process definitions (versioned
+data, deep-copy pin, `executed_here`/`rendered_here` False) and
+movement records, grant records (guarded stage lifecycle with
+history, the derivation below), supply-chain / health /
+emergency domain records (health and emergency record shapes
+pinned to exactly their bookkeeping keys — no clinical,
+identifier, responder, or location field exists), automation run
+records (`executed_here: False`), the three labeled reference
+surfaces (`reference_stub: True` with `monitoring_here` /
+`inference_here` / `hosted_here` False), and the cross-surface
+invariants: a **recursive no-score key scan** over every record
+type and the extension summary, extension writes joining the
+Core's hash-chained audit (chain verifies), and an AU-5
+fail-closed write test (broken JSONL path → AuditWriteError,
+nothing recorded, no id consumed). Suite status for the group:
+**207 tests, OK**.
+
+### Fresh negative control — grant status derivation
+
+`test_gaps_batch.py::TestGrantDerivationNegativeControl` implements
+the batch's required mutant in the house three-leg form: the traced
+claim is that an open-stage grant due 2026-06-30 derives its stage
+at as_of 2026-06-30 and `"overdue"` at as_of 2026-07-01 (the
+extension's `derive_grant_status`, mirroring the Core's finding
+derivation). The test asserts the real derivation separates the
+pair, that the mutant (overdue branch disabled) collapses both to
+the recorded stage, and — via a literal `assertRaises(AssertionError)`
+— that treating the mutant's output as the expected outcome fails.
+An end-to-end arm repeats the separation through `get_grant`.
+
+**Mutation verification (live drill, 2026-11-07).** The return line
+of `_grant_is_overdue` in the real `src/grc/extensions.py` (the
+single derivation point for grant date-based status) was patched
+from `return as_of_date > due` to `return False` (occurrence count
+asserted = 1 before patching). The full suite ran: **207 tests,
+exactly 4 failures** —
+
+- `test_gaps_batch.TestGrantRecords.test_grant_status_is_derived_never_stored`
+- `test_gaps_batch.TestGrantRecords.test_grant_summary_counts_and_overdue`
+- `test_gaps_batch.TestGrantDerivationNegativeControl.test_real_derivation_separates_the_canonical_pair`
+- `test_gaps_batch.TestGrantDerivationNegativeControl.test_end_to_end_through_the_extension`
+
+`extensions.py` was then restored from
+`../scratch/extensions.py.premutation` and verified SHA-256
+identical (`5b2d7da20c860a4f5c87e4373a36da2e75be7293c3cb2e9a7d196758746909ea`,
+recorded in `../scratch/extensions.py.sha256`), and the suite
+re-ran: **207 tests, OK**. The two inherited drills (finding
+derivation, audit verifier) are untouched: no core file changed in
+this unit, so their shipped records above stand.
