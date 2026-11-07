@@ -41,6 +41,7 @@ Status at delivery: **144 tests, OK** (96 inherited from Group 25,
 | `test_service.py` | 8 | REST API — live HTTP server: health, 401s, 403s audited `:denied`, full flow, `audit_read` admin + **[L3]** auditor allowed / registry denied for auditor, 400/404 envelopes, `?now=` derivation |
 | `test_main_cli.py` | 3 | `python -m crm serve` subprocess with demo users alice/bob/carol; **[L3] +1**: dana=auditor and `--max-failed-logins` / `--lockout-seconds` |
 | `test_negative_control.py` | 1 | Negative control #1 (below), unchanged from Group 25 |
+| `test_gaps_batch.py` | 41 | Final GAPS batch extensions (idx 399-403) — per-entry surface pins incl. stub labels, core-untouched pins, auditor-denied pins, fail-closed rollback pin, no-score recursive scan, and negative control #3 (below) |
 | `crm_helpers.py` | — | Shared fixtures: demo users (ADMIN/OPERATOR/VIEWER + **[L3]** AUDITOR), `USERS` registry (incl. dana), `fresh_store()`, `make_store()` |
 
 ## Coverage map — High-baseline uplifts
@@ -168,3 +169,114 @@ byte-identical to Group 25).
   file with a directory of the same name, so the append raises
   `IsADirectoryError` (an `OSError`) deterministically on any
   platform.
+
+---
+
+## Final GAPS batch additions (Singleton 40 close-out)
+
+Batch pattern: [`../../../gaps-batch/DECISION.md`](../../../gaps-batch/DECISION.md);
+per-entry dispositions and re-judgment grounds:
+[`../BATCH.md`](../BATCH.md). One new module
+(`src/crm/extensions.py`) and one new test file
+(`test_gaps_batch.py`, 41 tests); all existing modules and tests
+are byte-identical, and the full suite is 185 tests (was 144).
+
+All five of this section's entries (idx 399-403) close as
+labeled reference implementations: three were drafted
+`build-extension` and re-judged to reference with grounds
+recorded in BATCH.md (idx 399 no-code development engine; idx
+401 decisioning engine; idx 403 managed cloud operations
+platform), and two were drafted `stub-engine` and close
+reference as drafted (idx 400 BPM / workflow execution; idx 402
+GenAI tooling & AI/ML models). Every record the module creates
+carries `reference_stub: True` with the corresponding
+`*_here: False` flags on its face.
+
+Per-entry surface, pinned by `test_gaps_batch.py`:
+
+- **No-code / low-code development & model-based design
+  (idx 399, reference).** Design definitions hold the model
+  text verbatim as data with append-only revisions (current
+  text derived at read; stored record carries no derived keys);
+  generation requests snapshot the design's current revision
+  and hold validated scalar parameters (score-shaped keys and
+  floats refused); generation reports take a fixed outcome
+  vocabulary and name the artifact only by opaque
+  `artifact_ref`. Pinned: the whole flow leaves a bound core
+  module deep-equal.
+- **BPM / workflow execution (idx 400, reference).** Workflow
+  definitions held as data (`{step, action}` step records,
+  optional case binding); run requests bind at most one case (a
+  case conflicting with the workflow's bound case is refused);
+  run reports record the engine's outcome and its reported step
+  count as data. Pinned: definition + run + report leave the
+  bound core case deep-equal — no automation acts on a case.
+- **Decisioning (idx 401, reference).** Decision requests name
+  the engine by opaque `engine_ref` and bind core case/account
+  with the core's linkage discipline; the signature refuses
+  decision content (TypeError pins for `decision=` / `score=`
+  parameters). Reports store the outcome label verbatim
+  (score-shaped labels refused) and name the decision only by
+  opaque `decision_ref` (`decision_held_here: False`).
+  Evaluations store figures exactly as reported
+  (`computed_here: False`; floats and booleans rejected).
+- **GenAI tooling & AI/ML models (idx 402, reference).**
+  Requests refuse result and generated-content parameters
+  (TypeError pins); reports name the result only by opaque
+  `result_ref`; evaluations verbatim. Pinned: the AI surface
+  creates no core records.
+- **Managed cloud operations & scaling (idx 403, reference).**
+  Environments recorded by required, unique, opaque
+  `environment_ref` (`hosted_here: False`,
+  `operated_here: False`); scaling and operations reports store
+  the operator's labels, verbatim detail, and reported counts
+  as data; `operations_summary` derives per-environment counts
+  and instance-total sums at read (stored environment records
+  carry no derived keys — exact key set pinned).
+
+Cross-cutting pins: extension mutations and denials are audited
+on the core hash-chained log with `ext_` action names and
+`:denied` suffixes; the separated `auditor` role is denied every
+extension read and write (the High apparatus binds the
+extension) and the chain still verifies `(True, None)` after
+extension operations; a failed audit write rolls the record and
+its id back (fail-closed); failed operations consume no ids; a
+recursive scan over every stored extension record and derived
+view asserts no score-shaped key and no identifier key anywhere.
+
+### Negative control #3 (batch): the operations rollup must count recorded reports
+
+**Claim under test (idx 403).** `operations_summary`'s
+per-environment rollup is derived at read from the recorded
+scaling and operations reports: environment A carries 2
+recorded scaling reports (operator-reported instances 3 and 4,
+total 7) and 1 operations report; environment B carries 1
+scaling report and no instance count.
+
+**Seam.** `CrmExtensions._environment_rollup(scaling_reports,
+operations_reports)` — the single derivation method behind
+`operations_summary`.
+
+**Mutant.** A subclass overriding `_environment_rollup` to
+return an empty mapping, so no environment rolls up any
+recorded report. The mutation test asserts the canonical
+expectations hold on the real class *and* raise
+`AssertionError` under the mutant
+(`test_gaps_batch.py::TestNegativeControlEnvironmentRollup`).
+If the summary were hard-coded or the rollup ignored the
+recorded reports, the canonical expectations would also hold
+under the mutant, and this test would fail.
+
+**Live drill (this unit).** With the premutation copy saved
+under `scratch/` (`extensions.py.premutation_gaps` +
+`.sha256`), the real derivation line
+(`entry.get("scaling_reports", 0) + 1` in
+`_environment_rollup`) was changed to `+ 0` and the full suite
+re-run: **exactly 2 failures** — the negative control's
+canonical expectations and
+`test_operations_summary_derived_rollup`. The file was then
+restored from the premutation copy (SHA-256 verified identical:
+`c4408dcdff921fa93ed8db98d8126bd95520a55fecaa4b3fc093c745b4ad906f`)
+and the full suite re-ran green (185 tests). The drill is
+repeatable from the premutation copies in `scratch/` by the
+same one-line change.

@@ -295,3 +295,23 @@ and the **[L3]** uplifts added:
   families the build's features answer to; nothing more. FedRAMP
   authorizes products; CMMC certifies organizations — neither
   regime accepts the other as evidence.
+
+## Final GAPS batch unit (Singleton 40 close-out)
+
+This singleton's 5 open Extended entries (idx 399-403) are
+closed by one new module, `src/crm/extensions.py`, with tests in
+`tests/test_gaps_batch.py`; per-entry dispositions, three
+re-judgments with grounds, and the named-not-covered list are
+in [`BATCH.md`](BATCH.md). All five close as labeled reference
+implementations (0 built, 5 reference): design definitions and
+generation records for the no-code development engine (399),
+workflow definitions and run records for the BPM engine (400),
+decision requests and reported outcomes for the decisioning
+engine (401), AI/GenAI requests and reported outcomes (402),
+and environment records with the operator's scaling and
+operations reports for the managed cloud platform (403). Every
+record carries `reference_stub: True` on its face; the High
+apparatus binds the extension (hash-chained audit, fail-closed
+writes, the separated auditor role denied extension reads and
+writes), and the full suite is 185 tests including a fresh
+mutation-verified negative control for the operations rollup.

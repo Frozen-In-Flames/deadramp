@@ -657,11 +657,11 @@ The Group 20 category union's extended families (rendering & templating engines,
 ## Singleton 40 — CRM L3-adjacent (1 fork)
 
 Extended functions new with this fork, specified in groups/crm-l3/UNION-SPEC.md, not implemented:
-- [ ] open — No-code / low-code application development engine & model-based design tooling (the description's central assertion; a near-miss to the configuration family, not a tagged claim)
-- [ ] open — Case management & BPM / workflow execution engines (case automation, process orchestration, workflow execution; the substrate's case records are Core, the automation acting on cases is not)
-- [ ] open — Decisioning engine (named in the source record, not in the description; record-named, not description-claimed)
-- [ ] open — GenAI application tooling and AI / ML models generally (record-named as above)
-- [ ] open — Managed cloud operations & application scaling platform (the deployment layer itself, operated)
+- [x] reference — No-code / low-code application development engine & model-based design tooling (the description's central assertion; a near-miss to the configuration family, not a tagged claim)
+- [x] reference — Case management & BPM / workflow execution engines (case automation, process orchestration, workflow execution; the substrate's case records are Core, the automation acting on cases is not)
+- [x] reference — Decisioning engine (named in the source record, not in the description; record-named, not description-claimed)
+- [x] reference — GenAI application tooling and AI / ML models generally (record-named as above)
+- [x] reference — Managed cloud operations & application scaling platform (the deployment layer itself, operated)
 
 The Group 25 category union's extended families (casework depth, guidance delivery runtime, gap-identification & adoption analytics, customization & module engines, knowledge base & self-service content, marketing automation, integration connectors) are already registered under Group 25 and are not re-registered here. Baseline gaps at High: MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Platform-layer: multi-tenancy (single-tenant reference deployment); TLS only when configured; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: zero claims tag for this fork (a five-sentence platform description with no taxonomy vocabulary); all ten core functions are carried, not claimed, under the Merge Rule.
 
