@@ -169,3 +169,54 @@ cannot distinguish earliest from latest — they guard different
 seams (record immutability across core grant and decision
 events), as the core drill's boundary test did for the grant
 derivation.
+
+## Final GAPS batch additions — remainder unit (2026-11-07)
+
+| File | Tests | Covers |
+|---|---:|---|
+| `test_gaps_batch_addition.py` | 32 | Final GAPS batch remainder unit (see `../BATCH-ADDITION.md`) — per-entry pins for idx 580–588: pipeline definitions bound to a core dataset/workspace (derived step count, stored record carries no count key; duplicate/foreign bindings rejected whole, consuming no id) + run requests and verbatim reported outcomes (an outcome leaves the core dataset record byte-identical); allocation requests (zero/float/bool/string amounts rejected whole) + reported outcomes, summary totals pinned as sums of recorded values only; analysis requests + results held as opaque references only (`TypeError` on a `result_text` keyword; a result leaves the core dataset byte-identical); disclosures + agreements (stored record carries no state key) with current state derived at read and the summary recounting by derived state; labeled reference records for environments (`provisioned_here`/`executed_here` False), BioBank samples (exact key set keyed by opaque sample ref only; `TypeError` on `diagnosis`/`subject_ref` keywords) + verbatim monitoring outcomes, knowledge-graph nodes/edges (unknown endpoint rejected; `traversed_here` False), surveys + reported response counts (`TypeError` on a responses-payload keyword), document-generation requests (output as opaque ref), signing requests (exact key set; `TypeError` on a `signature_value` keyword), and integration references (`connected_here` False); outsider/viewer write denials (guard-denied attempts audited as `add_*:denied`); a recursive forbidden-key scan over every addition record, view, and summary; and the addition's fresh negative control (below) |
+
+Status after the final GAPS batch remainder unit: **163 tests, OK**.
+
+## Negative control — batch addition (agreement state derivation)
+
+**`TestAgreementDerivationNegativeControl`** in
+`test_gaps_batch_addition.py` — the addition's fresh invariant is
+**agreement current-state derivation**: an agreement's current
+state is its latest recorded reported-* label, derived at read
+by the single seam `ResearchAdditions._current_agreement_label`,
+never stored (the stored agreement record carries no state
+key — pinned). The mutant is a `ResearchAdditions` subclass
+whose seam returns the EARLIEST recorded label. The tests assert
+the canonical expectation (a proposed → negotiated → executed
+agreement reads `reported_executed`), that the mutant reads
+`reported_proposed` instead, and — via literal
+`assertRaises(AssertionError)` — that the canonical expectation
+rejects the mutant's outcome.
+
+## Mutation verification — batch addition drill (2026-11-07)
+
+VERIFIED by the coordinator for this batch unit:
+`_current_agreement_label` in the real `src/research/addition.py`
+was patched to `return states[0]["state_label"]` (earliest wins)
+and the full suite was run against the patched implementation.
+
+- Patched run: **163 ran, exactly 3 failed**:
+  - `test_gaps_batch_addition.TestTechTransfer.test_current_state_derived_from_latest`
+  - `test_gaps_batch_addition.TestTechTransfer.test_summary_recounts_by_derived_current_state`
+  - `test_gaps_batch_addition.TestAgreementDerivationNegativeControl.test_canonical_reads_latest_state`
+- `addition.py` was then restored from
+  `scratch/addition.py.premutation` and verified
+  **SHA-256-identical** (`e52e5b44…`, recorded in
+  `scratch/addition.py.sha256`); the suite is green again
+  (163/163). Raw drill output is in
+  `scratch/gaps_batch_addition_mutation_run.txt`.
+
+The failing set is exactly the derivation-dependent set: the
+mutant-agreement legs of the control pass under both
+implementations by construction, and the addition tests that
+record a single agreement state (the shape and bad-label cases)
+cannot distinguish earliest from latest — they guard different
+seams. No core test and no first-unit (`test_gaps_batch.py`)
+test failed under the mutation: the seam is the addition's own,
+in the addition's own module.

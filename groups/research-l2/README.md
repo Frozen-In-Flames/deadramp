@@ -216,3 +216,31 @@ stand unchanged: nothing here holds, moves, transforms, queries,
 or harmonizes data, and grants remain records that confer
 nothing — pinned behaviorally in both directions by the batch
 tests.
+
+## Final GAPS batch — Research L2 remainder additions (2026-11-07)
+
+The 9 open entries of this group's remainder-addition GAPS.md
+section (inventory idx 580–588 — the fork-excess engines of
+Terra, ROSALIND, Seven Bridges, Ipsos, and Wellspring) are
+closed by one new module, `src/research/addition.py`
+(`ResearchAdditions`, a second wrapper around the core store;
+all seven core modules and the first batch unit's
+`extensions.py` byte-identical), with tests in
+`tests/test_gaps_batch_addition.py`. Full suite: **163 tests,
+all passing** (131 before this unit). Per-entry dispositions
+are in [`BATCH-ADDITION.md`](BATCH-ADDITION.md): 4 entries built
+in records form (bioinformatics pipeline definitions + run
+requests and reported outcomes, elastic allocation requests +
+reported outcomes with totals as sums of recorded values only,
+AI analytics requests with results held as opaque references
+only, technology-transfer disclosures and agreements whose
+current state is derived at read) and 5 shipped as labeled
+reference implementations (interactive environments, diagnostic
+monitoring / BioBank sample tracking keyed by opaque sample
+references only, knowledge-graph node/edge references, survey
+definitions + reported response counts, and document
+generation / e-signature / integration references). The
+founding lines stand unchanged: nothing here runs, allocates,
+infers, monitors, traverses, collects, generates, signs, or
+connects anything, and no shape holds subject data, a diagnosis,
+result text, or a signature value.
