@@ -192,3 +192,36 @@ authorizes products; CMMC certifies organizations.
   hashes, mutation outputs, patch scripts
 
 License: Apache-2.0 (repo-level). Copyright 2026 Aries Hilton.
+
+## Final GAPS batch — Singleton 41 unit
+
+The 7 open entries of this group's GAPS.md section — the fork's
+own platform substance — are closed by one new module,
+`src/custsvc/extensions.py`, with the core byte-identical
+(`BATCH.md` carries the per-entry dispositions). Built as records
+plus read-time derivations: **vulnerability management &
+patching** (a registry over opaque asset refs with an append-only
+event stream; remediation state derived at read, never stored;
+patch campaigns with verbatim reported outcomes — nothing is
+scanned or applied here) and **migration & lift-and-shift**
+(project and step records with the current phase derived at
+read; no system is migrated). Shipped as labeled reference
+implementations (`reference_stub: True`): virtualization & cloud
+hosting (environment declarations; nothing is hosted),
+authorization acceleration & control inheritance (control labels
+as data; nothing is assessed or authorized), continuous
+monitoring & SOC operations (reported observations; an
+observation record creates no core alert), incident response
+operations (records bound to core cases, which stay untouched),
+and the **hosted third-party application ecosystem** —
+re-judged from build-extension to reference under the batch
+decision's qualification 1 (each application is its own vendor's
+product, and the platform-layer decision holds hosting surfaces
+to be deployment properties absent a spec-claimed records
+function; grounds in `BATCH.md`). Every extension mutation is
+audit-before-commit on the core's hash-chained log, and the
+auditor role is denied every operation on the surface. Full
+suite: 126 tests before, **168 tests after, all passing**,
+including a fresh mutation-verified negative control on the
+remediation-state derivation seam (exactly 4 failures under the
+mutant; see `tests/README.md`).

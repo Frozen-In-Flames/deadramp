@@ -171,3 +171,51 @@ suite (126 tests):
    (`3d0965771e6a38c3ddc3da82686a2afa55de6b5f20101d961e5d10ee308f8157`),
    suite green. Final state: **126 tests, OK**, and the full
    `src/` tree is byte-identical to the shipped build.
+
+## Final GAPS batch — extension coverage (added 2026-11-07)
+
+| File | Tests | Covers |
+|---|---:|---|
+| `test_gaps_batch.py` | 42 | **Final GAPS batch** (Singleton 41 unit): the extension surface in `src/custsvc/extensions.py` — reference families (hosting environments, control inheritance, monitoring observations, incident responses, hosted applications: stub labels, verbatim reports, the no-alert-creation and core-case-untouched pins), built families (vulnerability registry + event stream with stored key sets pinned state-free, patch campaigns, migration projects/steps with stored key sets pinned phase-free, summaries), RBAC (auditor denied every operation, denial auditing), audit-before-commit rollback, the content/score recursive scans + TypeError pins, and negative control #3 |
+
+The batch brings the suite to **168 tests, OK**. The core modules
+are byte-identical to the shipped build (the batch adds one module
+beside them); negative controls #1 and #2 above are unchanged and
+their seams were not touched.
+
+## Negative control #3 — vulnerability remediation-state derivation (batch, 2026-11-07)
+
+`test_gaps_batch.py::TestNegativeControl` (three-leg, in-suite):
+the canonical walk (triage/confirmed → patch_report/applied →
+verification/verified) must read `verified_closed` from the real
+implementation, because remediation state is **derived from the
+latest recorded event** at the single seam
+`CustsvcExtensions._derive_vulnerability_state`. The mutant leg (a
+subclass deriving from the *first* event) reads `triaged` for the
+same stream, and treating the mutant's outcome as the expectation
+must fail.
+
+Mutation verification: VERIFIED by the coordinator (2026-11-07).
+The seam's `latest = events[-1]` line in
+`src/custsvc/extensions.py` (the line occurs exactly once; count
+asserted) was patched in the real file to `latest = events[0]`,
+the exact live counterpart of the in-suite mutant. The full suite
+was run: **168 tests ran, exactly 4 failed** —
+
+- `test_gaps_batch.TestVulnerabilities.test_state_derivation_walks_the_event_stream`
+- `test_gaps_batch.TestVulnerabilities.test_reopen_and_risk_acceptance_paths`
+- `test_gaps_batch.TestVulnerabilities.test_summary_counts_by_derived_state`
+- `test_gaps_batch.TestNegativeControl.test_canonical_derives_from_latest_event`
+
+Mutant output is saved at `scratch/gaps_batch_mutation_run.txt`.
+`extensions.py` was then restored from
+`scratch/extensions.py.premutation` and verified byte-identical
+(SHA-256
+`dc1999e6e63229941cdecb04f343ddf92e2f70886fa2ab36915c6f852579912b`,
+recorded in `scratch/extensions.py.sha256`) and the suite re-run:
+**168 tests, OK**. An oracle that passes with the derivation
+reading the wrong end of the event stream would be testing that
+code ran, not that remediation state follows the latest event —
+this control is the filter against that. (The in-suite mutant
+legs kept passing under the live drill, as designed: they exercise
+the subclass override, a different mechanism from the file's seam.)
