@@ -270,3 +270,49 @@ hash (`bfc7877c…`) — and the suite re-ran green. Raw output:
 `scratch/additions_mutation_run.txt`. Drill 2 (audit hash) was
 not re-run: the addition changes no audit code or audit-facing
 behavior, and its shipped record stands.
+
+## Final GAPS batch — Group 14 unit (2026-11-07)
+
+Extension code: `src/comm/extensions.py` (`CommExtensions`
+wrapping `CommStore`); all 7 core modules byte-identical. The 6
+Extended entries of this section (inventory idx 163–168) all close
+`reference`: definitions, profiles, attempts and reported
+outcomes, every record labeled `reference_stub: True`.
+
+| File | Tests | Covers |
+|---|---:|---|
+| `test_gaps_batch.py` | 37 | Per-entry surface pins for idx 163–168 (exact key sets incl. the certificate shape with no key-material field, stub/transport labels, `*_here: False` flags); TypeError pins on content-shaped kwargs (`body=`, `content=`, `key_material=`, `transcript=`, `payload=`) plus a signature scan over the whole extension class; derived-never-stored pins (workflow current outcome, certificate current event + validity state, carried payment totals, report-summary freshness); core-unchanged pins (transport attempt leaves the bound delivery `queued` with no receipt; workflow records change no core message count); RBAC (viewer write denied + audited `ext_message_compose:denied`; auditor denied every extension operation incl. reads; certificate records admin-only); failed operations consume no ids; extension mutations audited with the `ext_` prefix and the hash chain verifies afterwards; **negative control #3** (below) |
+
+**Status: 186 tests, OK** (149 shipped + 37 batch).
+
+### Negative control #3 (fresh, mutation-verified)
+
+**`test_gaps_batch.py::TestNegativeControlLatestLabel`** — the
+traced claim is that the current reported label of an append-only
+record stream is its **latest** record's label, via the seam
+`_latest_label` in `src/comm/extensions.py` (used by the workflow,
+delivery, certificate, and carried views). The in-suite control
+shows the canonical seam returning the latest label, an
+earliest-reading mutant returning the superseded one, and — via a
+literal `assertRaises(AssertionError)` — that the canonical view
+expectation rejects the mutant's value.
+
+**Live drill.** `src/comm/extensions.py` was copied to
+`scratch/extensions.py.premutation` (SHA-256 `6844a905…`, recorded
+in `scratch/extensions.py.sha256`) and the seam's return line
+(`return records[-1][key]`, the module's only occurrence) was
+patched to `return records[0][key]`. The full suite ran: **186
+tests, exactly 7 failed**, all in `test_gaps_batch.py` —
+
+- `test_gaps_batch.TestWorkflowReference.test_current_outcome_derived_from_latest`
+- `test_gaps_batch.TestCertificateReference.test_current_event_and_validity_derived_at_read`
+- `test_gaps_batch.TestDeliveryReference.test_current_outcome_derived_from_latest`
+- `test_gaps_batch.TestCarriedBundle.test_report_outcomes_verbatim_current_derived`
+- `test_gaps_batch.TestNegativeControlLatestLabel.test_canonical_view_uses_latest_outcome`
+- `test_gaps_batch.TestNegativeControlLatestLabel.test_canonical_expectation_rejects_mutant_outcome`
+- `test_gaps_batch.TestNegativeControlLatestLabel.test_mutant_earliest_outcome_differs` (trips by design: it asserts the literal canonical value against the real implementation)
+
+No core test failed. `extensions.py` was then restored from the
+pre-mutation copy — SHA-256 verified identical (`6844a905…`) —
+and the suite re-ran green: **186 tests, OK**. Raw output:
+`scratch/gaps_mutation_run.txt`.

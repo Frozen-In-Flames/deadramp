@@ -267,6 +267,31 @@ selected NIST SP 800-172 enhanced requirements):
   mapping above states which baseline families the build's
   features answer to; nothing more.
 
+## Final GAPS batch — Group 14 unit (Nov 7, 2026)
+
+The 6 Extended entries of this section (inventory idx 163–168)
+are closed as **labeled reference implementations** in
+`src/comm/extensions.py` (`CommExtensions` wrapping the core
+store; the 7 core modules are byte-identical): workflow
+definitions held as data with reported outcomes (the registry
+never executes), transport profiles and delivery-attempt records
+in the adjudicated form (`reference_transport: true`, nothing
+transmitted, no cryptography performed), certificate metadata
+records whose shape cannot hold key material, voice/virtual-agent
+profiles and reported session outcomes (no media, no conversation
+performed), streaming/edge profile declarations with reported
+outcomes (hosting stays a deployment property), and one reference
+record per carried Group 11 family — including payment records in
+integer cents with totals derived at read and a
+deterministic-counts report summary. Every record carries
+`reference_stub: true` and states its absent half
+(`executed_here` / `transmitted_here` / `issued_here` /
+`media_here` / `streamed_here` / `charged_here`: false). The
+suite is now **186 tests** (149 + 37 in
+`tests/test_gaps_batch.py`), including a fresh mutation-verified
+negative control on the derived-current-outcome seam. Full
+record: [`BATCH.md`](BATCH.md).
+
 ## Remainder addition (Oct 31, 2026)
 
 One previously uncategorized fork joined this group under
