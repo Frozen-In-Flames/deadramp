@@ -63,3 +63,54 @@ Two layers, as everywhere in this repo:
 
 `PYTHONPATH=src python3 tests/smoke.py` — real server on an
 ephemeral port, real requests, prints `SMOKE OK`.
+
+## Final GAPS batch (appended 2026-11-07)
+
+`test_gaps_batch.py` — 32 tests pinning the batch extension surface
+in `src/cloudinfra/extensions.py` (see the group `BATCH.md` for the
+per-entry dispositions): deployment-intent records for the
+template-execution entry (settings derived into the read view from
+the core template, never stored on the intent; no execute/apply/
+launch/run operation exists on the extension class); security
+service configuration records and reported check results with a
+derived summary; operation request records with reported outcomes;
+invoice records and the FinOps summary (with the batch's no-money
+pin: a recursive key scan over every extension record and summary
+finds no amount/price/fee/cents/cost/currency/money/rate/charge
+key part anywhere); resource allocation records with derived
+active-unit sums; verification case records whose status and
+current outcome are derived at read and never stored; the 8
+labeled reference implementations (`reference_stub: True`,
+`recorded_reference_only`, transport labels on the telemetry and
+CDN references, key-metadata records pinned to an exact key set
+with no material-carrying parameter); and the cross-cutting
+discipline pins (viewer write denied and audited, outsider denied
+by the core membership boundary, cross-organization invisibility,
+`ext_`-prefixed audit actions). Suite total is now 150 tests
+(118 + 32), all green; the core modules are byte-identical.
+
+### Batch negative control (mutation-verified, fresh)
+
+Signature seam: **`CloudInfraExtensions._check_verification_decider_not_opener`**
+— the actor who records a verification outcome may never be the
+actor who opened the case (the batch's separation-of-duties guard
+for the residency & personnel verification entry).
+
+Two layers, as everywhere in this repo:
+
+1. **In-suite mutant** (`test_gaps_batch.py`,
+   `MutantDeciderBlindExtensions`): a subclass whose seam does
+   nothing. The canonical test proves the real extension refuses
+   the opener's outcome and the case stays open; the mutant test
+   proves the mutant waves it through, and that asserting the
+   mutant's outcome as the expectation raises `AssertionError`.
+2. **Recorded file-level drill**: the seam condition in
+   `src/cloudinfra/extensions.py` was replaced with `if False:`
+   and the full suite re-run. **Exactly 2 failures**, both
+   verification-guard tests:
+   `test_opener_may_not_record_outcome` and
+   `test_canonical_expectation_refuses_opener`. The file was then
+   restored from the pre-mutation copy and verified byte-identical
+   (SHA-256 `8f89cee30d49a56fecf6f349e4d5ef07316e6637551ea8a1dd44a83ed83e7680`,
+   recorded in `scratch/extensions.py.sha256`), and the suite
+   re-verified at 150/150 green.

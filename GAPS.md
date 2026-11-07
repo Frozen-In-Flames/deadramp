@@ -1794,21 +1794,21 @@ Resolution note, stated plainly: tier stays null, as for every sheet in this set
 ## Remainder Group 4 — Cloud Infrastructure & Hosting L2 (6 forks)
 
 Gaps from Remainder Group 4, specified in groups/cloud-infrastructure-hosting-l2/UNION-SPEC.md, not implemented:
-- [ ] open — Hosting platform / provisioning & orchestration engines (the platform layer entire)
-- [ ] open — Elastic Stack hosting engine
-- [ ] open — Template execution engine (the build's template registry stores settings verbatim and never executes)
-- [ ] open — Monitoring & observability engines
-- [ ] open — Platform security service engines
-- [ ] open — Backup execution & disaster-recovery orchestration
+- [x] reference — Hosting platform / provisioning & orchestration engines (the platform layer entire)
+- [x] reference — Elastic Stack hosting engine
+- [x] built — Template execution engine (the build's template registry stores settings verbatim and never executes)
+- [x] reference — Monitoring & observability engines
+- [x] built — Platform security service engines
+- [x] reference — Backup execution & disaster-recovery orchestration
 - [x] re-scoped — Identity provider / SSO / directory services (IA-2 stays with the embedding organization)
-- [ ] open — Encryption implementation & key management
-- [ ] open — Operations execution engines
-- [ ] open — Invoicing / billing & FinOps engine (no fork states any amount, rate, or fee, so the build holds no money shape anywhere)
-- [ ] open — AI recommendation engine
-- [ ] open — Application resource management engine
-- [ ] open — CDN operation
-- [ ] open — Assessment & Authorization support services
-- [ ] open — Residency & personnel verification
+- [x] reference — Encryption implementation & key management
+- [x] built — Operations execution engines
+- [x] built — Invoicing / billing & FinOps engine (no fork states any amount, rate, or fee, so the build holds no money shape anywhere)
+- [x] reference — AI recommendation engine
+- [x] built — Application resource management engine
+- [x] reference — CDN operation
+- [x] reference — Assessment & Authorization support services
+- [x] built — Residency & personnel verification
 
 ## Remainder Group 5 — Library Systems L1 (2 forks)
 

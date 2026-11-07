@@ -179,3 +179,22 @@ Extended service. Full table in `UNION-SPEC.md`.
   any of them.
 - **Demo identities are hooks, not an IdP** (IA-2 stays with the
   embedding organization), here as everywhere in this repo.
+
+## Final GAPS batch (2026-11-07)
+
+The group's 14 open gap entries are closed by
+`src/cloudinfra/extensions.py` (`CloudInfraExtensions`, a wrapper
+over the core store; core modules byte-identical): 6 built as
+records plus read-time derivations (deployment intents referencing
+the verbatim template registry, security-service configurations
+and reported check results, operation request records, invoice
+records and the derived FinOps summary — still no money shape
+anywhere, pinned by a recursive key scan — resource allocation
+records, and residency/personnel verification cases whose outcomes
+are reported, never verified here, under a decider-not-opener
+separation-of-duties seam) and 8 shipped as labeled reference
+implementations (`reference_stub: true`). Per-entry dispositions
+are in `BATCH.md`; the suite is now 150 tests (118 + 32 in
+`tests/test_gaps_batch.py`), including the batch's fresh
+mutation-verified negative control on the verification seam,
+recorded in `tests/README.md`.
