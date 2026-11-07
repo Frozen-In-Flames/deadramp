@@ -156,3 +156,65 @@ to the shipped hash (`46c4f2dc…`); the suite re-ran green at
   reads `overdue == True` at creation; the pinned before/after
   cases run through explicit `as_of` values. Both corrected
   tests carry comments saying so.
+
+## Final GAPS batch (2026-11-07)
+
+**140 tests, OK** — the 93 above plus 47 in
+`test_gaps_batch.py` pinning the batch extension surface
+(`src/sysadmin/extensions.py`, see `../BATCH.md`): per-entry
+record shapes and honesty labels for idx 839–845, the
+derived-never-stored derivations (service-case current state,
+a capacity pool's latest observation), validation before
+mutation (failed operations consume no id; floats/bools
+rejected for reported quantities and integer-cent amounts),
+the membership boundary and the `:denied` audit record for a
+denied write, an operation run pinned to leave its bound core
+change record byte-identical, and a recursive scan over every
+extension record, view, and summary enforcing both the core
+no-score key set and the tier-null additions (no key naming a
+tier, a CMMC value, or a baseline may exist on this surface).
+
+**Baseline note:** the suite stood at 93 with one
+pre-existing failure when this unit began —
+`test_nosignal_addition.py`'s git-HEAD pin asserted HEAD
+holds exactly 4 spec sheets, but the no-signal append has
+since shipped (HEAD holds 5). The pin is era-rescoped to its
+own era's slice (HEAD's first 4 sheets), disclosed in that
+test's docstring; the deep-equal comparison is unchanged.
+
+## Batch negative control
+
+**`TestLatestStateNegativeControl`** in `test_gaps_batch.py`
+— the batch surface's signature derivation is the service
+case's current state: the *latest* recorded state label,
+derived at read, never stored on the case. The mutant is a
+`SysadminExtensions` subclass whose `_latest_state_label`
+reads the *earliest* label. The tests assert the canonical
+expectation (a case recorded `reported_open` then
+`reported_resolved` reads `reported_resolved`, in the case
+view and in the ITSM summary), and — via a literal
+`assertRaises(AssertionError)` — that the canonical
+expectation rejects the mutant's outcome (the mutant
+resurrects the superseded `reported_open`).
+
+## Batch mutation verification
+
+VERIFIED for this unit, in this tree:
+`SysadminExtensions._latest_state_label` in the real
+`src/sysadmin/extensions.py` was patched to read
+`state_records[0]` (earliest label) and the suite was run
+against the patched implementation.
+
+- Patched run: **140 ran, exactly 4 failed** — all in the new
+  batch module, all derivation-dependent:
+  - `test_gaps_batch.TestLatestStateNegativeControl.test_canonical_expectation`
+  - `test_gaps_batch.TestLatestStateNegativeControl.test_implementation_matches_canonical_in_summary`
+  - `test_gaps_batch.TestServiceCases.test_current_state_derived_from_latest_label`
+  - `test_gaps_batch.TestServiceCases.test_itsm_summary_counts`
+- No core test failed under the mutant, and the mutant
+  subclass test passes by construction, as expected.
+  `extensions.py` was then restored from
+  `scratch/extensions.py.premutation` and verified
+  **SHA-256-identical** (`469d8997…`, recorded in
+  `scratch/extensions.py.sha256`); the suite is green again
+  (140/140).

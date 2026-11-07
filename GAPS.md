@@ -1513,13 +1513,13 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## Untiered Set 10 — System Administration (4 forks, tier null)
 
 New extended functions from this set, specified in groups/system-administration-untiered/UNION-SPEC.md, not implemented (the founding six — managed administration operations, provisioning and deployment operations, application delivery and hosting runtime, virtualization engine, HA network operation, third-party CSP hosting platforms — are already registered under the parent group and are not re-registered here):
-- [ ] open — Observability & monitoring engines
-- [ ] open — AI root-cause & predictive analytics
-- [ ] open — IT service management systems
-- [ ] open — IT operations & asset discovery engines
-- [ ] open — Endpoint management operations
-- [ ] open — Vulnerability detection & remediation prioritization
-- [ ] open — Capacity, optimization & chargeback reporting engines
+- [x] reference — Observability & monitoring engines
+- [x] built — AI root-cause & predictive analytics
+- [x] built — IT service management systems
+- [x] built — IT operations & asset discovery engines
+- [x] built — Endpoint management operations
+- [x] reference — Vulnerability detection & remediation prioritization
+- [x] built — Capacity, optimization & chargeback reporting engines
 - [x] re-scoped — Platform layer (multi-tenancy, encryption at rest, TLS by deployment)
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This set records zero claims: the category taxonomy is its founding fork's own exact phrases and none occurs in these four descriptions, so no core function is claim-supported and the substrate is carried, not claimed. All four documented control families come from one fork's single sentence (MFA, role-based access controls, encryption, audit logging); another fork's built-in-controls sentence is recorded as general-terms prose, not traced to a family, and every other family is listed as not documented. The founding named absences stand in substance here but claimless: monitoring in three forks, incident management and ticketing in one. One fork's product name carries (High) while its record's impact is Unknown — the tier stays null, pinned by test.

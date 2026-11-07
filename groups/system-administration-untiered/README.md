@@ -419,3 +419,29 @@ is recorded then and not before.
   and ticketing are asserted in substance by these forks and
   remain claimless because the taxonomy holds no family for
   them. Nothing was back-filled to make the set look complete.
+
+## Final GAPS batch (2026-11-07)
+
+The 7 open entries of this set's GAPS.md section are closed
+by `src/sysadmin/extensions.py` (`SysadminExtensions`, a
+wrapper over the untouched core store; per-entry disposition
+in [`BATCH.md`](BATCH.md)): observability & monitoring and
+vulnerability detection & remediation prioritization ship as
+labeled reference implementations (`reference_stub: True`;
+nothing is observed, scanned, or detected here), and AI
+root-cause & predictive analytics, IT service management,
+IT operations & asset discovery, endpoint management
+operations, and capacity / optimization & chargeback
+reporting close as records surfaces over this group's own
+substrate — definitions held as data, reported outcomes held
+verbatim, current states and latest observations derived at
+read, counts-only summaries, chargeback amounts as reported
+integer cents. Tier null is carried into the extension: no
+record shape has a key that could hold a tier, an
+equivalence, or a baseline, pinned by a recursive scan in the
+batch tests. Suite: **140 tests, OK** (93 + 47 batch tests;
+see `tests/README.md`, including the batch's
+mutation-verified negative control and one disclosed
+era-rescope of a stale git-HEAD pin in the no-signal spec
+tests). The core is unchanged — `src/sysadmin/` byte-identical
+apart from the one new module.
