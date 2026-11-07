@@ -506,17 +506,17 @@ Platform-layer: encryption at rest is deployment-layer (TLS when configured); si
 ## Group 30 — Education & Training L1 (2 forks)
 
 Extended functions, specified in groups/education-training-l1/UNION-SPEC.md, not implemented:
-- [ ] open — Adaptive learning / knowledge-gap remediation engine (one sibling's patented algorithms, described in prose; 0 tagged claims — the verbatim taxonomy was not re-tuned to capture it)
-- [ ] open — Talent, skills & marketplace matching incl. career exploration / coaching and AI career assistants (carried from the Group 13 union; 0 claims here)
-- [ ] open — Recruiting, HCM / HRIS & workforce management suites incl. performance and policy management (carried; 0 claims here)
-- [ ] open — Course content authoring & delivery, media streaming (carried; 0 claims here)
-- [ ] open — Simulation engines: capture, debriefing & playback (carried; 0 claims here)
-- [ ] open — Remote proctoring & identity proofing (0 claims in either tier of this category)
-- [ ] open — Deterministic scoring & AI grading (0 claims in either tier; assessments are administration records only, no score field by design)
-- [ ] open — Collaboration & social learning (carried; 0 claims here)
-- [ ] open — Data storage & processing services beyond the substrate's own records (carried; 0 claims here)
-- [ ] open — Notifications & reminders (0 claims in either tier)
-- [ ] open — Integrations & APIs as a union function (0 claims in either tier)
+- [x] built — Adaptive learning / knowledge-gap remediation engine (one sibling's patented algorithms, described in prose; 0 tagged claims — the verbatim taxonomy was not re-tuned to capture it)
+- [x] built — Talent, skills & marketplace matching incl. career exploration / coaching and AI career assistants (carried from the Group 13 union; 0 claims here)
+- [x] built — Recruiting, HCM / HRIS & workforce management suites incl. performance and policy management (carried; 0 claims here)
+- [x] reference — Course content authoring & delivery, media streaming (carried; 0 claims here)
+- [x] built — Simulation engines: capture, debriefing & playback (carried; 0 claims here)
+- [x] reference — Remote proctoring & identity proofing (0 claims in either tier of this category)
+- [x] reference — Deterministic scoring & AI grading (0 claims in either tier; assessments are administration records only, no score field by design)
+- [x] built — Collaboration & social learning (carried; 0 claims here)
+- [x] built — Data storage & processing services beyond the substrate's own records (carried; 0 claims here)
+- [x] built — Notifications & reminders (0 claims in either tier)
+- [x] reference — Integrations & APIs as a union function (0 claims in either tier)
 
 Platform-layer: general cloud hosting / PaaS incl. multi-tenancy (this group's sole tagged family, 1 of 2; single-tenant reference deployment); encryption at rest (deployment layer); TLS only when configured; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: exactly one claim tags in this group (a platform property, not a learning function); all ten core functions are carried, not claimed, under an explicit core-boundary decision, and Group 13's two records-only decisions (no computed scores, no credential issuance) carry on this group's own 0-of-2 evidence.
 

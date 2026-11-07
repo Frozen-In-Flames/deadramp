@@ -89,3 +89,38 @@ verified identical to the pre-mutation hash in
 `scratch/store.py.sha256` — and to Group 13's own recorded hash for
 the same file) and the suite re-run: **65 tests, OK**. The suite
 catches this defect class; the negative control is not decorative.
+
+## Final GAPS batch additions (2026-11-07)
+
+`test_gaps_batch.py` (37 tests) pins the batch extension surface in
+`src/learn/extensions.py` (`LearnExtensions`): one test class per
+open GAPS.md entry for this group (see `../BATCH.md` for the
+per-entry disposition), plus cross-cutting pins — the founding
+**no-score invariant over the WHOLE extension surface** (recursive
+key scan: no `score`-/`grade`-shaped key in any returned value),
+stub/transport labels on the four stub-engine entries,
+derived-never-stored values (presence matches, pipeline counts,
+simulation current state, group activity counts, dataset
+projections), learner scope, RBAC denials (including the audited
+`:denied` record), and no-id-consumed on failed operations. Suite:
+65 tests before, **102 tests after, OK**.
+
+### Batch mutation verification
+
+VERIFIED fresh in this tree by the batch build worker
+(2026-11-07). The presence-match seam
+`LearnExtensions._learner_completed_all`
+(`src/learn/extensions.py`) — the line `return all(course_id in
+completed for course_id in required_course_ids)` — was patched to
+`return True`, so a learner missing a required course's completed
+progress record matched anyway. The full suite was run: **102
+tests ran, exactly 2 failed** —
+
+- `test_gaps_batch.TestTalentMatching.test_presence_match_missing_course_not_fully_matched`
+- `test_gaps_batch.TestTalentMatching.test_match_learners_excludes_incomplete`
+
+`extensions.py` was then restored from the pre-mutation copy
+(`scratch/extensions.py.premutation`; SHA-256 `2b6c060d…`,
+verified identical to the restored file) and the suite re-run:
+**102 tests, OK**. The suite catches this defect class; the
+negative control is not decorative.

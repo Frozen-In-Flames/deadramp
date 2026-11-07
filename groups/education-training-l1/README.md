@@ -336,3 +336,22 @@ organizations. The L1 / FedRAMP Low–LI-SaaS equivalence used here is
 a planning/matching equivalence only. This build is **not a FedRAMP
 authorization and confers no CMMC certification**, and it claims
 neither.
+
+## Final GAPS batch (2026-11-07)
+
+The 11 open Extended entries for this group were closed as one
+batch unit (see `BATCH.md` for the per-entry disposition): 7 built
+as records/derivation extensions and 4 shipped as labeled reference
+implementations, all in one new module, `src/learn/extensions.py`
+(`LearnExtensions`, wrapping the core store; every core module
+byte-identical). Adaptive learning is rule records held as data
+(never applied) plus verbatim reported pathway outcomes; matching
+is a deterministic presence match over completed core progress
+(evidence per match, no ranking, no fit value); the scoring entry
+ships as labeled rule/outcome reference records, so the founding
+design holds — assessments stay administration records and no
+score or grade field exists anywhere on the extension surface
+(pinned by a recursive key scan). Suite: 65 tests before, 102
+after, including a fresh mutation-verified negative control
+(presence-match seam drill, exactly 2 failures) recorded in
+`tests/README.md`.
