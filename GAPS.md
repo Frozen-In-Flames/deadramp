@@ -1573,13 +1573,13 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## Untiered Set 15 — Fleet Management (2 forks, tier null)
 
 New extended functions from this set, specified in groups/fleet-management-untiered/UNION-SPEC.md, not implemented:
-- [ ] open — Live telematics & GPS streaming (two claimants in this set; the founding named absence gains claimants)
-- [ ] open — Integration engines & external connectors
-- [ ] open — Video-based safety & dash-camera analytics engines
-- [ ] open — IoT device telemetry ingestion & equipment/environmental monitoring engines
-- [ ] open — Alerting & notification engines
-- [ ] open — Driver workflow & compliance applications
-- [ ] open — Dashboarding front-ends beyond registry reporting
+- [x] reference — Live telematics & GPS streaming (two claimants in this set; the founding named absence gains claimants)
+- [x] reference — Integration engines & external connectors
+- [x] reference — Video-based safety & dash-camera analytics engines
+- [x] reference — IoT device telemetry ingestion & equipment/environmental monitoring engines
+- [x] built — Alerting & notification engines
+- [x] reference — Driver workflow & compliance applications
+- [x] built — Dashboarding front-ends beyond registry reporting
 - [x] re-scoped — Platform layer
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Four claims stand (a duplicate pair, spec'd as separate sheets per the Phase 1 rule, with identical tables); no numbered core function is claim-supported — every core family stands at zero here — so the substrate is carried, not claimed, and the set's telematics claim stands on the single word telematics at exact weight, with the streaming engine extended. No documented control claims: the only control-adjacent phrase, regulatory compliance, names an application area, not a control family. Named absences: ELD and hours-of-service stand at zero — the phrase driver workflows and regulatory compliance is present, and the vendor's ELD business elsewhere is reputation, not evidence; reporting and analytics stand at zero with dashboards and reporting listed in other words.

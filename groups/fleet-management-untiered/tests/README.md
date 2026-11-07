@@ -7,13 +7,14 @@ claim family / control family it traces to.
 
 ```bash
 cd groups/fleet-management-untiered
-PYTHONPATH=src python3 -m unittest discover -s tests        # 83 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 111 tests
 ```
 
 Status at delivery: **83 tests, OK** against the implementation in
 `../src/` — the founding group's 67-test core suite carried with
 the code, plus 16 spec tests in `test_specs.py` pinning this set's
-sheets. (Run exactly as above: helpers are imported as a top-level
+sheets. After the final GAPS batch unit (below): **111 tests,
+OK** — the 83 above plus 28 batch tests in `test_gaps_batch.py`. (Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty
 by design, so package-mode discovery with `-t .` is not the
 supported entry point for this group.)
@@ -51,6 +52,7 @@ baseline-neutral substrate language (see `../UNION-SPEC.md`).
 | `test_main_cli.py` | `python -m fleet serve` subprocess with demo users alice/bob/carol |
 | `test_negative_control.py` | Negative control (below) |
 | `test_specs.py` | This set's spec pins (below) |
+| `test_gaps_batch.py` | Final GAPS batch unit (below) — the extension surface for this section's 7 open entries: reference-record shapes and stub labels (telematics, connectors, video safety, IoT, driver workflow/compliance), alerting records form, dashboard definitions + read-time derivation, tier-null and score/coordinate recursive scans, the no-charge-control pin, denied-write auditing, and the batch negative control |
 | `fleet_helpers.py` | Shared fixtures: demo users (ADMIN/MANAGER/VIEWER), `USERS` registry, `fresh_store()`, and `make_store()` building a FleetStore + AuditLog + one vehicle + one operator (created by ADMIN) |
 
 ## Coverage table
@@ -160,3 +162,65 @@ present in the audit log. Result at delivery: **SMOKE OK**.
 `sys.stdlib_module_names`. Result at delivery: imports found
 `argparse, dataclasses, datetime, http, json, os, ssl, sys,
 threading, urllib`; third-party imports: none. **OK: stdlib only.**
+Re-run after the final GAPS batch unit below: imports found add
+`copy` and `fractions` (the extension module); third-party imports:
+none. **OK: stdlib only.**
+
+## Final GAPS batch unit (2026-11-07)
+
+`test_gaps_batch.py` (28 tests) pins the extension surface built
+for this section's 7 open GAPS.md entries (idx 875–881; the
+section's eighth entry, Platform layer, was closed `re-scoped`
+in writing at batch foundation). The extension is
+`src/fleet/extensions.py` (`FleetUntieredExtensions` wrapping
+the core store; all seven core modules byte-identical). Per
+entry: exact record key sets; the stub labels
+(`reference_stub: True`, the `*_here: False` flags) on reference
+records (telematics streams/reports, connectors/outcomes,
+camera bindings/video events, IoT devices/observations,
+workflow tasks/compliance records); reported labels stored
+verbatim; read-time derivations (stream report counts,
+connector outcome counts, camera event counts, device
+observation counts, alert counts by severity and notification
+counts by outcome, workflow task counts by status, dashboard
+panel figures over core records — including the maintenance
+completed share and a proof that a dashboard recorded earlier
+reports registry state recorded after it); `TypeError` on
+smuggled kwargs (`latitude=`/`longitude=`, `footage=`,
+`message=`); the tier-null recursive scan (no
+tier/cmmc/baseline/impact/fedramp-shaped key anywhere on the
+surface) alongside the score/coordinate scan; the inverse
+invariant pinned directly (no charge-control method exists on
+the extension surface); and viewer-write denial audited with
+`:denied`, consuming no id.
+
+### Negative control (batch)
+
+`TestCompletedShareNegativeControl` implements the fresh
+negative control for the dashboard derivation seam
+`_maintenance_completed_share` in `src/fleet/extensions.py`
+(the exact share of core maintenance views whose core-derived
+status is `completed`): the canonical views (two completed,
+one past-due uncompleted) yield `2/3`; a local mutant counting
+`overdue` instead yields `1/3`, differs from the canonical
+value, and treating the mutant's outcome as the expectation
+fails via `assertRaises(AssertionError)`.
+
+### Mutation verification (batch)
+
+VERIFIED in this tree (2026-11-07). The seam's status
+comparison in `src/fleet/extensions.py` was patched from
+`"completed"` to `"overdue"` — the exact live counterpart of
+the mutant in the test. The full suite ran: **111 tests,
+exactly 3 failures** (recorded in
+`scratch/gaps_mutation_run.txt`) —
+
+- `test_gaps_batch.TestCompletedShareNegativeControl.test_canonical_share_exact`
+- `test_gaps_batch.TestCompletedShareNegativeControl.test_overdue_counting_mutant_is_rejected`
+- `test_gaps_batch.TestDashboardingBuilt.test_view_derives_figures_at_read`
+
+— all in the batch's own new tests; no core or spec test
+failed. `extensions.py` was then restored from the
+pre-mutation copy (`scratch/extensions.py.premutation`;
+SHA-256 verified identical via `scratch/extensions.py.sha256`)
+and the suite re-run: **111 tests, OK**.

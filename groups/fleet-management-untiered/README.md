@@ -221,6 +221,35 @@ and SHA-256 verified (see `tests/README.md`). A live smoke
 (`scratch/smoke.py`) drives the store and the HTTP service end to
 end: **SMOKE OK** at delivery.
 
+## Final GAPS batch (2026-11-07)
+
+The 7 open entries registered for this set in `../../GAPS.md`
+(the section's eighth entry, Platform layer, was closed
+`re-scoped` in writing at batch foundation) are closed by
+`src/fleet/extensions.py` (`FleetUntieredExtensions`, one new
+module wrapping the core store; all seven core modules
+byte-identical) with per-entry dispositions in
+[`BATCH.md`](BATCH.md): **2 built** — alerting & notification
+engines (rules as data, reporter-raised alert records,
+delivery-attempt notification records with
+`reference_transport: True` and `delivered_here: False`) and
+dashboarding front-ends beyond registry reporting (dashboard
+definitions as data plus panel figures derived at read over
+the core's own records; `rendered_here: False`) — and
+**5 reference** — live telematics & GPS streaming, integration
+engines & external connectors, video-based safety &
+dash-camera analytics engines, IoT device telemetry ingestion
+& equipment/environmental monitoring engines, and driver
+workflow & compliance applications, each as labeled reference
+records holding reported labels verbatim with the engine half
+stated absent on the records. Tier null holds on the new
+surface (a recursive scan pins that no tier, baseline,
+impact-level, or CMMC key exists anywhere on it), and the
+category's inverse invariant holds too: the extension adds no
+charge-control surface of any kind. Suite: **83 → 111 tests,
+OK**, including a fresh mutation-verified negative control
+for the dashboard derivation seam (see `tests/README.md`).
+
 ## Byte-identity accounting
 
 `src/fleet/` is carried from the founding group
@@ -311,3 +340,15 @@ recorded then and not before.
   reporting being listed in both descriptions; maintenance &
   inspection has 0 despite equipment monitoring being described.
   Nothing was back-filled to make the set look complete.
+- **Final GAPS batch update (2026-11-07).** The list above
+  describes the founding build. The 7 registered gap entries
+  for this set have since been closed by the extension module
+  described in the "Final GAPS batch" section above and in
+  `BATCH.md` — 2 as in-substrate records builds and 5 as
+  labeled reference implementations. The honesty statements
+  above still hold in substance: the extension streams no
+  telemetry, connects to nothing, analyzes no video, ingests
+  no device data, executes no workflow, renders no front-end,
+  and adds no charge-control surface; what it adds is records
+  and read-time derivations, with each engine half stated
+  absent on the records themselves.
