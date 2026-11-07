@@ -139,3 +139,64 @@ top-level module is in `sys.stdlib_module_names`. Result at
 delivery: imports found `argparse, dataclasses, datetime, hashlib,
 http, json, os, ssl, sys, threading, urllib`; third-party imports:
 none. **OK: stdlib only.**
+
+## Final GAPS batch — Untiered Set 6 unit (2026-11-07)
+
+`test_gaps_batch.py` (34 tests, new) pins the extension surface in
+`src/devtools/extensions.py` (`DevToolsExtensions`, wrapping the
+core store) for the 7 open entries of this set's GAPS.md section
+(inventory idx 796–802; per-entry dispositions in `../BATCH.md`):
+
+| File | Covers |
+|---|---|
+| `test_gaps_batch.py` | idx 796 AI engines (reference form after re-judgment — stub labels, verbatim outcomes, view derives latest); idx 797 workspaces (declaration + session records, view derives latest reported status, stored record carries no status); idx 798 conversion jobs (five recorded stages as data, digest validation, view derives per-stage latest + overall); idx 799 governance gating (gate checks bound to same-project core subjects, pinned to change no core record; promotions with derived current state); idx 801 governance policies (rules as data, sequence/threshold validation, cross-project policy binding rejected); idx 800 detection (reference as drafted — scan + reported finding records, stub labels); idx 802 support cases (channel labels, `reference_transport`, state derived from event records, no message field); cross-cutting (tier-null recursive key scan over every extension record family and derived view; extension writes change no core record set; failed operations consume no ids; viewer write denied and audited `project_write:denied`); negative control (below) |
+
+Run (updated count):
+
+```bash
+PYTHONPATH=src python3 -m unittest discover -s tests        # 108 tests
+```
+
+Status after the batch: **108 tests, OK** (74 carried + 34 batch).
+The 7 core modules are byte-identical to the shipped build
+(SHA-256 re-verified against the group README's table before and
+after). Dependency check re-run: stdlib only (the new module adds
+`copy`). The founding `scratch/smoke.py` still passes (SMOKE OK),
+and an in-process smoke of the extension surface (policy →
+conversion job + stage → workspace + session → support case, all
+mutations audited under `ext_` actions) passed at delivery.
+
+### Batch negative control and mutation verification (fresh)
+
+`TestNegativeControlConversionDerivation` implements the batch's
+negative control in three-part form. The traced claim is that
+**a conversion stage's current reported status is its LATEST
+recorded outcome**: after `reported_in_progress` then
+`reported_completed` are recorded for a stage, the job view reads
+`reported_completed`. The mutant
+(`EarliestOutcomeMutantExtensions`) derives from the earliest
+outcome instead. The test asserts the canonical expectation from
+the real implementation, that the mutant would NOT produce it
+(it reads `reported_in_progress`), and — via a literal
+`assertRaises(AssertionError)` — that treating the mutant's
+outcome as the expected outcome fails.
+
+VERIFIED fresh in this tree (2026-11-07). The derivation seam
+`DevToolsExtensions._derive_conversion_stage` in
+`src/devtools/extensions.py` — the line
+`return outcomes[-1]["status_label"]` — was patched to
+`return outcomes[0]["status_label"]`, the exact live counterpart
+of the mutant. The full suite was run: **108 tests ran, exactly
+3 failed** (recorded in `scratch/gaps_mutation_run.txt`):
+
+- `test_gaps_batch.TestConversionJobs.test_job_view_derives_latest_stage_status`
+- `test_gaps_batch.TestNegativeControlConversionDerivation.test_control_passes`
+- `test_gaps_batch.TestNegativeControlConversionDerivation.test_earliest_outcome_mutant_is_rejected` (its canonical leg asserts the literal canonical value against the real implementation, so it trips under the live mutation as designed)
+
+`extensions.py` was then restored from the pre-mutation copy
+(`scratch/extensions.py.premutation`; SHA-256
+`483d234232f04dfc14c989f0045c4d5bdb7c93a22b1876dff65aeecc521d2bfe`,
+verified identical to the pre-mutation hash in
+`scratch/extensions.py.sha256`) and the suite re-run: **108
+tests, OK**. The suite catches this defect class; the negative
+control is not decorative.

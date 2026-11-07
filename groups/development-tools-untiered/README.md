@@ -278,6 +278,25 @@ failing set, store restored and SHA-256 verified (see
 `tests/README.md`). A live smoke drives the store and the HTTP
 service end to end (see `tests/README.md`).
 
+**Final GAPS batch (2026-11-07):** the 7 entries this set's
+GAPS.md section registered as new in this set are now closed by
+one new module, `src/devtools/extensions.py`
+(`DevToolsExtensions`), with the 7 core modules byte-identical
+and the suite at **108 tests, OK** (34 new in
+`tests/test_gaps_batch.py`). Per-entry dispositions and grounds
+are in `BATCH.md`: five entries built in records form
+(workspaces, conversion jobs, governance gating, governance
+configuration records, support cases), the secrets detection
+entry shipped as the labeled reference implementation its
+triage drafted, and the AI engines entry re-judged from
+build-extension to reference under the batch decision's
+re-judgment qualification (the entry names the models and
+agent runtimes themselves; this build contains no inference).
+Tier discipline is unchanged and now extends over the new
+surface: no extension record or derived view carries a tier,
+baseline, or impact-level key, pinned by a recursive scan in
+the batch tests.
+
 ## Byte-identity accounting
 
 `src/devtools/` is carried from the founding group
