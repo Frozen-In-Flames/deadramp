@@ -34,6 +34,7 @@ entry point for this group.)
 | `test_main_cli.py` | `python -m learn serve` subprocess with demo users alice/bob/carol/dana |
 | `test_negative_control.py` | Negative control (below) |
 | `test_additions.py` | Remainder addition (unit `addition:education-training-l2`) — spec integrity for the appended Pearson VUE sheet (membership, literal 4-claim table, verbatim evidence, census citation accounting, proctoring/near-miss pins) + 2 substrate cases (candidate testing flow; compliance derivation — the latter trips the drill below) |
+| `test_gaps_batch.py` | Final GAPS batch (Group 13 section) — one class per open entry pinning `src/learn/extensions.py` (presence-match derivations with per-match evidence, recruiting pipeline counts, simulation derived state, collaboration counts, dataset projections, notification receipts, and the five labeled reference surfaces: content/streaming, proctoring/proofing, scoring, hosting, integrations) + cross-cutting pins (no-score recursive key scan over the whole surface, ext-prefixed audit actions, denied-write audited + no id consumed) |
 | `learn_helpers.py` | Shared fixtures: demo users (ADMIN/INSTRUCTOR/LEARNER/AUDITOR), `USERS` registry, `fresh_store()`, and `make_store()` building a LearnStore + AuditLog + one course (created by ADMIN) |
 
 ## Negative control
@@ -111,3 +112,40 @@ additions module, tripping as designed:
 identical to the shipped hash — and the suite re-run: **79
 tests, OK**. The raw failure list is in
 `scratch/additions_mutation_run.txt`.
+
+## Final GAPS batch — Group 13 section (2026-11-07)
+
+The batch unit for this group's GAPS.md section added one new
+module, `src/learn/extensions.py` (`LearnExtensions` wrapping the
+core `LearnStore`; all core modules byte-identical), and
+`test_gaps_batch.py` (37 tests). Suite: **79 tests before, 116
+tests after, OK**. Per-entry dispositions are in `../BATCH.md`.
+
+### Fresh negative control (batch extension code)
+
+The load-bearing invariant of the new code is the presence-match
+seam `LearnExtensions._learner_completed_all`
+(`src/learn/extensions.py`): a learner matches an opportunity only
+when a **completed** core progress record exists for *every*
+required course — a learner missing one must NOT match, however the
+match views are reached. The seam's final line —
+
+```python
+return all(course_id in completed for course_id in required_course_ids)
+```
+
+— was patched in the live file to `return True`, so any learner
+with any progress record matched every opportunity. The full suite
+ran: **116 tests, exactly 2 failures** —
+
+- `test_gaps_batch.TestTalentMatching.test_presence_match_missing_course_not_fully_matched`
+- `test_gaps_batch.TestTalentMatching.test_match_learners_excludes_incomplete`
+
+`extensions.py` was then restored from the pre-mutation copy
+(`scratch/extensions.py.premutation`; SHA-256
+`b2795ca2690fa180848d08906a841d74bcf9123e1fd402ecc3ab61646b52ea11`,
+verified identical against `scratch/extensions.py.sha256`) and the
+suite re-run: **116 tests, OK**. The raw failure list is in
+`scratch/gaps_batch_mutation_run.txt`. The new-code control is not
+decorative: both match views (per-learner and per-opportunity) trip
+on the same seam.

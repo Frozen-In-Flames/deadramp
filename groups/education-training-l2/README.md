@@ -297,3 +297,27 @@ organizations. The L2 / FedRAMP Moderate equivalence used here is a
 planning/matching equivalence only. This build is **not a FedRAMP
 authorization and confers no CMMC certification**, and it claims
 neither.
+
+## Final GAPS batch (2026-11-07)
+
+The 11 open entries of this group's GAPS.md section are closed by
+one new module, `src/learn/extensions.py` (`LearnExtensions`
+wrapping the core store; all core modules byte-identical), with
+per-entry dispositions in `BATCH.md` and 37 new tests in
+`tests/test_gaps_batch.py` (suite 79 → 116, OK). Six entries are
+built in records form (talent/marketplace matching as deterministic
+presence-match derivations with per-match evidence and no ranking
+or fit value; recruiting/HCM pipeline records with derived counts;
+simulation session records with state derived from the latest
+recorded event; collaboration group/activity records; dataset
+declarations projected over core records; notification rules
+evaluated over derived compliance status into
+`reference_transport` receipts — nothing is sent). Five ship as
+labeled reference implementations (`reference_stub: True`): content
+authoring & delivery / media streaming, remote proctoring &
+identity proofing, deterministic scoring & AI grading, general
+cloud hosting / PaaS, and integrations & APIs. The founding
+no-score invariant binds the whole extension surface — no score or
+grade field exists anywhere on it, pinned by a recursive key scan
+in the tests — and a fresh mutation-verified negative control on
+the presence-match seam is recorded in `tests/README.md`.
