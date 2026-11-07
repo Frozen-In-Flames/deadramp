@@ -7,11 +7,12 @@ claim / control family it traces to.
 
 ```bash
 cd groups/law-enforcement-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 82 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 110 tests
 ```
 
 Status at delivery: **82 tests, OK** against the implementation in
-`../src/`. (Run exactly as above: helpers are imported as a top-level
+`../src/`; **110 tests, OK** after the final GAPS batch unit (see
+the batch section at the end of this file). (Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
 entry point for this group.)
@@ -32,6 +33,7 @@ entry point for this group.)
 | `test_service.py` | REST API — live HTTP server: health without auth, 401 unknown user / role mismatch, 404 envelope, viewer write → 403 audited `matter_write:denied`; full flow (matter → member → source → document → review lifecycle → verify match/mismatch/bad-base64 → saved search with `query_text` hashed by the service and never stored → annotation digest → citation check verbatim → report → audit admin-only → registry search scoped by membership → closed matter rejects writes with 400) |
 | `test_main_cli.py` | `python -m lawenf serve` subprocess with demo users alice/bob/carol |
 | `test_negative_control.py` | Negative controls (below) |
+| `test_gaps_batch.py` | Final GAPS batch — the extension surface (`lawenf/extensions.py`) pinned per entry: corpus registry records, validation requests/determinations verbatim, enhancement records, reference-labeled search runs and assistance requests, document operation records (core document byte-identical), exact key sets + signature privacy pins, both boundaries, and the fresh latest-label negative control (below) |
 | `lawenf_helpers.py` | Shared fixtures: demo users (ADMIN/MEMBER/VIEWER/OUTSIDER), `USERS` registry, canonical digests, `fresh_store()`, and `make_store()` building a LawEnfStore + AuditLog + one matter (MEMBER's, VIEWER added as a member) |
 
 ## Negative controls
@@ -71,3 +73,41 @@ Ran 82 tests — FAILED (failures=5)
 verified **SHA-256-identical** (`13c8649d…`, recorded in
 `scratch/store.py.sha256`); the suite is green again (82, OK). Raw
 drill output: `scratch/mutation-run.txt`.
+
+## Final GAPS batch — extension negative control
+
+`test_gaps_batch.py` adds the batch unit's fresh negative control
+for the new code in `src/lawenf/extensions.py`:
+
+3. **Latest-label mutant** (`_EarliestLabelExtensions`): the
+   `_latest_label` seam reads the earliest record of a stream
+   instead of the most recent one. The canonical test asserts the
+   real extension's corpus view reports the most recently recorded
+   maintenance label (`weekly-update` after `initial-load`), that
+   the mutant reports the earliest, and that treating the mutant's
+   outcome as the expectation raises `AssertionError`.
+
+### Mutation verification (the drill, performed on this tree)
+
+The mutant was additionally drilled against the real source:
+`LawEnfExtensions._latest_label` in `src/lawenf/extensions.py` was
+patched to read `records[0][key]` instead of `records[-1][key]`,
+and the suite was run:
+
+```
+Ran 110 tests — FAILED (failures=5)
+  test_gaps_batch.TestCorporaBuilt.test_view_derives_counts_and_latest
+  test_gaps_batch.TestValidationBuilt.test_determination_verbatim_and_view
+  test_gaps_batch.TestEnhancementBuilt.test_enhancement_view
+  test_gaps_batch.TestDocumentOperationsBuilt
+      .test_unknown_document_rejected_and_view
+  test_gaps_batch.TestLatestLabelNegativeControl
+      .test_canonical_latest_is_most_recent
+```
+
+All 5 failures are in the new batch module; no founding test
+failed. `extensions.py` was then restored from
+`scratch/extensions.py.premutation` and verified
+**SHA-256-identical** (recorded in `scratch/extensions.py.sha256`);
+the suite is green again (110, OK). Raw drill output:
+`scratch/gaps_batch_mutation_run.txt`.

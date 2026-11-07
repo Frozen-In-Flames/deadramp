@@ -29,7 +29,7 @@ recorded verbatim and never computed, normalized, or scored.
 
 ```bash
 cd groups/law-enforcement-l2
-PYTHONPATH=src python3 -m unittest discover -s tests     # 82 tests
+PYTHONPATH=src python3 -m unittest discover -s tests     # 110 tests
 PYTHONPATH=src python3 -m lawenf serve --port 8797       # HTTP service
 ```
 
@@ -108,3 +108,24 @@ membership is additionally required for every matter-scoped route
   membership-guard mutant was drilled against the real source
   (5 failures), restored, and SHA-256-verified — see
   [tests/README.md](tests/README.md).
+
+## Final GAPS batch (2026-11-07)
+
+The group's 6 Extended entries are closed by
+`src/lawenf/extensions.py` (`LawEnfExtensions`, a wrapper over
+the untouched core store; per-entry dispositions in
+[BATCH.md](BATCH.md)): the legal corpora as a corpus registry
+(registrations, source links, maintenance and license records —
+content never held), citation validation as validation requests
+with treatments recorded verbatim and determined elsewhere,
+editorial enhancement as digest-named headnote records,
+verbatim taxonomy assignments, and enrichment reports, and
+document content operations as deposit/render/redaction records
+over core documents. Corpus search & relevance and AI/ML
+research assistance ship as labeled reference implementations
+(`reference_stub: true`; queries and prompts named by digest
+only). Suite: 110 tests, all passing, including a fresh
+mutation-verified negative control on the extension's
+latest-label seam (5 failures under the earliest-record
+mutation). The extension surface is in-process only; the HTTP
+service above is unchanged.

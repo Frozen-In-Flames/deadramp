@@ -553,12 +553,12 @@ Platform-layer: encryption at rest is deployment-layer (TLS when configured); mu
 ## Group 34 — Law Enforcement L2 (2 forks)
 
 Extended functions, specified in groups/law-enforcement-l2/UNION-SPEC.md, not implemented:
-- [ ] open — The legal corpora themselves (primary / secondary law content databases and practical-guidance content: content, editorial maintenance, licensing)
-- [ ] open — Citation-validation engines (editorial systems that determine treatment; the core records a caller-supplied treatment and determines none)
-- [ ] open — Editorial enhancement systems (headnotes, taxonomy assignment, enrichment pipelines)
-- [ ] open — Corpus search & relevance engines (full-text indexing / ranking over the legal corpus; the core searches registry metadata only)
-- [ ] open — AI/ML research assistance (0 claims in these descriptions; named for union completeness)
-- [ ] open — Document content storage, rendering & redaction (the registry holds metadata + checksums only, by the privacy rule)
+- [x] built — The legal corpora themselves (primary / secondary law content databases and practical-guidance content: content, editorial maintenance, licensing)
+- [x] built — Citation-validation engines (editorial systems that determine treatment; the core records a caller-supplied treatment and determines none)
+- [x] built — Editorial enhancement systems (headnotes, taxonomy assignment, enrichment pipelines)
+- [x] reference — Corpus search & relevance engines (full-text indexing / ranking over the legal corpus; the core searches registry metadata only)
+- [x] reference — AI/ML research assistance (0 claims in these descriptions; named for union completeness)
+- [x] built — Document content storage, rendering & redaction (the registry holds metadata + checksums only, by the privacy rule)
 
 Category-discipline exclusions (0 claims, not built): surveillance, facial recognition, predictive policing, real-time intelligence feeds. Named absences (unclaimed, not built, not gaps): incident / case management, evidence management & chain of custody, criminal records / RMS, investigative case files — neither sibling is an operational law-enforcement platform; both are legal research platforms for government attorneys, and the core follows the claims.
 
