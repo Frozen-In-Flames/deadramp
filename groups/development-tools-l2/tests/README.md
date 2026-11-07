@@ -212,3 +212,72 @@ and verified byte-for-byte against its pre-drill SHA-256
 and the suite re-run green at 121 tests. Raw drill output is
 at `scratch/gaps_mutation_run.txt`; the pre-mutation copy is
 at `scratch/extensions.py.premutation`.
+
+## Final GAPS batch — second unit: remainder addition (2026-11-07)
+
+The batch's second unit in this group adds
+`tests/test_gaps_batch_addition.py` (23 tests) pinning the
+addition surface in `src/devtools/extensions_addition.py`:
+application definition records for the no-code / low-code
+platform entry (idx 578 — components held as inert data,
+deep-copied at the boundary, versioned on revision;
+`definition_only` and `built_here` / `run_here` /
+`executed_here` / `rendered_here` all pinned), publication
+records reported by the external platform (status vocabulary,
+definition-revision snapshot, optional core-environment
+binding), the read-time application view (stored definition
+carries no count or status), the labeled document-generation
+reference records for the SSP generation entry (idx 579 —
+`reference_stub: True`, `generated_here: False`,
+`document_held_here: False`; outcome labels verbatim; the
+derived generation view), the core-unchanged pin (creating
+addition records changes no core record set), RBAC denials
+audited under the core log, mutations audited under the
+`exta_` prefix, and the derived addition summary. All 8
+pre-existing `src/devtools/` modules are byte-identical to
+the shipped build plus the first batch unit (hashes
+re-verified against `scratch/prebatch-addition-src.sha256`
+at build time); the addition module only reads core records
+and appends to the core audit log. Status after this unit:
+**144 tests, OK**.
+
+**Fresh negative control (this unit): the earliest-reading
+latest-label seam.** The load-bearing invariant of both
+derived views is that the current reported state is the
+*latest* record reported: a publication recorded after
+another supersedes it, and an outcome recorded after another
+supersedes it. `LatestLabelNegativeControlTests` shares the
+record tables with a subclass that breaks the seam
+(`_latest_label` returns the earliest record's label). The
+canonical test asserts the three properties the rest of the
+suite relies on: (1) the real implementation derives the
+latest publication status (`reported_failed` after
+`reported_published` then `reported_failed`); (2) the mutant
+would NOT produce it — it reports the superseded
+`reported_published`; and (3) treating the mutant outcome as
+the expectation raises `AssertionError` literally. The
+mutant is defined inside the test; production code on disk
+is untouched by the test itself.
+
+**Mutation drill (performed at build time).** The real
+`extensions_addition.py` was mutated so `_latest_label`
+returns `records[0][key]` instead of `records[-1][key]`
+(occurrence count asserted = 1 before replacing), and the
+full suite was run:
+
+| code under test | result |
+| --- | --- |
+| real implementation | 144 tests, all pass |
+| earliest-reading mutant | exactly **3 failures**: `ApplicationPublicationTests.test_application_view_derives_and_stores_nothing`, `DocumentGenerationReferenceTests.test_view_derives_latest_outcome_and_stores_nothing`, and `LatestLabelNegativeControlTests.test_canonical_latest_publication_status` |
+
+All three failures sit on the latest-label surface and
+nothing else trips, which is the specificity the drill
+exists to prove: the suite detects exactly the invariant
+the seam guards. `extensions_addition.py` was then restored
+from the pre-mutation copy and verified byte-for-byte
+against its pre-drill SHA-256
+(`416819c1cc9ee1d2b899e549b7d340a0335aa34ed01f0455e3a17c5e1d5f60b5`),
+and the suite re-run green at 144 tests. Raw drill output
+is at `scratch/gaps_addition_mutation_run.txt`; the
+pre-mutation copy is at
+`scratch/extensions_addition.py.premutation`.

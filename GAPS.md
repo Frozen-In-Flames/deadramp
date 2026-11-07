@@ -966,8 +966,8 @@ Enlargements of families already registered under Group 33: automated evidence-v
 ## Remainder Addition — Development Tools L2 (+4 forks)
 
 New extended functions from the addition forks, specified in groups/development-tools-l2/ADDENDUM.md, not implemented:
-- [ ] open — No-code / low-code application development platform: visual application builder & runtime (Unqork)
-- [ ] open — Compliance documentation & SSP generation tooling (Cloud.gov; distinct from assessment automation: this is documentation generation)
+- [x] built — No-code / low-code application development platform: visual application builder & runtime (Unqork)
+- [x] reference — Compliance documentation & SSP generation tooling (Cloud.gov; distinct from assessment automation: this is documentation generation)
 
 Enlargements of families already registered under Group 29: CI / CD execution engines (+Copado, +FGC); business modeling & automation engines (+Copado, first claimant at this tier); landing-zone provisioning & hosted platform operations (+FGC, +Cloud.gov); static code analysis engine (+Copado by substance: "code scanning" / "quality gates" — the family claim did not fire); release automation & data migration engine (+Copado by substance: Salesforce metadata deployment — the family's phrasing did not fire on the reversed wording); external-system integration engines (+Copado). One addition fork claims zero families (Unqork; its lone verb "build" is not a CI claim and its visual builder is never called "visual"), pinned in tests.
 

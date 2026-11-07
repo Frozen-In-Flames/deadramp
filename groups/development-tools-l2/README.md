@@ -337,3 +337,36 @@ and grounds are in `BATCH.md`. Suite: 78 → **121 tests, OK**,
 including a fresh mutation-verified negative control (the
 kill-switch-blind flag evaluation; drill recorded in
 `tests/README.md`).
+
+## Final GAPS batch — remainder addition unit (2026-11-07)
+
+The batch's second unit in this group closed the 2 open
+entries of the "Remainder Addition — Development Tools L2
+(+4 forks)" section in `src/devtools/extensions_addition.py`
+(new module; all 8 pre-existing modules, the first batch
+unit's `extensions.py` included, remain byte-identical,
+hashes re-verified). The no-code / low-code application
+development platform entry (Unqork) landed as built in the
+definitions-as-data form: application definition records
+whose components are inert recorded data, versioned on
+revision (`definition_only`; `built_here` / `run_here` /
+`executed_here` / `rendered_here: false` on every record),
+publication outcomes recorded as reported by the external
+platform, and an application view derived at read — no
+application is built or run anywhere in this build, exactly
+the bound ADDENDUM gap 16 records. The compliance
+documentation & SSP generation tooling entry (Cloud.gov)
+shipped as a labeled reference implementation
+(`reference_stub: true`, status `recorded_reference_only`,
+`generated_here: false`, `document_held_here: false`):
+generation references and reported outcome records naming
+the document, the framework / control-documentation source,
+and the system by opaque reference only — this substrate
+holds no control documentation to assemble a document from,
+so the reference form is the honest closure, kept distinct
+from the first unit's assessment-automation reference as
+the entry's own text insists. Per-entry dispositions and
+grounds are in `BATCH-ADDITION.md`. Suite: 121 → **144
+tests, OK**, including a fresh mutation-verified negative
+control (the earliest-reading latest-label seam; drill
+recorded in `tests/README.md`).
