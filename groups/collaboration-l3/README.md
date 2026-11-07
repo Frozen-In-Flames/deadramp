@@ -246,3 +246,27 @@ Further, plainly:
   certification**, and it does not claim either. The control mapping
   above states which baseline families the build's features answer
   to; nothing more.
+
+## Final GAPS batch unit (Group 6 section, idx 72–80)
+
+The 9 open gap entries of this group's GAPS.md section are closed
+by one new module, `src/collab/extensions.py` (`CollabExtensions`
+wrapping the core store; all seven core modules byte-identical),
+with tests in `tests/test_gaps_batch.py`. Built as records plus
+read-time derivations over the group's own records: records &
+governance (retention-policy, legal-hold, and disposition-decision
+records; current hold state and disposition eligibility derived at
+read, nothing executed — retention enforcement stays the
+deployment layer's records schedule), task & project management
+(project/milestone/card-link/dependency records over core board
+cards, counts and states only), learning records (completions
+verbatim, nothing assessed), and knowledge management (articles
+whose stored shape holds only tags and provenance, text in
+append-only revisions). Shipped as labeled reference
+implementations (`reference_stub: true`): workflow definitions
+held as data and never run, AI assistance & speech (reported
+outputs as opaque references only), voice/telephony and
+meetings/video session records (no media), and e-signature
+envelopes/ceremonies (no field can hold a signature value). The
+auditor role holds no extension permission. Per-entry record:
+[`BATCH.md`](BATCH.md). Suite: 251 → 289 tests.

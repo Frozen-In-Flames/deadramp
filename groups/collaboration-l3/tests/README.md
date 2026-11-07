@@ -229,3 +229,54 @@ L3-specific notes:
   builds a fresh server per test so failure counters never leak
   between tests, and the expiry test uses `lockout_seconds=0.3`
   with a 0.5 s sleep rather than mocking the clock.
+
+## Final GAPS batch additions (Group 6 section, idx 72–80)
+
+`test_gaps_batch.py` (38 tests) pins the extension surface of
+`src/collab/extensions.py` (see `../BATCH.md` for the per-entry
+disposition): governance policy/hold/decision shapes and the
+derived-at-read governance view; project/milestone/card-state
+derivations with core cards pinned byte-identical; learning
+records (`assessed_here: False`); the knowledge-base stored-shape
+pin (tags + provenance only) with append-only revisions; the five
+reference stubs' labels, including the behavioral pins that
+registering a workflow definition changes no core record and that
+no signature value or AI output text can be smuggled into a record
+(`TypeError`); and the access discipline (auditor denied on every
+extension operation, viewer writes denied and audited
+`ext_*:denied`, extension mutations on the hash-chained log).
+
+**Fresh negative control (batch): the legal-hold current-state
+derivation.** `CollabExtensions._current_hold_label` returns the
+latest recorded state label; the traced claim is that once a
+release is recorded, the hold no longer blocks disposition.
+`test_gaps_batch.py::TestNegativeControlHoldDerivation` carries
+the three-leg form (canonical latest-label-wins on the real
+implementation; an earliest-label mutant subclass still reads the
+released hold as active and refuses the disposition; treating the
+mutant's outcome as the expectation fails via
+`assertRaises(AssertionError)`).
+
+**Batch drill (live mutation, performed on this tree).**
+`src/collab/extensions.py` was copied to
+`../scratch/extensions.py.premutation` (SHA-256 in
+`../scratch/extensions.py.sha256`) and the return line inside
+`_current_hold_label` was patched from `states[-1]` to
+`states[0]` — the earliest-label mutant, scoped to that one seam
+(the identical line in `_current_card_label` was not touched).
+The full suite ran: **289 tests, exactly 3 did not pass** (2
+failures, 1 error), all in the batch's own new tests and all
+hold-derivation-dependent: `TestLegalHolds
+.test_current_state_derived_from_latest` (failure),
+`TestNegativeControlHoldDerivation
+.test_canonical_latest_label_wins` (failure), and
+`TestRetentionDecisions.test_active_hold_blocks_then_release_opens`
+(error — its fixture path records a disposition decision after the
+hold's release; under the mutant the gate's `ValidationError`
+escapes as an error rather than a failed assertion). No core test
+failed. `extensions.py` was restored from the pre-mutation copy —
+SHA-256 verified identical — and the suite re-ran: **289 tests,
+OK**. Raw output: `../scratch/gaps_batch_mutation_run.txt`.
+
+Suite total after the batch unit: **289 tests, OK** (251 shipped +
+38 batch).
