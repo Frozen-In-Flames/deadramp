@@ -150,3 +150,29 @@ cryptography. Full traceability table and precision notes in
   sentences (for the archiving/storage-management and
   retention/retrieval families) — recorded as the coincidence
   direction; no citation was load-bearing.
+
+## Final GAPS batch (2026-11-07)
+
+The 10 Extended gaps above are closed in their in-substrate
+records forms by one new module, `src/storage/extensions.py`
+(`StorageExtensions` wrapping the core store; all seven core
+modules byte-identical), with per-entry dispositions in
+[`BATCH.md`](BATCH.md): payload **custody** records (no content
+is held — `content_held_here: False`, with the reported size
+checked against the recorded size by derivation), ingest-batch
+records with counts stored as reported (a batch archives
+nothing), encryption **profile** records over the core custody
+records (algorithm and the fork's own validation posture held
+as labels; nothing is encrypted here and no cryptography is
+performed), delivery records and export manifests (files and
+transports described, never produced), enforcement **decision**
+records gated on the derived retention state (a decision for a
+disposed message is refused — the batch's fresh
+mutation-verified negative control), and disposition **outcome**
+records (the deployment layer's reported result; nothing is
+destroyed here). The four stub entries ship as labeled
+reference implementations (`reference_stub: True`): the
+full-text index reference (no query surface of any kind
+exists), key-hardware inventory records, supervision console
+definitions and assignments held as data, and connector sync
+receipts. Suite: 79 → **122 tests**, all passing.

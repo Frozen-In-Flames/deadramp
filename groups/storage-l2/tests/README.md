@@ -7,8 +7,9 @@ PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
 **79 tests, all passing** (Python 3 standard library `unittest`
-only). Each test module's header names the core function, spec
-claim, or control family it traces to.
+only) at the singleton ship; **122 tests, all passing** after the
+final GAPS batch unit below. Each test module's header names
+the core function, spec claim, or control family it traces to.
 
 | Module | Covers |
 |---|---|
@@ -28,6 +29,7 @@ claim, or control family it traces to.
 | `test_main_cli.py` | CLI argument handling and demo-user wiring |
 | `test_specs.py` | Spec integrity: membership == census unit {F1304222071}, recorded fields match `forks.json`, taxonomy == the 11 own-description families, evidence verbatim, census citations verify, checked absences hold at token level |
 | `test_negative_control.py` | The mutation-verified negative control (below) |
+| `test_gaps_batch.py` | Final GAPS batch (idx 725–734): payload custody, ingest batches, index references, encryption profiles, key hardware, deliveries & export manifests, console definitions & assignments, enforcement decisions, disposition outcomes, connector syncs — exact key sets, honesty labels, no-core-change pins, recursive forbidden-key scan, `TypeError` pins, no-crypto import scan, and the batch's fresh negative control (below) |
 
 ## Negative control — mutation-verified
 
@@ -71,3 +73,42 @@ The store was then restored from `scratch/store.py.premutation`
 and verified **byte-identical by SHA-256**
 (`scratch/store.py.sha256`), and the full suite re-ran green:
 **79 tests, OK**.
+
+## Final GAPS batch — fresh negative control (2026-11-07)
+
+The batch's new code (`src/storage/extensions.py`) lands its own
+mutation-verified negative control, on the enforcement-eligibility
+seam `StorageExtensions._derive_enforcement_eligibility`: an
+enforcement decision may be recorded for a message in any derived
+retention state except `disposed` — once disposition is recorded
+there is nothing left in this substrate for a decision to
+concern, so the decision must be refused whole (nothing stored,
+no id consumed). An oracle that passes whether or not the gate
+holds is testing that code ran, not that the gate is real, so it
+is verified two ways:
+
+1. **In-suite mutant** (`test_gaps_batch.py`,
+   `TestEnforcementEligibilityNegativeControl`): the canonical
+   refusal is asserted against the real implementation; a mutant
+   subclass whose seam reports every state eligible is shown to
+   wave the same decision through; treating the mutant's outcome
+   as the expectation fails.
+2. **External drill** (performed on this tree, recorded in
+   `scratch/extensions-mutation-run.txt`): the eligibility
+   comparison in the real `src/storage/extensions.py` was
+   patched from `return retention_state != "disposed"` to
+   `return True`, the full suite re-run, and the file then
+   restored.
+
+**Drill result: exactly 2 tests failed out of 122**, both in the
+batch's own new module and both pinning the seam:
+
+- `test_gaps_batch.TestEnforcementDecisions.test_view_derives_current_state`
+- `test_gaps_batch.TestEnforcementEligibilityNegativeControl.test_decision_for_disposed_message_refused`
+
+All 79 pre-existing core tests still passed against the mutant —
+it changes only whether a disposed message is
+enforcement-eligible, which is the point. The file was restored
+from `scratch/extensions.py.premutation` and verified
+**byte-identical by SHA-256** (`scratch/extensions.py.sha256`),
+and the full suite re-ran green: **122 tests, OK**.
