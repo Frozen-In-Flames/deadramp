@@ -7,11 +7,12 @@ claim / control family it traces to.
 
 ```bash
 cd groups/construction-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 146 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 177 tests
 ```
 
 Status at delivery: **146 tests, OK** against the implementation in
-`../src/`. (Run exactly as above: helpers are imported as a top-level
+`../src/`. After the final GAPS batch unit (see the last section):
+**177 tests, OK**. (Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
 entry point for this group.)
@@ -35,6 +36,7 @@ entry point for this group.)
 | `test_service.py` | REST API — live HTTP server: health, 401 unknown user / role mismatch, 403 viewer write + operator violation create (denied attempts audited with `:denied`), full flow across the main entities (org → project + participants → document create/PATCH → contract lifecycle with `?now=` expiry → submittal/RFI/milestone/dispatch/inspection/punch/incident → worker/time-entry/payroll → violation + compliance endpoint → costs + cost-summary → alerts/report/search → audit), compliance without `org_id` → 400, `audit_read` admin-only, 400/404 envelopes |
 | `test_main_cli.py` | `python -m construct serve` subprocess with demo users alice/bob/carol |
 | `test_negative_control.py` | Negative control (below) |
+| `test_gaps_batch.py` | Final GAPS batch extension surface — estimate records with totals derived at read and cost data held as a source reference only, field-report records with reported position/observation labels verbatim (`tracked_here`/`collected_here` False, no tracking state), prevailing wage (rate tables as data, wage lines as recorded inputs, base/fringe/gross derived exactly at read via `_compute_wage_amounts`, certified-payroll report totals derived, e-filing as a labeled reference with `filed_here` False), route plans held as data with verbatim reported outcomes (`optimized_here` False, core dispatch byte-identical), and the five labeled reference stubs (telematics with reported driver-score labels only and no computed score; template/clause/playbook metadata with reported negotiation outcomes and `redlined_here` False; e-signature requests/outcomes with `signed_here` False and no signature-value field; AI extraction/assistance as opaque result refs with `inference_here` False; workflow definitions as data the registry never executes), plus RBAC-denial auditing with no id consumed, `TypeError` on unexpected kwargs, a no-float scan, and the batch's fresh negative control (below) |
 | `construct_helpers.py` | Shared fixtures: demo users (ADMIN/OPERATOR/VIEWER), `USERS` registry, `fresh_store()`, and `make_store()` building a ConstructStore + AuditLog + an active project + a prime org (tier 1 participant) + a sub org (tier 2 participant), all created by ADMIN |
 
 ## Negative control
@@ -85,3 +87,40 @@ never read no_records. The full suite was run: **146 tests ran,
 recorded in `scratch/store.py.sha256` and verified identical after
 restore) and the suite re-run: **146 tests, OK**. The suite catches
 this defect class; the negative control is not decorative.
+
+## Final GAPS batch — negative control (fresh, for the new code)
+
+The batch's fresh invariant is the prevailing-wage derivation in
+`src/construct/extensions.py`: a wage line's fringe amount is
+computed from its rate table's recorded fringe rate and included
+in the gross, by the single seam `_compute_wage_amounts` (exact
+`Fraction` arithmetic: rate x minutes / 60, derived at read,
+never stored). An oracle that accepts a zero fringe is testing
+that code ran, not that the wage math holds — so it is verified
+two ways:
+
+1. **In-suite control**
+   (`test_gaps_batch.TestWageSeamNegativeControl`): the canonical
+   case (base 3000, fringe 500, 480 minutes) yields base 24000,
+   fringe 4000, gross 28000 from both the seam and the wage-line
+   view; a local mutant that drops the fringe is shown NOT to
+   produce the canonical gross, and treating the mutant's gross
+   as the expectation raises `AssertionError`.
+2. **External drill** (performed on this tree, recorded in
+   `scratch/gaps_batch_mutation_run.txt`): the seam's fringe
+   term in the real `src/construct/extensions.py` was patched
+   to `Fraction(0)` and the full suite re-run.
+
+**Drill result: exactly 4 failures out of 177 tests:**
+
+- `test_gaps_batch.TestPrevailingWage.test_wage_amounts_derived_exact_never_stored`
+- `test_gaps_batch.TestPrevailingWage.test_certified_payroll_report_totals_derived`
+- `test_gaps_batch.TestWageSeamNegativeControl.test_fringe_canonical_but_mutant_not`
+- `test_gaps_batch.TestWageSeamNegativeControl.test_view_uses_the_seam`
+
+Every other test still passed against the mutant, and no core
+test failed (the mutant weakens only the new wage derivation,
+nothing else). The module was then restored from
+`scratch/extensions.py.premutation` and verified
+**byte-identical by SHA-256** (`scratch/extensions.py.sha256`),
+and the full suite re-ran green: **177 tests, OK**.

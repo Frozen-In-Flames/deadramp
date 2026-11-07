@@ -243,3 +243,28 @@ PYTHONPATH=src python3 -m unittest discover -s tests
 
 See `tests/README.md` for the test count, the coverage map, and the
 mutation-verified negative-control record.
+
+## Final GAPS batch (2026-11-07)
+
+The 9 Extended functions named in the spec's gaps are closed in
+their records forms by `src/construct/extensions.py`
+(`ConstructExtensions`, 31 new tests in
+`tests/test_gaps_batch.py`; see `BATCH.md` for the per-entry
+disposition): cost estimating as estimate records whose line
+totals and total are derived at read (the proprietary cost data
+held as a source reference only), GPS / field collection as
+field-report records holding reported labels verbatim, with no
+tracking state, prevailing wage as rate tables held as data
+with base, fringe, and gross derived exactly at read from
+recorded minutes, certified-payroll reports derived from those
+computations, and e-filing as a labeled reference, and dispatch
+routing as route records held as data with verbatim reported
+outcomes — plus labeled reference implementations for fleet
+telematics (driver scores as reported labels only, nothing
+computed), contract templates, clauses, and playbooks with
+reported negotiation outcomes, e-signature requests and
+outcomes, AI extraction and negotiation assistance as opaque
+result references, and workflow definitions the registry never
+executes. Nothing in the batch senses, monitors, signs,
+infers, optimizes, or executes; every record carries its
+`*_here: False` label.
