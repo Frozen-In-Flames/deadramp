@@ -207,3 +207,29 @@ audit entry makes `verify_chain()` report `(False, 1)` (details in
   union (carried under the recorded boundary decision) or to the
   High/L3-adjacent control families in `UNION-SPEC.md`. This build
   is not a FedRAMP authorization and confers no CMMC certification.
+
+## Final GAPS batch (this group's section)
+
+The five open entries of this group's GAPS.md section
+(Singleton 39) are closed by `src/cms/extensions.py`
+(`CmsExtensions`, store-level only; the REST API is unchanged)
+with per-entry dispositions recorded in `BATCH.md`: the
+physical-content intake & digitization pipeline is built as
+intake records, verbatim stage events with the current stage
+derived at read, and outcome records binding core asset
+registrations (scanning/conversion themselves are not performed
+here); the three learned ML/AI engines (classification,
+extraction, enrichment) and the content services platform
+runtime ship as labeled reference implementations
+(`reference_stub: True`) — the learned engines re-judged from
+the drafted build-extension triage under the batch decision's
+qualification 1, on the grounds recorded in `BATCH.md` (a
+learned engine's substance is inference over content bodies
+this substrate never holds; enrichment's own registered text
+states the substrate derives no metadata). Extension writes are
+fail-closed on the core's hash-chained audit log (audit-first
+commit), and the auditor role is denied the extension surface
+while its core audit duty works. Suite: 176 tests (146 before),
+including a fresh mutation-verified negative control on the
+intake current-stage seam (exactly 2 failures under the
+earliest-reading mutant).

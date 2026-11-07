@@ -161,3 +161,44 @@ L3-specific notes:
   class server; per-username failure counts there (alice 1, dave 1,
   mallory 1) stay below the AC-7 default threshold of 3, so the
   inherited expectations are unaffected by the lockout uplift.
+
+## Final GAPS batch coverage (Singleton 39 section)
+
+The batch unit for this group's own GAPS.md section adds
+`test_gaps_batch.py` (30 tests) pinning the extension surface in
+`../src/cms/extensions.py` entry by entry:
+
+| File | Tests | Covers |
+|---|---:|---|
+| `test_gaps_batch.py` | 30 | idx 394 classification reference (job shape/labels, core binding resolution, digest validation, no-content-parameter pin, verbatim outcomes, derived job view, core item untouched); idx 395 extraction reference (verbatim field pairs under exact pair shape, boundary copies); idx 396 enrichment reference (outcome recorded, never applied — core metadata/revision pinned unchanged); idx 397 digitization pipeline (intake exact key set, count boundary, derived current stage, asset binding, summary counts); idx 398 platform-runtime reference labels; High apparatus on the extension (auditor denied write + read with `:denied` audit entries, auditor's core chain verify + query duty intact, viewer write denials, recursive no-score key scan, AU-5 fail-closed create against a broken JSONL path — no record, no id consumed); fresh negative control (below) |
+
+Suite after the batch: **176 tests, OK** (146 before).
+
+### Negative control (fresh, for the new code)
+
+**`test_gaps_batch.py::TestIntakeStageNegativeControl`**: the
+intake current-stage seam
+`CmsExtensions._current_intake_stage` derives an intake's
+current stage from its recorded stage events — the *latest*
+event's label, never stored. The in-suite control is
+three-legged: the canonical extension reads `quality_checked`
+after three ordered stage events; the `EarliestStageExtensions`
+mutant subclass (seam reads the earliest event) reads
+`in_transit` instead; and asserting the canonical expectation
+against the mutant raises `AssertionError`.
+
+Mutation verification: VERIFIED for this batch unit
+(2026-11-07). The seam's return in the real
+`src/cms/extensions.py` was patched from
+`return steps[-1]["label"]` to `return steps[0]["label"]`
+(occurrence count asserted = 1 before patching), the suite was
+run: **176 tests ran, exactly 2 failed** —
+- `test_gaps_batch.TestDigitizationPipeline.test_stage_derived_at_read_never_stored`
+- `test_gaps_batch.TestIntakeStageNegativeControl.test_canonical_current_stage_is_latest`
+
+`extensions.py` was then restored from
+`scratch/extensions.py.premutation` (SHA-256
+`404d2dd3be80e208a677d8eea98563473b309bea3502f1229ed21de71e23361e`,
+verified identical before and after the drill) and the suite
+re-run: **176 tests, OK**. The raw mutated run is preserved in
+`scratch/gaps_batch_mutation_run.txt`.
