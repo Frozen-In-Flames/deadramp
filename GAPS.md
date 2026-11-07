@@ -1193,9 +1193,9 @@ Existing gaps gaining members from this fork: remote proctoring & identity proof
 ## Remainder Addition — Finance L3-adjacent (+1 fork)
 
 New extended functions from the addition fork, specified in groups/finance-l3/ADDENDUM.md, not implemented:
-- [ ] open — Corporate performance management (CPM) engine: consolidation, planning, budgeting, and forecasting as computation (registered with claim adjacency — the fork claims reporting in its records form; the computation layer is Extended. Recorded as DISTINCT from the federal financial management system of record gap registered at L2: CPM layer versus general-ledger system of record, on the L2 addition's own non-conflation precedent)
-- [ ] open — Data integration & connector surface: ERP integration and Office / spreadsheet add-in connectivity (asserted in substance; the API-platform family's verbatim phrase is absent, so no claim fired)
-- [ ] open — Solution marketplace & application extensibility: a marketplace of add-on solutions over the platform (asserted in substance from the fork's own marketplace prose)
+- [x] built — Corporate performance management (CPM) engine: consolidation, planning, budgeting, and forecasting as computation (registered with claim adjacency — the fork claims reporting in its records form; the computation layer is Extended. Recorded as DISTINCT from the federal financial management system of record gap registered at L2: CPM layer versus general-ledger system of record, on the L2 addition's own non-conflation precedent)
+- [x] reference — Data integration & connector surface: ERP integration and Office / spreadsheet add-in connectivity (asserted in substance; the API-platform family's verbatim phrase is absent, so no claim fired)
+- [x] built — Solution marketplace & application extensibility: a marketplace of add-on solutions over the platform (asserted in substance from the fork's own marketplace prose)
 
 Existing gaps gaining claimants: none — streaming / real-time reporting pipelines explicitly gain none (no real-time token; the claimed reporting is the on-read records form). Named absences all stand at this tier, token-verified: trading & investment execution (no trade / invest / execute token — forecasting is planning prose, not execution), banking, payroll, lending & credit, tax, GRC platform. Platform notes recorded for the fork (its own cloud hosting, fault-tolerant architecture, client distribution) with nothing inherited by the build; its hosting posture does not transfer and the SC-13 gap stands.
 

@@ -280,3 +280,71 @@ recorded in `scratch/extensions.py.premutation-gaps.sha256`
 and verified identical after restore) and the full suite
 re-run: **293 tests, OK**. Raw failure list:
 `scratch/gaps_batch_mutation_run.txt`.
+
+## Final GAPS batch — remainder-addition extension coverage (added 2026-11-07, second unit)
+
+`tests/test_gaps_batch_addition.py` (30 tests) pins the
+remainder-addition surface in `src/finance/extensions_addition.py`
+(`FinanceExtensionsAddition`): the CPM layer built in records
+form (entity structure with parent binding, plan definitions
+with currency inherited from the entity, signed integer-cent
+plan lines with the bool/float boundary rejecting and consuming
+no id, forecast figures recorded verbatim with
+`computed_here: False`, plan totals and per-currency
+consolidation totals derived at read with the stored records
+carrying no total), the connector surface as the labeled
+reference implementation (`reference_stub` /
+`reference_transport: True` on every connector and receipt
+record; a sync receipt pinned to import nothing — core
+participants, accruals, and program summary byte-identical
+across it), and the solution marketplace built as catalog
+records (listings held verbatim as data with
+`distributed_here` / `installed_here: False`; adoption reports
+pinned to leave the bound listing byte-identical). Cross-cutting
+pins: `exta_`-prefixed audit actions with `:denied` denials,
+viewer write denial audited, outsider membership denial,
+platform-admin reach, the separated auditor role denied every
+addition operation while its core audit duty (trail read,
+`verify_chain()` → `(True, None)`) works, cross-program
+invisibility, audit-failure rollback of record and id, the
+standing trading & investment execution absence (no order /
+execution / payment / compute entry point on the class), and a
+recursive forbidden-key scan over one record of every kind plus
+the three derived views (no bank-detail / identifier / credit /
+score key fragment; no `rate` / `trend` / `average` /
+`grand_total` key anywhere).
+
+## Negative control #4 — per-currency totals seam (batch addition, 2026-11-07)
+
+Canonical expectation (`TestTotalsByCurrencyNegativeControl`):
+consolidation sums recorded amounts per currency label — USD
+amounts under USD, EUR amounts under EUR, never mixed. The
+in-suite mutant sums everything under the first label seen
+(a cross-currency sum) and must misstate every multi-currency
+case; the sanity leg pins that both agree on a single-currency
+input, so the control discriminates the defect, not the code
+path.
+
+Mutation verification: VERIFIED by the coordinator
+(2026-11-07). `_totals_by_currency`
+(`src/finance/extensions_addition.py`) was replaced by the
+single-bucket mutant — the exact live counterpart of the
+mutant in the test module — applied by exact line-range
+replacement (lines 170–183, both boundary lines asserted
+before writing; two earlier patch attempts failed their
+asserts and left the file untouched, verified by the suite
+running green between attempts), and the full suite was run:
+**323 tests ran, exactly 3 failed**:
+
+- `test_gaps_batch_addition.TestCpmBuilt.test_consolidation_view_per_currency_never_mixed`
+- `test_gaps_batch_addition.TestTotalsByCurrencyNegativeControl.test_canonical_totals_from_seam`
+- `test_gaps_batch_addition.TestTotalsByCurrencyNegativeControl.test_canonical_totals_match_view`
+
+`extensions_addition.py` was then restored from the
+pre-mutation copy (`scratch/extensions_addition.py.premutation`;
+SHA-256
+`55fa5ca8557416f87954a918d0b707d6f9b7c89ca63896a19a87327b0d7da545`,
+recorded in `scratch/extensions_addition.py.sha256` and
+verified identical after restore) and the full suite re-run:
+**323 tests, OK**. Raw failure list:
+`scratch/gaps_batch_addition_mutation_run.txt`.

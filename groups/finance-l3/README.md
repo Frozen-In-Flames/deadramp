@@ -335,3 +335,31 @@ execution, or payment operation, pinned by test. Tests:
 **259 → 293**, all passing, including a fresh
 mutation-verified negative control on the by-label count seam
 (`_count_by_label`) recorded in `tests/README.md`.
+
+## Final GAPS batch — remainder addition
+
+Per [`BATCH-ADDITION.md`](BATCH-ADDITION.md) (second unit: the
+3 open entries of the "Remainder Addition — Finance L3-adjacent
+(+1 fork)" section, idx 667–669): the OneStream fork's CPM
+layer now has its records layer in
+`src/finance/extensions_addition.py`
+(`FinanceExtensionsAddition` over the untouched core store;
+all 8 pre-existing modules byte-identical, including the first
+unit's `extensions.py`). Corporate performance management
+closes built in records form (entity structure, plan
+definitions, signed integer-cent plan lines; consolidation
+derived at read per currency label, never across labels;
+forecast figures recorded verbatim, `computed_here: False` —
+and no general-ledger records, keeping the entry's own
+distinction from the L2 system-of-record build); the data
+integration & connector surface closes as the labeled
+reference implementation (`reference_stub` /
+`reference_transport: True`, receipts pinned to import
+nothing); the solution marketplace closes built as catalog
+records (listings and adoptions as data,
+`distributed_here` / `installed_here: False` — the storefront
+itself is a deployment property under PLATFORM-LAYER.md
+decision 6). No re-judgments. Tests: **293 → 323**, all
+passing, including a fresh mutation-verified negative control
+on the per-currency totals seam (`_totals_by_currency`)
+recorded in `tests/README.md`.
