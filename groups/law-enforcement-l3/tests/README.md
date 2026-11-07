@@ -1,18 +1,20 @@
 # Law Enforcement L3-adjacent — test suite
 
-**110 tests, all passing** (Python standard-library `unittest` only;
+**156 tests, all passing** (Python standard-library `unittest` only;
 no third-party dependencies). Inherited from Group 34's suite
 (82 tests), with the adaptations listed below plus 20 new tests for
 the High-baseline uplifts (1 in `test_access.py`, 19 in
 `test_l3_uplifts.py`), plus 8 remainder-addition tests in
-`test_additions.py` (see the additions section at the end).
+`test_additions.py` (see the additions section at the end), plus
+46 final-GAPS-batch tests in `test_gaps_batch.py` (see the batch
+section at the end).
 
 ## Running
 
 ```bash
 cd groups/law-enforcement-l3
 PYTHONPATH=src python3 -m unittest discover -s tests -p 'test_*.py'
-# -> Ran 110 tests ... OK
+# -> Ran 156 tests ... OK
 ```
 
 (`PYTHONPATH=src` is the documented runner, as in Group 34; the
@@ -138,3 +140,71 @@ exactly 1 from the additions module,
 to the shipped hash (`18070d55…`); the full suite re-ran green
 after the restore. Raw failure list:
 `scratch/additions_mutation_run.txt`.
+
+## Final GAPS batch (unit Group 35 — this group's own verticals)
+
+The suite grows **110 → 156 tests** with `tests/test_gaps_batch.py`
+(46 tests), pinning the batch extension surface
+(`src/lawenf/extensions.py`) that closes this group's 8 own
+verticals: 6 built as records (forensic analysis records and
+reported findings; ingest batches, artifact records as metadata
++ SHA-256, and verbatim processing reports; evidence review
+records; custody artifact registrations and transfer records;
+share records and verbatim receipts; forensic report
+registrations with read-derived registry counts) and 2 re-judged
+to labeled reference implementations (device unlocking; evidence
+extraction from mobile devices — request and reported-outcome
+records only, `reference_stub: True`). The module pins, per
+entry: every record's exact key set and boundary labels,
+ref-uniqueness and no-id-on-failure, cross-matter isolation, the
+closed-matter rule, derived-never-stored counts / latest
+outcomes / current holder, the privacy rule by signature
+(smuggled content / finding-text / report-text / credential /
+bypass kwargs raise `TypeError`), digest and byte-count
+validation identical to the core document registry's, the RBAC
+mapping onto the core action set, the auditor role denied every
+extension operation (read and write), the membership boundary,
+`ext_*` / `ext_*:denied` audit discipline on the core
+hash-chained log, and audit-before-commit fail-closure (a broken
+audit path makes an extension create raise `AuditWriteError`,
+commit nothing, and consume no id, with the chain verifying
+afterwards). See `../BATCH.md` for the per-entry dispositions
+and the re-judgment grounds.
+
+### The current-holder seam drill (fresh negative control, batch)
+
+The claim under test: **an artifact's current holder is the
+holder named by the LATEST recorded custody transfer** (or the
+holder at registration when none has been recorded) — the
+chain-of-custody entry's only derivation, computed at read over
+the transfer records through the seam
+`LawEnfExtensions._current_holder`.
+`TestCustodyNegativeControl` pins the canonical case
+(registration holder HOLDER-INTAKE; transfers INTAKE→LAB then
+LAB→VAULT: the current holder reads HOLDER-VAULT) and asserts
+(1) the real implementation's outcome, (2) a mutant subclass
+overriding the seam to read the FIRST transfer would NOT
+produce it (it reads HOLDER-LAB), and (3) treating the mutant's
+outcome as the expected outcome raises `AssertionError`. The
+no-transfer case reads the registered holder under either
+orientation, as expected.
+
+File-level verification (performed at build time, raw output in
+`scratch/gaps_batch_mutation_run.txt`): the shipped
+`src/lawenf/extensions.py` (pre-mutation SHA-256
+`fbccff6cb16e8056710e0824b2a59dcc5250d6998a21007b4a2bcc4fd498ede1`,
+backup in `scratch/extensions.py.premutation`) was mutated at
+the seam's return line (`return transfers[-1]["to_holder_ref"]`
+→ `return transfers[0]["to_holder_ref"]`, exact full-line
+match, one occurrence) and the full suite run: **exactly 2
+failures** out of 156 — `TestCustodyTransfers.
+test_view_two_transfers_latest_holder` and
+`TestCustodyNegativeControl.
+test_canonical_current_holder_is_latest`, both in the batch's
+own new module and both current-holder-derivation-dependent
+(the zero- and one-transfer cases are orientation-symmetric and
+pass either way, as expected). The file was then restored from
+the pre-mutation copy, its SHA-256 verified identical, and the
+suite re-run green. Run count after the batch: **156 tests,
+OK** (110 before: 102 shipped + 8 remainder-addition; 46 added
+by the batch module).

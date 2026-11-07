@@ -584,14 +584,14 @@ Platform-layer: encryption at rest is deployment-layer (TLS when configured); si
 Cross-tier merge of Group 34 (cross-tier parent), uplifted to the High baseline. Both spec sheets are zero-claim sheets under Group 34's 9-family taxonomy applied verbatim (0 claims total, full descriptions preserved): both siblings (Cellebrite Government Cloud (CGC), Magnet One) are genuine digital-forensics platforms whose vocabulary the legal-research taxonomy does not reach. The L2 core (11 functions) is carried whole under the Merge Rule — 0 of 11 claimed by this group's forks — with the six High uplifts (hash-chained audit + verify_chain, GET /audit/verify, fail-closed audit writes with store rollback, audit query, AC-7 logon lockout, auditor role with audit_read only).
 
 Extended functions, specified in groups/law-enforcement-l3/UNION-SPEC.md, not implemented — this group's own verticals, each a processing engine over evidence content the records substrate never holds:
-- [ ] open — Device unlocking (Cellebrite)
-- [ ] open — Evidence extraction from mobile devices (Cellebrite)
-- [ ] open — Forensic analysis engines (both siblings)
-- [ ] open — Evidence ingest & processing pipelines (Magnet One)
-- [ ] open — Evidence review (Magnet One)
-- [ ] open — Chain-of-custody enforcement over evidence (Cellebrite; the substrate's checksums / verify-by-content / hash chain are records-side analogues, stated as analogues, not equivalents)
-- [ ] open — Information sharing / collaboration over evidence (both siblings)
-- [ ] open — Forensic reporting (Cellebrite; beyond the substrate's counts-only registry reporting)
+- [x] reference — Device unlocking (Cellebrite)
+- [x] reference — Evidence extraction from mobile devices (Cellebrite)
+- [x] built — Forensic analysis engines (both siblings)
+- [x] built — Evidence ingest & processing pipelines (Magnet One)
+- [x] built — Evidence review (Magnet One)
+- [x] built — Chain-of-custody enforcement over evidence (Cellebrite; the substrate's checksums / verify-by-content / hash chain are records-side analogues, stated as analogues, not equivalents)
+- [x] built — Information sharing / collaboration over evidence (both siblings)
+- [x] built — Forensic reporting (Cellebrite; beyond the substrate's counts-only registry reporting)
 
 Extended carried from Group 34's section (still open at this tier): the legal corpora themselves; citation-validation engines; editorial enhancement systems; corpus search & relevance engines; AI/ML research assistance (0 claims at either tier); document content storage, rendering & redaction.
 

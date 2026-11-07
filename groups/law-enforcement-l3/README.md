@@ -194,3 +194,31 @@ none is attributed; real-time detection and alerting *is* its own
 described function and is booked as such. The original pair's
 sheets stand exactly as shipped, and the core is unchanged
 (`src/` byte-identical; tests 102 → 110).
+
+## Final GAPS batch
+
+Per [`BATCH.md`](BATCH.md) (final GAPS batch, unit Group 35):
+the group's 8 own verticals are closed in records form by
+`src/lawenf/extensions.py` (a new module; the founding core is
+byte-identical) — forensic analysis records and reported
+findings, ingest batches and artifact records (metadata +
+SHA-256, the core document registry's discipline), evidence
+review records, custody artifact registrations and transfer
+records (a ledger, not enforcement:
+`custody_enforced_here: False`, the union spec's analogue
+caveat carried), share records with `reference_transport:
+True`, and forensic report registrations whose views derive
+the registry counts at read. **Device unlocking** and
+**evidence extraction from mobile devices** are re-judged to
+labeled reference implementations: request and reported-outcome
+records only (`reference_stub: True`,
+`capability_held_here: False`) — a capability that defeats
+device access controls is not built in any form. High apparatus
+binds the new surface: extension mutations audit on the core
+hash-chained log audit-before-commit (fail-closed), and the
+auditor role is denied every extension operation. The hard
+privacy rule binds unchanged: no extension method can accept
+evidence content, a finding's or report's text, a credential,
+or a person's identifier. Tests 110 → 156, including a fresh
+mutation-verified negative control on the current-holder seam
+(see [tests/README.md](tests/README.md)).
