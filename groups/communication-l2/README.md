@@ -222,3 +222,19 @@ under mutation). One new gap is registered in the addendum:
 the marketing automation & citizen-engagement campaign engine
 (audience targeting and automated campaigns) that the fork's
 description headlines but the taxonomy does not name.
+
+## Final GAPS batch (Group 11 unit)
+
+The 12 Extended entries of this section are closed by
+`src/comm/extensions.py` (`CommExtensions` wrapping the core store;
+core byte-identical) — see `BATCH.md` for the per-entry disposition.
+Casework, encrypted-transport envelopes + proofing reported outcomes,
+personnel/asset tracking (configuration and reported-state records
+only, no location data held), and permits/passes/surveys/payment
+records are built in records form; email-security, AI/ML, voice,
+video, key/certificate, and e-signature engines ship as labeled
+reference implementations; archiving & eDiscovery was re-judged to a
+reference implementation (disposition decisions and recorded FOIA
+states only — execution follows the platform-layer decision).
+Suite: **113 tests**, including the fresh legal-hold-gate mutation
+drill (exactly 3 failures under mutation).

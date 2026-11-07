@@ -96,3 +96,24 @@ drill's; raw list in `scratch/additions_mutation_run.txt`.)
 (`scratch/store.py.premutation_additions`) and verified
 SHA-256-identical to the shipped hash
 (`6ccd412c…`); the suite re-ran: **92 tests, OK**.
+
+## GAPS batch drill (final batch, Group 11 unit)
+
+NEW extension code landed (`src/comm/extensions.py`), so the control
+is fresh, not the signature re-run. Seam:
+`_check_disposition_eligible` in `src/comm/extensions.py` — a capture
+under an active legal hold is never disposition-eligible, even past
+its retention window. The hold check (`if holds_active:`) was patched
+to `if False:` and the full suite ran: **113 tests, exactly 3
+failures** —
+
+- `test_gaps_batch.TestArchivingReference.test_disposition_eligibility_window_and_hold_gate`
+- `test_gaps_batch.TestLegalHoldGateNegativeControl.test_hold_blocks_eligibility_canonical`
+- `test_gaps_batch.TestLegalHoldGateNegativeControl.test_seam_directly`
+
+`extensions.py` was restored from the pre-mutation copy and the suite
+re-ran: **113 tests, OK**. `tests/test_gaps_batch.py` (21 tests)
+pins the extension surface per GAPS entry, including stub labels,
+the no-location-data key scan for tracking, the no-key-material
+signature pin for certificate records, and derived-never-stored
+shapes.
