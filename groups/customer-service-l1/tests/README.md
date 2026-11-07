@@ -66,3 +66,69 @@ exactly as designed. Raw list in `scratch/additions_mutation_run.txt`.
 The file was restored from `scratch/store.py.premutation-additions`
 and verified byte-identical (SHA-256 `05c749f3…`); the suite returned
 to **80/80 green**.
+
+
+## Final GAPS batch (test_gaps_batch.py — 46 tests)
+
+The batch adds `test_gaps_batch.py`, one section per GAPS entry
+closed by the batch unit (see `BATCH.md` in the group directory):
+automation execution requests and verbatim reports (the registry
+still never executes), GRC framework/control/mapping records with
+counts-only posture derived at read, knowledge-base articles whose
+stored record holds tags/provenance only (text lives in append-only
+revisions), CSAT surveys with verbatim responses and an exact-
+rational (13/3) derived mean, SLA policy records with breach
+derived at read (policy views leave the core case byte-identical),
+notification records carrying `reference_transport: true` /
+`delivered_here: false`, status-page records over the core's
+derived public view (`hosted_here: false`), deterministic
+count-only analytics, and the three labeled reference families
+(detection/orchestration — a run provably creates no alert;
+channels — `media_here: false`; AI assistance — the reported case
+provably untouched). Cross-cutting tests pin the `ext_*` /
+`ext_*:denied` audit actions, audit-failure rollback of record and
+id, requester-ref discipline, and stub/core isolation (creating
+every stub-family record changes no core record).
+
+Suite total with the batch: **126 tests, all passing** (80 before).
+
+### Fresh negative control: the SLA policy-breach derivation
+
+Breach state under a recorded SLA policy is **derived at read**
+from the core case record against the policy's recorded terms at
+the seam `CustsvcExtensions._is_breached_under_policy` (in
+`src/custsvc/extensions.py`) — the batch's fresh negative control,
+in two layers.
+
+In-suite (`TestSlaNegativeControl.test_policy_breach_is_derived`):
+the canonical seam derives breach once the recorded target has
+passed (a high-priority case viewed 61 minutes after creation
+under a 60-minute target is breached); a
+`MutantCustsvcExtensions` overriding the seam with a no-op
+(`return False`) does not produce that outcome on identical
+fixtures; treating the mutant's outcome as the canonical
+expectation fails.
+
+External drill (same discipline as the founding drills above):
+the real seam's final return
+(`return now_dt > created + timedelta(minutes=target)`) was
+replaced with `return False` in `src/custsvc/extensions.py` (the
+pre-mutation file copied to `scratch/extensions.py.premutation`,
+its SHA-256 recorded at `scratch/extensions.py.sha256`, and the
+run's failure list logged to `scratch/gaps_mutation_run.txt`).
+The full suite then reported:
+
+```text
+FAIL: test_policy_breach_is_derived (test_gaps_batch.TestSlaNegativeControl)
+FAIL: test_breach_derived_from_recorded_terms (test_gaps_batch.TestSlaPolicies)
+FAIL: test_breach_report_counts (test_gaps_batch.TestSlaPolicies)
+Ran 126 tests
+FAILED (failures=3)
+```
+
+Exactly the three tests that depend on policy breach being
+derived failed; every other test — founding, addition, and the
+rest of the batch — stayed green, so the failures are exactly the
+guarantee the derivation tests exist to protect. The file was
+restored from the pre-mutation copy (hash verified against the
+recorded SHA-256) and the suite returned to **126 tests, OK**.

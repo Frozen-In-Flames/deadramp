@@ -154,3 +154,34 @@ a FedRAMP authorization and not a CMMC certification.
   artifact log, pre-mutation store copy + hash
 
 License: Apache-2.0 (repo-level). Copyright 2026 Aries Hilton.
+
+
+## Final GAPS batch (November 7, 2026)
+
+The group's 10 open GAPS entries are closed by
+`src/custsvc/extensions.py` (`CustsvcExtensions`), a wrapper over
+the core store in the forms the Customer Service L2 batch unit
+adjudicated for this same package lineage — with this tier's
+discipline kept: no Moderate apparatus was imported (the audit log
+stays this tier's plain append-only log), and the GRC entry, which
+is claimed here as Riskuity's sole claim family, still asserts no
+framework support (framework records are operator label sets; the
+founding spec's wording-artifact removal stands). Seven entries
+are built as records plus deterministic derivations over the
+core's own records: automation execution *requests* and verbatim
+reports (the registry still never executes), GRC framework/control
+records with counts-only posture, knowledge-base articles whose
+stored record holds tags and provenance only (text lives in
+append-only revisions), CSAT surveys with verbatim responses and
+exact-rational tallies, SLA policy records with breach derived at
+read against recorded terms, notification records with
+`reference_transport: true` and status-page records over the
+core's derived public view, and deterministic count-only
+analytics. Three ship as labeled reference implementations:
+detection/orchestration (a run creates no alert), real-time
+channels (no media), and AI assistance/deflection (the reported
+case untouched). Core modules are byte-identical; per-entry
+dispositions and the fresh mutation-verified negative control
+(the SLA policy-breach derivation seam, 3 expected failures under
+mutation) are recorded in `BATCH.md` and `tests/README.md`. Suite:
+126 tests, all passing.

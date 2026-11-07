@@ -412,16 +412,16 @@ Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / 
 ## Group 26 — Customer Service L1 (2 forks)
 
 Extended functions, specified in groups/customer-service-l1/UNION-SPEC.md, not implemented:
-- [ ] open — Event detection, diagnosis & orchestration engines (alert records / triage are Core)
-- [ ] open — Automation execution engines (the rule registry is Core; nothing executes, pinned by test)
-- [ ] open — GRC platform (one sibling's sole claim family, incl. compliance-framework support depth)
-- [ ] open — Real-time channels: live chat, voice / telephony (0 claims; named)
-- [ ] open — AI assistance / deflection (0 tagged claims; near-miss recorded)
-- [ ] open — Knowledge base articles (0 of 2; named absence)
-- [ ] open — Satisfaction / CSAT surveys (0 of 2; named absence)
-- [ ] open — SLA policy engine (due / breach derivation only in Core; no sibling claims SLA terms)
-- [ ] open — Notification delivery & status-page hosting (status records / view are Core; delivery is not)
-- [ ] open — Reporting / analytics engines beyond registry reporting (0 claims)
+- [x] reference — Event detection, diagnosis & orchestration engines (alert records / triage are Core)
+- [x] built — Automation execution engines (the rule registry is Core; nothing executes, pinned by test)
+- [x] built — GRC platform (one sibling's sole claim family, incl. compliance-framework support depth)
+- [x] reference — Real-time channels: live chat, voice / telephony (0 claims; named)
+- [x] reference — AI assistance / deflection (0 tagged claims; near-miss recorded)
+- [x] built — Knowledge base articles (0 of 2; named absence)
+- [x] built — Satisfaction / CSAT surveys (0 of 2; named absence)
+- [x] built — SLA policy engine (due / breach derivation only in Core; no sibling claims SLA terms)
+- [x] built — Notification delivery & status-page hosting (status records / view are Core; delivery is not)
+- [x] built — Reporting / analytics engines beyond registry reporting (0 claims)
 
 Platform-layer: encryption at rest is deployment-layer (TLS when configured); single-tenant reference deployment; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec finding: this group is largely a source-category artifact — one sibling is a GRC platform claiming zero customer-service functions; the build is the records substrate the other sibling's claims presuppose, and nothing was invented to make the two look alike.
 
