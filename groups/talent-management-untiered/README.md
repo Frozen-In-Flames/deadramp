@@ -312,3 +312,46 @@ then and not before.
 - **Named absences stand.** All twelve taxonomy families have 0
   claimants in this set. The taxonomy was not re-tuned, and no
   substance was approximated into a family it does not name.
+
+## Final GAPS batch (2026-11-07)
+
+The 8 open gap entries registered by this set are closed by one
+new module, `src/talentmgmt/extensions.py`
+(`TalentMgmtExtensions`, wrapping the core store; every core
+module byte-identical to its pre-batch state). Per-entry
+dispositions and adjudication notes are in
+[`BATCH.md`](BATCH.md); the batch tests are
+`tests/test_gaps_batch.py` (39 tests; full suite **141 tests,
+OK**), including the fresh mutation-verified negative control
+for the extension's module bounds seam (exactly 3 failures
+under the drill, recorded in `tests/README.md`).
+
+- **Built (5):** the experiential technical learning platform
+  (program definitions, enrollments, module-completion
+  check-offs, progress derived at read — no content held or
+  delivered); the labor exchange platform (postings and
+  caller-reported match records; matching itself is inference
+  and is never computed — `matched_here` is False); the
+  workforce case management system (cases and label-only
+  activity records, counts derived at read); the employer
+  services platform (employer registry, service requests,
+  derived summary); and the labor market information service
+  (observations stored as reported, a deterministic grouped
+  summary derived at read, publication definitions, and
+  distribution receipts).
+- **Reference (3, labeled):** assessment proctoring & integrity
+  services (session records bound to core assessments, outcomes
+  reported verbatim, nothing adjudicated, no identity document
+  or session media held); the integration & API services layer
+  (endpoint definitions and exchange receipts —
+  `reference_stub` / `reference_transport` True, no credentials
+  held, no data moved); and unemployment insurance integration
+  & administration (claim reference records whose current
+  reported status derives at read from append-only program
+  reports — nothing determined, administered, or paid here).
+
+Tier null binds the extension surface exactly as it binds the
+core: no record or view carries a tier-shaped key (pinned by a
+recursive scan), privacy stays structural (opaque references
+only; PII- and content-shaped arguments raise `TypeError`), and
+no score is computed anywhere.

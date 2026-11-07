@@ -123,3 +123,47 @@ tree at delivery.
   byte-identical to `../talent-management-l2/src/talentmgmt/`;
   `__init__.py` and `store.py` differ by docstring only (full
   SHA-256 table in `../README.md`).
+
+## Final GAPS batch module
+
+| File | Covers |
+|---|---|
+| `test_gaps_batch.py` | The batch extension surface (`src/talentmgmt/extensions.py`, 39 tests): one class per closed entry — proctoring session reference records bound to core assessments with verbatim reported outcomes (`reference_stub: True`, nothing adjudicated, no identity document or session media held), learning program definitions + enrollments + module-completion check-offs with progress derived at read and never stored, tutor session metadata records, integration endpoint definitions + exchange receipts (`reference_stub` / `reference_transport: True`, no credentials held, no data moved), exchange postings + reported match records (`matched_here` False, no score anywhere) with a counts-only derived summary, workforce cases + label-only activity records with activity counts derived at read, employer registrations + service requests with guarded lifecycles and a derived summary, UI claim reference records whose current reported status derives at read from the newest append-only report (`determined_here` / `benefits_paid_here` False) + UI exchange receipts, and LMI observations stored as reported with a deterministic grouped summary derived at read (counts and sums of reported values; no average, rate, or index) + publication definitions and distribution receipts. Cross-cutting: exact key sets for all nineteen extension record kinds; a recursive scan over every extension record and derived view (no tier/baseline/equivalence-shaped key, no float value; no numeric list in any stored record); no banned identity- or score-shaped key anywhere; PII- and content-shaped keyword arguments raise `TypeError`; extension signatures carry no substance-shaped parameter; denied attempts audited `ext_<action>:denied`; the core membership boundary binds extension reads and writes; failed operations consume no id |
+
+## Batch negative control — mutation-verified
+
+`test_gaps_batch.py`'s `TestNegativeControlModuleBounds`
+implements the batch's fresh mutant: a `TalentMgmtExtensions`
+subclass (`MutantTalentMgmtExtensions`) whose
+`_check_module_bounds` seam is a no-op — any module index is
+accepted. The traced claim is the extension's analogue of the
+core's signature stage bounds rule: **a module-completion
+check-off's `module_index` must name a module of the enrollment's
+program (`0 <= module_index < len(modules)`), enforced before
+anything is stored, so the derived progress view always names
+real modules**. The canonical surface rejects an out-of-bounds
+check-off whole (nothing recorded, no id consumed); the mutant
+stores it, and its derived progress view then raises
+`IndexError`, because the stored index names no module. Each
+test asserts the canonical expectation, the mutant's divergence,
+and a literal `assertRaises(AssertionError)` showing that
+treating the mutant's outcome as the expectation fails.
+
+Mutation verification in THIS tree (2026-11-07): the body of
+`_check_module_bounds` in the real
+`src/talentmgmt/extensions.py` was replaced with `return None`,
+the full suite was run: **141 tests ran, exactly 3 failed** —
+
+- `test_gaps_batch.TestNegativeControlModuleBounds.test_canonical_expectation_rejects_out_of_bounds_completion`
+- `test_gaps_batch.TestLearning.test_module_completion_out_of_bounds_rejected`
+- `test_gaps_batch.TestLearning.test_module_completion_negative_and_bool_rejected`
+
+— exactly the tests that pin the bounds seam on the real
+implementation (the mutant-subclass legs pass under the file
+mutation, as designed: they override the seam themselves). No
+core test failed under the mutant. `extensions.py` was then
+restored from `scratch/extensions.py.premutation` and verified
+SHA-256-identical to the pre-mutation hash
+(`245af1c65be35053fca0d8180bbd38d489865a8372a30b4d20b14fca0f0e662e`,
+recorded in `scratch/extensions.py.sha256`); the suite re-ran:
+**141 tests, OK**. Raw record: `scratch/batch_mutation_run.txt`.
