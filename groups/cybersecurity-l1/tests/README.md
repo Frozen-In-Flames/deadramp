@@ -183,6 +183,48 @@ apart from the `cyber_helpers.py` docstring, the suite is
 byte-identical to Group 4's. The suite catches this defect class;
 the negative control is not decorative.
 
+## Final GAPS batch (Group 16 section, 5 entries)
+
+`test_gaps_batch.py` (20 tests) pins the extension surface in the
+new module `src/cyber/extensions.py` (`ExtensionStore`): GRC
+framework records and evidence-collection tasks with the
+separation-of-duties guard, identity-product hooks, phishing
+campaign/training records, DMARC policy and aggregate-report
+records, AI/ML model reference records, and SOAR playbook
+reference records, plus cross-cutting RBAC/audit and counts-only
+pins. Suite: **205 before → 225 after, OK**. All 8 founding
+`src/cyber/*.py` modules verified byte-identical before and after
+(SHA-256 against `../scratch/prebuild-src.sha256`); the extension
+is a new module and changed no core file.
+
+### Fresh negative control — evidence separation of duties
+
+The canonical test is
+`test_gaps_batch.TestGrcAutomation.test_separation_of_duties_guard`:
+the actor who collected a piece of evidence may not verify it.
+VERIFIED by live mutation in this tree:
+
+1. **Backup:** `src/cyber/extensions.py` copied to
+   `../scratch/extensions.py.premutation` (SHA-256
+   `98c0362e592187021d1b76719ec4cb7cb1151a71668439185c7a8f76fada8562`).
+2. **Mutant applied:** in `_check_verifier_not_collector`, the
+   equality condition `collected_by == verifier` was replaced
+   with `False` (guard disabled; the line was asserted to occur
+   exactly once before patching).
+3. **Mutant run:** the full suite ran — **225 tests ran, exactly
+   1 failure**:
+   `test_gaps_batch.TestGrcAutomation.test_separation_of_duties_guard`.
+   Raw output at `../scratch/gaps_mutation_run.txt`, failure name
+   at `../scratch/gaps_drill_failures.txt`.
+4. **Restore verified:** `extensions.py` restored from the
+   pre-mutation copy; SHA-256 again
+   `98c0362e592187021d1b76719ec4cb7cb1151a71668439185c7a8f76fada8562`.
+5. **Re-run green:** **225 tests, OK**.
+
+The same seam and mutant in the Moderate sibling's tree also
+failed exactly 1 test (its own guard test); the counts agree
+because the guard has exactly one canonical pin in each suite.
+
 ## Interpretation notes
 
 Where UNION-SPEC's contract left a shape open, the suite follows the

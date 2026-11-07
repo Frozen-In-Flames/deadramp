@@ -264,11 +264,11 @@ Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / 
 ## Group 16 — Cybersecurity & Risk Management L1 (5 forks)
 
 Extended functions, specified in groups/cybersecurity-l1/UNION-SPEC.md, not implemented. Claimed in this group:
-- [ ] open — AI/ML-powered analytics & anomaly detection models (2 of 5)
-- [ ] open — Full GRC automation suites beyond the substrate (3 of 5 claim the family; control mapping & assessment records are Core)
-- [ ] open — Automation & orchestration engines (SOAR / workflow) (1)
-- [ ] open — Identity products / IdP (1; the core ships access-control hooks only)
-- [ ] open — Phishing-defense enforcement & simulation / training content (1; DMARC enforcement)
+- [x] reference — AI/ML-powered analytics & anomaly detection models (2 of 5)
+- [x] built — Full GRC automation suites beyond the substrate (3 of 5 claim the family; control mapping & assessment records are Core)
+- [x] reference — Automation & orchestration engines (SOAR / workflow) (1)
+- [x] built — Identity products / IdP (1; the core ships access-control hooks only)
+- [x] built — Phishing-defense enforcement & simulation / training content (1; DMARC enforcement)
 
 Remainders of Core-substrate families: detection engines & staffed SOC services; vulnerability scanners (ingest / consolidation / tracking is Core).
 

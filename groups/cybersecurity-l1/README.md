@@ -304,3 +304,28 @@ including the additions module; the severity-blind scoring drill
 was re-run in this tree and failed exactly 32 tests (the shipped
 31 plus 1 additions case), with `store.py` restored
 byte-identical.
+
+## Final GAPS batch
+
+The group's 5 open GAPS.md entries are closed by one new module,
+`src/cyber/extensions.py` (`ExtensionStore`), plus
+`tests/test_gaps_batch.py` — see [`BATCH.md`](BATCH.md) for the
+per-entry dispositions. In brief: AI/ML detection models and SOAR
+playbooks ship as labeled reference implementations
+(`reference_stub: true`; playbook runs also `executed: false`);
+identity products are integration-hook records only
+(`identity_provider: false` — no IdP, per PLATFORM-LAYER.md
+decision 1); phishing defense lands as campaign/training program
+records (nothing sent or simulated) plus DMARC policy and
+aggregate-report records (`enforced_here: false` — enforcement
+stays with the external platform); and the GRC automation entry
+was **re-judged** from its drafted stub-engine triage to a
+build-extension — framework records and an evidence-collection
+task workflow with separation of duties, the records form the
+Moderate sibling shipped for the identical family against a
+byte-identical core (grounds in `BATCH.md`). The suite is now
+**225 tests, OK**, including a fresh mutation-verified negative
+control on the evidence separation-of-duties guard (exactly 1
+failure under the mutant; recorded in `tests/README.md`). All 8
+founding `src/cyber/*.py` modules are byte-identical; the
+extension is store-level only, with no HTTP routes added.
