@@ -106,3 +106,59 @@ construction.
   re-tags the description under the verbatim taxonomy (parsed
   from the parent group's extractor) to prove the zero is a
   property of the evidence, not of this build's bookkeeping.
+
+## Final GAPS batch — extension tests (2026-11-07)
+
+| File | Tests | Covers |
+|---|---:|---|
+| `test_gaps_batch.py` | 46 | Final GAPS batch extension surface (`src/research/extensions.py`), one class per section entry (inventory idx 714–724; dispositions in `../BATCH.md`): review programs/teams/roles, versioned protocol records, screening records, extraction forms/records, export manifests, dictionaries/terms, the suggestion surface, and the four labeled reference stubs (automation, search strategies, quality, workflows). Cross-cutting pins: exact key sets per record type, a recursive scan finding no score- or content-shaped key on any extension record or view, `TypeError` on unexpected keywords (no `study_title=`, `text=`, `value=`, `generated_text=`, or `email=` can enter a shape), viewer write denied and audited `:denied`, outsider denied by the commons membership boundary, failed operations consuming no id, and the human-in-the-loop pin (a suggestion + human decision leave the screening record byte-identical). |
+
+Status after the batch unit: **142 tests, OK** (96 shipped
+singleton tests + 46 batch tests).
+
+### Batch negative control
+
+**`TestProtocolCurrencyNegativeControl`** — the batch's fresh
+invariant is **protocol currency derivation**: with versions
+[1, 2] recorded, the current protocol is the HIGHEST version,
+derived at read through the single seam
+`ResearchExtensions._current_protocol_record` and never stored;
+screening binds to the current version and a superseded version
+is refused. The mutant is a `ResearchExtensions` subclass whose
+`_current_protocol_record` returns the EARLIEST version. The
+tests assert the canonical expectations (current view shows
+version 2 and its criteria; screening against version 2 is
+accepted and against version 1 refused), that the mutant
+produces the opposite outcomes, and — via literal
+`assertRaises(AssertionError)` — that the canonical expectation
+rejects the mutant's current version.
+
+### Batch mutation verification
+
+VERIFIED by the builder in this tree:
+`_current_protocol_record` in the real
+`src/research/extensions.py` was patched to
+`return versions[0]` and the suite was run against the patched
+implementation.
+
+- Patched run: **142 ran, exactly 6 non-passing (4 failures +
+  2 errors)** — the currency-derivation-dependent set, all in
+  `test_gaps_batch.py`:
+  - `test_gaps_batch.TestProtocols.test_current_protocol_is_latest_version` (FAIL)
+  - `test_gaps_batch.TestProtocols.test_protocol_view_derived_currency` (FAIL)
+  - `test_gaps_batch.TestScreening.test_screening_against_superseded_version_refused` (FAIL)
+  - `test_gaps_batch.TestScreening.test_screening_against_current_version_accepted` (ERROR — the mutant refuses the current version as superseded)
+  - `test_gaps_batch.TestProtocolCurrencyNegativeControl.test_canonical_current_is_latest` (FAIL)
+  - `test_gaps_batch.TestProtocolCurrencyNegativeControl.test_canonical_screening_binds_to_latest` (ERROR — same refusal)
+- `extensions.py` was then restored from
+  `scratch/extensions.py.premutation` and verified
+  **SHA-256-identical** (`9d1c6634…`, recorded in
+  `scratch/extensions.py.sha256`); the suite is green again
+  (142/142). The drill list is in
+  `scratch/gaps_drill_failures.txt`.
+
+The failing set is exactly the derivation-dependent set: the
+mutant-agreement arms of the control pass under both
+implementations by construction, and every single-version
+protocol test is untouched by the mutation (earliest == latest
+at one version).

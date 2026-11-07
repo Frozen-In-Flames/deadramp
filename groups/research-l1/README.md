@@ -211,3 +211,27 @@ drill record).
   Low/L1 baseline families the build's features answer to;
   nothing more. FedRAMP authorizes products; CMMC certifies
   organizations — neither regime accepts the other as evidence.
+
+## Final GAPS batch (2026-11-07)
+
+The singleton's 11 GAPS.md entries (inventory idx 714–724)
+closed as one batch unit: one new module,
+`src/research/extensions.py` (`ResearchExtensions` wrapping the
+core store; all seven core modules byte-identical), plus
+`tests/test_gaps_batch.py`. 7 entries built in records form —
+screening records with verbatim reported decisions binding to
+the current protocol version, protocol records whose currency
+is derived at read, extraction forms/records carrying field
+references and never values, export manifests with derived
+counts (`exported_here: false`), append-only dictionary term
+revisions, program/team/role records over opaque member
+references, and the human-in-the-loop suggestion surface
+(a suggestion changes no screening state — pinned by test) —
+and 4 shipped as labeled reference implementations
+(`reference_stub: true`): review automation, search-strategy
+execution, quality assessment & verification, and review
+workflows. No record shape holds a study's content, an
+extracted value, or a score. Suite: 96 → 142 tests, including a
+fresh mutation-verified negative control on the protocol
+currency derivation (exactly 6 non-passing under the mutation).
+Per-entry dispositions: `BATCH.md`.

@@ -1316,17 +1316,17 @@ The carried Group 21 Extended set remains registered once under that group and i
 ## Remainder Singleton 63 — Research L1 (1 fork)
 
 New extended functions from this fork, specified in groups/research-l1/UNION-SPEC.md, not implemented — the fork's substance, named rather than forced into the category's data-commons-shaped families:
-- [ ] open — Systematic review automation engine (living systematic reviews)
-- [ ] open — Literature search-strategy execution
-- [ ] open — Title/abstract & full-text screening pipeline
-- [ ] open — Data extraction from studies
-- [ ] open — Quality assessment & regulator verification support
-- [ ] open — Review protocol creation
-- [ ] open — Meta-analysis export
-- [ ] open — Shared dictionary management
-- [ ] open — Project / team / role administration for review programs ("management of projects, teams, roles" is the noun in its text, not the verb the taxonomy's family wants)
-- [ ] open — Customizable review workflows
-- [ ] open — Human-in-the-loop AI suggestion surface
+- [x] reference — Systematic review automation engine (living systematic reviews)
+- [x] reference — Literature search-strategy execution
+- [x] built — Title/abstract & full-text screening pipeline
+- [x] built — Data extraction from studies
+- [x] reference — Quality assessment & regulator verification support
+- [x] built — Review protocol creation
+- [x] built — Meta-analysis export
+- [x] built — Shared dictionary management
+- [x] built — Project / team / role administration for review programs ("management of projects, teams, roles" is the noun in its text, not the verb the taxonomy's family wants)
+- [x] reference — Customizable review workflows
+- [x] built — Human-in-the-loop AI suggestion surface
 
 All nine taxonomy families stand at zero for this fork, token-verified; no dataset content of any kind is named in its text (review steps, never contents), no scoring or ranking vocabulary appears ("quality assessment" assesses reviews), and no literature database or methods-standard token appears. The parent group's carried Extended set remains registered once under Singleton 53 and is not re-registered. Core-boundary decision, stated once in the union spec with its price: no core function is claim-supported for this fork — the eleven-function data-commons substrate is carried down whole, carried, not claimed.
 
