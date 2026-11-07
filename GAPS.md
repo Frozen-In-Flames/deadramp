@@ -1548,9 +1548,9 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## Untiered Set 12 — Legal & Policy (3 forks, tier null)
 
 New extended functions from this set, specified in groups/legal-policy-untiered/UNION-SPEC.md, not implemented (the founding nine gaps and the ten addition gaps stand as registered, gain no claimants here, and are not re-registered; in-substance joins to already-registered gaps — eDiscovery processing, legal hold, AI document analysis, FOIA release, AI agent runtime, document generation — are recorded in the union spec):
-- [ ] open — Legal research, evidence mapping & citation-validation engine
-- [ ] open — FOIA case management system of record
-- [ ] open — Discovery platform app builder / extensibility
+- [x] reference — Legal research, evidence mapping & citation-validation engine
+- [x] built — FOIA case management system of record
+- [x] built — Discovery platform app builder / extensibility
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This set records zero claims and no documented control claims at all: the taxonomy is one product's phrases, and these forks describe eDiscovery, litigation AI, and FOIA case management in other words — the same outcome the category's six tiered additions recorded. Assurance and posture prose (auditable release packages, highest level of security) is recorded as prose, not control claims, and one fork's certified-services record names — which literally read Audit Logging and Authentication — were never matched, because matching them would have fabricated claims. No core function is claim-supported: the substrate, with its sandbox single-use rule and its no-query-text privacy design, is carried, not claimed.
 

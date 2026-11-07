@@ -104,3 +104,69 @@ error, then checks the report. Smoke passed in this tree.
 docstring line. Full digests were computed at build time and are
 reproducible with `sha256sum src/legalpol/*.py` in both group
 directories.
+
+## Final GAPS batch — untiered set unit (appended 2026-11-07)
+
+The batch unit for this set's own GAPS.md section adds one test
+module; the suite is now **130 tests, all passing** (103 above +
+27 new):
+
+| File | Tests | Covers |
+|---|---:|---|
+| test_gaps_batch.py | 27 | the batch extension surface (`src/legalpol/extensions.py`) per GAPS.md idx 862–864: research reference records (digest-only query, evidence-map locators verbatim, citation outcomes verbatim, draft links), the FOIA system of record (intake validation, current state / due date / overdue derived at read and never stored, exemption tallies, release counts, requester and agency views), the app-definition registry (manifest as data, derived enablement state, bindings, registry-never-executes pin), the recursive tier-null / no-content key scan over every extension record and view, RBAC denied-write audit, and the batch's fresh negative control (below) |
+
+### Negative control (fresh, mutation-verified, for the new code)
+
+**Drill:** in `src/legalpol/extensions.py`, the latest-state
+seam `LegalPolExtensions._latest_state_label` — the single
+chokepoint every current-state derivation in the extension reads
+through (FOIA case state, FOIA overdue via terminality, agency
+by-state counts, app-definition state) — is patched to read the
+earliest recorded state:
+
+```python
+        return states[0]["state_label"]  # MUTANT (mutation drill)
+```
+
+The seam's canonical return line, `return
+states[-1]["state_label"]`, occurs **exactly once** in the
+module (line 274; verified by count before patching — the
+sibling L2 tree's copy of this seam occurs twice in its file and
+needed line-scoping; this module was written with a single
+shared seam so no scoping was needed). The patched file was
+compile-checked before the run. **Exactly 4 tests fail**, all in
+`test_gaps_batch.py`, each a latest-vs-earliest discrimination
+with two or more recorded states:
+
+1. `test_gaps_batch.TestFoiaSystemOfRecord.test_current_state_derives_from_latest_recorded`
+2. `test_gaps_batch.TestAppBuilder.test_app_state_derives_at_read`
+3. `test_gaps_batch.TestLatestStateNegativeControl.test_current_state_is_latest_canonical`
+4. `test_gaps_batch.TestLatestStateNegativeControl.test_mutant_changes_agency_view_counts`
+
+Nothing else fails (130 ran, 126 passed — no core test failed),
+and the in-suite three-leg control
+(`TestLatestStateNegativeControl`: canonical latest /
+earliest-reading mutant subclass / `assertRaises` on the
+canonical expectation applied to the mutant) pins the same
+contract without touching the file. Single-state surfaces (the
+due-date test's released-only case, the requester view) are
+unaffected by construction: with one recorded state, earliest
+and latest coincide.
+
+**Evidence:** raw run output in
+`scratch/mutation_run_gaps_batch.txt` (gitignored); the
+premutation file is `scratch/extensions.py.premutation` and its
+recorded digest `scratch/extensions.py.sha256`. **Restore
+verified:** after the drill, `extensions.py` was restored from
+the premutation copy and its SHA-256 re-computed as
+`690895ea1ab954dd811068f9412e805985e9a8293085851e34efbc44bdc952a6`
+— identical to the pre-drill digest — and the full suite re-ran
+green (130/130).
+
+**Core integrity for this unit:** no core module was modified.
+`sha256sum src/legalpol/*.py` after the unit matches the
+pre-build baseline recorded in `scratch/prebatch-src.sha256`
+exactly (store.py still
+`7030f9fde2aafbd76e653d6805fe7b2f8509ed9108600f91d4c0aacefff85093`,
+the shipped hash). The only new source module is
+`src/legalpol/extensions.py`.

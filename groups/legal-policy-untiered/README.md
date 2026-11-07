@@ -202,3 +202,29 @@ travels with this set's own extractor
 - Nothing here claims a FedRAMP authorization, a CMMC
   certification, or a control baseline for any fork or for this
   build.
+
+## Final GAPS batch — this set's section (2026-11-07)
+
+The batch unit for this set's own three registered gaps landed
+as one new module, `src/legalpol/extensions.py`
+(`LegalPolExtensions` wrapping the untouched core store; all
+seven core modules byte-identical, store.py still `7030f9fd…`),
+plus `tests/test_gaps_batch.py` (27 tests; suite 103 → 130, all
+passing) and `BATCH.md` with the per-entry record. In brief:
+legal research, evidence mapping & citation validation shipped
+as a labeled reference implementation (requests name the query
+by SHA-256 digest only; the research engine runs on the fork's
+corpus, never here); the FOIA case management system of record
+is built as records (one case per request, current state and
+statutory due date derived at read and never stored, exemption
+applications tallied per case and agency-wide, portal surfaces
+as derived read views); and the discovery platform app builder
+is built as an application-definition registry (definitions and
+component manifests held as data, bound to workspaces, never
+executed — the builder interface and app runtime are not built).
+Tier discipline is unchanged: no extension record carries a
+tier, baseline, or score-shaped key, pinned by a recursive scan
+in the batch tests. Fresh negative control for the new code: the
+latest-state derivation seam, mutation-verified (exactly 4
+failures); full record in [`tests/README.md`](tests/README.md)
+and [`BATCH.md`](BATCH.md).
