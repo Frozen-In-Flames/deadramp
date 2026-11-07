@@ -346,3 +346,34 @@ tier is recorded then and not before.
   claimants in this set, several with substance in other words
   (provisioning, reporting, alerting, REST APIs, U.S. regions);
   nothing was back-filled to make the set look complete.
+
+## Final GAPS batch (2026-11-07)
+
+The 8 open gap entries registered above for this set are
+closed by one new module, `src/netmgmt/extensions.py`
+(`NetmgmtExtensions`, wrapping the untouched core store; all 7
+core modules remain byte-identical to the accounting above).
+Per-entry dispositions, including two re-judgments
+(build-extension → reference for the Wi-Fi ITDR engine and the
+fleet mapping platform, grounds stated), are in
+[`BATCH.md`](BATCH.md): 3 entries built as records surfaces
+over the substrate (authentication outcome records, guest /
+roaming access grants with read-derived window state, and the
+incident lifecycle — an incident record plus its event stream,
+state derived at read and never stored) and 5 shipped as
+labeled reference implementations (certificate lifecycle,
+ITDR findings, satellite terminal provisioning, fleet position
+reports at region-label grain — never coordinates, GPU
+orchestration), every reference record carrying
+`reference_stub: true` and an `*_here: false` flag naming what
+does not happen here. Tier null binds the extension surface
+exactly as it binds the core, pinned by a recursive scan in
+`tests/test_gaps_batch.py`. Suite: 83 tests before, **124
+tests after, OK**, including a fresh mutation-verified
+negative control on the incident-state derivation (see
+`tests/README.md`). The "Extended functions are specified,
+not implemented" list above is the pre-batch registration;
+this note and `BATCH.md` record what the batch built against
+it. The ninth entry in this set's section, the platform-layer
+entry, was closed `re-scoped` under the repo-root
+`PLATFORM-LAYER.md` decision before this unit.

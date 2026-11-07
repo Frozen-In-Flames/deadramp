@@ -17,10 +17,11 @@ code they test contains no tier machinery.
 
 ```bash
 cd groups/network-management-untiered
-PYTHONPATH=src python3 -m unittest discover -s tests        # 83 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 124 tests
 ```
 
-Status at delivery: **83 tests, OK**.
+Status at delivery: **83 tests, OK**; after the final GAPS
+batch (below): **124 tests, OK**.
 
 ## Layout
 
@@ -41,6 +42,7 @@ Status at delivery: **83 tests, OK**.
 | `test_store_validation.py` | 3 | Cross-cutting input discipline — failed operations consume no id and change nothing; no score/rating/health/optimization key on any view (recursive scan) |
 | `test_negative_control.py` | 3 | Negative control (below) |
 | `test_specs.py` | 11 | This set's spec sheets — exactly 2 sheets, membership exact against census unit `untiered:Network Management`, tier null / impact "Unknown" on every sheet, registry fields vs `forks.json`, business categories as in source, descriptions equal to the census record under the founding normalization (IronWiFi's paragraph-break difference pinned as whitespace-only), the literal claim table (2 claims, both `network_management`, no zero-claim fork), evidence verbatim in descriptions, the 11 absent family phrases occurring nowhere, IronWiFi's FIPS 199 prose pinned as moving no tier, census citations 2/2 verified with exactly 1 serving as claim evidence |
+| `test_gaps_batch.py` | 41 | Final GAPS batch (below) — the 8 entries of this set's gap registration, per-entry surfaces and labels, RBAC/membership/audit pins, the fresh negative control, and the tier-null recursive scan |
 | `netmgmt_helpers.py` | — | Canonical fixture: organization `AGENCY-1` by bob, erin added as staff member (the canonical decider), network `NET-HQ`, device `DEV-SW-1` (switching), telemetry reading recorded 2026-06-01T08:00:00+00:00 so `as_of` 2026-06-01T20:00:00+00:00 → fresh and 2026-06-03T08:00:00+00:00 → stale; outsider dave in no organization |
 
 ## Negative control
@@ -119,3 +121,73 @@ test passes by construction, as expected.
   manufactures a claim, or a "correction" that moves IronWiFi's
   tier off null on the strength of its FIPS 199 prose fails
   here instead of drifting.
+
+## Final GAPS batch — `test_gaps_batch.py` (41 tests)
+
+The batch module pins the extension surface in
+`src/netmgmt/extensions.py` per gap entry (the per-entry
+dispositions and re-judgment grounds are in `../BATCH.md`):
+exact record key sets for all 13 new record kinds; the stub
+labels (`reference_stub: true` and the `*_here: false` flags)
+on every reference record; TypeError pins for the parameters
+that must not exist (no `password=` / `shared_secret=` on an
+authentication record, no `certificate_bytes=` /
+`private_key=` on a certificate, no `latitude=` / `longitude=`
+/ `coordinates=` on a position report); derivation pins for
+every read-derived state (certificate lifecycle, guest window
+against a caller-supplied read clock, incident state,
+terminal and GPU reported states) including the
+derived-never-stored pins on the raw stored records; RBAC and
+membership pins through the core matrix (a viewer member
+cannot write, an outsider can neither read nor write, denials
+audited as `ext_<action>:denied`, successful mutations as
+`ext_<action>`); the failed-operation-consumes-no-id pin; the
+pin that extension writes leave core device records
+byte-for-byte unchanged; and the tier-null recursive scan over
+every extension record and derived view (no tier/baseline/
+equivalence/score/coordinate/identifier-shaped field name, no
+float, no numeric list — keys of a counts mapping are
+enumeration labels from the pinned vocabularies, not fields,
+and are scanned as data).
+
+### Fresh negative control (batch)
+
+**Incident state derivation** — the batch's new signature
+seam is `_derive_incident_state` in `extensions.py`: an
+incident's state is the kind of the *latest* state-changing
+event in reported-time order (`note` events never change it),
+or `opened` with none. The canonical lifecycle is
+acknowledged → resolved → note → reopened, whose canonical
+state is `reopened`. `TestNegativeControl` asserts the
+canonical expectation, that the implementation matches it,
+that a mutant subclass reading the *first* state-changing
+event reports `acknowledged`, and — via a literal
+`assertRaises(AssertionError)` — that the canonical
+expectation rejects the mutant's outcome.
+
+### Mutation verification (batch, this tree)
+
+VERIFIED for the batch code: `_derive_incident_state` in the
+real `src/netmgmt/extensions.py` was patched (the seam's
+`return states[-1]` replaced by `return states[0]`, occurrence
+count asserted 1 first) and the suite was run against the
+patched implementation.
+
+- Patched run: **124 ran, exactly 2 failed**:
+  - `test_gaps_batch.TestNegativeControl.test_canonical_expectation`
+  - `test_gaps_batch.TestIncidents.test_summary_counts_by_derived_state`
+- No founding test failed under the mutant, and neither did
+  the mutant-subclass tests (they pass by construction, as
+  expected) or the note-event pin (a single state-changing
+  event reads the same from either end).
+- `extensions.py` was then restored from
+  `scratch/extensions.py.premutation` and verified
+  **SHA-256-identical** (`8023f392…`, recorded in
+  `scratch/extensions.py.sha256`); the suite is green again
+  (124/124). Raw drill output is in
+  `scratch/gaps_batch_mutation_run.txt`.
+
+The failing set is exactly the derivation-dependent set: the
+summary's by-state counts and the canonical expectation are
+the two assertions that read the derived state of a
+multi-event lifecycle whose first and latest states differ.

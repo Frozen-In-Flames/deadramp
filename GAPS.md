@@ -1649,14 +1649,14 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## Untiered Set 19 — Network Management (2 forks, tier null)
 
 New extended functions from this set, specified in groups/network-management-untiered/UNION-SPEC.md, not implemented (the founding group's engine gaps are already registered under it and are not re-registered here; its alert-evaluation and telemetry-collection gaps gain substance from this set, noted in the union spec):
-- [ ] open — Network access authentication / RADIUS & 802.1X engine
-- [ ] open — Cloud PKI & certificate lifecycle engine
-- [ ] open — Wi-Fi ITDR engine
-- [ ] open — Captive portal & guest / roaming access services
-- [ ] open — Satellite terminal provisioning & connectivity management
-- [ ] open — Fleet mapping & geospatial awareness platform
-- [ ] open — Incident lifecycle management engine
-- [ ] open — GPU orchestration (fork excess)
+- [x] built — Network access authentication / RADIUS & 802.1X engine
+- [x] reference — Cloud PKI & certificate lifecycle engine
+- [x] reference — Wi-Fi ITDR engine
+- [x] built — Captive portal & guest / roaming access services
+- [x] reference — Satellite terminal provisioning & connectivity management
+- [x] reference — Fleet mapping & geospatial awareness platform
+- [x] built — Incident lifecycle management engine
+- [x] reference — GPU orchestration (fork excess)
 - [x] re-scoped — Platform layer
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. Two claims stand, both on the one family: one at full weight (remote management of satellite terminals) and one at artifact weight (the manage pattern firing on the identities you already manage, an authentication layer, recorded as artifact). The documented control claims: identification documented (certificate-based authentication, 802.1X/EAP-TLS, federated directories), access control in part, audit at the prose tier, cryptographic protection in part at prose weight with no FIPS-validated crypto claimed; one fork's incident lifecycle phrase is a function, not incident-response control language. One fork's prose asserts a FIPS 199 Moderate categorization while disclaiming a FedRAMP Moderate authorization in the same paragraph — the record stays Unknown, both pinned together by test. Named absences: eleven of twelve families stand at zero, several with substance present in other words (provisioning, REST API, configurable alerting, cloud-based), and the taxonomy has no reporting or audit family at all.
