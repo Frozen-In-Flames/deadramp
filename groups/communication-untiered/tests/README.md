@@ -40,6 +40,7 @@ with `-t .` is not the supported entry point for this group.)
 | `test_main_cli.py` | `python -m comm serve` subprocess with demo users alice/bob/carol |
 | `test_negative_control.py` | Negative control (below) |
 | `test_specs.py` | Untiered Set 13 spec pins — exactly 2 sheets; membership exact (ids and order) against census unit `untiered:Communication` in `remainder.json`; the High paired record F1302271924A excluded; tier discipline (impact "Unknown", `cmmc_tier` null) on every sheet; registry fields vs `forks.json`; descriptions vs `remainder/uncovered.json`; literal claim table ({notifications_alerts} / {messaging, voice_telephony}, 3 total, no zero-claim fork); every claim's evidence verbatim in its description under the founding `\r`→space normalization; removal pins (AtHoc incident-events not scheduling; AtHoc self-reporting not reporting) and near-miss pins (location visibility not tracking; permission-based not permits/identity; call center not contact center; "securely" not secure transmission; Cisco access lists not identity; Cisco video substance with no family; no "acknowledg" in Cisco) |
+| `test_gaps_batch.py` | Final GAPS batch extension pins — one class per gap entry over `comm/extensions.py`, the tier-null recursive shape scan, and the batch's fresh negative control (below, "Final GAPS batch") |
 | `comm_helpers.py` | Shared fixtures: demo users (ADMIN/OPERATOR/VIEWER), `USERS` registry, `fresh_store()`, and `make_store()` building a CommStore + AuditLog + a contact + a group containing it + an enabled email channel (created by ADMIN). Docstring relabeled for this set; otherwise byte-identical to the founding helpers |
 
 ## Negative control
@@ -85,3 +86,57 @@ founding group's shipped hash
 (`6ccd412c2c1a836694d74687804aa90abe31f4c54eba62e916c31cb6dc5e6110`),
 and the suite re-run: **100 tests, OK**. The suite catches this
 defect class; the negative control is not decorative.
+
+## Final GAPS batch — extension tests (2026-11-07)
+
+`test_gaps_batch.py` (40 tests) pins the batch extension surface
+(`src/comm/extensions.py`, `CommExtensions`) for the 9 open
+entries of this set's gap list — see `../BATCH.md` for the
+per-entry dispositions. Layout: one test class per entry
+(presence, content sharing, accountability, federation, channel
+transports, meeting sessions, calls, crisis orchestration,
+voicemail), a cross-cutting tier-null/shape scan (recursive: no
+tier/baseline/equivalence key, no float, no numeric list in any
+extension record or view; stub records carry `reference_stub:
+True`, transport-shaped records `reference_transport: True`),
+the fresh negative control below, and a bare-store fixture.
+Suite total after the batch: **140 tests, OK** (100 before).
+
+### Fresh negative control (batch)
+
+`TestLatestReportNegativeControl` implements the required
+three-leg control for the batch's new derivation claim: a
+contact's current presence and accountability status are the
+**latest recorded** report's values. The seam is
+`CommExtensions._latest_report` (`src/comm/extensions.py`). The
+mutant subclass (`MutantExtensions`) reads the earliest report
+instead. Legs: (1) the canonical implementation reads the latest
+label (available → busy reads `busy`; missing → safe reads
+`safe`); (2) the mutant reads the earliest label instead
+(`available` / `missing`); (3) treating the mutant's outcome as
+the expected outcome fails, via a literal
+`assertRaises(AssertionError)`.
+
+### Mutation verification (batch, this tree)
+
+VERIFIED at this build (2026-11-07). The seam line
+`return reports[-1]` in `CommExtensions._latest_report`
+(`src/comm/extensions.py`) was patched to `return reports[0]`
+— the exact live counterpart of the mutant above — and the full
+suite was run: **140 tests ran, exactly 4 failed**, all in the
+batch's own new tests and all latest-report-derivation-dependent
+(raw output in `scratch/gaps_batch_mutation_run.txt`):
+
+- `test_gaps_batch.TestPresence.test_current_state_is_latest_report`
+- `test_gaps_batch.TestAccountability.test_current_status_is_latest_report`
+- `test_gaps_batch.TestAccountability.test_muster_counts_use_current_status`
+- `test_gaps_batch.TestLatestReportNegativeControl.test_canonical_latest_wins`
+
+No core or spec test failed under the mutant. `extensions.py`
+was then restored from the pre-mutation copy
+(`scratch/extensions.py.premutation`) and verified
+SHA-256-identical to the pre-mutation hash
+(`3eb0df3cb29a810ae0271eca34a16f21778c571ec672f02010e91521c82ca327`),
+and the suite re-run: **140 tests, OK**. All 7 core modules
+remain byte-identical to the shipped accounting in the group
+README.

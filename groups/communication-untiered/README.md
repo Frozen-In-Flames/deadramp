@@ -345,3 +345,35 @@ then and not before.
   the service enforces the role permission matrix on those hooks
   and ships no identity provider, no credential store, and no
   authentication of its own.
+
+## Final GAPS batch (2026-11-07)
+
+The 9 open gap entries registered for this set are closed by one
+new module, `src/comm/extensions.py` (`CommExtensions` over the
+core store; all 7 core modules byte-identical), with per-entry
+dispositions in [`BATCH.md`](BATCH.md): 5 built as records plus
+read-time derivations in-substrate (presence reports with the
+current state derived from the latest recorded report;
+content-share records holding opaque references only, content
+never held; personnel-accountability status reports with
+caller-reported location labels held verbatim and muster counts
+derived at read; federation link/exchange records; and the
+channel-transport configuration and dispatch records surface),
+and 4 shipped as labeled reference implementations
+(`reference_stub: True`: meeting sessions, call records,
+alert-campaign definitions and dispatch requests — a registry
+that never executes — and voicemail records holding opaque media
+references only). Federation exchanges and channel dispatch
+records carry `reference_transport: True` with
+`transmitted_here: False`: the core's reference transport
+remains the only transport, and nothing in the extension
+transmits, connects, or carries media. Tier null binds the whole
+new surface — a recursive scan in the batch tests finds no
+tier-shaped key, no float, and no numeric list in any extension
+record or view. Suite: 100 tests before, **140 tests after,
+OK**, including a fresh mutation-verified negative control on
+the current-state derivation seam (`_latest_report`; live drill
+exactly 4 failures, recorded in `tests/README.md`). The
+section's tenth entry (platform layer) was already closed
+`re-scoped` under the repo-root `PLATFORM-LAYER.md` and is not
+part of this unit.
