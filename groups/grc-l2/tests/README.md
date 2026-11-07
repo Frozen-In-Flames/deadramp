@@ -99,6 +99,45 @@ verified SHA-256-identical
 (e2eac653fb99f97b2a8348f0814eb2b65caa3fc6da0e4103897da67ff3369eeb);
 the suite re-ran: **132 tests, OK**.
 
+## Final GAPS batch module
+
+| File | Covers (Batch) |
+|---|---|
+| `test_gaps_batch.py` | Final GAPS batch extension surface (`src/grc/extensions.py`, entries idx 353–359; dispositions in `../BATCH.md`) — collection-source / validation-job / validation-report records (report leaves the core evidence record byte-identical), feed definitions + receipts (a receipt creates no core indicator result or finding; non-integer counts rejected), scan jobs / reports / verbatim priority records (a scan report creates no core finding; priority leaves the finding byte-identical), KSI run / report records (a run report creates **no** core indicator result), reported-value records (verbatim labels; the core posture summary is byte-identical before/after), enclave environment / operation records, package records (exact key set — no figures stored) + the package view derived at read (tracks registry state; other systems excluded), the extension summary's counts, RBAC denials for the viewer across the surface, extension writes audited under `ext_` actions, and the no-score recursive scan over every extension record kind and both derived views |
+
+**Batch negative control (fresh, for the new code).**
+`TestPackageDerivationNegativeControl` pins the package
+manifest's overdue figure: it is *derived at read* through the
+single seam `_package_overdue_count` in `extensions.py`, which
+applies the core's `derive_finding_status` to each stored
+finding. For the canonical fixture (one open finding due
+2026-06-30) the real view derives overdue 1 at as_of 2026-07-01
+and 0 on the due date; the never-count mutant (an in-suite
+subclass returning 0 unconditionally) collapses both to 0, and
+treating the mutant's output as the expected output fails via
+a literal `assertRaises(AssertionError)`.
+
+**Batch mutation verification.** VERIFIED by the batch build
+worker (2026-11-07). The seam's `return count` line in the real
+`src/grc/extensions.py` (line 924, inside
+`_package_overdue_count`; patched by line number because the
+same text occurs once more as a substring of the summary
+helper's `return counts` at line 1015) was replaced with
+`return 0` and the full suite was run: **161 tests ran,
+exactly 4 failed**, all in `test_gaps_batch.py`:
+
+- `test_gaps_batch.TestPackages.test_package_view_derives_from_core_records`
+- `test_gaps_batch.TestPackages.test_package_view_tracks_registry_state`
+- `test_gaps_batch.TestPackageDerivationNegativeControl.test_real_derivation_separates_the_canonical_pair`
+- `test_gaps_batch.TestPackageDerivationNegativeControl.test_mutant_output_as_expectation_fails`
+
+`extensions.py` was then restored from the pre-mutation copy
+kept at `../scratch/extensions.py.premutation` (SHA-256
+d56ef7b13a65146d995a8bac3abaf62d2ad3c082a4c6e10cbebe1a5a2bec310d,
+verified identical to the pre-mutation hash) and the suite
+re-run: **161 tests, OK**. Status after the batch:
+**161 tests, OK**.
+
 ## Interpretation notes
 
 Where the contract left a shape open, the suite follows the

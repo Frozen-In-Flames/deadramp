@@ -567,13 +567,13 @@ Platform-layer: encryption at rest is deployment-layer (TLS when configured); si
 ## Group 33 — Governance, Risk, and Compliance (GRC) L2 (2 forks)
 
 Extended functions, specified in groups/grc-l2/UNION-SPEC.md, not implemented:
-- [ ] open — Automated evidence-validation engine, incl. API / telemetry evidence collection
-- [ ] open — Continuous-monitoring feeds & scanner integrations
-- [ ] open — Vulnerability scanning engine (prioritization / scoring of findings; the core records findings and remediation verbatim)
-- [ ] open — Automated KSI validation
-- [ ] open — Posture / risk scoring engines (deliberately absent from the core; no aggregate is computed anywhere)
-- [ ] open — Hosted enclave & PaaS operations themselves (one sibling's own domain; also the other sibling's hosting claim)
-- [ ] open — FedRAMP authorization package generation
+- [x] reference — Automated evidence-validation engine, incl. API / telemetry evidence collection
+- [x] reference — Continuous-monitoring feeds & scanner integrations
+- [x] built — Vulnerability scanning engine (prioritization / scoring of findings; the core records findings and remediation verbatim)
+- [x] reference — Automated KSI validation
+- [x] built — Posture / risk scoring engines (deliberately absent from the core; no aggregate is computed anywhere)
+- [x] reference — Hosted enclave & PaaS operations themselves (one sibling's own domain; also the other sibling's hosting claim)
+- [x] built — FedRAMP authorization package generation
 
 Named absences (not gaps): risk register / risk management functions and policy management — 0 claims in either fork's own prose; no risk engine was rounded up from the category name. Extraction note: one sibling's description carries a "services undergoing approval for use — not authorized" block naming third-party services; that block was excluded before matching (it alone would have added three false families), and those services' domains are out of scope, not gaps this group owes.
 

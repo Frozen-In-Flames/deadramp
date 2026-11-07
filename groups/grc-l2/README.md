@@ -178,6 +178,31 @@ lifecycle, agentic execution, AI narrative generation, ITSM,
 healthcare quality, connected reporting) are named as Extended
 gaps in the addendum for the final batch.
 
+## Final GAPS batch (unit: this group's founding section)
+
+The seven Extended functions registered under this group's own
+GAPS.md section are now covered by `src/grc/extensions.py`
+(`GrcExtensions` over the unchanged core; per-entry record in
+`BATCH.md`). Three close built in records form: scan jobs,
+scan reports, and verbatim reported priority labels for the
+scanning entry; reported-value records (values an external
+scoring engine or assessor reported, stored verbatim as
+labels, `computed_here: False` — nothing is computed, and the
+core posture summary neither reads nor reflects them) for the
+scoring entry; and package records that store no figures,
+with the manifest derived at read from core records, for
+package generation. Four close as labeled reference
+implementations, as drafted: evidence-validation jobs/reports
+and collection-source definitions (a validation report never
+sets the core evidence record's status), monitoring-feed
+definitions and receipts (a receipt creates no core result or
+finding), automated KSI validation runs/reports (a run report
+creates no core indicator result), and enclave environment /
+operation records (nothing is hosted or operated here). The
+doctrine holds on the new surface: counts only, no computed
+score anywhere, statuses and values verbatim, derivations at
+read. Suite after the batch: **161 tests, OK**.
+
 ## Control mapping summary
 
 Against the NIST SP 800-53 Rev. 5 families the seeded catalog draws
