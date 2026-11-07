@@ -1813,14 +1813,14 @@ Gaps from Remainder Group 4, specified in groups/cloud-infrastructure-hosting-l2
 ## Remainder Group 5 — Library Systems L1 (2 forks)
 
 Gaps from Remainder Group 5, specified in groups/library-systems-l1/UNION-SPEC.md, not implemented. Five of the category's ten families stand at zero claims across the group (discovery and delivery, digital preservation, course resource lists, research activities, knowledge management) and are registered here in their own names:
-- [ ] open — Discovery & delivery service
-- [ ] open — Digital preservation system
-- [ ] open — Course resource list management
-- [ ] open — Research activities platform
-- [ ] open — Knowledge management system
-- [ ] open — Accessible delivery & rendering
-- [ ] open — Automation engine
-- [ ] open — Integration transport
+- [x] built — Discovery & delivery service
+- [x] built — Digital preservation system
+- [x] built — Course resource list management
+- [x] reference — Research activities platform
+- [x] built — Knowledge management system
+- [x] reference — Accessible delivery & rendering
+- [x] reference — Automation engine
+- [x] reference — Integration transport
 - [x] re-scoped — Identity provider (IA-2 stays with the embedding organization)
 
 ## Untiered Set 29 — Cloud Infrastructure & Hosting (Project Hosts GSS One, F1403283529)

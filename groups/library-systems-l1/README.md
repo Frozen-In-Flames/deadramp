@@ -106,3 +106,18 @@ are posture prose, and none is converted into a claim.
   availability seam makes exactly 2 tests fail (see
   `tests/README.md`); the restored store is SHA-256-verified
   byte-identical and the suite is green (47 tests).
+
+## Final GAPS batch note
+
+`src/librarysys/extensions.py` adds records surfaces for the
+group's Extended functions (per-entry dispositions in
+`BATCH.md`): discovery queries as digests + result references
+(built), preservation metadata + fixity reports (built), course
+resource lists over core items (built), knowledge records linked
+to core items (built), and labeled reference records for the
+research activities platform, accessible delivery & rendering
+(re-judged: delivery/rendering is a delivery layer, not records),
+the automation engine, and integration transport — nothing here
+executes, renders, delivers, connects, or transmits. Suite: 66
+tests, including a fresh mutation-verified negative control on
+the course-list entry guard (exactly 1 failure under the mutant).

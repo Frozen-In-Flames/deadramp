@@ -31,3 +31,30 @@ and
 `tests/store.py.premutation` and verified byte-identical by SHA-256
 (`tests/store.py.sha256`: b7e6dc890470afc7157c4df1a873861ac80648155859946d6b8059526f85ef63);
 the restored suite is fully green.
+
+## Final GAPS batch (test_gaps_batch.py, 19 tests; suite now 66)
+
+Pins the extension surface of `src/librarysys/extensions.py` per
+GAPS.md entry: discovery queries hold digests + result refs only
+(no query-text parameter exists; `result_count` derived, never
+stored); preservation records hold metadata + validated digests
+with `bytes_held: False`; course lists compose core items with
+`entry_count` derived; research, automation, and transport are
+labeled reference records pinned to leave core workflow and
+integration records deep-equal; accessibility requests are
+reference records with `rendered_here`/`delivered_here: False`;
+recursive scan finds no score-shaped or money-shaped key and no
+float anywhere on the surface.
+
+Fresh negative control (mutation-verified): the course-list entry
+guard `_check_course_entry_absent` in `extensions.py`.
+`test_gaps_batch.NegativeControlTests` carries the three-leg
+control (canonical rejects a duplicate entry / no-guard mutant
+subclass accepts it / mutant-as-expectation fails). Live drill:
+the guard condition in the real file was patched to `if False:`
+and the full suite run — **exactly 1 failure**
+(`NegativeControlTests.test_canonical_rejects_duplicate_entry`;
+66 tests run, FAILED (failures=1); output in
+`scratch/gaps_batch_mutation_run.txt`). The module was restored
+from `scratch/extensions.py.premutation`, SHA-256 verified
+identical, and the suite re-ran fully green.
