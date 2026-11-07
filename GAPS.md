@@ -668,10 +668,10 @@ The Group 25 category union's extended families (casework depth, guidance delive
 ## Singleton 42 — Finance L3-adjacent (1 fork)
 
 The fork's own substance is a cloud infrastructure platform, platform layer rather than finance function, specified in groups/finance-l3/UNION-SPEC.md, not implemented:
-- [ ] open — The cloud infrastructure platform itself (the provider's regions: compute, storage, networking, database, and the rest of the service catalog operated as infrastructure)
-- [ ] open — Region operations & sovereignty properties (US-citizen / US-soil operation, ITAR environment, the regions' FedRAMP High boundary)
-- [ ] open — Eligibility screening of root account holders
-- [ ] open — Collaborative continuous monitoring with the provider
+- [x] built — The cloud infrastructure platform itself (the provider's regions: compute, storage, networking, database, and the rest of the service catalog operated as infrastructure)
+- [x] built — Region operations & sovereignty properties (US-citizen / US-soil operation, ITAR environment, the regions' FedRAMP High boundary)
+- [x] built — Eligibility screening of root account holders
+- [x] reference — Collaborative continuous monitoring with the provider
 
 The Group 31 category union's extended families (instant disbursement execution / payment rails, travel booking execution engines, financial wellness delivery tools, streaming / real-time reporting pipelines) are already registered under Group 31 and are not re-registered here. Baseline gaps at High: MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13 — the build explicitly does NOT inherit the fork's FIPS posture; stdlib is not a validated module); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Platform-layer: multi-tenancy (the fork operates multi-tenant regions in reality; single-tenant reference deployment); TLS only when configured; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: zero claims tag for this fork (region prose — ITAR, sovereignty, data-center inventory; not even the hosting family tags, and the category name in its business_categories list is a filing label, not a claim); all eleven core functions are carried, not claimed, under the Merge Rule. Named absences for the category at both tiers (not built, not gaps): banking integration & account verification, payroll integration & wage calculation, lending & credit, trading & investment execution, tax reporting & remittance, GRC platform functions.
 

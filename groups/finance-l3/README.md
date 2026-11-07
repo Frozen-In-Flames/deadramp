@@ -304,3 +304,34 @@ registered as gaps in the addendum. Tests: **249 → 259**, all
 passing, with both signature mutation drills re-run in this
 tree (earned cap: exactly 6 failures under mutation; audit
 verifier: exactly 4).
+
+## Final GAPS batch
+
+Per [`BATCH.md`](BATCH.md) (unit: the 4 open entries of this
+group's GAPS.md section, idx 404–407; dispositions per
+`../../gaps-batch/DECISION.md`): the founding fork's own
+substance — the platform layer this build runs on — now has its
+records layer in `src/finance/extensions.py`
+(`FinanceExtensions` over the untouched core store; all 7 core
+modules byte-identical). The cloud infrastructure platform
+itself closes built as region and service-catalog records
+(`operated_here: False` throughout); region operations &
+sovereignty properties close built as provider attestation
+records stored verbatim (`verified_here` / `enforced_here:
+False` — the provider's statements about its regions, recorded
+as stated and transferring nothing, including no FIPS posture
+and no authorization boundary); eligibility screening of root
+account holders closes built as screening case records (opaque
+`account_ref` only) plus outcome reports stored verbatim
+(`screened_here` / `determined_here: False` — no determination
+is computed); collaborative continuous monitoring closes as the
+batch's labeled reference implementation
+(`reference_stub` / `reference_transport: True`,
+`monitored_here: False`). No record shape on the surface
+carries a money field, a bank-detail field, or an identifier
+field, and the category's standing named absence — trading &
+investment execution — stands: the class has no order,
+execution, or payment operation, pinned by test. Tests:
+**259 → 293**, all passing, including a fresh
+mutation-verified negative control on the by-label count seam
+(`_count_by_label`) recorded in `tests/README.md`.

@@ -228,3 +228,55 @@ to the shipped hashes (`6ec44f3c…` / `c027a74b…`); the full
 suite re-ran green after each restore. Raw failure lists:
 `scratch/additions_mutation_run.txt`,
 `scratch/additions_mutation_audit_run.txt`.
+
+## Final GAPS batch — platform-layer extension coverage (added 2026-11-07)
+
+| File | Covers |
+|---|---|
+| `test_gaps_batch.py` | The extension surface in `src/finance/extensions.py` (`FinanceExtensions` over the core store) — one class per open GAPS.md entry for this group (see `../BATCH.md` for dispositions): region and service-catalog records for the cloud platform itself (exact key sets, duplicate `region_ref` rejected with no id consumed, catalog category vocabulary enforced, posture counts derived at read and never stored); provider attestation records for the regions' sovereignty properties (statement labels verbatim, property-kind vocabulary enforced, the region record byte-identical after an attestation, per-kind counts in the posture view); screening case records (opaque `account_ref` only, exact key sets) plus outcome reports stored verbatim (the case record byte-identical after a report; summary counts derived at read) with the standing trading & investment execution absence pinned (no order / execution / payment / provisioning method exists on the class); the monitoring reference family (arrangement + report records labeled `reference_stub` / `reference_transport`, reported event counts validated as non-negative integer counts with booleans and floats rejected, summary derived at read with the events total stated as a total of reported counts) and the built/reference distinction pinned (built records carry no `reference_stub` key). Cross-cutting: `ext_` actions and `:denied` denials on the core hash-chained audit log with the chain verifying `(True, None)` after extension operations, viewer write denied, non-member denied by the core membership boundary, platform-admin reach, the separated `auditor` role denied every extension read and write while its core audit duty (trail read, `AuditLog.query`, `verify_chain`) works unchanged, cross-program records invisible, an audit-write failure rolls the record and its id back, a full extension flow leaves core program / accrual / summary state byte-identical, and a recursive forbidden-key scan (no `*_cents` key at all; no `score`, bank-detail, identifier, rate / trend / forecast / average, or grand-total key) across one record of every extension kind. Plus negative control #3 (below). |
+
+Suite status with the batch: **293 tests** (259 at delivery +
+34 in `test_gaps_batch.py`), all passing.
+
+## Negative control #3 — by-label count seam (batch, 2026-11-07)
+
+`test_gaps_batch.py::TestCountByLabelNegativeControl` implements
+the mutant for the extension surface's own derivation seam: a
+`_count_by_label` replacement that builds the result dict with
+every label at zero and **never counts the records**. The traced
+claim is that the surface's derived views — platform posture,
+screening summary, monitoring summary — report the counts of
+the records actually recorded: every figure in them is a count
+of recorded labels, derived at read. For each canonical case
+the test asserts (1) the real seam and the real views return
+the recorded counts, (2) the mutant returns all-zero counts
+for the same records, and (3) — via a literal
+`assertRaises(AssertionError)` — that treating the mutant's
+outcome as the canonical expectation fails. The sanity case
+pins that the mutant is weakened, not broken: over zero
+records both seams agree (all zeroes).
+
+Mutation verification: VERIFIED by the coordinator
+(2026-11-07). The counting loop in `_count_by_label`
+(`src/finance/extensions.py`) was patched out — the result
+dict is built and returned without the loop, the exact live
+counterpart of the mutant in the test module — applied as a
+scoped replacement with the target text asserted to occur
+exactly once, and the full suite was run: **293 tests ran,
+exactly 7 failed**:
+
+- `test_gaps_batch.TestCloudPlatformBuilt.test_posture_derived_counts`
+- `test_gaps_batch.TestRegionAttestationsBuilt.test_posture_counts_by_kind`
+- `test_gaps_batch.TestScreeningBuilt.test_summary_derived`
+- `test_gaps_batch.TestMonitoringReference.test_summary_derived`
+- `test_gaps_batch.TestCountByLabelNegativeControl.test_canonical_counts_from_seam`
+- `test_gaps_batch.TestCountByLabelNegativeControl.test_canonical_counts_match_views`
+- `test_gaps_batch.TestCountByLabelNegativeControl.test_mutant_outcome_is_not_the_canonical_expectation`
+
+`extensions.py` was then restored from the pre-mutation copy
+(`scratch/extensions.py.premutation-gaps`; SHA-256
+`ef7d499ef50cfe9f95fe32e213850a4fef99ac1717df575eb0bf9eb4ed3664b4`,
+recorded in `scratch/extensions.py.premutation-gaps.sha256`
+and verified identical after restore) and the full suite
+re-run: **293 tests, OK**. Raw failure list:
+`scratch/gaps_batch_mutation_run.txt`.
