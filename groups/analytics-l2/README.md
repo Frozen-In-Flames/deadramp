@@ -168,3 +168,28 @@ unchanged; the fork's remaining described surface is a back-office
 service catalogue (HR / finance / property automation tools,
 digital signatures, e-workflows, mobile capabilities) named as
 Extended gaps in the addendum for the final batch.
+
+## Final GAPS batch (Group 1 — Analytics L2)
+
+The 14 Extended families listed under "Honesty" above are now
+closed in one new module, `src/analytics/extensions.py`
+(`AnalyticsExtensions`, wrapping the core store); the 10 core
+modules are byte-identical (SHA-256 verified) and the core is
+unchanged. Per `BATCH.md`: 10 families are built as records plus
+deterministic derivations over the core's own datasets —
+collaboration workspaces, stated-rule data transformation (run
+records hold counts and method, never derived rows), governance
+policies and access reviews, geospatial derivations (haversine
+distance/bearing at read), deterministic text term counts,
+archive records that delete nothing (retention execution stays
+with the embedding organization), saved views and dashboards,
+KPI definitions whose values derive at read, schedule definitions
+with recorded run receipts, and media metadata records. Four
+families ship as labeled reference implementations
+(`reference_stub: true`): predictive ML (no train/predict surface
+exists), alerts (rule records plus point-in-time recorded
+evaluation receipts; nothing monitors), streaming, and
+proprietary-source connectors (core ingest remains open CSV/JSON
+only). Full suite: 176 tests, OK, including a fresh
+mutation-verified negative control on the transform filter seam
+(recorded in `tests/README.md`).

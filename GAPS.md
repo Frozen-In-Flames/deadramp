@@ -7,20 +7,20 @@ Status key: `open` = registered, not yet built. Final-batch closures: `built` = 
 ## Group 1 — Analytics L2 (128 forks)
 
 Extended functions, specified in groups/analytics-l2/UNION-SPEC.md, not implemented:
-- [ ] open — Predictive ML (the remainder of the statistical/ML claim family; core covers descriptive statistics only)
-- [ ] open — Alerts, monitoring & detection
-- [ ] open — Real-time / streaming analytics
-- [ ] open — Collaboration (shared workspaces around analytics)
-- [ ] open — Proprietary-source connectors (core covers open-format file ingest only)
-- [ ] open — Data transformation / ETL
-- [ ] open — Governance beyond the dataset registry
-- [ ] open — Geospatial analytics
-- [ ] open — Text / NLP analytics
-- [ ] open — Archiving
-- [ ] open — Self-service BI
-- [ ] open — KPI management
-- [ ] open — Scheduling
-- [ ] open — Media analytics
+- [x] reference — Predictive ML (the remainder of the statistical/ML claim family; core covers descriptive statistics only)
+- [x] reference — Alerts, monitoring & detection
+- [x] reference — Real-time / streaming analytics
+- [x] built — Collaboration (shared workspaces around analytics)
+- [x] reference — Proprietary-source connectors (core covers open-format file ingest only)
+- [x] built — Data transformation / ETL
+- [x] built — Governance beyond the dataset registry
+- [x] built — Geospatial analytics
+- [x] built — Text / NLP analytics
+- [x] built — Archiving
+- [x] built — Self-service BI
+- [x] built — KPI management
+- [x] built — Scheduling
+- [x] built — Media analytics
 
 ## Group 2 — Collaboration L2 (57 forks)
 

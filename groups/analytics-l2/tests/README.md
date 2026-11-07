@@ -33,6 +33,7 @@ to the shipped implementation where the spec left a shape open — see
 | `test_main_cli.py` | `python -m analytics serve` subprocess with demo users alice/bob/carol |
 | `test_negative_control.py` | Negative control (below) |
 | `test_additions.py` | Remainder addition (ADDENDUM.md) — spec integrity for the appended NetComm / Beacon sheet (membership, literal claim table, verbatim evidence, census citation, near-miss pins, group totals) + the fork's substrate case (customized dashboard composition; dashboard averages are means) |
+| `test_gaps_batch.py` | Final GAPS batch (BATCH.md) — the 14 Extended families as built in `analytics/extensions.py`: per-entry surface pins (record shapes, stub labels, derived-never-stored), RBAC/audit pins, and the fresh negative control below |
 | `analytics_helpers.py` | Canonical sales dataset + row-shape normalisation |
 
 ## Negative control
@@ -78,3 +79,32 @@ comparison; creation returns 200 or 201):
   through `float()`.
 - `GET /datasets` returns `{"datasets": [...]}` and `GET /audit`
   returns `{"entries": [...]}`; bare lists are also accepted.
+
+## Final GAPS batch (Group 1 — Analytics L2)
+
+The batch adds `tests/test_gaps_batch.py` (29 tests) pinning the
+extension surface in `src/analytics/extensions.py` (see
+`../BATCH.md`): 10 Extended families built as records plus
+deterministic derivations over the core's own datasets, 4 shipped
+as labeled reference implementations. Suite after the batch:
+**176 tests, OK** (147 before). The core modules are unchanged
+(SHA-256 verified for all 10).
+
+**Fresh negative control for the new code (the transform filter
+drill).** `test_gaps_batch.TestTransformNegativeControl` states the
+canonical expectation — a `region eq north` filter step run over
+the canonical sales dataset returns exactly the 3 north rows —
+asserts the real implementation meets it, and asserts a
+filter-blind subclass mutant (filter steps silently dropped) is
+rejected by it. Verified by mutation against the real file:
+patching `_apply_step`'s filter branch in
+`src/analytics/extensions.py` to return `list(rows)` unfiltered
+ran the full suite — **176 tests, exactly 2 failures**
+(`test_gaps_batch.TestTransform.test_filter_run_and_run_record`
+and `test_gaps_batch.TestTransformNegativeControl.
+test_mutant_is_rejected`, both carrying the canonical
+expectation). `extensions.py` was restored from the pre-mutation
+copy (`scratch/extensions.py.premutation`) and verified
+SHA-256-identical (`87a3773be24dcc731f56faa63f8db9a1077a2bf796227e
+5615bda4512e9ce61d`); the suite re-ran green. Raw output:
+`scratch/gaps_mutation_run.txt`.
