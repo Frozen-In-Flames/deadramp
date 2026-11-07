@@ -118,3 +118,45 @@ rewritten on disk) and asserts detection after reload, again at
 index 1. The control runs in the suite on every run; no separate
 patch drill is needed because the mutation is applied to the real
 log state, not to a copy of the logic.
+
+## Final GAPS batch additions (54 tests)
+
+| File | Covers |
+|---|---|
+| `test_gaps_batch.py` | The extension surface in `src/datamgmt/extensions.py` (`DataMgmtExtensions` over the core store) — one class per open GAPS.md entry for this group (see `../BATCH.md` for dispositions, the long-tail enumeration, and the retention re-judgment): storage volume records + derived summary; reported PPRL linkage pairs between opaque refs + de-identification declarations (nothing computed, nothing transformed); query definitions as deterministic derivations over supplied batches + definition-only visualizations; inspection records + capital plans with totals derived at read (floats/bools rejected as money); case records with evidence refs and SoD decisions; declared transformation steps + field-lineage views with both granularities labeled; disposition decision records with derived eligibility + execution references (re-judged retention entry — dataset and policy pinned present after an approved, eligible decision); stub/transport labels on every reference record (connectors, search indexes, processing jobs, workflow/interview definitions, hosting, clusters, file transfers, models/orchestrations). Cross-cutting: `ext_` actions and `:denied` denials on the core audit log; extension entries carrying hash-chain fields with `verify_chain()` clean over them (AU-9); the `auditor` role denied on extension writes, reads, and case decisions (AC-5); extension mutations fail-closed on a broken audit log — record absent, id not consumed, retry takes the id (AU-5). Plus negative control #3 (below). |
+
+### #3 — Case-decision separation of duties (new with the batch extension, AC-5)
+
+`test_gaps_batch.py::TestCaseNegativeControl` implements the mutant
+for the extension surface's own signature guard: a
+`DataMgmtExtensions` subclass (`MutantDataMgmtExtensions`) whose
+`_check_case_decider_not_opener` is a no-op. The traced claim is
+that **case decisions are never self-decided** — the same doctrine
+as control #1 (the core's `_check_decider_not_requester`), carried
+into the case surface the batch adds. The test asserts the
+canonical expectation from the real implementation (a decider
+whose name matches the opener is denied even when their role holds
+`access_decide` — the viewer-opener / name-identical-steward
+construction isolates the seam exactly as control #1 isolates the
+core guard), that the mutant would NOT produce it (it decides and
+mints the decision), and that treating the mutant's outcome as
+expected fails.
+
+Mutation verification: VERIFIED by the coordinator (2026-11-07).
+The guard in `DataMgmtExtensions._check_case_decider_not_opener`
+(`src/datamgmt/extensions.py`) was patched in the real file so the
+opener-match branch returns instead of raising
+`PermissionDenied`, the exact live counterpart of the in-suite
+mutant. The full suite was run: **293 tests ran, exactly 2
+failed** —
+
+- `test_gaps_batch.TestCaseManagement.test_self_decision_denied_canonical`
+- `test_gaps_batch.TestCaseNegativeControl.test_name_identical_self_decision`
+
+`extensions.py` was then restored from the pre-mutation copy in
+`scratch/` (SHA-256
+`6ca4bbfc93ee3a4f062770a0add940c1acaf308f7a7f1e913b60a969ee9166a3`,
+verified identical to the pre-mutation hash in
+`scratch/extensions.py.sha256`) and the suite re-run: **293 tests,
+OK**. Suite status with the batch: **293 tests** (239 at delivery +
+54 in `test_gaps_batch.py`).

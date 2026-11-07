@@ -461,20 +461,20 @@ Platform-layer: encryption at rest is deployment-layer (TLS when configured); si
 ## Group 28 — Data Management L3-adjacent (2 forks)
 
 Extended families carried from the Group 12 union, specified in groups/data-management-l3/UNION-SPEC.md, not implemented:
-- [ ] open — Distributed storage engines
-- [ ] open — Integration runtime & connector engine
-- [ ] open — PPRL record-linkage & de-identification engines
-- [ ] open — Enterprise search indexing engine
-- [ ] open — Content processing engines (OCR / transcription / categorization)
-- [ ] open — Workflow / BPM & guided-interview engines
-- [ ] open — Query & visualization engines
-- [ ] open — IaaS / PaaS hosting; Kubernetes provisioning engine
-- [ ] open — Asset inspection & capital-planning apps
-- [ ] open — Managed file transfer transport (claimed outright by one sibling at this tier; transfers in the core are ingestion-shaped records)
-- [ ] open — Case management depth
-- [ ] open — AI/ML analytics in bundled apps
-- [ ] open — Field-level / transformation lineage (provenance stays bounded to ingestion granularity)
-- [ ] open — Retention disposition execution
+- [x] built — Distributed storage engines
+- [x] reference — Integration runtime & connector engine
+- [x] built — PPRL record-linkage & de-identification engines
+- [x] reference — Enterprise search indexing engine
+- [x] reference — Content processing engines (OCR / transcription / categorization)
+- [x] reference — Workflow / BPM & guided-interview engines
+- [x] built — Query & visualization engines
+- [x] reference — IaaS / PaaS hosting; Kubernetes provisioning engine
+- [x] built — Asset inspection & capital-planning apps
+- [x] reference — Managed file transfer transport (claimed outright by one sibling at this tier; transfers in the core are ingestion-shaped records)
+- [x] built — Case management depth
+- [x] reference — AI/ML analytics in bundled apps
+- [x] built — Field-level / transformation lineage (provenance stays bounded to ingestion granularity)
+- [x] reference — Retention disposition execution
 
 This group's own verticals: digital-evidence management depth (playback, redaction, disclosure), device fleet control (body-worn / in-car cameras, conducted-energy devices, interview rooms), real-time operations platform, records / report-writing automation; secure transfer & sharing platform depth (working web / email / SFTP / MFT / API transports), secure data forms, possessionless editing, DLP / CDR / antivirus engines, customer-managed keys, SIEM forwarding.
 

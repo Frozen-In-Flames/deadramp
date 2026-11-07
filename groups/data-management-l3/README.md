@@ -193,3 +193,34 @@ in place makes `verify_chain()` fail at exactly that entry's index
   tag zero claims in this group and stand in the union under the
   recorded core-boundary decision (the Merge Rule carries the L2
   union upward whole). Counts are a floor, stated as such.
+
+## Final GAPS batch — Group 28 unit
+
+The 14 Extended entries in this group's GAPS.md section are closed
+by one new module, `src/datamgmt/extensions.py`
+(`DataMgmtExtensions`, wrapping the core store; all core modules
+byte-identical), following the Group 12 batch unit's forms family
+by family with three tier adaptations in the extension layer:
+extension mutations are **fail-closed** on audit-write failure
+(record and id roll back, AU-5), extension entries join the core's
+**hash-chained** audit log (AU-9), and the **auditor** role holds
+no permission on the extension surface (AC-5). Six entries are
+built as records plus deterministic derivations (storage volumes,
+reported PPRL linkage pairs and de-identification declarations,
+query/visualization derivations, inspections and capital plans,
+case management under a decider-never-opener guard, declared
+field-level lineage with the ingestion-granularity bound labeled);
+seven ship as labeled reference implementations (integration
+runtime, search indexing, content processing, workflow/BPM and
+guided interviews, hosting and Kubernetes provisioning, managed
+file transfer, AI/ML); and retention disposition execution is
+**re-judged to a labeled reference implementation** on the
+grounds in `BATCH.md` (PLATFORM-LAYER.md decision 4 plus this
+spec's own "schedules and reports; it does not execute
+disposition") — disposition decision records with derived
+eligibility, execution references that execute nothing. Per-entry
+dispositions, the long-tail enumeration, and the re-judgment are
+in `BATCH.md`. Tests: **293, all passing** (239 + 54 in
+`tests/test_gaps_batch.py`), including a fresh mutation-verified
+negative control on the case-decision guard (exactly 2 failures
+under the mutant; see `tests/README.md`).
