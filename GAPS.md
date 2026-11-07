@@ -375,14 +375,14 @@ Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / 
 ## Group 24 — Content Management System (CMS) L1 (2 forks)
 
 Extended functions, specified in groups/cms-l1/UNION-SPEC.md, not implemented:
-- [ ] open — Library ILS vertical (this group's dominant vertical): circulation, acquisitions, resource sharing / interlibrary loan, collection management, knowledgebase, access proxying, digital collection management, and the union-catalog data network beneath them
-- [ ] open — Mobile application delivery and the companion mobile app itself
-- [ ] open — Rendering & templating engines and visual / WYSIWYG editors (carried from the Group 20 union; 0 claims here)
-- [ ] open — CDN / delivery network and runtime site serving (carried; one sibling's "content delivery functionality" is a recorded near-miss)
-- [ ] open — Enterprise search indexing & discovery engines (carried; one sibling's discovery service is a recorded near-miss)
-- [ ] open — Analytics & reporting engines beyond registry reporting (carried; "custom reports / Report Designer" are recorded near-misses)
-- [ ] open — Bulk ingestion & index-in-place engines (carried)
-- [ ] open — BPM / case-management engine; participant engagement vertical; personalization (carried from the Group 20 union at 0 claims here)
+- [x] built — Library ILS vertical (this group's dominant vertical): circulation, acquisitions, resource sharing / interlibrary loan, collection management, knowledgebase, access proxying, digital collection management, and the union-catalog data network beneath them
+- [x] built — Mobile application delivery and the companion mobile app itself
+- [x] built — Rendering & templating engines and visual / WYSIWYG editors (carried from the Group 20 union; 0 claims here)
+- [x] reference — CDN / delivery network and runtime site serving (carried; one sibling's "content delivery functionality" is a recorded near-miss)
+- [x] reference — Enterprise search indexing & discovery engines (carried; one sibling's discovery service is a recorded near-miss)
+- [x] built — Analytics & reporting engines beyond registry reporting (carried; "custom reports / Report Designer" are recorded near-misses)
+- [x] built — Bulk ingestion & index-in-place engines (carried)
+- [x] built — BPM / case-management engine; participant engagement vertical; personalization (carried from the Group 20 union at 0 claims here)
 
 Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (one sibling claims it in prose; single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec honesty note: exactly one claim tags in this entire group under the verbatim Group 20 taxonomy; every near-miss is itemized in the spec's artifact log, the taxonomy was not re-tuned, and the 12-function core stands on an explicit core-boundary decision (both products presuppose the substrate in their own words). Tier precision: SI-7 is a Moderate selection and is explicitly not claimed at this tier; the asset checksums are an SI-family implementation property.
 

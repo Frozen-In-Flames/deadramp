@@ -92,3 +92,87 @@ verified identical to the pre-mutation hash, to
 `tests/store.py.premutation`, and to Group 20's original file) and
 the suite re-run: **98 tests, OK**. The suite catches this defect
 class; the negative control is not decorative.
+
+## Final GAPS batch coverage
+
+`test_gaps_batch.py` (44 tests) pins the final batch unit's
+extension surface (`../src/cms/extensions.py`, `CmsExtensions`
+wrapping the core store): template/fragment definition records
+and editor configurations (held as data, `rendered_here: False`,
+placeholder names derived at read and absent from the stored
+record, prior bodies/settings retained in `history`); the
+library ILS vertical in this group's own records form
+(circulation loans with current state derived at read and absent
+from the stored record, MARC21 field records held as data with an
+exact field shape and never searched by the core search,
+integer-cent acquisition orders with float/boolean rejection,
+ILL requests with partner-reported outcomes and derived state,
+collection records with label counts derived at read,
+knowledgebase articles in the article-revisions form, proxy
+configurations as data with `proxied_here: False`, digital
+collections as metadata-plus-digest member records with derived
+member counts, and union-catalog holdings with
+`network_here: False` and derived state); mobile application and
+release definition records (no binary held,
+`delivered_here: False`) with reported distribution outcomes;
+analytics report definitions and run records (the stored run's
+exact key set pinned — no figure field — with figures derived at
+read from the core registry report and shown to track registry
+state after recording); ingestion-batch, ingestion-job (bound to
+a core item; unknown item consumes no id), and index-declaration
+records with derived totals; BPM case records (the stored
+record's exact key set pinned — no content field — with derived
+current state and decision records carrying
+`adjudicated_here: False`); participation records with outcome
+counts derived at read; personalization segments/subjects/rules
+with matching derived at read (`served_here: False`,
+`optimized_here: False`); and the two labeled reference families
+(CDN / runtime serving with transport receipts; enterprise
+search indexing & discovery with engine-reported run counts and
+discovery query records holding a SHA-256 digest plus result
+references only — the raw query text never stored), including
+the core's literal substring search pinned unchanged. See
+`../BATCH.md` for the per-entry dispositions. Existing core
+modules are byte-identical (`store.py` still SHA-256
+`e1d05424812f17b5bf1de6023bde72e08983a1790854d36df50d3ef2ad232de1`,
+all 7 of 7 unchanged).
+
+### Batch negative control (fresh, for the new code)
+
+`test_gaps_batch.py`'s `TestNegativeControlDeciderNotOpener`
+implements the batch's mutant: a `CmsExtensions` subclass whose
+`_check_decider_not_opener` is a no-op — the
+separation-of-duties check is skipped. The traced claim is that
+**a case's decision is recorded only by someone other than the
+user who opened the case** (BPM / case-management family;
+control family AC-5, a Low-baseline selection at this tier,
+mirroring this group's founding drill on the editorial approver
+guard). The tests assert the canonical expectation (the opener's
+decision raises `PermissionDenied`, is audited as
+`ext_case_decision:denied`, records nothing, and consumes no
+decision id — the next valid decision is `dec-1`), that the
+mutant would NOT produce it (the opener's decision is recorded),
+and — via a literal `assertRaises(AssertionError)` — that
+treating the mutant's outcome as the expected outcome fails. A
+further test confirms a *different* decider (publisher bob)
+deciding editor carol's case succeeds on the real register, so
+the denial is the opener check firing rather than a blanket
+refusal.
+
+Mutation verification: VERIFIED on this tree (2026-11-07). The
+guard condition in `CmsExtensions._check_decider_not_opener`
+(`src/cms/extensions.py`) was patched to `if False:` — the seam
+line occurs exactly once in the file (count asserted before
+patching) — and the full suite ran: **142 tests ran, exactly 2
+failed** —
+
+- `test_gaps_batch.TestNegativeControlDeciderNotOpener.test_opener_cannot_decide_canonical`
+- `test_gaps_batch.TestNegativeControlDeciderNotOpener.test_denied_decision_consumes_no_id`
+
+`extensions.py` was then restored from the pre-mutation copy in
+the group's `scratch/` (`scratch/extensions.py.premutation`,
+SHA-256
+`9881cb12b9d30ff646fce816fb82bcc908f03930f490cd9c8c2d31beb0a66415`,
+verified identical to the pre-mutation hash) and the suite
+re-ran: **142 tests, OK**. The raw mutated run is in
+`scratch/gaps_batch_mutation_run.txt`.

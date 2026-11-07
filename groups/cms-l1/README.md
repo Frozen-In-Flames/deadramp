@@ -242,3 +242,43 @@ drill record, reproduced on this tree).
   deployment-layer property. The deployment is a single-tenant
   reference deployment (TimeLooper claims multi-tenant in prose;
   tenancy isolation is deployment-layer).
+
+## Final GAPS batch
+
+The eight open entries of `UNION-SPEC.md` are closed by the final
+GAPS batch unit (see `BATCH.md` for the per-entry dispositions):
+one new module, `src/cms/extensions.py` (`CmsExtensions` wrapping
+the core store), adds the library ILS vertical in this group's
+own records form (circulation loans and ILL requests with
+current state derived at read, integer-cent acquisition orders,
+MARC21 field records as data, collection records, knowledgebase
+articles in the article-revisions form, proxy configurations
+with `proxied_here: false`, digital collections as
+metadata-plus-digest records, and union-catalog holdings with
+`network_here: false` — the dedicated Library Systems group is a
+separate category and nothing is imported from it), mobile
+application and release definition records with reported
+distribution outcomes (no binary held, nothing delivered here),
+template/fragment definition records and editor configurations
+(held as data, never rendered), analytics report definitions and
+run records whose figures are deterministic counts over the core
+registry derived at read (registry-derived reporting — the
+"custom reports / Report Designer" near-miss status stands, as
+recorded in `BATCH.md`), ingestion-batch and ingestion-job
+records with index declarations (reported counts; no content
+held, no index built, no engine run), BPM case records over
+opaque refs with decisions under a decider-not-opener
+separation-of-duties guard, participation records with reported
+outcomes, and personalization as segment/subject/rule records
+with matching derived at read — plus labeled reference
+implementations (`reference_stub: true`) for CDN / runtime
+serving and enterprise search indexing & discovery (discovery
+queries recorded as SHA-256 digests plus result references
+only). Several of these families are carried from the Group 20
+union at 0 claims in this group; their forms are carried from
+the L2 union, not claimed from this group's evidence, as
+`BATCH.md` states plainly. All 7 core modules are
+byte-identical; the suite is **142 tests, OK**, including the
+batch's fresh mutation-verified negative control (the
+case-decision guard; exactly 2 failures under mutation — record
+in `tests/README.md`).
