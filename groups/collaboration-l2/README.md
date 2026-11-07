@@ -173,6 +173,36 @@ mutation-verified negative control on the legal-hold current-state
 derivation (exactly 3 failures under the earliest-label mutant;
 see `tests/README.md`).
 
+## Final GAPS batch — Remainder Addition section
+
+The five gap functions the remainder additions registered
+(ADDENDUM.md section 5) closed in the batch's second unit in this
+directory (see [`BATCH-ADDITION.md`](BATCH-ADDITION.md)): one new
+module, `src/collab/extensions_addition.py`
+(`CollabExtensionsAddition`, independent of the first unit's
+`CollabExtensions`; audit actions under an `exta_` prefix).
+Innovation management & crowdsourcing (IdeaScale) is built as
+campaign, idea, idea-state, endorsement, and plan-link records —
+an idea's current state derives at read, and a plan link to a
+core board is refused until the derived state is
+`reported_adopted`. The centralized administration console
+(Webex) is built as administered-service, configuration
+revision, and administrative-action records — current settings
+derive at read from the latest revision, nothing is applied
+anywhere, and console writes map to the core `admin` action.
+Three entries ship as labeled reference implementations
+(`reference_stub: True`): the virtual visitation portal (visit
+records bound to core calendar events, rule definitions never
+executed, device-connection reports), collaboration hardware
+endpoints (registration and reported-status records for
+manufactured devices), and product-specific connector engines
+(connector definitions and exchange records that hold no content
+and transmit nothing). All pre-existing modules are
+byte-identical to the shipped build; the suite grew 242 →
+**280 tests**, including a fresh mutation-verified negative
+control on the idea current-state derivation (exactly 6 not
+passing under the earliest-label mutant; see `tests/README.md`).
+
 ## Control-family mapping (summary)
 
 Per `UNION-SPEC.md`, against the NIST SP 800-53 Rev. 5 Moderate baseline

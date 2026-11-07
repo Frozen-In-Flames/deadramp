@@ -1001,11 +1001,11 @@ No existing Extended gap gains a claimant in this addition. Three addition forks
 ## Remainder Addition — Collaboration L2 (+3 forks)
 
 New extended functions from the addition forks, specified in groups/collaboration-l2/ADDENDUM.md, not implemented:
-- [ ] open — Innovation management & crowdsourcing platform (IdeaScale)
-- [ ] open — Centralized administration console for collaboration services (Webex)
-- [ ] open — Virtual visitation scheduling portal: business-rules / workflow configuration, zero-touch device connectivity (Webex)
-- [ ] open — Collaboration hardware endpoints & purpose-built devices (Webex, platform layer)
-- [ ] open — Product-specific connector engines (Huddle, office-suite integrations)
+- [x] built — Innovation management & crowdsourcing platform (IdeaScale)
+- [x] built — Centralized administration console for collaboration services (Webex)
+- [x] reference — Virtual visitation scheduling portal: business-rules / workflow configuration, zero-touch device connectivity (Webex)
+- [x] reference — Collaboration hardware endpoints & purpose-built devices (Webex, platform layer)
+- [x] reference — Product-specific connector engines (Huddle, office-suite integrations)
 
 Enlargements of families already registered under Group 2: meetings / video media transport +1 (Webex); voice / telephony / contact center +1 (Webex); workflow / process-automation engines +1 (Webex, at wording-artifact weight); AI assistance / speech / analytics +1 (Webex, at wording-artifact weight); records & governance beyond the seed +1 (Huddle); task & project management beyond board cards +1 by substance (Huddle, claim did not fire). The encryption platform note gains no claimant. One addition fork claims zero families (IdeaScale: "collaboratively transform" is not a workspaces phrase; "project plans" is not project management), pinned in tests.
 

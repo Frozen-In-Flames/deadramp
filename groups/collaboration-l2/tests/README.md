@@ -36,6 +36,7 @@ entry point for this group.)
 | `test_negative_control.py` | Negative control (below) |
 | `test_additions.py` | Remainder additions (ADDENDUM.md) — spec integrity for the 3 addition forks (unit membership/order, literal claim table, verbatim evidence, census citations, near-miss and wording-artifact pins, IdeaScale's zero-claim pin) plus one substrate case per fork (Webex messaging/files/meeting surface + membership boundary, Huddle versioning/audit/search, IdeaScale substrate minimum) |
 | `test_gaps_batch.py` | Final GAPS batch (BATCH.md) — 34 tests over `collab/extensions.py`: governance records with derived hold state / retention / disposition eligibility + the fresh hold-derivation negative control, project/milestone/card-link/dependency records with counts-only views, learning records with verbatim outcomes, knowledge-base articles (stored shape exactly {id, workspace_id, tags, created_by, created_utc}; text in append-only revisions), and the four labeled reference surfaces (workflow definitions never execute; AI outputs opaque refs only, no output-text parameter; transcription outcomes; voice sessions, no media; e-signature envelopes/ceremonies, no signature-value field) |
+| `test_gaps_batch_addition.py` | Final GAPS batch, second unit (BATCH-ADDITION.md) — 38 tests over `collab/extensions_addition.py`: campaign/idea/idea-state/endorsement/plan-link records with the idea's current state derived at read + the fresh idea-derivation negative control, administration-console records (admin-action-gated writes, settings derived from the latest revision, console view counts), and the three labeled reference surfaces (visitation visits bound to core events, rule definitions never execute, device connections; endpoint registrations/reported statuses; connector definitions/exchanges holding no content) |
 | `collab_helpers.py` | Shared fixtures: demo users (ADMIN/MEMBER/VIEWER/OUTSIDER), `make_store()` building a CollabStore + AuditLog + a workspace owned by MEMBER with VIEWER added, and sample message/file/event/board helpers |
 
 ## Negative control
@@ -158,3 +159,73 @@ not passing (2 failures + 1 error)**, all in `test_gaps_batch.py`:
 under the mutant). `extensions.py` was restored from the
 pre-mutation copy in `scratch/` (SHA-256 verified identical) and
 the suite re-ran green: **242 tests, OK**.
+
+## Final GAPS batch — Remainder Addition unit (2026-11-07)
+
+Status after this unit: **280 tests, OK** (242 before, 38 new).
+
+`test_gaps_batch_addition.py` (38 tests) pins the second batch
+extension surface in `src/collab/extensions_addition.py` (see
+`../BATCH-ADDITION.md` for the per-entry disposition of GAPS.md
+idx 595–599): campaign, idea, idea-state, endorsement, and
+plan-link records whose idea current state is derived at read
+from recorded labels (stored idea records carry no state key;
+plan links are refused while the derived state is not
+`reported_adopted` and leave core board records deep-equal);
+administration-console records (administered services whose
+stored shape holds no settings, configuration revisions holding
+settings as validated data with the current settings derived
+from the latest revision, administrative action records with
+`effected_here: False`, and a derived console view — console
+writes map to the core `admin` action, so member and viewer
+attempts are denied and the denial is audited
+`exta_admin_service_register:denied`); and the three labeled
+reference surfaces — visitation visits bound to core calendar
+events (`conducted_here`/`media_here` False), business-rule /
+workflow definitions that never execute (registering one leaves
+the core event list deep-equal), device-connection reports
+(`reference_transport: True`, `connected_here` False), hardware
+endpoint registrations and reported statuses with the current
+status derived at read, and connector definitions and exchange
+records that hold no content (`content_held: False`) and
+transmit nothing. A recursive key scan asserts no score-shaped
+key exists in any record or view of the new surface, and access
+discipline is pinned: the viewer is read-only with the denial
+audited (`exta_campaign_create:denied`), the outsider is denied
+at the core membership boundary, and extension mutations land
+on the core audit log with `exta_`-prefixed actions.
+
+### Fresh negative control: the idea current-state derivation
+
+`test_gaps_batch_addition.py::TestNegativeControlIdeaDerivation`
+pins the derivation seam `_current_idea_label` (innovation
+management & crowdsourcing): an idea's current state is the
+**latest** recorded label, and the plan-link gate opens only on
+the derived `reported_adopted` state. Three legs: the canonical
+expectation holds on the real implementation (an idea recorded
+submitted → adopted reads `reported_adopted`, its campaign view
+counts it as adopted, and the plan link records), the
+earliest-label mutant (`_EarliestIdeaExtensions`: `states[0]`
+instead of `states[-1]`) does NOT produce it (the same idea
+reads `reported_submitted` and the plan link is refused), and
+the mutant's outcome treated as the expectation fails via
+literal `assertRaises(AssertionError)`.
+
+**Live drill (2026-11-07).** The derivation in the shipped
+`extensions_addition.py` was patched at its own line (line 417;
+the line text occurs exactly once in the module) from
+`states[-1]` to `states[0]`, and the full suite was run: **280
+tests ran, exactly 6 not passing (2 failures + 4 errors)**, all
+in `test_gaps_batch_addition.py`:
+`TestIdeasAndStates.test_current_state_derives_latest_label`
+(FAIL), `TestNegativeControlIdeaDerivation.test_canonical_latest_label_wins`
+(FAIL), `TestPlanLinks.test_link_after_adoption_and_core_board_untouched`
+(ERROR — the link the adoption should have opened is refused
+under the mutant), `TestPlanLinks.test_duplicate_link_and_unknown_board_refused`
+(ERROR), `TestPlanLinks.test_campaign_view_aggregates_derived_states`
+(ERROR), and `TestNoScoreKeys.test_views_and_records_carry_no_score_keys`
+(ERROR — its flow links a plan under the canonical derivation).
+`extensions_addition.py` was restored from the pre-mutation copy
+in `scratch/` (SHA-256 verified identical, `0de608d9…`) and the
+suite re-ran green: **280 tests, OK**. Raw output:
+`scratch/addition_mutation_run.txt`.
