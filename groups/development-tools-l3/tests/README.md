@@ -236,3 +236,78 @@ new audit-chain/failure/query/lockout/singleton files use only
 the standard library (`hashlib`, `http.client`, `json`, `os`,
 `tempfile`, `threading`, `time`, `unittest`, `urllib.parse`)
 plus the group's own `devtools` package and `devtools_helpers`.
+
+## Final GAPS batch additions (Remainder Singleton 58 section)
+
+One new file, `test_gaps_batch.py` (26 tests), pins the
+extension surface in `src/devtools/extensions.py`
+(`DevToolsExtensions`, wrapping the core store; all seven
+core modules byte-identical — `store.py` still `8ca50cf1…`).
+Suite: **122 before, 148 after, OK**. Per-entry pins
+(dispositions and grounds in `../BATCH.md`):
+
+- **Container orchestration platform (idx 701, reference)** —
+  cluster reference shape and stub labels (`reference_stub`,
+  `orchestrated_here` / `containers_run_here` /
+  `managed_here` all False), outcomes verbatim, view derives
+  outcome count + latest reported status, unknown project /
+  cluster rejected with no id consumed.
+- **IDE / developer workspace (idx 702, built)** — workspace
+  shape and labels (`hosted_here` / `provisioned_here` /
+  `filesystem_held_here` / `executed_here` False, no status
+  key), access modes deduplicated with unknown modes
+  rejected, session statuses from the recorded vocabulary,
+  view derives per-status counts + latest.
+- **Platform monitoring & logging (idx 703, reference)** —
+  source shape and stub labels, kind vocabulary enforced,
+  report event counts validated (bool / float / negative
+  rejected, no id consumed), view totals are sums of the
+  recorded report counts with `reports_without_count`
+  tallied separately.
+- **Platform networking (idx 704, built)** — route and
+  policy definitions held as data (`applied_here` /
+  `provisioned_here` / `enforced_here` False), policy rule
+  validation (duplicate rule_ref, bad effect, empty rules;
+  no id consumed), route outcomes verbatim with the stored
+  definition byte-identical after recording, view derives
+  latest reported status.
+- **Cross-cutting** — creating one record of every extension
+  kind changes no core record set (all eight counted before
+  and after) and leaves the bound core project byte-identical;
+  a recursive key scan pins no score-shaped key anywhere on
+  the new surface.
+- **High apparatus** — viewer write denied and audited
+  (`deployment_write:denied`); auditor denied every extension
+  read and write while its core audit duty works; the hash
+  chain verifies `(True, None)` after extension activity;
+  an audit-write failure rolls the extension record and its
+  id back (broken JSONL path: no record, next good create is
+  `wsp-1`).
+
+### Negative control #4 — latest-label derivation (batch)
+
+The batch's fresh control: the `_latest_label` seam in
+`src/devtools/extensions.py` decides every view's current
+reported label from the most recently recorded record.
+In-suite three-part form in
+`test_gaps_batch.py::TestLatestLabelNegativeControl`
+(canonical latest / earliest-reading mutant subclass /
+`assertRaises`), plus a live drill on the real file: the
+seam's return line (`return records[-1][key]`, occurrence
+count asserted = 1) was patched to `records[0][key]` and
+the full suite run — **148 ran, exactly 5 failed**, all in
+`test_gaps_batch.py`:
+
+- `TestClusterReference.test_outcome_verbatim_and_view_derives_latest`
+- `TestWorkspaceBuilt.test_sessions_and_view_derives_counts_and_latest`
+- `TestTelemetryReference.test_view_totals_are_sums_of_recorded_reports`
+- `TestNetworkBuilt.test_route_outcome_verbatim_and_view`
+- `TestLatestLabelNegativeControl.test_canonical_latest_is_most_recent`
+
+`extensions.py` was restored from
+`scratch/extensions.py.premutation`; the restored file's
+SHA-256 is
+`472db5c17d9cfbc9e69842c4d6793ff451ec3297d1e59c45455c63d3c8f23cdc`,
+identical to the pre-mutation hash, and the suite re-ran
+green (148, OK). Raw drill output:
+`scratch/gaps_mutation_run.txt`.
