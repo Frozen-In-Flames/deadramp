@@ -7,7 +7,7 @@ function / claim / control family it traces to.
 
 ```bash
 cd groups/crm-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 96 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 134 tests
 ```
 
 Status at delivery: **96 tests, OK** against the implementation in
@@ -33,6 +33,7 @@ the supported entry point for this group.)
 | `test_service.py` | REST API — live HTTP server: health, 401 unknown user / role mismatch, 403 viewer write + config_write for operator (denied attempts audited with `:denied`), full flow (account → contact → case → assign/transition → interaction → guide create/PATCH → finding → module → report/search), `audit_read` admin-only, 400/404 envelopes, `?now=` derivation on case/report endpoints |
 | `test_main_cli.py` | `python -m crm serve` subprocess with demo users alice/bob/carol |
 | `test_negative_control.py` | Negative control (below) |
+| `test_gaps_batch.py` | Final GAPS batch extensions — per-entry surface pins for the 8 batch entries (knowledge base revisions, casework desktops/topics/chat records, guidance sessions/authoring, telemetry/detection reports, engagement metrics, module execution requests, marketing segments/flows, AI request/report/evaluation records, connector syncs/catalog), audit + rollback + no-score invariants, and the batch's fresh negative control (below) |
 | `crm_helpers.py` | Shared fixtures: demo users (ADMIN/OPERATOR/VIEWER), `USERS` registry, `fresh_store()`, and `make_store()` building a CrmStore + AuditLog + an account + a contact under it |
 
 ## Negative control
@@ -74,3 +75,47 @@ breached. The full suite was run: **96 tests ran, 7 failed** —
 recorded in `scratch/store.py.sha256` and verified identical after
 restore) and the suite re-run: **96 tests, OK**. The suite catches
 this defect class; the negative control is not decorative.
+
+## Final GAPS batch additions (2026-11-07)
+
+The batch unit for this group (see `../BATCH.md`) added
+`tests/test_gaps_batch.py` (38 tests): **134 tests, OK** in total.
+All 7 pre-existing core modules are byte-identical to their
+pre-batch state (SHA-256 verified; `store.py` still `16bcc12f…`).
+
+### Batch negative control (fresh, for the new code)
+
+`test_gaps_batch.TestNegativeControlGuidanceOutcomeCounts`
+implements the batch's mutant: a `CrmExtensions` subclass
+(`MutantCrmExtensions`) overriding the derivation point —
+`CrmExtensions._guidance_outcome_counts` returns `{}`. The traced
+claim is that **the engagement report's guidance outcome
+distribution is derived at read from the recorded outcome
+records**, counted by their verbatim reported labels. The test
+asserts the canonical expectation (`{"completed": 2,
+"abandoned": 1}` from the real implementation), that the mutant
+does NOT produce it (it reports `{}`), and — via a literal
+`assertRaises(AssertionError)` — that treating the mutant's
+outcome as the expected outcome fails.
+
+### Batch mutation verification
+
+VERIFIED by the builder (2026-11-07), live drill performed on the
+real extension module. The counting line of
+`CrmExtensions._guidance_outcome_counts`
+(`src/crm/extensions.py`) — the single derivation point for the
+engagement report's guidance outcome distribution — was patched
+from `counts[label] = counts.get(label, 0) + 1` to
+`counts[label] = counts.get(label, 0)` (the line occurs exactly
+once), so recorded outcomes register their labels but never
+count. The full suite was run: **134 tests ran, exactly 2
+failed** —
+
+- `test_gaps_batch.TestGapIdentificationAnalytics.test_engagement_metrics_are_derived_counts`
+- `test_gaps_batch.TestNegativeControlGuidanceOutcomeCounts.test_canonical_counts_but_mutant_does_not`
+
+`extensions.py` was then restored from a pre-mutation copy
+(`scratch/extensions.py.premutation_gaps`; SHA-256
+`a371af2397e871e0280faa90ffecb5f46e26e0a9cba8d42c71da8e29566d91bf`,
+recorded in `scratch/extensions.py.sha256_gaps` and verified
+identical after restore) and the suite re-run: **134 tests, OK**.

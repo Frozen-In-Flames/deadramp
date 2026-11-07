@@ -190,8 +190,31 @@ to a client.
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-96 tests. See `tests/README.md` for the coverage table, the
-negative control, and the mutation-verification drill record.
+134 tests (96 founding + 38 final GAPS batch). See
+`tests/README.md` for the coverage table, the negative controls,
+and the mutation-verification drill records.
+
+## Final GAPS batch (2026-11-07)
+
+The group's 8 registered Extended entries are closed by one new
+module, `src/crm/extensions.py` (`CrmExtensions` over the core
+store; all core modules byte-identical), with per-entry
+dispositions in `BATCH.md`: the knowledge base lands as article
+records whose text lives in append-only revisions (current text
+derived at read); casework depth as desktop/topic records plus
+labeled chat-session records; and the remaining families
+(guidance runtime, gap-identification/analytics, module engines,
+marketing automation, AI/ML, connectors) as labeled reference
+records (`reference_stub: True`) with deterministic counts over
+recorded records where the substrate honestly derives them. One
+entry (customization & module engines) was re-judged from its
+drafted build-extension disposition to the reference form, with
+grounds in `BATCH.md`: the core holds module settings verbatim
+and never executes them, and the extension does not break that
+invariant to claim an engine. Nothing here renders guidance,
+executes a module or a flow, collects telemetry, detects a gap,
+sends a message, runs a model, or syncs a system — the records
+say so on their face.
 
 ## Control-family mapping (summary)
 

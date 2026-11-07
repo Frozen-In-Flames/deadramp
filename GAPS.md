@@ -428,14 +428,14 @@ Platform-layer: encryption at rest is deployment-layer (TLS when configured); si
 ## Group 25 — Customer Relations Management (CRM) L2 (2 forks)
 
 Extended functions, specified in groups/crm-l2/UNION-SPEC.md, not implemented:
-- [ ] open — Customer-service casework depth (knowledge-driven agent desktops, self-service portals, chat / chatbot channels)
-- [ ] open — Guidance delivery runtime (in-app overlay engine + codeless authoring tooling)
-- [ ] open — Gap-identification & adoption-analytics engines (telemetry collection, gap detection, engagement analytics beyond record counts)
-- [ ] open — Customization & module engines (add-on module execution, codeless configuration runtimes)
-- [ ] open — Knowledge base & self-service content (0 claims here)
-- [ ] open — Marketing-automation engines & email delivery (0 claims here)
-- [ ] open — AI/ML models & scoring (0 claims here; no score is computed anywhere in the core, by design)
-- [ ] open — Integration connector engines (0 claims here; near-miss recorded)
+- [x] built — Customer-service casework depth (knowledge-driven agent desktops, self-service portals, chat / chatbot channels)
+- [x] reference — Guidance delivery runtime (in-app overlay engine + codeless authoring tooling)
+- [x] reference — Gap-identification & adoption-analytics engines (telemetry collection, gap detection, engagement analytics beyond record counts)
+- [x] reference — Customization & module engines (add-on module execution, codeless configuration runtimes)
+- [x] built — Knowledge base & self-service content (0 claims here)
+- [x] reference — Marketing-automation engines & email delivery (0 claims here)
+- [x] reference — AI/ML models & scoring (0 claims here; no score is computed anywhere in the core, by design)
+- [x] reference — Integration connector engines (0 claims here; near-miss recorded)
 
 Platform-layer: multi-tenancy (single-tenant reference deployment); encryption at rest is deployment-layer (TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization); the hosting / delivery platform both siblings assert in prose is the deployment layer itself. Named absences (not gaps, unclaimed): opportunity / pipeline and campaign / lists — neither description contains sales vocabulary at all. Privacy discipline is test-enforced on the record shapes (opaque references only), and gap-finding records carry detail verbatim with no score field anywhere.
 
