@@ -44,6 +44,7 @@ the supported entry point for this group.)
 | `test_negative_control.py` | 3 | Negative control (below) |
 | `test_additions.py` | 14 | Remainder addition (unit `addition:learning-management-l2`) — spec integrity for the appended Percipio sheet (count/order/membership, the original claim table standing at 26, the literal **zero-claim** table and whole-taxonomy zero-claim set, tier fields, verbatim description, census citation accounting, exclusion-segment pin, named-absence rechecks, near-miss pins) + 2 substrate cases (progress record with compliance status derived at read; catalogue content records with an exact-eight-key statement and recursive no-score scan). Three whole-file pins (count/order, membership, zero-claim list) are scoped to this unit's own slice (the first 2 sheets) since the no-signal sheet now follows — disclosed in their docstrings |
 | `test_nosignal_addition.py` | 15 | No-signal addition (F1207261443, Skillsoft / Private Cloud) — spec integrity for the appended sheet (count/order, both shipped sheets deep-equal to git HEAD, membership against the census `no-signal-set` with its `no_signal` flag / empty citations / classifier note pinned, the literal **zero-claim** table and whole-taxonomy zero-claim set, unchanged group total of 26 with 2 of 3 forks at zero, tier fields, description verbatim against both cached sources, classification fields pinned against `../../remainder/nosignal_report.json` with the classification sentence asserted absent from the cached description, the **platform-documentation caveat** pinned on the report's notes and on ADDENDUM §7's text, named-absence rechecks, near-miss pins) + 2 substrate cases (hosted catalogue content with progress record and compliance status derived at read; an exact-eight-key statement over a hosted content item with recursive no-score scan) |
+| `test_gaps_batch.py` | 33 | Final GAPS batch (Singleton 48) — extension surface in `../src/lms/extensions.py`: one class per open GAPS entry (delivery sessions with derived status, package/distribution records + record conformance, xAPI record conformance + labeled forwards, analytics/outcomes count derivations, career-path gap derivation, succession coverage, candidate review with separation of duties, survey records with verbatim tallies, KB articles, CMS pages, report definitions + derived runs, notification rules + labeled receipts, EHRI / authoring / SF-182-form / workflow-execution reference stubs) + cross-cutting no-score recursive key scan, learner scope, `ext_` audit actions |
 | `lms_helpers.py` | — | Shared fixtures: demo users (ADMIN/INSTRUCTOR/LEARNER/AUDITOR), `USERS` registry, `fresh_store()`, and `make_store()` building an LmsStore + AuditLog + one learner (ref `carol`) + one course |
 
 ## Negative control
@@ -141,3 +142,47 @@ tripping on the mutant exactly as designed. `store.py` was
 restored from `../scratch/store.py.premutation-nosignal` and
 verified SHA-256-identical to the shipped hash (`820d9712…`);
 the suite re-ran green: **133 tests, OK**.
+
+## Final GAPS batch (2026-11-07)
+
+`test_gaps_batch.py` (33 tests) pins the extension surface in
+`../src/lms/extensions.py` (`LmsExtensions`): one class per open
+GAPS.md entry for this group (see `../BATCH.md` for the per-entry
+disposition — 12 built, 4 reference), plus cross-cutting pins: a
+recursive **no-score key scan** over 20 extension surfaces (the
+founding invariant binding the extension exactly as it binds the
+core), derived-never-stored delivery status, stub labels
+(`reference_stub: True` on EHRI feed records, authoring drafts,
+SF-182 form workflow records, and workflow execution records) and
+the transport label (`reference_transport: True` on statement
+forward records and notification receipts), the
+workflow-execution stub's changes-nothing pin, learner scope, and
+`ext_`-prefixed audit actions.
+
+### Batch mutation verification
+
+VERIFIED by the coordinator for this batch unit (2026-11-07). The
+completed branch of the delivery-status derivation
+(`_derive_delivery_status` in `src/lms/extensions.py`) — the line
+`return "completed"` under the completed-progress check — was
+patched to `return "in_progress"`, so a learner with a completed
+core progress record read `in_progress` instead of `completed`.
+The full suite was run: **166 tests ran, exactly 1 failure**
+(`test_gaps_batch.TestDeliveryEngine.test_status_derived_from_core_progress`).
+`extensions.py` was then restored from the pre-mutation copy and
+verified SHA-256-identical to the pre-mutation hash
+(`833ca1c9f294c963eaabadf69fff8770beb346b887b9662409e0444051281cc6`),
+and the suite re-run: **166 tests, OK**.
+
+Full suite status after the batch: **166 tests, OK** (133 at
+delivery + 33 batch tests). Core modules byte-identical to their
+pre-batch hashes (`store.py` still `820d9712…`).
+
+One disclosure: the shipped suite arrived at this unit with 1
+pre-existing failure — `test_nosignal_addition`'s git-HEAD sheet
+pin asserted HEAD held 2 spec sheets, true only before that
+unit's own ship landed (HEAD now holds 3). The pin was rescoped
+to its own era slice (the first 2 HEAD sheets) with the rescope
+disclosed in the test's docstring; the pin's strength is
+unchanged. Before the batch: 133 tests, 1 failure (that pin).
+After: 166 tests, OK.

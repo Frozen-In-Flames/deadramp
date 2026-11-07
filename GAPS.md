@@ -759,22 +759,22 @@ The Group 34 category union's extended families (the legal corpora themselves, c
 ## Singleton 48 — Learning Management L2 (1 fork, new category)
 
 Extended functions, specified in groups/learning-management-l2/UNION-SPEC.md, not implemented:
-- [ ] open — Learning delivery engine (the LMS runtime itself)
-- [ ] open — SCORM / AICC / cmi5 packaging & distribution runtime
-- [ ] open — xAPI protocol runtime & LRS conformance (statement records are Core; the protocol engine is not)
-- [ ] open — EHRI integration engine
-- [ ] open — Learning analytics & outcomes engines
-- [ ] open — Career mapping & recommendation engine
-- [ ] open — Leadership succession planning suite
-- [ ] open — Candidate review / talent acquisition system
-- [ ] open — Employee survey engine
-- [ ] open — Knowledge base / wiki platform (adjacent product)
-- [ ] open — Web CMS platform (adjacent product)
-- [ ] open — Content authoring tools & lesson-plan editor
-- [ ] open — SF-182 form rendering / routing / signature workflow (authorization records are Core)
-- [ ] open — Configurable report builder & dashboards
-- [ ] open — Workflow execution engine (the registry holds definitions only)
-- [ ] open — Notification automation & delivery transport
+- [x] built — Learning delivery engine (the LMS runtime itself)
+- [x] built — SCORM / AICC / cmi5 packaging & distribution runtime
+- [x] built — xAPI protocol runtime & LRS conformance (statement records are Core; the protocol engine is not)
+- [x] reference — EHRI integration engine
+- [x] built — Learning analytics & outcomes engines
+- [x] built — Career mapping & recommendation engine
+- [x] built — Leadership succession planning suite
+- [x] built — Candidate review / talent acquisition system
+- [x] built — Employee survey engine
+- [x] built — Knowledge base / wiki platform (adjacent product)
+- [x] built — Web CMS platform (adjacent product)
+- [x] reference — Content authoring tools & lesson-plan editor
+- [x] reference — SF-182 form rendering / routing / signature workflow (authorization records are Core)
+- [x] built — Configurable report builder & dashboards
+- [x] reference — Workflow execution engine (the registry holds definitions only)
+- [x] built — Notification automation & delivery transport
 - [x] re-scoped — Identity provider / MFA / SSO service
 
 Platform-layer: multi-tenancy (claimed by the fork; single-tenant reference deployment); encryption at rest (deployment layer; TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: the category is new and strictly separate from Education & Training; no assessment or credential family exists in its taxonomy, because the description's only "assessments" names succession-planning resources and "Certification" occurs only inside the SF-182 form's proper name (the only "scor" hits are inside "SCORM") — checked absences, itemized in the spec. LRS statement records carry an exact eight-key shape with result text verbatim and no score field anywhere.

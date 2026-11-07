@@ -312,3 +312,24 @@ derivation to always read `current` makes exactly 9 tests fail
   `specs/specs.json` (26 evidenced claims across the 1 fork) or
   to the Moderate/L2 control families in `UNION-SPEC.md`. Counts
   are a floor, stated as such.
+
+## Final GAPS batch (2026-11-07)
+
+The 16 open Extended entries for this group are closed by the
+batch unit recorded in [`BATCH.md`](BATCH.md): one new module,
+`src/lms/extensions.py` (`LmsExtensions`, wrapping the core
+store; core modules byte-identical), with 33 new tests —
+**166 tests, OK** — including a fresh mutation-verified negative
+control on the delivery-status derivation (exactly 1 failure
+under mutation; see `tests/README.md`). Twelve entries are built
+in their in-substrate form (delivery sessions with derived
+status, package/distribution and xAPI conformance as record
+validation, deterministic analytics / career-gap / succession
+derivations, candidate review, surveys, KB and CMS records,
+configurable report definitions with derived runs, notification
+rules producing labeled transport receipts); four ship as labeled
+reference implementations (EHRI feed records, authoring drafts,
+SF-182 form workflow records, workflow execution records —
+`reference_stub: True`, and the workflow registry still never
+executes). The founding no-score invariant is pinned over the
+whole extension surface by a recursive key scan.
