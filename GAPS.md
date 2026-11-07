@@ -805,14 +805,14 @@ Platform-layer: encryption at rest (deployment layer); multi-tenancy (the fork a
 ## Singleton 49 — Legal & Policy L2 (1 fork, new category)
 
 Extended functions, specified in groups/legal-policy-l2/UNION-SPEC.md, not implemented:
-- [ ] open — AI agent runtime (LLM inference, agent orchestration, grounding / retrieval, model transport bridge)
-- [ ] open — Legal corpus content (the statutes / regulations / guidance / datasets themselves, curation and update pipeline, licensing)
-- [ ] open — Full-text & semantic search engines (indexing, vector / semantic ranking over the corpus; saved searches are digest records in Core)
-- [ ] open — Sandbox runtime (the isolated single-use execution environment itself; executions are recorded, never performed)
-- [ ] open — Code execution engine
-- [ ] open — Document generation engine (drafting / generation from corpus and session context)
+- [x] reference — AI agent runtime (LLM inference, agent orchestration, grounding / retrieval, model transport bridge)
+- [x] built — Legal corpus content (the statutes / regulations / guidance / datasets themselves, curation and update pipeline, licensing)
+- [x] reference — Full-text & semantic search engines (indexing, vector / semantic ranking over the corpus; saved searches are digest records in Core)
+- [x] built — Sandbox runtime (the isolated single-use execution environment itself; executions are recorded, never performed)
+- [x] built — Code execution engine
+- [x] reference — Document generation engine (drafting / generation from corpus and session context)
 - [x] re-scoped — Identity provider / federation service (the fork federates identity with enforced MFA; IA-2 stays with the embedding organization)
-- [ ] open — Security monitoring & platform security services (deployment-platform layer)
+- [x] reference — Security monitoring & platform security services (deployment-platform layer)
 - [x] re-scoped — FIPS-validated cryptography (claimed by the fork's own platform; the standard library is not a validated module and none is claimed)
 
 Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP. Spec notes: the category is new and strictly separate from Law Enforcement (legal research platforms); this fork is an AI agent workspace grounded in a curated legal library with an administration console, and every product function sits in its description's first sentence. Privacy discipline: documents are metadata + SHA-256 only with verify-by-content, and the store layer has no parameter that can accept query text — the service layer hashes queries before the store sees them.

@@ -214,3 +214,68 @@ every test that depends on the latest-label derivation fails, and
 no unrelated test does — the mutant-agreement arms of the control
 pass under both implementations by construction, as in the core
 drill.
+
+## Final GAPS batch (Singleton 49 section, idx 485–490, 492)
+
+The founding fork's own 7 open gap entries (the AI agent
+workspace's Extended functions from `../UNION-SPEC.md`; idx 491
+and 493 in the same section were already closed `re-scoped`) are
+closed by a second new module,
+`src/legalpol/singleton_extensions.py`
+(`LegalPolSingletonExtensions` wrapping the unchanged core
+store — and not modifying the additions unit's `extensions.py`),
+pinned by `test_gaps_batch_singleton.py` (**33 tests**). Full
+suite: **143 → 176 tests, all passing**. All pre-existing
+modules are byte-identical (store.py still `7030f9fd…`;
+extensions.py still `e3a267ce…`); the extension is store-level
+only, no HTTP routes.
+
+| File | Tests | Covers |
+|---|---:|---|
+| `test_gaps_batch_singleton.py` | 33 | Final GAPS batch, Singleton 49 section — corpus content (idx 486: exact key-set pins, digest/count discipline, duplicate ref consumes no id, stored record carries no derived state, view derives latest curation state + counts, summary is deterministic counts), agent runtime reference (idx 485: `reference_stub: True`, `recorded_reference_only`, inference/orchestration/retrieval all False, outcome records hold an opaque result ref only, session-in-workspace scoping, bridge definitions with `reference_transport: True`), search engine reference (idx 487: definition flags indexed/ranked/searched False, run records bound to a core saved search, unknown search refused), sandbox runtime (idx 488: non-sandbox session refused, request/outcome shapes, view derives latest outcome and the core's `sandbox_consumed` flag across a core execution), code execution engine (idx 489: job bound to a core execution, exit-code discipline — negative accepted, bool/float rejected — unknown execution refused), document generation reference (idx 490: request flags, output held as a core document reference, cross-workspace output refused, duplicate output rejected), security monitoring reference (idx 492: feed `reference_transport: True`, observations verbatim, derived severity counts), cross-cutting guards (viewer writes denied and audited `:denied` for both RBAC actions, outsider denied at the membership boundary, `TypeError` on `prompt=`/`content=`/`query_text=`/`document_text=` kwargs, extension writes audited, recursive forbidden-key scan over all 23 record/view shapes), and the batch negative control (below) |
+
+### Batch negative control (Singleton 49 unit)
+
+**`TestCurationDerivationNegativeControl`** — this unit's fresh
+negative control is the **corpus curation-state derivation**: a
+corpus content record's current state is the *latest* recorded
+curation event label, computed by the extension seam
+`LegalPolSingletonExtensions._current_curation_label`. The
+mutant is a `LegalPolSingletonExtensions` subclass
+(`MutantCurationExtensions`) whose seam reads the *earliest*
+label. The tests assert the canonical expectations (with events
+[reported_added, reported_withdrawn] the current state is
+`reported_withdrawn` and `is_withdrawn` is true), that the
+mutant produces the opposite outcomes on both, and — via
+literal `assertRaises(AssertionError)` — that the canonical
+expectations reject the mutant's outcomes.
+
+### Batch mutation verification (Singleton 49 unit)
+
+VERIFIED in this build session: `_current_curation_label` in
+the real `src/legalpol/singleton_extensions.py` was patched to
+read the earliest event (`return events[0]["event_label"]`) and
+the full suite was run against the patched implementation.
+
+- Premutation copy: `scratch/singleton_extensions.py.premutation`
+  (the group's gitignored scratch directory); its SHA-256 is
+  `73f3259fbc5a68417e74f294d202fa3aebbc2c705af765fae021eee5ddb4fa36`
+  (also recorded in `scratch/singleton_extensions.py.sha256`).
+  Raw drill output is in
+  `scratch/singleton_gaps_batch_mutation_run.txt`.
+- Patched run: **176 ran, exactly 3 failed**:
+  - `test_gaps_batch_singleton.TestCorpusContent.test_view_derives_latest_state_and_counts` (FAIL)
+  - `test_gaps_batch_singleton.TestCurationDerivationNegativeControl.test_current_state_is_latest_canonical` (FAIL)
+  - `test_gaps_batch_singleton.TestCurationDerivationNegativeControl.test_canonical_expectation_rejects_mutant` (FAIL)
+- `singleton_extensions.py` was then restored from
+  `scratch/singleton_extensions.py.premutation` and verified
+  **SHA-256-identical**
+  (`73f3259fbc5a68417e74f294d202fa3aebbc2c705af765fae021eee5ddb4fa36`);
+  the suite is green again (176/176).
+
+The failing set is exactly the curation-derivation-dependent
+set: the mutant-subclass arm (`test_mutant_reads_earliest`)
+exercises the subclass directly and passes under both
+implementations by construction, and no unrelated test depends
+on the seam — the corpus summary is a counts derivation and
+does not consult it.

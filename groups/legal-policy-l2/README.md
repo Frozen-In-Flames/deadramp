@@ -275,3 +275,45 @@ agreement record). Full record: [`BATCH.md`](BATCH.md). Suite:
 **106 → 143 tests**, all passing, including a fresh
 mutation-verified negative control on the hold-derivation seam
 (exactly 5 non-passing under the mutant; see `tests/README.md`).
+
+## Final GAPS batch (the founding singleton's 7 gap entries)
+
+The founding fork's own Extended functions — the other section
+of this group's gaps — are closed by a second batch module,
+`src/legalpol/singleton_extensions.py`
+(`LegalPolSingletonExtensions`, store-level only; all
+pre-existing modules byte-identical, including the additions
+unit's `extensions.py`), under the same founding privacy rule:
+the corpus and documents exist here only as core metadata +
+SHA-256 records, and no shape can hold corpus content,
+generated text, a prompt, a completion, or query text. Three
+entries close as **built** in records form: the legal corpus
+content as a content registry over core library sources
+(reported extent and corpus digests, append-only reported
+curation events whose latest label is the derived current
+state, license records over opaque licensor references — the
+content itself never held), sandbox provisioning requests and
+reported outcomes over core sandbox sessions (the core's
+single-use rule untouched; the isolation environment itself
+never provisioned), and code-execution jobs bound to core
+execution records with reported outcomes (exit codes as
+reported; nothing executed). Four entries close as labeled
+**reference** implementations (`reference_stub: true`): agent
+runs as request and reported-outcome records with model
+transport bridge definitions (no inference, orchestration,
+retrieval, or transport here), search engine definitions and
+reported run records bound to core saved searches (nothing
+indexed, ranked, or searched; the digest-only discipline
+carries unchanged), document generation requests whose
+reported outputs are held as core document references (nothing
+drafted or generated), and security monitoring feed
+definitions with reported observations (nothing monitored or
+scanned — the deployment platform's layer). The section's two
+remaining entries (identity provider / federation, FIPS-
+validated cryptography) were already closed `re-scoped` in
+writing under the platform-layer decision. Full record:
+[`BATCH-SINGLETON49.md`](BATCH-SINGLETON49.md). Suite:
+**143 → 176 tests**, all passing, including a fresh
+mutation-verified negative control on the curation-derivation
+seam (exactly 3 failures under the mutant; see
+`tests/README.md`).
