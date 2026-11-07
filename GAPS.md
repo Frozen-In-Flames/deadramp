@@ -389,21 +389,21 @@ Platform-layer: encryption at rest (deployment layer); TLS only when configured;
 ## Group 23 — Accounting L3-adjacent (2 forks)
 
 Extended families carried from the Group 5 union, specified in groups/accounting-l3/UNION-SPEC.md, not implemented:
-- [ ] open — AI / analytics & BI (this group's only claimed Extended family, 1 of 2)
-- [ ] open — Project / program / portfolio management
-- [ ] open — Risk register & GRC suites beyond the separation-of-duties / audit seed
-- [ ] open — Audit-management workbenches
-- [ ] open — Fixed-asset registers
-- [ ] open — Records retention beyond the audit seed
-- [ ] open — Forecasting / EPM
-- [ ] open — Supply chain
-- [ ] open — GovCon / grants specifics
-- [ ] open — Crypto investigation
-- [ ] open — Time tracking
-- [ ] open — E-signature
-- [ ] open — Payroll
-- [ ] open — Tax support
-- [ ] open — Forensic investigation
+- [x] built — AI / analytics & BI (this group's only claimed Extended family, 1 of 2)
+- [x] built — Project / program / portfolio management
+- [x] built — Risk register & GRC suites beyond the separation-of-duties / audit seed
+- [x] built — Audit-management workbenches
+- [x] built — Fixed-asset registers
+- [x] built — Records retention beyond the audit seed
+- [x] built — Forecasting / EPM
+- [x] built — Supply chain
+- [x] built — GovCon / grants specifics
+- [x] built — Crypto investigation
+- [x] built — Time tracking
+- [x] reference — E-signature
+- [x] built — Payroll
+- [x] built — Tax support
+- [x] built — Forensic investigation
 
 Members' own domains, not built here (they belong to their own categories' groups): one sibling's LLM / RPA acquisition platform; the other's sovereign cloud / DaaS enclave (a zero-claim sheet in this group: sovereign-cloud prose, full text preserved, nothing invented).
 

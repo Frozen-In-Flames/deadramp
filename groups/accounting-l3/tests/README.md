@@ -14,12 +14,13 @@ wherever functions overlap.
 
 ```bash
 cd groups/accounting-l3
-PYTHONPATH=src python3 -m unittest discover -s tests        # 273 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 327 tests
 ```
 
 Status at delivery: **273 tests, OK** (219 inherited from Group 5,
 54 added for the High uplifts: 53 in `test_l3_uplifts.py` plus 1 in
-`test_main_cli.py`). (Run exactly as above: helpers are imported as a
+`test_main_cli.py`). The final GAPS batch (below) adds 54 more in
+`test_gaps_batch.py`, for **327 tests** total. (Run exactly as above: helpers are imported as a
 top-level module from the tests directory and `tests/__init__.py` is
 empty by design, so package-mode discovery with `-t .` is not the
 supported entry point for this group.)
@@ -183,3 +184,56 @@ L3-specific notes:
   healing removes the directory so the next append recreates the file.
   An in-memory log (no path) has no write to fail and never raises
   `AuditWriteError`.
+
+## Final GAPS batch (2026-11-07)
+
+`test_gaps_batch.py` — **54 tests** pinning the extension surface in
+the NEW module `src/accounting/extensions.py` (`ExtensionStore`). No
+core module changed; every pre-existing test above passes unchanged,
+so the High uplifts (hash-chained audit, fail-closed writes, auditor
+role, lockout) keep exactly their shipped accounting. Per-entry
+classes trace to the group's 15 GAPS.md entries: analytics datasets
+and insights with derived summary; projects with budget-capped spend
+and derived utilization; risk register with derived score
+(likelihood x impact) and SoD acceptance; audit engagements with
+findings, SoD resolution, and close gated on zero open findings;
+fixed assets with derived straight-line depreciation floored at
+salvage; retention policies/assignments with derived due dates and
+dispositions recorded (never deletions); forecasts with derived
+variance (actuals are derivation inputs, never stored); supply-chain
+suppliers/purchase orders/receipts with derived fulfillment; GovCon
+awards with ceiling-capped direct/indirect costs; crypto-investigation
+case records over opaque wallet refs only (exact shape pinned); time
+entries with derived total/approved minutes; payroll runs with net
+derived (never stored on a pay item) and disbursement recorded, not
+executed; tax-preparation records with derived totals and SoD
+finalize; forensic cases with append-only custody chains and the
+current custodian derived at read. The e-signature entry is a
+STUB-ENGINE: every request and event record carries
+`reference_stub: True` (pinned), its only status is `recorded`, and
+the event vocabulary contains no state claiming a document was sent.
+
+Cross-entry doctrine tests pin: the auditor role holds no operational
+permission on the extension surface; viewer is read-only; cross-book
+records are NotFound; extension mutations land in the same
+hash-chained audit log and the chain verifies; and an audit write
+failure rolls an extension mutation back whole (AU-5, exercised by
+breaking the JSONL path mid-flight as in the core uplift tests).
+
+**Fresh mutation-verified negative control (batch, 2026-11-07):**
+the budget-cap check in `ExtensionStore.record_project_spend`
+(`src/accounting/extensions.py`) was patched from
+`if spent + amount_cents > project["budget_cents"]:` to
+`if spent < 0:` — the mutant computes the prior-spend sum but never
+compares it to the budget, the exact live counterpart of the
+in-suite mutant in
+`TestBatchWideDoctrines::test_negative_control_budget_cap_mutant` —
+and the full suite was run: **327 tests ran, 2 failed**. The
+failures are exactly the defect class's surface:
+`test_gaps_batch`'s `test_spend_cap_and_derived_view` and
+`test_negative_control_budget_cap_mutant`. `extensions.py` was then
+restored from the pre-mutation copy (SHA-256 verified identical to
+the pre-mutation hash,
+`a97b38a407ebb4ad466f922124a77604fc570fe7b269a5ff558f874394b670d5`)
+and the suite re-run: **327 tests, OK**. The suite catches this
+defect class; the negative control is not decorative.

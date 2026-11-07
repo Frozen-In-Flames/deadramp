@@ -189,14 +189,35 @@ fail, 4 failures; the file was restored and SHA-256 verified), and
 audit tamper localized at the exact entry index by
 `verify_chain()`.
 
+## Final GAPS batch (2026-11-07)
+
+The group's 15 GAPS.md entries are now built as an extension surface
+in the NEW module `src/accounting/extensions.py`
+(`ExtensionStore`, 54 new tests in `tests/test_gaps_batch.py`;
+**327 tests total**): the 14 build-extension entries land as
+in-substrate records/derivation extensions in the group's own
+taxonomy language (analytics, projects, risk register, audit
+workbenches, fixed assets, retention, forecasting, supply chain,
+GovCon/grants, crypto-investigation records, time tracking, payroll,
+tax preparation, forensic custody chains), and e-signature ships as
+a labeled reference implementation whose records all carry
+`reference_stub: true`. No core module changed, so the High-baseline
+uplifts keep their shipped accounting exactly. Per-entry
+dispositions, function names, and the batch's fresh
+mutation-verified negative control (budget-cap mutant: 327 tests,
+2 failures, restored and re-run green) are recorded in
+[`BATCH.md`](BATCH.md) and [`tests/README.md`](tests/README.md).
+
 ## Honesty section
 
 - **Specs**: 2/2 forks spec'd from their own public descriptions,
   using Group 5's taxonomy matcher verbatim; 2 claims total; one
   zero-claim sheet (Citrix), recorded, not repaired. Counts are a
   floor, never a ceiling.
-- **Not built here** (specified in the union spec, registered as
-  gaps for the final batch): the Extended families — AI/analytics
+- **Not built in the original build** (specified in the union
+  spec, registered as gaps for the final batch; the final GAPS
+  batch has since built them as the extension surface noted
+  above): the Extended families — AI/analytics
   & BI (this group's one claimed Extended family), project/program/
   portfolio management, risk register & GRC beyond the SoD/audit
   seed, audit-management workbenches, fixed-asset registers,
