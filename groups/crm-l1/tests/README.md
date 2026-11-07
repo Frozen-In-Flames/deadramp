@@ -96,3 +96,43 @@ recorded in `scratch/store.py.sha256` and verified identical after
 restore — and identical to Group 25's shipped `store.py`) and the
 suite re-run: **108 tests, OK**. The suite catches this defect
 class; the negative control is not decorative.
+
+## Final GAPS batch tests (appended at the batch build)
+
+| Module | What it pins |
+|---|---|
+| `test_gaps_batch.py` | The 8 open entries of this singleton's GAPS.md section (idx 683–690), closed in `../BATCH.md`: the CXM platform records surface (channel-surface definitions pinned to an exact key set; the experience overview derived at read as deterministic counts), the social publishing / listening / advertising / orchestration / marketing / AI reference surfaces (every record `reference_stub: True`, outcome receipts `reference_transport: True` where the L2 forms carry it, definitions held as data and pinned to execute nothing and change no core record), care engagement depth in the L2 casework form (desktop compositions over existing records, topic enable/disable, chat sessions as labeled reference records bound to core cases), the privacy rule by signature (a content argument to the publishing surface and a result argument to the AI surface raise `TypeError`), score-shaped labels refused at the boundary, a recursive no-score-key scan over every stored extension record and derived view, RBAC denials audited as `ext_*:denied`, and failed-audit-write rollback (insertion and id roll back). 36 tests; suite total after the batch: **144 tests, OK** (108 before). |
+
+### The channel-count seam drill (fresh negative control, batch)
+
+The claim under test: **the experience overview's by-channel
+distribution is derived at read from the recorded core
+interaction records, counted by their recorded channel** — the
+CXM entry's only derivation, computed at read through the seam
+`CrmExtensions._channel_counts`.
+`TestNegativeControlChannelCounts` pins the canonical case
+(interactions on chat / email / chat read back as
+`{"chat": 2, "email": 1}`) and asserts (1) the real
+implementation's outcome, (2) a mutant subclass overriding the
+seam to count nothing would NOT produce it, and (3) treating
+the mutant's outcome as the expected outcome raises
+`AssertionError`.
+
+File-level verification (performed at build time, raw output in
+`../scratch/gaps_batch_mutation_run.txt`): the shipped
+`src/crm/extensions.py` (pre-mutation SHA-256
+`5f0d34691529a1fbcd7bdcd0fa1979a6b910619f47b6d3a39691c29493614c77`,
+backup in `../scratch/extensions.py.premutation`) was mutated at
+the seam's counting line (`counts[channel] = counts.get(channel,
+0) + 1` → `counts[channel] = counts.get(channel, 0)`, exact
+full-line match, one occurrence) and the full suite run: **144
+ran, exactly 2 failures** —
+
+- `test_gaps_batch.TestCxmPlatformRecords.test_overview_is_derived_counts_only`
+- `test_gaps_batch.TestNegativeControlChannelCounts.test_canonical_counts_but_mutant_does_not`
+
+— both in the batch's own new tests and both
+derivation-dependent; no core or founding test failed. The file
+was then restored from the pre-mutation copy, its SHA-256
+verified identical, and the suite re-run green: **144 tests,
+OK**.

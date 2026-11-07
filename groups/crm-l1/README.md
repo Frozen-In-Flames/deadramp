@@ -284,3 +284,28 @@ reused (see the precision notes in `UNION-SPEC.md`):
   families the build's features answer to; nothing more. FedRAMP
   authorizes products; CMMC certifies organizations — neither
   regime accepts the other as evidence.
+
+## Final GAPS batch (appended note)
+
+The final batch unit for this singleton's own GAPS.md section
+(idx 683–690) has landed in `src/crm/extensions.py`
+(`CrmExtensions`), with per-entry dispositions in `BATCH.md`:
+the unified CXM platform closes **built** in the records form
+its own text bounds (channel-surface definitions plus a derived
+cross-channel overview; the operating platform itself is not
+built), care engagement depth closes **built** in the L2
+casework form, and the remaining six entries close as labeled
+**reference** implementations — the two drafted stub-engine
+entries as drafted, and four drafted build-extension entries
+re-judged under the batch decision's qualification 1, with
+grounds in `BATCH.md` (publishing, advertising, and the
+marketing product are engines over external systems; the
+AI-backed core is bounded by its own entry text, which records
+that the family stays Extended and that this build implements
+no AI and computes no score anywhere). The carried CRM Extended
+set remains registered once under Group 25 and is not part of
+this unit. Suite: 108 → **144 tests, OK**, including a fresh
+mutation-verified negative control on the overview's
+channel-count derivation (record in `tests/README.md`). The 10
+core functions above are unchanged — every core module is
+byte-identical to its pre-batch state.
