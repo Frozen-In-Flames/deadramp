@@ -691,10 +691,10 @@ The Group 26/27 category union's extended families (event detection & orchestrat
 ## Singleton 43 — GRC L1 (1 fork)
 
 Extended functions new with this fork, specified in groups/grc-l1/UNION-SPEC.md, not implemented:
-- [ ] open — Questionnaire automation engine (a named activity in the fork's prose that no taxonomy family names)
-- [ ] open — Trust Center publication (customer-facing publication of the security program description / posture; core posture is internal counts)
-- [ ] open — Vendor risk assessment engine (evaluating / scoring vendors — the risk claim's engine remainder; the records are Core and no score is computed)
-- [ ] open — Continuous-monitoring engine & evidence-collection integrations (automated control checks and evidence collection from connected systems; overlaps Group 33's registered validation-engine and feed entries, named here from this fork's own claims)
+- [x] reference — Questionnaire automation engine (a named activity in the fork's prose that no taxonomy family names)
+- [x] built — Trust Center publication (customer-facing publication of the security program description / posture; core posture is internal counts)
+- [x] reference — Vendor risk assessment engine (evaluating / scoring vendors — the risk claim's engine remainder; the records are Core and no score is computed)
+- [x] reference — Continuous-monitoring engine & evidence-collection integrations (automated control checks and evidence collection from connected systems; overlaps Group 33's registered validation-engine and feed entries, named here from this fork's own claims)
 
 The Group 33 category union's extended families (automated evidence validation, posture / risk scoring engines, workflow automation engines, vulnerability scanning engine, automated KSI validation, FedRAMP authorization package generation, hosted enclave & PaaS operations) are already registered under Group 33 and are not re-registered here. Named absence (not a gap): policy management — no policy vocabulary in the fork's prose, the same absence as at L2. Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: the fork is FedRAMP Low (not LI-SaaS) and a FedRAMP 20x Class B Pilot participant, recorded as program context, not converted into claims; at L1 the audit trace holds on the FedRAMP Low side only (FAR 52.204-21 carries no audit practice), and no SI-7 claim is made.
 

@@ -181,6 +181,30 @@ PYTHONPATH=src python -m unittest discover -s tests
 negative control on the status derivation, performed fresh in this
 tree (see `tests/README.md`).
 
+**Final GAPS batch (2026-11-07).** The section's four Extended
+entries are now covered by one new module, `src/grc/extensions.py`
+(`GrcExtensions` over the untouched core; all pre-existing modules
+byte-identical, suite now **142 tests, OK**, including a fresh
+mutation-verified negative control on the extension's
+latest-label derivation — see `tests/README.md`). Dispositions
+(per-entry record in `BATCH.md`): **Trust Center publication —
+built** in publication-records form (the stored record holds no
+figures; the published view derives the core's counts-only
+posture at read, and nothing is published or exported here);
+**questionnaire automation, vendor risk assessment, and the
+continuous-monitoring engine & evidence-collection integrations
+— labeled reference implementations**: questionnaire definitions
+and verbatim responses with nothing administered and no answer
+reused; vendor-assessment rules held as data and never applied,
+with assessor outcomes and values recorded verbatim and nothing
+evaluated or computed (no core finding is created); and
+monitoring intake records of reported observations
+(`monitored_here: False`) that create no core indicator result,
+plus collection-run records that create no core evidence. The
+category doctrine is unchanged on the new surface: counts only,
+no computed score anywhere, verified by the founding recursive
+key scan over every new record and view.
+
 ## Control mapping summary (Low / L1)
 
 Against the NIST SP 800-53 Rev. 5 **Low** baseline families (this

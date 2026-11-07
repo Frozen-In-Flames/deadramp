@@ -117,3 +117,61 @@ contract's most literal reading (inherited from Group 33, unchanged):
   [...]}`, `{"results": [...]}`, `{"evidence": [...]}`, `{"findings":
   [...]}`, `{"assessments": [...]}`, `{"authorizations": [...]}`,
   `{"entries": [...]}`); `/posture` is the bare summary dict.
+
+## Final GAPS batch coverage (Singleton 43 section, idx 415–418)
+
+`test_gaps_batch.py` (24 tests) pins the batch extension surface
+in `../src/grc/extensions.py` (`GrcExtensions`); see `../BATCH.md`
+for the per-entry dispositions. All pre-existing modules are
+byte-identical to their pre-batch state (SHA-256 verified against
+`../scratch/prebuild-src.sha256`).
+
+| File | Covers (batch) |
+|---|---|
+| `test_gaps_batch.py` | idx 415 questionnaire automation (reference) — definition shape + stub labels (`reference_stub`, `administered_here` / `reuse_applied_here: False`), questions held as data verbatim, unknown system rejected with no id consumed, response answers verbatim (non-string answer / non-mapping rejected), unknown questionnaire consumes no response id, view derives response counts + latest reported status while the stored definition carries no derived key; idx 416 Trust Center publication (built) — stored record's exact 8-key set with no figures, view derives the core posture counts and tracks registry state (a finding added after registration appears, overdue via the core derivation) while the stored record never gains a figure, releases verbatim with derived count + latest label; idx 417 vendor risk assessment (reference) — rule shape (`recorded_rules_only`, `applied_here: False`) and the rule record byte-identical after an assessment is recorded against it, assessment outcome + reported label verbatim with `evaluated_here` / `computed_here: False`, **no core finding created** and core posture unchanged, summary counts verbatim labels only, unknown system/rule rejected with no id consumed; idx 418 monitoring & collection (reference) — source shape + stub/transport labels, bad kind rejected, observation intake verbatim (optional control validated against the catalog; unknown control rejects with no id consumed) creating **no core indicator result**, collection runs with reported artifact counts (bool/float/negative rejected) creating **no core evidence**, source view deriving counts + latest status + the summed *reported* artifact total; cross-cutting invariants — the founding no-score recursive key scan over every record kind, every view, both summaries, and the embedded core posture; extension writes audited under `ext_` actions; viewer writes denied with no forged audit entries; extension summary counts; and the fresh negative control below |
+
+### Batch negative control — the latest-label seam
+
+`TestLatestLabelNegativeControl` implements the batch unit's
+fresh mutant for the extension's derivation seam
+`GrcExtensions._latest_label`: views derive their "latest" label
+(the latest response status, the latest release label, the
+latest observation status) from the recorded stream at read, and
+the value is never stored. The canonical expectation is that the
+latest label is the **most recently recorded** one; a mutant
+seam that reads the **earliest** record must misstate it. The
+test states the expectation, asserts the real implementation
+meets it across two families' views, asserts the
+earliest-reading subclass mutant misstates both, and — via a
+literal `assertRaises(AssertionError)` — that treating the
+mutant's output as the expected output fails.
+
+### Batch mutation verification
+
+VERIFIED by the batch coordinator (2026-11-07). The seam in
+`src/grc/extensions.py` was patched so it reads the earliest
+record — `return records[-1][key] if records else None` replaced
+with `return records[0][key] if records else None` (the target
+text asserted to occur exactly once before patching) — and the
+full suite was run: **142 tests ran, exactly 4 failed** (raw
+output in `../scratch/gaps_mutation_run.txt`), all in
+`test_gaps_batch.py`:
+
+- `TestQuestionnairesReference.test_response_verbatim_and_view_derives`
+- `TestPublicationsBuilt.test_releases_verbatim_and_view_derives_latest`
+- `TestMonitoringReference.test_source_view_derives_counts_and_latest`
+- `TestLatestLabelNegativeControl.test_canonical_latest_is_most_recent`
+
+The failing set is exactly the surfaces that depend on the
+latest-label derivation: one canonical derivation test per
+family that derives a latest label (questionnaire view,
+publication view, source view) plus the negative control's
+canonical arm. (The in-suite mutant subclass overrides the seam
+itself, so its legs are unaffected by the file patch — the same
+shape as the sibling units' drills.) `extensions.py` was then
+restored from the pre-mutation copy kept at
+`../scratch/extensions.py.premutation` (SHA-256
+99838d1be2ad52c2d63b57cebab94ca308486410ed178a74b1920e168999a874,
+verified identical to the pre-mutation hash) and the suite
+re-run: **142 tests, OK**. The suite catches this defect class;
+the negative control is not decorative.
