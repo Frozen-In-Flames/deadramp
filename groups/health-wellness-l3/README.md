@@ -170,3 +170,29 @@ complete list of Group 18 test adaptations).
   gaps at this tier, not implied closures. The deployment is
   a single-tenant reference deployment; TLS applies when a
   certificate is configured.
+
+## Final GAPS batch (2026-11-07)
+
+The 5 open entries of this group's GAPS.md section are closed by
+`src/health/extensions.py` (`HealthExtensions`; all 7 core
+modules byte-identical) with per-entry dispositions in
+`BATCH.md`. All five entries are the fork's clinical engines, and
+all five land as **labeled reference implementations** — the
+three stub-engine entries as drafted, and the two
+build-extension drafts (waveform review rendering, bedside
+diagnostic support) re-judged to reference under the batch
+decision's qualification 1: rendering is a function over a
+waveform this substrate may never hold, and diagnostic support
+is the diagnostic function itself, which this build does not
+perform and does not claim. The extension is a registry of the
+external engines' reported activity — stream sessions and
+reports, review sessions and outcomes, monitoring profiles and
+burden reports (the burden figure verbatim as reported, never
+computed or aggregated), alert references and outcomes,
+diagnostic sessions and outcomes — every record carrying
+`reference_stub: True` against opaque references only, under the
+category's hard privacy rule and the High apparatus (hash-chained
+audit, fail-closed writes, auditor denied the extension surface).
+Suite: 121 → 147 tests, all passing, including a fresh
+mutation-verified negative control (see `tests/README.md`).
+Nothing here is a medical device and no FDA status is claimed.

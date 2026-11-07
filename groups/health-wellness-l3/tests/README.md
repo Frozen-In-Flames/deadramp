@@ -200,3 +200,42 @@ byte-identical to Group 18).
   file with a directory of the same name, so the append raises
   `IsADirectoryError` (an `OSError`) deterministically on any
   platform.
+
+## Final GAPS batch additions (2026-11-07)
+
+One new file, `test_gaps_batch.py` (**26 tests**), pins the
+batch extension surface in `src/health/extensions.py`
+(`HealthExtensions`, wrapping the core store; all 7 core modules
+byte-identical to the shipped build, SHA-256 verified against a
+pre-build baseline). Suite total: **121 → 147 tests, all
+passing**. Per-entry dispositions and grounds: `../BATCH.md`.
+
+| File | Tests | Covers |
+|---|---:|---|
+| `test_gaps_batch.py` | 26 | Final GAPS batch, Singleton 46 section (idx 443–447) — all five families land as labeled reference implementations (`reference_stub: True`, state `recorded_reference_only`): stream session/report records (idx 443; `reference_transport: True`, `signal_held_here`/`streamed_here` False, reported counts only, view derives report count + latest status label at read); review session/outcome records (idx 444, re-judged to reference; `waveform_held_here`/`rendered_here`/`interpreted_here` False, outcome labels verbatim); monitoring profile + burden report records (idx 445; burden value verbatim as reported, never computed or aggregated — the view's latest value is a verbatim selection; `monitoring_summary` is counts only with an exact-shape pin); alert reference/outcome records (idx 446; `detected_here`/`alerted_here`/`sent_here` False, detection label verbatim); diagnostic session/outcome records (idx 447, re-judged to reference; `diagnosed_here`/`support_rendered_here`/`interpreted_here` False). Privacy pins: recursive forbidden-key scan over every record, view, and summary (no identifier, diagnosis, note, score-shaped, EEG/waveform/signal-content key), tier/baseline key scan, `TypeError` on smuggled keyword arguments. High apparatus pins: extension writes land on the core hash-chained log and `verify_chain()` returns `(True, None)`; an extension write against a broken JSONL path raises `AuditWriteError` and rolls back in full (no record, no id consumed, chain intact); the auditor role is denied every extension read/write (denial audited `:denied`) while `audit_read` and chain verification still work; member scope mirrors the core store |
+
+### Negative control #3 (fresh, for the batch code)
+
+**`TestStreamDeviceUniqueNegativeControl`** in
+`test_gaps_batch.py`: the seam is
+`HealthExtensions._check_stream_device_unique` — a stream
+session record names exactly one reported stream, so a second
+session for the same participant + `device_ref` pair is refused.
+The mutant subclass (`_NoDeviceGuardExtensions`) overrides the
+seam to never fire. The test asserts the canonical refusal, that
+the mutant accepts the duplicate (two session records for one
+device), and — via a literal `assertRaises(AssertionError)` —
+that treating the mutant's registry as the canonical expectation
+fails.
+
+**Mutation verification (live drill, on the real
+`extensions.py`, 2026-11-07):** the seam's scan line
+(`for existing in self._stream_sessions.values():`) was patched
+to iterate an empty dict, so the refusal became unreachable: the
+suite ran 147 tests with **exactly 2 failures**
+(`test_duplicate_device_ref_refused_and_no_id_consumed` and
+`test_canonical_refuses_duplicate`, both in
+`test_gaps_batch.py`). `extensions.py` was then restored from
+`scratch/extensions.py.premutation` and verified byte-identical
+(SHA-256 `2046bce604a67b0a71254dd9698f4ac99c9d4abebe9b63812a25590bc6dd51c5`);
+the suite returned to green (147, OK).
