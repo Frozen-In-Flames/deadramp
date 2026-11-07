@@ -193,6 +193,34 @@ precision notes in [`UNION-SPEC.md`](UNION-SPEC.md).
   the separated auditor — can be exercised; IA-2 stays with the
   embedding organization, and at this tier that organization
   must supply MFA-grade authentication (a named gap here).
+
+## Final GAPS batch (2026-11-07)
+
+This singleton's 7 registered gaps (idx 735–741) are closed by
+one new module, `src/storage/extensions.py`
+(`StorageExtensions`, wrapping the core store; all seven core
+modules byte-identical), and `tests/test_gaps_batch.py`
+(34 tests; suite 127 → 161, all passing). The fork's engines
+land in their records forms over the carried substrate: the
+backup & recovery engine, the anomaly detection & alerting
+engine, and the workload protection connectors as labeled
+reference implementations (`reference_stub: True`, with
+`backed_up_here` / `detected_here` / `connected_here` False —
+nothing here backs up, detects, or connects anything), and
+granular remediation actions (gated on the core's derived
+retention state), the Command Center console (panel
+definitions held as data plus a view derived at read — nothing
+rendered), SaaS operations automation (rule definitions plus
+reported run records — nothing executed), and hybrid cloud
+synchronization (condition records plus reported outcomes —
+nothing synchronized) as built records forms. Every current
+outcome label is derived at read, never stored; the High
+apparatus binds the extension surface (hash-chained audit
+including denied attempts; the auditor is denied every
+extension operation). Per-entry dispositions, the fresh
+mutation-verified negative control (remediation eligibility:
+exactly 2 failures under the live drill), and the
+near-the-line statements are in `BATCH.md`.
 - Claims in the spec are a **floor**: a function is claimed
   only where the offering's own marketplace description states
   it, with the sentence stored as evidence. This fork states

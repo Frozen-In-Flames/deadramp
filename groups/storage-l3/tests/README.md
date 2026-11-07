@@ -36,6 +36,7 @@ module are new at this tier.
 | `test_main_cli.py` | CLI argument handling and demo-user wiring (now including `dana=auditor`) |
 | `test_singleton_spec.py` | Spec integrity for THIS singleton: membership == census unit {FR2115384377} with `extends_group` null, recorded fields match `forks.json`, description verbatim vs the cache record, **functions_claimed pinned empty**, the taxonomy pinned as the parent's verbatim 11 families (ast-parsed from the parent extractor), the census citation verified-but-not-a-claim, the catalogue hit pinned as removed-by-exclusion, checked absences holding at token level, the two substance retirements (backup, audit) pinned as occurring, and three carried-substrate cases (disposition gate under custody linkage, auditor separation at store level, chain verifies after a flow) — substrate cases, explicitly not this fork's claims |
 | `test_negative_control.py` | The mutation-verified negative control (below) |
+| `test_gaps_batch.py` | **[Final GAPS batch]** The extension surface (`storage/extensions.py`) for this singleton's 7 gap entries (idx 735–741): pinned shapes and stub labels per entry, core-unchanged pins, derived-at-read outcome views, the recursive forbidden-key scan over every record and view, `TypeError` on smuggled kwargs, the auditor denied every extension operation, denied writes audited `:denied`, the chain verifying after an extension flow, and the fresh remediation-eligibility negative control (below) |
 
 ## Negative controls — mutation-verified (two seams at this tier)
 
@@ -106,3 +107,34 @@ L3 precedent found 5; its fifth was a separate
 canonical-verifier negative-control test that this lineage's
 negative-control file does not carry — that file is the
 retention seam's.)
+
+## Final GAPS batch — extension negative control (fresh seam)
+
+The batch unit (see `../BATCH.md`) adds a third seam:
+`StorageExtensions._derive_remediation_eligibility` in
+`src/storage/extensions.py`. A remediation action may be
+recorded for a message in any derived retention state except
+`disposed` — once disposition has been recorded there is
+nothing left in this substrate for a data-level action to
+concern. Verified two ways:
+
+1. **In-suite mutant**
+   (`TestRemediationEligibilityNegativeControl` in
+   `test_gaps_batch.py`): the canonical refusal is asserted on
+   the real implementation (nothing stored); a mutant subclass
+   whose seam reports every state eligible waves the same
+   action through, so the canonical expectation fails against
+   the mutant — the seam is what refuses.
+2. **External drill**, performed live in this tree: premutation
+   copy saved to `scratch/extensions.py.premutation` with its
+   SHA-256 (`44f1c5b5e0d6cffe6bc3ca9b407afc2f428e6ee9032b68f906295a0f9a6ca62e`),
+   the seam's single comparison patched to
+   `return True`, the full suite run, the file restored from
+   the premutation copy and verified byte-identical by SHA-256,
+   the suite green again. Result: **exactly 2 tests failed**
+   out of 161 —
+   `test_gaps_batch.TestRemediationActions.test_view_derives_current_state`
+   and
+   `test_gaps_batch.TestRemediationEligibilityNegativeControl.test_canonical_refusal_on_the_real_extension`;
+   all 127 pre-existing core tests still passed. The suite now
+   stands at **161 tests** (127 core + 34 batch), all passing.
