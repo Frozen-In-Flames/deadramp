@@ -153,3 +153,62 @@ present in the audit log. Result at delivery: **SMOKE OK**.
 `sys.stdlib_module_names`. Result at delivery: imports found
 `argparse, dataclasses, datetime, hashlib, http, json, os, ssl, sys,
 threading, urllib`; third-party imports: none. **OK: stdlib only.**
+
+## Final GAPS batch (2026-11-07)
+
+The batch unit for this group's GAPS section adds
+`tests/test_gaps_batch.py` (43 tests) pinning the extension
+surface in `src/devtools/extensions.py`: pipeline definitions
+and reported run records, toolchain registry records, artifact
+storage backends as records + checksums with a read-time
+placement summary, the feature-flag evaluation derivation
+(bucketing rule recomputed independently in the test module,
+targeting and kill-switch precedence, evaluation storing
+nothing), experiment assignment under the same bucketing rule
+with verbatim outcomes and exact-count summaries, rule sets /
+quality profiles / reported analysis results with read-time
+gate derivations, release plans with recorded stage states and
+a derived plan view, and the eight labeled reference records
+(`reference_stub: True`, `recorded_reference_only`; creating
+one changes no core record set). The seven pre-existing core
+modules are byte-identical to the shipped build (hashes
+re-verified against the UNION-SPEC contract table at batch
+build time); the extension module only reads core records and
+appends to the core audit log. Status after the batch:
+**121 tests, OK**.
+
+**Fresh negative control (this batch): the kill-switch-blind
+flag evaluation.** The load-bearing invariant of the flag
+runtime is that a killed flag serves NO subject, whatever its
+targeting or rollout says. The test subclasses
+`DevToolsExtensions` and breaks the kill-switch seam
+(`_kill_switch_active` returns `False` unconditionally),
+sharing the recorded flag table so the seam is its only
+difference. The canonical test asserts the three properties
+the rest of the suite relies on: (1) the real implementation
+evaluates a killed, targeted, 100%-rollout flag as
+`served: False` with reason `kill_switch`; (2) the mutant
+would NOT produce it — it serves the targeted subject with
+reason `targeted`; and (3) treating the mutant outcome as the
+expectation raises `AssertionError` literally. The mutant is
+defined inside the test; production code on disk is untouched
+by the test itself.
+
+**Mutation drill (performed at batch build time).** The real
+`extensions.py` was mutated so `_kill_switch_active` returns
+`False` unconditionally, and the full suite was run:
+
+| code under test | result |
+| --- | --- |
+| real implementation | 121 tests, all pass |
+| kill-switch-blind mutant | exactly **2 failures**: `test_kill_switch_and_restore` (the canonical kill/restore behavior) and `test_kill_switch_ignoring_mutant_is_rejected` (the negative control itself, whose canonical expectation is produced by the now-mutated real implementation) |
+
+Both failures sit on the kill-switch surface and nothing else
+trips, which is the specificity the drill exists to prove: the
+suite detects exactly the invariant the seam guards.
+`extensions.py` was then restored from the pre-mutation copy
+and verified byte-for-byte against its pre-drill SHA-256
+(`a3b7598b6166a42cdd0dcf321f17e5d9a991ca3f46f3841a00c662bf6a0e734d`),
+and the suite re-run green at 121 tests. Raw drill output is
+at `scratch/gaps_mutation_run.txt`; the pre-mutation copy is
+at `scratch/extensions.py.premutation`.

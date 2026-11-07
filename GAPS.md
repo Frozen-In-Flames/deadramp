@@ -483,23 +483,23 @@ Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / 
 ## Group 29 — Development Tools L2 (2 forks)
 
 Extended functions carried from the Group 17 union, specified in groups/development-tools-l2/UNION-SPEC.md, not implemented:
-- [ ] open — CI/CD execution engines (pipeline execution: build / test / deploy runners; claimed 1 of 2 here)
-- [ ] open — Code hosting internals (git storage, branching & merging engines; 0 claims here)
-- [ ] open — Compilers & build toolchains
-- [ ] open — Configuration-as-code execution & orchestration (0 claims here; "strict configuration control" is a recorded near-miss)
-- [ ] open — Compliance assessment & KSI status automation engines (0 claims here)
-- [ ] open — Business modeling & automation engines (modeling plus execution)
-- [ ] open — Course & content authoring tools
-- [ ] open — Landing-zone / tenant provisioning & hosted platform operations (0 claims here; "environment management" near-miss)
-- [ ] open — Artifact binary storage backends (the registry holds records + checksums only)
+- [x] built — CI/CD execution engines (pipeline execution: build / test / deploy runners; claimed 1 of 2 here)
+- [x] reference — Code hosting internals (git storage, branching & merging engines; 0 claims here)
+- [x] built — Compilers & build toolchains
+- [x] reference — Configuration-as-code execution & orchestration (0 claims here; "strict configuration control" is a recorded near-miss)
+- [x] reference — Compliance assessment & KSI status automation engines (0 claims here)
+- [x] reference — Business modeling & automation engines (modeling plus execution)
+- [x] reference — Course & content authoring tools
+- [x] reference — Landing-zone / tenant provisioning & hosted platform operations (0 claims here; "environment management" near-miss)
+- [x] built — Artifact binary storage backends (the registry holds records + checksums only)
 
 New in this group:
-- [ ] open — Feature-flag & feature-management runtime (flag evaluation, targeting, percentage rollouts, kill-switch)
-- [ ] open — Experimentation engine (hypothesis-driven development)
-- [ ] open — Static code analysis engine (rule sets, quality profiles & gates)
-- [ ] open — Security posture monitoring & automated remediation engine
-- [ ] open — Release automation, environment management & data migration engine
-- [ ] open — External-system integration engines (claimed 1 of 2 here)
+- [x] built — Feature-flag & feature-management runtime (flag evaluation, targeting, percentage rollouts, kill-switch)
+- [x] built — Experimentation engine (hypothesis-driven development)
+- [x] built — Static code analysis engine (rule sets, quality profiles & gates)
+- [x] reference — Security posture monitoring & automated remediation engine
+- [x] built — Release automation, environment management & data migration engine
+- [x] reference — External-system integration engines (claimed 1 of 2 here)
 
 Platform-layer: encryption at rest is deployment-layer (TLS when configured); single-tenant reference deployment; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: the two forks share no claimed family, and the release family drops to 0 of 2 on phrasing alone despite both descriptions being saturated with release vocabulary — recorded as near-misses, not rounded up.
 

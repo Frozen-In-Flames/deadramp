@@ -298,3 +298,42 @@ confers no CMMC certification**, and it claims neither. The L2 /
 FedRAMP Moderate equivalence used here is a planning/matching
 equivalence only; FedRAMP authorizes products and CMMC certifies
 organizations.
+
+## Final GAPS batch — Group 29 unit (2026-11-07)
+
+The final GAPS batch closed this group's 15 open Extended
+entries in `src/devtools/extensions.py` (new module; the seven
+core modules remain byte-identical to the shipped build, hashes
+re-verified). This section updates the honesty statement above
+for the batch scope only: the entries now exist in the
+substrate's records form, and the "no execution" boundary is
+unchanged — nothing here runs a build, compiles, analyzes,
+provisions, remediates, or calls an external system.
+
+Seven entries landed as build-extensions — records plus
+deterministic derivations over the group's own records:
+pipeline definitions with run records reported by external
+runners (`executed_here: false`), toolchain registry records,
+artifact storage backends as records + checksums with a
+read-time placement summary, the feature-flag runtime as a
+pure evaluation derivation over recorded flag / targeting /
+rollout records under a stated sha256 bucketing rule with a
+kill switch evaluation honors (the one genuinely computable
+surface; results stored nowhere), experiment assignment records
+under the same bucketing rule with verbatim outcomes and
+exact-count summaries, static-analysis rule sets / quality
+profiles / reported results with read-time gate derivations,
+and release plans with recorded stage states, reported
+data-migration records, and a derived plan view. The eight
+stub-engine entries (code hosting internals,
+configuration-as-code execution, compliance assessment & KSI
+automation, business modeling & automation, course & content
+authoring, landing-zone / tenant provisioning, security
+posture monitoring & remediation, external-system integration
+engines) shipped as labeled reference implementations:
+`reference_stub: true`, status `recorded_reference_only`,
+creating one changes no core record. Per-entry dispositions
+and grounds are in `BATCH.md`. Suite: 78 → **121 tests, OK**,
+including a fresh mutation-verified negative control (the
+kill-switch-blind flag evaluation; drill recorded in
+`tests/README.md`).
