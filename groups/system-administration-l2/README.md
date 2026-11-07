@@ -134,7 +134,7 @@ Errors are JSON `{"error": …}` with 400 (validation), 401
 ## Tests
 
 ```bash
-PYTHONPATH=src python3 -m unittest discover -s tests   # 107 tests
+PYTHONPATH=src python3 -m unittest discover -s tests   # 138 tests
 ```
 
 See [`tests/README.md`](tests/README.md) for the coverage map
@@ -208,3 +208,26 @@ embedding organization's records schedule per PLATFORM-LAYER.md
 decision 4). Tests: 78 → 107, including a fresh
 mutation-verified negative control on the latest-state
 derivation (see `tests/README.md`).
+
+## Final GAPS batch — Singleton 54 unit
+
+The 6 gap entries the founding singleton registered (the
+operations named in `UNION-SPEC.md`'s gap list) are now closed
+in records form by a third module,
+`src/sysadmin/singleton_extensions.py`
+(`SysadminSingletonExtensions`, wrapping the core store; all
+pre-existing modules byte-identical, including the addition
+unit's). Per-entry dispositions are in
+[`BATCH-SINGLETON.md`](BATCH-SINGLETON.md): managed
+administration operations, the virtualization records surface,
+and high-availability operation close as records surfaces over
+this substrate (definitions and reported records; current
+states derived at read; counts only — nothing is administered,
+virtualized, or failed over here), and provisioning &
+deployment, the application delivery & hosting runtime, and the
+third-party CSP hosting platforms close as labeled reference
+implementations (`reference_stub: true`; nothing is provisioned,
+hosted, or operated here, and the hosting substrate does not
+transfer per PLATFORM-LAYER.md decision 6). Tests: 107 → 138,
+including a fresh mutation-verified negative control on the
+latest-state derivation (see `tests/README.md`).

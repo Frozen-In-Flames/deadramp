@@ -855,12 +855,12 @@ Platform-layer: U.S. data residency (deployment property); platform scalability 
 ## Singleton 54 — System Administration L2 (1 fork, new category)
 
 The fork's operations, performed by people and platforms and named from its own verbs in groups/system-administration-l2/UNION-SPEC.md, not implemented (Core holds their records — service requests, changes, control inheritance — and the substrate performs none of the management work):
-- [ ] open — Managed OS & services administration operations (the full management itself)
-- [ ] open — System provisioning & deployment operations
-- [ ] open — Application delivery & hosting runtime
-- [ ] open — Virtualization engine (the underlying cloud provider's)
-- [ ] open — High-availability network operation
-- [ ] open — Third-party CSP hosting platforms (outside the fork's own boundary)
+- [x] built — Managed OS & services administration operations (the full management itself)
+- [x] reference — System provisioning & deployment operations
+- [x] reference — Application delivery & hosting runtime
+- [x] built — Virtualization engine (the underlying cloud provider's)
+- [x] built — High-availability network operation
+- [x] reference — Third-party CSP hosting platforms (outside the fork's own boundary)
 
 Platform-layer: part of the fork's baseline is satisfied by the underlying CSP (control inheritance, recorded in Core as dispositions verbatim); encryption at rest (deployment layer; TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: the fork is a General Support System whose operator maintains full management of the OS and services; its prose says controls are maintained "at the High baseline level," but the offering's own impact level is Moderate — recorded as a wording artifact, not read as re-tiering, and the build builds to Moderate / L2. Named absences: the description carries zero monitoring, incident-response, ticketing, SLA, backup / DR, or reporting vocabulary, recorded as absences rather than attributed. System and application record shapes have no field that can hold a hostname, IP address, or credential.
 

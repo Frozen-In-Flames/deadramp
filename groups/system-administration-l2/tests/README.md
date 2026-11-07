@@ -7,13 +7,15 @@ function / control family it traces to, per `../UNION-SPEC.md`.
 
 ```bash
 cd groups/system-administration-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 107 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 138 tests
 ```
 
-Status: **107 tests, OK** (71 at singleton delivery; 78 after the
+Status: **138 tests, OK** (71 at singleton delivery; 78 after the
 remainder additions — see the additions row and drill re-run
 below; 107 after the final GAPS batch addition unit — see the
-batch row and the latest-state drill record at the end).
+batch row and the latest-state drill record below; 138 after the
+final GAPS batch singleton unit — see the singleton row and the
+drill record at the end).
 
 ## Layout
 
@@ -34,6 +36,7 @@ batch row and the latest-state drill record at the end).
 | `test_negative_control.py` | 3 | Negative control (below) |
 | `test_additions.py` | 7 | Remainder additions (unit `addition:system-administration-l2`) — spec integrity: 9 sheets with the shipped sheet first and unchanged (8 claims; group total 9), exact census membership, house schema, taxonomy/verbatim-evidence audit, the exact claim map (1 claim over 1 fork, 7 zero-claim forks); the virtualization Extended honesty pin (no engine entry point on the store) and the claimant's records-substrate case (pinned nine-key system shape) |
 | `test_gaps_batch_addition.py` | 29 | Final GAPS batch addition unit (Remainder Addition section, idx 552–560) — per-entry record shapes and honesty labels for the delivery platform, observability stub, ITSM/ITAM, discovery/CMDB, PPM, DEX, GIS, backup/DR stub, and security-operations surfaces; derived-never-stored current states; recursive no-score key scan; access discipline (denied writes audited `:denied`, non-members reach nothing, failed writes consume no id); the fresh latest-state negative control (below) |
+| `test_gaps_batch_singleton.py` | 31 | Final GAPS batch singleton unit (Singleton 54 section, idx 515–520) — per-entry record shapes and honesty labels for the administration-operation, virtualization, and HA surfaces; the stub labels on the provisioning, hosting-runtime, and CSP-platform reference implementations; derived-never-stored current states; recursive no-score key scan; access discipline (denied writes audited `:denied`, non-members reach nothing, failed writes consume no id); the fresh latest-state negative control (below) |
 | `sysadmin_helpers.py` | — | Canonical fixture: organization `AGENCY-1` by bob, erin added as staff member (the canonical decider), system `SYS-OS-1` (operating_system, platform `PLAT-A`), application `APP-PORTAL`, service request due 2026-06-10 so `as_of` 2026-06-05 → not overdue and 2026-06-15 → overdue; outsider dave in no organization |
 
 ## Negative control
@@ -175,3 +178,46 @@ mutant (it agrees with the correct answer there, by
 construction), the record-shape and honesty-label pins are
 untouched by this mutation, and the mutant subclass's own test
 passes under it by construction, as expected.
+
+## Final GAPS batch singleton — fresh negative control
+
+**`test_gaps_batch_singleton.py`** adds the singleton unit's own
+negative control for its new code (the core and the addition
+module are unchanged, so both drills above stand as-is). The
+singleton module's signature derivation is **latest recorded
+state label wins**: virtual instances and HA configurations
+carry append-only reported labels, and the current state derives
+at read as the *last* label recorded
+(`SysadminSingletonExtensions._latest_state_label`). The
+in-suite control (`TestSingletonLatestStateNegativeControl`)
+asserts the canonical expectation (an HA configuration labelled
+`reported_healthy` then `reported_failover` reads
+`reported_failover`; an instance's summary counts it under its
+latest label), and — via a literal
+`assertRaises(AssertionError)` — that an earliest-label mutant
+subclass violates the canonical expectation.
+
+**Mutation verification (2026-11-07).** `_latest_state_label`
+in the real `src/sysadmin/singleton_extensions.py` was patched
+to return `state_records[0]["state_label"]` (earliest instead of
+latest) and the suite was run against the patched
+implementation.
+
+- Patched run: **138 ran, exactly 5 failed**, all in
+  `test_gaps_batch_singleton.py`:
+  - `test_gaps_batch_singleton.TestSingletonLatestStateNegativeControl.test_canonical_expectation`
+  - `test_gaps_batch_singleton.TestSingletonLatestStateNegativeControl.test_implementation_matches_canonical_in_summary`
+  - `test_gaps_batch_singleton.TestHighAvailability.test_current_state_derives_latest_event`
+  - `test_gaps_batch_singleton.TestHighAvailability.test_summary_counts`
+  - `test_gaps_batch_singleton.TestVirtualization.test_current_state_derives_latest_label`
+- `singleton_extensions.py` was then restored from
+  `scratch/singleton_extensions.py.premutation` and verified
+  **SHA-256-identical** (`scratch/singleton_extensions.py.sha256`);
+  the suite is green again (138/138). Raw drill output is in
+  `scratch/singleton_mutation_run.txt`.
+
+The failing set is exactly this unit's
+latest-state-derivation-dependent set, on both derivation
+surfaces (HA configurations and virtual instances). No core or
+addition-unit test failed: the seam is new code, and every
+failure needs a second recorded label to supersede a first.
