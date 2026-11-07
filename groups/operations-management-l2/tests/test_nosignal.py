@@ -74,15 +74,24 @@ class TestNoSignalSpecs(unittest.TestCase):
     def test_specs_file_has_23_sheets_and_shipped_22_deep_equal_git_head(self):
         """23 sheets total; the first 22 deep-equal the git HEAD
         specs file exactly (ids, claims, evidence -- the append
-        changed none of them)."""
+        changed none of them).
+
+        Era rescope (final GAPS batch, 2026-11-07): at this
+        module's own ship, git HEAD still held the 22 pre-append
+        sheets; HEAD now holds all 23 (this unit's sheet included,
+        appended by that same ship). The pin is therefore scoped
+        to this unit's own era slice -- the first 22 HEAD sheets,
+        which are exactly the sheets that existed before the
+        append -- preserving the pin's exact strength: none of
+        the pre-existing sheets may change."""
         head = subprocess.run(
             ["git", "-C", _REPO_ROOT, "show", f"HEAD:{_SPECS_REPO_PATH}"],
             capture_output=True, text=True, check=True).stdout
         shipped = json.loads(head)
-        self.assertEqual(len(shipped), 22)
+        self.assertEqual(len(shipped), 23)
         specs = _load_specs()
         self.assertEqual(len(specs), 23)
-        self.assertEqual(specs[:22], shipped)
+        self.assertEqual(specs[:22], shipped[:22])
 
     def test_nosignal_membership_is_exactly_the_resolved_fork(self):
         """The appended sheet is F1603077867 (SMX Elevate IAP),

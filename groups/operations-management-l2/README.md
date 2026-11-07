@@ -284,6 +284,35 @@ operations and lifecycle management; built-in compliance
 automation and policy guardrails) are Extended gaps, named in
 ADDENDUM.md §8 for the final GAPS batch.
 
+## Final GAPS batch (2026-11-07)
+
+The final GAPS batch closes this group's 13 open entries in one
+new module, `src/opsmgmt/extensions.py` (class `OpsExtensions`,
+wrapping the core store; per-entry record in `BATCH.md`). Six
+entries land as records plus deterministic derivations over the
+group's own records: low-code application definitions and
+deployment intents (nothing built or deployed), mobile sync
+sessions and conflicts (nothing syncs), security-service and
+policy enforcement-point records with states stored as reported
+(`enforced_here: False` throughout), rosters/shifts/assignments
+with coverage derived at read, and IoT device/readings records
+keyed by opaque references (nothing collected; the device record
+has no identifier field). Seven engine families ship as labeled
+reference implementations (`reference_stub: True`): workflow run
+references, stream/snapshot references, model/output references,
+connector references, platform service references, identity
+hooks (`identity_provider: False`, per the platform-layer
+decision), and governance/compliance-snapshot references. The
+Honesty section below therefore reads with one amendment: the
+Extended families are now present in records form only — the
+engines themselves are still not implemented, and nothing in
+this build executes, enforces, deploys, syncs, collects, hosts,
+monitors, or provides identity. All seven pre-existing
+`src/opsmgmt/*.py` core modules are byte-identical (SHA-256
+verified); tests: 134 → 184, all passing, including a fresh
+mutation-verified negative control on the new shift-overlap
+guard — see `tests/README.md`.
+
 ## Honesty: what is NOT in this build
 
 - **Extended capabilities are NOT implemented.** No workflow

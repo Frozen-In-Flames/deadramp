@@ -170,3 +170,59 @@ hash** (`8fe67ec242573e5d001071174ea4853fee74995ccc0f3ce02fd1a25f0bc411a6`,
 `scratch/store.py.sha256`) — i.e. byte-identical to the code that
 shipped with the original group — and the suite re-run: **134
 tests, OK**. Raw drill output: `scratch/nosignal_mutation_run.txt`.
+
+## Final GAPS batch — Group 36 unit
+
+The final GAPS batch closes this group's 13 open entries in one
+new module, `src/opsmgmt/extensions.py` (class `OpsExtensions`,
+wrapping the core store), tested by `test_gaps_batch.py`. The
+pattern follows gaps-batch/DECISION.md: six build-extension
+entries in records form (low-code application definitions and
+deployment intents, mobile sync sessions and conflicts, the
+security-services and policy enforcement-point records, rosters /
+shifts / assignments with coverage derived at read, and IoT
+device/readings records) and seven labeled reference
+implementations (`reference_stub: True`) for the engine families
+(workflow run references, stream and snapshot references, model
+and output references, connector references, platform service
+references, identity hooks with `identity_provider: False`, and
+governance framework/compliance-snapshot references). No existing
+core module changed — all seven pre-existing `src/opsmgmt/*.py`
+files verified byte-identical by SHA-256. Per-entry record:
+`../BATCH.md`.
+
+One disclosed test-only change: `test_nosignal.py` arrived red
+at this unit's baseline — its git-HEAD pin asserted HEAD held
+exactly 22 spec sheets, true only before that unit's own ship
+committed the 23rd. Following the era-rescope accommodation used
+by earlier batch units, the pin is scoped to its own era's slice
+(HEAD's first 22 sheets deep-equal the working file's first 22);
+`specs/specs.json` is untouched. Suite status for the group:
+**184 tests, OK**.
+
+Negative control for the batch (fresh, on the new code): the
+shift-overlap guard `_check_shift_overlap` in
+`src/opsmgmt/extensions.py` — a person may not hold two ACTIVE
+assignments whose windows overlap (half-open windows; adjacent
+shifts allowed; withdrawn assignments free the window). The
+in-test control (`TestShiftOverlapNegativeControl`) asserts the
+canonical expectation, that a no-op mutant of the seam would
+not produce it, and that treating the mutant's outcome as
+expected fails. A live mutation drill was then run on the real
+file: a copy was saved to `scratch/extensions.py.premutation`
+(pre-mutation SHA-256
+`3c2da202bb3eca5d91f8f37c4376ca4acf84d1980c451d70626ba24d28333db7`,
+`scratch/extensions.py.sha256`), the guard's overlap condition
+was patched to `False` (guard disabled), and the full suite was
+re-run: **184 tests ran, exactly 2 failed** — the canonical
+overlap assertion and the negative-control pin — which is the
+expected failure set for a disabled overlap guard (every other
+test still passes against the mutant, as expected):
+
+- `test_gaps_batch.TestScheduling.test_overlap_rejected_canonical`
+- `test_gaps_batch.TestShiftOverlapNegativeControl.test_overlap_guard_canonical_but_mutant_not`
+
+`extensions.py` was restored from `scratch/extensions.py.premutation`
+and verified **SHA-256 identical** to the pre-mutation file, and
+the suite re-run: **184 tests, OK**. Raw drill output:
+`scratch/gaps_mutation_run.txt`.
