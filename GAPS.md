@@ -1496,17 +1496,17 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## Untiered Set 9 — Research (4 forks, tier null)
 
 New extended functions from this set, specified in groups/research-untiered/UNION-SPEC.md, not implemented (the standing category tail — data commons runtime, ingestion and ETL, harmonization, indexing beyond the registry, query workspaces, cohort builder, federation, data delivery and its access enforcement, identity provider, encryption platform layer — is already registered under the parent groups and is not re-registered here):
-- [ ] open — Market & policy intelligence platform
-- [ ] open — Contract award & subaward analysis
-- [ ] open — Entity / relationship-graph analytics
-- [ ] open — Saved-search, alerting & entity-tracking
-- [ ] open — Clinical-trial EDC (electronic data capture)
-- [ ] open — eConsent & eCOA
-- [ ] open — Clinical-trial reporting & analytics
-- [ ] open — Identity resolution & background investigation
-- [ ] open — Ongoing identity monitoring
-- [ ] open — Supplier discovery & market research
-- [ ] open — Supplier intelligence & capabilities data
+- [x] built — Market & policy intelligence platform
+- [x] built — Contract award & subaward analysis
+- [x] built — Entity / relationship-graph analytics
+- [x] reference — Saved-search, alerting & entity-tracking
+- [x] built — Clinical-trial EDC (electronic data capture)
+- [x] built — eConsent & eCOA
+- [x] built — Clinical-trial reporting & analytics
+- [x] built — Identity resolution & background investigation
+- [x] reference — Ongoing identity monitoring
+- [x] reference — Supplier discovery & market research
+- [x] built — Supplier intelligence & capabilities data
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This set records zero claims: the category taxonomy is shaped by its founding fork's literal phrases and none of the four descriptions uses them — analysis and analytics stand as nouns where the patterns want verbs, maintains where they want managing, shared where they want sharing. The zeros are recorded, not repaired, and no core function is claim-supported: the substrate is carried, not claimed. At the prose tier, identification and audit are documented for one fork (SSO assertions and usage-and-audit records), traced and quoted and never converted to claims; one fork's purpose-built-for-compliance sentence is recorded as posture prose, not a control claim; every other family is listed as not documented.
 

@@ -106,3 +106,47 @@ instant by construction.
 - Tier discipline is pinned in `test_specs.py`, not in the core
   suite: the carried core contains no tier or baseline machinery,
   so there is nothing tier-shaped for the core tests to pin.
+
+## Final GAPS batch (2026-11-07)
+
+| File | Tests | Covers |
+|---|---:|---|
+| `test_gaps_batch.py` | 39 | Final GAPS batch extension surface (`src/research/extensions.py`, idx 828–838) — intelligence item records + derived kind counts; award records (integer cents; floats/bools/strings rejected) + deterministic-sums analysis + subaward parent rules; entity registry + relationship edges with degrees derived at read (stored record carries no degree key), self-loop/duplicate rejection; saved-search & entity-tracking reference records (stub labels pinned); EDC form definitions (field references as data, derived field count) + submission records (counts + recorded status only); eConsent instruments + consent state history with current state derived at read; eCOA response-count records; clinical summary (deterministic counts incl. derived current consent states); PPRL linkage pairs (`match_computed_here: False`, invalid method / self-pair rejected) + investigation cases (verbatim finding labels, close lifecycle); monitoring + discovery reference records; supplier profiles + capability counts / recorded-label lookup; cross-cutting pins — recursive scan finds no tier/baseline/CMMC/FedRAMP/score/rank-shaped key on any extension record or view, unexpected keyword arguments raise `TypeError` (no subject data can be smuggled into a shape), viewer write denied and audited `:denied`, outsider denied by the commons boundary, failed operations consume no id. Plus the negative control below. |
+
+### Negative control — consent current-state derivation (fresh, batch)
+
+`test_gaps_batch.py`'s `TestConsentDerivationNegativeControl`
+pins the extension's load-bearing derivation: a participant's
+**current consent state is the LATEST recorded state label**,
+derived at read (the single seam is
+`ResearchExtensions._current_consent_label`) and never stored.
+The mutant is a subclass (`MutantConsentExtensions`) whose seam
+returns the EARLIEST recorded label. The tests assert the
+canonical expectation (states [reported_pending,
+reported_consented] derive current `reported_consented`, in the
+consent view and in the clinical summary's consent counts), that
+the mutant does NOT produce it (it derives `reported_pending`),
+and — via a literal `assertRaises(AssertionError)` — that
+treating the mutant's outcome as the expected outcome fails.
+
+**Mutation verification — live drill on the real file:**
+`_current_consent_label` in `src/research/extensions.py` was
+patched (`return history[-1]["state_label"]` →
+`return history[0]["state_label"]`, occurrence count asserted =
+1) and the full suite was run: **132 tests ran, exactly 4
+failed** —
+
+- `test_gaps_batch.TestClinicalSummary.test_summary_counts`
+- `test_gaps_batch.TestConsentDerivationNegativeControl.test_current_state_is_latest_canonical`
+- `test_gaps_batch.TestConsentDerivationNegativeControl.test_mutant_changes_clinical_summary_counts`
+- `test_gaps_batch.TestEConsentEcoa.test_current_state_is_latest_recorded`
+
+The failing set is exactly the derivation-dependent set; the
+mutant-agreement tests (the mutant's own earliest-label
+expectations) pass under both implementations by construction.
+`extensions.py` was restored from
+`scratch/extensions.py.premutation` and verified SHA-256
+identical (`965e5f3f…`, recorded in
+`scratch/extensions.py.sha256`); the suite re-ran green
+(132/132). Suite status for the enlarged set: **132 tests, OK**
+(93 at the set's delivery + 39 batch tests).

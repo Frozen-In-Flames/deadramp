@@ -347,3 +347,29 @@ not before.
 - **Named absences stand.** All nine taxonomy families have 0
   claimants in this set and all four forks are zero-claim.
   Nothing was back-filled to make the set look complete.
+
+## Final GAPS batch (2026-11-07)
+
+The 11 open entries of this set's GAPS.md section are closed by
+`src/research/extensions.py` (`ResearchExtensions`, wrapping the
+core store; all core modules byte-identical) under the decisions
+in `../../gaps-batch/DECISION.md` and
+`../../PLATFORM-LAYER.md`: 8 entries built as records plus
+deterministic derivations over the set's own records (market &
+policy intelligence items, contract award records with
+deterministic-sums analysis, entity/relationship records with
+derived degrees, clinical EDC form definitions and
+count-only submission records, eConsent state records with the
+current state derived at read and eCOA response counts, clinical
+reporting as deterministic counts, PPRL-style reported linkage
+pairs and investigation case records, supplier capability
+profiles), and 3 closed as labeled reference implementations
+(saved-search/alerting, ongoing identity monitoring, supplier
+discovery). Tier stays null on the whole extension surface and
+the founding privacy discipline binds every new shape: subjects
+and participants are opaque references only, and no shape can
+hold a captured value, a signature, response content, or
+background content. See `BATCH.md` for the per-entry
+disposition. Suite: 132 tests, including a fresh
+mutation-verified negative control on the consent current-state
+derivation (exactly 4 failures under the mutant).
