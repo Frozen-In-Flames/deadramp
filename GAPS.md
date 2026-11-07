@@ -442,19 +442,19 @@ Platform-layer: multi-tenancy (single-tenant reference deployment); encryption a
 ## Group 27 — Customer Service L2 (2 forks)
 
 Extended functions, specified in groups/customer-service-l2/UNION-SPEC.md, not implemented:
-- [ ] open — Commerce platform hosting & point-of-sale systems (one sibling's entire domain: POS hosting for grocery / gas / loyalty / food-ordering, commerce applications, commerce API platform)
-- [ ] open — PCS relocation platform (the other sibling's domain: relocation financial workflows from obligation to financial-system interfaces, travel-voucher processing, supplier integration)
-- [ ] open — Automation execution engines (the rule registry is Core; one sibling's automation prose is a recorded near-miss, 0 tagged claims)
-- [ ] open — E-signature execution & PIV-based signer identity assurance (prose present in one sibling; 0 tagged claims)
-- [ ] open — Event detection, diagnosis & orchestration engines (0 claims here; carried from the Group 26 union)
-- [ ] open — GRC platform (0 claims here; carried from the Group 26 union)
-- [ ] open — Real-time channels: live chat, voice / telephony (0 claims; named)
-- [ ] open — AI assistance / deflection (0 claims; named)
-- [ ] open — Knowledge base articles (0 of 2; named absence at both tiers)
-- [ ] open — Satisfaction / CSAT surveys (0 of 2; named absence; near-miss recorded)
-- [ ] open — SLA policy engine (due / breach derivation only in Core; no sibling at either tier claims SLA terms)
-- [ ] open — Notification delivery & status-page hosting (status records / view are Core; delivery is not)
-- [ ] open — Reporting / analytics engines beyond registry reporting (reporting is this group's sole claim, 1 of 2)
+- [x] reference — Commerce platform hosting & point-of-sale systems (one sibling's entire domain: POS hosting for grocery / gas / loyalty / food-ordering, commerce applications, commerce API platform)
+- [x] reference — PCS relocation platform (the other sibling's domain: relocation financial workflows from obligation to financial-system interfaces, travel-voucher processing, supplier integration)
+- [x] built — Automation execution engines (the rule registry is Core; one sibling's automation prose is a recorded near-miss, 0 tagged claims)
+- [x] reference — E-signature execution & PIV-based signer identity assurance (prose present in one sibling; 0 tagged claims)
+- [x] reference — Event detection, diagnosis & orchestration engines (0 claims here; carried from the Group 26 union)
+- [x] built — GRC platform (0 claims here; carried from the Group 26 union)
+- [x] reference — Real-time channels: live chat, voice / telephony (0 claims; named)
+- [x] reference — AI assistance / deflection (0 claims; named)
+- [x] built — Knowledge base articles (0 of 2; named absence at both tiers)
+- [x] built — Satisfaction / CSAT surveys (0 of 2; named absence; near-miss recorded)
+- [x] built — SLA policy engine (due / breach derivation only in Core; no sibling at either tier claims SLA terms)
+- [x] built — Notification delivery & status-page hosting (status records / view are Core; delivery is not)
+- [x] built — Reporting / analytics engines beyond registry reporting (reporting is this group's sole claim, 1 of 2)
 
 Platform-layer: encryption at rest is deployment-layer (TLS when configured); single-tenant reference deployment; demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec finding: this group is a source-category artifact at both forks — one claims zero functions of any family (and is not self-categorized in the source), the other's sole claim is generic platform reporting; neither claims any core customer-service function, and the substrate stands on a recorded core-boundary decision rather than on claims.
 

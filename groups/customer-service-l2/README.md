@@ -161,3 +161,37 @@ FedRAMP authorization and not a CMMC certification.
   smoke script + log
 
 License: Apache-2.0 (repo-level). Copyright 2026 Aries Hilton.
+
+## Final GAPS batch — Group 27 unit
+
+The 13 Extended entries in this group's GAPS.md section are closed
+by one new module, `src/custsvc/extensions.py`
+(`CustsvcExtensions`, wrapping the core store; all core modules
+byte-identical), following the repo's batch pattern (see
+`BATCH.md` in this directory for the per-entry dispositions).
+Seven entries are built as records plus deterministic derivations
+over the core's own records: automation execution **requests**
+(the registry-never-executes doctrine stands — a request is a
+record, outcome reports are stored verbatim, `executed_here` is
+False throughout), GRC framework/control/mapping records with
+posture counts derived at read, knowledge-base articles with
+append-only revisions, CSAT instruments and verbatim responses
+with tallies derived at read (the mean is an exact rational,
+never a stored score), SLA policy records whose per-priority
+terms drive a breach derivation at read over core case records,
+notification records with `reference_transport` delivery reports
+(nothing is delivered), status-page records over the core's
+derived public view (nothing is hosted), and analytics
+derivations beyond registry reporting. Six entries ship as
+labeled reference implementations (`reference_stub: True`):
+commerce platform hosting & POS, the PCS relocation platform
+(workflow steps as recorded states; amounts are integer-cents
+data, nothing is processed or paid), e-signature & PIV assurance
+(nothing is signed; the record shape holds no signature), event
+detection & orchestration (a run record creates no alert),
+real-time channels (no media), and AI assistance/deflection
+(reports verbatim; no case is decided). Full suite: 69 tests
+before, **127 tests after, all passing**, including a fresh
+mutation-verified negative control on the SLA breach seam
+(exactly 3 failures under the mutant; see `tests/README.md`).
+No entry required re-judgment.
