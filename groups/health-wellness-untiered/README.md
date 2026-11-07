@@ -437,3 +437,30 @@ untiered and the HARD PRIVACY RULE binds every new shape. See
 `BATCH.md` for the per-entry disposition. Suite: 136 tests,
 including a mutation-verified negative control on the new
 slot-capacity guard (exactly 2 failures under the mutant).
+
+## Final GAPS batch — second unit (2026-11-07): the HealthEdge no-signal addition
+
+The 4 open entries of the GAPS.md section for the HealthEdge
+addition fork (idx 972–975) are closed by
+`src/health/extensions_addition.py` (`HealthExtensionsAddition`,
+wrapping the core store; all pre-existing modules unchanged,
+including the first unit's `extensions.py`) under the decisions
+in `../../gaps-batch/DECISION.md` and `../../PLATFORM-LAYER.md`:
+2 entries built (benefits administration — package definitions
+as data, administration records bound to the participant's own
+eligibility records, coverage counts derived at read from the
+core records; regulatory compliance reporting — definitions,
+filing records, and a counts-only report view over the
+substrate's own records, explicitly not a control claim) and 2
+closed as labeled reference implementations (care & utilization
+management workflows, as drafted; and health plan claims
+adjudication & pricing, re-judged from build-extension — the
+entry names the engine itself, pricing is a computation over
+amounts no shape in this substrate holds, and the records half
+of claims handling already stands from the first unit). The set
+stays untiered and the HARD PRIVACY RULE binds every new shape;
+no amount field exists in any new shape either. See
+`BATCH-ADDITION.md` for the per-entry disposition and the
+re-judgment grounds. Suite: 162 tests, including a
+mutation-verified negative control on the new eligibility-
+binding guard (exactly 3 failures under the mutant).

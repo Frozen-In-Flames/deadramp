@@ -170,3 +170,56 @@ before the no-signal addition itself was shipped (HEAD now holds
 4). The assertion is rescoped to the first three HEAD sheets --
 the era that test pins -- with the rescope and its reason stated
 in the test's docstring. Nothing else in the module changed.
+
+## Final GAPS batch — second unit (no-signal addition, 2026-11-07)
+
+The second batch unit adds `test_gaps_batch_addition.py`
+(26 tests) and one new module, `src/health/extensions_addition.py`
+(`HealthExtensionsAddition`, wrapping the core store; all 8
+pre-existing modules byte-identical, including the first unit's
+`extensions.py`). The 4 open entries of the GAPS.md section
+"No-Signal Addition — Health & Wellness Untiered Set (HealthEdge,
+FR2700137029)" (inventory idx 972–975) are closed: 2 built
+(benefits administration, regulatory compliance reporting) and
+2 as labeled reference implementations (claims adjudication &
+pricing — re-judged, grounds in `../BATCH-ADDITION.md` — and
+care & utilization management workflows, as drafted), under the
+decisions in `../../gaps-batch/DECISION.md` and
+`../../PLATFORM-LAYER.md`. See `../BATCH-ADDITION.md` for the
+per-entry disposition. The set's doctrines hold unchanged: tier
+null (the addition tests scan the whole addition surface for any
+tier/baseline-shaped key), the HARD PRIVACY RULE (records and
+opaque references only; the scan also asserts no
+diagnosis/clinical-note/identifier-shaped key anywhere, a
+forbidden keyword argument is a TypeError), and this unit's
+no-amount rule (no monetary amount key anywhere — adjudication
+and pricing operate over amounts this substrate does not hold),
+not a medical device, no FDA status claimed.
+
+| Module | Pins |
+|---|---|
+| `test_gaps_batch_addition.py` | The addition surface per entry: pricing schedule + adjudication reference records (`reference_stub: True`, `adjudicated_here`/`priced_here`/`paid_here` False) with outcomes recorded verbatim and the current outcome derived at read; benefit package definitions (components as opaque refs, duplicates refused) and administration records bound to the participant's OWN eligibility record, with a summary deriving coverage counts by plan ref and core derived status from the core eligibility records; utilization workflow definitions (data, never executed), case records (`reviewed_here`/`determined_here` False) and outcome records with the latest label derived at read, summary counts only; report definitions and filing records (`filed_here`/`submitted_here` False) with a report view deriving counts over core records (`basis: substrate_records_only`, no control-family key anywhere); member scope, RBAC denials audited with `:denied`, addition audit actions prefixed `exta_`, no id consumed by a failed operation. |
+
+### Negative control for the second unit (mutation-verified)
+
+The unit's load-bearing rule is the eligibility-binding guard
+in `HealthExtensionsAddition._check_eligibility_belongs`: a
+payer-side record (an adjudication reference, a benefits
+administration record) may bind only to a core eligibility
+record of the same participant it names. A subclass control
+(`TestEligibilityBindingNegativeControl`) shows the refusal
+disappears when the guard never fires, and the file-level
+mutation drill was performed on the shipped code:
+
+* Mutant: in `src/health/extensions_addition.py`, the guard's
+  condition `if eligibility["participant_id"] != participant_id:`
+  neutralized to `if False:` (pre-mutation copy and SHA-256 kept
+  in `scratch/`; the condition occurs exactly once).
+* Result: **exactly 3 failures** out of 162 --
+  `TestAdjudicationReference.test_cross_participant_eligibility_refused_no_id_consumed`,
+  `TestBenefitsAdministration.test_cross_participant_eligibility_refused_no_id_consumed`,
+  and `TestEligibilityBindingNegativeControl.test_canonical_refuses_cross_participant_binding`.
+  Every other test passed.
+* The file was restored from the pre-mutation copy; SHA-256
+  verified identical; the full suite re-ran green (162/162).
+  Raw output in `scratch/gaps_batch_addition_mutation_run.txt`.
