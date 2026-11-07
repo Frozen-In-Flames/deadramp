@@ -59,6 +59,24 @@ code, assets, or branding from any sibling offering. Python 3,
 programmatically: every import in `src/` is in
 `sys.stdlib_module_names`; see `scratch/verify_deps.py`).
 
+**Final GAPS batch unit (2026-11-07):** the group's 11 original
+GAPS.md entries are closed by one new module,
+`src/health/extensions.py` (`HealthExtensions`, wrapping the core
+store; all 7 core modules byte-identical, 124 tests): engagement
+channels/content with transport-labeled receipts, survey
+instruments with numeric-only responses and derived aggregates,
+claims as verification/claim/outcome records that adjudicate and
+pay nothing, telehealth visit records with no media channel,
+clinical decision support as guideline references plus verbatim
+clinician labels, device links with reported sync statuses, and
+app-access registrations are built in records form; EMR/EHR
+integration and documentation, AI/ML models, automation/workflow
+engines, and hosting ship as labeled reference implementations
+(`reference_stub: True`). Per-entry dispositions and grounds are
+in `BATCH.md`. The founding privacy discipline binds the
+extension absolutely — no diagnosis, clinical-note, or
+identifier-shaped field exists in any extension shape.
+
 ## What the group is: a records substrate
 
 The claim counts in the union spec prove a **records substrate**,
@@ -275,7 +293,9 @@ PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
 67 tests, all passing at delivery; 80 tests after the remainder
-additions; 91 tests after the no-signal addition. See `tests/README.md` for the coverage table, the
+additions; 91 tests after the no-signal addition; 124 tests after
+the final GAPS batch unit (`test_gaps_batch.py`, see `BATCH.md`).
+See `tests/README.md` for the coverage table, the
 negative control, and the mutation-verification drill record. A live smoke (`scratch/smoke.py`) drives the store and
 the HTTP service end to end: program → participant → enroll →
 measurement → plan with a past due date → derived status `overdue`

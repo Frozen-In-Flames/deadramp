@@ -7,14 +7,15 @@ claim family / control family it traces to.
 
 ```bash
 cd groups/health-wellness-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 91 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 124 tests
 ```
 
 Status at delivery: **67 tests, OK** against the implementation in
 `../src/`; **80 tests, OK** after the remainder additions
 (`test_additions.py`, see `../ADDENDUM.md`); **91 tests, OK** after
 the no-signal addition (`test_nosignal_addition.py`, see
-`../ADDENDUM.md` section 7). (Run exactly as above: helpers are imported as a top-level
+`../ADDENDUM.md` section 7); **124 tests, OK** after the final GAPS
+batch unit (`test_gaps_batch.py`, see `../BATCH.md`). (Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
 entry point for this group.)
@@ -38,6 +39,7 @@ entry point for this group.)
 | `test_negative_control.py` | Negative control (below) |
 | `test_additions.py` | Remainder additions (unit `addition:health-wellness-l2`) — spec integrity: the unit's slice of the sheets, the first 8 in order (5 shipped + 3 appended in census unit order; a 9th, no-signal, sheet follows — pinned in `test_nosignal_addition.py`), membership against `remainder.json`, the literal **zero-claim** table for all 3 additions (taxonomy verbatim; group total stays 19), tier fields, descriptions verbatim against the cached dataset, 4/4 census citations as substrings (verification ≠ claim), per-fork near-miss pins (substance token present, family phrase absent). Plus one substrate case per fork: GTS telehealth visit as a Core 6 activity record with exact key set (no media field) + Core 4 monitoring measurement + plan/enrollment deriving overdue; Solventum Core 7 coverage record under opaque `plan_ref` deriving upcoming → current → ended with exact key set (no insurer/member fields); Somnoware Core 5 CPAP plan deriving current → overdue → completed over a Core 4 measurement with no diagnosis field |
 | `test_nosignal_addition.py` | No-signal addition (`FR2220549818`, CirrusMD) — spec integrity: 9 sheets in order, the 8 shipped sheets deep-equal to git HEAD, membership against the census `no-signal-set` (citations [], no_signal pinned), the literal **zero-claim** table for the fork (taxonomy verbatim; group total stays 19; 4 of 9 forks at zero), tier fields, description verbatim against both cached sources (raw dataset and `remainder/uncovered.json`), the classification citation pinned against `remainder/nosignal_report.json` (verbatim sentence + URL; asserted NOT present in the cached description — classification ≠ claim evidence), near-miss pins (delivery/posture tokens present, all family phrases absent, the word "patient" absent). Plus one substrate case: CirrusMD virtual health chat visit as a Core 6 activity record with exact key set (no channel/message field) + follow-up plan and enrollment deriving overdue |
+| `test_gaps_batch.py` | Final GAPS batch unit (see `../BATCH.md`) — one class per open Group 18 entry against `src/health/extensions.py` (`HealthExtensions`): engagement channels/content + transport-labeled receipts + derived counts; survey instruments (opaque question refs, numeric-only answers with exactly-two-key answer shape, derived aggregates); EMR reference stubs (integration/sync/documentation-reference records, `reference_stub: True`, nothing connected or generated); claims adjudication records (verification checks + claim/outcome records bound to the participant's OWN eligibility record, current outcome derived at read, `adjudicated_here`/`paid_here` False, no amount/insurer/member field); telehealth visit records (`media_channel_here: False`, end-before-start refused); clinical decision support (guideline references `applied_here: False` + verbatim clinician labels, `advice_generated_here: False`); device links + reported sync statuses (latest status derived, `data_flows_here: False`); AI/ML reference stubs (opaque output refs, `inference_here: False`); workflow reference stubs (steps as data, `executed_here: False`); app-access registrations with derived platform counts; hosting reference stubs (`hosted_here: False`, summary states single-tenant reference). Cross-cutting: recursive forbidden-key scan over the whole extension surface, forbidden field cannot be smuggled as a keyword argument, denied write audited with `:denied` suffix, member scope, no id consumed by a failed operation |
 | `health_helpers.py` | Shared fixtures: demo users (ADMIN=alice/admin, CLINICIAN=bob/clinician, MEMBER=carol/member, AUDITOR=dana/auditor), `USERS` registry, `fresh_store()`, and `make_store()` building a HealthStore + AuditLog + one program ("Diabetes Care") + one participant under opaque ref "carol" (both created by ADMIN) |
 
 ## Negative control
@@ -118,3 +120,55 @@ SHA-256-identical to the shipped hash
 (`c83cd2d269cb08c5d259d7fc1b16f7d8a761df006e0e9e3889daa4d5c928c711`);
 the suite re-ran green: **91 tests, OK**, with `src/` byte-identical
 including the tracked bytecode.
+
+## Final GAPS batch unit (2026-11-07)
+
+`test_gaps_batch.py` pins the extension surface in
+`src/health/extensions.py`. All 7 core modules are byte-identical
+to the shipped group build (SHA-256 of `store.py` unchanged:
+`c83cd2d269cb08c5d259d7fc1b16f7d8a761df006e0e9e3889daa4d5c928c711`);
+the batch added exactly one new module and changed no core code.
+
+**Era rescope (disclosed).** `test_nosignal_addition.py`'s
+`test_shipped_sheets_deep_equal_git_head` pinned
+`len(head_specs) == 8`; git HEAD now holds all 9 sheets because the
+no-signal unit's own ship appended the 9th, so the pin failed at
+this unit's baseline (91 tests, 1 failure, before any batch code).
+The pin is rescoped to its own era slice — the first 8 HEAD sheets
+deep-equal the working file's first 8 — with the grounds recorded
+in the test's docstring, preserving the pin's exact strength: none
+of the pre-existing sheets may change. Same accommodation as the
+untiered sibling unit's batch.
+
+**Batch negative control (fresh, for the new code).**
+`TestEligibilityOwnershipNegativeControl` in `test_gaps_batch.py`
+pins the extension's eligibility-ownership seam,
+`HealthExtensions._check_eligibility_belongs`: a verification
+check or a claim record may only bind to an eligibility record of
+the SAME participant it is filed for. The control asserts the
+canonical extension refuses both cross-participant binds, that a
+mutant subclass with the seam neutralized (`_NoOwnershipGuard`)
+would NOT produce those refusals (both binds accepted), and that
+the canonical extension refuses again afterwards.
+
+**Mutation verification (batch unit).** VERIFIED by the batch
+build worker (2026-11-07). The seam's refusal condition in
+`src/health/extensions.py` — the line
+`if eligibility["participant_id"] != participant_id:` — was
+patched to `if False:` so the refusal became unreachable, and the
+full suite was run: **124 tests ran, exactly 4 failed** —
+
+- `test_gaps_batch.TestClaimsAdjudication.test_verification_refuses_other_participants_eligibility`
+- `test_gaps_batch.TestClaimsAdjudication.test_claim_refuses_other_participants_eligibility`
+- `test_gaps_batch.TestEligibilityOwnershipNegativeControl.test_canonical_run_refuses_cross_participant_binds`
+- `test_gaps_batch.TestEligibilityOwnershipNegativeControl.test_guard_restored_refuses_again`
+
+Raw output in `scratch/mutation-run.txt`. `extensions.py` was
+restored from `scratch/extensions.py.premutation` and verified
+SHA-256-identical to the pre-mutation hash
+(`feea4257f40ad154d83767fab18a2345dd336e2acce504a0f74eac07220c7457`,
+recorded in `scratch/extensions.py.premutation.sha256`); the suite
+re-ran green: **124 tests, OK**. The mutant-subclass leg passed
+under the mutation exactly as designed (it overrides the seam
+itself), so the 4 failures are precisely the canonical-refusal
+tests.

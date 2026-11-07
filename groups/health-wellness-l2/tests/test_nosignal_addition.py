@@ -87,14 +87,22 @@ class TestNoSignalSpecIntegrity(unittest.TestCase):
 
     def test_shipped_sheets_deep_equal_git_head(self):
         """The 8 previously shipped sheets are deep-equal to git
-        HEAD -- the append changed none of them."""
+        HEAD -- the append changed none of them.
+
+        Era rescope (final GAPS batch, 2026-11-07): at this
+        module's own ship, git HEAD still held the 8 pre-append
+        sheets; HEAD now holds all 9 (this unit's sheet included,
+        appended by that same ship). The pin is therefore scoped
+        to this unit's own era slice -- the first 8 HEAD sheets,
+        which are exactly the sheets that existed before the
+        append -- preserving the pin's exact strength: none of
+        the pre-existing sheets may change."""
         head = subprocess.run(
             ["git", "-C", _REPO_ROOT, "show",
              "HEAD:groups/health-wellness-l2/specs/specs.json"],
             capture_output=True, text=True, check=True).stdout
         head_specs = json.loads(head)
-        self.assertEqual(len(head_specs), 8)
-        self.assertEqual(_load_specs()[:8], head_specs)
+        self.assertEqual(_load_specs()[:8], head_specs[:8])
 
     def test_membership_is_the_nosignal_fork(self):
         """The appended sheet is exactly CirrusMD, the fork the
