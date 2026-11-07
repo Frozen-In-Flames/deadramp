@@ -46,6 +46,7 @@ only under the group's `scratch/` directory, never `/tmp`.
 | `test_service.py` | 19 | 8 API access — live HTTP server: health without auth, 401 unknown user / role mismatch, 403 viewer actions, 404 unknown model/path, 400 invalid input, 422 policy-blocked completion, 429 quota-exceeded completion, full flows (models/templates/keys/quotas/completions/sessions/requests/usage/policy rules + delete/eval datasets + runs/audit), secret-once over HTTP, `audit_read` admin-only, denied attempts (401/403/422/429) audited with the `:denied` suffix, no stack traces |
 | `test_main_cli.py` | 4 | `python -m aigateway serve` subprocess with demo users alice/bob/carol, including the `--zero-persistence` flag end-to-end over HTTP and the no-command help path; **[L3]** +1: dana=auditor (AC-5) and `--max-failed-logins` / `--lockout-seconds` (AC-7) |
 | `test_negative_control.py` | 2 | Negative control #1 (below), unchanged from Group 9 |
+| `test_gaps_batch.py` | 30 | **Final GAPS batch (Group 22)** — the extension surface in `src/aigateway/extensions.py`: idx 229 inference reference records, idx 230 workflow definitions/runs (nothing executes), idx 231 document job/result records, idx 232 dashboards + derived analytics, idx 233 contact case/event/outcome records, idx 234 vertical application profiles/activities/views; High bindings (auditor denied every extension operation, AC-5; extension create fail-closed on audit failure, AU-5); fresh negative control #3 (below) |
 | `aigateway_helpers.py` | — | Shared fixtures: demo users (ADMIN/MEMBER/VIEWER/OTHER_MEMBER, **[L3]** AUDITOR), `make_store()` building an AIGatewayStore + AuditLog + an ADMIN-registered echo model, template/rules model helpers, and scratch-dir helpers confined to the group's `scratch/` |
 
 ## Coverage map — High-baseline uplifts
@@ -228,3 +229,45 @@ L3-specific notes:
   other `AIGatewayError`s: at the service layer the audit failure is
   itself the reportable failure. The store-level error type and
   rollback are what `test_audit_failure.py` pins.
+
+## Final GAPS batch — Group 22 extension surface (2026-11-07)
+
+`test_gaps_batch.py` (30 tests) pins the batch extension module
+`src/aigateway/extensions.py` (`AIGatewayExtensions`, a wrapper
+around the untouched core store; all 7 pre-existing `src/aigateway/`
+modules SHA-256-identical to the pre-build baseline recorded in
+`scratch/extensions_baseline.sha256` — store.py still
+`2c71ff55…c515031`). Suite: **193 → 223 tests, all passing**.
+Per-entry dispositions are recorded in `../BATCH.md`.
+
+**Negative control #3 (fresh, for the extension surface): the
+figure-inclusion seam.** `AIGatewayExtensions._counts_toward_figures`
+is the single inclusion point for the analytics figures derived
+from core request records; the canonical rule mirrors the core's
+usage accounting (UNION-SPEC core function 4): every stored request
+record counts, completed and blocked alike. The in-suite three-leg
+control (`TestFigureInclusionNegativeControl`): canonical figures
+over one completed + one blocked invocation total 2 with the
+blocked record counted; a mutant subclass counting only completed
+records totals 1 and understates the token total; treating the
+mutant's total as the canonical expectation raises
+`AssertionError`.
+
+**Mutation verification (live drill, performed 2026-11-07).** The
+seam's return line in the real `src/aigateway/extensions.py` was
+patched from `return True` to
+`return record["status"] == "completed"`:
+
+- Pre-mutation `src/aigateway/extensions.py` SHA-256:
+  `16ec3aa04e402d590d6c49b291bb26246a9944a36aeeb22aeec351d4cd386a5a`
+  (a copy is kept at `scratch/extensions.py.premutation`; raw drill
+  output in `scratch/gaps_batch_mutation_run.txt`).
+- Suite under mutation: **223 tests ran, exactly 5 failed** — all 5
+  in `test_gaps_batch.py`: the canonical leg and the
+  mutant-comparison leg of negative control #3, plus the three
+  analytics tests that pin blocked-inclusive figures (figures
+  coverage, actor scoping, dashboard freshness). All 193 founding
+  tests still passed.
+- The module was restored from the pre-mutation copy; SHA-256
+  verified identical (`16ec3aa0…d386a5a`); suite re-run:
+  **223 tests, OK**.

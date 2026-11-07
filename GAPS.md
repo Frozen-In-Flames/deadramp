@@ -363,12 +363,12 @@ Platform-layer: single-tenant reference deployment; encryption at rest is deploy
 
 ## Group 22 — Artificial Intelligence (AI) L3-adjacent (3 forks)
 
-- [ ] open — Learned AI/ML inference: real LLMs / ML / NLU / predictive models (3 of 3 claim it; with Group 9's, the final batch's largest single item). The reference responder is a labeled stub, not a substitute.
-- [ ] open — Agentic & automated workflow engines (1)
-- [ ] open — Document processing & generation workloads (0 tagged under the verbatim taxonomy; one sibling's entire domain in prose, recorded as a near-miss, not invented)
-- [ ] open — Analytics, dashboards & reporting (0 in this group; carried from the Group 9 union)
-- [ ] open — Contact center & customer experience (0 in this group; carried from the Group 9 union)
-- [ ] open — Vertical domain applications: AI software-development platform, ML lifecycle development & governance platform, digitization-as-a-service (one sibling each)
+- [x] reference — Learned AI/ML inference: real LLMs / ML / NLU / predictive models (3 of 3 claim it; with Group 9's, the final batch's largest single item). The reference responder is a labeled stub, not a substitute.
+- [x] reference — Agentic & automated workflow engines (1)
+- [x] reference — Document processing & generation workloads (0 tagged under the verbatim taxonomy; one sibling's entire domain in prose, recorded as a near-miss, not invented)
+- [x] built — Analytics, dashboards & reporting (0 in this group; carried from the Group 9 union)
+- [x] reference — Contact center & customer experience (0 in this group; carried from the Group 9 union)
+- [x] built — Vertical domain applications: AI software-development platform, ML lifecycle development & governance platform, digitization-as-a-service (one sibling each)
 
 Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / authenticator management (IA-2(1)/(2), IA-5); FIPS-validated cryptography (SC-13); encryption at rest (SC-28); audit retention enforcement (AU-11); session lock / termination (AC-11/AC-12). Platform note: multi-tenancy (1 tagged claim) — single-tenant reference deployment, tenant isolation is deployment-layer; demo identities are hooks, not an IdP. Spec note: 13 of 16 taxonomy functions tag zero claims in this group (short marketing descriptions); the platform functions stay Core under the recorded core-boundary decision, because the Merge Rule carries the L2 union upward whole.
 

@@ -225,6 +225,23 @@ wave-through mutant failed 14 tests and the file was restored
 SHA-256-identical, and the audit-tamper control localizes an in-place
 mutation at its exact index.
 
+**Final GAPS batch (2026-11-07):** the group's 6 open Extended
+entries (idx 229–234) are closed by one new module,
+`src/aigateway/extensions.py` — 2 built (analytics, dashboards &
+reporting as derivations over the core's own records; the three
+siblings' vertical domain applications as profile/activity records
+with the operating half stated absent) and 4 shipped as labeled
+reference implementations (learned inference; agentic workflow
+engines; document processing & generation; contact center), each
+following the Group 9 batch unit's forms adapted to this baseline:
+extension creates are fail-closed on the hash-chained audit log
+(AU-5) and the separated `auditor` role is denied every extension
+operation (AC-5). The founding core modules are byte-identical;
+the suite is now **223 tests, all passing**, including a fresh
+mutation-verified negative control on the extension's
+figure-inclusion seam (exactly 5 failures under mutation). See
+[`BATCH.md`](BATCH.md) for the per-entry dispositions.
+
 ## Control-family mapping (summary)
 
 Per `UNION-SPEC.md`, against the NIST SP 800-53 Rev. 5 **High**
