@@ -837,17 +837,17 @@ The Group 36 category union's extended families (workflow execution, real-time i
 ## Singleton 51 — Network Management L2 (1 fork, new category)
 
 Extended functions, specified in groups/network-management-l2/UNION-SPEC.md, not implemented (the build manages no live network, pushes no configuration, and collects no telemetry):
-- [ ] open — Network optimization engine ("optimize" is a real verb in this fork's description, unlike the name-only case at Singleton 50; claimed, engine Extended)
-- [ ] open — Network intelligence / AI engine
-- [ ] open — Device provisioning & deployment engine
-- [ ] open — Network configuration push / control plane (configuration changes are records; closing one alters no device or network record)
-- [ ] open — Firmware management engine
-- [ ] open — Traffic control & SD-WAN policy engine (named from the device gloss, not a claim)
-- [ ] open — Telemetry collection & polling engine (telemetry in Core is caller-supplied records only)
-- [ ] open — Alert evaluation & delivery transport (alerts are records)
-- [ ] open — Integration connectors
-- [ ] open — Automation execution engine (the registry holds definitions only)
-- [ ] open — Cloud management web application
+- [x] built — Network optimization engine ("optimize" is a real verb in this fork's description, unlike the name-only case at Singleton 50; claimed, engine Extended)
+- [x] built — Network intelligence / AI engine
+- [x] reference — Device provisioning & deployment engine
+- [x] built — Network configuration push / control plane (configuration changes are records; closing one alters no device or network record)
+- [x] built — Firmware management engine
+- [x] built — Traffic control & SD-WAN policy engine (named from the device gloss, not a claim)
+- [x] reference — Telemetry collection & polling engine (telemetry in Core is caller-supplied records only)
+- [x] reference — Alert evaluation & delivery transport (alerts are records)
+- [x] reference — Integration connectors
+- [x] built — Automation execution engine (the registry holds definitions only)
+- [x] built — Cloud management web application
 - [x] re-scoped — FIPS-validated cryptography (SC-13; the fork's platform property — the build claims no validated cryptography)
 
 Platform-layer: U.S. data residency (deployment property); platform scalability / multi-region operation; encryption at rest (deployment layer; TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: the category is new; the description is platform prose (three of nine sentences tag nothing), and no reporting family exists in its taxonomy because the description carries no report or dashboard vocabulary — registry summaries are substrate, not a reporting claim. Device records carry a nine-key pinned shape with classes from the description's generic glosses; vendor model designations appear only inside stored evidence.

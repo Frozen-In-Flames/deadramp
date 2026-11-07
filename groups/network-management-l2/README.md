@@ -260,3 +260,28 @@ store to always report `fresh` makes exactly 6 tests fail (see
   single fork, taxonomy defined from its own description) or to
   the Moderate/L2 control families in `UNION-SPEC.md`. Counts
   are a floor, stated as such.
+
+## Final GAPS batch (2026-11-07)
+
+The final batch unit for this singleton (see `BATCH.md`) closes
+the eleven open Extended families as records-form and labeled
+reference implementations in one new module,
+`src/netmgmt/extensions.py` (`NetmgmtExtensions` over the core
+store; the core modules are byte-identical): optimization as
+recorded recommendations (nothing computed), intelligence as
+model profiles + verbatim reported outputs (nothing inferred),
+configuration push as change-linked records whose current state
+derives at read from recorded outcomes (nothing applied, and
+recording one modifies no core record), firmware as version and
+assignment records (nothing deployed), traffic/SD-WAN policy as
+definitions held as data (never evaluated or enforced),
+automation execution as run references (nothing executed), the
+cloud management application as page-configuration records
+(nothing rendered or served), and provisioning, telemetry
+collection, alert evaluation/delivery, and connectors as labeled
+reference records (`reference_stub: true`, transport stubs also
+`reference_transport: true`). The twelfth entry,
+FIPS-validated cryptography, was already closed as re-scoped
+under the platform-layer decision and is untouched. Suite: 72 →
+114 tests, including a fresh mutation-verified negative control
+on the push-state derivation (see `tests/README.md`).

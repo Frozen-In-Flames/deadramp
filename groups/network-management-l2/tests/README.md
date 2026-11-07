@@ -99,3 +99,65 @@ test passes by construction, as expected.
 - The service test's user registry includes `erin` and `dave`
   beyond the CLI's three demo users, so membership and
   separation-of-duties flows can run over HTTP.
+
+## Final GAPS batch (2026-11-07)
+
+The batch unit for this singleton (see `../BATCH.md`) adds one
+module, `src/netmgmt/extensions.py` (`NetmgmtExtensions` wrapping
+the core store), and one test module, `test_gaps_batch.py`
+(**42 tests**), pinning the extension surface entry by entry for
+the eleven open Extended families: recorded optimization
+recommendations, intelligence model profiles + verbatim reported
+outputs, config-push records with derived current state, firmware
+records + assignments, traffic-policy definitions as data,
+automation run references, page-configuration records, and the
+four labeled reference stubs (provisioning, telemetry collection,
+alert evaluation & delivery, connectors) — including the pins
+that a recorded push changes no core device/network/change
+record, a recorded automation run changes no core record, a
+provisioning reference creates no core device, a collection
+receipt creates no core telemetry, an alert evaluation/delivery
+changes no core alert, the founding RBAC + membership boundary
+on the extension surface (with denied writes audited
+`:denied`), and the recursive no-score/rating/health/optimization
+key scan over every extension view. Suite: **72 tests before →
+114 tests after, OK**. Existing core modules are byte-identical
+(SHA-256 verified against the pre-batch accounting).
+
+### Fresh negative control (batch)
+
+`test_gaps_batch.py::TestPushStateNegativeControl` — the batch's
+load-bearing derivation is the config push's current state: the
+`reported_state` of the **latest** recorded outcome, derived at
+read by `NetmgmtExtensions._derive_push_state`, never stored on
+the push record. The mutant subclass
+(`MutantNetmgmtExtensions`) derives from the **earliest** outcome
+instead. The tests assert the canonical expectation (outcomes
+failed-then-applied read `reported_applied`; no outcomes reads
+`recorded`), that the implementation matches it in both the
+single view and the list view, and — via a literal
+`assertRaises(AssertionError)` — that the canonical expectation
+rejects the mutant's outcome.
+
+### Mutation verification (batch)
+
+VERIFIED for this batch unit: `_derive_push_state` in the real
+`src/netmgmt/extensions.py` was patched to return the earliest
+outcome's state (`outcomes[0]` instead of `outcomes[-1]`) and
+the suite was run against the patched implementation.
+
+- Patched run: **114 ran, exactly 3 failed**:
+  - `test_gaps_batch.TestConfigPush.test_outcome_states_derive_latest`
+  - `test_gaps_batch.TestPushStateNegativeControl.test_canonical_expectation`
+  - `test_gaps_batch.TestPushStateNegativeControl.test_implementation_matches_canonical`
+- `extensions.py` was then restored from
+  `scratch/extensions.py.premutation` and verified
+  **SHA-256-identical** (`2142c66b…`, recorded in
+  `scratch/extensions.py.sha256`); the suite is green again
+  (114/114). Raw drill output is in
+  `scratch/mutation-run-gaps-batch.txt`.
+
+The failing set is exactly the derivation-dependent set: pushes
+with zero or one outcome agree under both derivations, the
+stored-record key pins are untouched by this mutation, and the
+mutant's own subclass test passes by construction, as expected.
