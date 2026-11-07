@@ -7,7 +7,7 @@ claim family / control family it traces to.
 
 ```bash
 cd groups/health-wellness-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 124 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 157 tests
 ```
 
 Status at delivery: **67 tests, OK** against the implementation in
@@ -15,7 +15,9 @@ Status at delivery: **67 tests, OK** against the implementation in
 (`test_additions.py`, see `../ADDENDUM.md`); **91 tests, OK** after
 the no-signal addition (`test_nosignal_addition.py`, see
 `../ADDENDUM.md` section 7); **124 tests, OK** after the final GAPS
-batch unit (`test_gaps_batch.py`, see `../BATCH.md`). (Run exactly as above: helpers are imported as a top-level
+batch unit (`test_gaps_batch.py`, see `../BATCH.md`); **157 tests, OK** after
+the final GAPS batch second unit (`test_gaps_batch_addition.py`, see
+`../BATCH-ADDITION.md`). (Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
 entry point for this group.)
@@ -40,6 +42,7 @@ entry point for this group.)
 | `test_additions.py` | Remainder additions (unit `addition:health-wellness-l2`) — spec integrity: the unit's slice of the sheets, the first 8 in order (5 shipped + 3 appended in census unit order; a 9th, no-signal, sheet follows — pinned in `test_nosignal_addition.py`), membership against `remainder.json`, the literal **zero-claim** table for all 3 additions (taxonomy verbatim; group total stays 19), tier fields, descriptions verbatim against the cached dataset, 4/4 census citations as substrings (verification ≠ claim), per-fork near-miss pins (substance token present, family phrase absent). Plus one substrate case per fork: GTS telehealth visit as a Core 6 activity record with exact key set (no media field) + Core 4 monitoring measurement + plan/enrollment deriving overdue; Solventum Core 7 coverage record under opaque `plan_ref` deriving upcoming → current → ended with exact key set (no insurer/member fields); Somnoware Core 5 CPAP plan deriving current → overdue → completed over a Core 4 measurement with no diagnosis field |
 | `test_nosignal_addition.py` | No-signal addition (`FR2220549818`, CirrusMD) — spec integrity: 9 sheets in order, the 8 shipped sheets deep-equal to git HEAD, membership against the census `no-signal-set` (citations [], no_signal pinned), the literal **zero-claim** table for the fork (taxonomy verbatim; group total stays 19; 4 of 9 forks at zero), tier fields, description verbatim against both cached sources (raw dataset and `remainder/uncovered.json`), the classification citation pinned against `remainder/nosignal_report.json` (verbatim sentence + URL; asserted NOT present in the cached description — classification ≠ claim evidence), near-miss pins (delivery/posture tokens present, all family phrases absent, the word "patient" absent). Plus one substrate case: CirrusMD virtual health chat visit as a Core 6 activity record with exact key set (no channel/message field) + follow-up plan and enrollment deriving overdue |
 | `test_gaps_batch.py` | Final GAPS batch unit (see `../BATCH.md`) — one class per open Group 18 entry against `src/health/extensions.py` (`HealthExtensions`): engagement channels/content + transport-labeled receipts + derived counts; survey instruments (opaque question refs, numeric-only answers with exactly-two-key answer shape, derived aggregates); EMR reference stubs (integration/sync/documentation-reference records, `reference_stub: True`, nothing connected or generated); claims adjudication records (verification checks + claim/outcome records bound to the participant's OWN eligibility record, current outcome derived at read, `adjudicated_here`/`paid_here` False, no amount/insurer/member field); telehealth visit records (`media_channel_here: False`, end-before-start refused); clinical decision support (guideline references `applied_here: False` + verbatim clinician labels, `advice_generated_here: False`); device links + reported sync statuses (latest status derived, `data_flows_here: False`); AI/ML reference stubs (opaque output refs, `inference_here: False`); workflow reference stubs (steps as data, `executed_here: False`); app-access registrations with derived platform counts; hosting reference stubs (`hosted_here: False`, summary states single-tenant reference). Cross-cutting: recursive forbidden-key scan over the whole extension surface, forbidden field cannot be smuggled as a keyword argument, denied write audited with `:denied` suffix, member scope, no id consumed by a failed operation |
+| `test_gaps_batch_addition.py` | Final GAPS batch, second unit (see `../BATCH-ADDITION.md`) — one class per open Remainder Addition entry against `src/health/extensions_addition.py` (`HealthExtensionsAddition`): telehealth media sessions (modality as recorded label, `media_channel_here`/`connected_here` False, own-activity binding, state setter, derived summary); store-and-forward packages/events (payload never held, current event label derived at read); coding versions/suggestions/reviews (no code value held, current review outcome derived); grouper definitions + reported outcomes + reimbursement content packages (content held elsewhere); CDI queries/responses (no document text, current response label derived); diagnostic report requests/references (nothing generated, current status derived); therapy console (derived aggregates over Core records, `risk_profile_computed_here` False, no risk-shaped key). Cross-cutting: recursive forbidden-key scan over the whole addition surface, smuggled-kwarg `TypeError` pins, denied write audited with `:denied` suffix, member scope, no id consumed by a failed operation |
 | `health_helpers.py` | Shared fixtures: demo users (ADMIN=alice/admin, CLINICIAN=bob/clinician, MEMBER=carol/member, AUDITOR=dana/auditor), `USERS` registry, `fresh_store()`, and `make_store()` building a HealthStore + AuditLog + one program ("Diabetes Care") + one participant under opaque ref "carol" (both created by ADMIN) |
 
 ## Negative control
@@ -172,3 +175,47 @@ re-ran green: **124 tests, OK**. The mutant-subclass leg passed
 under the mutation exactly as designed (it overrides the seam
 itself), so the 4 failures are precisely the canonical-refusal
 tests.
+
+## Final GAPS batch, second unit (2026-11-07)
+
+`test_gaps_batch_addition.py` pins the second-unit extension
+surface in `src/health/extensions_addition.py`. All 8
+pre-existing package modules are byte-identical to their
+pre-build hashes (the 7 core modules plus the first unit's
+`extensions.py`); the unit added exactly one new module and
+changed no existing code.
+
+**Batch negative control (fresh, for the new code).**
+`TestActivityOwnershipNegativeControl` in
+`test_gaps_batch_addition.py` pins the addition surface's
+activity-ownership seam,
+`HealthExtensionsAddition._check_activity_belongs`: a telehealth
+media session may only bind to a Core activity (visit) record of
+the SAME participant the session is filed for. The control
+asserts the canonical extension refuses the cross-participant
+bind, that a mutant subclass with the seam neutralized
+(`_NoActivityOwnershipGuard`) would NOT produce that refusal
+(the bind is accepted), and that the canonical extension refuses
+again afterwards.
+
+**Mutation verification (second batch unit).** VERIFIED by the
+batch build worker (2026-11-07). The seam's refusal condition in
+`src/health/extensions_addition.py` — the line
+`if activity["participant_id"] != participant_id:` — was patched
+to `if False:` so the refusal became unreachable, and the full
+suite was run: **157 tests ran, exactly 3 failed** —
+
+- `test_gaps_batch_addition.TestTelehealthMediaEngine.test_session_refuses_other_participants_activity`
+- `test_gaps_batch_addition.TestActivityOwnershipNegativeControl.test_canonical_run_refuses_cross_participant_bind`
+- `test_gaps_batch_addition.TestActivityOwnershipNegativeControl.test_guard_restored_refuses_again`
+
+Raw output in `scratch/addition_mutation_run.txt`.
+`extensions_addition.py` was restored from
+`scratch/extensions_addition.py.premutation` and verified
+SHA-256-identical to the pre-mutation hash
+(`706110679a0ed93db157a00dd62628fafd7f58bb6d6bbcc7a760cd5628cc12c7`,
+recorded in `scratch/extensions_addition.py.premutation.sha256`);
+the suite re-ran green: **157 tests, OK**. The mutant-subclass
+leg passed under the mutation exactly as designed (it overrides
+the seam itself), so the 3 failures are precisely the
+canonical-refusal tests.

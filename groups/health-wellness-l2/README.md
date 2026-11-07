@@ -77,6 +77,25 @@ in `BATCH.md`. The founding privacy discipline binds the
 extension absolutely — no diagnosis, clinical-note, or
 identifier-shaped field exists in any extension shape.
 
+**Final GAPS batch, second unit (2026-11-07):** the remainder
+additions' 7 GAPS.md entries are closed by one further new
+module, `src/health/extensions_addition.py`
+(`HealthExtensionsAddition`, subclassing the first unit's
+extension class over the same core store; all pre-existing
+modules byte-identical, 157 tests): telehealth media session
+records with no media channel (a session may bind only to the
+same participant's Core visit record), store-and-forward
+exchange package/event records whose clinical payload is never
+held, coding suggestion and review records holding no code
+value, grouper definitions with reported grouping outcomes and
+reimbursement content packages held elsewhere, CDI query/
+response records holding no document text, diagnostic report
+request/reference records that generate nothing, and the
+therapy progress console as a derived view over Core records
+that computes no risk profile. Per-entry dispositions and
+grounds are in `BATCH-ADDITION.md`. The founding privacy
+discipline binds this surface identically.
+
 ## What the group is: a records substrate
 
 The claim counts in the union spec prove a **records substrate**,
@@ -294,7 +313,9 @@ PYTHONPATH=src python3 -m unittest discover -s tests
 
 67 tests, all passing at delivery; 80 tests after the remainder
 additions; 91 tests after the no-signal addition; 124 tests after
-the final GAPS batch unit (`test_gaps_batch.py`, see `BATCH.md`).
+the final GAPS batch unit (`test_gaps_batch.py`, see `BATCH.md`);
+157 tests after the second batch unit
+(`test_gaps_batch_addition.py`, see `BATCH-ADDITION.md`).
 See `tests/README.md` for the coverage table, the
 negative control, and the mutation-verification drill record. A live smoke (`scratch/smoke.py`) drives the store and
 the HTTP service end to end: program → participant → enroll →
