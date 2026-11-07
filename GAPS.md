@@ -342,22 +342,22 @@ Platform-layer: multi-tenancy (2 of 4 claim it in prose; single-tenant reference
 ## Group 21 — Human Resources L2 (4 forks)
 
 Extended functions, specified in groups/human-resources-l2/UNION-SPEC.md, not implemented (16):
-- [ ] open — AI talent intelligence & matching engines (the group's AI flagship)
-- [ ] open — Applicant-tracking workflow engines (end-to-end hiring workflow automation, job-board posting / sync)
-- [ ] open — Position classification intelligence (series & grade recommendation tools)
-- [ ] open — Job analysis & crediting-plan tooling
-- [ ] open — Assessment delivery via third-party providers & assessment content
-- [ ] open — Weighted cumulative & consensus scoring computation (ratings are Core records, stored verbatim; no aggregate field exists by design)
-- [ ] open — Certificates of eligibles as standalone assembled documents (the referral stage is Core)
-- [ ] open — Career sites, talent communities, campus recruiting & events platforms
-- [ ] open — Talent mobility & workforce-exchange marketplace engines
-- [ ] open — Talent management suite depth beyond records
-- [ ] open — Workforce planning & resource-management analytics / models
-- [ ] open — Retirement benefits calculator
-- [ ] open — Employee learning & upskilling delivery
-- [ ] open — Integration connector engines (job boards, personnel-record and payroll-center systems, agency HRIS sync)
-- [ ] open — Document & template assembly engines
-- [ ] open — General cloud hosting / platform services
+- [x] built — AI talent intelligence & matching engines (the group's AI flagship)
+- [x] reference — Applicant-tracking workflow engines (end-to-end hiring workflow automation, job-board posting / sync)
+- [x] built — Position classification intelligence (series & grade recommendation tools)
+- [x] built — Job analysis & crediting-plan tooling
+- [x] reference — Assessment delivery via third-party providers & assessment content
+- [x] built — Weighted cumulative & consensus scoring computation (ratings are Core records, stored verbatim; no aggregate field exists by design)
+- [x] built — Certificates of eligibles as standalone assembled documents (the referral stage is Core)
+- [x] built — Career sites, talent communities, campus recruiting & events platforms
+- [x] built — Talent mobility & workforce-exchange marketplace engines
+- [x] built — Talent management suite depth beyond records
+- [x] built — Workforce planning & resource-management analytics / models
+- [x] built — Retirement benefits calculator
+- [x] built — Employee learning & upskilling delivery
+- [x] reference — Integration connector engines (job boards, personnel-record and payroll-center systems, agency HRIS sync)
+- [x] built — Document & template assembly engines
+- [x] reference — General cloud hosting / platform services
 
 Platform-layer: single-tenant reference deployment; encryption at rest is deployment-layer (TLS when configured); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Privacy discipline (structural, tested on the record shapes): persons are keyed by opaque caller-supplied references only; no field in any entity can hold a real name, SSN, DOB, salary figure, address, phone, or email. Named absences (0 of 4 claims, verified; not gaps because unclaimed): leave & time-off, policy acknowledgements, payroll execution, background checks, salary / compensation administration, time & attendance.
 

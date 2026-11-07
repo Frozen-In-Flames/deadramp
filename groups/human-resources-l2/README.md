@@ -382,3 +382,31 @@ administration depth, the self-service portal, uniform allowance
 processing). The payroll absence stands: the word's single
 appearance in the enlarged group is GRB naming an external
 payroll/HRIS system it interfaces with.
+
+## Final GAPS batch (2026-11-07)
+
+The 16 Extended entries registered for this group in the repo-root
+`GAPS.md` are now closed in-substrate; see `BATCH.md` for the
+per-entry disposition and grounds. All batch code is one new module,
+`src/hr/extensions.py` (`HrExtensions` wrapping the core store);
+every core module is byte-identical to its pre-batch state. Tests:
+**89 → 140, all passing**, including the batch's fresh
+mutation-verified negative control (the weighted-mean mutant,
+recorded in `tests/README.md`).
+
+In brief: matching, classification recommendation, workforce
+planning, and mobility matching are deterministic derivations over
+the core records, each labeled with its method and each resting on
+a rule/assumption record that is itself inspectable; the weighted
+cumulative / consensus scoring entry is computed **at read only**,
+over the verbatim ratings, with weights recorded as data on the
+crediting-plan record — no aggregate is stored anywhere, and the
+founding no-aggregate-field design stands untouched; the retirement
+calculator derives the accrual fraction by integer arithmetic over
+recorded inputs and computes no currency amount (no record in this
+build can hold a pay figure); certificates, outreach, programs,
+learning, and document assembly land as records over the substrate;
+and the four engine entries that act on external systems
+(applicant-tracking workflows, assessment delivery, connectors,
+hosting) ship as labeled reference implementations
+(`reference_stub: true`) that change no core record.

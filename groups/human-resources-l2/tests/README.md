@@ -7,12 +7,14 @@ claim family / control family it traces to.
 
 ```bash
 cd groups/human-resources-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 89 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 140 tests
 ```
 
 Status at delivery: **77 tests, OK** against the implementation in
 `../src/`. After the remainder additions (below): **89 tests, OK**,
-implementation unchanged. (Run exactly as above: helpers are imported as a top-level
+implementation unchanged. After the final GAPS batch (below):
+**140 tests, OK**, core implementation still unchanged — the batch
+surface lives in the new `src/hr/extensions.py`. (Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
 entry point for this group.)
@@ -38,6 +40,7 @@ entry point for this group.)
 | `test_main_cli.py` | `python -m hr serve` subprocess with demo users alice/bob/carol/dana |
 | `test_negative_control.py` | Negative control (below) |
 | `test_additions.py` | Remainder additions (unit `addition:human-resources-l2`, see `../ADDENDUM.md`) — spec integrity: sheet count/unit order, membership vs `remainder.json`, literal per-fork claim table (GDC 9 / GRB 1 / Perceptyx 1), zero-claim families (16) pinned, near-miss pins (LERIS labor-relations phrasing, "role management", GRB "interface", Perceptyx "performance improvement"), wording-artifact pins (GDC benefits/awards/AI/audit), absence-update pins (leave retired; time & attendance retired by substance, literal probe still zero; payroll single external reference); substrate cases: GDC onboarding derivation + performance cycle + case kinds, GRB retirement/benefits records + employee scope, Perceptyx counts-only reporting + no-score scan |
+| `test_gaps_batch.py` | Final GAPS batch (see `../BATCH.md`) — one class per open Extended entry: deterministic rule matching with evidence + employee-filtered matches; classification reference library + keyword recommendation/comparison derivations; job-analysis records; crediting plans (weights recorded as data, sum-to-100, panels-only, vacancy-bound); scoring views (exact-Fraction weighted cumulative + consensus mean/spread, pending criteria named, employee scope); the weighted-mean mutant negative control (below); certificates (referred-only assembly, derived entries, multi-person certificate denied to employees); outreach records (career sites, communities, events with derived registration count); mobility listings/interests + series-overlap match derivation; development programs/enrollments + derived summary; workforce analytics (counts + vacancy-rate bps) and scenario projections (integer derivation, nothing stored); retirement accrual estimate (integer derivation, `currency_amount` None, vesting, scope); learning catalog/assignments + derived summary; template assembly (placeholder validation against the source kind's recorded fields); the four stub surfaces (workflow definitions, posting receipts, assessment content/delivery, connectors/syncs, hosting) with `reference_stub` labels and core-unchanged pins; cross-cutting scans (no forbidden key, no aggregate key on any stored extension record), RBAC denials consuming no id, `ext_`-prefixed audit actions |
 | `hr_helpers.py` | Shared fixtures: demo users (ADMIN/SPECIALIST/EMPLOYEE/AUDITOR), `USERS` registry, `fresh_store()`, and `make_store()` building an HrStore + AuditLog + one position ("Program Analyst", series "0343", grade "13", created by ADMIN) + one person (person_ref "carol", kind "employee", created by ADMIN) |
 
 ## Negative control
@@ -103,3 +106,41 @@ SHA-256-identical to the shipped hash
 (`ec34ab5e…`, matching `scratch/store.py.sha256`); the suite
 re-ran green: **89 tests, OK**. Raw mutant output:
 `scratch/additions_mutation_run.txt`.
+
+## Final GAPS batch — fresh negative control (2026-11-07)
+
+The batch lands new code (`src/hr/extensions.py`), so its negative
+control is fresh, per `../../gaps-batch/DECISION.md`. The control
+pins the batch's load-bearing computation: **the crediting plan's
+recorded weights actually weight the weighted cumulative score
+view**. `test_gaps_batch.TestWeightedMeanMutant` subclasses
+`HrExtensions` with a mutant `_weighted_cumulative` that ignores the
+weights (a plain mean of criterion means) and asserts the canonical
+case both ways: criteria weighted 75/25 with verbatim-rating means
+3 and 5 give a weighted cumulative of exactly 7/2 in the real
+implementation and exactly 4 in the mutant, and treating the
+mutant's 4 as the expectation raises `AssertionError`.
+
+Mutation verification, performed on this build: the body of
+`HrExtensions._weighted_cumulative` (`src/hr/extensions.py`) was
+patched to the mutant's form —
+
+```python
+means = [mean for _, mean in weighted_means]
+return sum(means, Fraction(0)) / len(means)
+```
+
+replacing the weighted sum — and the full suite ran: **140 tests,
+exactly 2 failures** —
+
+- `test_gaps_batch.TestScoringComputation.test_weighted_cumulative_exact_fraction`
+- `test_gaps_batch.TestWeightedMeanMutant.test_weights_are_load_bearing_canonical`
+
+`extensions.py` was then restored from the pre-mutation copy
+(`scratch/extensions.py.premutation`; SHA-256
+`f306310250e6cc8f77be0002f9152e58907f3437136beef2acd8ac2d2501eb84`,
+verified identical after restore against
+`scratch/extensions.py.sha256`) and the suite re-ran: **140 tests,
+OK**. Raw mutant output: `scratch/gaps_mutation_run.txt`. The
+group's original lifecycle-derivation drill above is untouched and
+still passes as part of the 140.
