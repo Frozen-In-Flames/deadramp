@@ -109,8 +109,9 @@ Endpoints mirror the L2 build's, plus `/organizations`,
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-**137 tests, all passing**, including spec-integrity pins (census
-membership, taxonomy-verbatim, the literal claim table) and the
+**170 tests, all passing** (137 founding + 33 from the final GAPS
+batch unit), including spec-integrity pins (census membership,
+taxonomy-verbatim, the literal claim table) and the
 mutation-verified compliance-derivation negative control: patching
 the overdue branch of `_derive_status` to return `"current"` fails
 exactly **9** tests; the store was restored SHA-256-identical.
@@ -125,3 +126,19 @@ certificate issuance & verification service, system integration
 engines). They are specified, not implemented, and are registered
 in the repo-root `GAPS.md` for the final batch when this group
 ships.
+
+## Final GAPS batch — Remainder Group 2 (shipped as a batch unit)
+
+The six entries this tier's own forks added (the carried L2 set
+stays registered under the L2 singleton's section) are now closed
+by `src/lms/extensions.py` (`LmsExtensions`): the branded portal
+presentation, continuing-education renewal cycles, and certificate
+issuance/verification records are built as records over the core
+with every computed value derived at read; the authoring
+environment, course posting workflow, and system integration
+engines ship as labeled reference implementations
+(`reference_stub: True`, state `recorded_reference_only`) because
+their substance executes against systems outside this substrate.
+Per-entry dispositions and grounds are in `BATCH.md`. Suite: 170
+tests, all passing, including fresh mutation-verified negative
+controls for the new derivations.

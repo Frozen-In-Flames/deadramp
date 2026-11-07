@@ -1075,12 +1075,12 @@ Boundary, stated in the spec: procurement operations tooling lives in Operations
 ## Remainder Group 2 — Learning Management L1 (2 forks, new tier group)
 
 New extended functions at this tier, specified in groups/learning-management-l1/UNION-SPEC.md, not implemented (the carried Extended set from the L2 sibling build — delivery engine, packaging runtimes, xAPI runtime, analytics, succession, survey, form workflows, report builder, notification transport, IdP — is already registered under Singleton 48 and is not re-registered here):
-- [ ] open — Learning content authoring environment: rapid / collaborative authoring, themes & menus, plugins, 508-conformant output (CloudLCMS)
-- [ ] open — Course posting & publication workflow (TRAIN)
-- [ ] open — Branded portal rendering & presentation engine (TRAIN)
-- [ ] open — Continuing education management engine (TRAIN)
-- [ ] open — Certificate issuance & verification service (TRAIN)
-- [ ] open — System integration engines (TRAIN)
+- [x] reference — Learning content authoring environment: rapid / collaborative authoring, themes & menus, plugins, 508-conformant output (CloudLCMS)
+- [x] reference — Course posting & publication workflow (TRAIN)
+- [x] built — Branded portal rendering & presentation engine (TRAIN)
+- [x] built — Continuing education management engine (TRAIN)
+- [x] built — Certificate issuance & verification service (TRAIN)
+- [x] reference — System integration engines (TRAIN)
 
 The L2 sibling's 26-family taxonomy was applied verbatim at this tier: one claim in two forks (SCORM 1.2 content standards distribution), and TRAIN is a zero-claim fork whose own verbs (multi-tenancy, branded portals, tracking, continuing education, certificates) match none of the L2 fork's literal phrases; its asserted functions are the new gaps above, itemized in the spec rather than claimed.
 

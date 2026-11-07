@@ -6,8 +6,10 @@ Stdlib `unittest`, run from the group directory:
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-**137 tests, all passing.** Each module's header names the core
-function / spec claim / control family its tests trace to.
+**170 tests, all passing** (137 founding + 33 from the final GAPS
+batch unit, see the batch section at the end). Each module's header
+names the core function / spec claim / control family its tests
+trace to.
 
 | Module | Traces to |
 |---|---|
@@ -65,3 +67,39 @@ display form `"HTML"` from the spec's prose list. The spec's
 implementation-contract line was corrected to name the token, and
 the tests pin both directions (`"html"` accepted, `"HTML"`
 rejected, like `"SCORM_1_2"`).
+
+## Final GAPS batch — Remainder Group 2
+
+`test_gaps_batch.py` (33 tests) pins the batch extension surface in
+`src/lms/extensions.py`: the authoring environment, course posting
+workflow, and system integration engines as labeled reference
+records; the portal presentation, CE renewal-cycle, and
+certificate service surfaces as records with derived-at-read
+values; the no-score/no-grade recursive key scan over every
+extension surface; `ext_`-prefixed audit actions; denied writes
+consuming no id. **Suite total: 170 tests, all passing** (137
+before the batch unit).
+
+Fresh negative controls for the new code (mutation-verified):
+
+1. `TestNegativeControl` in `test_gaps_batch.py` — a
+   `MutantCeExtensions` whose `_derive_ce_cycle_status` inverts
+   the coverage branch (a cycle with a qualifying core CE record
+   reads uncovered; an empty cycle reads `satisfied`). The
+   canonical expectations hold on the real surface and fail on
+   the mutant, asserted literally (`assertRaises(AssertionError)`
+   on the mutant's outcomes). A second mutant,
+   `MutantPortalExtensions`, ignores portal revisions in
+   `_current_presentation`; the freshness expectation (latest
+   revision wins) fails on it the same way.
+2. **External mutation drill, performed in this tree** (record in
+   `scratch/gaps-batch-mutation-failures.txt`): the coverage
+   branch of `_derive_ce_cycle_status` in the real
+   `src/lms/extensions.py` was patched from `if qualifying:` to
+   `if not qualifying:`, the full suite run, then the module
+   restored and verified SHA-256-identical
+   (`0d9222842a12034c40fe644e1fc9e738fa2e247008f3103be3a42e338cf39f86`).
+   Result: **170 ran, exactly 3 failed** — two in
+   `TestContinuingEducationEngine` (derived status; out-of-period
+   and undated records) and the negative control's canonical CE
+   test. After restoration: **170 ran, OK**.
