@@ -194,3 +194,25 @@ both drill records).
   single fork, taxonomy defined from its own description) or to
   the Moderate/L2 control families in `UNION-SPEC.md`. Counts are
   a floor, stated as such.
+
+## Final GAPS batch — Research L2 extensions (2026-11-07)
+
+The 10 open entries of this group's GAPS.md section (inventory
+idx 521–530) are closed by one new module,
+`src/research/extensions.py` (`ResearchExtensions`, wrapping the
+core store; all seven core modules byte-identical), with tests in
+`tests/test_gaps_batch.py`. Full suite: **131 tests, all
+passing** (97 before the batch). Per-entry dispositions are in
+[`BATCH.md`](BATCH.md): 8 entries built in records form (runtime
+configurations, ingestion pipeline definitions + reported runs,
+harmonization mapping definitions + reported outcomes, query
+definitions + reported result counts, cohort definitions +
+reported membership counts, federation peer/exchange records,
+delivery records with read-derived current state, enforcement
+decision records over the core grant derivation) and 2 shipped as
+labeled reference implementations (indexing/catalog, identity
+provider per PLATFORM-LAYER.md decision 1). The founding lines
+stand unchanged: nothing here holds, moves, transforms, queries,
+or harmonizes data, and grants remain records that confer
+nothing — pinned behaviorally in both directions by the batch
+tests.

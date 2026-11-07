@@ -120,3 +120,52 @@ and are rejected by the canonical expectations.
   only when the read moment is strictly after `expires_at`, so a
   read at exactly `expires_at` derives `active`. The tests assert
   the contract as written rather than a rounded version of it.
+
+## Final GAPS batch additions (2026-11-07)
+
+| File | Tests | Covers |
+|---|---:|---|
+| `test_gaps_batch.py` | 34 | Final GAPS batch unit (see `../BATCH.md`) — per-entry pins for idx 521–530: runtime configuration records (derived parameter count, stored record carries no count key); ingestion pipeline definitions + reported runs (a run leaves the core dataset record byte-identical; bad state/count rejected whole, consuming no id); harmonization mapping definitions + verbatim reported outcomes; indexing reference records (`reference_stub: True`, core literal search results unchanged); query definitions as text-free structure (`TypeError` on a `query_text` keyword) + reported result counts; cohort definitions with no subject field (exact key set; `TypeError` on a `subject_refs` keyword) + reported membership counts; federation peer/exchange records (`reference_transport: True`); delivery records with current state derived at read (stored record carries no state key) and the two-way grant pins (grant minting changes no delivery; an enforcement decision changes no grant and no delivery state); enforcement decision records + `delivery_access_view` deriving the core grant's status at three clocks; identity reference records (`identity_provider: False`); a recursive forbidden-key scan over every extension record, view, and summary; and the batch's fresh negative control (below) |
+
+Status after the final GAPS batch unit: **131 tests, OK**.
+
+## Negative control — batch (delivery state derivation)
+
+**`TestDeliveryDerivationNegativeControl`** in
+`test_gaps_batch.py` — the batch's fresh invariant is **delivery
+current-state derivation**: a delivery's current state is its
+latest recorded reported-* label, derived at read by the single
+seam `ResearchExtensions._current_delivery_label`, never stored
+(the stored delivery record carries no state key — pinned). The
+mutant is a `ResearchExtensions` subclass whose seam returns the
+EARLIEST recorded label. The tests assert the canonical
+expectation (a prepared → dispatched → received delivery reads
+`reported_received`), that the mutant reads `reported_prepared`
+instead, and — via literal `assertRaises(AssertionError)` — that
+the canonical expectation rejects the mutant's outcome.
+
+## Mutation verification — batch drill (2026-11-07)
+
+VERIFIED by the coordinator for this batch unit:
+`_current_delivery_label` in the real `src/research/extensions.py`
+was patched to `return states[0]["state_label"]` (earliest wins)
+and the full suite was run against the patched implementation.
+
+- Patched run: **131 ran, exactly 2 failed**:
+  - `test_gaps_batch.TestDeliveries.test_current_state_derived_from_latest`
+  - `test_gaps_batch.TestDeliveryDerivationNegativeControl.test_canonical_reads_latest_state`
+- `extensions.py` was then restored from
+  `scratch/extensions.py.premutation` and verified
+  **SHA-256-identical** (`9c82de73…`, recorded in
+  `scratch/extensions.py.sha256`); the suite is green again
+  (131/131). Raw drill output is in
+  `scratch/gaps_batch_mutation_run.txt`.
+
+The failing set is exactly the derivation-dependent set: the
+mutant-agreement legs of the control pass under both
+implementations by construction, and the delivery tests that
+record a single state (the grant-minting and enforcement pins)
+cannot distinguish earliest from latest — they guard different
+seams (record immutability across core grant and decision
+events), as the core drill's boundary test did for the grant
+derivation.

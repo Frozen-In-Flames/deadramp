@@ -867,16 +867,16 @@ Platform-layer: part of the fork's baseline is satisfied by the underlying CSP (
 ## Singleton 53 — Research L2 (1 fork, new category)
 
 Extended functions, specified in groups/research-l2/UNION-SPEC.md, not implemented:
-- [ ] open — Data commons runtime engine
-- [ ] open — Data ingestion / ETL engine
-- [ ] open — Data harmonization engine
-- [ ] open — Indexing & metadata catalog engines beyond the registry
-- [ ] open — Query & analysis workspace engines
-- [ ] open — Cohort builder / cohort discovery engine
-- [ ] open — Cross-commons federation / data mesh networking
-- [ ] open — Data delivery / transfer engine for sharing
-- [ ] open — Access enforcement on data delivery (grants are records that confer nothing; no data moves in this build)
-- [ ] open — Identity provider / identity management service
+- [x] built — Data commons runtime engine
+- [x] built — Data ingestion / ETL engine
+- [x] built — Data harmonization engine
+- [x] reference — Indexing & metadata catalog engines beyond the registry
+- [x] built — Query & analysis workspace engines
+- [x] built — Cohort builder / cohort discovery engine
+- [x] built — Cross-commons federation / data mesh networking
+- [x] built — Data delivery / transfer engine for sharing
+- [x] built — Access enforcement on data delivery (grants are records that confer nothing; no data moves in this build)
+- [x] reference — Identity provider / identity management service
 
 Platform-layer: encryption at rest (deployment layer; TLS when configured); multi-tenancy (the fork claims it of its own platform; single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: the category is new; the description is two sentences, the first a baseline determination that tags nothing, so all nine claims come from the single platform sentence. Privacy discipline: the dataset record shape is pinned to exactly nine keys (metadata, checksum, access tier) so no field can hold research subject data, genomic or clinical payloads, or dataset contents; verify-by-content hashes caller bytes transiently and discards them; access requests are rejected for open datasets rather than gated falsely.
 
