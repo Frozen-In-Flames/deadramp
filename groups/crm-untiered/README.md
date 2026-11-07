@@ -326,3 +326,33 @@ then and not before.
   service"); campaigns & audience lists 0; access control and
   audit logging 0 each, even alongside a CUI-storage assertion.
   Nothing was back-filled to make the set look complete.
+
+## Final GAPS batch (2026-11-07)
+
+This set's 4 open Extended entries are closed by one new module,
+`src/crm/extensions.py` (`CrmExtensions` over the core store;
+all 7 core modules byte-identical), with per-entry dispositions
+in `BATCH.md`. All four close as labeled reference
+implementations (`reference_stub: True`; connector records also
+`reference_transport: True`). AI proposal generation and
+pipeline forecasting were drafted `build-extension` and are
+re-judged to the reference form, with grounds in `BATCH.md`:
+generation is model execution producing content this build never
+holds, and a forecast is a computed projection over a pipeline
+substrate this set does not have — opportunities & sales
+pipeline is a named absence here, and this build computes no
+figure beyond counts of its own records. Document automation
+and integration connectors close in the forms the category
+adjudicated at the sibling tiers (template definitions and
+automation requests as data with reported outcomes; connector
+definitions and sync receipts with derived catalog rollups).
+Suite: **133 tests, OK** (104 at delivery + 29 batch tests in
+`tests/test_gaps_batch.py`, including the batch's fresh
+connector-rollup negative control, mutation-verified; see
+`tests/README.md`). The honesty statements above stand unchanged
+for the engines themselves: nothing here generates a proposal,
+computes a forecast, automates a document, connects a system,
+or syncs one — the records say so on their face. Tier stays
+null on the new surface too: no extension record or derived
+view carries a tier, baseline, impact-level, equivalence, or
+score-shaped key, pinned by a recursive scan in the batch tests.
