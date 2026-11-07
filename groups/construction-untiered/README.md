@@ -294,8 +294,10 @@ maintained separately against the same contract in `UNION-SPEC.md`:
 PYTHONPATH=src python -m unittest discover -s tests
 ```
 
-**153 tests, OK** at delivery: the founding group's 146-test core
-suite carried with the code, plus spec tests pinning this set
+**153 tests, OK** at delivery (**185** after the final GAPS
+batch extension surface; see the batch section at the end): the
+founding group's 146-test core suite carried with the code, plus
+spec tests pinning this set
 (exactly 6 sheets; membership exact against `remainder.json`;
 every sheet's tier null / impact "Unknown"; every claim's evidence
 verbatim in its description; 27 claims total with no zero-claim
@@ -417,3 +419,29 @@ tier is recorded then and not before.
   search, reporting & analytics has 0 despite a "search and
   question answering" headline. Nothing was back-filled to make
   the set look complete.
+
+## Final GAPS batch — extension surface (2026-11-07)
+
+The 9 gap entries registered above are closed by one new module,
+`src/construct/extensions.py` (`ConstructExtensions`, wrapping
+the core store; all 7 core modules byte-identical), with
+per-entry dispositions in [`BATCH.md`](BATCH.md) and 32 new
+tests in `tests/test_gaps_batch.py` (suite **153 → 185, OK**),
+including a fresh mutation-verified negative control on the
+permit-state derivation. Eight entries close `built` in
+records form — commissioning plans/checklists/outcomes/turnover
+records, estimate records with derived totals (benchmark cost
+data held as a source reference only), AI review requests and
+opaque-ref results, document-control and approval records over
+core documents, GIS layer metadata and reported locations,
+permit records with derived current state, asset records with
+reported condition labels and derived counts, and prevailing
+wage in the founding group's exact-arithmetic form (e-filing as
+a labeled reference record inside the entry) — and workflow
+automation closes as a labeled reference implementation
+(definitions as data; the registry never executes). Tier null
+binds the whole new surface: a recursive scan pins that no
+extension record or view carries a tier-shaped key, a float,
+or a numeric list. Nothing in the extension surface commissions
+a system, reviews a document, issues a permit, or runs a model;
+the `*_here: False` labels are on the records themselves.

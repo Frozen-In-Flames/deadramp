@@ -7,12 +7,14 @@ claim / control family it traces to.
 
 ```bash
 cd groups/construction-untiered
-PYTHONPATH=src python3 -m unittest discover -s tests        # 153 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 185 tests
 ```
 
 Status at delivery: **153 tests, OK** against the implementation in
 `../src/`: the founding group's 146-test core suite carried with the
-code, plus `test_specs.py` (7 tests) pinning this untiered set. (Run
+code, plus `test_specs.py` (7 tests) pinning this untiered set. The
+final GAPS batch added `test_gaps_batch.py` (32 tests), bringing the
+suite to **185 tests, OK** (see the batch section at the end). (Run
 exactly as above: helpers are imported as a top-level module from the
 tests directory and `tests/__init__.py` is empty by design, so
 package-mode discovery with `-t .` is not the supported entry point
@@ -38,6 +40,7 @@ for this group.)
 | `test_main_cli.py` | `python -m construct serve` subprocess with demo users alice/bob/carol |
 | `test_negative_control.py` | Negative control (below) |
 | `test_specs.py` | Spec integrity for this untiered set — exactly 6 sheets; membership exact against `remainder.json` unit `untiered:Construction`; **tier discipline: every sheet's `cmmc_tier` is null and every `fedramp_impact_level` is "Unknown"**; every claim's evidence verbatim in its description (or the [:397] + '...' truncation); every sheet's category is "Construction"; literal totals pinned (27 claims, no zero-claim fork); the Specset duplicate pair's claim tables identical |
+| `test_gaps_batch.py` | Final GAPS batch extension surface (see batch section at the end) — per-entry records forms and labels for the set's 9 gap entries, the fresh permit-state negative control, RBAC/TypeError discipline, and the recursive tier-null / no-float / no-numeric-list scan over every extension record and view |
 | `construct_helpers.py` | Shared fixtures: demo users (ADMIN/OPERATOR/VIEWER), `USERS` registry, `fresh_store()`, and `make_store()` building a ConstructStore + AuditLog + an active project + a prime org (tier 1 participant) + a sub org (tier 2 participant), all created by ADMIN. Carried from the founding group with one labeling fix: its docstring now names this untiered set instead of L2 |
 
 The carried test files are byte-identical to the founding group's
@@ -99,3 +102,47 @@ restore — the same hash as the founding group's `store.py`, since
 the module is carried byte-identical) and the suite re-run:
 **153 tests, OK**. The suite catches this defect class; the negative
 control is not decorative.
+
+## Final GAPS batch — extension surface tests (2026-11-07)
+
+`test_gaps_batch.py` (32 tests) pins the extension surface built
+for this set's 9 open GAPS.md entries (see `../BATCH.md`):
+commissioning, cost estimating, AI technical document review,
+document control depth, GIS / spatial, permitting, asset
+management, and prevailing wage (built), plus workflow
+automation (labeled reference stub). Cross-cutting pins: exact
+key sets per record type; derived-never-stored (estimate totals,
+approval currency, permit current state, wage amounts,
+certified-payroll totals, summary counts exist only in read
+views); `TypeError` on unexpected keyword arguments; RBAC denial
+audited as `ext_*:denied` and consuming no id; and a recursive
+tier-null scan over every extension record and derived view —
+no key naming a tier, baseline, or equivalence, no float value,
+no numeric list. Full suite: **153 → 185 tests, OK**.
+
+### Fresh negative control (batch): permit-state derivation
+
+`TestPermitStateNegativeControl` in `test_gaps_batch.py` targets
+the new code's derivation seam, `_current_permit_state` in
+`src/construct/extensions.py`: a permit's current state is its
+LATEST recorded reported-state label. The in-suite mutant reads
+the earliest label; the control asserts the canonical case yields
+`reported_issued`, that the mutant yields `reported_submitted`
+instead, and — via `assertRaises(AssertionError)` — that treating
+the mutant's outcome as the expectation fails; a second test pins
+that `permit_view` goes through the seam.
+
+Live drill (2026-11-07) on the real file: the seam's return was
+patched to `states[0]["state_label"]` and the full suite ran:
+**185 tests, exactly 3 failures**, all in the batch's own new
+tests and all permit-state-derivation-dependent —
+
+- `test_gaps_batch.TestPermitting.test_current_state_is_latest_recorded_label`
+- `test_gaps_batch.TestPermitStateNegativeControl.test_latest_canonical_but_mutant_not`
+- `test_gaps_batch.TestPermitStateNegativeControl.test_view_uses_the_seam`
+
+— no core test failed. Raw output in
+`scratch/gaps_batch_mutation_run.txt`. `extensions.py` was then
+restored from `scratch/extensions.py.premutation`, verified
+byte-identical by SHA-256 (`scratch/extensions.py.sha256`), and
+the suite re-ran: **185 tests, OK**.
