@@ -193,3 +193,26 @@ proprietary-source connectors (core ingest remains open CSV/JSON
 only). Full suite: 176 tests, OK, including a fresh
 mutation-verified negative control on the transform filter seam
 (recorded in `tests/README.md`).
+
+## Final GAPS batch, second unit (Remainder Addition — Analytics L2)
+
+The addition fork's four catalogue-excess gap entries are now
+closed in a second new module, `src/analytics/extensions_addition.py`
+(`AnalyticsExtensionsAddition`, wrapping the core store); every
+pre-existing module is byte-identical (SHA-256 verified),
+including the first batch unit's `extensions.py`. Per
+`BATCH-ADDITION.md`: back-office service tools are built as a
+tool registry plus automation runs recorded as reported
+(`executed_here: false`), and mobile client capabilities as
+client registrations, capability declarations, and reported usage
+records (no client software ships; no build-side sessions).
+Digital signature closes as a labeled reference implementation —
+re-judged from its build-extension draft, because signing is a
+cryptographic operation over documents this substrate never
+holds and the build performs no cryptography of its own — and
+e-workflow tooling ships as labeled reference as drafted
+(definitions as data plus reported runs), explicitly distinct
+from the Extended scheduling family above. Full suite: 196
+tests, OK, including a fresh mutation-verified negative control
+on the reported-usage total seam (recorded in
+`tests/README.md`).

@@ -1118,10 +1118,10 @@ Enlargements: agentic & automated workflow engines +1 claimant (now 5 of 12 in t
 ## Remainder Addition — Analytics L2 (+1 fork)
 
 New extended functions from the addition fork, specified in groups/analytics-l2/ADDENDUM.md, not implemented (all fork excess from its own service catalogue):
-- [ ] open — Automated back-office service tools (HR, finance & property management)
-- [ ] open — Digital signature engine
-- [ ] open — E-workflow tooling (explicitly distinguished from the group's Extended scheduling & workflow automation family)
-- [ ] open — Mobile client capabilities
+- [x] built — Automated back-office service tools (HR, finance & property management)
+- [x] reference — Digital signature engine
+- [x] reference — E-workflow tooling (explicitly distinguished from the group's Extended scheduling & workflow automation family)
+- [x] built — Mobile client capabilities
 
 No existing gap gains a counted claimant: the fork's collaboration claim fired inside its own service catalogue and is recorded at catalogue weight (the catalogue lists the fork's own offered services, so the third-party-catalogue exclusion does not apply, but the artifact-weight precedent does); its visualization claim is Core (dashboard composition), not a gap.
 

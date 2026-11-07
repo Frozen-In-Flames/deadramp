@@ -108,3 +108,43 @@ copy (`scratch/extensions.py.premutation`) and verified
 SHA-256-identical (`87a3773be24dcc731f56faa63f8db9a1077a2bf796227e
 5615bda4512e9ce61d`); the suite re-ran green. Raw output:
 `scratch/gaps_mutation_run.txt`.
+
+## Final GAPS batch, second unit (Remainder Addition — Analytics L2)
+
+The second unit adds `tests/test_gaps_batch_addition.py` (20
+tests) pinning the addition surface in
+`src/analytics/extensions_addition.py` (see
+`../BATCH-ADDITION.md`): the NetComm / Beacon catalogue-excess
+entries — back-office service tools and mobile client
+capabilities built as records (registries plus reported run /
+usage records, `executed_here: False` / `measured_here: False`),
+digital signature and e-workflow tooling shipped as labeled
+reference implementations (the signature entry re-judged from its
+build-extension draft: signing is a cryptographic operation over
+documents this substrate never holds, and the build performs no
+cryptography of its own). Suite after the second unit: **196
+tests, OK** (176 before). All pre-existing modules, the first
+unit's `extensions.py` included, are unchanged (SHA-256
+verified for all 11).
+
+**Fresh negative control for the new code (the reported-usage
+total drill).** `test_gaps_batch_addition.
+TestReportedUsageNegativeControl` states the canonical
+expectation — usage reports of 4 and 3 recorded for one mobile
+client derive a `reported_usage_total` of 7, the sum of the
+recorded reports — asserts the real implementation meets it, and
+asserts a first-count-echo subclass mutant (the seam
+`_derive_reported_usage_total` returns the first report's count
+instead of summing) is rejected by it. Verified by mutation
+against the real file: patching the seam's return line in
+`src/analytics/extensions_addition.py` to the echo form ran the
+full suite — **196 tests, exactly 3 failures**
+(`test_gaps_batch_addition.TestMobileClients.
+test_view_derives_declarations_and_reported_total` and both
+`TestReportedUsageNegativeControl` tests, each carrying the
+canonical expectation). `extensions_addition.py` was restored
+from the pre-mutation copy
+(`scratch/extensions_addition.py.premutation`) and verified
+SHA-256-identical (`6bf4f89c5b70a3612d664ae09037dc4d0d289ecaad
+8bd1dae3b9e0783c82ae6b`); the suite re-ran green. Raw output:
+`scratch/addition_gaps_mutation_run.txt`.
