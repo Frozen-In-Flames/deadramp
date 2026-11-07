@@ -134,7 +134,7 @@ Errors are JSON `{"error": …}` with 400 (validation), 401
 ## Tests
 
 ```bash
-PYTHONPATH=src python3 -m unittest discover -s tests   # 78 tests
+PYTHONPATH=src python3 -m unittest discover -s tests   # 107 tests
 ```
 
 See [`tests/README.md`](tests/README.md) for the coverage map
@@ -187,3 +187,24 @@ SHA-256-verified).
 - **Identity.** Demo users are hooks. The build ships no
   identity provider; IA-2 stays with the embedding
   organization.
+
+## Final GAPS batch — Remainder Addition unit
+
+The 9 gap entries the remainder additions registered (ADDENDUM.md
+§5) are now closed in records form by a second module,
+`src/sysadmin/addition.py` (`SysadminAddition`, wrapping the core
+store; core modules byte-identical). Per-entry dispositions are
+in [`BATCH-ADDITION.md`](BATCH-ADDITION.md): the Citrix delivery
+platform, OpenText ITSM/ITAM, discovery/CMDB, and PPM, TeamViewer
+DEX, Esri's GIS payload, and the SOC/SIEM services close as
+records surfaces over this substrate (definitions and reported
+records; current states derived at read; counts only — nothing
+is delivered, discovered, rendered, scanned, or scored here),
+and Dynatrace observability/AIOps plus the managed backup & DR
+services close as labeled reference implementations
+(`reference_stub: true`; nothing is observed, inferred, backed
+up, or restored here, and retention enforcement stays with the
+embedding organization's records schedule per PLATFORM-LAYER.md
+decision 4). Tests: 78 → 107, including a fresh
+mutation-verified negative control on the latest-state
+derivation (see `tests/README.md`).

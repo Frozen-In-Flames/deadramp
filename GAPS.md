@@ -920,15 +920,15 @@ No new extended functions; the addition enlarges families already registered und
 ## Remainder Addition — System Administration L2 (+8 forks)
 
 New extended functions from the addition forks, specified in groups/system-administration-l2/ADDENDUM.md, not implemented:
-- [ ] open — Virtual workspace & desktop delivery platform (Citrix DaaS)
-- [ ] open — Observability & AIOps platform (Dynatrace)
-- [ ] open — IT service & asset management suite, ITSM / ITAM (OpenText; Oracle service desk rides it)
-- [ ] open — Universal discovery & CMDB engine (OpenText)
-- [ ] open — Project & portfolio management platform (OpenText)
-- [ ] open — DEX analytics & endpoint automation platform (TeamViewer)
-- [ ] open — Geospatial (GIS) application platform (Esri's ArcGIS payload)
-- [ ] open — Managed backup & disaster-recovery services (Contegix, DLH, Oracle, Esri)
-- [ ] open — Security operations services: SOC / SIEM / vulnerability scanning (Esri, Contegix, DLH)
+- [x] built — Virtual workspace & desktop delivery platform (Citrix DaaS)
+- [x] reference — Observability & AIOps platform (Dynatrace)
+- [x] built — IT service & asset management suite, ITSM / ITAM (OpenText; Oracle service desk rides it)
+- [x] built — Universal discovery & CMDB engine (OpenText)
+- [x] built — Project & portfolio management platform (OpenText)
+- [x] built — DEX analytics & endpoint automation platform (TeamViewer)
+- [x] built — Geospatial (GIS) application platform (Esri's ArcGIS payload)
+- [x] reference — Managed backup & disaster-recovery services (Contegix, DLH, Oracle, Esri)
+- [x] built — Security operations services: SOC / SIEM / vulnerability scanning (Esri, Contegix, DLH)
 
 Enlargements of families already registered under Singleton 54: managed OS & services administration operations (now the substance of 5 of 9 forks); virtualization engine (2 of 9; Citrix's headline function); application delivery & hosting runtime; high-availability network operation (substance only). Named-absence update: monitoring, incident response, ticketing, and backup / DR are no longer universal absences of the enlarged group (asserted as engines by addition forks; still zero claims, unbuilt, gap-named above); SLA vocabulary remains universally absent.
 

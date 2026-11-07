@@ -7,12 +7,13 @@ function / control family it traces to, per `../UNION-SPEC.md`.
 
 ```bash
 cd groups/system-administration-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 78 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 107 tests
 ```
 
-Status: **78 tests, OK** (71 at singleton delivery; 78 after the
+Status: **107 tests, OK** (71 at singleton delivery; 78 after the
 remainder additions — see the additions row and drill re-run
-below).
+below; 107 after the final GAPS batch addition unit — see the
+batch row and the latest-state drill record at the end).
 
 ## Layout
 
@@ -32,6 +33,7 @@ below).
 | `test_store_validation.py` | 3 | Cross-cutting SI-10 — failed operations consume no id and change nothing; no score/rating/health/posture key on any view (recursive scan) |
 | `test_negative_control.py` | 3 | Negative control (below) |
 | `test_additions.py` | 7 | Remainder additions (unit `addition:system-administration-l2`) — spec integrity: 9 sheets with the shipped sheet first and unchanged (8 claims; group total 9), exact census membership, house schema, taxonomy/verbatim-evidence audit, the exact claim map (1 claim over 1 fork, 7 zero-claim forks); the virtualization Extended honesty pin (no engine entry point on the store) and the claimant's records-substrate case (pinned nine-key system shape) |
+| `test_gaps_batch_addition.py` | 29 | Final GAPS batch addition unit (Remainder Addition section, idx 552–560) — per-entry record shapes and honesty labels for the delivery platform, observability stub, ITSM/ITAM, discovery/CMDB, PPM, DEX, GIS, backup/DR stub, and security-operations surfaces; derived-never-stored current states; recursive no-score key scan; access discipline (denied writes audited `:denied`, non-members reach nothing, failed writes consume no id); the fresh latest-state negative control (below) |
 | `sysadmin_helpers.py` | — | Canonical fixture: organization `AGENCY-1` by bob, erin added as staff member (the canonical decider), system `SYS-OS-1` (operating_system, platform `PLAT-A`), application `APP-PORTAL`, service request due 2026-06-10 so `as_of` 2026-06-05 → not overdue and 2026-06-15 → overdue; outsider dave in no organization |
 
 ## Negative control
@@ -129,3 +131,47 @@ is green again (78/78). Raw drill output is in
   past, so the view correctly reads `overdue == True` at
   creation; the pinned before/after cases run through explicit
   `as_of` values. Both corrected tests carry comments saying so.
+
+## Final GAPS batch addition — fresh negative control
+
+**`test_gaps_batch_addition.py`** adds the batch unit's own
+negative control for its new code (the core is unchanged, so the
+signature drill above stands as-is). The addition module's
+signature derivation is **latest recorded state label wins**:
+tickets, assets, projects, and security cases carry append-only
+reported state labels, and the current state derives at read as
+the *last* label recorded (`SysadminAddition._latest_state_label`).
+The in-suite control (`TestLatestStateNegativeControl`) asserts
+the canonical expectation (a ticket labelled `reported_open`
+then `reported_resolved` reads `reported_resolved`), that the
+implementation matches it in both the ticket view and the ITSM
+summary's counts, and — via a literal `assertRaises(AssertionError)`
+— that an earliest-label mutant subclass violates the canonical
+expectation.
+
+**Mutation verification (2026-11-07).** `_latest_state_label` in
+the real `src/sysadmin/addition.py` was patched to return
+`state_records[0]["state_label"]` (earliest instead of latest)
+and the suite was run against the patched implementation.
+
+- Patched run: **107 ran, exactly 6 failed**, all in
+  `test_gaps_batch_addition.py`:
+  - `test_gaps_batch_addition.TestLatestStateNegativeControl.test_canonical_expectation`
+  - `test_gaps_batch_addition.TestLatestStateNegativeControl.test_implementation_matches_canonical`
+  - `test_gaps_batch_addition.TestItsmItam.test_current_state_derives_latest_label`
+  - `test_gaps_batch_addition.TestItsmItam.test_asset_state_derives_and_summary_counts`
+  - `test_gaps_batch_addition.TestPortfolioManagement.test_portfolio_view_counts_by_derived_state`
+  - `test_gaps_batch_addition.TestSecurityOperations.test_case_state_derives_and_finding_is_verbatim`
+- `addition.py` was then restored from
+  `scratch/addition.py.premutation` and verified
+  **SHA-256-identical** (`scratch/addition.py.sha256`); the suite
+  is green again (107/107). Raw failing set in
+  `scratch/addition_mutation_run.txt`.
+
+The failing set is exactly the latest-state-derivation-dependent
+set: every failure needs a second recorded label to supersede a
+first. Single-label and no-label cases still pass under the
+mutant (it agrees with the correct answer there, by
+construction), the record-shape and honesty-label pins are
+untouched by this mutation, and the mutant subclass's own test
+passes under it by construction, as expected.
