@@ -7,7 +7,7 @@ function / control family it traces to, per `../UNION-SPEC.md`.
 
 ```bash
 cd groups/mobile-device-management-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 89 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 132 tests
 ```
 
 Status at delivery: **75 tests, OK**. After the remainder
@@ -34,6 +34,7 @@ addition below: **89 tests, OK**.
 | `test_store_validation.py` | 3 | Cross-cutting SI-10 — failed operations consume no id, money boundary across entities, no score/rating/optimization field on any view |
 | `test_negative_control.py` | 3 | Negative control (below) |
 | `test_additions.py` | 14 | Remainder addition (`addition:mobile-device-management-l2`) — spec integrity for the Ivanti fork (zero-claim table, citation accounting, named-absence pins) + 2 substrate cases (mobility estate budget derivation; provisioning order lifecycle) |
+| `test_gaps_batch.py` | 43 | Final GAPS batch (see `../BATCH.md`) — one class per open Extended entry: recorded optimization recommendations (no computation, money boundary); workflow-execution / carrier / alert-delivery / enrollment reference records (`reference_stub` labels, core-unchanged pins); reconciliation cases (lines verbatim, totals derived, stored record carries no totals); forecasts recorded verbatim beside derived actuals; analytic derivations (spending by period, recurring by kind excluding disconnected, dispute exposure); report definitions + snapshot runs; portal configuration records (nothing served); service-operation records with a recorded lifecycle; device command records (request → SoD confirmation → reported outcome, `executed_here` False) with the fresh negative control (below); device policies + reported compliance checks with derived state; app catalog/distribution records; tracking-service status records (no location data anywhere); cross-cutting scans (no identifier/location key on any stored extension record, `ext_`-prefixed audit actions, denials consume no id) |
 | `mdm_helpers.py` | — | Canonical fixture: organization by bob, erin added as staff member (the canonical decider), funded budget 1,000,000 − 300,000 − 200,000 = 500,000 available; outsider dave in no organization |
 
 ## Negative control
@@ -114,3 +115,41 @@ spent`, occurrence count asserted = 1) was patched to
 - The service test's user registry includes `erin` and `dave`
   beyond the CLI's three demo users, so membership and
   separation-of-duties flows can run over HTTP.
+
+## Final GAPS batch — fresh negative control (2026-11-07)
+
+The batch's new code lands a new guard, so the control is
+fresh: **device-command separation of duties**,
+`MdmExtensions._check_command_confirmer_not_requester`
+(`src/mdm/extensions.py`) — the actor confirming a device
+command is never the actor who requested it (AC-5, mirroring
+the core's order decider/requester seam).
+`test_gaps_batch.TestCommandNegativeControl` pins the canonical
+expectation (bob's wipe request cannot be confirmed by bob) and
+shows a name-identical mutant subclass whose seam never raises
+would confirm it — the mutant's outcome is asserted to differ,
+via a literal `assertRaises(AssertionError)`.
+
+Mutation verification, performed on this build:
+
+- Pre-mutation `src/mdm/extensions.py` SHA-256:
+  `5407a60f…` (a copy is kept at
+  `scratch/extensions.py.premutation`; hash recorded in
+  `scratch/extensions.py.sha256`).
+- Mutation: the seam's condition
+  `if actor_name(actor) == command["requested_by"]:` replaced
+  with `if False:` so the guard never fires.
+- Suite under mutation: **132 ran, exactly 2 failed**:
+  - `test_gaps_batch.TestDeviceCommands.test_requester_cannot_confirm_own_command`
+  - `test_gaps_batch.TestCommandNegativeControl.test_canonical_expectation`
+- File restored from the pre-mutation copy; SHA-256 verified
+  identical (`5407a60f…`); suite re-run: **132 ran, OK**. Raw
+  output: `scratch/gaps_mutation_run.txt`.
+
+The failing set is exactly the guard-dependent set: the
+in-test mutant case passes under the mutation by construction
+(it asserts the mutant differs, and under a disabled guard the
+real implementation *is* the mutant), and no other extension
+surface touches the seam. Core modules were not mutated in
+this drill and remain byte-identical to the shipped hashes
+(`store.py` still `8c0c787a…`).

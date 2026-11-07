@@ -782,23 +782,23 @@ Platform-layer: multi-tenancy (claimed by the fork; single-tenant reference depl
 ## Singleton 50 — Mobile Device Management (MDM) L2 (1 fork, new category)
 
 Extended functions, specified in groups/mobile-device-management-l2/UNION-SPEC.md, not implemented:
-- [ ] open — Optimization engine (named from the product name only; no optimization claim exists in the description)
-- [ ] open — Workflow execution / routing engine (the registry holds definitions only)
-- [ ] open — Carrier & network integration engines (carrier order execution, bill feeds, data integration)
-- [ ] open — Bill reconciliation engine beyond registry validation runs
-- [ ] open — Budget projection / forecasting engine (projections are recorded verbatim, never computed)
-- [ ] open — Analytics engine beyond registry summaries
-- [ ] open — Report generation engine
-- [ ] open — Alert delivery transport (alerts are records)
-- [ ] open — Web portal / single-pane web application
-- [ ] open — Managed Mobility services operations
+- [x] built — Optimization engine (named from the product name only; no optimization claim exists in the description)
+- [x] reference — Workflow execution / routing engine (the registry holds definitions only)
+- [x] reference — Carrier & network integration engines (carrier order execution, bill feeds, data integration)
+- [x] built — Bill reconciliation engine beyond registry validation runs
+- [x] built — Budget projection / forecasting engine (projections are recorded verbatim, never computed)
+- [x] built — Analytics engine beyond registry summaries
+- [x] built — Report generation engine
+- [x] reference — Alert delivery transport (alerts are records)
+- [x] built — Web portal / single-pane web application
+- [x] built — Managed Mobility services operations
 
 Category named absences (not claimed by this fork; recorded so the category's expected device surface is accounted for, not silently missing):
-- [ ] open — Mobile device enrollment & provisioning plane
-- [ ] open — Remote wipe / lock / device command plane
-- [ ] open — Device policy management & compliance enforcement
-- [ ] open — Mobile application management
-- [ ] open — Device location & tracking services
+- [x] reference — Mobile device enrollment & provisioning plane
+- [x] built — Remote wipe / lock / device command plane
+- [x] built — Device policy management & compliance enforcement
+- [x] built — Mobile application management
+- [x] built — Device location & tracking services
 
 Platform-layer: encryption at rest (deployment layer); multi-tenancy (the fork asserts it of its hosting platform; the build is a single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: the fork is a Telecommunication Expense Management and Managed Mobility system filed under MDM; its description contains zero device-management vocabulary, the taxonomy reflects the TEM surface actually claimed, and the inventory record shape is pinned to ten keys so no field can hold a phone number, IMEI, serial, or any real device identifier.
 

@@ -160,12 +160,40 @@ cd groups/mobile-device-management-l2
 PYTHONPATH=src python3 -m unittest discover -s tests        # 89 tests
 ```
 
-**89 tests, all passing** (75 shipped + 14 additions), including
-the mutation-verified negative control: stubbing the
-availability derivation in the real store to return the bare
-budget makes exactly 5 tests fail in the enlarged suite (the
-shipped drill's 4 plus the additions derivation case; see
-`tests/README.md` for both drill records).
+**132 tests, all passing** (75 shipped + 14 additions + 43
+final GAPS batch), including the mutation-verified negative
+controls: stubbing the availability derivation in the real
+store to return the bare budget makes exactly 5 tests fail in
+the enlarged suite (the shipped drill's 4 plus the additions
+derivation case), and disabling the batch's device-command
+separation-of-duties seam makes exactly 2 fail (see
+`tests/README.md` for all drill records).
+
+## Final GAPS batch (2026-11-07)
+
+The group's 15 open Extended entries (inventory idx 470–484)
+are closed by one new module, `src/mdm/extensions.py`
+(`MdmExtensions`, wrapping the core store; every core module
+byte-identical). Per-entry dispositions and grounds are in
+`BATCH.md`. In brief: optimization lands as recorded
+recommendation records (the entry rests on the product's name
+only; nothing is computed); reconciliation, forecasts
+(recorded verbatim, never computed), analytics, report
+generation, portal configuration, and Managed Mobility
+operations land as records plus read-time derivations over the
+core's own records; workflow execution, carrier integration,
+alert delivery, and enrollment ship as labeled reference
+implementations (`reference_stub: True`, core records pinned
+unchanged). The category's device surface lands under the
+founding privacy invariant carried over in full — devices are
+opaque references only, no identifier or location field exists
+anywhere: device commands are records (request, a
+separation-of-duties confirmation, a reported outcome;
+`executed_here: False` throughout), policies and compliance
+checks are records with state derived at read and nothing
+enforced, app management is catalog/distribution records, and
+tracking is service configuration/status records holding **no
+location data at all**.
 
 ## Honesty
 
