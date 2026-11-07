@@ -114,3 +114,40 @@ freedom:
   `{"risks": [...]}`, `{"controls": [...]}`, `{"entries": [...]}`),
   and `/search` / `/posture` as the bare summary/result dicts the
   contract specifies.
+
+## Final GAPS batch coverage (Nov 7, 2026)
+
+`tests/test_gaps_batch.py` (22 tests) pins the gaps-batch extension
+surface (`src/cyber/extensions.py`) for this set's thirteen open
+GAPS entries: one or more tests per entry covering the records form
+of each family (enforcement planes, threat intelligence, EDR
+agents, phishing campaigns, AppSec engines, posture engines,
+management agents, DLP policies/events, proofing cases/outcomes),
+the reference labels on the AI/ML model records, SOAR playbook
+records, identity product references (`reference_stub: true`,
+`hook_only: true`, `identity_provider: false`), and pipeline
+receipts (`reference_stub: true`, `reference_transport: true`),
+plus the cross-cutting pins: address-shaped references (IP, URL,
+hostname) rejected at the boundary, PII-shaped learner references
+rejected, denied attempts audited with a `:denied` suffix, and a
+counts-only posture pin (a recursive key scan over every derived
+view asserting no key contains `score`, `rate`, `grade`, or
+`percent`).
+
+**The batch's fresh negative control — recorder-blind proofing
+outcome guard.** The extension's separation-of-duties seam is
+`_check_outcome_recorder_not_opener` in
+`src/cyber/extensions.py`: the actor who opened a proofing case may
+not record its declared outcome. Its blind spot is exact: mutate
+the guard so it never fires (the equality condition replaced with
+`if False:`) and the suite fails **exactly 1 of 222 tests** —
+`TestProofing.test_outcome_recorder_must_differ_from_opener`, the
+one canonical pin of the guard — while every other test passes:
+ingestion, lifecycle, counts, and summary tests are all indifferent
+to who records an outcome, which is exactly the surface that could
+silently lose the duties separation if the guard rotted. Verified
+Nov 7, 2026 in this tree: mutant applied → 222 tests run, 1
+failure; guard restored → 222 tests, OK. Restored `extensions.py`
+sha256:
+`c5be69e833421cdb1b5dbfddb4fad4792b5865bd2f4232aa443bbd5194b377cc`
+(identical to the pre-mutation copy).

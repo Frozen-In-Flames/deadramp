@@ -347,3 +347,28 @@ not before.
   has 0 claimants in this set; secure enclave / VDI for CUI has 0;
   audit logging has 1 of 27. Nothing was back-filled to make the
   set look complete.
+
+## Final GAPS batch (Nov 7, 2026)
+
+The repo-root `GAPS.md` section for this set registered fifteen
+Extended entries; two were already closed in writing (detection
+engines & staffed SOC operations, re-scoped; the encryption &
+key-management platform layer, re-scope per PLATFORM-LAYER.md).
+The remaining thirteen are closed by `BATCH.md` and one new module,
+`src/cyber/extensions.py` (`ExtensionStore`), in the records form
+the sibling Cybersecurity batch units established: registries,
+ingestion records of engine-reported output, tracking workflows,
+and derived counts — tier null throughout, posture counts only,
+and no new scoring anywhere (the only scores in this package
+remain the founding build's published formulas). AI/ML model and
+SOAR playbook records carry the same `reference_stub: true`
+labels the siblings shipped (run records add `executed: false`);
+identity provider products and log/telemetry pipelines land as
+labeled reference implementations (identity records state
+`hook_only: true` and `identity_provider: false`; pipeline
+receipts carry `reference_transport: true`). Nothing here scans,
+detects, enforces, blocks, trains, monitors, hosts, or executes.
+Suite: 200 → 222 tests, all passing, with a fresh
+mutation-verified negative control recorded in `tests/README.md`
+(the recorder-blind proofing outcome guard: exactly 1 failure in
+222 when mutated).
