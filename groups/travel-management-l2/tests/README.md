@@ -80,6 +80,45 @@ exactly 1 from the additions module
 and verified SHA-256-identical (`a4098ea6…`); the suite re-ran
 green. Raw output in `scratch/additions_mutation_run.txt`.
 
+## Final GAPS batch tests (appended at the batch build)
+
+| Module | What it pins |
+|---|---|
+| `test_gaps_batch.py` | The 8 open entries of this group's gap list closed in records form (booking requests & verbatim outcome reports, reservation-integration reference records & receipts, disbursement requests & outcome reports, receipt registrations & extraction reports, connector reference records, delivery attempts & reports, report definitions & figure-free run records, identity-provider reference records): every record's exact key set and honesty labels, the core authorization and line item pinned byte-identical across extension reports, report-run figures derived at read and tracking registry state, the privacy rule by signature (smuggled `passenger_name=` / `image_bytes=` / `password=` / `message_body=` kwargs raise `TypeError`), money/count boundary rejections, no score-shaped key anywhere on extension views (recursive scan), RBAC denial audited with a `:denied` suffix, and no-id-on-failure. |
+
+### The disbursement-cap seam drill (fresh negative control, batch)
+
+The claim under test: **cumulative outstanding disbursement
+requests against an expense report never exceed the report's
+derived total** — enforced at the seam
+`TravelExtensions._check_disbursement_cap` in
+`src/travel/extensions.py` (the extension surface's analogue of
+the core's signature voucher cap). `TestDisbursementCapNegativeControl`
+pins the canonical case (requests of 100,000 + 60,000 against a
+150,000-cent report total: the second is rejected) and asserts
+(1) the real implementation's outcome, (2) a mutant subclass
+overriding the seam to wave everything through would NOT
+produce it (the mutant accepts, and its committed total of
+160,000 exceeds the report total), and (3) treating the
+mutant's outcome as the expected outcome raises
+`AssertionError`.
+
+File-level verification (performed at build time, raw output in
+`scratch/gaps_batch_mutation_run.txt`): the shipped
+`src/travel/extensions.py` (backup in
+`scratch/extensions.py.premutation`, SHA-256 recorded in
+`scratch/extensions.py.sha256`) was mutated at the seam's
+condition line (`if committed_cents + amount_cents >
+report_total_cents:` → `if False:`, exact full-line match, one
+occurrence) and the full suite run: **exactly 3 failures** out
+of 148, all disbursement-cap assertions in the batch module
+(the canonical negative-control leg, the over-total rejection,
+and the exact-total-then-one-cent boundary). The file was then
+restored from the pre-mutation copy, its SHA-256 verified
+identical, and the suite re-run green. Run count after the
+batch: **148 tests, OK** (110 before; 38 added by the batch
+module).
+
 ## Interpretation notes
 
 - The requester of record for separation of duties is the record's

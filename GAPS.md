@@ -883,14 +883,14 @@ Platform-layer: encryption at rest (deployment layer; TLS when configured); mult
 ## Singleton 55 — Travel Management L2 (1 fork, new category)
 
 Extended functions, specified in groups/travel-management-l2/UNION-SPEC.md, not implemented:
-- [ ] open — Travel booking & reservation engine
-- [ ] open — Carrier, hotel & GDS reservation integrations
-- [ ] open — Payment & disbursement execution (vouchers are records; no money moves)
-- [ ] open — Receipt capture & imaging / OCR
-- [ ] open — Integration connector engines (the registry holds definitions only)
-- [ ] open — Notification delivery transport (notifications are records)
-- [ ] open — Report generation engine & dashboards (beyond registry summaries)
-- [ ] open — Identity provider / identity management service
+- [x] built — Travel booking & reservation engine
+- [x] reference — Carrier, hotel & GDS reservation integrations
+- [x] built — Payment & disbursement execution (vouchers are records; no money moves)
+- [x] built — Receipt capture & imaging / OCR
+- [x] reference — Integration connector engines (the registry holds definitions only)
+- [x] built — Notification delivery transport (notifications are records)
+- [x] built — Report generation engine & dashboards (beyond registry summaries)
+- [x] reference — Identity provider / identity management service
 
 Platform-layer: the commercial SaaS / PaaS offerings the fork integrates are its own components, outside this build; hosting regions are a deployment property; encryption at rest (deployment layer; TLS when configured); multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec notes: the category is new and this singleton completes the singleton phase. The description (three sentences) contains no booking / reservation, per-diem, reimbursement, approval, or receipt vocabulary — checked absences, itemized in the spec; authorization, decision, and voucher records enter Core only as the records forms the claimed travel and expense services presuppose, under explicit core-boundary decisions. Traveler records carry opaque references in a shape pinned to exactly six keys.
 

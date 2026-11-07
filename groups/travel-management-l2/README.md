@@ -15,6 +15,24 @@ It was written from that contract only: original code, no vendor
 code, assets, or branding from the sibling offering. Python 3,
 **standard library only**, no external dependencies.
 
+## Final GAPS batch (unit: Singleton 55 section)
+
+The 8 open entries of this group's GAPS.md section are closed by
+`src/travel/extensions.py` (`TravelExtensions`), a records-only
+extension surface over the unchanged core (all 7 core modules
+byte-identical; suite 110 → 148): booking requests with verbatim
+outcome reports, disbursement requests capped cumulatively by
+the expense report's derived total, receipt registrations
+holding digests never images, delivery attempts labeled
+`reference_transport`, report definitions held as data with
+figures derived at read — and labeled reference implementations
+for the reservation integrations, connector engines, and the
+identity provider (PLATFORM-LAYER.md decision 1). Nothing is
+booked, paid, captured, delivered, or generated here. Per-entry
+dispositions and the fresh disbursement-cap negative control
+(exactly 3 failures under mutation) are recorded in
+[`BATCH.md`](BATCH.md).
+
 ## Remainder addition (unit `addition:travel-management-l2`)
 
 The group now specs **2 forks**: the remainder census added
