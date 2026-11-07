@@ -40,6 +40,7 @@ edit: its module docstring names this untiered set.
 | `test_service.py` | HTTP service: endpoints, JSON errors, full flow, stored-record status absence |
 | `test_specs.py` | **This set's spec-integrity tests** (19 tests — below) |
 | `test_negative_control.py` | The negative control (below) |
+| `test_gaps_batch.py` | **Final GAPS batch unit tests** (36 tests — below) |
 
 ## Spec tests (`test_specs.py`, 19 tests)
 
@@ -124,3 +125,65 @@ uses only the standard library (`argparse`, `dataclasses`,
 `datetime`, `http`, `json`, `os`, `ssl`, `sys`, `threading`,
 `urllib`). Result at delivery: **OK: stdlib only, zero
 third-party imports**.
+
+## Final GAPS batch unit (appended 2026-11-07)
+
+`test_gaps_batch.py` (36 tests) pins the batch extension surface
+(`src/hr/extensions.py`, `HrExtensions`) for this set's 7 open
+entries (inventory idx 905–911): payroll run/statement records
+with nets and totals derived at read and never stored; expense
+reports with totals derived at read and approval as a recorded
+label; time entries and schedule assignments with summaries
+derived at read; communication metadata records with reported
+delivery receipts (`reference_transport`); the document registry
+(opaque refs + validated digests, current version derived at
+read); and the two reference families (identity federation /
+privileged access, security operations) carrying
+`reference_stub: True` and state `recorded_reference_only`,
+pinned to change no core record. Cross-cutting pins: the
+tier-null recursive scan (no tier/cmmc/baseline/fedramp/impact
+key on any stored record or derived view), the core forbidden-key
+walk over the same surface, the no-PII signature scan (no
+forbidden parameter name and no `**kwargs` on any public
+method), TypeError on smuggled `email=` / `phone=` / `ssn=` /
+`content=` keyword arguments, RBAC denials, employee scope,
+failed operations consuming no id, and `ext_`-prefixed audit
+entries on the core log. Full suite after the unit: **132 tests,
+all passing** (96 before).
+
+### Fresh negative control (mutation-verified)
+
+The batch unit's signature seam is
+`hr.extensions._derive_net_cents` — the single point where a pay
+statement's net is derived (recorded gross minus recorded
+deduction amounts, integer cents). `test_gaps_batch.py` carries
+the in-suite control
+(`TestNegativeControlPayrollNet`): the canonical seam returns
+exactly 400000 for (500000, [75000, 25000]); with the module
+global rebound to an adding mutant, the payroll view reports
+600000 and the canonical expectation fails against it; after
+restoring the binding the view returns 400000 again.
+
+Live drill on the real `extensions.py`, recorded:
+
+- extensions.py SHA-256 before:
+  `66f20c4241abcbbe18ec4ed100460a0e296a8409a3bc1efd8f35700f8a455c3d`
+  (recorded in `scratch/extensions.py.sha256`)
+- the seam body `return gross_amount_cents - sum(deduction_amounts)`
+  was patched to `return gross_amount_cents + sum(deduction_amounts)`
+  (deductions added instead of subtracted)
+- **exactly 3 tests fail** (raw output:
+  `scratch/gaps_mutation_run.txt`):
+  - `test_gaps_batch.TestPayroll.test_run_and_statement_net_derived_never_stored`
+  - `test_gaps_batch.TestNegativeControlPayrollNet.test_canonical_net_subtracts_deductions`
+  - `test_gaps_batch.TestNegativeControlPayrollNet.test_mutant_net_is_rejected_by_the_canonical_expectation`
+- extensions.py restored from
+  `scratch/extensions.py.premutation`; SHA-256 after restore:
+  `66f20c4241abcbbe18ec4ed100460a0e296a8409a3bc1efd8f35700f8a455c3d`
+  (**identical**). Full suite re-run after restore: **132 tests,
+  OK**.
+
+The 3 failing tests are exactly the ones that read a payroll net
+through the seam; every other net-adjacent assertion reads gross
+or deduction totals, which the sign flip does not touch, and no
+carried founding test depends on the extension surface.

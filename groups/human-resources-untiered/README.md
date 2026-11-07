@@ -350,3 +350,32 @@ is plain HTTP for local/demo use. The merged build is a
 **single-tenant reference deployment**; multi-tenancy and
 general cloud hosting are deployment properties, not HR
 functions.
+
+## Final GAPS batch unit (2026-11-07)
+
+This set's 7 open gap entries (inventory idx 905–911) are closed
+by one extension module, `src/hr/extensions.py` (`HrExtensions`
+over the untouched core store; all 7 core modules byte-identical,
+`store.py` still `ec34ab5e…`). Per-entry dispositions and grounds
+are in [`BATCH.md`](BATCH.md). In short: payroll closes as run
+and statement records in integer cents with nets and totals
+derived at read (`paid_here` / `executed_here` False); expense
+reports likewise, with approval a recorded label and
+`reimbursed_here` False; time tracking and scheduling close as
+recorded entries and assignments held as data
+(`assigned_automatically` False) with summaries derived at read;
+employee communications close as metadata records (opaque
+message references, content never held) with reported delivery
+receipts in the adjudicated transport form; document management
+closes as a registry of opaque references and validated digests
+with the current version derived at read. The two stub-engine
+entries — identity federation / privileged access management and
+the security operations engines — ship as labeled reference
+implementations (`reference_stub: True`, state
+`recorded_reference_only`): identity stays with the embedding
+organization per PLATFORM-LAYER.md decision 1, and security
+outcomes are reported labels held verbatim. Tier null holds on
+the new surface: no extension record or view carries a tier,
+baseline, or CMMC key (pinned by test). Suite: 96 → **132 tests,
+all passing**, including a fresh mutation-verified negative
+control on the payroll net derivation (see `tests/README.md`).
