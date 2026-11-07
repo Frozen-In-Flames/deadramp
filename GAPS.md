@@ -279,15 +279,15 @@ Platform-layer: encryption & key management (TLS when a certificate is configure
 ## Group 17 — Development Tools L1 (5 forks)
 
 Extended functions, specified in groups/development-tools-l1/UNION-SPEC.md, not implemented (9):
-- [ ] open — CI/CD execution engines (pipeline execution: build / test / deploy runners)
-- [ ] open — Code hosting internals (git storage, branching & merging engines)
-- [ ] open — Compilers & build toolchains
-- [ ] open — Configuration-as-code execution & orchestration
-- [ ] open — Compliance assessment & KSI status automation engines
-- [ ] open — Business modeling & automation engines (modeling + execution)
-- [ ] open — Course & content authoring tools
-- [ ] open — Landing-zone / tenant provisioning & hosted platform operations
-- [ ] open — Artifact binary storage backends (the registry holds records + checksums only; verification is by content hash)
+- [x] built — CI/CD execution engines (pipeline execution: build / test / deploy runners)
+- [x] reference — Code hosting internals (git storage, branching & merging engines)
+- [x] built — Compilers & build toolchains
+- [x] reference — Configuration-as-code execution & orchestration
+- [x] reference — Compliance assessment & KSI status automation engines
+- [x] reference — Business modeling & automation engines (modeling + execution)
+- [x] reference — Course & content authoring tools
+- [x] reference — Landing-zone / tenant provisioning & hosted platform operations
+- [x] built — Artifact binary storage backends (the registry holds records + checksums only; verification is by content hash)
 
 Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Group character, recorded in the spec: only two of the five are genuine development tools; the union is a development-lifecycle records substrate. Five taxonomy families sit at 0 of 5 claims (artifact registry, API / integrations, access control, audit logging, search); four enter the Core only as flagged substrate / baseline items, and API / integrations is absent from the union entirely.
 

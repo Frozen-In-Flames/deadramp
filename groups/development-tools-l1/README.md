@@ -151,6 +151,30 @@ A permitted role performing a forbidden action gets 403; validation
 failures get 400; unknown objects get 404. Errors are always JSON
 `{"error": "..."}` and no stack trace is ever returned to a client.
 
+## Final GAPS batch (Group 17)
+
+The 9 open Extended entries of this group are closed by
+`src/devtools/extensions.py` (see `BATCH.md` for the per-entry
+disposition; 43 tests in `tests/test_gaps_batch.py`, suite 66 → 109).
+CI/CD execution engines land as pipeline run *request* records
+bound to core build records plus verbatim run *outcome* records --
+nothing executes (`executed_here: false`); the stored run request
+carries no status, and a run view derives the latest reported
+status at read. Compilers & build toolchains land as toolchain
+declaration records. Artifact binary storage backends land as
+backend records plus artifact *custody* records that copy only the
+core artifact's checksum and recorded size -- no content is held,
+and the core registry's verify-by-content is unchanged. The six
+stub-engine entries (code hosting internals,
+configuration-as-code execution & orchestration, compliance
+assessment & KSI status automation, business modeling &
+automation, course & content authoring tools, landing-zone /
+tenant provisioning & hosted platform operations) ship as labeled
+reference implementations (`reference_stub: true`,
+`recorded_reference_only`) whose records change no core record --
+pinned by test, together with the invariant that no computed
+compliance score exists anywhere on the extension surface.
+
 ## API endpoints
 
 | Method | Path | Permission | Description |

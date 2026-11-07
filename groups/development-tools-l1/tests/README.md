@@ -103,6 +103,38 @@ review → build record → release → artifact with checksum verify
 hit; a viewer write attempt returns 403 over HTTP and the denial is
 present in the audit log. Result at delivery: **SMOKE OK**.
 
+## Final GAPS batch negative control (Group 17, tests/test_gaps_batch.py)
+
+Batch additions: **43 tests** (suite 66 → 109). The batch's fresh
+negative control covers the pipeline-run status derivation seam
+`_derive_run_status` in `src/devtools/extensions.py` (pipeline run
+views derive a run's current reported status from its outcome
+records; the stored run request carries no status field).
+
+- **Seam:** `return outcomes[-1]["status"]` -- the *latest* reported
+  outcome decides the run's current reported status.
+- **Mutation drill:** back the file up to
+  `scratch/extensions.py.orig`, replace the seam's line (exactly
+  one occurrence) with `return outcomes[0]["status"]` (read the
+  *earliest* outcome), rerun `tests/test_gaps_batch.py`: **exactly
+  2 tests fail** (`test_control_passes` and
+  `test_outcomes_verbatim_and_view_derives_latest`); the full suite
+  reports 2 failures and no errors. Restore from the backup; the
+  suite is green again (109 tests, OK).
+- **In-suite three-part form:** `TestNegativeControlRunStatusDerivation`
+  -- (1) the control passes on the correct implementation (outcomes
+  `failed` then `succeeded` -> view reports `succeeded`); (2) the
+  `EarliestOutcomeExtensions` subclass mutant fails exactly the
+  same distinguishing assertion (it reports the superseded
+  `failed`); (3) the check is non-vacuous: with a single outcome
+  the mutant's derivation agrees with the correct one.
+
+Why this seam: a run-status derivation that read the earliest
+outcome would keep reporting a runner result the runner itself
+later superseded -- a run reported failed, then succeeded on
+rerun, would still read `failed` forever. The drill rejects
+exactly that derivation.
+
 ## Dependency check
 
 `scratch/verify_deps.py` parses every `.py` file under `src/` with
