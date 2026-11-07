@@ -243,3 +243,19 @@ certification.
 - The build is a **single-tenant reference deployment**; encryption
   at rest is a deployment-layer control, and TLS applies only when a
   certificate is configured.
+
+## Final GAPS batch (appended note)
+
+The 8 Extended entries registered for this singleton are now
+worked in `src/comm/extensions.py` (`CommExtensions`), with
+per-entry dispositions in `BATCH.md`: audience segmentation,
+customer profiles, real-time interaction records, and derived
+reporting are built as records over this substrate (segment
+membership and report figures derive at read; identity resolution
+is explicitly **not** performed — profiles are keyed by
+caller-supplied opaque references with caller-asserted links),
+and campaign orchestration, workflow/BPM, real channel execution,
+and managed-service operations ship as labeled reference
+implementations (`reference_stub: true`; definitions held as data,
+nothing executed, transmitted, hosted, or operated here). The 12
+core functions and their modules are unchanged.

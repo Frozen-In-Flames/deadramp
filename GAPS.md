@@ -621,14 +621,14 @@ Platform-layer: multi-tenancy (claimed by neither sibling; single-tenant referen
 ## Singleton 37 — Communication L1 (1 fork)
 
 Extended functions, specified in groups/communication-l1/UNION-SPEC.md, not implemented:
-- [ ] open — Campaign orchestration engine (visual campaign orchestration, cross-channel campaign execution, campaign / journey lifecycle; the fork's signature function)
-- [ ] open — Audience segmentation engine (targeted segmentation over audience data)
-- [ ] open — Customer profile store & identity resolution (beyond the directory's contact records)
-- [ ] open — Real-time interaction management (real-time decisioning / interaction handling)
-- [ ] open — Workflow / BPM engine (campaign-creation workflow as an engine incl. approval chains; claim remainder — the approval-less dispatch substrate is Core)
-- [ ] open — Reporting / analytics engines beyond the records substrate (campaign-effectiveness analytics and dashboards)
-- [ ] open — Real channel execution (email / SMS / push delivery networks and direct-mail fulfillment; core dispatch is the labelled reference transport and transmits nothing)
-- [ ] open — Managed-service operations (hosting / operating the platform itself)
+- [x] reference — Campaign orchestration engine (visual campaign orchestration, cross-channel campaign execution, campaign / journey lifecycle; the fork's signature function)
+- [x] built — Audience segmentation engine (targeted segmentation over audience data)
+- [x] built — Customer profile store & identity resolution (beyond the directory's contact records)
+- [x] built — Real-time interaction management (real-time decisioning / interaction handling)
+- [x] reference — Workflow / BPM engine (campaign-creation workflow as an engine incl. approval chains; claim remainder — the approval-less dispatch substrate is Core)
+- [x] built — Reporting / analytics engines beyond the records substrate (campaign-effectiveness analytics and dashboards)
+- [x] reference — Real channel execution (email / SMS / push delivery networks and direct-mail fulfillment; core dispatch is the labelled reference transport and transmits nothing)
+- [x] reference — Managed-service operations (hosting / operating the platform itself)
 
 Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: the fork's signature functions match no family in the category taxonomy (defined from the L2 group, where no sibling is a campaign platform); they are specified as gaps, not forced into families, and the taxonomy was not re-tuned.
 
