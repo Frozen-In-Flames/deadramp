@@ -1416,14 +1416,14 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## Untiered Set 4 — Artificial Intelligence (AI) (9 forks, tier null)
 
 New extended functions from this set, specified in groups/ai-untiered/UNION-SPEC.md, not implemented:
-- [ ] open — Learned inference: the models themselves (four claimants in this set; the build's inference surface remains a labeled reference stub, never a model)
-- [ ] open — Agentic workflow execution engines
-- [ ] open — Voice & speech AI engines
-- [ ] open — Model serving & inference infrastructure
-- [ ] open — Document understanding, summarization & report generation
-- [ ] open — Knowledge-base / retrieval (RAG) engines
-- [ ] open — Evaluation & benchmarking engines
-- [ ] open — Vertical workflow applications (public-records generation, human-services case work, constituent contact center)
+- [x] reference — Learned inference: the models themselves (four claimants in this set; the build's inference surface remains a labeled reference stub, never a model)
+- [x] reference — Agentic workflow execution engines
+- [x] reference — Voice & speech AI engines
+- [x] built — Model serving & inference infrastructure
+- [x] reference — Document understanding, summarization & report generation
+- [x] reference — Knowledge-base / retrieval (RAG) engines
+- [x] built — Evaluation & benchmarking engines
+- [x] reference — Vertical workflow applications (public-records generation, human-services case work, constituent contact center)
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. The documented control claims: audit documented (two forks, one at administration-surface weight and one as audit-data persistence under a zero-retention mode); access control with identification language documented at one fork; content-policy and guardrail configuration documented at one fork; multi-tenancy documented as a platform assertion only, with no isolation language; model governance, usage monitoring, zero persistence, and every other family are not documented. Named absences: nine of the category's sixteen families stand at zero in this set, including model gateway, model governance, usage metering, interaction records, and zero persistence. One exclusion removal is recorded: a model-gateway hit whose only evidence sentence states that calls are not sent to third-party model providers.
 

@@ -120,3 +120,69 @@ founding group):
   build's `_maybe_require` convention): role enforcement applies
   to User-like actors, which is what the service layer always
   passes.
+
+## Final GAPS batch module
+
+The batch extension (`src/aigateway/extensions.py`,
+`AIGatewayExtensions`, a wrapper over the untouched core store)
+is pinned by `test_gaps_batch.py`. Its 8 entries (2 built, 6
+reference), in the same evidence order as the union spec's
+Extended functions:
+
+| Batch entry | Pins in `test_gaps_batch.py` |
+|---|---|
+| Model serving & inference infrastructure | Configuration records over the core registry: exact key set (and no `reference_stub` -- a built record, not a stub), highest-version resolution, refusal for unknown and for deprecated models with no id consumed on refusal, replica-count validation, serving events stored verbatim with `enacted_here: False`, and the serving rollup derived at read (endpoint/event counts, the reported-replica total, sorted model names) with no derived key on any stored record |
+| Evaluation & benchmarking engines | Benchmark definitions bound to an existing core dataset and model (NotFound otherwise), runs executed by the core harness itself returning the core run record, link records storing no score, view totals derived at read from the core's run records and proven across two runs, the view inheriting the core's run-ownership discipline (another member refused, admin admitted), a deprecated-model run refused with no link id consumed, and viewer denial audited |
+| Learned inference: the models themselves | Request records bound to a registered model with the prompt named only by an optional validated SHA-256 digest, outcome records with the output as an opaque reference only, every record labeled `reference_stub: True` with `inference_here: False`, bad digest refused (including uppercase hex), `prompt=`/`output=` arguments raising TypeError, and a pinned check that registering a request creates no core request record |
+| Agentic workflow execution engines | Workflow definitions held as data (step labels verbatim, optional registered model), run requests and reported outcomes, every record labeled with `executed_here: False`, and a pinned check that defining a workflow and requesting a run create no core request and no core session while the core gateway still serves its own reference stub |
+| Voice & speech AI engines | Job records for the four recorded voice kinds with an opaque input reference only, outcome records with results as opaque references, `processed_here`/`media_held` False, unknown kinds refused, and `audio=`/`transcript_text=` arguments raising TypeError |
+| Document understanding, summarization & report generation | Job records naming the document by opaque reference plus optional validated digest (re-judged to reference; see `BATCH.md`), result records with outputs as opaque references only, `processed_here`/`generated_here`/`content_held` False, and `document_text=`/`content=`/`summary_text=` arguments raising TypeError |
+| Knowledge-base / retrieval (RAG) engines | Definition records, ingestion records with counts stored exactly as reported, retrieval queries named only by optional digest, results with answers as opaque references and citations as reference lists (re-judged to reference; see `BATCH.md`), `embeddings_computed_here`/`index_built_here`/`retrieved_here`/`grounded_here` False, and `embeddings=`/`vector=`/`query_text=`/`answer_text=` arguments raising TypeError |
+| Vertical workflow applications | Case records for the three recorded verticals keyed by opaque case reference, step labels recorded as reported, outcome records with outputs as opaque references, `casework_performed_here`/`records_generated_here` False, unknown verticals refused, and `subject_name=`/`record_text=` arguments raising TypeError |
+
+Cross-cutting pins: denied writes are audited with the
+`:denied` suffix (serving, benchmark, and inference paths),
+actorless writes are refused, and the extension summary counts
+every record kind at read. **The tier-null pin**: a recursive
+walk over every extension record and view (all 20 record kinds
+plus the three derived views, populated end to end) asserting no
+key contains `tier`, `cmmc`, `baseline`, `equivalence`, or
+`impact_level`, no value is a float, no list holds a number, and
+every `reference_stub` key found is `True` -- the set asserts no
+baseline, so the extension surface cannot grow one.
+
+## Batch negative control — mutation-verified
+
+Fresh control for the batch surface: the serving gate.
+`AIGatewayExtensions._serving_allowed` is the single derivation
+point deciding whether a model version may be registered as
+served; it mirrors the core's rule that deprecated models refuse
+requests. The in-suite control
+(`TestServingGateNegativeControl`) runs three legs: the real
+gate refuses a serving endpoint for a deprecated model; a mutant
+subclass with the seam forced open registers it; and treating
+the mutant's outcome as canonical raises `AssertionError`.
+
+Live drill, performed 2026-11-07: the seam's return line was
+patched in place
+
+```
+return model["status"] == "active"  ->  return True
+```
+
+and the full suite run: **199 tests, exactly 2 failures**, both
+in `test_gaps_batch.py`, both the expected ones:
+
+- `test_endpoint_for_deprecated_model_refused_and_no_id_consumed`
+  (canonical refusal: with the gate open, the registration
+  succeeds and the `ValidationError` assertion fails);
+- `test_three_leg_control` (the control's canonical leg no
+  longer refuses, failing its `assertRaises`).
+
+All 159 founding tests still passed under the mutant, confirming
+the failure is attributable to the gate seam alone. The module
+was then restored from `scratch/extensions.py.premutation`,
+verified byte-identical by SHA-256 against
+`scratch/extensions.py.sha256`, and the full suite re-run green:
+199 tests, OK. The drill log is
+`scratch/gaps_batch_mutation_run.txt`.

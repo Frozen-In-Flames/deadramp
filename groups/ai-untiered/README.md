@@ -371,3 +371,34 @@ then and not before.
   look complete, and no fork was reclassified out of the set for
   describing a non-AI operational surface — classification is the
   census's, claims are the text's.
+
+## Final GAPS batch (2026-11-07)
+
+The 8 open Extended functions of the union spec are closed by
+`src/aigateway/extensions.py` (the `AIGatewayExtensions` wrapper
+over the untouched core store), pinned by
+`tests/test_gaps_batch.py`. Two close as builds over the core's
+own substrate: **model serving & inference infrastructure** as
+serving-endpoint configuration records bound to registered model
+versions (active models only — the serving gate is the batch's
+fresh negative control), with serving events and a rollup
+derived at read; and **evaluation & benchmarking** as benchmark
+definitions over core datasets whose runs execute through the
+core evaluation harness itself, totals derived at read from the
+core's run records and nothing scored by the extension. Six
+close as labeled reference implementations
+(`reference_stub: true`): **learned inference** (request and
+outcome records; the prompt named only by its digest),
+**agentic workflow execution** (definitions as data, run
+requests, reported outcomes — the registry never executes),
+**voice & speech AI** (job and outcome records; results as
+opaque references only), **document understanding,
+summarization & report generation** and **knowledge-base /
+retrieval (RAG)** (both re-judged from build-extension to
+reference — their substance is a running model, and learned
+inference is never built in this category; grounds in
+`BATCH.md`), and **vertical workflow applications** (case, step,
+and outcome records). Tier null binds the whole surface: a
+recursive scan in the batch tests pins that no extension record
+or view carries a tier, baseline, or equivalence key. See
+`BATCH.md` for the per-entry disposition.
