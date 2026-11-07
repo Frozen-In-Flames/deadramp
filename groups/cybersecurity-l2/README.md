@@ -57,6 +57,34 @@ Qualys Cloud Platform, Saviynt EIC, Tanium TC-USG, and Zimperium —
   of them from the additions module; store restored and
   hash-verified).
 
+## Final GAPS batch: the Extended families in records form
+
+The final GAPS batch (see [`BATCH.md`](BATCH.md)) adds one module,
+`src/cyber/extensions.py` (`ExtensionStore`), covering this group's
+17 remaining gap entries without changing any core module
+(byte-identical, hash-verified) and without breaking this group's
+scoping note: the extension is still **records only**. The twelve
+build-extension families land as registries, ingestion records, and
+tracking workflows — enforcement points and their derived coverage
+counts, intel feeds and items, GRC frameworks and an
+evidence-collection workflow with separation of duties, identity
+integration **hooks** (records state `identity_provider: false`;
+there is still no IdP here), EDR enrollments and reported health,
+phishing-awareness campaign and training records (nothing is sent),
+AppSec engines and reported runs, posture engines whose snapshots
+are **counts only**, scanner and scan records, enclave and session
+records (nothing is hosted), proofing outcomes stored exactly as
+reported (no decision, no score), and management agents with
+reported patch status. The five engine families (AI/ML detection
+models, SOAR, backup/recovery, DLP, log/telemetry pipelines) ship
+as **labeled reference implementations**: every record carries
+`reference_stub: true`, run-shaped records state they did not
+execute here, and pipeline receipts also carry
+`reference_transport: true`. Tests: **204 → 233, OK**, including a
+fresh mutation-verified negative control on the evidence
+separation-of-duties guard (exactly 1 failure under the mutant;
+see `tests/README.md`).
+
 ## The 11 core functions
 
 1. **Asset inventory** — a register of assets (name, kind, owner,

@@ -38,6 +38,7 @@ entry point for this group.)
 | `test_main_cli.py` | `python -m cyber serve` subprocess with demo users alice/bob/carol answering `/health`, `/assets`, `/posture` and `/audit` |
 | `test_negative_control.py` | Negative control (below) |
 | `test_additions.py` | Additions (ADDENDUM.md) — spec integrity for the 18 remainder forks: 72-sheet count and unit order, membership against `remainder.json`, the literal per-fork claim table (67 claims), the pinned zero-claim set (Login.gov, Proofpoint TAP, Qualys), verbatim evidence sentences; plus a per-fork substrate case for all 18 (ingestion under the fork's product as source, deterministic scoring, lifecycle, search, and the Core surfaces its claims name: asset rescoring, risk register, control assessment, posture, audit) and a bulk-atomicity case mixing addition sources |
+| `test_gaps_batch.py` | Final GAPS batch (BATCH.md) — the extension surface in `src/cyber/extensions.py`, at least one case per each of the unit's 17 entries: enforcement-plane registry + derived coverage, intel feed/item lifecycle, GRC framework + evidence workflow incl. the separation-of-duties guard, identity-hook shape (`hook_only` / `identity_provider: false`), EDR enrollment + reported health, campaign/training records + derived counts, AppSec registry + run records, posture snapshots validated counts-only + score-free derived aggregate (recursive key scan), scanner/scan records, enclave session derived counts, proofing reported-outcome shape (no score, `decision_made: false`), management-agent patch records, the five stub families' labels (`reference_stub` on every record, `executed: false` on playbook runs, `reference_transport` on pipeline receipts), viewer denial audited as `plane_register:denied`, and the counts-only extension summary |
 | `cyber_helpers.py` | Shared fixtures: demo users (ADMIN=alice/admin, ANALYST=bob/analyst, VIEWER=carol/viewer), `make_store()` building a CyberStore + AuditLog + one asset (`core-server-01`, criticality high) + one ingested finding (high severity, score 6.0/high), plus `fresh_store()`, `make_asset()`, `sample_finding_item()`, `ingest_sample_finding()` and `create_sample_risk()` |
 
 ## Negative control
@@ -93,6 +94,26 @@ addition forks and so trip on the mutant exactly as designed.
 f692fc74e9366e8fcdf2ba1d869632492676bf55c30fb3dc921bc0c60cedc5de,
 verified identical to the pre-mutation hash) and the suite re-run:
 **204 tests, OK**.
+
+## Mutation verification — final GAPS batch (2026-11-07)
+
+The gaps batch adds one new module, `src/cyber/extensions.py`, so
+its negative control is fresh and targets the new code: the
+separation-of-duties seam `_check_verifier_not_collector`, which
+bars an evidence task's collector from verifying their own
+collection. The canonical expectation is asserted by
+`test_gaps_batch.TestGrcAutomation.test_separation_of_duties_guard`
+(bob collects, bob's verify attempt raises `ValidationError` and
+the task stays `collected`; alice collects/verifies across actors
+in the companion lifecycle test). The seam's condition was mutated
+so the guard never fires (`collected_by == verifier` replaced by
+`False`) and the full suite ran: **233 tests ran, exactly 1
+failure** — the guard test. `extensions.py` was then restored from
+a pre-mutation copy (SHA-256
+0a2591d1bedc5c342df913c430767d0a8d9e2f07096e872a0b58c37338bac492,
+verified identical to the pre-mutation hash) and the suite re-ran:
+**233 tests, OK**. With the batch module the suite total is
+**204 → 233 tests, OK**.
 
 ## Interpretation notes
 
