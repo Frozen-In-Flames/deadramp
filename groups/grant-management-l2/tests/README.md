@@ -82,3 +82,70 @@ expected.
 - The service test's user registry includes `erin` and `dave`
   beyond the CLI's three demo users, so membership and
   separation-of-duties flows can run over HTTP.
+
+## Final GAPS batch — Singleton 45 extension tests
+
+`test_gaps_batch.py` (42 tests) pins the batch extension surface
+in `src/grants/extensions.py` (`GrantsExtensions`, a wrapper around
+the core store; every core module is byte-identical to its shipped
+hash — `store.py` still `1e340e6a…`). Coverage per GAPS.md entry:
+portal configuration records (`rendered_here` / `served_here`
+False; one per program; role and membership boundaries), form
+layout records validated against the core form definition's field
+names (unknown field and duplicate placement rejected whole, no id
+consumed), document vault records (`content_held` False) with
+verify-by-content derivations, disbursement records (float/bool/
+zero amounts rejected; summary totals derived at read), dashboard
+definitions whose runs derive panel values and store nothing,
+export records with derived count manifests, delivery receipts
+(`reference_transport: True`, `delivered_here` False), the
+deterministic presence match (per-application evidence, creation
+order preserved — no ranking), eligibility criteria checks derived
+at read and never stored, the merit-scoring records form (rules
+held as data with `applied_here` False; reported outcomes verbatim
+and the core application record byte-identical before/after),
+reconciliation views with variances derived at read in exact
+integer cents (the stored record holds only the reported figure),
+closeout records gated on derived readiness, and the two
+stub-engine surfaces (workflow run references and signing
+references, `reference_stub: True`, pinned to change no core
+record — a signing reference leaves the core document unsigned).
+A recursive key scan pins the founding no-score invariant over the
+whole extension surface: no score-, rating-, grade-, or
+rank-shaped key in any returned value. Cross-cutting pins:
+`ext_`-prefixed audit actions on the core log, denied writes
+recorded with a `:denied` suffix, and no id consumed by a failed
+operation.
+
+### Batch mutation verification — fresh negative control
+
+VERIFIED by the coordinator (2026-11-07). The batch's fresh
+negative control targets the disbursement cap in the NEW code:
+`GrantsExtensions._check_disbursement_cap`
+(`src/grants/extensions.py`) — its single comparison line
+`if disbursed + amount_cents > award["amount_cents"]:` (occurs
+exactly once in the file, count asserted before patching) — was
+patched to `if False:`, so recorded disbursements could exceed an
+award's recorded amount. The full suite was run: **135 tests ran,
+exactly 4 failed**:
+
+- `test_gaps_batch.TestDisbursements.test_one_cent_over_cap_rejected_whole`
+- `test_gaps_batch.TestDisbursements.test_rejected_disbursement_consumes_no_id`
+- `test_gaps_batch.TestDisbursementCapNegativeControl.test_canonical_expectation_rejects_over_cap`
+- `test_gaps_batch.TestDisbursementCapNegativeControl.test_implementation_matches_canonical_across_disbursements`
+
+`extensions.py` was then restored from the pre-mutation copy
+(`scratch/extensions.py.premutation`; SHA-256
+`611bb0db3c558361fed64b369f772b041c8ebde0ec13d49dde91b1804aa04d12`,
+verified identical after restore against
+`scratch/extensions.py.sha256`) and the suite re-run: **135 tests,
+OK**. The raw failure list is in `scratch/gaps_mutation_run.txt`.
+No core test failed under the mutant — the disbursement cap is new
+code and its load-bearing tests are the batch's own, as the batch
+pattern requires. The founding award-cap drill above remains this
+tree's core control, unchanged.
+
+Full suite status after the batch: **135 tests, OK** (93 at
+delivery + 42 batch tests). Core modules byte-identical to their
+shipped hashes; `extensions.py` is the only new module in
+`src/grants/`.

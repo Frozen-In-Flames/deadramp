@@ -719,17 +719,17 @@ The Group 33 category union's extended families (automated evidence validation, 
 ## Singleton 45 — Grant Management L2 (1 fork, new category)
 
 Extended functions, specified in groups/grant-management-l2/UNION-SPEC.md, not implemented:
-- [ ] open — Applicant portal web application (the responsive browser UI itself, incl. branding customization & rendering and device adaptation)
-- [ ] open — Workflow execution engine (the registry holds definitions only)
-- [ ] open — Form designer & form rendering engine (the registry holds definitions only)
-- [ ] open — Document storage & content management engine (core holds metadata / checksums only)
-- [ ] open — E-signature signing engine (ceremony & cryptographic binding; signature events are recorded)
-- [ ] open — Payment / disbursement execution for awards (awards are records; no money moves)
-- [ ] open — Reporting & analytics engines beyond registry summaries (dashboards, ad-hoc generation, exports)
-- [ ] open — Notification & message delivery transport (email / SMS / push; records only)
-- [ ] open — Applicant matching & opportunity recommendation
-- [ ] open — Eligibility determination & merit-scoring engines (nothing is scored, by design)
-- [ ] open — Closeout automation & financial reconciliation engines
+- [x] built — Applicant portal web application (the responsive browser UI itself, incl. branding customization & rendering and device adaptation)
+- [x] reference — Workflow execution engine (the registry holds definitions only)
+- [x] built — Form designer & form rendering engine (the registry holds definitions only)
+- [x] built — Document storage & content management engine (core holds metadata / checksums only)
+- [x] reference — E-signature signing engine (ceremony & cryptographic binding; signature events are recorded)
+- [x] built — Payment / disbursement execution for awards (awards are records; no money moves)
+- [x] built — Reporting & analytics engines beyond registry summaries (dashboards, ad-hoc generation, exports)
+- [x] built — Notification & message delivery transport (email / SMS / push; records only)
+- [x] built — Applicant matching & opportunity recommendation
+- [x] built — Eligibility determination & merit-scoring engines (nothing is scored, by design)
+- [x] built — Closeout automation & financial reconciliation engines
 - [x] re-scoped — Identity provider / identity management service (the build ships RBAC hooks; IA-2 stays with the embedding organization)
 
 Platform-layer: encryption at rest (deployment layer; TLS when configured); multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP. Spec notes: the category is new, so the taxonomy was defined from this fork's own description (17 families, 17 claims); the description contains no money vocabulary and no scoring vocabulary — money enters only as fields on records the claimed functions presuppose, under an explicit core-boundary decision, and no score field exists anywhere in the build.

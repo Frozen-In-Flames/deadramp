@@ -163,3 +163,41 @@ record).
   fork, taxonomy defined from its own description) or to the
   Moderate/L2 control families in `UNION-SPEC.md`. Counts are a
   floor, stated as such.
+
+## Final GAPS batch (2026-11-07)
+
+The 11 open entries registered for this group in the final GAPS
+batch are closed by one new module, `src/grants/extensions.py`
+(`GrantsExtensions`, a wrapper around the core store; all 7 core
+modules are unchanged and byte-identical to their shipped hashes —
+`store.py` still `1e340e6a…`): 9 entries built as in-substrate
+records / derivation extensions — portal configuration records
+(branding, pages, and device modes held as data; nothing rendered
+or served), form layout records validated against the core form
+definitions (nothing rendered), document vault records binding
+opaque storage references to the core metadata/checksum records
+(content never held; verification derived by content hash),
+disbursement records under a disbursement-cap invariant (integer
+cents; recording one moves no money), dashboard definitions whose
+runs derive panel values from core records and store nothing, plus
+export records with derived count manifests, delivery receipts
+labeled `reference_transport: True` (nothing is sent), a
+deterministic presence match over recorded form responses (no
+ranking, no fit value), eligibility criteria checks derived at
+read and never stored, and reconciliation records with variances
+derived at read in exact integer cents, with closeout records
+gated on a derived readiness — and 2 entries shipped as labeled
+reference implementations (`reference_stub: True` on every
+record): workflow run references (a definition's steps copied as
+data; no application changes) and signing references (an intended
+signing recorded without signing the core document). The
+merit-scoring half of the eligibility entry is built in records
+form only — scoring rules held as data and never applied, review
+outcomes recorded verbatim as reported — because the founding
+doctrine (nothing is scored in this build, by design; no score
+field anywhere, pinned by a recursive key scan over the whole
+extension surface) binds the extension exactly as it binds the
+core; the re-judgment of form and its grounds are recorded in
+`BATCH.md`. Per-entry detail: `BATCH.md`. Suite: **135 tests, OK**,
+including a fresh mutation-verified negative control on the
+disbursement cap (see `tests/README.md`).
