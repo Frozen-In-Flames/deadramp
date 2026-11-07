@@ -111,3 +111,60 @@ tolerant of the remaining freedom:
   dedicated cross-month case; `program_summary` attributes wage
   totals by the access request's period and disbursements by their
   date, per the contract.
+
+## Final GAPS batch — extension coverage (added 2026-11-07)
+
+| File | Covers |
+|---|---|
+| `test_gaps_batch.py` | The extension surface in `src/finance/extensions.py` (`FinanceExtensions` over the core store) — one class per open GAPS.md entry for this group (see `../BATCH.md` for dispositions): disbursement execution **request** records capped by the earned cap (the cap reads the core accrual view's derived `available_cents`, so core pending/accessed totals bind this surface; a `reported_failed` report releases the cap, a `reported_paid` report does not) plus verbatim rail outcome reports (`paid_here: False` throughout; a request plus a report leaves core disbursements, access requests, and the accrual view untouched); booking execution requests against existing core bookings plus verbatim reports (the core booking stays byte-identical, still `recorded`); wellness session records over core enrollments plus verbatim reports; loan application records plus verbatim reported decisions (the application record is byte-identical after a decision report; the registry is not capped by earned wages because it disburses nothing; a recursive key scan pins that no record carries a credit score field); trade order records plus verbatim reports; tax preparation records (zero amount OK) plus verbatim filing reports; GRC framework/control records and mappings to existing core records with posture counts derived at read (no derived key on any stored record); the three stubs as labeled reference records — reporting streams + receipts (`reference_stub` / `reference_transport`, counts as reported, core summary untouched), banking verification requests/reports pinned to their **exact key sets** with a recursive scan proving no field can hold an account identifier (the core participant's pinned 7-key shape re-asserted after the flow), and payroll sync receipts pinned to an exact key set holding **no `*_cents` field at all** (counts as reported; a sync creates no accrual and changes no recorded amount). Cross-cutting: `ext_` actions and `:denied` denials on the core audit log, viewer write denied, non-member denied by the core membership boundary, platform-admin reach, cross-program records invisible, an audit-write failure rolls the record and its id back, and a recursive forbidden-key scan (`score`, `account`, `routing`, `iban`, `sort_code`, `card_number`) across one record of every extension kind. Plus negative control #2 (below). |
+
+Suite status with the batch: **267 tests** (213 at delivery + 54 in
+`test_gaps_batch.py`), all passing.
+
+## Negative control #2 — disbursement execution cap (batch, 2026-11-07)
+
+`test_gaps_batch.py::TestDisbursementCapNegativeControl` implements
+the mutant for the extension surface's own cap seam: a check that
+sums the outstanding committed amount and the requested amount but
+**never compares the total against the accrual's available amount**,
+treating every request as within cap. The traced claim is that the
+earned-cap invariant — the SI-10 / Core 3 integrity boundary of
+earned-wage access — binds this surface's disbursement execution
+requests exactly as it binds core access requests: outstanding
+requested amounts for a (participant, period) never exceed the
+accrual view's derived `available_cents`. For each canonical case —
+(a) a single request one cent over the available amount and (b) two
+requests each within the available amount whose sum exceeds it (the
+second request is the case) — the test asserts the canonical
+expectation (`ValidationError` from the real surface, with nothing
+stored and no id consumed), that the mutant gate would NOT raise,
+and — via a literal `assertRaises(AssertionError)` — that treating
+the mutant's outcome as the expected outcome fails. Case (c) is the
+control sanity check: a request exactly at the cap passes both the
+real surface and the mutant.
+
+Mutation verification: VERIFIED by the coordinator (2026-11-07).
+The cap check in `_check_disbursement_cap`
+(`src/finance/extensions.py`) was patched to compute the
+committed-plus-requested sum into a local and return `True`
+unconditionally — the exact live counterpart of the mutant in the
+test module — and the full suite was run: **267 tests ran, exactly
+4 failed**:
+
+- `test_gaps_batch.TestDisbursementCapNegativeControl.test_single_request_one_cent_over_available`
+- `test_gaps_batch.TestDisbursementCapNegativeControl.test_two_requests_each_within_available_whose_sum_exceeds_it`
+- `test_gaps_batch.TestDisbursementExecution.test_core_pending_consumes_available`
+- `test_gaps_batch.TestDisbursementExecution.test_failed_report_releases_cap_paid_report_does_not`
+
+Mutant output is saved at `scratch/batch-mutation-output.txt`.
+`extensions.py` was then restored from
+`scratch/extensions.py.premutation` and verified byte-identical
+(SHA-256
+`e9bf7bbc2d552d3f242f5274d415bb01631e2450c3c1c6d24d96e2c1e7370d7e`,
+recorded in `scratch/extensions.py.sha256`) and the suite re-run:
+**267 tests, OK**. An oracle that passes with the cap comparison
+removed would be testing that code ran, not that the earned cap
+binds disbursement execution requests — this control is the filter
+against that. (Negative control #1, the core `_check_access_cap`
+drill, is unchanged above; its seam is in the byte-identical core
+and was not touched.)

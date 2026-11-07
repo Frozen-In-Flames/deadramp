@@ -245,3 +245,26 @@ Wealth Management — spec'd under the group's existing taxonomy in
 `spend_management`), three zero-claim forks pinned as such, core
 unchanged (`src/` byte-identical), tests 202 → 213. The group total
 is 6 forks, 9 claims.
+
+## Final GAPS batch (2026-11-07)
+
+The 10 open entries of this group's GAPS.md section are closed by
+the batch extension in `src/finance/extensions.py`
+(`FinanceExtensions` over the core store; see `BATCH.md` for the
+per-entry dispositions): the four execution remainders and the
+three zero-claim families land as execution-request records plus
+verbatim outcome reports under the records-not-execution
+discipline — disbursement requests capped by the earned cap at a
+new seam, booking requests against core bookings, wellness
+sessions over core enrollments, loan applications with reported
+decisions (no underwriting, no credit score field anywhere),
+trade orders, tax preparations, and GRC framework/control
+records with counts-only posture — and the three stub families
+(streaming pipelines, banking verification, payroll integration)
+ship as labeled reference implementations (`reference_stub: True`;
+banking shapes pin that no field can hold an account identifier;
+payroll syncs hold counts only, no cents field at all). Nothing
+here moves money, books travel, lends, trades, remits, verifies,
+calculates wages, or streams. Core modules are byte-identical;
+tests 213 → 267, including a fresh mutation-verified negative
+control on the disbursement cap.
