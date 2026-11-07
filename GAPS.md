@@ -1527,21 +1527,21 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## Untiered Set 11 — Health & Wellness (3 forks, tier null)
 
 New extended functions from this set, specified in groups/health-wellness-untiered/UNION-SPEC.md, not implemented:
-- [ ] open — Patient engagement channels & content (one claimant in this set)
-- [ ] open — Survey instruments depth
-- [ ] open — EMR/EHR integration engines
-- [ ] open — Insurance verification, benefits discovery & claims adjudication engines
-- [ ] open — Care coordination & navigation platform depth
-- [ ] open — Integrated scheduling engines
-- [ ] open — At-home therapy delivery & session-metrics analytics
-- [ ] open — Telehealth visit support (wording present in one fork; no family exists for it at this tier, and the L2 retirement does not transfer)
-- [ ] open — Measurement & outcome analytics engines
-- [ ] open — Clinical decision support
-- [ ] open — Device connectivity / sync pipelines
-- [ ] open — AI/ML models & personalization engines
-- [ ] open — Automation / workflow engines
-- [ ] open — Multi-device native apps
-- [ ] open — Hosting platform layer
+- [x] built — Patient engagement channels & content (one claimant in this set)
+- [x] built — Survey instruments depth
+- [x] reference — EMR/EHR integration engines
+- [x] built — Insurance verification, benefits discovery & claims adjudication engines
+- [x] built — Care coordination & navigation platform depth
+- [x] built — Integrated scheduling engines
+- [x] built — At-home therapy delivery & session-metrics analytics
+- [x] built — Telehealth visit support (wording present in one fork; no family exists for it at this tier, and the L2 retirement does not transfer)
+- [x] built — Measurement & outcome analytics engines
+- [x] built — Clinical decision support
+- [x] built — Device connectivity / sync pipelines
+- [x] reference — AI/ML models & personalization engines
+- [x] reference — Automation / workflow engines
+- [x] built — Multi-device native apps
+- [x] reference — Hosting platform layer
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This set records one claim; the sole claim is an extended-disposition family, so no core function is claim-supported and the substrate is carried, not claimed. The one documented control assertion is a fork's HIPAA and NIST privacy-controls compliance sentence, recorded at compliance-assertion weight as its claim about itself; every 800-53 family is listed as not documented. One fork's prose asserts a FedRAMP Moderate authorization while its own record says impact Unknown and status In Process — recorded as the fork's assertion, moving no tier. Named absences: ten of eleven families stand at zero, including EMR integration with the substance present in other words, and measurement data where objective session metrics is not the family's phrase.
 

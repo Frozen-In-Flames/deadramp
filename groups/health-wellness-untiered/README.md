@@ -416,3 +416,24 @@ the tier is recorded then and not before.
   this set — several against prose that describes the function in
   other words, itemized in the union spec. Nothing was back-filled
   to make the set look complete.
+
+## Final GAPS batch (2026-11-07)
+
+The 15 open entries of this set's GAPS.md section are closed by
+`src/health/extensions.py` (`HealthExtensions`, wrapping the
+core store; founding modules unchanged) under the decisions in
+`../../gaps-batch/DECISION.md` and `../../PLATFORM-LAYER.md`:
+11 entries built as records plus deterministic derivations over
+the set's own records (engagement channels and content, survey
+instruments, verification and claim records with recorded
+outcomes, navigation cases, scheduling slots and bookings,
+therapy session records, telehealth visit records, measurement
+analytics, guideline references with recorded clinician
+decisions, device links and sync statuses, app-access
+registrations), and 4 closed as labeled reference
+implementations (EMR/EHR integration, AI/ML models,
+automation/workflows, hosting platform layer). The set stays
+untiered and the HARD PRIVACY RULE binds every new shape. See
+`BATCH.md` for the per-entry disposition. Suite: 136 tests,
+including a mutation-verified negative control on the new
+slot-capacity guard (exactly 2 failures under the mutant).

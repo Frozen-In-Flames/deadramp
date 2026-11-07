@@ -114,3 +114,59 @@ the pre-mutation copy (`scratch/nosignal_store_backup.py`) and
 verified SHA-256-identical to the shipped hash
 (`c83cd2d269cb08c5d259d7fc1b16f7d8a761df006e0e9e3889daa4d5c928c711`);
 the suite re-ran green: **91 tests, OK**.
+
+
+## Final GAPS batch (2026-11-07)
+
+The final GAPS batch adds `test_gaps_batch.py` (45 tests) and one
+new module, `src/health/extensions.py` (`HealthExtensions`,
+wrapping the core store; all six founding modules byte-identical).
+The 15 open entries of this set's GAPS.md section are closed by
+records plus deterministic derivations over the set's own records,
+or by labeled reference implementations for the stub-engine
+entries (EMR/EHR integration, AI/ML models & personalization,
+automation / workflow, hosting platform layer), under the
+decisions in `../../gaps-batch/DECISION.md` and
+`../../PLATFORM-LAYER.md`. See `../BATCH.md` for the per-entry
+disposition. The set's doctrines hold unchanged: tier null (the
+batch tests scan the whole extension surface for any
+tier/baseline-shaped key), the HARD PRIVACY RULE (records and
+opaque references only; the scan also asserts no
+diagnosis/clinical-note/identifier-shaped key anywhere, a
+forbidden keyword argument is a TypeError, and a smuggled key
+inside a survey answer dict is refused with nothing stored), not
+a medical device, no FDA status claimed.
+
+| Module | Pins |
+|---|---|
+| `test_gaps_batch.py` | The extension surface per entry: engagement channels/content and transport-labeled message receipts (nothing sent); survey instruments (questions are opaque refs) with numeric-only answers and derived per-question aggregates; EMR integration + sync-event records (`reference_stub: True`, `connected_here: False`); verification checks and claim records with recorded outcomes and derived current outcome/counts (no amount, insurer, or member-number field exists; `adjudicated_here`/`paid_here` False); navigation cases/steps with derived counts; slot capacity records with derived booked/remaining counts; therapy session records with derived totals; telehealth visit records (`media_channel_here: False`); measurement analytics as a deterministic derivation over core measurements; guideline reference records (`applied_here: False`) plus clinician decision labels recorded verbatim (`advice_generated_here: False`); device links/sync statuses (opaque device refs, `data_flows_here: False`, latest status derived); AI/ML model profiles + output references (`reference_stub: True`, `inference_here: False`); workflow definitions/runs (definitions are data, never executed); app-access registrations with derived platform counts; deployment posture records (`reference_stub: True`, summary states `build_tenancy: single_tenant_reference`); member scope, RBAC denials audited with `:denied`, extension audit actions prefixed `ext_`, no id consumed by a failed operation. |
+
+### Negative control for the batch (mutation-verified)
+
+The batch's load-bearing rule is the slot-capacity guard in
+`HealthExtensions._check_slot_capacity`: a booking past a slot's
+recorded capacity is refused whole. A subclass control
+(`TestCapacityNegativeControl`) shows the refusal disappears when
+the guard never fires, and the file-level mutation drill was
+performed on the shipped code:
+
+* Mutant: in `src/health/extensions.py`, the guard's condition
+  `if booked_count >= slot["capacity"]:
+      raise ValidationError(...)` neutralized to `if False:`
+  (pre-mutation copy and SHA-256 kept in `scratch/`; the
+  condition occurs exactly once).
+* Result: **exactly 2 failures** out of 136 --
+  `TestIntegratedScheduling.test_capacity_guard_refuses_overbooking_no_id_consumed`
+  and `TestCapacityNegativeControl.test_bookings_up_to_capacity_then_refused_canonical`.
+  Every other test passed.
+* The file was restored from the pre-mutation copy; SHA-256
+  verified identical; the full suite re-ran green (136/136).
+
+### Era rescope in `test_nosignal_addition.py` (disclosed)
+
+`TestNoSignalSpecIntegrity.test_shipped_sheets_deep_equal_git_head`
+asserted the sheets at git HEAD numbered exactly 3, true only
+before the no-signal addition itself was shipped (HEAD now holds
+4). The assertion is rescoped to the first three HEAD sheets --
+the era that test pins -- with the rescope and its reason stated
+in the test's docstring. Nothing else in the module changed.
