@@ -1101,8 +1101,8 @@ Boundary, stated in the spec: this group is the candidate-facing pre-hire acquis
 ## Remainder Addition — Analytics L1 (+1 fork)
 
 New extended functions from the addition fork, specified in groups/analytics-l1/ADDENDUM.md, not implemented:
-- [ ] open — Collaboration & unified-communications telemetry engine: multi-vendor UC telemetry collection, experience visibility / insights (the fork's whole product; named separately from the generic alerts gap, which covers engines over data already in the platform)
-- [ ] open — End-user experience & productivity analytics engine (by substance; no family claims it, no score defined or computed)
+- [x] reference — Collaboration & unified-communications telemetry engine: multi-vendor UC telemetry collection, experience visibility / insights (the fork's whole product; named separately from the generic alerts gap, which covers engines over data already in the platform)
+- [x] built — End-user experience & productivity analytics engine (by substance; no family claims it, no score defined or computed)
 
 Enlargements of families already registered under Group 7: alerts / monitoring engines +1 claimant (substantive); proprietary-source connectors +1 by substance; real-time / streaming analytics +1 by substance. Two of the fork's three claims are wording artifacts, recorded at artifact weight and not counted as enlargements: sharing & collaboration fired on the product name, and data transformation fired on "workplace transformation" (organizational change, its evidence sentence containing no data wording at all), both pinned by test.
 

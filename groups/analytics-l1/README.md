@@ -230,3 +230,25 @@ and the fresh mutation-verified negative control (transform
 run-count seam, exactly 2 failures under mutation) are recorded in
 `BATCH.md` and `tests/README.md`. Tests: **149 → 172, all
 passing**.
+
+## Final GAPS batch — remainder addition (2026-11-07)
+
+The 2 Extended entries the remainder addition fork registered
+(above) are closed by one further new module,
+`src/analytics/extensions_addition.py`
+(`AnalyticsExtensionsAddition`); all existing modules, including
+the first batch unit's `extensions.py`, are byte-identical. The
+collaboration & UC telemetry engine ships as a labeled reference
+implementation (`reference_stub: true`; telemetry arrives as
+reported aggregate counts only — nothing collects, connects, or
+ingests, and the core dataset set is pinned unchanged). The
+end-user experience & productivity analytics engine is built as
+profile definitions over core datasets plus the core's
+descriptive statistics over the recorded values and recorded
+experience observations — and, per the entry's own bound, **no
+score is defined or computed anywhere** on the surface (pinned
+by a recursive key scan). Per-entry dispositions and the fresh
+mutation-verified negative control (reported-counts sum seam,
+exactly 3 failures under mutation) are recorded in
+`BATCH-ADDITION.md` and `tests/README.md`. Tests: **172 → 190,
+all passing**.

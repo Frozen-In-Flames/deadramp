@@ -167,6 +167,50 @@ identical to the shipped extension hash) and the suite re-ran
 green (172 tests, OK). The mutant-run output is kept at
 `scratch/gaps_mutation_run.txt`.
 
+## Final GAPS batch — second unit: Remainder Addition — Analytics L1 (2026-11-07)
+
+`test_gaps_batch_addition.py` (18 tests) pins the second-unit
+extension surface in `src/analytics/extensions_addition.py`
+(`AnalyticsExtensionsAddition`, audit prefix `exta_`) for the
+"Remainder Addition — Analytics L1" section's 2 open entries:
+the collaboration & UC telemetry engine shipped as a labeled
+reference implementation (`reference_stub: True`;
+`collected_here` / `connected_here` / `ingested_here` False,
+reported aggregates only, core dataset set pinned unchanged by
+recording reports), and the end-user experience & productivity
+analytics engine built as profile definitions over core
+datasets plus the core's `describe` statistics over recorded
+values and recorded experience observations — with **no score
+defined or computed anywhere**: a recursive scan pins the
+absence of any score-shaped key on every record and view, and
+`score=` / `score_threshold=` arguments raise TypeError. Full
+per-entry dispositions are in `../BATCH-ADDITION.md`.
+
+**Suite: 172 → 190 tests, all passing.**
+
+**Fresh mutation-verified negative control** (for the new
+code): the reported-counts sum seam,
+`AnalyticsExtensionsAddition._sum_reported_counts`. The
+canonical expectation is that a reported total is the sum of
+every recorded report (4 + 3 sessions = 7; 300 + 150 minutes =
+450; 7 + 2 + 5 observed = 14). `test_gaps_batch_addition.py`
+states the expectation, asserts the real implementation meets
+it, and asserts — via a literal `assertRaises(AssertionError)`
+— that a first-count-echo subclass mutant is rejected by it.
+The drill was performed against the real file: the seam's
+return line (`return sum(counts)`, exactly one occurrence) was
+patched to `return counts[0] if counts else 0` and the full
+suite ran: **190 tests, exactly 3 failures** —
+`TestTelemetryReference.test_view_totals_are_sums_of_reports`,
+`TestExperienceBuilt.test_view_observation_rollup_derived_at_read`,
+and `TestReportedCountsNegativeControl.test_canonical_totals_sum_all_reports`,
+all in the new module and all tripping on a reported total
+exactly as designed. The file was restored from the
+pre-mutation copy (`scratch/extensions_addition.py.premutation`,
+SHA-256 `be2d1699…`, identical to the pre-drill hash) and the
+suite re-ran green (190 tests, OK). The mutant-run output is
+kept at `scratch/gaps_addition_mutation_run.txt`.
+
 ## Interpretation notes
 
 Where UNION-SPEC's contract left a shape open, the suite follows the
