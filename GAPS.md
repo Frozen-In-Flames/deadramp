@@ -953,13 +953,13 @@ No new extended functions; the addition enlarges families already registered und
 ## Remainder Addition — GRC L2 (+5 forks)
 
 New extended functions from the addition forks, specified in groups/grc-l2/ADDENDUM.md, not implemented:
-- [ ] open — Policy lifecycle management engine: authoring / approval / enforcement (policy records are Core; the lifecycle is an engine) (Anecdotes, MediaLab)
-- [ ] open — Agentic workflow execution engine (Anecdotes)
-- [ ] open — AI control-narrative & assessment-response generation / secure AI enclave (Kovr)
-- [ ] open — Data-integration connector engine (Workiva)
-- [ ] open — IT service management suite ITSM / ESM incl. CMDB / SLA (Halo fork excess)
-- [ ] open — Healthcare quality management suite (MediaLab fork excess)
-- [ ] open — Connected financial & regulatory reporting / publishing platform (Workiva fork excess)
+- [x] built — Policy lifecycle management engine: authoring / approval / enforcement (policy records are Core; the lifecycle is an engine) (Anecdotes, MediaLab)
+- [x] reference — Agentic workflow execution engine (Anecdotes)
+- [x] reference — AI control-narrative & assessment-response generation / secure AI enclave (Kovr)
+- [x] reference — Data-integration connector engine (Workiva)
+- [x] built — IT service management suite ITSM / ESM incl. CMDB / SLA (Halo fork excess)
+- [x] built — Healthcare quality management suite (MediaLab fork excess)
+- [x] built — Connected financial & regulatory reporting / publishing platform (Workiva fork excess)
 
 Enlargements of families already registered under Group 33: automated evidence-validation engine incl. collection (+Kovr, Anecdotes by substance); continuous-monitoring feeds (+3 claimants); automated KSI validation (+Halo by substance); FedRAMP package generation (+Kovr). Posture / risk scoring engines gain no claimants, and no score is computed anywhere in the enlarged build. Absence retirement: the group's two standing named absences, risk_management and policy_management, are retired by this addition — newcomers claim both, and each claim buys its records form under the standard treatment (assessments and findings as records; policy documents as evidence records), with the policy lifecycle registered above as the genuinely new engine gap.
 

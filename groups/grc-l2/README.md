@@ -203,6 +203,35 @@ doctrine holds on the new surface: counts only, no computed
 score anywhere, statuses and values verbatim, derivations at
 read. Suite after the batch: **161 tests, OK**.
 
+## Final GAPS batch (unit: the remainder-addition section)
+
+The seven Extended functions registered under the **Remainder
+Addition — GRC L2 (+5 forks)** section are now covered by
+`src/grc/extensions_addition.py` (`GrcExtensionsAddition` over
+the unchanged core; per-entry record in `BATCH-ADDITION.md`).
+Four close built in records form: policy lifecycles over the
+policies' Core records forms, with an append-only stage-event
+stream, the current stage derived at read, and the
+filer-may-not-approve separation; the ITSM suite as
+configuration-item records, ticket records whose status is
+derived at read from their event streams, and SLA policies
+held as data with nothing evaluated; the healthcare quality
+suite as personnel records keyed by opaque references,
+certification records whose currency is derived at read from
+the recorded expiry, and verbatim training / quality-event /
+maintenance records; and connected reporting as report records
+whose data points hold reported values verbatim as labels,
+never summed or rolled up. Three close as labeled reference
+implementations, as drafted: agentic workflow definitions,
+runs, and reports (nothing executes, and a report changes no
+core record); AI narrative generation requests and reports
+(no text is generated or held here; a report references the
+core evidence record a generated artifact was filed as, and
+the L3 prediction-records ruling is distinguished from this
+shape in `BATCH-ADDITION.md`); and data-integration connector
+definitions and sync receipts (a receipt imports nothing).
+Suite after the addition batch: **194 tests, OK**.
+
 ## Control mapping summary
 
 Against the NIST SP 800-53 Rev. 5 families the seeded catalog draws

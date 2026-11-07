@@ -138,6 +138,54 @@ verified identical to the pre-mutation hash) and the suite
 re-run: **161 tests, OK**. Status after the batch:
 **161 tests, OK**.
 
+## Final GAPS batch module — remainder-addition unit
+
+| File | Covers (Batch, addition section) |
+|---|---|
+| `test_gaps_batch_addition.py` | Second batch unit's extension surface (`src/grc/extensions_addition.py`, entries idx 571–577; dispositions in `../BATCH-ADDITION.md`) — policy lifecycle records over evidence/framework subjects (bad subject and unknown subject rejected, no id consumed), the stage-event transition table (illegal transitions rejected whole, rejected → redraft → retire path, retired terminal), the filer-may-not-approve separation (denied approval consumes no event id), agent definitions / runs / reports (a run and its report leave the core posture identical and create no core finding, assessment, or result), generation requests / reports (bad kind and unknown assessment rejected; a report leaves the core assessment byte-identical, creates no core evidence, and rejects an unknown filed-evidence reference), connector definitions / sync receipts (non-integer counts rejected; a receipt reporting 500 records imports no core records), configuration items (duplicate reference rejected, `discovered_here: False`), tickets (stored record carries no status; current status derived at read from the event stream), SLA policies held as data (`evaluated_here: False`), personnel records (exact key set — opaque references only), certification records (currency derived at read: current on the expiry date, expired after it; malformed date rejected), verbatim training / quality-event / corrective-action / maintenance records, connected-report records (data-point values verbatim as labels; the derived view's counts track registry state while the stored record gains no figure), the viewer denied every addition write, addition writes audited under `exta_` actions, and the no-score recursive scan over every addition record kind and view |
+
+**Addition negative control (fresh, for the new code).**
+`TestPolicyStageDerivationNegativeControl` pins the policy
+lifecycle's current stage: it is *derived at read* from the
+stage-event stream by the single seam `_derive_policy_stage`
+in `extensions_addition.py` — the stage of the most recent
+event. For the canonical stream (drafted → in_review →
+approved) the real derivation separates it as `"approved"`;
+the first-event mutant (an in-suite function reading
+`events[0]`) collapses it to `"drafted"`, and treating the
+mutant's output as the expected output fails via a literal
+`assertRaises(AssertionError)`.
+
+**Addition mutation verification.** VERIFIED by the addition
+batch build worker (2026-11-07). The seam's
+`return events[-1]["stage"]` line in the real
+`src/grc/extensions_addition.py` (occurrence count asserted 1
+before patching) was replaced with
+`return events[0]["stage"]` and the full suite was run:
+**194 tests ran, exactly 9 errors**, all in
+`test_gaps_batch_addition.py` — the mutant freezes the derived
+stage at `drafted`, so the `approved` transition is itself
+rejected and every flow that drives a lifecycle to approval
+errors:
+
+- `test_gaps_batch_addition.TestPolicyLifecycle.test_stage_flow_derives_current_stage_at_read`
+- `test_gaps_batch_addition.TestPolicyLifecycle.test_illegal_transition_rejected_and_consumes_no_id`
+- `test_gaps_batch_addition.TestPolicyLifecycle.test_approval_separation_of_duties`
+- `test_gaps_batch_addition.TestPolicyStageDerivationNegativeControl.test_real_derivation_separates_the_canonical_pair`
+- `test_gaps_batch_addition.TestPolicyStageDerivationNegativeControl.test_mutant_collapses_to_the_first_event`
+- `test_gaps_batch_addition.TestPolicyStageDerivationNegativeControl.test_mutant_output_as_expectation_fails`
+- `test_gaps_batch_addition.TestAdditionInvariants.test_no_score_keys_anywhere_on_the_addition_surface`
+- `test_gaps_batch_addition.TestAdditionInvariants.test_addition_writes_audited_under_exta_actions`
+- `test_gaps_batch_addition.TestAdditionInvariants.test_addition_summary_counts`
+
+`extensions_addition.py` was then restored from the
+pre-mutation copy kept at
+`../scratch/extensions_addition.py.premutation` (SHA-256
+b5e82fe296446b9c956f42757522abbbca704986db1db2d7c8bcd52425ca192a,
+verified identical to the pre-mutation hash) and the suite
+re-run: **194 tests, OK**. Status after the addition batch:
+**194 tests, OK**.
+
 ## Interpretation notes
 
 Where the contract left a shape open, the suite follows the
