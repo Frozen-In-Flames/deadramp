@@ -128,6 +128,45 @@ tripping on its `describe` mean assertion exactly as designed.
 — and the suite re-ran green (149 tests, OK). The failure list is
 kept at `scratch/additions_mutation_failures.txt`.
 
+## Final GAPS batch — unit "Group 7 — Analytics L1 (16 forks)" (2026-11-07)
+
+`test_gaps_batch.py` (23 tests) pins the extension surface in
+`src/analytics/extensions.py` (`AnalyticsExtensions`) for the
+section's 8 open entries: collaboration, archiving, transformation,
+and text/NLP built as records plus deterministic derivations over
+the core; real-time/streaming, proprietary-source connectors,
+predictive ML, and alerts/monitoring shipped as labeled reference
+implementations (`reference_stub: True`; `streamed_here`,
+`connected_here`/`synced_here`, `predicted_here`/`inference_here`,
+and `monitored_here` all False, with no train/predict/evaluate
+method on the surface). Full per-entry dispositions are in
+`../BATCH.md`.
+
+**Suite: 149 → 172 tests, all passing.**
+
+**Fresh mutation-verified negative control** (for the new code; the
+group's founding avg-as-sum drill above is unchanged): the
+transform run-count seam, `AnalyticsExtensions._derive_rows_out`.
+The canonical expectation is that a transform run over the
+canonical sales dataset with a `region eq north` definition derives
+exactly the 3 north rows and that its run record reports
+rows_in 5 / rows_out 3. `test_gaps_batch.py` states the expectation,
+asserts the real implementation meets it, and asserts — via a
+literal `assertRaises(AssertionError)` — that a rows_out-echo
+subclass mutant (rows_out := rows_in) is rejected by it. The drill
+was performed against the real file: the seam's return line
+(`return result["row_count"]`, exactly one occurrence) was patched
+to `return rows_in` and the full suite ran: **172 tests,
+2 failures** — `TestTransform
+.test_run_derives_through_core_and_records_counts_only` and
+`TestTransformNegativeControl.test_mutant_is_rejected`, both in the
+new module and both tripping on the run record's rows_out exactly
+as designed. The file was restored from the pre-mutation copy
+(`scratch/extensions.py.premutation_gaps`, SHA-256 `d6e1a389…`,
+identical to the shipped extension hash) and the suite re-ran
+green (172 tests, OK). The mutant-run output is kept at
+`scratch/gaps_mutation_run.txt`.
+
 ## Interpretation notes
 
 Where UNION-SPEC's contract left a shape open, the suite follows the

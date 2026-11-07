@@ -97,14 +97,14 @@ Platform note: encryption is TLS when configured; at rest is deployment-layer. D
 ## Group 7 — Analytics L1 (16 forks)
 
 Extended functions, specified in groups/analytics-l1/UNION-SPEC.md, not implemented (8):
-- [ ] open — Real-time / streaming (8 of 16 — joint-largest family in this group, its biggest gap)
-- [ ] open — Proprietary-source connectors (5) — core covers open CSV/JSON only
-- [ ] open — Predictive ML, remainder of the statistics/ML family (5)
-- [ ] open — Alerts / monitoring (3)
-- [ ] open — Collaboration (3)
-- [ ] open — Archiving (2)
-- [ ] open — Transformation (1)
-- [ ] open — Text / NLP (1)
+- [x] reference — Real-time / streaming (8 of 16 — joint-largest family in this group, its biggest gap)
+- [x] reference — Proprietary-source connectors (5) — core covers open CSV/JSON only
+- [x] reference — Predictive ML, remainder of the statistics/ML family (5)
+- [x] reference — Alerts / monitoring (3)
+- [x] built — Collaboration (3)
+- [x] built — Archiving (2)
+- [x] built — Transformation (1)
+- [x] built — Text / NLP (1)
 
 Platform-layer, gap-listed not claimed: encryption at rest (deployment layer); production identity/authenticator strength (demo identities are hooks; IA-2 stays with the embedding organization); TLS only when configured. Tier precision recorded in the spec: the union of Low and LI-SaaS baselines is NIST SP 800-53 Low (LI-SaaS is a tailored subset, adds nothing); audit traces to the AU family on the FedRAMP Low side only, because FAR 52.204-21 carries no audit practice; Moderate/High apparatus was deliberately not inherited downward. Seven taxonomy functions (geospatial, governance, encryption, KPI, self-service BI, scheduling, media) are claimed by zero siblings in this group and are absent from its union entirely.
 

@@ -212,3 +212,21 @@ the Low/L1 baseline is untouched, and the group's signature
 avg-mutant drill was re-run against the enlarged suite (13 failures
 under mutation: the original 12 plus the additions substrate case).
 Tests: **136 → 149, all passing**.
+
+## Final GAPS batch (2026-11-07)
+
+The 8 Extended entries registered for this group in the repo's
+final GAPS batch are closed by one new module,
+`src/analytics/extensions.py` (`AnalyticsExtensions`); all 10 core
+modules are byte-identical. Collaboration, archiving,
+transformation, and text/NLP (in the request-records form: requests
+plus results as opaque refs or verbatim reported labels,
+`analyzed_here: false`) are built as records plus deterministic
+derivations over the core. Real-time/streaming, proprietary-source
+connectors, predictive ML, and alerts/monitoring ship as labeled
+reference implementations (`reference_stub: true`; nothing streams,
+connects, predicts, evaluates, or fires). Per-entry dispositions
+and the fresh mutation-verified negative control (transform
+run-count seam, exactly 2 failures under mutation) are recorded in
+`BATCH.md` and `tests/README.md`. Tests: **149 → 172, all
+passing**.
