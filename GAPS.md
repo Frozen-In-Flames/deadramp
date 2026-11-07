@@ -76,21 +76,21 @@ Platform note: encryption is TLS when configured; at rest is deployment-layer.
 ## Group 5 — Accounting L2 (21 forks)
 
 Extended families, specified in groups/accounting-l2/UNION-SPEC.md, not implemented:
-- [ ] open — AI / analytics & BI
-- [ ] open — Project / program / portfolio management
-- [ ] open — Risk register / GRC suites (separation of duties, approvals, and the audit trail are the in-core seed)
-- [ ] open — Audit management workbenches (the core carries the audit trail, not audit management)
-- [ ] open — Fixed-asset registers
-- [ ] open — Records retention
-- [ ] open — Forecasting / EPM
-- [ ] open — Supply chain
-- [ ] open — GovCon / grants
-- [ ] open — Crypto investigation
-- [ ] open — Time tracking
-- [ ] open — E-signature
-- [ ] open — Payroll
-- [ ] open — Tax
-- [ ] open — Forensic investigation
+- [x] built — AI / analytics & BI
+- [x] built — Project / program / portfolio management
+- [x] built — Risk register / GRC suites (separation of duties, approvals, and the audit trail are the in-core seed)
+- [x] built — Audit management workbenches (the core carries the audit trail, not audit management)
+- [x] built — Fixed-asset registers
+- [x] built — Records retention
+- [x] built — Forecasting / EPM
+- [x] built — Supply chain
+- [x] built — GovCon / grants
+- [x] built — Crypto investigation
+- [x] built — Time tracking
+- [x] reference — E-signature
+- [x] built — Payroll
+- [x] built — Tax
+- [x] built — Forensic investigation
 
 Platform note: encryption is TLS when configured; at rest is deployment-layer. Documented wording gap (not papered over): no sibling description says "general ledger," "double-entry," "payable," or "receivable"; the double-entry journal is in the core as the defining mechanism of the accounting_core family (8 siblings), and standalone AP/AR modules were not invented.
 

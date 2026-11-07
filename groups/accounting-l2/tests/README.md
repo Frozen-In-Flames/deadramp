@@ -105,3 +105,32 @@ tolerant of the remaining freedom:
   contract pins it (account activity is in entry creation order);
   trial-balance, budget-vs-actual, and statement rows are looked up by
   `account_id`.
+
+## Final GAPS batch (2026-11-07)
+
+`test_gaps_batch.py` (27 tests) pins the extension surface in
+`../src/accounting/extensions.py` (`AccountingExtensions`): one class
+per GAPS.md entry for this group (see `../BATCH.md` for the per-entry
+disposition), plus cross-cutting pins — non-member and viewer denials,
+`ext_`-prefixed actions on the core audit log, exact record shapes
+with no PII-capable field, float/bool rejection at money boundaries,
+derived-never-stored values (project spend, risk exposure, asset book
+value, grant drawn, payroll net, tax due), and the e-signature stub
+label (`reference_stub: True` on every signature-request record).
+
+### Batch mutation verification
+
+VERIFIED by the coordinator (2026-11-07). The signature guard of the
+GovCon / grants extension, `_check_draw_within_ceiling` in
+`src/accounting/extensions.py`, was patched from
+`if drawn_cents + amount_cents > ceiling_cents:` to `if False:` —
+computing the totals but never comparing them against the award
+ceiling — and the full suite was run: **246 tests ran, 1 failed**
+(`test_gaps_batch.TestGovConGrants.test_draw_beyond_ceiling_rejected_whole`).
+`extensions.py` was then restored from a pre-mutation copy (SHA-256
+verified identical to the pre-mutation hash,
+`16d0548e59aadfc7952606c2141dee1abb6d0f5b0f8d3f833f0b6d4667ab185f`)
+and the suite re-run: **246 tests, OK**.
+
+Full suite status after the batch: **246 tests, OK** (219 at
+delivery + 27 batch tests).

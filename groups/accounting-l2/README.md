@@ -270,3 +270,20 @@ Further, plainly:
   certification**, and it does not claim either. The control
   mapping above states which baseline families the build's
   features answer to; nothing more.
+
+## Final GAPS batch (2026-11-07)
+
+The 15 GAPS.md entries for this group are closed by the batch in
+`src/accounting/extensions.py` (`AccountingExtensions`, a wrapper
+around the core store; the core modules are unchanged): the 14
+Extended families listed under "Honesty" above are now implemented
+as in-substrate records/derivation extensions (deterministic
+analytics, projects, risk register, audit-management workbenches,
+fixed-asset registers, retention, forecasting, supply-chain records,
+GovCon/grants with a ceiling guard, crypto-investigation records,
+time tracking, payroll records, tax computation, forensic cases with
+chain of custody), and e-signature ships as a labeled reference
+implementation (`reference_stub: True` on every record; nothing is
+signed). Per-entry detail: `BATCH.md`. Suite: **246 tests, OK**,
+including a fresh mutation-verified negative control on the grant
+ceiling guard (see `tests/README.md`).
