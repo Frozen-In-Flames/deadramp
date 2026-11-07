@@ -313,6 +313,42 @@ verified); tests: 134 → 184, all passing, including a fresh
 mutation-verified negative control on the new shift-overlap
 guard — see `tests/README.md`.
 
+## Final GAPS batch, second unit — Remainder Addition (2026-11-07)
+
+The remainder addition's own 13 open entries are closed in
+one further new module, `src/opsmgmt/verticals.py` (class
+`OpsVerticals`, wrapping the core store; per-entry record in
+`BATCH-ADDITION.md`). The twelve named vendor verticals land
+as records surfaces over this group's substrate: managed
+print devices, integer meter readings, and print jobs with
+reported statuses; supply-chain shipments, orders, and
+inventory quantities; PLM products, revisions, and changes;
+ITSM tickets with recorded states and separated change
+approvals; maintenance plans, issues, and materials;
+facilities, spaces, leases in integer cents as data, and
+move requests; case records for EEO/FOIA and the other case
+types with evidence held as opaque references only,
+decisions under a decider-not-opener guard, and FOIA
+production as a recorded reported state; process models
+with reported-analysis records (nothing mined); mail and
+package items with reported states (nothing tracked live);
+portfolio, initiative, and roadmap records (priority as
+verbatim data, nothing ranked); ERP journal and payroll
+records in integer cents (nothing posted or paid); and
+contract, milestone, progress (percent stored as reported,
+never computed), and finance records. The thirteenth entry,
+enterprise asset management depth (predictive maintenance,
+asset health, IoT telemetry analytics), ships as a labeled
+reference implementation (`reference_stub: True`): reported
+labels and reported counts only, with no prediction, health
+score, or analytics value computed. Nothing in this unit
+prints, moves, resolves, tracks, posts, pays, releases,
+mines, or predicts. All pre-existing modules, including the
+first batch unit's `extensions.py`, are byte-identical
+(SHA-256 verified); tests: 184 → 228, all passing, including
+a fresh mutation-verified negative control on the new
+decider guard — see `tests/README.md`.
+
 ## Honesty: what is NOT in this build
 
 - **Extended capabilities are NOT implemented.** No workflow

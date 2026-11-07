@@ -897,19 +897,19 @@ Platform-layer: the commercial SaaS / PaaS offerings the fork integrates are its
 ## Remainder Addition — Operations Management L2 (+20 forks)
 
 New extended functions from the addition forks, specified in groups/operations-management-l2/ADDENDUM.md, not implemented:
-- [ ] open — Managed print services engine (Canon, Xerox)
-- [ ] open — Supply chain & logistics execution suite (Manhattan)
-- [ ] open — Product lifecycle management (PLM) platform (PTC)
-- [ ] open — IT service management (ITSM) suite (Ivanti)
-- [ ] open — Infrastructure maintenance management system (InfraLink)
-- [ ] open — Facilities & real property management suite / IWMS (FM:Systems, GoRPM, IBM TRIRIGA overlap)
-- [ ] open — Case management platforms incl. EEO + FOIA (Tyler Federal, AINS eCase)
-- [ ] open — Business process modeling, process mining & enterprise architecture platform (Software AG ARIS / ALFABET)
-- [ ] open — Mail & package operations (Pitney Bowes)
-- [ ] open — Strategic portfolio & agile planning platforms (Clarity, Rally)
-- [ ] open — Back-office ERP suite (Accenture)
-- [ ] open — Contract progress management application (iSite)
-- [ ] open — Enterprise asset management depth: predictive maintenance / asset health / IoT telemetry analytics (IBM Maximo)
+- [x] built — Managed print services engine (Canon, Xerox)
+- [x] built — Supply chain & logistics execution suite (Manhattan)
+- [x] built — Product lifecycle management (PLM) platform (PTC)
+- [x] built — IT service management (ITSM) suite (Ivanti)
+- [x] built — Infrastructure maintenance management system (InfraLink)
+- [x] built — Facilities & real property management suite / IWMS (FM:Systems, GoRPM, IBM TRIRIGA overlap)
+- [x] built — Case management platforms incl. EEO + FOIA (Tyler Federal, AINS eCase)
+- [x] built — Business process modeling, process mining & enterprise architecture platform (Software AG ARIS / ALFABET)
+- [x] built — Mail & package operations (Pitney Bowes)
+- [x] built — Strategic portfolio & agile planning platforms (Clarity, Rally)
+- [x] built — Back-office ERP suite (Accenture)
+- [x] built — Contract progress management application (iSite)
+- [x] reference — Enterprise asset management depth: predictive maintenance / asset health / IoT telemetry analytics (IBM Maximo)
 
 Enlargements of families already registered under Group 36: the workflow automation execution engine is now asserted by 7 of 22 forks (adds the RPA / process-automation platforms UiPath and Bizagi); integration connector engines & catalog now 2 of 22 (adds IBM webMethods). Absence update: scheduling & rostering and IoT / telematics remain at zero taxonomy claims and unbuilt, but are no longer universal absences in this category (InfraLink asserts scheduling substance; IBM asserts IoT integration substance).
 

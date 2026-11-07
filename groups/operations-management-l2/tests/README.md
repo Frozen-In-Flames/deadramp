@@ -226,3 +226,59 @@ test still passes against the mutant, as expected):
 and verified **SHA-256 identical** to the pre-mutation file, and
 the suite re-run: **184 tests, OK**. Raw drill output:
 `scratch/gaps_mutation_run.txt`.
+
+## Final GAPS batch — Remainder Addition unit (second batch unit)
+
+The second batch unit in this directory closes the 13 open
+entries of the "Remainder Addition — Operations Management L2
+(+20 forks)" GAPS.md section in one new module,
+`src/opsmgmt/verticals.py` (class `OpsVerticals`, wrapping the
+core store), tested by `test_gaps_batch_addition.py` (44
+tests). The first unit's `src/opsmgmt/extensions.py` and
+`test_gaps_batch.py` are part of the shipped tree and stay
+byte-identical (SHA-256 verified: `extensions.py`
+`3c2da202bb3eca5d91f8f37c4376ca4acf84d1980c451d70626ba24d28333db7`,
+`store.py`
+`8fe67ec242573e5d001071174ea4853fee74995ccc0f3ce02fd1a25f0bc411a6`),
+as do all seven pre-existing core modules. Twelve entries
+land as records surfaces for the named vendor verticals
+(managed print, supply chain, PLM, ITSM, infrastructure
+maintenance, facilities/IWMS, case management incl. EEO +
+FOIA, process modeling/mining records, mail & package,
+portfolio/agile planning, back-office ERP records, contract
+progress), each with lifecycles held as recorded/reported
+states and counts/totals derived at read; nothing prints,
+moves, auto-resolves, tracks live, posts, releases, or mines.
+One entry (enterprise asset management depth / Maximo) ships
+as a labeled reference implementation (`reference_stub:
+True`; reported labels and counts only, nothing predicted or
+computed). Per-entry record: `../BATCH-ADDITION.md`. Suite
+status for the group: **228 tests, OK**.
+
+Negative control for this unit (fresh, on the new code): the
+case decider-not-opener guard `_check_decider_not_opener` in
+`src/opsmgmt/verticals.py` — the actor who records a decision
+on a case may never be the actor who opened it. The in-test
+control (`TestDeciderNotOpenerNegativeControl`) asserts the
+canonical expectation, that a no-op mutant of the seam would
+not produce it, and that treating the mutant's outcome as
+expected fails. A live mutation drill was then run on the
+real file: a copy was saved to
+`scratch/verticals.py.premutation` (pre-mutation SHA-256
+`8fb9943f0680f74abfad35d9e9ca9483cdaee14f598dfd5e550fe1be1be8131b`,
+`scratch/verticals.py.sha256`), the guard's condition was
+patched to `False` (guard disabled), and the full suite was
+re-run: **228 tests ran, exactly 2 failed** — the canonical
+opener-may-not-decide assertion and the negative-control
+pin — which is the expected failure set for a disabled
+decider guard (every other test still passes against the
+mutant, as expected):
+
+- `test_gaps_batch_addition.TestCaseManagement.test_opener_may_not_decide_canonical`
+- `test_gaps_batch_addition.TestDeciderNotOpenerNegativeControl.test_decider_guard_canonical_but_mutant_not`
+
+`verticals.py` was restored from
+`scratch/verticals.py.premutation` and verified **SHA-256
+identical** to the pre-mutation file, and the suite re-run:
+**228 tests, OK**. Raw drill output:
+`scratch/gaps_addition_mutation_run.txt`.
