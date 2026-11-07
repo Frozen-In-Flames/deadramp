@@ -315,3 +315,37 @@ tier is recorded then and not before.
   stand in Liferay's prose as substance without standing as
   claims. Nothing was back-filled to make the set look
   complete.
+
+## Final GAPS batch (2026-11-07)
+
+The twelve open gap entries registered for this set are closed
+by the batch unit recorded in [`BATCH.md`](BATCH.md), under the
+ratified triage in `../../gaps-batch/DECISION.md`. The unit adds
+one module, `src/cms/extensions.py` (`CmsExtensions`, a records
+register wrapping the core store); all seven core modules are
+byte-identical to the accounting above, and tier stays null —
+the extension surface carries no tier, baseline, or equivalence
+key anywhere (pinned by a recursive scan in the new tests).
+
+Five entries closed as built records forms over the core
+registry: template & fragment definition records (held as data,
+versioned, `rendered_here: False` — nothing renders or serves);
+personalization segment/subject/rule records with matching
+derived at read time by deterministic presence/equality checks
+over recorded attributes (no optimization computed, no content
+served); versioning depth (revision chains derived from core
+revisions, comparison records with verbatim labels and no diff
+computed, asset version groups over core assets); low-code
+application/form definition records (held as data, never
+executed or rendered); and locale records with derived
+multi-site counts. Seven entries closed as labeled reference
+implementations (`reference_stub: True`, records only):
+enterprise search indexing, editorial workflow engines,
+document generation, identity federation/SSO (hook records
+only, `identity_provider: False` — this build is not an IdP),
+headless delivery, CDN/runtime serving, and platform hosting.
+Suite: **135 tests, OK** (109 at this set's delivery + 26 batch
+tests in `tests/test_gaps_batch.py`, including a fresh
+mutation-verified negative control for the personalization
+matching seam — exactly 5 failures under the drill mutant; see
+`tests/README.md`).

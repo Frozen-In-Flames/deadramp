@@ -121,3 +121,63 @@ the item; a viewer (erin) site create → 403; the audit log as
 alice/admin shows 13 entries including `:denied` records for the
 denied attempts, and `/audit` as bob/publisher → 403. **SMOKE
 OK.**
+
+## Final GAPS batch coverage (Untiered Set 14, 2026-11-07)
+
+The batch unit for this set added `../src/cms/extensions.py`
+(`CmsExtensions`, a records register wrapping the core store)
+and `test_gaps_batch.py` (26 tests) pinning the extension
+surface for the twelve open entries of this set's GAPS.md
+section. Existing content above is unchanged; the core suite is
+untouched and the core modules are byte-identical.
+
+| File | Covers |
+|---|---|
+| `test_gaps_batch.py` | Final GAPS batch, Untiered Set 14 — templates & fragments (record shape, `rendered_here` False pinned, placeholder names derived at read and absent from the stored record, update versioning with history, viewer write denied with no id consumed, audit action recorded); personalization (segment/subject/rule records, match derived at read — matched-condition counts for full/partial/non matches, aggregate match counts derived, rule view derives and serves nothing, subject re-record replaces attributes keeping the id, unknown subject → `NotFoundError`, bad conditions rejected with no id consumed); versioning depth (item version chain derived from core revisions, comparison records with verbatim labels and `diff_computed_here` False, unknown revision rejected with no id consumed, asset version groups with derived member counts, duplicate membership and unknown asset rejected); low-code definitions (held as data, deep-copied at the boundary, `executed_here`/`rendered_here` False, update versioning, non-object definition rejected); multi-site locales (locale records with per-site code uniqueness, item linkage with same-site enforcement and duplicate rejection, per-site and multi-site summaries derived); the seven reference stubs (labels pinned per family — `reference_stub` True throughout; search index `indexing_performed_here` False with engine-reported run counts stored as reported and core search unchanged; workflow engine definitions as data with a core item pinned unchanged/`draft`; document generation `generated_here` False with opaque package references; identity hook `hook_only` True / `identity_provider` False with the protocol label verbatim; headless delivery receipts `reference_transport` True / `delivered_here` False; CDN `served_here` False; hosting `hosted_here` False with the substrate label recorded); tier discipline (recursive scan over every extension record type and view asserting no tier/baseline/impact/score-shaped key exists anywhere on the surface); the batch's fresh negative control (below) |
+
+Suite status for the batch unit: **135 tests, OK** (109 before,
+26 added).
+
+## Negative control (batch — personalization matching seam)
+
+`test_gaps_batch.py`'s `TestConditionNegativeControl`
+implements the batch's fresh mutant for the new code: the
+traced claim is that **a subject matches a segment only when
+every recorded condition holds against the subject's recorded
+attributes**, and `cms.extensions._condition_holds` is the
+single derivation seam for that claim. The mutant replaces the
+seam with a wave-through (`lambda cond, attrs: True`). For each
+canonical case (an `equals` condition the subject fails, in
+both `segment_match` and `segment_match_counts`) the test
+asserts three things: the canonical expectation (no match /
+zero matching, from the real seam), that the mutant would NOT
+produce that expectation (it matches / counts one), and — via a
+literal `assertRaises(AssertionError)` — that treating the
+mutant's outcome as the expected outcome fails.
+
+## Mutation verification (batch drill)
+
+VERIFIED by the builder (2026-11-07), live drill performed on
+the real implementation. The equality branch of
+`_condition_holds` in `src/cms/extensions.py` (the line
+`return attributes.get(key) == condition["value"]`, occurring
+exactly once, count asserted before patching) was patched to
+`return True`, so an `equals` condition holds even when the
+subject's recorded value differs. The full suite ran: **135
+tests ran, exactly 5 failed** —
+
+- `test_gaps_batch.TestPersonalization.test_match_derived_at_read`
+- `test_gaps_batch.TestPersonalization.test_match_counts_derived`
+- `test_gaps_batch.TestPersonalization.test_rule_view_derives_and_serves_nothing`
+- `test_gaps_batch.TestConditionNegativeControl.test_equals_condition_canonical_but_mutant_not`
+- `test_gaps_batch.TestConditionNegativeControl.test_counts_canonical_but_mutant_not`
+
+No core-suite test failed under the mutant (the core does not
+call the extension seam). `extensions.py` was then restored
+from the pre-mutation copy (`../scratch/extensions.py.premutation`)
+and verified **SHA-256 identical**
+(`78797954a15a533ff6e228c08bd47ad9ab7c589ea0572b6dba5e0226119d89bc`,
+recorded in `../scratch/extensions.py.sha256`) and the suite
+re-run: **135 tests, OK**. Raw drill output:
+`../scratch/gaps_batch_mutation_run.txt`. The suite catches
+this defect class; the negative control is not decorative.

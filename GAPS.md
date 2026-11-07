@@ -1587,18 +1587,18 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## Untiered Set 14 — Content Management System (CMS) (2 forks, tier null)
 
 New extended functions from this set, specified in groups/cms-untiered/UNION-SPEC.md, not implemented (standing founding gaps with no claimant or substance here — library ILS vertical, BPM/case depth, participant engagement vertical, bulk ingestion engines — remain registered under the founding group and are not re-registered):
-- [ ] open — Enterprise search indexing engines (one claimant, at catalogue weight)
-- [ ] open — Rendering & templating engines and visual/WYSIWYG editors
-- [ ] open — Personalization / experience optimization
-- [ ] open — Editorial workflow engines beyond lifecycle mechanics
-- [ ] open — Document & media versioning depth
-- [ ] open — Document generation engines (one fork's whole function, with no family in the taxonomy)
-- [ ] open — Low-code application builders & form engines
-- [ ] open — Identity federation / SSO services (IdP)
-- [ ] open — Multi-site & multilingual site operations depth
-- [ ] open — Headless delivery & integration engines
-- [ ] open — CDN / delivery network and runtime site serving
-- [ ] open — Platform hosting itself
+- [x] reference — Enterprise search indexing engines (one claimant, at catalogue weight)
+- [x] built — Rendering & templating engines and visual/WYSIWYG editors
+- [x] built — Personalization / experience optimization
+- [x] reference — Editorial workflow engines beyond lifecycle mechanics
+- [x] built — Document & media versioning depth
+- [x] reference — Document generation engines (one fork's whole function, with no family in the taxonomy)
+- [x] built — Low-code application builders & form engines
+- [x] reference — Identity federation / SSO services (IdP)
+- [x] built — Multi-site & multilingual site operations depth
+- [x] reference — Headless delivery & integration engines
+- [x] reference — CDN / delivery network and runtime site serving
+- [x] reference — Platform hosting itself
 - [x] re-scoped — Platform layer (encryption at rest, TLS-when-configured, multi-tenancy, demo identities not an IdP)
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. One claim stands, at catalogue weight inside a first-party capabilities list; the category's no-zero-claims floor, already fallen at the tiered addition, falls here too, recorded not repaired — the zero-claim fork's whole function, document generation, has no family. The documented control claims stand at access control and identification, both at prose weight (role-based permissions; single sign-on via SAML and OpenID Connect), traced to sentences and never converted to taxonomy claims; a SOC 2 sentence is recorded at compliance-assertion weight, and every other family is listed as not documented. One of twelve core functions is claim-supported; eleven are carried, not claimed.
