@@ -94,3 +94,56 @@ verbatim outcome label; a video interview; and a report asserting
   mutation action names in order; denials at the HTTP layer are
   recorded by the service with a `:denied` suffix, and store-level
   failures record nothing, so nothing is double-counted.
+
+## Final GAPS batch (Remainder Group 3 section)
+
+`test_gaps_batch.py` (36 tests) pins the batch extension surface
+(`src/talentmgmt/extensions.py`, `TalentMgmtExtensions`) that
+closes the 7 open entries of this group's GAPS.md section — see
+`BATCH.md` in the group directory for the per-entry disposition.
+The full suite is now **135 tests, all passing** (99 founding +
+36 batch). The batch tests pin: the two labeled reference
+implementations (video session and delivery session records with
+`reference_stub: True`; automation run records likewise), the
+reported-label forms for predictions and ROI figures (a numeric
+ROI figure is refused whole), the venue / attendance-report /
+invitation records for virtual events (an attendance report
+changes nothing in the core registry; an invitation is a
+`reference_transport` record, never a send), the no-move pin for
+automation reports (a reported run changes no core placement and
+creates no core movement), the derived analytics snapshot
+(deterministic counts; the core report's 18 keys carried whole),
+development progress derived from milestone check-offs and never
+stored, exact key sets for all fourteen extension record kinds,
+a recursive no-banned-key / no-score-key / no-float scan over
+every extension record and derived view, TypeError on smuggled
+substance kwargs, signature scans, and RBAC/audit parity with the
+core (viewer denial audited as `:denied`; non-member blocked by
+the core membership boundary).
+
+### Fresh negative control — development module bounds
+
+`TestNegativeControlModuleBounds` in `test_gaps_batch.py` proves
+the batch's signature seam load-bearing:
+`_check_development_module_bounds` in `extensions.py` — a
+module-milestone's `module_index` must name a module of the
+enrollment's program, `0 <= module_index < len(modules)`,
+checked before anything is stored (the extension's analogue of
+the founding stage bounds rule). A subclass mutant makes the
+seam a no-op and accepts an out-of-bounds check-off (index 99),
+after which the derived progress view raises `IndexError`
+because the stored index names no module; the canonical surface
+rejects the same call whole and consumes no id.
+
+The drill was also run live against the real module on
+2026-11-07: `_check_development_module_bounds`'s body was
+replaced with `return None` in the real `extensions.py`, the
+full suite was run, and **exactly 1 of the 135 tests failed**
+(`test_canonical_expectation_rejects_out_of_bounds_milestone` —
+the two subclass-mutant tests do not depend on the real seam and
+kept passing). The module was then restored from
+`scratch/extensions.py.premutation` and verified byte-identical
+(SHA-256 `bc0a0724786c76c84b2e115f77602f857a7f9895340a7b92dfabb2defcba24cd`,
+recorded in `scratch/extensions.py.sha256`); the suite is green
+again (135 tests, OK), and every core module is byte-identical
+to its pre-batch hash.

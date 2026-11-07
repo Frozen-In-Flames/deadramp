@@ -162,3 +162,35 @@ and **no integration registry**, because neither fork's description
 claims them. "Diverse" in Yello's description is an adjective on
 pipelines, not a diversity-analytics function, and no such function
 was built.
+
+## Final GAPS batch (Remainder Group 3)
+
+The 7 open Extended entries above are closed by
+`src/talentmgmt/extensions.py` (`TalentMgmtExtensions`) — see
+`BATCH.md` for the per-entry disposition. Four are built as
+in-substrate records over the core's own records: predictive
+I-O models (model profiles and caller-reported prediction
+records bound to core assessments and interviews, nothing
+computed), the virtual event platform (venue declarations,
+reported attendance, and invitation records over core events
+and registrations — the venue is declared, not hosted, and no
+invitation is sent), analytics (dashboard definitions as data,
+a derived counts snapshot carrying the core report whole, and
+ROI figures recorded as verbatim reported labels — a numeric
+figure is refused, because determination is not a computation
+this substrate performs), and talent development programs
+(program definitions, enrollments, and milestone check-offs
+over candidate refs, with progress derived at read). Three
+ship as labeled reference implementations
+(`reference_stub: True`): the video interview platform
+(session records bound to core video interviews), assessment
+delivery & scoring (delivery records bound to core
+assessments; outcomes reported, never computed), and the
+pipeline automation engine (run request and report records
+over core workflow definitions; a reported run moves nothing
+in the core). The eighth entry, identity provider / candidate
+identity verification, was closed `re-scoped` under
+PLATFORM-LAYER.md before this unit. Suite: 135 tests, all
+passing (99 founding + 36 batch, including a fresh
+mutation-verified negative control on the development module
+bounds seam). Core modules are byte-identical.

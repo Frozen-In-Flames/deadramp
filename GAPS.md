@@ -1087,13 +1087,13 @@ The L2 sibling's 26-family taxonomy was applied verbatim at this tier: one claim
 ## Remainder Group 3 — Talent Management L2 (2 forks, new category)
 
 Extended functions from the group's forks, specified in groups/talent-management-l2/UNION-SPEC.md, not implemented:
-- [ ] open — Video interview platform
-- [ ] open — Assessment delivery & scoring engines
-- [ ] open — Predictive I-O models & AI
-- [ ] open — Virtual event platform
-- [ ] open — Pipeline automation engine
-- [ ] open — Analytics & visualization engines (incl. ROI determination)
-- [ ] open — Talent development programs
+- [x] reference — Video interview platform
+- [x] reference — Assessment delivery & scoring engines
+- [x] built — Predictive I-O models & AI
+- [x] built — Virtual event platform
+- [x] reference — Pipeline automation engine
+- [x] built — Analytics & visualization engines (incl. ROI determination)
+- [x] built — Talent development programs
 - [x] re-scoped — Identity provider / candidate identity verification (IA-2 stays with the embedding organization)
 
 Boundary, stated in the spec: this group is the candidate-facing pre-hire acquisition surface; Human Resources L2 remains the personnel system of record, and no HR forks were imported. Deliberate absences: no communications surface and no integration registry, because neither description claims them; no score field exists anywhere in the build.
