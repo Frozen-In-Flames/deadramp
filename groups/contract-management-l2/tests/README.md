@@ -123,3 +123,66 @@ award recorded; report shows `obligated_cents_total=900` and
   transition, not a date derivation); only `obligated_cents` and
   `period_elapsed` are derived — the distinction is deliberate
   and stated in the store's module docstring.
+
+
+## Final GAPS batch unit (2026-11-07)
+
+`test_gaps_batch.py` — **41 tests** pinning the extension
+surface in `src/contractmgmt/extensions.py` for the 9 open
+entries of this group's GAPS.md section (see `../BATCH.md` for
+per-entry dispositions): regulatory corpus records (exact
+key-set pins, digest validation, `TypeError` on a smuggled
+`text=` kwarg, current digest derived at read and never
+stored), guidance records (`interpreted_here: False`, link
+validation), analytics (the `_palt_seconds` seam pinned on
+fixed timestamps; PALT / bottleneck / spend reports over the
+canonical fixture with exact expected values; recursive
+no-score-key scan; membership denial), portal and page
+definitions (`rendered_here` / `served_here` False), reverse
+auction (recording-order bid listing with no amount ordering,
+kind / registration / money guards, core opportunity +
+submissions + awards byte-identical after bids and an outcome,
+view key-set pin with no winner/lowest/ranking key), intake
+receipts (`reference_transport: True`, content kwarg refused),
+settlements (money discipline, verbatim outcome reports,
+current outcome and committed/remaining derived at read,
+`reported_failed` releasing the commitment), message
+transports and integration exchanges (same transport-records
+form, derived current outcomes), workflow reference records
+(core registry byte-identical; no execute-named callable on
+the surface), access discipline (viewer write denied and
+audited `ext_clause_create:denied`; outsider denied by
+membership; successful mutations audited with the `ext_`
+prefix), and a recursive banned-key privacy scan over the
+whole surface.
+
+### Batch negative control (fresh, mutation-verified)
+
+The batch's seam is `_check_settlement_bounds` in
+`src/contractmgmt/extensions.py`: outstanding settlement
+amounts against a core payment never exceed the payment's
+recorded amount. The in-suite control is
+`TestSettlementBoundsNegativeControl` (three legs: canonical
+over-bound cases rejected whole with no id consumed, a local
+mutant gate waves them through, mutant-as-expectation fails).
+
+Live drill on the real file: premutation copy at
+`scratch/extensions.py.premutation`, SHA-256
+`4198ff6463e001b0251b8264de6e298c67f3844e1eaa58b9483dbb5b2bb00469`
+(also in `scratch/extensions.py.sha256`). The seam's comparison
+and raise were patched to `return True  # MUTANT (mutation
+drill)` and syntax-checked (`compile()`) before the run. The
+full suite ran **147 tests with exactly 2 failures**, both in
+the batch's own new tests:
+
+- `test_gaps_batch.TestSettlementBoundsNegativeControl.test_single_settlement_one_cent_over_payment`
+- `test_gaps_batch.TestSettlementBoundsNegativeControl.test_two_settlements_each_within_whose_sum_exceeds`
+
+No core test failed; raw output in
+`scratch/gaps_batch_mutation_run.txt`. `extensions.py` was
+then restored from the premutation copy and verified
+SHA-256-identical; the suite re-ran green (**147/147**). The
+failing set is exactly the bounds-dependent set: every other
+settlement the suite records is within the bound, so nothing
+else can fail under the mutant — the same attribution property
+as the core drill above.

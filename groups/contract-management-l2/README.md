@@ -263,3 +263,29 @@ for the drill record).
   21-family taxonomy defined from the forks' own descriptions)
   or to the Moderate/L2 control families in `UNION-SPEC.md`.
   Counts are a floor, stated as such.
+
+
+## Final GAPS batch unit (2026-11-07)
+
+The 9 open entries of this group's GAPS.md section are closed
+by `src/contractmgmt/extensions.py` (`ContractExtensions`,
+41 new tests in `tests/test_gaps_batch.py`; suite 106 → 147,
+all passing; core modules byte-identical). Per-entry
+dispositions and grounds are in `BATCH.md`. In brief: the
+regulatory corpus and its reported guidance are records
+(metadata + SHA-256 digests; text never held); analytics is
+deterministic derivation at read over the core records (PALT
+as exact timestamp arithmetic, bottleneck counts, spend sums
+by kind — no scores); the portal front-end is definition
+records; the reverse auction is reported bid/outcome records
+with no price discovered and no core record changed; the
+intake, communication, and integration transports are
+receipt/transport/exchange records carrying
+`reference_transport: true`; payment rails are settlement
+records capped by the linked payment's recorded amount (the
+batch's mutation-verified negative control: exactly 2 failures
+under the mutant); and the workflow execution engine ships as
+a labeled reference implementation (`reference_stub: true`,
+nothing executes). The section's tenth entry (identity /
+registration verification) was already closed as re-scoped
+under the platform-layer decision.

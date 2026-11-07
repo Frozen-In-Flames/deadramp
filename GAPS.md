@@ -1059,15 +1059,15 @@ Enlargements of families already registered under Group 8: network enforcement p
 ## Remainder Group 1 — Contract Management L2 (2 forks, new category)
 
 Extended functions from the group's forks, specified in groups/contract-management-l2/UNION-SPEC.md, not implemented:
-- [ ] open — Regulatory content & interpretation: FAR / DFARS corpus, agency supplements, updates
-- [ ] open — Workflow execution engine
-- [ ] open — Analytics engine: PALT measurement, bottleneck / spend analysis beyond registry counts and sums
-- [ ] open — Opportunity portal front-end (the public / directed web portal itself)
-- [ ] open — Reverse auction engine: live bidding, price discovery
-- [ ] open — Submission intake transport (electronic bid / proposal receipt channel)
-- [ ] open — Payment processing rails: fee collection / settlement (the core records payments, moves no money)
-- [ ] open — Integration transport (the system-to-system interfaces themselves)
-- [ ] open — Communication transport (the secure messaging channel itself)
+- [x] built — Regulatory content & interpretation: FAR / DFARS corpus, agency supplements, updates
+- [x] reference — Workflow execution engine
+- [x] built — Analytics engine: PALT measurement, bottleneck / spend analysis beyond registry counts and sums
+- [x] built — Opportunity portal front-end (the public / directed web portal itself)
+- [x] built — Reverse auction engine: live bidding, price discovery
+- [x] built — Submission intake transport (electronic bid / proposal receipt channel)
+- [x] built — Payment processing rails: fee collection / settlement (the core records payments, moves no money)
+- [x] built — Integration transport (the system-to-system interfaces themselves)
+- [x] built — Communication transport (the secure messaging channel itself)
 - [x] re-scoped — Identity provider / registration verification service (registration records are not identity proofing; IA-2 stays with the embedding organization)
 
 Boundary, stated in the spec: procurement operations tooling lives in Operations Management; post-award grants administration lives in Grant Management; this group's financial-assistance claims reach only as far as opportunities. Checked absences in both descriptions: no contract authoring / clause library, no e-signature, no source selection / evaluation / scoring, no invoicing or government disbursement.
