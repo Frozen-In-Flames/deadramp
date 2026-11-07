@@ -1,20 +1,22 @@
 # Law Enforcement L3-adjacent — test suite
 
-**156 tests, all passing** (Python standard-library `unittest` only;
+**196 tests, all passing** (Python standard-library `unittest` only;
 no third-party dependencies). Inherited from Group 34's suite
 (82 tests), with the adaptations listed below plus 20 new tests for
 the High-baseline uplifts (1 in `test_access.py`, 19 in
 `test_l3_uplifts.py`), plus 8 remainder-addition tests in
 `test_additions.py` (see the additions section at the end), plus
 46 final-GAPS-batch tests in `test_gaps_batch.py` (see the batch
-section at the end).
+section at the end), plus 40 second-unit final-GAPS-batch tests in
+`test_gaps_batch_addition.py` (see the second batch section at the
+very end).
 
 ## Running
 
 ```bash
 cd groups/law-enforcement-l3
 PYTHONPATH=src python3 -m unittest discover -s tests -p 'test_*.py'
-# -> Ran 156 tests ... OK
+# -> Ran 196 tests ... OK
 ```
 
 (`PYTHONPATH=src` is the documented runner, as in Group 34; the
@@ -208,3 +210,81 @@ the pre-mutation copy, its SHA-256 verified identical, and the
 suite re-run green. Run count after the batch: **156 tests,
 OK** (110 before: 102 shipped + 8 remainder-addition; 46 added
 by the batch module).
+
+## Final GAPS batch — remainder addition unit (the TRAPWIRE verticals)
+
+The suite grows **156 → 196 tests** with
+`tests/test_gaps_batch_addition.py` (40 tests), pinning the
+second batch extension surface
+(`src/lawenf/extensions_addition.py`) that closes the TRAPWIRE
+remainder addition's 6 own verticals: 4 built as records
+(incident report filings as metadata + optional SHA-256 over
+the fork's three described channels, with unknown channels
+rejected; pattern analysis records and verbatim reported
+findings; originator share authorizations and verbatim
+authorization events, with the current authorization state
+derived at read; mass warning records and verbatim delivery
+reports) and 2 shipped as labeled reference implementations,
+exactly as drafted (threat detection & real-time alerting;
+integration API & system-of-systems data integration —
+request / connector records and reported outcome records only,
+`reference_stub: True`). The module pins, per entry: every
+record's exact key set and boundary labels, ref-uniqueness and
+no-id-on-failure, cross-matter isolation, the closed-matter
+rule, derived-never-stored counts / latest outcomes / analysis
+counts / current authorization label, the privacy rule by
+signature (smuggled report-text / subject-name / pattern-text
+/ finding-text / recipient-name / message-text / payload /
+endpoint / api-key kwargs raise `TypeError`), a recursive
+no-score-shaped-key scan over the new surface's records and
+views, the RBAC mapping onto the core action set, the auditor
+role denied every addition operation (read and write), the
+membership boundary, `ext2_*` / `ext2_*:denied` audit
+discipline on the core hash-chained log, and
+audit-before-commit fail-closure (a broken audit path makes an
+addition create raise `AuditWriteError`, commit nothing, and
+consume no id, with the chain verifying afterwards). See
+`../BATCH-ADDITION.md` for the per-entry dispositions.
+
+### The current-authorization seam drill (fresh negative control, second batch unit)
+
+The claim under test: **an authorization's current state is
+the label on the LATEST recorded authorization event** (or the
+recorded initial state, `authorized_as_recorded`, when none
+has been recorded) — the originator-sharing entry's only
+derivation, computed at read over the event records through
+the seam
+`LawEnfExtensionsAddition._current_authorization_label`.
+`TestAuthorizationNegativeControl` pins the canonical case
+(authorization recorded; events "granted by originator" then
+"revoked by originator": the current label reads
+"revoked by originator") and asserts (1) the real
+implementation's outcome, (2) a mutant subclass overriding
+the seam to read the FIRST event would NOT produce it (it
+reads "granted by originator"), and (3) treating the mutant's
+outcome as the expected outcome raises `AssertionError`. The
+no-event case reads the recorded initial state under either
+orientation, as expected.
+
+File-level verification (performed at build time, raw output
+in `scratch/gaps_batch_addition_mutation_run.txt`): the
+shipped `src/lawenf/extensions_addition.py` (pre-mutation
+SHA-256
+`d8cc0d0ae5cab1e1ff42d2f7a5fdb9b4975615a5a15a425896ef2c713bd2e520`,
+backup in `scratch/extensions_addition.py.premutation`) was
+mutated at the seam's return line (`return
+events[-1]["event_label"]` → `return
+events[0]["event_label"]`, exact full-line match, one
+occurrence) and the full suite run: **exactly 2 failures**
+out of 196 — `TestOriginatorSharing.
+test_view_derives_current_label_from_latest_event` and
+`TestAuthorizationNegativeControl.
+test_canonical_current_label_is_latest`, both in the second
+unit's own new module and both
+current-authorization-derivation-dependent (the zero- and
+one-event cases are orientation-symmetric and pass either
+way, as expected). The file was then restored from the
+pre-mutation copy, its SHA-256 verified identical, and the
+suite re-run green. Run count after the second batch unit:
+**196 tests, OK** (156 before; 40 added by the second batch
+module).

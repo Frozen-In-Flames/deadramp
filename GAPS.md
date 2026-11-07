@@ -1210,12 +1210,12 @@ Existing gap gaining a member by substance (no claimant): the AI risk prediction
 ## Remainder Addition — Law Enforcement L3-adjacent (+1 fork)
 
 New extended functions from the addition fork, specified in groups/law-enforcement-l3/ADDENDUM.md, not implemented — this fork's own verticals, all Extended:
-- [ ] open — Threat detection & real-time alerting: real-time detection and alerting over a human incident-reporting network (the fork's headline function, described in its own words; distinct from the real-time intelligence feeds exclusion written for the group's original pair — this is human reports, not feeds or sensors, and the distinction is recorded rather than smoothed)
-- [ ] open — Incident reporting & structured suspicious-activity reporting: web, mobile field, and community reporting channels
-- [ ] open — Pattern analysis & analyst support: pattern analysis over reported incidents with analyst support tooling
-- [ ] open — Originator-controlled cross-organizational information sharing: sharing under the originator's control (registered as its own vertical, NOT folded into the existing information sharing over evidence gap — different object and control model, on the non-conflation precedent)
-- [ ] open — Mass warning & notification: warning and notification distribution
-- [ ] open — Integration API & system-of-systems data integration: integration surface for connecting systems
+- [x] reference — Threat detection & real-time alerting: real-time detection and alerting over a human incident-reporting network (the fork's headline function, described in its own words; distinct from the real-time intelligence feeds exclusion written for the group's original pair — this is human reports, not feeds or sensors, and the distinction is recorded rather than smoothed)
+- [x] built — Incident reporting & structured suspicious-activity reporting: web, mobile field, and community reporting channels
+- [x] built — Pattern analysis & analyst support: pattern analysis over reported incidents with analyst support tooling
+- [x] built — Originator-controlled cross-organizational information sharing: sharing under the originator's control (registered as its own vertical, NOT folded into the existing information sharing over evidence gap — different object and control model, on the non-conflation precedent)
+- [x] built — Mass warning & notification: warning and notification distribution
+- [x] reference — Integration API & system-of-systems data integration: integration surface for connecting systems
 
 Existing gaps gaining claimants: none (the fork describes no forensic, evidence, or device function; the carried Extended set gains nothing). Named absence partially retired in substance: incident / case management — incident REPORTING is now described at this tier, while case management proper remains undescribed. Absences surviving: evidence management & chain of custody as an operational system, criminal records / RMS, investigative case files. Category discipline, token-pinned in the addendum: facial recognition, surveillance, camera / sensor monitoring, and predictive policing appear nowhere in the fork's text (0 tokens each) and are not attributed to it — reputation is not evidence. Group state, stated plainly: 0 claims across 3 forks at this tier; the substrate is the legal-research records core carried to High, claimed by none of the three, each of which speaks a different function vocabulary (legal research, digital forensics, physical threat detection).
 

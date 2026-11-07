@@ -222,3 +222,42 @@ evidence content, a finding's or report's text, a credential,
 or a person's identifier. Tests 110 → 156, including a fresh
 mutation-verified negative control on the current-holder seam
 (see [tests/README.md](tests/README.md)).
+
+## Final GAPS batch — remainder addition unit
+
+Per [`BATCH-ADDITION.md`](BATCH-ADDITION.md) (final GAPS
+batch, second unit in this directory): the TRAPWIRE remainder
+addition's 6 own verticals are closed by
+`src/lawenf/extensions_addition.py` (a second new module; the
+founding core and the first unit's extension module are both
+byte-identical) — incident report filings registered as
+metadata + optional SHA-256 over the fork's three described
+channels (web, mobile field, community; the report itself is
+never held), pattern analysis records whose findings are
+reported labels (no pattern is computed here), originator
+share authorizations and their verbatim authorization events
+(the originator's control is recorded, never enforced here —
+`control_enforced_here: False` — with the current state
+derived at read), and mass warning records with verbatim
+delivery reports (`reference_transport: True`; nothing is
+sent). **Threat detection & real-time alerting** and the
+**integration API & system-of-systems data integration** ship
+as labeled reference implementations, exactly as drafted in
+the batch inventory: request / connector records plus outcome
+labels recorded verbatim as reported (`reference_stub: True`,
+`detected_here` / `connected_here` / `data_moved_here:
+False`) — detection is an engine over live reporting flows
+and an integration API is a runtime over external systems,
+and neither is records. No re-judgments in this unit. High
+apparatus binds the new surface: mutations audit on the core
+hash-chained log audit-before-commit under `ext2_` action
+names (fail-closed), and the auditor role is denied every
+addition operation. The hard privacy rule binds unchanged: no
+addition method can accept a report's text, a pattern's
+description, a warning's message, a payload, a credential, an
+endpoint, or a person's identifier, and no key anywhere is
+score-shaped — nothing here scores, rates, ranks, or
+predicts. Tests 156 → 196, including a fresh
+mutation-verified negative control on the
+current-authorization seam (see
+[tests/README.md](tests/README.md)).
