@@ -38,9 +38,9 @@ Extended functions, specified in groups/collaboration-l2/UNION-SPEC.md, not impl
 ## Group 3 — Analytics L3-adjacent (54 forks)
 
 Extended functions, specified in groups/analytics-l3/UNION-SPEC.md, not implemented. Same 14 families as Group 1, with this group's claim weights; first candidate for the batch:
-- [ ] open — Alerts, monitoring & detection (27 of 54 forks claim it; kept Extended because each claimant binds alerting to its own domain telemetry — reasoning in the group spec)
-- [ ] open — Predictive ML remainder (family #1 at 34 of 54)
-- [ ] open — Real-time / streaming (18), collaboration (17), proprietary connectors (17), governance (11), transformation (10), text/NLP (6), archiving (4), scheduling (3), geospatial (3), media analytics (2), self-service BI (2), KPI (0 claims in this group)
+- [x] reference — Alerts, monitoring & detection (27 of 54 forks claim it; kept Extended because each claimant binds alerting to its own domain telemetry — reasoning in the group spec)
+- [x] reference — Predictive ML remainder (family #1 at 34 of 54)
+- [x] reference — Real-time / streaming (18), collaboration (17), proprietary connectors (17), governance (11), transformation (10), text/NLP (6), archiving (4), scheduling (3), geospatial (3), media analytics (2), self-service BI (2), KPI (0 claims in this group)
 
 Baseline gaps at High (platform layer; gap-listed, never implied closed):
 - [x] re-scoped — MFA / authenticator management (IA-2(1)/(2), IA-5) — IdP layer, hooks only

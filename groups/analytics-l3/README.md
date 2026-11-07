@@ -225,3 +225,24 @@ This build is **not a FedRAMP authorization and not a CMMC
 certification**, and it does not claim either. The control mapping
 above states which baseline families the build's features answer to;
 nothing more.
+
+## Final GAPS batch unit (2026-11-07)
+
+The three GAPS.md entries still open for this group (alerts,
+monitoring & detection; the predictive ML remainder; and the
+bundled line carrying the remaining twelve Extended families)
+closed as **labeled reference implementations** in one new module,
+`src/analytics/extensions.py` (`AnalyticsExtensions` over the core
+store): alert rule records with point-in-time evaluation receipts
+over core `describe` output, model reference records with
+reported-run records, and one reference record per bundled family
+with reported outcomes and reported-receipt forms for the
+streaming and connector families. Every record carries
+`reference_stub: true`; nothing learns, predicts, monitors,
+streams, or connects. The High apparatus binds the extension
+(fail-closed writes on the hash-chained audit; the `auditor` role
+is denied the whole surface while its core audit duty still
+works). Full detail and per-entry dispositions: `BATCH.md`. Suite:
+206 tests, OK (183 pre-batch + 23 new), including a fresh
+mutation-verified negative control on the reported-rows total
+seam recorded in `tests/README.md`.

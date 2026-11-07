@@ -133,3 +133,32 @@ L3-specific notes:
 - The AU-5 tests break the JSONL path mid-flight by replacing the file
   with a directory of the same name, so the append raises
   `IsADirectoryError` (an `OSError`) deterministically on any platform.
+
+## Final GAPS batch — extension surface (added 2026-11-07)
+
+| File | Tests | Covers |
+|---|---:|---|
+| `test_gaps_batch.py` | 23 | Final GAPS batch, Group 3 section: idx 23 alerts / monitoring (reference records + point-in-time evaluation receipts over core `describe`), idx 24 predictive ML remainder (model reference + reported-run records, no train/predict surface), idx 25 the bundled twelve Extended families (one reference record per family, reported outcomes, streaming batch and connector sync receipts with `reference_transport: True`), negative control #3 (below), and the High uplifts as they bind the extension: **AC-5** auditor denied every extension operation with denials audited `:denied` while its core audit duty (query + `verify_chain()`) still works; **AU-5** extension writes fail closed on the chained log (broken JSONL path → `AuditWriteError`, no record stored, no id consumed); **AU-9** extension entries carry `seq` / `prev_hash` / `hash` |
+
+Status after the batch unit: **206 tests, OK** (183 pre-batch + 23 new).
+
+3. **Negative control #3 (fresh, this unit) —
+   `test_gaps_batch.py::TestReportedRowsNegativeControl`:** the
+   reported-rows total seam
+   (`AnalyticsExtensions._sum_reported_counts`). The canonical
+   expectation is stated once: receipts reporting 4 and 3 rows
+   derive a `reported_rows_total` of 7 — the total is the SUM of
+   the recorded reports. The test class asserts the seam meets it,
+   that the real family view meets it, and — via a literal
+   `assertRaises(AssertionError)` — that a first-count-echo mutant
+   subclass (the seam returns the first count) is rejected by it.
+   **Mutation-verified against the real file:** patching the seam's
+   return line in `src/analytics/extensions.py` to
+   `return counts[0] if counts else 0` (occurrence count asserted
+   = 1 before replacing) produced exactly **5 failures** in 206 —
+   the stream-batch, connector-sync, and bundle-view total tests
+   plus the control's canonical and real-implementation legs, all
+   in `test_gaps_batch.py`. The file was restored from
+   `scratch/extensions.py.premutation_gaps`, SHA-256 verified
+   identical (`f87b79a5…`), and the suite re-ran green. Raw drill
+   output: `scratch/gaps_mutation_run.txt`.
