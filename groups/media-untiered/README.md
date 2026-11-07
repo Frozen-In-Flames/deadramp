@@ -144,3 +144,26 @@ is its claim, never this build's attainment.
   advertising, no viewership analytics, no DRM, no content
   delivery network, no storage, no scoring. The description is
   a live-transport surface entire.
+
+## Final GAPS batch
+
+The set's five open Extended entries are closed by
+`src/media/extensions.py` (`MediaExtensions`, a records
+register over the core store; per-entry dispositions in
+`BATCH.md`): the device control channel and the stream
+optimization engine in their records forms (dispatch records
+bound one-to-one to core control actions with nothing sent;
+profile-to-route assignment records and derived views with
+nothing applied or adapted), and the live video transport
+engine, the stream encryption implementation, and telemetry
+collection as labeled reference implementations
+(`reference_stub: True`, `reference_transport: True` where the
+family is a transport; nothing transported, no cryptography
+performed, no probe run). Tier stays null on the new surface —
+a recursive scan in the batch tests pins the absence of tier,
+baseline, equivalence, and score keys — and the founding
+disciplines bind whole: records about media, never media; no
+score and no latency figure. Suite: 102 tests, including the
+batch's fresh mutation-verified negative control (the
+latest-label seam; exactly 6 failures under the
+earliest-reading mutant, recorded in `tests/README.md`).

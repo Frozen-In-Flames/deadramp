@@ -118,3 +118,67 @@ with the canonical check asserted to fail against it — plus the
 discriminating other arm (a start on a different route IS
 recorded on the real store while the first route's session is
 live, so the invariant is per-route, not store-wide).
+
+## Final GAPS batch coverage
+
+- `test_gaps_batch.py` — the batch's extension surface
+  (`src/media/extensions.py`, see `../BATCH.md`): transport
+  run/outcome reference records (idx 960 — recording a run
+  starts no session and changes no route); encryption
+  reference/status reference records (idx 961 — a reference
+  never changes the route's stated encryption label);
+  control dispatch and delivery-outcome records (idx 962 —
+  one dispatch per core control action, per-device counts
+  derived at read, nothing sent, nothing recorded in the
+  core); optimization assignment/outcome records and the
+  derived route view (idx 963 — the enabled count is a
+  read-time join over the core profiles' recorded flags);
+  telemetry collection source/outcome reference records
+  (idx 964 — recording them creates no core status snapshot);
+  the founding matrix binding the extension (viewer writes
+  denied and audited `:denied`); and a recursive key scan over
+  every extension record, view, and the summary proving the
+  untiered discipline on the new surface — no tier, baseline,
+  impact-level, equivalence, score, rating, quality, latency,
+  bitrate, or media-content key anywhere.
+
+## Negative control — the latest-label drill (final GAPS batch)
+
+The batch's fresh negative control targets the new code's
+load-bearing derivation: `MediaExtensions._latest_label`, the
+seam behind every derived view's "latest reported label" (the
+most recently **recorded** record's label, in the register's
+recording order). An oracle that passes whether the seam reads
+the newest or the oldest record would be testing that code
+ran, not that the derivation is the latest one. The drill
+mutates the seam in the real `src/media/extensions.py`:
+
+    return records[-1][key] if records else None   # becomes
+    return records[0][key] if records else None    # MUTANT (drill)
+
+(occurrence count asserted = 1 before patching), then the full
+suite is re-run. Result: exactly 6 failures, all in
+`test_gaps_batch.py`, one per family's latest-label derivation
+plus the control's canonical leg —
+
+- `test_gaps_batch.TestTransportReference.test_outcome_verbatim_and_view_derives_latest`
+- `test_gaps_batch.TestEncryptionReference.test_status_verbatim_and_view`
+- `test_gaps_batch.TestControlDispatchBuilt.test_outcome_verbatim_and_device_view_derives`
+- `test_gaps_batch.TestOptimizationBuilt.test_outcome_and_route_view_derives_from_records`
+- `test_gaps_batch.TestTelemetryReference.test_view_sums_reports_and_derives_latest`
+- `test_gaps_batch.TestLatestLabelNegativeControl.test_canonical_latest_is_most_recent`
+
+No other test moved: views with a single recorded outcome
+cannot discriminate earliest from latest and correctly kept
+passing, and no founding test depends on the new seam.
+
+After the drill, `extensions.py` is restored byte-identical
+(SHA-256 verified:
+`ccabf1226db080b703ec87a0702b46a253bfafa1b703d24f7dbc20aa68f0cb59`,
+backup kept at `scratch/extensions.py.premutation`, raw mutated
+run at `scratch/gaps_batch_mutation_run.txt`) and the suite is
+fully green again, 102/102. `test_gaps_batch.py` also carries
+the drill's in-tree form
+(`TestLatestLabelNegativeControl`): the same earliest-reading
+mutant as a subclass, with the canonical check asserted to
+fail against it.

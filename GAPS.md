@@ -1736,11 +1736,11 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## Untiered Set 27 — Media (1 fork, tier null; NEW CATEGORY)
 
 New extended functions from this set, specified in groups/media-untiered/UNION-SPEC.md, not implemented:
-- [ ] open — Live video transport & routing engine (the network itself)
-- [ ] open — Stream encryption implementation (the build performs no cryptography; route records carry a caller-stated label only)
-- [ ] open — Device control channel (control actions are recorded, never sent)
-- [ ] open — Stream optimization engine
-- [ ] open — Status & monitoring telemetry collection
+- [x] reference — Live video transport & routing engine (the network itself)
+- [x] reference — Stream encryption implementation (the build performs no cryptography; route records carry a caller-stated label only)
+- [x] built — Device control channel (control actions are recorded, never sent)
+- [x] built — Stream optimization engine
+- [x] reference — Status & monitoring telemetry collection
 - [x] re-scoped — Platform layer (hosting and the single-browser-window console)
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This category has no tiered group anywhere in the registry, so its six-family taxonomy was derived fresh from the fork's own three-sentence description, the new-category method, and is recorded as the category's taxonomy from here on. Six claims stand: transport and encryption on their own sentences, the other four riding a feature enumeration at list weight. One control family is documented at full family weight — cryptographic protection, on a named mechanism (AES-256 encryption of live streams) — while "securely" is an adverb documenting nothing and device control is bounded as not access control. Named absences, token-verified: recording, playback and VOD, transcoding, media library, editing, captions, any named streaming protocol (the word protocol occurs nowhere), scheduling, advertising, viewership analytics, DRM, CDN, and storage. The fresh core holds records about media, never media itself — no field can hold content — computes no score and no latency figure, and its signature is the one-live-session guard.
