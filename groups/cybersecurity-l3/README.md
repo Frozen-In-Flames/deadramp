@@ -32,6 +32,22 @@ table, the one wording-artifact correction, the core-delta
 decisions, and the new gaps (a firewall management plane, HSM as
 a Service, an inline email security platform).
 
+**Final GAPS batch:** the Group 8 section's 16 open Extended
+entries are built in `src/cyber/extensions.py` (`ExtensionStore`,
+39 new tests, 286 total) — the records form of each family on the
+same hash-chained audit log, under the same RBAC and fail-closed
+discipline, with the core byte-identical. Engine and agent families
+land as registries, ingestion records, and tracking workflows;
+AI/ML detection models, backup & recovery products, and SOAR /
+workflow automation ship as labeled reference implementations
+(`reference_stub: True`). Nothing in the extension scans, detects,
+enforces, blocks, or executes, and no extension surface computes a
+score — posture there is counts only. See `BATCH.md` for the
+per-entry dispositions and the long-tail enumeration. The two
+Extended functions registered under the separate Remainder Addition
+section (the Cisco firewall management plane and the inline email
+security platform) are not part of this unit.
+
 ## The core (11 functions, at High)
 
 1. **Asset inventory** — systems under management with owner, labels,
@@ -137,16 +153,20 @@ the operation back; see AU-5 above).
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-**247 tests, all passing** — the L2 parent's 194-test suite (carried
+**286 tests, all passing** — the L2 parent's 194-test suite (carried
 up; three files adapted where the uplift changed behavior, listed in
 `tests/README.md`) plus 42 new tests for the High uplift: the audit
 hash chain and tamper detection, fail-closed writes, audit query,
 and logon lockout — and, since the remainder additions, 11 more in
 `tests/test_additions.py` pinning the 2 added spec sheets and
-exercising the substrate under their claims. `tests/README.md` documents the layout, the
-negative controls, and the mutation verification record (the
+exercising the substrate under their claims — and, since the final
+GAPS batch, 39 more in `tests/test_gaps_batch.py` pinning the
+extension surface. `tests/README.md` documents the layout, the
+negative controls, and the mutation verification records (the
 severity-blind scoring mutant was run against this suite: 30
-failures, file restored byte-identical).
+failures, file restored byte-identical; the batch's
+classification-blind counting mutant: exactly 6 failures, all in
+the batch module, file restored hash-identical).
 
 ## Control families
 
@@ -167,8 +187,12 @@ Full traceability, including which tests cite which family, is in
   network enforcement, backup & recovery, automation engines,
   threat-intel feeds, EDR agents, cloud/SaaS posture engines,
   phishing content, fraud/identity proofing, AppSec engines, log
-  pipelines, CUI enclaves/VDI, scanners) are named in `UNION-SPEC.md`
-  and are **not implemented** here.
+  pipelines, CUI enclaves/VDI, scanners) are named in `UNION-SPEC.md`;
+  the final GAPS batch implements only their **records form** in
+  `cyber.extensions` (registries, ingestion records, tracking
+  workflows, and labeled reference implementations for the AI/ML,
+  backup, and SOAR families) — the engines themselves remain, as
+  ever, other people's products, run elsewhere.
 - **Not High-complete at the platform layer.** MFA / authenticator
   management (IA-2(1)/(2), IA-5), FIPS-validated cryptography
   (SC-13), encryption at rest (SC-28), audit retention (AU-11), and

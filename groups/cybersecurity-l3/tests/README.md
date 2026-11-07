@@ -1,12 +1,17 @@
 # Tests — Cybersecurity & Risk Management L3-adjacent merged build
 
-247 tests, all passing, standard library only. From the group root:
+286 tests, all passing, standard library only. From the group root:
 
 ```
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-Expected: `Ran 247 tests ... OK`.
+Expected: `Ran 286 tests ... OK`.
+
+The final GAPS batch adds the last 39 (`test_gaps_batch.py`, the
+extension surface in `src/cyber/extensions.py`; see `../BATCH.md`
+and the batch section at the end of this file). The 247 below are
+the shipped suite as amended by the remainder additions.
 
 The original 236 are the shipped suite below; the last 11 are
 `test_additions.py`, added with the remainder additions
@@ -64,7 +69,8 @@ would.
 | `test_lockout.py` | 6 | [L3] AC-7: lockout at threshold, `auth:locked` auditing, unknown-user lockout, per-user isolation, success resets counter, lock expiry |
 | `test_negative_control.py` | 5 | Negative control #1: severity-blind scoring mutant (same failure count as the L2 parent) |
 | `test_additions.py` | 11 | Remainder additions (ADDENDUM): the 2 appended sheets pinned literally, the correction and near-misses as absences, census citations, per-fork substrate cases at High |
-| **Total** | **247** | |
+| `test_gaps_batch.py` | 39 | Final GAPS batch: the extension surface (`cyber.extensions`) — per-family records-form pins, stub labels, counts-only posture, opaque refs, RBAC/denied-attempt audit, AU-5 extension rollback, classification-blind counting negative control |
+| **Total** | **286** | |
 
 ## Negative controls
 
@@ -142,3 +148,58 @@ at 247. Raw output: `scratch/additions_mutation_run.txt`.
 - If a test fails, the failing assertion names the behavior — read it
   before reading the implementation; the suite is the contract made
   executable.
+
+## Final GAPS batch — `test_gaps_batch.py` (39 tests)
+
+The extension surface (`cyber.extensions.ExtensionStore`) for the
+Group 8 section's 16 open Extended entries, per `../BATCH.md`:
+registries, ingestion records, and tracking workflows for the
+engine/agent families in records form; labeled reference
+implementations (`reference_stub: True` on every record, pinned) for
+the AI/ML detection-model, backup & recovery, and SOAR families.
+The module pins, per family: exact record shapes; derived-never-
+stored views (check-in counts/latest posture, outcome counts,
+current proofing outcome, session/batch/run totals are absent from
+stored records); opaque-ref discipline (IPv4 literals, dotted
+hostnames, and URLs rejected); counts-only posture (a recursive key
+scan over one of every record, view, and summary finds no `score`
+or `band` key — the core's published scoring tables remain the only
+scoring in the package); the DLP vocabulary boundary (`monitor` /
+`alert` only — no enforceable effect is representable); proofing
+separation of duties; the log-pipeline privacy pin (no
+`ExtensionStore` method accepts a content/payload/message
+parameter); RBAC through the core access module, including denied
+attempts audit-recorded as `extension_denied` and the auditor's
+total lack of permission on this surface; and AU-5 fail-closed
+rollback at the extension surface (a broken audit file leaves no
+object and consumes no id).
+
+### Fresh negative control — classification-blind counting mutant
+
+`test_gaps_batch.TestCountByNegativeControl` pins the batch's
+counting seam, `cyber.extensions.count_by` (the single function
+every extension rollup uses), against a classification-blind
+mutant that counts every value under the first choice — the counts
+analogue of the core's severity-blind scoring mutant. The canonical
+expectation (an exact per-choice distribution) is asserted against
+the real function and shown to reject the mutant's output.
+
+Mutation verification record, performed on this build:
+
+- Pre-mutation `src/cyber/extensions.py` SHA-256:
+  `66a7e6e6c6f8128fe7f12040d1b38c27dde861b2d2fb71e0d7497680d91f381d`
+  (a copy is kept at `scratch/extensions.py.premutation`).
+- Mutation: the body of `count_by` replaced with the
+  classification-blind form (`counts[choices[0]] = len(values)`).
+- Suite under mutation: **286 ran, exactly 6 failed**, all in
+  `test_gaps_batch.py`: the DLP classification summary, the
+  threat-intel kind counts, the posture-engine result counts, the
+  campaign outcome counts, the AppSec kind counts, and the negative
+  control's canonical-distribution test.
+- File restored from the pre-mutation copy; SHA-256 verified
+  identical to the pre-mutation hash; suite re-run: **286 ran, OK**.
+
+Core modules were not touched by the batch: `src/cyber/store.py`
+SHA-256 remains `1e58d852abd4b06f76c49c1bb2bccd714c23aeacfcbfb597493c8931bd9bcd90`,
+and the full core set was hash-verified byte-identical before and
+after the batch build.
