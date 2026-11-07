@@ -149,3 +149,67 @@ modules are SHA-256-identical to their pre-addition hashes
 (`../scratch/additions_src_hashes_before.txt` /
 `additions_src_hashes_after.txt` — diff empty). Raw drill
 output: `../scratch/additions_mutation_run.txt`.
+
+## Final GAPS batch — unit `Singleton 38` (this group's own section)
+
+`test_gaps_batch.py` (32 tests) pins the extension surface in
+`../src/datamgmt/extensions.py` (`DataMgmtExtensions` wrapping the
+core store; dispositions in `../BATCH.md`). Per entry: crawl
+targets as definitions (`captured_here: False`, unknown
+dataset/source rejected with no id consumed, viewer denied with
+the denial audited `ext_crawl_target_define:denied`); captures
+bound to exactly one core ingestion of the target's dataset
+(cross-dataset and duplicate bindings rejected; the capture's key
+set pinned — no counts, no checksum, no content); the archive
+summary derived at read (counts from the extension records, the
+record total from core provenance over completed ingestions only);
+render profiles and reports as a labeled reference
+(`reference_stub: True`, `rendered_here: False`, bad mode rejected
+with no id consumed); monitors and change reports as a labeled
+reference (outcomes verbatim, `detected_here: False`); seals
+carrying the core ingestion's checksum read at seal time (`None`
+stated when the core recorded none; duplicate seal rejected);
+replay requests as labeled transport records
+(`reference_transport: True`, `replayed_here: False`); content
+indexes and snapshots as a labeled reference (latest reported
+figure derived at read; a pin that the core's metadata search
+still runs and the extension exposes no content-search method).
+
+### Negative control (fresh, for the new code)
+
+`test_gaps_batch.py`'s `TestSealingNegativeControl` implements
+this unit's mutant: a `DataMgmtExtensions` subclass
+(`MutantExtensions`) whose `_check_sealer_not_recorder` is a
+no-op — the separation-of-duties check is skipped, so a capture's
+recorder could seal their own capture. The traced claim is this
+unit's separation-of-duties rule in its new surface (AC-3 access
+enforcement at this tier; AC-5 named as the separation-of-duties
+family home, as design lineage only — AC-5 is not a Low-baseline
+selection), mirroring the core's signature
+`_check_decider_not_requester` guard. The test asserts the
+canonical expectation (`PermissionDenied` from the real
+implementation, no seal created, a different actor's seal then
+succeeding with the core checksum), that the mutant would NOT
+produce that expectation (it seals, as the recorder), and — via a
+literal `assertRaises(AssertionError)` — that treating the
+mutant's outcome as the expected outcome fails.
+
+Mutation verification: VERIFIED for this unit (2026-11-07). The
+sealer/recorder seam in `DataMgmtExtensions._check_sealer_not_recorder`
+(`src/datamgmt/extensions.py`) was patched to a no-op
+(`return None`) — the exact live counterpart of the mutant in
+`test_gaps_batch.py` — with the target text asserted to occur
+exactly once. The full suite was run: **239 tests ran, exactly 2
+failed**, both in the new module:
+
+- `test_gaps_batch.TestArchiveSealing.test_recorder_cannot_seal_own_capture`
+- `test_gaps_batch.TestSealingNegativeControl.test_canonical_recorder_denied_other_seals`
+
+`extensions.py` was then restored from the pre-mutation copy
+(`../scratch/extensions.py.premutation`) and verified
+SHA-256-identical (`092befdc0ad14a131138e2acf7d9fef445f4977be5eb6838caff57fcf97ac767`;
+hash recorded in `../scratch/extensions.py.sha256`); the suite
+re-ran green: **239 tests, OK**. Full drill output:
+`../scratch/gaps_batch_mutation_run.txt`. All 7 pre-existing
+`datamgmt` modules are SHA-256-identical to their pre-batch
+hashes (`../scratch/gaps_batch_src_hashes_before.txt`).

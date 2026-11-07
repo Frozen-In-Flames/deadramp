@@ -226,3 +226,21 @@ cross-walked to the **FAR 52.204-21** practices that define CMMC L1:
   apparatus of the sibling Data Management groups (800-171 depth,
   the L3 audit-chain uplift, 800-172-derived enhancements) is **not**
   inherited downward into this tier.
+
+## Final GAPS batch (this group's own section)
+
+The five Extended functions new with this fork are now closed in
+`src/datamgmt/extensions.py` (`DataMgmtExtensions`), per-entry
+dispositions in [`BATCH.md`](BATCH.md): web crawling & snapshot
+capture and archive storage, integrity sealing & replay built as
+records over the core's own records (captures bind core ingestion
+records; seals state the core ingestion's checksum, under a new
+sealer/recorder separation-of-duties seam); web page rendering for
+capture (re-judged), change detection & dynamic monitoring, and
+full-content search & indexing shipped as labeled reference
+implementations. The engines themselves remain unbuilt — every
+record carries its bound (`captured_here` / `rendered_here` /
+`detected_here` / `sealed_here` / `indexed_here`: False) on its
+face. The core is byte-identical; the suite is now **239 tests**,
+including the batch's fresh mutation-verified negative control
+(see `tests/README.md`).

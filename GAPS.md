@@ -635,11 +635,11 @@ Platform-layer: encryption at rest (deployment layer); TLS only when configured;
 ## Singleton 38 — Data Management L1 (1 fork)
 
 Extended functions new with this fork, specified in groups/data-management-l1/UNION-SPEC.md, not implemented:
-- [ ] open — Web crawling & snapshot capture engine (the product's central function; the substrate records ingestions and captures nothing)
-- [ ] open — Web page rendering for capture (dynamic / JS pages)
-- [ ] open — Change detection & dynamic monitoring engine
-- [ ] open — Archive storage, integrity sealing & replay / playback of captured pages (the substrate holds registry metadata only)
-- [ ] open — Full-content search & indexing over the archive (core search is registry-metadata only)
+- [x] built — Web crawling & snapshot capture engine (the product's central function; the substrate records ingestions and captures nothing)
+- [x] reference — Web page rendering for capture (dynamic / JS pages)
+- [x] reference — Change detection & dynamic monitoring engine
+- [x] built — Archive storage, integrity sealing & replay / playback of captured pages (the substrate holds registry metadata only)
+- [x] reference — Full-content search & indexing over the archive (core search is registry-metadata only)
 
 The Group 12 category union's extended families (distributed storage, integration runtime, record linkage, search indexing, content processing, workflow, query / visualization, hosting, case depth, AI/ML, field-level lineage, retention disposition execution) are already registered under Groups 12 and 28 and are not re-registered here. Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Spec note: zero claims tag for this fork (three sentences of boundary prose); all twelve core functions are carried, not claimed, under an explicit core-boundary decision, and at this tier the never-self-approve guard traces to AC-3, AC-5 being lineage only (not a Low selection).
 
