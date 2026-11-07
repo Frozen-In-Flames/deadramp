@@ -311,16 +311,16 @@ Platform-layer: single-tenant reference deployment; encryption at rest is deploy
 ## Group 20 — Content Management System (CMS) L2 (4 forks)
 
 Extended functions, specified in groups/cms-l2/UNION-SPEC.md, not implemented:
-- [ ] open — Rendering & templating engines and visual / WYSIWYG editors
-- [ ] open — CDN / delivery network and runtime site serving
-- [ ] open — Enterprise search indexing engines (Boolean / concept / fuzzy / multilingual / hierarchical / geospatial; the core searches registry metadata)
-- [ ] open — Bulk ingestion & index-in-place engines
-- [ ] open — Library ILS vertical (circulation, MARC21 cataloging depth, EDI acquisitions, discovery layer)
-- [ ] open — BPM / case-management engine (EEO, labor relations, accommodations, background investigations, IG casework)
-- [ ] open — Participant engagement & research platform vertical
-- [ ] open — Platform hosting itself (PaaS runtime)
-- [ ] open — Personalization / experience optimization
-- [ ] open — Editorial workflow engines beyond lifecycle mechanics (parallel review, routing, notifications; claimed by no sibling)
+- [x] built — Rendering & templating engines and visual / WYSIWYG editors
+- [x] reference — CDN / delivery network and runtime site serving
+- [x] reference — Enterprise search indexing engines (Boolean / concept / fuzzy / multilingual / hierarchical / geospatial; the core searches registry metadata)
+- [x] built — Bulk ingestion & index-in-place engines
+- [x] built — Library ILS vertical (circulation, MARC21 cataloging depth, EDI acquisitions, discovery layer)
+- [x] built — BPM / case-management engine (EEO, labor relations, accommodations, background investigations, IG casework)
+- [x] reference — Participant engagement & research platform vertical
+- [x] reference — Platform hosting itself (PaaS runtime)
+- [x] built — Personalization / experience optimization
+- [x] reference — Editorial workflow engines beyond lifecycle mechanics (parallel review, routing, notifications; claimed by no sibling)
 
 Platform-layer: encryption at rest (deployment layer); TLS only when configured; multi-tenancy (single-tenant reference deployment); demo identities are hooks, not an IdP (IA-2 stays with the embedding organization). Named absences recorded in the spec: no sibling claims editorial review workflow, versioning, publish scheduling, WYSIWYG editing, templating / rendering, or personalization; the build's lifecycle states, revisions, and publish windows are documented as registry mechanics of the claimed content-registry / publishing families (the Group 10 core-boundary precedent), never as claimed families.
 

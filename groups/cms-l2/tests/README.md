@@ -113,3 +113,53 @@ designed. `store.py` was restored from the pre-mutation copy
 identical to the shipped hash; the suite re-ran: **108 tests,
 OK**. The raw failure list is in
 `scratch/additions_mutation_run.txt`.
+
+## Final GAPS batch (unit: Group 20 — CMS L2)
+
+Status after the final GAPS batch unit: **143 tests, OK** — the
+108 above plus 35 in `test_gaps_batch.py`
+(`tests/test_gaps_batch.py`: the extension surface in
+`../src/cms/extensions.py` — template/fragment definition
+records and editor configurations, ingestion-batch and
+index-declaration records, ILS loan/catalog/acquisition records,
+BPM case records with pinned key sets, personalization segments/
+subjects/rules, and the five labeled reference families; see
+`../BATCH.md` for the per-entry dispositions). Existing core
+modules are byte-identical (`store.py` still SHA-256
+`e1d05424812f17b5bf1de6023bde72e08983a1790854d36df50d3ef2ad232de1`).
+
+### Batch negative control (fresh, for the new code)
+
+`test_gaps_batch.py`'s `TestDeciderNotOpenerNegativeControl`
+implements the batch's mutant: a `CmsExtensions` subclass
+(`MutantExtensions`) whose `_check_decider_not_opener` is a
+no-op — the separation-of-duties check is skipped. The traced
+claim is that **a case's decision is recorded only by someone
+other than the user who opened the case** (BPM / case-management
+family; control family AC-5). The tests assert the canonical
+expectation (the opener's decision raises `PermissionDenied`,
+records nothing, and consumes no decision id — the next valid
+decision is `dec-1`), that the mutant would NOT produce it (the
+opener's decision is recorded), and — via a literal
+`assertRaises(AssertionError)` — that treating the mutant's
+outcome as the expected outcome fails. A third test pins that the
+denial is audited as `ext_case_decision:denied`.
+
+Mutation verification: VERIFIED by the batch worker
+(2026-11-07). The guard body in
+`CmsExtensions._check_decider_not_opener`
+(`src/cms/extensions.py`) was patched to `return None` — the
+guard lines occur exactly once in the file (count asserted
+before patching) — and the full suite ran: **143 tests ran,
+exactly 2 failed** —
+
+- `test_gaps_batch.TestDeciderNotOpenerNegativeControl.test_denial_is_audited`
+- `test_gaps_batch.TestDeciderNotOpenerNegativeControl.test_opener_decision_denied_canonical_but_mutant_allows`
+
+`extensions.py` was then restored from the pre-mutation copy in
+the group's `scratch/` (`scratch/extensions.py.premutation`,
+SHA-256
+`ebb3e8d95743e24465b4a11f4918ebde65f7b0401e94b2d12543db58a6128fba`,
+verified identical to the pre-mutation hash) and the suite
+re-ran: **143 tests, OK**. The raw failure list is in
+`scratch/gaps_batch_mutation_run.txt`.

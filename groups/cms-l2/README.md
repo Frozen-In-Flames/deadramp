@@ -207,3 +207,27 @@ byte-identical.
   media_assets / records_management / reporting /
   access_administration / delivery_publishing) or to the Moderate/L2
   control families in `UNION-SPEC.md`.
+
+## Final GAPS batch
+
+The ten open Extended families of `UNION-SPEC.md` are closed by
+the final GAPS batch unit (see `BATCH.md` for the per-entry
+dispositions): one new module, `src/cms/extensions.py`
+(`CmsExtensions` wrapping the core store), adds template/fragment
+definition records and editor configurations (held as data,
+never rendered), ingestion-batch and index-declaration records
+(reported counts and checksum refs; no content held, no index
+built), the library ILS vertical in this group's own records
+form (circulation loans with derived current state, MARC21 field
+records as data, integer-cent EDI order records, discovery still
+the core's literal search), BPM case records over opaque refs
+with decisions under a decider-not-opener separation-of-duties
+guard, and personalization as segment/subject/rule records with
+matching derived at read — plus labeled reference
+implementations (`reference_stub: true`) for CDN/runtime serving,
+enterprise search indexing, the participant engagement vertical,
+platform hosting, and editorial workflow engines. All 7 core
+modules are byte-identical; the suite is **143 tests, OK**,
+including the batch's fresh mutation-verified negative control
+(the case-decision guard; exactly 2 failures under mutation —
+record in `tests/README.md`).
