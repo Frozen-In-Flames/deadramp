@@ -268,3 +268,33 @@ here moves money, books travel, lends, trades, remits, verifies,
 calculates wages, or streams. Core modules are byte-identical;
 tests 213 → 267, including a fresh mutation-verified negative
 control on the disbursement cap.
+
+## Final GAPS batch — remainder addition (2026-11-07)
+
+The 6 open entries of the GAPS.md section "Remainder Addition —
+Finance L2 (+4 forks)" are closed by the second batch extension in
+`src/finance/extensions_addition.py` (`FinanceExtensionsAddition`
+over the core store, audited under its own `exta_` prefix; see
+`BATCH-ADDITION.md` for the per-entry dispositions): the Momentum
+system of record as ledger account and journal entry records with
+balances and the trial balance derived at read; the Coupa
+procurement lifecycle as one record kind per stage (suppliers,
+requisitions with verbatim decision records, contracts with a
+recorded ceiling bounding their orders, orders, invoices, and
+supplier payment reports recorded in this family, deliberately
+not in the earned-wage family); Coupa spend analytics as a derived
+view of counts and recorded-cent sums with no rate, trend,
+forecast, or grand total; Apptio FinOps as allocation and tagging
+records with optimization outcomes stored verbatim as reported;
+and Innovest trust accounting as account, transaction, and
+custodian-reported position records — multi-currency as labels,
+never converted, and with no order or execution surface, so the
+"trading & investment execution" named absence still stands. The
+Coupa AI/ML document processing entry ships as a labeled
+reference implementation (`reference_stub: True`; documents named
+by opaque references, content never held). Nothing here runs an
+agency's financial system, sources or pays a supplier, optimizes
+spend, values a holding, or processes a document. All pre-existing
+modules, including the first batch unit's `extensions.py`, are
+byte-identical; tests 267 → 308, including a fresh
+mutation-verified negative control on the ledger derivation.

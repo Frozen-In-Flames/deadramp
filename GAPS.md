@@ -989,12 +989,12 @@ Enlargements of families already registered under Singleton 53: data delivery / 
 ## Remainder Addition — Finance L2 (+4 forks)
 
 New extended functions from the addition forks, specified in groups/finance-l2/ADDENDUM.md, not implemented:
-- [ ] open — Federal financial management system of record (Momentum)
-- [ ] open — Procurement lifecycle engine: supplier identification, sourcing, contracting, invoicing, supplier payment execution (Coupa; its payments recorded here, deliberately NOT enlarging the earned-wage payment-rails gap)
-- [ ] open — Spend analytics engine (Coupa)
-- [ ] open — Technology business management & cloud cost allocation / optimization (FinOps) engine (Apptio)
-- [ ] open — Trust accounting & wealth management platform, multi-currency (Innovest; the union's "trading & investment execution" named absence still stands: Innovest asserts wealth management, not trading)
-- [ ] open — AI / ML document processing & image recognition (Coupa)
+- [x] built — Federal financial management system of record (Momentum)
+- [x] built — Procurement lifecycle engine: supplier identification, sourcing, contracting, invoicing, supplier payment execution (Coupa; its payments recorded here, deliberately NOT enlarging the earned-wage payment-rails gap)
+- [x] built — Spend analytics engine (Coupa)
+- [x] built — Technology business management & cloud cost allocation / optimization (FinOps) engine (Apptio)
+- [x] built — Trust accounting & wealth management platform, multi-currency (Innovest; the union's "trading & investment execution" named absence still stands: Innovest asserts wealth management, not trading)
+- [x] reference — AI / ML document processing & image recognition (Coupa)
 
 No existing Extended gap gains a claimant in this addition. Three addition forks claim zero families (Apptio, Momentum, Innovest) under the taxonomy, pinned in tests with near-misses itemized ("multi-currency" is not "multi-tenant"; "SaaS provider" is not "SaaS offering"). Coupa's one claim was re-anchored from its product-name sentence to its functional sentence under the name-only precedent.
 

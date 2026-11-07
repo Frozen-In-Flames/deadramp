@@ -168,3 +168,74 @@ binds disbursement execution requests — this control is the filter
 against that. (Negative control #1, the core `_check_access_cap`
 drill, is unchanged above; its seam is in the byte-identical core
 and was not touched.)
+
+## Final GAPS batch — remainder addition coverage (added 2026-11-07)
+
+`tests/test_gaps_batch_addition.py` (41 tests) pins the second
+batch unit's surface, `src/finance/extensions_addition.py`
+(`FinanceExtensionsAddition`, audited under the `exta_` prefix):
+ledger account and journal entry records with balances and the
+trial balance derived at read and never stored; the procurement
+lifecycle as one record kind per stage, with the contract's
+recorded ceiling bounding its orders and supplier payment
+outcomes recorded verbatim in this family; the spend-analytics
+view pinned to counts and recorded-cent sums (no rate, trend,
+forecast, average, or grand-total key can exist in its shape);
+FinOps allocation/tagging records with savings figures stored as
+reported; trust accounts, transactions, and custodian-reported
+positions with balances derived by recorded arithmetic, no
+cross-currency sums, and no execution surface of any kind; and
+the document-processing reference stub's labels. Cross-cutting
+pins cover exact key sets for every new record kind (an
+exact-key recursive scan: no account-number, routing, IBAN,
+sort-code, card-number, bank-account, or score key anywhere),
+the integer-cents boundary (a rejected amount consumes no id),
+denied writes audited as `exta_*:denied`, outsider denial,
+platform-admin reach, cross-program invisibility, and
+audit-failure rollback of record and id.
+
+Suite status with the addition: **308 tests** (267 at the first
+batch unit + 41 here), all passing.
+
+## Negative control #3 — ledger derivation (batch addition, 2026-11-07)
+
+Records for this unit: `AccountTotalsNegativeControl` in
+`tests/test_gaps_batch_addition.py`, targeting the derivation
+seam of the Momentum records surface — `_account_totals` in
+`src/finance/extensions_addition.py`, through which every ledger
+balance and the trial balance are derived at read. Canonical
+scenario: three journal entries (debit glac-1/credit glac-2
+10000; debit glac-1/credit glac-3 5000; debit glac-2/credit
+glac-1 2000) give glac-1 totals (15000 debits, 2000 credits) and
+balance 13000. The mutant under control adds the credit side to
+the debit total instead of netting it, silently corrupting every
+derived balance while leaving every stored record's shape
+intact. The test class carries the canonical expectation on the
+real seam, the canonical/mutant divergence, a literal
+`assertRaises(AssertionError)` leg treating the mutant balance
+as canonical, and an only-debits sanity case where canonical and
+mutant agree.
+
+Mutation verification: VERIFIED by the coordinator (2026-11-07).
+The real seam was patched by the exact one-line change
+(`credit_total += entry["amount_cents"]` →
+`debit_total += entry["amount_cents"]`, the live counterpart of
+the test mutant) and the full suite was run: **308 tests ran,
+exactly 4 failed**:
+
+- `test_gaps_batch_addition.AccountTotalsNegativeControl.test_canonical_expectation_holds`
+- `test_gaps_batch_addition.AccountTotalsNegativeControl.test_mutant_totals_differ_from_canonical`
+- `test_gaps_batch_addition.MomentumSystemOfRecord.test_account_balances_derived_at_read_never_stored`
+- `test_gaps_batch_addition.MomentumSystemOfRecord.test_trial_balance_derives_balanced_totals`
+
+`extensions_addition.py` was then restored from
+`scratch/extensions_addition.py.premutation` and verified
+byte-identical (SHA-256
+`cccf59bb1c3484aa2c815debffd9c9d94297a0df09c9da83627a76cbcf8e76de`,
+recorded in `scratch/extensions_addition.py.sha256`) and the
+suite re-run: **308 tests, OK**. An oracle that passes with the
+credit side netted the wrong way would be testing that code ran,
+not that a ledger balance is debits minus credits — this control
+is the filter against that. (Negative controls #1 and #2 are
+unchanged above; their seams are in the byte-identical core and
+the first unit's byte-identical `extensions.py`.)
