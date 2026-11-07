@@ -117,7 +117,8 @@ cd groups/operations-management-untiered
 PYTHONPATH=src python -m unittest discover -s tests
 ```
 
-**127 tests, all green** (119 carried core tests + 8 spec tests).
+**161 tests, all green** (119 carried core tests + 8 spec tests +
+34 final-GAPS-batch tests).
 The suite includes a mutation-verified negative control: the
 `_is_overdue` subclass mutant in `test_negative_control.py`, plus the
 full drill record in `tests/README.md` (exactly 9 failures with the
@@ -211,3 +212,30 @@ provider) are not counted.
   keyed by opaque references; it operates no fleet, facility,
   network, kiosk, or charging station, and holds no real personal or
   operational data.
+
+## Final GAPS batch (2026-11-07)
+
+The 9 set-specific gap entries registered in `UNION-SPEC.md` are
+closed by one new module, `src/opsmgmt/extensions.py`
+(`OpsExtensions` over the core store; all 7 core modules remain
+byte-identical to the hashes above), with per-entry dispositions
+in `BATCH.md`: 8 built as records surfaces with derivations at
+read (CMMS/EAM programs and custody events over core assets and
+work orders; manufacturing BOMs, production orders, and reported
+outcomes; procurement requisitions, sourcing events, and awards
+as reported outcomes; contract agreements with reported state
+labels; EV charging stations and sessions with session control
+in reference form in-record; real-estate properties, leases,
+and derived portfolio counts; kiosk/locker device, grant, and
+event records that unlock nothing; supply-chain shipments,
+verbatim risk labels with no computed score, and payment
+instruction records that move no money) and 1 shipped as a
+labeled reference implementation (AI assistants & agents,
+re-judged from its drafted build-extension disposition on the
+grounds recorded in `BATCH.md`). Tier null binds the extension
+surface exactly as it binds the core: a recursive scan in the
+batch tests finds no tier-shaped key, no float, and no numeric
+list in any extension record or view. Suite: 127 → **161 tests,
+all green**, including a fresh mutation-verified negative
+control on the `_latest_label` current-state seam (record in
+`tests/README.md`).

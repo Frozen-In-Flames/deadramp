@@ -7,7 +7,8 @@ cd groups/operations-management-untiered
 PYTHONPATH=src python -m unittest discover -s tests
 ```
 
-**127 tests, all green** (verified by the parent before shipping).
+**161 tests, all green** (127 at the set's ship, verified by the
+parent; 34 added by the final GAPS batch, below).
 
 ## Layout
 
@@ -37,6 +38,7 @@ the founding group; no test logic changed anywhere.
 | `test_main_cli.py` | 1 | CLI entry point |
 | `test_negative_control.py` | 2 | the `_is_overdue` subclass mutant (below) |
 | `test_specs.py` | 8 | this set's spec sheets: exactly 20 sheets; membership == census unit `untiered:Operations Management`; tier discipline on every sheet (`cmmc_tier` null, impact "Unknown"); category on every sheet; every claim's evidence verbatim in its description (under the founding extractor's documented `\r`→space normalization); literal pins: 2 total claims, claims-by-fork (IVM SmartHub → `inspections_field_ops`; Boltline → `integrations`), and the 18-fork zero-claim set |
+| `test_gaps_batch.py` | 34 | final GAPS batch: the 9 set-specific entries' extension surface (`opsmgmt/extensions.py`) — per-entry shapes, honesty labels, derived-at-read pins, RBAC/audit discipline, the tier-null recursive scan, and the `_latest_label` negative control (below) |
 
 ## Negative control
 
@@ -72,3 +74,38 @@ Drill run in this tree (raw output: `scratch/drill_output.txt`):
 4. Restored `store.py` from the premutation copy; SHA-256 verified
    identical to the premutation hash above (and to the founding
    group's shipped module). Full suite re-run: **127 tests, OK**.
+
+## Final GAPS batch — negative control and mutation-verification record
+
+The batch's extension module (`src/opsmgmt/extensions.py`) derives
+every current-state value at a single seam,
+`OpsExtensions._latest_label`: a record's current state is its
+**latest** recorded label (sourcing events, agreement states,
+risk reports), or `recorded` when none exists. `test_gaps_batch.py`
+carries the in-suite control (`TestLatestLabelNegativeControl`): a
+subclass mutant reading the **earliest** label instead must not
+produce the canonical outcome — an agreement reported active then
+reported under review reads `reported_under_review` canonically
+and `reported_active` under the mutant, and asserting the
+canonical value against the mutant raises `AssertionError`.
+
+Live drill run in this tree (raw output:
+`scratch/gaps_batch_mutation_run.txt`):
+
+1. Saved the premutation copy (`scratch/extensions.py.premutation`)
+   and SHA-256 of `src/opsmgmt/extensions.py`:
+   `897731bc440928126a12e2676d6c8fe93becf8434b97c3d6aca9d0d5b36a73be`.
+2. Replaced the seam's `return labels[-1]` with
+   `return labels[0]` in the real file (the line occurs exactly
+   once).
+3. Ran the full suite: **exactly 5 failures**, all in the batch's
+   own new tests and all latest-label-derivation-dependent —
+   - `test_gaps_batch.TestContractExecution.test_agreement_current_state_derived_not_stored`
+   - `test_gaps_batch.TestLatestLabelNegativeControl.test_latest_label_drives_risk_view_too`
+   - `test_gaps_batch.TestLatestLabelNegativeControl.test_latest_label_wins_canonical_but_mutant_not`
+   - `test_gaps_batch.TestProcurement.test_requisition_view_state_and_totals_derived`
+   - `test_gaps_batch.TestSupplyChain.test_payment_instruction_and_view_rollup_derived`
+
+   No core test failed.
+4. Restored `extensions.py` from the premutation copy; SHA-256
+   verified identical. Full suite re-run: **161 tests, OK**.

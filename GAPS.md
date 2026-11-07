@@ -1401,15 +1401,15 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## Untiered Set 2 — Operations Management (20 forks, tier null)
 
 New extended functions from this set, specified in groups/operations-management-untiered/UNION-SPEC.md, not implemented (the standing category gaps — workflow execution, real-time intelligence, AI models, low-code builder, connectors, mobile/offline sync, network/platform operations, authorization services, enforcement planes, governance console, scheduling, IoT collection, multi-tenancy, encryption at rest — are already registered under the parent groups and are not re-registered here):
-- [ ] open — CMMS/EAM depth (computerized maintenance management and enterprise asset management engines)
-- [ ] open — Manufacturing execution & ERP/MRP
-- [ ] open — Procurement & sourcing platforms
-- [ ] open — Contract execution management
-- [ ] open — EV charging network management
-- [ ] open — Real-estate/facilities portfolio platform
-- [ ] open — Kiosk & locker access management
-- [ ] open — AI assistants & agents
-- [ ] open — Supply-chain risk & payments orchestration
+- [x] built — CMMS/EAM depth (computerized maintenance management and enterprise asset management engines)
+- [x] built — Manufacturing execution & ERP/MRP
+- [x] built — Procurement & sourcing platforms
+- [x] built — Contract execution management
+- [x] built — EV charging network management
+- [x] built — Real-estate/facilities portfolio platform
+- [x] built — Kiosk & locker access management
+- [x] reference — AI assistants & agents
+- [x] built — Supply-chain risk & payments orchestration
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. The set's two standing claims carry no control language, so the documented control claims stand at the prose tier: identification and authentication documented at four forks, access control documented at four, cryptographic protection at three, assessment at three, audit at two (both at records/readiness weight), configuration management and system integrity at one each; awareness, contingency, incident response, maintenance, media, physical, planning, program management, personnel, risk assessment, and system acquisition are not documented. Named absences: asset management — this category's signature absence — stands at zero claimed while standing in substance in six or more forks, because the founding phrase never occurs; scheduling and IoT/telematics stand in substance without a family; five AI-filed forks assert no scoped AI phrase. Seven of the set's nine raw hits were removed under the founding group's scoping discipline (authorization-services hits in boundary and status prose, one name-only token), each recorded with its reason.
 
