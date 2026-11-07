@@ -231,3 +231,33 @@ Also plainly:
   certification**, and it does not claim either. The control
   mapping above states which baseline families the build's features
   answer to; nothing more.
+
+## Final GAPS batch (2026-11-07)
+
+The nine Extended families registered for this group in the repo's
+gap registry are closed by one new module,
+`src/collab/extensions.py` (`CollabExtensions`, wrapping the core
+store; every core module byte-identical). Four land as
+build-extensions in the records substrate: learning / training /
+mentoring (course, enrollment, and verbatim completion records —
+nothing is assessed), knowledge management (articles whose stored
+record holds only tags and provenance, text in append-only
+revisions, current text derived at read), task & project
+management beyond board cards (milestones over core boards, card
+links, verbatim card-state records, state counts derived at read —
+no progress score), and records & governance beyond the
+versioning/audit seed (retention policies held as data, hold
+records whose currency derives at read, and disposition decisions
+gated by a derived eligibility seam; nothing is enforced or
+disposed of here — see PLATFORM-LAYER.md decision 4). Five land as
+labeled reference implementations (`reference_stub: True` on every
+record): AI assistance / speech / analytics (assistant and
+transcription records with reported outcomes held verbatim;
+analytics as deterministic counts derived at read), workflow /
+process automation (definitions held as data, never run),
+voice / telephony / contact center, meetings / video media
+transport (session coordination records only), and e-signature
+(envelope and ceremony records whose shapes can hold no signature
+value). Per-entry dispositions are in `BATCH.md`; the batch's
+fresh negative control is recorded in `tests/README.md`. Suite:
+192 tests before, **230 after, OK**.

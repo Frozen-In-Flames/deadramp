@@ -163,15 +163,15 @@ Baseline gaps at High (platform layer; gap-listed, never implied closed): MFA / 
 ## Group 10 — Collaboration L1 (10 forks)
 
 Extended functions, specified in groups/collaboration-l1/UNION-SPEC.md, not implemented (9):
-- [ ] open — AI assistance / speech / analytics (4 of 10 — this group's top tagged family)
-- [ ] open — Workflow / process automation (1)
-- [ ] open — Learning / training / mentoring (1)
-- [ ] open — Knowledge management (1)
-- [ ] open — Voice / telephony / contact center
-- [ ] open — Task & project management beyond board cards
-- [ ] open — Records & governance beyond the versioning/audit seed
-- [ ] open — Meetings / video media transport
-- [ ] open — E-signature
+- [x] reference — AI assistance / speech / analytics (4 of 10 — this group's top tagged family)
+- [x] reference — Workflow / process automation (1)
+- [x] built — Learning / training / mentoring (1)
+- [x] built — Knowledge management (1)
+- [x] reference — Voice / telephony / contact center
+- [x] built — Task & project management beyond board cards
+- [x] built — Records & governance beyond the versioning/audit seed
+- [x] reference — Meetings / video media transport
+- [x] reference — E-signature
 
 Platform-layer: encryption at rest (deployment layer); production identity / authenticator strength (demo identities are hooks; IA-2 stays with the embedding organization); TLS only when configured. Spec honesty note: this group's descriptions are marketing prose, only 15 claims tag across 6 of 10 sheets (four tag nothing), and six Core functions tag zero claims — they stay Core under the recorded core-boundary decision (they define the category and the products presuppose them; the taxonomy was deliberately not re-tuned, preserving cross-group comparability), so all counts are a stated floor. Tier precision: audit traces to AU-2/AU-3 on the FedRAMP Low side only; Group 2's Moderate citations were not imported.
 

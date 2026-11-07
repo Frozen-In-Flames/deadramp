@@ -104,3 +104,63 @@ remaining freedom:
   wrapped (`{"workspaces": [...]}`, `{"messages": [...]}`, …), except
   where the contract pins the wrapper (`/notifications` →
   `{"notifications": [...]}`, `/audit` → `{"entries": [...]}`).
+
+## Final GAPS batch — `test_gaps_batch.py` (38 tests)
+
+Covers the extension surface in `../src/collab/extensions.py`
+(`CollabExtensions`; see `../BATCH.md` for the per-entry
+dispositions, idx 104–112): learning records (course shape,
+enrollment membership boundary, verbatim completions with
+`assessed_here: False`, derived course counts, viewer read /
+non-member denial audited as `ext_course_create:denied`); knowledge
+management (stored article record pinned to exactly
+`{id, workspace_id, tags, created_by, created_utc}` — no text on
+the stored record; current text derived from the latest revision;
+search over current text only); task/project depth (milestones
+over core boards, card links, verbatim card states, state counts
+derived at read with no score/percent/progress key, state records
+leaving core cards untouched); records & governance (policy
+validation and the admin-only `manage_members` mapping, hold
+currency derived at read, holds leaving core files byte-identical,
+eligibility derivation incl. the `at` override, gated disposition
+decisions with `executed_here: False`); the five reference
+families' labels and behavioral pins (assistant reports leaving
+core messages untouched, transcription report shape holding no
+transcript field, analytics as deterministic counts that move as
+records are added, workflow definitions leaving core records
+byte-identical, voice/meeting records with `media_here: False`,
+envelope shape pinned to a key set that can hold no signature
+value, ceremony signer membership); and the audit-rollback pin
+(a failing audit write rolls back the record and its id).
+
+### Batch negative control — disposition eligibility
+
+`TestDispositionEligibilityNegativeControl` implements the batch's
+fresh mutant for the new code: `_disposition_eligible` in
+`src/collab/extensions.py` replaced by an always-eligible gate.
+The traced claim is that a disposition decision may be recorded
+only when the file's recorded retention period has run **and** no
+hold is active over it. For each canonical case (file under an
+active hold with retention met; file within its retention period
+with no hold) the test asserts the canonical expectation (the real
+gate refuses with `ValidationError` and stores nothing), that the
+mutant gate would NOT refuse (it records the decision / reports
+eligible), and — via a literal `assertRaises(AssertionError)` —
+that treating the mutant's outcome as the expected outcome fails.
+The mutant shares the canonical instance's tables, so only the
+seam differs.
+
+**Mutation verification (live drill, 2026-11-07):** the seam body
+in the real `src/collab/extensions.py` was patched to
+`return True` and the full suite was run: **230 tests ran, exactly
+3 failed**, all in `test_gaps_batch.py`:
+`TestDispositionEligibilityNegativeControl.test_held_file_refused_canonically_but_mutant_allows`,
+`TestDispositionEligibilityNegativeControl.test_within_retention_refused_canonically_but_mutant_allows`,
+and `TestGovernance.test_eligibility_derivation`. No core test
+failed — the mutant changes only disposition eligibility, which is
+the point. Full mutant-run output is kept at
+`../scratch/gaps_batch_mutation_run.txt`. `extensions.py` was then
+restored from `../scratch/extensions.py.premutation` and verified
+byte-identical by SHA-256 (`980a3ab5…`, in
+`../scratch/extensions.py.sha256`), and the suite re-run:
+**230 tests, OK**.
