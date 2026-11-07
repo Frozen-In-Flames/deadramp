@@ -410,3 +410,33 @@ and the four engine entries that act on external systems
 (applicant-tracking workflows, assessment delivery, connectors,
 hosting) ship as labeled reference implementations
 (`reference_stub: true`) that change no core record.
+
+## Final GAPS batch, second unit — remainder additions (2026-11-07)
+
+The 6 entries registered for this group in the repo-root `GAPS.md`
+under "Remainder Addition — Human Resources L2 (+3 forks)" are now
+closed in-substrate, all 6 built as drafted; see
+`BATCH-ADDITION.md` for the per-entry disposition and grounds.
+All addition code is one further new module,
+`src/hr/extensions_addition.py` (`HrExtensionsAddition` wrapping
+the core store); every pre-existing module, including the first
+batch unit's `extensions.py`, is byte-identical to its pre-unit
+state. Tests: **140 → 176, all passing**, including the unit's
+fresh mutation-verified negative control (the leave-balance
+mutant, recorded in `tests/README.md`).
+
+In brief: time, attendance & leave land as time-entry and
+correction records, leave accounts with their accrual rate as
+data, and balances derived at read; organizational charts are a
+view derived at read from unit and assignment records; the survey
+& listening platform lands as instrument definitions plus
+verbatim rating responses and label-only signals, with counts-only
+summaries and no free-text response field anywhere; benefits
+administration depth lands as task-checklist cases over the core
+benefits records with status derived at read, plus reported
+action and counseling records; the self-service portal & dashboard
+land as profile configuration records (identity and serving
+stated as not-here on the record), self-service requests, and
+dashboard definitions whose figures derive at read; and uniform
+allowance processing lands as integer-cents request records with
+processing steps and a derived summary.

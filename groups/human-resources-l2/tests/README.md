@@ -144,3 +144,60 @@ verified identical after restore against
 OK**. Raw mutant output: `scratch/gaps_mutation_run.txt`. The
 group's original lifecycle-derivation drill above is untouched and
 still passes as part of the 140.
+
+## Final GAPS batch, second unit — remainder additions (2026-11-07)
+
+The remainder-addition unit (see `../BATCH-ADDITION.md`) lands a
+second extension module (`src/hr/extensions_addition.py`), so its
+negative control is fresh, per `../../gaps-batch/DECISION.md`. The
+new module `test_gaps_batch_addition.py` adds 36 tests (suite
+**140 → 176, OK**): one class per remainder-addition entry — time
+entries with derived effective minutes and leave balances derived
+from recorded rates, accruals, and request states; org units and
+assignments with the chart derived at read and freshness pinned;
+survey instruments and verbatim bounded ratings with counts-only
+summaries, listening signals as labels only, and multi-rater
+feedback stored verbatim; benefits administration cases with
+derived-never-stored status, employee scope through the bound
+benefits record, and reported action/session records; portal
+profiles stating their identity/serving boundaries, self-service
+requests, and dashboard definitions pinned to an exact key set
+with figures derived at read; uniform allowance requests in
+integer cents with processing-step records and a derived summary —
+plus cross-cutting scans (no forbidden key and no aggregate key
+on any stored addition record; a signature scan asserting no
+public method can accept a name, identifier, pay figure, or
+free-text response content and that none takes `**kwargs`), RBAC
+denials consuming no id, and `ext2_`-prefixed audit actions. The
+control pins the unit's load-bearing derivation: **which recorded
+request states count as used leave**. `TestLeaveBalanceMutant`
+subclasses `HrExtensionsAddition` with a mutant
+`_leave_used_minutes` that also counts merely-requested minutes as
+used and asserts the canonical case both ways: 4,800 accrued
+minutes with 600 approved and 300 still requested give a balance
+of exactly 4,200 in the real implementation and exactly 3,900 in
+the mutant, and treating the mutant's 3,900 as the expectation
+raises `AssertionError`.
+
+Mutation verification, performed on this build: the state tuple
+on the `_leave_used_minutes` seam line in
+`src/hr/extensions_addition.py` (line 483,
+`if r["state"] in ("approved", "taken")`) was patched to
+`("approved", "taken", "requested")` — the exact live counterpart
+of the mutant — and the full suite ran: **176 tests, exactly 3
+failures** —
+
+- `test_gaps_batch_addition.TestLeaveBalanceMutant.test_used_minutes_seam_is_load_bearing`
+- `test_gaps_batch_addition.TestTimeAttendanceLeave.test_employee_scope_on_leave_views`
+- `test_gaps_batch_addition.TestTimeAttendanceLeave.test_leave_balance_derived_from_records`
+
+`extensions_addition.py` was then restored from the pre-mutation
+copy (`scratch/extensions_addition.py.premutation`; SHA-256
+`461f5bcec5f53fe7dea4f2e1b80f8c946c3c63a4a252af79e69d4aa01784e521`,
+verified identical after restore against
+`scratch/extensions_addition.py.sha256`) and the suite re-ran:
+**176 tests, OK**. Raw mutant output:
+`scratch/gaps_addition_mutation_run.txt`. The group's original
+lifecycle-derivation drill and the first batch unit's
+weighted-mean drill above are untouched and still pass as part of
+the 176.
