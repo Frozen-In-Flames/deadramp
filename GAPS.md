@@ -1841,22 +1841,22 @@ New gaps at this tier from the uplift decision, specified in groups/cloud-infras
 ## Singleton 66 — Enterprise Resource Planning L2 (Infor Government Solutions, FR1710033970)
 
 Gaps from Singleton 66, specified in groups/enterprise-resource-planning-l2/UNION-SPEC.md, not implemented:
-- [ ] open — Suite platform & portal presentation layer
-- [ ] open — Identity federation service
-- [ ] open — Integration execution & orchestration runtime (the build's registries store records and never execute)
-- [ ] open — API gateway runtime
-- [ ] open — Data lake & schema-on-read engine
-- [ ] open — Financial close & consolidation engine
-- [ ] open — Source-to-settle execution engine
-- [ ] open — Expense policy enforcement & fraud detection engine
-- [ ] open — Manufacturing production engine
-- [ ] open — Supplier exchange network
-- [ ] open — Talent management engine
-- [ ] open — Workforce scheduling optimizer
-- [ ] open — Payroll calculation engine
-- [ ] open — Business intelligence platform
-- [ ] open — Enterprise performance management engine
-- [ ] open — Governance, risk & compliance engine
+- [x] built — Suite platform & portal presentation layer
+- [x] reference — Identity federation service
+- [x] reference — Integration execution & orchestration runtime (the build's registries store records and never execute)
+- [x] reference — API gateway runtime
+- [x] built — Data lake & schema-on-read engine
+- [x] built — Financial close & consolidation engine
+- [x] built — Source-to-settle execution engine
+- [x] reference — Expense policy enforcement & fraud detection engine
+- [x] built — Manufacturing production engine
+- [x] built — Supplier exchange network
+- [x] built — Talent management engine
+- [x] built — Workforce scheduling optimizer
+- [x] built — Payroll calculation engine
+- [x] built — Business intelligence platform
+- [x] built — Enterprise performance management engine
+- [x] built — Governance, risk & compliance engine
 - [x] re-scoped — Platform layer: the fork's GovCloud / ITAR / CJIS / HIPAA posture does not transfer to the build; FIPS-validated cryptography (SC-13) is not claimed
 
 ## Later groups

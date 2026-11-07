@@ -6,9 +6,10 @@ Run from this directory:
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-**81 tests, all passing** (Python 3 standard library `unittest`
-only). Each test module's header names the core function, spec
-claim, or control family it traces to.
+**81 tests at delivery, 118 tests after the final GAPS batch,
+all passing** (Python 3 standard library `unittest` only). Each
+test module's header names the core function, spec claim, or
+control family it traces to.
 
 | Module | Covers |
 |---|---|
@@ -29,6 +30,7 @@ claim, or control family it traces to.
 | `test_main_cli.py` | CLI argument handling and demo-user wiring |
 | `test_specs.py` | Spec integrity: membership == the resolved fork {FR1710033970} in the census no-signal set, recorded fields match `forks.json`, taxonomy == the 24 own-words families, evidence verbatim, classification citation matches `nosignal_report.json` and does NOT occur in the description, checked absences hold at token level |
 | `test_negative_control.py` | The mutation-verified negative control (below) |
+| `test_gaps_batch.py` | Final GAPS batch: the extension surface in `../src/erp/extensions.py` — one class per open GAPS.md entry for this group, the stub labels, and the cross-cutting boundary pins (below) |
 
 ## Negative control — mutation-verified
 
@@ -69,3 +71,63 @@ invariant. The store was then restored from
 `scratch/store.py.premutation` and verified **byte-identical by
 SHA-256** (`scratch/store.py.sha256`), and the full suite re-ran
 green: **81 tests, OK**.
+
+## Final GAPS batch (2026-11-07)
+
+`test_gaps_batch.py` (37 tests) pins the extension surface in
+`../src/erp/extensions.py` (`ErpExtensions`, a wrapper around
+the core `ErpStore`; every core module is byte-identical to its
+pre-batch state): one test class per open GAPS.md entry for
+this group (see `../BATCH.md` for the per-entry disposition),
+plus cross-cutting pins — viewer denials on extension
+mutations, `ext_`-prefixed actions on the core audit log, and a
+recursive forbidden-key scan (no score / rating / rank / grade /
+email / phone / SSN / fraud field can exist on any extension
+record or evaluation).
+
+Per entry, the pins that carry the honesty of the disposition:
+portal layouts are derived in position order while the stored
+widget list keeps recording order; lake queries apply the
+declared schema at read over the core's *current* records (a
+record created after registration appears in the next query,
+and the stored dataset holds no rows); close balances,
+consolidation totals, settlement state, production completion,
+exchange feeds, pipeline counts, schedule coverage / gaps /
+double-bookings, payroll gross / deductions / net, dashboard
+metrics, plan actuals / variance / forecast, and risk exposure
+are all derived at read — the stored records' exact key sets
+are pinned so no derived value can be hiding on them; payment
+instructions are capped by the guard seam at the purchase
+order's derived total and a refusal consumes no id; production
+output lands on the core inventory record through the core's
+own recorded adjustment and over-plan output is refused whole;
+the scheduling view is labeled `deterministic_coverage` (no
+optimization is performed or claimed); the four stub-engine
+entries' records all carry `reference_stub: True` and status
+`recorded_reference_only` (the federation records also carry
+`hook_only: True`), the gateway stub refuses a route against a
+non-gateway integration, and the expense-policy evaluation is
+labeled `deterministic_limit_check` — its findings state
+recorded limit breaches only, and the recursive scan pins that
+no fraud determination exists anywhere in it.
+
+### Batch negative control — mutation-verified
+
+VERIFIED by the coordinator (2026-11-07). The signature guard
+of the source-to-settle extension,
+`_check_instruction_within_total` in `src/erp/extensions.py`,
+was patched from `if instructed_cents + amount_cents >
+total_cents:` to `if False:` — computing the totals but never
+comparing them against the purchase order's derived total —
+and the full suite was run: **118 tests ran, exactly 1 failed**
+(`test_gaps_batch.TestSourceToSettle
+.test_instruction_cap_guard_and_no_id_consumed_on_refusal`).
+`extensions.py` was then restored from
+`scratch/extensions.py.premutation` (SHA-256 verified identical
+to the pre-mutation hash,
+`8c781caec5c25cb5622eaeb40801e1226182472bc4f802a2c36e37b2f4a5df46`;
+drill record in `scratch/gaps-mutation-run.txt`) and the suite
+re-run: **118 tests, OK**.
+
+Full suite status after the batch: **118 tests, OK** (81 at
+delivery + 37 batch tests).

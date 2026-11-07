@@ -109,7 +109,7 @@ built at the Moderate/L2 baseline:
 ```sh
 PYTHONPATH=src python3 -m erp serve --port 8765
 # demo users: alice=admin, bob=operator, carol=viewer (X-User / X-Role headers)
-PYTHONPATH=src python3 -m unittest discover -s tests   # 81 tests
+PYTHONPATH=src python3 -m unittest discover -s tests   # 118 tests
 ```
 
 Python 3 standard library only; there is nothing to install.
@@ -168,3 +168,34 @@ traceability table and precision notes in
 - Claims in the spec are a **floor**: a function is claimed
   only where the offering's own marketplace description states
   it, with the sentence stored as evidence.
+
+## Final GAPS batch (2026-11-07)
+
+The 16 open GAPS.md entries for this group are closed by the
+batch in `src/erp/extensions.py` (`ErpExtensions`, a wrapper
+around the core store; every core module is byte-identical to
+its pre-batch state). See `BATCH.md` for the per-entry
+disposition. In short: the portal presentation layer, data
+lake, close & consolidation, source-to-settle, production,
+supplier exchange, talent, scheduling, payroll calculation,
+business intelligence, performance management, and GRC entries
+are built as in-substrate records plus deterministic
+derivations over this build's own records (payment instructions
+capped by a guard seam at the purchase order's derived total;
+payroll gross/net, close balances, plan variance, and risk
+exposure all derived at read and never stored; the scheduling
+surface computes deterministic coverage and claims no
+optimization), and the federation service, the orchestration
+runtime, the API gateway runtime, and the expense policy /
+fraud detection entry ship as labeled reference
+implementations (`reference_stub: True` on every record;
+federation records also carry `hook_only: True` — this
+substrate is never an IdP, routes nothing, executes nothing,
+and determines no fraud; expense-policy findings state
+recorded limit breaches only). The section's 17th entry, the
+platform-layer entry, was already closed as re-scoped under
+the repo's PLATFORM-LAYER.md and is untouched here. Full suite
+after the batch: **118 tests, OK**, including a fresh
+mutation-verified negative control on the settlement guard
+(exactly 1 failure under the mutant; drill record in
+`tests/README.md`).
