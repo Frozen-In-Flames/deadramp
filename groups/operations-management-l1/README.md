@@ -194,9 +194,10 @@ served with the matching read permission.
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-129 tests (119 shipped + 10 additions). See `tests/README.md` for
-the coverage table, the negative control, and the
-mutation-verification drill records for this tree.
+175 tests (119 shipped + 10 additions + 46 final GAPS batch).
+See `tests/README.md` for the coverage table, the negative
+controls, and the mutation-verification drill records for this
+tree.
 
 ## Remainder additions (unit `addition:operations-management-l1`)
 
@@ -309,3 +310,40 @@ certification.
 - This build is **not a FedRAMP authorization**, and it does not
   claim one. The control mapping above states which Low-baseline
   families the build's features answer to; nothing more.
+
+## Final GAPS batch (2026-11-07)
+
+The final GAPS batch closes this group's 9 open entries in one
+new module, `src/opsmgmt/extensions.py` (class `OpsExtensions`,
+wrapping the core store; per-entry record in `BATCH.md`). Eight
+entries land as records plus deterministic derivations over the
+group's own records: form definitions held as data and
+submission records with reviewer assignments whose current
+assignees derive at read (nothing rendered, no intake engine);
+review records storing scores and feedback **verbatim as
+reported** — the founding discipline holds exactly, nothing in
+this build computes a score and summaries are counts only;
+message templates and dispatch requests with reported outcomes
+(nothing sent); report definitions and run records whose
+figures derive at read as counts and sums of recorded values
+only; site definitions as data (nothing published or rendered);
+gallery items holding opaque media references only (nothing
+hosted); session records whose room/speaker conflicts derive at
+read from recorded times (nothing booked); and payment records
+over integer-cent amounts with verbatim reported outcomes
+(records, never execution — `paid_here: False`). Third-party
+integrations ship as a labeled reference implementation
+(`reference_stub: True`, `connected_here: False`,
+`synced_here: False`) — the placement the fork's own listing
+gives them, outside its FedRAMP Minimum Assessment Scope. The
+Honesty section above therefore reads with one amendment: the
+fork's certified services and out-of-scope capabilities are now
+present in records form only — the engines themselves are still
+not implemented, and nothing in this build renders, sends,
+publishes, hosts, books, pays, connects, or scores. All seven
+pre-existing `src/opsmgmt/*.py` core modules are byte-identical
+(SHA-256 verified); the baseline stays Low / FAR 52.204-21 only
+— no Moderate apparatus or claim is imported from Group 36.
+Tests: 129 → 175, all passing, including a fresh
+mutation-verified negative control on the new session-overlap
+derivation — see `tests/README.md`.
