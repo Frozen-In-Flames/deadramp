@@ -391,3 +391,37 @@ offerings, the tier is recorded then and not before.
   header; the service enforces the role permission matrix and
   learner scope on those hooks and ships no identity provider, no
   credential store, and no authentication of its own.
+
+## Final GAPS batch (2026-11-07)
+
+The 16 open GAPS.md entries for this set are closed by the batch in
+`src/learn/extensions.py` (`LearnExtensions`, a wrapper around the
+core store; the 7 core modules are unchanged and byte-identical to
+the hashes above): 11 entries built as in-substrate records /
+derivation extensions — phishing-simulation campaign and outcome
+records (nothing is sent), delivery-session records with status
+derived from core progress (no content is served), notification
+rules with a deterministic evaluation producing
+`reference_transport`-labeled receipts (nothing is sent), clinical
+log records with derived totals, simulation-center resource and
+booking records, guidance-flow and event records, career-ladder
+records with derived current level, recruiting/HCM records with
+derived pipeline counts, opportunity records with a deterministic
+presence-match derivation, and the AI-assistant surface as a
+labeled deterministic lookup over the guidance records — and 5
+entries shipped as labeled reference implementations
+(`reference_stub: True` on every record): competency/assessment
+cycles, directory sync, credentialing/accreditation workflows,
+remote proctoring & identity proofing (reported outcomes only,
+`decision_made: False`, not an IdP), and the hosting platform
+layer (deployment-posture records; the summary states this build
+is a single-tenant reference deployment). The scoring entry is
+built in records form only — scoring rules held as data and never
+applied, outcomes recorded verbatim as reported — because the
+founding doctrine (no score/grade field anywhere, scoring claimed
+by no fork) binds the extension exactly as it binds the core; the
+re-judgment and its grounds are recorded in `BATCH.md`. Tier stays
+null throughout: no baseline is asserted and no tier key appears
+on any record. Per-entry detail: `BATCH.md`. Suite: **128 tests,
+OK**, including a fresh mutation-verified negative control on the
+delivery-status derivation (see `tests/README.md`).

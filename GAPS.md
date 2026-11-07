@@ -1474,22 +1474,22 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## Untiered Set 8 — Education & Training (6 forks, tier null)
 
 New extended functions from this set, specified in groups/education-training-untiered/UNION-SPEC.md, not implemented:
-- [ ] open — Phishing simulation & security-awareness engines
-- [ ] open — Training content delivery & LMS engines
-- [ ] open — Competency management & assessment-cycle engines
-- [ ] open — Notification & reminder engine (a founding gap that gains a claimant in this set)
-- [ ] open — Medical education management engines
-- [ ] open — Simulation-center operations engines
-- [ ] open — Digital adoption & in-app guidance engines
-- [ ] open — AI assistants & guidance bots
-- [ ] open — Directory integration & provisioning sync
-- [ ] open — Career development & clinical ladder engines
-- [ ] open — Credentialing & accreditation workflow engines
-- [ ] open — Deterministic scoring & proficiency-rating engines
-- [ ] open — Recruiting/HCM suite
-- [ ] open — Talent & marketplace matching (no claimant in this set)
-- [ ] open — Remote proctoring & identity proofing (no claimant in this set)
-- [ ] open — Hosting / multi-tenancy platform layer
+- [x] built — Phishing simulation & security-awareness engines
+- [x] built — Training content delivery & LMS engines
+- [x] reference — Competency management & assessment-cycle engines
+- [x] built — Notification & reminder engine (a founding gap that gains a claimant in this set)
+- [x] built — Medical education management engines
+- [x] built — Simulation-center operations engines
+- [x] built — Digital adoption & in-app guidance engines
+- [x] built — AI assistants & guidance bots
+- [x] reference — Directory integration & provisioning sync
+- [x] built — Career development & clinical ladder engines
+- [x] reference — Credentialing & accreditation workflow engines
+- [x] built — Deterministic scoring & proficiency-rating engines
+- [x] built — Recruiting/HCM suite
+- [x] built — Talent & marketplace matching (no claimant in this set)
+- [x] reference — Remote proctoring & identity proofing (no claimant in this set)
+- [x] reference — Hosting / multi-tenancy platform layer
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn; one fork's own FIPS 199 Low categorization prose is recorded as its statement and does not convert to a tier. The documented control claims: access control documented at one fork, audit and cryptographic protection documented at prose weight, identification documented in part (a directory provisioning sync, not authentication); inherited-platform posture prose and accreditation passages about customers are recorded but not documented as claims, and every other family is listed as not documented. Named absences: compliance training stands at zero of six — the word compliance occurs in none of the six descriptions — and training delivery, talent and skills, career development, performance management, policy management, scoring, and proctoring also stand at zero. One exclusion removal is recorded: a credentialing hit whose only evidence is the fork's own FedRAMP target-certification sentence.
 

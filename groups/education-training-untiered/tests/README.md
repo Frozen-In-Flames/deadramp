@@ -41,6 +41,7 @@ instead of L2. Added here: `test_specs.py` (9 tests).
 | `test_main_cli.py` | `python -m learn serve` subprocess with demo users alice/bob/carol/dana |
 | `test_negative_control.py` | Negative control (below) |
 | `test_specs.py` | Untiered spec integrity — exactly 6 sheets; membership exact against remainder.json unit `untiered:Education & Training`; tier discipline on every sheet (`cmmc_tier` null, impact "Unknown"); every claim's evidence verbatim in its description (under the founding `\r`→space normalization, stated in the test); literal totals (29 claims, zero-claim set exactly {FR1916744879}); the exact per-fork claim table; the exclusion-pass pins (no claim evidence carries scope-exclusion phrasing; Toonimo's removed certification hit stays removed) |
+| `test_gaps_batch.py` | Final GAPS batch (below) — 54 tests: one class per open GAPS.md entry for this set against `../src/learn/extensions.py`, plus cross-cutting pins (no score/grade/tier key anywhere on the surface, stub/transport labels, derived-never-stored, learner scope, audited denials, no id consumed) |
 | `learn_helpers.py` | Shared fixtures: demo users (ADMIN/INSTRUCTOR/LEARNER/AUDITOR), `USERS` registry, `fresh_store()`, and `make_store()` building a LearnStore + AuditLog + one course (created by ADMIN) |
 
 ## Negative control
@@ -102,3 +103,52 @@ except `learn_helpers.py` (docstring labeling fix, above) and the
 founding additions module, which is not carried; `test_specs.py` is
 new. The implementation accounting (7 of 7 `src/learn/` modules
 byte-identical to the founding group) is in the group README.
+
+## Final GAPS batch (2026-11-07)
+
+`test_gaps_batch.py` (54 tests) pins the extension surface in
+`../src/learn/extensions.py` (`LearnExtensions`): one class per
+open GAPS.md entry for this set (see `../BATCH.md` for the per-entry
+disposition), plus cross-cutting pins — a recursive key scan over
+every value the surface returns asserting **no score/grade-shaped
+key and no tier/baseline-shaped key anywhere** (the founding
+no-score doctrine and this set's tier-null discipline, extended to
+the batch surface), stub labels (`reference_stub: True`) on the
+competency, directory-sync, accreditation, proctoring/proofing, and
+deployment records, transport labels (`reference_transport: True`)
+on notification receipts, derived-never-stored values (delivery
+status, campaign outcome counts, clinical totals, ladder current
+level, matching, pipeline counts), learner scope, `ext_`-prefixed
+audit actions, denied writes recorded with a `:denied` suffix, and
+no id consumed by a failed operation.
+
+### Batch mutation verification — fresh negative control
+
+VERIFIED by the coordinator (2026-11-07). The batch's fresh
+negative control targets the delivery derivation in the NEW code:
+the completed branch of `LearnExtensions._derive_delivery_status`
+(`src/learn/extensions.py`) — the line `return "completed"` under
+`if any(p["status"] == "completed" for p in progress):` (the named
+line occurs exactly once in the file, count asserted before
+patching) — was patched to `return "in_progress"`, so a learner
+with a completed core progress record read `in_progress` instead of
+`completed`. The full suite was run: **128 tests ran, exactly 1
+failed**:
+
+- `test_gaps_batch.TestDeliveryEngine.test_status_derived_from_core_progress`
+
+`extensions.py` was then restored from the pre-mutation copy
+(`scratch/extensions.py.premutation`; SHA-256
+`347a4544a9c405383c0baffa5780ea4b5e0e6e89f829787b0953bbe91a953cfe`,
+verified identical after restore against
+`scratch/extensions.py.sha256`) and the suite re-run: **128 tests,
+OK**. The raw failure list is in `scratch/gaps_mutation_run.txt`.
+No core test failed under the mutant — the derivation is new code
+and its load-bearing test is the batch's own, as the batch pattern
+requires. The founding compliance-derivation drill above remains
+this tree's core control, unchanged.
+
+Full suite status after the batch: **128 tests, OK** (74 at
+delivery + 54 batch tests). Core modules byte-identical to their
+shipped hashes (see the group README accounting; `extensions.py` is
+the only new module in `src/learn/`).
