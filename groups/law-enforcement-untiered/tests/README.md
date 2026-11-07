@@ -83,3 +83,42 @@ then restored from `scratch/store.py.premutation` and verified
 recorded in `scratch/store.py.sha256` — the founding shipped hash);
 the suite is green again (91, OK). Raw drill output:
 `scratch/mutation-run.txt`.
+
+## Final GAPS batch tests (appended at the batch build)
+
+| Module | What it pins |
+|---|---|
+| `test_gaps_batch.py` | The open functions of this set's gap list closed in records form (operations & plans, coordination messages & receipts, location reports, after-action reports, chain references & reported links, leads & reported links, investigation requests & opaque results) plus the operational risk-assessment reference records: every record's exact key set and boundary labels, ref-uniqueness and no-id-on-failure, cross-matter isolation, derived-never-stored counts and degrees, the privacy rule by signature (smuggled content / body-text / query-text / note-text / person / identifier / address / coordinate kwargs raise `TypeError`), digest fields accepting only 64-hex digests, the tier-null recursive scan (no tier/baseline/equivalence key, no score/rating/grade key, no person/content key, no float, no numeric list on any extension record or view), reference-stub and reference-transport labels, the RBAC mapping onto the core action set, the membership boundary, the closed-matter rule, and `ext_*` / `ext_*:denied` audit discipline. The workspace multi-tenancy entry has NO code here: it is closed in writing under `PLATFORM-LAYER.md` decision 6 (see `../BATCH.md`). |
+
+### The chain-degree seam drill (fresh negative control, batch)
+
+The claim under test: **a chain reference's in-degree counts the
+recorded links whose target it is, and its out-degree counts the
+recorded links whose source it is** -- the
+blockchain-intelligence entry's only derivation, computed at
+read over the link records through the seam
+`LawEnfExtensions._chain_degree`.
+`TestChainDegreeNegativeControl` pins the canonical case (links
+A->B, A->C, B->C: A reads in 0 / out 2, C reads in 2 / out 0, an
+isolated reference reads 0/0) and, for each asymmetric case,
+asserts (1) the real implementation's outcome, (2) a mutant
+subclass overriding the seam to swap in/out would NOT produce
+it, and (3) treating the mutant's outcome as the expected
+outcome raises `AssertionError`.
+
+File-level verification (performed at build time, raw output in
+`scratch/gaps_batch_mutation_run.txt`): the shipped
+`src/lawenf/extensions.py` (pre-mutation SHA-256
+`f7413f5a52d562942ceed22e629308a663909bfe5a9ea23ba4b1f23d04041451`,
+backup in `scratch/extensions.py.premutation`) was mutated at
+the seam's return line (`return in_degree, out_degree` ->
+`return out_degree, in_degree`, exact full-line match, one
+occurrence) and the full suite run: **exactly 3 failures** out
+of 133 (the two asymmetric canonical cases in
+`TestChainDegreeNegativeControl` and the degrees test in
+`TestChainReferencesAndLinks`; the symmetric isolated-reference
+case passes under either orientation, as expected). The file
+was then restored from the pre-mutation copy, its SHA-256
+verified identical, and the suite re-run green. Run count after
+the batch: **133 tests, OK** (91 before: 82 carried founding
+core tests + 9 spec tests; 42 added by the batch module).

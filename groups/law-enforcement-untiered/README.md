@@ -322,3 +322,32 @@ offerings, the tier is recorded then and not before.
   membership on those hooks and ships no identity provider, no
   credential store, and no authentication of its own (IA-2 stays
   with the embedding organization).
+
+## Final GAPS batch (closed at the batch build)
+
+The 9 open entries of this set's gap list are closed by
+`src/lawenf/extensions.py` (new module; all seven founding core
+modules byte-identical), pinned by `tests/test_gaps_batch.py`
+(42 tests; suite 91 → 133) with one fresh mutation-verified
+negative control (the chain-degree seam drill, exactly 3
+failures under the in/out swap). 7 entries are built as records
+in-substrate in the adjudicated forms (operations & plans,
+coordination messages as digests with reference-transport
+receipts, caller-reported location records, after-action report
+registrations, chain references & reported links with
+read-derived degrees, leads & reported links, investigation
+requests & opaque result references — every record labeled
+`..._here: false` for anything that would execute, transmit,
+sense, resolve, or infer, and every record in this set's privacy
+shape: metadata and digests only, keyed by opaque refs, no
+parameter anywhere that can accept content, query/note text, a
+person's identifier, or coordinates); operational
+risk-assessment tooling ships as a labeled reference
+implementation (`reference_stub: true`, verbatim outcome labels,
+no score anywhere on the surface); and the workspace
+multi-tenancy entry is closed in writing under
+`PLATFORM-LAYER.md` decision 6 rather than as code (it claims
+no records function for the substrate to extend — see
+`BATCH.md`, which carries the per-entry dispositions, the
+re-judgment grounds, and what stays not covered). Tier null
+binds the whole extension surface, pinned by a recursive scan.

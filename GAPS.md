@@ -1606,15 +1606,15 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## Untiered Set 17 — Law Enforcement (2 forks, tier null)
 
 New extended functions from this set, specified in groups/law-enforcement-untiered/UNION-SPEC.md, not implemented (the founding group's engine gaps are already registered under it and are not re-registered here):
-- [ ] open — Command-and-control & operational planning platform
-- [ ] open — Real-time team coordination & encrypted messaging engines / real transports
-- [ ] open — GPS mapping & location services
-- [ ] open — Operational risk-assessment tooling
-- [ ] open — After-action documentation & reporting engine
-- [ ] open — Blockchain intelligence & multi-chain investigation graph engine
-- [ ] open — All-source fusion & lead/identity resolution
-- [ ] open — AI investigation models
-- [ ] open — Workspace multi-tenancy / platform layer
+- [x] built — Command-and-control & operational planning platform
+- [x] built — Real-time team coordination & encrypted messaging engines / real transports
+- [x] built — GPS mapping & location services
+- [x] reference — Operational risk-assessment tooling
+- [x] built — After-action documentation & reporting engine
+- [x] built — Blockchain intelligence & multi-chain investigation graph engine
+- [x] built — All-source fusion & lead/identity resolution
+- [x] reference — AI investigation models
+- [x] re-scoped — Workspace multi-tenancy / platform layer
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This set records zero claims: the founding taxonomy is a legal-research taxonomy and neither operational description fires any of its phrases — the same outcome this category recorded at its Low singleton and its High addition. The documented control claims stand at identification documented (an identity and access management layer, no mechanism named), access control documented in part at prose weight, and cryptographic protection at prose weight (encrypted messaging, bounded: no algorithm or standard claimed); an operational risk-assessments phrase is a function, not risk-assessment control language, and after-action documentation is not audit. Category discipline is pinned by test on the descriptions themselves: facial, predictive, surveillance, camera, sensor, and the phrase real-time intelligence occur zero times in both descriptions, and none of those functions is attributed in any form. No core function is claim-supported: the substrate is carried, not claimed.
 
