@@ -935,16 +935,16 @@ Enlargements of families already registered under Singleton 54: managed OS & ser
 ## Remainder Addition — Legal & Policy L2 (+6 forks)
 
 New extended functions from the addition forks, specified in groups/legal-policy-l2/ADDENDUM.md, not implemented (the group's original nine Extended gaps gain no claimants; the newcomers claim zero families under the taxonomy, which is the original fork's literal phrases):
-- [ ] open — eDiscovery processing & collection engine (CDS, Deloitte EMS, IDGC)
-- [ ] open — eDiscovery document review platform, incl. hosted review ecosystems (CDS, Deloitte EMS, IDGC, RelativityOne)
-- [ ] open — eDiscovery production, disposition & archiving engine (Deloitte EMS, IDGC)
-- [ ] open — Legal hold & preservation management (Deloitte EMS, IDGC)
-- [ ] open — AI document analysis for discovery: summarization / classification / redaction, assisted review, analytics & visualizations (Deloitte EMS, IDGC, RelativityOne, CDS)
-- [ ] open — OCR & document extraction engine (Deloitte EMS)
-- [ ] open — FOIA & disclosure release engine (Deloitte EMS)
-- [ ] open — Electronic signature engine: ceremony, binding / validity, envelope & transaction workflow (DocuSign)
-- [ ] open — Contract lifecycle management engine (DocuSign CLM)
-- [ ] open — Agreement workflow automation engine (DocuSign)
+- [x] built — eDiscovery processing & collection engine (CDS, Deloitte EMS, IDGC)
+- [x] built — eDiscovery document review platform, incl. hosted review ecosystems (CDS, Deloitte EMS, IDGC, RelativityOne)
+- [x] built — eDiscovery production, disposition & archiving engine (Deloitte EMS, IDGC)
+- [x] built — Legal hold & preservation management (Deloitte EMS, IDGC)
+- [x] built — AI document analysis for discovery: summarization / classification / redaction, assisted review, analytics & visualizations (Deloitte EMS, IDGC, RelativityOne, CDS)
+- [x] built — OCR & document extraction engine (Deloitte EMS)
+- [x] built — FOIA & disclosure release engine (Deloitte EMS)
+- [x] reference — Electronic signature engine: ceremony, binding / validity, envelope & transaction workflow (DocuSign)
+- [x] built — Contract lifecycle management engine (DocuSign CLM)
+- [x] reference — Agreement workflow automation engine (DocuSign)
 
 ## Remainder Addition — Data Management L2 (+5 forks)
 

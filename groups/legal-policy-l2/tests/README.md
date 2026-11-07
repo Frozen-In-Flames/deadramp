@@ -150,3 +150,67 @@ error message. Smoke OK.
   transition, not a date derivation); only `expired` and
   `sandbox_consumed` are derived — the distinction is deliberate
   and stated in the store's module docstring.
+
+## Final GAPS batch (Remainder Addition section, idx 561–570)
+
+The 10 gap entries the remainder additions registered (the six
+newcomers' eDiscovery, signature, and contract platforms) are
+closed by one new module, `src/legalpol/extensions.py`
+(`LegalPolExtensions` wrapping the unchanged core store), pinned
+by `test_gaps_batch.py` (**37 tests**). Full suite: **106 → 143
+tests, all passing**. All seven pre-existing core modules are
+byte-identical (store.py still `7030f9fd…`); the extension is
+store-level only, no HTTP routes.
+
+| File | Tests | Covers |
+|---|---:|---|
+| `test_gaps_batch.py` | 37 | Final GAPS batch — matters & collections (idx 561: exact key-set pins, reported counts, duplicate refs consume no id, view counts derived), legal holds (idx 564: current state derived from the latest recorded label, stored record carries no state key, coverage records), review (idx 562: verbatim decision labels, a decision leaves the core document record byte-identical), production & disposition (idx 563: eligibility derived from recorded states; a decision is refused while an active hold covers the document and records after release), AI analysis (idx 565: request/result shapes hold an opaque result reference only — no output-text field exists; analytics are deterministic counts), OCR extraction (idx 566: job records, reported counts, no extracted-text field), FOIA (idx 567: case records, derived current state, verbatim exemption labels, release records), agreements (idx 569: integer-cent value discipline, lifecycle state derived never stored), e-signature reference (idx 568: `reference_stub: True`, `recorded_reference_only`, `signed_here: False`, no signature-value field), workflow reference (idx 570: definitions held as data; registering one changes no agreement record), cross-cutting guards (viewer write denied and audited `:denied`, outsider denied at the membership boundary, `TypeError` on content/text/summary/signature/query kwargs, recursive forbidden-key scan over the whole surface), and the batch negative control (below) |
+
+### Batch negative control
+
+**`TestHoldDerivationNegativeControl`** — the batch's fresh
+negative control is the **hold current-state derivation**: a
+hold's current state is the *latest* recorded state label,
+computed by the extension seam
+`LegalPolExtensions._current_hold_label`. The mutant is a
+`LegalPolExtensions` subclass (`MutantHoldExtensions`) whose seam
+reads the *earliest* label. The tests assert the canonical
+expectations (with states [reported_issued, reported_released]
+the current state is `reported_released`, the hold is inactive,
+a disposition decision over a covered document records, and the
+discovery-analytics active-hold count is 0), that the mutant
+produces the opposite outcomes on all four, and — via literal
+`assertRaises(AssertionError)` — that the canonical expectation
+rejects the mutant's outcome.
+
+### Batch mutation verification
+
+VERIFIED in this build session: `_current_hold_label` in the
+real `src/legalpol/extensions.py` was patched to read the
+earliest state (`return states[0]["state_label"]`) and the full
+suite was run against the patched implementation.
+
+- Premutation copy: `scratch/extensions.py.premutation`
+  (the group's gitignored scratch directory); its SHA-256 is
+  `e3a267ce290a355adfa7e12c9e8f861d4f63fa9c79156877378ae23be604bd7a`
+  (also recorded in `scratch/extensions.py.sha256`). Raw drill
+  output is in `scratch/gaps_batch_mutation_run.txt`.
+- Patched run: **143 ran, exactly 5 did not pass** (3 failures +
+  2 errors — the errors are the canonical arms where the
+  post-release disposition decision unexpectedly raises):
+  - `test_gaps_batch.TestLegalHolds.test_current_state_derived_from_latest` (FAIL)
+  - `test_gaps_batch.TestHoldDerivationNegativeControl.test_current_state_is_latest_canonical` (FAIL)
+  - `test_gaps_batch.TestHoldDerivationNegativeControl.test_mutant_changes_analytics_active_count` (FAIL)
+  - `test_gaps_batch.TestHoldDerivationNegativeControl.test_mutant_changes_disposition_eligibility` (ERROR, canonical arm)
+  - `test_gaps_batch.TestProductionDisposition.test_disposition_blocked_until_hold_released` (ERROR, post-release decision)
+- `extensions.py` was then restored from
+  `scratch/extensions.py.premutation` and verified
+  **SHA-256-identical**
+  (`e3a267ce290a355adfa7e12c9e8f861d4f63fa9c79156877378ae23be604bd7a`);
+  the suite is green again (143/143).
+
+The failing set is exactly the hold-derivation-dependent set:
+every test that depends on the latest-label derivation fails, and
+no unrelated test does — the mutant-agreement arms of the control
+pass under both implementations by construction, as in the core
+drill.

@@ -240,3 +240,38 @@ see `tests/README.md` for both drill records).
   fork, taxonomy defined from its own description) or to the
   Moderate/L2 control families in `UNION-SPEC.md`. Counts are a
   floor, stated as such.
+
+## Final GAPS batch (the additions' 10 gap entries)
+
+The 10 gap functions the remainder additions registered (§5 of
+`ADDENDUM.md`) are closed by the final GAPS batch in one new
+module, `src/legalpol/extensions.py` (`LegalPolExtensions`,
+store-level only; all seven core modules byte-identical), under
+the founding privacy rule — documents exist here only as core
+metadata + SHA-256 records, and no extension shape can hold
+content, extracted text, a summary, a signature value, or query
+text. Eight entries close as **built** in records form: matters
+and collections over core document references with counts as
+reported (nothing collected or processed), review assignments
+with verbatim decision labels (a decision changes no core
+document record), productions and disposition *decision* records
+whose eligibility derives from recorded states (nothing executed;
+a decision is refused while an active legal hold covers the
+document), legal holds whose current state derives at read from
+the latest recorded label (preservation stays with the
+custodian's systems), AI analysis as request records plus
+reported outputs held as opaque result references (no inference,
+no output text anywhere; analytics are deterministic counts),
+OCR/extraction job records (no extracted text anywhere), FOIA
+case records with derived state, verbatim exemption labels, and
+release records (nothing released), and agreement records over
+opaque party references with lifecycle state derived at read
+(nothing executed). Two entries close as labeled **reference**
+implementations (`reference_stub: true`): e-signature envelopes
+and ceremony records (no field can hold a signature value;
+nothing is signed) and agreement workflow definitions held as
+data (the registry never executes; registering one changes no
+agreement record). Full record: [`BATCH.md`](BATCH.md). Suite:
+**106 → 143 tests**, all passing, including a fresh
+mutation-verified negative control on the hold-derivation seam
+(exactly 5 non-passing under the mutant; see `tests/README.md`).
