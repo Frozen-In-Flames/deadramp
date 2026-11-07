@@ -11,12 +11,14 @@ wording only (group references; zero logic changes — see
 
 ```bash
 cd groups/operations-management-l1
-PYTHONPATH=src python3 -m unittest discover -s tests        # 175 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 211 tests
 ```
 
 Status at delivery: **119 tests, OK** against the implementation in
 `../src/`; **129 tests, OK** after the remainder additions below;
-**175 tests, OK** after the final GAPS batch unit below. (Run exactly as above: helpers are imported as a top-level
+**175 tests, OK** after the final GAPS batch unit below;
+**211 tests, OK** after the remainder-addition batch unit below
+that. (Run exactly as above: helpers are imported as a top-level
 module from the tests directory and `tests/__init__.py` is empty by
 design, so package-mode discovery with `-t .` is not the supported
 entry point for this group.)
@@ -40,6 +42,7 @@ entry point for this group.)
 | `test_negative_control.py` | 2 | Negative control (below) |
 | `test_additions.py` | 10 | Remainder additions (unit `addition:operations-management-l1`) — spec integrity (4 sheets, original first and unchanged, exact census membership, house schema, taxonomy labels, verbatim evidence, literal claim map: 1 claim / Tango `integrations`; SCMC and FM:Systems zero-claim), census citations 4/4 verbatim but tagging nothing, near-miss pins, and one substrate case per addition fork (SCMC procurement records + report overdue derivation; FM:Systems reservable-room asset + never-executing workflow, no reservation/scheduling API on the store; Tango workplace records, integrations Extended-only — no connector entry point) |
 | `test_gaps_batch.py` | 46 | Final GAPS batch (unit `Singleton 52 — Operations Management L1`) — the extension surface in `src/opsmgmt/extensions.py`: form definitions as data (`rendered_here: False`, versioned, field validation), submission records (values only for defined fields, labels not content, opaque submitter refs), reviewer assignments (duplicate-active refused, withdraw frees, current reviewers derived at read and never stored), reviews (score/feedback stored verbatim, `score_computed_here: False`, immutable — no update/delete API, summary counts only with no aggregate key), message templates + dispatch requests/outcomes (`sent_here: False`, reported statuses verbatim), report definitions + runs (run records store no figures; figures derived at read; project scope honored; unknown metrics refused), site definitions (`published_here`/`rendered_here: False`), galleries (opaque media refs only, no content field, `hosted_here: False`, item count derived), sessions (window validation, room/speaker conflicts derived at read, half-open adjacency, no conflict key stored), payments (integer cents only — float/bool/zero refused, `paid_here: False`, current reported status derived from latest outcome), integration references (`reference_stub: True`, event references also `reference_transport: True`, `connected_here`/`synced_here: False`), cross-cutting RBAC/audit pins (viewer and operator denials audited as `ext_*:denied`, no-id-on-failure, copies-are-copies), and the batch's fresh negative control (below) |
+| `test_gaps_batch_addition.py` | 36 | Final GAPS batch, second unit (Remainder Addition — Operations Management L1 (+3 forks)) — the extension surface in `src/opsmgmt/extensions_addition.py`: reservations (window validation, verbatim reported outcomes, current status derived at read and never stored, `booked_here: False`, no conflict rule), visitors (opaque refs only, derived current state) + event definitions (versioned) and check-ins, floor plans (zones are label+kind only — geometry keys refused; signage zone labels validated against the plan; wayfinding counts derived; `rendered_here`/`displayed_here`/`published_here`/`routed_here: False`), IoT reference implementation (`reference_stub: True` on all three record kinds, feed references also `reference_transport: True`, verbatim reported values — float/bool refused, address-shaped sensor refs refused, utilization view counts + latest feed status), workplace analytics (fixed metric set — unknown metrics refused; run records store no figures, pinned key set; figures derived at read incl. active-reservation derivation through the shared seam), procurement (listings/requisitions with core links validated through the core store, integer-cent purchases — float/bool/zero refused, derived current status, counts-and-sums summary with `directed_here: False`), portfolio suite (spaces, space-plan definitions as data, moves, leases — total obligation derived at read, float/bool refused; transactions verbatim; prediction reports verbatim with `predicted_here: False`), cross-cutting RBAC/audit pins (config surfaces admin-only, viewer write denials audited as `exta_*:denied`, no-id-on-failure, copies-are-copies), and the unit's fresh negative control (below) |
 | `opsmgmt_helpers.py` | — | Shared fixtures: demo users (ADMIN/OPERATOR/VIEWER), `USERS` registry, `fresh_store()`, and `make_store()` building an OpsStore + AuditLog + a person + an organization + a project with the person as a member (created by ADMIN) |
 
 ## Negative control
@@ -156,3 +159,55 @@ OK**. All seven pre-existing core modules were verified
 byte-identical to their pre-unit hashes after the unit landed
 (`store.py` still
 `8fe67ec242573e5d001071174ea4853fee74995ccc0f3ce02fd1a25f0bc411a6`).
+
+## Final GAPS batch (additions unit) negative control (2026-11-07)
+
+`test_gaps_batch_addition.py` adds the second unit's fresh
+negative control for ITS new code:
+`TestCurrentStatusNegativeControl` implements the three-leg
+house form against the unit's single derivation seam —
+`_current_reported_status` in
+`src/opsmgmt/extensions_addition.py` (the latest reported event
+wins). The traced claim is that **current reported status
+derives at read time from the LATEST reported event**: after
+outcomes `reported_reserved` then `reported_checked_in` are
+recorded, a reservation must read
+`current_reported_status == "reported_checked_in"` (and a
+lease after `reported_active` then `reported_renewed` must
+read `reported_renewed`). The test asserts the canonical
+expectation from the real implementation, that a first-event
+mutant seam (`_first_event_mutant`) would NOT produce it (it
+reads the first event's status instead), and — via a literal
+`assertRaises(AssertionError)` — that treating the mutant's
+outcome as the expected outcome fails.
+
+## GAPS batch (additions unit) mutation verification
+
+VERIFIED in this tree (2026-11-07), live drill performed on
+the real addition file (not just the in-process mutant). The
+seam line `return events[-1]["reported_status"]` in
+`_current_reported_status` (`src/opsmgmt/extensions_addition.py`,
+line 340) was replaced with
+`return events[0]["reported_status"]`, so every derived
+current status froze at the first reported event. The full
+suite was run: **211 tests ran, exactly 6 failed** (full
+output in `scratch/gaps_batch_addition_mutation_run.txt`) —
+
+- `test_gaps_batch_addition.TestCurrentStatusNegativeControl.test_current_status_canonical_but_mutant_not`
+- `test_gaps_batch_addition.TestCurrentStatusNegativeControl.test_current_status_lease_shares_the_seam`
+- `test_gaps_batch_addition.TestReservations.test_current_status_derived_never_stored`
+- `test_gaps_batch_addition.TestVisitorsAndEvents.test_current_state_derived_from_latest_event`
+- `test_gaps_batch_addition.TestSensorReferences.test_utilization_view_counts_and_latest_feed_status`
+- `test_gaps_batch_addition.TestWorkplaceAnalytics.test_figures_derived_at_read_from_own_records`
+
+No core or first-unit test failed. `extensions_addition.py`
+was then restored from the pre-mutation copy
+(`scratch/extensions_addition.py.premutation`; SHA-256
+`41f5efe934e5641cd1ac444be66b3930dc47bb22d17faf99ba9b273c0edf78ed`,
+verified identical after restore) and the suite re-run:
+**211 tests, OK**. All pre-existing modules were verified
+byte-identical to their pre-unit hashes after the unit landed
+(`store.py` still
+`8fe67ec242573e5d001071174ea4853fee74995ccc0f3ce02fd1a25f0bc411a6`;
+the first unit's `extensions.py` still
+`2d77ed776ea5795001eecec64b82648390b28b34b3a0ae0c005400dda9dbbaed`).

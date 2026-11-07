@@ -194,7 +194,8 @@ served with the matching read permission.
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-175 tests (119 shipped + 10 additions + 46 final GAPS batch).
+211 tests (119 shipped + 10 additions + 46 final GAPS batch +
+36 remainder-addition batch).
 See `tests/README.md` for the coverage table, the negative
 controls, and the mutation-verification drill records for this
 tree.
@@ -347,3 +348,43 @@ pre-existing `src/opsmgmt/*.py` core modules are byte-identical
 Tests: 129 → 175, all passing, including a fresh
 mutation-verified negative control on the new session-overlap
 derivation — see `tests/README.md`.
+
+## Final GAPS batch — remainder additions unit (2026-11-07)
+
+The batch's second unit in this directory closes the 7 open
+entries of the "Remainder Addition — Operations Management L1
+(+3 forks)" section in one further new module,
+`src/opsmgmt/extensions_addition.py` (class
+`OpsExtensionsAddition`; per-entry record in
+`BATCH-ADDITION.md`). Six entries land as records over the
+substrate's own records: reservation records with verbatim
+reported outcomes whose current status derives at read
+(nothing booked — deliberately no double-booking conflict
+rule); visitor registrations holding opaque references only,
+handling events, event definitions as data, and check-in
+records (nothing admitted); floor-plan and signage definitions
+as data whose zones are labels only — the zone validator
+rejects any other key, so no geometry exists anywhere in the
+surface (nothing rendered, displayed, published, or routed,
+and no record holds a person's location); analytics
+definitions over a fixed metric set with run records that
+store no figures (figures derive at read as counts and sums
+of recorded values; nothing optimized); procurement listings,
+requisitions, integer-cent purchase records, and a
+counts-and-sums summary (nothing ordered, paid, or directed);
+and the real-estate portfolio suite as records — spaces,
+space-plan definitions as data, moves, leases whose total
+obligation derives at read from the recorded amount and term
+(no amortization, present value, or ledger posting),
+transactions with verbatim reported lifecycle states, and
+prediction reports storing an external engine's values
+verbatim (nothing predicted here). IoT sensor integration
+ships as a labeled reference implementation
+(`reference_stub: True`, feed references also
+`reference_transport: True`; `received_here`/`sensed_here:
+False`). All pre-existing modules, including the first batch
+unit's `extensions.py`, are byte-identical (SHA-256 verified);
+the baseline stays Low / FAR 52.204-21 only. Tests: 175 → 211,
+all passing, including a fresh mutation-verified negative
+control on the new latest-reported-status seam — see
+`tests/README.md`.
