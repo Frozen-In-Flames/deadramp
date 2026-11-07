@@ -48,6 +48,24 @@ Extended functions registered under the separate Remainder Addition
 section (the Cisco firewall management plane and the inline email
 security platform) are not part of this unit.
 
+**Final GAPS batch, second unit:** those two Remainder Addition
+entries are now built in `src/cyber/extensions_addition.py`
+(`ExtensionAdditionStore`, 21 new tests, 307 total), with every
+pre-existing module — the first unit's `extensions.py` included —
+byte-identical. The firewall management & orchestration plane
+ships as a labeled reference implementation (`reference_stub:
+True`): device, policy-definition, provisioning-report, and
+analysis-report records; nothing is managed, pushed, provisioned,
+or analyzed. The inline email security platform lands in records
+form: gateway registrations, declared policy records, and message
+disposition records reported by the external platform — no message
+content or mail address can enter the surface (an address-shaped
+reference is refused at the boundary), and no disposition is
+scored. See `BATCH-ADDITION.md` for the per-entry dispositions.
+(The section's third entry, HSM as a Service, was already closed
+`re-scoped` under the platform-layer decision and is not part of
+either unit.)
+
 ## The core (11 functions, at High)
 
 1. **Asset inventory** — systems under management with owner, labels,
@@ -153,7 +171,7 @@ the operation back; see AU-5 above).
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-**286 tests, all passing** — the L2 parent's 194-test suite (carried
+**307 tests, all passing** — the L2 parent's 194-test suite (carried
 up; three files adapted where the uplift changed behavior, listed in
 `tests/README.md`) plus 42 new tests for the High uplift: the audit
 hash chain and tamper detection, fail-closed writes, audit query,
@@ -161,7 +179,8 @@ and logon lockout — and, since the remainder additions, 11 more in
 `tests/test_additions.py` pinning the 2 added spec sheets and
 exercising the substrate under their claims — and, since the final
 GAPS batch, 39 more in `tests/test_gaps_batch.py` pinning the
-extension surface. `tests/README.md` documents the layout, the
+extension surface — and, since the batch's second unit, 21 more in
+`tests/test_gaps_batch_addition.py` pinning the addition surface. `tests/README.md` documents the layout, the
 negative controls, and the mutation verification records (the
 severity-blind scoring mutant was run against this suite: 30
 failures, file restored byte-identical; the batch's

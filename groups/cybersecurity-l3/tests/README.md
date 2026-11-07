@@ -203,3 +203,64 @@ Core modules were not touched by the batch: `src/cyber/store.py`
 SHA-256 remains `1e58d852abd4b06f76c49c1bb2bccd714c23aeacfcbfb597493c8931bd9bcd90`,
 and the full core set was hash-verified byte-identical before and
 after the batch build.
+
+## Final GAPS batch, second unit — `test_gaps_batch_addition.py` (21 tests)
+
+The addition surface (`cyber.extensions_addition.ExtensionAdditionStore`)
+for the GAPS.md section "Remainder Addition — Cybersecurity
+L3-adjacent (+2 forks)": the firewall management & orchestration
+plane (idx 620) as a labeled reference implementation
+(`reference_stub: True` and status `recorded` on every record,
+pinned) and the inline email security platform (idx 622) in
+records form. See `../BATCH-ADDITION.md`. The module pins, per
+entry: exact record shapes; stub labels on all four firewall
+collections and their absence on the mail records;
+derived-never-stored views (policy/provisioning counts and the
+latest provisioning outcome; disposition counts and the latest
+disposition — all absent from stored records); the mail privacy
+boundary (an address-shaped `message_ref` containing `@` is
+refused, hostname/URL refs refused, and a signature test over
+every `ExtensionAdditionStore` method finds no content, subject,
+sender, or recipient parameter); counts-only posture (a recursive
+key scan over one of every record, view, and the summary finds no
+`score`, `band`, or `confidence` key); RBAC through the core
+access module, including denied attempts audit-recorded as
+`extension_addition_denied` and the auditor's total lack of
+permission on this surface; and AU-5 fail-closed rollback at the
+addition surface (a broken audit file leaves no object and
+consumes no id).
+
+Suite total is now **307 tests, all passing** (286 before this
+unit). Core modules were not touched: `src/cyber/store.py`
+SHA-256 remains
+`1e58d852abd4b06f76c49c1bb2bccd714c23aeacfcbfb597493c8931bd9bcd90`,
+the first unit's `src/cyber/extensions.py` remains
+`66a7e6e6c6f8128fe7f12040d1b38c27dde861b2d2fb71e0d7497680d91f381d`,
+and the full pre-existing set was hash-verified byte-identical
+before and after this unit (`scratch/prebatch-addition-src.sha256`).
+
+### Fresh negative control — earliest-reading latest-label mutant
+
+`test_gaps_batch_addition.TestLatestLabelNegativeControl` pins
+this unit's latest-value seam, `cyber.extensions_addition.latest_label`
+(the single function both derived views use for a latest reported
+value), against an earliest-reading mutant. The canonical
+expectation (the most recent record's value) is asserted against
+the real function and shown to reject the mutant's output.
+
+Mutation verification record, performed on this build:
+
+- Pre-mutation `src/cyber/extensions_addition.py` SHA-256:
+  `8f4e3221c69d0130756e058eea79afdfc712aab309fd86bd756a923b6ff9e029`
+  (a copy is kept at `scratch/extensions_addition.py.premutation`).
+- Mutation: the body of `latest_label` replaced with the
+  earliest-reading form (`records[0][key]` in place of
+  `records[-1][key]`).
+- Suite under mutation: **307 ran, exactly 3 failed**, all in
+  `test_gaps_batch_addition.py`:
+  `TestFirewallReferenceStub.test_device_view_derives_counts_and_latest`,
+  `TestMailGatewayRecords.test_dispositions_counts_and_latest_derived`,
+  and `TestLatestLabelNegativeControl.test_latest_label_matches_canonical`.
+  Raw output: `scratch/gaps_batch_addition_mutation_run.txt`.
+- File restored from the pre-mutation copy; SHA-256 verified
+  identical to the pre-mutation hash; suite re-run: **307 ran, OK**.
