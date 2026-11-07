@@ -1634,14 +1634,14 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## Untiered Set 18 — Marketing & Sales (2 forks, tier null; NEW CATEGORY)
 
 New extended functions from this set, specified in groups/marketing-sales-untiered/UNION-SPEC.md, not implemented:
-- [ ] open — AI models / agents (the build contains no inference)
-- [ ] open — Live opportunity-discovery feeds & contract-search engines
-- [ ] open — Market intelligence & competitor / forecast analytics
-- [ ] open — Proposal generation engine
-- [ ] open — Workflow execution engine (the build's workflow registry records only and never executes)
-- [ ] open — Segmentation engine
-- [ ] open — Email sending transport & deliverability
-- [ ] open — Bounce/complaint handling automation, campaign template management, preference management (each named in a fork's certified-services record but absent from its description — gaps resting on the description rule, caveat recorded in the union spec)
+- [x] reference — AI models / agents (the build contains no inference)
+- [x] reference — Live opportunity-discovery feeds & contract-search engines
+- [x] built — Market intelligence & competitor / forecast analytics
+- [x] reference — Proposal generation engine
+- [x] reference — Workflow execution engine (the build's workflow registry records only and never executes)
+- [x] reference — Segmentation engine
+- [x] reference — Email sending transport & deliverability
+- [x] built — Bounce/complaint handling automation, campaign template management, preference management (each named in a fork's certified-services record but absent from its description — gaps resting on the description rule, caveat recorded in the union spec)
 - [x] re-scoped — Platform layer
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. This category has no tiered group anywhere in the registry, so its taxonomy (thirteen families) was derived fresh from these two forks' own descriptions, the Contract Management and Storage method, and is recorded as the category's taxonomy from here on; the two forks describe non-overlapping businesses and their families are kept visibly separate. Thirteen claims stand, every one on its fork's own sentence. No control family is documented: one fork's CUI handling sentence states no mechanism, and hosting and multi-tenancy sentences are platform prose. Named absences, token-verified in both descriptions: CRM and customer-relationship records — the category's expected centre — lead management, advertising, social media, SMS, search marketing, landing pages, A/B testing, personalization, and scoring. The fresh core has no money shape (neither description states fees, prices, or budgets) and computes no score (no scoring vocabulary in either description); its signature is the suppression gate.

@@ -87,7 +87,7 @@ headers):
 
     PYTHONPATH=src python3 -m marketsales serve --port 8765
 
-Tests (70):
+Tests (111):
 
     PYTHONPATH=src python3 -m unittest discover -s tests
 
@@ -148,3 +148,35 @@ attainment.
   no events/webinars, no print/direct mail, no scoring. The
   category's most expected centre — CRM — is absent from both
   forks' prose.
+
+## Final GAPS batch (2026-11-07)
+
+The section's eight open entries (idx 912–919) are closed by
+`src/marketsales/extensions.py` (`MarketSalesExtensions`), with
+per-entry dispositions and grounds in `BATCH.md`; the core
+modules are byte-identical. Two entries close **built** in
+records form: market intelligence & competitor / forecast
+analytics (analyst-recorded reports plus a market view of
+deterministic counts over the substrate's own records, method
+stated on the view) and the bounce/complaint handling,
+campaign template, and preference family (rule definitions as
+data, a handling queue derived at read from core delivery and
+suppression records, handling-decision records, template
+metadata in the core content records' form, preference records
+whose current value derives at read). Six close as **labeled
+reference implementations** (`reference_stub: True`, feeds and
+transport also `reference_transport: True`): AI models /
+agents, live discovery feeds & contract-search engines, and
+the workflow execution engine as drafted; and — re-judged at
+build time under the batch decision's qualification 1, grounds
+in `BATCH.md` — the proposal generation engine (drafting over a
+substrate that holds content as metadata only), the
+segmentation engine (no contact universe exists here to compute
+membership over), and the email sending transport &
+deliverability (the entry names the transport itself; sending
+is execution against external networks). Tier null binds the
+whole new surface: a recursive scan in the batch tests pins
+that no record or view carries a tier, baseline, or equivalence
+key. Suite: 111 tests, including the batch's fresh
+mutation-verified negative control (the handling-coverage
+drill, recorded in `tests/README.md`).

@@ -111,3 +111,69 @@ asserted to fail against it — plus the discriminating other arm
 (a `bounced` outcome for the same suppressed contact IS recorded
 on the real store, so the invariant is outcome-specific, not
 contact-wide).
+
+## Final GAPS batch additions
+
+- `test_gaps_batch.py` — the batch extension surface
+  (`src/marketsales/extensions.py`, `MarketSalesExtensions`):
+  per-entry pins for the section's eight entries (idx 912–919).
+  Reference families (AI requests/reports/evaluations and agent
+  definitions; discovery feeds and their reported counts;
+  proposal-generation requests and reports; workflow-execution
+  requests and reports; segmentation requests and reports; send
+  requests and transport receipts) are pinned stub-labeled
+  (`reference_stub: True`, transports also
+  `reference_transport: True`), with result content and drafted
+  text refused by signature (`TypeError`), core records pinned
+  deep-equal where a request or report binds one (workflow,
+  segment, content versions), and receipts pinned to create no
+  core delivery and move no campaign status. Built families
+  (intelligence/forecast reports and the derived market view;
+  handling rules, the derived handling queue, handling records,
+  template metadata, preferences with the current value derived
+  at read) are pinned as records and derivations over the core's
+  own records. Cross-cutting pins: a recursive scan proves no
+  tier / baseline / equivalence key and none of the core's
+  forbidden key parts exists anywhere on the extension surface;
+  RBAC rides the core matrix (a viewer's denied write consumes
+  no id); extension mutations land on the core audit log as
+  `ext_*`; and a failed audit write rolls the record and its id
+  back.
+
+## Negative control — the handling-coverage drill (batch)
+
+The batch's fresh invariant is the derived handling queue: a
+bounced delivery (or an active complaint suppression) stays in
+the queue until a handling record covers its (list, contact,
+trigger) key. An oracle that passes whether or not coverage is
+read would be testing that code ran, not that the queue drains.
+The drill mutates the coverage seam in the real
+`src/marketsales/extensions.py`:
+
+    def _handling_covered(covered_keys, key):   # becomes
+        return True
+
+(the membership check is replaced with a constant, so every
+candidate counts as handled and the queue is always empty), then
+the full suite is re-run. Result: exactly 5 failures, all
+queue-dependent —
+
+- `test_gaps_batch.NegativeControlTests.test_canonical_check_passes_on_the_real_surface`
+- `test_gaps_batch.HandlingTests.test_bounced_delivery_enters_the_queue`
+- `test_gaps_batch.HandlingTests.test_complaint_suppression_enters_the_queue`
+- `test_gaps_batch.HandlingTests.test_handling_record_drains_only_its_own_item`
+- `test_gaps_batch.NegativeControlTests.test_queue_is_trigger_specific_on_the_real_surface`
+
+No other test moved: the queue's other arms (a handling record
+creates no core suppression; preferences derive through their
+own seam) do not depend on the coverage check and correctly kept
+passing.
+
+After the drill, `extensions.py` is restored byte-identical
+(SHA-256 verified) and the suite is fully green again.
+`test_gaps_batch.py` also carries the drill's in-tree form: the
+same mutant applied by monkeypatch, with the canonical check
+asserted to fail against it — plus the discriminating other arm
+(a `delivered` outcome raises no queue item, and releasing a
+complaint suppression removes its item, so the queue tracks
+unhandled bounce/complaint facts, not contacts).
