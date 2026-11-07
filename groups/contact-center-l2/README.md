@@ -178,8 +178,34 @@ served with the matching read permission.
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-107 tests. See `tests/README.md` for the coverage table, the
-negative control, and the mutation-verification drill record.
+155 tests (107 core + 48 from the final GAPS batch unit below).
+See `tests/README.md` for the coverage table, the negative
+controls, and the mutation-verification drill records.
+
+## Final GAPS batch unit (2026-11-07)
+
+The eleven Extended / named-absence families in this group's
+GAPS.md section are closed by one new module,
+`src/contact/extensions.py` (`ContactExtensions`, wrapping the
+core store; every pre-existing core module is byte-identical).
+Per-entry dispositions and grounds are in `BATCH.md`. In short:
+PAM & Zero Trust, identity risk analytics, personnel-security /
+clearance depth, knowledge-base articles, CSAT surveys, and the
+SLA policy engine are built as records and read-time derivations
+over the core substrate (privileged-access requests with recorded
+outcomes and derived current state; risk signals and
+recommendations as verbatim records with counts only — no score
+exists; clearance cases with derived state; articles as
+append-only revisions; survey tallies with exact-rational means;
+SLA policies as recorded data with breach derived at read at a
+single seam). Observability collection, voice/telephony & the
+callback connection engine, claims adjudication & fraud
+detection, integration connectors, and AI/ML models ship as
+labeled reference implementations (`reference_stub: True`,
+`reference_transport: True` on connector records) — nothing is
+collected, connected, detected, adjudicated, or inferred here,
+and the founding doctrine stands: the rule registry never
+executes, in the core or on this surface.
 
 ## Control-family mapping (summary)
 

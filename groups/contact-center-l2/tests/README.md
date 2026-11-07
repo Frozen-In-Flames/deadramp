@@ -7,14 +7,15 @@ claim / control family it traces to.
 
 ```bash
 cd groups/contact-center-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 107 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 155 tests
 ```
 
 Status at delivery: **107 tests, OK** against the implementation in
-`../src/`. (Run exactly as above: helpers are imported as a top-level
-module from the tests directory and `tests/__init__.py` is empty by
-design, so package-mode discovery with `-t .` is not the supported
-entry point for this group.)
+`../src/`; the final GAPS batch unit (below) brought the suite to
+**155 tests, OK**. (Run exactly as above: helpers are imported as a
+top-level module from the tests directory and `tests/__init__.py` is
+empty by design, so package-mode discovery with `-t .` is not the
+supported entry point for this group.)
 
 ## Layout
 
@@ -33,6 +34,7 @@ entry point for this group.)
 | `test_service.py` | REST API — live HTTP server: health, 401 unknown user / role mismatch, 403 viewer write + rule_write for operator (denied attempts audited with `:denied`), full flow (agent → contact → queue+member → case → assign/transition → callback → interaction → alert → rule create/PATCH → report/search → audit), `audit_read` admin-only, 400/404 envelopes, `?now=` derivation on case/callback/report endpoints |
 | `test_main_cli.py` | `python -m contact serve` subprocess with demo users alice/bob/carol |
 | `test_negative_control.py` | Negative control (below) |
+| `test_gaps_batch.py` | Final GAPS batch unit — the extension surface (`contact.extensions`), per-entry shapes/labels/derivations, privacy scan, and the batch's fresh SLA negative control (see the batch section below) |
 | `contact_helpers.py` | Shared fixtures: demo users (ADMIN/OPERATOR/VIEWER), `USERS` registry, `fresh_store()`, and `make_store()` building a ContactStore + AuditLog + an agent + a contact + a queue with the agent in it (created by ADMIN) |
 
 ## Negative control
@@ -78,3 +80,55 @@ breached. The full suite was run: **107 tests ran, 8 failed** —
 recorded in `scratch/store.py.sha256` and verified identical after
 restore) and the suite re-run: **107 tests, OK**. The suite catches
 this defect class; the negative control is not decorative.
+
+## Final GAPS batch unit (2026-11-07)
+
+`test_gaps_batch.py` (48 tests) pins the batch extension surface in
+`src/contact/extensions.py` (`ContactExtensions`, wrapping the core
+store; all pre-existing core modules byte-identical — `store.py`
+still `12709f80…`). Per class:
+
+| Class | Covers |
+|---|---|
+| `TestPam` | PAM & Zero Trust (idx 152, built) — request shape (exact key set, stored record carries no `current_state`), JIT window validation, outcomes deriving current state at read, session records (`content_held_here` / `monitored_here` False), unknown-agent refusal consuming no id, viewer write denied |
+| `TestIdentityRisk` | Identity risk analytics (idx 153, built) — signal shape with no score-shaped key anywhere, `computed_here` False, recommendation↔signal agent binding, counts-only summary |
+| `TestClearance` | Personnel-security depth (idx 157, built) — case shape (exact key set), subject must be a core directory agent/contact, outcomes deriving latest state at read, `adjudicated_here` False |
+| `TestKnowledgeBase` | KB articles (idx 160, built) — stored article record holds no text (exact key set), revisions append-only with carry-forward, search over current text, no-id-on-failure |
+| `TestCsat` | CSAT surveys (idx 161, built) — instrument shape with no score/tally key, scale + rating validation (bool/float/out-of-scale refused), tally derived at read with the mean as an exact rational (13/3), empty-survey tally |
+| `TestSlaPolicy` | SLA policy engine (idx 162, built) — policy shape (exact key set), target validation (unknown priority / zero / float / bool / empty refused, no id consumed), policy write admin-only, breach derivation at the seam, uncovered priority never breached, terminal case never breached, breach report counts, policy views leaving the core case record byte-identical |
+| `TestSlaPolicyNegativeControl` | Fresh negative control (below) |
+| `TestObservabilityStub` | Observability (idx 154, reference) — `reference_stub` True, `collected_here` / `forecast_computed_here` False, reported counts stored verbatim, count validation |
+| `TestTelephonyStub` | Voice/telephony (idx 155, reference) — `connected_here` / `media_here` / `routed_here` False, link existence, routing record leaving queue membership untouched, no phone-shaped key |
+| `TestFraudStub` | Claims/fraud (idx 156, reference) — rule definitions as data (`executed_here` False, admin-only), findings verbatim with `detected_here` / `adjudicated_here` False, finding leaving the core case byte-identical |
+| `TestConnectorStub` | Connectors (idx 158, reference) — `reference_stub` + `reference_transport` True, `connected_here` / `synced_here` False |
+| `TestMlStub` | AI/ML (idx 159, reference) — `inference_here` / `trained_here` False; a reported output creates no alert |
+| `TestCrossCutting` | Privacy + integrity — recursive forbidden-key scan (no phone/email/ssn-shaped key) over all 22 extension record types built in one store plus a no-score scan over risk/survey/policy records; stub creations changing no core record counts; denied attempt audited as `ext_case_write:denied`; successful mutation audited as `ext_*`; audit failure rolling back the record and its id |
+
+### Batch negative control (fresh, mutation-verified)
+
+`TestSlaPolicyNegativeControl` implements the batch's mutant: a
+`ContactExtensions` subclass (`MutantSlaExtensions`) overriding the
+single SLA derivation seam `_is_breached_under_policy` to always
+return `False`. The traced claim: a covered, open case past its
+recorded target must read `breached_under_policy=True` in
+`sla_case_view` and count as breached in `sla_breach_report`. The
+test asserts the canonical expectation on the real implementation,
+that the mutant does NOT produce it, and — via a literal
+`assertRaises(AssertionError)` — that treating the mutant's outcome
+as the expected outcome fails.
+
+VERIFIED by the builder (2026-11-07) with a live drill on the real
+implementation: the seam's return line in
+`src/contact/extensions.py` (`return now_dt > created_dt +
+timedelta(minutes=target)`) was patched to `return False` and the
+full suite run: **155 tests ran, exactly 3 failed** —
+
+- `test_gaps_batch.TestSlaPolicy.test_breach_derivation`
+- `test_gaps_batch.TestSlaPolicy.test_breach_report_counts`
+- `test_gaps_batch.TestSlaPolicyNegativeControl.test_canonical_breaches_and_mutant_does_not`
+
+`extensions.py` was then restored from the pre-mutation copy
+(`scratch/extensions.py.premutation`; SHA-256
+`b334e9989cf979a16ca3f3346fcb2b70a640e26b23c2b4c8d68a3a796eb90b9e`,
+recorded in `scratch/extensions.py.sha256` and verified identical
+after restore) and the suite re-run: **155 tests, OK**.
