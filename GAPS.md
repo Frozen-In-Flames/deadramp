@@ -1202,8 +1202,8 @@ Existing gaps gaining claimants: none — streaming / real-time reporting pipeli
 ## Remainder Addition — GRC L3-adjacent (+1 fork)
 
 New extended functions from the addition fork, specified in groups/grc-l3/ADDENDUM.md, not implemented:
-- [ ] open — Third-party risk & due-diligence intelligence platform: third-party due diligence and third-party management intelligence (registered from the fork's described function; its entire description is one 243-character sentence naming its product and four of its own modules, and the word "risk" appears nowhere in it)
-- [ ] open — Supply-chain risk visibility & analytics platform: supply dynamics and supply-chain visibility analytics (registered from the described function; bare "Analytics" is not the posture-reporting family and, per category doctrine, no score follows from it)
+- [x] built — Third-party risk & due-diligence intelligence platform: third-party due diligence and third-party management intelligence (registered from the fork's described function; its entire description is one 243-character sentence naming its product and four of its own modules, and the word "risk" appears nowhere in it)
+- [x] built — Supply-chain risk visibility & analytics platform: supply dynamics and supply-chain visibility analytics (registered from the described function; bare "Analytics" is not the posture-reporting family and, per category doctrine, no score follows from it)
 
 Existing gap gaining a member by substance (no claimant): the AI risk prediction engine gap registered under this group's founding fork gains the addition fork by substance — same problem area, module names only, booked once and not double-booked under risk management. Tier discipline, stated plainly: the policy management named absence SURVIVES at this tier (0 of 2 forks, no policy token in the newcomer); its retirement at L2 does not carry up a tier on its own. Explicitly no claimant: posture / risk scoring engines (recorded because "Analytics" makes it the easy place to cheat), continuous-monitoring feeds, automated evidence validation, FedRAMP package generation.
 

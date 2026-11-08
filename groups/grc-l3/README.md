@@ -350,3 +350,31 @@ Per-entry dispositions and grounds: [`BATCH.md`](BATCH.md). The
 Group 33 union's carried Extended functions and the Exiger
 addition's two gap entries belong to their own GAPS.md sections
 and are not closed by this unit.
+
+## Final GAPS batch — second unit (Remainder Addition — GRC L3-adjacent)
+
+The Exiger addition's 2 registered gap entries (inventory
+idx 670–671) are closed by one further new module,
+`src/grc/extensions_addition.py` (`GrcExtensionsAddition`
+wrapping the core store); all pre-existing modules, including
+the first unit's `extensions.py`, are unchanged and
+byte-identical. Both entries are **built** in records form
+under the category doctrine. The third-party risk &
+due-diligence entry (the fork's DDIQ / 3PM modules) lands as a
+third-party registry — unique opaque references, a recorded
+review due date whose status derives at read and is never
+stored — plus due-diligence records holding reported outcomes
+verbatim, optionally linked to the Core evidence record the
+diligence produced; no research is performed here
+(`researched_here: False` on every record). The supply-chain
+visibility & analytics entry (SDX / Analytics) lands as
+supply observation records against registered third parties —
+dimension and reported value both verbatim labels, never
+parsed or rolled up — plus a counts-only summary over this
+surface's own records; per the entry's own registration, no
+score follows from "Analytics," and none is computed. Suite:
+**228 tests, OK**, including a fresh mutation-verified
+negative control on the third-party review derivation, and a
+pin that recording on this surface creates no Core finding,
+evidence, or indicator result. Per-entry dispositions and
+grounds: [`BATCH-ADDITION.md`](BATCH-ADDITION.md).

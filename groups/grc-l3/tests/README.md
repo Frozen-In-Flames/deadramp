@@ -323,3 +323,76 @@ recorded in `../scratch/extensions.py.sha256`), and the suite
 re-ran: **207 tests, OK**. The two inherited drills (finding
 derivation, audit verifier) are untouched: no core file changed in
 this unit, so their shipped records above stand.
+
+## Final GAPS batch — second unit (Remainder Addition — GRC L3-adjacent)
+
+`test_gaps_batch_addition.py` (21 tests) pins the
+remainder-addition extension surface
+(`src/grc/extensions_addition.py`, `GrcExtensionsAddition`
+wrapping the core store; per-entry dispositions in
+`../BATCH-ADDITION.md`): third-party registrations (record
+shape pinned to exactly its eight bookkeeping keys,
+`researched_here: False`, references unique with no id consumed
+on a duplicate, review status derived at read and never
+stored), due-diligence records (outcomes verbatim, an optional
+link to a Core evidence record validated to exist, no id
+consumed on any validation failure), supply observation
+records (dimension and reported value both verbatim labels —
+never parsed or rolled up — `measured_here` / `computed_here`
+False, a registered third party required), the derived
+third-party view (counts and latest outcome derived at read,
+test-pinned to track registry state while the stored record
+never gains a figure), the counts-only addition summary
+(third parties by derived review status, diligence by kind and
+outcome, observations by dimension), and the cross-surface
+invariants: a **recursive no-score key scan** over every
+addition record type, view, and the summary; addition writes
+joining the Core's hash-chained audit under `exta_` action
+names (chain verifies); an AU-5 fail-closed write test (broken
+JSONL path → AuditWriteError, nothing recorded, no id
+consumed); the auditor denied every addition operation while
+its core audit duty verifies the chain; and the Trust Center
+ruling carried to this surface — a full addition flow leaves
+the Core's posture summary byte-identical and creates no Core
+finding, evidence, or indicator result. Suite status for the
+group: **228 tests, OK**.
+
+### Fresh negative control — third-party review derivation
+
+`test_gaps_batch_addition.py::TestReviewDerivationNegativeControl`
+implements this unit's required mutant in the house three-leg
+form: the traced claim is that a third-party record with
+review due 2026-06-30 derives `"current"` at as_of 2026-06-30
+and `"review_overdue"` at as_of 2026-07-01 (the addition's
+`derive_third_party_review_status`, mirroring the Core's
+finding derivation and the first unit's grant derivation).
+The test asserts the real derivation separates the pair, that
+the mutant (overdue branch disabled) collapses both to
+`"current"`, and — via a literal
+`assertRaises(AssertionError)` — that treating the mutant's
+output as the expected outcome fails. An end-to-end arm
+repeats the separation through `get_third_party`.
+
+**Mutation verification (live drill, 2026-11-07).** The return
+line of `_third_party_review_is_overdue` in the real
+`src/grc/extensions_addition.py` (the single derivation point
+for third-party review status) was patched from
+`return as_of_date > due` to `return False` (occurrence count
+asserted = 1 before patching). The full suite ran: **228
+tests, exactly 5 failures** —
+
+- `test_gaps_batch_addition.TestThirdPartyRecords.test_review_status_is_derived_never_stored`
+- `test_gaps_batch_addition.TestThirdPartyView.test_view_derives_counts_and_latest_outcome`
+- `test_gaps_batch_addition.TestAdditionSummary.test_summary_counts_only_and_derived_status_buckets`
+- `test_gaps_batch_addition.TestReviewDerivationNegativeControl.test_real_derivation_separates_the_canonical_pair`
+- `test_gaps_batch_addition.TestReviewDerivationNegativeControl.test_end_to_end_through_the_addition`
+
+`extensions_addition.py` was then restored from
+`../scratch/extensions_addition.py.premutation` and verified
+SHA-256 identical
+(`78d960b9681eb6065804296bf343c82501e3fbbe5737adbef918432f42e48043`,
+recorded in `../scratch/extensions_addition.py.sha256`), and
+the suite re-ran: **228 tests, OK**. Raw drill output in
+`../scratch/gaps_addition_mutation_run.txt`. No pre-existing
+file changed in this unit, so the shipped drill records above
+(finding derivation, audit verifier, grant derivation) stand.
