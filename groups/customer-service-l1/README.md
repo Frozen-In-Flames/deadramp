@@ -185,3 +185,25 @@ dispositions and the fresh mutation-verified negative control
 (the SLA policy-breach derivation seam, 3 expected failures under
 mutation) are recorded in `BATCH.md` and `tests/README.md`. Suite:
 126 tests, all passing.
+
+## Final GAPS batch — second unit (November 8, 2026)
+
+The Remainder Addition section's one open entry — proactive
+engagement & outreach, asserted in substance by the addition
+fork's (Zendesk's) own words — is closed by
+`src/custsvc/extensions_addition.py` (`CustsvcExtensionsAddition`,
+a second wrapper over the untouched core store), in the records
+form the first unit adjudicated for notification delivery:
+campaign definitions whose trigger and audience terms are held as
+data and never evaluated, suppression (opt-out) records with a
+guard seam (an attempt to a suppressed requester is refused
+whole), outreach attempt records carrying
+`reference_transport: true` / `sent_here: false`, and outcome
+reports stored verbatim — counts-only views derived at read, no
+engagement figure computed anywhere, and no signature able to
+accept message content. Every existing module, including the
+first unit's `extensions.py`, is byte-identical. Per-entry
+disposition and the fresh mutation-verified negative control
+(the suppression seam, 3 expected failures under mutation) are
+recorded in `BATCH-ADDITION.md` and `tests/README.md`. Suite:
+154 tests, all passing.

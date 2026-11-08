@@ -132,3 +132,72 @@ rest of the batch — stayed green, so the failures are exactly the
 guarantee the derivation tests exist to protect. The file was
 restored from the pre-mutation copy (hash verified against the
 recorded SHA-256) and the suite returned to **126 tests, OK**.
+
+
+## Final GAPS batch — second unit (test_gaps_batch_addition.py — 28 tests)
+
+The second batch unit adds `test_gaps_batch_addition.py`, covering
+the one OPEN entry of the GAPS.md section "Remainder Addition —
+Customer Service L1 (+1 fork)" (see `BATCH-ADDITION.md` in the
+group directory): proactive engagement & outreach, built in the
+records form the first unit adjudicated for notification
+delivery — campaign definitions whose trigger/audience terms are
+held as data and provably never evaluated (a matching trigger
+creates no attempt and touches no case), suppression records with
+a guard seam, outreach attempt records carrying
+`reference_transport: true` / `sent_here: false`, and outcome
+reports stored verbatim (a full flow leaves the bound core case
+byte-identical). Cross-cutting tests pin the stored campaign
+record's exact key set, the no-content discipline (content-shaped
+kwargs raise `TypeError`; a recursive scan finds no content or
+tally key and no float value on any record, view, or summary),
+requester-ref discipline (unregistered refs refused everywhere),
+the `exta_*` / `exta_*:denied` audit actions on this tier's plain
+append-only log, and audit-failure rollback of record and id.
+
+Suite total with the second unit: **154 tests, all passing**
+(126 before).
+
+### Fresh negative control: the suppression guard
+
+An outreach attempt to a suppressed requester is **refused
+whole** — no record, no id consumed — at the seam
+`CustsvcExtensionsAddition._is_suppressed` (in
+`src/custsvc/extensions_addition.py`): a requester is suppressed
+for a campaign when a suppression record names them with that
+campaign's scope or with the global scope. This is the second
+unit's fresh negative control, in two layers.
+
+In-suite (`TestSuppressionNegativeControl.
+test_suppression_guard_is_load_bearing`): the canonical surface
+refuses the attempt; a `MutantCustsvcExtensionsAddition`
+overriding the seam with a no-op (`return False`) records the
+attempt on identical fixtures; treating the mutant's outcome as
+the canonical expectation fails.
+
+External drill (same discipline as the drills above): the seam's
+scoped match block (the `campaign_id` scope condition and its
+`return True`, asserted to occur exactly once) was patched to
+`return False` in `src/custsvc/extensions_addition.py` (the
+pre-mutation file copied to
+`scratch/extensions_addition.py.premutation`, its SHA-256
+recorded at `scratch/extensions_addition.py.sha256`, and the
+run's failure list logged to
+`scratch/gaps_batch_addition_mutation_run.txt`). The full suite
+then reported:
+
+```text
+FAIL: test_suppressed_requester_refused_whole (test_gaps_batch_addition.TestOutreachAttempts)
+FAIL: test_globally_suppressed_refused_for_any_campaign (test_gaps_batch_addition.TestOutreachAttempts)
+FAIL: test_suppression_guard_is_load_bearing (test_gaps_batch_addition.TestSuppressionNegativeControl)
+Ran 154 tests
+FAILED (failures=3)
+```
+
+Exactly the three tests that depend on the suppression guard
+failed; every other test — founding, addition, first batch unit,
+and the rest of this unit — stayed green, so the failures are
+exactly the guarantee the guard tests exist to protect. The file
+was restored from the pre-mutation copy (hash verified against
+the recorded SHA-256) and the suite returned to **154 tests,
+OK**.
