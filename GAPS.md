@@ -1763,8 +1763,8 @@ Resolution note, stated plainly: this fork's cached marketplace description cont
 ## No-Signal Addition — Operations Management L2 (SMX Elevate IAP, F1603077867)
 
 New gaps from the no-signal resolution, specified in groups/operations-management-l2/ADDENDUM.md, not implemented (already-registered gaps gaining substance from this fork — the authorization service / identity gap, AI models, and platform-layer multi-tenancy — are noted in the addendum, not re-registered):
-- [ ] open — Cloud platform operations & lifecycle management engine
-- [ ] open — Built-in compliance automation & policy guardrails engine
+- [x] reference — Cloud platform operations & lifecycle management engine
+- [x] built — Built-in compliance automation & policy guardrails engine
 
 Resolution note, stated plainly: this fork claims zero under the group's taxonomy applied verbatim, proven by the extractor reproducing all twenty-two shipped claim tables exactly before tagging. Its raw pass produced three hits and all three were disposed under the group's own discipline: a security family firing on a third-party catalogue's feature name (a name-only token), a workflow family firing on the product's own name inside a certification sentence, and an authorization family firing on the platform's own authorization posture inherited by tenants. The group total stays at 27 claims across 23 forks, fifteen of them zero-claim. The fork's operations core — provisioning, monitoring, lifecycle management — is asserted in its own words but held by no family, so it is gapped in its own name rather than rounded into claims. Its classification as Operations Management rests on SMX's own live capability prose, recorded on its spec sheet as classification evidence with its source URL, pinned as not a substring of the cached description and as evidence for no claim.
 

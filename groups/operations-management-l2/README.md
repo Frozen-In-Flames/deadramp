@@ -390,3 +390,33 @@ decider guard — see `tests/README.md`.
 - This build is **not a FedRAMP authorization**, and it does not
   claim one. The control mapping above states which baseline
   families the build's features answer to; nothing more.
+
+## Final GAPS batch, third unit — No-Signal Addition (2026-11-07)
+
+The no-signal addition's own 2 open entries are closed in one
+further new module, `src/opsmgmt/extensions_nosignal.py`
+(class `OpsNoSignal`, wrapping the core store; per-entry
+record in `BATCH-NOSIGNAL.md`). The cloud platform operations
+& lifecycle management entry ships as a labeled reference
+implementation (`reference_stub: True`): platform references
+with automation modes (Infrastructure-as-Code /
+Operations-as-Code / Policy-as-Code) held as data and never
+executed, plus lifecycle operation references whose statuses
+and counts are stored exactly as reported — nothing is
+provisioned, operated, monitored, secured, or
+lifecycle-managed here. The built-in compliance automation &
+policy guardrails entry lands as records: baseline packs
+keyed to the baselines the fork names in its own words
+(CMMC, HIPAA, HITECH, CJIS, PCI, SOC 1/2, FedRAMP, DoD IL)
+with control references as data, guardrail definitions
+(rule text verbatim, never evaluated) scoped to multi-tenant
+and cross-domain operations, and guardrail check records
+with outcomes exactly as reported by an external automation,
+under a checker-not-definer separation-of-duties guard;
+check state is derived at read and never stored. Nothing in
+this unit automates, evaluates, or enforces. All
+pre-existing modules, including both prior batch units'
+modules, are byte-identical (SHA-256 verified); tests:
+228 → 249, all passing, including a fresh mutation-verified
+negative control on the new checker guard — see
+`tests/README.md`.

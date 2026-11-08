@@ -282,3 +282,68 @@ mutant, as expected):
 identical** to the pre-mutation file, and the suite re-run:
 **228 tests, OK**. Raw drill output:
 `scratch/gaps_addition_mutation_run.txt`.
+
+## Final GAPS batch — No-Signal Addition unit (third batch unit)
+
+The third batch unit in this directory closes the 2 open
+entries of the "No-Signal Addition — Operations Management L2
+(SMX Elevate IAP, F1603077867)" GAPS.md section in one new
+module, `src/opsmgmt/extensions_nosignal.py` (class
+`OpsNoSignal`, wrapping the core store, audit prefix `extn_`),
+tested by `test_gaps_batch_nosignal.py` (21 tests). All
+pre-existing modules stay byte-identical (SHA-256 verified
+against `scratch/prebatch-nosignal-src.sha256`), including the
+first batch unit's `extensions.py`
+(`3c2da202bb3eca5d91f8f37c4376ca4acf84d1980c451d70626ba24d28333db7`)
+and the second batch unit's `verticals.py`
+(`8fb9943f0680f74abfad35d9e9ca9483cdaee14f598dfd5e550fe1be1be8131b`),
+and `store.py`
+(`8fe67ec242573e5d001071174ea4853fee74995ccc0f3ce02fd1a25f0bc411a6`).
+The cloud platform operations entry ships as a labeled
+reference implementation (`reference_stub: True`; platform
+references plus lifecycle operation references with outcomes
+and counts exactly as reported; automation modes held as
+data, never executed; nothing provisioned, operated,
+monitored, secured, or lifecycle-managed here). The
+compliance automation & policy guardrails entry lands as
+records: baseline packs keyed to the baselines the fork names
+in its own words (CMMC, HIPAA, HITECH, CJIS, PCI, SOC 1/2,
+FedRAMP, DoD IL) with control references as data, guardrail
+definitions with rule text verbatim and never evaluated,
+scoped to multi-tenant / cross-domain operations, and
+guardrail check records with outcomes exactly as reported —
+`automated_here` / `evaluated_here` / `enforced_here: False`
+throughout; the guardrail view's check count, counts by
+outcome, and latest outcome are derived at read and never
+stored. Per-entry record: `../BATCH-NOSIGNAL.md`. Suite
+status for the group: **249 tests, OK**.
+
+Negative control for this unit (fresh, on the new code): the
+checker-not-definer guard `_check_checker_not_definer` in
+`src/opsmgmt/extensions_nosignal.py` — the actor who records
+a guardrail check may never be the actor who defined the
+guardrail. The in-test control
+(`TestCheckerNotDefinerNegativeControl`) asserts the
+canonical expectation, that a no-op mutant of the seam would
+not produce it, and that treating the mutant's outcome as
+expected fails. A live mutation drill was then run on the
+real file: a copy was saved to
+`scratch/extensions_nosignal.py.premutation` (pre-mutation
+SHA-256
+`709f2c1d768ea185b6537e03d893601257bb29eb9742f844688392c80d6ac155`,
+`scratch/extensions_nosignal.py.sha256`), the guard's
+condition was patched to `False` (guard disabled), and the
+full suite was re-run: **249 tests ran, exactly 2 failed** —
+the canonical definer-may-not-check assertion and the
+negative-control pin — which is the expected failure set for
+a disabled checker guard (every other test still passes
+against the mutant, as expected):
+
+- `test_gaps_batch_nosignal.TestGuardrails.test_definer_may_not_check_canonical`
+- `test_gaps_batch_nosignal.TestCheckerNotDefinerNegativeControl.test_checker_guard_canonical_but_mutant_not`
+
+`extensions_nosignal.py` was restored from
+`scratch/extensions_nosignal.py.premutation` and verified
+**SHA-256 identical** to the pre-mutation file, and the suite
+re-run: **249 tests, OK**. Raw drill output:
+`scratch/gaps_nosignal_mutation_run.txt`.
