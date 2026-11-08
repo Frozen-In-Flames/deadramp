@@ -108,3 +108,69 @@ recorded in `scratch/store.py.sha256` and verified identical
 after restore — and identical to Group 21's shipped `store.py`)
 and the suite re-run: **91 tests, OK**. The suite catches this
 defect class; the negative control is not decorative.
+
+## Final GAPS batch — Remainder Singleton 62 unit
+
+`test_gaps_batch.py` (29 tests) pins the batch extension surface
+in `../src/hr/extensions.py` (`HrExtensions`) for the section's
+single open entry (idx 713, workforce scheduling &
+call-scheduling engine, closed **built** as drafted; grounds in
+`../BATCH.md`): shift definitions held as data (kind vocabulary,
+HH:MM clock-label validation, no id consumed on failure),
+rotation definitions bound to a core position with the caller's
+ordered opaque `person_refs` (stored record pinned free of any
+coverage/status key; deep-copy at the boundary; employee
+membership scope), caller-recorded roster assignments
+(duplicate-active refusal with no id consumed, cancel as a
+recorded flag, re-record after cancel, a full flow leaving every
+core record byte-identical, employee scope), the rotation
+coverage view and schedule summary as read-time derivations, the
+founding privacy discipline over the new surface (forbidden-key
+walk over every extension record and view, a signature scan
+asserting no PII/content-shaped parameter and no `**kwargs` on
+any public method, TypeError pins on smuggled `name=` / `email=`
+/ `salary=` / `content=` arguments), and `ext_`-prefixed audit
+actions on the core log.
+
+### Negative control (fresh, for the extension code)
+
+`TestNegativeControlPairState` implements the batch unit's
+required mutant against the coverage seam
+`hr.extensions._derive_pair_state` — the single point where a
+(rotation position, shift, date) pair's state is derived. The
+traced claim is that **a pair reads `filled` only when a
+non-cancelled roster assignment is recorded for it**: an empty
+assignment set and a cancelled-only set must both read
+`unfilled`. The control asserts the canonical seam outcomes
+directly, then rebinds the module seam to a mutant that reads
+every pair as `filled` and asserts — via a literal
+`assertRaises(AssertionError)` — that the canonical expectation
+fails against the mutant's view, with the seam restored and the
+canonical view re-verified afterwards.
+
+## Mutation verification (batch unit)
+
+VERIFIED by the builder (2026-11-08), live drill performed on
+the real implementation in THIS tree. The derivation line in
+`_derive_pair_state` (`src/hr/extensions.py`) —
+`return "filled" if active else "unfilled"` — was patched to
+`return "filled"`, so every pair read filled regardless of what
+was recorded. The full suite was run: **120 tests ran, exactly
+6 failed** —
+
+- `test_gaps_batch.TestNegativeControlPairState.test_canonical_pair_state`
+- `test_gaps_batch.TestNegativeControlPairState.test_mutant_pair_state_is_rejected_by_the_canonical_expectation`
+- `test_gaps_batch.TestRotationView.test_view_cancelled_assignment_does_not_fill`
+- `test_gaps_batch.TestRotationView.test_view_derives_filled_and_unfilled`
+- `test_gaps_batch.TestRotationView.test_view_nonmember_assignment_does_not_fill`
+- `test_gaps_batch.TestRotationView.test_view_other_date_unfilled`
+
+— all 6 in the new batch module; all 91 founding tests still
+passed. Raw output in `../scratch/gaps_batch_mutation_run.txt`.
+
+`extensions.py` was then restored from a pre-mutation copy
+(`scratch/extensions.py.premutation`; SHA-256
+`66b48de22220d778dea9f9ec2aea46c1c50aef018051f432e8bfe6178bae11c0`,
+recorded in `scratch/extensions.py.sha256` and verified
+identical after restore) and the suite re-run: **120 tests,
+OK**. Suite count is now 120 (91 founding + 29 batch).

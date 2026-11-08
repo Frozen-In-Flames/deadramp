@@ -361,3 +361,23 @@ mapping is not reused (see the precision notes in
   baseline families the build's features answer to; nothing
   more. FedRAMP authorizes products; CMMC certifies
   organizations — neither regime accepts the other as evidence.
+
+## Final GAPS batch — Remainder Singleton 62 unit
+
+The section's single open gap entry (the workforce scheduling &
+call-scheduling engine, idx 713) is closed **built** as drafted,
+in one new module, `src/hr/extensions.py` (`HrExtensions`,
+wrapping the core store; all existing modules byte-identical).
+The engine's in-substrate form is records: shift definitions and
+rotation definitions held as data (nothing is generated,
+optimized, or automated from them — the absence is stated on
+every record's face), caller-recorded roster assignments over
+opaque `person_ref` values (`decided_here: False` — the decision
+an assignment embodies is the caller's), and coverage derived at
+read through a single seam. Schedule construction, coverage
+optimization, call-rotation generation, and the automation
+machinery remain unbuilt, exactly as the honesty section above
+states for the founding build. Per-entry disposition and
+grounds: `BATCH.md`. Suite: 120 tests (91 founding + 29 batch),
+including a fresh mutation-verified negative control on the
+coverage seam (see `tests/README.md`).
