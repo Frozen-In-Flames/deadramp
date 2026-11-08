@@ -270,3 +270,21 @@ meetings/video session records (no media), and e-signature
 envelopes/ceremonies (no field can hold a signature value). The
 auditor role holds no extension permission. Per-entry record:
 [`BATCH.md`](BATCH.md). Suite: 251 → 289 tests.
+
+## Final GAPS batch unit, second (Remainder Addition section, idx 656)
+
+The 1 open gap entry the remainder addition registered —
+collaborative continuous monitoring service — is closed as a
+labeled reference implementation by one new module,
+`src/collab/extensions_addition.py` (`CollabExtensionsAddition`,
+an independent second wrapper; all eight pre-existing modules
+byte-identical), with tests in `tests/test_gaps_batch_addition.py`.
+The fork's closing sentence names an agency–vendor monitoring
+arrangement, and a monitoring service runs against live systems:
+what ships is the arrangement's records form — arrangement
+records and monitoring-report records carrying
+`reference_stub: true` and `monitored_here: false`, reported
+outcome labels and findings counts held verbatim, with report
+counts, outcome tallies, and the current reported outcome derived
+at read. Nothing is monitored here. Per-entry record:
+[`BATCH-ADDITION.md`](BATCH-ADDITION.md). Suite: 289 → 310 tests.

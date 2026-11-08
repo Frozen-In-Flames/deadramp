@@ -280,3 +280,58 @@ OK**. Raw output: `../scratch/gaps_batch_mutation_run.txt`.
 
 Suite total after the batch unit: **289 tests, OK** (251 shipped +
 38 batch).
+
+## Final GAPS batch additions, second unit (Remainder Addition section, idx 656)
+
+`test_gaps_batch_addition.py` (21 tests) pins the extension surface
+of `src/collab/extensions_addition.py` (see `../BATCH-ADDITION.md`
+for the disposition): the labeled reference implementation of the
+collaborative continuous-monitoring service — arrangement records
+(`mon-`) and monitoring-report records (`monr-`), every record
+carrying `reference_stub: True`, state `recorded_reference_only`
+on arrangements, and `monitored_here: False`; reported outcome
+labels and findings counts held verbatim (booleans/floats/negative
+counts rejected); no content field exists (`report_text=` /
+`telemetry=` smuggling raises `TypeError`); the derived views
+(report counts, counts by outcome, the sum of reported findings
+counts, the current reported outcome) with the stored
+arrangement's exact key set pinned free of derived keys; the
+behavioral pin that registering an arrangement and recording
+reports changes no core workspace or file record; and the access
+discipline (auditor denied on every operation while the hash chain
+still verifies `(True, None)`, outsider denied, viewer writes
+denied and audited `exta_*:denied`, audit-failure fail-closed with
+no record and no id consumed, mutations on the hash-chained log
+under the `exta_` prefix).
+
+**Fresh negative control (second unit): the latest-report
+derivation.** `CollabExtensionsAddition._latest_report_label`
+returns the latest recorded report's outcome label; the traced
+claim is that the current reported outcome follows the latest
+report, so a superseding report changes what the arrangement reads
+as current. `test_gaps_batch_addition.py::TestNegativeControlLatestReport`
+carries the three-leg form (canonical latest-label-wins on the
+real implementation; an earliest-label mutant subclass reads the
+superseded outcome as current; treating the mutant's outcome as
+the expectation fails via `assertRaises(AssertionError)`).
+
+**Second-unit drill (live mutation, performed on this tree).**
+`src/collab/extensions_addition.py` was copied to
+`../scratch/extensions_addition.py.premutation` (SHA-256
+`f11963bb3ff57e6b298444f853db852714d585bece8d81d96b996f09ba02cb10`)
+and the return line inside `_latest_report_label` was patched
+from `reports[-1]` to `reports[0]` — the earliest-label mutant
+(occurrence count asserted = 1). The full suite ran: **310 tests,
+exactly 2 failures**, both in the new module:
+`TestViews.test_view_derives_counts_total_and_current` and
+`TestNegativeControlLatestReport.test_canonical_latest_label_wins`.
+`extensions_addition.py` was restored from the pre-mutation copy —
+SHA-256 verified identical — and the suite re-ran: **310 tests,
+OK**. Raw output: `../scratch/gaps_batch_addition_mutation_run.txt`.
+Disclosed: the first drill attempt produced only 1 failure because
+the view test's first and last report outcomes coincided; the
+test's third report outcome was changed to `reported_delayed` so
+the pin discriminates, and the drill was re-run as recorded above.
+
+Suite total after the second batch unit: **310 tests, OK** (289 +
+21 addition).

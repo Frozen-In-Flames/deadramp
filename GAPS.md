@@ -1128,7 +1128,7 @@ No existing gap gains a counted claimant: the fork's collaboration claim fired i
 ## Remainder Addition — Collaboration L3-adjacent (+1 fork)
 
 New extended function from the addition fork, specified in groups/collaboration-l3/ADDENDUM.md, not implemented:
-- [ ] open — Collaborative continuous monitoring service (the fork's closing sentence names an agency-vendor continuous-monitoring arrangement with no family in this taxonomy)
+- [x] reference — Collaborative continuous monitoring service (the fork's closing sentence names an agency-vendor continuous-monitoring arrangement with no family in this taxonomy)
 
 No existing gap gains a claimant: the fork's single claim (messaging) is a Core function, and all Extended families and the High baseline gaps stand at their original counts. Platform note, not a gap: the fork's inherited-services dependency on its underlying government cloud is its platform posture, recorded in the addendum. Registry honesty: the source publishes no service model for this fork, so none was invented from the product's reputation; the spec records the empty list as published.
 
