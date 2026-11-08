@@ -202,3 +202,25 @@ drill record).
   fork, taxonomy defined from its own description) or to the
   Moderate/L2 control families in `UNION-SPEC.md`. Counts are a
   floor, stated as such.
+
+## Final GAPS batch, second unit (remainder addition section)
+
+The 2 open entries of this group's remainder-addition section —
+the mLINQS addition fork's relocation gaps — are closed by
+`src/travel/extensions_addition.py` (`TravelExtensionsAddition`),
+a second records-only extension surface over the unchanged core
+(all 8 pre-existing modules byte-identical, including the first
+unit's `extensions.py`; suite 148 → 177): relocation case
+records with an event-driven lifecycle under separation of
+duties and processing milestones stored verbatim as reported,
+and relocation policy rules held as definitions (corpus labels
+from the corpora the fork names in its own words, caps in
+integer cents, the corpus text itself never held) with
+entitlement claims stored verbatim and determinations —
+allowed/excess against the recorded caps — derived at read and
+stored nowhere. Per-diem computation stays the recorded absence
+the addendum states: no rate or day-count shape exists on the
+surface. Nothing is booked, moved, relocated, or processed
+here. Per-entry dispositions and the fresh entitlement-cap
+negative control (exactly 3 failures under mutation) are
+recorded in [`BATCH-ADDITION.md`](BATCH-ADDITION.md).

@@ -127,3 +127,40 @@ module).
 - Creation calls return the stored record shape; reads return views
   that add derived keys (phase, totals). Tests pin both sides of
   that line.
+
+## Final GAPS batch, second unit (remainder addition section)
+
+| Module | What it pins |
+|---|---|
+| `test_gaps_batch_addition.py` | The 2 open entries of the remainder-addition section closed in records form (relocation cases with an event-driven lifecycle under separation of duties and verbatim processing-event records; policy rule definitions as data with entitlement claims stored verbatim and determinations derived at read against the recorded caps): exact record key sets and honesty labels on every shape, the case never bound to a trip authorization, the core traveler record byte-identical across a full case flow, determinations absent from every stored claim, the per-diem bound by shape (a smuggled `daily_rate=` raises `TypeError`; a recursive scan finds no per-diem/rate/score key on any view), money/date boundary rejections consuming no ids, denied writes audited with a `:denied` suffix under the `exta_` prefix, and the fresh entitlement-cap negative control below. |
+
+### The entitlement-cap seam drill (fresh negative control, second unit)
+
+The claim under test: **a case's allowed entitlement never
+exceeds the recorded rule cap** — enforced at the seam
+`TravelExtensionsAddition._derive_entitlement` in
+`src/travel/extensions_addition.py` (allowed = the claimed
+figure bounded by the recorded cap; excess = claimed above the
+cap). `TestEntitlementCapNegativeControl` pins the canonical
+case (a 450,000¢ claim against a 400,000¢ cap derives 400,000¢
+allowed and 50,000¢ excess) and asserts (1) the real
+implementation's outcome, (2) a cap-blind mutant subclass
+overriding the seam would NOT produce it (the mutant allows
+450,000¢ with zero excess), and (3) treating the mutant's
+outcome as the expected outcome raises `AssertionError`.
+
+File-level verification (performed at build time, raw output in
+`scratch/gaps_addition_mutation_run.txt`): the shipped
+`src/travel/extensions_addition.py` (backup in
+`scratch/extensions_addition.py.premutation`, SHA-256 recorded
+in `scratch/extensions_addition.py.sha256`) was mutated at the
+seam's line (`allowed_cents = min(claimed_cents, cap_cents)` →
+`allowed_cents = claimed_cents`, exact full-line match, one
+occurrence) and the full suite run: **exactly 3 failures** out
+of 177, all in the batch-addition module (the canonical
+negative-control leg, the evaluation-derivation test, and the
+case-view entitlement-totals test). The file was then restored
+from the pre-mutation copy, its SHA-256 verified identical
+(`a72a9d56…`), and the suite re-run green. Run count after the
+second unit: **177 tests, OK** (148 before; 29 added by the
+batch-addition module).

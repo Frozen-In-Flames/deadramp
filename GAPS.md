@@ -1237,8 +1237,8 @@ Existing gaps gaining a member by substance (no claimant): the enrollment & prov
 ## Remainder Addition — Travel Management L2 (+1 fork)
 
 New extended functions from the addition fork, specified in groups/travel-management-l2/ADDENDUM.md, not implemented:
-- [ ] open — Employee relocation management & processing engine: the relocation lifecycle (a permanent move, distinct from a trip; the fork's headline function — no registered gap names it)
-- [ ] open — Relocation policy & entitlement rules automation: automation of the federal relocation policy corpus the fork names in its own words (recorded as distinct from per-diem computation, which remains an absence — the fork automates relocation policy without naming any per-diem computation)
+- [x] built — Employee relocation management & processing engine: the relocation lifecycle (a permanent move, distinct from a trip; the fork's headline function — no registered gap names it)
+- [x] built — Relocation policy & entitlement rules automation: automation of the federal relocation policy corpus the fork names in its own words (recorded as distinct from per-diem computation, which remains an absence — the fork automates relocation policy without naming any per-diem computation)
 
 Existing gaps gaining claimants: none — booking engine, carrier / hotel / GDS integrations, payment & disbursement execution, receipt capture, report generation (adherence-to-standards prose is not report generation), connector engines, notification transport, and identity each explicitly gain nothing, token-verified in the addendum. All five of the founding fork's checked absences SURVIVE against the newcomer: booking / reservation, per-diem, reimbursement, approval, and receipt vocabulary are all absent from its text too — no absence retires, because a retirement must rest on the fork's own words. This closes the remainder census's single-fork addition units: every tiered addition is now spec'd into its shipped group.
 
