@@ -7,11 +7,13 @@ function / control family it traces to, per `../UNION-SPEC.md`.
 
 ```bash
 cd groups/mobile-device-management-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 132 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 157 tests
 ```
 
 Status at delivery: **75 tests, OK**. After the remainder
-addition below: **89 tests, OK**.
+addition below: **89 tests, OK**. After the final GAPS batch:
+**132 tests, OK**; after its remainder-addition unit:
+**157 tests, OK**.
 
 ## Layout
 
@@ -35,6 +37,7 @@ addition below: **89 tests, OK**.
 | `test_negative_control.py` | 3 | Negative control (below) |
 | `test_additions.py` | 14 | Remainder addition (`addition:mobile-device-management-l2`) — spec integrity for the Ivanti fork (zero-claim table, citation accounting, named-absence pins) + 2 substrate cases (mobility estate budget derivation; provisioning order lifecycle) |
 | `test_gaps_batch.py` | 43 | Final GAPS batch (see `../BATCH.md`) — one class per open Extended entry: recorded optimization recommendations (no computation, money boundary); workflow-execution / carrier / alert-delivery / enrollment reference records (`reference_stub` labels, core-unchanged pins); reconciliation cases (lines verbatim, totals derived, stored record carries no totals); forecasts recorded verbatim beside derived actuals; analytic derivations (spending by period, recurring by kind excluding disconnected, dispute exposure); report definitions + snapshot runs; portal configuration records (nothing served); service-operation records with a recorded lifecycle; device command records (request → SoD confirmation → reported outcome, `executed_here` False) with the fresh negative control (below); device policies + reported compliance checks with derived state; app catalog/distribution records; tracking-service status records (no location data anywhere); cross-cutting scans (no identifier/location key on any stored extension record, `ext_`-prefixed audit actions, denials consume no id) |
+| `test_gaps_batch_addition.py` | 25 | Final GAPS batch, second unit (see `../BATCH-ADDITION.md`) — the remainder addition's 2 entries: zero-trust validation profiles (definitions as data, declared-dimension / access-level validation, duplicate refs rejected) and decision records (reported results and access level verbatim, `validated_here` / `decided_here` False, decisions change no core record); the access view deriving the current reported level from the latest decision, with the fresh negative control (below); threat-defense reference records (`reference_stub` labels, device ref taken from the deployment record, core-unchanged pin) and the derived threat summary; cross-cutting scans (no identifier/location key on any stored addition record, `exta_`-prefixed audit actions) |
 | `mdm_helpers.py` | — | Canonical fixture: organization by bob, erin added as staff member (the canonical decider), funded budget 1,000,000 − 300,000 − 200,000 = 500,000 available; outsider dave in no organization |
 
 ## Negative control
@@ -153,3 +156,47 @@ real implementation *is* the mutant), and no other extension
 surface touches the seam. Core modules were not mutated in
 this drill and remain byte-identical to the shipped hashes
 (`store.py` still `8c0c787a…`).
+
+## Final GAPS batch, second unit — fresh negative control (2026-11-07)
+
+The remainder-addition unit's new code lands a new derivation,
+so the control is fresh: the **current-decision seam**,
+`MdmExtensionsAddition._current_decision`
+(`src/mdm/extensions_addition.py`) — the access view's current
+reported access level is the LATEST recorded decision's level.
+`test_gaps_batch_addition.TestAccessViewNegativeControl` pins
+the canonical expectation (two decisions report `limited` then
+`full`; the current level is `full`) and shows an
+earliest-reading mutant subclass (`MutantExtensionsAddition`)
+reporting the superseded `limited` instead — the mutant's
+outcome is asserted to differ, via a literal
+`assertRaises(AssertionError)`.
+
+Mutation verification, performed on this build:
+
+- Pre-mutation `src/mdm/extensions_addition.py` SHA-256:
+  `21b2842d…` (a copy is kept at
+  `scratch/extensions_addition.py.premutation`; hash recorded
+  in `scratch/extensions_addition.py.sha256`).
+- Mutation: the seam's return line
+  `return decisions[-1] if decisions else None` (occurrence
+  count asserted = 1) replaced with
+  `return decisions[0] if decisions else None`, so the view
+  reads the earliest decision as current.
+- Suite under mutation: **157 ran, exactly 3 failed**:
+  - `test_gaps_batch_addition.TestAccessView.test_latest_decision_is_current`
+  - `test_gaps_batch_addition.TestAccessViewNegativeControl.test_canonical_expectation`
+  - `test_gaps_batch_addition.TestAccessViewNegativeControl.test_implementation_matches_canonical`
+- File restored from the pre-mutation copy; SHA-256 verified
+  identical (`21b2842d…`); suite re-run: **157 ran, OK**. Raw
+  output: `scratch/gaps_addition_mutation_run.txt`.
+
+The failing set is exactly the derivation-dependent set: the
+in-test mutant case passes under the mutation by construction
+(it asserts the mutant differs, and under the mutation the
+real implementation *is* the mutant), and no other surface in
+either batch unit touches the seam. No pre-existing module was
+mutated in this drill; all 8 remain byte-identical to the
+pre-build hashes (`scratch/prebatch-addition-src.sha256`;
+`store.py` still `8c0c787a…`, first-unit `extensions.py`
+still `5407a60f…`).

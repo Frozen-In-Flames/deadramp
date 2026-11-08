@@ -157,16 +157,19 @@ are audited with the action suffixed `:denied`.
 
 ```bash
 cd groups/mobile-device-management-l2
-PYTHONPATH=src python3 -m unittest discover -s tests        # 89 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 157 tests
 ```
 
-**132 tests, all passing** (75 shipped + 14 additions + 43
-final GAPS batch), including the mutation-verified negative
+**157 tests, all passing** (75 shipped + 14 additions + 43
+final GAPS batch + 25 final GAPS batch remainder addition),
+including the mutation-verified negative
 controls: stubbing the availability derivation in the real
 store to return the bare budget makes exactly 5 tests fail in
 the enlarged suite (the shipped drill's 4 plus the additions
-derivation case), and disabling the batch's device-command
-separation-of-duties seam makes exactly 2 fail (see
+derivation case), disabling the batch's device-command
+separation-of-duties seam makes exactly 2 fail, and reading
+the access view's current decision from the earliest recorded
+decision instead of the latest makes exactly 3 fail (see
 `tests/README.md` for all drill records).
 
 ## Final GAPS batch (2026-11-07)
@@ -194,6 +197,31 @@ checks are records with state derived at read and nothing
 enforced, app management is catalog/distribution records, and
 tracking is service configuration/status records holding **no
 location data at all**.
+
+## Final GAPS batch — remainder addition (2026-11-07)
+
+The addition fork's 2 open Extended entries (inventory idx
+679–680) are closed by one further new module,
+`src/mdm/extensions_addition.py` (`MdmExtensionsAddition`,
+audit actions prefixed `exta_`; every pre-existing module —
+core and the first unit's `extensions.py` alike —
+byte-identical). Per-entry dispositions and grounds are in
+`BATCH-ADDITION.md`. In brief: the zero-trust access
+validation entry is built in records form (validation
+profiles as definitions-as-data; decision records holding the
+external plane's reported dimension results and reported
+access level verbatim, the subject an opaque reference only;
+the current reported level derived at read from the latest
+decision; `evaluated_here` / `decided_here` False
+throughout — nothing is evaluated or decided here), and the
+mobile threat defense entry ships as a labeled reference
+implementation (`reference_stub: True`, core records pinned
+unchanged): deployment and threat-event records with
+detections and remediations recorded as reported
+(`detected_here` / `remediated_here` False). The founding
+privacy invariant binds this surface in full — devices are
+opaque references only; no identifier or location field
+exists anywhere in it.
 
 ## Honesty
 
