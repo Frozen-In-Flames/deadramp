@@ -306,3 +306,26 @@ collaboration surface), and the group's standing named absence —
 video conferencing, still claimed by 0 of 7 forks — survives the
 addition, because GovSlack's High listing never mentions media.
 Full record: [`ADDENDUM.md`](ADDENDUM.md).
+
+## Final GAPS batch — remainder addition unit (Nov 7, 2026)
+
+The 2 OPEN entries of the "Remainder Addition — Communication
+L3-adjacent (+1 fork)" section (inventory idx 658–659) are
+closed in `src/comm/extensions_addition.py`
+(`CommExtensionsAddition` wrapping the core store; every
+existing module, including the first unit's `extensions.py`,
+is byte-identical): the app integration & connector platform
+as **labeled reference** connector definitions plus reported
+exchange records (`reference_stub` / `reference_transport:
+true`, nothing connected, synced, or transmitted), and the
+persistent channel / workspace collaboration surface as
+**built records** — persistent team room records (a namespace
+distinct from the core's delivery-channel records), membership
+records binding core contacts, and activity records binding
+core messages by id only, with content never held and the
+workspace substrate proper stated absent on every record. The
+suite is now **207 tests** (186 + 21 in
+`tests/test_gaps_batch_addition.py`), including a fresh
+mutation-verified negative control on the addition's
+derived-current-label seam. Full record:
+[`BATCH-ADDITION.md`](BATCH-ADDITION.md).

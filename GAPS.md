@@ -1142,8 +1142,8 @@ No existing gap gains a claimant: secure transmission explicitly gains none (adj
 ## Remainder Addition — Communication L3-adjacent (+1 fork)
 
 New extended functions from the addition fork, specified in groups/communication-l3/ADDENDUM.md, not implemented:
-- [ ] open — App integration & connector platform: connecting third-party software tools and services into the messaging surface (the group's taxonomy has no integrations family at all; the function is asserted in substance only)
-- [ ] open — Persistent channel / workspace collaboration surface: channels as persistent team rooms (distinct from the build's delivery-channel records; the workspace substrate proper belongs to the Collaboration groups' builds)
+- [x] reference — App integration & connector platform: connecting third-party software tools and services into the messaging surface (the group's taxonomy has no integrations family at all; the function is asserted in substance only)
+- [x] built — Persistent channel / workspace collaboration surface: channels as persistent team rooms (distinct from the build's delivery-channel records; the workspace substrate proper belongs to the Collaboration groups' builds)
 
 Existing gap enlarged by substance: the search & eDiscovery engines gap gains the addition fork on its described function ("find information they need") even though the family claim did not fire (no search token). Explicitly no claimant: secure & encrypted transmission (platform prose, no operative phrasing, no "encrypt" anywhere in the description), workflow / BPM engines (no token). The category's standing named absence survives: video conferencing / real-time media is claimed by 0 of 7 forks at this tier — the flagship messaging suite's High listing never mentions media, calls, or video.
 

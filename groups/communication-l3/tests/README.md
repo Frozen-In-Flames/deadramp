@@ -316,3 +316,49 @@ No core test failed. `extensions.py` was then restored from the
 pre-mutation copy — SHA-256 verified identical (`6844a905…`) —
 and the suite re-ran green: **186 tests, OK**. Raw output:
 `scratch/gaps_mutation_run.txt`.
+
+## Final GAPS batch — second unit: Remainder Addition (2026-11-07)
+
+Extension code: `src/comm/extensions_addition.py`
+(`CommExtensionsAddition` wrapping `CommStore`, audit prefix
+`exta_`); all existing modules — including the first unit's
+`extensions.py` — byte-identical. The 2 OPEN entries of the
+"Remainder Addition — Communication L3-adjacent (+1 fork)"
+section (inventory idx 658–659): idx 658 closes `reference`
+(connector definitions + reported exchanges, labeled stub and
+transport) and idx 659 closes `built` in records form (persistent
+room records + memberships + activity binding core messages by
+id only, content never held).
+
+| File | Tests | Covers |
+|---|---:|---|
+| `test_gaps_batch_addition.py` | 21 | Per-entry surface pins for idx 658–659 (stub/transport labels, `*_here: False` flags, room namespace distinct from core `ch-` delivery channels); TypeError pins on content-shaped kwargs (`payload=`, `content=`, `body=`, `document=`) plus a signature scan and a recursive no-content key scan over the whole addition surface; derived-never-stored pins (connector current outcome + reported total, room member count + current activity); core-unchanged pin (room activity leaves the bound delivery `queued`); RBAC (viewer write denied + audited `exta_message_compose:denied`; auditor denied every addition operation incl. reads while `verify_chain()` still works); failed operations consume no ids; extension mutations audited with the `exta_` prefix and the hash chain verifies afterwards; **negative control #4** (below) |
+
+**Status: 207 tests, OK** (186 shipped + 21 addition).
+
+### Negative control #4 (fresh, mutation-verified)
+
+**`test_gaps_batch_addition.py::TestNegativeControlLatestLabelAddition`**
+— the current reported label of an append-only record stream is
+its **latest** record's label, via the seam `_latest_label` in
+`src/comm/extensions_addition.py` (used by the connector view's
+current outcome and the room view's current activity). The
+in-suite control shows the canonical seam returning the latest
+label, an earliest-reading mutant returning the superseded one,
+and — via a literal `assertRaises(AssertionError)` — that the
+canonical view expectation rejects the mutant's value.
+
+**Live drill.** `src/comm/extensions_addition.py` was copied to
+`scratch/extensions_addition.py.premutation` (SHA-256
+`087125da…`, recorded in `scratch/extensions_addition.py.sha256`)
+and the seam's return line (`return records[-1][key]`, line 87,
+the module's only occurrence) was patched to
+`return records[0][key]`. The full suite ran: **207 tests,
+exactly 5 failed**, all in `test_gaps_batch_addition.py` —
+`test_exchange_and_view_derived`,
+`test_current_activity_derived_from_latest`, and all three
+negative-control legs (the differs-leg trips by design). No core
+or first-unit test failed. The module was restored from the
+pre-mutation copy — SHA-256 verified identical (`087125da…`) —
+and the suite re-ran green: **207 tests, OK**. Raw output:
+`scratch/gaps_addition_mutation_run.txt`.
