@@ -258,8 +258,26 @@ There is no DELETE or PATCH route and no audit-mutation route.
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
-79 tests. See `tests/README.md` for the coverage table, the
+99 tests. See `tests/README.md` for the coverage table, the
 negative control, and the mutation-verification drill record.
+
+**Final GAPS batch note (2026-11-08):** the section's 2 open
+entries (this fork's own engines — home sleep-test dispatch &
+device initialization; sleep study results collection & provider
+review) are closed by one new module, `src/health/extensions.py`
+(`HealthExtensions`), with all 7 core modules byte-identical.
+Both entries ship as **labeled reference implementations**,
+re-judged from their build-extension drafts: per this group's
+own spec these are clinical/diagnostic surfaces that are never
+built here, so the extension is a registry of the external
+platform's reported activity (dispatch, initialization,
+collection, and review records against opaque references;
+`reference_stub: True` on every record; nothing dispatched,
+initialized, collected, reviewed, or decided here). Per-entry
+grounds are in `BATCH.md`; the batch suite is
+`tests/test_gaps_batch.py` (suite 79 → 99, including a fresh
+mutation-verified negative control on the dispatch
+device-uniqueness seam, exactly 2 failures).
 
 ## Control-family mapping (summary)
 

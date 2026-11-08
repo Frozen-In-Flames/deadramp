@@ -101,3 +101,70 @@ verified identical to the pre-mutation hash in
 source being byte-identical) and the suite re-run: **79 tests,
 OK**. The suite catches this defect class; the negative control
 is not decorative.
+
+## Final GAPS batch — Remainder Singleton 61 section (2026-11-08)
+
+One new file, `test_gaps_batch.py` (20 tests), covering the
+extension surface in `src/health/extensions.py`
+(`HealthExtensions`, a wrapper over the untouched core store;
+all 7 pre-existing `src/` modules byte-identical, verified
+against `scratch/prebatch-src.sha256`). Suite: **79 → 99 tests,
+all passing**. Per-entry dispositions and the re-judgment
+grounds are in `../BATCH.md`: both of the section's entries
+(idx 711 dispatch & device initialization, idx 712 results
+collection & provider review) ship as labeled reference
+implementations — every record carries `reference_stub: True`
+and state `recorded_reference_only`, outcome labels verbatim as
+reported, and the fork's acts (dispatching, initializing,
+collecting, reviewing, deciding) are all pinned False on their
+records. The tests pin: dispatch reference shape/labels and the
+device-uniqueness refusal (no id consumed on refusal);
+initialization outcomes with `outcome_count` /
+`latest_outcome_label` derived at read and absent from the
+stored record; collection references as metadata only (reported
+record count, `content_held_here` / `collected_here` False) with
+record-count validation (bool/float/negative/string refused);
+review outcomes with `decided_here` / `interpreted_here` False;
+both summaries as `deterministic_counts` (the collection
+summary's total is a sum of reported counts); member scope over
+the extension records and member denial on summaries; denied
+writes audited with a `:denied` suffix; the hard privacy rule
+over the whole surface (recursive forbidden-key scan over every
+record, view, and summary — no diagnosis/result/finding/signal/
+identifier key anywhere — and `TypeError` on smuggled keyword
+arguments); and the fresh negative control below.
+
+### Batch negative control (fresh, for the new code)
+
+`test_gaps_batch.py::TestDispatchDeviceUniqueNegativeControl`
+implements the control for the seam
+`HealthExtensions._check_dispatch_device_unique`: a dispatch
+reference names exactly one reported dispatch of a device to a
+participant, so a second reference for the same participant +
+`device_ref` pair is refused. The test asserts the canonical
+refusal, that the `_NoDispatchDeviceGuard` mutant subclass —
+the canonical class with only the seam neutralized, operating
+on the canonical instance's tables — accepts the duplicate
+(leaving two dispatch references for one device), and, via a
+literal `assertRaises(AssertionError)`, that treating the
+mutant's outcome as the canonical expectation fails. A companion
+test asserts the RBAC gate (a member creating a dispatch
+reference is denied and the registry stays empty).
+
+Mutation verification, performed live in this tree
+2026-11-08: the seam's scan line in `src/health/extensions.py`
+(`for existing in self._dispatch_references.values():`, exactly
+one occurrence) was patched to iterate an empty dict
+(`for existing in {}.values():`), the exact live counterpart of
+the mutant. The full suite was run: **99 tests ran, exactly 2
+failed**, both on the duplicate-refusal surface:
+
+- `test_gaps_batch.TestDispatchReferences.test_duplicate_device_for_same_participant_refused`
+- `test_gaps_batch.TestDispatchDeviceUniqueNegativeControl.test_duplicate_refused_canonical_but_mutant_accepts`
+
+Raw output in `scratch/gaps_mutation_run.txt`. `extensions.py`
+was then restored from the pre-mutation copy
+(`scratch/extensions.py.premutation`; SHA-256
+`4a8e03d73cdeb132569d41ee61d51cde2cc1631ca374208e9e6019ed3a1db95a`,
+verified identical after restore) and the suite re-run: **99
+tests, OK**.
