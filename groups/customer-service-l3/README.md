@@ -225,3 +225,29 @@ suite: 126 tests before, **168 tests after, all passing**,
 including a fresh mutation-verified negative control on the
 remediation-state derivation seam (exactly 4 failures under the
 mutant; see `tests/README.md`).
+
+## Final GAPS batch — Remainder Addition unit
+
+The 2 open entries of this group's remainder-addition section
+(the Medallia GovCloud addition's registered gaps) are closed by
+one new module, `src/custsvc/extensions_addition.py`, with every
+existing module — the first batch unit's included —
+byte-identical (`BATCH-ADDITION.md` carries the per-entry
+dispositions). **Survey & feedback collection** is built as
+records: instrument definitions with their scale held as recorded
+terms, response records holding each reported value **verbatim**
+(respondents are registered core requesters by opaque ref; no
+figure is ever computed, aggregated or ranked — views derive
+record counts and the latest record only), and feedback-signal
+records over opaque refs (recording one writes no core case or
+alert). **Platform connectors & the integration API surface**
+ship as a labeled reference implementation
+(`reference_stub: True`, `reference_transport: True`): connector
+definitions and exchange records with outcomes stored verbatim;
+nothing connects or syncs here. Every addition mutation is
+audit-before-commit on the core's hash-chained log under the
+`exta_` prefix, and the auditor role is denied every operation
+on the surface. Full suite: 168 tests before, **192 tests
+after, all passing**, including a fresh mutation-verified
+negative control on the latest-record derivation seam (exactly
+3 failures under the mutant; see `tests/README.md`).

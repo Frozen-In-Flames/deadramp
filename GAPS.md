@@ -1171,8 +1171,8 @@ Explicitly no claimant, recorded because the product name makes this the easy pl
 ## Remainder Addition — Customer Service L3-adjacent (+1 fork)
 
 New extended functions from the addition fork, specified in groups/customer-service-l3/ADDENDUM.md, not implemented:
-- [ ] open — Survey & feedback-collection engine: survey capture and feedback-signal collection across channels (registered WITH a claim — this fork's satisfaction-surveys claim retires the category's standing named absence at this tier; the records its flagged signals write are Core, the engine is Extended)
-- [ ] open — Platform connectors & integration API surface: connectors into external platforms asserted in substance by the fork's closing bullet (this taxonomy has no integrations family, so no claim fired)
+- [x] built — Survey & feedback-collection engine: survey capture and feedback-signal collection across channels (registered WITH a claim — this fork's satisfaction-surveys claim retires the category's standing named absence at this tier; the records its flagged signals write are Core, the engine is Extended)
+- [x] reference — Platform connectors & integration API surface: connectors into external platforms asserted in substance by the fork's closing bullet (this taxonomy has no integrations family, so no claim fired)
 
 Existing gap gaining a claimant: AI assistance / deflection / learned models gains this fork at this tier (proprietary AI over structured and unstructured feedback data). Named absence retired, stated plainly: satisfaction / CSAT surveys, recorded in the union spec as claimed by no fork at any tier of this category, is claimed here in the fork's own words. The other standing absence, knowledge base / help articles, survives (claimed by neither fork at this tier). Explicitly no claimant: event detection & orchestration engines, real-time channels, reporting / analytics engines — each itemized with its token-level reason in the addendum.
 

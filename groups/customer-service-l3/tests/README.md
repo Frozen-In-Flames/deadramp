@@ -219,3 +219,53 @@ code ran, not that remediation state follows the latest event —
 this control is the filter against that. (The in-suite mutant
 legs kept passing under the live drill, as designed: they exercise
 the subclass override, a different mechanism from the file's seam.)
+
+## Final GAPS batch, second unit — addition coverage (added 2026-11-07)
+
+| File | Tests | Covers |
+|---|---:|---|
+| `test_gaps_batch_addition.py` | 24 | **Remainder Addition unit**: the addition surface in `src/custsvc/extensions_addition.py` — survey instruments (stored key set pinned tally-free, scale/channel validation), survey responses (respondent is a registered core requester, value validated against the recorded scale and stored verbatim, bool/float/out-of-scale rejected), feedback signals (bindings must exist; recording responses/signals creates no core case or alert), survey view and feedback summary (record counts and latest record derived at read; no aggregate over reported values), connectors (stub + transport labels, unique refs, exchange validation, derived view), RBAC (auditor denied every operation while its core audit duty works; denial auditing), audit-before-commit rollback, the content/score recursive scans + TypeError pins, and negative control #4 |
+
+The addition brings the suite to **192 tests, OK**. Every
+pre-existing module, the first batch unit's `extensions.py`
+included, is byte-identical; negative controls #1–#3 above are
+unchanged and their seams were not touched.
+
+## Negative control #4 — latest-record derivation (addition batch, 2026-11-07)
+
+`test_gaps_batch_addition.py::TestLatestRecordNegativeControl`
+(three-leg, in-suite): every "latest" derivation on the addition
+surface — a survey view's latest reported response and a
+connector view's latest exchange outcome — reads the *last*
+record reported, through the single seam
+`CustsvcExtensionsAddition._latest_record`. The mutant leg (a
+subclass deriving from the *first* record) reads the first
+record on both families, and treating the mutant's outcomes as
+the expectations must fail.
+
+Mutation verification: VERIFIED by the coordinator (2026-11-07).
+The seam's `return records[-1]` line in
+`src/custsvc/extensions_addition.py` (line 227; the line occurs
+exactly once; count asserted) was patched in the real file to
+`return records[0]`, the exact live counterpart of the in-suite
+mutant. The full suite was run: **192 tests ran, exactly 3
+failed** —
+
+- `test_gaps_batch_addition.TestSurveyResponses.test_view_counts_and_latest_without_aggregation`
+- `test_gaps_batch_addition.TestConnectors.test_exchange_flow_and_view`
+- `test_gaps_batch_addition.TestLatestRecordNegativeControl.test_canonical_derives_from_latest_record`
+
+Mutant output is saved at
+`scratch/gaps_batch_addition_mutation_run.txt`.
+`extensions_addition.py` was then restored from
+`scratch/extensions_addition.py.premutation` and verified
+byte-identical (SHA-256
+`c1f91ac4bfe1ddaabc6c7075f137dbab5d039e6968ec28b2015aece56e87ac00`,
+recorded in `scratch/extensions_addition.py.sha256`) and the
+suite re-run: **192 tests, OK**. An oracle that passes with the
+derivations reading the wrong end of the record list would be
+testing that code ran, not that "latest" follows the last report
+— this control is the filter against that. (The in-suite mutant
+legs kept passing under the live drill, as designed: they
+exercise the subclass override, a different mechanism from the
+file's seam.)
