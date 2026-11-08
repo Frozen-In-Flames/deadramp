@@ -225,6 +225,52 @@ The same seam and mutant in the Moderate sibling's tree also
 failed exactly 1 test (its own guard test); the counts agree
 because the guard has exactly one canonical pin in each suite.
 
+## Final GAPS batch — second unit (Remainder Addition section, 1 entry)
+
+`test_gaps_batch_addition.py` (21 tests) pins the addition
+surface in the new module `src/cyber/extensions_addition.py`
+(`ExtensionAdditionStore`): the crowdsourced security testing &
+disclosure coordination entry (idx 662) as a labeled reference
+implementation — program, engagement, and disclosure records
+carrying `reference_stub: true`, outcome labels verbatim as
+reported, derived counts and latest labels at read with stored
+records pinned free of derived keys, opaque-reference validation
+(IP/URL/hostname shapes rejected), plus cross-cutting RBAC/audit
+and no-score pins. Suite: **225 before → 246 after, OK**. All 9
+pre-existing `src/cyber/*.py` modules verified byte-identical
+before and after (SHA-256 against
+`../scratch/prebatch-addition-src.sha256`); the addition is a
+new module and changed no existing file.
+
+### Fresh negative control — latest reported label
+
+The canonical tests are in
+`test_gaps_batch_addition.TestLatestLabelNegativeControl` (with
+the derivation pins in `TestDerivedViews`): a view's current
+reported label is the *last* disclosure reported for it.
+VERIFIED by live mutation in this tree:
+
+1. **Backup:** `src/cyber/extensions_addition.py` copied to
+   `../scratch/extensions_addition.py.premutation` (SHA-256
+   `c02aefe508890e8ad82388ad59e9fe44f4ffa43a55fcee2cf941cd6f79b8833b`).
+2. **Mutant applied:** in `_latest_label`, the return line
+   `return records[-1][key]` was replaced with
+   `return records[0][key]` (earliest-reading form; the line was
+   asserted to occur exactly once before patching).
+3. **Mutant run:** the full suite ran — **246 tests ran, exactly
+   5 failures**, all in `test_gaps_batch_addition.py`:
+   `TestDerivedViews.test_program_view_derives_counts_and_latest`,
+   `TestDerivedViews.test_engagement_view_derives_latest`, and
+   the control's three legs
+   (`test_canonical_view_uses_latest_outcome`, `test_seam_directly`,
+   `test_mutant_earliest_differs`). Raw output at
+   `../scratch/gaps_batch_addition_mutation_run.txt`, failure
+   names at `../scratch/gaps_batch_addition_drill_failures.txt`.
+4. **Restore verified:** `extensions_addition.py` restored from
+   the pre-mutation copy; SHA-256 again
+   `c02aefe508890e8ad82388ad59e9fe44f4ffa43a55fcee2cf941cd6f79b8833b`.
+5. **Re-run green:** **246 tests, OK**.
+
 ## Interpretation notes
 
 Where UNION-SPEC's contract left a shape open, the suite follows the

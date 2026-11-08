@@ -329,3 +329,28 @@ control on the evidence separation-of-duties guard (exactly 1
 failure under the mutant; recorded in `tests/README.md`). All 8
 founding `src/cyber/*.py` modules are byte-identical; the
 extension is store-level only, with no HTTP routes added.
+
+## Final GAPS batch — second unit (remainder addition)
+
+The section's 1 open entry — the crowdsourced security testing
+& disclosure coordination platform registered from the
+HackerOne addition fork's described function — is closed as a
+**labeled reference implementation** by one new module,
+`src/cyber/extensions_addition.py` (`ExtensionAdditionStore`,
+audit prefix `exta_`), plus `tests/test_gaps_batch_addition.py`
+— see [`BATCH-ADDITION.md`](BATCH-ADDITION.md). The entry names
+a human researcher marketplace and a platform operated against
+live systems, so what ships is its registry side only: program,
+engagement, and disclosure records, every one carrying
+`reference_stub: true`, with outcome labels held verbatim as the
+external platform reported them and counts/latest labels derived
+at read. No marketplace is operated, no researcher is recruited
+or matched, nothing is tested, no disclosure is coordinated,
+and no finding is created here — findings remain ingestible by
+the Core, exactly as the entry's own text records. The suite is
+now **246 tests, OK**, including a fresh mutation-verified
+negative control on the latest-label seam (exactly 5 failures
+under the mutant; recorded in `tests/README.md`). All 9
+pre-existing `src/cyber/*.py` modules (the 8 founding modules
+and the first unit's `extensions.py`) are byte-identical; the
+addition is store-level only, with no HTTP routes added.
