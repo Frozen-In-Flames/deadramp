@@ -10,7 +10,7 @@ unchanged at tier null, per `../UNION-SPEC.md`).
 
 ```bash
 cd groups/finance-untiered
-PYTHONPATH=src python3 -m unittest discover -s tests        # 209 tests
+PYTHONPATH=src python3 -m unittest discover -s tests        # 256 tests
 ```
 
 Status at delivery: **209 tests, OK** — the founding group's
@@ -127,3 +127,54 @@ tolerant of the remaining freedom (carried from the founding group):
   dedicated cross-month case; `program_summary` attributes wage
   totals by the access request's period and disbursements by their
   date, per the contract.
+
+## Final GAPS batch (2026-11-07)
+
+`test_gaps_batch.py` (47 tests) pins the batch extension surface
+in `src/finance/extensions.py` for this section's 2 open entries
+(see `../BATCH.md` for the per-entry dispositions, including the
+idx 948 re-judgment):
+
+| File | Covers (GAPS batch) |
+|---|---|
+| `test_gaps_batch.py` | idx 948 expense workflow — report creation (exact stored key set, no stored total; view derives `total_cents` from recorded lines; lines deep-copied at the boundary; either participant kind may file; float/bool/string/zero/negative line amounts, duplicate line category, extra line key, empty lines, bad period all rejected with no id consumed; viewer create denied and audited `ext_expense_create:denied`; non-member denied), the state machine (submit from draft only; submit restricted to creator / program owner / platform admin; decide only from submitted, non-bool approve rejected, **creator deciding own report → `PermissionDenied`** (separation of duties); deny → void; void of an approved report rejected; list status filter + unknown status rejected), reimbursements (exact key set; amount/participant/period taken from the report; `paid_here` / `settled_here` False; report becomes `reimbursed` with `reimbursement_id` set; requires approved status; bad date rejected; list filter), and the period summary (counts and totals by status and `reimbursed_cents` derived at read, other periods excluded, basis stated). idx 949 policy enforcement — policy creation (exact key set, `definition_only` True; rules deep-copied; bad kind, missing/extra category, negative/float/bool limit, extra rule key, duplicate rule, empty rules all rejected with no id consumed; cross-program policy → `NotFoundError`) and evaluation (compliant report; **line exactly at cap complies**; line 1 cent over cap is a violation with exact limit/observed; report-total cap violation; multiple violations all reported; the evaluation is a view — repeat calls equal, no record changes). Cross-cutting — recursive scan over every record and view: no tier/baseline/impact/equivalence key, no account-identifier or score key, no float value, no `reference_stub` (the surface is built, not stub-labeled); a full expense flow leaves the core program summary, accrual view, and participant record byte-identical (participant shape still exactly 7 keys); the audit trail records the `ext_` actions; an audit sink whose write raises rolls a create (record and id) and a transition (status) back whole. |
+
+### Batch negative control (fresh, mutation-verified)
+
+`TestPolicyEvaluationNegativeControl` in `test_gaps_batch.py`
+implements the control for this surface's comparison seam,
+`FinanceExtensions._exceeds` in `src/finance/extensions.py`. The
+traced claim: policy evaluation flags exactly the recorded lines
+and totals that exceed the policy's recorded caps — a value
+strictly greater than its cap is a violation, and exactly-at-cap
+complies (the earned-cap boundary shape). For the canonical case
+(a meals line of 5001¢ against a recorded 5000¢ category cap) the
+test asserts three things: the canonical expectation (the real
+extension flags 1 violation, `compliant` False), that the
+violation-blind mutant (a subclass sharing the record tables
+whose seam returns False unconditionally) would NOT flag it
+(reads compliant, no violations), and — via a literal
+`assertRaises(AssertionError)` — that treating the mutant's
+outcome as the expected outcome fails.
+
+VERIFIED for this tree (2026-11-07, GAPS batch unit). The seam's
+return line in `src/finance/extensions.py` was patched from
+`return observed_cents > limit_cents` to `return False`
+(occurrence count asserted = 1 before patching) and the full
+suite was run: **256 tests ran, exactly 4 failed**, all in
+`test_gaps_batch.py`, all on the policy-evaluation surface:
+
+- `test_gaps_batch.TestPolicyEvaluation.test_line_one_cent_over_cap_is_a_violation`
+- `test_gaps_batch.TestPolicyEvaluation.test_report_total_cap_violation`
+- `test_gaps_batch.TestPolicyEvaluation.test_multiple_violations_all_reported`
+- `test_gaps_batch.TestPolicyEvaluationNegativeControl.test_canonical_flags_the_over_cap_line`
+
+Raw failure list in `../scratch/gaps_batch_mutation_run.txt`.
+`extensions.py` was then restored from a pre-mutation copy
+(SHA-256 verified identical to the pre-mutation hash,
+`b59a76aab0bfb1eaf422a6eb9a754bc5c866d0e54e8e333daa5483db4a57a8e2`
+— kept at `../scratch/extensions.py.premutation` with its hash
+at `../scratch/extensions.py.sha256`) and the suite re-run:
+**256 tests, OK**. The founding earned-cap drill above is
+unchanged and still verified for the core; this control is the
+fresh one for the new code, as the batch pattern requires.

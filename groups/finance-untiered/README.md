@@ -355,3 +355,42 @@ then and not before.
   earned wage access, financial wellness, and open platform & APIs
   likewise stand at 0 of 1, several with substance present in other
   words. Nothing was back-filled to make the set look complete.
+
+## Final GAPS batch (2026-11-07)
+
+The batch unit for this set's section closed its 2 open entries
+in one new module, `src/finance/extensions.py`
+(`FinanceExtensions`, a wrapper around the untouched core store;
+all 7 pre-existing modules byte-identical, SHA-256 verified
+against the pre-build record in `scratch/prebatch-src.sha256`).
+Per-entry dispositions and grounds are in
+[`BATCH.md`](BATCH.md); the section's third entry ("Platform
+layer") was already closed `re-scoped` under
+`../../PLATFORM-LAYER.md` at the batch foundation and is not part
+of this unit.
+
+- **Expense reporting, approval & reimbursement workflow engine
+  — built** (drafted stub-engine; **re-judged** under the batch
+  decision's qualification 1, grounds in `BATCH.md`): expense
+  report records over core participants running the core's own
+  workflow shape — draft → submitted → approved / denied →
+  reimbursed (via a reimbursement record) / void — with
+  separation of duties (the decider is never the creator) and
+  totals derived at read, never stored. Reimbursements are
+  recorded, never executed: the record carries `paid_here` /
+  `settled_here`: False, the founding disbursement-record
+  doctrine.
+- **Travel & expense policy enforcement engine — built** (as
+  drafted): policy records holding declared rules as data
+  (per-category line caps, a report total cap) plus compliance
+  evaluations derived at read from the recorded rules and lines —
+  never stored, flagging violations and blocking nothing.
+
+Tier discipline holds on the new surface (recursive scan pins no
+tier / baseline / impact / equivalence key anywhere, and no float
+value); money stays integer cents; no record shape can hold a
+real account identifier or any expense content beyond a category
+label and an amount. Suite: **209 → 256 tests, OK**, including a
+fresh mutation-verified negative control on the policy
+comparison seam (exactly 4 failures under the violation-blind
+mutant; see `tests/README.md`).

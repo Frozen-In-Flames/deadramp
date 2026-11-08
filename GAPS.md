@@ -1706,8 +1706,8 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## Untiered Set 24 — Finance (1 fork, tier null)
 
 New extended functions from this set, specified in groups/finance-untiered/UNION-SPEC.md, not implemented (the founding group's extended tail — payment rails, booking engines, wellness tools, streaming pipelines — stands registered under it, not re-registered):
-- [ ] open — Expense reporting, approval & reimbursement workflow engine (this fork's described function entire, named by no taxonomy family — registered in its own name)
-- [ ] open — Travel & expense policy enforcement engine
+- [x] built — Expense reporting, approval & reimbursement workflow engine (this fork's described function entire, named by no taxonomy family — registered in its own name)
+- [x] built — Travel & expense policy enforcement engine
 - [x] re-scoped — Platform layer
 
 Tier discipline, stated plainly: tier stays null — no baseline is asserted and no CMMC equivalence is drawn. One claim stands, at artifact weight: the reporting family fires on "employee expense reporting", the expense-report filing workflow the fork exists to manage, not on reporting and analytics phrasing of the kind the family's founding claim rests on — it documents no analytics capability and supports no core function, and it is flagged at that weight in the spec, the union spec, and the artifacts log. No control family is documented: one sentence naming "authorized users" names a population, not a mechanism, and the word encrypt occurs nowhere. The loudest named absence is spend management: the fork's whole domain is expenses, yet the token "spend" occurs nowhere in its description — "expense" does not contain it — token-pinned; expense management itself has no family in the category taxonomy at all. Zero of the core's eleven functions are claim-supported at full weight; the substrate is carried, not claimed, with its money machinery — integer cents, floats and booleans rejected — preserved exactly.
