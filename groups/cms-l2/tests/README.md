@@ -163,3 +163,61 @@ SHA-256
 verified identical to the pre-mutation hash) and the suite
 re-ran: **143 tests, OK**. The raw failure list is in
 `scratch/gaps_batch_mutation_run.txt`.
+
+## Final GAPS batch, second unit (Remainder Addition — CMS L2)
+
+Status after the second batch unit: **168 tests, OK** — the
+143 above plus 25 in `test_gaps_batch_addition.py`
+(`tests/test_gaps_batch_addition.py`: the addition surface in
+`../src/cms/extensions_addition.py` — labeled reference records
+for the ML/AI classification, extraction & enrichment engine
+of idx 660: job records naming targets by reference or SHA-256
+digest, outcome records holding the external engine's reports
+verbatim, job views deriving outcome counts and the latest
+reported outcome at read, a counts-only engine summary, the
+recursive no-content/no-score/no-float scans, and the fresh
+negative control below; see `../BATCH-ADDITION.md` for the
+disposition and the build-extension → reference re-judgment).
+Existing modules are byte-identical (`store.py` still SHA-256
+`e1d05424812f17b5bf1de6023bde72e08983a1790854d36df50d3ef2ad232de1`;
+the first unit's `extensions.py` still
+`ebb3e8d95743e24465b4a11f4918ebde65f7b0401e94b2d12543db58a6128fba`).
+
+### Second-unit negative control (fresh, for the new code)
+
+`test_gaps_batch_addition.py`'s
+`TestLatestOutcomeNegativeControl` implements the unit's
+mutant: a `CmsExtensionsAddition` subclass (`MutantAddition`)
+whose `_latest_outcome` seam returns the *earliest* recorded
+outcome instead of the latest. The traced claim is that **a
+job view's "latest reported" derivation is the last outcome
+the external engine reported for the job** (ML/AI
+classification, extraction & enrichment family). The tests
+assert the canonical expectation (two-outcome histories read
+the second outcome's labels / fields / metadata in all three
+job views), that the mutant would NOT produce it (it reads
+the first outcome everywhere), and — via a literal
+`assertRaises(AssertionError)` — that treating the mutant's
+outcome as the expected outcome fails.
+
+Mutation verification: VERIFIED by the batch worker
+(2026-11-08). The seam's return line in
+`CmsExtensionsAddition._latest_outcome`
+(`src/cms/extensions_addition.py`, line 261) was patched from
+`return outcomes[-1] if outcomes else None` to
+`return outcomes[0] if outcomes else None` — the line occurs
+exactly once in the file (count asserted before patching) —
+and the full suite ran: **168 tests ran, exactly 4 failed** —
+
+- `test_gaps_batch_addition.TestClassificationReference.test_outcome_verbatim_and_view_derivation`
+- `test_gaps_batch_addition.TestExtractionReference.test_job_view_latest_fields_derived`
+- `test_gaps_batch_addition.TestEnrichmentReference.test_job_view_latest_metadata_derived`
+- `test_gaps_batch_addition.TestLatestOutcomeNegativeControl.test_canonical_latest_is_last_reported`
+
+`extensions_addition.py` was then restored from the
+pre-mutation copy in the group's `scratch/`
+(`scratch/extensions_addition.py.premutation`, SHA-256
+`c5b2322050d9edd2b7a9661b035f7682dae152a136ca417d795d5b4ac2ed2509`,
+verified identical to the pre-mutation hash) and the suite
+re-ran: **168 tests, OK**. The raw failure list is in
+`scratch/gaps_batch_addition_mutation_run.txt`.

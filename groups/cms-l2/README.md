@@ -231,3 +231,31 @@ modules are byte-identical; the suite is **143 tests, OK**,
 including the batch's fresh mutation-verified negative control
 (the case-decision guard; exactly 2 failures under mutation —
 record in `tests/README.md`).
+
+## Final GAPS batch — second unit (remainder addition)
+
+The remainder addition's one registered gap is closed by the
+batch's second unit in this directory (see
+`BATCH-ADDITION.md`): Iron Mountain InSight's ML/AI content
+classification, extraction & enrichment engine (idx 660)
+ships as a **labeled reference implementation** in one new
+module, `src/cms/extensions_addition.py`
+(`CmsExtensionsAddition`, audit prefix `exta_`) — re-judged
+from the drafted build-extension disposition under the
+batch decision's qualification 1, on the sibling CMS
+L3-adjacent build's adjudicated form for this same fork
+family: job records naming the subject by core reference,
+opaque external reference, or SHA-256 digest (content is
+never held, and the signatures refuse it), plus outcome
+records holding the external engine's labels, extracted
+fields, and enrichment metadata verbatim as reported —
+enrichment outcomes are recorded, never applied to the core
+item. Every record carries `reference_stub: true` with
+`classified_here` / `extracted_here` / `enriched_here`
+false; job views derive outcome counts and the latest
+reported outcome at read. All existing modules, including
+the first unit's `extensions.py`, are byte-identical; the
+suite is **168 tests, OK**, including the unit's fresh
+mutation-verified negative control (the latest-outcome
+seam; exactly 4 failures under mutation — record in
+`tests/README.md`).
