@@ -238,3 +238,23 @@ reference implementation (disposition decisions and recorded FOIA
 states only — execution follows the platform-layer decision).
 Suite: **113 tests**, including the fresh legal-hold-gate mutation
 drill (exactly 3 failures under mutation).
+
+## Final GAPS batch — second unit (Remainder Addition)
+
+The 1 entry of the "Remainder Addition — Communication L2"
+section (idx 657, the Granicus / GovDelivery marketing
+automation & citizen-engagement campaign engine) is closed by
+`src/comm/extensions_addition.py` (`CommExtensionsAddition`, a
+second wrapper; every existing module byte-identical) — see
+`BATCH-ADDITION.md`. The entry was re-judged from its drafted
+build-extension disposition to a labeled reference
+implementation: campaign definitions and audience segment
+definitions held as data (segments are never resolved against
+the directory; no audience is computed) plus campaign outcome
+records holding the platform's reported figures verbatim, every
+record labeled `reference_stub: True` with
+`executed_here` / `targeted_here` / `segmented_here` /
+`sent_here` / `transmitted_here: False`. Nothing is targeted,
+segmented, composed, or sent by this surface. Suite: **126
+tests**, including the fresh latest-label mutation drill
+(exactly 4 failures under mutation).

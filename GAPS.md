@@ -1135,7 +1135,7 @@ No existing gap gains a claimant: the fork's single claim (messaging) is a Core 
 ## Remainder Addition — Communication L2 (+1 fork)
 
 New extended function from the addition fork, specified in groups/communication-l2/ADDENDUM.md, not implemented:
-- [ ] open — Marketing automation & citizen-engagement campaign engine: audience targeting / segmentation and automated campaign execution (registered from the fork's described function; its headline "marketing automation platform" phrasing fires no taxonomy family)
+- [x] reference — Marketing automation & citizen-engagement campaign engine: audience targeting / segmentation and automated campaign execution (registered from the fork's described function; its headline "marketing automation platform" phrasing fires no taxonomy family)
 
 No existing gap gains a claimant: secure transmission explicitly gains none (adjective prose without the family's operative phrasing). Both census citations for this fork verify as verbatim text and neither tags a family; the fork's single claim rests on a third sentence the census did not cite — verification is not a claim, in both directions.
 

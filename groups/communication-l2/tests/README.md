@@ -117,3 +117,30 @@ pins the extension surface per GAPS entry, including stub labels,
 the no-location-data key scan for tracking, the no-key-material
 signature pin for certificate records, and derived-never-stored
 shapes.
+
+## GAPS batch addition drill (final batch, second unit)
+
+Second-unit extension code landed
+(`src/comm/extensions_addition.py`), so the control is fresh.
+Seam: `_latest_label` in `src/comm/extensions_addition.py` — the
+current reported label of an append-only record stream is its
+LATEST record's label (the campaign view's current outcome).
+The seam's return line (`return records[-1][key]`, the module's
+only occurrence, count asserted = 1 before patching) was patched
+to `return records[0][key]` and the full suite ran: **126 tests,
+exactly 4 failures**, all in `tests/test_gaps_batch_addition.py` —
+
+- `test_gaps_batch_addition.TestCampaignReference.test_outcome_view_derives_current_and_reported_totals`
+- `test_gaps_batch_addition.TestNegativeControlLatestLabelAddition.test_canonical_view_uses_latest_outcome`
+- `test_gaps_batch_addition.TestNegativeControlLatestLabelAddition.test_seam_directly`
+- `test_gaps_batch_addition.TestNegativeControlLatestLabelAddition.test_mutant_earliest_differs`
+
+`extensions_addition.py` was restored from the pre-mutation copy
+(`scratch/extensions_addition.py.premutation`, SHA-256
+`19df54ae…` verified identical) and the suite re-ran: **126
+tests, OK**. `tests/test_gaps_batch_addition.py` (13 tests) pins
+the addition surface for the section's single entry (idx 657):
+reference labels on every record, definitions-as-data shapes,
+reported figures held verbatim, the no-content signature and
+recursive key scans, the never-resolved audience segment, and
+derived-never-stored campaign views.
