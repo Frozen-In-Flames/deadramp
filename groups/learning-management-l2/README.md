@@ -333,3 +333,27 @@ SF-182 form workflow records, workflow execution records —
 `reference_stub: True`, and the workflow registry still never
 executes). The founding no-score invariant is pinned over the
 whole extension surface by a recursive key scan.
+
+## Final GAPS batch — second unit (2026-11-08)
+
+The one open entry of the "Remainder Addition — Learning
+Management L2 (+1 fork)" section (idx 678, the licensed content
+library & practice-lab environments registered from the
+addition fork Percipio's described function) is closed by the
+second batch unit recorded in
+[`BATCH-ADDITION.md`](BATCH-ADDITION.md): one new module,
+`src/lms/extensions_addition.py` (`LmsExtensionsAddition`,
+wrapping the core store; every existing module, including the
+first batch unit's `extensions.py`, byte-identical), with 19
+new tests — **185 tests, OK** — including a fresh
+mutation-verified negative control on the latest-outcome
+derivation (exactly 4 failures under mutation; see
+`tests/README.md`). The entry closes as drafted (stub-engine)
+as a labeled reference implementation: library item records in
+the fork's own format vocabulary with core bindings by id only,
+platform access reports held verbatim, and practice-lab
+environment records named by opaque reference only — every
+record carries `reference_stub: True` and states hosted /
+content-held / delivered / administered here as False, and the
+founding no-score invariant is pinned over the whole addition
+surface.

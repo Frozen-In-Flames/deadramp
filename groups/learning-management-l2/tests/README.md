@@ -186,3 +186,53 @@ to its own era slice (the first 2 HEAD sheets) with the rescope
 disclosed in the test's docstring; the pin's strength is
 unchanged. Before the batch: 133 tests, 1 failure (that pin).
 After: 166 tests, OK.
+
+## Final GAPS batch — second unit (2026-11-08)
+
+`test_gaps_batch_addition.py` (19 tests) pins the second
+extension surface in `../src/lms/extensions_addition.py`
+(`LmsExtensionsAddition`): the one open entry of the GAPS.md
+section "Remainder Addition — Learning Management L2 (+1 fork)"
+(idx 678; see `../BATCH-ADDITION.md` — closed as drafted,
+stub-engine, as a labeled reference implementation). Pins:
+library item shape with the stub/transport labels and the
+not-here flags, the fork's own format vocabulary, assessment
+content as catalogue content (never administration), core
+bindings by id only with the mismatch rule, core records
+byte-identical across a full addition flow, access reports held
+verbatim with reported counts validated (bool/float/negative
+rejected, no id consumed), lab environments bound to
+practice-lab items only, derived `latest_outcome_label` and
+counts in the item view and the summary, a recursive
+no-score/no-content key scan over the whole surface, a
+no-`**kwargs` signature scan with TypeError pins on smuggled
+`content=` / `password=` calls, no float values anywhere, RBAC
+denials consuming no id, and `exta_`-prefixed audit actions.
+
+### Addition mutation verification
+
+VERIFIED by the coordinator for this batch unit (2026-11-08).
+The latest-outcome seam (`_latest_outcome_label` in
+`src/lms/extensions_addition.py`) — the line
+`return reports[-1]["outcome_label"] if reports else None`
+(occurrence count asserted = 1 before patching) — was patched
+to read the FIRST recorded report (`reports[0]`), so views and
+the summary read the earliest reported outcome instead of the
+latest. The full suite was run: **185 tests ran, exactly 4
+failures** (raw output in
+`../scratch/gaps_batch_addition_mutation_run.txt`) —
+
+- `test_gaps_batch_addition.TestAccessReports.test_view_derives_count_and_latest_outcome`
+- `test_gaps_batch_addition.TestLibrarySummary.test_summary_counts_and_latest`
+- `test_gaps_batch_addition.TestNegativeControlLatestOutcome.test_canonical_view_uses_latest_outcome`
+- `test_gaps_batch_addition.TestNegativeControlLatestOutcome.test_seam_directly`
+
+`extensions_addition.py` was then restored from the
+pre-mutation copy (`../scratch/extensions_addition.py.premutation`;
+SHA-256 `daaa1554e0bfb00a32ccf70198114e3c8498311b39ff0463c64c8f164bb44e2a`,
+verified identical) and the suite re-run: **185 tests, OK**.
+
+Full suite status after the second batch unit: **185 tests,
+OK** (166 before + 19 addition tests). All pre-existing modules
+byte-identical to their pre-build hashes (`store.py` still
+`820d9712…`, first unit's `extensions.py` still `833ca1c9…`).
