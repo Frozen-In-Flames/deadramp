@@ -213,3 +213,80 @@ re-ran green: **239 tests, OK**. Full drill output:
 `../scratch/gaps_batch_mutation_run.txt`. All 7 pre-existing
 `datamgmt` modules are SHA-256-identical to their pre-batch
 hashes (`../scratch/gaps_batch_src_hashes_before.txt`).
+
+## Final GAPS batch — second unit: Remainder Addition — Data Management L1
+
+`test_gaps_batch_addition.py` (33 tests) pins the second
+extension surface in `../src/datamgmt/extensions_addition.py`
+(`DataMgmtExtensionsAddition` wrapping the core store; audit
+actions prefixed `exta_`; dispositions in
+`../BATCH-ADDITION.md`). Per entry: results frameworks as
+definitions (`measured_here: False`, `values_held: False`; the
+stored record's key set pinned — no count, total, or status;
+unknown dataset refused with no id consumed; viewer refused
+with the denial audited `exta_framework_define:denied`);
+indicators as definitions (name unique per framework,
+baseline/target figures held verbatim as declared, bool figures
+refused); progress reports bound to exactly one core ingestion
+of the framework's dataset (cross-dataset and duplicate
+bindings refused; outcome and reported value stored verbatim,
+`measured_here` / `computed_here`: False); the results summary
+derived at read (counts, per-outcome tallies, latest reported
+outcome/value, and the core provenance total over completed
+ingestions only — a failed ingestion contributes nothing);
+collection instruments as definitions (kind enum, bad kind
+refused with no id consumed); instrument fields as shapes (the
+field record's key set pinned — no value slot; duplicate names
+and bad kinds refused); capture runs binding an instrument to
+a core ingestion, taking dataset and source from the core
+record (duplicate binding refused; negative reported counts
+refused); the instrument summary derived at read (the reported
+total stated as a sum of reported counts, count-less runs
+tallied separately). The substrate's hard privacy rule is
+pinned over the whole surface: a recursive scan finds no
+content-shaped key (`content`, `payload`, `response`,
+`response_value`, `answer`, `records`, `respondent`, …) on any
+record or view, and no collection, submission, rendering,
+measurement, or execution method exists on the class.
+
+### Negative control (fresh, for the new code)
+
+`test_gaps_batch_addition.py`'s
+`TestLatestReportNegativeControl` implements this unit's
+mutant: a `DataMgmtExtensionsAddition` subclass
+(`MutantExtensionsAddition`) whose `_latest_progress_report`
+returns the *earliest* report (`reports[0]`) instead of the
+latest. The traced claim is that the results summary's latest
+reported outcome and value are the most recent progress
+report's — the derivation the M&E surface's honesty rests on,
+since a summary silently reading the earliest report would
+misstate reported progress while looking well-formed. The test
+asserts the canonical expectation (latest outcome
+`reported_on_track`, latest value 2750, from the real
+implementation), that the mutant would NOT produce it (it
+reads `reported_progressing` / 1900), and — via literal
+`assertRaises(AssertionError)` legs — that treating the
+mutant's outcome as the expected outcome fails.
+
+Mutation verification: VERIFIED for this unit (2026-11-07).
+The latest-report seam in
+`DataMgmtExtensionsAddition._latest_progress_report`
+(`src/datamgmt/extensions_addition.py`) was patched live to
+return `reports[0]` — the exact live counterpart of the mutant
+in `test_gaps_batch_addition.py` — with the target text
+asserted to occur exactly once. The full suite was run:
+**272 tests ran, exactly 2 failed**, both in the new module:
+
+- `test_gaps_batch_addition.TestResultsSummary.test_summary_derives_counts_latest_and_core_total`
+- `test_gaps_batch_addition.TestLatestReportNegativeControl.test_canonical_summary_reads_latest_report`
+
+`extensions_addition.py` was then restored from the
+pre-mutation copy (`../scratch/extensions_addition.py.premutation`)
+and verified SHA-256-identical
+(`446adcc7f4132432534a5e38674f3f7000c1ecb50ce24b4b48f073ffa7cef844`;
+hash recorded in `../scratch/extensions_addition.py.sha256`);
+the suite re-ran green: **272 tests, OK**. Full drill output:
+`../scratch/gaps_batch_addition_mutation_run.txt`. All 8
+pre-existing `datamgmt` modules (the 7 core modules and the
+first unit's `extensions.py`) are SHA-256-identical to their
+pre-build hashes (`../scratch/prebatch-addition-src.sha256`).

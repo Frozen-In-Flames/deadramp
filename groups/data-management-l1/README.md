@@ -244,3 +244,27 @@ record carries its bound (`captured_here` / `rendered_here` /
 face. The core is byte-identical; the suite is now **239 tests**,
 including the batch's fresh mutation-verified negative control
 (see `tests/README.md`).
+
+## Final GAPS batch — second unit (remainder addition section)
+
+The two Extended functions registered by the remainder addition
+fork (DevResults) are now closed in
+`src/datamgmt/extensions_addition.py`
+(`DataMgmtExtensionsAddition`), per-entry dispositions in
+[`BATCH-ADDITION.md`](BATCH-ADDITION.md): M&E /
+results-management platform functions built as records over the
+core's own records (results frameworks and indicators as
+definitions held as data; progress reports bound to core
+ingestion records with outcomes and values stored verbatim as
+reported; progress state derived at read, never measured here),
+and data-capture tooling & collection instruments built as
+records (instrument and field definitions held as data — a field
+definition has no value slot; capture runs bound to core
+ingestions, taking their dataset and source from the core
+record). No record shape on the new surface can hold dataset
+content or a response value, and every record carries its bound
+(`measured_here` / `collected_here` / `content_held`: False) on
+its face. All pre-existing modules, the first unit's included,
+are byte-identical; the suite is now **272 tests**, including
+this unit's fresh mutation-verified negative control (see
+`tests/README.md`).

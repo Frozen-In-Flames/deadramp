@@ -1179,8 +1179,8 @@ Existing gap gaining a claimant: AI assistance / deflection / learned models gai
 ## Remainder Addition — Data Management L1 (+1 fork)
 
 New extended functions from the addition fork, specified in groups/data-management-l1/ADDENDUM.md, not implemented:
-- [ ] open — M&E / results-management platform functions: indicator and results frameworks, progress measurement (a domain application asserted across the fork's description; no taxonomy family covers it)
-- [ ] open — Data-capture tooling & collection instruments: capture tooling and instrument design (distinct from the web-capture engine already registered under this group's founding fork and from the guided-interview engine)
+- [x] built — M&E / results-management platform functions: indicator and results frameworks, progress measurement (a domain application asserted across the fork's description; no taxonomy family covers it)
+- [x] built — Data-capture tooling & collection instruments: capture tooling and instrument design (distinct from the web-capture engine already registered under this group's founding fork and from the guided-interview engine)
 
 Existing gaps gaining a member by substance (no claimant): query & visualization engines (the fork's "analysis, reporting, visualizations" — booked once, decision-support purpose included, not double-booked) and the integration runtime & connector engine ("streamline fragmented data processes into a single proven system"). Booked nowhere, recorded so the description is fully accounted for: project management & team collaboration, asserted in the fork's first sentence, are Operations and Collaboration functions, not this group's gaps. Group state, stated plainly: the enlarged group holds 0 claims across 2 forks — both forks spec'd, the substrate carried whole from the L2 parent and claimed by neither, which is the carried-not-claimed doctrine working as designed at the lightest tier.
 
