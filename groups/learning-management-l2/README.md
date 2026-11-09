@@ -357,3 +357,26 @@ record carries `reference_stub: True` and states hosted /
 content-held / delivered / administered here as False, and the
 founding no-score invariant is pinned over the whole addition
 surface.
+
+## Final GAPS batch — third unit (2026-11-08)
+
+The one open entry of the "No-Signal Addition — Learning
+Management L2 (Skillsoft Private Cloud, F1207261443)" section
+(idx 971, the private-cloud hosting & managed delivery service
+registered from the no-signal fork's classified function) is
+closed by the third batch unit recorded in
+[`BATCH-NOSIGNAL.md`](BATCH-NOSIGNAL.md): one new module,
+`src/lms/extensions_nosignal.py` (`LmsExtensionsNoSignal`,
+wrapping the core store; every existing module, including both
+prior batch units' modules, byte-identical), with 16 new
+tests — **201 tests, OK** — including a fresh
+mutation-verified negative control on the latest-outcome
+derivation (exactly 4 failures under mutation; see
+`tests/README.md`). The entry closes as drafted (stub-engine)
+as a labeled reference implementation: hosting deployment
+records named by opaque references with core binding by id
+only, and managed delivery reports held verbatim — every
+record carries `reference_stub: True` and states hosted /
+provisioned / managed / delivered here as False, and the
+founding no-score invariant is pinned over the whole
+no-signal surface.

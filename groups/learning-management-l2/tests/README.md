@@ -236,3 +236,53 @@ Full suite status after the second batch unit: **185 tests,
 OK** (166 before + 19 addition tests). All pre-existing modules
 byte-identical to their pre-build hashes (`store.py` still
 `820d9712…`, first unit's `extensions.py` still `833ca1c9…`).
+
+## Final GAPS batch — third unit (2026-11-08)
+
+`test_gaps_batch_nosignal.py` (16 tests) pins the third
+extension surface in `../src/lms/extensions_nosignal.py`
+(`LmsExtensionsNoSignal`): the one open entry of the GAPS.md
+section "No-Signal Addition — Learning Management L2
+(Skillsoft Private Cloud, F1207261443)" (idx 971; see
+`../BATCH-NOSIGNAL.md` — closed as drafted, stub-engine, as a
+labeled reference implementation). Pins: deployment shape with
+the stub/transport labels and the not-here flags, the
+offering's deployment-kind vocabulary, core binding by id only,
+core records byte-identical across a full no-signal flow,
+delivery reports held verbatim with reported counts validated
+(bool/float/negative rejected, no id consumed), derived
+`latest_outcome_label` and counts in the deployment view and
+the summary, a recursive no-score/no-content key scan over the
+whole surface, a no-`**kwargs` signature scan with TypeError
+pins on smuggled `content=` / `password=` calls, no float
+values anywhere, no provision/execute-shaped method, RBAC
+denials consuming no id, and `extn_`-prefixed audit actions.
+
+### No-signal mutation verification
+
+VERIFIED by the coordinator for this batch unit (2026-11-08).
+The latest-outcome seam (`_latest_outcome_label` in
+`src/lms/extensions_nosignal.py`) — the line
+`return reports[-1]["outcome_label"] if reports else None`
+(occurrence count asserted = 1 before patching) — was patched
+to read the FIRST recorded report (`reports[0]`), so views and
+the summary read the earliest reported outcome instead of the
+latest. The full suite was run: **201 tests ran, exactly 4
+failures** (raw output in
+`../scratch/gaps_batch_nosignal_mutation_run.txt`) —
+
+- `test_gaps_batch_nosignal.TestDeliveryReports.test_view_derives_count_and_latest_outcome`
+- `test_gaps_batch_nosignal.TestHostingSummary.test_summary_counts_and_latest`
+- `test_gaps_batch_nosignal.TestNegativeControlLatestOutcome.test_canonical_view_uses_latest_outcome`
+- `test_gaps_batch_nosignal.TestNegativeControlLatestOutcome.test_seam_directly`
+
+`extensions_nosignal.py` was then restored from the
+pre-mutation copy (`../scratch/extensions_nosignal.py.premutation`;
+SHA-256 `8c2ac492e18df5f953fa3d78e180047deb8c439c833b07004994755ae4c59adf`,
+verified identical) and the suite re-run: **201 tests, OK**.
+
+Full suite status after the third batch unit: **201 tests,
+OK** (185 before + 16 no-signal tests). All pre-existing modules
+byte-identical to their pre-build hashes (`store.py` still
+`820d9712…`, first unit's `extensions.py` still `833ca1c9…`,
+second unit's `extensions_addition.py` still `daaa1554…`).
