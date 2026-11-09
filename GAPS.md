@@ -1756,7 +1756,7 @@ Tier discipline, stated plainly: tier stays null — no baseline is asserted and
 ## No-Signal Addition — Health & Wellness L2 (CirrusMD, FR2220549818)
 
 One new gap from the no-signal resolution, specified in groups/health-wellness-l2/ADDENDUM.md, not implemented (the hosting platform gap is already registered and gains substance from this fork's multi-tenant community-cloud prose — noted in the addendum, not re-registered):
-- [ ] open — Chat-based virtual care channel (telehealth delivery now has two substance-claimants across two channels: video visits and chat)
+- [x] reference — Chat-based virtual care channel (telehealth delivery now has two substance-claimants across two channels: video visits and chat)
 
 Resolution note, stated plainly: this fork's cached marketplace description contains no functional sentence at all — it is delivery and posture prose, and the word patient occurs nowhere in it — so it claims zero under the group's taxonomy applied verbatim, and the group's total stays at 19 claims across 9 forks. Its classification as Health & Wellness rests entirely on the vendor's own live About page, recorded on its spec sheet as classification evidence with its source URL, kept distinct from claim evidence: the two evidence streams never mix, and the classification sentence does not occur in the cached description, pinned by test. Posture prose — "fully secure", HIPAA and GDPR compliance — earns no tags. The build remains a records substrate, not a medical device, and claims no FDA status for this fork exactly as for the others.
 

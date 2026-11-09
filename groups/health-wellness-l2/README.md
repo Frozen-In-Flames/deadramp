@@ -96,6 +96,23 @@ that computes no risk profile. Per-entry dispositions and
 grounds are in `BATCH-ADDITION.md`. The founding privacy
 discipline binds this surface identically.
 
+**Final GAPS batch, third unit (2026-11-08):** the no-signal
+addition's 1 GAPS.md entry is closed by one further new module,
+`src/health/extensions_nosignal.py`
+(`HealthExtensionsNoSignal`, subclassing the second unit's
+extension class over the same core store, with the distinct
+`extn_` audit prefix; all pre-existing modules byte-identical,
+175 tests): the CirrusMD chat-based virtual care channel as a
+labeled reference implementation — chat channel definition
+records, chat encounter records (bindable only to the same
+participant's own Core visit record), and reported-outcome
+records holding the platform's outcome labels and reported
+message counts verbatim. No message is delivered or routed
+here, no transcript or message content is held in any shape,
+and no clinical decision is made here. Per-entry disposition
+and grounds are in `BATCH-NOSIGNAL.md`. The founding privacy
+discipline binds this surface identically.
+
 ## What the group is: a records substrate
 
 The claim counts in the union spec prove a **records substrate**,
@@ -315,7 +332,9 @@ PYTHONPATH=src python3 -m unittest discover -s tests
 additions; 91 tests after the no-signal addition; 124 tests after
 the final GAPS batch unit (`test_gaps_batch.py`, see `BATCH.md`);
 157 tests after the second batch unit
-(`test_gaps_batch_addition.py`, see `BATCH-ADDITION.md`).
+(`test_gaps_batch_addition.py`, see `BATCH-ADDITION.md`);
+175 tests after the third batch unit
+(`test_gaps_batch_nosignal.py`, see `BATCH-NOSIGNAL.md`).
 See `tests/README.md` for the coverage table, the
 negative control, and the mutation-verification drill record. A live smoke (`scratch/smoke.py`) drives the store and
 the HTTP service end to end: program → participant → enroll →
