@@ -110,3 +110,57 @@ monkeypatch, with the canonical check asserted to fail against
 it — plus the discriminating other arm (a decision resting on
 exactly one valid basis intent IS recorded on the real store, so
 the invariant is a floor of one, not a ban).
+
+## Final GAPS batch coverage (Set 26 section, 2026-11-08)
+
+- `test_gaps_batch.py` — the batch extension surface
+  (`manufacturing.extensions.ManufacturingExtensions`): the
+  section's 1 open entry (idx 958, the engineering-intent
+  transformation engine including the manufacturing-intelligence
+  engine entire) closed as a labeled reference implementation
+  (re-judged from its drafted build-extension disposition;
+  grounds in `../BATCH.md`). Transformation request records
+  under the core decision-basis guard's records form (empty /
+  duplicate / unknown / cross-organization bases refused with
+  no id consumed; requester refs cannot be email addresses;
+  viewer writes denied with no id consumed); outcome records
+  holding the external engine's reported label verbatim
+  (off-vocabulary labels refused; citing a foreign core decision
+  refused; an outcome creates no core decision); request views
+  deriving `outcome_count` and `latest_outcome_label` at read
+  with the stored request's exact key set pinned free of derived
+  keys; the counts-only summary; a full flow leaving every core
+  record byte-identical; the no-content signature discipline
+  (no `**kwargs` anywhere, no content-shaped parameter, smuggled
+  `content=` / `statement=` kwargs raise `TypeError`); and the
+  recursive scans — no tier / baseline / impact / equivalence
+  key, no score or money key, and no float value anywhere on the
+  surface (tier null, preserved).
+
+### Negative control — the latest-outcome drill (fresh, batch)
+
+The batch's fresh mutation-verified negative control targets
+the extension's latest-outcome seam,
+`ManufacturingExtensions._latest_outcome_label`: a request
+view's `latest_outcome_label` must be the label of the most
+recently recorded outcome, derived at read and stored nowhere.
+The in-suite form (`TestNegativeControlLatestOutcome`) is
+three-legged: the canonical view reads the latest outcome; an
+earliest-reading mutant subclass reads the earliest; treating
+the mutant's outcome as the canonical expectation raises
+`AssertionError`. The live drill patched the seam's return line
+in the real `src/manufacturing/extensions.py`
+(`outcomes[-1]` → `outcomes[0]`, occurrence count asserted = 1
+before patching) and re-ran the full suite: exactly **3
+failures** of 73, all in `test_gaps_batch.py` —
+
+- `test_gaps_batch.TestDerivedViewsAndSummary.test_view_derives_count_and_latest_outcome`
+- `test_gaps_batch.TestNegativeControlLatestOutcome.test_canonical_view_uses_latest_outcome`
+- `test_gaps_batch.TestNegativeControlLatestOutcome.test_seam_directly`
+
+— with all 47 founding tests still passing. Raw drill output:
+`scratch/gaps_batch_mutation_run.txt`. After the drill,
+`extensions.py` was restored from
+`scratch/extensions.py.premutation`, SHA-256 verified identical
+(`058d48a5…`), and the suite re-ran fully green (73 tests).
+Suite count: 47 before → 73 after.

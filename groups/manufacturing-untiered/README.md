@@ -152,3 +152,23 @@ attainment — and here there is none to claim.
   "aerospace and defense teams" audience — no export-control,
   ITAR, or classification-handling function. Audience is not
   evidence.
+
+## Final GAPS batch (2026-11-08)
+
+The section's 1 open gap entry (idx 958, the engineering-intent
+transformation engine including the manufacturing-intelligence
+engine entire) is closed as a labeled reference implementation
+in `src/manufacturing/extensions.py` (`ManufacturingExtensions`;
+see `BATCH.md` for the per-entry disposition and the re-judgment
+grounds): transformation request records defined over held
+intent records under the core decision-basis guard's records
+form, plus outcome records holding the external engine's
+reported outcome label verbatim — nothing is transformed here,
+no intelligence is exercised, and no manufacturability is
+judged, stated on every record's face (`reference_stub: True`,
+`transformed_here: False`). The section's platform-layer entry
+was already closed `re-scoped` under the repo-root
+`PLATFORM-LAYER.md`. Tests: 47 → 73, all passing, including a
+fresh mutation-verified negative control on the extension's
+latest-outcome seam (drill: exactly 3 failures; recorded in
+`tests/README.md`).
