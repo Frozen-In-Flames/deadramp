@@ -109,3 +109,49 @@ report never exceed the report's total, enforced at
   substrate. Nothing in this tree asserts the founding group's
   Moderate baseline or any CMMC tier; the set's tier is null and
   the sheets pin it.
+
+## Final GAPS batch unit (Set 28 section)
+
+`tests/test_gaps_batch.py` (28 tests) pins the batch extension
+surface in `src/travel/extensions.py` (`TravelExtensions`) built
+for the section's 1 open entry (idx 966, travel data aggregation
+& analytics engine; idx 967 "Platform layer" was already closed
+`re-scoped` at the batch foundation and is not part of the
+unit). The collection half is a labeled reference surface:
+aggregation source records named by opaque references only
+(duplicate ref refused whole), collection reports holding
+outcome labels and record counts verbatim as reported. The
+aggregation half is built: profile definitions as data and
+views deriving counts and integer-cent sums at read over the
+core's own records, with collection reports pinned never to
+fold into the figures. Tier-null, no-score, and no-per-diem
+discipline is pinned by recursive scans over every record,
+view, and summary plus a signature scan over the surface's
+public methods; audit failure rolls back a create and its id;
+a full flow leaves the core summary deep-equal.
+
+### Batch negative control — mutation-verified
+
+Fresh seam: the accumulation point
+`TravelExtensions._accumulate`, through which every figure in
+every aggregation view folds.
+
+- **In-suite:** `TestAggregationAccumulationNegativeControl`
+  subclasses the surface amount-blind (counts fold, amounts
+  never do), sharing the canonical record tables. The canonical
+  category view totals 150,000 cents over 2 records; the mutant
+  keeps the count at 2 and zeroes every amount; treating the
+  mutant's total as the canonical expectation fails.
+- **Live drill (2026-11-08):** the seam's amount line
+  (`entry[1] += amount_cents`, occurrence count asserted = 1)
+  was patched to `entry[1] += 0` and the full suite run:
+  **135 ran, exactly 6 failures**, all in the new module —
+  `test_category_view_sums_recorded_items`,
+  `test_authorization_status_view`, `test_report_status_view`,
+  `test_traveler_view`,
+  `test_collection_reports_never_fold_into_figures`, and the
+  control's `test_canonical_view_carries_recorded_amounts`.
+  Raw output in `scratch/gaps_batch_mutation_run.txt`.
+  `extensions.py` was restored from
+  `scratch/extensions.py.premutation` and verified SHA-256
+  identical (`23abea02…`); the suite re-ran green at 135.

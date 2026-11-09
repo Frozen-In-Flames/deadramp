@@ -289,3 +289,25 @@ tier is recorded then and not before.
   is TLS when a certificate is configured; encryption at rest
   is a deployment-layer property; the deployment is a
   single-tenant reference deployment.
+
+## Final GAPS batch unit (Set 28 section)
+
+The section's 1 open entry (idx 966, the travel data
+aggregation & analytics engine — this fork's described function
+entire) is closed as a first batch unit in
+`src/travel/extensions.py` (`TravelExtensions`, 28 new tests in
+`tests/test_gaps_batch.py`; per-entry disposition in
+`BATCH.md`). The collection half ships as a labeled reference
+surface: aggregation sources named by opaque references only
+and collection reports holding outcomes verbatim as reported,
+with nothing connected, polled, or collected here. The
+aggregation half is built as derivation: profile definitions
+held as data, and views deriving counts and integer-cent sums
+at read over the core's own recorded authorizations, reports,
+and items — never stored, basis stated on the view's face, and
+collection reports never folded into the figures. Tier stays
+null on the new surface (pinned by recursive scan); no
+per-diem shape exists on it, and the voucher cap and the rest
+of the core stand untouched — all 7 pre-existing modules
+byte-identical. (The section's other entry, "Platform layer,"
+was already closed `re-scoped` at the batch foundation.)
