@@ -1,6 +1,6 @@
 # Operation DeadRamp
 
-Every FedRAMP vendor, open sourced. One collective repo, one fork per vendor, merges governed by NIST.
+Clean-room reference implementations of the services listed in the FedRAMP Marketplace: 781 offerings from 674 vendors, one fork per vendor under a single collective repository, with merges governed by the NIST SP 800-218 secure software development framework. Of the 781 offerings, 779 are implemented; the remaining two are recorded as unclassified, with the reason stated, rather than rounded into coverage.
 
 ## What this is
 
