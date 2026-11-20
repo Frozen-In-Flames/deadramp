@@ -1,2 +1,5 @@
 raw/
 groups/*/scratch/
+
+__pycache__/
+*.pyc
