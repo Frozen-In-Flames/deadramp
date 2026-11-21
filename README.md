@@ -42,3 +42,14 @@ Final GAPS batch in progress (dispositions ratified 2026-11-07; see gaps-batch/D
 ## License
 
 Apache-2.0. Copyright 2026 Aries Hilton.
+
+## Continuous integration
+
+CI runs a representative subset, not the full suite. The selection
+rule is fixed and documented in `tools/ci_subset.sh`: the 101 groups
+fall into 41 categories by name prefix; CI takes the alphabetically
+first group of each category and runs its two smoke gates,
+`test_main_cli.py` and `test_negative_control.py`. Every category is
+exercised on every push through the same two gates. The full suite
+of roughly 1,900 test paths remains a local gate, run before a
+release is claimed.
