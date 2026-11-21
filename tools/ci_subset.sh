@@ -16,6 +16,9 @@
 #      negative control). Groups missing one of the two files run
 #      whichever exists.
 #
+# Groups use two import conventions (package from src/, helpers from
+# tests/), so the runner puts both directories on PYTHONPATH.
+#
 # Every category is therefore exercised on every push, through the
 # same two gates, in a few minutes. Set CI_SUBSET_LIMIT=N to run only
 # the first N categories while debugging the subset itself.
@@ -28,7 +31,7 @@ for c in $cats; do
   for f in test_main_cli.py test_negative_control.py; do
     if [ -f "$g/tests/$f" ]; then
       echo "== $g $f"
-      python3 -m unittest discover -s "$g/tests" -p "$f"
+      PYTHONPATH="$g/src:$g/tests" python3 -m unittest discover -s "$g/tests" -p "$f"
     fi
   done
   n=$((n+1))
